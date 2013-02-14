@@ -492,6 +492,621 @@ Submit your songlib.zip file.
 		for (int i = 0; i < pts.length; i++) {
 			System.out.println(pts[i].toString());
 		}
-		
-		
+
+## February 14th, 2013 - Project Part 1: Photo Album (Design and Implementation I)
+
+### The Model-View-Controller (MVC) Architecture
+
+For this first part of the project, your team will create the model and
+control parts of a **Model-View-Control** architecture for a **Photo
+Album** application.
+
+A system using the MVC architecture has three main components:
+
+-   **Model** - The representation and management of the systems data
+-   **View** - The user's interface to the system
+-   **Control** - The algorithmic logic, decision making and data
+    manipulation processes
+
+Breaking up a system into these three components is beneficial for a
+number of reasons. The most obvious reason is for modularity. Properly
+coded, a system using MVC should be able to change the way any of the
+components is implemented without breaking the others. For instance, the
+model could store data in flat files. Later, if there is a reason to
+move to a database storage scheme, then the model can be reimplemented,
+but the view and controller can be left untouched, **if the model had
+been implemented to an interface, and the view and controller interacted
+with the model solely through this interface**. (Here the word
+"interface" is used to refer broadly to one or more interfaces.)
+
+Another motivation for using the MVC architecture is ease of testing. If
+the model talks to the control and view only through a known interface,
+the invocations of that interface can be scripted to run a set of
+diagnostics, isolating any problems with data the tester is seeing
+either in or out of the model.
+
+For this first part, you will be writing a "simple" text-based view that
+is operated from the command line for the purpose of bug testing the
+control and model components. Assuming this first part is done
+correctly, the text-based view can be plugged out and a graphical user
+interface plugged in without wondering if the weird text that is being
+displayed on the screen comes from the model (it doesn't, you tested
+that in the first part) or some nuance of object references in the view.
+
+**IMPORTANT**:
+
+In your implementation, the **control** should connect the **view** to
+the **model**. The only parts of the **model** that the **view** may
+interact with are the ones which get or set data without any
+manipulation. (For example, getting the view can directly get the id of
+a user from the model, and display it. But things such as sorting a list
+of users should be done in the control.)
+
+### Project Structure
+
+-   Name your project `PhotoAlbumXX`, where XX is the two digit group
+    number (ie 1 becomes 01).
+-   The **model** component should be in its own package
+    `cs213.photoAlbum.model`
+-   The simple command line **view** client should be in the package
+    `cs213.photoAlbum.simpleview` and have a main class `CmdView`
+-   The **control** should be in package `cs213.photoAlbum.control`
+-   Any utility classes shared by the MVC components can go in the
+    package `cs213.photoAlbum.util`
+-   Data (users, albums, information about the photos except the actual
+    files) should be stored in a folder called `data` directly under the
+    `PhotoAlbumXX` folder. (The actual photos can be anywhere in the
+    local filesystem.)
+-   All documentation (PDFS, HTMLs) should be in a folder called `docs`
+    directly under the `PhotoAlbumXX` folder.
+
+NOTE: In Eclipse, create packages with the complete name, such as
+`cs213.photoAlbum.model`. DO NOT separate this into a 3-package
+hierarchy. It should show up as a single package "folder" in the Eclipse
+package explorer view, but when you look at the directory structure in
+your computer's filesystem, you will see that it has been automatically
+expanded into the hierarchy `cs213 --> photoAlbum --> model`
+
+### Model
+
+The model has four main components: photo, album, user, and a backend.
+The photo, album, and user objects are simply data containers.
+
+#### Photo specification
+
+-   A unique (per user) file name.
+-   A caption
+-   A `java.util.Calendar` instance for the date and time the photo was
+    taken/file was created\
+
+    **Note:** When you set a date and time in a `Calendar` instance,
+    also make sure you set milliseconds to zero, as in:
+
+             
+             cal.set(Calendar.MILLISECOND,0);
+
+    Otherwise your equality checks won't work correctly.
+
+-   List of different tags:
+
+    -   Location of where the photo was taken (unspecified or one)
+    -   Names of the people in the photo (zero or more)
+    -   Other tags, as you may see fit
+
+    **Note**: A tag is a combination of tag type and tag value, e.g.
+    ("location","New Brunswick"), and each tag (type, value pair) for a
+    photo is unique. For instance, the people who appear in a photo will
+    appear in multiple tags, one tag per person. However, you can't have
+    two tags with the same person tag type and same person name value.
+
+-   Functionality to edit the attributes of the photo
+
+#### Album specification
+
+-   A unique (per user) album name
+-   Zero or more photos
+-   Functionality to add and delete photos to/from albums, and to
+    recaption photos\
+
+**Note**: A photo may appear in multiple albums of a user.
+
+#### User specification
+
+-   The user's unique ID (string, used to log in)
+-   The user's full name
+-   The user's albums, stored efficiently
+-   Functionality to add, delete and rename albums
+
+#### Backend specification
+
+The backend refers to functionality that will allow for the storage and
+retrieval from the `data` directory, and the photo files pointed to by
+file name information in the data directory. (See [Project
+structure](#structure)). The backend functionality includes:
+
+-   Read a user (including all constituent user data, see **User
+    Specification** above) identified by user ID from storage into
+    memory
+-   Write a user (including all constituent user data) to storage from
+    memory
+-   Delete a user, identified by user ID
+-   Get a list of existing users, identified by user IDs
+
+#### Model Versions
+
+Different version of the model may be used, depending on whether and at
+what time state changes in the user/photo data are written to disk. Here
+are two contrasting models:
+
+-   **Session Persistence**: This model does not store anything to disk
+    when the program is running, but stores all data when the program
+    terminates. Every program run is a session. When a session starts
+    up, data from the previous session is read from disk - this is the
+    start state. This model version is sufficient for a single-user mode
+    where users cannot see each other's albums.
+-   **Write Persistence**: This model stores state changes to disk every
+    time a command that updates the state is executed, i.e. the state
+    change is a "write". For instance, if a user adds a photo, the new
+    photo information will be immediately written to disk. That is, at
+    any time, the user/photo data on disk would be a copy of the
+    corresponding data in memory. (As in the session persistence model,
+    when a session starts up, data resulting from the previous session
+    is read from disk.) This version is required for a program that runs
+    in multi-user mode, where users can see each other's albums (think
+    of a web-based shared photo album such as Flickr).
+-   **Your Model Version Implementation**
+
+    For your project, you will need to implement **session persistence**
+    only.
+
+    You **are required** to use the `java.io.Serializable` interface,
+    and the `java.io.ObjectOutputStream`/`java.io.ObjectInputStream`
+    classes to store and retrieve data.
+
+    Although you are only required to implement one model (flat file,
+    session persistence), part of the credit will be based on how easy
+    it would be to replace session persistence with a different model
+    version. Use interfaces to make swapping different model
+    implementations easy (plug-n-play, interface polymorphism), with
+    minimal change to the other parts (view/control) of the program. See
+    the [API Driven Coding](#api) section for more information.
+
+
+### View
+
+
+For this first stage of the project, you will implement a simple
+text-based view with two modes of input - a command line mode, and an
+interactive mode.
+
+#### Command Line Mode 
+
+-   To list existing users: \
+    `java cs213.photoAlbum.simpleview.CmdView listusers` \
+    Output: \
+    `<userId1>` \
+    `<userId2>` \
+    `...` \
+    Or: \
+    `no users exist`
+
+-   To add a new user: \
+    `java cs213.photoAlbum.simpleview.CmdView adduser <user id> "<user name>"`
+    \
+    Output: \
+    `created user <user id> with name <user name>` \
+    Or: \
+    `user <user id> already exists with name <user name>`
+
+-   To delete a user: \
+    `java cs213.photoAlbum.simpleview.CmdView deleteuser <user id>` \
+    Output: \
+    `deleted user <user id>` \
+    Or: \
+    `user <user id> does not exist `
+
+-   To login as an existing user: \
+    `java cs213.photoAlbum.simpleview.CmdView login <user id>` \
+    (*view now goes into interactive mode*) \
+    Or: \
+    `user <user id> does not exist `
+
+**Note**: You can run these from inside Eclipse by changing the program
+arguments every time (See the Eclipse page for how to set program
+arguments). However, this can get cumbersome. Instead, you can work in a
+command window/shell, by going to the bin directory inside the project,
+and running the **java** command from there.
+
+**Interactive Mode**
+
+-   To create an album: \
+     `createAlbum "<name>"` \
+    Output: \
+    `created album for user <user id>:` \
+    `<name>` \
+    Or: \
+    `album exists for user <user id>:` \
+    `<name>`
+-   To delete an album: \
+     `deleteAlbum "<name>"` \
+    Output: \
+    `deleted album from user <user id>:` \
+    `<name>` \
+    Or: \
+    `album does not exist for user <user id>:` \
+    `<name>`
+-   To list all albums, with their number of photos and the range of
+    dates that the photos were taken: \
+     `listAlbums` \
+    Output: \
+    `Albums for user <user id>: ` \
+    `<name> number of photos: <numberOfPhotos>,  <start date> - <end date>`
+    \
+    `... ` \
+    Or: \
+    `No albums exist for user <user id>`
+-   To list the photos in an album: \
+    `listPhotos "<name>"` \
+    Output: \
+    `Photos for album <name>:` \
+    `<fileName> - <date>` \
+    `...`
+-   To add a photo to an album: \
+    `addPhoto "<fileName>" "<caption>" "<albumName>"` \
+    Output: \
+    `Added photo <fileName>:` \
+    `<caption> - Album: <albumName>` \
+    Or: \
+    `Photo <fileName> already exists in album <albumName>` \
+    Or: \
+    `File <fileName> does not exist`
+
+    **Notes**:
+
+    -   The date and time for the photo should be obtained from the
+        properties of the photo file.
+    -   The caption is a property of the photo, not the album. This
+        means if you add a photo to more than one album, you specify the
+        caption when adding to the first album. Then, when adding to
+        subsequent albums, you specify an empty string for the caption,
+        meaning that the caption is retained from the first add. The
+        output message for the subsequent adds however should have the
+        original caption, so it's clear that the caption has been
+        retained.
+
+-   To move a photo from one album to another: \
+    `movePhoto "<fileName>" "<oldAlbumName>" "<newAlbumName>"` \
+    Output: \
+    `Moved photo <fileName>:` \
+    `<fileName> - From album <oldAlbumName> to album <newAlbumName>` \
+    Or: \
+    `Photo <fileName> does not exist in <oldAlbumName>`
+
+    **Note**: If the photo already exists in the new album, the command
+    should return silently without doing anything.
+
+-   To remove a photo from an album: \
+    `removePhoto "<fileName>" "<albumName>"` \
+    Output: \
+    `Removed photo:` \
+    `<fileName> - From album <albumName>` \
+    Or: \
+    `Photo <fileName> is not in album <albumName>`
+-   To add a tag to a photo: \
+    `addTag "&ltfileName>" <tagType>:"<tagValue>"` \
+    Output: \
+    `Added tag:` \
+    `<fileName> <tagType>:<tagValue>` \
+    Or: \
+    `Tag already exists for <fileName> <tagType>:<tagValue>`
+-   To delete a tag from a photo: \
+    `deleteTag "&ltfileName>" <tagType>:"<tagValue>"` \
+    Output: \
+    `Deleted tag:` \
+    `<fileName> <tagType>:<tagValue>` \
+    Or: \
+    `Tag does not exist for <fileName> <tagType>:<tagValue>`
+-   To list photo info: \
+    `listPhotoInfo "&ltfileName>"` \
+    Output: \
+    `Photo file name: <fileName>` \
+    `Album: <albumName>[,<albumName>]...` \
+    `Date: <date>` \
+    `Caption: <caption>` \
+    `Tags:` \
+    `<tagType>:<tagValue>` \
+    `...` \
+    (grouped by tag type, in the order location first, then people, and
+    then others, sorted by tag value within each type) \
+    Or: \
+    `Photo <fileName> does not exist`
+-   To retrieve all photos taken within a given range of dates, in
+    chronological order: \
+    `getPhotosByDate <start date> <end date>` \
+    Output: \
+    `Photos for user <user id> in range <start date> to <end date>:` \
+    `<caption> - Album:   <albumName>[,<albumName>]... - Date: <date>` \
+    `...`
+-   To retrieve all photos that have all the given tags, in
+    chronological order. Tags can be specified with or without their
+    types: \
+    `getPhotosByTag [<tagType>:]"<tagValue>" [,[<tagType>:]"<tagValue>"]...`
+    \
+    Output: \
+    `Photos for user <user id> with tags <search string>:` \
+    `<caption> - Album: <albumName>[,<albumName>]... - Date: <date>` \
+    `...`
+-   To end the interactive mode (and the session): \
+     `logout` \
+    Output: none
+
+Any errors (illegal parameters, invalid dates) should be handled
+gracefully. No stack traces should be printed out (the user shouldn't
+have to know what an exception is). Instead, a one sentence description
+of what exactly went wrong should be printed. The format is as follows:
+\
+`Error: <description of error>`
+
+**Important:**
+
+-   All names (such as user names, file names, etc.) in the commands are
+    contained within quotes. The reason is you can have spaces in any of
+    these, but the whole thing needs to be treated as a single quantity
+    (token). So if a picture location is Busch Campus, say, it should
+    not be read as two tokens, which necessitates typing in "Busch
+    Campus", within double quotes.
+
+-   Quantities in angle brackets stand for corresponding *values*. That
+    is, anything contained in an angle bracket should be replaced with
+    an actual value. The angle brackets themselves should not be typed.
+-   Quantities in square brackets are optional.
+-   `...` stands for repetition.
+
+-   If you use a `java.io.BufferedReader` or `java.util.Scanner` to read
+    input from `System.in`, be sure you do not instantiate a new one for
+    every single input. This causes problems when the graders copy a
+    larger set of commands into your program at once. Instantiate the
+    reader/scanner *once* and re-use it for each read.
+
+-   Stick to the input and output guidelines exactly. Any deviation from
+    the specified formats will be penalized. **This means no ascii art
+    or clever intros at the beginning!** (The graders do not care about
+    what "version" you think the code is at, nor do they appreciate the
+    carefully drawn box of roses surrounding said information...)
+
+### Control
+
+The control (or controller) does all manipulation/processing of data
+within the program including the creation (but not storage) and deletion
+of new objects, sorting/filtering data on various dimensions, and
+checking data validity that goes beyond syntactic correctness of input
+commands. (For instance, checking dates for validity.)
+
+As mentioned earlier, the view can directly interact with the model only
+for direct access of data that is not processed in any way. Note that
+the user specification in the model includes storing albums in efficient
+data structures.
+
+The control can know about a single user at a time. Then all operations
+on the control apply to that user.
+
+The control should not be tied to any one particular model
+implementation, so it should interact with the model interface(s).
+
+### API Driven Coding
+
+API (Application Programming Interface) refers to explicit and implicit
+interfaces that serve as "contracts", enabling different parts of an
+application to be built independenly. For instance, if the two of you in
+a group know what all the `interface`s are (explicit interfaces), as
+well as what the public/package/protected members of all classes are
+(implicit interfaces), you can then divide up the work and fill in the
+code for all the classes you are responsible for.
+
+For each of the main components for this first part--model and
+control--you will need to provide an API, which should be in the form of
+a set of **documented interfaces and public/package/protected class
+fields, constructors, and methods**. (Private fields, constructors,
+inner classes, and methods need not be documented for sharing, but you
+will document them all by the time you finish coding the entire part 1.)
+
+Documentation should be done through `javadoc` and UML diagrams. (Note:
+not all classes you build will necessarily implement an interface.)
+
+The UML diagrams will most likely not be complex. It should include all
+classes that the group writes in the model and control, but none from
+the view and none from the standard library (the graders know what a
+`String` is, no need to diagram it).
+
+For javadoc, in addition to comments about the nature of the code, the
+javadoc for each class and interface must name the primary author for
+that class (use the `@author` field), and where applicable the javadoc
+for a particular method should also name its author.
+
+The interfaces should be as *general* as possible. Ideally, one should
+be able to swap out your implementation of these interfaces for another
+with minimal code rewriting and no errors (assuming the other
+implementation is bug-free).
+
+An example of making a generic interface comes from `java.util.List`.
+You saw in lecture how interface polymorphism is useful for swapping two
+different implementations of the `List` interface, the `LinkedList` and
+`ArrayList` classes, depending on need. Similarly, if you design the
+model and control interfaces well, it should be possible to swap
+different model or control implementations without changing any code
+that uses these interfaces.
+
+
+### Development Instructions
+
+#### Development/Testing
+
+Development may take place anywhere, as long as your code is compilable
+with Java Version 6. You can develop with a higher version installation,
+but make sure your code compiles and runs under Java 6. It should, if
+you are not using features that are specific to the higher versions. If
+the graders are unable to compile/run your program on their machine,
+running Java 6, you will lose credit.
+
+Also, you may only use the standard Java API. No external libraries!
+
+#### Mercurial
+
+Each group will access its Mercurial repository on BitBucket, which you
+will set up according to the instructions given in the
+Mercurial/Bitbucket walkthrough page in Sakai. The repository name for
+your group will be `photoAlbumXX`, where `XX` is your two digit group
+number.
+
+### Submission
+
+#### Friday, Feb 20, by 11 PM
+
+-   HTML documentation (generated by javadocs) of all explicit and
+    implicit interfaces as described in the [API Driven Coding](#api)
+    section. This should be in the `docs` directory as described in the
+    [Project Structure](#structure) section, committed to your Mercurial
+    repository in BitBucket.
+
+    Important: All interfaces and classes should have authorship, so
+    that it is clear as to who will be developing what parts of the
+    code.
+
+Submitting this will significantly help you (a) plan ahead and build the
+application in a professional manner, working independently for the most
+part, and synchronizing when you need to build the "glue" between parts,
+(b) protect against trouble if one of you complains because the other
+does too much work (takes charge and doesn't work together), or too
+little work.
+
+If you are having trouble making this submission, it means you are not
+able to work together as a team, and should contact Prof. Venugopal to
+get the issue resolved. After this point, you are assumed to be working
+well together, and complaints about the partnership will only be
+entertained if one partner has dropped the class.
+
+#### Fri, Mar 8, by 11 PM
+
+-   Complete code, UML diagram (PDF ONLY), updated javadoc generated
+    HTML (if you have updated the javadocs after the February 22
+    submission), sample user data in the `data` directory, all committed
+    to your Mercurial repository in BitBucket.
+
+Any changes made to the repository after the deadline will not be graded
+- the grader will pull the project in its state at the deadline, not the
+most recent version.
+
+Be sure that there are no hard coded file paths. The grader should not
+have to do anything other than check out your project and run an
+appropriate (and generic except for your group numer) test script.
+Anything else will result in a deduction from the score.
+
+### Grading
+
+The project will be graded on the following criteria:
+
+**Good design:** How well the project conforms to the MVC pattern, how
+well your submission of February 22 anticipated the completed
+implementation, and how well your UML diagram represents the code. \
+\
+**Implementation**: Everyting described in the the **Model**, **View**,
+and **Control** specifications. \
+\
+**Documentation:** Appropriately detailed javadocs \
+\
+**Specification Adherence:** How well your project conforms to the
+guidelines in this document
+
+### Sample Run
+
+
+Here is a sample test run. Your program should work on this test (and we
+will check!), but also others. You might find it convenient to make your
+own test runs. The following test run assumes the existence of a user
+"testuser".
+
+Note: You can run the program in Eclipse, but you will need to keep
+changing the program arguments frequently for the command line mode,
+which can get annoying. It may be easier to position youseelf in the
+eclipse workspace project `bin` directory, and run the program from
+there.
+
+If you get a `ClassNotFoundError` from this, try adding `-cp .` to the
+command line, right after `java` as in: \
+ `java -cp . <stuff> `
+
+The following sample works with this assumption. (And when we test your
+program, we will run java outside Eclipse.)
+
+    java cs213.photoAlbum.simpleview.CmdView login testuser 
+
+    createAlbum "Fall colors"
+
+    createAlbum "Colorado Springs"
+
+    addPhoto "DSC_001.jpg" "DSC_001" "Fall colors"
+
+    addPhoto "DSC_005.jpg" "DSC_005" "Fall colors"
+
+    addPhoto "DSC_007.jpg" "DSC_007" "Colorado Springs"
+
+    listAlbums
+
+    movePhoto "DSC_001.jpg" "Colorado Springs"
+
+    addTag "DSC_001.jpg" person:"Alex Buschman"
+
+    addTag "DSC_001.jpg" location:"Colorado"
+
+    addTag "DSC_005.jpg" person:"Alex Buschman"
+
+    listPhotos "Fall colors"
+
+    searchPhotosByTags person:"Alex Buschman"
+
+    logout
+
+This run should produce the following output:
+
+    created album for user testuser: 
+    Fall colors
+    created album for user testuser: 
+    Colorado Springs
+
+    Added photo DSC_001.JPG: 
+    DSC_001 - Album: Fall Colors
+
+    Added photo DSC_005.JPG: 
+    DSC_005 - Album: Fall Colors
+
+    Added photo DSC_007.JPG: 
+    DSC_007 - Album: Colorado Springs
+
+    Albums for user testuser: 
+    Colorado Springs number of photos: 1, 02/12/2012-09:23:00 - 02/12/2012-09:23:00
+    Fall Colors number of photos: 2, 02/12/2012-10:15:00 - 02/12/2012-15:42:00
+
+    Moved photo DSC_001.JPG: 
+    DSC_001.JPG - From album Fall Colors to album Colorado Springs
+
+    Added tag:
+    DSC_001.jpg person:"Alex Buschman"
+
+    Added tag:
+    DSC_001.jpg location:"Colorado"
+
+    Added tag:
+    DSC_005.jpg person:"Alex Buschman"
+
+    Photos for album Fall Colors: 
+    DSC_005.JPG - 02/12/2012-15:42:00
+
+    Photos for user testuser containing person:Alex Buschman
+    DSC_001 - Album: Colorado Springs - Date: 02/12/2012-09:23:00
+    DSC_005 - Album: Fall Colors - Date: 02/12/2012-15:42:00
+
+
+## February 14th, 2013 - Lecture
+
+###
 
