@@ -1106,7 +1106,103 @@ This run should produce the following output:
     DSC_005 - Album: Fall Colors - Date: 02/12/2012-15:42:00
 
 
-## February 14th, 2013 - Lecture
+## February 18th, 2013 - Recitation 4: Project Q&A, Debugging in Eclipse, Polymorphism
 
-###
+1.  Project Q&A
+
+2.  Debugging in Eclipse
+
+    Download the (buggy) code in [HeapSort.java](Heapsort.java) and
+    import it into Eclipse. Use the debugger to track down the bug(s)
+    and fix the code.
+
+3.  There is an application that defines a `Person` class and a
+    `Student` class. The `Student` class is defined as a subclass of
+    `Person`. Every person has a home address, while every student has a
+    school address as well.
+
+    Consider printing addresses of all people in the application,
+    assuming there is a single array list that stores all `Person` and
+    `Student` objects. How would the address that is printed for
+    students depend on the way the `Student` class address methods are
+    designed/implemented? What alternatives in design can you think of,
+    and what are the pros and cons of these alternatives in printing the
+    addresses?
+
+4.  In class we saw how you could write code to print a collection of
+    mixed `Point` and `ColoredPoint` objects:
+
+           Point[] pts = new Point[n];
+           pts[0] = new Point(2,3);
+           pts[1] = new ColoredPoint(3,4,"black");
+           ...
+           for (int i=0; i < pts.length; i++) {
+              System.out.println(pts[i]);
+           }
+
+    1.  Where is the *polymorphic* behavior in this code?
+    2.  Give an example of code using the `pts` array that is NOT
+        polymorphic, and explain why it is not polymorphic.
+
+5.  Suppose classes `A` and `B` are in package `ab`, and classes `C` and
+    `D` are in package `cd`. Furthermore, both `C` and `B` extend `A`,
+    and `D` extends `B`. Assume all classes are declared to be `public`.
+
+    1.  Are `protected` members of `A` accessible in `C`?  If yes,
+        explain how. If not, explain why.
+    2.  Are `protected` members of `A` accessible in `D`?  If yes, how?
+        If not, why?
+    3.  Answer the same question as in 1. replacing `A` with `B`
+    4.  Answer the same question as in 2. replacing `A` with `B`
+
+6.  You are given the followig `Employee` class:
+
+        public class Employee {
+          private String name;
+          private double salary;
+          
+          public Employee(String aName) {
+             name = aName; 
+          }
+          
+          public void setSalary(double aSalary) {
+             salary = aSalary; 
+          }
+          
+          public String getName() {
+             return name; 
+          }
+          
+          public double getSalary() {
+             return salary; 
+          }
+        }
+
+    Write subclasses `HourlyEmployee` and `SalariedEmployee` of the
+    `Employee` class.  Provide the constructors listed below:
+
+        HourlyEmployee(String aName, double anHourlySalary)
+
+        SalariedEmployee(String aName, double anAnnualSalary)
+
+    Add, in the appropriate place(s), the method:
+
+        double getWeeklySalary()
+
+    (You can modify the `Employee` class if needed.)
+
+    Assume that hourly employees work 40 hours per week, and salaried
+    employees are paid 1/52 of their annual salary every week.
+
+7.  (Adapted from an example in Interface Oriented Design by Ken Pugh,
+    sec. 4.2)
+    Suppose you want to create a printing subsystem for several
+    different printers, each with different capabilities/features (e.g.
+    color printing, high-resolution, duplex, multiple trays, etc.).  How
+    could you place the different capabilities into an interface? 
+    Should you use a single interface or multiple interfaces (e.g.
+    ColorPrinter, DuplexPrinter, MultiTrayPrinter)?  Describe the
+    advantages and disadvantages of both approaches.
+
+
 

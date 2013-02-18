@@ -610,7 +610,7 @@ distinct label from \\(\lbrace 1,2,3,4,5,6\rbrace \\).
 
 + For all *x, y*, all *n >= 1*,
 \\[
-(x + y)^n = \sum_{k = -}^n {n \choose k}x^ky^{n - k}
+(x + y)^n = \sum_{k = 0}^n {n \choose k}x^ky^{n - k}
 \\]
 + Intuitive Combinatorial Proof (Simpler)
 	* When you expand \\((x + y)^n\\), it equals \\((x + y)(x+y) ... (x + y) \\) "*n*-times"
@@ -692,12 +692,235 @@ distinct label from \\(\lbrace 1,2,3,4,5,6\rbrace \\).
 
 ## February 7th, 2013 - Homework 2
 
-In each of the problems below, let P be a probability measure on a sample space S. For questions with numerical answers, you do not need to simplify your solutions, but you must show your work and in particular explain your reasoning.
+Paul Jones\
+Professor David Cash\
+Introduction to Discrete Structures II (01:198:206)\
 
-1. (8 points) Prove that \\(P(A \cup B) \le P(A) + P(B)\\) for any events A and B. Prove the general version by induction, which says that if \\(A_1 , . . . , A_n\\) are events then \\( P(\bigcup_{i = 1}^n A_1 \le \sum_{i=1}^n P(A_i)) \\). When does this inequality become an equality?
-2. (4 points) If \\( P(A) = 1/2, P(B) = 1/5, P(A \cup B)=3/5\\) what are \\( P(A \cap B), P(A^c \cup B), P(A^c \cap B)\\)
+Homework 1
 
-## February 11th, 2013 - Lecture
+1.  (8 points) Prove that \\(P(A \cup B) \le P(A) + P(B)\\) for any events A
+    and B. Prove the general version by induction, which says that if
+    \\(A_1, ..., A_n\\) are events then
+    \\(P(\bigcup_{i = 1}^n A_i) \le P(\sum_{i = 1}^n A_i)\\). When does this
+    inequality become an equality?
+
+    -   Base case
+
+        $$P(A_1 \cup A_2) \le P(A_1) + P(A_2)$$
+
+    -   Assume it holds for a general case $(n=k)$
+
+        $$P\left(\bigcup_{i = 1}^k A_i\right) \le \sum_{i = 1}^k P(A_i)$$
+
+        $$P(A_1 \cup A_2 \cup ... \cup A_k) \le P(A_1) + P(A_2) + ... + P(A_k)$$
+
+    -   Prove that it hold for next case using your assumption.
+
+        $$P\left(\bigcup_{i = 1}^{k+1} A_i\right) \le \sum_{i = 1}^{k+1} P(A_i)$$
+
+        $$P(A_1 \cup A_2 \cup ... \cup A_k \cup A_{k+1}) \le P(A_1) + P(A_2) + ... + P(A_k) + P(A_{k+1})$$
+
+        $$(A_1 \cup A_2 \cup ... \cup A_k) = C$$
+
+        $$P(A_1) + P(A_2) + ... + P(A_k) = D$$
+
+        $$P(C \cup A_{k+1}) \le P(D) + P(A_{k+1})$$
+
+        By the base case, this is true, and expression is proven for all
+        events.
+
+2.  (4 points) If \\(P(A) = \frac{1}{2}\\), \\(P(B) = \frac{1}{5}\\), and
+    \\(P(A\cup B) = 3/5\\), what are \\(P(A\cap B)\\), \\(P(A^c \cup B)\\), and
+    \\(P(A^c \cap B)\\)?
+
+    -   $P(A\cap B) = \frac{1}{10}$
+
+    -   $P(A^c \cup B) = 3/5$ because the probability of $A$ is the same
+        as $A^c$
+
+    -   $P(A^c \cap B) = \frac{1}{10}$
+
+3.  (3 points) How many elements are there in the set
+
+    {$x : 10^7 \le x \le 10^8$, and the base 10 representation of x has
+    no digit used twice}?
+
+    -   $10^7 = 10000000$, and $10^8 = 100000000$
+
+    -   The smallest number possible is $12345678$, the greatest number
+        possible is $98765432$
+
+    -   For the first number in any element, the first option is {1, 2,
+        3, 4, 5, 6, 7, 8, 9}.
+
+    -   Then for the every second number, it’s every number besides the
+        first choice plus 0.
+
+    -   The “tree” looks as follows, where
+        $i\neq j\neq k\neq l\neq m\neq n\neq o\neq p$:
+
+        1.  $$\{1 i j k l m n o \}$$ where
+            $$\{i,j,k,l,m,n,o\} \in \{0,2,3,4,5,6,7,8,9\}$$
+
+        2.  $$\{2 i j k l m n o \}$$ where
+            $$\{i,j,k,l,m,n,o\} \in \{0,1,3,4,5,6,7,8,9\}$$
+
+        3.  $$\{3 i j k l m n o \}$$ where
+            $$\{i,j,k,l,m,n,o\} \in \{0,1,2,4,5,6,7,8,9\}$$
+
+        4.  $$\{4 i j k l m n o \}$$ where
+            $$\{i,j,k,l,m,n,o\} \in \{0,1,2,3,5,6,7,8,9\}$$
+
+        5.  $$\{5 i j k l m n o \}$$ where
+            $$\{i,j,k,l,m,n,o\} \in \{0,1,2,3,4,6,7,8,9\}$$
+
+        6.  $$\{6 i j k l m n o \}$$ where
+            $$\{i,j,k,l,m,n,o\} \in \{0,1,2,3,4,5,7,8,9\}$$
+
+        7.  $$\{7 i j k l m n o \}$$ where
+            $\{i,j,k,l,m,n,o\} \in \{0,1,2,3,4,5,6,8,9\}$$
+
+        8.  $$\{8 i j k l m n o \}$$ where
+            $$\{i,j,k,l,m,n,o\} \in \{0,1,2,3,4,5,6,7,9\}$$
+
+        9.  $$\{9 i j k l m n o \}$$ where
+            $$\{i,j,k,l,m,n,o\} \in \{0,1,2,3,4,5,6,7,8\}$$
+
+    -   Every “node” (a) through (i) is $9 \choose 1$.
+
+    -   When you pick the first number, you still have 9 choices because
+        zero is added. When you choose the second number, you have 8
+        choices because a number is taken out and non are put back into
+        the set of choices. When you pick your third number, you have 7
+        choices because a number is taken out and none put back in. ...
+
+    -   So for integer strings $i$ through $o$:
+
+        $$[i]\quad\quad[j]\quad\quad[k]\quad\quad[l]\quad\quad[m]\quad\quad[n]\quad\quad[o]\quad\quad[p]$$
+
+    -   The number of elements is equal to
+
+        $${9 \choose 1}\times{9 \choose 1}\times{8 \choose 1}\times{7 \choose 1}\times{6 \choose 1}\times{5 \choose 1}\times{4 \choose 1}\times{3 \choose 1}$$
+
+4.  (3 points) An army output has 19 posts to staff using 30
+    indistinguishable guards. How many ways are there to distribute the
+    guards if no post is left empty?
+
+    -   This is a “stars and bars” problem, where the number of “stars”
+        $k$ is equal to 30, and the number of “bars,” “bins,” or “posts”
+        $n$ is equal to 19.
+
+        $${k - 1 \choose n - 1} = {30 - 1 \choose 19 - 1} = {29 \choose 18} = 34597290$$
+
+5.  (1 point) What is the coefficient of $x^{10}y^{13}$ when
+    $(x + y)^{23}$ is expanded?
+
+    -   This problem requires the binomial theorem, where $n = 23$:
+
+        $$(x + y)^{23} = \sum_{k = 0}^{23} {23 \choose k}x^ky^{23 - k}$$
+
+    -   When $k = 10$, $23 - k$ will equal 13.
+
+        $${23 \choose 10}x^{10} y^{13}$$
+
+    -   So the coefficient for $x^{10} y^{13}$ will be
+
+        $${23 \choose 10} = 1144066$$
+
+6.  (4 points) What is the coefficient of $w^{9}x^{31}y^{4}z^{19}$ when
+    $(w + x + y + z)^{63}$ is expanded? How many monomials appear in the
+    expansion?
+
+    -   This is a multinomial coefficient problem where $k = 4$ and
+        $n = 63$:
+
+        $$(a_1+a_2+...+a_k)^n=\sum_{\substack{n_1,n_2,...,n_k\ge 0 \\ 
+        n_1+n_2+...+n_k=n}}\frac{n!}{n_1!n_2!...n_k!}a_1^{n_1}a_2^{n_2}...a_k^{n_k}$$
+
+    -   Set $n_1 = 9$, $n_2 =31$, $n_3 = 4$, and $n_4 = 19$.
+
+        $$\left(\frac{63!}{9!31!4!19!}\right)\times w^{9}x^{31}y^{4}z^{19}$$
+
+    -   Therefore, the coefficient is
+
+        $$\frac{63!}{9!31!4!19!}$$
+
+    -   The number of monomials in a multinomial coefficient can be
+        expressed as a “stars and bars” problem.
+
+        $$66 \choose 3$$
+
+7.  (6 points) Let $p$ be a prime number and $1 \le k \le p - 1$. Prove
+    that $p \choose k$ is a multiple of $p$. Show that this is not true
+    if $p$ is not prime.
+
+    $${p\choose k} = \frac{p(p-1) \times ... \times (p - k + 1)}{1 \times 2 \times ... \times (k - 1) \times k} = p{p - 1 \choose k}$$
+
+    $${4\choose 2} = 6$$
+
+    6 is not a multiple of 4 and is not prime.
+
+8.  Verify that for any $n \ge k \ge 1$
+
+    $${n \choose 2} = {k \choose 2} + k(n - k) + {n - k \choose 2}$$
+
+    Then give a combinatorial argument for why this is true.
+
+    -   Observe that the binomial coefficient with two for all reals:
+
+        $${r\choose 2} = \frac{r (r - 1)}{ 2}$$
+
+    -   Apply fact to both sides:
+
+        $$\frac{n (n - 1)}{ 2} = \frac{k (k - 1)}{ 2} + k(n - k) + \frac{(n - k) (n - k - 1)}{ 2}$$
+
+    -   Multiply everything by two
+
+        $$n (n - 1) = k (k - 1) + 2k(n - k) + (n - k)(n - k - 1)$$
+
+    -   Expand out
+
+        $$n (n - 1) = k^2 - k + 2kn - 2k^2 + k+k^2-n-2 k n+n^2$$
+
+    -   Simplify
+
+        $$n (n - 1) = -n+n^2$$
+
+    -   Change form
+
+        $$n (n - 1) = n (n - 1)$$
+
+    -   Combinatorial argument:
+
+        -   $n \choose 2$ is the number of ways we can arrange $n$
+            objects into groups of 2.
+
+        -   Splitting $n$ into 2, one of those groups will be of size
+            $k$, making the other set of size $n - k$
+
+        -   Using the new partitions $k$ and $n-k$, arrange $n$ “things”
+            into groups of two.
+
+        -   The first partition is of length $k$, resulting in
+            $k\choose 2$ ways, and for the second part, we have $n-k$
+            choose 2 ways, explaining the first and last terms.
+
+        -   Now choose 2 “things”, one from different groups of 2, we
+            can choose 1 of the k objects and all of $n-k$ “things”,
+            which is equal to $k(n-k)$.
+
+
+
+
+## February 11th, 2013 - Lecture: Multinomial Theorem, Counting Problems, Inclusion-Exclusion
+
+### Topics
+
+- The multinomial theorem and applications 
+- The "tree method" for various counting problems involving card hands and committees
+- Inclusion-exclusion
+
+### Lecture
 
 - **Multinomial coefficients**: see reading 1.5 in February 7th reading
 	+ **Multinomial theorem**: see reading 1.5 in February 7th reading
@@ -778,6 +1001,12 @@ In each of the problems below, let P be a probability measure on a sample space 
 		\\[A_i = {39 \choose 5} \\]
 		- For any \\(i \le j \\), \\(|A_i \cap A_j|\\) is the same
 		\\[26 \choose 5 \\]
+		
+## February 11th, 2013 - Reading
+
+### 2.4 (from page 31)	
+
+
 		
 ## February 13th, 2013 - Lecture
 
@@ -935,3 +1164,70 @@ In each of the problems below, let P be a probability measure on a sample space 
 		
 3. Prove:
 \\[\sum_{i=0}^n (-1)^i {n \choose 1} = 0 \\]
+
+## February 18th, 2013 - Lecture
+
+### Boxes and balls
+
+- **Example**: There two boxes, the first contains 2 green balls and 7 res and the second contains 4 green and 3 red. I pick a random box, then a ball from that box. If I pick a red ball, what is the probability that I picked the first box?
+	+ E = "red ball was picked"
+	+ F = "1st box was picked
+	\\[P(F | E) = \frac{P(E \cap F)}{P(E)} = \\]
+	\\[\frac{\frac{7}{18}}{\frac{38}{63}} \\]
+	(I) \\[P(E \cap F) = P(E | F) \times P(F) = \\]
+	\\[\frac{7}{9} \times \frac{1}{2} = \frac{7}{18} \\]
+	(II) \\[ P(E) = P(E \cap F) + P(E \cap F^c) = \\]
+	\\[\frac{7}{18} + P(E | F^c) \times P(F^c) = \\]
+	\\[\frac{7}{18} + \frac{3}{7} \times \frac{1}{2}\\]
+
+### "Bayesian Reasoning"
+
++ A method for updating "belief"/"uncertainty" based on evidence.
++ This is useful when you want to know the probability of some outcome given some evidence 
+when you know the probability of the outcome and you also konw the quality of your evidence, and the probability
+of the evidence given the outcome, and finally, the probability of the evidence showing up if the outcome didn't 
+happen.
+	1. P(outcome|evidence)
+	2. P(outcome)
+	3. P(evidence|outcome)
+	4. P(evidence|outcome^c)
+
+### Bayesian Spam Filtering
+- Outdated but interesting anyway
++ The idea is that you estimate P(Email contains some word w | it's spam)
+	* Rolex
+	* Viagra
+	* Rutgers
+	* Cash
+	* LaTeX
++ Then the probability of the P(Emails contains the same word w | it's not spam)
++ P(Email is spam)
++ Using these, there is Bayes theorem, which computes P(outcome|evidence) = P(spam | contains w)
++ The attack is called Bayesian poisoning
+	* You retrain this when you email it everyday.
+	* Spammers pass it the words you are interested in, which you mark as spam, 
+		and then the ones you aren't interested in eventually pass.
+
+### Bayes Theorem
+
+- If E and F are events with \\(P(E) \neq 0 \\) and \\(P(E) \neq 0 \\), then
+\\[ P(F | E) = \frac{P(E | F) \times P(F)}{P(E | F)\times P(F) + P(E | F^c) \times P(F^c)} \\]
+	1. \\(P(E \cap F) = P(E | F) \times P(F) \\)
+	2. \\(P(E) = P(E | F) \times P(F) + P(E | F^c) \times P(F^c) \\)
+	
+### General version of Bayes theorem
+
+- For multiple outcomes
+- Let \\(F_1 ... F_n\\) be events that
+	1. Are mutually exclusive
+	2. \\(F_1 \cup ... \cup F_n = S \\)
+	3. \\(\forall i P(F_i \neq 0) \\)
+- Then for any j
+\\[ P(F_j | E) = \\]
+\\[\frac{P(E|F_j) \times P(F_j)}{\sum_{i=1}^n P(E|F_i) \times P(F_i)} \\]
+
+#### Example with Lizards
+
+- \\(F_1 ... F_n\\) are lizards in the family i
+- E = "something genome of new lizard"
+- Need to estimate the priors

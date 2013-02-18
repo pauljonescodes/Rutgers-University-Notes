@@ -88,7 +88,7 @@ The course is intended to provide a good understanding of some of the central do
 
 Final paper due on regularly scheduled exam date for this class period.
 
-## January 23rd, 2013 - Lecture
+## January 23rd, 2013 - Lecture: The alphabet of thought and method of demonstrating truths
 
 - Leibniz lived between 1646 to 1716
 - In the part of the world we now call Germany, there was terrible religious war and plague.
@@ -163,7 +163,7 @@ Final paper due on regularly scheduled exam date for this class period.
 		3. *Specimen of Dynamics* (1695)
 		4. 'New System of the nature and Communications of Substances'
 
-## January 28th, 2013 - Reading: The alphabet of thought and method of demonstrating truths
+## January 28th, 2013 - Reading
 ### Leibniz's 'Of an Oragnum or Ars Magna of Thinking' (1679)
 
 - The supreme happiness is the greatest increase in one's own perfection.
@@ -257,7 +257,7 @@ Final paper due on regularly scheduled exam date for this class period.
 
 - Anything that satisfies the subject satisfies the predicate.
 
-## January 30th, 2013 - Reading: Method of demonstration and the existence of God
+## January 30th, 2013 - Reading
 
 ### Leibniz's 'That a Most Perfect Being Exists' (1676)
 
@@ -282,7 +282,7 @@ Final paper due on regularly scheduled exam date for this class period.
 - Therefore, it is possible that all simples are compatible.
 - This argument is not sufficient to demonstrate that god necessarilly exists.
 
-## January 30th, 2013 - Lecture
+## January 30th, 2013 - Lecture: Method of demonstration and the existence of God
 
 - There are two things: things you think of through others and things you think of through itself.
 - There has to be simple concepts, otherwise we couldn't think of anything.
@@ -347,7 +347,7 @@ Final paper due on regularly scheduled exam date for this class period.
 	- All triangles have three angels.
 	- Water is liquid at room temperature.
 
-## February 4th, 2013 - Reading: The infinite analysis theory of contingent truth
+## February 4th, 2013 - Reading
 
 ### Homework
 
@@ -397,7 +397,7 @@ Final paper due on regularly scheduled exam date for this class period.
 	+ Exists means "is true"
 	+ This proposition is necessarily true.
 
-## February 4th, 2013 - Lecture
+## February 4th, 2013 - Lecture: The infinite analysis theory of contingent truth
 
 - Even without the proof of the possibility of god, the argument discussed last time has some "moral weight."
 - It's not valueless, even if nobody has proved the possibility of a being with all perfections.
@@ -466,7 +466,7 @@ Final paper due on regularly scheduled exam date for this class period.
 - 'On Freedom'
 - 'Primary Truths' (read but we will not talk about)
 
-## February 6th, 2013 - Reading: More consequences of the 'predicate in notion' theory of truth
+## February 6th, 2013 - Reading
 
 ### Principle of Sufficient Reason
 
@@ -549,7 +549,7 @@ The principle of sufficient reason states that nothing is without a ground or re
 	+ Corporeal substance can neither arise nor perish except through creation or annihilation.
 	+ Animate things neither arise nor perish, but are only transformed.
 	
-## February 6th, 2013 - Lecture
+## February 6th, 2013 - Lecture: More consequences of the 'predicate in notion' theory of truth
 
 - The infinite analysis will always yield a reason a true proposition is true.
 - We have the principle of sufficient reason.
@@ -827,3 +827,30 @@ The principle of sufficient reason states that nothing is without a ground or re
 ### Notable paradoxes
 
 - If we know about an individual substance that has a complete concept, then certain things have to be true about everything that satisfy that concept.
+
+## February 18, 2013 - Reading
+
+### Excerpts from Leibniz's first two letters to Arnauld (May 1686; 14 July, 1686)
+
+## February 18th, 2013 - Lecture: Fatal necessity and the structure of the concept of an individual substance. 
+
+- Leibniz's points:
+	1. When god creates Adam
+		* He does it determinately, and absolutely.
+		* When god creates Adam, it is part of a whole.
+	2. It's one thing to consider truths about kinds of things, it's abstract.
+		* Once you get an individual, there's one and only one thing which that concept can apply to.
+		* So, Adam, is completely individual and can be inditical to no other.
+		* This fits in to Leibniz's view of infinite analysis and identity.
+	3. Arnalud: Either the connection Adamn and Adam's posterity is intrinsicdependant of free decrees of god.  Or the connection is intrinsic and necessary. (This bothers him because god would not have a choice.)
+		* If god creates Adam and god freely decrees certain laws and freely decrees certain particular events, then Adam's posterity exists.
+		* Leibniz stresses the connection between Adam and Adam's posterity, as it is "packed into" Adam.
+		* So you just look at the concept
+- Adam has a complete concept which contains all the predicates which are true of Adam and everything that happens after he dies, the connection between them contigent laws, but everything is there in the concept.
+- Argument, consider Adam-r
+	+ There is no reasons to say Adam-r = Adam.
+	+ So Adam is not identical to Adam-r
+- The original meaning of *a priori* was something you know from it's cause, it was in Leibniz's time which it became known as the "before senses" version.
+- **Super-esssentialism**: For all predicates *P*, if *i* is *P*, then necesarilly *i* is *P*.
+- **Moderate-essentialism**: For such predicates *P*, if *i* is *P*, then necesarilly *i* is *P* and for some predicates Q, if *i* is Q, necesarilly *i* is Q.
+- **Super-intrinsicalism**: If there were a thing *x* which differs in any predicate from *i*, *x* would not be equal to *i*.
