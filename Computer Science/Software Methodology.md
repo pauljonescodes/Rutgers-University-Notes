@@ -681,35 +681,41 @@ interactive mode.
 
 #### Command Line Mode 
 
--   To list existing users: \
-    `java cs213.photoAlbum.simpleview.CmdView listusers` \
-    Output: \
-    `<userId1>` \
-    `<userId2>` \
-    `...` \
-    Or: \
-    `no users exist`
+- To list existing users:
 
--   To add a new user: \
-    `java cs213.photoAlbum.simpleview.CmdView adduser <user id> "<user name>"`
-    \
-    Output: \
-    `created user <user id> with name <user name>` \
-    Or: \
-    `user <user id> already exists with name <user name>`
+		java cs213.photoAlbum.simpleview.CmdView listusers
+		
+		Output:
+			<userId1>
+			<userId2>
+			...
+		Or: 
+	    	no users exist
 
--   To delete a user: \
-    `java cs213.photoAlbum.simpleview.CmdView deleteuser <user id>` \
-    Output: \
-    `deleted user <user id>` \
-    Or: \
-    `user <user id> does not exist `
+-   To add a new user:
 
--   To login as an existing user: \
-    `java cs213.photoAlbum.simpleview.CmdView login <user id>` \
-    (*view now goes into interactive mode*) \
-    Or: \
-    `user <user id> does not exist `
+		java cs213.photoAlbum.simpleview.CmdView adduser <user id> <user name>
+    
+		Output: 
+			created user <user id> with name <user name>
+		Or: 
+			user <user id> already exists with name <user name>
+
+-   To delete a user:
+
+		java cs213.photoAlbum.simpleview.CmdView deleteuser <user id>
+		
+		Output:
+			deleted user <user id>
+		Or:
+			user <user id> does not exist 
+
+-   To login as an existing user:
+    
+    	java cs213.photoAlbum.simpleview.CmdView login <user id>` 
+    		(*view now goes into interactive mode*) 
+    	Or: 
+    		user <user id> does not exist `
 
 **Note**: You can run these from inside Eclipse by changing the program
 arguments every time (See the Eclipse page for how to set program
@@ -717,55 +723,66 @@ arguments). However, this can get cumbersome. Instead, you can work in a
 command window/shell, by going to the bin directory inside the project,
 and running the **java** command from there.
 
-**Interactive Mode**
+#### Interactive Mode
 
--   To create an album: \
-     `createAlbum "<name>"` \
-    Output: \
-    `created album for user <user id>:` \
-    `<name>` \
-    Or: \
-    `album exists for user <user id>:` \
-    `<name>`
--   To delete an album: \
-     `deleteAlbum "<name>"` \
-    Output: \
-    `deleted album from user <user id>:` \
-    `<name>` \
-    Or: \
-    `album does not exist for user <user id>:` \
-    `<name>`
--   To list all albums, with their number of photos and the range of
-    dates that the photos were taken: \
-     `listAlbums` \
-    Output: \
-    `Albums for user <user id>: ` \
-    `<name> number of photos: <numberOfPhotos>,  <start date> - <end date>`
-    \
-    `... ` \
-    Or: \
-    `No albums exist for user <user id>`
--   To list the photos in an album: \
-    `listPhotos "<name>"` \
-    Output: \
-    `Photos for album <name>:` \
-    `<fileName> - <date>` \
-    `...`
--   To add a photo to an album: \
-    `addPhoto "<fileName>" "<caption>" "<albumName>"` \
-    Output: \
-    `Added photo <fileName>:` \
-    `<caption> - Album: <albumName>` \
-    Or: \
-    `Photo <fileName> already exists in album <albumName>` \
-    Or: \
-    `File <fileName> does not exist`
+-   To create an album: 
 
-    **Notes**:
+		createAlbum "<name>"
+		
+		Output: 
+			created album for user <user id>: 
+			<name>
+		Or: 
+			album exists for user <user id>: 
+			<name>
+			
+-   To delete an album:
+	
+		deleteAlbum "<name>"
+    
+		Output:
+			deleted album from user <user id>:
+			<name>
+		Or: 
+			album does not exist for user <user id>: 
+			<name>
+			
+-   To list all albums, with their number of photos and the range of dates that the photos were taken:
+	
+		listAlbums
+		
+		Output:
+			Albums for user <user id>: 
+			<name> number of photos: <numberOfPhotos>,  <start date> - <end date>`
+			... 
+		Or:
+			No albums exist for user <user id>
+			
+-   To list the photos in an album: 
+    
+    	listPhotos "<name>"
+    	
+    	Output: 
+    		Photos for album <name>:
+    		<fileName> - <date>
+    		...
+    		
+-   To add a photo to an album: 
+    
+    	addPhoto "<fileName>" "<caption>" "<albumName>"
+    
+    	Output: 
+    		Added photo <fileName>:
+		    <caption> - Album: <albumName>
+		Or:
+			Photo <fileName> already exists in album <albumName>
+		Or:
+			File <fileName> does not exist
 
-    -   The date and time for the photo should be obtained from the
+	+ Notes:
+		-   The date and time for the photo should be obtained from the
         properties of the photo file.
-    -   The caption is a property of the photo, not the album. This
+        -   The caption is a property of the photo, not the album. This
         means if you add a photo to more than one album, you specify the
         caption when adding to the first album. Then, when adding to
         subsequent albums, you specify an empty string for the caption,
@@ -774,77 +791,94 @@ and running the **java** command from there.
         original caption, so it's clear that the caption has been
         retained.
 
--   To move a photo from one album to another: \
-    `movePhoto "<fileName>" "<oldAlbumName>" "<newAlbumName>"` \
-    Output: \
-    `Moved photo <fileName>:` \
-    `<fileName> - From album <oldAlbumName> to album <newAlbumName>` \
-    Or: \
-    `Photo <fileName> does not exist in <oldAlbumName>`
+-   To move a photo from one album to another: 
+    
+    	movePhoto "<fileName>" "<oldAlbumName>" "<newAlbumName>"
+    
+    	Output: 
+    		Moved photo <fileName>:
+    		<fileName> - From album <oldAlbumName> to album <newAlbumName>
+    	Or: 
+    		Photo <fileName> does not exist in <oldAlbumName>
 
-    **Note**: If the photo already exists in the new album, the command
+    + Note: If the photo already exists in the new album, the command
     should return silently without doing anything.
 
--   To remove a photo from an album: \
-    `removePhoto "<fileName>" "<albumName>"` \
-    Output: \
-    `Removed photo:` \
-    `<fileName> - From album <albumName>` \
-    Or: \
-    `Photo <fileName> is not in album <albumName>`
--   To add a tag to a photo: \
-    `addTag "&ltfileName>" <tagType>:"<tagValue>"` \
-    Output: \
-    `Added tag:` \
-    `<fileName> <tagType>:<tagValue>` \
-    Or: \
-    `Tag already exists for <fileName> <tagType>:<tagValue>`
--   To delete a tag from a photo: \
-    `deleteTag "&ltfileName>" <tagType>:"<tagValue>"` \
-    Output: \
-    `Deleted tag:` \
-    `<fileName> <tagType>:<tagValue>` \
-    Or: \
-    `Tag does not exist for <fileName> <tagType>:<tagValue>`
--   To list photo info: \
-    `listPhotoInfo "&ltfileName>"` \
-    Output: \
-    `Photo file name: <fileName>` \
-    `Album: <albumName>[,<albumName>]...` \
-    `Date: <date>` \
-    `Caption: <caption>` \
-    `Tags:` \
-    `<tagType>:<tagValue>` \
-    `...` \
-    (grouped by tag type, in the order location first, then people, and
-    then others, sorted by tag value within each type) \
-    Or: \
-    `Photo <fileName> does not exist`
+-   To remove a photo from an album: 
+    
+    	removePhoto "<fileName>" "<albumName>"
+    
+    	Output:
+    		Removed photo:
+    		<fileName> - From album <albumName>
+    	Or: 
+    		Photo <fileName> is not in album <albumName>
+    		
+-   To add a tag to a photo:
+    
+    	addTag "<fileName>" <tagType>:"<tagValue>"
+    
+    	Output:
+    		Added tag:
+    		<fileName> <tagType>:<tagValue>
+    	Or: 
+    		Tag already exists for <fileName> <tagType>:<tagValue>
+    		
+-   To delete a tag from a photo: 
+    
+    	deleteTag "<fileName>" <tagType>:"<tagValue>"
+    
+    	Output:
+		    Deleted tag:
+		    <fileName> <tagType>:<tagValue>
+		Or: 
+			Tag does not exist for <fileName> <tagType>:<tagValue>
+
+-   To list photo info: 
+    
+    	listPhotoInfo "<fileName>"
+    
+		Output:
+		    Photo file name: <fileName>
+		    Album: <albumName>[,<albumName>]...
+		    Date: <date>
+		    Caption: <caption>
+		    Tags:<tagType>:<tagValue>
+		    ...
+		    (grouped by tag type, in the order location first, then people, and
+		    then others, sorted by tag value within each type)
+		Or: 
+			Photo <fileName> does not exist
+			
 -   To retrieve all photos taken within a given range of dates, in
     chronological order: \
-    `getPhotosByDate <start date> <end date>` \
-    Output: \
-    `Photos for user <user id> in range <start date> to <end date>:` \
-    `<caption> - Album:   <albumName>[,<albumName>]... - Date: <date>` \
-    `...`
--   To retrieve all photos that have all the given tags, in
-    chronological order. Tags can be specified with or without their
-    types: \
-    `getPhotosByTag [<tagType>:]"<tagValue>" [,[<tagType>:]"<tagValue>"]...`
-    \
-    Output: \
-    `Photos for user <user id> with tags <search string>:` \
-    `<caption> - Album: <albumName>[,<albumName>]... - Date: <date>` \
-    `...`
--   To end the interactive mode (and the session): \
-     `logout` \
-    Output: none
+    
+    	getPhotosByDate <start date> <end date>`
+		
+		Output: 
+			Photos for user <user id> in range <start date> to <end date>:
+			<caption> - Album:   <albumName>[,<albumName>]... - Date: <date>
+			...
+			
+-   To retrieve all photos that have all the given tags, in chronological order. Tags can be specified with or without their types:
+    
+    	getPhotosByTag [<tagType>:]"<tagValue>" [,[<tagType>:]"<tagValue>"]...
+ 
+    	Output:
+    		Photos for user <user id> with tags <search string>:`
+    		<caption> - Album: <albumName>[,<albumName>]... - Date: <date>
+    		...
+    		
+-   To end the interactive mode (and the session):
+
+		logout
+		Output: none
 
 Any errors (illegal parameters, invalid dates) should be handled
 gracefully. No stack traces should be printed out (the user shouldn't
 have to know what an exception is). Instead, a one sentence description
 of what exactly went wrong should be printed. The format is as follows:
-\
+
 `Error: <description of error>`
 
 **Important:**
@@ -1109,12 +1143,21 @@ This run should produce the following output:
 ## February 18th, 2013 - Recitation 4: Project Q&A, Debugging in Eclipse, Polymorphism
 
 1.  Project Q&A
-
+	+ This friday we have to hand in the APIs, how we're going to design it.
+	+ We have "work to do", we have to implement what we do this Friday.
+	+ Making an API is what you do in the real world.
+	+ This is not naive paper work.
+	+ Minor changes are likely okay, but major changes will lead to deductions.
+	+ Photo objects and data containers are only getters and setters?
+		* Basically, yes.
+	
 2.  Debugging in Eclipse
 
-    Download the (buggy) code in [HeapSort.java](Heapsort.java) and
+    Download the (buggy) code in `HeapSort.java` and
     import it into Eclipse. Use the debugger to track down the bug(s)
     and fix the code.
+
+- 
 
 3.  There is an application that defines a `Person` class and a
     `Student` class. The `Student` class is defined as a subclass of
