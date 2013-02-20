@@ -1467,3 +1467,43 @@ I am still uncertain as to what veteran C programmers would do to solve
 this problem. I think that this will be lessened as the semester
 continues. In this one experience, however, I have come to like C more
 than Java. Objective-C holds a special place in my heart, however.
+
+## February 18th, 2013 - Recitation
+
+### Decimal to Binary
+	_   _   _   _   _  
+	2^4 2^3 2^2 2^1 2^0
+
+### Binary to Decimal
+
+	1   0   0   1   0
+	2^4 2^3 2^2 2^1 2^0
+	
+	2^4 = 16
+	2^1 = 2
+	____+___
+	      18
+		      
+### Hex to Binary
+
+The general algorithm is to convert each individual number into binary,
+and then concatenate the results.
+
+	2   A   8   C
+	
+	2 -> 0010
+	A -> 1010
+	8 -> 1000
+	C -> 1100
+	____+____
+	0001001001011010
+		
+#### Hex alphabet values 
+		
+	A -> 10
+	B -> 11
+	C -> 12
+	D -> 13	
+	E -> 14
+	F -> 15
+		

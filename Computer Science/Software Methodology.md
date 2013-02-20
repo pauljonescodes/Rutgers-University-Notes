@@ -659,8 +659,12 @@ are two contrasting models:
     For your project, you will need to implement **session persistence**
     only.
 
-    You **are required** to use the `java.io.Serializable` interface,
-    and the `java.io.ObjectOutputStream`/`java.io.ObjectInputStream`
+    You **are required** to use the 
+    		java.io.Serializable
+    interface,
+    and the
+    		java.io.ObjectOutputStream
+    		java.io.ObjectInputStream
     classes to store and retrieve data.
 
     Although you are only required to implement one model (flat file,
@@ -1039,17 +1043,10 @@ Anything else will result in a deduction from the score.
 
 The project will be graded on the following criteria:
 
-**Good design:** How well the project conforms to the MVC pattern, how
-well your submission of February 22 anticipated the completed
-implementation, and how well your UML diagram represents the code. \
-\
-**Implementation**: Everyting described in the the **Model**, **View**,
-and **Control** specifications. \
-\
-**Documentation:** Appropriately detailed javadocs \
-\
-**Specification Adherence:** How well your project conforms to the
-guidelines in this document
+- **Good design:** How well the project conforms to the MVC pattern, how well your submission of February 22 anticipated the completed implementation, and how well your UML diagram represents the code. 
+- **Implementation**: Everyting described in the the **Model**, **View**, and **Control** specifications. 
+- **Documentation:** Appropriately detailed javadocs
+- **Specification Adherence:** How well your project conforms to the guidelines in this document
 
 ### Sample Run
 
@@ -1247,5 +1244,62 @@ This run should produce the following output:
     ColorPrinter, DuplexPrinter, MultiTrayPrinter)?  Describe the
     advantages and disadvantages of both approaches.
 
+## Lecture - February 19th, 2013
 
+### Object input and output streams
 
+- Jave provides a convinient way to dump all data.
+
+		public static final String dirName = "dat"
+		public static final String fileName = "filename"
+		
+		public static void writeApp(GeomApp gapp) 
+		throws IOException {
+			ObjectOutputStream oos = new ObjectOutputStream(
+				new FileOutputStream(
+					dirname + File.separator + filename));
+					
+			oos.writeObject(gapp);
+			// It's really that simple. (TM)
+		}
+		
+- This takes the object and writes the definitions of the classes before it writes the instances.
+- It'll actually write the geomApp class and it has references to points and it'll write that stuff out.
+- When it gets to an instance it'll give it a serial number.
+- Serial numbers are given so that if there are multiple instances of a given class there is only one definition that they all refer to.
+
+		public static GeomApp readApp() 
+				throws IOException, ClassNotFoundException {
+			ObjectInputStream oos = new ObjectInputStream(
+				new FileInputStream(
+					dirname + File.separator + filename));
+					
+			this = (GeomApp)ois.readObject(filename);
+		}
+		
+
+- Say you have a class which you serialize and someone else has it and you share the data, but that other person changes the class.
+	+ What do?
+- This means that version 1 data could be incompatible with version 2. How do you fix this.
+- You have to declare a serial version UID.
+	+ This is a static variable.
+	+ By default it is 1.
+	+ When you serialize, it doesn't write out the generated UID, it makes the 1.
+	+ So when you have new datatypes, it's compatible.
+		* This seems like magic.
+
+### Abstract Classes
+
+- When several classes have a common conceptual foundation, they can be generalized into an abstract superclass.
+- In Java a class is defined abstract in the class header. 
+- An abstract method is one that has no implementation
+	+ An abstract class may have zero or more abstract method.
+- An abstract class may implement non default constractors. 
+- An abstract class cannot be instatiated even if all the methods have been implemented.
+
+#### Inheritancee Polymorphism
+
+- Dynamically binding to same functionality in classes at different levels of an inhertance hierarchy.
+- This is interesting because it allows to write code that allows you to change entire implementation usage with just one change in code, so long as it implements an abstract class.
+- Dynamically binding to same functionality in classes at different levels of an inhertance hirarchy using a "least common denominator" type.
+	+ Applied more boradly than just to abstract classes.

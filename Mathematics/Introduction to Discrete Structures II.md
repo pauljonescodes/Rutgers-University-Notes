@@ -1004,7 +1004,7 @@ Homework 1
 		
 ## February 11th, 2013 - Reading
 
-### 2.4 (from page 31)	
+### 2.4 Some Simple Propositions (from page 31)	
 
 
 		
@@ -1165,7 +1165,11 @@ Homework 1
 3. Prove:
 \\[\sum_{i=0}^n (-1)^i {n \choose 1} = 0 \\]
 
-## February 18th, 2013 - Lecture
+## February 18th, 2013 - Lecture: Bayes's Theorem
+
+### Topics: 
+- Bayes's theorem: Statement, examples, applications to spam filtering and other fields. 
+- General version of Bayes's theorem and the red/black hat problem.
 
 ### Boxes and balls
 
@@ -1231,3 +1235,9 @@ happen.
 - \\(F_1 ... F_n\\) are lizards in the family i
 - E = "something genome of new lizard"
 - Need to estimate the priors
+
+## February 18th, 2013 - Reading
+
+### Ross 3.3
+
+### Rosen 7.3

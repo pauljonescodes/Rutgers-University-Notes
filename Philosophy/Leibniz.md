@@ -828,9 +828,13 @@ The principle of sufficient reason states that nothing is without a ground or re
 
 - If we know about an individual substance that has a complete concept, then certain things have to be true about everything that satisfy that concept.
 
-## February 18, 2013 - Reading
+## February 18, 2013 - Reading: Excerpts from Leibniz's first two letters to Arnauld (May 1686; 14 July, 1686)
 
-### Excerpts from Leibniz's first two letters to Arnauld (May 1686; 14 July, 1686)
+### Remarks on Arnauld's Letter about My Proposition That the Individual Notion of Each Person Includes Once and for All Everything That Will Ever Happen to Him [May 1686]
+
+- Arnauld: god was free to create Adam or not, but assuming that he wanted to create him, everything that has happened to humankind had to happen, or ought to happen, by fatal necessity.
+	+ Absolute and hypothetical necessity
+	+ Arnauld is speaking only of hypotheical necessity
 
 ## February 18th, 2013 - Lecture: Fatal necessity and the structure of the concept of an individual substance. 
 
