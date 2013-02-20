@@ -34,7 +34,7 @@
 
 #### Power Sets
 - Given a set `S`, the power set of S is the set of all subsets of the set `S`. The power set of `S` is denoted by `P(S)`.
-- **Formula**: If a set has `n` elements, then its power set has `2n` elements.
+- **Formula**: If a set has `n` elements, then its power set has `2^n` elements.
 
 #### Cartesian Products
 - **Ordered n-tuples**: The ordered `n`-tuple (`a_1`, `a_2`, … , `a_n`) is the ordered collection that has `a_1` as its first element, `a_2` as its second element, . . . , and `a_n` as its `n`th element.
