@@ -1507,3 +1507,108 @@ and then concatenate the results.
 	E -> 14
 	F -> 15
 		
+## February 18th, 2013 - Lecture
+
+	_______
+	7     0
+	
+	_______________
+	15            0
+	
+	_______________________________
+	31                            0
+	
+- The byte ordering in the real world starts with the most significiant and ends with the least significant.
+
+### Left shifting
+
+- A byte to shift on and a direction.
+- It can be evrything but negative.
+- Shfiting by zero is nothing is changing.
+- Sometimes your calcuation is dynamically shifting based on some information, which could result in zero.
+- If in 32 bit quantity 0 is our least significant and 31 is the most, then shifting to the left yields to the left bit being lost (?)
+- In C operators are `<<` and `<<=`
+- Shifting left n bits is exactly euivilent to mutiplying 2^n
+	+ if you want a nice way to multiply something by two, this is ideal.
+
+			//__ these two bits get discarded
+				0000 1000 << 2
+				0010 0000
+	    		   //^^ these two bits get zeroes
+	       
+- If I had a 32 bit number, you'd just move the "thrown out stuff" into 64 bits, else you lose information.
+- If you shift an n bit number by n, it results in 0.
+
+### Right shift
+
+#### Logical 
+
+- This means our new high bits are zero, including sign.
+
+#### Arithmetic 
+
+- Preserves sign, if you shift a negative number, it wont discard the last bit.
+
+### Bitwise operations
+
+- **And**: C operator is `&`
+
+		1100
+		1011
+		&___
+		1000
+	
+	* This is all the posibilites for a single bit, evidently.
+	* They both have to be one. They both have to be one.
+	* This is comparing numbers to their respective others in the other number and returning a number which represents where they are both one, or there is at least one zero.
+- **Or**: C operator is `|`
+		
+		1100
+		1010
+		|___
+		1110
+			
+	* Just like the last operation, but the result is or.
+	* This means only and at least on of the bits must be one for the final bit to be one.
+- Exclusive or: C operator is `^`
+	
+			1100
+		^ 1010
+		______
+		  0110
+
+- **Not** C operator is `~`
+
+		~10
+		 01
+		 
+
+### DeMorgan's Law
+
+		A || B = !(!A && !B)
+		A && V = !(!A || !B)
+		
+### Using two's complement
+
+- Do x and y have the same sign?
+
+		(x^y) < 0
+		
+### Swapping fixed-point x and y
+
+		x ^= y
+		y ^= x
+		x ^= y
+		
+
+### Rotation
+
+		unsigned int rshift (unisgned int val, unisgned int n) {
+			unisgned int intsize = sizeof(int)*8;
+			
+			if (n == 0)
+				return;
+			else {
+				return value >> n | value << (intsize - n);
+			}
+		}

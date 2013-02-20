@@ -835,6 +835,8 @@ The principle of sufficient reason states that nothing is without a ground or re
 - Arnauld: god was free to create Adam or not, but assuming that he wanted to create him, everything that has happened to humankind had to happen, or ought to happen, by fatal necessity.
 	+ Absolute and hypothetical necessity
 	+ Arnauld is speaking only of hypotheical necessity
+- The other reply to this is that god is resolving to create Leibniz cannot fail to create a nature capable of thought.
+- Arnauld admits in good faith that what can be deduced from the notions of individual is the same process as deducing the notions of a spehere from its properties.
 
 ## February 18th, 2013 - Lecture: Fatal necessity and the structure of the concept of an individual substance. 
 
@@ -858,3 +860,63 @@ The principle of sufficient reason states that nothing is without a ground or re
 - **Super-esssentialism**: For all predicates *P*, if *i* is *P*, then necesarilly *i* is *P*.
 - **Moderate-essentialism**: For such predicates *P*, if *i* is *P*, then necesarilly *i* is *P* and for some predicates Q, if *i* is Q, necesarilly *i* is Q.
 - **Super-intrinsicalism**: If there were a thing *x* which differs in any predicate from *i*, *x* would not be equal to *i*.
+
+## February 20th, 2013 - Reading: Excerpts from letters to Arnauld 28 Nov/8 Dec 1686 and 30 Apr 1687; 9 Oct 1687; 
+
+## February 20th, 2013 - Lecture: Critique of Descartes' doctrine of corporal substance, substantial forms, corporeal substances
+
+- This was written on the board, on page 85 of the reading. Where a C-body is a cartesian body.
+	1. Every C-body is composed of C-bodies, so a C-body is an aggregate.
+	2. An aggregate is a collection of things in some relation (its unity is in some way mental).
+		* Several things collected together as one thing.
+	3. An aggreagate is real only if its constituents are true unities (substances).
+	4. So if an aggreagate is composed of aggregates, which are composed of aggregates endlessly - the decomposition set contains nothing but aggregates, and it is unreal.
+	5. So a C-body is unreal.
+- Heaps of stones
+	+ Classic example of vagueness
+	+ Take one stone away, do you still have a heap of stones?
+	+ Well, yeah, if it's big enough.
+	+ But then what about if you do it again?
+	+ And again?
+	+ When you only have two?
+	+ When you only have one?
+	+ When you have none?
+- Bodies may be like heap of stones, indeterminate about their number.
+- Unless you can percieve something like substanial forms.
+- Either bodies are merely extended on par with rainbows and heaps, or they have substantial forms and souls.
+- What's wrong with material things that are extended?
+- Descartes maintains that bodies are subtances and are extended in three-dimensions.
+	+ Minds are entirely different things.
+- A substance could have in its instance nothing but extension.
+- Descartes has an extremely difficult time explaining what a human being is.
+- "You've got some extension and you attach a human mind to it and you have a subtantial form."
+- Arnauld is a Cartesian, he think Descartes is right about the mind and body.
+- If a body is a substance, it has to be connected to a substantial form.
+- A soul is a substance, so it has to be connected to a substantial form.
+- In his second letter, Arnauld focuses on two questions:
+	1. World apart thesis
+		* The body can't have causal influence on the soul and vice versa
+	2. Something that's merely extended can't be a substance.
+		* A Cartesian body can't be a substance.
+		* Leibniz:
+		
+				soul = substantial form + body = substance
+		* He never refers to the soul as a simple substance.
+		* There is a kind of duality here, the soul as a substantil form.
+		* He points out that it satisfies the defintion.
+			1. Immaterial,
+			2. Not composed of parts,
+			3. Can't be destroyed,
+			4. Can't be corrupted
+			5. Contains all past and future states
+			6. All states of the universe
+		* Substances as parts of substances.
+		* What he calls substances on the right side of the formula above is "corporeal."
+		* He expressed uncertainty about what are corporeal.
+		* A block of marble is not substanial forms.
+		* Human beings have substantial forms, but animals may or may not.
+		* Intrinsic unity and **unity by accident**: individual things arranged in a useful way, dependant on relations.
+		* Every extended thing is divided into parts, which may or may not be seperated.
+		* Arnauld - **Substance**: A substance is an entity which is not a mode or state.
+		* Leibniz - The essense of an aggregate consists in modes or states of its constituents.
+		* So there are no aggregates unless there are substances, which are not aggregates.
