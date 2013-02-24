@@ -1,4 +1,4 @@
-# Discrete Structures
+# Discrete Structures <small>with Professor Tomasz Imielinski</small>
 ## Chapter 2 - Sets, Functions, Sequences, Sums, and Matrices
 ### Section 1 - Sets
 #### Introduction

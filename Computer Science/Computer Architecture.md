@@ -1,4 +1,4 @@
-# Computer Architecture Notes 
+# Computer Architecture <small>with Professor Brian </small>
 
 ## Description 
 This course covers the fundamental issues in the design of modern computer systems, including the design and implementation of key hardware components such as the processor, memory, and I/O devices, and the software/hardware interface.
@@ -1171,9 +1171,10 @@ Implement a program called calc with the following usage interface:
 The first argument, `<op>`, is either the string `+`, for addition, or `-`, for subtraction. If you want to implement multiplication, then `<op>` can also be the string `*`. (If you do implement multiplication, make sure to say so in your readme.pdf file so that the TAs know to check your program for this functionality.)
 The next two arguments, `<number1>` and `<number2>` are integers of arbitrary size. Each of these numbers will be given in the form of:
 
-\\[ −?(b|o|d|x)d_n d_{n−1} ...d_1 d_0 \\]
+		−?(b|o|d|x)d_n d_{n−1} ...d_1 d_0 
 
 which can be interpreted as: a number can optionally start with a `−` sign, followed by a base indicator, where `b` means the number is a binary number, `o` means octal, `d` means decimal, and `x` means hexadecimal. \\(d_nd_{n−1}...d_1d_0 \\) are the digits of the number.
+
 The final argument, `<output base>`, gives the base that the resulting number should be printed out in. Like the base indicator for the input numbers, this argument can be one of four strings: `b` for binary, `o` for octal, `d` for decimal, and `h` for hexadecimal. Your program should output the answer in the same form as the input numbers (that is, the output number should follow the regular expression given above).
 Some examples:
 
@@ -1188,9 +1189,12 @@ Some examples:
 		$ ./calc + -d10 -d4 b
 		-b1110
 
-Note that the numbers in the first example are too large to fit in a 32-bit integer type in C; this is why the arbitrary size is emphasized above. Using a 64-bit integer type is not the solution since the input integers can be arbitrarily large. Rather, you need to design data structures and algorithms that can handle arbitrarily large numbers. Assignment update: any decimal number that we ask you to handle—either an input decimal number or output in decimal format—will be less than a 32-bit integer.
+**Note**: The numbers in the first example are too large to fit in a 32-bit integer type in C; this is why the arbitrary size is emphasized above. Using a 64-bit integer type is not the solution since the input integers can be arbitrarily large. Rather, you need to design data structures and algorithms that can handle arbitrarily large numbers. 
+
+**Assignment update**: any decimal number that we ask you to handle—either an input decimal number or output in decimal format—will be less than a 32-bit integer.
 Important: You must write the base conversion code yourself. You may not use type-casting, libraries, or output formats in printf(). You may use standard C arithmetic operations. You may use the C standard libraries for functionality not related to the conversion (e.g., string handling functions).
-Important: If calc detects an error in the inputs, it should print out an error message that starts with the string “ERROR”, followed by a string that gives an informative message about the error that it detected.
+
+**Important**: If calc detects an error in the inputs, it should print out an error message that starts with the string “ERROR”, followed by a string that gives an informative message about the error that it detected.
 
 ### Format Interpretation
 
@@ -1612,3 +1616,130 @@ and then concatenate the results.
 				return value >> n | value << (intsize - n);
 			}
 		}
+
+## February 20th, 2013 - Lecture
+
+- CPU
+	+ ALU
+	+ Control logic
+	+ PC (Instruction Pointer)
+	+ Registers
+	+ Condition Codes
+- Memory
+	+ OS code and data
+	+ Object code
+	+ Program data
+	
+### Memory
+
+- I've got these buses which I communicate addresses through from the CPU to the memory.
+- "Go to address 3 and read"
+- Go to address 4 and write.
+
+### Processes: ALU and Registers
+
+- There are functions on operarnds A nd B
+
+### Why do we need registers?
+
+- (iCQ): The register file looks just like a mini-memory
+
+### Basic CPU function
+
+1. Fetch[PC++]
+2. Decode
+3. Execute
+4. See 1.
+
+### Assembly characteristics
+
+- Minimal data types
+	+ Integer data of 1, 2, or 4 bytes
+		* Data values
+		* Addresses
+	+ Floating point data of 4, 8, or 10 bytes
+	+ No aggregate types such as arrays or structures
+		* Just continuosly allocated bytes in memory.
+- No type checking
+	+ Interpretation of data format depends on instruction
+	+ No protection against misinterpretation of data
+- There's the idea of a process
+	+ Every program is running in its own virtual address space
+	+ If I do something and I can read only the stuff on my process
+- Primitive operationnnnnns
+	+ Perform arithmattttic function  or memory data
+	+ Transfer data between memory and regggister
+		* Load data from memory into register
+
+### x86 Characteristic
+
+- Variable length between 1 and 15 bytes
+- Can address memory directly in most instructions
+- Uses little endian format
+
+### `MOV` instruction
+
+- Most common instruction is data transfer instruction
+	+ `mov s, d`
+		* Copy value at S to D
+- Used to copy data from:
+	+ Memory to register
+	+ Register to memory
+	+ Register to register
+	+ Constant to register
+	+ Constant to memory
+- Registers
+
+		                 +-----------------------------+
+		                 | 32 bit| 16 bit    |   8 bit |
+		                 +-------+-----------+---------+
+		                 | %eax	|	%ax		|	%ah   |
+		                 | %ebx	|	%bx		|	%bh   |
+		                 | %ecx	|	%cx		|	%ch   |
+		                 | %edx	|	%dx		|	%dh   |
+		                 | %ebp	|	%bp		|	%ac   |
+		points to stack->| %esp	|	%sp		|	%bc   |
+		program counter->| %eip	|	%ip		|	%cc   |
+		seg addressing ->| %esi	|	%si		|	%dl   |
+		                 +-------+-----------+---------+
+		
+		     +-----------------------------------+
+		     |                    +-------------+|
+		%eax |                 %ax|%ah   |  %al || 
+		     |                    +-------------+|
+		     +-----------------------------------+
+		     31                   15             0
+		
+### A little bit about the stack
+
+- I am pushing and popping individual values on this stack, a word byte
+- Double word, quad work.
+- 1, 2, 4 eight byte values.
+- From the stack I can build a call stack, indivudal values for all I need for a particular function invocation.
+- "Call brain" or "activation brain"
+- With the intel arch, a few things to take away:
+	+ Grow towards smaller addresses
+	+ `%esp` always points to the top
+	+ When we push to the stack, we do it in two steps:
+		1. Decrement `%esp` register by 4, has an address in it.
+		2. Copy whatever operand to wherever the `%esp` pointer points.
+	+ Pop
+		1. Copy that value, wherever you're going to take it.
+		2. Add 4 to `%esp`
+		
+### Instructionrs
+
+- An assembly program is just an ASCII file.
+- You make it in text editors.
+- An assembly program is a sequence of assembly instructions.
+- The general form of the assembly instruction is the neumonic which is intented, and then operands.
+- The neumonic defines the operation.
+- There may be zero or more operands depending on the operation.
+- Multiple operands are seperated by commas.
+- Instructions:
+
+		movb    movsbw    movzbw
+		movw    movsbl    movzbl
+		movl    movswl    movswl
+		movq    movswq    movswq
+		        movslq    movslq

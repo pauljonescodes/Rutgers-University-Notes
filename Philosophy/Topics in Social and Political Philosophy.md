@@ -1,4 +1,4 @@
-# Topics in Social and Political Philosophy Notes
+# Topics in Social and Political Philosophy <small>with Professor Mark Colby</small>
 ## October 19th, 2012
 ### Chapter 4 of *Utilitarianism* 
 1. Objectivity of judgement about "good."

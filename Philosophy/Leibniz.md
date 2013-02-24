@@ -1,4 +1,4 @@
-# Leibniz Notes 
+# Leibniz <small>with Professor Martha Bolton</small>
 
 ## Syllabus 
 
@@ -920,3 +920,113 @@ The principle of sufficient reason states that nothing is without a ground or re
 		* Arnauld - **Substance**: A substance is an entity which is not a mode or state.
 		* Leibniz - The essense of an aggregate consists in modes or states of its constituents.
 		* So there are no aggregates unless there are substances, which are not aggregates.
+- Read for monday the assignment for wednesday
+
+## February 25th, 2013 - Reading: Chris Swoyer, 'Leibnizian Expression', *Journal of the History of Philosophy* 33 (1995), 65-94
+
+### Leibniz on Expression
+
+> I set out the relevant data for this project, including Leibniz's terse characterizations of expression, his examples of it, and, what is often neglected by those commentators who do explore the notion, his views about the role of expression in human reasoning.
+
+#### Leibniz's Characterizations of Expression.
+
+> I. That is said to express a thing in which there are relations that correspond to the relations of the thing expressed.
+
+
+> II. One thing expresses another, when there is a constant and ordered relation between what can be asserted of the one and what can be asserted of the other.
+
+
+> III. it is sufficient for the expression of one thing in another [sufficit enim ad expressionem unius in alio] that there should be a certain constant relational law, by which particulars in the one can be referred to corresponding particulars in the other.
+
+#### Leibniz's Examples of Expression
+
+- But these are too brief.
+- Leibniz's favorite example is the perspectival projection of a figure onto a plane. Examples:
+	+ When a circle is projected onto an ellipse, the latter is an expression of the former
+	+ In analytic geomtry, numbers and figures represent geometric figures.
+	+ In algebra, numbers and figures represent magnitudes.
+	+ A map expresses the geographical region that it depicts.
+	+ A miniature model of a machine expresses the machine
+	+ Perception is an expression of that which is perceived
+		* our ideas of color, warmth, and other sensory qualities are really expressions of the motions of minute figures
+	+ General concepts express things.
+		* the idea of a circle expresses the circle itself
+	+ Words express the things that they signify
+	+ Numerals express numbers
+	+ Speech expresses thought
+	+ each monad expresses the entire universe
+	
+#### Leibniz on the Role of Expression in Human Reasoning.
+
+> IV. What is common to all these expressions is that we can pass from a consideration of the relations in the expression to a knowledge of the corresponding properties of the thing expressed.
+
++ For example, the idea of a circle expresses a circle, and although it "is not similar to the circle, truths can be derived from it which would be confirmed beyond doubt by investigating a real circle"
+
+> V. Characters are certain things by which the relationships among other things are expressed and which are easier to manage than the things themselves.
+
+- We need valid symbols to derive truths about what is smbolized.
+- This stems from the role of expression in Leibniz's philosophy.
+
+> All of our reasoning is nothing but the combining and substitution of characters, whether those characters are words, marks, or even images 
+
+### Perspectival Projection As The Paradigm Of Expression
+
+- These explicit sources are not enough for inquiry.
+
+#### Perspectival projections
+
+> VI. Thus, a circle can be represented by an ellipse (that is, an oval curve) in a perspectival projection, and indeed by a hyperbola, which is most unlike it, and does not even return upon itself; for to any point of the hyperbola a corresponding point of the circle which projects the hyperbola can be assigned by the same constant law.
+
+- And his response to Arnauld in passage (2) runs more fully:
+
+> VII. One thing expresses another, in my language, when there is a con- stant and ordered relation between what can be asserted of the one and what can be asserted of the other. It is in this way that a projec- tion in perspective expresses a geometric figure.
+
+- In *Theodicy*,
+
+> VIII. There must always be an exact relation between the representation and the thing [it expresses].... The projections in perspective of the conic sections of the circle show that one and the same circle may be represented by an ellipse, a parabola, a hyperbola, and even another circle, a straight line and a point. 
+
+- In *New Essays*,
+
+> IX. ... [A]n ellipse, and even a parabola or hyperbola, has some resem- blance to the circle of which it is a projection on a plane, since there is a certain precise and natural relationship between what is projected and the projection which is made from it, with each point on the one corresponding through a certain relation with a point on the other.
+
+- our sensory ideas express the motions of the particles that cause them,
+- **Correlating relation**: a relation that establishes such a correspondence.
+	+ Like a **function**, a mapping of the points of the original figure to their counterparts in the figure that expresses it. Bijective.
+
+#### The Method of Projection and Section.
+
+- Just like when an artist paints something, the representation being dependant on the angle of view, distorting the original form into something dependant on the viewer's capacity to be tricked,
+	+ In the same way, an circle view obliquely is a ellipse.
+- For those paintings done in accordance with the rules of perspective, we have little trouble "being tricked."
+	+ While some of the original is distorted, some of the original structure is also preserved, then.
+- So which of the original features is preserved and which of them are destroyed/distorted?
+- When Leibniz tells us that there is an "exact" or a "precise and natural" relation between the points of the two figures in a perspectival projection, he is also noting the much deeper relation- ship that holds between a conic section and its perspectival projections
+
+#### Morals for an Account of Perspectival Expression
+
+- **Perspectival expression**: The expression of one geometrical figure by a perspectival projection of it onto another.
+- Features that are preserved by a transformation are said to be **invariant** under it.
+- Surrogative reasonging:
+
+		       1. Correlating relation
+		R(a,b) ----------------------> R(a*, b*)
+		             preserves R           | 
+		                                   | 2. Surrogative reasoning
+		                                   |
+		3. Inverse of Correlating Relation v
+		Q(b,a) ----------------------> Q(b*, a*)
+		             preserves Q
+
+- Steps of **surrogative reasoning**:
+	1. We can encode information about the original situation as information about the relationships among the corresponding items in the expression. `a*` bears `R` to `b*`
+	2. Because information about the original relationships is pre- served by the corresponding relationships among items in the expression, much of the original information is also preserved by inferences about the constituents of the expression.
+	3.  In a perspectival projection, preservation of structure runs both ways, and so we can make the return trip to a conclusion about relationships among the original items of interest.
+	
+#### An Account of Perspectival Expression
+
+- **Perspectival expression**: "the points in the original figure stand in a given projective relation (or have a given projective attribute) just in case the surrogates of those points in the expression stand in the counterpart of that relation (or have the counterpart of that attribute). Hence, the essential feature of a perspectival expression is that the pattern of projective relations and attributes among the constituents of the represented phenomena is mirrored by the pattern of such relations and attributes among the constituents of the expression of it."
+- In passage I, Leibniz tells us that one thing expresses a second when it contains "relations which correspond to the relations of the thing expressed."
+- In passage II, Leibniz tells us that one thing expresses another "when there is a constant and ordered relation between what can be asserted of the one and what can be asserted of the other."
+- In passage III, Leibniz tells us that it is sufficient for the expression of one thing in another that there be a "constant relational law, by which particulars in the one can be referred to corresponding particulars in the other."
+
+### A General Account of Leibnizian Expression

@@ -1,4 +1,4 @@
-# Software Methodology Notes 
+# Software Methodology Notes <small>with Professor Sesh Venugopal</small>
 
 ## Description 
 
@@ -279,6 +279,353 @@ The method call matches the argument type (`Child`) with the closest matching pa
 	+ There are two static constant fields in `Math.java` – `E` and `PI`.
 	+ A classic example of a `static` non-`constant` variable is a counter that keeps track of how many objects are in existence.
 - `static` methods
+
+## February 4th, 2013 - Recitation 2: Inheritance, Interfaces
+
+1. Consider the following class definition:
+
+        public class A {
+           public A () {}
+           public A (int a, int b) {}
+        }
+
+        public class B extends A {
+             public B (int r) {}
+             public B (int r, int w) { 
+                super (r, w);
+             }
+        }
+Which of the following are legitimate calls to construct instances of
+the B class?
+	1.  `B c = new B();`
+		+ Invalid - B does not have a no-arg constructor
+	2.  `A s = new B(1);`
+		+ Valid
+	3.  `B c = new B(1, 9);`
+		+ Valid
+	4.  `A t = new B(1, 9, 4);`
+		+ No 3-argument constructor defined
+	5.  `B t = (new B(1)).new B(1);`
+		+  gibberish
+	6.  `B b = new A(1, 2);`
+		+ b is of static type B, and cannot refer to object of dynamic type A since A is not a subclass of B
+
+2. In this exercise we will try to see how static and final methods work
+with inheritance.  Consider the two classes defined below, `Parent` and
+`Child`:
+
+		public class Parent {
+		  /*
+		   public static final void printClassName() {
+		      System.out.println("I am in class Parent, static invocation.");
+		   }
+		  */
+		
+		   public final void printName() {
+		      System.out.println("I am in class Parent, dynamic invocation.");
+		   }
+		}
+		
+		public class Child extends Parent {
+		  /*
+		   public static void printClassName() {
+		      System.out.println("I am in class Child, static invocation.");
+		   }
+		  */
+		
+		   public void printName() {
+		      System.out.println("I am in class Child, dynamic invocation.");
+		   }
+		}
+
+	1.  Compile both the classes.  What do you see?
+		+ Compiling the classes results in the Java compiler printing the
+    following error message:
+
+        		1. ERROR in Child.java (at line 10)
+        		public void printName()
+                    		^^^^^^^^^^^
+                Cannot override the final method from Parent
+	2.  Now comment out the `printName()` method from the child class and
+	    uncomment the `printClassName()` method in both classes.  Compile
+	    both classes.  What do you see?  Is it different from part (A)? 
+	    Why?
+	    + Compiling the classes results in the Java compiler printing the
+    following error message:
+
+		        ERROR in Child.java (at line 3)
+		        public static void printClassName()
+		                           ^^^^^^^^^^^^^^^^
+		        Cannot override the final method from Parent
+		It is different from part (A), but in essence it is the same
+    error—trying to override a `final` method in a subclass.
+	    
+	3.  Uncomment the `Child.printName()` method and remove the `final`
+	    modifier from `Parent.printName()` and `Parent.printClassName()`. 
+	    Recompile both classes.
+	    + It compiles successfully.
+	4.  Compile and run the following class:
+
+			class App {
+			  public static void main(String[] args) {
+			     Parent p = new Child();
+			     p.printName();      // WHAT IS PRINTED?
+			     p.printClassName(); // WHAT IS PRINTED? 
+			  }
+			}
+		Explain the difference in *which* methods are invoked in these two
+    method calls.
+    	+ The `App.java` program compiles, but the compiler issues a warning
+    because `printClassName()` should be invoked on the class, not on an
+    instance.  The `printName()` call invokes the `Child` class's
+    implementation because `p` refers to an instance of `Child`.  The
+    `printClassName()` call invokes the `Parent` class's implementation
+    because `p` is a reference of type `Parent`
+
+
+
+3. Suppose you design a class, `Set`, whose members behave like finite,
+unordered mathematical sets of integers, and can support the operations
+of membership query, union of two sets, intersection of two sets, and
+difference of two sets.
+Consider the intersection operation.  There are at least two ways of
+declaring such an operation in the class `Set`:
+       
+		public Set intersect(Set otherSet)
+or     
+
+		public static Set intersect(Set firstSet, Set secondSet)
+Give one pro and one con for the static version.
+	+ The static version of the method is semantically closer to the mathematical idea of set operations.  The static approach makes it clear to programmers that the intersect method is a symmetric operation.  The drawback of a static definition is that it cannot be overridden by subclasses if we wanted to extend the Set class and apply polymorphism.
+
+4. You know of the `java.lang.Comparable<T>` interface used for comparing
+objects of a class. The `java.util` package has an interface,
+`Comparator<T>` that may also be used to compare objects. What is the
+difference between these two interfaces, and how may this difference be
+usefully employed in applications?
+
+	Here's an example of a simplified user-defined type:
+	
+	    public class Customer {
+	      private String firstName;
+	      private String middleName;
+	      private String lastName;
+	
+	      // setter & getter methods..
+	    }
+	
+	In the above class, the most commonly *natural ordering* would be by
+	`lastName`. This can easily be implemented using the `Comparable`
+	interface, i.e.
+	
+	    public class Customer implements Comparable {
+	      // as shown previously..
+	
+	      public int compareTo (Object o) {
+	        if (o == null || !(o instanceof Customer)) {
+	          throw new IllegalArgumentException ("...");
+	        }
+	        Customer c = (Customer) o;
+	        String cLastName = c.getLastName();
+	
+	        if (lastName == null && cLastName == null) return 0;
+	        // assuming you want null values shown last
+	        if (lastName != null && cLastName == null) return -1;
+	        if (lastName == null && cLastName != null) return 1;
+	        return lastName.compareTo (cLastName);
+	      }
+	    }
+	
+	Sorting a `List` of `Customer` objects would be as simple as:
+	
+	      Collections.sort (customerList);
+	
+	But, if we want to use a different ordering, e.g. order by the first
+	name, then we cannot use the natural ordering as defined within the
+	`Customer` class. Instead, we have to define an alternative ordering, in
+	the form of a `Comparator` class.
+	
+	    public class CustomerFirstNameComparator
+	    implements Comparator {
+	      // use singleton whenever possible..
+	
+	      public int compare (Object o1, Object o2) {
+	        if (o1 == null && o2 == null) return 0;
+	        // assuming you want null values shown last
+	        if (o1 != null && o2 == null) return -1;
+	        if (o1 == null && o2 != null) return 1;
+	        if (!(o1 instanceof Customer) ||
+	            !(o2 instanceof Customer)) {
+	          throw new IllegalArgumentException ("...");
+	        }
+	
+	        Customer c1 = (Customer) o1;
+	        Customer c2 = (Customer) o2;
+	        String firstName1 = c1.getFirstName();
+	        String firstName2 = c2.getFirstName();
+	
+	        if (firstName1 == null && firstName2 == null) return 0;
+	        // assuming you want null values shown last
+	        if (firstName1 != null && firstName2 == null) return -1;
+	        if (firstName1 == null && firstName2 != null) return 1;
+	        return firstName1.compareTo (firstName2);
+	      }
+	    }
+	
+	Sorting a `List` of `Customer` objects by their first name, would be:
+	
+	      // assuming you implement singleton..
+	      Comparator comparator =
+	        CustomerFirstNameComparator.getInstance();
+	
+	      Collections.sort (customerList, comparator);
+
+
+5. Suppose we need to have the `Point` and `ColoredPoint` classes provide
+functionality to parse text representations of points and colored points
+(as would be returned by the `toString` method), and return `Point` and
+`ColoredPoint` objects, respectively.
+	1.  Show how you would implement this functionality.
+	In `Point` class:
+		
+		       public static Point parsePoint(String pointStr) {
+		          String[] tokens = pointStr.split(",");
+		          if (tokens.length != 2) {
+		             throw new IllegalArgumentException();
+		          }
+		          try {
+		             int x = Integer.parseInt(tokens[0]);
+		             int y = Integer.parseInt(tokens[1]);
+		             return new Point(x,y);
+		          } catch (Exception e) {
+		             throw new IllegalArgumentException();
+		          }
+		       }
+	
+	In `ColoredPoint` class:
+	
+	       public static ColoredPoint parsePoint(String pointStr) {
+	          String[] tokens = pointStr.split(",");
+	          if (tokens.length != 3) {
+	             throw new IllegalArgumentException();
+	          }
+	          try {
+	             int x = Integer.parseInt(tokens[0]);
+	             int y = Integer.parseInt(tokens[1]);
+	             return new ColoredPoint(x,y,tokens[2]);
+	          } catch (Exception e) {
+	             throw new IllegalArgumentException();
+	          }
+	       }
+	2.  How much of the `Point` implementation of this functionality is
+	    reused in `ColoredPoint`? (Reuse meaning using code from `Point` by
+	    calling on it in `ColoredPoint`.) If yes, indicate which part, else
+	    explain why not.
+	    + No code is reused. The only way to reuse code in
+	    `ColoredPoint.parsePoint` would be with a call to
+	    `Point.parsePoint`. However, the latter returns a `Point` object,
+	    which would not fit in the former's implementation because it has no
+	    use for a `Point` object. (The idea of reuse arises because parsing
+	    a colored point equals parsing a point, plus parsing the color
+	    part.)
+	3.  Does your implementation give rise to dynamic binding of the parsing
+	    functionality? (Recall that dynamic binding means the subclass
+	    version of a method is "bound" to the call made via an object
+	    reference that is statically typed to the superclass.)
+	    + No, there is no dynamic binding since the methods involved are both
+	    `static`. So, binding is done purely on the static/compile-time type
+	    of the reference variable, without regard to what object it is
+	    pointing to. This means if you have:
+	
+	            Point ptest = new ColoredPoint(3,4,"orange");
+	
+	    then a call such as `ptest.parsePoint(...)` would invoke the `Point`
+	    class' `parsePoint` method, not the `ColoredPoint`'s.
+
+
+6. Here's the `Widget` class that was used in lecture last Thursday:
+
+		public class Widget {
+		 protected float mass;  // not visible to clients, but inherited by subclass
+		
+		 private static float MAX_MASS = 20;
+		
+		 public static final float G = 9.81f;    
+		
+		 public Widget(float mass) {
+		    if (mass > MAX_MASS) {
+		       throw new IllegalArgumentException();
+		    }
+		    this.mass = mass;
+		 }
+		
+		 public static float getMaxMass() {
+		    return MAX_MASS;
+		 }
+		
+		 public float getWeight() {
+		    return mass*G;
+		 }
+		}
+
+	Now suppose there is a certain set of widgets that are "heavy", so their
+	maximum mass is 40 instead of the usual 20. Write a class called
+	`HeavyWidget`, as a subclass of `Widget`. Do you encounter any
+	implementation issues when you do this? Can you get around these issues?
+	If so, show how. If not, explain why.
+	
+	+ Here's the try to implement `HeavyWeight`:
+
+	        public class HeavyWidget extends Widget {
+	        
+	           private static float MAX_MASS = 40;
+	        
+	           public HeavyWidget(float mass) {
+	               super(mass);
+	               if (mass > MAX_MASS) {
+	                  throw new IllegalArgumentException();
+	               }
+	               this.mass = mass;
+	           }
+	           ...
+The problem is the call `super(mass)` in the constructor. This call
+needs to be made because the first statement in a subclass constructor
+must be a call to a superclass constructor. Since there is only one
+constructor in the superclass `Widget`, which accepts a float parameter,
+we have no choice but to write in the `super(mass)` call. However, the
+`Widget` constructor would throw an exception if the mass exceeds 20,
+even though `HeavyWeight` allows mass to be as much as 40. So this is an
+issue.
+We can try to get around the issue by putting in a try-catch like this:
+
+		    public HeavyWidget(float mass) {
+		       try {
+		         super(mass);
+		       } catch (IllegalArgumentException e) {
+		
+		       }
+		       if (mass > MAX_MASS) {
+		          throw new IllegalArgumentException();
+		       }
+		       this.mass = mass;
+		    }
+But this does not compile because `try` is now taken to be the first
+statement, which makes the compiler throw in a `super()` call *before*
+the `try`. And the compiler complains that there isn't a no-arg
+constructor in the `Widget` class. Also, it complains that the
+`super(mass)` statement is not the first statement. This issue--for which there isn't any sensible workaround--suggests that
+there may be some flaw in the design. In particular, making
+`HeavyWidget` a subclass of `Widget` means that EVERY heavy widget is a
+widget. (Along the lines of every student is a person, or every tiger is
+an animal). But is this true? If it were true, then EVERY heavy widget must pass the widget test.
+Which won't happen for all heavy widgets that have mass greater than 20.
+So it must be that every heavy widget is NOT a widget. So then is it true that EVERY widget is a heavy widget? In other words,
+if you were to flip the implementation so that `Widget` is a subclass of
+`HeavyWidget`, could you come up with clean code that works? If so, then
+there is a discord between how our everday phrasing in English, and Java
+implementation.
+
+
 
 ## February 6th, 2013 - Lecture
 
@@ -1154,8 +1501,6 @@ This run should produce the following output:
     import it into Eclipse. Use the debugger to track down the bug(s)
     and fix the code.
 
-- 
-
 3.  There is an application that defines a `Person` class and a
     `Student` class. The `Student` class is defined as a subclass of
     `Person`. Every person has a home address, while every student has a
@@ -1168,6 +1513,16 @@ This run should produce the following output:
     designed/implemented? What alternatives in design can you think of,
     and what are the pros and cons of these alternatives in printing the
     addresses?
+    
+    + Every Person is expected to have one default home address, but Student can have another address for school.
+    + There are two ways to think about this.
+    	1. One way is to think purely from the polymorphism point of view. If you were to run a loop through all objects in a mixed collection of Person and Student objects to print address, you will statically type the stepping reference as Person, say like this:
+    				
+    				for (Person p: ) {
+    					System.out.println(p.getAddress());
+    				}
+    This means, you want to look at every entity, including a Student, as a Person, which then implies that all addresses printed should be home addresses. If you take this point of view, then the Student class should not override the inherited getAddress method from Person, and should have a new getSchoolAddress method.
+    	2. The other way to think about this is from the point of view of class design independent of how applications might use objects at run time. In this case, the method getAddress for a Student would override the inherited-from-Person implementation to return the school address instead. And a new getHomeAddress method would be coded to return the home address.
 
 4.  In class we saw how you could write code to print a collection of
     mixed `Point` and `ColoredPoint` objects:
@@ -1181,19 +1536,48 @@ This run should produce the following output:
            }
 
     1.  Where is the *polymorphic* behavior in this code?
+    	+ Every time the `System.out.println(pts[i])` is executed, either a
+    	`Point` object is printed, or a `ColoredPoint` is printed, depending
+    	on the run-time type of the object to which `pts[i]` (which is
+    	statically typed to `Point`) refers. So `pts[i]` exhibits
+    	polymorphic behavior because it *automatically* changes "shape"
+    	between `Point` and `ColoredPoint` objects without any programmer
+    	intervention.
     2.  Give an example of code using the `pts` array that is NOT
         polymorphic, and explain why it is not polymorphic.
+        
+	        for (int i=0; i < pts.length; i++) {
+	              if (pts[i] instanceof ColoredPoint) {
+	                 System.out.println(((ColoredPoint)pts[i]).getColor());
+	              }
+	           }
 
+	    This code is not polymorphic because in every iteration, the
+	    run-time type of `pts[i]` is checked explicitly, then cast to
+	    `ColoredPoint` - there is not any automatic shape-shifting.
+        
 5.  Suppose classes `A` and `B` are in package `ab`, and classes `C` and
     `D` are in package `cd`. Furthermore, both `C` and `B` extend `A`,
     and `D` extends `B`. Assume all classes are declared to be `public`.
 
     1.  Are `protected` members of `A` accessible in `C`?  If yes,
         explain how. If not, explain why.
+        + Protected members of `A` are *inherited* by `C`, but not accessible
+    in `C` via instances of `A`.
     2.  Are `protected` members of `A` accessible in `D`?  If yes, how?
         If not, why?
+        + Protected members of `A` are *inherited* by `D` via `B` (in other
+    words, `B` inherits protected fields from `A`, and `D` from `B`),
+    but as with `C` protected members in `A` are not visible in `D` via
+    instance of `A`.
     3.  Answer the same question as in 1. replacing `A` with `B`
+    	+ Protected members of `B` are *NOT* inherited by `C`, nor are they
+    accessible in `C` via instances of `A`, since `C` is in a different
+    package than `B`, but does not extend `B`.
     4.  Answer the same question as in 2. replacing `A` with `B`
+    	+ `D` inherits protected members of `B` since it subclasses from `B`
+
+
 
 6.  You are given the followig `Employee` class:
 
@@ -1233,6 +1617,45 @@ This run should produce the following output:
 
     Assume that hourly employees work 40 hours per week, and salaried
     employees are paid 1/52 of their annual salary every week.
+    
+		    public class Employee {
+		  private String name;
+		  private double salary;
+		  
+		  public Employee(String aName) {
+		     name = aName; 
+		  }
+		  
+		  public void setSalary(double aSalary) {
+		     salary = aSalary; 
+		  }
+		  
+		  public String getName() {
+		     return name; 
+		  }
+		  
+		  public double getSalary() {
+		     return salary; 
+		  }
+		
+		  public double getWeeklySalary() {
+		     return salary/52; 
+		  }
+		}
+		
+		public class HourlyEmployee extends Employee {
+		    public HourlyEmployee(String aName, double anHourlySalary) {
+		        super(name);
+		        setSalary(anHourlySalary*40*52);
+		    }
+		}
+		
+		public class SalariedEmployee extends Employee {
+		    public SalariedEmployee(String aName, double anAnnualSalary) {
+		        super(name);
+		        setSalary(anAnnualSalary);
+		    }
+		}
 
 7.  (Adapted from an example in Interface Oriented Design by Ken Pugh,
     sec. 4.2)
@@ -1243,8 +1666,11 @@ This run should produce the following output:
     Should you use a single interface or multiple interfaces (e.g.
     ColorPrinter, DuplexPrinter, MultiTrayPrinter)?  Describe the
     advantages and disadvantages of both approaches.
+    
+    + It is generally better to produce several interfaces that are more specific to the various types of printers than to produce one large interface that covers all possibilities.  If the interface is modified, then only code utilizing the modified interface must be changed.  Programming each separate interface can take place independently and in parallel, so that the tasks can be distributed to different programmers. 
+    + Also, any printer that did not make use of certain features of a single, combined interface, would have to write method stubs (empty method bodies) for non-implemented features, and throw exceptions if those methods were called. This is bad design, since a class should support every single feature for which it has a public method (otherwise why is that method in the class?)
 
-## Lecture - February 19th, 2013
+## February 19th, 2013 - Lecture
 
 ### Object input and output streams
 
@@ -1303,3 +1729,46 @@ This run should produce the following output:
 - This is interesting because it allows to write code that allows you to change entire implementation usage with just one change in code, so long as it implements an abstract class.
 - Dynamically binding to same functionality in classes at different levels of an inhertance hirarchy using a "least common denominator" type.
 	+ Applied more boradly than just to abstract classes.
+	
+## February 20th, 2013 - Lecture
+
+### Abstract class vs. Interface
+
+#### Compare and contrast
+
+- You cannot have multiple inheritance with abstract classes, interfaces can.
+- Interfaces do not have any implentation, abstract class can.
+- If you find yourself with an abstract class with little implementation, you likely want an interface.
+	+ Abstract classes close of the option.
+	+ Depends on the context.
+	
+### UML Class Diagram - I
+
+- UML stands for Unified Modellling Language.
+- Mail graphical notation used to express object-oriented designed.
+- Most of it is arrows.
+- Types:
+	+ **Class interaction diagram**: Used to show classes and the relations between them.
+		* **State diagram**: Used to represent state based designs.
+	+ **Sequence diagram**: Used to show sequences of activity when methods are invoked on classes.
+- Class diagram
+	+ A class diagram shows classes and the realtions between them.
+	+ The simplest way to draw a class is like this:
+	
+			+-----------------------+
+			|	rectangle           |
+			+-----------------------+
+	+ An even reater level of detail can be adde by specifyin the type of each attribute, as well as type of each parameter.
+	+ And the access level for each member
+	
+			+-----------------------+
+			|Window                 |
+			+-----------------------+
+			+-----------------------+
+			|open()                 |
+			|close()                |
+			|move()                 | -------> dependance
+			|refresh()              |
+			|handleEvent()          |
+			+-----------------------+		
+

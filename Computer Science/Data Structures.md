@@ -1,4 +1,4 @@
-# Data Structures
+# Data Structures <small>with Professor Sesh Venugopal</small>
 ## Chapter 3 - Efficiency
 ### Section 2 - Basic Operations
 - Generally, people talk about programs in terms of clock time.

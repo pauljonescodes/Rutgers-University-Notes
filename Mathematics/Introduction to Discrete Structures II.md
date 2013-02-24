@@ -1,4 +1,4 @@
-# Discrete Structures II Notes 
+# Introduction to Discrete Structures II <small>with Professor David Cash</small>
 
 ## Description 
 
@@ -29,6 +29,7 @@ Provides the background in combinatorics and probability theory required in desi
 This course is an introduction to *probability* and *combinatorics*, including their basic mathematical foundations as well as several non-trivial applications of each. The first topic explores how to think about *random processes* in a rigorous and sensical way, and second is about techniques for *counting* the number of objects fitting a given description. As we will see, the techniques involved in both topics are strongly related.   
 
 Roughly, we expect to cover the following list of topics. Lecture summaries will be posted at the bottom of this page.
+
 - Review of prerequisites, set theory, countability
 - Random experiments, sample spaces, events, probability measures
 - Conditional probability, Bayes' Theorem, Independence
@@ -1241,3 +1242,174 @@ happen.
 ### Ross 3.3
 
 ### Rosen 7.3
+
+## February 19th, 2013 - Homework 3
+
+1.  (6 points) What the probability that a 5 card hand contains exactly
+    3 spades? What if we condition on the hand containing at least 1
+    spade?
+
+2.  (7 points) Suppose \\(n\\) people each throw a six-sided die. Let \\(A_n\\)
+    be the event that at least two distinct people roll the same number.
+    Calculate \\(P(A_n)\\) for \\(n=1,2,3,4,5,6,7\\).
+
+3.  (3 points) Suppose we draw 2 balls at random from an urn that
+    contains 5 distinct balls, each with a different number from
+    \\(\{1,2,3,4,5\}\\), and define the events \\(A\\) and \\(B\\) as
+    \\(\\)A = \text{"5 is drawn at least once"} \quad \text{and} \quad
+    B = \text{"5 is drawn twice"}\\(\\) Compute \\(P(A)\\) and \\(P(B)\\).
+
+4.  (4 points) In the previous problem, suppose we place the first ball
+    back in the urn before drawing the second. Compute
+    \\(P(A),P(B),P(A|B),P(B|A)\\) in this version of the experiment.
+
+5.  (4 points) Suppose \\(5\\) percent of cyclists cheat by using illegal
+    doping. The blood test for doping returns positive \\(98\\) percent of
+    the people doping and \\(12\\) percent who do not. If Lance’s test comes
+    back positive, what the probability that he is doping? (Ignoring all
+    other evidence, of course...)
+
+6.  (6 points) If \\(A \subseteq B\\), can \\(A\\) and \\(B\\) be independent? What
+    we if require that \\(P(A)\\) and \\(P(B)\\) both not equal \\(0\\) or \\(1\\)?
+
+7.  **Extra credit (5 points)** Consider the experiment where two dice
+    are thrown. Let \\(A\\) be the event that the sum of the two dice is 7.
+    For each \\(i \in \{1,2,3,4,5,6\}\\) let \\(B_i\\) be the event that at
+    least one \\(i\\) is thrown.
+
+    1.  Compute \\(P(A)\\) and \\(P(A|B_1)\\).
+
+    2.  Prove that \\(P(A|B_i) = P(A|B_j)\\) for all \\(i\\) and \\(j\\).
+
+    3.  Since you know that some \\(B_i\\) always occurs, does it make sense
+        that \\(P(A) \neq P(A | B_i)\\)? (After all, if \\(E\\) is an event with
+        \\(P(E) = 1\\), then for any event \\(F\\), \\(P(F|E) = P(F)\\). What is
+        going on? Does this seem paradoxical?)
+
+## February 20th, 2013 - Lecture: Independence
+
+### Topics
+
+- Multiplication rule for conditional probability. 
+- Independent events: two equivalent definitions and several examples with cards and dice. 
+- People v. Collins and the prosecutor's fallacy. 
+- Mutual independence.
+	
+### Multiplication Rule for Conditional Probability
+
+- **Example**: Hat contains 3 cards, RR, RB, BB. Pick a card, put it on table, see a R side, what's the probability the other side is B?
+	+ Wrong: 1/2
+	+ Right: 1/3
+
+- If E_1 through E_2 are events, all P(E_i) do not equal zero,
+\\[P(E_1 \cap E_2 \cap ... \cap E_n) = \\]
+\\[P(E_1) \times P(E_2 | E_1) \times ... \times P(E_n | E_1 \cap ... \cap E_{n-1}) \\]
+	+ This might be easier to express as the intersection of smaller events.
+	+ This is really easy thing to prove.
+	+ "Proves itself."
+	+ **Proof**:
+		1. \\(P(E_1) \times \frac{P(E_2 \cap E_1)}{P(E_1)} \times ... \times \frac{P(E_1 \cap ... \cap E_n)}{P(E_1 \cap ... \cap E_{n-1}})\\)
+		2. Cancel. Beautiful cancellation.
+	+ This allows you to say, what happens when the first once happens? And now, what about the second one? So on so forth.
+	+ **Example**: What is the probability of a five card hand not containing a pair?
+		* E_i = "first i cards in hard do not contain a pair"
+		* *Claim*: What we want is \\(E_1 \cap E_2 \cap ... \cap E_5 \\)
+		* What's funny about this is that we don't want E_1 through E_4, we are actually only interested in E_5.
+		* The reason we do this, however, is because it makes this calculation easier.
+		* Possibilities:
+			1. \\(P(E_1) = 1 \\)
+				* The probaility of the first hand not being a pair is 1, because it's one card.
+			2. \\(P(E_2 | E_1) = \frac{48}{51} \\)
+			3. \\(P(E_3 | E_1 \cap E_2) = \frac{44}{50} \\)
+			4. \\(P(E_4 | E_1 \cap ... \cap E_3) = \frac{40}{44} \\)
+			5. \\(P(E_5 | E_1 \cap ... \cap E_4) = \frac{36}{48} \\)
+		* Multiply these values together to get 50.7%.
+		
+### Independence
+
+- **Definition**: Say events E and F are independant if \\(P(E \cap F) - P(E) \times P(F) \\).
+	+ **Equivalent definition**: E and F are independent i(P(F) = 0 or P(E|F) = P(E)\\).
+	+ **Proof**:
+		1. Take E and F set \\(P(E \cap F) = P(E) \times P(F) \\).
+		2. If \\(P(F) = 0 \\), then done.
+		3. If not, then \\(P(E|F) = \frac{P(E \cap F)}{P(F)}\\)
+- **Exercise**: Toss two coins
+	+ E = "1st coin was H"
+	+ F = "2nd coin was H"
+	+ P(E) = P(F) = 1/2
+- **Exercise**: Tossing two dice
+	+ E = "sum of dice is 6"
+	+ F = "first die was 4"
+	+ \\(P(E) = P(\lbrace(1,5),(2,4),(3,3),(4,2),(5,1)\rbrace) = \frac{5}{36}\\)
+	+ P(F) = 1/6
+	+ \\(P(E \cap F) = P(\lbrace(4,2)\rbrace) = \frac{1}{36} \\)
+	+ \\(P(E) \times P(F) = \frac{5}{36} \times \frac{1}{6} \\)
+- **Exercise**: Suppose a family has 3 kids.
+	+ E = "family has at least 1 boy and 1 girl"
+	+ F = "family has at most 1 boy"
+	+ Are these indepedant?
+		* \\(S = \lbrace BBB, BBG, BGB, GBB, BGG, GBG, GGB, GGG\rbrace\\)
+		* \\(E = S - \lbrace BBB, GGG \rbrace \\)
+		* \\(F = \lbrace BGG, GBG, GGB, GGG \rbrace \\)
+		* \\(E \cap F = \lbrace BGG, GBG, GGB \rbrace \\)
+		* \\( P(E \cap F) = \frac{3}{8} \\)
+		* \\( P(E) \times P(F) = \frac{3}{4} \times \frac{1}{2} = \frac{3}{8} \\)
+		* Therefore, independent.
+		
+#### "Independent" and "Mutually Exclusive" are not the same
+
+- **Example**: 2 dice
+	+ E = "sum was 6"
+	+ F = "first die was 6"
+	+ E and F are not mutually exclusive, but not independent.
+	
+#### Prosecutor's Fallacy: People v. Collins (1968)
+
+- The prosectution came up with these numbers:
+	+ The probability of a black man with a beard is 1 in 10 
+	+ The probability of a man with a mustache is 1 in 4
+	+ White woman with ponytail is 1 in 10
+	+ So on so forth, 1 in 3, 1 in 10, 1 in 1000
+	+ So he made this calculation:
+	\\[\frac{1}{10} \times \frac{1}{4} \times \frac{1}{10} \times \frac{1}{10} \times \frac{1}{3} \times \frac{1}{1000} = \frac{1}{12 \times 10^6} \\]
+	+ *Say* that the population of LA was \\(24 \times 10^6\\)
+	+ Then, you'd "expect" to have 2 couples fitting this evidence.
+	+ P(evidence | innocent) \\(\neq\\) P(innocent | evidence) 
+
+#### With 3 events
+
+- E is indepedant of F and G
+- F is indepedant of G
+- Then is E indepedant of F intersect G?
+- **Example**: rolling two die
+	+ E = "sum to 7"
+	+ F = "first die was 4"
+	+ G = "second die was 3"
+	\\[P(E | F \cap G) = 1\\]
+	\\[P(E) = \frac{1}{6} \\]
+	+ **Definition**: E, F, and G are independant (alternatively "mutually independant") if:
+	\\[P(E \cap F) = P(E) \times P(F) \\]
+	\\[P(E \cap G) = P(E) \times P(G) \\]
+	\\[P(F \cap G) = P(F) \times P(G) \\]
+	\\[P(E \cap F \cap G) = P(E) \times P(F) \times P(G) \\]
+
+#### With n events
+
+- **Definition**: \\(E_1, ..., E_n \\) are indepedant if for every subset \\(I \subseteq \lbrace 1, 2, ..., n \rbrace\\) of at least size 2
+- **Example**: Flip n coins
+
+## February 20th, 2013 - Recitation
+
+- Proove:
+\\[{n \choose n_1 \cdot n_2 \cdot ... \cdot n_r} = \\]
+[[[{n-1 \choose n_1 - 1 \cdot ... \cdot n_r} + ... + {n-1 \choose n_1 \cdot ... \cdot n_{r-1} \cdot n_{r-1} \\]
+
+## February 20th, 2013 - Reading
+
+### Ross 3.3
+
+### Rose 3.4. 
+
+### Optional: People v. Collions court opinion. 
+
+### British case involving Sally Clark.

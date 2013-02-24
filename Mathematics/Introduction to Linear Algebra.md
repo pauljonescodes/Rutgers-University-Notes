@@ -1,4 +1,4 @@
-# Elementary Linear Algebra
+# Elementary Linear Algebra <small>with Professor Vladimir Shtelen</small>
 ## Chapter 3 - Determinants
 ### 3.1 Cofactor Expansion
 #### Reading
