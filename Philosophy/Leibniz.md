@@ -1030,3 +1030,81 @@ The principle of sufficient reason states that nothing is without a ground or re
 - In passage III, Leibniz tells us that it is sufficient for the expression of one thing in another that there be a "constant relational law, by which particulars in the one can be referred to corresponding particulars in the other."
 
 ### A General Account of Leibnizian Expression
+
+- This section provides:
+	1. A simple a natural generalization of Leibnizian expression
+	2. Shows how this account conforms with Leibniz's explicit characterizations
+	3. Explains how it relates to surrogative reasoning
+
+#### Generalizing the Account of Perspectival Expression
+
+
+- A function, \\(*\\), from the constituents of one thing, \\(O\\), to those of a second, \\(E\\), preserves the \\(n\\)-place relation \\(R^O\\) of \\(O\\) just in case, for each \\(n\\)-tuple of constituents \\(\lt X_1 ... X_n \gt\\) of \\(O\\):
+	+ (PR) \\(R^O x_1 ... x_n \\) if and only if \\(R^E x_1 \ast ... x^\ast_n \\)
+	+ \\(R^E\\) is the surrogate for the original relation \\(R^O\\)
+- Isomorphism is too much to expect from an expression
+	+ For example, a circle does not have enough of it's relations preserved when projected into a parabola.
+	+ Only those attributes that affect the truth value of what's being reasoned about matter.
+- Since one thing may have two different names, language is not a function.
+	+ Perhaps expression if from the expression to the object, then.
+- Leibniz talks about an ideal language where things are onto, one-to-one.
+- The key to expression is *preservation of structure*, and not direction.
+	+ one thing *expresses* a second just in case there is a structure-preserving mapping from either to the other.
+	+ Consequences of this:
+		* one thing can express another even if they have only a little structure in common.
+		* figures that are not conic sections, e.g., squares, can express a circle, since there are mappings from the points of a square to those of a circle that preserve genuine relations
+		* does not require that the correlating relations in all expressions have these features (total, onto, one-to-one functions)
+
+## February 25th, 2013 - Lecture
+
+> The soule, however, is nevertheless the form of its body, because it is an expression of the phenomena of all other bodies in accordance with the relationship on its own. <cite>Leibniz to Arnauld, 14 July 1686, Mason 65-6</cite>
+
+> If the body is a substance and not a simple phenomenon like the rainbow, or an entity united by accident or by aggregration like heap of stones, it cannot consist of extension, and one must necessaily conceive of something there that one calls substancial form, and which corresponds in a way to the soul. <cite>Leibniz to Arnauld, 14 July 1686., Mason 65</cite>
+
+> In order that this conclusion might be valid, one would first have to define 'substance' and 'substanial' in the following terms: I call 'substance' and 'substantial' that which has a true unity. But as this definition has not yet been accepted, and since there is no philosopher who is not as entitled to say: I call 'substance" that which is not modaility of state, and who cannot consequently maintain that it is paradoxical to say that there is nothing substancial in a block of marble, since this block is not the state of another substance; and that one might say is that it is not a single substance but many substances mechanically joined together. <cite>Arnauld to Leibniz, 4 March 1687, Mason 107-8</cite>
+
+- 9 October, 1687, last responded letter to Arnauld
+	+ It has always been a sideline for Arnauld.
+	+ It's really Leibniz's business.
+	+ At this point in time, he became preoccupied with his own affairs.
+	+ Maybe he didn't find anything to respond to.
+	+ Leibniz in 1688, wrote two more letters.
+		1. The right laws of motion, short letter
+		2. A final one going back to his metaphysical system
+	+ This one does not introduce a lot that is new.
+
+			"substantial form" + "body" = "aggregate of corporeal substances"
+	+ You cannot have a whole real body unless it's parts are real.
+	+ Each substantial form having a different concept
+	+ You need to give reality to it's parts.
+	+ Every body is composed of parts and every part has substantial forms and they consitute corporeal substances.
+	+ Infinite corporeal substances.
+	+ There can be no causal interaction between created substances.
+	
+- Concommitance
+
+		time 1                       time 2
+		state of soul -------------> state of soul
+		              laws of soul
+		              laws inherent
+		
+		state of body -------------> state of body
+		              laws of motion
+		              its causes
+		
+- Moral accountability is dependant on being able to reflect on themselves.
+
+				true unity = corporeal substance
+		               |
+		+--------------|-------------------------------+
+		|              v            +----------------+ |
+		| substantial ------------> | whole composed | |
+		|    form                   |   of parts     | |
+		|                           +----------------+ |
+		+----------------------------------------------+
+
+- The heap question
+	+ There is no fact of the matter about it, no objective truth.
+	+ Leibniz is saying put all of those substantial forms into the corporeal substance, see complete concept.
+	+ We know that the complete concept of any substance of the substantial form has the reason that you have that identity to that substance at that time.
+		* Now that we have a substantial form that animates the corporeal substance

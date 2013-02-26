@@ -1,4 +1,4 @@
-# Software Methodology Notes <small>with Professor Sesh Venugopal</small>
+# Software Methodology <small>with Professor Sesh Venugopal</small>
 
 ## Description 
 
@@ -1771,4 +1771,133 @@ This run should produce the following output:
 			|refresh()              |
 			|handleEvent()          |
 			+-----------------------+		
+
+## February 25th, 2013 - Recitation 5: Abstract Classes, Interfaces
+
+1.  This problem gives an example where polymorphism is useful. Consider
+    the class hierarchy given below :
+
+         public abstract class Shape implements Comparable<Shape {
+    
+             public void print() {
+                 System.out.println("Shape");
+             }
+    
+             public abstract double getArea();
+    
+             public static final Shape biggest(Shape[] s)  {
+                 /** TO BE COMPLETED BY YOU **/
+             }
+    
+             ... // OTHER METHODS/FIELDS YOU MAY NEED TO ADD TO ANSWER THE QUESTION
+         }
+    
+         public class Circle extends Shape {
+             double radius;
+    
+             public Circle(double r) {
+                 radius = r;
+             }
+             
+             public void print() {
+                 System.out.println("Circle");
+             }
+    
+             public double getArea() {
+                 return Math.PI*radius*radius;
+             }
+         }
+    
+         public class Rectangle extends Shape {
+    
+             double height;
+             double length;
+    
+             public Rectangle(double l,double h) {
+                 length = l;
+                 height = h;
+             }
+             
+             public void print() {
+                 System.out.println("Rectangle");
+             }
+    
+             public double getArea() {
+                 return length*height;
+             }
+         }
+    
+         public class App {
+    
+             public static void main(String[] args) {
+                 Shape[] s = new Shape[3];
+    
+                 s[0] = new Circle(7);
+                 s[1] = new Rectangle(5,10);
+                 s[2] = new Circle(4);
+                 
+                 System.out.println("The maximum area of a shape in s is : "+Shape.maximum(s));
+                 return;        
+             }
+         }
+
+    Complete the method
+
+            public static Shape biggest(Shape[] s)
+
+    in the `Shape` class. This method should return the shape with the
+    largest area. Note that `Shape` implements the `Comparable`
+    interface. Different `Shape`s should be compared using their area.
+    Now if we extend the Shape hierarchy to include more shapes, say
+    rhombus, then will your method run without any problems?
+
+    
+
+2.  In a previous problem set, you packaged a Java library of sorting
+    algorithms:  insertion sort, quicksort, and heapsort.  using
+    interfaces so that users could use any of these algorithms in their
+    applications, and switch from using one to another (plug-n-play).
+    Redo the exercise using abstract classes instead of interfaces.
+
+    
+
+3.  Think of a board game in which there are two kinds of pieces:  a
+    slow piece that moves only one square at a time, and a fast piece
+    that moves any number of squares (as required by the player) at a
+    time.  Each piece can also be either flexible or not:  a
+    non-flexible piece can only move horizontally or vertically, while a
+    flexible piece can also move diagonally.
+
+    How would you write Java code for all these pieces?  You need to
+    have one class for each kind of actual piece.  Use interfaces and
+    abstract classes as needed.  You don't need to fill in code for all
+    the methods—just sketch the essential fields, constructor headers,
+    and method headers.
+
+    
+
+4.  A game developer asks you to make a set of classes to represent the
+    monsters in a game. There are at least two different types of
+    monsters, those that walk and those that bounce, but the code you
+    write needs to be easily expandable to different types.
+    Specifically, the code to keep track of a monster's appearance and
+    to draw the monster needs to be in only one place. You are given an
+    interface to start out:
+
+        public interface Monster {
+            void drawMonster();
+            void setMonsterImage(Image i);
+            void updatePosition();
+        }
+
+    Create an abstract base class `MovingMonster` for all monsters, and
+    one subclass for each of two types discussed, `WalkingMonster` and
+    `BouncingMonster`. Each monster will need to keep track of its own
+    position and update it when the `updatePosition()` method is
+    invoked. Assume that the Image class has a method
+    `draw(int x, int y)`. The contents of the `updatePosition()` method
+    are not important, but it has to change the monster's position and
+    be different for either monster.
+
+
 

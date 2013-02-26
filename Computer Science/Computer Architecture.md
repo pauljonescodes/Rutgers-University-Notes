@@ -1,4 +1,4 @@
-# Computer Architecture <small>with Professor Brian </small>
+# Computer Architecture <small>with Professor Brian Russell</small>
 
 ## Description 
 This course covers the fundamental issues in the design of modern computer systems, including the design and implementation of key hardware components such as the processor, memory, and I/O devices, and the software/hardware interface.

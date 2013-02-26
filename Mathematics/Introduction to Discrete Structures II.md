@@ -1,4 +1,4 @@
-# Introduction to Discrete Structures II <small>with Professor David Cash</small>
+# Discrete Structures II <small>with Professor David Cash</small>
 
 ## Description 
 
@@ -1406,10 +1406,108 @@ happen.
 
 ## February 20th, 2013 - Reading
 
-### Ross 3.3
+### 3.3 Bayes' Formula
 
-### Rose 3.4. 
+
+
+### 3.4 Independent Events 
+
+- **Equation 4.1**: \\(P(EF) = P(E)P(F)\\)
+- **Independent events**: Two events E and F are said to be independent if Equation (4.1) holds. 
+- **Dependent events**: Two events E and F that are not independent are said to be dependent.
 
 ### Optional: People v. Collions court opinion. 
 
 ### British case involving Sally Clark.
+
+## February 25th, 2013 - Lecture
+
+### Announcements
+
+1. HW 3 due Wednesday
+2. Review on Wednesday
+3. Midterm on Monday
+
+### Independence of Several Events
+
+- Event are indepedant if \\(P(EF) = P(E)P(F)\\)
+- **Example**: Three events with dice:
+	+ E = "sum is 7"
+	+ F = "1st die is four"
+	+ G = "2nd die is three"
+	+ E, F, G are *pairwise independant*
+	+ But the \\(P(E | F \cap G) = 1\\), not \\(P(E) = \frac{1}{u}\\)
+- **Definition**: Events \\(E_1, E_2, ... E_n \\) are **indepedent** (or **mutually independent**) if for every subset of numbers from 1 through n of size greater than or equal to 2:
+\\[P\left(\bigcap_{i \in I} E_i\right) = \prod_{i \in I} P(E_i)\\]
+	+ Equivilently,
+	\\[ P(E_{i_1} \cap E_{i_2} \cap ... \cap E_{i_n}) = P(E_{i_1}) \cdot P(E_{i_2}) \cdot ... \cdot P(E_{i_k}) \\]
+	
+- **Claim**: For any \\(i\\) and \\(j_i, ..., j_k\\) (not including i)
+\\[P(E_i | E_{j_1} \cap ... \cap E_{j_k}) = P(E_i)\\]
+	+ **Proof**: This equation equals
+	\\[ \frac{P(E_1 \cap E_{j_1} \cap ... \cap E_{j_k})}{P(E_{j_1} \cap ... \cap E_{j_k})}\\]
+	
+- **Example**: Suppose we flip a "biased" coin \\(n\\) times
+\\[ P(H) = p, \: P(T) = 1 - p, \: (O \lt p \lt 1)\\]
+	1. What is the probability we getting heads all n times?
+		+ Define \\(E_i = \\) "ith flip was heads."
+	\\[E = E_1 \cap ... \cap E_n, \: P(E) = P(E_1) \times ... \times P(E_n)\\]
+	2. What is the probability we get at least one H?
+		+ \\(F = \\) "at least on H"
+		+ \\(C(F) = \\)"all T on n flips"
+		+ \\(P(F) = 1 - C(F) = 1 - (1 - p)^n\\)
+		+ \\(P(F^c) = (1 - p)^n\\)
+	3. What is the probability of getting exactly k heads?
+		+ First find the probability of HHHH...H (k heads) TTTTT...T (n-k tails) (h times)
+		+ \\(p \times p \times p \times p ... \\) (k times) \\(\times (1-p) \times (1 -p) \times ... \times (1 - p) = p^k (1-p)^{n - k} \\)
+		+ How many H/T strings, length n, with k Hs? \\(n \choose k\\)
+		+ P(exactly k Hs) = \\({n \choose k} \cdot p^k \cdot (1 - p)^{n-k}\\)
+
+### Primality Testing
+
+- One way to check if a number is prime is to divide by the square root of number (or something)
+- So people found what's called the [Miller-Rabin](http://en.wikipedia.org/wiki/Miller–Rabin_primality_test) test	
+
+		when running MR on x
+			if x is not prime
+				then MR outputs "not prime" with probability 1/4
+				else says "don't know" the other 3/4 times
+			if x is prime
+				then MR always says "don't know"
+			
+#### Algorithmic amplification
+
+- The idea is to run MR n times on x
+	+ If it ever says "not prime", output "not prime"
+	+ If not, output "probabily prime"
+- What is the probability of outputting "probability prime" if X is not prime
+	+ \\( \left(\frac{3}{4}\right)^n \\)
+- [AKS test](http://en.wikipedia.org/wiki/AKS_primality_test)
+
+### Ramsey Numbers
+
+- **Example**: "The probabilistic method"
+	+ Take a complete graph \\(n\\) vertices, color every edge R or B, and you "lose" if you color in a triangle.
+	+ Avoid making an all red or all blue \\(K_k\\)
+	
+			o----R----o
+			|\        |
+			|  \      |
+			B    R    B
+			|      \  |
+			|        \|
+			o----B----o (or something)
+
+- **Theorem** If n is large enough relative to k, then you can't avoid making all R or B \\(K_k\\)
+\\[n \gt R(k)\\]
+- \\(R(3) = 6\\), \\(R(4) = 18\\) (1979), \\(R(5)\\) is unknown
+- **Theorem**: \\(R(k) \ge n^{\frac{k}{2}} \\) when \\(k \gt 4\\), if \\( n = 2^{\frac{k}{2}}\\), then you can color \\(K_n\\) and avoid a all R or B \\(K_K\\)
+	+ **Outline**: (Erdos)
+		1. Calculate the probability that a random coloring "works", not that is greater than 0
+		2. Therefore one exists, and done.
+	+ Color each edge independalty Red or Blue with probability of one half
+		* E = "some K_k gets all Red or Blue edges"
+		* How many \\(K_K\\) are these in \\(K_K \\)? \\(n \choose k\\)
+		* Want: \\[ P(E) = P\left( \bigcup_{i =1}^{n \choose k} E_i \right) \lt 1 \\]
+		\\[]
+
