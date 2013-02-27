@@ -1830,7 +1830,7 @@ February 25th, 2013 - Lecture
 February 26th, 2013 - Reading: Leibniz's theory of expression and cognitive representation
 ------------------------------------------------------------------------------------------
 
-1.  'That is said to express a thing in which there are relations
+1.   'That is said to express a thing in which there are relations
     [habitudines] which correspond to the relations of the thing
     expressed. But there are various kinds of expression; for example,
     the model of a machine expresses the machine itself, the projective
@@ -1858,11 +1858,18 @@ February 26th, 2013 - Reading: Leibniz's theory of expression and cognitive repr
     a way the world itself represents God. It may also happen that the
     effects which arise from the same cause express each other mutually,
     as for example, gesture and speech. So deaf people understand
-    speakers, not by the sound, but by the motion of the mouth.' 'What
-    is an Idea?' (1678) G 7.326-4; L 205T 2. 'One thing expresses
-    another (in my terminology) when there is a constant and ordered
-    relation between what can be said of the one and what can be
-    asserted of the other. This is the way that a perspectival
+    speakers, not by the sound, but by the motion of the mouth.' **'What
+    is an Idea?' (1678) G 7.326-4; L 205T 2.**
+    
+    -  The model expresses the machine.
+    -  The way that things are arranged.
+    -  Some are natural, which means they depend on natural laws, or
+       natural ways of thinking about things. 
+       -  On the other hand, some correlate to signs and convetionality.
+    
+2.  'One thing expresses another (in my terminology) when there is a 
+    constant and ordered relation between what can be said of the one 
+    and what can be asserted of the other. This is the way that a perspectival
     projection experesses its ground-plan. Expression is common to all
     [substantial] forms, and it is a genus of which natural perception,
     animal sensation and intellectual knowledge are species. In natural
@@ -1879,6 +1886,7 @@ February 26th, 2013 - Reading: Leibniz's theory of expression and cognitive repr
     particulars in the one can be referred to corresponding particulars
     in another.' **'Metaphysical consequences of the Principle of
     Sufficient Reason' (1715), MP 176-7**
+    -  There is a constant relational law betwen the constants.
 
 3.  'It is true that the same thing may be represented in different
     ways; but there must always be an exact relation between the
@@ -1950,4 +1958,31 @@ February 27th, 2013 - Lecture: Expression, perception, soul, body
 -   **Occasionalism**: Minds cause their states, but bodies are mostly 
     passive, causally inert. Some occasionalists, even mind cannot
     change themselves.
-    
+    -  [Wikipedia:](http://en.wikipedia.org/wiki/Occasionalism) 
+       **Occasionalism** is a philosophical theory about causation which
+       says that created substances cannot be efficient causes of 
+       events. Instead, all events are taken to be caused directly by 
+       God.
+- If you have a three dimensional scene,
+  -  If you pick an angle from every point on the scene, draw a straight 
+	   line.
+  -  If you take a plane and "stick it between" the lines to your point,
+	   you have a 2D representation of a 3D scene.
+  -  It can be so good you think you're seeing the scene, and illusion.
+-  These cases, expressions is a symettrical relation, if there is a 
+   correspondence, there's going to be a reverse correspondence too.
+   -  A lot of the examples of expressions Leibniz gives are not this
+     strong.
+   -  If you think of the combustion engine, there are going to be 
+     features of the machine which will not be able to be expressed
+     in the model.
+   -  Very like loss of precision in computer science.
+-  X is perceiving if and only if X is an individual substance and X
+   expresses something material, divisible, and multitude.
+-  There's a substantial form, your substantial form, which expresses
+   perfectly the body that you animate.
+-  Look a map expresses the territory it maps, no way that it cognizes
+   the territory.
+   -  I have true unity, which expresses this territory. According to 
+      Leibniz, this cognizes the territory.
+	  
