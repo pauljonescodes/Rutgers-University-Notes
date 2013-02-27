@@ -2074,10 +2074,32 @@ February 26th, 2013 - Recitation
 -   Lets assume we have 0.625 in the decimal system.
 -   We use a linear array
 
-         _    _    _     _    _    _
-        | |  | |  | |   | |  | |  | |
-        |_|  |_|  |_| . |_|  |_|  |_|
-        2^3  2^1  2^0   2^-1 2^-2 2^-3
+         __    __    __     __    __    __
+        |  |  |  |  |  |   |  |  |  |  |  |
+        |__|  |__|  |__| . |__|  |__|  |__|
+        2^3   2^1   2^0    2^-1  2^-2  2^-3
 
 February 26th, 2013 - Lecture: Assembly Language Programming
 ------------------------------------------------------------
+
+> How are you? <cite>Student</cite>
+> Not dead yet. <cite>Brian Russel</cite>
+
+### Indexed Mode Addressing
+
+- Add content of two registers to get address of operand
+	+ `movl (%eab, %esi), %eax`
+		* Copy value at `address = eab + esi` into `eax`
+	+ `movl 8(%eab, %esi), %eax`
+		* Copy value at `address = 8 + eab + esi` into `eax`
+- Useful for dealing with arrays
+- Autovariables and formal parameters are treated pretty much the same.
+
+### Address Computation Examples
+
+		%edx   0xf0000
+		%ecx   0x100
+		
+		Expression    Computation      Adress
+		0x8 (%edx)    0xf0000 + 0x8    0xf008
+
