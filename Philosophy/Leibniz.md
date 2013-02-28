@@ -1436,9 +1436,9 @@ February 20th, 2013 - Lecture: Critique of Descartes' doctrine of corporal subst
         unity is in some way mental).
         -   Several things collected together as one thing.
 
-    3.  An aggreagate is real only if its constituents are true unities
+    3.  An aggregate is real only if its constituents are true unities
         (substances).
-    4.  So if an aggreagate is composed of aggregates, which are
+    4.  So if an aggregate is composed of aggregates, which are
         composed of aggregates endlessly - the decomposition set
         contains nothing but aggregates, and it is unreal.
     5.  So a C-body is unreal.
@@ -1985,4 +1985,44 @@ February 27th, 2013 - Lecture: Expression, perception, soul, body
    the territory.
    -  I have true unity, which expresses this territory. According to 
       Leibniz, this cognizes the territory.
-	  
+      
+February 27th, 2013 - Short Paper Assignment
+--------------------------------------------
+
+The paper should be five pages in length (a little longer is acceptable)
+Some topics to write about are suggested below. The suggestions are
+starting points. You decide how you want to develop them. This may
+involve narrowing or focusing the topic. Remember - you only have five 
+pages for this. The paper must make a clear point or claim, and it
+must make *a strong case* for this claim.
+
+You may write on a topic not mentioned below provided that it involves
+material we've discussed. Please consult with me before beginning to 
+write on such a topic. Even if you choose one of the listed topics,
+you may want to let me know how you intend to focus it.
+
+1. According to Leibniz, there is no reason for doubting that God can 
+form a concept of Adam so complete that everything that happens to Adam
+and the Universe can be derived from it. 'It follows that he would not 
+have been our Adam, but another, if he had experienced other events.'
+('Remarks on Arnauld's Letter', etc., p. 73; G 2.42)
+What is the reasoning by which Leibniz purports to show that this 
+conclusion follows? Comment on the argument and/or consider some
+implications, e.g. whether Adam could have refused the apple, whether
+it is necessary that Adam took the apple.
+
+2. Arnauld complained that Leibniz's argument that extension alone
+is not sufficient to constitute a substance (*contra* Descartes'
+account of corporeal substance) depends on an arbitrary definition on an
+individual substance. Discuss the question whether or not this is a good
+objection.
+
+3. Corporeal substances have a claim to be true unities in part because
+they are indestructible. Why is this important to Leibniz? Why do corporeal
+substances have this property? Consider some implications regarding what
+there is in the material world. You might consider, e.g., whether Leibniz
+can explain the fact that in some species, a worm can be cut into two
+and both half of it live; or, whether he can explain the fact that a cutting
+taken from a pear tree and grafted onto an apple tree grows and produces
+pears; or some other facts about living things. Do you think that the doctrine
+of corporeal substances is in some way problematic?

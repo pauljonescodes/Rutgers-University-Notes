@@ -693,11 +693,6 @@ distinct label from \\(\lbrace 1,2,3,4,5,6\rbrace \\).
 
 ## February 7th, 2013 - Homework 2
 
-Paul Jones\
-Professor David Cash\
-Introduction to Discrete Structures II (01:198:206)\
-
-Homework 1
 
 1.  (8 points) Prove that \\(P(A \cup B) \le P(A) + P(B)\\) for any events A
     and B. Prove the general version by induction, which says that if
@@ -1249,42 +1244,208 @@ happen.
     3 spades? What if we condition on the hand containing at least 1
     spade?
 
-2.  (7 points) Suppose \\(n\\) people each throw a six-sided die. Let \\(A_n\\)
+    -   A deck of cards has 52 cards, 4 suits, 13 ranks, one of each
+        suit/rank combination.
+
+    -   There are $52 \choose 5$ possible hands.
+
+    -   There are $13$ cards which are spades.
+
+    -   Let $E_i = $ “a spade was drawn” and $F_i = $ “anything except a
+        spade was drawn.”
+
+    -   We want $P(E_1 \cap E_2 \cap E_3 \cap F_1 \cap F_2)$.
+
+    -   The probability of $E_1$ is $\frac{13}{52}$, because thirteen of
+        the cards are spades.
+
+    -   Assuming $E_1$, the probability of $E_2$ is $\frac{12}{51}$,
+        because there is one less spade and one less card in general.
+
+    -   Assuming $E_2$, the probability of $E_3$ is $\frac{11}{50}$,
+        because there are now two less spades and two less cards in
+        general.
+
+    -   There are now 49 cards in all, 10 of which *are* spades.
+
+    -   Assuming $E_1$ through $E_3$, the probability of
+        $F_1 = \frac{39}{49}$.
+
+    -   Assuming $F_1$, the probability of $F_2 = \frac{38}{48}$.
+
+        $$\frac{13}{52}\times\frac{12}{51}\times\frac{11}{50}\times\frac{39}{49}\times\frac{38}{48} = 0.008154261704$$
+
+    -   Alternatively, there are 13 choose 3 ways of picking a spade, 39
+        choose 2 way of picking a “not spade,” and there are 52 choose 5
+        possible options:
+
+        $$\frac{{13 \choose 3} {39 \choose 2}}{{52 \choose 5}} = \frac{{286} \times {741}}{{2598960}} = 0.008154261704$$
+
+    -   For part two, you only have to pick four cards out of 51,
+        because one is a space already.
+
+        $$\frac{{13 \choose 2} {39 \choose 2}}{{51 \choose 4}}$$
+
+2.  (7 points) Suppose $n$ people each throw a six-sided die. Let $A_n$
     be the event that at least two distinct people roll the same number.
-    Calculate \\(P(A_n)\\) for \\(n=1,2,3,4,5,6,7\\).
+    Calculate $P(A_n)$ for $n=1,2,3,4,5,6,7$.
+
+    -   For $A_1$, It is impossible for two distinct people to roll the
+        same number if only person rolls. $$P(A_1) = 0$$
+
+    -   For $A_2$, there are 36 possible throws, but only 6 of could
+        contain two distinct people rolling the same number.
+        $$P(A_2) = \frac{6}{6^2} = \frac{1}{6} = 0.1666666667$$
+
+    -   For $A_3$ consider the complement, which can be described as “No
+        two distinct people roll the same number.” The probability that
+        all three people roll unique numbers is
+        $1 \times \frac{5}{6} \times \frac{4}{6} \times$,
+        $$P(A_3) = 1 - P(A_3^c) = 1 - \frac{5}{6} \times \frac{4}{6} = 0.4444444444$$
+
+    -   For $A_4$, consider the complement again, and apply the same
+        reasoning.
+        $$P(A_4) = 1 - 1 \times \frac{5}{6} \times \frac{4}{6} \times \frac{3}{6} = \frac{13}{18} =0.7222222222$$
+
+    -   For $A_5$, consider the complement again, and apply the same
+        reasoning.
+        $$P(A_5) = 1 - \frac{5}{6} \times \frac{4}{6} \times \frac{3}{6} \times \frac{2}{6} = 0.9074074074$$
+
+    -   For $A_6$, consider the complement again. There are $6!$ ways of
+        arranging the integer elements in the string “123456.” This is
+        out of a $6^6$ ways of writing a string with integers from one
+        to six. $$P(A_6) = 1 - \frac{6!}{6^6} = 0.98456790123$$
+
+    -   If 7 people roll a dice with 6 sides, it is inevitable that at
+        least two distinct people roll the same number. $$P(A_7) = 1$$
 
 3.  (3 points) Suppose we draw 2 balls at random from an urn that
     contains 5 distinct balls, each with a different number from
-    \\(\{1,2,3,4,5\}\\), and define the events \\(A\\) and \\(B\\) as
-    \\(\\)A = \text{"5 is drawn at least once"} \quad \text{and} \quad
-    B = \text{"5 is drawn twice"}\\(\\) Compute \\(P(A)\\) and \\(P(B)\\).
+    $\{1,2,3,4,5\}$, and define the events $A$ and $B$ as
+    $$A = \text{``5 is drawn at least once"} \quad \text{and} \quad
+    B = \text{``5 is drawn twice"}$$ Compute $P(A)$ and $P(B)$.
+
+    -   $P(B) = 0$
+
+    -   $P(A) = \frac{4}{{5\choose 2}} = 0.4$
 
 4.  (4 points) In the previous problem, suppose we place the first ball
     back in the urn before drawing the second. Compute
-    \\(P(A),P(B),P(A|B),P(B|A)\\) in this version of the experiment.
+    $P(A),P(B),P(A|B),P(B|A)$ in this version of the experiment.
 
-5.  (4 points) Suppose \\(5\\) percent of cyclists cheat by using illegal
-    doping. The blood test for doping returns positive \\(98\\) percent of
-    the people doping and \\(12\\) percent who do not. If Lance’s test comes
+    -   $P(A) = 1 - \left(\frac{4}{5}\right)^2 = .36 $
+
+    -   $P(B) = \left(\frac{1}{5}\right)^2 = .04$
+
+    -   $P(A|B) = 1$
+
+    -   $P(B|A) = \frac{1}{5}$
+
+5.  (4 points) Suppose $5$ percent of cyclists cheat by using illegal
+    doping. The blood test for doping returns positive $98$ percent of
+    the people doping and $12$ percent who do not. If Lance’s test comes
     back positive, what the probability that he is doping? (Ignoring all
     other evidence, of course...)
 
-6.  (6 points) If \\(A \subseteq B\\), can \\(A\\) and \\(B\\) be independent? What
-    we if require that \\(P(A)\\) and \\(P(B)\\) both not equal \\(0\\) or \\(1\\)?
+    -   $P(C) = $ “the probability a cyclist cheated by doping” $= .05$
+
+    -   $P(T|C) = $ “the probability a cyclist giving a positive test if
+        they doped” $= .98$
+
+    -   $P(T|C^c) = $ “the probability a cyclist giving a positive test
+        if they *did not* dope” $ = .12$
+
+    -   We want the probability of a cyclist doping given a positive
+        test, which is $P(C|T)$.
+
+        $$P(T|C) = .98 = \frac{P(T \cap C)}{P(C)} = \frac{P(T \cap C)}{.05}$$
+
+        $$P(T \cap C) = .049$$
+
+        $$P(T \cap C^c) = .12 = \frac{P(T \cap C^c)}{P(C^c)} = \frac{P(T \cap C^c)}{.95}$$
+
+        $$P(T \cap C^c) = .114$$
+
+    -   For any event $T$ and $C$,
+
+        $$P(T) = P(T \cap C) + P(T \cap C^c)$$
+
+        $$P(T) = .049 + .114 = .163$$
+
+        $$P(C|T) = \frac{P(C \cap T)}{P(T)} = \frac{.049}{.163} = 0.3006134969 \approx .30$$
+
+    -   Intuition:
+
+        -   Take 100 cyclists, 5 of them actually doped according to
+            these numbers.
+
+        -   If all 100 cyclists are tested, it’s very, very likely the 5
+            will return positive.
+
+        -   Of the remaining 95 cyclists, 12 percent of them will also
+            return positive, which makes a little less than 12 cyclists.
+
+        -   So for each of the 17 who tested positive, there are five
+            who actually doped, which means each has a
+            $\frac{5}{17} = 0.2941176471 \approx .30$ probability of
+            doping.
+
+6.  (6 points) If $A \subseteq B$, can $A$ and $B$ be independent? What
+    we if require that $P(A)$ and $P(B)$ both not equal $0$ or $1$?
+
+    -   $A$ and $B$ are independent if they satisfy the condition
+        $P(A \cap B) = P(A)P(B)$
+
+    -   If $A \subseteq B$, it is true that $A \cap B = B$.
+
+    -   This means that $P(A \cap B)=P(B)$.
+
+    -   In order to be independent when $A \subseteq B$ is true, $P(B)$
+        must equal $P(A)\cdot P(B)$.
+
+    -   The only way anything multiplied by something can equal itself
+        is if that something is one.
+
+    -   Therefore, when $A \subseteq B$, $A$ and $B$ can be independent
+        when $P(A) = 1$.
+
+    -   Furthermore, being as anything multiplied by zero yields zero,
+        when $A \subset B$, $A$ and $B$ can be independent if
+        $P(B) = 0$.
+
+    -   So no.
 
 7.  **Extra credit (5 points)** Consider the experiment where two dice
-    are thrown. Let \\(A\\) be the event that the sum of the two dice is 7.
-    For each \\(i \in \{1,2,3,4,5,6\}\\) let \\(B_i\\) be the event that at
-    least one \\(i\\) is thrown.
+    are thrown. Let $A$ be the event that the sum of the two dice is 7.
+    For each $i \in \{1,2,3,4,5,6\}$ let $B_i$ be the event that at
+    least one $i$ is thrown.
 
-    1.  Compute \\(P(A)\\) and \\(P(A|B_1)\\).
+    1.  Compute $P(A)$ and $P(A|B_1)$.
 
-    2.  Prove that \\(P(A|B_i) = P(A|B_j)\\) for all \\(i\\) and \\(j\\).
+        -   $P(A) = \frac{6}{6^2} = \frac{1}{6}$
 
-    3.  Since you know that some \\(B_i\\) always occurs, does it make sense
-        that \\(P(A) \neq P(A | B_i)\\)? (After all, if \\(E\\) is an event with
-        \\(P(E) = 1\\), then for any event \\(F\\), \\(P(F|E) = P(F)\\). What is
+        -   $P(A|B_1) = \frac{P(A \cap B_1)}{P(B_1)}= \frac{\frac{3}{{6 \choose 2}}}{\frac{1}{6} + \frac{1}{6}} = 0.6$
+
+    2.  Prove that $P(A|B_i) = P(A|B_j)$ for all $i$ and $j$.
+
+        -   Being as the sum has to be seven, there is one and only way
+            to sum to seven for the integers 1 through 6.
+
+        -   So it doesn’t matter what is rolled on the first roll, the
+            probability “rides on” the second roll being the number the
+            first roll needs to sum to seven.
+
+        -   The probability of rolling any given number on a fair die is
+            always $\frac{1}{6}$.
+
+        -   Therefore, for all $i$ and $j$, the probability cannot be
+            anything but $\frac{1}{6}$.
+
+    3.  Since you know that some $B_i$ always occurs, does it make sense
+        that $P(A) \neq P(A | B_i)$? (After all, if $E$ is an event with
+        $P(E) = 1$, then for any event $F$, $P(F|E) = P(F)$. What is
         going on? Does this seem paradoxical?)
+
 
 ## February 20th, 2013 - Lecture: Independence
 
@@ -1510,4 +1671,6 @@ happen.
 		* How many \\(K_K\\) are these in \\(K_K \\)? \\(n \choose k\\)
 		* Want: \\[ P(E) = P\left( \bigcup_{i =1}^{n \choose k} E_i \right) \lt 1 \\]
 		\\[]
+
+## February 25th, 2013 - Lecture: Midterm Review
 

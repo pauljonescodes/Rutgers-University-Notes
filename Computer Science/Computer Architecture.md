@@ -958,16 +958,16 @@ February 13th, 2013 - Lecture
 
 -   base 2, each digit is 0 or 1
 -   Numbers are written as \\( d\_n, ..., d\_2, d\_1, d\_0 \\)
--   Value of number is computer as \\[ \sum\_{i = 0}\^n d\_i \times 2\^i
+-   Value of number is computer as \\[ \sum\_{i = 0}^n d\_i \times 2^i
     \\]
 
 ### Hexadecimal numbers
 
 -   Base 16
 -   Each digit c an be one of 16 different valyes
-    -   Symbols = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F}
+    -   Symbols = {$0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F$}
 
--   Value \\[ \sum\_{i = 0}\^n d\_i \times 16\^i \\]
+-   Value \\[ \sum\_{i = 0}^n d\_i \times 16^i \\]
 
 ### Octal numbers
 
@@ -976,7 +976,7 @@ February 13th, 2013 - Lecture
 -   Grabbing 3 bits at a time
 -   Value =
 
-\\[ \sum\_{i = 0}\^n d\_i \times 8\^i \\]
+\\[ \sum\_{i = 0}^n d\_i \times 8^i \\]
 
 ### Converting hex to binary
 
@@ -1000,19 +1000,19 @@ February 13th, 2013 - Lecture
 
 ### Decimal to binary
 
--   What is the largest power of 2, q, r... such that \\[ n = 2\^p +
-    r\_1 \\] where \\(r\_1 \le 2\^p \\) \\[n - 2\^p = 2\^q + r\_2\\]
-    where \\(\*r\_2 \le 2\^q \\) \\[ n - (2\^p + 2\^q) = 2\^r + r\_3\\]
-    where \\(r\_3 \< r\^r\\)
+-   What is the largest power of 2, q, r... such that \\[ n = 2^p +
+    r\_1 \\] where \\(r\_1 \le 2^p \\) \\[n - 2^p = 2^q + r\_2\\]
+    where \\(\*r\_2 \le 2^q \\) \\[ n - (2^p + 2^q) = 2^r + r\_3\\]
+    where \\(r\_3 \< r^r\\)
 
 ### Decimal and binary fractions
 
 -   In decimal, digits to the right of radix point have value
-    \\(\frac{1}{10}\^i\\) for each digit in the \\(i\^{th}\\) place
+    \\(\frac{1}{10}^i\\) for each digit in the \\(i^{th}\\) place
     -   0.25 is 2/10 + 5/100
 
 -   Similarly, ib binary, digits to the right of radix point have value
-    \\(1/2\^i\\) for each ith place
+    \\(1/2^i\\) for each ith place
     -   Just the base is different
 
 ### Data sizes
@@ -1057,10 +1057,10 @@ February 13th, 2013 - Lecture
         1100 = -4
         1011 = -3
 
--   Unsigned integers n bits \\[0 ... 2\^n - 1\\]
+-   Unsigned integers n bits \\[0 ... 2^n - 1\\]
 
 -   Signed magnitude \\[ 10000*{10} = 00002710\\] \\[-10000*{10} =
-    80002710 \\] \\[-2\^{n-1} ... 2\^{n-1} \\]
+    80002710 \\] \\[-2^{n-1} ... 2^{n-1} \\]
 
         00000000 = 0
         80000000 = 0
@@ -1091,12 +1091,12 @@ February 13th, 2013 - Lecture
 
 -   Two's complement in n bits
 
-    -   value \\[-d\_{n-1}2\^{n-1} + \sum-{i=0}^{n-1}d\_is^i\\]
+    -   value \\[-d\_{n-1}2^{n-1} + \sum-{i=0}^{n-1}d\_is^i\\]
     -   range \\[ \left[ -2^{n-1}, 2^{n-1}-1\right]\\]
 
 -   Some math
 
-\\[1000*{10} = 000003E8 = \\] \\[0x2\^{31} + 1000*{10} = 1000 \\]
+\\[1000*{10} = 000003E8 = \\] \\[0x2^{31} + 1000*{10} = 1000 \\]
 
 \\[-1000\_{10} = FFFFFC18\\]
 
@@ -1835,7 +1835,7 @@ February 18th, 2013 - Lecture
 -   If in 32 bit quantity 0 is our least significant and 31 is the most,
     then shifting to the left yields to the left bit being lost (?)
 -   In C operators are `<<` and `<<=`
--   Shifting left n bits is exactly euivilent to mutiplying 2\^n
+-   Shifting left n bits is exactly euivilent to mutiplying 2^n
     -   if you want a nice way to multiply something by two, this is
         ideal.
 
