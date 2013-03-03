@@ -1666,11 +1666,98 @@ happen.
 	+ **Outline**: (Erdos)
 		1. Calculate the probability that a random coloring "works", not that is greater than 0
 		2. Therefore one exists, and done.
-	+ Color each edge independalty Red or Blue with probability of one half
+	+ Color each edge independently Red or Blue with probability of one half
 		* E = "some K_k gets all Red or Blue edges"
 		* How many \\(K_K\\) are these in \\(K_K \\)? \\(n \choose k\\)
 		* Want: \\[ P(E) = P\left( \bigcup_{i =1}^{n \choose k} E_i \right) \lt 1 \\]
 		\\[]
 
-## February 25th, 2013 - Lecture: Midterm Review
+## February 25th, 2013 - Lecture: Mutual Independence and Applications
 
+### Topics 
+
+-   Definition of mutual independence
+-   Examples
+-   Applications to biased coin flips
+    -   primality testing
+    -   the bound on Ramsey numbers
+
+## February 25th, 2013 - Reading
+
+### Ross 3.4. 
+
+### Rosen 7.2.
+
+## February 28th, 2013 - Review Sheet 1
+
+### Set Theory Review
+
+-   $x \in A$ means "x is an element of A"; $x \notin A$ means it's not.
+-   **relations between sets**
+    -   $A \subseteq B$ means that if x is in A, then x is in B
+    -   $A \supseteq B$ means $B \subseteq A$
+    -   $A = B$ means $A \subseteq B$ and $B \subseteq A$
+-   **operations on sets**
+    -   $A^c = \{x \in S : x \notin A\}$ (complement)
+    -   $\emptyset = S^c$ (the empty set)
+    -   $A \cap B = \{x \in S : x \in A \land x \in B\}$ (intersection)
+    -   $A \cup B = \{x \in S : x \in A \lor x \in B \}$ (union)
+    -   $A \setminus B =\{x\in S :x\in A \land x \notin B \} = A \cap B^c$
+-   **set identities**
+    -   $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$
+    -   $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$
+    -   $(A \cap B)^c = (A^c) \cup (B^c)$ (de Morgan's law)
+    -   $(A \cup B)^c = (A^c) \cap (B^c)$ (de Morgan's law)
+
+### Probability Theory
+
+-   **Random experiment**
+    -   Idealized or conceptual experiment.
+    -   It can be useful to imagine that the experiment can be repeated
+        infinitely often under identical conditions, but with different
+        outcomes.
+-   **Sample Space**
+    -   The set of outcomes (elementary events) of a random experiment.
+-   **An event**
+    -   A subset of the sample space of an experiment.
+    -   If the experiment is performed and the out of $x \in S$ we say that
+        "x occurs."
+    -   If not, "x does not occur"
+-   **Probability measure**
+    -   A real-valued non-negative function on events in S which satisfy
+        these axioms:
+        -   $P(S) = 1$
+        -   $P(A \cup B) = P(A) + P(B)$ whenever $A \cap B = \emptyset$
+
+### Conditional Probability
+
+-   **Conditional probability formula**
+
+$$ P(B|A) = \frac{P(A \cap B)}{P(A)} $$
+
+-   **Hypotheses**
+
+$$ P(A) = \sum_{i = 1}^{n} P(H_1)P(A|H_i) $$
+
+-   **Bayes' rule**
+
+$$P(H_i|A) = \frac{P(A|H_1)P(H_1)}{\sum_{j = 1}^n P(H_j)P(A|H_j)}$$
+
+
+### Independence
+
+-   Events are **independent** if and only if
+
+$$P(B|A) = P(B) $$
+
+-   This means that the probability of B given the information that A has
+    occurred is the original probability of B, so A gives no new
+    information about B's probability. Using the conditional probability
+    formula, for the left-hand side we see that
+
+$$P(A \cap B) \setminus P(A) = P(B) $$
+
+-   Multiplying both sides of this equation by $P(A)$ we get the 
+    **product law** for independent events
+
+$$P(A \cap B) = P(A)P(B)$$

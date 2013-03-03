@@ -2241,6 +2241,42 @@ and 8. The queen always starts on the d file.
     after the move. So, promoting a pawn to a knight might be "g7 g8 N".
     If no promotion is indicated, it is assumed to be a queen.
 
+        bR bN bB bQ bK bB bN bR 8
+        bp bp bp bp bp bp bp bp 7
+           ##    ##    ##    ## 6
+        ##    ##    ##    ##    5
+           ##    ##    ##    ## 4
+        ##    ##    ##    ##    3 
+        wp wp wp wp wp wp wp wp 2
+        wR wN wB wQ wK wB wN wR 1
+         a  b  c  d  e  f  g  h
+
+        White's move: e2 e4
+
+        bR bN bB bQ bK bB bN bR 8
+        bp bp bp bp bp bp bp bp 7
+           ##    ##    ##    ## 6
+        ##    ##    ##    ##    5
+           ##    ## wp ##    ## 4
+        ##    ##    ##    ##    3
+        wp wp wp wp    wp wp wp 2
+        wR wN wB wQ wK wB wN wR 1
+         a  b  c  d  e  f  g  h
+
+        Black's move: e7 e5
+
+        bR bN bB bQ bK bB bN bR 8
+        bp bp bp bp ## bp bp bp 7
+           ##    ##    ##    ## 6
+        ##    ##    bp    ##    5
+           ##    ## wp ##    ## 4
+        ##    ##    ##    ##    3
+        wp wp wp wp    wp wp wp 2
+        wR wN wB wQ wK wB wN wR 1
+         a  b  c  d  e  f  g  h
+
+        White's move:
+
 #### Ending the game
 
 -   If checkmate occurs, the game shall end immediately with the result
@@ -2272,3 +2308,128 @@ class `Chess`. Make sure you record your name in each Java file with the
 - Zip your project source into a zip archive called `chess.zip` (see
 Eclipse tab, under "Zipping up a Project") and submit this file to
 Sakai.
+
+February 25th, 2013 - Lecture
+-----------------------------
+
+### Quiz preparation
+
+-   Implemented `equals`
+    -   An example of good equals, according to Dr. Sesh:
+
+            public boolean equals (Object o) {
+                if (o == null || !(o instanceof Point))
+                    return null;
+                Point p = (Point) o;
+                return x == p.x && y = p.y;
+                }
+   -   Another example from [StackOverflow](http://stackoverflow.com/a/27609/1489522):
+   
+            public boolean equals(Object obj) {
+              if (obj == null)
+                  return false;
+              if (obj == this)
+                  return true;
+              if (obj.getClass() != getClass())
+                  return false;
+              Person rhs = (Person) obj;
+              return new EqualsBuilder().
+                  // if deriving: appendSuper(super.equals(obj)).
+                  append(name, rhs.name).
+                  append(age, rhs.age).
+                  isEquals();
+            }
+   -   Should be:
+       -  reflexive 
+       -  symmetric
+       -  transitive
+       -  consistent
+-   [access levels](http://www.tutorialspoint.com/java/java_access_modifiers.htm) 
+    -   `private`
+        -   Methods, Variables and Constructors that are declared private
+            **can only be accessed within the declared class itself**.
+        -   Private access modifier is the most restrictive access level. **Class
+            and interfaces cannot be private**.
+        -   Variables that are declared private *can be accessed outside the class
+            if public getter methods are present in the class*.
+    -   `package`
+    -   `protected`
+        -   Variables, methods and constructors which are declared protected in a
+            superclass can be accessed only by the subclasses in other package or any 
+            class within the package of the protected members' class.
+        -   The protected access modifier cannot be applied to class and interfaces. 
+            Methods, fields can be declared protected, however methods and fields in 
+            a interface cannot be declared protected.
+        -   Protected access gives the subclass a chance to use the helper method or 
+            variable, while preventing a nonrelated class from trying to use it.
+    -   `public`
+        -   A class, method, constructor, interface etc declared public **can be
+            accessed from any other class**. Therefore fields, methods, blocks 
+            declared inside a public class can be accessed from any class 
+            belonging to the Java Universe.
+        -   However if the public class we are trying to access is in a 
+            different package, then the public class **still need to be 
+            imported**.
+        -   Because of class inheritance, **all public methods and variables of a
+            class are inherited by its subclasses**.
+    - [Awesome table](http://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html):
+<table border="1" style="text-align:center;margin-left:auto; margin-right:auto;">
+<tbody><tr>
+<th id="h1">Modifier</th>
+<th id="h2">Class</th>
+<th id="h3">Package</th>
+<th id="h4">Subclass</th>
+<th id="h5">World</th>
+</tr>
+<tr>
+<td headers="h1"><code>public</code></td>
+<td headers="h2">Y</td>
+<td headers="h3">Y</td>
+<td headers="h4">Y</td>
+<td headers="h5">Y</td>
+</tr>
+<tr>
+<td headers="h1"><code>protected</code></td>
+<td headers="h2">Y</td>
+<td headers="h3">Y</td>
+<td headers="h4">Y</td>
+<td headers="h5">N</td>
+</tr>
+<tr>
+<td headers="h1">no modifier</td>
+<td headers="h2">Y</td>
+<td headers="h3">Y</td>
+<td headers="h4">N</td>
+<td headers="h5">N</td>
+</tr>
+<tr>
+<td headers="h1"><code>private</code></td>
+<td headers="h2">Y</td>
+<td headers="h3">N</td>
+<td headers="h4">N</td>
+<td headers="h5">N</td>
+</tr>
+</tbody></table> 
+-   `interface`
+    -   an interface is a group of related methods with empty bodies 
+    -   Interfaces cannot be instantiated, but rather are implemented
+    -   One benefit of using interfaces is that they simulate multiple inheritance
+-   [`abstract` classes](http://docs.oracle.com/javase/tutorial/java/IandI/abstract.html)
+    -   An abstract class is a class that is declared abstract - it may or may not
+        include abstract methods. Abstract classes **cannot be instantiated**, 
+        but they **can be subclassed**.
+    -   An abstract method is a method that is declared **without an implementation**
+    -   When an abstract class is subclassed, the subclass usually provides
+        implementations for all of the abstract methods in its parent class. 
+        However, if it does not, the subclass must also be declared abstract.
+- polymorphism
+  - inheritance
+  - `static`
+  - dynamic binding
+
+### UML Class Diagram II
+
+-   Class A depends on class B if A **uses** B in such a way that a change in B
+    will effect A
+-   Say A depends on B. Typically, then, B would appear as a parameter, return
+    type, or local variable in a method of A.

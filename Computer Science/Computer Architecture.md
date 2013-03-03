@@ -23,29 +23,24 @@ Syllabus
 --------
 
 -   Instructor: Brian Russell
-    -   Email:
-        <a href = "mailto:morbius@cs.rutgers.edu">morbius@cs.rutgers.edu</a>
+    -   <a href = "mailto:morbius@cs.rutgers.edu">Email</a>
     -   Office Hours: Wednesdays 8:00-9:00 pm, Hill 403.
 
 -   TAs
     -   Yuanzhen Gu
-        -   Email:
-            <a href = "mailto:yg185@cs.rutgers.edu">yg185@cs.rutgers.edu</a>
+        -   <a href = "mailto:yg185@cs.rutgers.edu">Email</a>
         -   Office Hours: Thursdays, 3:00-4:00 pm, Hill 418
 
     -   Longhao Shu
-        -   Email:
-            <a href = "mailto:ls675@cs.rutgers.edu">ls675@cs.rutgers.edu</a>
+        -   <a href = "mailto:ls675@cs.rutgers.edu">Email</a>
         -   Office Hours: Thursdays, 5:00-6:00 pm, Hill 416
 
     -   Chaowei Tan
-        -   Email:
-            <a href ="mailto:ct382@cs.rutgers.edu">ct382@cs.rutgers.edu</a>
+        -   <a href ="mailto:ct382@cs.rutgers.edu">Email</a>
         -   Office Hours: Fridays, 9:00-10:00 am, Hill 488
 
     -   Vilemini Kalambratsidou
-        -   Email:
-            <a href = "mailto:vilelmini.kalabratsidou@gmail.com">vilelmini.kalabratsidou@gmail.com</a>
+        -   <a href = "mailto:vilelmini.kalabratsidou@gmail.com">Email</a>
         -   Office Hours: Wednesdays 10:00 am-Noon, Hill 410
 
 ### Objective
@@ -570,7 +565,6 @@ January 30th, 2013 - Office hours
     -   you can append using `>>`
 
 -   we can copy and move files around
-    -   `cp file1 [files ...] target`
     -   `mv ...`
 
 -   `date` tells you the time of day and the date
@@ -965,7 +959,7 @@ February 13th, 2013 - Lecture
 
 -   Base 16
 -   Each digit c an be one of 16 different valyes
-    -   Symbols = {$0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F$}
+    -   Symbols = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F}
 
 -   Value \\[ \sum\_{i = 0}^n d\_i \times 16^i \\]
 
@@ -1091,7 +1085,7 @@ February 13th, 2013 - Lecture
 
 -   Two's complement in n bits
 
-    -   value \\[-d\_{n-1}2^{n-1} + \sum-{i=0}^{n-1}d\_is^i\\]
+    -   value \\[-d_{n-1}2^{n-1} \\]\\[\sum_{i=0}^{n-1}d_is^i\\]
     -   range \\[ \left[ -2^{n-1}, 2^{n-1}-1\right]\\]
 
 -   Some math
@@ -1618,7 +1612,7 @@ Represents the character which this node is responsible for. Every word
 in the subtree, defined later in this document, will begin with this
 character.
 
-##### `char_tree_node *left, *right`
+##### char_tree_node *left, *right
 
 These represent the edges between two nodes, forming a tree structure.
 
@@ -1653,7 +1647,7 @@ appeared in total. It is case-insensitive instances.
 
 When outputted, this will be called “Total No. Occurrences.”
 
-##### `struct word_tree_node *left, *right`
+##### struct word_tree_node *left, *right
 
 So as to create a tree structure, these pointers represent a left and
 right, where every sub-tree to the left contains values strictly smaller
@@ -1670,7 +1664,7 @@ exist in the document.
 
 When outputted, this will be called “No. Case-Sensitive Versions.”
 
-##### `struct word_list_node *case_sensitive_list`
+##### struct word_list_node *case_sensitive_list
 
 This is a singly-linked-list which is defined below.
 
@@ -2088,10 +2082,12 @@ February 26th, 2013 - Lecture: Assembly Language Programming
 ### Indexed Mode Addressing
 
 - Add content of two registers to get address of operand
-	+ `movl (%eab, %esi), %eax`
-		* Copy value at `address = eab + esi` into `eax`
-	+ `movl 8(%eab, %esi), %eax`
-		* Copy value at `address = 8 + eab + esi` into `eax`
+
+		movl (%eab, %esi), %eax
+		// Copy value at address = eab + esi into eax
+		movl 8(%eab, %esi), %eax
+		// Copy value at address = 8 + eab + esi into eax
+		
 - Useful for dealing with arrays
 - Autovariables and formal parameters are treated pretty much the same.
 
@@ -2103,3 +2099,29 @@ February 26th, 2013 - Lecture: Assembly Language Programming
 		Expression    Computation      Adress
 		0x8 (%edx)    0xf0000 + 0x8    0xf008
 
+## February 28th, 2013 - Lecture
+
+### Some Arithmetic Operations
+
+    Instruction      Computation
+    adll  Src,Dest   Dest = Dest +  Src
+    subl  Src,Dest   Dest = Dest -  Src
+    imull Src,Dest   Dest = Dest *  Src
+    sall  src,Dest   Dest = Dest << Src (left shift)
+    
+    sarl  Src,Dest   Dest = Dest >> Src (right shift)
+    xorl  Src,Dest   Dest = Dest ^  Src
+    andl  Src,Dest   Dest = Dest &  Src
+    orl   Src,Dest   Dest = Dest |  Src
+
+March 1st, 2013 - Notes: [IEEE 754](http://en.wikipedia.org/wiki/Single-precision_floating-point_format#IEEE_754_single-precision_binary_floating-point_format:_binary32)
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+        sign           exponent (8 bits)            fraction (23 bits)
+        +--+    +--++--++--++--++--++--++--++--+    +--+          +--+
+        |01|    |02||03||04||05||06||07||08||09|    |10|    ...   |23|
+        +--+    +--++--++--++--++--++--++--++--+    +--+          +--+
+        
+$$(-1)^\text{sign} \times $$
+$$(1 + \sum_{i=1}^{23} b_{23-i} 2^{-i} )$$
+$$\times 2^{(e-127)}$$
