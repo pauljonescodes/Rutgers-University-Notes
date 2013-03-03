@@ -1,6 +1,80 @@
 Introduction to Discrete Structures <small>Midterm 1 Review</small>
 ===================================================================
 
+## Review Sheet 1
+
+### Set Theory Review
+
+-   $x \in A$ means "x is an element of A"; $x \notin A$ means it's not.
+-   **relations between sets**
+    -   $A \subseteq B$ means that if x is in A, then x is in B
+    -   $A \supseteq B$ means $B \subseteq A$
+    -   $A = B$ means $A \subseteq B$ and $B \subseteq A$
+-   **operations on sets**
+    -   $A^c = \{x \in S : x \notin A\}$ (complement)
+    -   $\emptyset = S^c$ (the empty set)
+    -   $A \cap B = \{x \in S : x \in A \land x \in B\}$ (intersection)
+    -   $A \cup B = \{x \in S : x \in A \lor x \in B \}$ (union)
+    -   $A \setminus B =\{x\in S :x\in A \land x \notin B \} = A \cap B^c$
+-   **set identities**
+    -   $A \cup (B \cap C) = (A \cup B) \cap (A \cup C)$
+    -   $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$
+    -   $(A \cap B)^c = (A^c) \cup (B^c)$ (de Morgan's law)
+    -   $(A \cup B)^c = (A^c) \cap (B^c)$ (de Morgan's law)
+
+### Probability Theory
+
+-   **Random experiment**
+    -   Idealized or conceptual experiment.
+    -   It can be useful to imagine that the experiment can be repeated
+        infinitely often under identical conditions, but with different
+        outcomes.
+-   **Sample Space**
+    -   The set of outcomes (elementary events) of a random experiment.
+-   **An event**
+    -   A subset of the sample space of an experiment.
+    -   If the experiment is performed and the out of $x \in S$ we say that
+        "x occurs."
+    -   If not, "x does not occur"
+-   **Probability measure**
+    -   A real-valued non-negative function on events in S which satisfy
+        these axioms:
+        -   $P(S) = 1$
+        -   $P(A \cup B) = P(A) + P(B)$ whenever $A \cap B = \emptyset$
+
+### Conditional Probability
+
+-   **Conditional probability formula**
+
+$$ P(B|A) = \frac{P(A \cap B)}{P(A)} $$
+
+-   **Hypotheses**
+
+$$ P(A) = \sum_{i = 1}^{n} P(H_1)P(A|H_i) $$
+
+-   **Bayes' rule**
+
+$$P(H_i|A) = \frac{P(A|H_1)P(H_1)}{\sum_{j = 1}^n P(H_j)P(A|H_j)}$$
+
+
+### Independence
+
+-   Events are **independent** if and only if
+
+$$P(B|A) = P(B) $$
+
+-   This means that the probability of B given the information that A has
+    occurred is the original probability of B, so A gives no new
+    information about B's probability. Using the conditional probability
+    formula, for the left-hand side we see that
+
+$$P(A \cap B) \setminus P(A) = P(B) $$
+
+-   Multiplying both sides of this equation by $P(A)$ we get the 
+    **product law** for independent events
+
+$$P(A \cap B) = P(A)P(B)$$
+
 Axioms of Probability - Self Test Problems and Exercises
 --------------------------------------------------------
 
@@ -217,14 +291,187 @@ Axioms of Probability - Self Test Problems and Exercises
              the second position.
          -   There are two options for the first horse to be in the
              top three, then, in position one and position three.
-         -   For each of these options, there are 6 choices for the
-             unclaimed spot.
+         -   For each of these options, there are 4 choices for the
+             unclaimed spot. $2 \times 4!$
+         $$N(A \cup B) = \frac{5!}{6!} + \frac{5!}{6!} - (2 \times 4!)$$
+         
+11. A 5-card hand is dealt from a well-shuffled deck of 52 playing cards. 
+    What is the probability that the hand contains at least one card from 
+    each of the four suits?
+    -   This is event is really asking what is the probability that the
+        first four cards are of different suits. (The fifth isn't 
+        relevant because it *has* to be a repreated suit.)
+        $$\frac{{52 \choose 1}}{52} \frac{{39 \choose 1}}{51} \frac{{26 \choose 1}}{50} \frac{{13 \choose 1}}{49}$$
+        
+12.  A basketball team consists of 6 frontcourt and 4 backcourt players. 
+     If players are divided into roommates at random, what is the 
+     probability that there will be exactly two roommate pairs made up 
+     of a backcourt and a frontcourt player?
 
+Midterm Review Powerpoint
+-------------------------
 
+### Counting
 
+-   **Multiplication principle**
+    -   If we can classify a set of objects by a sequence of decisions,
+        then the (# objects) = (# choices on first decisions) x ... x
+        (# of choices in last decision)
+    -   Mathematically,
+        $$|A_1 \times A_2 \times ... \times A_n| = |A_1| \cdot |A_2| \cdot ... \cdot |A_n|$$
+-   **Permutations**
+    -   Number of ways to put $n$ things in order:
+        $$n(n - 1)\times(n - 2)\times...\times 2 \times 1 = n!$$ 
+    -   Number of ways to put $k$-out-of-$n$ things in order:
+        $$n(n - 1)\times(n - 2)\times ... \times (n - k + 1) = \frac{n!}{(n -k)!}$$
+-   **Permutations with repeats**
+    -   Ways to order $n$ objects, with $n_1$ alike, ..., $n_r$ alike.
+        $$\frac{n!}{n_1! ... n_r!} = {n \choose n_1, ..., n_r}$$
+-   **Combinations**
+    -   Ways to choose $k$-out-of-$n$ things where order doesn't matter:
+        $$\frac{n!}{k!(n - k)!} = {n \choose k}$$
+-   **Partitions**
+    -   Number of ways to divide $n$ indistinguishable obects in $r$
+        non-empty piles:
+        $${n - 1 \choose r - 1}$$
+    -   Number of ways to divide $n$ indistinguishable objects in $r$ 
+        piles, empty allowed:
+        $$n + r - 1 \choose r - 1 $$
+-   **Binomial theorem**
+    $$(x + y)^n = \sum_{k = 0}^n {n \choose k}x^k y^{n-k}$$
+-   **Cominatorial identities**
+    $$\sum_{k = 0}^n {n \choose k} = 2^n$$
+    $${n \choose k} = {n - 1 \choose k} + {n - 1 \choose k - 1}$$
+-   **Multinomial theorem**
+    $$(x_1 + ... + x_r)^n = \sum_{0 < n_1 < ... < n_r < n} {n \choose n_1, ..., n_r} x_1^{n_1}...x_r^{n_r}$$
+    -   Sum over all ways to express $n$ as sume of $r$ non-negative
+        integers:
+        $$0 \le n_1 \le ... \le n_r \le n : n_1 + ... + n_r = n$$
+        
+### Probability
 
+-   **Sample spaces and events**
+    -   Sample spaces is a set $S$
+    -   Events are subsets of $S$
+    -   Intersection of $E$ and $F$: “Both $E$ and $F$ happen” 
+    -   Union of $E$ and $F$: “Either $E$ or $F$ or both happen” 
+    -   Complement of $E$: “$E$ does not happen”
+    -   $E$ and $F$ are mutually exclusive if intersection of 
+        $E$ and $F$ is empty
+-   **Basic identities**
+    -   $P(\emptyset) = 0$
+    -   $P(E^c) = 1 - P(E)$
+    -   $P(E \cup F) = P(E) + P(F) - P(E \cap F)$
+    -   $P(E) = P(E \cap F) + P(E \cap F^c)
+    -   If $P$ and $F$ are mutually exclusive, then
+        $$P(E \cup F) = P(E) + P(F)$$
+-   **Uniform probability measure**
+    -   If all outcomes are equally likely (fair dice, fair coin,
+        random card, poker hand, etc) then,
+        $$P(E) = \frac{|E|}{|S|}$$
+-   **Conditionall probability**
+    -   Probability of $E$, given that $F$ happened
+        $$P(E|F) = \frac{P(E \cap F)}{P(F)}$$
+-   **Bayes's theorem**
+    -   Think $E$ is "evidence" and $F$ is "outcome"
+        $$P(F|E) = \frac{P(E|F)P(F)}{P(E|F)P(F) + P(E|F^c)P(F^c)}$$
+-   **Multiplication rule for conditional probability**
+    $$P(E_1 \cap ... \cap E_n) = $$
+    $$P(E_1)P(E_2|E_1)P(E_3|E_1\cap E_2) ... $$
+    $$P(E_n | E_1 \cap E_2 \cap ... \cap E_{n-1})$$
+-   **Indepedant events**
+    -   $E$ and $F$ are *independant* if
+        $$P(E \cap F) = P(E) \times P(F) $$
+    -   Equivilently,
+        $$P(E|F) = P(E) \lor P(F) = 0$$
+-   **Prosectutor's fallacy**
+    $$P(E|F) \neq P(F|E)$$
 
+### Review Problems
 
+1.  How many ways can we walk up/right from point A to point B?
+
+          +----+----+----+ B
+          |    |    |    |
+          +----+----+----+
+          |    |    |    |
+          +----+----+----+
+          |    |    |    |
+          +----+----+----+
+          |    |    |    |
+        A +----+----+----+
+    
+    -   A clever way to solve this problem is to represent "ups"
+        and "right" as characters in a string.
+    -   You have to traverse "on the lines" - the strings will
+        have to be seven characters long.
+    -   You can only go "up" four times in any given run.
+    -   You can only go "right" 3 times.
+        $$7 \choose 3, 4$$
+        
+2.  You have 18 non-identical children.
+    1.  Assign them to 4 possibily empty teams.
+        -   Again, you can cleverly solve this problem with strings.
+        -   But I'll do it with sets just to be different.
+        -   You have four sets, $A, B, C, D$, each of which can
+            have can have an elements from the set $\lbrace 1, ..., 18 \rbrace$
+        -   Because each of the four sets can possibly have 18 children
+            in it, there are $4^18$ possibilities.
+        -   Gosh that didn't go as well as planned.
+    2.  How many ways can 18 identical balls be divided into 4 
+        possibily empty groups.
+        -   The formula for putting $n$ objects into $r$ possibly
+            empty groups is
+            $$n + r - 1 \choose r - 1 $$
+        -   There are 18 identical balls ($n$) and 4 possibly empty
+            groups ($R$)
+            $$18 + 4 - 1 \choose 4 - 1 $$
+        -   Refer to stars and bars, partitions.
+3.  How many ways can 18 children be divided into 4 groups so that: 
+    Group 1 has 4 children, Group 2 has 6 children, Group 3 has 
+    5 children, Group 4 has 3 children?
+4.  Suppose we deal a random 5-card poker hand. What is the probability
+    that we get exactly 1 Queen? What about exactly 4 Hearts? Are they 
+    independent?
+    -   $E = $ "get exactly one Queen"
+        -   There are 52 choose 5 possible hands.
+        -   There are 4 Queens in every deck.
+        -   Observe there is symettry.
+            $$\frac{{4 \choose 1} \times {48 \choose 4}}{52 \choose 5}$$
+    -   $F = $ "exactly four Hearts"
+        -   There are 52 choose 5 possible hands.
+        -   There are 13 hearts in every deck.
+            $$\frac{{13 \choose 4}\times{39 \choose 1}}{52 \choose 5}$$
+    -   Events are independant if $P(E \cap F) = P(E) \times P(F) $
+        -   What is the probability of getting one Queen and exactly 
+            four Hearts?
+        -   Of course, the Queen *could be* the Heart.
+        -   So you have to count the instances that the Queen is the
+            fifth card (not heart) as well as those where as the one
+            where *it is* a Heart.
+        -   There are 12 choose 4 ways of picking an Heart which is 
+            *not* a queen, and then 3 choose 1 ways of picking a Queen
+            which *is not* a Heart.
+        -   There is only one Queen of Hearts, and you need 3 more 
+            hearts out of th remaining 12 Hearts after that. 
+        -   Then you need to pick 1 of the remaining 36 cards which
+            are not Hearts *and* not Queens.
+            $$\frac{{12 \choose 4}{3 \choose 1} + {12 \choose 3}{36 \choose 1}}{{52 \choose 5}}$$
+        -   I can eyeball that I'd very much doubt this multiplication
+            adds up, and if this were the test, I'd show it. But being
+            as I know it actually doesn't multiply based on the answers,
+            I'm just going to skip the step. "Leave it as an exercise
+            for the reader", as textbooks would say.
+5.  In a 5-card poker hand, how many ways can we get a 3-of-a-kind?
+    Full house does not count.
+    -   There are 13 different ranks, and this requires you choose one
+        of them.
+    -   Of that rank, which has 4 members, you must choose 3 of them.
+    -   There are 12 ranks left, of which you must choose 2.
+    -   Because full houses don't count (which I assume is when the
+        other two cards are of the same suit as well), you have 
+        to pick 1 from 4, and then 1 from 3 (they *can't* be the same).
+        $${13 \choose 1}\times{4 \choose 3}\times{12 \choose 2}\times{4 \choose 1}\times{3 \choose 1}$$
 
 
 
