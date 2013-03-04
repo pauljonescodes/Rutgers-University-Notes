@@ -2026,3 +2026,94 @@ and both half of it live; or, whether he can explain the fact that a cutting
 taken from a pear tree and grafted onto an apple tree grows and produces
 pears; or some other facts about living things. Do you think that the doctrine
 of corporeal substances is in some way problematic?
+
+March 4th, 2013 - Passages on relational predicates and the metaphysical status of relations
+--------------------------------------------------------------------------------------------
+
+1.  "Therefore there seem to pertain to relations all the extrinsic
+    denominations, i.e. those denominations which rise and perish
+    without any change of the subject, simply because something changes
+    in something else. Thus, a father becomes father as soon as his
+    child is born, even though he, who happens to be in the East Indies,
+    does not undergo any change. Thus, the similarity, which I share
+    with someone else, is born and comes to light without any change in
+    myself, but with a change in the other." A 6.4.308, tr. Mugnai
+
+    NB: An "extrinsic denomination" of X is a predicate applied to X 
+    from something else, Y; e.g. X is the father of Solomon; X is 
+    greater than 3; X is similar to Plato.
+
+2.  ". . . there are no extrinsic denominations, and no one becomes a
+    widower in India by the death of his wife in Europe unless a real
+    change occurs in him. For every predicate is in fact contained in
+    the nature of a subject." A 6.4.1503 (1683-86?), tr. Mugnai
+
+3.  "It follows further that there are no purely extrinsic denominations
+    which have no foundation at all in the denominated thing itself. For
+    the concept of the denominated subject necessarily involves the
+    concept of the predicate. Likewise, whenever the denomination of a
+    thing is changed, some variation has to occur in the thing itself."
+    "Primary Truths" (1689?), L 268
+
+4.  Philalethes-Locke: ". . . a change of relation can occur without
+    there having been any change in the subject. . . [Titius, who is
+    today a father] ceases to be so tomorrow, only by the death of his
+    son, without any alteration made in himself." Theophilus-Leibniz:
+    "That can very well be said if we are guided by the things of which
+    we are aware; but in metaphysical strictness there is no wholly
+    extrinsic denomination (denominatio pure extrinseca), because of the
+    real connection of things." NE 227 (1702-04)
+
+5.  "In addition to the substances, which are the underlying objects,
+    there are the modifications of the substances, which are subject to
+    creation and destruction in their own right. And finally, there are
+    the relations, which are not created in their own right but result
+    from the creation of other things." Notes on Temmik (1715-16),
+    Massimo Mugnai, Leibniz" Theory of Relations, 155, tr. Mugnai
+
+6.  "It may be that dozen and score are merely relations and exist only
+    with respect to the understanding. The units are separate and the
+    understanding takes them together, however scattered they may be.
+    However, although relations are the work of the understanding they
+    are not baseless and unreal. The primordial understanding is the
+    source of things; and the very reality of all things other than
+    simple substances rests only on the foundation of the perceptions or
+    phenomena of simple substances." NE 145
+
+7.  "Relations and orderings are to some extent beings of reason,
+    although they have their foundations in things; for one can say that
+    their reality, like that of eternal truths and possibilities, comes
+    from the Supreme Reason." NE 227
+
+8.  "The reality of relations is dependent on mind, as is that of
+    truths; but they do not depend on the human mind, as there is a
+    supreme intelligence which determines all of them from all time." NE
+    265
+
+March 4th, 2013 - Reading
+-------------------------
+
+### 'Meditation on the Principle of the Individual' (1676)
+
+-   Someone who understands an effect perfectly will also understand the
+    cause of that effect.
+    -   In this way, an effect involves its cause.
+    -   There is a necessary connection between a complete cause and the
+        effect.
+    -   There is an obstacle however! Consider the argument:
+        1.  Whether two parallelograms or two triangles are put together,
+            it will always produce the *same* square.
+        2.  Neither square can be distinguished from the other square.
+        3.  Therefore, not all complete causes have a 1 to 1 relation,
+            they're not functions.
+    -   Leibniz solves this problem by raising the point of how no two
+        objects in his metaphysics can be identical.
+        -   There will be some difference that retains the mind of the
+            method in which change was produced.
+        -   This can be discerned.
+-   This argument proves that matter is *not* homogenous.
+    -   Our inmost mind is present both to itself and to matter,
+        therefore nothing can be introduced to them which cannot be
+        understood by us in some way.
+
+### 'Substance and Individuation in Leibniz', Cover and Hawthorne, pp. 184-99
