@@ -130,8 +130,8 @@ January 24th, 2013 - Lecture
 -   Java is meant to be platform independant.
 -   An `Object` reference does not "know" what type of object it is.
 
-January 28th, 2013 - Recitation: Problem Set 1 (GUI, Javadoc, Inheritence)
---------------------------------------------------------------------------
+January 28th, 2013 - Recitation 1: GUI, Javadoc, Inheritence
+----------------------------------------------------------
 
 1.  Write a program that creates a frame with two buttons on it: OK and
     Quit. When OK is clicked, nothing will happen. When Quit is clicked,
@@ -908,8 +908,8 @@ done this correctly by importing it back as a project into Eclipse
 
 Submit your songlib.zip file.
 
-February 11th, 2013 - Recitation: Problem Set 3 (Tokenizing, GridBagLayout, Interfaces)
----------------------------------------------------------------------------------------
+February 11th, 2013 - Recitation 3: Tokenizing, GridBagLayout, Interfaces
+-------------------------------------------------------------------------
 
 1.  Write a program to accept a string and extract tokens from it. A
     token (string) is any sequence of non-whitespace characters, unless
@@ -926,12 +926,91 @@ February 11th, 2013 - Recitation: Problem Set 3 (Tokenizing, GridBagLayout, Inte
     buttons should continue to hug the borders, and the label should
     continue to be centered.
 
+        package rec3;
+    
+        import java.awt.GridBagConstraints;
+        import java.awt.GridBagLayout;
+        import java.awt.Insets;
+        import java.awt.event.ActionEvent;
+        import java.awt.event.ActionListener;
+    
+        import javax.swing.JButton;
+        import javax.swing.JFrame;
+        import javax.swing.JLabel;
+    
+        public class GridBagLayoutExample extends JFrame {
+    
+        JButton[] buttons = {
+           new JButton("North"),
+           new JButton("West"),
+           null,
+           new JButton("East"),
+           new JButton("South")
+        };
+    
+        public static final int[] widths = 
+        {GridBagConstraints.REMAINDER,1,1,GridBagConstraints.REMAINDER,GridBagConstraints.REMAINDER};
+    
+        GridBagLayout gb = new GridBagLayout();
+        GridBagConstraints gbc = new GridBagConstraints();
+    
+        ActionListener al = new ButtonListener();
+    
+        JLabel label = new JLabel("Default");
+    
+        public GridBagLayoutExample(String title) {
+           super(title);
+           setLayout(gb);
+           for (int i=0; i < buttons.length; i++) {
+            addComponent(i);
+           }
+        }
+                  
+        protected void addComponent(int i) {
+            gbc.gridwidth = widths[i];
+            if (buttons[i] != null) {
+              gb.setConstraints(buttons[i], gbc);
+              add(buttons[i]);
+              buttons[i].addActionListener(al);
+            } else {
+              gbc.weightx = 1;
+              gbc.weighty = 1;
+              gbc.insets = new Insets(20,20,20,20);
+              gb.setConstraints(label, gbc);
+              add(label);
+              gbc.weightx = 0;
+              gbc.weighty = 0;
+              gbc.insets = new Insets(0,0,0,0);
+            }
+        }
+                  
+        protected class ButtonListener implements ActionListener {
+            public void actionPerformed(ActionEvent e) {
+              label.setText(e.getActionCommand());
+            }
+        }
+                  
+        public static void main(String[] args) {
+          // TODO Auto-generated method stub
+          JFrame gbex = new GridBagLayoutExample("GridBagLayouExample");
+          gbex.setDefaultCloseOperation(EXIT_ON_CLOSE);
+          gbex.setLocationRelativeTo(null);
+          gbex.pack();
+          gbex.setVisible(true);
+        }
+        }
+
+
 3.  Suppose you built a Java library of sorting algorithms: insertion
     sort, quicksort, and heapsort. You want to sell this library. How
     would you package your library so users could use any of these
     algorithms in their applications, and switch from using one to
     another (plug-n-play) with the least amount of code rewrite? Come up
     with the most appropriate design.
+
+    -   Write an interface called `SortingAlgorithm` with one or more methods
+    called `sort`, and then write various sorting classes for the different
+    sorting algorithms, that implement the `SortingAlgorithm` interface.
 
 4.  Examine the following classes, then answer the questions below.
 
@@ -969,6 +1048,20 @@ February 11th, 2013 - Recitation: Problem Set 3 (Tokenizing, GridBagLayout, Inte
         that you should assume getThingValue() and getContraptionValue()
         are properly implemented. Do not change the compareTo() methods
         for this part.
+        
+        -   Attempting to implement `Comparable` interface twice with different
+        generic types. Not possible.\
+        -   The problem encountered at compilation time is that `Comparable< >`
+        has been implemented twice for the `Contraption`. Because
+        `Contraption` extends `Thing`, it also implements the interfaces
+        that `Thing` implements, i.e. `Comparable<Thing>`. So `Contraption`
+        implements `Comparable<Thing>` due to inheritance. But the explicit
+        declaration that `Contraption` implements `Comparable<Contraption>`
+        conflicts with the `Comparable<Thing>` implementation. Java will
+        only allow one implementation of `Comparable<someType>`. This is
+        true for any interface: SomeInterface can only be implemented once
+        regardless of what is.
+        
     2.  Re-implement the two classes so that two instantiations of
         Contraption can be compared via one of their compareTo methods.
         You will need to fully implement the two compareTo methods,
@@ -979,6 +1072,8 @@ February 11th, 2013 - Recitation: Problem Set 3 (Tokenizing, GridBagLayout, Inte
         implemented. Use the following ordering rules for implementing
         the compareTo functions:
         -   Comparing two instantiations of Thing:
+            -   Compare the "a" values. Return -1, 0, or 1 as appropriate for a
+                compareTo function.
         -   Compare the "a" values. Return -1, 0, or 1 as appropriate
             for a compareTo function.
         -   Comparing two instantiations of Contraption: A Contraption's
@@ -987,6 +1082,8 @@ February 11th, 2013 - Recitation: Problem Set 3 (Tokenizing, GridBagLayout, Inte
             If an ordering cannot be established using only "a" values,
             compare the "b" values. This function should return -1, 0,
             or 1 as appropriate for a compareTo function.
+            -   A Contraption's "a" value has a higher precedence than its "b"
+                value.
 
     3.  Which classes' compareTo method will line 3 of the following
         code execute? Why?
@@ -995,6 +1092,12 @@ February 11th, 2013 - Recitation: Problem Set 3 (Tokenizing, GridBagLayout, Inte
             Contraption myContraption = new Contraption();
             int result = myThing.compareTo(myContraption);
             System.out.println(result);
+            
+        Line 3 will call `Thing`'s `compareTo()` method. The static type of
+        `myThing` is `Thing`, and so is the dynamic type. The argument type,
+        `Contraption` will match the `Thing` parameters since `Contraption`
+        is a subclass of `Thing`, i.e. all `Contraption` objects are `Thing`
+        objects.
 
 February 12th, 2013 - Lecture: Interfaces
 -----------------------------------------
@@ -2070,11 +2173,24 @@ February 25th, 2013 - Recitation 5: Abstract Classes, Interfaces
 
              public abstract double getArea();
 
-             public static final Shape biggest(Shape[] s)  {
-                 /** TO BE COMPLETED BY YOU **/
-             }
+              public static final Shape biggest(Shape[] s) {
+            if (s.length == 0) { return null; }
+            Shape biggestShape = s[0];
+            for (int i = 1; i < s.length; i++) {
+                if (biggestShape.compareTo(s[i]) < 0) {
+                    biggestShape = s[i];
+                }
+            }
+            return biggestShape;
+        }
 
-             ... // OTHER METHODS/FIELDS YOU MAY NEED TO ADD TO ANSWER THE QUESTION
+            public int compareTo(Shape s) {
+            double areaDifference = getArea() - s.getArea();
+            if (areaDifference == 0) {
+                return 0;
+            }
+            return areaDifference < 0 ? -1 : 1;
+        }
          }
 
          public class Circle extends Shape {
@@ -2141,6 +2257,40 @@ February 25th, 2013 - Recitation 5: Abstract Classes, Interfaces
     interfaces so that users could use any of these algorithms in their
     applications, and switch from using one to another (plug-n-play).
     Redo the exercise using abstract classes instead of interfaces.
+    
+    This is the abstract superclass of all the sorting algorithms:
+    
+             public abstract class Sort<T extends Comparable<T>> {
+                T[] list;
+                public Sort(T[] list) {    // implemented constructor
+                   this.list = list;  
+                }
+                public abstract void sort();  // abstract sort method
+             }
+    
+    Here's an example of one of the sorting implementations (just the
+    shell):
+    
+            public class InsertionSort<T extends Comparable<T>> extends Sort<T> { // note the syntax
+               public InsertionSort(T[] list) {
+                  super(list);
+               }
+                public void sort() {   // implement the overridden abstract method
+                   // implementation goes here
+                   ...
+                }
+            }
+    
+    And the usage in client code:
+    
+            String[] list = new String[n];
+            // populate list with strings
+            ...
+            Sort<String> sorter = new InsertionSort<String>(list);
+            sorter.sort();
+            // list is now in sorted order
+
+
 
 3.  Think of a board game in which there are two kinds of pieces:  a
     slow piece that moves only one square at a time, and a fast piece
@@ -2154,6 +2304,242 @@ February 25th, 2013 - Recitation 5: Abstract Classes, Interfaces
     abstract classes as needed.  You don't need to fill in code for all
     the methods—just sketch the essential fields, constructor headers,
     and method headers.
+
+        public abstract class GamePiece {
+            public static final int DIR_NORTH = 0;
+            public static final int DIR_SOUTH = 1;
+            public static final int DIR_EAST = 2; 
+            public static final int DIR_WEST = 3;
+            public static final int DIR_NORTHEAST = 4;
+            public static final int DIR_NORTHWEST = 5;
+            public static final int DIR_SOUTHWEST = 6;
+            public static final int DIR_SOUTHEAST = 7;
+            
+            protected int xPosition;
+            protected int yPosition;
+            
+            public boolean movePiece(int numSpaces, int direction) {
+                if (direction > DIR_SOUTHEAST || direction < DIR_NORTH || numSpaces < 0) {
+                    return false;
+                }
+                switch(direction) {
+                case DIR_NORTH:
+                    yPosition += numSpaces; return true;
+                case DIR_SOUTH:
+                    yPosition -= numSpaces; return true;
+                case DIR_EAST:
+                    xPosition += numSpaces; return true;
+                case DIR_WEST:
+                    xPosition -= numSpaces; return true;
+                case DIR_NORTHEAST:
+                    yPosition += numSpaces; xPosition += numSpaces; return true;
+                case DIR_SOUTHWEST:
+                    yPosition -= numSpaces; xPosition -= numSpaces; return true;
+                case DIR_NORTHWEST:
+                    yPosition += numSpaces; xPosition -= numSpaces; return true;
+                case DIR_SOUTHEAST:
+                    yPosition -= numSpaces; xPosition += numSpaces; return true;
+                }
+                return false;
+            }
+    
+            public GamePiece(int xPosition, int yPosition) {
+                this.xPosition = xPosition;
+                this.yPosition = yPosition;
+            }
+        }
+    
+        public class FastFlexiblePiece extends GamePiece {
+            public FastFlexiblePiece(int xPosition, int yPosition) {
+                super(xPosition,yPosition);
+            }
+        }
+    
+        public class SlowFlexiblePiece extends GamePiece {
+            public SlowFlexiblePiece(int xPosition, int yPosition) {
+                super(xPosition,yPosition);
+            }
+    
+            public boolean movePiece(int numSpaces, int direction) {
+                if (numSpaces > 1) {
+                    return false;
+                }
+                return super.movePiece(numSpaces,direction);
+            }
+        }
+    
+        public class FastInflexiblePiece extends GamePiece {
+            public FastInflexiblePiece(int xPosition, int yPosition) {
+                super(xPosition,yPosition);
+            }
+    
+            public boolean movePiece(int numSpaces, int direction) {
+                if (direction > DIR_WEST) {
+                    return false;
+                }
+                return super.movePiece(numSpaces,direction);
+            }
+        }
+    
+        public class SlowInflexiblePiece extends GamePiece {
+            public SlowInflexiblePiece(int xPosition, int yPosition) {
+                super(xPosition,yPosition);
+            }
+    
+            public boolean movePiece(int numSpaces, int direction) {
+                if (direction > DIR_WEST || numSpaces >1) {
+                    return false;
+                }
+                return super.movePiece(numSpaces,direction);
+            }
+        }
+    
+    **Example implementation 2**:
+    
+        public abstract class GamePiece {
+    
+            public static final int DIR_NORTH = 0;
+            public static final int DIR_SOUTH = 1;
+            public static final int DIR_EAST = 2; 
+            public static final int DIR_WEST = 3;
+            
+            protected int xPosition;
+            protected int yPosition;
+            
+            // all pieces can move 1 space horizontally or vertically
+            public void move(int direction) {
+                if (direction > DIR_WEST || direction < 0) {
+                    throw new IllegalArgumentException("direction > DIR_WEST || direction < 0");
+                }
+    
+                switch(direction) {
+                case DIR_NORTH:
+                    yPosition++; break;
+                case DIR_SOUTH:
+                    yPosition--; break;
+                case DIR_EAST:
+                    xPosition++; break;
+                case DIR_WEST:
+                    xPosition--; break;
+                }
+            }
+    
+            public GamePiece(int xPosition, int yPosition) {
+                this.xPosition = xPosition;
+                this.yPosition = yPosition;
+            }
+        }
+    
+        public class SlowPiece extends GamePiece {
+            public SlowPiece(int xPosition, int yPosition) {
+                super(xPosition,yPosition);
+            }
+    
+            public void move(int direction) {
+                super.move(direction);
+            }
+        }
+    
+        public class FastPiece extends GamePiece {
+            public FastPiece(int xPosition, int yPosition) {
+                super(xPosition,yPosition);
+            }
+    
+            public void move(int numSpaces, int direction) {
+                if (numSpaces < 0) {
+                   throw new IllegalArgumentException("numSpaces < 0");
+                }
+                if (numSpaces == 1) {
+                    super.move(direction);
+                    return;
+                } 
+                if (direction > DIR_WEST || direction < 0) {
+                    throw new IllegalArgumentException("direction > DIR_WEST or < 0");
+                }
+    
+                switch(direction) {
+                case DIR_NORTH:
+                    yPosition += numSpaces; break;
+                case DIR_SOUTH:
+                    yPosition -= numSpaces; break;
+                case DIR_EAST:
+                    xPosition += numSpaces; break;
+                case DIR_WEST:
+                    xPosition -= numSpaces; break;
+                }
+            }
+        }
+    
+        public interface Flexible {
+            public static final int DIR_NORTHEAST = 4;
+            public static final int DIR_NORTHWEST = 5;
+            public static final int DIR_SOUTHWEST = 6;
+            public static final int DIR_SOUTHEAST = 7;
+        }
+    
+        public class SlowFlexiblePiece extends SlowPiece implements Flexible {
+            public SlowFlexiblePiece(int xPosition, int yPosition) {
+                super(xPosition,yPosition);
+            }
+    
+            public void move(int direction) {
+                if (direction > Flexible.DIR_SOUTHEAST || direction < 0) {
+                   throw new IllegalArgumentException("direction > Flexible.DIR_SOUTHEAST or < 0");
+                }
+            if (direction <= DIR_WEST) {
+                   super.move(direction);
+                   return;
+                }
+                switch(direction) {
+                case Flexible.DIR_NORTHEAST:
+                    xPosition++; yPosition++; break;
+                case Flexible.DIR_NORTHWEST:
+                    xPosition--; yPosition++; break;
+                case Flexible.DIR_SOUTHWEST:
+                    xPosition--; yPosition--; break;
+                case Flexible.DIR_SOUTHEAST:
+                    xPosition++; yPosition--; break;
+                }
+            }
+        }
+    
+        public class FastFlexiblePiece extends FastPiece implements Flexible {
+            public FastFlexiblePiece(int xPosition, int yPosition) {
+                super(xPosition,yPosition);
+            }
+    
+            public void move(int numSpaces, int direction) {
+                if (numSpaces < 0) {
+                   throw new IllegalArgumentException("numSpaces < 0");
+                }
+                if (direction > Flexible.DIR_SOUTHEAST || direction < 0) {
+                   throw new IllegalArgumentException("direction > Flexible.DIR_SOUTHEAST or < 0");
+                }
+                if (direction <= DIR_WEST) {
+                super.move(numSpaces, direction);
+                    return;
+                }
+                switch(direction) {
+                case Flexible.DIR_NORTHEAST:
+                    xPosition += numSpaces; yPosition += numSpaces; break;
+                case Flexible.DIR_NORTHWEST:
+                    xPosition -= numSpaces; yPosition += numSpaces; break;
+                case Flexible.DIR_SOUTHWEST:
+                    xPosition -= numSpaces; yPosition -= numSpaces; break;
+                case Flexible.DIR_SOUTHEAST:
+                    xPosition += numSpaces; yPosition -= numSpaces; break;
+                }
+            }
+        }
+
+    **Further Thoughts**:
+    
+    -   Is one implementation better than the other?
+    -   Is there any code redundancy in the second implementation? If so,
+        how can it be removed?
+    -   Can you think of another possibility that does not involve any
+        abstract classes?
+
 
 4.  A game developer asks you to make a set of classes to represent the
     monsters in a game. There are at least two different types of
@@ -2177,6 +2563,47 @@ February 25th, 2013 - Recitation 5: Abstract Classes, Interfaces
     `draw(int x, int y)`. The contents of the `updatePosition()` method
     are not important, but it has to change the monster's position and
     be different for either monster.
+    
+        public abstract class MovingMonster implements Monster {
+            protected Image image;
+            protected int xPosition;
+            protected int yPosition;
+    
+            public abstract void updatePosition();
+    
+            public void drawMonster() {
+                // Some implementation here.
+            }
+            public void setMonsterImage(Image i) {
+                image = i;
+            }
+    
+            public MovingMonster(Image image) {
+                this.image = image;
+                xPosition = yPosition = 0;
+            }
+        }
+    
+        public class WalkingMonster extends MovingMonster {
+            public void updatePosition() {
+                xPosition++;
+            }
+            
+            public WalkingMonster(Image image) {
+                super(image);
+            }
+        }
+    
+        public class BouncingMonster extends MovingMonster {
+            public void updatePosition() {
+                xPosition++;
+                yPosition = (yPosition + 1) % 2;
+            }
+            
+            public BouncingMonster(Image image) {
+                super(image);
+            }
+        }
 
 February 26th, 2013 - Assignment 2: 2-Player Chess
 --------------------------------------------------
@@ -2433,3 +2860,53 @@ February 25th, 2013 - Lecture
     will effect A
 -   Say A depends on B. Typically, then, B would appear as a parameter, return
     type, or local variable in a method of A.
+    
+March 4th, 2013 - Recitation 6: UML
+-----------------------------------
+
+1.  Give one example UML each (not covered in class!) of a
+    uni-directional association, a bi-directional association, and an
+    association class. (We stopped just short of the association class
+    in lecture on Feb 28, but look at the last three slides in the
+    feb28-uml.pdf that was posted in Resources.) By writing minimal
+    amount of code (class headers and fields only), show how the
+    relationship information depicted by the UML shows up in the
+    implementation.
+
+2.  For each of the following pairs/groups of classes, show the most
+    appropriate relationship between them using UML (include
+    multiplicities, and relationship classes for associations):
+
+    1.  `Document`-`Keyword` in a search engine
+    2.  `Friend-Friend` on Facebook
+    3.  `Entry-Contributor` on Wikipedia
+    4.  `Item-Seller-Bidder` on Ebay
+    5.  `Book-Author-Publisher` on Amazon
+
+3.  You are on a project that is developing software to manage a
+    hospital. In particular, you are working on a sub-system that will
+    model the patient care aspect including doctors, patients, hospital
+    rooms, and services for which patients are billed. Services include
+    medical services such as x-rays, as well as room services such as
+    bed, TV, etc.
+
+    Draw a UML class diagram of your model, with key attributes and
+    methods for every class. Pay particular attention to making decisons
+    about whether some entity should be an attribute of an object with
+    values to differentiate between instances of the entity, or whether
+    the entity deserves to be in its own class (fully typed). You should
+    be able to argue for your decision either way.
+
+    Also, make sure you don't model relationship-specific data
+    structures as attributes in either of the participating classes.
+    Such data structures should only show up in the implementation,
+    chosen according to the constraints of the language of
+    implementation (e.g. choices in Java may differ from C++) and
+    requirements of efficiency. (UML is implementation-language
+    neutral).
+
+    Implement your model with outline of code including class headers,
+    interfaces (if applicable) with method specifications, fields in all
+    classes, method headers in all classes
+
+

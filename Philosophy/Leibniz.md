@@ -2054,7 +2054,10 @@ March 4th, 2013 - Passages on relational predicates and the metaphysical status 
     concept of the predicate. Likewise, whenever the denomination of a
     thing is changed, some variation has to occur in the thing itself."
     "Primary Truths" (1689?), L 268
-
+	-   Leibniz is tying that there are no extrinsic denominations to
+		the concept containment theory of truth.
+	-   Titius expresses everything in the Universe, including "having
+		son" at moment one not at "moment two."
 4.  Philalethes-Locke: ". . . a change of relation can occur without
     there having been any change in the subject. . . [Titius, who is
     today a father] ceases to be so tomorrow, only by the death of his
@@ -2117,3 +2120,76 @@ March 4th, 2013 - Reading
         understood by us in some way.
 
 ### 'Substance and Individuation in Leibniz', Cover and Hawthorne, pp. 184-99
+
+March 4th, 2013 - Lecture
+-------------------------
+
+-   To have a position in space is to exist at a particular distance
+    from other things in time. 
+-   What Leibniz says about relations in general holds true for spatial
+    and temporal positions.
+-   The soul of Alexander expresses everything in the Universe, and we
+    now know what this means.
+-   What's a relation? 
+    -   Non-identity is a relation
+-   Two issues:
+    1.   What is the metaphysical status?
+    2.   Something.
+-   Near the end of Leibniz's life, there was a famous discussion about
+    space.
+
+### Relations
+
+-   **A relational predicate**: $P$ is a relational predicate of $S$ if $P$ implies 
+	1.  That something other than $S$ exists.
+	2.  That thing (1) have a certain relation to $S$.
+-   The motivation for the complete concept containment is from Aristotle.
+	-   That something that is predicated on something individually cannot
+	    be predicated on anything else.
+	-   Substances
+-   The thought is that there are nine categories of axioms.
+-   Of the nine, they cannot exist unless they exist in some substance.
+-   Another part of Aritstotle's doctrine is that some accident must exist
+    in some substance, must exist in only one.
+-   An **accident**: 
+	-   Aristotle: A thing that is said of or exists in another.
+	-   Leibniz: Somethings that is predicated on another.
+-   If you get the complete concept of an individual, the predicates of the 
+    individual are unique to that individual.
+-   Accidents:
+	1. Quantity
+	2. Quality
+	3. Relations
+	4. Dispositions
+-   Aristotle says a couple of interesting things about relations
+	1.  A relation, unlike quality or quality, is an eccident of a particular subject,
+	    but it is directed to another subject, so it implies the exist of another.
+		-   "Of" something or "than" something
+		-   "Towardness"
+	2.  A subject that has a relation can cease to have that relation without anything
+	    happening to that subject.
+		-   Socrates is taller than Simius, and then he is shorter than Simius,
+		    but nothing has happened to Socrates.
+		-   A thing can undergo a change with regards to its relational accidents
+			without anything happening to that thing.
+		-   Cambridge change
+		-   No strictly extrinsic denominations
+-   This shouldn't come as a surprise (no extrinsic denominations)
+-   You can go from knowledge of the expression, you can learn truths about
+	the things expressed.
+	-   Provided you know the relations to be preserved are.
+-   There are two parts to the relation,
+	1.  The soul expresses perfectly the S-body.
+		-   The body is surrounded perfectly by the S-body
+-   The connection of all things is spatial continuity
+-   When the son of Titius dies, there is something in Titius' soul which
+    expresses that change.
+-   Leibniz denies that space is anything but an ordering relation
+-   He agrees with Newton's empirical evidence for absolute acceleration.
+	-   But not absolute space and time.
+-   Leibniz holds that space is relation of order
+	-   What are we talking about when we talk about space?
+		-   We observe that many of the things that exist at the same time
+			have an order of coexistence.
+		-   Say we have bunch of bodies that are simulteanosly existing,
+			and some of them, maintain the same distances from each other.
