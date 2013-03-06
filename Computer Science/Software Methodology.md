@@ -2909,4 +2909,10 @@ March 4th, 2013 - Recitation 6: UML
     interfaces (if applicable) with method specifications, fields in all
     classes, method headers in all classes
 
+March 5th, 2013 - Lecture
+-------------------------
 
+-   An **association class**is used to model an association between two
+    classes.
+    -   For example, if you had a `Company` and an `Employee` object,
+        then you'd have a `Job` class to stand for the relationship.
