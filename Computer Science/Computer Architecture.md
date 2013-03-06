@@ -2125,3 +2125,91 @@ March 1st, 2013 - Notes: [IEEE 754](http://en.wikipedia.org/wiki/Single-precisio
 $$(-1)^\text{sign} \times $$
 $$(1 + \sum_{i=1}^{23} b_{23-i} 2^{-i} )$$
 $$\times 2^{(e-127)}$$
+
+March 5th, 2013 - Lecture
+-------------------------
+
+- Flags
+
+        cf  carry
+        zf  zero
+        sf  sign
+        of  overflow
+    
+-   You can think of the compare as a "non destrutive subtraction."
+
+        cmp  [b w l q] src,dst
+        test [b w l w] src,dst
+    
+-   These, evidently, are not very interesting bu we need to know them
+    anyway.
+-   A column of "conditional jumps" to some target, the target being
+    some lable we can specify in the program.
+    
+        ==          je
+        !=          jne
+        signed >    jg
+        unsigned >  ja
+        signed <    jl
+        unsigned <  jb
+        signed <=   jle
+        unsigned <= jbe
+
+-   Negatives
+
+        negative?       js
+        not negative?   jns
+        
+-   Jumps
+    -   Direct
+    
+            jmp .l37 (?)
+    
+-   if-else
+
+        movl    12(%ebp),%edx
+        cmp     $3,%edx
+        jne     elsepart
+        .
+        .
+        .
+        jmp     done
+        elsepart:
+        .
+        .
+        .
+        done
+        
+-   more code
+
+        movl    12(%ebp),%edx
+        test    8(%ebp), %edx
+        jz      elsez
+        .
+        .
+        .
+        jmp     donez
+
+-   for loop
+    
+        top:
+            movl    $i, %eax
+            jge     done
+            .           -+
+            .            | body of loop
+            .           -+
+            inc     %eax
+            jmp     top
+        done:
+        
+-   condition flags
+
+        ==          zf
+        !=          ~zf
+        signed >    ~(sf^of)&~zf
+        unsigned >  ~cf & ~zf
+        signed >=   ~(sf^of)
+        unsigned <= ~cf
+        signed <    sf^of
+        unsigned <  cf
+        
