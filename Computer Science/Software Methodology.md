@@ -1746,7 +1746,7 @@ command line, right after `java` as in: \
 The following sample works with this assumption. (And when we test your
 program, we will run java outside Eclipse.)
 
-    java cs213.photoAlbum.simpleview.CmdView login testuser 
+    java cs213.photoAlbum.simpleview.CmdView login testuser c.. 
 
     createAlbum "Fall colors"
 
@@ -2916,3 +2916,19 @@ March 5th, 2013 - Lecture
     classes.
     -   For example, if you had a `Company` and an `Employee` object,
         then you'd have a `Job` class to stand for the relationship.
+        
+March 11th, 2013 - Recitation 7: Table/Model, Image Handling
+------------------------------------------------------------
+1.  UML Quiz
+
+2.  You will learn how to create a GUI application for a simple
+    spreadsheet. You are to use javax.swing.JTable,
+    javax.swing.table.TableModel, and
+    javax.swing.table.DefaultTableModel. The contents of each cell may
+    be either a floating point number or one of four simple formulas:
+    =sumcol, =sumrow, =avgcol, =avgrow.
+
+3.  You will learn how to load, display, and resize images using
+    javax.swing.Image, javax.swing.ImageIcon, javax.swing.JSlider,
+    java.awt.BorderLayout, and javax.swing.JScrollPane.
+
