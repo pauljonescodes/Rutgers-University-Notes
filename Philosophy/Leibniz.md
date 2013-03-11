@@ -1188,22 +1188,6 @@ February 11th, 2013 - Reading
         happened to him and marks everyhing that will happen to him and
         even marks of everything that will happen in the universe.
 
-#### 9. That Each Singular Substance Expresses the Whole Universe in Its Own Way, and That All Its Events, Together with All Their Circumstances and the Whole Sequence of External Things, Are Included in Its Notion
-
-#### 10. That the Belief in Substantial Forms Has Some Basis, but That These Forms Do Not Change Anything in the Phenomena and Must Not Be Used to Explain Particular Effects
-
-#### 11. That the Thoughts of the Theologians and Philosophers Who Are Called Scholastics Are Not Entirely to Be Disdained
-
-#### 12. That the Notions Involved in Extension Contain Something Imaginary and Cannot Constitute the Substance of Body
-
-#### 13. Since the Individual Notion of Each Person Includes Once and for All Everything That Will Even Happen to Him, One Sees in It the *A Priori* Proofs of the Truth of Each Event, or, Why One Happened Rather Than Another. But These Truths, However Certain, Are Nevertheless Contingent, Being Based on the Free Will of God or of His Creatures, Whose Choice Always Has Its Reasons, Which Incline without Necessitating.
-
-#### 14. God Produces Various Substances According to the Different Views He Has of the Universe, and through God's Intervention the Proper Nature of Each Substance Brings It about That What Happens to One Corresponds with What Happens to All Other, without Their Acting upon One Another Directly
-
-#### 15. The Action of One Finite Substance on Another Consists Only in the Increase of Degree of its Expression Together with the Diminution of the Expression of the Other, Insofar as God Requires THem to Accommodate Themselves to One Another
-
-#### 16. God's Extraordinary Concourse Is Included in That Which Our Essence Expresses, for This Expression Extends to Everything. But This Concourse Surpasses the Powers of Our Nature or of Our Distinct Expression, Which Is Finite and Follows Certain Subordinate Maxims
-
 February 11th, 2013 - Lecture
 -----------------------------
 
@@ -2392,4 +2376,43 @@ March 11th, 2013 - Lecture: The notion of force in physics and metaphysics
 -   Nothing ever changes unless some intrinsic change in everything in 
     the universe has a mark and trace of the change.
 -   Every individual substance expresses the whole Universe.
-    -   It contains a "pointer"
+    -   It contains a "pointer."
+-   Spatial and temporal relations have relations.
+-   You can't get things in different spaces in different times unless
+    you have something to put them there.
+-   There's something in each of those things that makes them in those
+    times and places.
+-   PII: Often he argues from the PSR
+    -   Two ways to go from PSR to PII:
+        1.  Look again at the argument in the third letter that Leibniz
+            wrote to Clarke
+-   Newton and Clarke think space has an absolute frame of reference
+    -   Clarke thinks the material world is finite
+     
+                            N
+                x+--------+  y+--------+ 
+                 |possible|   |possible|
+                 |world a |   |world b |  
+               W +---+    |   |   +----+ E
+                     |    |   |   |
+                     |    |   |   |
+                     +----+y  +---+x
+                            S
+   
+    -   God would have no means to prefer a to b, therefore
+        space cannot be absolute by PSR.
+    -   **Divine preference argument**: If there indiscernables in the 
+        actual world, then there is another possible world where they
+        are switched. God could have no reason to choose one rather than
+        the other. But PSR.
+-   **No Reason Argument**: There is no reason for saying that $A$ and $B$
+    are individually different, so they aren't individually different. Objections:
+    1.  Why couldn't it run the other way around?
+    2.  The mere fact that something has no reason is not enough to
+        suggest something. Perhaps there is no fact of the matter,
+        no objective truth.
+-   Premises
+    1. PSR
+    2. Exactly alike
+    3. Sufficnient reason to say alike
+    4. No possible differences
