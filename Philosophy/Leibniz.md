@@ -588,22 +588,22 @@ February 4th, 2013 - Reading
     -   Cockerspaniels are a complex idea experienced through the
         concept of dog, along with the other properties of
         cockerspaniels.
-    -   Symbolically, cockerspaniels can be represented as {\\(
-        \mathrm{dog}, q\_1, q\_2, ... , q\_n \\)} where qs are qualities
+    -   Symbolically, cockerspaniels can be represented as {$
+        \mathrm{dog}, q\_1, q\_2, ... , q\_n $} where qs are qualities
         unique to cockerspaniels and "dog" is the set of all concepts in
         dog.
     -   The concept of dog is a complex idea experienced through other
         ideas, but it does not need to be defined here. Let {dog} be the
         set of all dog qualities.
-    -   Because {dog} \\( \in \\) {\\( \mathrm{dog}, q\_1, q\_2, ... ,
-        q\_n \\)}, all cocker spaniels are dogs.
+    -   Because {dog} $ \in $ {$ \mathrm{dog}, q\_1, q\_2, ... ,
+        q\_n $}, all cocker spaniels are dogs.
 
 -   All triangles have three angles.
     -   Triangle's are complex ideas experienced through: {shape,
         polygon, three angles, three edges, ...}
-    -   {three angles} \\(\in\\) {shape, polygon, three angles, three
+    -   {three angles} $\in$ {shape, polygon, three angles, three
         edges, ...}
-    -   So \\( \forall x \\) if x is a triangle \\( \to \\) x has three
+    -   So $ \forall x $ if x is a triangle $ \to $ x has three
         angles
 
 -   Water is liquid at room temperature
@@ -622,7 +622,7 @@ February 4th, 2013 - Reading
 -   Creatures are contingent in that their existence does not follow
     from their essence.
     -   This is what it must be to be mortal.
-    -   Leibniz think that god's essence \\( \to \\) god's being.
+    -   Leibniz think that god's essence $ \to $ god's being.
 
 -   Necessary truths are those that can be demonstrated through analysis
     of terms.
@@ -727,7 +727,7 @@ February 4th, 2013 - Lecture: The infinite analysis theory of contingent truth
     but not both.
 -   There is no proposition that is indeterminate.
 -   If a proposition p is false, then the contradictory of p is true.
-    \\( p \\) and \\(\lnot p \\) are contradictory.
+    $ p $ and $\lnot p $ are contradictory.
     -   Law of non-contradiction
     -   Interestingly, this law cannot be proved, because you'd have to
         use propositions.
@@ -1341,7 +1341,7 @@ February 13th, 2013 - Lecture
             is not *Y*, but they're identical so this is equivilent to
             *X* is not *X*, which is a contradiction.
 
-    2.  Sunstance begins only by creation and cease to exist only by
+    2.  Substance begins only by creation and cease to exist only by
         annihilation
     3.  Substance cannot be divided into 2 substances or form by
         combining 2 substances.
@@ -1350,7 +1350,7 @@ February 13th, 2013 - Lecture
     5.  Each is bears in some way the character of god, wisdom, and
         power
         1.  Is analogous to god's perception of the infinite
-        2.  Is such that every other is accomodating it.
+        2.  Is such that every other is accommodating it.
 
 ### Notable paradoxes
 
@@ -1710,13 +1710,13 @@ February 25th, 2013 - Reading: Chris Swoyer, 'Leibnizian Expression', *Journal o
 
 #### Generalizing the Account of Perspectival Expression
 
--   A function, \\(\*\\), from the constituents of one thing, \\(O\\),
-    to those of a second, \\(E\\), preserves the \\(n\\)-place relation
-    \\(R\^O\\) of \\(O\\) just in case, for each \\(n\\)-tuple of
-    constituents \\(\lt X\_1 ... X\_n \gt\\) of \\(O\\):
-    -   (PR) \\(R^O x\_1 ... x\_n \\) if and only if \\(R^E x\_1
-        \ast ... x^\ast\_n \\)
-    -   \\(R^E\\) is the surrogate for the original relation \\(R^O\\)
+-   A function, $\ast$, from the constituents of one thing, $O$,
+    to those of a second, $E$, preserves the $n$-place relation
+    $R^O$ of $O$ just in case, for each $n$-tuple of
+    constituents $\lt X_1 ... X_n \gt$ of $O$:
+    -   (PR) $R^O x_1 ... x_n $ if and only if $R^E x_1
+        \ast ... x^ast_n $
+    -   $R^E$ is the surrogate for the original relation $R^O$
 
 -   Isomorphism is too much to expect from an expression
     -   For example, a circle does not have enough of it's relations
