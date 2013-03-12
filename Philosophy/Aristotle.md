@@ -154,8 +154,8 @@ February 7th, 2013 - Lecture
     -   Perception can only deliver "red" and "card" and "here now" -
         they are restricted in what they can provide you with.
 
-February 14th, 2013
--------------------
+February 14th, 2013 - Lecture
+-----------------------------
 
 ### Nicomachean Ethics
 
@@ -418,7 +418,54 @@ Short paper assignment
 
 ##### Chapter 19
 
+-   Ross
+    -   Demonstrative science is impossible without knowledge of first
+        principles. Which raises two questions:
+        1.  Whether these are objects of science, or of some other
+            faculty.
+        2.  Whether such faculty comes into being or is present
+            without being recognized.
+    
+    -   It would be strange if we had knowledge better than 
+        demonstration without knowing it.
+    
+    -   Such a faculty, all animals have.
+        -   An innate faculty of discernment, **perception**.
+        -   For some animals, the knowledge does not persist.
+        -   But for others, there is the power of **retention**.
+        
+    -   Thus from perceptions arises **memory**.
+        -   Repeated memory of the same things makes **experience**.
+        -   When the whole universal has come to be in soul through
+            experience, comes the one distinct from many and identical
+            in all instance
+            -   The beginning of art and science.
+            
+    -   Thus these states of knowledge are neither innate, nor come from
+        more cognitive states of the mind, but from **perception**.
+    -   Induction through perception implants the universal in us.
+
+###### Commentary
+
+-   We now have to consider how first principles come to be known and
+    what faculties know them.
+-   The first principles are more knowable than the conclusions that
+    follow from them.
+    -   It is not from science that we grasp the first principles.
+    -   It is from intuitive reasons that we do.
+    -   Demonstration cannot be the proof of demonstration.
+        -   Therefore, science cannot be the proof of science.
+        
+    -   **Intuitive reason** is the only necessarily true state other than 
+        science.
+        -   Yet we cannot acquire it equally without pre-existing
+            knowledge.
+        -   So we can neither already have it or acquire it.
+        -   It follows that it must start with some **faculty**.
+
 ### Freda
+
+
 
 ### Bronstein
 
@@ -433,4 +480,6 @@ Short paper assignment
     Lecture
     Notes](http://faculty.washington.edu/smcohen/433/433Lecture.html)
 4.  New Oxford American Dictionary
+5.  Aristotle. *Aristotle's Prior and posterior analytics : a revised 
+    text*. Oxford: Clarendon Press, 2001. Print. 
 
