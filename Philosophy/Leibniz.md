@@ -2368,6 +2368,22 @@ advancement of science and understanding of the natural world have not
 vanquished his theory. Instead, his system raises perplexing questions
 which inspire further research in both philosophy and natural science.
 
+### Works Cited
+
+1.  Bolton, Martha. “Leibniz (01:730:416).” Rutgers University Lecture, 
+    Spring 2013.
+2.  Hottes, A.C. Practical plant propagation: an exposition of the art
+    and science of increasing plants as practiced by the nurseryman, 
+    florist and gardener. New York: De La Mare Company, Inc, 1925.
+3.  [Kolata, Gina. “In Good Health? Thank Your 100 Trillion Bacteria.” 
+    Print, online, June 13, 2012.](http://www.nytimes.com/2012/06/14/health/)
+4.  [McKay, Chris. “What Is Life and How Do We Search for It in Other 
+    Worlds?” Print, online, September 14, 2004.](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC516796/)
+5.  Ruppert, E. E., Fox, R. S., and Barnes, R. D. Invertebrate Zoology. 
+    New York: Brooks / Cole, 2004.
+6.  [Stanford Encyclopedia of Philosophy. “Gottfried Wilhelm Leibniz.” 
+    Online, 2013.](http://plato.stanford.edu/entries/leibniz/)
+
 March 11th, 2013 - Lecture: The notion of force in physics and metaphysics
 --------------------------------------------------------------------------
 
