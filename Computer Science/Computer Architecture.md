@@ -2451,3 +2451,108 @@ $$O(c)$$
 
 $$O(c)$$
 
+March 12th, 2013 - Lecture
+--------------------------
+
+### Topics
+
+-   IA32 stack disciple
+-   Register saving conventions
+-   Creating pointers to local variables
+
+### Push instructions
+
+-   16 bits
+
+        pushw   reg16   %esp-=2 %reg16->(%esp)
+        pushl   mem16   %esp-=2 %reg16->(%esp)
+        pushl   imm16   %esp-=2 %imm16->(%esp)
+
+-   32 bits
+    
+        pushw   reg32   %esp-=4 %reg32->(%esp)
+        pushl   mem32   %esp-=4 %reg32->(%esp)
+        pushl   imm32   %esp-=4 %imm32->(%esp)
+    
+-   64 bits (quad words)
+
+        pushw   reg32   %esp-=4 %reg32->(%esp)
+        pushl   mem32   %esp-=4 %reg32->(%esp)
+        pushl   imm32   %esp-=4 %imm32->(%esp)   
+        
+### Pop instructions
+
+-   16 bits
+
+        popw    reg16   (%esp)->reg16,  %esp+=2 
+        popw    mem16   (%esp)->mem16,  %esp+=2
+        
+-   32 bits
+
+        popl    reg32   (%esp)->reg32,  %esp+=4 
+        popl    mem32   (%esp)->mem32,  %esp+=4
+        
+-   64 bits
+
+        popq    reg64   (%esp)->reg64,  %esp+=8
+        popq    mem64   (%esp)->mem64,  %esp+=8
+        
+### Discussion
+
+-   If you push your bytes, pop your bytes.
+-   The call stack frames, or activation records.
+    -   Each stack frame corresponds to each function call in C.
+    -   The stack frame contains space for formal parameters and
+        automatic variables.
+        -   If I have a recursive function, every formal parameter
+            gets a seperate space with a seperate activation record.
+            
+    -   We are not limited to 2, 4, 8 bytes.
+    -   Each stack frame needs a return address.
+    -   The way to resume execution when we're done with the call.
+    -   The same way we use the `%esp` register to point to the top of
+        the stack, we use the `%ebp` call frame to point to the most
+        recently called stack frame.
+        
+### Call instructions
+
+        call    label       direct
+        call    *operand    indirect
+        
+-   The first call just has a label as an operand, we call this a direct
+    call
+    -   Hard-coded
+    
+-   The indirect call can specify a memory location or a register.
+    -   Goes to the place and pulls the traget location and transfers
+        control there.
+        
+### Variables 
+
+        pushl   %ebp
+        movel   %esp, %ebp
+        .
+        .
+        .
+        movl    %ebp, %esp
+        popl    %ebp
+        ret
+
+### Vertical picture
+
+                |                 |
+                |Local autos      |
+                |Formal parameters|
+                +-----------------+
+          %ebp->|old %ebp         |
+                +-----------------+
+                |return address   |
+                +-----------------+
+                         .
+                         .
+                         .
+                +-----------------+
+                |old %ebp         |
+                +-----------------+
+                |return address   |
+                +-----------------+

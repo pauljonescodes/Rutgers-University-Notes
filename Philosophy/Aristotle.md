@@ -463,9 +463,38 @@ Short paper assignment
         -   So we can neither already have it or acquire it.
         -   It follows that it must start with some **faculty**.
 
-### Freda
+### Frede
 
+-   Aristotle says our knowledge has roots in perception
+    -   Also believe in detailed observation
+    -   It is unsurprising then, that Aristotle is often called an
+        empiricist.
 
+-   Aristotle all thinks that all knowledge is either:
+    -   knowledge of principles that govern a certain domain,
+    -   knowledge from deduction of these principles
+    
+-   It is not immediately obvious that these claims go together
+    -   Then, though all knowledge owes its epistemic mass to
+        principles, science owes it to induction from these.
+    -   So there is no problem in calling Aristotle an empiricist?
+    
+-   But this is not Aristotle's view
+    -   He clearly thinks we have immediate knowledge of primary truths.
+        -   He cannot think, therefore, that our knowledge of them
+            depends on deductive confirmation.
+    
+    -   There are seen by reason to be immediate truths.
+    -   And being as he thinks that all truths are derived from
+        reason, he is the paradigm of a rationalists.
+
+-   This is puzzling, because why would he insist that all we know is
+    derived from reason if he insists primary truths are the product
+    of perception.
+-   He is not so much interested in resolving this puzzle as he is
+    interested in exploring the role in which reason plays in 
+    Aristotle's rationalism.
+-   
 
 ### Bronstein
 
