@@ -198,3 +198,179 @@ March 11th, 2013 - Lecture
 -   You pay c dollars
 -   I flip coin until H. Say it takes $i$ flips.
 -   I give you $2^{i - 1}$ dollars
+
+March 13th, 2013 - Homework 4
+-----------------------------
+
+Homework 4
+
+1.  (3 points) In the card game bridge we deal 13-card hands to 4
+    players named North, South, East, and West (all 52 cards are dealt).
+    What is the probability that East and West have no spades?
+
+    -   The total number of possibilities in the sample space for this
+        situation is the total number of possible card orders over the
+        number of cards each player is dealt factorial raised to the
+        fourth.
+
+        $$\frac{52!}{13!^4}$$
+
+    -   There are 13 Spades in a deck of cards, and then 39 non-Spade
+        cards.
+
+    -   For the hands of East and West, who collectively represent 26
+        cards, and who are vying for 39 non-Spade cards, this is the
+        number of possibilities:
+
+        $$39 \choose 26$$
+
+    -   North and South also account for 26 total cards, and they are
+        vying for the remaining cards including Spades. Twenty-six cards
+        were taken out of the deck by East and West.
+
+        $${26 \choose 26} = 1$$
+
+    -   The probability is therefore:
+
+        $$\frac{{39 \choose 13}\times{26 \choose 13}\times{26 \choose 13}\times{13 \choose 13}}{\frac{52!}{13!^4}}$$
+
+2.  (4 points) An urn contains $n>0$ white balls and $m>0$ black balls.
+    Suppose we draw two balls without replacement. What is the
+    probability that the balls are of the same color? What if we draw
+    them with replacement? Show your work. Which of these probabilities
+    is larger? Briefly explain some intuition for why one should be
+    larger.
+
+    -   Without replacement
+
+        -   There are $n + m$ balls in all, and we’re interested in
+            choosing 2 of them. The sample space is:
+
+            $${m + n \choose 2}$$
+
+        -   Call $W$ “drawing two white balls” and $B$ \`\`drawing two
+            black balls. Then $W \cup B$ is either of those events
+            happening or both.
+
+        -   The events are mutually exclusive, the drawings cannot all
+            be the same for the same drawing.
+
+            $$P(W \cup B) = P(W) + P(B)$$
+            $$= \frac{{m \choose 2} + {n \choose 2}}{{m + n \choose 2}}$$
+
+    -   With replacement
+
+        -   The events are, again, mutually exclusive.
+
+        -   Being as the balls are placed back in the urn, each event is
+            equally likely to occur.
+
+        -   Count the number of either color, place it over total balls,
+            and multiply it by itself to represent that the event has to
+            happen twice.
+
+        -   Do the same for the other color, add the two values.
+
+            $$\left(\frac{m}{m + n}\right)^2 + \left(\frac{n}{m + n}\right)^2$$
+
+3.  (4 points) Again consider an urn with $n>0$ white balls and $m >0$
+    black balls. Suppose we draw $r\geq 1$ balls from the urn without
+    replacement. What is the probability that we draw exactly $k$ white
+    balls?
+
+    -   The probability of getting a white, where $i$ is the number of
+        total balls already drawn, is
+
+        $$\left(\frac{n - i}{m + n - i}\right)$$
+
+    -   And the probability of getting a black under the same conditions
+        is
+
+        $$\left(\frac{m - i}{m + n - i}\right)$$
+
+    -   So draw $k$ white balls, and then transfer the counter to
+        drawing the remaining balls to avoid over-counting
+
+        $$\left(\prod_{i = 0}^{k - 1} \frac{n - i}{m + n - i} \right) \times \left(\prod_{i = k}^{r - 1} \frac{m - (i - k)}{m + n - i} \right)$$
+
+4.  (4 points) A box contains a mixture of cubes and spheres and any of
+    these objects can be either white or black. Suppose the box contains
+    $4$ black cubes, $6$ black spheres, $6$ white cubes, and $x$ white
+    spheres. Consider the experiment of drawing a random object from the
+    box, and let $A$ be the event that a cube is drawn and $B$ be the
+    event that a black object is drawn. If $A$ and $B$ are independent,
+    what is $x$?
+
+    -   The probability of a cube being drawn is the total number of
+        cubes over the total number of cubes and spheres.
+
+        $$\frac{4 + 6}{4 + 6 + 6 + x}$$
+
+    -   The probability of a black object being drawn is similarly the
+        total number of black objects divided by the total number of
+        objects
+
+        $$\frac{6 + 4}{4 + 6 + 6 + x}$$
+
+    -   Consider the complement of $A \cup B$, it is the event that a
+        non-black and non-cube item is draw, which is a white sphere.
+
+        $$P(x) = P((A \cup B)^c)$$
+
+5.  (10 points total) Two fair dice are rolled. Define the random
+    variables $X =$ the sum of the two rolls, $Y =$ the maximum of the
+    two rolls, $Z =$ the absolute value of the difference of the two
+    rolls and $W = XY$ (i.e., the product of $X$ and $Y$).
+
+    1.  (2 points) What are ${\mathrm{Range}}(X)$,
+        ${\mathrm{Range}}(Y)$, ${\mathrm{Range}}(Z)$ and
+        ${\mathrm{Range}}(W)$?
+
+        -   ${\mathrm{Range}}(X) = \lbrace 2, 3, 4, ... , 11, 12 \rbrace $
+
+        -   ${\mathrm{Range}}(Y) = \lbrace 1, 2, 3, 4, 5, 6 \rbrace $
+
+        -   ${\mathrm{Range}}(Z) = \lbrace 0, 1, 2, 3, 4, 5 \rbrace$
+
+        -   ${\mathrm{Range}}(W) = \lbrace i \times j \: : \: i \in \lbrace 2, 3, 4, ... , 11, 12 \rbrace, j \in \lbrace 1, 2, 3, 4, 5, 6 \rbrace\rbrace $
+
+    2.  (2 points) What are the partitions ${\mathcal{A}}_X$ and
+        ${\mathcal{A}}_Z$?
+
+        -   ${\mathcal{A}}_X$
+
+            -   $2 = 1 + 1$
+
+            -   $3 = 1 + 2$
+
+            -   $4 = 1 + 3 = 2 + 2$
+
+            -   $5 = 1 + 4 = 3 + 2$
+
+            -   $6 = 1 + 5 = 2 + 4 = 3 + 3$
+
+            -   $7 = 1 + 6 = 2 + 5 = 3 + 4$
+
+            -   $8 = 2 + 6 = 3 + 5 = 4 + 4$
+
+            -   $9 = 3 + 6 = 4 + 5$
+
+            -   $10 = 4 + 6 = 5 + 5$
+
+            -   $11 = 5 + 6$
+
+            -   $12 = 6 + 6$
+
+        -   ${\mathcal{A}}_Z$
+
+            -   $0 = 1 - 1 = 2 - 2 = 3 - 3 = 4 - 4 = 5 - 5 = 6 - 6$
+
+            -   $1 = 6 - 5 = 5 - 4 = 4 - 3 = 3 - 2 = 3 - 2 = 2 - 1$
+
+            -   $2 = 5 - 4 = 5 - 3 = 4 - 2 = 3 - 1$
+
+            -   $3 = 6 - 3 = 5 - 2 = 4 - 1$
+
+            -   $4 = 6 - 2 = 5 - 1$
+
+            -   $5 = 6 - 1$
