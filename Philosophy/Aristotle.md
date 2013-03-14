@@ -192,6 +192,120 @@ Short paper assignment
 -   In your description, describe and evaluate the account of this
     offered by Freda and Bronstein.
 
+### *Aristotle's Rationalism* <small>by Michael Frede</small>
+
+-   Aristotle says our knowledge has roots in perception
+    -   Also believe in detailed observation
+    -   It is unsurprising then, that Aristotle is often called an
+        empiricist.
+
+-   Aristotle all thinks that all knowledge is either:
+    -   knowledge of principles that govern a certain domain,
+    -   knowledge from deduction of these principles
+    
+-   It is not immediately obvious that these claims go together
+    -   Then, though all knowledge owes its epistemic mass to
+        principles, science owes it to induction from these.
+    -   So there is no problem in calling Aristotle an empiricist?
+    
+-   But this is not Aristotle's view
+    -   He clearly thinks we have immediate knowledge of primary truths.
+        -   He cannot think, therefore, that our knowledge of them
+            depends on deductive confirmation.
+    
+    -   There are seen by reason to be immediate truths.
+    -   And being as he thinks that all truths are derived from
+        reason, he is the paradigm of a rationalists.
+
+-   This is puzzling, because why would he insist that all we know is
+    derived from reason if he insists primary truths are the product
+    of perception.
+-   He is not so much interested in resolving this puzzle as he is
+    interested in exploring the role in which reason plays in 
+    Aristotle's rationalism.
+-   He focuses primarilly on the *Metaphysics* and *Posterior Analytics**
+    B19.
+-   In *Metaphysics*, Aristotle thinks that perception falls short of 
+    *true knowledge*, but does give rise to it in humans.
+    -   True knowledge is universal
+    -   Experiential knowledge is knowledge of the mere fact.
+
+-   Aristotle thinks that not only do you have to be justified in
+    knowing something to actually know it, the justification has to
+    be the actual justification of something.
+    -   Like Plato, knowledge involves understanding.
+    -   Necessary relationship between what is the explanation
+        and what is explained.
+        -  Such that what is explained cannot be be the case.
+
+-   Experience does not offer true knowledge of universals.
+-   True knowledge goes beyond experience in that it involves
+    the grasp of some universal feature.
+    -   Perceptions and memories, therefore, do not constitute
+        an account of knowledge.
+        
+-   Reason is not *needed*, you can go far without it.
+    -   In practice, experience seems more useful than pure reason.
+    
+-   Reason is only useful in specific and highly elevated instances.
+-   What makes a notion an adequate notion is being properly related
+    to other true notions.
+    -   One imports a whole system of related concepts in a way that
+        one can understand.
+    -   The corresponding features stand in proper relation to each
+        other.
+        
+-   To introduce reason is to grasp certain features and the necessary
+    relations between them.
+    -   What's distinctive about reason is to grasph universals.
+
+-   Animals don't have this, at least not *all*.
+-   Predecessor's failed to identify the human ability to grasp general
+    features and the relations between them.
+-   There is a distincitive human ability to grasph general features
+    and universal truths.
+    -   Like in considering a line or point, we know these have certain
+        relationships that combine to make meaning.
+
+-   Many philosophers reject Aristotle's theory of knowledge because
+    of obscurity and mystery of the mind's apparently (and falsely)
+    mystical ability to grasp universals.
+    -   Through our theoretical understanding of them being faint and
+        dim.
+
+-   The problem with this is the assumption about what it means to 
+    have reason.
+ 
+
+### *The Origin and Aim of* Posterior Analytics *II.19* <small>by David Bronstein</small>
+
+
+### Paper outline
+
+
+-   1 page introduction
+-   3 pages of Aristotle
+    1.  First principles, demonstration
+    2.  Objections, Menlo, trilemma
+    3.  Solution, perception as a form of knowledge
+    
+-   1 page of Frede
+-   1 page of Bronstein
+
+### Sources
+
+1.  [Aristotle's Posterior Analytics, Aristotle's Theory of Knowledge
+    and Demonstration, Dr. Cynthia Freeland, University of
+    Houston](http://www.uh.edu/~cfreelan/courses/Apo.html)
+2.  Aristotle. *Posterior Analytics*. Oxford New York: Clarendon Press
+    Oxford University Press, 1994. Print.
+3.  [Philosophy 433, Philosophy of Aristotle, University of Washington
+    Lecture
+    Notes](http://faculty.washington.edu/smcohen/433/433Lecture.html)
+4.  New Oxford American Dictionary
+5.  Aristotle. *Aristotle's Prior and posterior analytics : a revised 
+    text*. Oxford: Clarendon Press, 2001. Print. 
+
 ### Posterior Analytics
 
 -   **First principles**: there is nothing prior to them from which they
@@ -462,53 +576,4 @@ Short paper assignment
             knowledge.
         -   So we can neither already have it or acquire it.
         -   It follows that it must start with some **faculty**.
-
-### Frede
-
--   Aristotle says our knowledge has roots in perception
-    -   Also believe in detailed observation
-    -   It is unsurprising then, that Aristotle is often called an
-        empiricist.
-
--   Aristotle all thinks that all knowledge is either:
-    -   knowledge of principles that govern a certain domain,
-    -   knowledge from deduction of these principles
-    
--   It is not immediately obvious that these claims go together
-    -   Then, though all knowledge owes its epistemic mass to
-        principles, science owes it to induction from these.
-    -   So there is no problem in calling Aristotle an empiricist?
-    
--   But this is not Aristotle's view
-    -   He clearly thinks we have immediate knowledge of primary truths.
-        -   He cannot think, therefore, that our knowledge of them
-            depends on deductive confirmation.
-    
-    -   There are seen by reason to be immediate truths.
-    -   And being as he thinks that all truths are derived from
-        reason, he is the paradigm of a rationalists.
-
--   This is puzzling, because why would he insist that all we know is
-    derived from reason if he insists primary truths are the product
-    of perception.
--   He is not so much interested in resolving this puzzle as he is
-    interested in exploring the role in which reason plays in 
-    Aristotle's rationalism.
--   
-
-### Bronstein
-
-### Sources
-
-1.  [Aristotle's Posterior Analytics, Aristotle's Theory of Knowledge
-    and Demonstration, Dr. Cynthia Freeland, University of
-    Houston](http://www.uh.edu/~cfreelan/courses/Apo.html)
-2.  Aristotle. *Posterior Analytics*. Oxford New York: Clarendon Press
-    Oxford University Press, 1994. Print.
-3.  [Philosophy 433, Philosophy of Aristotle, University of Washington
-    Lecture
-    Notes](http://faculty.washington.edu/smcohen/433/433Lecture.html)
-4.  New Oxford American Dictionary
-5.  Aristotle. *Aristotle's Prior and posterior analytics : a revised 
-    text*. Oxford: Clarendon Press, 2001. Print. 
 
