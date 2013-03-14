@@ -2917,6 +2917,292 @@ March 5th, 2013 - Lecture
     -   For example, if you had a `Company` and an `Employee` object,
         then you'd have a `Job` class to stand for the relationship.
         
+March 8th, 2013 - Project Part 2: Photo Album (Design and Implementation II)
+----------------------------------------------------------------------------
+
+### Dates
+
+-   Posted Fri, Mar 8\
+-   GUI Storyboard and Work Split Document Due Wed, Mar 27, 11 PM\
+-   Complete Implementation and Test Cases Due Fri, Apr 12, 11 PM.
+
+### Features
+
+In Part 1, you built a simple view for your photo album. In this part,
+you will replace the simple view with a Graphical User Interface (GUI).
+
+Your GUI will implement the following single-user paradigm, using
+session persistence:
+
+-   When the application starts, a user logs in with username. Password
+    implementation is optional. It makes for a "real" scenario, but is
+    irrelevant to the essence of the project.
+
+-   There must be a special username **admin** that will take
+    application to an administration sub-system. The **admin** user can
+    do the following:
+    -   List users
+    -   Create a new user
+    -   Delete an existing user
+
+The rest of the specification below pertains to **non-admin** users
+only.
+
+Once the user logs in successfully, all albums and photo information for
+this user from a previous session (if any) are loaded from disk.
+Initially, all the albums belonging to the user should be displayed. For
+each album, its name, the number of photos in it, the date of the oldest
+photo, and the range of dates (earliest and latest date) on which photos
+were taken. Use your discretion on how to show this additional
+information.
+
+The user can then do the following:
+
+Create albums
+
+Delete albums
+
+Rename albums
+
+Open an album. Opening an album displays all photos, with their
+*thumbnail* images and captions, inside that album. Once an album is
+open the user can do the following:
+
+-   Add a photo
+-   Remove a photo
+-   Recaption a photo
+-   Display a photo. Displaying a photo should fit the image in its
+    display area, and should also show caption, date-time of capture,
+    and all the tags.
+-   Add a tag to a photo
+-   Delete a tag from a photo
+-   Move a photo from one album to another
+-   Go through photos in album in sequence forward or backward (manual
+    slideshow)
+
+Search for photos (Photos that match the search criteria should be
+displayed in a similar way to how photos in an album are displayed).
+Under this, you should provide the following specific features:
+
+1.  Search for photos by a date range.
+2.  Search for photos by tag type-value pairs. This should follow the
+    same rules as the command line version, where not specifying the tag
+    type implies it can match any tag type.
+
+There should be functionality to make an album out of the result of
+either of the above searches.
+
+Whatever view you choose to implement, make sure that users have the
+power and the flexibility to get at all the information they want with
+as few clicks/selections as possible (usability), and are not
+overwhelmed with too much information all at once (scalability).
+
+The user logs out at the end of the session. All albums and photo
+information for the user are stored to disk.
+
+After a user logs out, the application is still running, allowing
+another user to log in.
+
+There should be a way to quit the application **safely** at any time.
+Safely means that you should make sure that all updates that were made
+to the system in the current user's session are recorded correctly as
+required by the user.
+
+In the application all errors and exceptions should be handled
+gracefully within the GUI. (The console should NOT be used for any
+input, output, or error.)
+
+### GUI Storyboard
+
+Your first task is to design the interface in the form of a
+**storyboard**.
+
+The storyboard is a sequence of screen diagrams that shows all paths of
+flow through the interface. Here's a [sample storyboard](storyboard.pdf)
+for a calculator application that gives you an idea of what you should
+do. This is not a complete storyboard in that it does not show all
+possible screens that are in the UI it describes, nor does it
+necessarily show all possible transitions between screens. What it does
+show is how to draw screens, how to label screen components, how to draw
+transitions between screens, and how to label transitions.
+
+It is important to have a first page that is an overview that shows all
+screens and all transitions between them, without any details of the
+components within the screens themselves. This is an overview that can
+give the complete picture in one shot. The rest of the storyboard will
+then draw each screen in detail.
+
+Each screen must be drawn using some drawing package. **Screenshots that
+you take off a program WILL NOT be accepted.** In other words, there
+should be **no program code** written at this stage at all.
+
+Each screen will represent one window of your GUI and will contain all
+the widgets that go into that screen - text fields, buttons, etc. Be as
+precise as you can about the selection and layout of the components in a
+screen. **You must LABEL each component with the Swing class of which it
+is an instance, as shown in the model storyboard.**
+
+Each screen will show transitions to other screens and the events that
+trigger these transitions. When all is said and done, you will have
+effectively drawn up a storyboard of your entire GUI that shows all
+screens and all inter-screen transitions.
+
+**Note**: The title for each screen should be descriptive of what the
+screen does. The sample storyboard says "Calculator" for all titles, but
+for your storyboard, name every screen with an appropriate title. This
+can serve as the title to be displayed in the titlebar when you
+implement these screens in code.
+
+**Special Note**: Credit for the storyboard will be based on how well it
+anticipates (and determines) the implementation of the GUI. This portion
+of the grade for your storyboard will be given **after** you finish the
+implementation, and we can look at how useful your storyboard has been
+for your implementation.
+
+### Work Split Documentation
+
+When you have finished designing the storyboard, you need to decide how
+to split the work of implementing all the windows. Implementing a window
+will also include all non-visual aspects associated with it, all event
+handling, the connections to the other parts of the GUI, and the
+connections to the control and model. The work split must be as equal as
+you can make it.
+
+Type up the work split documentation (plain text or PDF, no other format
+will be accepted). Make a table with two columns: in one column list the
+name of the window to be implemented, and in the second, the team member
+who will implement it.
+
+### GUI Implementation (With UML, Javadocs and Data Files)
+
+Implement your GUI using Java AWT and Swing components **only**. (We
+will test with the standard JRE so if you use any external packages,
+your program will not run, and you will not get credit.) You must make
+sure your program can compile and run under Java 6.
+
+Document every class you implement with Javadoc tags, and be sure to
+include authorship.
+
+Extend the UML class diagram from Part 1 to include all the new classes
+you built in Part 2. In your UML diagram, include classes for all Java
+swing components that are used. Shade them as illustrated in this
+[Hangman UML diagram](hangman_uml.png).
+
+For each class you built, show all public fields and methods in the UML
+representation.
+
+Keep in mind that you will need classes that are not visually
+represented, but perform data-management functions, as well as broker
+between the visual classes and the backend. These should be in your UML
+as well.
+
+**Load the application with some sample data of users, albums, and
+photos that can be used to test your code.** This data should be able to
+drive all the tests you list in the test report, as described in the
+**Testing** section that follows. Your program should be runnable
+without any of the data files specified above (except for whatever
+information is needed to log in the **admin** user.)
+
+### Testing
+
+Write down every test you performed or would have liked to perform on
+your photo album code, *including tests for robustness*. Write your test
+report with the following structure:
+
+-   List all the "use cases" of your application. A use case is any
+    single request-response functionality that is implemented. For
+    instance, creating an album is a use case.
+
+-   For each use case:
+    -   Define the equivalence classes of tests for that use case,
+        *including equivalence classes for error conditions*.
+    -   For each equivalence class, list all the test cases you used.
+        The test case should list the data exactly as entered into the
+        interface. For each test, either list (if it is a small set) or
+        describe (if it is a large set) the expected result.
+
+Write your test report in a spreadsheet called **tests.xls** (If you
+don't have a spreadsheet program on your computer, you can use Microsoft
+Excel at any of the campus computing labs, or use Google documents
+spreadsheet and export as Excel.)
+
+Your spreadsheet should look like this:
+
+    ------------------------------------------------------------- ------------------------------------------- -----
+    **Group Members**: \< your names\>                                                                        
+                                                                                                              
+    **Use Case 1**: \<List the use case\>                                                                     
+    **Equivalence Class 1**: \<Describe the equivalence class\>                                               
+    **Test Case**                                                 **Expected result**                         
+    \<List the test input data\>                                  \<List/Describe the expected result\>       
+    ...                                                           ...                                         
+    **Equivalence Class 2**: \<Describe the equivalence class\>                                               
+    **Test Case**                                                 **Expected result**                         
+    ...                                                           ...                                         
+                                                                                                              
+    **Use Case 2**: \<List the use case\>                                                                     
+    ...                                                           ...                                         ...
+    ------------------------------------------------------------- ------------------------------------------- -----
+
+### Mercurial Contents
+
+#### By Wednesday, March 27, 11 PM
+
+(The **docs** and **data** directories mentioned below should be created
+directly under the project, NOT under **src** or under any of the
+packages).
+
+-   **GUI Storyboard**: The final form of your storyboard should be a
+    PDF file called **storyboard.pdf**, which should be placed in the
+    **docs** directory (where you put your javadoc documents for Part
+    1).
+-   **Work Split Document**: The final form of this document should be a
+    plain text (.txt) or PDF file, called **worksplit.txt** or
+    **worksplit.pdf**, and must be in the **docs** directory.
+
+#### By Friday, Apr 12, 11 PM
+
+-   **GUI Implementation**: Arrange your code elements in your GUI
+    implementation to be consistent with how your arranged the model and
+    control code in Part 1.
+-   **UML**: The complete UML class diagram (updated for this part) for
+    the project should be a PDF file called **uml2.pdf**, placed in the
+    **docs** directory.
+-   **Javadocs**: The complete Javadocs documentation should be
+    generated and placed in the **docs** directory.
+-   **Sample Data**: Users, albums, and photos for testing, to be placed
+    in a **data** directory.
+-   **Test Cases**: The **tests.xls** spreadsheet, to be placed in the
+    **docs** directory.
+
+### Grading
+
+Your project will be graded on the following, for 200 points:
+
+    ---------------------------------------------------------------------- --------
+    Category                                                               Points
+    UML + Javadocs + Storyboard                                            30
+    Features (listed in Features)                                          125
+    Robustness/Error Handling                                              15
+    Deployment (naming packages, doc and data directory with content)      5
+    Test Report                                                            25
+    Total                                                                  200
+    ---------------------------------------------------------------------- --------
+
+**EXTRA CREDIT**:
+
+-   (Up to **25 points**) for exceptional user interface features.
+
+**Penalties** (up to 25 points) will be assessed on the following:
+
+-   Needing extra configuration on our part to test your project because
+    you did not follow specifications: **upto 5 pts**
+-   Usability is poor such as roundabout ways to get at data, and/or
+    confusing interface: **upto 10 pts**
+-   Lacks scalability i.e. doesn't display large amounts of data (e.g.
+    many tens of photos or more) in a easily navigable way: **upto 10
+    pts**        
+        
 March 11th, 2013 - Recitation 7: Table/Model, Image Handling
 ------------------------------------------------------------
 1.  UML Quiz
