@@ -1342,8 +1342,8 @@ February 13th, 2013 - Lecture
     concept, then certain things have to be true about everything that
     satisfy that concept.
 
-February 18, 2013 - Reading: Excerpts from Leibniz's first two letters to Arnauld (May 1686; 14 July, 1686)
------------------------------------------------------------------------------------------------------------
+February 18th, 2013 - Reading: Excerpts from Leibniz's first two letters to Arnauld (May 1686; 14 July, 1686)
+-------------------------------------------------------------------------------------------------------------
 
 ### Remarks on Arnauld's Letter about My Proposition That the Individual Notion of Each Person Includes Once and for All Everything That Will Ever Happen to Him [May 1686]
 
