@@ -3221,3 +3221,60 @@ March 11th, 2013 - Recitation 7: Table/Model, Image Handling
 3.  You will learn how to load, display, and resize images using
     javax.swing.Image, javax.swing.ImageIcon, javax.swing.JSlider,
     java.awt.BorderLayout, and javax.swing.JScrollPane.
+    
+March 28th, 2013 - Recitation 8: Testing, Design Patterns
+---------------------------------------------------------
+
+1.  Let `Tomorrow` be a function of three variables: `month`, `day`, and
+    `year`. It returns the date of the next day that follows the given
+    input date. You may assume that `year` is in the range 1901 through
+    2013. Using equivalance classes and boundary values, determine the
+    test cases you would use to test a software implementation of this
+    function. Include robustness tests.
+
+    
+
+2.  A polynomial may be represented as a linked list as follows: for
+    every term in the polynomial there is one entry in the linked list
+    consisting of the term's coefficient and degree. (There will be
+    exactly one term in any degree.) The entries are ordered according
+    to ascending degrees, and zero-coefficient terms are not stored. An
+    empty (zero) polynomial is represented by a linked list with no
+    nodes in it.
+
+    For example, the following polynomial (the symbol '\^' is used to
+    mean 'raised to the power'):
+
+    $$4x^5 - 2x^3 + 2x +3$$
+
+    can be represented as the linked list of terms:
+
+              (3,0) -> (2,1) -> (-2,3) -> (4,5)
+
+    where each term is a (coefficient,degree) pair.
+
+    Now suppose there is a method that **adds** two polynomials and
+    returns the result in a new polynomial - the input polynomials are
+    not modified. You are asked to black-box test this method for
+    correctness, using the equivalence classes/boundary values approach.
+    Clearly specify how you will apply this approach to identify test
+    cases, and write down each such test case pair of input polynomials.
+    Also identify test cases for checking correct reporting of errors
+    (robustness).
+
+    
+
+3.  Draw a state diagram that models a user's shopping session at
+    amazon.com, starting with a search. Show the UML for an
+    implementation using the state design pattern including key fields
+    and headers for the methods in the states.
+
+    
+
+4.  Show how you would enhance the Singleton pattern to allow up to a
+    maximum number of instances of an object. There should be a way for
+    clients to recycle instances, i.e. when a client is finished with an
+    instance, it gives it up, and this instance can be later dealt out
+    in response to a new instance request.
+
+
