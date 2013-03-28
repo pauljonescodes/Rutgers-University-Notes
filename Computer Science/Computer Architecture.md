@@ -2689,8 +2689,11 @@ should look at the differences inside the mystery function and explain
 why the compiler made the changes that it did when optimizing the code.
 Collaboration: Please do not share your solution with your classmates as
 this gives the problem away. You may help each other with understanding
-Assembly details but not the solution. \#\#\# Submission You have to
-e-submit the assignment using Sakai. Your submission should be a tar
+Assembly details but not the solution. 
+
+### Submission 
+
+You have to e-submit the assignment using Sakai. Your submission should be a tar
 file named pa3.tar that can be extracted using the command: Your tar
 file must contain: tar xf pa3.tar
 
@@ -2772,3 +2775,5 @@ be good:
     definitions in header (.h) files. - Error and warning messages
     should be printed to stderr using fprintf. 
 
+March 27th, 2013 - Midterm Study Guide
+--------------------------------------

@@ -202,8 +202,6 @@ March 11th, 2013 - Lecture
 March 13th, 2013 - Homework 4
 -----------------------------
 
-Homework 4
-
 1.  (3 points) In the card game bridge we deal 13-card hands to 4
     players named North, South, East, and West (all 52 cards are dealt).
     What is the probability that East and West have no spades?
@@ -374,3 +372,335 @@ Homework 4
             -   $4 = 6 - 2 = 5 - 1$
 
             -   $5 = 6 - 1$
+            
+March 26th, 2013 - Office Hours
+-------------------------------
+
+1.  Norwa on number one
+2.  Notes on number two
+    -   There are no tricks, apply the formula.
+        $$E(X) = \sum_{a_i \in R(X)}a_i P(X = a_1)$$
+    -   What is E(X) for X = minimum of two dice?
+        $$P(x = 6) = P(\lbrace(6, 6) \rbrace) = \frac{1}{36} $$
+        $$P(x = 5) = P(\lbrace (5, 6), (6, 5), (5, 5) \rbrace) = \frac{3}{36}$$
+3.  Notes on number three
+    -   Find $E(X)$
+        1.  Find some random variables $X_1, ..., X_n$ such that $x = x_1 + ... + x_n$
+        2.  Now $E(X) = E(x_1) + ... E(x_n)$
+    -   We're going to buy x boxes of cereal
+    -   Call x the number of unique toys
+    -   We're always stopping at n boxes.
+    -   Imagine there six types of toys, red, green, blue, purple, orange, indigo.
+        -   When I open my n boxes, I check off the color I got until I get them all.
+        -   Call $x_1$ "got a red toy indicator"
+        -   There's another for each toy, 1 through 6.
+4.  Notes on number four
+    -   There m men and w women in a line in a single line, random order, all orders equally likely.
+    -   You can pick any pair of seats, this pair has formed a couple, if a mw or a wm occur.
+    -   Use linearity of expectation
+    -   x = number of couples
+    
+                m w m
+            _ _ _ _ _ _ _ _
+            1 2 3 4 5 6 7 8
+            x_1
+            
+    -   $E(X_1) = $ P(couple in a seat 1 and 2)
+5.  Notes on five
+    -   What is a Bernoulli trial?
+    -   So you see this problem there are $2^12$ different outcomes, different trials.
+        -   Big number, don't want to work it out by hand.
+    -   We know something about this though, it's connected to something we've seen before.
+        $$ E(\frac{S}{12}) $$
+
+March 27th, 2013 - Homework 4
+-----------------------------
+
+1.  (10 points total) Two teams $x$ and $y$ are playing each other in
+    the World Series, which is a best-of-seven-game match that ends when
+    one team wins 4 games. Assume that team $x$ wins each game with
+    probability $p$, and that the outcome of each game constitutes an
+    independent trial.
+
+    1.  (0.5 points) What is the probability that $x$ wins the first
+        four games?
+
+        -   There is one way for x to win in four, and that’s winning
+            four in a row.
+
+        -   By the multiplicity principle, we can multiply the chance of
+            winning each game to get the probability of winning all
+            games.
+
+            $$p^4$$
+
+    2.  (2 points) What is the probability that $x$ wins four games
+        after at most five game have been played?
+
+        -   Sample space, strings, x character means x won, y character
+            means y won.
+
+                        
+                        xxxx
+                        yxxxx
+                        xyxxx
+                        xxyxx
+                        xxxyx
+                        
+                        
+
+        -   The team represented by y cannot win at the end because
+            after 4 x wins, the games halt.
+
+        -   P(x wins in less than five games) =
+            $P(\mathrm{\{xxxx, yxxxx, xyxxx, xxyxx, xxxyx\}})$
+
+        -   There is a $(1 - p)$ chance of y winning.
+
+        -   The x team still needs to win 4 games, which has a
+            probability of $p^4$.
+
+        -   Multiplying these two values gets you the likelihood that
+            this happens for any given instance of x winning in less
+            than five games.
+
+        -   To get all of the possible less than 5 games combinations,
+            multiply by the number there are, which is 4.
+
+        -   Then, add the probability of just 4 straight victories.
+            $$(1 - p) \times p^4 \times 4 + p^4$$
+
+    3.  (2 points) What is the probability that $x$ will win four games
+        before $y$ wins four games? (i.e., What is the probability that
+        $x$ wins the Series?)
+
+        -   To begin, lets enumerate some possibilities using strings.
+
+            $$\{\mathrm{xxxx}\}$$
+
+            $$\{\mathrm{yxxxx,
+                    xyxxx,
+                    xxyxx,
+                    xxxyx}\}$$
+
+            $$\{\mathrm{yyxxxx,
+                    yxyxxx,
+                    ...,
+                    xxxyyx}\}$$
+
+            $$\{\mathrm{yyyxxxx,
+                    yyxyxxx,
+                    ...,
+                    xxxyyyx}\}$$
+
+        -   These are all the possibilities for x winning. Name these
+            $X_1$ through $X_4$ and notice the sum of their
+            probabilities to be the probability that $x$ wins four
+            games.
+
+        -   For $X_3$, there are ${5 \choose 2,3}$ ways of ordering x
+            and y, y has to win twice, and x still has to win four
+            times.
+
+        -   You have to subtract off the cases where there is a y at the
+            end,
+
+            $${4 \choose 1,3} \times (1 - y)^2 \times p^4$$
+
+        -   For $X_4$, there are ${6 \choose 3,3}$ ways of ordering x
+            and y, y has to win thrice, and x still has to win four
+            times.
+
+            $${5 \choose 2,3} \times (1 - y)^3 \times p^4$$
+
+        -   Now add 4 straight victories:
+
+            $${4 \choose 1,3} \times (1 - y)^2 \times p^4 + {5 \choose 2,3} \times (1 - y)^3 \times p^4 + p^4$$
+
+    4.  (0.5 points) Calculate and simplify your answer in part (c) when
+        $p=1/2$ and when $p=2/3$.
+
+        -   $p = 1 / 2 : 1/2$
+
+        -   $p = 2 / 3 : 1808/2187$
+
+    5.  (1 point) Let $X$ be the random variable that counts the number
+        of games that are played. What is ${\mathrm{Range}}(X)$?
+
+        $$R(X) = \{4, 5, 6, 7 \}$$
+
+    6.  (2 points) What is $P(X=7)$?
+
+        $${6 \choose 3}(1 - p)^3 p^4 + {6 \choose 3} p^3 (1 - p)^3 p^4$$
+
+    7.  (2 points) What is $P(X\geq 6)$?
+
+        $${5 \choose 2}(1 - p)^2 p^4 + {5 \choose 2} p^2 (1 - p)^4 + {6 \choose 3} (1 - p)^3 p^4 + {6 \choose 3} p^3 (1 - p)^4$$
+
+2.  (4 points) Suppose we roll two fair dice. Let the random variable
+    $X=$ “the minimum of the two dice” and $Y =$ “the absolute value of
+    the difference of the two dice”. Find $E(X)$ and $E(Y)$.
+
+    -   $E(X)$
+
+        -   The formula to solve this is
+
+            $$E(X) = \sum_{a_i \in R(X)}a_i P(X = a_1)$$
+
+        -   The sample space has a cardinality of 36, as there 6 choices
+            for each of the two choices.
+
+        -   All rolls are equally likely in a fair dice.
+
+        -   Starting with the highest element in the range (which is the
+            set containing 1 through 6), there is only one way 6 can be
+            the minimum.
+
+            $$P(x = 6) = P(\lbrace(6, 6) \rbrace) = \frac{1}{36}$$
+
+        -   There are 3 ways of “getting 5”, and that’s rolling two
+            fives, and then both variations of a five and a six.
+
+            $$P(x = 5) = P(\lbrace(5, 5), (5, 6), (6,5) \rbrace) = \frac{3}{36}$$
+
+        -   Apply the same pattern,
+
+            $$P(x = 4) = P(\lbrace(4, 4), (4, 5), (5,4), (4,6), (6,4) \rbrace) = \frac{5}{36}$$
+            $$P(x = 3) = P(\lbrace(3, 3), (3, 4), (4,3), (3,5), (5,3), (3,6), (6,3) \rbrace) = \frac{7}{36}$$
+            $$P(x = 2) = P(\lbrace(2, 2), (2, 3), (3,2), (2, 4), (4, 2), (2, 5), (5,2), (2,6), (6,2)) = \frac{9}{36}$$
+
+        -   Notice that there 2 more each time.
+
+            $$P(x = 1) = \frac{11}{36}$$
+
+        -   Now sum them and multiply them by their value ($a_i$) to
+            find expected value,
+
+            $$E(X) = \left(6 \times \frac{1}{36}\right) + \left(5 \times \frac{3}{36}\right) + \left(4 \times \frac{5}{36}\right) + \left(3 \times \frac{7}{36}\right) + \left(2 \times \frac{9}{36}\right) + \frac{11}{36} = 2.5277777778$$
+
+    -   $E(Y)$
+
+        -   The range is $\{0, 1, 2, 3, 4, 5\}$.
+
+        -   This is another application of the formula
+            $$E(X) = \sum_{a_i \in R(X)}a_i P(X = a_1)$$
+
+        -   There are 6 ways of getting 0, $\{6 - 6, 5 - 5, ...\}$. For
+            $i = 0$, $$0 \times P(X = 0) = 0 \times \frac{6}{36} = 0$$
+
+        -   There are 10 ways of getting 1,
+            $\{6 - 5, 5 - 6, 5 - 4, 4 - 5, 4 - 3, 3 - 4, 3 - 2, 2 - 3, 2 - 1, 1 - 2\}$.
+            For $i = 1$, $$1 \times P(X = 1) = 1 \times \frac{10}{36}$$
+
+        -   There are 8 ways of getting 2,
+            $\{6 - 4, 4 - 6, 5 - 3, 3 - 5, 4 - 2, 2 - 4, 1 - 5, 5 - 1\}$.
+            For $i = 2$,
+            $$2 \times P(X = 2) = 2 \times \frac{8}{36} = \frac{4}{9}$$
+
+        -   There are 6 ways of getting 3,
+            $\{6 - 3, 3 - 6, 5 - 2, 2 - 5, 4 - 1, 1 - 4\}$. For $i = 3$,
+            $$3 \times P(X = 3) = 3 \times \frac{6}{36} = \frac{2}{3}$$
+
+        -   There are 4 ways of getting 4,
+            $\{6 - 2, 2 - 6, 5 - 1, 1 - 5\}$. For $i = 4$,
+            $$4 \times P(X = 4) = 4 \times \frac{4}{36} = \frac{4}{9}$$
+
+        -   There are 2 ways of getting 5, $\{6 - 1, 1 - 6\}$. For
+            $i = 5$,
+            $$5 \times P(X = 5) = 5 \times \frac{2}{36} = \frac{5}{18}$$
+
+        -   We know we’ve covered the sample space because the sum of
+            the specific instances is the same as the cardinality of the
+            sample space.
+
+        -   The expected value,
+            $$E(X) = 0 + \frac{2}{9} + \frac{4}{9} + \frac{2}{3} + \frac{4}{9} +  \frac{5}{18} = 1.94 \approx 2$$
+
+3.  (4 points) Suppose boxes of cereal are filled with a random prize,
+    each drawn from independently and uniformly from $6$ possible
+    prizes. If we buy $N$ boxes of cereal, what is the expected number
+    of distinct prizes we will collect?
+
+    -   Let $X_1 ... X_6$ be the identifier for each of 6 unique toys
+
+        $$E\left(\sum I_{E_i}\right) = \sum_{i = 1}^6 E(I_{E_i}) = 6(1 - \left(5/6)\right)^n$$
+
+4.  (4 points) A group of $m$ men and $w$ randomly sit in a single row
+    at a theater. If a man and woman are seated next to each other we
+    say they form a couple. (Couples can overlap, meaning that one
+    person can be a member of two couples.) What is the expected number
+    of couples?
+
+    -   Use linearity of expectation for each pair of seats.
+
+    -   Let $x$ equal the number of seats.
+
+    -   Then, $E(X_1) = P($couple in a seat 1 and 2$)$,
+        $E(X_2) = P($couple in a seat 2 and 3$)$, etc.
+
+    -   For any given seat, there is a $\frac{1}{2}$ chance of their
+        being a man or a woman in the seat.
+
+    -   The four possibilities are {mw, wm, mm, ww}.
+
+5.  (3 points) Suppose an experiment tosses a fair coin twice; the
+    experiment “succeeds” if both tosses were Heads. We repeat this
+    experiment for 12 independent trials. Let $N$ be the random variable
+    that counts the fraction of trials that are successful (so
+    $N = S/12$, where $S$ is the number of successful trials). Find
+    $E(N)$.
+
+    $$E(N) = E\left(\frac{S}{12}\right)$$ $$S = \{ x_1 + ... + x_12 \}$$
+    $$\frac{1}{12} E(S)$$
+    $$E(S) = \sum_{a_i \in R(S)} a_i \times P(X_i)$$
+    $$P(X_i) = \frac{1}{4}$$ $$E(S) = 12 \times E(X_i)$$
+    $$\frac{1}{12}E(S) = 12 \times \frac{1}{4}$$ $$E(S) = \frac{1}{4}$$
+        
+March 27th, 2013 - Lecture
+--------------------------
+
+<table border=1 style="text-align:center;margin-left:auto; margin-right:auto;">
+  <tbody>
+    <!-- Results table headers -->
+    <tr>
+      <th></th>
+      <th>"story"</th>
+      <th>$R(X)$</th>
+      <th>fx</th>
+      <th>$E$</th>
+      <th>$V$</th>
+    </tr>
+    <tr>
+      <td>Bernoulli(P)</td>
+      <td>s/f with prob p</td>
+      <td>$\lbrace 0, 1 \rbrace$</td>
+      <td>$p, 1 + p$</td>
+      <td>$p$</td>
+      <td>$p(1 - p)$</td>
+    </tr>
+    <tr>
+      <td>Binom(n, p)</td>
+      <td>#$s$ in $n$ trials</td>
+      <td>$\lbrace 0, ... , n \rbrace $</td>
+      <td>$f_x(i) = {n \choose i} p^i (1 - p)^{n - i}$</td>
+      <td>$pn$</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td>Geom(p)</td>
+      <td># of trials until first s</td>
+      <td>$\lbrace 1, 2, ... \rbrace $</td>
+      <td>$f_x(i) = (1 - p)^{i - 1} p$</td>
+      <td>$\frac{1}{p}$</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <td>NegBiom(k,p)</td>
+      <td># trials until kth s</td>
+      <td>$\lbrace k, k + 1, ... \rbrace$</td>
+      <td>$f_x (i) = {i - 1 \choose k - 1} p^k (1 - p)^{i -k}$</td>
+      <td>$k \times \frac{1}{p}$</td>
+      <td>...</td>
+    </tr>
+  </tbody>
+</table>
