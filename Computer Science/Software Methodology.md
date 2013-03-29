@@ -3278,3 +3278,113 @@ March 28th, 2013 - Recitation 8: Testing, Design Patterns
     in response to a new instance request.
 
 
+March 29th, 2013 - Assignment 3 (Web Discussion Groups UML)
+-----------------------------------------------------------
+
+You will work **individually** on this assignment. Read the [DCS
+Academic Integrity Policy for Programmming
+Assignments](http://www.cs.rutgers.edu/policies/academicintegrity/index.php?page=3)
+- you are responsible for this. In particular, note that **"All
+Violations of the Academic Integrity Policy will be reported by the
+instructor to the appropriate Dean".**
+
+Develop an object-oriented design and draw UML for web discussion groups
+(such as Google groups).
+
+#### Discussion Groups
+
+The discussion groups are a part of a website of which a person first
+needs to be a user before they can participate in one or more groups.
+
+-   Each group has one or more members.
+-   Members of a group can:
+    1.  post messages to the group
+    2.  read messages posted by other members to the group sorted
+        according to combinations of message author, thread, or date
+
+-   Each message is part of a discussion thread. It can be the
+    initiating message for a new thread, or a response to a previous
+    message in a thread
+-   Users of the website can:
+    1.  create new groups
+    2.  join an existing group as member
+    3.  leave a group
+
+-   Every group has a single owner, who is initially the creator of the
+    group. (The creator of a group automatically becomes its first
+    member.)
+-   Each group has one moderator, who is initially the creator of the
+    group. Only a member can be a moderator.
+-   Owners can:
+    1.  invite users to join their group by sending them an email
+        invitation
+    2.  invite a member (including self) to be the moderator - if the
+        invitation is accepted, the new moderator replaces the current
+        moderator
+    3.  invite a member to take over ownership - if the invitation is
+        accepted, the ownership is transferred to that member
+    4.  delete the group
+
+-   Moderators can:
+    1.  Deny or pass through messages posted to the group by members
+    2.  Resign as moderator by sending an email to the owner, at which
+        point the owner becomes the moderator (by inviting self)
+
+#### UML
+
+Choose the most appropriate representation for each entity in the model.
+(Entity here refers to class or interface.) Use interfaces and abstract
+classes as needed. In each class, decide what key attributes and methods
+are needed to flesh out the specification. Not all details are
+explicitly mentioned in the specification above, but must be filled in
+by inference. Such details include choice of attributes and their data
+types, choice of operations with parameters return values, and choice of
+access levels (public/protected/package/private) for attributes and
+operations.
+
+Pay special attention to the relationships between entities. Remember,
+super-sub classes, and interface implementations are the strongest
+connections between entities, followed by associations, followed by
+dependencies. Make sure you are as specific as you can be with the
+multiplicities in associations, and whether an association is a plain
+old link or an aggregation or a composition, whether it is
+bidirectional, unidirectional or reflexive. Note: Every association is
+by definition bidirectional unless you explicitly show
+unidirectionality. Make sure you show multiplicities for all
+associations.
+
+#### Supplement to the UML
+
+For each association, list the data structure (full type definition in
+Java) that will be used to implement that association, and name the
+class to which it will belong. You don't have to outline any class, just
+draw a table with two columns, one for the data structure type
+definition, and the other for the class in which it will be defined. (If
+it is a class that is neither end point of the association, then make
+this fact explicit in the table.)
+
+#### Grading
+
+Your UML and supplement will be graded on completeness, appropriate
+choices in class/interface/abstract class for entities, appropriate
+choices in relationships between entities, and how well you have chosen
+data structures to implement associations. "Appropriateness" speaks to
+the best applicable/most precise design choices based on all the
+object-oriented design issues we have covered in class, flexibility (how
+easy it is to use your design for a range of functionality),
+extensibility (how easily your design can be extended to add more
+capabilities), maintainability (how easy it is to fix problems that may
+be arise in implementation). Not all of these may apply with equal
+importance (every model is different) but you want to use this as a
+checklist against your design to spot, and correct obvious flaws.
+
+#### Submission Instructions
+
+Submit a single PDF file, called webgroups.pdf, to Sakai. (Whatever
+software you use to draw the diagrams/write text, you MUST convert to
+PDF.) The PDF document should have the UML as well as the supplementary
+table of data structures. If you have trouble fitting the UML in one
+page, draw the UML with only the class names and relationships between
+them on one page, and then on other pages, draw the details for each
+entity. Scanned hand-drawn and hand-written submissions will NOT be
+accepted.

@@ -2775,5 +2775,219 @@ be good:
     definitions in header (.h) files. - Error and warning messages
     should be printed to stderr using fprintf. 
 
-March 27th, 2013 - Midterm Study Guide
---------------------------------------
+March 27th, 2013 - Midterm Study Guide <small>with special thanks to Matthew Resch</small>
+------------------------------------------------------------------------------------------
+
+### Number conversion
+
+#### Methods
+
+1.  Expansion
+    -   To convert a number, such as binary number, to decimal, 
+        use the definition of a number representation as an 
+        abbreviated polynomial.
+        
+        $$10101.1 = 1x2^4 + 0x2^3 + 1x2^2 + 0x2^1 + 1x2^0 + 1x2^{-1}$$
+        $$16 + 0 + 4 + 0 + 1 + .5 = 21.5$$
+
+2.  Division Method
+    -   To convert a number from one base to another, take the 
+        number, divide it by the target base, keep the remainder 
+        and divide the quotient by the base until the quotient 
+        that remains is zero. Number generated from right/left.
+    -   Example:
+        $$13 \% 2 = 1$$
+        $$6 \% 2 = 0$$ 
+        $$3 \% 2 = 1$$ 
+        $$1 \% 2 = 1$$ 
+        
+3.  Multiplication Method
+    -   This method is generally used to convert fractions
+    -   Multiply the number by the base, and keep the digit that
+        is generated, then multiply the thing to the right of the
+        decimal by the base again, until you have nothing to the 
+        right of the decimal.
+    -   Ex:
+        $$.7812510 \to .110012$$
+        $$.78125 x 2 = 1.56250$$
+        $$.56250 x 2 = 1.1250$$
+        $$.1250 x 2 = 0.250$$
+        $$.250 x 2 =  0.50$$
+                $$.50 x 2 = 1.0$$
+
+#### Binary
+
+-   To octal
+-   To decimal
+-   To hexadecimal
+
+#### Octal
+
+-   To binary
+-   To decimal
+-   To hexadecimal
+
+#### Decimal
+
+-   To binary
+-   To octal
+-   To hexadecimal
+
+#### Hexadecimal
+
+-   To decimal
+-   To octal
+-   To binary
+
+###  Endianess
+
+-   There are generally two forms of Endian-ness, **Big Endian** and 
+    **Little Endian**.
+-   Endian-ness refers to the ordering of bytes stored in memory, determined by the significance of the byte.
+-   What’s the difference between the two different types?
+    -   Little Endian machines store the **least** significant byte first, at the **lowest** byte address
+        -   Most machines that we use in our day-to-day life is Little Endian.
+        
+    -   Big Endian machines store the **most** significant byte first, at the **lowest** byte address
+        -   Most machines that use Big Endian do not run an architecture that we are likely to come in contact with.
+
+
+### Assembly Language (x86, AT&T, 32-bit)
+
+-   Basic assembly instructions are read from right to left source, right to left destination.
+    -   For example, 96(%ebp, %eax, 8) means “multiply 8 by the memory of eax, add to ebp and then add 96 to that.
+-   Parenthesis always denotes memory being used
+-   The difference between leal and mov is mov actually moves the contents, leal simply copies the address but not the contents
+-   Operands can have the following types:
+    -   Register: These operands refer directly to the contents of the CPU’s registers, and are denoted with a % in front of them.
+        -   If you want to deal with address, put a ( ) around register
+        -   Offset can be specified as an immediate
+
+-   Sample program
+
+        movl $1, -4(%ebp);    // we move 1 into "up four bits" from the base pointer
+        movl $2, -8(%ebp);    // we move 2 into "up eight bits" from the base pointer
+        movl -8(%ebp), %eax;  // move what in "up eight bits" from base pointo into eax
+        addl -4(%ebp), %eax;  // add to it what's "up four bits"
+        movl %eax, -12(%ebp); // move what's in eax to -12 bits from base pointer
+        
+-   Another sample program
+
+        mov al,[L1];     // copy byte at L1 into AL
+        mov	eax,L1;      // EAX now stores the address of byte at L1
+        mov	[L1],ah;     // copy AH into byte at L1
+        mov	eax,[L6];    // copy double word at L6 into EAX
+        add	eax,[L6];    // EAX = EAX + double word at L6
+        add	[L6],eax;    // double word at L6 += EAX
+        mov	al, [L6];    // copy first byte of double word at L6 into AL
+
+#### Basic commands
+
+-   `MOV`
+    -   The mov instruction moves data from one location to another, but cannot take two locations in memory as operands. The operands must also be the same size.
+    -   Format: mov source, destination
+-   `ADD`
+    -   Used to add two integers together
+    -   Format: add destination, source
+    -   Example:
+
+            add eax, 4 -> eax = eax + 4
+            add al, ah -> al = al + ah
+            
+-   `SUB`
+    -   Used to subtract two integers
+    -   Format: sub destination, source
+    -   Example:
+    
+        sub bx, 10 -> bx = bx -10
+        sub ebx, edi -> ebx = ebx – edi
+        
+-   `INC`/`DEC`
+    -   Used to increment or decrement values by one. 
+    -   Since one is implicit operand, code is smaller than for add/sub
+    -   Example:
+        
+        inc ecx -> ecx++
+        dec dl -> dl—
+
+#### Operand Types
+
+-   Immediate
+    -   Constant integer data
+    -   `$0x400`, `$-533`
+    -   Encoded with 1, 2, or 4 bytes
+    
+-   Register
+    -   One of 8 integer registers
+    -   `%esp` and `%ebp` reserved for special use
+        -   **S** tack **p** ointer
+        -   **B** ase **p** ointer
+    
+    -   Others have special uses for particular instructions
+        
+#### Memory
+
+-   4 consecutive bytes of memory
+-   Various “address modes”
+        
+#### Parameter order
+
+-   Source before the destination
+-   `eax := 5` is `mov $5, %eax`
+
+#### Parameter size
+
+-   `q` for qword, 
+-   `l` for long (dword)
+-   `w` for word
+-   `b` for byte
+
+#### Immediate value sigils
+
+-   Values prefixed with a `$`
+-   registers must be prefixed with a `%`
+
+#### Registers
+
+-   `AX` multiply/divide, string load & store
+-   `CX` count for string operations & shifts
+-   `DX` port address for `IN` and `OUT`
+-   `BX` index register for `MOVE`
+-   `SP` points to top of stack
+    -   `BP` points to base of stack frame
+    -   `SI` points to a source in stream operations
+    -   `DI` points to a destination in stream operations
+
+
+### Call stack
+
+### DeMorgan's laws
+
+### Circuits
+
+### Radix
+
+### Computer internals
+-   CPU, 
+    -   registers, 
+    -   a program counter, 
+    -   ALU (Arithmetic Logic Unit), 
+        -   Gets instructions to do things on floating, bitwise, set
+            point, or comparison operations, and gives the results 
+            in a condition code.
+            
+    -   and a control unit
+    
+-   Memory, 
+    -   any part can be accessed in constant time
+    -   Addresses are stored in either hex, or octal, points to a specific piece of memory
+
+-   BUS, 
+-   I/O devices, 
+    -   Mouse
+    -   Keyboard
+    -   Screen
+    -   Magic Trackpad 
+    -   Magic Mouse 
+    
+-   storage, NIC (network interface cards)
