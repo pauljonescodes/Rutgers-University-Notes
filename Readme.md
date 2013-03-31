@@ -18,7 +18,7 @@ To investigate the essential properties of data structures and algorithms for op
 to use these structures as tools to assist algorithm design; to extend exposure to 
 searching, sorting and hashing techniques.
 
-#### Topics
+Topics:
 
 -   Linked lists, stacks, queues
 -   Binary trees
@@ -41,7 +41,7 @@ using Eclipse, introduction to building software on mobile platforms,
 introduction to multithreading, network programming, and object
 persistence.
 
-#### Topics:
+Topics:
 
 -   Inheritance, interfaces, abstract classes, polymorphism
 -   Unified Modeling Language (UML)
@@ -67,7 +67,7 @@ computer systems, including the design and implementation of key
 hardware components such as the processor, memory, and I/O devices, and
 the software/hardware interface.
 
-#### Topics
+Topics:
 
 -   C programming
 -   Data representation and computer arithmetic
@@ -85,7 +85,7 @@ Mathematics
 
 To introduce the student to the mathematical tools of logic and induction, and to the basic definitions and theorems concerning relations, functions, and sets.  Later courses in the computer science curriculum build on the mathematical foundations covered here. Particular emphasis is placed on inductive definitions and proofs, with application to problems in computer science.
 
-#### Topics
+Topics:
 
 -   Basic Set Notation, Propositional Logic, Truth Tables, Boolean Circuits
 -   First-Order Logic, Predicates. Quantifiers
@@ -103,7 +103,8 @@ Provides the background in combinatorics and probability theory required
 in design and analysis of algorithms, in system analysis, and in other
 areas of computer science.
 
-#### Topics
+Topics:
+
 -   Counting: Binomial Coefficients, Permutations, Combinations,
     Partitions.
 -   Recurrence Relations and Generating Functions.
@@ -128,6 +129,8 @@ Philosophy
 
 ### Topics in Social and Political Philosophy, Fall 2012 with Professor Mark Colby
 
+This seminar explores in depth two of the seminal writings of John Stuart Mill (1806-1873). We begin with Utilitarianism (final version, 1863), his major work in ethical theory and the foundation of his philosophy on ethical, social, and political matters. Then we analyze On Liberty (1859), his most famous and influential work, containing the core of his normative vision of human well-being, especially its social, political, and epistemic dimensions. The lectures will also discuss some of the principles of his Considerations on Representative Government (1860), via handouts. The primary topics of the course are Mill’s theory of value; his developmental conception of human nature; his utilitarian synthesis of Aristotle’s virtue theory and Kant’s rights-based theory of morality; his epistemology or theory of the nature of truth, including his account of intellectual and historical progress; his liberal theory of individuality and autonomy; and his theories of politics, justice, and government.
+
 ### Leibniz, Spring 2013 with Professor Martha Bolton
 
 The course is intended to provide a good understanding of some of the
@@ -138,3 +141,6 @@ in analyzing and evaluating arguments, as well as developing,
 supporting, and expressing views of one's own.
 
 ### Aristotle, Spring 2013 with Professor Robert Bolton
+
+The aim of the course is to understand the relation between Aristotle's epistemology
+and his cognitive psychology, particularly concerning perception.
