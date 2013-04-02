@@ -3388,3 +3388,265 @@ page, draw the UML with only the class names and relationships between
 them on one page, and then on other pages, draw the details for each
 entity. Scanned hand-drawn and hand-written submissions will NOT be
 accepted.
+
+April 1st, 2013 - Recitation 9: Multithreading, Android
+-------------------------------------------------------
+
+1.  Use threads to implement a stop watch that displays, *once every
+    five seconds*, the minutes and seconds that have passed since it was
+    started. The display should be in the form `mm:ss` for minutes and
+    seconds. When the clock reaches 15 minutes, it should wrap back and
+    start at 0 minutes and 0 seconds. The user should be able to stop
+    the watch at any time. Write the complete code for the application.
+    (Not the most accurate stop watch, but the model is useful for
+    animations in which slight inaccuracies in time would not be
+    detrimental.)
+
+2.  Write an Android app that can accept an order to make a sub. Have
+    checkboxes to select (or unselect) items to add (lettuce, tomato,
+    etc.) Have combo boxes or equivalent to select one out of many
+    (exclusive) options like the type of cheese to put in the sub. When
+    the user confirms the order (via a button), display a message in a
+    text area that lists the sub contents. Your UI doesn't have to be
+    pretty - just make it work correctly.
+
+
+
+April 2nd, 2013 - Lecture: Android Development
+----------------------------------------------
+
+This document points you to the appropriate developer resources that
+describe how to set up Eclipse for Android development on your personal
+computer. It also points you to resources that show how to create a
+mobile Android device emulator for testing your application in Eclipse,
+as well as how to install and test your application on an Android
+smartphone. Written by Sesh Venugopal, Rutgers University. For CS 213
+Spring 2013.
+
+It is assumed that you have already installed Java and Eclipse on your
+machine before you do the Android setup. (Java and Eclipse are already
+available on the ilab machines.)
+
+### Android SDK
+
+
+#### Step 1: Download the SDK
+
+The first thing you will need to do is download the Android SDK
+(software development toolkit), which has all the tools you will need to
+develop Android programs.
+
+Go to [Get the Android SDK](http://developer.android.com/sdk/index.html)
+On that page, you will see USE AN EXISTING IDE toward the lower half.
+Expand it, and you'll see this:
+
+I am on a Mac, so it shows up a Mac download button. If you are on
+Windows, you should a Windows download button. Click on the button,
+agree to the terms, then download.
+
+-   For the Mac, you will download a zip file called
+    **android-sdk\_r21.0.1-macosx.zip**
+-   For Windows, you will download an installer file,
+    **installer\_r21.0.1-windows.exe**
+
+(r21.0.1 is the latest version as of this writing).
+
+### Step 2: Set up the SDK
+
+The next phase is to install the ADT for Eclipse.
+
+
+### ADT for Eclipse
+
+ADT stands for Android Development Toolkit. It is a plug in for Eclipse
+that comes with a full set of tools to build, test, and export Android
+apps to the Android market. To plug the ADT into Eclipse, go to
+[Installing the Eclipse
+Plugin](http://developer.android.com/sdk/installing/installing-adt.html),
+and execute the following two steps.
+
+#### Step 1: Download the ADT Plugin
+
+The first thing you will need to do is download the Android SDK (software development toolkit), which has all the tools you will need to develop Android programs.
+
+Go to Get the Android SDK On that page, you will see USE AN EXISTING IDE toward the lower half. Expand it, and you'll see this:
+
+I am on a Mac, so it shows up a Mac download button. If you are on Windows, you should a Windows download button. Click on the button, agree to the terms, then download.
+
+-   For the Mac, you will download a zip file called android-sdk_r21.0.1-macosx.zip
+-   For Windows, you will download an installer file, installer_r21.0.1-windows.exe
+
+#### Step 2: Point the ADT to the SDK
+
+-   Follow the instructions. On my Mac, I unpacked the file, moved the resulting directory to directly under my home directory, and renamed it as android-sdk-macosx. Here are the contents of this directory:
+
+### Adding Platforms and Packages
+
+An Android platform is basically a version of the Android API on which
+you can run your app.
+
+Since there are so many Android devices on the market, when you build an
+app, you need to know whether you are building for the largest possible
+user base, or for a specific subset of devices. For instance, you might
+build a simple app that you want to target to as many users as possible.
+In this case you would want to build your app for the earliest possible
+platform that will support its features, say, Android 2.3.3. Or, you
+might want to build a sophisticated app that can only be run on tablets,
+in which case you will need to go with a platform that supports tablets,
+such as Android 3.2.
+
+A platform is tied to a certain revision of the SDK tools, and before
+you install a newer platform, you need to update the SDK tools to the
+revision required by the platform. For instance, the Android 4.2
+platform needs the SDK tool revision r20 or higher. The Android 3.2
+platform needs SDK tool revision r12 of higher.
+
+Once you have identified which platforms you want to install, it is an
+easy matter to do it in Eclipse, with the Android SDK Manager.
+
+### Downloading Platforms and SDK Tools with SDK Manager
+
+After plugging in the ADT into Eclipse, when you start Eclipse, you should see a set of extra icons in the task bar at the top.
+
+
+Clicking on the SDK Manager icon brings up this window:
+
+
+
+The manager displays all available versions of the platforms. Here I have expanded and highlighted the versions that I installed: 4.2, 3.2, and 2.2 (each of these is mapped to an API level.) I have superimposed a snapshot of my filesystem where you see the corresponding platform directories under android-mac-osx/platforms. If I were to expand any of the other versions (such as Android 4.1.2), it would show nothing installed. Also notice at the top that the SDK tools version r21 is installed.
+
+Now say I wanted to install Android 2.3.3. (The expansion of that version in the SDK shows it is not installed):
+
+
+
+I can install all packages under Android 2.3.3 by clicking on the checkbox to its left. But here, I am choosing to install only the SDK Platform (required at minimum), and Google APIs (required if you are going to use Google tools such as maps), so I check only these two:
+
+
+
+Clicking on the "Install 2 packages..." button brings up this dialog:
+
+
+
+Choose "Accept all" and click "Install". After installation, you should see this in the SDK manager:
+
+
+### Creating an Emulator
+
+When you write an app, you can test it on emulators for various device
+sizes and pixel densities so you now that it works well on small and big
+phones, with varying degrees of pixel resolution. You can set up
+emulators using the Android Virtual Device Manager, shown earlier:
+
+The device manager allows you to create an emulator according to need.
+When you click on the icon, you see a wizard to create an emulator, or
+to edit an existing emulator, shown on the left in the following figure.
+Let's create a new emulator, by clicking on the **New...** button in the
+right hand bar, which brings up a create wizard, shown on the right.
+
+The important fields here are "Device" and "Target", at the top. If you
+pull down the "Device" choices you will see a list of "skins",
+corresponding to devices of various sizes and densities. The following
+table, from the page [Supporting Multiple
+Screens](http://developer.android.com/guide/practices/screens_support.html)
+of the Android documentation site:
+
+The "Device" pull down list in the new AVD creator lists many of these
+skins. I generally pick HVGA (320 x 480) (second row, second column),
+which is for a normal screen, medium density, with potentially the
+broadest reach in terms of ownership.
+
+The other important field, "Target", should list all the APIs installed.
+The list will also include Google APIs, which you would choose if you
+were to incorporate, say, Google Maps. I picked Android 2.3.3 as the
+target.
+
+Leaving all other fields at their default settings, here's the
+configuration, to the left, and the resulting emulator list, to the
+right:
+
+### Writing a Simple App
+
+You are ready to start writing Android apps! Here's a simple "hello
+world" app to get you started.
+
+#### Creating an Android Project
+
+When you enter Hello World for the application name, the wizard will
+automatically fill in HelloWorld for the project name, and
+com.example.helloworld for the package name - see the filled in wizard
+on the right. The yellow exclamation point next to the package name is
+for the warning at the top of the window.
+
+The next three fields are pull downs for various SDK settings. The first
+one is the lowest SDK version on which this app will run, which we can
+leave at the default setting of Android 2.2. The next is the target SDK
+against which the app will be tested. Since we created a virtual device
+earlier targeting 2.3.3, this is what we pick here. The app will be
+compiled with the latest version of the compiler, which is 4.2.
+
+The last field is a color theme that will be applied to the application.
+Again, we can leave it at the default.
+
+All of these settings can be changed later - we'll see how after we
+write up the app.
+
+Clicking next takes you to another settings window, where you can leave
+things as they are.
+
+Clicking next again takes you to a window that can be used to choose a
+launcher icon. This icon will appear when the user lists all apps on
+their device. The default icon is the Android, which we will leave in
+for this application. Note that the window shows several versions of the
+icon, one for each of four screen resolutions: ldpi, mdpi, hdpi, and
+xhdpi. If you were to make your own icon, you will need to make four
+versions. Typically you would make one version, usually the mdpi, and
+then scale it down or up for the other versions.
+
+Clicking next presents a create activity window. You can leave the
+selection at Blank Activity.
+
+Clicking next asks for the name of the activity class to create. Enter
+HelloWorld for the name, and main for the layout. Leave Navigation type
+at the default setting of "None".
+
+Click next. If you see a window about a missing dependency, click on the
+"Install/Upgrade" button and carry out the installtion process.
+
+Click Finish.
+
+#### App Project
+
+In the left hand pane is the package explorer where you see the
+HelloWorld project. It has several folders, one of which is res (for
+"resources"). Under res is a folder called layout, which holds an XML
+file called main.xml. (Recall that we had named the layout "main" in the
+project wizard's activity class window, toward the end of the previous
+section.)
+
+The editor is in the right pane, with the main.xml file open in
+"Graphical Layout" form (see the tab at the bottom left corner of the
+pane). This is pretty much what the app would look like when it's
+launched. So let's go ahead and run the app, then we'll come back to
+take a tour of the app's code, and some of the immediately relevant
+aspects of the project's framework.
+
+#### Running the App
+
+Right click on the HelloWorld project folder name in the package
+explorer, then choose "Run As", and "Android Application". This should
+start up the emulator which we have created earlier, called "hvga". This
+will take a few moments, and after the emulator starts running, it will
+set itself up and eventually show the app, which is the leftmost picture
+in the following set of images:
+
+You may have noticed that the layout of the app while running in the
+emulator is identical to the graphical layout of the main.xml layot file
+shown in Eclipse.
+
+The emulator provides basic navgiational capability, as well as a
+hardware search button. The middle image above shows the home screen,
+and the rightmost shows all the apps on the emulated device. (From where
+the Hello World app can be launched, of course - observe the Android
+icon used as the launcher icon, because we set it up that way in the
+project creation process.)
+

@@ -126,8 +126,15 @@ March 11th, 2013 - Reading
     $$P\lbrace Y = 2 \rbrace = P \lbrace (H, H, T), (T, H, H), (H, T, H), \rbrace = \frac{3}{8} $$
     $$P\lbrace Y = 3 \rbrace = P \lbrace (H, H, H) \rbrace = \frac{1}{8} $$
     
-March 11th, 2013 - Lecture
---------------------------
+March 11th, 2013 - Lecture: More on Random Variables; Expectation
+-----------------------------------------------------------------
+
+### Introduction
+
+-   Topics: More on binomial random variables. 
+-   Geometric and negative binomial random variables. 
+-   Definition of expectation and the alternative formulation.
+-   Reading: See notes part 3 on Sakai.
 
 ### Warmup for Homework
 
@@ -137,12 +144,12 @@ March 11th, 2013 - Lecture
     $$ Range(Y) = \lbrace 0, 1, 2, 3, 4, 5 \rbrace $$
     $$ Range(Z) = Range(XY) = \lbrace 0, ..., 9 \rbrace $$
 
-#### Are $X$ and $Y$ Indepedent?
+#### Are $X$ and $Y$ Independent?
 
 -   If indepedent, then dor all $i \in Range(X), j \in Range(Y)$
     $$ P(X = i \cap Y = j) = P(X = i)P(Y = j) $$
     $$ P(X = 2 \cap Y = 5) = \emptyset $$
-    -   But $P(X = 2) \gt 0, P(Y = 5)$ so not indepedent.
+    -   But $P(X = 2) \gt 0, P(Y = 5)$ so not independent.
 
 ### Binomial Frequency Function
 
@@ -157,7 +164,7 @@ March 11th, 2013 - Lecture
     $$ = \sum_{k = 0}^n {n \choose k} P^k (1 - p)^{n - k} = $$
     $$ (p + P(1 - p))^n = 1^n = 1 $$
     
--   **Example**: An airplan has 200 seats, but we should 202 tickets.
+-   **Example**: An airplane has 200 seats, but we should 202 tickets.
     Assume passengers fail to show with probability $0.03$ *indepedantly*.
     What is the chance that flight is over full?
     -   This "$s$" is "passenger $i$ fails to show."
@@ -372,6 +379,33 @@ March 13th, 2013 - Homework 4
             -   $4 = 6 - 2 = 5 - 1$
 
             -   $5 = 6 - 1$
+
+March 13th, 2013 - Lecture: Linearity of expectation
+----------------------------------------------------
+
+### Introduction
+
+-   Topics: 
+    -   Linearity of expectation. 
+    -   Expectation of binomial, geometric, and negative binomial frequency functions. 
+    
+-   Applications to computing expectations: 
+    -   Birthday problem, 
+    -   balls into bins, 
+    -   and coupon collecting.
+    
+-   Reading: See notes part 3 on Sakai.
+
+March 25th, 2013 - Lecture: Markov's Inequality; Begin Variance
+---------------------------------------------------------------
+
+### Introduction
+
+-   Topics: 
+    -   Markov's inequality for non-negative random variables. 
+    -   Definition of variance and some calculations of variance.
+    
+-   Reading: See notes part 4 on Sakai.
             
 March 26th, 2013 - Office Hours
 -------------------------------
@@ -656,8 +690,17 @@ March 27th, 2013 - Homework 4
     $$P(X_i) = \frac{1}{4}$$ $$E(S) = 12 \times E(X_i)$$
     $$\frac{1}{12}E(S) = 12 \times \frac{1}{4}$$ $$E(S) = \frac{1}{4}$$
         
-March 27th, 2013 - Lecture
---------------------------
+March 27th, 2013 - Lecture: Computing Variances
+-----------------------------------------------
+
+### Introduction 
+
+-   Topics: 
+    -   Expectation of a function of a random variable. 
+    -   Variance of a sum of independent random variables. 
+    -   Variance of the bernoulli, binomial, geometric, and negative binomial distributions.
+
+-   Reading: See notes part 4 on Sakai.
 
 <table border=1 style="text-align:center;margin-left:auto; margin-right:auto;">
   <tbody>
@@ -704,3 +747,153 @@ March 27th, 2013 - Lecture
     </tr>
   </tbody>
 </table>
+
+April 1st, 2013 - Lecture: Covariance and Chebyshev's Inequality
+----------------------------------------------------------------
+
+### Topics 
+
+-   Variance of a sum of dependent random variables and the definition of covariance. 
+-   Properties of covariance. Independence implies correlation but the converse does not hold. 
+-       Statement of Chebyshev's inequality and a basic application.
+
+### Introduction
+
+-   If $X$ and $Y$ are indepedant, then 
+    $$V(X + Y) = V(X) + V(Y)$$
+    
+-   If not, then equality may or may not hold.
+-   **Example**: A case where equality does not hold.
+    -   Take $P(X = 1) = \frac{1}{2}$, $P(X = 0) = \frac{1}{2}$, $x = 1 \to Y = 0$, $x = 1, Y = 1$.
+        $$V(Y) = \frac{1}{4}$$
+    -   So 
+        $$V(X) + V(Y) = \frac{1}{4} + \frac{1}{4} = \frac{1}{2}$$
+    -   $V(X + Y)$ equals 0? $X + Y$ will always be 1.
+        $$V(X + Y) \lt V(X) + V(Y)$$
+        
+### Variance
+
+-   "Swinging together"
+    $$V(X + Y) \lt V(X) + V(Y)$$
+    
+-   "Swings unrelated"
+    $$V(X + Y)  =  V(X) + V(Y)$$
+    
+-   "Swings are opposite each other"
+    $$V(X + Y) \gt V(X) + V(Y)$$
+    
+-   We want to measure "how much they're together or opposite."
+-   The **covariance of $X$ and $Y$** is defined to be:
+    $$Cov(x, y) = E[E(x - E[x])(y - E[y])]$$
+    
+-   Intuition
+    -   "Swing together"
+        $$Cov(X, Y) \gt 0$$
+    
+    -   "Swings unrelated"
+        $$Cov(X, Y)  =  0$$
+        
+    -   "Swings opposite"
+        $$Cov(X, Y) \lt 0$$
+        
+-   **Example** (non rigourous pictures)
+    -   Examples, $x$ is height and $y$ is shoe size
+        $$Cov(X, Y) \gt 0$$
+
+              v |               .
+              a |             . .
+              l |          . . .
+              u |        . . .
+              e |      . . .
+                |    . .  .
+              y |    . . 
+                |  . 
+              0 +-----------------
+               0    value of X
+    
+    -   Examples, $x$ is temp and $y$ is sales of hot chocolate
+        $$Cov(X, Y) \lt 0$$
+           
+              v | .
+              a |  . .     
+              l |   .  . . 
+              u |    .  .  . 
+              e |     .  .  .
+                |      .  .  .
+              y |        .   .
+                |            .
+              0 +-----------------
+               0    value of X
+               
+-   **Formula**:
+    $$Cov(X, Y) = E(XY) - E(X) \times E(Y)$$
+    
+-   **Claim**: If $X, Y$ are indepedant, $Cov(X, Y) = 0$
+    -   **Proof**
+        $$Cov(X, Y) = E(XY) - E(X)E(Y)$$
+        $$= E(X)E(Y) - E(X)E(Y)$$
+        $$= 0$$
+        
+### Tchbycheff's Inequility
+
+-   Recall Markov's give tail bound base only on $E(X)$
+-   Chebyshev's give tail bound using $E(X)$ and $V(X)$
+-   **Chebyshev's Theorem**: Let $X$ be a random variable with $E(X) = \mu$
+    -   Then for any $\epsilon \gt 0$.
+    
+-   **Example**: Roll a fair die 100 times and let $Z$ be the sum
+    and $X_1$, ..., $X_{100}$ be the outcomes.
+    -   What's the probability that $Z$ are within 50 of its mean?
+        
+
+               
+April 2nd, 2013 - Office Hours
+------------------------------
+
+### Number 3
+
+$$Cov(X,Y) = E(XY) - E(X)E(Y)$$
+
+-   Call $z_1$ the first roll, $z_2$ the second.
+
+$$E(XY) = \sum_{w \in S} X(w) Y(w) P(w)$$
+
+-   We can do this in principle, it takes fifteen minutes.
+-   More elegantly, however, take two random variables that represents the rolls, and it's nice because they're indepedant.
+
+$$X = z_1 + z_2$$
+$$Y = z_1 - z_2$$
+
+$$XY = (z_1 + z_2)(z_1 - z_2)$$
+$$ = x_1^2 - z_2^2 $$
+$$E(XY) = E(z_1^2) - E(z_2^2) $$
+$$ = 0 $$
+
+### Banach-Torski Paradox
+
+-   There are lots of functions which are not integrable.
+-   Take the function $f(x)$, which is 0 if x is rational, 1 otherwise.
+-   $[0, 1] \to \mathbb{R}$
+    $$ \int_{0}^{1} f(x)dx$$
+-   Ball in 3-space, cut it up into peices and put them in sets, move the set around.
+-   And you can double the volume! (???)
+-   Axiom of choice.
+
+> Physics is looking around you and drawing conclusions,
+> but something really meaningful to me is that what you have infallible premises,
+> you have an infallible conclusion. <cite>David Cash</cite>
+
+### Zero-knowledge proof
+
+-   Zero knowledge proofs are a different way of thinking of proofs.
+    -   A regular proof involves a prover and verifier.
+    -   If each step is right, the then conclusion is right, and you've proven something.
+    
+-   If the statement "$x$ is not prime" (where $x$ is a hundred digit number).
+-   You want to prove to a server that I know my password, you know I know it, but you don't know my password.
+
+#### Journal of Craptology: Zero-Knowledge Proofs for Kids
+
+-   There's a Waldo, you don't know where he is, but there is one.
+-   Take a big piece of cardboard, and cut a Waldo sized hole, and show the person Waldo.
+-   They know there's a Waldo, but have no knowledge about where the Waldo is.
