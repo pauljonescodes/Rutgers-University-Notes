@@ -865,7 +865,7 @@ $$X = z_1 + z_2$$
 $$Y = z_1 - z_2$$
 
 $$XY = (z_1 + z_2)(z_1 - z_2)$$
-$$ = x_1^2 - z_2^2 $$
+$$ = z_1^2 - z_2^2 $$
 $$E(XY) = E(z_1^2) - E(z_2^2) $$
 $$ = 0 $$
 
@@ -897,3 +897,33 @@ $$ = 0 $$
 -   There's a Waldo, you don't know where he is, but there is one.
 -   Take a big piece of cardboard, and cut a Waldo sized hole, and show the person Waldo.
 -   They know there's a Waldo, but have no knowledge about where the Waldo is.
+
+April 3rd, 2013 - Lecture
+-------------------------
+
+### Public polling
+
+-   Say we want to estimate how much of the country will vote
+    independent in the next presidential election.
+    -   Call $n$ random people and ask what they'll do, with a country
+        of $m$ people.
+    -   Average response to estimate fraction of country that will vote
+        independent.
+    -   How big should $n$ be to be wintin $\pm 3 \%$ with probability $\ge 95\%$
+    -   Let $x_i = $ "ith person we call say will vote indepedant."
+        $$ A_n = \frac{x_1 + ... + x_n}{n} $$
+    
+    -   Say a $p$ fraction of the country will vote independant (unknown).
+    -   Want to know:
+        $$ P(|A_n - p| \gt 0.03) \le 0.05 $$
+    
+    -   Use Cheb.
+        $$ P(|A_n - p| \gt 0.03) \le \frac{V(A_n)}{(0.03)^2} \le \frac{1}{n \times 0.03^2}$$
+        
+        $$ V(A_n) = V(\frac{x_1 + ... x_n}{n}) = \frac{1}{n} V(X_1) $$
+        
+        $$ = \frac{p(1 - p)}{n} $$
+        
+        $$ \le \frac{1}{n} $$
+    
+    -   Want $\frac{1}{n \times 0.03^2} \le 0.05 $

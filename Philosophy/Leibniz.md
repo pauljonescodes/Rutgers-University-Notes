@@ -2432,3 +2432,56 @@ March 11th, 2013 - Lecture: The notion of force in physics and metaphysics
     2. Exactly alike
     3. Sufficnient reason to say alike
     4. No possible differences
+
+April 3rd, 2013 - Lecture: How the soul 'knows' what to do
+----------------------------------------------------------
+
+-   The natures of soul and bodies means there are no possible connections.
+-   All souls are self-contained.
+-   There are no external forces or contributions.
+-   All go along with perceptions and volitions.
+-   On the other hand, the body obey mechanistic physics.
+-   Logical positivists were bent on eliminating unverifiable, unfalsifiable claims.
+    -   There are forms that are logically valid or not.
+    -   There is science.
+    -   And then any other discourse, either with forms or science, is meaningless.
+    -   So values, emotive expressions, are meaningless.
+
+-   If you go back to Aristotle, he's an empiricist, and a metaphysics
+    is an abstract science.
+-   The scholastics mix up metaphysics and natural science.
+
+    > We have to go back to these substanstial forms <cite>Aristotle</cite>
+
+-   The scholastics confused a physics that appealed to forms.
+-   Different kinds of forms, different powers.
+-   Since this is a long story, since they had no grips on the forms
+    and the source of the phenomea that was observed, they couldn't
+    say anything about the forms, but they caused the phenomena.
+    -   If this has an error of circularity about it, that's the point.
+
+-   Leibniz is advocating this metaphysical theory about the phenomena
+    we all agree up. 
+    -   Very abstract theory with physical evidence.
+    -   Most general of the empirical scientists.
+
+-   When you get to the positivists, metaphysics took an idealistic turn.
+-   For science, it put matter into a secondary position.
+-   Science is what we can count on, and metaphysics follows (or other way around).
+-   Examples of positivist: Schlick, Karl Hempel (last of the great), Quinne, Oppenheim
+-   He held German metaphysics responsible for the horrors of WWII.
+-   There's a big debate about the relevance of philosophy to physics
+    -   Some say that philosophy has nothing to say about physics.
+    -   Some say that philosophy and metaphysics has a big role to play in the armchair.
+    -   Physics should be talking about something that is real.
+
+-   Leibniz is in a pretty clear position, whereas the connection between metaphysics
+    and science is unclear now.
+    -   When we're talking about the rules, laws of nature, that govern the world,
+        we're talking about necessary truth.
+
+-   So we have the pre-establish harmony, what puzzles you most?
+-   2 clocks always tell the same time.
+    1.  They causally effect each other.
+    2.  There's a maintenance person who regularly adjests them.
+    3.  Perfectly made each on its own tells the right time.

@@ -1,6 +1,10 @@
 Computer Architecture <small>with Professor Brian Russell</small>
 =================================================================
 
+<a href="https://github.com/PLJNS/Rutgers-University-Notes/blob/master/Computer%20Science/Computer%20Architecture.md">
+<img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub">
+</a>
+
 Description
 -----------
 
@@ -2991,3 +2995,8 @@ March 27th, 2013 - Midterm Study Guide <small>with special thanks to Matthew Res
     -   Magic Mouse 
     
 -   storage, NIC (network interface cards)
+
+April 2nd, 2013 - Assembly Language Programming
+-----------------------------------------------
+
+Dynamic programming
