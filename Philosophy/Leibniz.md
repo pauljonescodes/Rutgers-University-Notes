@@ -2485,3 +2485,115 @@ April 3rd, 2013 - Lecture: How the soul 'knows' what to do
     1.  They causally effect each other.
     2.  There's a maintenance person who regularly adjests them.
     3.  Perfectly made each on its own tells the right time.
+    
+April 8th, 2013 - Handout
+-------------------------
+
+1.  Analysis of the passage (L 530) in which Leibniz lists the
+    constituents of a corporal substance: 'If you think of mass as an
+    aggregate . . . into one machine.'
+
+    -   The first sentence is badly edited; it should read: 'If you take
+        the mass [massa] as an aggregate containing many substances, you
+        can still conceive in it one preeminent substance, if indeed
+        that mass constitutes an organic body animated by its primary
+        entelechy.'
+
+    -   The entire passage raises a question about the constitution of a
+        monad.
+        -   Is the primitive passive power which joins with an entelechy
+            to form the monad a mass in which many subordinate monads
+            concur—so that the entelechy is joined with a mass which
+            comprises many monads?
+
+                    {Entekchy  + aggregate of monads} = monad
+
+            implies that the monad is an embodied entelchy. On this
+            view, there is one substance.
+
+        -   Or, does the primitive power exclude other monads so that it
+            pertains to that one entelechy alone?
+
+                    { Entelechy 
+                    + primary passive power exclusive of monads, 
+                      but related to the agg of monads
+                    } = monad
+
+            implies that monad is a simple substance, comprising no
+            other ends or monads; its passive power is somehow related
+            to the agg of other monads. On this view, there are two
+            substances: a simple substance which is a constituent of a
+            compound substance.
+
+    -   Robert Adams points out that Leibniz seems to have shifted from
+        one view to the other when drafting this paragaraph:
+        -   When drafting the second sentence, he originally wrote:
+
+            > 'For the rest, (a) to form the Monad or complete simples
+            > substance, I conjoin with the entelechy nothing but the
+            > [primitive passive force of the whole mass].
+
+        -   He deleted that and replaces it by;
+
+            > 'For the rest, (b) I arrange in the monad or the simple
+            > substance, complete with an entelechy, only one [primitive
+            > passive force which is related to the whole mass of the
+            > organic body]. '
+
+    -   The part in brackets in (a) suggests that the ent joins with the
+        whole mass, which is the aggregate containing many
+        substances—this comports with the 1-substance view.,
+
+                {Ent + body=aggregate} 
+
+        makes a monad; monads are embodied entelechies; an entelechy
+        alone is not yet a substance.
+        -   This is the 1-substance view.
+
+    -   But the part in brackets in (b) comports with the 2-substance
+        view.\
+         A monad, alone, is a substance formed from an entelechy and a
+        primary passive power which is distinct from the aggregate and
+        found only in that monad--=a lthough the primitive passive power
+        is somehow related to the aggregate.
+
+                {Ent+PPF exclusive of all monads} 
+
+        -   makes a monad; monads are not embodied ents.
+
+    -   But they comprise passivity which is related to the aggregate of
+        monads which concur in the organic machine.
+
+                {Dominant monad + organic machine, infinitely composed of org machines} make a corporeal substance, or animal. 
+
+        -   Leibniz may have hesitated, but he came down for the theory that monads are simple substances, 
+            and corporeal substances have mass which is the concurrence of many monads. 
+        -   This would seem to commit Leibniz to the existence of corporeal substances, 
+            which enjoy substantial unity in virtue of one of their constituents, viz, the dominant monad.
+        -   But it also would seem to imply that corporeal substances are reduced to aggregates of monads.  
+            Yet aggregates do not have true unity.  Is this a problem?
+
+2.  To De Volder (1704 or 1705); AG 181
+
+    > I don't really eliminate body, but reduce [revoco] it to what it
+    > is. For I show that corporeal mass [massa], which is thought to have
+    > something over and above simple substances, is not a substance, but
+    > a phenomenon resulting from simple substances, which alone have
+    > unity and absolute reality. <cite>Leibniz</cite>
+
+3.  To De Volder, 1704 or 1705, AG 182; ('[[' indicates material in Leibniz's
+    copy not sent to De Volder)
+
+    > Indeed, everywhere and throughout everything I place nothing but
+    > what we all acknowledge in our souls on many occasions, namely,
+    > internal and spontaneous changes. And so, with one stroke of mind, I
+    > draw out the entirety of things. Moreover, I also put corporeal
+    > forces where I put bodies, namely, among the phenomena, if they are
+    > understood as adding something over and above simple substances or
+    > their modifications. In just the same way, a rainbow is not
+    > improperly said to be a thing, even though it is not a substance,
+    > that is, it said to be a phenomenon, [[a real or well-founded
+    > phenomenon that doesn't disappoint our expecations based on what
+    > precedes]]. And indeed, not only sight but also touch has its
+    > phenomena. [[And corporeal masses [massa] are like entities of
+    > aggregation, things whose unity derives from perceiving it. <cite>Leibniz</cite>

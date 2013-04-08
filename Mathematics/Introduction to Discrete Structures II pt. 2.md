@@ -927,3 +927,27 @@ April 3rd, 2013 - Lecture
         $$ \le \frac{1}{n} $$
     
     -   Want $\frac{1}{n \times 0.03^2} \le 0.05 $
+    
+### Back to counting! Trees
+
+-   Counting number of binary trees with $n$ nodes
+    1.  $n = 0$, $a_0 = 1$
+    1.  $n = 1$, $a_1 = 1$
+    1.  $n = 2$, $a_2 = 2$
+    1.  $n = 3$, $a_3 = 5$
+    1.  $n = 4$, $a_4 = 14$
+        $$a_n = \frac{1}{n + 1} {2n \choose n} $$
+        
+### Generating functions
+
+-   Want to find formula for $a_0, a_1, a_2, ...$. 
+-   Write $\lbrace a_i \rbrace_{i = 0}^\infty$ or $\lbrace a_i \rbrace$
+    for the sequence.
+-   **Definition**: The *generating function for* $\lbrace a_i \rbrace$
+    is the function $A(x)$ defined by
+    $$ A(x) = \sum_{k = 0}^\infty a_k x^k $$
+
+-   (Treat as "formula sum", meaning ignore convergence)
+-   Problem sovling recipe for generating functions
+-   Want to find $a_0, a_1, a_2, ... , a_n$
+    1.  Show that $A(x) has some simple "closed form"
