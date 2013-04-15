@@ -2597,3 +2597,321 @@ April 8th, 2013 - Handout
     > precedes]]. And indeed, not only sight but also touch has its
     > phenomena. [[And corporeal masses [massa] are like entities of
     > aggregation, things whose unity derives from perceiving it. <cite>Leibniz</cite>
+    
+April 8th, 2013 - Lecture
+-------------------------
+
+### Presentation from Lucas
+
+#### A problem in the literature
+
+A problem in the literature: is Leibniz a realist or an idealist? 
+On the one hand, he seems committed to the claim that matter is a phenomenon, 
+whereas only spiritual substances are real. But on the other hand, 
+it is hard to square these claims with his deep attachment to natural sciences.
+
+#### Thesis
+
+Leibniz is both, he’s a realist because he’s an idealist, 
+and an idealist because a realist. In other words: the distinction 
+doesn’t fit into his thinking. 
+
+#### Argument
+
+Considering the sciences of life as an influence for his metaphysics 
+(especially the theme of unity, infinity and the pre-established harmony). 
+
+#### Examples
+
+> Being freed from the trivial schools, I discovered the Moderns and
+> remember walking alone in a garden near Leipzig, called Rosendal at 15
+> and deliberating if I would keep the substantial forms.  <cite>Letter
+> to Rémond 14 January 1710 G III 606</cite>
+
+> In every machine, a principle of motion is needed. I think that in the
+> animal motion comes from an already existing motion, as in an already
+> rotating pendulum, or from the chyle, which mixed with blood, permits
+> fermentation.  <cite>Machina Animalis 1677 LH III 5 f. 12</cite>
+
+> Accordingly, it is one thing to describe the motion of a mill, but
+> quite another to describe the different possible uses of this mill,
+> e.g. cutting the wood. (…) All these operations ought to be explained
+> separately, once the reason of the prime motion, or in other words,
+> life is understood. <cite>Machina Animalis LH III 5 f. 12 1677
+
+> We can cut them [viz. the animals] open and examine them how and when
+> we please  <cite>Directiones ad rem medicame pertinentes LH III 1
+> 31671</cite>
+
+> We will thus rightly assert that an animal is not only a
+> Hydraulico-Pneumatic machine, but also in a certain respect a
+> Pyrotechnic one. <cite>Corpus hominis et unicuscujusque animalis
+> machina est quoedam LH III 1 2 1682</cite>
+
+> Since moreover we will at length demonstrate [that] force is one
+> thing, motion quite another, and motion indeed inheres in an extend
+> mass which is called in common bodies the substantial form, in living
+> bodies the Soul, in Man the Mind, whence in animals the origin of
+> sense as well as appetite, and the union of the soul and the body, and
+> the way in which either the Soul acts in the body, or is acted upon by
+> the body will be able to be explained with unexpected
+> clarity <cite>Corpus hominis et unicuscujusque animalis machina est
+> quoedam LH III 1 2 1682</cite>
+
+> The Bodies of Animals are Machines of perpetual motion, or, to put it
+> more clearly, they are machines comparable to a certain fixed and
+> singular species of perpetual organic motion that is always maintained
+> in the world.  Thus for as long as there are spiders there will be
+> weaving machines, for as long as there are bees there will be
+> honey-producing machines, and for as long as there are squirrels there
+> will be dancing machines. <cite>Corpus hominis et unicuscujusque
+> animalis machina est quoedam LH III 1 2 1682</cite>
+
+> Putrefaction can only consist in small works invisible to the naked
+> eye <cite>Letter to Thomasius G I 19 1669</cite>
+
+> This is clear from the experiences done with a microscope. Indeed,
+> there are maybe more than 800,000 little animals visible in a drop of
+> water, and each of these animals is quasi as far from being a prime
+> element as we are <cite>Project of a Letter to Malebranche June GP I
+> 355 1679</cite>
+
+> I prefer a Leeuwenhoek who tells me what he sees to a Cartesian who
+> tells me what he thinks <cite>Letter to Huygens, May 2nd GM 641
+> 1691</cite>
+
+> On this point I have been helped by the transformations observed
+> through microscopes by Swammerdam, Malpighi, and Leeuwenhoek, who are
+> among the best observers of our day. They have made it easier for me
+> to accept that no animal or other organized substance begins, though
+> we think they do, and that when it seems that an animal starts to
+> exist there is really only a development, or a kind of augmentation.
+> And I have noticed that Malebranche and other able men have had views
+> not far from this. <cite>New System §5 1695</cite>
+
+> It seems that one or other these two things must be concluded: that
+> either in the efformation and organization of the bodies of Animals,
+> as well as the other phenomena, everything comes to pass fortuitously
+> and happens to be as it is, without the guidance and direction of any
+> mind or understanding; or else, that God himself doth all immediately,
+> and, as it were with his own hands, form the body of every Gnat and
+> Fly, Insect and Mite, as of other Animals in generations <cite>True
+> Intellectual System of the Universe, Chap. III, Sec. XXXVII, 2
+> 1678</cite>
+
+> The physicist can explain his experiments, now using simpler
+> experiments already made, now employing geometrical and mechanical
+> demonstrations without any need of the general considerations which
+> belong to another sphere, and if he employs the co-operation of God,
+> or perhaps of some soul or animating force, or something else of a
+> similar nature, he goes out of his path quite as much as that man who,
+> when facing an important practical question would wish to enter into
+> profound argumentations regarding the nature of destiny and of our
+> liberty  <cite>Discourse of Metaphysics §10 1686</cite>
+
+> Our body is a sort of world full of an infinity of creatures that
+> would also deserve to exist  <cite>Letter to Lady Masham G III 356
+> 1704</cite>
+
+> That is why I define the Organism, or the Natural Machine, as a
+> machine in which each part is a machine, and hence the subtlety of the
+> artifice goes ad infinitum – nothing is so small that it be neglected
+> – whereas the parts of our machines are not machines <cite>Letter to
+> Lady Masham G III 356 1704</cite>
+
+> My two main meditations revolve around two things, to know unity and
+> to know infinity.  <cite>Letter to Sophie Charlotte G III 260
+> 1696</cite>
+
+> Any organized body being plura entia, there would have to be many
+> beings to render the bodies animated.  <cite>Leibniz to Arnauld October
+> 9th 1687</cite>
+
+> The Monad is nothing but a simple substance that compose the
+> aggregates; simple, in other words without any part.  <cite>Monadology
+> §1 1714</cite>
+
+> Every portion of matter may be conceived as a garden full of plants
+> and a pond full of fishes. But each leave of the plant, each member of
+> the animal, each drop of its humors is again such a garden or such a
+> pond.  <cite>Monadology §67 1714 </cite>
+
+> They [viz. the Monads] don’t have windows from which something could
+> enter or leave.  <cite>Monadology §7 1714</cite>
+
+> The living is a divine machine.  <cite>5th letter to Clarke GP VII
+> 417-418 1714</cite>
+
+> A present pregnant of the future  <cite>Monadology §22 1714</cite>
+
+> Extension was enough to Descartes; to Leibniz, life is needed
+>  <cite>Emile Boutroux, edition and introduction to the Monadology,
+> Delagrave 2005</cite>
+
+April 15th, 2013 - Passages
+---------------------------
+
+1.  > Freedom, such as is required by the schools of theology, consists in
+    > intelligence, which includes a distinct knowledge of the object of
+    > deliberation; in spontaneity, in virtue of which we determine
+    > ourselves; and in contingency, that is, in the exclusion of
+    > logical or metaphysical necessity. Intelligence is, as it were,
+    > the soul of freedom, and the rest is as its body and basis. The
+    > free subject determines itself by itself; and this according to
+    > the motive of the good perceived by the understanding, which
+    > inclines it without necessitating it; and all the conditions are
+    > contained in these few world. <cite>*Theodicy* 288; G 6.288, tr.
+    > Rutherford</cite>
+
+2.  > In order to better understand this point, we must realize that a
+    > genuine spontaneity is common to us and all simple substances, and
+    > that in the intelligent or free substances this becomes a dominion
+    > over its actions. . . <cite>T 290-1; G 6.298, tr. Rutherford</cite>
+
+3.  > [E]veryone who accepts immaterial indivisible substances attributes
+    > to them a simultaneous multitude of perceptions, and spontaneity
+    > in their reasonings and their voluntary acts. I am therefore only
+    > extending that spontaneity to their confused and involuuntary
+    > thoughts, and showing that their nature is to contain relations to
+    > everything that is external. <cite>Reply to the Comments in the Second
+    > Edition of M. Bayle's,etc., WF 118</cite>
+
+4.  > Change [transitio], or variation, itself . . . is nothing but a
+    > complex of two states which are immediate and opposite to each
+    > other, together with a force or [seu] reason for the change, which
+    > reason itself is a quality. MP 134
+
+5.  > The laws of appetite [are] the laws of the final causes of Good and
+    > Evil. <cite>PNG 3</cite>
+
+6.  > Souls act according to the laws of final causes, through appetites,
+    > ends and means. Bodies act according to the laws of efficient
+    > causes, or of motions. And the two realms, that of efficient
+    > causes and that of final causes, are in mutual harmony. <cite>Mon 79; AG
+    > 223</cite>
+
+    -   This suggest that laws of final causes that pertain only to souls.
+    -   Laws of efficient causes that apply only to bodies.
+    -   But there are laws of final causes that apply to bodies, namely
+        natural telological ones.
+
+7.  > . . . with confused perception and a corresponding appetite (which,
+    > with some, you might term instinct) [the soul] imitates divine
+    > infinity, in such a way that nothing happens in the body that the
+    > soul does not in fact, perceive, nothing concerning which [the
+    > soul] does not exercise [its] appetite . . . even if we are
+    > unaware. <cite>*Animadversiones . . . Stahli*, D 2.2.135; RF, 28</cite>
+
+8.  > . . . let us say that everything in bodies happens mechanically, or
+    > in accordance with laws of motion, and that everything in the soul
+    > happens morally, or in accordance with appearances of good and
+    > evil, in such a way that even in our instinctive and involuntary
+    > actions, there is in the soul an appetite for good or an aversion
+    > to evil which drives it, even though our reflection is not able to
+    > pick it out in the confusion. <cite>To Sophie Charlotte (1704), WF 224</cite>
+
+    
+
+9.  > Leibniz explains what is required for an appetite of the soul to be
+    > executed by the body: [I]t is necessary that the appetites and
+    > consequently the perceptions from which they arise attain in
+    > perfect detail everything which brings this about in the organs.
+    > For this reason: . . . will is not always sufficient to make the
+    > body act according to its desire, when the exact perception of the
+    > means is not conjoined with it . . . Thus it is necessary that end
+    > and means should always be joined together in the soul, as causes
+    > and effects are in the body, in order that the desired effect
+    > should be executed. <cite>To Hartsoeker, G 3.509-10</cite>
+
+10. > [I]t is true that the appetite cannot always completely reach the
+    > whole perception toward which it tends, but it always obtains
+    > something of it, and reaches new perceptions. <cite>Mon 15</cite>
+
+11. > . . . as I should prefer to define it, perfection is degree or
+    > quantity of reality or essence . . . <cite>To Eckhard (1677); L 177</cite>
+
+12. > . . . there are no perceptions which are matters of complete
+    > indifference to us; <cite>NE 162</cite>
+
+April 15th, 2013 - Lecture
+--------------------------
+
+-   Intelligence is the soul of freedom
+-   The subject of freedom "chooses itself for itself."
+-   Rutherford is worried that spontinaeity is wonderfully general.
+-   Applies to everything all the time.
+-   Monadic spontienaty is a necessary but not sufficient condition for Leibniz.
+-   It occurs when there is an absence of something that is not always abset.
+-   Freedom from external causes, monad is always free from external causes.
+-   Somehow Rutherford is thinking that Leibniz needs to add to spontinaiety some
+    further constraint, some other kind, not always absent, because we don't always
+    act freely.
+    -   When we do, something is absent that isn't always.
+    -   Spontaneity can't be freedom because it's present in all cases.
+    -   Some sort of break from what a monad can do.
+    -   Absent when a monad acts volutarily.
+    
+-   Rutherford is seeking this in the area where sponteoity is excluding external
+    constraints, that causal area, two sorts of circumstances, or conditions under which,
+    a monad causes itself to undergoe a change, where a monad acts freely.
+-   Spontenaity is a necessary condition of freedom, not sufficient.
+-   There are many monads that are not intelligent.
+    -   This involves the capacity to think of yourself as yourself.
+    -   There are many monads that are not able to think of themselves.
+    -   Bale's dog thinks and feels and whatever it might be, anticipating
+        future states, but it cannot think of itself as doing that.
+    -   We, on the other hand, have a self-reflective quality about ourselves.
+    -   This is a condition when we have a freedom of action.
+    
+-   Distinct knowledge of the object under consideration.
+-   It is not always the case that a disctinct monad perfectly understands all the
+    possibilities.
+-   Leibniz is stressing the importance of intelligence.
+-   Freedom and intelligence gives us freedom over our actions.
+-   Leibniz is placing a lot of clues about the importance.
+-   We do think that free action requires freedom from certain constraints.
+-   Rutherford is wanting a freedom from causal constraints.
+-   Leibniz thinks distinct knowledge is the key.
+-   Rutherford's project is to assume that Leibniz hasn't laid out a full view.
+-   Rutherford wants to suggest that Leibniz has the resources to make the distinction.
+-   Part of his take on this, there is within a monad, a distinction between a monad
+    is active and monad is passive.
+-   There's a little section where Rutherford talks about change, the constitution of the
+    for model of substance.
+-   I'll come back to it.
+-   It articulates some of the things that Rutherford's proposal has to do.
+-   There is a force or reason to take something from one state to another.
+
+-   When we get an account of how change occurs in the monad we need to be able
+    to explain what goes on in a monad in these two ways.
+-   This brings Rutherford to what he calls "teleology."
+-   Final cause of $A$'s doing $X$ why $A$ does $X$ in terms of an end doing $X$
+    is likely to produce.
+-   It's common to describe freedom in terms of people's actions, "final cause"
+    in Leibniz's time, and those are ends from the point of which things act,
+    when an act is described by final actions it is described in terms of "goodness."
+    -   If you're going to talk about final causes, you're assuming that changes
+        often occur that being about good ends, then you need some explantion
+        about why changes bring about good ends.
+    -   When you explain things by final cause, you assume that there are explantions.
+        -   Leibniz would say that god made the world this way.
+        -   "The eyes operate in order that we see things and that is good."
+        
+-   In monads there is nothing but perception and appetite.
+    -   Perceptions are states of the monads that express something something.
+    -   Appetites are derivative forces, driving the soul from perception to perception
+        to perception (?).
+    -   The perception that a monad has at a given moment
+    -   When in acting we realize something good, 
+    
+-   Leibniz need not deny that appetites take a monad from a past perception
+    to a future perception, but I think he means to say that the ends towards
+    the appetite are for and the impediments it meets (present states that
+    precede future states), doesn't occur in body.
+    -   There is a kind of law that proper to souls and a kind of law that are
+        proper to bodies.
+        
+-   Force $F$ operates in accord with $N$-telelogical laws if and only if
+    the effectiveness of $F$ in bring about a change from $S_1$ to $S_2$ is
+    explained by the objective goodness of $S_2$.
+    

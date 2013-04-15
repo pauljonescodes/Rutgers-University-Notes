@@ -2996,7 +2996,26 @@ March 27th, 2013 - Midterm Study Guide <small>with special thanks to Matthew Res
     
 -   storage, NIC (network interface cards)
 
-April 2nd, 2013 - Assembly Language Programming
------------------------------------------------
+April 11th, 2013
+----------------
 
-Dynamic programming
+-   What I encourage you to do is to write minituare programs
+    -   For example, the .size directives, write a program that does 
+        nothing but read those strings of bytes, and turn them into a hex
+        number just to show that I can read these numbers and properly convert
+        them.
+    -   With this, you have a piece of code you can trust and transplant and 
+        really make sure it works.
+    -   This is not a requirement, but it is strongly encouraged
+
+-   Moving on, the flags that affect various `Y86` instructions.
+
+                zf  sf  of
+        addl    y   y   y
+        subl    y   y   y
+        amdl    y   y   0
+        xori    y   y   0
+        mull    y   y   y
+        readb   y   0   0
+        readw   y   0   0
+    

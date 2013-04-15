@@ -951,3 +951,66 @@ April 3rd, 2013 - Lecture
 -   Problem sovling recipe for generating functions
 -   Want to find $a_0, a_1, a_2, ... , a_n$
     1.  Show that $A(x) has some simple "closed form"
+    
+April 8th, 2013 - Lecture
+-------------------------
+
+### Announcements
+
+-   Ungraded HW on Sakai
+-   New noes on generating functions
+-   From *Applied Combinatorics* by Alan Tucker
+-   HW07 online tonight, due next Monday
+-   Office hours this weeks:
+    -   3:00PM to 4:00PM on Thursday
+    -   2:00PM to 3:00PM on Friday
+    
+### Generating functions revisited
+
+-   **Question**: How many solutions are there to $z_1 + z_2 = 11$, with
+    $z_1, z_2$ as non-negative integers.
+    -   Some mediocre ways:
+        -   You can list these by hand ...
+        -   There are 12, you can list them but I won't.
+        -   It can also be a stars and bars problem, 11 stars, 2 groups, 
+            empty allowed.
+    
+    -   But consider multipling out:
+        $$(1 + x + x^2 + ... + x^{11})(1 + x + x^2 + ... + x^{11})$$
+    -   This is going to be:
+        $$\sum_{x = 0}^{22} a_k x^k$$
+    -   Take a look at this pattern:
+        $$a_0 = 1 | ()$$
+        $$a_1 = 2 | (x^0 x^1 + x^1 x^0 = 2x)$$
+        $$a_2 = 3 | (x^0 x^2 + x^1 x^1 + x^2 x^0 = 3x^2)$$
+    -   Now consider that $a_11 = 12$. This is not a coefficient.
+    -   Somehow counting the number of polynomials counted this other number we wanted.
+    -   Generating functions are about doing this counting with shortcuts.
+    
+-   Considering multiplying out $(1 + x + x^2)^4 = $
+    $$(1 + x + x^2)(1 + x + x^2)(1 + x + x^2)(1 + x + x^2)$$
+    -   How to "expand"?
+        -   Pick $x^0, x^1, x^2$ from each group, multiplying choices.
+        -   Repeat for all possible choices ($3^4$ of them).
+        -   Add up results, collect like terms.
+        -   Each term is of the form:
+            $$x^{e_1}x^{e_2}x^{e_3}x^{e_4}$$
+        -   Each $e_i = 0, 1, 2$
+        -   Expanded version collects for all possible allowed.
+
+-   What is the coefficient of $x^5$ in $(1 + x + x^2)^4$.
+    -   This equals the number of ways $x^5$ "shows up" in terms.
+    -   Coefficient is number of ways to wrte $5 = e_1 + e_2 + e_3 + e_4, e_i = 0, 1$
+    
+-   **Examples**: Find polynomial where $a_k =$ is equal to the number of ways
+    to pick $k$ balls from a pile of 3 green, 2 white, 3 blue, and 3 gold.
+    -   Stated as "equ problem", this means that $a_k = $ numer of solutions to
+        $$e_1 + e_2 + e_3 + e_4 = k, e_i \in \lbrace 0 2 3 4 \rbrace$$
+        -   With grreen, white, blue, and gold (respectively)
+        
+-   **Example**: Same problem, but 7 green, 2 blue, 5 gold.
+    -   The polynomial is
+        $$(x^0 + x^1 + ... + x^7)(x^0 + x^1)(x^0 + x^1 + ... + x^5)$$
+        
+-   **Example**: Find the polynomial with $a_k = $ "number of ways to pick 6 objects
+    where each one is one of 3 types, but you can't have four of any one type."
