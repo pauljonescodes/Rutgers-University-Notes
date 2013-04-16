@@ -2984,7 +2984,8 @@ March 27th, 2013 - Midterm Study Guide <small>with special thanks to Matthew Res
     
 -   Memory, 
     -   any part can be accessed in constant time
-    -   Addresses are stored in either hex, or octal, points to a specific piece of memory
+    -   Addresses are stored in either hex, or octal, points to a specific piece 
+        of memory
 
 -   BUS, 
 -   I/O devices, 
@@ -2996,8 +2997,8 @@ March 27th, 2013 - Midterm Study Guide <small>with special thanks to Matthew Res
     
 -   storage, NIC (network interface cards)
 
-April 11th, 2013
-----------------
+April 11th, 2013 - Lecture
+--------------------------
 
 -   What I encourage you to do is to write minituare programs
     -   For example, the .size directives, write a program that does 
@@ -3018,4 +3019,226 @@ April 11th, 2013
         mull    y   y   y
         readb   y   0   0
         readw   y   0   0
+
+April 15th, 2013 - Programming Assignment 4: Y86 Emulation
+----------------------------------------------------------
+
+### Introduction
+
+This assignment is designed to help you really understand how the 
+fetch-and-execute cycle works as well as the idea of program-as-data. 
+It will require a substantial implementation effort. The usual warning 
+goes double for this assignment: *Do not procrastinate*.
+
+### Y86 Architecture
+
+The Y86 architecture has eight registers, three condition codes, a program counter and memory that holds machine instructions and data. All addresses, immediate values and displacements are 32 bit little-endian values.
+Each of the eight registers has a 4-bit ID that fits into the Y86 instructions. The eight registers and their encoding in the Y86 machine instructions are as follows:
+
+     %eax 0
+     %ecx 1
+     %edx 2
+     %ebx 3
+     %esp 4
+     %ebp 5
+     %esi 6
+     %edi 7
+     
+The condition codes are single-bit flags set by arithmetic or logical instructions. The three condition codes are:
+
+     OF overflow
+     ZF zero
+     SF negative
+     
+The program counter is the address of the next machine instruction to execute. Total memory size will have to be determined as part of emulator execution.
+The Y86 instruction set is modeled on the larger Intelx86 instruction set, but is not a direct subset.
+
+### Y86 Emulator
+
+An emulator is hardware or software that duplicates (or emulates) the functions of one computer system (in this case Y86 instructions) on another computer system (the Intel host). The Y86 instructions are different from the Intel x86 instructions. Your assignment is to write an emulator for the Y86 instruction set.
+
+Implement a program y86emul that executes Y86 executable files. Your program y86emul should support the following user interface:
+
+    y86emul [-h] <y86 input file>
+
+where <y86 input file> is the name of a Y86 input file, whose structure is defined in Section 5.
+
+If -h is given as an argument, your program should just print out help for how the user can run the program and then quit.
+
+Erroneous inputs should cause your program to print out:
+
+    ERROR: <an informative error message>
     
+Otherwise, your program should run the Y86 code which may read whatever Y86 inputs from the terminal and/or write Y86 outputs to the terminal as your Y86 program executes.
+
+Your emulator will read the input file, allocate a chunk of memory of appropriate size which will act as the Y86 address space, populate that chunk of memory with data and machine instructions from the input file and then starts execution of the Y86 machine instructions. The entire address space of the Y86 program fits within this block of allocated memory. The lowest byte of the address of the allocated block is Y86 address 0 and all other Y86 addresses are offsets within this block.
+
+Your emulator will fetch, decode and execute Y86 instructions. This execution is tied to an status code that may take on the value AOK, HLT, ADR, INS. AOK means that everything is fine, no detected errors during execution. HLT means a halt instruction has been encountered, which is how Y86 programs normally end. ADR means some sort of invalid address has been encountered, which also stops Y86 program execution. INS is set for an invalid instruction, which also stops Y86 program execution. Your emulator should print out how the Y86 program execution ended.
+
+### Y86 Instructions
+
+The definition and encoding of the Y86 instructions are presented in the slides (also an attachment) and in the Bryant and O’Halloran book in Chapter 4.1. The instruction set presented there is minimal and almost functionally complete. What is missing are instructions for input and output. Your Y86 emulator will also handle instruction to read from and write to the terminal.
+
+Read byte and read long instructions
+
+    Encoding Bytes 
+    0 1 2 3 4 5
+    readb d(rA) C0 rA F D 
+    readl d(rA) C1 rA F D
+    
+The readb instruction reads a single byte from the terminal into memory, and the readl instruction reads a single 4-byte little-endian word into memory. The little-endian word is already compatible with the little-endian Intel architecture, where your emulator will run. Both instructions set the ZF condition code. On normal input, the ZF flag is set to zero, on end-of-file the ZF flag is set to one. Testing the conditon code is how the Y86 code can detect end of file. Note that the F in the second half of the second byte means ”no register”, just as it does for some of the other Y86 instructions. Both instructions are six bytes long with a 4-byte offset D.
+
+Write byte and write long instructions
+
+    Encoding Bytes 
+    0 1 2 3 4 5
+    writeb d(rA) D0 rA F D 
+    writel d(rA) D1 rA F D
+
+The writeb instruction writes a single byte from memory to the terminal, and the writel instruction writes a single 4-byte little-endian word from memory to the terminal. Neither instruction alters the condition codes. Both instructions are six bytes long with a 4-byte offset D.
+
+Multiplcation Instruction
+
+Encoding Bytes 
+0 1 2 3 4 5
+mull rA,rB 64 D
+
+The mull instruction multiplies the values in rA and rB and leaves the product in rB. This instruc- tion set the condition codes. The instruction is five bytes long.
+
+### Y86 Input file format
+
+The input file to your Y86 emulator does not contain Y86 assembler instructions. Instead, it contains an ASCII representation of the information needed to start and execute a ready-to-run program, including Y86 machine instructions. An input file will contain directives that specify data and Y86 machine instructions.
+
+#### Specifying Total Program Size and Base of Stack
+
+The .size directive 
+
+    .size hex-address
+
+This specifies the total size of the program in memory. The hex address also specifies the address of the bottom of the stack. The Y86 stack grows from larger addresses toward smaller addresses. There should be only one .size directive in the input file.
+
+#### Specifying String Constants
+
+The .string directive
+   
+    .string hex-address "double-quoted string"
+
+specifies a string contained in the double quotes. The hex-address specifies the location of the string in the memory block allocated by your emulator. The input string will contain only printable characters and nothing that requires a backslash.
+
+#### Specifying Integer Values
+
+The .long directive
+
+    .long hex-address decimal-number
+
+specifies a 4-byte signed integer. The hex address specifies the location of the value and the decimal number is the initial value at that Y86 address. All Y86 arithmetic is 4-byte signed integer arithmetic.
+
+#### Setting Aside Chunks of Memory
+
+The .bss directive
+
+    .bss hex-address decimal-size
+
+specifies a chunk of uninitialzed memory in the Y86 address space. The hex address specifies the location of the uninitialized chunk and the decimal size specifies the size.
+
+#### Specifying One-Byte Values
+
+The .byte directive
+
+    .byte hex-address hex-number
+
+specifies a one-byte value. The hex address specifies the location of the byte and the initial value is the hex number whose value is between 00 and FF, inclusive.
+
+#### Specifying Y86 Machine Instructions
+
+The .text directive
+
+    .text hex-address ASCII string of hex Y86 instructions
+
+specifies the Y86 machine instructions. The hex address specifies where the machine instructions should be placed in the Y86 address space. This same address is also the initial value of the Y86
+
+April 16th, 2013 - Processor Design I: Sequential Processor (Y86)
+-----------------------------------------------------------------
+
+-   **Instruction Set Architecture** (ISA) is the interface between software
+    and hardware.
+-   Y86 is a simplified ISA modeled after x86.
+-   Processor states
+    -   Program registers are the same as IA32, each 32 bits.
+    -   Three condition codes, `OF` for overflow, `ZF` for zero, and `SF`
+        for negative.
+    -   Momery is byte addressable storage array, words stored in little-
+        endian byte order.
+        
+### Instructions
+
+    nop                 # no effect
+    halt                # stop execution
+    rrmovl rA, rB       # rB <- rA
+    irmovl V, rb        # rB <- V
+    rmmovl rA, D(rb)    # Mem[rB + D] <- rA
+    mrmovl D(rA), rB    # rb <- Mem[rA + D]
+    OP rA, rB           # rB<-rBOPrA (OP \in {+,-,xor})
+    jXX Dest            # PC <- Dest
+    call Dest           # invoke function at Dest
+    ret                 # return from function
+    pushl rA            # %esp <- %esp – 4; Mem[%esp] <- rA
+    popl rA             # rA <- Mem[%esp]; %esp <- %esp + 4
+    
+### The eight registers and their codes
+
+    %eax 0
+    %ecx 1
+    %edx 2
+    %ebx 3
+    %esp 4
+    %ebp 5
+    %esi 6
+    %edi 7
+    
+### The condition codes
+
+    OF overflow
+    ZF zero
+    SF negative
+    
+### Example Y86 Code
+
+    len2:
+        pushl %ebp              #Save %ebp
+        xorl %ecx,%ecx          # len = 0
+        rrmovl %esp,%ebp        # Set frame
+        mrmovl 8(%ebp),%edx     # Get a 
+        mrmovl (%edx),%eax      # Get *a
+        jmp L26                 # Goto entry
+    
+### Instruction Encoding
+
+    Byte                0   1   2   3   4   5
+    nop                 0   0
+    halt                1   0
+    rrmovl rA, rB       2   0   rA  rB
+    irmovl V, rb        3   0   8   rB
+    rmmovl rA, D(rb)    4   0   rA  rB
+    mrmovl D(rB), rA    5   0   rA  rB
+    OPl rA, rB          6   fn  rA  rB
+    jXX Dest            7   fn  Dest
+    call Dest           8   0   Dest
+    ret                 9   0   
+    pul rA              A   0   rA  8
+    popl rA             B   0   rA  8
+    
+### Summary
+
+-   Similar state and instruction as IA32
+-   Simpler encodings
+-   Somewhere between CISC and RISC
+
+### Stages
+
+-   Fetch, read instructions from memory
+-   Decode, read operand register
+-   Execute, computer value or address
+-   Memory, read/write date from/to main memory
+-   Write back, write destination register
+-   PC, update program counter
