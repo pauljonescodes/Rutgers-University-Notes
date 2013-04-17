@@ -3172,46 +3172,123 @@ April 16th, 2013 - Processor Design I: Sequential Processor (Y86)
         
 ### Instructions
 
-    nop                 # no effect
-    halt                # stop execution
-    rrmovl rA, rB       # rB <- rA
-    irmovl V, rb        # rB <- V
-    rmmovl rA, D(rb)    # Mem[rB + D] <- rA
-    mrmovl D(rA), rB    # rb <- Mem[rA + D]
-    OP rA, rB           # rB<-rBOPrA (OP \in {+,-,xor})
-    jXX Dest            # PC <- Dest
-    call Dest           # invoke function at Dest
-    ret                 # return from function
-    pushl rA            # %esp <- %esp – 4; Mem[%esp] <- rA
-    popl rA             # rA <- Mem[%esp]; %esp <- %esp + 4
+-   `nop` 
+    - no effect
     
-### The eight registers and their codes
+-   `halt` 
+    - stop execution
+    
+-   `rrmovl rA, rB` 
+    - `rB <- rA`
+    
+-   `irmovl V, rb` 
+    - `rB <- V`
+    
+-   `rmmovl rA, D(rb)` 
+    - `Mem[rB + D] <- rA`
+    
+-   `mrmovl D(rA), rB` 
+    - `rb <- Mem[rA + D]`
+    
+-   `OP rA, rB` 
+    - `rB<-rBOPrA` (OP \in {+,-,xor})
+    
+-   `jXX Dest` 
+    - `PC <- Dest`
+    
+-   `call Dest` 
+    - invoke function at Dest
+    
+-   `ret` 
+    - return from function
+    
+-   `pushl rA` 
+    - `%esp <- %esp – 4; Mem[%esp] <- rA`
+    
+-   `popl rA` 
+    - `rA <- Mem[%esp]; %esp <- %esp + 4`
+    
+### Registers 
+  
+-   `%eax` - 0
+-   `%ecx` - 1
+-   `%edx` - 2
+-   `%ebx` - 3
+-   `%esp` - 4
+-   `%ebp` - 5
+-   `%esi` - 6
+-   `%edi` - 7
+    
+### Condition codes
 
-    %eax 0
-    %ecx 1
-    %edx 2
-    %ebx 3
-    %esp 4
-    %ebp 5
-    %esi 6
-    %edi 7
-    
-### The condition codes
+-   `OF` - overflow
+-   `ZF` - zero
+-   `SF` - negative
 
-    OF overflow
-    ZF zero
-    SF negative
-    
-### Example Y86 Code
+### Error codes
 
-    len2:
-        pushl %ebp              #Save %ebp
-        xorl %ecx,%ecx          # len = 0
-        rrmovl %esp,%ebp        # Set frame
-        mrmovl 8(%ebp),%edx     # Get a 
-        mrmovl (%edx),%eax      # Get *a
-        jmp L26                 # Goto entry
+-   `AOK` - "everything is fine"
+-   `HLT` - "halt instruction has been encountered"
+-   `ADR` - "means some sort of invalid address"
+-   `INS` - "an invalid instruction"
+
+> Your emulator should print out how the Y86 program execution ended.
     
+### Directives
+
+#### The `.size` directive
+
+    .size hex-address
+
+-   total size of the program in memory
+-   address at the bottom of the stack
+-   stack grows from largers addresser toweard smaller address
+-   **there can be only one**
+
+#### The `.string` directive
+
+    .string hex-address "double-quoted string"
+    
+-   the hex address
+    -   specifies the location of the given string
+
+-   the double-quotes string
+    -   will contain only printable characters
+    
+-   This is a contrived string, local to the program.
+    -   To implement, save in an array, it seems.
+
+#### The `.long` directive
+
+    .long hex-address decimal-number
+    
+-   The hex address specifies the location of the value
+-   The decimal number is the initial value at that address.
+-   **all arithmatic is 4-byte signed integer arithmatic**
+
+#### The `.bss` directive
+
+    .bss hex-address decimal-size
+    
+-   specifies a chuck of uninitialized memory in Y86 address space
+-   the hex address is the location
+-   the decimal size is the size
+
+#### The `.byte` directive
+
+    .byte hex-address hex-number
+    
+- specifies a one-byte value
+- the hex address specifcs the location
+- the hex number is between 00 and FF (inclusive)
+
+#### The `.text` directive
+
+    .text hex-address "ASCII string of hex Y86 instructions"
+    
+- The hex address specifies where the machine instructions should be placed in the Y86 address space.
+- The ASCII string in a single long encoding of the hex bytes on the machine instructions, two characters per byte, no leading ”0x”.
+
 ### Instruction Encoding
 
     Byte                0   1   2   3   4   5
@@ -3242,3 +3319,26 @@ April 16th, 2013 - Processor Design I: Sequential Processor (Y86)
 -   Memory, read/write date from/to main memory
 -   Write back, write destination register
 -   PC, update program counter
+
+April 15th, 2013 - Lecture: Memory
+----------------------------------
+
+- RAM
+    - Key features
+        - RAM is packaged as a chip
+        - Basic storage unit is a cell
+        - Multiple RAM chips form a memory
+        
+    - Static RAM (SRAM)
+        - Each cell stores bit with a six-transistor circuit
+        - Retains value indefinitely, as long as it is kept powered
+        - Relative insnsitive to disturbances
+        - Faster and more expensive than DRAM
+        
+    - Dynamic RAM (DRAM)
+        - Each cell stores bit with a capacitor and transistor
+        - Value must be refereshed every 10-100ms
+        - Sensitive to disturbances
+        - Slower and cheaper than SRAM
+        
+

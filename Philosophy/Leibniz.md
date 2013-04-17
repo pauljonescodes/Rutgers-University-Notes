@@ -2915,3 +2915,109 @@ April 15th, 2013 - Lecture
     the effectiveness of $F$ in bring about a change from $S_1$ to $S_2$ is
     explained by the objective goodness of $S_2$.
     
+April 17th, 2013 - Passages
+---------------------------
+
+1.  > With regard to the preestablished harmony between the modifications
+    > of the soul and those of the body, and the execution of our
+    > appetites by the bodily organs, it is necessary that the appetites
+    > and consequently the perceptions from which they arise, should run
+    > in perfect detail with all of that which happens in the organs, in
+    > that these appetites be executed. This would appear to us if it
+    > were possible to analyze our confused perceptions. Otherwise, it
+    > would not be an appetite which is perfect and complete with regard
+    > to the whole of its object, but only something approaching it. And
+    > because our understanding and consequently our will is not capable
+    > of this detail, our simple will (if it goes to the end without
+    > going to means and means for the means) is not an appetite the
+    > body is obliged to follow and to execute. Execution by the body
+    > happens only in unimpeded interior voluntary movements, where
+    > confused appetite seconds the will or distinct appetite in perfect
+    > detail. However our interior involuntary motions do not cease to
+    > answer to our confused and unconscious appetites, but these
+    > movements depend as little on the empire of the will as these
+    > appetites depend on our understanding, so that the will is not
+    > always sufficient to set the body in motion according to its
+    > desire, when the perception of exact means is not joined with it.
+    > <cite>Letter to Hartsoeker, 30 October 1710; G 3.509-10</cite>
+
+    -   Set some goal, but you can't go directly to the goal, you have
+        to do something to get there.
+    -   If you don't have the means to get there, you wont get there.
+    -   What are the means by the soul may or may not get there?
+    -   It cannot be anything but the types of perceptions ...     
+
+2.  > . . . fundamentally pleasure is a sense of perfection, and pain a
+    > sense of imperfection, each being notable enough for one to become
+    > aware of it. For the minute [sc. confused] perceptions of some
+    > perfection or imperfection, which I have spoken of several times
+    > and which are as it were components of pleasure and of pain,
+    > constitute inclinations and propensities but not outright
+    > passions. So there are insensible inclinations of which we are
+    > unaware. <cite>NE 194</cite>
+
+    -   Pleasure is a distinguished sense of perfection
+    -   While pain is a distinguished sense of pain.
+    -   "Inclinations and propresenties", insensible inclinations
+        which we are unaware of.
+
+3.  > What usually drives us are those minute insensible perceptions which
+    > could be called sufferings that we cannot become aware of, if the
+    > notion of suffering did not involve awareness. These minute
+    > impulses consists in our continually overcoming small
+    > obstacles—our nature labors at this without our thinking about it.
+    > This is the true character of that disquiet which we sense without
+    > taking cognizance of it. . . for we are never without some
+    > activity and motion, simply because nature continually labors to
+    > be more completely at ease. <cite>NE 188</cite>
+
+    -   Here the emphasis is on aversions.
+    -   Our insensible perceptions are attached to aversions,
+        the activity is to remove the source of the disquiet or of
+        the semi-suffering.
+    -   There are many impulses of this of the soul at any moment.
+    -   So that the soul will be more at each.
+    -   There are these little urges that are desiderous in nature,
+        but there is still something that is in this sense bad. (???)
+
+4.  > It is true that the appetite cannot always completely reach the
+    > whole perception toward which it tends, but it always obtains
+    > something of it, and reaches new perceptions. <cite>Mon 15; AG 215</cite>
+
+5.  > Re. the antecedent will of God (will prior to arriving at a definite
+    > volition) and the subsequent will of God (his definite eternal
+    > volition): Now this consequent will, final and decisive, results
+    > from the conflict of all the antecedent wills, of those which tend
+    > towards good, even as of those which repel evil; and from the
+    > concurrence of all these particular wills comes the total will. So
+    > in mechanics compound movement results from all the tendencies
+    > that concur in one and the same moving body, and satisfies each
+    > one equally, insofar as it is possible to do all at one time. <cite>T
+    > 22, H 137</cite>
+
+April 17th, 2013 - Lecture
+--------------------------
+
+-   Everything that is is good.
+    -   Anything that's bad is a privation.
+    -   Absence of "potential good."
+
+-   Voluntary is something that happens because of distinct cognition.
+    -   The army, the workers, of the will, is the involuntary.
+    -   They'll do what they're inclined to do.
+    
+-   We should be looking at the third condition, the circumstance
+    that is sometimes present in the soul, and sometimes not present
+    in the soul.
+    
+    soul
+    ---------->    +-----+
+    ->   \         |     |
+    --->  \   /    |body |
+    ->       /     |     |
+                   +-----+
+        <-----
+        
+-   We do will things and our voltions have varying degrees of success.
+-   Leibniz is set against any soul body interaction.
+-   Pre-established harmony.
