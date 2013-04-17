@@ -1102,3 +1102,98 @@ April 15th, 2013 - Lecture
     -   Part 2: Find the series expansion 
         -   Easiest case, like above, $A(x)$ is in the table.
         -   Work harder, use partial fraction decomposition
+        
+April 17th, 2013 - Notes pt. 5
+------------------------------
+
+### Generating functions
+
+-   Let $a_0, a_1, ...$ (or more briefly $\lbrace a_i \rbrace$) denote
+    an infinite sequence of real numbers. Its **generating function** is
+    defined by
+    
+    $$ A(s) = \sum_{k = 0}^{\infty} a_k s^k = a_0 + a_1 s + ... + a_k s^k + ... $$
+    
+    -   We are not claiming this series converges.
+    -   In some sense, you can view this as a formalism for infinite series.
+    -   When the series does converge with a function with algebraic properties,
+        we will make use of this correspondance.
+        
+- Facts:
+    1.  $ A(0) = a_0$
+        -   The first element in the sequence.
+        
+    2.  $ A(1) = \sum_{k = 0}^{\infty} a_k$
+        -   The sum of the elements.
+    
+    3.  $ A`(1) = \sum_{k = 1}{\infty} k a_k s^{k - 1} |_{s = 1}$
+        -   Differentiate each term of the sum in (1) and substitute.
+        
+    4.  $ A + B = \sum_{k = 0}^\infty (a_k + b_k) s^k$
+        -   Sum
+        
+    5.  $ A(s)B(s) = a_0 b_0 + (a_0 b_1 + a_1 b_0) s + ... $
+        $ + (a_0 b_k + ... + a_k b_0) s^k                  $
+        -   Multiplication, convolutions
+        
+### Generating Functions and Recurrence Relations
+
+-   Given a recurrence relation for the sequence $\lbrace a_i \rbrace$,
+    1.  Deduce from it an equation satisfied by the generation function
+    
+        $$ a(x) = \sum_{i} a_i x^i $$
+        
+    2.  Solve this equation to get an explicit expression for the generating
+        function.
+    3.  Extract the coeeficient $ a_n $ of $ x^n $ from $ a(x) $ by expanding
+        $a(x)$ as a power series.
+        
+-   Alternate steps [wikiHow](http://www.wikihow.com/Solve-Recurrence-Relations)
+    1.  Consider the sequence 2, 5, 14, 41, 122 ... given by this formula:
+        
+        $$ a_0 = 2 $$
+        $$ a_n = 3 a_{n - 1} - 1 $$
+        
+    2.  Write the genrating function of the sequence. A generating function is 
+        simply a formula power series where the coeeficient of $ x^n $ is the
+        nth term of the sequence.
+        
+        $$ A(x) = \sum_{k = 0}^{\infty} a_k x^k $$
+        
+    3.  Manipulate the generating function. The objective in this step is to find
+        an equation that will allow us to solve for the generating function 
+        $ A(x) $. User the formula for the sum a geomtric series.
+        
+        -   Original formula:
+        
+        $$ A(x) = \sum_{k = 0}^{\infty} a_k x^k $$
+        
+        -   "Take out" when a is 0:
+        
+        $$ A(x) = 2 + \sum_{k = 1}^{\infty} a_k x^k $$
+        
+        -   Make the first term addition by referring to the original
+            definition of this series.
+        
+        $$ A(x) = 2 + \sum_{k = 1}^{\infty} (3 a_{k - 1} - 1) x^k $$
+        
+        -   Split the sum
+        
+        $$ A(x) = 2 + \sum_{k = 1}^{\infty} 3 a_{k - 1} x^k -  \sum_{k = 1}^{\infty} x^k $$
+        
+        -   Now recognize that if you take out the 3 as well as *an* $x$, 
+            you have the original formula.
+            
+        $$ = 2 + 3x A(x) - \frac{x}{1 - x} $$
+        
+    4.  Solve for $A(x)$:
+    
+        $$ A(x) = \frac{ 3x - 2 }{ (3x - 1)(1 - x)} $$
+        
+    5.  Find the coefficient of $x^n$ using partial fractions or some other
+        method.
+    6.  Write the formual for $a_n$ by identifying the coefficient of $x^n$ in
+        $A(x)$.
+        
+        $$ a_n = \frac{3^{n + 1} + 1}{2} $$
+    
