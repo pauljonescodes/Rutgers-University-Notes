@@ -3674,9 +3674,9 @@ April 26th, 2013 - Final Exam Study Guide
 -   **Inheritance**
 	-   A class that derived from another class is called a *subclass*.
 	-   The class from which the subclass is derived is called the 
-	*superclass*.
--   Except for `Object`, which has no superclass, every class has one
-	and one only direct superclass (single inheritance).
+		*superclass*.
+	-   Except for `Object`, which has no superclass, every class has one
+		and one only direct superclass (single inheritance).
 	-   In the absence of any other explicit superclass,
 		every class is implicitiy a subclass of `Object`.
 
@@ -3700,7 +3700,7 @@ April 26th, 2013 - Final Exam Study Guide
 -   class diagrams to represent object-oriented design. 
 -   state diagram.
 
-### Design patterns: 
+### Design patterns
 	
 #### Model-View-Controller (MVC)
 
@@ -3841,11 +3841,163 @@ April 26th, 2013 - Final Exam Study Guide
 		| hook2()           |
 		+-------------------+
 
-### Testing
+### Black-box Unit Testing
 
--   Boundary values
--   Equivalence Classes
--   Block-box unit 
+#### Boundary Value Analysis
+
+-   Consider `charAt(i)` in the `String` class. This method implements a
+	function that takes as input an integer position, and returns the character
+	at that position in the string.
+-   The range of input, $i$, where $s$ is the length of the string:
+
+	$$ 0 \le i \le s - 1 $$
+
+-   To test that `charAt` works correctly for a given string of length s,
+	we would need to build the following input test cases
+	-   Lower boundary value $i = 0$.
+	-   Upper boundary value $i = s - 1$.
+	-   A small increment on the lower boundary value, $i = 1$.
+	-   A small decrement on the upper boundary value, $i = s - 2$.
+	-   A nominal valye of $i$ that is somewhere in the range that is
+		not any of the above. $i = \frac{s}{2}$
+
+-   This is the basic **boundary value analysis** approach.
+-   In general, if a function has an integer input $i$, which is
+	between $l$ and $h$ in value, then the boundary analysis
+	of the function selects the test input values $l$, $l + \epsilon$,
+	$l + \epsilon$, $i_n$, $h - \epsilon$, and $h$, where:
+	-   $i_n$ is a nominal value of $i$ somewhere in the range.
+	-   $\epsilon$ is a small value, typically $1$ for `int`.
+
+#### Robustness testing
+
+-   A simple extension of the basic boundary value analysis that includes
+	two additional input values:
+	$$ l - \epsilon $$
+	$$ h + \epsilon $$
+
+-   These value fall outside the range but are class to the end value.
+	-   They should result in the function implementation returning gracefully,
+		without computing a result.
+-   A Java method such as `charAt` would handle thes einputs by throwing
+	an exception.
+	-   It is graceful exit because it gives the client the choice
+		to hangle this situation how they see fit.
+
+-   The test cases with robust testing of `charAt` would be:
+	$$ −1, 0, 1, s/2, s − 2, s − 1, s $$
+
+-   Robustness testing uses seven test cases on a single-variable input
+	function.
+-   The main focus of robustness is on exception handling.
+
+#### Multi-variable boundary values
+
+-   Suppose you wrote a function `addHour` that, given a day and a time
+	in hours, adds one hour to the time and outputs the resulting day
+	and time.
+-   The input variables here are integer `d`, for day, and an interger `h`
+	for hour. Ranges:
+
+	$$ 1 \le d \le 6  $$
+	$$ 0 \le h \le 23 $$
+
+-   To create the test cases, we follow the procedure for single variable
+	boundary value analysis, except we repret for both variables.
+	-   When we run through the gamut for one variable, we keep the value
+		of the other fixed at the nominal value.
+
+-   Then the list of test cases using (day, hour)
+
+	$$ (d_n, 0), (d_n, 1), (d_n, h_n), (d_n, 22), (d_n, 23), $$
+	$$ (1, h_n), (2, h_n), (d_n, h_n), (6, h_n),  (7, h_n)   $$
+	-   One test appears twice, so there are 9 distinct cases.
+
+-   For the numbers 4 and 12 for day and hour, there are nine distinct
+	test cases:
+	
+	$$ (4, 0), (4, 1), (4, 12), (4, 22), (4, 23), (1, 12), (2, 12), (6, 12), (7, 12) $$
+
+-   Robustness testing yields four more test cases:
+
+	$$ (d_n,−1), (d_n, 24), (0, h_n), (8, h_n) $$
+
+-   However, this general approach does not capture the important test
+	cases $(1, 23)$ and $(7, 23)$ mentioned at the beginning of this discussion.
+-   The reason the general approach followed above only works if the variables
+	are *independant*.
+	-   That is, if there are $n$ independant variables, then the test cases
+		are built by varying each indepedant variable thorugh all its test 
+		values while holding all the other variables at their respective
+		nominal values.
+
+-   If the variables are dependant on each other, then we need to use all value
+	tuples obtained by combining the test values of the variables in all 
+	possible ways.
+-   For the `addHour` examples, this would mean all possible combination of
+	$d$ boundary values with those of $h$ boundary values.
+-   The test values for $d$ are $1, 2, 3, 4, 5, 6, 7$ and those for $h$ are
+	$0, 1, 12, 22, 23$.
+	-   So there are 25 combinations, each of which will be a test case.
+
+-   These combinations will include $1, 23$ and $7, 23$, among others.
+-   Robustness testing does not get affected due to inter-dependance unless
+	there are particular legitimate indivudual values whose combination
+	is not legitimate.
+
+#### Equivalence classes
+
+-   Divides the input data of a software into partitions of equivilent data
+	from which test cases can be derived. 
+-   In principle, test cases are designed to cover each partition at least once.
+-   This technique tries to define test cases that uncover *classes of errors*.
+-   Equivilence partitioning is typically applied to the inputs of a tested
+	component. 
+	-   May be applied to outputs in rare cases.
+
+-   The fundamental concept of ECP comes from equivilence class, which in turn
+	comes from equivilence relation.
+
+		int safe_add( int a, int b ) {
+		    int c = a + b;
+		    if ( a >= 0 && b >= 0 && c < 0 )
+		    {
+		        fprintf ( stderr, "Overflow!\n" );
+		    } 
+		    if ( a < 0 && b < 0 && c >= 0 )
+		    {
+		        fprintf ( stderr, "Underflow!\n" );
+		    } 
+		    return c;
+		}
+
+-   The boundary values approach results in a lot of test cases, many of
+	which are repetitious or redundant.
+	
+		+------+---+---+
+		| Test | d | h |
+		+------+---+---+
+		| 1    | 1 | 0 |
+		| 2    | 1 | 1 |
+		| 3    | 1 | 12|
+		| 4    | 1 | 22|
+		| 5    | 1 | 23|
+		| 6    | 2 | 0 |
+		| 7    | 2 | 1 |
+		| .    | . | . |
+		| .    | . | . |
+		| .    | . | . |
+		| 24   | 7 | 22|
+		| 25   | 7 | 23|
+		+------+---+---+
+
+-   Consider each group of tests with the same $d$ and different $h$'s.
+	-   In the first group of 5 tests, with $d = 1$, all tests except the
+		last result in the same type of input.
+
+-   Why not break these into categories?
+
+#### Block-box unit 
 
 ### Multithreading and synchronization on shared resources.
 
