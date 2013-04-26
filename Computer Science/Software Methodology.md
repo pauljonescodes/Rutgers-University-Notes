@@ -3674,21 +3674,27 @@ April 26th, 2013 - Final Exam Study Guide
     -   state diagram.
 
 3.  Design patterns: 
-	-   Model-View-Controller (MVC)
-	-   State (Behavioral)
+	-   **Model-View-Controller** (MVC)
+		-   A *model* notifies its associated views and controllers when there
+			has been a change in its state.
+		-   A *view* requests from the model the information that 
+			needs to generate an output representation to the user.
+		-   A *controller* can send commands to associated view to change 
+			the view's presentation of the model.
+	-   **State** (Behavioral)
 		-   Allow an object to change its behavior when its internal state 
 			changes.
-		-   The "object" is a subclass of an abstract class, polymorphism.
+		-   *The "object" is a subclass of an abstract class, polymorphism.*
 		-   Context (client code) has a state object that is one of the concrete
 			instances.
 		-   The request method executes handle on this concrete instance
 			dynamically binding the appropriate class method.
 		
-				+-----------+          +----------+
-				| Context   |<>--------| State    |
-				+-----------+          +----------+
-				| request() |          | handle() |
-				+-----------+          +----------+
+				+-----------+          +-----------+
+				|  Context  |<>--------|   State   |
+				+-----------+          +-----------+
+				| request() |          | handle()  |
+				+-----------+          +-----------+
 						|                     ^
 						|                     |
 				+--------------+       +------+--------+-- ...
@@ -3714,8 +3720,8 @@ April 26th, 2013 - Final Exam Study Guide
 				         input:  the location point the mouse is at
 				         (this function must be implemented by subclasses)
 
-	-   Singleton (Creational)
-		-   Ensure that a class has only one object or instance.
+	-   **Singleton** (Creational)
+		-   *Ensure that a class has only one object or instance.*
 		-   Only one point of global access.
 		-   The single private constructor ensures that an instance of
 			the class cannot be created with `new`.
@@ -3727,10 +3733,10 @@ April 26th, 2013 - Final Exam Study Guide
 				|+ static getInstance()|
 				+----------------------+
 
-	-   Iterator
-		-   An iterator is used to traverse a container and access 
-			the containter's elements.
-		-   This decouples algorithms from containers.
+	-   **Iterator**
+		-   An iterator is *used to traverse a container and access 
+			the containter's elements.*
+		-   This *decouples algorithms from containers.*
 		-   The alogirthm `SearchForElement` can be implemented generally
 			using a specific type of iterator rather than implementing
 			container-specific algorithm.
@@ -3780,7 +3786,7 @@ April 26th, 2013 - Final Exam Study Guide
 		-   Each action is a method, some of which are abstract because
 			their implementation is specific to concrete subclasses.
 		-   The abstract metods are referred to as "hook" methods.
-		-   The template method is hosted in an abstract class.
+		-   *The template method is hosted in an abstract class.*
 		-   The template method itself is *not abstract*.
 		-   Each specific algorithm can then extend this abstract host class,
 			and provide its own specific version of the hook method.
