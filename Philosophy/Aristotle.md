@@ -755,3 +755,14 @@ has the stronger claim and the evidence for it.
             knowledge.
         -   So we can neither already have it or acquire it.
         -   It follows that it must start with some **faculty**.
+
+April 25th, 2013 - Final Paper Assignment
+-----------------------------------------
+
+> Discuss Aristotle's general account in De Anima II 5 and II 12 of 
+> how perception comes about. Explain in detail what methodological 
+> procedures Aristotle was following in the chapter and how following 
+> them enables him to guarantee the normal objective accuracy of 
+> perception. Consider the accounts of these matters offered by Sorabji, 
+> Burnyeat, and Castion in your discussion.
+

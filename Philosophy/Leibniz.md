@@ -3021,3 +3021,67 @@ April 17th, 2013 - Lecture
 -   We do will things and our voltions have varying degrees of success.
 -   Leibniz is set against any soul body interaction.
 -   Pre-established harmony.
+
+April 22nd, 2013 - Passages
+---------------------------
+
+1.  ‘Perception is the expression of many things in one, or in a simple substance: if it is combined with the reflection of the percipient, it is called thought.  We judge perception to apply not only to us but also to other living things or organic beings, and thought to be not only in us but also (and indeed most perfectly) in God.  This quality of the percipient is treated in logic. “Nova Methodus Discendae Docendaeque Jurisprudentiae”, A 6.1, p. 286
+ 
+2.  ‘So ‘understanding’ in my sense is what in Latin is called intellectus, and the exercise of this faculty is called ‘intellection’, which is a distinct perception combined with a faculty of reflection, which the beasts do not have.  Any perception which is combined with this faculty is a thought, and I do not allow thought to beasts any more than I do understanding. ‘  NE 173
+ 
+3.  Locke challenges Leibniz to name a proposition which is innately known:
+“I would name . . . the propositions of arithmetic and geometry, which are all of that nature; and among necessary truths no other kind is to be found.” NE 86  
+With regard to ideas of contingent things:  “But there is no term which is so absolute or so detached that it does not involve relations and is not such that a complete analysis of it would lead to other things and indeed to all other things.” NE 288
+ 
+4. A. Within a human mind, there are sets of ideas so related to thoughts of propositional truths that an ordered set of ideas {1,2,3,…}operating in accord with a tendency to produce thoughts of propositions framed by an ordered set of connectives {c, d, e, . . . } has this relation R to acts of thinking a proposition P just in case {1, 2 ,3, . . .} and {c, d, e,  . . . } contain all the ideas and proposition framing tendencies that are essentially individually necessary and jointly sufficient to cause thoughts of P.
+ 
+B. In God’s understanding sets of ideas are related to truths in such a way that an ordered set of ideas {A, B, C, . . .} and an ordered set of connectives {c, d, e, . . .}has R* to a truth just in case {A, B, C, . . . }and {c, d, e, . . .} contain all and only the ideas and connectives from which the truth results.
+
+April 22nd, 2013 - Lecture
+--------------------------
+
+-   One is abbreviations, so something stands for some content,
+	you can then replace every instance with that abbreviation.
+	-   You come to think of abbreviations as shorthand for the 
+		actual concept.
+	-   One strategy:
+		-   Say you want to think of 50, and you write:
+		
+				|||||||||| |||||||||| |||||||||| |||||||||| ||||||||||
+			
+		-   This requires having 50 things in your mind.
+		-   But if `10` stands for `||||||||||`,
+		
+				10 10 10 10 10
+			
+		-   Etc
+	
+	-   Other strategy:
+		-   If you want to think of a circle, draw one, and you
+			have a model that certain facts will be true about
+			and those things will be true of the abstract circle.
+	
+-   The problem is: How do we think about things that are complex.
+-   He's talking about propositional knowledge, Leibniz thinks there's
+	a big different between propositional and 
+	
+-   Implications of Leibniz's perception:
+	1.  Implications cannot be mistaken (it's the judgements that are mistaken).
+	2.  It's impossible to perceive something that does not have parts.
+		-   The only way things register perceptively is through parts.
+		-   This is significant because we can think about monads.
+		-   This means we must have a way of knowing things that is not perceptual (intellectual).
+		-   From the letter to Arnauld, he's explaining what expression is,
+			and he's talking about geometric expressions, and then he says
+			that perception is universal (or something ... )
+		-   We do not have perception of things without parts, true unities,
+			propositions.
+		-   Intellect is linked with the ability to reflect.
+	
+-   How do states of the soul express things that are represented by thoughts?
+	-   What's the metaphysical status of things like circles, numbers, etc.
+		-   Ideas are something that is in our mind.
+		-   Traces and 
+		
+	-   How do we get into contact with them?
+			

@@ -1196,4 +1196,12 @@ April 17th, 2013 - Notes pt. 5
         $A(x)$.
         
         $$ a_n = \frac{3^{n + 1} + 1}{2} $$
+        
+April 17th, 2013 - Lecture
+--------------------------
+
+-   Counting number of binary trees on n nodes
+    -   Let $b_n$ be the number of binary trees given $n$ nodes.
+    -   $ b_0 = 1$, $b_1 = 1$, $b_2 = 2$, etc
+    -   What does an n node ree "look like"?
     
