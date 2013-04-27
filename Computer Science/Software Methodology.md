@@ -3738,18 +3738,18 @@ April 26th, 2013 - Final Exam Study Guide
 
 -   Psuedocode
 
-		class AbstractTool is
-		     function moveTo(point) is
-		         input:  the location point the mouse moved to
-		         (this function must be implemented by subclasses)
+	class AbstractTool is
+	     function moveTo(point) is
+	         input:  the location point the mouse moved to
+	         (this function must be implemented by subclasses)
 
-			 function mouseDown(point) is
-			      input:  the location point the mouse is at
-			      (this function must be implemented by subclasses)
+		 function mouseDown(point) is
+		      input:  the location point the mouse is at
+		      (this function must be implemented by subclasses)
 
-			 function mouseUp(point) is
-			      input:  the location point the mouse is at
-			      (this function must be implemented by subclasses)
+		 function mouseUp(point) is
+		      input:  the location point the mouse is at
+		      (this function must be implemented by subclasses)
 
 #### Singleton (Creational)
 
@@ -3999,5 +3999,5 @@ April 26th, 2013 - Final Exam Study Guide
 
 #### Block-box unit 
 
-### Multithreading and synchronization on shared resources.
+### Multithreading and synchronization on shared resources
 
