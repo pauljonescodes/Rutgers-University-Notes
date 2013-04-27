@@ -3704,11 +3704,11 @@ April 26th, 2013 - Final Exam Study Guide
 	
 #### Model-View-Controller (MVC)
 
--   A *model* notifies its associated views and controllers when there
+-   A **model** notifies its associated views and controllers when there
 	has been a change in its state.
--   A *view* requests from the model the information that 
+-   A **view** requests from the model the information that 
 	needs to generate an output representation to the user.
--   A *controller* can send commands to associated view to change 
+-   A **controller** can send commands to associated view to change 
 	the view's presentation of the model.
 
 #### State (Behavioral)
@@ -3738,18 +3738,18 @@ April 26th, 2013 - Final Exam Study Guide
 
 -   Psuedocode
 
-	class AbstractTool is
-	     function moveTo(point) is
-	         input:  the location point the mouse moved to
-	         (this function must be implemented by subclasses)
+		class AbstractTool is
+		     function moveTo(point) is
+		         input:  the location point the mouse moved to
+		         (this function must be implemented by subclasses)
 
-		 function mouseDown(point) is
-		      input:  the location point the mouse is at
-		      (this function must be implemented by subclasses)
+			 function mouseDown(point) is	
+			      input:  the location point the mouse is at
+			      (this function must be implemented by subclasses)	
 
-		 function mouseUp(point) is
-		      input:  the location point the mouse is at
-		      (this function must be implemented by subclasses)
+			 function mouseUp(point) is
+			      input:  the location point the mouse is at
+			      (this function must be implemented by subclasses)
 
 #### Singleton (Creational)
 
@@ -3775,7 +3775,6 @@ April 26th, 2013 - Final Exam Study Guide
 	container-specific algorithm.
 -   This allows `SearchForElement` to be used on any container
 	that supports the required type of iterator.
-
 >   Provide a way to access the elements of an aggregate object
 >   sequentially without exposing its underlying representation.
 
@@ -3995,9 +3994,30 @@ April 26th, 2013 - Final Exam Study Guide
 	-   In the first group of 5 tests, with $d = 1$, all tests except the
 		last result in the same type of input.
 
--   Why not break these into categories?
+-   Why not break these into categories? All tests in each category would
+	produce similar successes or failures.
+	-   Category 1: All tests for which output $d$ is same as input $d$.
+	-   Category 2: All tests for which the output $d$ is different from input
+		$d$, but not 1.
+	-   Category 3: All tests for which the output $d$ is different from the 
+		input $d$, and is 1.
 
-#### Block-box unit 
+-   Each category is called an *equivilence class* and the cetgorization is
+	called *equivilence partitioning*
+	-   Equivilence partitioning can also be done for test cases that are
+		expected to result in errors, for robustness testing.
+
+-   Consider the example of a rectangle, where you have a method called
+	`pointInRectangle`. It returns `0` if the point is *on* the rectangle,
+	`-1` if the point is *not* on or in the rectangle, and `1` if it is
+	*in* the rectangle.
+	-   This function does not have a continuum of results, insteads it
+		partitions the results into three calses of outcomes.
+	-   This then leads to partitioning the input into equvilence classes.
+	-   Each equivilence class would comprise all inputs that result in one of
+		the possible outcomes, or force one type of error.
+	-   Since we are assuming all inputs are legal coordinates, to start with,
+		we will build equvilance classes for the possible correct outcomes. 
 
 ### Multithreading and synchronization on shared resources
 
