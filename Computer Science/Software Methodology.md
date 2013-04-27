@@ -3788,6 +3788,40 @@ April 26th, 2013 - Final Exam Study Guide
 
 #### State diagram.
 
+-   A state diagram is a type of diagram used in computer science and related
+	fields to describe the behavior of systems.
+	-   State diagrams require that the system described is composed of a finite
+		number of states. 
+		-   Sometimes this is the case, in other there is a reasonable 
+			abstraction.
+	
+	-   Many forms of state diagrams exists, which different slight and have
+		different semantics.
+
+-   The state diagram in the Unified Modelling Language is essentially
+	a Harel statechart with standardized notation.
+	-   This can be used to describe many systems, from computer programs
+		to business processors.
+	-   In UML 2 the name has been changed to *State Machine Diagram*.
+
+-   The basic notational elements that can be used to make a diagram are:
+	-   Filled circle, pointing to the initial state.
+	-   Hollow circle, containing a smaller filled circle indicating the
+		final state.
+	-   Rounded rectangle, denoting a state. Top of the rectagnle contains a name
+		of the state. 
+		-   Can contain a horizaontal line in the middle, below which
+			the activities that can be done are indicated.
+	-   Arrow, denoting transtion. The name of the event (if any) causing this
+		transition labels the arrow bodyu. 
+		-   A guard expression may be added before a "/" and enclosed in
+			square-brackets. Ex: `eventName[guardExpression]`.
+		-   If an action is performed during this transition, it is added to
+			the label following a "/".
+	-   Thick horizontal line with wither $ x \gt 1 $ lines entering and $1$
+		line leaving or $1$ line entering and $x \gt 1$ lines leaving. 
+		-   These denote join/fork respectively.
+
 ### Design patterns
 	
 #### Model-View-Controller (MVC)
