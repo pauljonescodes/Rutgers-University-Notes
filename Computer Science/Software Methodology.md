@@ -3697,8 +3697,96 @@ April 26th, 2013 - Final Exam Study Guide
 
 ### UML 
 
--   class diagrams to represent object-oriented design. 
--   state diagram.
+#### Class diagrams
+
+-   The class diagram is the main building block of OO modelling.
+-   It is used both for general conceptual modelling and for systematics.
+-   Classes contain three parts:
+	1.  The upper part holds the name of the class
+	2.  The middle part contains the attributes of the class.
+	3.  The bottom part gives the methods or operations the class can take
+		or undertake.
+-   To specify the visibility of a class member, these are the
+	notations used before the name:
+
+		+	Public
+		-	Private
+		#	Protected
+		~	Package
+		/	Derived
+		_	Static
+
+-   UML allows you to specify a relationship of class members using external
+	links.
+	-   **Association**
+		-   An *association* is a family of links.
+		-   They are representing with simply a line.
+		-   It can be named.
+		-   At the both ends of the line, the members can have role names.
+		-   The four types are bi-directional, uni-directional, aggregation,
+			and reflexive. (The first two are the most common.)
+		-   *Association defines a relationship between classes of objects
+			that allows one object instance to cause another to
+			perform an action on its behalf.*
+		-   "Sending a message" or "invoking a method" or "calling a member
+			function."
+		-   An "owns a" relationship.
+				     
+				1     Owns     1..1
+				------------------>
+				Owner        Owned
+
+	-   **Aggregation**
+		-   This differs from ordinary composition in that it does not
+			imply ownership. 
+		-   In composition, when the owning object is destroyed, so are the
+			contained objects. 
+		-   In aggregation, this is not *necessarily* true.
+		-   For example, if a University closes, the departments it owns, like
+			Computer Science, will likely close along with it. On the other hand,
+			the Professors and Students will still exist.
+		-   A "has a" relationship.
+		-   Represented with an empty diamond and a line, an unfilled diamond.
+
+					
+				Pond <=>-------------- Duck
+					    0..1      0..*
+
+	-   **Composition**
+		-   This is a stronger variant of the "owns a" relationship.
+		-   Composition usualy has a strong *life cycle dependancy* between
+			instances of the container class and instances of the contained
+			classes.
+		-   It is a way to combine simple objects into more complex ones.
+		-   Compositions are a criticle building block of basic data structures.
+		-   Example: An automobile is composed from objects including steering
+			wheel, seat, gearbox, and engine.
+		-   Represented with a filled diamond.
+		
+				Car<+>----------Carburetor
+				      0..1  1..1
+
+	-   **Generalization**
+		-   The generalization relationship ("is a") indicates that one of the
+			two related classes is considered to be a specialized form of the
+			other and a superclass is considered a generalization of the subclass.
+		-   It means that any instances of the subclass is also an instance
+			of the superclass.
+		-   The generalization relationship is also known as the inheritance
+			or "is a" relationship.
+		-   The representation in UML is a hollow triangle.
+			
+				Student ----------|> Person
+
+-   To specific the multiplicity of an association of at least two related
+	classes is done with the **multiplicity** entity, which is defined as follows:
+
+		0..1	No instances, or one instance (optional, may)
+		1		Exactly one instance
+		0..*	Zero or more instances (also *)
+		1..*	One or more instances (at least one)
+
+#### State diagram.
 
 ### Design patterns
 	
