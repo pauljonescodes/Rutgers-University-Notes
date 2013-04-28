@@ -3672,6 +3672,17 @@ April 26th, 2013 - Final Exam Study Guide
 -   Can be used to simulate multiple inheritance.
 -   An interface can extend any number of interfaces.
 -   An interface may not implement an interface.
+-   An interface is *generally* public.
+-   An interface defines a new type name that is tracked by the compiler.
+-   All fields in an interface are implicity `public`, `static`, and `final`.
+-   All methods in an interface are implicity `public` and `abstract`.
+-   When a class implements an interface, it *must implement every single
+	method* that is prescribed in the interface.
+-   An interface may be generic.
+
+		public interface Comparable<T> {
+			int compareTo(T o);
+		}
 
 #### Inheritance
 
@@ -3682,16 +3693,26 @@ April 26th, 2013 - Final Exam Study Guide
 	and one only direct superclass (single inheritance).
 -   In the absence of any other explicit superclass,
 	every class is implicitiy a subclass of `Object`.
+	-   From `Object`, every Java class has, and you have likely seen,
+		-   `equals()` - compares address of objects
+		-   `toString()` - returns address of object
+		-   `hashCode()` - returns the hash code value for object
 
 #### Abstract classes
 
 -   An abstract class is a class that is declared by `abstract`.
--   It may or may not incluyde abstract methods.
+-   It may or may not include abstract methods.
 -   *Abstract classes may not be instantiated, but they can be
 	subclassed.*
 -   Unlike interfaces, abstract classes *may contain values
 	that are not static and final*, and they *may contain implemented
 	methods.*
+-   When several classes have a common conceptual foundation they can be
+	**generalized** into an `abstract` superclass.
+-   In Java, a class is defined `abstract` in the class header. 
+-   An `abstract` method is one that has no implementation.
+-   An `abstract` class may have *zero or more* `abstract` methods.
+
 
 #### Polymorphism
 
@@ -3699,8 +3720,20 @@ April 26th, 2013 - Final Exam Study Guide
 	than one form. 
 -   Used to implement a style of programming called *message-passing* in
 	the literature.
+-   Dynamically binding to same functionality in classes at different levels of
+	an inheritance hierarchy using a "least common denominator" type is known
+	as **inheritance polymorphism**.
 
 ### UML 
+
+-   UML stands for Unified Modeling Language, which is a mainly graphical
+	notation used to express object-oriented design.
+-   There are three kinds of UML diagrams that are most useful in practice:
+	-   **Class interaction diagram**, used to show classes and the
+		relationships between them.
+	-   **Sequence diagram**, used to show sequences of activity when methods
+		are invoked on classes.
+	-   **State diagram**, used to represent state based designs.
 
 #### Class diagrams
 
