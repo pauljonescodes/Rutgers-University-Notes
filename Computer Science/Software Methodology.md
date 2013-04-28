@@ -3659,41 +3659,46 @@ April 26th, 2013 - Final Exam Study Guide
 
 ### Object-Oriented Design with Java. 
 	
--   **Interfaces**
-	-   An abstract type that is used to specify an interface that clases
-		must implement.
-	-   Declared using the `interface` keyword.
-	-   May contain method signature and constant declarations.
-	-   May not be instantiated.
-	-   *A class that implements and interface must implement
-		all of the methods described in the interface or be an abstract
-		class.*
-	-   Can be used to simulate multiple inheritance.
-	-   An interface can extend any number of interfaces.
-	-   An interface may not implement an interface.
--   **Inheritance**
-	-   A class that derived from another class is called a *subclass*.
-	-   The class from which the subclass is derived is called the 
-		*superclass*.
-	-   Except for `Object`, which has no superclass, every class has one
-		and one only direct superclass (single inheritance).
-	-   In the absence of any other explicit superclass,
-		every class is implicitiy a subclass of `Object`.
+#### Interfaces
 
--   **Abstract classes**
-	-   An abstract class is a class that is declared by `abstract`.
-	-   It may or may not incluyde abstract methods.
-	-   *Abstract classes may not be instantiated, but they can be
-		subclassed.*
-	-   Unlike interfaces, abstract classes *may contain values
-		that are not static and final*, and they *may contain implemented
-		methods.*
+-   An abstract type that is used to specify an interface that clases
+	must implement.
+-   Declared using the `interface` keyword.
+-   May contain method signature and constant declarations.
+-   May not be instantiated.
+-   *A class that implements and interface must implement
+	all of the methods described in the interface or be an abstract
+	class.*
+-   Can be used to simulate multiple inheritance.
+-   An interface can extend any number of interfaces.
+-   An interface may not implement an interface.
 
--   **Polymorphism**
-	-   The ability to create a variable, function, or object that has more
-		than one form. 
-	-   Used to implement a style of programming called *message-passing* in
-		the literature.
+#### Inheritance
+
+-   A class that derived from another class is called a *subclass*.
+-   The class from which the subclass is derived is called the 
+	*superclass*.
+-   Except for `Object`, which has no superclass, every class has one
+	and one only direct superclass (single inheritance).
+-   In the absence of any other explicit superclass,
+	every class is implicitiy a subclass of `Object`.
+
+#### Abstract classes
+
+-   An abstract class is a class that is declared by `abstract`.
+-   It may or may not incluyde abstract methods.
+-   *Abstract classes may not be instantiated, but they can be
+	subclassed.*
+-   Unlike interfaces, abstract classes *may contain values
+	that are not static and final*, and they *may contain implemented
+	methods.*
+
+#### Polymorphism
+
+-   The ability to create a variable, function, or object that has more
+	than one form. 
+-   Used to implement a style of programming called *message-passing* in
+	the literature.
 
 ### UML 
 
