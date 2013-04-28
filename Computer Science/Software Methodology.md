@@ -4031,8 +4031,8 @@ April 26th, 2013 - Final Exam Study Guide
 
 		+-------------------+   +--------+	
 		|   Template Host   |   | . . .  |
-		+-------------------+   | hook1()|
-		| templateMethod() o----| . . .  |
+		+-------------------+   | hook1()| // Note: This is the method
+		| templateMethod() o----| . . .  | // and it is non-abstract
 		| hook1()           |   | hook2()|
 		| hook2()           |   | . . .  |
 		+-------------------+   +--------+
@@ -4044,6 +4044,36 @@ April 26th, 2013 - Final Exam Study Guide
 		| hook1()           |
 		| hook2()           |
 		+-------------------+
+
+-   In software engineering, the *template design pattern* is a behavioral
+	design pattern that defines the program skeleton of an algorithm in a 
+	method, called the *template method*, which defers some steps to
+	subclasses.
+	-   It lets one redefine certain steps of an algorithm without changing
+		the algorithms structure.
+
+-   In the template method of this design pattern, one or more algorithms
+	can be overridden by subclasses to allow differing behaviors
+	enusuring that the overarching algorithm is still followed.
+	-   In object-oriented programming, first a class is created that provides
+		the basic steps of an algorithm design.
+	-   These steps are implemented using abstract methods.
+	-   Later on, subclasses change the abstract methods to implement real
+		actions.
+		-   Thus, the general algorithm is saved in one place but the concrete
+			steps may be changed by subclasses.
+
+-   The template method pattern thus manages the larger picture of task 
+	semantics, and more refined implementation details of selection
+	and sequence of methods.
+	-   This larger picture calls abstract and non-abstract methods for the
+		task at hand.
+	-   The non-abstract methods are completely controlled by the template
+		method, but the abstract methods, implemented by subclasses, are
+		implemented by the concrete subclasses.
+		-   These are called "hooks"
+	
+	-   The template method is not abstract!
 
 ### Black-box Unit Testing
 
