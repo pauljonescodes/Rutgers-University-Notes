@@ -4226,3 +4226,58 @@ April 26th, 2013 - Final Exam Study Guide
 
 ### Multithreading and synchronization on shared resources
 
+#### Multithreading I/0 with Computation
+
+-   The steps to make a program multithreaded:
+	1.  Extend the `java.lang.Thread` class.
+	
+			public class Program extends Thread { ... }
+
+	2.  Place code you want to execute indepedantly in the `run` method
+
+			public void run() { ... }
+
+	3.  Make any parameters you need static fields.
+	4.  Define a constructor that starts up an independant thread for run.
+
+			public ProgramThread() { start(); }
+
+		-   This method is defined in the `Thread` class, calling it sets up
+			the necessary resources to run an independant thread and starts up
+			the thread to execute the run method.
+
+		>   Note: Calling run directly (instead of start) will *not* start
+			an independant thread.
+
+	5.  Change the main method to set up and independant thread for your 
+		computation. When the user interupts your program, report the
+		current computation.
+
+-   Every time the user hits enter, the main thread fetches the current status
+	of your computation and prints it out.
+-   Meanwhile, the program thread continues its computation.
+-   If the user types "quit", the program thread continues indepedantly until
+	the end of the current conditional or whatever might be happening in there.
+
+#### Why threads
+
+-   A thread runs asynchronously, independant of the thread that created it.
+-   A Java application or applet itself runs as a thread, and can spin off
+	as many threads as needed.
+-   A collection of asyncrhously running threads may communicate with each other
+	via a buffer, or directly invoking methods on each other.
+-   Asynchrous computing allows several tasks to be performed in parallel,
+	resulting in:
+	-   **improved executing time** for the application as a whole.
+	-   **improved turn around time** seen by the user, for instance the
+		consumer thread displays data on the fly as it comes from the server,
+		instead of blocking until all data is available.
+
+-   Asynchrounous computing places more onus on the programmer to ensure that
+	the program:
+	-   **avoids race conditions**, two threads trying to update a variable at
+		the same time.
+	-   **maintains consistency of data**, two transactions both
+		withdraw money from an account, but the second does not see
+		the withdrawal being made by the first.
+
