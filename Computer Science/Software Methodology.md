@@ -3756,65 +3756,12 @@ April 26th, 2013 - Final Exam Study Guide
 
 -   UML allows you to specify a relationship of class members using external
 	links.
-	-   **Association**
-		-   An *association* is a family of links.
-		-   They are representing with simply a line.
-		-   It can be named.
-		-   At the both ends of the line, the members can have role names.
-		-   The four types are bi-directional, uni-directional, aggregation,
-			and reflexive. (The first two are the most common.)
-		-   *Association defines a relationship between classes of objects
-			that allows one object instance to cause another to
-			perform an action on its behalf.*
-		-   "Sending a message" or "invoking a method" or "calling a member
-			function."
-		-   An "owns a" relationship.
-				     
-				1     Owns     1..1
-				------------------>
-				Owner        Owned
 
-	-   **Aggregation**
-		-   This differs from ordinary composition in that it does not
-			imply ownership. 
-		-   In composition, when the owning object is destroyed, so are the
-			contained objects. 
-		-   In aggregation, this is not *necessarily* true.
-		-   For example, if a University closes, the departments it owns, like
-			Computer Science, will likely close along with it. On the other hand,
-			the Professors and Students will still exist.
-		-   A "has a" relationship.
-		-   Represented with an empty diamond and a line, an unfilled diamond.
-
-					
-				Pond <=>-------------- Duck
-					    0..1      0..*
-
-	-   **Composition**
-		-   This is a stronger variant of the "owns a" relationship.
-		-   Composition usualy has a strong *life cycle dependancy* between
-			instances of the container class and instances of the contained
-			classes.
-		-   It is a way to combine simple objects into more complex ones.
-		-   Compositions are a criticle building block of basic data structures.
-		-   Example: An automobile is composed from objects including steering
-			wheel, seat, gearbox, and engine.
-		-   Represented with a filled diamond.
-		
-				Car<+>----------Carburetor
-				      0..1  1..1
-
-	-   **Generalization**
-		-   The generalization relationship ("is a") indicates that one of the
-			two related classes is considered to be a specialized form of the
-			other and a superclass is considered a generalization of the subclass.
-		-   It means that any instances of the subclass is also an instance
-			of the superclass.
-		-   The generalization relationship is also known as the inheritance
-			or "is a" relationship.
-		-   The representation in UML is a hollow triangle.
-			
-				Student ----------|> Person
+		Association:    --------->
+		Aggregation:    -------<=>
+		Composition:    -------<+>
+		Generalization: --------|>
+		Dependancy:     - - - - -> 
 
 -   To specific the multiplicity of an association of at least two related
 	classes is done with the **multiplicity** entity, which is defined as follows:
@@ -3823,6 +3770,97 @@ April 26th, 2013 - Final Exam Study Guide
 		1		Exactly one instance
 		0..*	Zero or more instances (also *)
 		1..*	One or more instances (at least one)
+
+##### Association
+
+-   An *association* is a family of links.
+-   They are representing with simply a line.
+-   It can be named.
+-   At the both ends of the line, the members can have role names.
+-   The four types are bi-directional, uni-directional, aggregation,
+	and reflexive. (The first two are the most common.)
+-   *Association defines a relationship between classes of objects
+	that allows one object instance to cause another to
+	perform an action on its behalf.*
+-   "Sending a message" or "invoking a method" or "calling a member
+	function."
+-   An "owns a" relationship.
+		     
+		1     Owns     1..1
+		------------------>
+		Owner        Owned
+
+-   Directed associations happen when the `Owner`, in this case, knows
+	about what it `Owns`, but the `Owned` does not "know" about its
+	`Owner`.
+-   At time, an association between two classes itself has properties,
+	an **association class** is used to model these properties.
+	-   This is represented by a jagged line stemming from where one might
+		usually put the title of the association.
+
+##### Aggregation
+
+-   This differs from ordinary composition in that it does not
+	imply ownership. 
+-   In composition, when the owning object is destroyed, so are the
+	contained objects. 
+-   In aggregation, this is not *necessarily* true.
+-   For example, if a University closes, the departments it owns, like
+	Computer Science, will likely close along with it. On the other hand,
+	the Professors and Students will still exist.
+-   A "has a" relationship.
+-   Represented with an empty diamond and a line, an unfilled diamond.
+
+					
+		Pond <=>-------------- Duck
+			    0..1      0..*
+		
+-   Good examples of aggregation are states aggregating counties that
+	aggregate townships, police stations aggregate police officers,
+	and directories aggregate files.
+
+
+##### Composition
+
+-   This is a stronger variant of the "owns a" relationship.
+-   Composition usualy has a strong *life cycle dependancy* between
+	instances of the container class and instances of the contained
+	classes.
+-   It is a way to combine simple objects into more complex ones.
+-   Compositions are a criticle building block of basic data structures.
+-   Example: An automobile is composed from objects including steering
+	wheel, seat, gearbox, and engine.
+-   Represented with a filled diamond.
+
+		Car<+>----------Carburetor
+		      0..1  1..1
+
+-   Alternatively, one can represent composition by nesting a class
+	within the class representation.
+
+##### Generalization
+
+-   The generalization relationship ("is a") indicates that one of the
+	two related classes is considered to be a specialized form of the
+	other and a superclass is considered a generalization of the subclass.
+-   It means that any instances of the subclass is also an instance
+	of the superclass.
+-   The generalization relationship is also known as the inheritance
+	or "is a" relationship.
+-   This is almost synomymous with interface implementation.
+-   The representation in UML is a hollow triangle.
+		
+		Student ----------|> Person
+
+-   A good example of generalization is shape is a generalization of
+	a polygon, which is a generalization of rectangles and triangles.
+
+##### Dependancy
+
+-   Class `A` depends on `B` if `A` *uses* `B` in such a way that a
+	change in `B` will effect `A`.
+-   Say `A` depends on `B`. Typically, `B` would appear as a parameter,
+	return type, or local variable in a method of `A`.
 
 #### State diagram.
 
