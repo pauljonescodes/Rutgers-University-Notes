@@ -3764,11 +3764,11 @@ April 26th, 2013 - Final Exam Study Guide
 -   UML allows you to specify a relationship of class members using external
 	links.
 
-		Association:    --------->
-		Aggregation:    -------<=>
-		Composition:    -------<+>
-		Generalization: --------|>
-		Dependancy:     - - - - -> 
+		Association:    --------+> // solid line,  filled triangle
+		Aggregation:    -------<=> // solid line,  empty diamond
+		Composition:    -------<+> // solid line,  filled diamond
+		Generalization: --------|> // solid line,  empty triangle
+		Dependancy:     - - - - |> // jagged line, empty triagnle 
 
 -   To specific the multiplicity of an association of at least two related
 	classes is done with the **multiplicity** entity, which is defined as follows:
@@ -4467,4 +4467,71 @@ A thread is born, started, run, and then terminated.
 				}
 			}
 		}
+
+#### Recitation 12, Question 1
+
+>   Suppose you use a search engine to search for a word or phrase that results 
+>   in a match with a large number (hundreds) of web pages. However, the browser
+>   will only display a list of n (some variable parameter) page links in one 
+>   screenful. Implement a multi-threaded program with one thread for the browser 
+>   display, and another for the search engine, and have the search engine deal >   out hits in batches of the max size the browser can display in one screenful. >   You may assume that a method called fetch has already been written in the 
+>   search engine to fetch the next batch of hits, returned as a list of URL
+>   strings. 
+
+	public class Searcher implements Runnable {
+	      private Request req;   // search request
+	      private Buffer buf;    // to store hits for display
+	      public Searcher(Request req, Buffer buf) {
+	         this.req = req;
+	         this.buf = buf;
+	         new Thread(this).start();
+	      }
+	      public void run() {
+	         while (true) {
+	            while ((List hits = fetchNext(req)) != null)  { // more
+	      results from fetch
+	               buf.put(hits);
+	         }
+	      }
+	   }
+
+	   public class Displayer implements Runnable {
+	      private Buffer buf;
+	      public Displayer(Buffer buf) {
+	         this.buf = buf;
+	         new Thread(this).start();
+	      }
+	      public void run() {
+	         while (true) {
+	            display(buf.get());
+	         }
+	      }
+	   }
+
+	   public class Buffer {
+	      List hits;
+	      boolean available = false;
+	      public synchronized void put(List hits) {
+	         while (available) {
+	            try {
+	                wait();
+	            }
+	            catch (Exception e) { }
+	         }
+	         available = true;
+	         this.hits = hits;
+	         notifyAll();
+	      }
+	
+	      public synchronized List get() {
+	         while (!available) {
+	            try {
+	                wait();
+	            }
+	         catch (Exception e) { }
+	      }
+	      available = false;
+	      notifyAll();
+	      return hits;
+	   }
 
