@@ -4281,3 +4281,160 @@ April 26th, 2013 - Final Exam Study Guide
 		withdraw money from an account, but the second does not see
 		the withdrawal being made by the first.
 
+#### Lifecycle of a thread
+
+A thread is born, started, run, and then terminated. 
+
+-   **New**: A new thread begins its life cycle in the new state. It remains
+	in this state until the program starts the thread.
+-   **Runnable**: After a newly born thread is started, the thread becomes
+	runnable. It is executing a task.
+-   **Waiting**: Sometimes a thread transitions to the waiting state while the 
+	thread waits for another thread to perform a task. A thread transitions 
+	back to the runnable state only when another thread signals the waiting
+	thread to continue executing.
+-   **Timed waiting**: A runnable thread can enter the timed waiting state for
+	a specified interal of time. A thread in this state transitions back
+	to the runnable state when that time interval expires or when
+	the event it is waiting for occurs.
+-   **Terminated**: A runnable thread enters the terminated state when it
+	completes the task or is otherwise terminated.
+
+#### Thread priorities
+
+-   Every Java thread has a priority that helps the operating system determine
+	the order in which threads are scheduled.
+-   Java priorities are in the range between `MIN_PRIORITY` (1) and
+	`MAX_PRIORITY` (10),
+	-   By default, every thread is `NORM_PRIORITY` (5).
+
+-   Threads with higher priority are more important to a program and should be
+	allocated processor time before lower-priority threads,
+	-   However, this is very platform dependant.
+
+#### A thread "Hello, World!"
+
+	class NewThread implements Runnable {
+	   Thread t;
+	   NewThread() {
+	      // Create a new, second thread
+	      t = new Thread(this, "Demo Thread");
+	      System.out.println("Child thread: " + t);
+	      t.start(); // Start the thread
+	   }
+   
+	   // This is the entry point for the second thread.
+	   public void run() {
+	      try {
+	         for(int i = 5; i > 0; i--) {
+	            System.out.println("Child Thread: " + i);
+	            // Let the thread sleep for a while.
+	            Thread.sleep(500);
+	         }
+	     } catch (InterruptedException e) {
+	         System.out.println("Child interrupted.");
+ 	    }
+	     System.out.println("Exiting child thread.");
+	   }
+	}
+
+	public class ThreadDemo {
+	   public static void main(String args[]) {
+	      new NewThread(); // create a new thread
+	      try {
+ 	        for(int i = 5; i > 0; i--) {
+ 	          System.out.println("Main Thread: " + i);
+	           Thread.sleep(1000);
+	         }
+	      } catch (InterruptedException e) {
+	         System.out.println("Main thread interrupted.");
+	      }
+	      System.out.println("Main thread exiting.");
+ 	  }
+	}
+
+#### Recitation 9, Question 1
+
+>   Use threads to implement a stop watch that displays, once every five seconds,
+>   the minutes and seconds that have passed since it was started. The display
+>   should be in the form mm:ss for minutes and seconds. When the clock reaches 15
+>   minutes, it should wrap back and start at 0 minutes and 0 seconds. The user
+>   should be able to stop the watch at any time. Write the complete code for the
+>   application. (Not the most accurate stop watch, but the model is useful for
+>   animations in which slight inaccuracies in time would not be detrimental.) 
+
+-   `Watch` class
+
+		class Watch {
+			int mins;
+			int secs;
+			
+			String allStr;
+			
+			public Watch() {
+				mins = 0;
+				secs = 0;
+				allStr = " 00:00";
+			}
+			
+			public void stepUp() {
+				secs = secs + 5;
+				if (secs == 60)	{ 
+					mins = (mins + 1) % 60;
+					secs = 0;
+				}
+				if (mins >= 15) mins = mins - 15;
+				String minsStr = String.valueOf(mins);
+				String secsStr = String.valueOf(secs);
+				
+				if (mins < 10) minsStr = "0" + minsStr;
+				if (secs < 10) secsStr = "0" + secsStr;
+				
+				allStr = " " + minsStr + ":" + secsStr;
+				System.out.println(allStr);
+			}
+			
+			public void reset()	{
+				mins = 0;
+				secs = 0;
+				allStr = " 00:00";
+				System.out.println(allStr);
+			}
+		}
+
+-   `StopWatchThread`
+
+		class StopWatchThread  implements Runnable {
+			private Watch w;
+			public boolean quit = false;
+			public boolean start = true;
+			public boolean reset = false;
+			public long startTime; 
+			// delay is five second
+			int delay = 5000;
+			public void run() {
+				startTime = System.currentTimeMillis();
+				w = new Watch();
+				// animation loop
+				while (true) {
+					if (quit)
+						break;
+					if (reset) {
+						w.reset();
+						startTime = System.currentTimeMillis();
+						reset = false;
+					}
+					if (start) {
+						try {
+							startTime += delay;
+							Thread.sleep(Math.max(0, startTime - System.cu	rrentTimeMillis()));
+							w.stepUp();
+						} catch (InterruptedException e) {
+					
+						}				
+					}
+			
+				}
+			}
+		}
+
