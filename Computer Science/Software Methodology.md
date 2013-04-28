@@ -3698,6 +3698,13 @@ April 26th, 2013 - Final Exam Study Guide
 		-   `toString()` - returns address of object
 		-   `hashCode()` - returns the hash code value for object
 
+-   The design aspect of inheritance is to model the "is a" relationship
+	between objects.
+	-   A car is a motor vehicle.
+	-   A motor cycle is a motor vehicle.
+	-   A colored point is a point.
+	-   A zebra is an animal.
+
 #### Abstract classes
 
 -   An abstract class is a class that is declared by `abstract`.
