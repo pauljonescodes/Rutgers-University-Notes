@@ -3301,10 +3301,39 @@ April 16th, 2013 - Processor Design I: Sequential Processor (Y86)
     OPl rA, rB          6   fn  rA  rB
     jXX Dest            7   fn  Dest
     call Dest           8   0   Dest
-    ret                 9   0   
+    ret                 9   0 
     pul rA              A   0   rA  8
     popl rA             B   0   rA  8
     
+
+-   The decimal values of operations (instructions are data):
+
+	+-------------+-----+
+	| Instruction | Hex |
+	+-------------+-----+
+	| nop         | 00  | 
+	| halt        | 10  | 
+	| rrmovl      | 20  | 
+	| irmovl      | 30  |
+	| rmmovl      | 40  |
+	| mrmovl      | 50  |
+	| addl        | 60  |
+	| subl        | 61  |
+	| andl        | 62  |
+	| xorl        | 63  |
+	| jmp         | 70  |
+	| jle         | 71  |
+	| jl          | 72  |
+	| je          | 73  |
+	| jne         | 74  |
+	| jge         | 75  |
+	| jg          | 76  |
+	| call        | 80  |
+	| ret         | 90  |
+	| pushl       | a0  |
+	| popl        | b0  |
+	+-------------+-----+
+
 ### Summary
 
 -   Similar state and instruction as IA32
@@ -3340,5 +3369,4 @@ April 15th, 2013 - Lecture: Memory
         - Value must be refereshed every 10-100ms
         - Sensitive to disturbances
         - Slower and cheaper than SRAM
-        
-
+  
