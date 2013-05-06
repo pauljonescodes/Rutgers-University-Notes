@@ -1,10 +1,6 @@
 Software Methodology <small>with Professor Sesh Venugopal</small>
 =================================================================
 
-<a href="https://github.com/PLJNS/Rutgers-University-Notes/blob/master/Computer%20Science/Software%20Methodology.md">
-<img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub">
-</a>
-
 Description
 -----------
 
@@ -135,7 +131,7 @@ January 24th, 2013 - Lecture
 -   An `Object` reference does not "know" what type of object it is.
 
 January 28th, 2013 - Recitation 1: GUI, Javadoc, Inheritence
-----------------------------------------------------------
+------------------------------------------------------------
 
 1.  Write a program that creates a frame with two buttons on it: OK and
     Quit. When OK is clicked, nothing will happen. When Quit is clicked,
@@ -933,19 +929,19 @@ February 11th, 2013 - Recitation 3: Tokenizing, GridBagLayout, Interfaces
     continue to be centered.
 
         package rec3;
-    
+
         import java.awt.GridBagConstraints;
         import java.awt.GridBagLayout;
         import java.awt.Insets;
         import java.awt.event.ActionEvent;
         import java.awt.event.ActionListener;
-    
+
         import javax.swing.JButton;
         import javax.swing.JFrame;
         import javax.swing.JLabel;
-    
+
         public class GridBagLayoutExample extends JFrame {
-    
+
         JButton[] buttons = {
            new JButton("North"),
            new JButton("West"),
@@ -953,17 +949,17 @@ February 11th, 2013 - Recitation 3: Tokenizing, GridBagLayout, Interfaces
            new JButton("East"),
            new JButton("South")
         };
-    
+
         public static final int[] widths = 
         {GridBagConstraints.REMAINDER,1,1,GridBagConstraints.REMAINDER,GridBagConstraints.REMAINDER};
-    
+
         GridBagLayout gb = new GridBagLayout();
         GridBagConstraints gbc = new GridBagConstraints();
-    
+
         ActionListener al = new ButtonListener();
-    
+
         JLabel label = new JLabel("Default");
-    
+
         public GridBagLayoutExample(String title) {
            super(title);
            setLayout(gb);
@@ -971,7 +967,7 @@ February 11th, 2013 - Recitation 3: Tokenizing, GridBagLayout, Interfaces
             addComponent(i);
            }
         }
-                  
+
         protected void addComponent(int i) {
             gbc.gridwidth = widths[i];
             if (buttons[i] != null) {
@@ -989,13 +985,13 @@ February 11th, 2013 - Recitation 3: Tokenizing, GridBagLayout, Interfaces
               gbc.insets = new Insets(0,0,0,0);
             }
         }
-                  
+
         protected class ButtonListener implements ActionListener {
             public void actionPerformed(ActionEvent e) {
               label.setText(e.getActionCommand());
             }
         }
-                  
+
         public static void main(String[] args) {
           // TODO Auto-generated method stub
           JFrame gbex = new GridBagLayoutExample("GridBagLayouExample");
@@ -1006,7 +1002,6 @@ February 11th, 2013 - Recitation 3: Tokenizing, GridBagLayout, Interfaces
         }
         }
 
-
 3.  Suppose you built a Java library of sorting algorithms: insertion
     sort, quicksort, and heapsort. You want to sell this library. How
     would you package your library so users could use any of these
@@ -1014,9 +1009,10 @@ February 11th, 2013 - Recitation 3: Tokenizing, GridBagLayout, Interfaces
     another (plug-n-play) with the least amount of code rewrite? Come up
     with the most appropriate design.
 
-    -   Write an interface called `SortingAlgorithm` with one or more methods
-    called `sort`, and then write various sorting classes for the different
-    sorting algorithms, that implement the `SortingAlgorithm` interface.
+    -   Write an interface called `SortingAlgorithm` with one or more
+        methods called `sort`, and then write various sorting classes
+        for the different sorting algorithms, that implement the
+        `SortingAlgorithm` interface.
 
 4.  Examine the following classes, then answer the questions below.
 
@@ -1054,20 +1050,22 @@ February 11th, 2013 - Recitation 3: Tokenizing, GridBagLayout, Interfaces
         that you should assume getThingValue() and getContraptionValue()
         are properly implemented. Do not change the compareTo() methods
         for this part.
-        
-        -   Attempting to implement `Comparable` interface twice with different
-        generic types. Not possible.\
-        -   The problem encountered at compilation time is that `Comparable< >`
-        has been implemented twice for the `Contraption`. Because
-        `Contraption` extends `Thing`, it also implements the interfaces
-        that `Thing` implements, i.e. `Comparable<Thing>`. So `Contraption`
-        implements `Comparable<Thing>` due to inheritance. But the explicit
-        declaration that `Contraption` implements `Comparable<Contraption>`
-        conflicts with the `Comparable<Thing>` implementation. Java will
-        only allow one implementation of `Comparable<someType>`. This is
-        true for any interface: SomeInterface can only be implemented once
-        regardless of what is.
-        
+
+        -   Attempting to implement `Comparable` interface twice with
+            different generic types. Not possible.\
+        -   The problem encountered at compilation time is that
+            `Comparable< >` has been implemented twice for the
+            `Contraption`. Because `Contraption` extends `Thing`, it
+            also implements the interfaces that `Thing` implements, i.e.
+            `Comparable<Thing>`. So `Contraption` implements
+            `Comparable<Thing>` due to inheritance. But the explicit
+            declaration that `Contraption` implements
+            `Comparable<Contraption>` conflicts with the
+            `Comparable<Thing>` implementation. Java will only allow one
+            implementation of `Comparable<someType>`. This is true for
+            any interface: SomeInterface can only be implemented once
+            regardless of what is.
+
     2.  Re-implement the two classes so that two instantiations of
         Contraption can be compared via one of their compareTo methods.
         You will need to fully implement the two compareTo methods,
@@ -1078,8 +1076,9 @@ February 11th, 2013 - Recitation 3: Tokenizing, GridBagLayout, Interfaces
         implemented. Use the following ordering rules for implementing
         the compareTo functions:
         -   Comparing two instantiations of Thing:
-            -   Compare the "a" values. Return -1, 0, or 1 as appropriate for a
-                compareTo function.
+            -   Compare the "a" values. Return -1, 0, or 1 as
+                appropriate for a compareTo function.
+
         -   Compare the "a" values. Return -1, 0, or 1 as appropriate
             for a compareTo function.
         -   Comparing two instantiations of Contraption: A Contraption's
@@ -1088,8 +1087,8 @@ February 11th, 2013 - Recitation 3: Tokenizing, GridBagLayout, Interfaces
             If an ordering cannot be established using only "a" values,
             compare the "b" values. This function should return -1, 0,
             or 1 as appropriate for a compareTo function.
-            -   A Contraption's "a" value has a higher precedence than its "b"
-                value.
+            -   A Contraption's "a" value has a higher precedence than
+                its "b" value.
 
     3.  Which classes' compareTo method will line 3 of the following
         code execute? Why?
@@ -1098,12 +1097,12 @@ February 11th, 2013 - Recitation 3: Tokenizing, GridBagLayout, Interfaces
             Contraption myContraption = new Contraption();
             int result = myThing.compareTo(myContraption);
             System.out.println(result);
-            
-        Line 3 will call `Thing`'s `compareTo()` method. The static type of
-        `myThing` is `Thing`, and so is the dynamic type. The argument type,
-        `Contraption` will match the `Thing` parameters since `Contraption`
-        is a subclass of `Thing`, i.e. all `Contraption` objects are `Thing`
-        objects.
+
+        Line 3 will call `Thing`'s `compareTo()` method. The static type
+        of `myThing` is `Thing`, and so is the dynamic type. The
+        argument type, `Contraption` will match the `Thing` parameters
+        since `Contraption` is a subclass of `Thing`, i.e. all
+        `Contraption` objects are `Thing` objects.
 
 February 12th, 2013 - Lecture: Interfaces
 -----------------------------------------
@@ -2263,9 +2262,9 @@ February 25th, 2013 - Recitation 5: Abstract Classes, Interfaces
     interfaces so that users could use any of these algorithms in their
     applications, and switch from using one to another (plug-n-play).
     Redo the exercise using abstract classes instead of interfaces.
-    
+
     This is the abstract superclass of all the sorting algorithms:
-    
+
              public abstract class Sort<T extends Comparable<T>> {
                 T[] list;
                 public Sort(T[] list) {    // implemented constructor
@@ -2273,10 +2272,10 @@ February 25th, 2013 - Recitation 5: Abstract Classes, Interfaces
                 }
                 public abstract void sort();  // abstract sort method
              }
-    
+
     Here's an example of one of the sorting implementations (just the
     shell):
-    
+
             public class InsertionSort<T extends Comparable<T>> extends Sort<T> { // note the syntax
                public InsertionSort(T[] list) {
                   super(list);
@@ -2286,17 +2285,15 @@ February 25th, 2013 - Recitation 5: Abstract Classes, Interfaces
                    ...
                 }
             }
-    
+
     And the usage in client code:
-    
+
             String[] list = new String[n];
             // populate list with strings
             ...
             Sort<String> sorter = new InsertionSort<String>(list);
             sorter.sort();
             // list is now in sorted order
-
-
 
 3.  Think of a board game in which there are two kinds of pieces:  a
     slow piece that moves only one square at a time, and a fast piece
@@ -2320,10 +2317,10 @@ February 25th, 2013 - Recitation 5: Abstract Classes, Interfaces
             public static final int DIR_NORTHWEST = 5;
             public static final int DIR_SOUTHWEST = 6;
             public static final int DIR_SOUTHEAST = 7;
-            
+
             protected int xPosition;
             protected int yPosition;
-            
+
             public boolean movePiece(int numSpaces, int direction) {
                 if (direction > DIR_SOUTHEAST || direction < DIR_NORTH || numSpaces < 0) {
                     return false;
@@ -2348,24 +2345,24 @@ February 25th, 2013 - Recitation 5: Abstract Classes, Interfaces
                 }
                 return false;
             }
-    
+
             public GamePiece(int xPosition, int yPosition) {
                 this.xPosition = xPosition;
                 this.yPosition = yPosition;
             }
         }
-    
+
         public class FastFlexiblePiece extends GamePiece {
             public FastFlexiblePiece(int xPosition, int yPosition) {
                 super(xPosition,yPosition);
             }
         }
-    
+
         public class SlowFlexiblePiece extends GamePiece {
             public SlowFlexiblePiece(int xPosition, int yPosition) {
                 super(xPosition,yPosition);
             }
-    
+
             public boolean movePiece(int numSpaces, int direction) {
                 if (numSpaces > 1) {
                     return false;
@@ -2373,12 +2370,12 @@ February 25th, 2013 - Recitation 5: Abstract Classes, Interfaces
                 return super.movePiece(numSpaces,direction);
             }
         }
-    
+
         public class FastInflexiblePiece extends GamePiece {
             public FastInflexiblePiece(int xPosition, int yPosition) {
                 super(xPosition,yPosition);
             }
-    
+
             public boolean movePiece(int numSpaces, int direction) {
                 if (direction > DIR_WEST) {
                     return false;
@@ -2386,12 +2383,12 @@ February 25th, 2013 - Recitation 5: Abstract Classes, Interfaces
                 return super.movePiece(numSpaces,direction);
             }
         }
-    
+
         public class SlowInflexiblePiece extends GamePiece {
             public SlowInflexiblePiece(int xPosition, int yPosition) {
                 super(xPosition,yPosition);
             }
-    
+
             public boolean movePiece(int numSpaces, int direction) {
                 if (direction > DIR_WEST || numSpaces >1) {
                     return false;
@@ -2399,25 +2396,25 @@ February 25th, 2013 - Recitation 5: Abstract Classes, Interfaces
                 return super.movePiece(numSpaces,direction);
             }
         }
-    
+
     **Example implementation 2**:
-    
+
         public abstract class GamePiece {
-    
+
             public static final int DIR_NORTH = 0;
             public static final int DIR_SOUTH = 1;
             public static final int DIR_EAST = 2; 
             public static final int DIR_WEST = 3;
-            
+
             protected int xPosition;
             protected int yPosition;
-            
+
             // all pieces can move 1 space horizontally or vertically
             public void move(int direction) {
                 if (direction > DIR_WEST || direction < 0) {
                     throw new IllegalArgumentException("direction > DIR_WEST || direction < 0");
                 }
-    
+
                 switch(direction) {
                 case DIR_NORTH:
                     yPosition++; break;
@@ -2429,28 +2426,28 @@ February 25th, 2013 - Recitation 5: Abstract Classes, Interfaces
                     xPosition--; break;
                 }
             }
-    
+
             public GamePiece(int xPosition, int yPosition) {
                 this.xPosition = xPosition;
                 this.yPosition = yPosition;
             }
         }
-    
+
         public class SlowPiece extends GamePiece {
             public SlowPiece(int xPosition, int yPosition) {
                 super(xPosition,yPosition);
             }
-    
+
             public void move(int direction) {
                 super.move(direction);
             }
         }
-    
+
         public class FastPiece extends GamePiece {
             public FastPiece(int xPosition, int yPosition) {
                 super(xPosition,yPosition);
             }
-    
+
             public void move(int numSpaces, int direction) {
                 if (numSpaces < 0) {
                    throw new IllegalArgumentException("numSpaces < 0");
@@ -2462,7 +2459,7 @@ February 25th, 2013 - Recitation 5: Abstract Classes, Interfaces
                 if (direction > DIR_WEST || direction < 0) {
                     throw new IllegalArgumentException("direction > DIR_WEST or < 0");
                 }
-    
+
                 switch(direction) {
                 case DIR_NORTH:
                     yPosition += numSpaces; break;
@@ -2475,19 +2472,19 @@ February 25th, 2013 - Recitation 5: Abstract Classes, Interfaces
                 }
             }
         }
-    
+
         public interface Flexible {
             public static final int DIR_NORTHEAST = 4;
             public static final int DIR_NORTHWEST = 5;
             public static final int DIR_SOUTHWEST = 6;
             public static final int DIR_SOUTHEAST = 7;
         }
-    
+
         public class SlowFlexiblePiece extends SlowPiece implements Flexible {
             public SlowFlexiblePiece(int xPosition, int yPosition) {
                 super(xPosition,yPosition);
             }
-    
+
             public void move(int direction) {
                 if (direction > Flexible.DIR_SOUTHEAST || direction < 0) {
                    throw new IllegalArgumentException("direction > Flexible.DIR_SOUTHEAST or < 0");
@@ -2508,12 +2505,12 @@ February 25th, 2013 - Recitation 5: Abstract Classes, Interfaces
                 }
             }
         }
-    
+
         public class FastFlexiblePiece extends FastPiece implements Flexible {
             public FastFlexiblePiece(int xPosition, int yPosition) {
                 super(xPosition,yPosition);
             }
-    
+
             public void move(int numSpaces, int direction) {
                 if (numSpaces < 0) {
                    throw new IllegalArgumentException("numSpaces < 0");
@@ -2539,13 +2536,12 @@ February 25th, 2013 - Recitation 5: Abstract Classes, Interfaces
         }
 
     **Further Thoughts**:
-    
+
     -   Is one implementation better than the other?
-    -   Is there any code redundancy in the second implementation? If so,
-        how can it be removed?
+    -   Is there any code redundancy in the second implementation? If
+        so, how can it be removed?
     -   Can you think of another possibility that does not involve any
         abstract classes?
-
 
 4.  A game developer asks you to make a set of classes to represent the
     monsters in a game. There are at least two different types of
@@ -2569,43 +2565,43 @@ February 25th, 2013 - Recitation 5: Abstract Classes, Interfaces
     `draw(int x, int y)`. The contents of the `updatePosition()` method
     are not important, but it has to change the monster's position and
     be different for either monster.
-    
+
         public abstract class MovingMonster implements Monster {
             protected Image image;
             protected int xPosition;
             protected int yPosition;
-    
+
             public abstract void updatePosition();
-    
+
             public void drawMonster() {
                 // Some implementation here.
             }
             public void setMonsterImage(Image i) {
                 image = i;
             }
-    
+
             public MovingMonster(Image image) {
                 this.image = image;
                 xPosition = yPosition = 0;
             }
         }
-    
+
         public class WalkingMonster extends MovingMonster {
             public void updatePosition() {
                 xPosition++;
             }
-            
+
             public WalkingMonster(Image image) {
                 super(image);
             }
         }
-    
+
         public class BouncingMonster extends MovingMonster {
             public void updatePosition() {
                 xPosition++;
                 yPosition = (yPosition + 1) % 2;
             }
-            
+
             public BouncingMonster(Image image) {
                 super(image);
             }
@@ -2614,31 +2610,31 @@ February 25th, 2013 - Recitation 5: Abstract Classes, Interfaces
 February 26th, 2013 - Assignment 2: 2-Player Chess
 --------------------------------------------------
 
-- For this assignment you will explore how to apply the design ideas
-learned in class to design and implement a board game.
+-   For this assignment you will explore how to apply the design ideas
+    learned in class to design and implement a board game.
 
-- You will work **individually** on this assignment. Read the [DCS
-Academic Integrity Policy for Programming
-Assignments](http://www.cs.rutgers.edu/policies/academicintegrity/index.php?page=3)
-- you are responsible for this. In particular, note that **"All
-Violations of the Academic Integrity Policy will be reported by the
-instructor to the appropriate Dean".**
+-   You will work **individually** on this assignment. Read the [DCS
+    Academic Integrity Policy for Programming
+    Assignments](http://www.cs.rutgers.edu/policies/academicintegrity/index.php?page=3)
+-   you are responsible for this. In particular, note that **"All
+    Violations of the Academic Integrity Policy will be reported by the
+    instructor to the appropriate Dean".**
 
-- You will implement the game of
-[Chess](http://en.wikipedia.org/wiki/Chess) for two players. Your
-program, when launched, should draw the board using the terminal and
-prompt whomever's turn it is (white or black) for a move. Once the move
-is executed, the move should be played and the new board drawn, and the
-other player queried.
+-   You will implement the game of
+    [Chess](http://en.wikipedia.org/wiki/Chess) for two players. Your
+    program, when launched, should draw the board using the terminal and
+    prompt whomever's turn it is (white or black) for a move. Once the
+    move is executed, the move should be played and the new board drawn,
+    and the other player queried.
 
 ### Output
 
--  The board should be drawn on the screen with with ascii art in some sort
-of grid. Everything should be easily viewable in a standard sized
-terminal with 80 columns and 24 rows. The identity of each piece, color
-and type, must be easily discernible from the display. If the player
-whose turn it is is in check, that must be reported. The details are
-left to you.
+-   The board should be drawn on the screen with with ascii art in some
+    sort of grid. Everything should be easily viewable in a standard
+    sized terminal with 80 columns and 24 rows. The identity of each
+    piece, color and type, must be easily discernible from the display.
+    If the player whose turn it is is in check, that must be reported.
+    The details are left to you.
 
 -   Every piece must know what moves are allowed on it. If a player
     attempts an illegal move on a piece, your program should not execute
@@ -2654,15 +2650,15 @@ left to you.
 
 ### Input
 
--  Your program needs to accept input of the form "FileRank FileRank",
-where the first file (column) and rank (row) are the coordinates of the
-piece to be moved, and the second file and rank are the coordinates of
-where it should end up.
+-   Your program needs to accept input of the form "FileRank FileRank",
+    where the first file (column) and rank (row) are the coordinates of
+    the piece to be moved, and the second file and rank are the
+    coordinates of where it should end up.
 
--  The figure immediately below should make it clear which rank and file
-combinations belong to which squares. The white pieces always initially
-occupy ranks 1 and 2. The black pieces always initially occupy ranks 7
-and 8. The queen always starts on the d file.
+-   The figure immediately below should make it clear which rank and
+    file combinations belong to which squares. The white pieces always
+    initially occupy ranks 1 and 2. The black pieces always initially
+    occupy ranks 7 and 8. The queen always starts on the d file.
 
 -   As an example, advancing the white king's pawn two spaces would be
     input as "e2 e4".
@@ -2734,13 +2730,13 @@ and 8. The queen always starts on the d file.
 
 ### Submission
 
-- Name your project `Chess`. Use packages as necessary. Name your main
-class `Chess`. Make sure you record your name in each Java file with the
-@author Javadoc tag.
+-   Name your project `Chess`. Use packages as necessary. Name your main
+    class `Chess`. Make sure you record your name in each Java file with
+    the @author Javadoc tag.
 
-- Zip your project source into a zip archive called `chess.zip` (see
-Eclipse tab, under "Zipping up a Project") and submit this file to
-Sakai.
+-   Zip your project source into a zip archive called `chess.zip` (see
+    Eclipse tab, under "Zipping up a Project") and submit this file to
+    Sakai.
 
 -   [Source](https://github.com/PLJNS/Rutgers-Soft-Meth-Spring-2013/tree/master/Chess/src)
 
@@ -2758,8 +2754,10 @@ February 25th, 2013 - Lecture
                 Point p = (Point) o;
                 return x == p.x && y = p.y;
                 }
-   -   Another example from [StackOverflow](http://stackoverflow.com/a/27609/1489522):
-   
+
+-   Another example from
+    [StackOverflow](http://stackoverflow.com/a/27609/1489522):
+
             public boolean equals(Object obj) {
               if (obj == null)
                   return false;
@@ -2774,101 +2772,170 @@ February 25th, 2013 - Lecture
                   append(age, rhs.age).
                   isEquals();
             }
-   -   Should be:
-       -  reflexive 
-       -  symmetric
-       -  transitive
-       -  consistent
--   [access levels](http://www.tutorialspoint.com/java/java_access_modifiers.htm) 
+
+-   Should be:
+    -   reflexive
+    -   symmetric
+    -   transitive
+    -   consistent
+
+-   [access
+    levels](http://www.tutorialspoint.com/java/java_access_modifiers.htm)
     -   `private`
-        -   Methods, Variables and Constructors that are declared private
-            **can only be accessed within the declared class itself**.
-        -   Private access modifier is the most restrictive access level. **Class
-            and interfaces cannot be private**.
-        -   Variables that are declared private *can be accessed outside the class
-            if public getter methods are present in the class*.
+        -   Methods, Variables and Constructors that are declared
+            private **can only be accessed within the declared class
+            itself**.
+        -   Private access modifier is the most restrictive access
+            level. **Class and interfaces cannot be private**.
+        -   Variables that are declared private *can be accessed outside
+            the class if public getter methods are present in the
+            class*.
+
     -   `package`
     -   `protected`
-        -   Variables, methods and constructors which are declared protected in a
-            superclass can be accessed only by the subclasses in other package or any 
-            class within the package of the protected members' class.
-        -   The protected access modifier cannot be applied to class and interfaces. 
-            Methods, fields can be declared protected, however methods and fields in 
-            a interface cannot be declared protected.
-        -   Protected access gives the subclass a chance to use the helper method or 
-            variable, while preventing a nonrelated class from trying to use it.
+        -   Variables, methods and constructors which are declared
+            protected in a superclass can be accessed only by the
+            subclasses in other package or any class within the package
+            of the protected members' class.
+        -   The protected access modifier cannot be applied to class and
+            interfaces. Methods, fields can be declared protected,
+            however methods and fields in a interface cannot be declared
+            protected.
+        -   Protected access gives the subclass a chance to use the
+            helper method or variable, while preventing a nonrelated
+            class from trying to use it.
+
     -   `public`
-        -   A class, method, constructor, interface etc declared public **can be
-            accessed from any other class**. Therefore fields, methods, blocks 
-            declared inside a public class can be accessed from any class 
-            belonging to the Java Universe.
-        -   However if the public class we are trying to access is in a 
-            different package, then the public class **still need to be 
+        -   A class, method, constructor, interface etc declared public
+            **can be accessed from any other class**. Therefore fields,
+            methods, blocks declared inside a public class can be
+            accessed from any class belonging to the Java Universe.
+        -   However if the public class we are trying to access is in a
+            different package, then the public class **still need to be
             imported**.
-        -   Because of class inheritance, **all public methods and variables of a
-            class are inherited by its subclasses**.
-    - [Awesome table](http://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html):
-<table border="1" style="text-align:center;margin-left:auto; margin-right:auto;">
-<tbody><tr>
-<th id="h1">Modifier</th>
-<th id="h2">Class</th>
-<th id="h3">Package</th>
-<th id="h4">Subclass</th>
-<th id="h5">World</th>
-</tr>
-<tr>
-<td headers="h1"><code>public</code></td>
-<td headers="h2">Y</td>
-<td headers="h3">Y</td>
-<td headers="h4">Y</td>
-<td headers="h5">Y</td>
-</tr>
-<tr>
-<td headers="h1"><code>protected</code></td>
-<td headers="h2">Y</td>
-<td headers="h3">Y</td>
-<td headers="h4">Y</td>
-<td headers="h5">N</td>
-</tr>
-<tr>
-<td headers="h1">no modifier</td>
-<td headers="h2">Y</td>
-<td headers="h3">Y</td>
-<td headers="h4">N</td>
-<td headers="h5">N</td>
-</tr>
-<tr>
-<td headers="h1"><code>private</code></td>
-<td headers="h2">Y</td>
-<td headers="h3">N</td>
-<td headers="h4">N</td>
-<td headers="h5">N</td>
-</tr>
-</tbody></table> 
+        -   Because of class inheritance, **all public methods and
+            variables of a class are inherited by its subclasses**.
+
+    -   [Awesome
+        table](http://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html):
+        <table border="1" style="text-align:center;margin-left:auto; margin-right:auto;">
+        <tbody><tr>
+        <th id="h1">
+        Modifier
+        </th>
+        <th id="h2">
+        Class
+        </th>
+        <th id="h3">
+        Package
+        </th>
+        <th id="h4">
+        Subclass
+        </th>
+        <th id="h5">
+        World
+        </th>
+        </tr>
+        <tr>
+        <td headers="h1">
+        <code>public</code>
+        </td>
+        <td headers="h2">
+        Y
+        </td>
+        <td headers="h3">
+        Y
+        </td>
+        <td headers="h4">
+        Y
+        </td>
+        <td headers="h5">
+        Y
+        </td>
+        </tr>
+        <tr>
+        <td headers="h1">
+        <code>protected</code>
+        </td>
+        <td headers="h2">
+        Y
+        </td>
+        <td headers="h3">
+        Y
+        </td>
+        <td headers="h4">
+        Y
+        </td>
+        <td headers="h5">
+        N
+        </td>
+        </tr>
+        <tr>
+        <td headers="h1">
+        no modifier
+        </td>
+        <td headers="h2">
+        Y
+        </td>
+        <td headers="h3">
+        Y
+        </td>
+        <td headers="h4">
+        N
+        </td>
+        <td headers="h5">
+        N
+        </td>
+        </tr>
+        <tr>
+        <td headers="h1">
+        <code>private</code>
+        </td>
+        <td headers="h2">
+        Y
+        </td>
+        <td headers="h3">
+        N
+        </td>
+        <td headers="h4">
+        N
+        </td>
+        <td headers="h5">
+        N
+        </td>
+        </tr>
+        </tbody></table> 
+
 -   `interface`
-    -   an interface is a group of related methods with empty bodies 
+    -   an interface is a group of related methods with empty bodies
     -   Interfaces cannot be instantiated, but rather are implemented
-    -   One benefit of using interfaces is that they simulate multiple inheritance
--   [`abstract` classes](http://docs.oracle.com/javase/tutorial/java/IandI/abstract.html)
-    -   An abstract class is a class that is declared abstract - it may or may not
-        include abstract methods. Abstract classes **cannot be instantiated**, 
-        but they **can be subclassed**.
-    -   An abstract method is a method that is declared **without an implementation**
-    -   When an abstract class is subclassed, the subclass usually provides
-        implementations for all of the abstract methods in its parent class. 
-        However, if it does not, the subclass must also be declared abstract.
-- polymorphism
-  - inheritance
-  - `static`
-  - dynamic binding
+    -   One benefit of using interfaces is that they simulate multiple
+        inheritance
+
+-   [`abstract`
+    classes](http://docs.oracle.com/javase/tutorial/java/IandI/abstract.html)
+    -   An abstract class is a class that is declared abstract - it may
+        or may not include abstract methods. Abstract classes **cannot
+        be instantiated**, but they **can be subclassed**.
+    -   An abstract method is a method that is declared **without an
+        implementation**
+    -   When an abstract class is subclassed, the subclass usually
+        provides implementations for all of the abstract methods in its
+        parent class. However, if it does not, the subclass must also be
+        declared abstract.
+
+-   polymorphism
+-   inheritance
+-   `static`
+-   dynamic binding
 
 ### UML Class Diagram II
 
--   Class A depends on class B if A **uses** B in such a way that a change in B
-    will effect A
--   Say A depends on B. Typically, then, B would appear as a parameter, return
-    type, or local variable in a method of A.
-    
+-   Class A depends on class B if A **uses** B in such a way that a
+    change in B will effect A
+-   Say A depends on B. Typically, then, B would appear as a parameter,
+    return type, or local variable in a method of A.
+
 March 4th, 2013 - Recitation 6: UML
 -----------------------------------
 
@@ -2924,7 +2991,7 @@ March 5th, 2013 - Lecture
     classes.
     -   For example, if you had a `Company` and an `Employee` object,
         then you'd have a `Job` class to stand for the relationship.
-        
+
 March 8th, 2013 - Project Part 2: Photo Album (Design and Implementation II)
 ----------------------------------------------------------------------------
 
@@ -3209,10 +3276,11 @@ Your project will be graded on the following, for 200 points:
     confusing interface: **upto 10 pts**
 -   Lacks scalability i.e. doesn't display large amounts of data (e.g.
     many tens of photos or more) in a easily navigable way: **upto 10
-    pts**        
-        
+    pts**
+
 March 11th, 2013 - Recitation 7: Table/Model, Image Handling
 ------------------------------------------------------------
+
 1.  UML Quiz
 
 2.  You will learn how to create a GUI application for a simple
@@ -3225,7 +3293,7 @@ March 11th, 2013 - Recitation 7: Table/Model, Image Handling
 3.  You will learn how to load, display, and resize images using
     javax.swing.Image, javax.swing.ImageIcon, javax.swing.JSlider,
     java.awt.BorderLayout, and javax.swing.JScrollPane.
-    
+
 March 28th, 2013 - Recitation 8: Testing, Design Patterns
 ---------------------------------------------------------
 
@@ -3233,10 +3301,8 @@ March 28th, 2013 - Recitation 8: Testing, Design Patterns
     `year`. It returns the date of the next day that follows the given
     input date. You may assume that `year` is in the range 1901 through
     2013. Using equivalance classes and boundary values, determine the
-    test cases you would use to test a software implementation of this
-    function. Include robustness tests.
-
-    
+        test cases you would use to test a software implementation of
+        this function. Include robustness tests.
 
 2.  A polynomial may be represented as a linked list as follows: for
     every term in the polynomial there is one entry in the linked list
@@ -3266,21 +3332,16 @@ March 28th, 2013 - Recitation 8: Testing, Design Patterns
     Also identify test cases for checking correct reporting of errors
     (robustness).
 
-    
-
 3.  Draw a state diagram that models a user's shopping session at
     amazon.com, starting with a search. Show the UML for an
     implementation using the state design pattern including key fields
     and headers for the methods in the states.
-
-    
 
 4.  Show how you would enhance the Singleton pattern to allow up to a
     maximum number of instances of an object. There should be a way for
     clients to recycle instances, i.e. when a client is finished with an
     instance, it gives it up, and this instance can be later dealt out
     in response to a new instance request.
-
 
 March 29th, 2013 - Assignment 3 (Web Discussion Groups UML)
 -----------------------------------------------------------
@@ -3414,8 +3475,6 @@ April 1st, 2013 - Recitation 9: Multithreading, Android
     text area that lists the sub contents. Your UI doesn't have to be
     pretty - just make it work correctly.
 
-
-
 April 2nd, 2013 - Lecture: Android Development
 ----------------------------------------------
 
@@ -3432,7 +3491,6 @@ machine before you do the Android setup. (Java and Eclipse are already
 available on the ilab machines.)
 
 ### Android SDK
-
 
 #### Step 1: Download the SDK
 
@@ -3459,7 +3517,6 @@ agree to the terms, then download.
 
 The next phase is to install the ADT for Eclipse.
 
-
 ### ADT for Eclipse
 
 ADT stands for Android Development Toolkit. It is a plug in for Eclipse
@@ -3471,18 +3528,27 @@ and execute the following two steps.
 
 #### Step 1: Download the ADT Plugin
 
-The first thing you will need to do is download the Android SDK (software development toolkit), which has all the tools you will need to develop Android programs.
+The first thing you will need to do is download the Android SDK
+(software development toolkit), which has all the tools you will need to
+develop Android programs.
 
-Go to Get the Android SDK On that page, you will see USE AN EXISTING IDE toward the lower half. Expand it, and you'll see this:
+Go to Get the Android SDK On that page, you will see USE AN EXISTING IDE
+toward the lower half. Expand it, and you'll see this:
 
-I am on a Mac, so it shows up a Mac download button. If you are on Windows, you should a Windows download button. Click on the button, agree to the terms, then download.
+I am on a Mac, so it shows up a Mac download button. If you are on
+Windows, you should a Windows download button. Click on the button,
+agree to the terms, then download.
 
--   For the Mac, you will download a zip file called android-sdk_r21.0.1-macosx.zip
--   For Windows, you will download an installer file, installer_r21.0.1-windows.exe
+-   For the Mac, you will download a zip file called
+    android-sdk\_r21.0.1-macosx.zip
+-   For Windows, you will download an installer file,
+    installer\_r21.0.1-windows.exe
 
 #### Step 2: Point the ADT to the SDK
 
--   Follow the instructions. On my Mac, I unpacked the file, moved the resulting directory to directly under my home directory, and renamed it as android-sdk-macosx. Here are the contents of this directory:
+-   Follow the instructions. On my Mac, I unpacked the file, moved the
+    resulting directory to directly under my home directory, and renamed
+    it as android-sdk-macosx. Here are the contents of this directory:
 
 ### Adding Platforms and Packages
 
@@ -3510,29 +3576,32 @@ easy matter to do it in Eclipse, with the Android SDK Manager.
 
 ### Downloading Platforms and SDK Tools with SDK Manager
 
-After plugging in the ADT into Eclipse, when you start Eclipse, you should see a set of extra icons in the task bar at the top.
-
+After plugging in the ADT into Eclipse, when you start Eclipse, you
+should see a set of extra icons in the task bar at the top.
 
 Clicking on the SDK Manager icon brings up this window:
 
+The manager displays all available versions of the platforms. Here I
+have expanded and highlighted the versions that I installed: 4.2, 3.2,
+and 2.2 (each of these is mapped to an API level.) I have superimposed a
+snapshot of my filesystem where you see the corresponding platform
+directories under android-mac-osx/platforms. If I were to expand any of
+the other versions (such as Android 4.1.2), it would show nothing
+installed. Also notice at the top that the SDK tools version r21 is
+installed.
 
+Now say I wanted to install Android 2.3.3. (The expansion of that
+version in the SDK shows it is not installed):
 
-The manager displays all available versions of the platforms. Here I have expanded and highlighted the versions that I installed: 4.2, 3.2, and 2.2 (each of these is mapped to an API level.) I have superimposed a snapshot of my filesystem where you see the corresponding platform directories under android-mac-osx/platforms. If I were to expand any of the other versions (such as Android 4.1.2), it would show nothing installed. Also notice at the top that the SDK tools version r21 is installed.
-
-Now say I wanted to install Android 2.3.3. (The expansion of that version in the SDK shows it is not installed):
-
-
-
-I can install all packages under Android 2.3.3 by clicking on the checkbox to its left. But here, I am choosing to install only the SDK Platform (required at minimum), and Google APIs (required if you are going to use Google tools such as maps), so I check only these two:
-
-
+I can install all packages under Android 2.3.3 by clicking on the
+checkbox to its left. But here, I am choosing to install only the SDK
+Platform (required at minimum), and Google APIs (required if you are
+going to use Google tools such as maps), so I check only these two:
 
 Clicking on the "Install 2 packages..." button brings up this dialog:
 
-
-
-Choose "Accept all" and click "Install". After installation, you should see this in the SDK manager:
-
+Choose "Accept all" and click "Install". After installation, you should
+see this in the SDK manager:
 
 ### Creating an Emulator
 
@@ -3654,129 +3723,260 @@ the Hello World app can be launched, of course - observe the Android
 icon used as the launcher icon, because we set it up that way in the
 project creation process.)
 
+April 22nd, 2013 - Recitation 12: Multithreading, Design Patterns
+-----------------------------------------------------------------
+
+1.  Suppose you use a search engine to search for a word or phrase that
+    results in a match with a large number (hundreds) of web pages.
+    However, the browser will only display a list of n (some variable
+    parameter) page links in one screenful. Implement a multi-threaded
+    program with one thread for the browser display, and another for the
+    search engine, and have the search engine deal out hits in batches
+    of the max size the browser can display in one screenful. You may
+    assume that a method called fetch has already been written in the
+    search engine to fetch the next batch of hits, returned as a list of
+    URL strings.
+
+        public class Searcher implements Runnable {
+              private Request req;   // search request
+              private Buffer buf;    // to store hits for display
+              public Searcher(Request req, Buffer buf) {
+                 this.req = req;
+                 this.buf = buf;
+                 new Thread(this).start();
+              }
+              public void run() {
+                 while (true) {
+                    while ((List hits = fetchNext(req)) != null)  { // more
+              results from fetch
+                       buf.put(hits);
+                 }
+              }
+           }
+
+           public class Displayer implements Runnable {
+              private Buffer buf;
+              public Displayer(Buffer buf) {
+                 this.buf = buf;
+                 new Thread(this).start();
+              }
+              public void run() {
+                 while (true) {
+                    display(buf.get());
+                 }
+              }
+           }
+
+           public class Buffer {
+              List hits;
+              boolean available = false;
+              public synchronized void put(List hits) {
+                 while (available) {
+                    try {
+                        wait();
+                    }
+                    catch (Exception e) { }
+                 }
+                 available = true;
+                 this.hits = hits;
+                 notifyAll();
+              }
+
+              public synchronized List get() {
+                 while (!available) {
+                    try {
+                        wait();
+                    }
+                 catch (Exception e) { }
+              }
+              available = false;
+              notifyAll();
+              return hits;
+           }
+
+2.  In class you saw how one prime producer synchronized with one prime
+    consumer. Rewrite the `PrimeCentral` class with appropriate
+    synchronization to handle 3 producers and 1 consumer. For a given
+    bound (max number up to which primes need to be computed), each
+    producer will generate primes for a third of the range 2..bound.
+    (So, for instance, if bound is 9000 then the first producer will
+    generate primes between 2 and 3000, the second between 3001 and
+    6000, and the third, between 6001 and 9000). The consumer should be
+    able to get at any available prime in any of the three ranges. Make
+    sure that you do not over-synchronize, i.e. if a consumer is trying
+    to get at a prime in one of the ranges, a producers that may be
+    attempting to put a prime in one of the other ranges should not be
+    locked out.
+
+3.  You are asked to implement an application that can plot graphs of
+    mathematical functions, each function being of the form `y = f(x)`.
+    While there may be a choice of functions that can be plotted, only
+    one function is plotted at a time on a given 2-D screen.
+
+    How would you use the `Template Method` design pattern to build your
+    code? Write the outline of each class in your design, including
+    relevant fields, constructors, and methods - pick any two specific
+    mathematical functions to demonstrate the pattern.
+
+    -   The abstract class hosting the template method (NOT abstract)
+        and the hook method (abstract):
+
+            public abstract class Plotter {
+
+               ... // constructor and methods to set up and manage drawing objects
+
+               public void draw(double[] xlist) { // template method, NOT abstract
+                    ...  // set up graphing tools
+                    for (int i=0; i < xlist.length; i++) {
+                        double y = computeY(xlist[i]);
+                    }
+               }
+
+               protected abstract double computeY(double x);   // hook method
+            }
+
+    -   A specific line plotter, using the function of the form
+        `y = mx + b`
+
+            public class LinePlotter extends Plotter {
+
+               double slope, yIntercept;
+
+               public LinePlotter(double double slope, double yIntercept) {
+                   this.slope = slope; this.yIntercept = yIntercept;
+               }      
+
+               protected double computeY(double x) {  // implement hook 
+                   return slope*x + yIntercept; 
+               }
+            }
+
 April 26th, 2013 - Final Exam Study Guide
 -----------------------------------------
 
-### Object-Oriented Design with Java. 
-	
+### Object-Oriented Design with Java.
+
 #### Interfaces
 
 -   An abstract type that is used to specify an interface that clases
-	must implement.
+    must implement.
 -   Declared using the `interface` keyword.
 -   May contain method signature and constant declarations.
 -   May not be instantiated.
--   *A class that implements and interface must implement
-	all of the methods described in the interface or be an abstract
-	class.*
+-   *A class that implements and interface must implement all of the
+    methods described in the interface or be an abstract class.*
 -   Can be used to simulate multiple inheritance.
 -   An interface can extend any number of interfaces.
 -   An interface may not implement an interface.
 -   An interface is *generally* public.
--   An interface defines a new type name that is tracked by the compiler.
--   All fields in an interface are implicity `public`, `static`, and `final`.
+-   An interface defines a new type name that is tracked by the
+    compiler.
+-   All fields in an interface are implicity `public`, `static`, and
+    `final`.
 -   All methods in an interface are implicity `public` and `abstract`.
--   When a class implements an interface, it *must implement every single
-	method* that is prescribed in the interface.
+-   When a class implements an interface, it *must implement every
+    single method* that is prescribed in the interface.
 -   An interface may be generic.
 
-		public interface Comparable<T> {
-			int compareTo(T o);
-		}
+        public interface Comparable<T> {
+            int compareTo(T o);
+        }
 
 #### Inheritance
 
 -   A class that derived from another class is called a *subclass*.
--   The class from which the subclass is derived is called the 
-	*superclass*.
+-   The class from which the subclass is derived is called the
+    *superclass*.
 -   Except for `Object`, which has no superclass, every class has one
-	and one only direct superclass (single inheritance).
--   In the absence of any other explicit superclass,
-	every class is implicitiy a subclass of `Object`.
-	-   From `Object`, every Java class has, and you have likely seen,
-		-   `equals()` - compares address of objects
-		-   `toString()` - returns address of object
-		-   `hashCode()` - returns the hash code value for object
+    and one only direct superclass (single inheritance).
+-   In the absence of any other explicit superclass, every class is
+    implicitiy a subclass of `Object`.
+    -   From `Object`, every Java class has, and you have likely seen,
+        -   `equals()` - compares address of objects
+        -   `toString()` - returns address of object
+        -   `hashCode()` - returns the hash code value for object
 
 -   The design aspect of inheritance is to model the "is a" relationship
-	between objects.
-	-   A car is a motor vehicle.
-	-   A motor cycle is a motor vehicle.
-	-   A colored point is a point.
-	-   A zebra is an animal.
+    between objects.
+    -   A car is a motor vehicle.
+    -   A motor cycle is a motor vehicle.
+    -   A colored point is a point.
+    -   A zebra is an animal.
 
 #### Abstract classes
 
 -   An abstract class is a class that is declared by `abstract`.
 -   It may or may not include abstract methods.
 -   *Abstract classes may not be instantiated, but they can be
-	subclassed.*
--   Unlike interfaces, abstract classes *may contain values
-	that are not static and final*, and they *may contain implemented
-	methods.*
+    subclassed.*
+-   Unlike interfaces, abstract classes *may contain values that are not
+    static and final*, and they *may contain implemented methods.*
 -   When several classes have a common conceptual foundation they can be
-	**generalized** into an `abstract` superclass.
--   In Java, a class is defined `abstract` in the class header. 
+    **generalized** into an `abstract` superclass.
+-   In Java, a class is defined `abstract` in the class header.
 -   An `abstract` method is one that has no implementation.
 -   An `abstract` class may have *zero or more* `abstract` methods.
-
 
 #### Polymorphism
 
 -   The ability to create a variable, function, or object that has more
-	than one form. 
+    than one form.
 -   Used to implement a style of programming called *message-passing* in
-	the literature.
--   Dynamically binding to same functionality in classes at different levels of
-	an inheritance hierarchy using a "least common denominator" type is known
-	as **inheritance polymorphism**.
+    the literature.
+-   Dynamically binding to same functionality in classes at different
+    levels of an inheritance hierarchy using a "least common
+    denominator" type is known as **inheritance polymorphism**.
 
-### UML 
+### UML
 
--   UML stands for Unified Modeling Language, which is a mainly graphical
-	notation used to express object-oriented design.
--   There are three kinds of UML diagrams that are most useful in practice:
-	-   **Class interaction diagram**, used to show classes and the
-		relationships between them.
-	-   **Sequence diagram**, used to show sequences of activity when methods
-		are invoked on classes.
-	-   **State diagram**, used to represent state based designs.
+-   UML stands for Unified Modeling Language, which is a mainly
+    graphical notation used to express object-oriented design.
+-   There are three kinds of UML diagrams that are most useful in
+    practice:
+    -   **Class interaction diagram**, used to show classes and the
+        relationships between them.
+    -   **Sequence diagram**, used to show sequences of activity when
+        methods are invoked on classes.
+    -   **State diagram**, used to represent state based designs.
 
 #### Class diagrams
 
 -   The class diagram is the main building block of OO modelling.
--   It is used both for general conceptual modelling and for systematics.
+-   It is used both for general conceptual modelling and for
+    systematics.
 -   Classes contain three parts:
-	1.  The upper part holds the name of the class
-	2.  The middle part contains the attributes of the class.
-	3.  The bottom part gives the methods or operations the class can take
-		or undertake.
--   To specify the visibility of a class member, these are the
-	notations used before the name:
+    1.  The upper part holds the name of the class
+    2.  The middle part contains the attributes of the class.
+    3.  The bottom part gives the methods or operations the class can
+        take or undertake.
 
-		+	Public
-		-	Private
-		#	Protected
-		~	Package
-		/	Derived
-		_	Static
+-   To specify the visibility of a class member, these are the notations
+    used before the name:
 
--   UML allows you to specify a relationship of class members using external
-	links.
+        +   Public
+        -   Private
+        #   Protected
+        ~   Package
+        /   Derived
+        _   Static
 
-		Association:    --------+> // solid line,  filled triangle
-		Aggregation:    -------<=> // solid line,  empty diamond
-		Composition:    -------<+> // solid line,  filled diamond
-		Generalization: --------|> // solid line,  empty triangle
-		Dependancy:     - - - - |> // jagged line, empty triagnle 
+-   UML allows you to specify a relationship of class members using
+    external links.
 
--   To specific the multiplicity of an association of at least two related
-	classes is done with the **multiplicity** entity, which is defined as follows:
+        Association:    --------+> // solid line,  filled triangle
+        Aggregation:    -------<=> // solid line,  empty diamond
+        Composition:    -------<+> // solid line,  filled diamond
+        Generalization: --------|> // solid line,  empty triangle
+        Dependancy:     - - - - |> // jagged line, empty triagnle 
 
-		0..1	No instances, or one instance (optional, may)
-		1		Exactly one instance
-		0..*	Zero or more instances (also *)
-		1..*	One or more instances (at least one)
+-   To specific the multiplicity of an association of at least two
+    related classes is done with the **multiplicity** entity, which is
+    defined as follows:
+
+        0..1    No instances, or one instance (optional, may)
+        1       Exactly one instance
+        0..*    Zero or more instances (also *)
+        1..*    One or more instances (at least one)
 
 ##### Association
 
@@ -3784,754 +3984,870 @@ April 26th, 2013 - Final Exam Study Guide
 -   They are representing with simply a line.
 -   It can be named.
 -   At the both ends of the line, the members can have role names.
--   The four types are bi-directional, uni-directional, aggregation,
-	and reflexive. (The first two are the most common.)
--   *Association defines a relationship between classes of objects
-	that allows one object instance to cause another to
-	perform an action on its behalf.*
+-   The four types are bi-directional, uni-directional, aggregation, and
+    reflexive. (The first two are the most common.)
+-   *Association defines a relationship between classes of objects that
+    allows one object instance to cause another to perform an action on
+    its behalf.*
 -   "Sending a message" or "invoking a method" or "calling a member
-	function."
+    function."
 -   An "owns a" relationship.
-		     
-		1     Owns     1..1
-		------------------>
-		Owner        Owned
+
+        1     Owns     1..1
+        ------------------>
+        Owner        Owned
 
 -   Directed associations happen when the `Owner`, in this case, knows
-	about what it `Owns`, but the `Owned` does not "know" about its
-	`Owner`.
+    about what it `Owns`, but the `Owned` does not "know" about its
+    `Owner`.
 -   At time, an association between two classes itself has properties,
-	an **association class** is used to model these properties.
-	-   This is represented by a jagged line stemming from where one might
-		usually put the title of the association.
+    an **association class** is used to model these properties.
+    -   This is represented by a jagged line stemming from where one
+        might usually put the title of the association.
 
 ##### Aggregation
 
--   This differs from ordinary composition in that it does not
-	imply ownership. 
+-   This differs from ordinary composition in that it does not imply
+    ownership.
 -   In composition, when the owning object is destroyed, so are the
-	contained objects. 
+    contained objects.
 -   In aggregation, this is not *necessarily* true.
 -   For example, if a University closes, the departments it owns, like
-	Computer Science, will likely close along with it. On the other hand,
-	the Professors and Students will still exist.
+    Computer Science, will likely close along with it. On the other
+    hand, the Professors and Students will still exist.
 -   A "has a" relationship.
 -   Represented with an empty diamond and a line, an unfilled diamond.
 
-					
-		Pond <=>-------------- Duck
-			    0..1      0..*
-		
--   Good examples of aggregation are states aggregating counties that
-	aggregate townships, police stations aggregate police officers,
-	and directories aggregate files.
+        Pond <=>-------------- Duck
+                0..1      0..*
 
+-   Good examples of aggregation are states aggregating counties that
+    aggregate townships, police stations aggregate police officers, and
+    directories aggregate files.
 
 ##### Composition
 
 -   This is a stronger variant of the "owns a" relationship.
 -   Composition usualy has a strong *life cycle dependancy* between
-	instances of the container class and instances of the contained
-	classes.
+    instances of the container class and instances of the contained
+    classes.
 -   It is a way to combine simple objects into more complex ones.
 -   Compositions are a criticle building block of basic data structures.
 -   Example: An automobile is composed from objects including steering
-	wheel, seat, gearbox, and engine.
+    wheel, seat, gearbox, and engine.
 -   Represented with a filled diamond.
 
-		Car<+>----------Carburetor
-		      0..1  1..1
+        Car<+>----------Carburetor
+              0..1  1..1
 
 -   Alternatively, one can represent composition by nesting a class
-	within the class representation.
+    within the class representation.
 
 ##### Generalization
 
 -   The generalization relationship ("is a") indicates that one of the
-	two related classes is considered to be a specialized form of the
-	other and a superclass is considered a generalization of the subclass.
--   It means that any instances of the subclass is also an instance
-	of the superclass.
--   The generalization relationship is also known as the inheritance
-	or "is a" relationship.
+    two related classes is considered to be a specialized form of the
+    other and a superclass is considered a generalization of the
+    subclass.
+-   It means that any instances of the subclass is also an instance of
+    the superclass.
+-   The generalization relationship is also known as the inheritance or
+    "is a" relationship.
 -   This is almost synomymous with interface implementation.
 -   The representation in UML is a hollow triangle.
-		
-		Student ----------|> Person
 
--   A good example of generalization is shape is a generalization of
-	a polygon, which is a generalization of rectangles and triangles.
+        Student ----------|> Person
+
+-   A good example of generalization is shape is a generalization of a
+    polygon, which is a generalization of rectangles and triangles.
 
 ##### Dependancy
 
 -   Class `A` depends on `B` if `A` *uses* `B` in such a way that a
-	change in `B` will effect `A`.
+    change in `B` will effect `A`.
 -   Say `A` depends on `B`. Typically, `B` would appear as a parameter,
-	return type, or local variable in a method of `A`.
+    return type, or local variable in a method of `A`.
 
 #### State diagram.
 
--   A state diagram is a type of diagram used in computer science and related
-	fields to describe the behavior of systems.
-	-   State diagrams require that the system described is composed of a finite
-		number of states. 
-		-   Sometimes this is the case, in other there is a reasonable 
-			abstraction.
-	
-	-   Many forms of state diagrams exists, which different slight and have
-		different semantics.
+-   A state diagram is a type of diagram used in computer science and
+    related fields to describe the behavior of systems.
+    -   State diagrams require that the system described is composed of
+        a finite number of states.
+        -   Sometimes this is the case, in other there is a reasonable
+            abstraction.
 
--   The state diagram in the Unified Modelling Language is essentially
-	a Harel statechart with standardized notation.
-	-   This can be used to describe many systems, from computer programs
-		to business processors.
-	-   In UML 2 the name has been changed to *State Machine Diagram*.
+    -   Many forms of state diagrams exists, which different slight and
+        have different semantics.
 
--   The basic notational elements that can be used to make a diagram are:
-	-   Filled circle, pointing to the initial state.
-	-   Hollow circle, containing a smaller filled circle indicating the
-		final state.
-	-   Rounded rectangle, denoting a state. Top of the rectagnle contains a name
-		of the state. 
-		-   Can contain a horizaontal line in the middle, below which
-			the activities that can be done are indicated.
-	-   Arrow, denoting transtion. The name of the event (if any) causing this
-		transition labels the arrow bodyu. 
-		-   A guard expression may be added before a "/" and enclosed in
-			square-brackets. Ex: `eventName[guardExpression]`.
-		-   If an action is performed during this transition, it is added to
-			the label following a "/".
-	-   Thick horizontal line with wither $ x \gt 1 $ lines entering and $1$
-		line leaving or $1$ line entering and $x \gt 1$ lines leaving. 
-		-   These denote join/fork respectively.
+-   The state diagram in the Unified Modelling Language is essentially a
+    Harel statechart with standardized notation.
+    -   This can be used to describe many systems, from computer
+        programs to business processors.
+    -   In UML 2 the name has been changed to *State Machine Diagram*.
+
+-   The basic notational elements that can be used to make a diagram
+    are:
+    -   Filled circle, pointing to the initial state.
+    -   Hollow circle, containing a smaller filled circle indicating the
+        final state.
+    -   Rounded rectangle, denoting a state. Top of the rectagnle
+        contains a name of the state.
+        -   Can contain a horizaontal line in the middle, below which
+            the activities that can be done are indicated.
+
+    -   Arrow, denoting transtion. The name of the event (if any)
+        causing this transition labels the arrow bodyu.
+        -   A guard expression may be added before a "/" and enclosed in
+            square-brackets. Ex: `eventName[guardExpression]`.
+        -   If an action is performed during this transition, it is
+            added to the label following a "/".
+
+    -   Thick horizontal line with wither \$ x \gt 1 \$ lines entering
+        and $1$ line leaving or $1$ line entering and $x \gt 1$ lines
+        leaving.
+        -   These denote join/fork respectively.
 
 ### Design patterns
-	
+
 #### Model-View-Controller (MVC)
 
 -   A **model** notifies its associated views and controllers when there
-	has been a change in its state.
--   A **view** requests from the model the information that 
-	needs to generate an output representation to the user.
--   A **controller** can send commands to associated view to change 
-	the view's presentation of the model.
+    has been a change in its state.
+-   A **view** requests from the model the information that needs to
+    generate an output representation to the user.
+-   A **controller** can send commands to associated view to change the
+    view's presentation of the model.
 
 #### State (Behavioral)
 
--   Allow an object to change its behavior when its internal state 
-	changes.
+-   Allow an object to change its behavior when its internal state
+    changes.
 -   *The "object" is a subclass of an abstract class, polymorphism.*
 -   Context (client code) has a state object that is one of the concrete
-	instances.
+    instances.
 -   The request method executes handle on this concrete instance
-	dynamically binding the appropriate class method.
+    dynamically binding the appropriate class method.
 
-		+-----------+          +-----------+
-		|  Context  |<>--------|   State   |
-		+-----------+          +-----------+
-		| request() |          | handle()  |
-		+-----------+          +-----------+
-				|                     ^
-				|                     |
-		+--------------+       +------+--------+-- ...
-		|state.handle()|       |               |
-		+--------------+  +----------------+ +----------------+
-		                  |ConcreteState A | |ConcreteState B |
-		                  +----------------+ +----------------+
+        +-----------+          +-----------+
+        |  Context  |<>--------|   State   |
+        +-----------+          +-----------+
+        | request() |          | handle()  |
+        +-----------+          +-----------+
+                |                     ^
+                |                     |
+        +--------------+       +------+--------+-- ...
+        |state.handle()|       |               |
+        +--------------+  +----------------+ +----------------+
+                          |ConcreteState A | |ConcreteState B |
+                          +----------------+ +----------------+
                           | handle()       | | handle()       |
-		                  +----------------+ +----------------+
+                          +----------------+ +----------------+
 
 -   Psuedocode
 
-		class AbstractTool is
-		     function moveTo(point) is
-		         input:  the location point the mouse moved to
-		         (this function must be implemented by subclasses)
+        class AbstractTool is
+             function moveTo(point) is
+                 input:  the location point the mouse moved to
+                 (this function must be implemented by subclasses)
 
-			 function mouseDown(point) is	
-			      input:  the location point the mouse is at
-			      (this function must be implemented by subclasses)	
+             function mouseDown(point) is   
+                  input:  the location point the mouse is at
+                  (this function must be implemented by subclasses) 
 
-			 function mouseUp(point) is
-			      input:  the location point the mouse is at
-			      (this function must be implemented by subclasses)
+             function mouseUp(point) is
+                  input:  the location point the mouse is at
+                  (this function must be implemented by subclasses)
 
 #### Singleton (Creational)
 
 -   *Ensure that a class has only one object or instance.*
 -   Only one point of global access.
--   The single private constructor ensures that an instance of
-	the class cannot be created with `new`.
+-   The single private constructor ensures that an instance of the class
+    cannot be created with `new`.
 
-		+----------------------+
-		|       Singleton      |
-		+----------------------+
-		|- Singleton()         |
-		|+ static getInstance()|
-		+----------------------+
+        +----------------------+
+        |       Singleton      |
+        +----------------------+
+        |- Singleton()         |
+        |+ static getInstance()|
+        +----------------------+
 
 #### Iterator
 
--   An iterator is *used to traverse a container and access 
-	the containter's elements.*
+-   An iterator is *used to traverse a container and access the
+    containter's elements.*
 -   This *decouples algorithms from containers.*
--   The alogirthm `SearchForElement` can be implemented generally
-	using a specific type of iterator rather than implementing
-	container-specific algorithm.
--   This allows `SearchForElement` to be used on any container
-	that supports the required type of iterator.
->   Provide a way to access the elements of an aggregate object
->   sequentially without exposing its underlying representation.
+-   The alogirthm `SearchForElement` can be implemented generally using
+    a specific type of iterator rather than implementing
+    container-specific algorithm.
+-   This allows `SearchForElement` to be used on any container that
+    supports the required type of iterator. \> Provide a way to access
+    the elements of an aggregate object \> sequentially without exposing
+    its underlying representation.
 
 -   Java has an `Iterator` interface that the Collections should
-	implement in order to traverse the collection. 
+    implement in order to traverse the collection.
 -   Classic implementations were using the `next()` method.
 -   Java also supports `hasNext()` and `remove()` methods.
 
-		public interface Iterator<T> {
-			boolean hasNext();
-			T next();
-			void remove();
-		}
-		
--   Access the contents of a collection without exposing its
-	internal representation.
+        public interface Iterator<T> {
+            boolean hasNext();
+            T next();
+            void remove();
+        }
+
+-   Access the contents of a collection without exposing its internal
+    representation.
 -   Suppoer overlapping multiple traversals.
 -   Provide a uniform interface for traversing different collections.
 -   Polymorphic iteration.
 
-		                      +-------------------+
-		                      |      Iterator     |
+                              +-------------------+
+                              |      Iterator     |
                               +-------------------+
                               |hasNext()          |
                               |next()             |
-		                      +-------------------+
+                              +-------------------+
                                          ^
-	                                     |
-		+---------------+     +-------------------+
-		|   Collection  |     | ConcreteIterator  |
-		+---------------+     +-------------------+
-		| itertator() o |---->|hasNext()          |
-		+-------------|-+     |next()             |
-		              |       +-------------------+
-		+-------------|----------------+
-		| return new ConcreteIterator()|
-		+------------------------------+
-		
+                                         |
+        +---------------+     +-------------------+
+        |   Collection  |     | ConcreteIterator  |
+        +---------------+     +-------------------+
+        | itertator() o |---->|hasNext()          |
+        +-------------|-+     |next()             |
+                      |       +-------------------+
+        +-------------|----------------+
+        | return new ConcreteIterator()|
+        +------------------------------+
+
 #### Template Method
 
 -   Implements a set sequence of actions
--   Each action is a method, some of which are abstract because
-	their implementation is specific to concrete subclasses.
+-   Each action is a method, some of which are abstract because their
+    implementation is specific to concrete subclasses.
 -   The abstract metods are referred to as "hook" methods.
 -   *The template method is hosted in an abstract class.*
 -   The template method itself is *not abstract*.
 -   Each specific algorithm can then extend this abstract host class,
-	and provide its own specific version of the hook method.
+    and provide its own specific version of the hook method.
 
-		+-------------------+   +--------+	
-		|   Template Host   |   | . . .  |
-		+-------------------+   | hook1()| // Note: This is the method
-		| templateMethod() o----| . . .  | // and it is non-abstract
-		| hook1()           |   | hook2()|
-		| hook2()           |   | . . .  |
-		+-------------------+   +--------+
-			^
-			|
-		+-------------------+
-		|   ConcreteClass   |
-		+-------------------+
-		| hook1()           |
-		| hook2()           |
-		+-------------------+
+        +-------------------+   +--------+  
+        |   Template Host   |   | . . .  |
+        +-------------------+   | hook1()| // Note: This is the method
+        | templateMethod() o----| . . .  | // and it is non-abstract
+        | hook1()           |   | hook2()|
+        | hook2()           |   | . . .  |
+        +-------------------+   +--------+
+            ^
+            |
+        +-------------------+
+        |   ConcreteClass   |
+        +-------------------+
+        | hook1()           |
+        | hook2()           |
+        +-------------------+
 
--   In software engineering, the *template design pattern* is a behavioral
-	design pattern that defines the program skeleton of an algorithm in a 
-	method, called the *template method*, which defers some steps to
-	subclasses.
-	-   It lets one redefine certain steps of an algorithm without changing
-		the algorithms structure.
+-   In software engineering, the *template design pattern* is a
+    behavioral design pattern that defines the program skeleton of an
+    algorithm in a method, called the *template method*, which defers
+    some steps to subclasses.
+    -   It lets one redefine certain steps of an algorithm without
+        changing the algorithms structure.
 
--   In the template method of this design pattern, one or more algorithms
-	can be overridden by subclasses to allow differing behaviors
-	enusuring that the overarching algorithm is still followed.
-	-   In object-oriented programming, first a class is created that provides
-		the basic steps of an algorithm design.
-	-   These steps are implemented using abstract methods.
-	-   Later on, subclasses change the abstract methods to implement real
-		actions.
-		-   Thus, the general algorithm is saved in one place but the concrete
-			steps may be changed by subclasses.
+-   In the template method of this design pattern, one or more
+    algorithms can be overridden by subclasses to allow differing
+    behaviors enusuring that the overarching algorithm is still
+    followed.
+    -   In object-oriented programming, first a class is created that
+        provides the basic steps of an algorithm design.
+    -   These steps are implemented using abstract methods.
+    -   Later on, subclasses change the abstract methods to implement
+        real actions.
+        -   Thus, the general algorithm is saved in one place but the
+            concrete steps may be changed by subclasses.
 
--   The template method pattern thus manages the larger picture of task 
-	semantics, and more refined implementation details of selection
-	and sequence of methods.
-	-   This larger picture calls abstract and non-abstract methods for the
-		task at hand.
-	-   The non-abstract methods are completely controlled by the template
-		method, but the abstract methods, implemented by subclasses, are
-		implemented by the concrete subclasses.
-		-   These are called "hooks"
-	
-	-   The template method is not abstract!
+-   The template method pattern thus manages the larger picture of task
+    semantics, and more refined implementation details of selection and
+    sequence of methods.
+    -   This larger picture calls abstract and non-abstract methods for
+        the task at hand.
+    -   The non-abstract methods are completely controlled by the
+        template method, but the abstract methods, implemented by
+        subclasses, are implemented by the concrete subclasses.
+        -   These are called "hooks"
+
+    -   The template method is not abstract!
 
 ### Black-box Unit Testing
 
 #### Boundary Value Analysis
 
 -   Consider `charAt(i)` in the `String` class. This method implements a
-	function that takes as input an integer position, and returns the character
-	at that position in the string.
+    function that takes as input an integer position, and returns the
+    character at that position in the string.
 -   The range of input, $i$, where $s$ is the length of the string:
 
-	$$ 0 \le i \le s - 1 $$
+    $$ 0 \le i \le s - 1 $$
 
--   To test that `charAt` works correctly for a given string of length s,
-	we would need to build the following input test cases
-	-   Lower boundary value $i = 0$.
-	-   Upper boundary value $i = s - 1$.
-	-   A small increment on the lower boundary value, $i = 1$.
-	-   A small decrement on the upper boundary value, $i = s - 2$.
-	-   A nominal valye of $i$ that is somewhere in the range that is
-		not any of the above. $i = \frac{s}{2}$
+-   To test that `charAt` works correctly for a given string of length
+    s, we would need to build the following input test cases
+    -   Lower boundary value $i = 0$.
+    -   Upper boundary value $i = s - 1$.
+    -   A small increment on the lower boundary value, $i = 1$.
+    -   A small decrement on the upper boundary value, $i = s - 2$.
+    -   A nominal valye of $i$ that is somewhere in the range that is
+        not any of the above. $i = \frac{s}{2}$
 
 -   This is the basic **boundary value analysis** approach.
--   In general, if a function has an integer input $i$, which is
-	between $l$ and $h$ in value, then the boundary analysis
-	of the function selects the test input values $l$, $l + \epsilon$,
-	$l + \epsilon$, $i_n$, $h - \epsilon$, and $h$, where:
-	-   $i_n$ is a nominal value of $i$ somewhere in the range.
-	-   $\epsilon$ is a small value, typically $1$ for `int`.
+-   In general, if a function has an integer input $i$, which is between
+    $l$ and $h$ in value, then the boundary analysis of the function
+    selects the test input values $l$, $l + \epsilon$, $l + \epsilon$,
+    $i_n$, $h - \epsilon$, and $h$, where:
+    -   $i_n$ is a nominal value of $i$ somewhere in the range.
+    -   $\epsilon$ is a small value, typically $1$ for `int`.
 
 #### Robustness testing
 
--   A simple extension of the basic boundary value analysis that includes
-	two additional input values:
-	$$ l - \epsilon $$
-	$$ h + \epsilon $$
+-   A simple extension of the basic boundary value analysis that
+    includes two additional input values: $$ l - \epsilon $$
+    $$ h + \epsilon $$
 
 -   These value fall outside the range but are class to the end value.
-	-   They should result in the function implementation returning gracefully,
-		without computing a result.
+    -   They should result in the function implementation returning
+        gracefully, without computing a result.
+
 -   A Java method such as `charAt` would handle thes einputs by throwing
-	an exception.
-	-   It is graceful exit because it gives the client the choice
-		to hangle this situation how they see fit.
+    an exception.
+    -   It is graceful exit because it gives the client the choice to
+        hangle this situation how they see fit.
 
 -   The test cases with robust testing of `charAt` would be:
-	$$ −1, 0, 1, s/2, s − 2, s − 1, s $$
+    $$ −1, 0, 1, s/2, s − 2, s − 1, s $$
 
 -   Robustness testing uses seven test cases on a single-variable input
-	function.
+    function.
 -   The main focus of robustness is on exception handling.
 
 #### Multi-variable boundary values
 
 -   Suppose you wrote a function `addHour` that, given a day and a time
-	in hours, adds one hour to the time and outputs the resulting day
-	and time.
--   The input variables here are integer `d`, for day, and an interger `h`
-	for hour. Ranges:
+    in hours, adds one hour to the time and outputs the resulting day
+    and time.
+-   The input variables here are integer `d`, for day, and an interger
+    `h` for hour. Ranges:
 
-	$$ 1 \le d \le 6  $$
-	$$ 0 \le h \le 23 $$
+    $$ 1 \le d \le 6  $$ $$ 0 \le h \le 23 $$
 
--   To create the test cases, we follow the procedure for single variable
-	boundary value analysis, except we repret for both variables.
-	-   When we run through the gamut for one variable, we keep the value
-		of the other fixed at the nominal value.
+-   To create the test cases, we follow the procedure for single
+    variable boundary value analysis, except we repret for both
+    variables.
+    -   When we run through the gamut for one variable, we keep the
+        value of the other fixed at the nominal value.
 
 -   Then the list of test cases using (day, hour)
 
-	$$ (d_n, 0), (d_n, 1), (d_n, h_n), (d_n, 22), (d_n, 23), $$
-	$$ (1, h_n), (2, h_n), (d_n, h_n), (6, h_n),  (7, h_n)   $$
-	-   One test appears twice, so there are 9 distinct cases.
+    $$ (d_n, 0), (d_n, 1), (d_n, h_n), (d_n, 22), (d_n, 23), $$
+    $$ (1, h_n), (2, h_n), (d_n, h_n), (6, h_n),  (7, h_n)   $$
+    -   One test appears twice, so there are 9 distinct cases.
 
 -   For the numbers 4 and 12 for day and hour, there are nine distinct
-	test cases:
-	
-	$$ (4, 0), (4, 1), (4, 12), (4, 22), (4, 23), (1, 12), (2, 12), (6, 12), (7, 12) $$
+    test cases:
+
+    $$ (4, 0), (4, 1), (4, 12), (4, 22), (4, 23), (1, 12), (2, 12), (6, 12), (7, 12) $$
 
 -   Robustness testing yields four more test cases:
 
-	$$ (d_n,−1), (d_n, 24), (0, h_n), (8, h_n) $$
+    $$ (d_n,−1), (d_n, 24), (0, h_n), (8, h_n) $$
 
 -   However, this general approach does not capture the important test
-	cases $(1, 23)$ and $(7, 23)$ mentioned at the beginning of this discussion.
--   The reason the general approach followed above only works if the variables
-	are *independant*.
-	-   That is, if there are $n$ independant variables, then the test cases
-		are built by varying each indepedant variable thorugh all its test 
-		values while holding all the other variables at their respective
-		nominal values.
+    cases $(1, 23)$ and $(7, 23)$ mentioned at the beginning of this
+    discussion.
+-   The reason the general approach followed above only works if the
+    variables are *independant*.
+    -   That is, if there are $n$ independant variables, then the test
+        cases are built by varying each indepedant variable thorugh all
+        its test values while holding all the other variables at their
+        respective nominal values.
 
--   If the variables are dependant on each other, then we need to use all value
-	tuples obtained by combining the test values of the variables in all 
-	possible ways.
--   For the `addHour` examples, this would mean all possible combination of
-	$d$ boundary values with those of $h$ boundary values.
--   The test values for $d$ are $1, 2, 3, 4, 5, 6, 7$ and those for $h$ are
-	$0, 1, 12, 22, 23$.
-	-   So there are 25 combinations, each of which will be a test case.
+-   If the variables are dependant on each other, then we need to use
+    all value tuples obtained by combining the test values of the
+    variables in all possible ways.
+-   For the `addHour` examples, this would mean all possible combination
+    of $d$ boundary values with those of $h$ boundary values.
+-   The test values for $d$ are $1, 2, 3, 4, 5, 6, 7$ and those for $h$
+    are $0, 1, 12, 22, 23$.
+    -   So there are 25 combinations, each of which will be a test case.
 
 -   These combinations will include $1, 23$ and $7, 23$, among others.
--   Robustness testing does not get affected due to inter-dependance unless
-	there are particular legitimate indivudual values whose combination
-	is not legitimate.
+-   Robustness testing does not get affected due to inter-dependance
+    unless there are particular legitimate indivudual values whose
+    combination is not legitimate.
 
 #### Equivalence classes
 
--   Divides the input data of a software into partitions of equivilent data
-	from which test cases can be derived. 
--   In principle, test cases are designed to cover each partition at least once.
--   This technique tries to define test cases that uncover *classes of errors*.
--   Equivilence partitioning is typically applied to the inputs of a tested
-	component. 
-	-   May be applied to outputs in rare cases.
+-   Divides the input data of a software into partitions of equivilent
+    data from which test cases can be derived.
+-   In principle, test cases are designed to cover each partition at
+    least once.
+-   This technique tries to define test cases that uncover *classes of
+    errors*.
+-   Equivilence partitioning is typically applied to the inputs of a
+    tested component.
+    -   May be applied to outputs in rare cases.
 
--   The fundamental concept of ECP comes from equivilence class, which in turn
-	comes from equivilence relation.
+-   The fundamental concept of ECP comes from equivilence class, which
+    in turn comes from equivilence relation.
 
-		int safe_add( int a, int b ) {
-		    int c = a + b;
-		    if ( a >= 0 && b >= 0 && c < 0 )
-		    {
-		        fprintf ( stderr, "Overflow!\n" );
-		    } 
-		    if ( a < 0 && b < 0 && c >= 0 )
-		    {
-		        fprintf ( stderr, "Underflow!\n" );
-		    } 
-		    return c;
-		}
+        int safe_add( int a, int b ) {
+            int c = a + b;
+            if ( a >= 0 && b >= 0 && c < 0 )
+            {
+                fprintf ( stderr, "Overflow!\n" );
+            } 
+            if ( a < 0 && b < 0 && c >= 0 )
+            {
+                fprintf ( stderr, "Underflow!\n" );
+            } 
+            return c;
+        }
 
 -   The boundary values approach results in a lot of test cases, many of
-	which are repetitious or redundant.
-	
-		+------+---+---+
-		| Test | d | h |
-		+------+---+---+
-		| 1    | 1 | 0 |
-		| 2    | 1 | 1 |
-		| 3    | 1 | 12|
-		| 4    | 1 | 22|
-		| 5    | 1 | 23|
-		| 6    | 2 | 0 |
-		| 7    | 2 | 1 |
-		| .    | . | . |
-		| .    | . | . |
-		| .    | . | . |
-		| 24   | 7 | 22|
-		| 25   | 7 | 23|
-		+------+---+---+
+    which are repetitious or redundant.
+
+        +------+---+---+
+        | Test | d | h |
+        +------+---+---+
+        | 1    | 1 | 0 |
+        | 2    | 1 | 1 |
+        | 3    | 1 | 12|
+        | 4    | 1 | 22|
+        | 5    | 1 | 23|
+        | 6    | 2 | 0 |
+        | 7    | 2 | 1 |
+        | .    | . | . |
+        | .    | . | . |
+        | .    | . | . |
+        | 24   | 7 | 22|
+        | 25   | 7 | 23|
+        +------+---+---+
 
 -   Consider each group of tests with the same $d$ and different $h$'s.
-	-   In the first group of 5 tests, with $d = 1$, all tests except the
-		last result in the same type of input.
+    -   In the first group of 5 tests, with $d = 1$, all tests except
+        the last result in the same type of input.
 
--   Why not break these into categories? All tests in each category would
-	produce similar successes or failures.
-	-   Category 1: All tests for which output $d$ is same as input $d$.
-	-   Category 2: All tests for which the output $d$ is different from input
-		$d$, but not 1.
-	-   Category 3: All tests for which the output $d$ is different from the 
-		input $d$, and is 1.
+-   Why not break these into categories? All tests in each category
+    would produce similar successes or failures.
+    -   Category 1: All tests for which output $d$ is same as input $d$.
+    -   Category 2: All tests for which the output $d$ is different from
+        input $d$, but not 1.
+    -   Category 3: All tests for which the output $d$ is different from
+        the input $d$, and is 1.
 
--   Each category is called an *equivilence class* and the cetgorization is
-	called *equivilence partitioning*
-	-   Equivilence partitioning can also be done for test cases that are
-		expected to result in errors, for robustness testing.
+-   Each category is called an *equivilence class* and the cetgorization
+    is called *equivilence partitioning*
+    -   Equivilence partitioning can also be done for test cases that
+        are expected to result in errors, for robustness testing.
 
 -   Consider the example of a rectangle, where you have a method called
-	`pointInRectangle`. It returns `0` if the point is *on* the rectangle,
-	`-1` if the point is *not* on or in the rectangle, and `1` if it is
-	*in* the rectangle.
-	-   This function does not have a continuum of results, insteads it
-		partitions the results into three calses of outcomes.
-	-   This then leads to partitioning the input into equvilence classes.
-	-   Each equivilence class would comprise all inputs that result in one of
-		the possible outcomes, or force one type of error.
-	-   Since we are assuming all inputs are legal coordinates, to start with,
-		we will build equvilance classes for the possible correct outcomes. 
+    `pointInRectangle`. It returns `0` if the point is *on* the
+    rectangle, `-1` if the point is *not* on or in the rectangle, and
+    `1` if it is *in* the rectangle.
+    -   This function does not have a continuum of results, insteads it
+        partitions the results into three calses of outcomes.
+    -   This then leads to partitioning the input into equvilence
+        classes.
+    -   Each equivilence class would comprise all inputs that result in
+        one of the possible outcomes, or force one type of error.
+    -   Since we are assuming all inputs are legal coordinates, to start
+        with, we will build equvilance classes for the possible correct
+        outcomes.
 
 ### Multithreading and synchronization on shared resources
 
 #### Multithreading I/0 with Computation
 
 -   The steps to make a program multithreaded:
-	1.  Extend the `java.lang.Thread` class.
-	
-			public class Program extends Thread { ... }
+    1.  Extend the `java.lang.Thread` class.
 
-	2.  Place code you want to execute indepedantly in the `run` method
+            public class Program extends Thread { ... }
 
-			public void run() { ... }
+    2.  Place code you want to execute indepedantly in the `run` method
 
-	3.  Make any parameters you need static fields.
-	4.  Define a constructor that starts up an independant thread for run.
+            public void run() { ... }
 
-			public ProgramThread() { start(); }
+    3.  Make any parameters you need static fields.
+    4.  Define a constructor that starts up an independant thread for
+        run.
 
-		-   This method is defined in the `Thread` class, calling it sets up
-			the necessary resources to run an independant thread and starts up
-			the thread to execute the run method.
+            public ProgramThread() { start(); }
 
-		>   Note: Calling run directly (instead of start) will *not* start
-			an independant thread.
+        -   This method is defined in the `Thread` class, calling it
+            sets up the necessary resources to run an independant thread
+            and starts up the thread to execute the run method.
 
-	5.  Change the main method to set up and independant thread for your 
-		computation. When the user interupts your program, report the
-		current computation.
+        > Note: Calling run directly (instead of start) will *not* start
+        > an independant thread.
 
--   Every time the user hits enter, the main thread fetches the current status
-	of your computation and prints it out.
+    5.  Change the main method to set up and independant thread for your
+        computation. When the user interupts your program, report the
+        current computation.
+
+-   Every time the user hits enter, the main thread fetches the current
+    status of your computation and prints it out.
 -   Meanwhile, the program thread continues its computation.
--   If the user types "quit", the program thread continues indepedantly until
-	the end of the current conditional or whatever might be happening in there.
+-   If the user types "quit", the program thread continues indepedantly
+    until the end of the current conditional or whatever might be
+    happening in there.
 
 #### Why threads
 
--   A thread runs asynchronously, independant of the thread that created it.
--   A Java application or applet itself runs as a thread, and can spin off
-	as many threads as needed.
--   A collection of asyncrhously running threads may communicate with each other
-	via a buffer, or directly invoking methods on each other.
--   Asynchrous computing allows several tasks to be performed in parallel,
-	resulting in:
-	-   **improved executing time** for the application as a whole.
-	-   **improved turn around time** seen by the user, for instance the
-		consumer thread displays data on the fly as it comes from the server,
-		instead of blocking until all data is available.
+-   A thread runs asynchronously, independant of the thread that created
+    it.
+-   A Java application or applet itself runs as a thread, and can spin
+    off as many threads as needed.
+-   A collection of asyncrhously running threads may communicate with
+    each other via a buffer, or directly invoking methods on each other.
+-   Asynchrous computing allows several tasks to be performed in
+    parallel, resulting in:
+    -   **improved executing time** for the application as a whole.
+    -   **improved turn around time** seen by the user, for instance the
+        consumer thread displays data on the fly as it comes from the
+        server, instead of blocking until all data is available.
 
--   Asynchrounous computing places more onus on the programmer to ensure that
-	the program:
-	-   **avoids race conditions**, two threads trying to update a variable at
-		the same time.
-	-   **maintains consistency of data**, two transactions both
-		withdraw money from an account, but the second does not see
-		the withdrawal being made by the first.
+-   Asynchrounous computing places more onus on the programmer to ensure
+    that the program:
+    -   **avoids race conditions**, two threads trying to update a
+        variable at the same time.
+    -   **maintains consistency of data**, two transactions both
+        withdraw money from an account, but the second does not see the
+        withdrawal being made by the first.
 
 #### Lifecycle of a thread
 
-A thread is born, started, run, and then terminated. 
+A thread is born, started, run, and then terminated.
 
--   **New**: A new thread begins its life cycle in the new state. It remains
-	in this state until the program starts the thread.
--   **Runnable**: After a newly born thread is started, the thread becomes
-	runnable. It is executing a task.
--   **Waiting**: Sometimes a thread transitions to the waiting state while the 
-	thread waits for another thread to perform a task. A thread transitions 
-	back to the runnable state only when another thread signals the waiting
-	thread to continue executing.
--   **Timed waiting**: A runnable thread can enter the timed waiting state for
-	a specified interal of time. A thread in this state transitions back
-	to the runnable state when that time interval expires or when
-	the event it is waiting for occurs.
--   **Terminated**: A runnable thread enters the terminated state when it
-	completes the task or is otherwise terminated.
+-   **New**: A new thread begins its life cycle in the new state. It
+    remains in this state until the program starts the thread.
+-   **Runnable**: After a newly born thread is started, the thread
+    becomes runnable. It is executing a task.
+-   **Waiting**: Sometimes a thread transitions to the waiting state
+    while the thread waits for another thread to perform a task. A
+    thread transitions back to the runnable state only when another
+    thread signals the waiting thread to continue executing.
+-   **Timed waiting**: A runnable thread can enter the timed waiting
+    state for a specified interal of time. A thread in this state
+    transitions back to the runnable state when that time interval
+    expires or when the event it is waiting for occurs.
+-   **Terminated**: A runnable thread enters the terminated state when
+    it completes the task or is otherwise terminated.
 
 #### Thread priorities
 
--   Every Java thread has a priority that helps the operating system determine
-	the order in which threads are scheduled.
+-   Every Java thread has a priority that helps the operating system
+    determine the order in which threads are scheduled.
 -   Java priorities are in the range between `MIN_PRIORITY` (1) and
-	`MAX_PRIORITY` (10),
-	-   By default, every thread is `NORM_PRIORITY` (5).
+    `MAX_PRIORITY` (10),
+    -   By default, every thread is `NORM_PRIORITY` (5).
 
--   Threads with higher priority are more important to a program and should be
-	allocated processor time before lower-priority threads,
-	-   However, this is very platform dependant.
+-   Threads with higher priority are more important to a program and
+    should be allocated processor time before lower-priority threads,
+    -   However, this is very platform dependant.
 
 #### A thread "Hello, World!"
 
-	class NewThread implements Runnable {
-	   Thread t;
-	   NewThread() {
-	      // Create a new, second thread
-	      t = new Thread(this, "Demo Thread");
-	      System.out.println("Child thread: " + t);
-	      t.start(); // Start the thread
-	   }
-   
-	   // This is the entry point for the second thread.
-	   public void run() {
-	      try {
-	         for(int i = 5; i > 0; i--) {
-	            System.out.println("Child Thread: " + i);
-	            // Let the thread sleep for a while.
-	            Thread.sleep(500);
-	         }
-	     } catch (InterruptedException e) {
-	         System.out.println("Child interrupted.");
- 	    }
-	     System.out.println("Exiting child thread.");
-	   }
-	}
+    class NewThread implements Runnable {
+       Thread t;
+       NewThread() {
+          // Create a new, second thread
+          t = new Thread(this, "Demo Thread");
+          System.out.println("Child thread: " + t);
+          t.start(); // Start the thread
+       }
 
-	public class ThreadDemo {
-	   public static void main(String args[]) {
-	      new NewThread(); // create a new thread
-	      try {
- 	        for(int i = 5; i > 0; i--) {
- 	          System.out.println("Main Thread: " + i);
-	           Thread.sleep(1000);
-	         }
-	      } catch (InterruptedException e) {
-	         System.out.println("Main thread interrupted.");
-	      }
-	      System.out.println("Main thread exiting.");
- 	  }
-	}
+       // This is the entry point for the second thread.
+       public void run() {
+          try {
+             for(int i = 5; i > 0; i--) {
+                System.out.println("Child Thread: " + i);
+                // Let the thread sleep for a while.
+                Thread.sleep(500);
+             }
+         } catch (InterruptedException e) {
+             System.out.println("Child interrupted.");
+        }
+         System.out.println("Exiting child thread.");
+       }
+    }
+
+    public class ThreadDemo {
+       public static void main(String args[]) {
+          new NewThread(); // create a new thread
+          try {
+            for(int i = 5; i > 0; i--) {
+              System.out.println("Main Thread: " + i);
+               Thread.sleep(1000);
+             }
+          } catch (InterruptedException e) {
+             System.out.println("Main thread interrupted.");
+          }
+          System.out.println("Main thread exiting.");
+      }
+    }
 
 #### Recitation 9, Question 1
 
->   Use threads to implement a stop watch that displays, once every five seconds,
->   the minutes and seconds that have passed since it was started. The display
->   should be in the form mm:ss for minutes and seconds. When the clock reaches 15
->   minutes, it should wrap back and start at 0 minutes and 0 seconds. The user
->   should be able to stop the watch at any time. Write the complete code for the
->   application. (Not the most accurate stop watch, but the model is useful for
->   animations in which slight inaccuracies in time would not be detrimental.) 
+> Use threads to implement a stop watch that displays, once every five
+> seconds, the minutes and seconds that have passed since it was
+> started. The display should be in the form mm:ss for minutes and
+> seconds. When the clock reaches 15 minutes, it should wrap back and
+> start at 0 minutes and 0 seconds. The user should be able to stop the
+> watch at any time. Write the complete code for the application. (Not
+> the most accurate stop watch, but the model is useful for animations
+> in which slight inaccuracies in time would not be detrimental.)
 
 -   `Watch` class
 
-		class Watch {
-			int mins;
-			int secs;
-			
-			String allStr;
-			
-			public Watch() {
-				mins = 0;
-				secs = 0;
-				allStr = " 00:00";
-			}
-			
-			public void stepUp() {
-				secs = secs + 5;
-				if (secs == 60)	{ 
-					mins = (mins + 1) % 60;
-					secs = 0;
-				}
-				if (mins >= 15) mins = mins - 15;
-				String minsStr = String.valueOf(mins);
-				String secsStr = String.valueOf(secs);
-				
-				if (mins < 10) minsStr = "0" + minsStr;
-				if (secs < 10) secsStr = "0" + secsStr;
-				
-				allStr = " " + minsStr + ":" + secsStr;
-				System.out.println(allStr);
-			}
-			
-			public void reset()	{
-				mins = 0;
-				secs = 0;
-				allStr = " 00:00";
-				System.out.println(allStr);
-			}
-		}
+        class Watch {
+            int mins;
+            int secs;
+
+            String allStr;
+
+            public Watch() {
+                mins = 0;
+                secs = 0;
+                allStr = " 00:00";
+            }
+
+            public void stepUp() {
+                secs = secs + 5;
+                if (secs == 60) { 
+                    mins = (mins + 1) % 60;
+                    secs = 0;
+                }
+                if (mins >= 15) mins = mins - 15;
+                String minsStr = String.valueOf(mins);
+                String secsStr = String.valueOf(secs);
+
+                if (mins < 10) minsStr = "0" + minsStr;
+                if (secs < 10) secsStr = "0" + secsStr;
+
+                allStr = " " + minsStr + ":" + secsStr;
+                System.out.println(allStr);
+            }
+
+            public void reset() {
+                mins = 0;
+                secs = 0;
+                allStr = " 00:00";
+                System.out.println(allStr);
+            }
+        }
 
 -   `StopWatchThread`
 
-		class StopWatchThread  implements Runnable {
-			private Watch w;
-			public boolean quit = false;
-			public boolean start = true;
-			public boolean reset = false;
-			public long startTime; 
-			// delay is five second
-			int delay = 5000;
-			public void run() {
-				startTime = System.currentTimeMillis();
-				w = new Watch();
-				// animation loop
-				while (true) {
-					if (quit)
-						break;
-					if (reset) {
-						w.reset();
-						startTime = System.currentTimeMillis();
-						reset = false;
-					}
-					if (start) {
-						try {
-							startTime += delay;
-							Thread.sleep(Math.max(0, startTime - System.cu	rrentTimeMillis()));
-							w.stepUp();
-						} catch (InterruptedException e) {
-					
-						}				
-					}
-			
-				}
-			}
-		}
+        class StopWatchThread  implements Runnable {
+            private Watch w;
+            public boolean quit = false;
+            public boolean start = true;
+            public boolean reset = false;
+            public long startTime; 
+            // delay is five second
+            int delay = 5000;
+            public void run() {
+                startTime = System.currentTimeMillis();
+                w = new Watch();
+                // animation loop
+                while (true) {
+                    if (quit)
+                        break;
+                    if (reset) {
+                        w.reset();
+                        startTime = System.currentTimeMillis();
+                        reset = false;
+                    }
+                    if (start) {
+                        try {
+                            startTime += delay;
+                            Thread.sleep(Math.max(0, startTime - System.cu  rrentTimeMillis()));
+                            w.stepUp();
+                        } catch (InterruptedException e) {
+
+                        }               
+                    }
+
+                }
+            }
+        }
 
 #### Recitation 12, Question 1
 
->   Suppose you use a search engine to search for a word or phrase that results 
->   in a match with a large number (hundreds) of web pages. However, the browser
->   will only display a list of n (some variable parameter) page links in one 
->   screenful. Implement a multi-threaded program with one thread for the browser 
->   display, and another for the search engine, and have the search engine deal >   out hits in batches of the max size the browser can display in one screenful. >   You may assume that a method called fetch has already been written in the 
->   search engine to fetch the next batch of hits, returned as a list of URL
->   strings. 
+> Suppose you use a search engine to search for a word or phrase that
+> results in a match with a large number (hundreds) of web pages.
+> However, the browser will only display a list of n (some variable
+> parameter) page links in one screenful. Implement a multi-threaded
+> program with one thread for the browser display, and another for the
+> search engine, and have the search engine deal \> out hits in batches
+> of the max size the browser can display in one screenful. \> You may
+> assume that a method called fetch has already been written in the
+> search engine to fetch the next batch of hits, returned as a list of
+> URL strings.
 
-	public class Searcher implements Runnable {
-	      private Request req;   // search request
-	      private Buffer buf;    // to store hits for display
-	      public Searcher(Request req, Buffer buf) {
-	         this.req = req;
-	         this.buf = buf;
-	         new Thread(this).start();
-	      }
-	      public void run() {
-	         while (true) {
-	            while ((List hits = fetchNext(req)) != null)  { // more
-	      results from fetch
-	               buf.put(hits);
-	         }
-	      }
-	   }
+    public class Searcher implements Runnable {
+          private Request req;   // search request
+          private Buffer buf;    // to store hits for display
+          public Searcher(Request req, Buffer buf) {
+             this.req = req;
+             this.buf = buf;
+             new Thread(this).start();
+          }
+          public void run() {
+             while (true) {
+                while ((List hits = fetchNext(req)) != null)  { // more
+          results from fetch
+                   buf.put(hits);
+             }
+          }
+       }
 
-	   public class Displayer implements Runnable {
-	      private Buffer buf;
-	      public Displayer(Buffer buf) {
-	         this.buf = buf;
-	         new Thread(this).start();
-	      }
-	      public void run() {
-	         while (true) {
-	            display(buf.get());
-	         }
-	      }
-	   }
+       public class Displayer implements Runnable {
+          private Buffer buf;
+          public Displayer(Buffer buf) {
+             this.buf = buf;
+             new Thread(this).start();
+          }
+          public void run() {
+             while (true) {
+                display(buf.get());
+             }
+          }
+       }
 
-	   public class Buffer {
-	      List hits;
-	      boolean available = false;
-	      public synchronized void put(List hits) {
-	         while (available) {
-	            try {
-	                wait();
-	            }
-	            catch (Exception e) { }
-	         }
-	         available = true;
-	         this.hits = hits;
-	         notifyAll();
-	      }
-	
-	      public synchronized List get() {
-	         while (!available) {
-	            try {
-	                wait();
-	            }
-	         catch (Exception e) { }
-	      }
-	      available = false;
-	      notifyAll();
-	      return hits;
-	   }
+       public class Buffer {
+          List hits;
+          boolean available = false;
+          public synchronized void put(List hits) {
+             while (available) {
+                try {
+                    wait();
+                }
+                catch (Exception e) { }
+             }
+             available = true;
+             this.hits = hits;
+             notifyAll();
+          }
+
+          public synchronized List get() {
+             while (!available) {
+                try {
+                    wait();
+                }
+             catch (Exception e) { }
+          }
+          available = false;
+          notifyAll();
+          return hits;
+       }
+
+May 6th, 2013 - Android Project: Chess OR Photo Album OR Roll Your Own
+----------------------------------------------------------------------
+
+You will continue working in pairs. You are allowed to roll your own
+project (RYO) but if you choose to do so, you must get approval from
+Prof. Venugopal.
+
+### Photo Album
+
+You are not required to carry over all the functionality from the Swing
+implementation. Instead, you will implement a smaller set, as described
+below. You may reuse any of the code from your GUI project.
+
+Since the app will run on a personal smart phone, there is only a single
+user, who is the owner of the phone. So there is no logging in, and no
+admin functionality. Also, explicit captions are not required for photos
+(the filename will stand for the caption). Dates are not required
+either.
+
+Your app should implement the following features:
+
+-   30 pts Home screen. When the app comes up, it should load album and
+    photo data from the previous session, if any, and list all albums.
+    Off this "home" screen, you should be able to do the following, in
+    one or more navigational steps.
+-   40 pts Open, create, delete, and rename albums as listed in the GUI
+    project description. When opening an album, display all its photos,
+    with their thumbnail images.
+-   40 pts Once an album is open, you should be able to add, remove, or
+    display a photo. Displaying a photo could trigger a manual
+    slideshow, allowing you to go backward or forward in the album one
+    photo at a time.
+-   20 pts When a photo is displayed, you should be able to add a tag to
+    a photo. Only person and location are valid tag types; there are no
+    typeless tags. You should also be able to delete a tag from a photo.
+    Note: When displaying a photo, tags (if any) should be visible.
+-   20 pts You should be able to move a photo from one album to another
+-   50 pts You should be able to search for photos by tag (person or
+    location), and matches should allow completion. For instance, if a
+    location "New" is typed, matches should include photos taken in New
+    York, New Mexico, New Zealand, etc. Note: You are not required to
+    implement functionality to save the matching photos in an album.
+
+You may serialize the albums and photos, but are not required to do so -
+you can use alternative formats for storage on the device. Also, because
+the user may switch out of your app to do other things (text, phone,
+etc.) at any time, there is no single exit point. This means your app
+must save any update to the device as soon as the update is made by the
+user (*write persistence/write through*).
+
+### Chess
+
+Following up on the terminal-based Chess program, create an android app
+that lets two people play chess with each other on the phone. You may
+reuse any code from your chess assignment that you like. You have to
+implement all the moves for all the pieces, determination of check, and
+illegal moves (including any that puts the mover's King in check), but
+you are not required to implement checkmate and stalemate.
+
+Your app should have a Home activity that lets you choose from the
+following three other activities:
+
+#### Playing chess (120 pts)
+
+-   30 pts Two humans can use your app to play a game of Chess.
+
+-   20 pts Your app must draw the board with icons and correctly shaded
+    squares.
+
+-   20 pts Players must move their pieces using touch input - either
+    dragging a piece or touching first the piece's original square and
+    then its destination.
+
+-   10 pts Provide an 'undo' button that will undo the last move (but no
+    farther).
+
+-   10 pts Provide an 'AI' button that will choose a move for the
+    current player. Choosing randomly from the set of legal moves is
+    sufficient.
+
+-   20 pts Provide functional 'draw' and 'resign' buttons.
+
+-   10 pts When the game is over, report the outcome (but not in a
+    popup).
+
+#### Recording games (50 pts)
+
+-   20 pts Record all games as they're being played.
+
+-   10 pts At the conclusion of a game, offer to store it and prompt the
+    user for a game title.
+
+-   20 pts List all recorded games, sorted by both date and by title
+    (user can select which view to choose).
+
+#### Game playback (30 pts)
+
+-   A button that allows the user to play a selected game one move at a
+    time.
 
