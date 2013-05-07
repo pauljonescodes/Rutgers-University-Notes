@@ -3308,31 +3308,36 @@ April 16th, 2013 - Processor Design I: Sequential Processor (Y86)
 
 -   The decimal values of operations (instructions are data):
 
-	+-------------+-----+
-	| Instruction | Hex |
-	+-------------+-----+
-	| nop         | 00  | 
-	| halt        | 10  | 
-	| rrmovl      | 20  | 
-	| irmovl      | 30  |
-	| rmmovl      | 40  |
-	| mrmovl      | 50  |
-	| addl        | 60  |
-	| subl        | 61  |
-	| andl        | 62  |
-	| xorl        | 63  |
-	| jmp         | 70  |
-	| jle         | 71  |
-	| jl          | 72  |
-	| je          | 73  |
-	| jne         | 74  |
-	| jge         | 75  |
-	| jg          | 76  |
-	| call        | 80  |
-	| ret         | 90  |
-	| pushl       | a0  |
-	| popl        | b0  |
-	+-------------+-----+
+
+		+-------------+-----+---+
+		| Instruction | Hex |Siz|
+		+-------------+-----+---+
+		| nop         | 00  | 1 | 
+		| halt        | 10  | 1 | 
+		| rrmovl      | 20  | 2 | 
+		| irmovl      | 30  | 6 |
+		| rmmovl      | 40  | 6 |
+		| mrmovl      | 50  | 6 |
+		| addl        | 60  | 2 |
+		| subl        | 61  | 2 |
+		| andl        | 62  | 2 |
+		| mull        | 64  | 2 |
+		| xorl        | 63  | 2 |
+		| jmp         | 70  | 5 |
+		| jle         | 71  | 5 |
+		| jl          | 72  | 5 | 
+		| je          | 73  | 5 |
+		| jne         | 74  | 5 | 
+		| jge         | 75  | 5 | 
+		| jg          | 76  | 5 |
+		| call        | 80  | 5 |
+		| ret         | 90  | 1 |
+		| pushl       | a0  | 2 |
+		| popl        | b0  | 2 |
+		+-------------+-----+---+
+		this chart pushed my vim knowledge to the limit
+		ask @Tazato
+
 
 ### Summary
 

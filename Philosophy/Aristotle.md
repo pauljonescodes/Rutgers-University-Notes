@@ -766,3 +766,136 @@ April 25th, 2013 - Final Paper Assignment
 > perception. Consider the accounts of these matters offered by Sorabji, 
 > Burnyeat, and Castion in your discussion.
 
+### Introduction
+
+### How perception comes about
+
+### Methodological procedures
+
+### 'Intentionality and Physiological Processes: Aristotle's Theory of Sense Perception' <small>by Richard Sorabji</small>
+
+#### Section I
+
+-   The most valuyable aspect of Aristotle's theory of sense perception
+	has been largely neglected.
+	-   This lies in "redrawing the map" where perception is drawn.
+    -   This will be in section 1 of the paper.
+
+-   Perception is not to be viewed as a rudimentary reaction with little 
+	content.
+    -   Not is it a work of reason or thought.
+    -   It is halway between the two.
+
+-   Plato argues that the soul uses the senses as channels to perceive sense
+    qualities like whiteness, but cannot use them for distinguishing and 
+    comparing qualities.
+    -   Or for "something being the case"
+    -   Or for the truth.
+        -   This requires reasoning and belief.
+
+    -   Reasoning is described as the silent dialectical debate of the soul
+        with itself. 
+        -   Belief is the conclusion to this debate.
+    
+    -   Plato greatly narrows the role of perception.
+        -   This narrowing becomes critical when Aristotle revives the other 
+            half of what Alcmaeon says by denying reasoning and belief.
+    
+    -   Aristotle is then obliged enomoursly to expand the content of 
+        perception.
+
+-   Plato did not have to face this problem. 
+-   Aristotle does three things.
+    1.  First, he tidies up the concept of reason by bringing belief under
+        it.
+    2.  He gives the perceptual content one of the most massive expansions in   
+        in Greek philosophy.
+    3.  Despite expanding its role, he maintains that Plato's denial that
+        perception involves belief or is a function of reason.
+
+-   He incorporates perception the function described by Plato, the perception
+    of whiteness and other sense-qualities perceptible to one self.
+    -   But also, he added movement, rest, shape, extension, number, and
+        unity. 
+    -   These are overlooked by Plato when he says that you cannot perceive
+        through one sense why you perceive through another.
+
+-   It would be wrong to suppose that this propositional perception really
+    involves an inference of reason merely on the ground that sense-qualities
+    like color, are said to be essential object of perception.
+-   Propositions are also involved in *phantasia*, which in Aristotle's
+    *De Anima* is perceptual and post-perceptual appearance.
+    -   Examples of post-perceptual appearances are imagination, dreams,
+        and memory.
+
+-   It has been thought that Aristotle oscillates wildly on the amount of
+    mental thought he allows to animals, and his propositional perception
+    also solves this problem.
+    -   In *De Anima*, he allows that lions can entertain propositions
+        about eating oxes.
+    -   He allows animals to have emtotions involving the belief of future
+        harm or benefit.
+
+-   These are examples of how generous a content Aristotle gives to sense-
+    percetion.
+-   Aristotle now needs to show that his expansion of perception does not
+    turn perception into belief or make it a function of reason.
+    -   Aristotle employs a kind of discriminating to escape this.
+
+-   Aristotle has another way of making perception fall short of belief,
+    a way which commits him to disagreeing with Aristotle.
+    -   His argument is that perception may very way make you entertain
+        that the sun is a foot across, yet you actually do not believe that,
+        you believe that it is very big.
+    -   Tgus najes perceptual appearances a half-way house to *doxa*. 
+
+-   There are two more arguments.
+    -   Belief involves being convinced, which animals cannot be.
+    -   Belief involves being open to persuasion, which requires reason.
+
+-   The Stoics are very similar to Aristotle, they deny animals reason
+    and beliefs, and expand perceptual content.
+-   Sorabji is not convinced by the argument that a lekton is defined
+    as corresponding only to a rational appearance, to the appearance
+    of a rational being, as opposed to an animal.
+    -   Propositions are here being defined by reference to a sufficient
+        condition.
+    -   What subsists in accordance with the appearance enjoyed by a rational
+        being 
+
+>   Sorabji spends some time discussing the views of Stoics and Epicurians
+>   that I'm not *specifically* interested in because I'd like to know about
+>   Aristotle and perception.
+
+-   He's presented Aristotle as a catalyst in the debate on how perception
+    relates to other capacities of the mind, particularly belief and reason.
+    -   These debate was made urgent by his deinal of these capacities to
+        animals.
+    -   The debate necessitated the expansion of perception and how it relates
+        to other capacities of the mind.
+
+-   From this, Sorabji draws a general conclusion about Aristotle's philosophy
+    of mind.
+    -   Aristotle does not try to reduce perception to things at a different
+        level such as physiological states or behavior, or some performance
+        of functions.
+    -   Rather, he realtes it to capacaties at the same level, such as belief
+        reason, appearance, memory, experence, and concept formation.
+
+-   Sorabji adds that he thinks Aristotle's relation of sense-perception to
+    other capacities would be seen by him as throughing light on the 
+    *formal* cause of perception, not the *material* cause.
+-   This brings Sorabji to the second part of his work, in which he argues
+    that commentators have been looking in the wrong place for information
+    about the physical process of perception.
+
+#### Section II
+
+### 'De Anima *II 5*' <small>by M.F. Burnyeat</small>
+
+## 'The Spirit and the Letter: Aristotle on Perception' <small>by Victor Caston</small>
+
+
+
+### Conclusion
+

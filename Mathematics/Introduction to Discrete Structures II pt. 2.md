@@ -1205,3 +1205,60 @@ April 17th, 2013 - Lecture
     -   $ b_0 = 1$, $b_1 = 1$, $b_2 = 2$, etc
     -   What does an n node ree "look like"?
     
+    
+May 6th, 2013 - Practice Final Exam
+-----------------------------------
+
+1.  What is the coefficient of $x^{12} x^{9}$ when $(x + y)^{21}$ is expanded?
+	How many monomials are in the expansion?
+2.  If $P(A \land B) \lt P(A)$, is it always true that $P(A|B) \lt P(A)$? 
+    Either prove it, or disprove it by finding a counterexample.
+3.  If we throw $n$ balls into $m$ urns, what is the probability that all of
+    the balls land in exactly 1 urn? At most 2 urns?
+4.  Suppose we shuffle a standard deck of 52 cards and deal a 5 card hand.
+    What is the probability we get a straight? What about a straight flush?
+5.  We roll a die 10 times. Let $X$ be the number of time a roll of 1, 2, or
+    3 comes up. Find the range of $X$, $P(X = 3)$, $E(X)$, and $V(X)$.
+6.  Suppose again we shuffle a standard deck of 52 cards and deal a five card
+    hand. Let $A_i$ be the event that the $i$-th card is red.
+    1.  What is the probability of the event $E = $ "exactly two cards
+        are red"?
+    2.  What is the probability of the event $F = $ "the first two cards
+        are red"?
+	3.  Are $E$ and $F$ indepedant? Explain your answer.
+
+7.  Consider an experiment where we flip three coins. Suppose we repeat this
+	experiment until we get all Heads. Let $X$ be the random variable that
+	is the number of experiments needed. Find $E(X)$ and $V(X)$.
+8.  Consider the same experiment as before, except now we flip the coins 100
+	times. Let $W$ be the random variable representing the number of time you
+	get all Heads. Is the frequency function of $W$ Bernoulli, binomial,
+	geometric, or negative binomial? Find $E(W)$ and $V(W)$. Use Chebyshev's
+	inequality to bound the probability that $|W - E(W)| is more than 10.
+9.  Consider a group of $n$ married couples which are seated at a rectangular
+	table with $n$ seats on each side. Let $X$ be a random variable that counts
+	the number of married couples that are seated next to each other. Find
+	$E(X)$.
+10. Suppose that 51 percent of babies are born girls. Suppose also that there
+	is a prenatal test such that 98 percent of the baby girls come back
+	positive. Use Bayes Theorem to compute the probability that the baby
+	is a girl.
+11. Give the generating function with the $n$-coefficient equal to the number
+	of ways to solve $e_1 + e_2 + e_3 = n$ with $e_1, e_2 \ge 0$ and $e_3$ a
+	multiple of $3$. Give a close form version of your function.
+12. Find a formula for $a_n$, which is defined by the following recurrence
+	relation for all $n \gt 0$:
+	$$a_0 = 9$$
+	$$a_n = 2a_{n - 1} + 2$$
+13. Consider the coin flipping game, where player $A$ pays $B$ one dollar
+	for each Heads, and vice versa for each Tails. (The coin is unbiased here.)
+	Let $X_1$ be the random variable recordin the first time player $A$ is
+	"ahead." Find $P(X_1 \le 7)$. What is the probability that $X$ is odd?
+	Even?
+14. Continuing with the coin flipping game, also define $X_2$ to record the
+	first time $A$ is up two dollars, $Z_1$ be the first time any player is
+	up one dollar, and $Z_2$ the first time any player is up two dollars. 
+	Which pairs of random variables from $\lbrace X_1, X_2, Z_1, Z_2 \rbrace$
+	are indepedant? Let $W = Z_2 - Z_1$. Is $W$ indepedant of $Z_1$? Explain
+	your answers carefully, but explicit calculations are not necessary.
+
