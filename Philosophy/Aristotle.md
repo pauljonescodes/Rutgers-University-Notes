@@ -891,9 +891,87 @@ April 25th, 2013 - Final Paper Assignment
 
 #### Section II
 
+-   There are a controversial set of Aristotelian phrases.
+	-   In perception, the sense-organ becomes like the thing perceived.
+	-   In perception, is potentially such as the thing perceived already,
+		and recieves the form of the thing perceived without matter.
+	-   Sorabji has taken these phrases to refer to the material cause
+		of perception, it's physiological process.
+
+-   Sorabji thinks that all three phrases refer to the physiological
+	process and the 'reception of form' phrase is unclear.
+-   Within academia, the reactions have been varied to this.
+	-   It has been rejected to support the functionalist interpretation.
+	-   Among those who disagree, some think that perhaps people
+		receive "vibrations" as "coded messages" as opposed to an actual
+		color.
+		-   This makes "recieving color" in the sense of "recieving form
+			without matter" synonymous with *to become aware* of color.
+	
+	-   Disagreement is widespread, however.
+
+-   Sorabji thinks all of these interpretations are flawed, but particularly
+	Burnyeat's, because it is "the most daring and the most argued."
+-   Burnyeat endorsed the Christian interpretation
+	-   Evidently, there is no physiological process at all needed for the
+		eye to see.
+	-   It is just a brute fact that animal matter is capable of awareness.
+	-   This is why Aristotle's philosophy of mind is no longer credible.
+		-   It turns the matter of animals into something that is 
+			impregnated with counciousness, whereas we are bound the
+			Descarte's conception of matter, which is distinct from 
+			awareness.
+
+-   Sorabji has three initial disagreements with this interpretation.
+	1.  The position is not particularly Christian.
+	2.  Aristotle can not be making a physiological process unnecessary to
+		sense-perception.
+		-   *De Anima* holds that every mental process requires a physiological
+			process. 
+	
+	3.  Aristotle's theory comes out prosaic and commonsensical.
+		-   If we want a bizzare theory of awareness, we should look to
+			Descartes.
+		-   On the other hand, the coloration of eye-jelly is tame by
+			comparision.
+
+
+#### Section III
+
+-   With the literal coloration process defended, Sorabji brings in its
+	historical significance. 
+	-   In Section I, it was shown that Aristotle had plenty to say about
+		what we should call the intentional object of perception.
+	-   There is the idea of *intentional inexistence*, which is given well
+		by the metaphor:
+		-   If I inherit a fortune, the fortune must exists to be the object
+			of my inheritance.
+		-   If I hope for a fortune, the fortune need not exist outside my
+			mind in order to be the object of my hopes.
+
+	-   Even in sense-perception, the square shaps I may represent
+		some scene as containing need not really exist in the external scene.
+
+-   But where did he find the idea of an intentional object expressed in	
+	Aristotle?
+	-   In the physiological doctrine of form received without matter.
+		-   Brentano interpreted that doctrine as meaning that the
+			object in sense perception is not, or not only, physically
+			present in the observer, but present in the object, as an object
+			of sense-perception.
+
+-   This interpretation was only made possible by a long history of distortions,
+-   The result of this is a theory in which hot, cold, fluid, etc ..., the 
+	reception of form is no longer understoord to be a physiological process.
+-   Brentano's idea of intentionality was lent the authority of Aristotle,
+	but only through the distrotios of commentators.
+	-   We can alse see the value of getting clear on the physiological
+		interpretation which I have argued Aristotle originally intended.
+	-   Every commentator reconstructed Aristotle differently.
+
 ### 'De Anima *II 5*' <small>by M.F. Burnyeat</small>
 
-## 'The Spirit and the Letter: Aristotle on Perception' <small>by Victor Caston</small>
+### 'The Spirit and the Letter: Aristotle on Perception' <small>by Victor Caston</small>
 
 
 
