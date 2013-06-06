@@ -1,9 +1,5 @@
 # Data Structures <small>with Professor Sesh Venugopal</small>
 
-<a href="https://github.com/PLJNS/Rutgers-University-Notes/blob/master/Computer%20Science/Data%20Structures.md">
-<img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png" alt="Fork me on GitHub">
-</a>
-
 ## Chapter 3 - Efficiency
 
 ### Section 2 - Basic Operations

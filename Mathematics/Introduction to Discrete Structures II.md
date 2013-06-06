@@ -1,5 +1,23 @@
-Discrete Structures II <small>pt. 1 with Professor David Cash</small>
-=====================================================================
+Discrete Structures II <small>with Professor David Cash</small>
+===============================================================
+
+View options
+------------
+
+Hello! I'm aware this page is pretty slow, it is a problem for me too.
+
+I have added these options to ameliorate the load times.
+
+<div class="btn-toolbar pagination-centered">
+<div class="btn-group">
+<a href="#" class="btn" onclick="MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});">Typeset math</a>
+
+<a href="http://eden.rutgers.edu/~pmj34/pages/Notes/Mathematics/Introduction%20To%20Discrete%20Structures%20II%20-%20Paul%20Jones%20at%20Rutgers%20University.pdf" class="btn">Pre-rendered PDF</a>
+
+<a href="http://eden.rutgers.edu/~pmj34/pages/Notes/Mathematics/Introduction%20to%20Discrete%20Structures%20II.md" class="btn">Markdown source</a>
+</div></div>
+
+I recommend the PDF. Happy studying! <i class="icon-thumbs-up icon-black"></i>
 
 Description
 -----------
@@ -3979,5 +3997,174 @@ April 17th, 2013 - Lecture
     -   Let $b_n$ be the number of binary trees given $n$ nodes.
     -   $ b_0 = 1$, $b_1 = 1$, $b_2 = 2$, etc
     -   What does an n node ree "look like"?
+
+Practice Final Exam
+-------------------
+
+1.  What is the coefficient of $x^{12} x^{9}$ when $(x + y)^{21}$ is expanded?
+	How many monomials are in the expansion?
+	-   This requires the binomial theorem.
+	-   You plug in $21$ for $n$ and $9$ for $k$.
+		$$22 \choose 12$$
+2.  If $P(A \cap B) \lt P(A)$, is it always true that $P(A|B) \lt P(A)$? 
+    Either prove it, or disprove it by finding a counterexample.
+	-   You can disprove this with the values $P(A) = .5$, P(B) = .25$.
+3.  If we throw $n$ balls into $m$ urns, what is the probability that all of
+    the balls land in exactly 1 urn? At most 2 urns?
+	-   The number of possible ways to distribute $n$ balls into $m$ possible
+		urns is, according to the partition formula,
+		$$n + m - 1 \choose m - 1$$
+	-   Let this be our sample space.
+	-   For exactly one urn, how many ways are there to distribute all the balls
+		into one urn?
+		$$m$$
+	-   Making our answer $m$ divided by the sample space.
+	-   How many ways are there to distribute $n$ balls into at most $2$ urns?
+		This means that $1$ urn is possible, but we're interested in $2$ urns
+		*as well*.
+	-   The number of ways to divide $n$ indistinguishable balls into $r$ possibly
+		empty bins is:
+		$$n + r - 1 \choose r - 1$$
+	-   Our answer, therefore is,
+		$$\frac{m + {n + 2 - 1 \choose 2 - 1}}{n + m - 1 \choose m - 1}$$
+4.  Suppose we shuffle a standard deck of 52 cards and deal a 5 card hand.
+    What is the probability we get a straight? What about a straight flush?
+	-   Our sample space is the beyond astronmically large:
+		$$56 \choose 5$$
+	-   Let's look at how many straights there are:
+		
+			A  2  3  4  5  6  7  8  9  10  J  Q  K  A
+			+-----------+  +-----------+
+		       +-----------+  +------------+
+			      +-----------+  +------------+
+			         +-----------+  +------------+
+							+----------+    +-----------+
+	-   I count 10 different ways of getting a straight.
+	-   So compared to our sample space, you must select 1 of 10 straights,
+		then for each card, you must pick a suit.
+		$$\frac{{10 \choose 1}{4 \choose 1}^5}{56 \choose 5}$$
+	-   If we're only interested in the case where all of the suits are the
+		same, you can simply take of the $5$th power on the suit value.
+5.  We roll a die 10 times. Let $X$ be the number of time a roll of 1, 2, or
+    3 comes up. Find the range of $X$, $P(X = 3)$, $E(X)$, and $V(X)$.
+	-   So we're interested in the frequnecy function where we get "the number
+		of trials until the first success" which is "geometric."
+	-   Our range, therefore, is from $0$ to potentially inifinite.
+	-   The probability of success for any given trial, because of linearity
+		of expectation, is:
+		$$\frac{3}{6}$$
+		because there are $3$ values that represent a sucess and $6$ total possible
+		values.
+		$$P(X = n) = \frac{1}{2}(1 - \frac{1}{2})^{n - 1}$$
+		$$E(X) = \frac{1}{\frac{1}{2}}$$
+		$$V(X) = \frac{1 - \frac{1}{2}}{(\frac{1}{2})^2}$$
+
+6.  Suppose again we shuffle a standard deck of 52 cards and deal a five card
+    hand. Let $A_i$ be the event that the $i$-th card is red.
+    1.  What is the probability of the event $E = $ "exactly two cards
+        are red"?
+		-   You can exploit symettry and linearity of expectation here.
+		-   There are $56$ cards in the first drawing, $55$ cards in the second
+			drawing.
+		-   There are $26$ red cards in the first drawing, $25$ red cards
+			in the second (because we already "got one" in this calculation).
+		-   Now the rest of the cards have to be not red out of $26$, $25$, $24$
+			non-red cards in a deck of $54$, $53$, $52$.
+		-   Every fraction must be multiplied by the multiplicative principle.
+			$${5 \choose 2}\left(\frac{26}{56} \times \frac{25}{55} \times \frac{26}{54} \times \frac{25}{53} \times \frac{24}{52}\right)$$
+		-   Please note that there are in fact $52$ cards in a deck.
+
+    2.  What is the probability of the event $F = $ "the first two cards
+        are red"? 
+		-   This is like the first question, but we just don't care about the
+			cards after the first two. They could be red, they might not be,
+			whatever the case, we do not have to account for it.
+			$$\frac{26}{56} \times \frac{25}{55}$$
+	3.  Are $E$ and $F$ indepedant? Explain your answer.
+		-   Two events are indepedant if and only if the probability of their
+			intersection is equal to the product of their individual probabilities.
+			Formally,
+			$$P(A \cap B) = P(A) \times P(B)$$
+		-   What is $A \cap B$? It is both that "the first two cards are red" and
+			"exactly two cards are red." Which is the event that only the first
+			two cards are red. 
+		-   The probability that both of these events happen is not equal to
+			the product of the individual probilities, and therefore this
+			particular tuple of events are dependent on one another.
+
+7.  Consider an experiment where we flip three coins. Suppose we repeat this
+	experiment until we get all Heads. Let $X$ be the random variable that
+	is the number of experiments needed. Find $E(X)$ and $V(X)$.
+	-   Again, we are dealing with a geometric frequency function because
+		we're interested in the number of trials until the first success.
+	-   The success of any given trial is going to be the cube of the 
+		success of a single coin toss,
+		$$\left(\frac{1}{2}\right)^3$$
+	-   Therefore, based on the formula for the geometric frequency function,
+		$$P(X = n) = \left(\frac{1}{2}\right)^3 \left(1 - \left(\frac{1}{2}\right)^3\right)^{n - 1}$$
+		$$E(X) = \frac{1}{\left(\frac{1}{2}\right)^3}$$
+		$$V(X) = \frac{1 - \left(\frac{1}{2}\right)^3}{\left(\left(\frac{1}{2}\right)\right)^3)^2}$$
+
+8.  Consider the same experiment as before, except now we flip the coins 100
+	times. Let $W$ be the random variable representing the number of time you
+	get all Heads. Is the frequency function of $W$ Bernoulli, binomial,
+	geometric, or negative binomial? Find $E(W)$ and $V(W)$. Use Chebyshev's
+	inequality to bound the probability that $|W - E(W)| is more than 10.
+	-   This is a binomial frequency function, as it represents the number
+		of successes in $n$ trials.
+	-   The range is limited by $n$.
+	-   $n$ is equal to $100$, as we are performing the trial that many times.
+	-   The probability of success in any given trial is still:
+		$$ \left(\frac{1}{2}\right)^3$$
+		$$P(X = k) = {100 \choose k} \left(\frac{1}{2}\right)^3 \left( 1 - \left( \frac{1}{2} \right)^3\right)^k$$ 
+		$$E(X) = \left(\frac{1}{2}\right)^3 \times 100 $$
+		$$V(X) =  \left(\frac{1}{2}\right)^3 \left(1 - \left(\frac{1}{2}\right)^3\right)\times 100$$	
+9.  Consider a group of $n$ married couples which are seated at a rectangular
+	table with $n$ seats on each side. Let $X$ be a random variable that counts
+	the number of married couples that are seated next to each other. Find
+	$E(X)$.
+10. Suppose that 51 percent of babies are born girls. Suppose also that there
+	is a prenatal test such that 98 percent of the baby girls come back
+	positive. Use Bayes Theorem to compute the probability that the baby
+	is a girl.
+	-   Bayes's theorem:
+		$$ P(F|E) = \frac{P(E|F)P(F)}{P(E|F)P(F) + P(E|F^c)P(F^c)} $$
+	-   $E = $ "the test for girl is positive"  
+	-   $F = $ "the baby is a girl" = $.51$
+	-   $P(E|F) = $ "the prenatal test is right" $ = .98$
+		$$ \frac{.98 \times .51}{.98 \times .51 + .02 \times .49} $$
+11. Give the generating function with the $n$-coefficient equal to the number
+	of ways to solve $e_1 + e_2 + e_3 = n$ with $e_1, e_2 \ge 0$ and $e_3$ a
+	multiple of $3$. Give a close form version of your function.
+	$$e_1 = x^0 + x^1 + x^2 + x^3 ...$$
+	$$e_2 = x^0 + x^1 + x^2 ... $$
+	$$e_3 = x^0 + x^3 + x^6 + x^9 ... $$
+	-   Referring the "the chart", not that $e_1$ and $e_2$ are of the form:
+		$$ \frac{1}{x - 1} $$
+	-   And similarly, $e_3$ is of the form:
+		$$ \frac{1}{x^3 - 1} $$
+	-   Yielding the closed form:
+		$$ \left( \frac{1}{1 - x} \right)^2 \left( \frac{1}{1-x^3} \right)$$
+    
+12. Find a formula for $a_n$, which is defined by the following recurrence
+	relation for all $n \gt 0$:
+	$$a_0 = 9$$
+	$$a_n = 2a_{n - 1} + 2$$
+	$$2a_{n - 1} 2 + 9 = a_n + a_0 $$
+	$$\sum_{n = 0}^{\infty} a_n x^n $$
+	$$x^n (2a_{n - 1} $$
+
+13. Consider the coin flipping game, where player $A$ pays $B$ one dollar
+	for each Heads, and vice versa for each Tails. (The coin is unbiased here.)
+	Let $X_1$ be the random variable recordin the first time player $A$ is
+	"ahead." Find $P(X_1 \le 7)$. What is the probability that $X$ is odd?
+	Even?
+14. Continuing with the coin flipping game, also define $X_2$ to record the
+	first time $A$ is up two dollars, $Z_1$ be the first time any player is
+	up one dollar, and $Z_2$ the first time any player is up two dollars. 
+	Which pairs of random variables from $\lbrace X_1, X_2, Z_1, Z_2 \rbrace$
+	are indepedant? Let $W = Z_2 - Z_1$. Is $W$ indepedant of $Z_1$? Explain
+	your answers carefully, but explicit calculations are not necessary.
+
 
 

@@ -1647,7 +1647,7 @@ February 25th, 2013 - Reading: Chris Swoyer, 'Leibnizian Expression', *Journal o
                                            | 2. Surrogative reasoning
                                            |
         3. Inverse of Correlating Relation v
-        Q(b,a) ----------------------> Q(b*, a*)
+        Q(b,a) <--------------------- Q(b*, a*)
                      preserves Q
 
 -   Steps of **surrogative reasoning**:
@@ -2506,7 +2506,7 @@ April 8th, 2013 - Handout
             concur—so that the entelechy is joined with a mass which
             comprises many monads?
 
-                    {Entekchy  + aggregate of monads} = monad
+				{Entekchy  + aggregate of monads} = monad
 
             implies that the monad is an embodied entelchy. On this
             view, there is one substance.
@@ -2514,10 +2514,10 @@ April 8th, 2013 - Handout
         -   Or, does the primitive power exclude other monads so that it
             pertains to that one entelechy alone?
 
-                    { Entelechy 
-                    + primary passive power exclusive of monads, 
-                      but related to the agg of monads
-                    } = monad
+                { Entelechy 
+                + primary passive power exclusive of monads, 
+                  but related to the agg of monads
+                } = monad
 
             implies that monad is a simple substance, comprising no
             other ends or monads; its passive power is somehow related
@@ -2544,27 +2544,27 @@ April 8th, 2013 - Handout
         whole mass, which is the aggregate containing many
         substances—this comports with the 1-substance view.,
 
-                {Ent + body=aggregate} 
+			{Ent + body=aggregate} 
 
         makes a monad; monads are embodied entelechies; an entelechy
         alone is not yet a substance.
         -   This is the 1-substance view.
 
     -   But the part in brackets in (b) comports with the 2-substance
-        view.\
-         A monad, alone, is a substance formed from an entelechy and a
+        view.
+        A monad, alone, is a substance formed from an entelechy and a
         primary passive power which is distinct from the aggregate and
         found only in that monad--=a lthough the primitive passive power
         is somehow related to the aggregate.
 
-                {Ent+PPF exclusive of all monads} 
+			{Ent+PPF exclusive of all monads} 
 
         -   makes a monad; monads are not embodied ents.
 
     -   But they comprise passivity which is related to the aggregate of
         monads which concur in the organic machine.
 
-                {Dominant monad + organic machine, infinitely composed of org machines} make a corporeal substance, or animal. 
+            {Dominant monad + organic machine, infinitely composed of org machines} make a corporeal substance, or animal. 
 
         -   Leibniz may have hesitated, but he came down for the theory that monads are simple substances, 
             and corporeal substances have mass which is the concurrence of many monads. 
@@ -3010,13 +3010,13 @@ April 17th, 2013 - Lecture
     that is sometimes present in the soul, and sometimes not present
     in the soul.
     
-    soul
-    ---------->    +-----+
-    ->   \         |     |
-    --->  \   /    |body |
-    ->       /     |     |
-                   +-----+
-        <-----
+	    soul
+  	  ---------->    +-----+
+  	  ->   \         |     |
+ 	  --->  \   /    |body |
+ 	  ->       /     |     |
+  	                 +-----+
+    	    <-----
         
 -   We do will things and our voltions have varying degrees of success.
 -   Leibniz is set against any soul body interaction.
