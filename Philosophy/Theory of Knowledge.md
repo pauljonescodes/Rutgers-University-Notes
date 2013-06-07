@@ -747,6 +747,26 @@ June 6th, 2013 <small>Lecture</small>
 -   From an abstract point of view, it is better to act on knowledge
     rather than abstract belief.
 
+### Sosa and Analysis of knowledge
+
+-   Sheep in a field
+    -   The accurary of the belief is not determined by your
+        aptness.
+    -   There is not apt belief.
+    
+-   You've bought a box of surefire matches.
+    -   There's only one which doesn't reliably light.
+    -   But when you strike it, a peice of Q-radiation lights it.
+
+### Animal knowledge and reflective knowledge
+
+-   **Animal knowledge** is knowledge of primitive things,
+    first order.
+    -   It is *apt belief*.
+
+-   **Reflective knowledge** is "apt belief aptly noted."
+    $$RKp = KKp$
+
 <!-- Links -->
 
 
