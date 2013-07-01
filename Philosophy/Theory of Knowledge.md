@@ -1900,6 +1900,32 @@ June 25th, 2013 <small>Reading</small>
 > If $S$ knows $P$ on the basis of $R$, and $D$ is a defeater of $R$ as
 > a reason to believe $P$, then $S$ knows $D$ is false.
 
+June 27th, 2013 <small>Lecture: Testimony and Justification</small>
+------------------------------------------------------------------
+
+-   There are various pathways to knowledge.
+    -   Some pathways are **generative**
+        -  Perception, for example.
+        
+    -   Some pathways are **preservative**
+        -   Inference
+
+-   There are controversies about how to classify certain sources of
+    knowledge.
+        -   You may think that they are preservative in that the follow way:            
+            >   It's natural to think that what memory does is transmit
+            >   some peice of knoweldge or justified belief from one's
+            >   earlier self to one's later self.
+
+-   A strong version of preservative view of testimony is that
+    in order to come know $P$ from testimony, the testifier
+    must know $P$.
+-   Lackey thinks that people who don't know something can come
+    to have you know that P.
+    >   **JP**: If $S$ reports that $P$ to $H$ and $H$ has no defeaters for 
+    >   $S$'s report that $P$, then $H$ is justified in accepting that 
+    >   $P$ on the basis of $S$'s testimony.
+
 July 4th, 2013 <small>Paper</small>
 -----------------------------------
 

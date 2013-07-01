@@ -2818,7 +2818,7 @@ February 25th, 2013 - Lecture
 
     -   [Awesome
         table](http://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html):
-        <table border="1" style="text-align:center;margin-left:auto; margin-right:auto;">
+        <table class="table">
         <tbody><tr>
         <th id="h1">
         Modifier
