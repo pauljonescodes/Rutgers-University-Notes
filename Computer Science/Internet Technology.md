@@ -2572,14 +2572,17 @@ August 12th, 2013 <small>Chapter 5 Review</small>
 > 
 >   -   8 bytes	
 >   -   4 bytes	
->   -   16 bytes
+>   -   **16 bytes**
 >   -   6 bytes	
+
+- [The length of an IPv6 address is 128 bits, compared with 32 bits in IPv4.](http://en.wikipedia.org/wiki/IPv6#Larger_address_space)
+- 128 bits is equal to 16 bytes.
 
 ### Question 3 <small>(2 points)</small>
 
 >   How big is the IPv4 address space?
 > 
->   -   4 bytes	
+>   -   **4 bytes**	
 >   -   6 bytes	
 >   -   16 bytes
 >   -   6 bytes	
@@ -2588,6 +2591,8 @@ August 12th, 2013 <small>Chapter 5 Review</small>
 
 >   Consider the 5-bit generator, G=10011, and suppose that D has the value 1010101010. What is the value of R (in binary)?
 
+`0100`
+
 ### Question 5 <small>(4 points)</small>
 
 >   Imagine are building your own NAT. What is the MINIMUM 
@@ -2595,8 +2600,8 @@ August 12th, 2013 <small>Chapter 5 Review</small>
 >   table needs to store in order to relay packets?
 >
 >   -   LAN IP address, LAN port, Dst IP address, Dst port, WAN port	
->   -   LAN IP address, Dst IP address, WAN port	
->   -   LAN IP address, LAN port, WAN port	
+>   -   LAN IP address, Dst IP address, WAN port ???
+>   -   **LAN IP address, LAN port, WAN port**	
 >   -   LAN IP address, LAN port, Dst IP address, Dst port
 
 ### Question 6 <small>(8 points)</small>
@@ -2604,3 +2609,97 @@ August 12th, 2013 <small>Chapter 5 Review</small>
 > While wired link layer communication protocols are able to detect collisions, 
 > wireless links can not. What property of wireless communication prevents 
 > collision detection? Presume all nodes can hear each other.
+
+Wireless communication prevents collision detection because, generally, the 
+sender cannot "hear" what the receiver actually receives. A single antenna
+is used to send and receive. More specifically, because a single antenna cannot
+send and receive at the same time, collision detection is impossible.
+
+August 13th, 2013 <small>Final Exam Study Guide</small>
+-------------------------------------------------------
+
+### Datalink layers <small>Part 1</small>
+
+-   hosts and routers are **nodes**
+-   communication path are **links**
+-   Link layers services:
+    -   Framing
+        -   encapsulate datagram into frame, adding header, trailer link access
+    -   channel access if shared medium
+    -   Reliable delivery between adjacent nodes
+    -   Flow Control
+    -   Error Detection
+    -   Error Correction
+    -   Half-duplex and full-duplex
+        -   with half duplex, nodes at both ends of link can transmit, but not at same time
+
+### Exam guesses and Questions
+
+#### Question 0
+
+>   If every node in a network has implemented **Hamming Codes** at the
+>   link layer to provide error detection and correction, 
+>   why is it ___ to have __ __ at _____?
+    
+-   Hamming codes correct all single bit errors with only 
+    `log(M)` extra bits and detect double bit errors
+-   The question is about a layer other than the link, I think.
+-   s othe receiver might deliver a corrupted datagram to the 
+    network layer, or be unaware that the contentf a
+    field in the frame’s header has been corrupted.
+    
+#### Question 1
+
+>   Presume you have written ______ . Would ____ in order to ___ ? 
+>   (think carefully about the **HTTP messages** you've seen and how they operate)
+
+#### Question 2
+
+>   What is the __ of the ____ at each of the following _?
+
+Presumably some sort of fill in the blank.
+
+##### Sub-question 1
+
+-   The five services:
+    -   Confidentiality
+    -   Non-repudiation
+    -   Integrity
+    -   Authorization
+
+>   1.  Public/private key challenge mechanism does not provide authentication. 
+>       _____ how the ___ can be ____. 
+>   2.  Public key encryption by itself does not provide __. What can 
+>       be _____ __ __ to provide ____. Explain why ____. 
+>   3.  Does public  key encryption provide ____ without any modification? Why or why not?
+>   4.  How ______ _ ___ a public key ___ ___ secure?
+
+1.  Public key certification
+    -   
+    
+2. Message integrity.
+3. 
+
+##### Sub-question 2
+
+-   Possible attacks:
+    -   Man in the middle attack
+        >   Bob receives everything that Alice sends, and vice versa. 
+        >   (e.g., so Bob, Alice can meet one week later and recall conversation)
+        >   Problem to solve: key distribution
+        
+    -   playback attack
+        -   To avoid playback, use a nonce.
+        -   Send R, large number, and expect it back encrypted with the private key.
+    
+>   1.  _ can be broken with a _____ attack. Explain what a ____ attack is. What is '__'?
+>   1.  What is a '____”?
+>   1.  What is _____?
+
+##### Sub-question 3
+
+### Richie
+
+1. CRC
+2. Timing
+3. Routing table
