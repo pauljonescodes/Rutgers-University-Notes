@@ -62,11 +62,14 @@ September 4th, 2013 <small>Reading, SQL, pages 243-273</small>
 		Movies(title, year, length, genre, studioName, producerC#)
  		StarsIn(movieTitle, movieYear, starName) 
 		MovieStar(name,address, gender, birthdate) 
-		MovieExec(name,address, cert#, netWorth)		Studio(name, address, presC#)
+		MovieExec(name,address, cert#, netWorth)
+		Studio(name, address, presC#)
 
 -   To get all movies by Disney, for instance, you'd query:
 
-		SELECT *    // get all		FROM Movies // the movies 		WHERE studioName = ’Disney’ AND year = 1990; // from Disney in 1990 
+		SELECT *    // get all
+		FROM Movies // the movies 
+		WHERE studioName = ’Disney’ AND year = 1990; // from Disney in 1990 
 
 -   Here's what each of the clauses do:
 	1.  The `SELECT` clause tells which attributes of the tuples matching the condition are produced as part of the answer.
@@ -158,7 +161,9 @@ September 4th, 2013 <small>Reading, SQL, pages 243-273</small>
 
 #### The Truth-Value `UNKNOWN`
 
-> 1. The `AND` of two truth-values is the minimum of those values. That is, x `AND` y is `FALSE` if either x or y is `FALSE`; it is `UNKNOWN` if neither is `FALSE` but at least one is `UNKNOWN`, and it is `TRUE` only when both x and y are `TRUE`.> 2. The `OR` of two truth-values is the maximum of those values. That is, x `OR` y is `TRUE` if either x or y is `TRUE`; it is `UNKNOWN` if neither is `TRUE` but at least one is `UNKNOWN`, and it is `FALSE` only when both are `FALSE`.> 3. The negation of truth-value v is 1 —v. That is, `NOT` x has the value `TRUE` when x is `FALSE`, the value `FALSE` when x is `TRUE`, and the value `UNKNOWN` when x has value `UNKNOWN`.
+> 1. The `AND` of two truth-values is the minimum of those values. That is, x `AND` y is `FALSE` if either x or y is `FALSE`; it is `UNKNOWN` if neither is `FALSE` but at least one is `UNKNOWN`, and it is `TRUE` only when both x and y are `TRUE`.
+> 2. The `OR` of two truth-values is the maximum of those values. That is, x `OR` y is `TRUE` if either x or y is `TRUE`; it is `UNKNOWN` if neither is `TRUE` but at least one is `UNKNOWN`, and it is `FALSE` only when both are `FALSE`.
+> 3. The negation of truth-value v is 1 —v. That is, `NOT` x has the value `TRUE` when x is `FALSE`, the value `FALSE` when x is `TRUE`, and the value `UNKNOWN` when x has value `UNKNOWN`.
 
 #### Ordering the Output
 
@@ -288,4 +293,67 @@ September 5th, 2013 <small>Introduction to SQL</small>
 -   The logic of conditions in SQL is really 3-valued logic: `TRUE`, `FALSE`, `UNKNOWN`.
 -   Comparing any value (including `NULL` itself) with `NULL` yields `UNKNOWN`.
 -   A tuple is in a query answer if and only if the `WHERE` clause is `TRUE` (not `FALSE` or `UNKNOWN`).
+
+September 17th, 2013 <small>Keywords for Quiz 1</small>
+---------------------------------------------------------
+
+* `JOIN`: used to combine rows from two or more tables, based on a common field between them.
+
+	    SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate 
+		FROM Orders
+		INNER JOIN Customers
+		ON Orders.CustomerID=Customers.CustomerID;
+
+* `UNION`: combines the result of two or more SELECT statements.
+
+		SELECT column_name(s) FROM table1
+		UNION
+		SELECT column_name(s) FROM table2;
+
+* `INTERSECT`: allows you to return the set theoretic intersection of the results of 2 or more "select" queries
+
+		select field1, field2, . field_n
+		from tables
+		INTERSECT
+		select field1, field2, . field_n
+		from tables;
+
+* `MINUS`: returns all rows in the first SQL SELECT statement that are not returned in the second SQL SELECT statement
+
+		select field1, field2, ... field_n
+		from tables
+		MINUS
+		select field1, field2, ... field_n
+		from tables;
+
+* `EXISTS`: this is a "to be met condition," where the select statement of the super query operates on the returned table.
+
+		SELECT *
+		FROM suppliers
+		WHERE EXISTS (  select *
+						from orders
+						where suppliers.supplier_id = orders.supplier_id);
+
+* `NOT EXISTS`: the `NOT` operator can be combined with the `EXISTS` operator to operate on a subquery does not satisfy it's where condition.
+* `ALL`: used as a union that allows duplicates
+
+		SELECT column_name(s) FROM table_name1
+		UNION ALL
+		SELECT column_name(s) FROM table_name2
+
+* `ORDER BY (DESC)`: When sorting your result set in descending order, you use the DESC attribute in your ORDER BY claus
+
+		SELECT supplier_city
+		FROM suppliers
+		WHERE supplier_name = 'IBM'
+		ORDER BY supplier_city DESC;
+
+* `COUNT`: returns the number of rows in a query
+
+		SELECT COUNT(expression)
+		FROM tables
+		WHERE predicates;
+
+September 17th, 2013 <small>Recitation</small>
+----------------------------------------------
 

@@ -133,6 +133,124 @@ The following list is organized by topic, not by chronological order of coverage
     -   Types and type inference
     -   Scope & binding,lexical and dynamic
     -   Parameter passing modes
+
+September 16th, 2013 <small>Assignment 1</small>
+------------------------------------------------
+
+1.  Given grammar `G`: (capitals are non-terminals, everything else is a
+    terminal)
+
+        S -> A | S # S | S @ S      
+		A -> C | C A        
+		C -> a | b | c
+
+    -   For each of the strings below:
+        1.  if it is in `L(G)` prove it by giving both - a leftmost
+            derivation
+        2.  a parse tree. If it is ambiguous demonstrate that fact with
+            parse trees.
+        3.  if it is not in `L(G)` say so and explain why
+
+    -   Strings:
+        1.  `aa # bb`
+            1.  `S`
+            2.  `S # S`
+            3.  `A # A`
+            4.  `C # C`
+            5.  `a # a`
+            
+        2.  `a @ b # c`
+            1.  `S`
+            2.  `S # S`
+            3.  `S # S @ S`
+            4.  `A # A @ A`
+            5.  `C # C @ C`
+            6.  `a @ b # c`
+        
+        3.  `ab`
+            1. `SS`
+            2. `AA`
+            3. `CC`
+            4. `ab`
+
+2.  Rewrite the grammar `G` above so that no string in its language is
+    ambiguous. Make # have higher precedence than `@` and make both `#`
+    and `@` be left-associative.
     
+        S -> A | @ S       
+		A -> C | # A        
+		C -> a | b | c
+    
+3.  Given grammar G': 
+
+		S -> A B
+		A -> x | A a
+		B -> y | b B
+	1.  Give a string that is in `L(G')` and one that is not
+	    1.  `xy`
+	    2.  `x`
+    2.  Describe in English what strings are in `L(G')`.
+    
+        `L(G')` contains a series of `x`s followed by a series
+        of `y`s, each with at least one `x` or `y` followed by
+        potentially infinite `x`s or `y`s.
+
+4.  Let `L1` be a formal language using the binary digits `0` and `1` as
+    its character set, such that a string is in `L1` if and only if it
+    has `3` or more `1`'s in a row somewhere in it.
+    1.  Draw a deterministic finite state automaton that recognizes
+        `L1`.
+        
+                +---+    +---+    +---+    +---+
+              ->| 1 |--->| 1 |--->| 1 |--->| 0 |
+                +---+    +---+    +---+    +---+
+                |                  |       |
+                ---------------------------+
+        
+    2.  Write a regular expression whose language is `L1`.
+    
+            /([01]*[111]+[01]*)/
+
+5.  Let `L3` be a formal language using the letters `o`, `a`, and `y`,
+    such that a string is in `L3` if and only if it has the string
+    `yoya` somewhere within it.
+    1.  Draw a nondeterministic FSA that recognizes `L3`.
+    
+                  ______________________         _
+                  |         |          |        | |
+                +---+ o  +----+ y  +-----+ a  +------+
+              ->| y |--->| yo |--->| yoy |--->| yoya |
+                +---+    +----+    +-----+    +------+
+
+    
+    2.  Write a regular expression whose language is `L3`.
+    
+        (y|o|a)*(yoya)+(y|o|a)*
+
+6.  Describe in English the language accepted by this DFSA:
+    `S1` is the start state and only `S2` is an accepting state.
+    
+    A series of zeroes and ones with at least a single one and
+    possibly no zeroes. 
+
+7.  Describe in English the language of each of the following RE's:
+    1.  `ab*c*` 
+        -   This is a series `b`s preceded by an `a`, followed by
+            any number of `c`s.
+        
+	2.  `a*|b*` 
+	   -   Any number of `a`s followed by any number of `b`s.
+	
+	3.  `(ab)*`
+	   -   A possibly empty series of repeating `ab`.
+
+September 23rd, 2013 <small>Assignment 2</small>
+------------------------------------------------
 
 
+1.  View the video: https://www.youtube.com/watch?v=prAwkQt3ARg
+2.  Answer these questions:
+    1.  What is the main point the speaker is trying to make
+    2.  List two examples the speaker uses and explain for each
+        how it supports his point, or, if you think that it does not, 
+        why not.

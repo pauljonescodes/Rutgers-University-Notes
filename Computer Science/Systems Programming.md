@@ -4,65 +4,70 @@ Systems Programming <small>with Professor Brian Russel</small>
 Description
 -----------
 
-This course teaches students how to think about, build, debug, and test large computer programs.  The course stresses learning how to use tools such as debuggers, profilers, source version control systems, and integrated development environments as an essential part of developing large programs.  The course also stresses the understanding of how programs execute on today's computers and how to measure and optimize performance.  Programming will be in C on Unix systems to introduce students to a new programming eco system, as well as enable the mapping of high-level language constructs to the underlying machine.
+This course teaches students how to think about, build, debug, and test
+large computer programs. The course stresses learning how to use tools
+such as debuggers, profilers, source version control systems, and
+integrated development environments as an essential part of developing
+large programs. The course also stresses the understanding of how
+programs execute on today's computers and how to measure and optimize
+performance. Programming will be in C on Unix systems to introduce
+students to a new programming eco system, as well as enable the mapping
+of high-level language constructs to the underlying machine.
 
 ### Topics
 
-Systems programming in C and Unix:
-    C programming
-    Memory management and the C memory model
-    System calls
-    I/O
-    Caching
-    Multi-threaded programming
-    Shell scripts
+Systems programming in C and Unix: C programming Memory management and
+the C memory model System calls I/O Caching Multi-threaded programming
+Shell scripts
 
-Software development:
-    Performance (space and time) analysis and measurement
-    Debugging
-    Testing
-    Performance optimization
+Software development: Performance (space and time) analysis and
+measurement Debugging Testing Performance optimization
 
-Tools: 
-    IDE (e.g., Eclipse)
-    Source version control (e.g., CVS)
-    Debugger (e.g., gdb)
-    Memory errors (e.g., valgrind)
-    Profiling (e.g., gprof, valgrind)
+Tools: IDE (e.g., Eclipse) Source version control (e.g., CVS) Debugger
+(e.g., gdb) Memory errors (e.g., valgrind) Profiling (e.g., gprof,
+valgrind)
 
 ### Expected Work
+
 Large programming project spread across several parts
 
 ### Department Learning Goals:
 
 Computer Science majors ...
 
-  will be prepared to contribute to a rapidly changing field by acquiring a thorough grounding in the core principles and foundations of computer science (e.g., techniques of program design, creation, and testing; key aspects of computer hardware; algorithmic principles).
-  will acquire a deeper understanding on (elective) topics of more specialized interest, and be able to critically review, assess, and communicate current developments in the field.
-  will be prepared for the next step in their careers, for example, by having done a research project (for those headed to graduate school), a programming project (for those going into the software industry), or some sort of business plan (for those going into startups).
-
+will be prepared to contribute to a rapidly changing field by acquiring
+a thorough grounding in the core principles and foundations of computer
+science (e.g., techniques of program design, creation, and testing; key
+aspects of computer hardware; algorithmic principles). will acquire a
+deeper understanding on (elective) topics of more specialized interest,
+and be able to critically review, assess, and communicate current
+developments in the field. will be prepared for the next step in their
+careers, for example, by having done a research project (for those
+headed to graduate school), a programming project (for those going into
+the software industry), or some sort of business plan (for those going
+into startups).
 
 Syllabus
 --------
 
 ### Instructor
 
-  Brian Russell [morbius@cs.rutgers.edu](mailto:morbius@cs.rutgers.edu)   
-      Office Hours: Wednesdays 8:00-9:00 pm, Hill 403.
+Brian Russell <morbius@cs.rutgers.edu>    Office Hours: Wednesdays
+8:00-9:00 pm, Hill 403.
 
 ### TAs
 
-  Ying Zhan [yz280@cs.rutgers.edu](mailto:yz280@cs.rutgers.edu)    Office
-      Hours: Tuesdays 10:00-11:00 am Hill 418
+Ying Zhan <yz280@cs.rutgers.edu>    Office Hours: Tuesdays 10:00-11:00
+am Hill 418
 
-  Sejong Yoon [sjyoon@cs.rutgers.edu](mailto:sjyoon@cs.rutgers.edu)   
-      Office Hours: Wednesdays 2:00-3:00 pm CBIM cubicle 1
+Sejong Yoon <sjyoon@cs.rutgers.edu>    Office Hours: Wednesdays
+2:00-3:00 pm CBIM cubicle 1
 
-  Yuanzhen Gu [yg185@cs.rutgers.edu](mailto:yg185@cs.rutgers.edu)   
-      Office Hours: Mondays 10:00-11:00 am Hill 418
+Yuanzhen Gu <yg185@cs.rutgers.edu>    Office Hours: Mondays 10:00-11:00
+am Hill 418
 
-  Zi Yan [zy56@cs.rutgers.edu](mailto:zy56@cs.rutgers.edu)    
-      Office Hours: Thursdays 1:00 pm 2:00 pm Hill 405
+Zi Yan <zy56@cs.rutgers.edu>    Office Hours: Thursdays 1:00 pm 2:00 pm
+Hill 405
 
 ### Objective
 
@@ -76,18 +81,17 @@ language and UNIX/Linux operating systems.
 
 ### Prerequisite Knowledge
 
-  Structured programming in a high-level language (such as Java).
-  Standard data structures (lists, trees, graphs, hash tables).
+Structured programming in a high-level language (such as Java). Standard
+data structures (lists, trees, graphs, hash tables).
 
 ### Textbook
 
 The following texts are available online, free of charge.
 
-  *C Programming*
-  *The C Book* Mike Banahan, Declan Brady and Mark Doran
+*C Programming* *The C Book* Mike Banahan, Declan Brady and Mark Doran
 
-The textbooks do not cover all material discussed in class, and are
-not a substitute for attending lectures.
+The textbooks do not cover all material discussed in class, and are not
+a substitute for attending lectures.
 
 ### Topics Covered in CS214
 
@@ -96,43 +100,38 @@ coverage in the course.
 
 1.  Programming in C
 
-      Basic syntax, standard I/O, data manipulation, flow control
-      Pointer manipulation, dynamic memory management
-      Error handling and debugging
+    Basic syntax, standard I/O, data manipulation, flow control Pointer
+    manipulation, dynamic memory management Error handling and debugging
 
 2.  Programming under UNIX
 
-      Advanced debugging (gdb)
-      Performance profiling (gprof)
-      File I/O
-      Signal handling
-      Scripting
+    Advanced debugging (gdb) Performance profiling (gprof) File I/O
+    Signal handling Scripting
 
 3.  Large-scale development
 
-      Modules, headers, linking, makefiles
-      Version control
+    Modules, headers, linking, makefiles Version control
 
 4.  Concurrent programming
 
-      Process creation and communication
-      Multithreaded programming, synchronization
+    Process creation and communication Multithreaded programming,
+    synchronization
 
 5.  (optional) Embedded systems programming
 
-      Developing an embedded application
+    Developing an embedded application
 
 ### Lecture Schedule
 
-1. Sept 04 Into to C
-2. Sept 06 C program structure, C functions
-3. Sept 11 C preprocessor, formatted I/O
-4. Sept 13 Dynamic memory management
-5. Sept 18 Data Structure design
-6. Sept 20 File I/O
-7. Sept 25 multi-file projects, makefiles, directory I/O
-8. Sept 27 gdb
-9. Oct 02 libraries
+1.  Sept 04 Into to C
+2.  Sept 06 C program structure, C functions
+3.  Sept 11 C preprocessor, formatted I/O
+4.  Sept 13 Dynamic memory management
+5.  Sept 18 Data Structure design
+6.  Sept 20 File I/O
+7.  Sept 25 multi-file projects, makefiles, directory I/O
+8.  Sept 27 gdb
+9.  Oct 02 libraries
 10. Oct 04 signals and event-based programming
 11. Oct 09 signals and processes
 12. Oct 11 valgrind and memory-related bugs
@@ -206,9 +205,7 @@ will cease October 1.
 
 ### Grading
 
-  Midterm: 20 %
-  Final: 30 %
-  Project: 50%
+Midterm: 20 % Final: 30 % Project: 50%
 
 The programming part of the projects are typically graded on how close
 they are to the functional requirements. The written portion is graded
@@ -224,18 +221,13 @@ the same criteria for grading each programming assignment. Each
 programming assignment is worth 100 points. here are our grading
 criteria:
 
-  40% Correctness
-    Percent based on number of test cases
+40% Correctness Percent based on number of test cases
 
-  40% Code Quality
-    20% Algorithmic
-    10% Reusability/Modularity
-    10% Decomposition
+40% Code Quality 20% Algorithmic 10% Reusability/Modularity 10%
+Decomposition
 
-  20% Documentation
-      10% Test Cases from Students
-      5% Comments
-      5% Documentation (Analysis, readme files, etc...)
+20% Documentation 10% Test Cases from Students 5% Comments 5%
+Documentation (Analysis, readme files, etc...)
 
 ### The Gilligan's Island Rule
 
@@ -253,36 +245,36 @@ you. 2. Your TA. 3. The professor.
 September 5th, 2013 <small>Lecture on C program structure, C functions</small>
 ------------------------------------------------------------------------------
 
-### General Syntax    
+### General Syntax
 
     struct point {
         int x,
         int y,
     } a, b, c; // three variables
-    
+
     a.x = 3;
     b.y = 42; // accesing them
-    
+
     struct rectangle {
         struct point top_left;
         struct point top_right;
     } d, *p;
-    
+
     d.top_left.x = 30;
     p = &d;
     p->top_left.y = 40;
-    
+
     struct rectangle box = {{0, 5}, {5, 6}};
-    
+
     union f {
         int int_part;
         char char_part[sizeof(int)];
     }
-    
+
     int array[10];
-    
+
     char string_array[] = "hello";
-    
+
     int square[10][10] = {{0, 1, 2, 3, 4, 5}, 
                           {6, 7, 8, 9, 10,11}};
                           
@@ -295,77 +287,86 @@ September 5th, 2013 <small>Lecture on C program structure, C functions</small>
             statements;
     }
       
-  A string is a series of characters, and array, followed by a null byte.
-  Before there were no classes, there were structs.
-      No visibility classes.
-      No message passing, methods.      
-            
+
+A string is a series of characters, and array, followed by a null byte.
+Before there were no classes, there were structs. No visibility classes.
+No message passing, methods.
+
 ### Pointers
 
     int x;
     int *px;
-    
+
     int y, *py;
-    
+
     px = &x; 
-    
+
     int *p1, *p2;
-    
+
     p1 = 0;
     p2 = p1;
-    
+
     char * s = "hello";
-    
+
     struct point * p, point_var;
-    
+
     p = &point;
     p->x = p->y = 0;     // these are 
     (*p).x = (*p).y = 0; // equivalent
-    
+
     char array[] = "hi there";
     char * p_char;
-    
+
     p_char = array; 
     * p_char = 'z'; // these are
     p[0] = 'z';     // equivalent
-    
+
     struct point * pp, point[10];
-    
+
     pp = point;
     pp *= 1;
 
-  A pointer variable contains an address.
-      If I say "pointer to" and "address of", it's equivalent.
-    
-  Subscripts can be positive, negative, and zero.
-      When you use arrays in C, there is no array bounds checking.
-      If you have a ten element array, C does not mind if you just
-        meander in either direction.
-    
+A pointer variable contains an address. If I say "pointer to" and
+"address of", it's equivalent.
+
+Subscripts can be positive, negative, and zero. When you use arrays in
+C, there is no array bounds checking. If you have a ten element array, C
+does not mind if you just meander in either direction.
+
 ### Pointers to Functions
 
     int f(int);     // defined but not implemented function
-    
+
     int (*pf)(int); // pointer to a function, parentheses necessary
                     // returns an int
                     
     int g(int);
     int f(int);
     int x;
-    
+
     x = f(3);
     pf = f;
     x = (*pf)(3);
     pf = g;
-    
+
 September 18th, 2013 <small>Programming Assignment 1: Tokenizer</small>
 -----------------------------------------------------------------------
 
 ### Introduction
 
-In this assignment, you will practice programming with C pointers. Much of the pointer manipulation will come in the form of operating on C strings, although you will be dealing with some pointers to structs as well.
+In this assignment, you will practice programming with C pointers. Much
+of the pointer manipulation will come in the form of operating on C
+strings, although you will be dealing with some pointers to structs as
+well.
 
-Your task is to write a type and a set of functions in essence, the equivalent of a Java class that implements a tokenizer. The tokenizer should accept two strings, the first of which will contain a set of *separator characters* while the second will contain a set of terms separated by one or more separator characters. The tokenizer should return the *terms* in the second string one at a time, each term is called a token, hence your program is called a tokenizer. For example, when given the following two strings:
+Your task is to write a type and a set of functions in essence, the
+equivalent of a Java class that implements a tokenizer. The tokenizer
+should accept two strings, the first of which will contain a set of
+*separator characters* while the second will contain a set of terms
+separated by one or more separator characters. The tokenizer should
+return the *terms* in the second string one at a time, each term is
+called a token, hence your program is called a tokenizer. For example,
+when given the following two strings:
 
     " ", "today is a beautiful day"
 
@@ -381,7 +382,10 @@ your tokenizer should return:
 
     "usr", "local", "bin", and " share"
 
-A string is a sequence of characters delimeted by double quotes ("). Strings can contain newline or double-quote characters, but special syntax is required to contain them and certain other characters. These special characters are represented with escape sequences:
+A string is a sequence of characters delimeted by double quotes (").
+Strings can contain newline or double-quote characters, but special
+syntax is required to contain them and certain other characters. These
+special characters are represented with escape sequences:
 
     newline \n 
     horizontal tab \t 
@@ -396,48 +400,109 @@ A string is a sequence of characters delimeted by double quotes ("). Strings can
     double quote \” 
     octal number \000 
     hex number \xhh
-    
+
 ### Implementation
 
-Your implementation needs to export the interface given in the attached tokenizer.c file. In particular, you need to define the type needed to represent a tokenizer and three functions for creating and destroying tokenizer objects and getting the next token. Note that we have only defined the minimal interface needed for external code (e.g., our testing code) to use your tokenizer. You will likely need to design and implement additional types and functions.
+Your implementation needs to export the interface given in the attached
+tokenizer.c file. In particular, you need to define the type needed to
+represent a tokenizer and three functions for creating and destroying
+tokenizer objects and getting the next token. Note that we have only
+defined the minimal interface needed for external code (e.g., our
+testing code) to use your tokenizer. You will likely need to design and
+implement additional types and functions.
 
-A token is a sequence of any ASCII character that does not contain a separator character. Separator characters are provided as a string of one or more ASCII characters. Each pair of tokens are separated by one or more separator characters. Multiple separators may be next to each other (see second example above), and/or at the beginning and/or end of the term string. When this happens, your tokenizer should discard all separators.
+A token is a sequence of any ASCII character that does not contain a
+separator character. Separator characters are provided as a string of
+one or more ASCII characters. Each pair of tokens are separated by one
+or more separator characters. Multiple separators may be next to each
+other (see second example above), and/or at the beginning and/or end of
+the term string. When this happens, your tokenizer should discard all
+separators.
 
-Your implementation must not modify the two original strings in any way. Further, your implementation must return each token as a C string in a character array of the exact right length. For example, the token usr should be returned in a character array with 4 elements (the last holds the character ’\0’ to signify the end of a C string).
+Your implementation must not modify the two original strings in any way.
+Further, your implementation must return each token as a C string in a
+character array of the exact right length. For example, the token usr
+should be returned in a character array with 4 elements (the last holds
+the character ’\0’ to signify the end of a C string).
 
-You may use string functions from the standard C library accessible through string.h (e.g, strlen()). However, you may not use strtok(), strsep() or any similar function that already performs the complete tokenization process.
+You may use string functions from the standard C library accessible
+through string.h (e.g, strlen()). However, you may not use strtok(),
+strsep() or any similar function that already performs the complete
+tokenization process.
 
-You should also implement a main() function that takes 2 string arguments, as defined above. Each character in the first string is a separator. The second string contains zero or more tokens separated by separator characters. Your main() function should print out all the tokens in the second string in left-to-right order. Each token should be printed on a separate line. Here is an example invocation of the tokenizer and its output.
+You should also implement a main() function that takes 2 string
+arguments, as defined above. Each character in the first string is a
+separator. The second string contains zero or more tokens separated by
+separator characters. Your main() function should print out all the
+tokens in the second string in left-to-right order. Each token should be
+printed on a separate line. Here is an example invocation of the
+tokenizer and its output.
 
     tokenizer ” ” ”today is sunny” today
     is
     sunny
 
-Keep in mind that coding style will affect your grade. Your code should be well-organized, well- commented, and designed in a modular fashion. In particular, you should design reusable functions and structures, and minimize code duplication. You should always check for errors. For example, you should always check that your program was invoked with the minimal number of arguments needed.
+Keep in mind that coding style will affect your grade. Your code should
+be well-organized, well- commented, and designed in a modular fashion.
+In particular, you should design reusable functions and structures, and
+minimize code duplication. You should always check for errors. For
+example, you should always check that your program was invoked with the
+minimal number of arguments needed.
 
-Your code should compile correctly (no warnings and errors) with the -Wall and either the -g or -O flags. For example
-            
+Your code should compile correctly (no warnings and errors) with the
+-Wall and either the -g or -O flags. For example
+
                       gcc -Wall -g -o tokenizer tokenizer.c
                      
-should compile your code to a debug-able executable named tokenizer without producing any warnings or error messages. (Note that -O and -o are different flags.)
 
-Your code should also be efficient in both space and time. When there are tradeoffs to be made, you need to explain what you chose to do and why.
+should compile your code to a debug-able executable named tokenizer
+without producing any warnings or error messages. (Note that -O and -o
+are different flags.)
 
-**IMPORTANT NOTE**: You may write your code on any machine and operating system you desire, but the code you turn in MUST tar (see below), compile and execute on the iLab machines or a zero grade will be given.  Be sure to compile and execute your code on an Ilab machine before handing it in.
+Your code should also be efficient in both space and time. When there
+are tradeoffs to be made, you need to explain what you chose to do and
+why.
+
+**IMPORTANT NOTE**: You may write your code on any machine and operating
+system you desire, but the code you turn in MUST tar (see below),
+compile and execute on the iLab machines or a zero grade will be given.
+Be sure to compile and execute your code on an Ilab machine before
+handing it in.
 
 ### What to turn in
 
-A tarred gzipped file named pa1.tgz that contains a directory called pa1 with the following files in it:
--   A tokenizer.c file containing all of your code.
--   A file called testcases.txt that contains a thorough set of test cases for your code, including
-inputs and expected outputs.
--   A readme.pdf file that contains a brief description of the program and any great features you want us to notice.
-Suppose that you have a directory called pa1 in your account (on the iLab machine(s)), containing the above required files. Here is how you create the required tar file. (The ls commands are just to help show you where you should be in relation to pa1. The only necessary command is the tar command.)
- ls pa1  ls pa1 Makefile readme.pdf testcases.txt tokenizer.c  tar cfz pa1.tgz pa1
+A tarred gzipped file named pa1.tgz that contains a directory called pa1
+with the following files in it: - A tokenizer.c file containing all of
+your code. - A file called testcases.txt that contains a thorough set of
+test cases for your code, including inputs and expected outputs. - A
+readme.pdf file that contains a brief description of the program and any
+great features you want us to notice. Suppose that you have a directory
+called pa1 in your account (on the iLab machine(s)), containing the
+above required files. Here is how you create the required tar file. (The
+ls commands are just to help show you where you should be in relation to
+pa1. The only necessary command is the tar command.) ls pa1 ls pa1
+Makefile readme.pdf testcases.txt tokenizer.c tar cfz pa1.tgz pa1
 
-You can check your pa1.tgz by either untarring it or running tar tfz pa1.tgz (see man tar). Your grade will be based on:
--   Correctness (how well your code works).
--   Quality of your design (did you use reasonable algorithms).
--   Quality of your code (how well written your code is, including modularity and comments). 
--   Efficiency (of your implementation).
--   Testing thoroughness (quality of your test cases).
+You can check your pa1.tgz by either untarring it or running tar tfz
+pa1.tgz (see man tar). Your grade will be based on: - Correctness (how
+well your code works). - Quality of your design (did you use reasonable
+algorithms). - Quality of your code (how well written your code is,
+including modularity and comments). - Efficiency (of your
+implementation). - Testing thoroughness (quality of your test cases).
+
+September 10th, 2013 <small>Lecture</small>
+-------------------------------------------
+
+    int gcd(int a, int b) {
+        if (b == 0) { 
+            return a;
+        } else {
+            return gcd(b, a % b);
+        }
+    }
+    
+-   What you want to take from this is that it's pass by
+    value.
+    -   The function can change the copies.
+    -   Cannot change the original values.
+    
