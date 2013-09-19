@@ -187,6 +187,115 @@ September 18th, 2013 <small>Reading, 'Useful False Beliefs', Peter Klein</small>
 September 18th, 2013 <small>1st Meeting on Klein</small>
 --------------------------------------------------------------------------------
 
+### Some background
+
+-   What most people think Gettier showed was that JTB was not
+	*sufficient* for knowledge, not that they were not *necessary*.
+	-   A lot of people thought that this may mean there is another
+		condition, and the first attempt was **evidentialism**.
+	-   The way that epistemologists initially attempted to solve this
+		way by beefing up the justification condition.
+	-   The recipe is find a false belief your justified in, find a
+		true proposition that it entails, using closure.
+		-   This belief will be true and justified which you believe
+			on the basis of the deduction from a false justified belief.
+
+-   Clark grants that JTB is not sufficient, and the way that he solves
+	the Gettier problem is by saying the proposition that you use
+	as evidence must be a JTB for you.
+	-   If you get to the evidence or belief by chains of inference,
+		they must all be true.
+	-   It must be **fully-grounded**, if there is something false
+		in there, it will be "lucky break" that you had a JTB.
+	-   This is the first evidentialist approach.
+
+### Evidentialism
+
+-   **Disjunctive normal form**: $\lbrace a, b, c, d ... x \rbrace$:
+
+	$$\exists x F(x) \equiv F(a) \lor F(b) \lor F(c) \lor ... $$  
+
+-   Michael Clark came up with a case where you have justified,
+	true, belief that whose basis is good and you *still* do not
+	have knowledge.
+	-   Klein comes to believe that Ben owns a Ford.
+	-   As it turns out, Ben stole the Ford.
+	-   He has a valid-looking title, and there's testimony
+		that he bought it, etc.
+	-   Klein comes to believe that someone in the class owns
+		a Ford on the basis that Ben owns a Ford.
+	-   As it turns out, someone does own a Ford in the class,
+		but clearly not Ben.
+	-   Imagine that Klein is epistemically careful, a careful
+		reasoner. He notes that it's more likely that someone
+		owns a Ford, and that the belief is less likely to be wrong,
+		less risky.
+		-   This clever reasoner did not make use of any false belief.
+
+-   Consider another case: Klein has good evidence that Ben and Sherri
+	own a Ford. Ben does not, Sherri does. Klein believes on these grounds
+	that "someone owns a Ford."
+	-   This is **epistemically overdetermined**, having two ways to get
+		to the same belief, one false, one true, and still knowledge.
+
+-   You can *always* fix a theory which is supposedly defeated by a counterexample
+	by just ad-hoc ruling out the counter-example. But it's just that, it's *ad-hoc*.
+	-   So evidentialism was supposed to not work (for now).
+
+### Defeasibility
+
+-   Many people think that **defeasibility theory** is part of
+	the evidentialist tradition.
+	-   The expression "defeasibility" comes from ethics.
+
+-   Say *E* is the set of all evidence, for and against, a proposition *p*.
+-   *e* is the set of evidence which justifies *S* in believing *p*. Notation:
+	$$e J_S p$$
+
+-   A good definition takes the cases where almost it's almost
+	universally thought someone has knowledge and validates it,
+	where it's almost universally thought someone doesn't and
+	validates it, and where it's almost universally vague and
+	clarifies it and why it's vague.
+
+### Reliablism
+
+-   There can be misleading evidence, so defeasibility eliminates
+	too much.
+	-   The simple defensibility theory isn't good, that, looks
+		too strong.
+	-   Many people thought that defeasibility didn't work.
+	-   There was an alternatively available, which fit really
+		nicely with naturalized epistemology.
+
+-   Some people think that if you want to know what knowledge is,
+	you shouldn't sit in your EZ chair and thinking about.
+	-   Just like if you want to figure out what gold is, you
+		go study gold things.
+	-   If you want to study knowledge, go become a cognitive 
+		scientist or psychologist.
+	-   Knowledge is the end of a process, *go and study the process*!
+
+-   The first shot was Alvin Goldman's paper, 'A Causal Theory of Knowledge.'
+	-   Knowledge happens in the brain, in the mind.
+	-   Knowledge, therefore, has a certain causal genealogy.
+	-   The object has to be in the causal history of the belief.
+	-   Suppose I look outside the window and I believe there will be
+		rain in ten minutes. That belief cannot be caused by the rain in the
+		ten minutes because the causal chain isn't temporally there yet.
+
+-   Sometimes this is called internalist, where evidentialists and defeasibility theorists
+	are called externalists.
+-   Barn facade case:
+	-   Supose you're going through phony barn country.
+	-   A hurricane has come through upper Vermont, but people
+		come for the barns.
+	-   The tourist agency think that this will destroy the industry,
+		so they put up facades.
+	-   You're going through the country, and you see the *1* real barn.
+	-   The barn is appropriately caused, it's justified true belief, but
+		the intuition is that it is not knowledge.
+	
 September 23rd, 2013 <small>2nd Meeting on Klein</small>
 --------------------------------------------------------
 

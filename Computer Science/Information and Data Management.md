@@ -354,6 +354,140 @@ September 17th, 2013 <small>Keywords for Quiz 1</small>
 		FROM tables
 		WHERE predicates;
 
-September 17th, 2013 <small>Recitation</small>
-----------------------------------------------
+September 23rd, 2013 <small>Homework 02A, Relational Model</small>
+------------------------------------------------------------------
 
+1.  Here is a table representing a relation named R:
+
+        A	B	C
+        0	1	2
+        3	4	5
+        6	7	8
+
+-   Identify:
+    -   The attributes of R.
+    -   The schema of R.
+    -   The tuples of R.
+    -   The components of the tuples for each attribute of R.
+
+-   Which of the following is NOT a true statement about relation R? 
+    1. 	(A,B,C) is a tuple of R.
+    2. 	(6,7,8) is a tuple of R.
+    3.  (3,4,5) is a tuple of R.
+    4.  B is an attribute of R.
+ 
+2.  Suppose we are to design a registrar's database to store information about students, courses, the courses students have taken, and the grades students have gotten in these courses. Courses have a number, a department, and a title, for example, "CS101: Introduction to computing" has department = CS, number = 101, and title = "Introduction to Computing." Numbers are assigned by departments, and different departments may use the same number. Students are represented by their (unique) student ID and their name. "Enrollments" each consist of a course, a student who took that course, and the grade the student got in the course. If we created a relational schema for this database, which of the following would LEAST likely be an attribute of some relation?	  
+    1.  studentID
+    2.  grade
+    3.  student
+    4.  title
+
+September 23rd, 2013 <small>Homework 02A, Classical Relational Algebra</small>
+------------------------------------------------------------------------------
+
+1.  	 Suppose relation R(A,B,C) has the tuples:
+A	B	C
+1	2	3
+4	2	3
+4	5	6
+2	5	3
+1	2	6
+and relation S(A,B,C) has the tuples:
+
+A	B	C
+2	5	3
+2	5	4
+4	5	6
+1	2	3
+Compute (R - S) [union] (S - R), often called the "symmetric difference" of R and S. Then, identify from the list below, one of the tuples in the symmetric difference of R and S.
+
+ 
+ 		  a) 	 (2,5,3)	  		  b) 	 (2,5,4)	  		  c) 	 (1,5,6)	  		  d) 	 (1,2,3)
+ 
+2.  	 Suppose relation R(A,B) has the tuples:
+A	B
+1	2
+3	4
+5	6
+and the relation S(B,C,D) has tuples:
+
+B	C	D
+2	4	6
+4	6	8
+4	7	9
+Compute the theta-join of R and S with the condition R.A < S.C AND R.B < S.D. Then, identify from the list below one of the tuples in R |><|R.A < S.C AND R.B < S.D S. You may assume the schema of the result is (A, R.B, S.B, C, D).
+
+ 
+ 		  a) 	 (5,6,2,4,6)
+ 		  b) 	 (3,4,5,7,9)
+ 		  c) 	 (5,6,4,6,9)
+ 		  d) 	 (3,4,2,4,6)
+ 
+3.  	 Compute the union of the relation R(A,B,C):
+A	B	C
+1	2	3
+4	2	3
+4	5	6
+2	5	3
+1	2	6
+and relation S(A,B,C):
+
+A	B	C
+2	5	3
+2	5	4
+4	5	6
+1	2	3
+Which of the following tuples DOES NOT appear in R [union] S?
+
+ 
+ 		  a) 	 (2,5,4)	  		  b) 	 (4,5,3)	  		  c) 	 (4,5,6)	  		  d) 	 (1,2,3)
+ 
+4.  	 Suppose relation R(A,B) has the tuples:
+A	B
+1	2
+3	4
+5	6
+and the relation S(B,C,D) has tuples:
+
+B	C	D
+2	4	6
+4	6	8
+4	7	9
+Compute the natural join of R and S. Then, identify which of the following tuples is in the natural join R |><| S. You may assume each tuple has schema (A,B,C,D).
+
+ 
+ 		  a) 	 (3,4,6,8)
+ 		  b) 	 (1,4,7,9)
+ 		  c) 	 (3,4,2,6)
+ 		  d) 	 (5,6,4,6)
+ 
+5.  	 Compute the intersection of the relations R(A,B,C):
+A	B	C
+1	2	3
+4	2	3
+4	5	6
+2	5	3
+1	2	6
+and relation S(A,B,C:
+
+A	B	C
+2	5	3
+2	5	4
+4	5	6
+1	2	3
+Which of the following tuples appears in R ∩ S?
+
+ 
+ 		  a) 	 (2,4,3)	  		  b) 	 (2,5,3)	  		  c) 	 (2,5,4)	  		  d) 	 (1,2,4)
+ 
+6.  	 Suppose relation R(A,B,C) has the tuples:
+A	B	C
+1	2	3
+4	2	3
+4	5	6
+2	5	3
+1	2	6
+Compute the projection πC,B(R), and identify one of its tuples from the list below.
+
+ 
+ 		  a) 	 (3,2)	  		  b) 	 (2,3)	  		  c) 	 (5,6)	  		  d) 	 (4,2,3)
