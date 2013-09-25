@@ -354,140 +354,162 @@ September 17th, 2013 <small>Keywords for Quiz 1</small>
 		FROM tables
 		WHERE predicates;
 
-September 23rd, 2013 <small>Homework 02A, Relational Model</small>
+September 24th, 2013 <small>Chapter 2, Relational Model</small>
 ------------------------------------------------------------------
 
-1.  Here is a table representing a relation named R:
+### An Overview of Data Models
 
-        A	B	C
-        0	1	2
-        3	4	5
-        6	7	8
+-   A **data model** is a notation for describing data. It has three parts:
+	1.  *Structure of the data*. 
+	2.  *Operations on the data*.
+	3.  *Constraints on the data*.
 
--   Identify:
-    -   The attributes of R.
-    -   The schema of R.
-    -   The tuples of R.
-    -   The components of the tuples for each attribute of R.
+-   There are two preeminent database systems:
+	1.  *The relation model*, include object-relational extensions.
+	2.  *The semistructured-data model*, including XML and related
+		standards.
+		-   In brief, this is a way to represent data by hierarchically
+			nested tags.
+		-   Often talked about as a tree with parents and children
+			nodes.
 
--   Which of the following is NOT a true statement about relation R? 
-    1. 	(A,B,C) is a tuple of R.
-    2. 	(6,7,8) is a tuple of R.
-    3.  (3,4,5) is a tuple of R.
-    4.  B is an attribute of R.
- 
-2.  Suppose we are to design a registrar's database to store information about students, courses, the courses students have taken, and the grades students have gotten in these courses. Courses have a number, a department, and a title, for example, "CS101: Introduction to computing" has department = CS, number = 101, and title = "Introduction to Computing." Numbers are assigned by departments, and different departments may use the same number. Students are represented by their (unique) student ID and their name. "Enrollments" each consist of a course, a student who took that course, and the grade the student got in the course. If we created a relational schema for this database, which of the following would LEAST likely be an attribute of some relation?	  
-    1.  studentID
-    2.  grade
-    3.  student
-    4.  title
+### Basics of the Relational Model
 
-September 23rd, 2013 <small>Homework 02A, Classical Relational Algebra</small>
-------------------------------------------------------------------------------
+#### Attributes
 
-1.  	 Suppose relation R(A,B,C) has the tuples:
-A	B	C
-1	2	3
-4	2	3
-4	5	6
-2	5	3
-1	2	6
-and relation S(A,B,C) has the tuples:
+-   The columns of a relation are named **attributes**.
+	-   For example, `title`, `year`, `length`, and `genre` if the
+		the relation was `Movies`.
 
-A	B	C
-2	5	3
-2	5	4
-4	5	6
-1	2	3
-Compute (R - S) [union] (S - R), often called the "symmetric difference" of R and S. Then, identify from the list below, one of the tuples in the symmetric difference of R and S.
+#### Schemas
 
- 
- 		  a) 	 (2,5,3)	  		  b) 	 (2,5,4)	  		  c) 	 (1,5,6)	  		  d) 	 (1,2,3)
- 
-2.  	 Suppose relation R(A,B) has the tuples:
-A	B
-1	2
-3	4
-5	6
-and the relation S(B,C,D) has tuples:
+-   The name of a relation and the set of attributes for a relation is
+	called the **schema** for that relation.
+	-   In the case of movies,
 
-B	C	D
-2	4	6
-4	6	8
-4	7	9
-Compute the theta-join of R and S with the condition R.A < S.C AND R.B < S.D. Then, identify from the list below one of the tuples in R |><|R.A < S.C AND R.B < S.D S. You may assume the schema of the result is (A, R.B, S.B, C, D).
+			Movies(title, year, length, genre)
 
- 
- 		  a) 	 (5,6,2,4,6)
- 		  b) 	 (3,4,5,7,9)
- 		  c) 	 (5,6,4,6,9)
- 		  d) 	 (3,4,2,4,6)
- 
-3.  	 Compute the union of the relation R(A,B,C):
-A	B	C
-1	2	3
-4	2	3
-4	5	6
-2	5	3
-1	2	6
-and relation S(A,B,C):
+-   Attributes are a set, not a list.
 
-A	B	C
-2	5	3
-2	5	4
-4	5	6
-1	2	3
-Which of the following tuples DOES NOT appear in R [union] S?
+#### Tuples
 
- 
- 		  a) 	 (2,5,4)	  		  b) 	 (4,5,3)	  		  c) 	 (4,5,6)	  		  d) 	 (1,2,3)
- 
-4.  	 Suppose relation R(A,B) has the tuples:
-A	B
-1	2
-3	4
-5	6
-and the relation S(B,C,D) has tuples:
+-   The rows of a relation, other than the header row, are called
+	**tuples**.
+	-   A tuple has one **component** for each attribute of the relation.
 
-B	C	D
-2	4	6
-4	6	8
-4	7	9
-Compute the natural join of R and S. Then, identify which of the following tuples is in the natural join R |><| S. You may assume each tuple has schema (A,B,C,D).
+#### Domains
 
- 
- 		  a) 	 (3,4,6,8)
- 		  b) 	 (1,4,7,9)
- 		  c) 	 (3,4,2,6)
- 		  d) 	 (5,6,4,6)
- 
-5.  	 Compute the intersection of the relations R(A,B,C):
-A	B	C
-1	2	3
-4	2	3
-4	5	6
-2	5	3
-1	2	6
-and relation S(A,B,C:
+-   The relation model requires that each component of each tuple be
+	atomic;
+	-   It must be of some elementary type (integer, string, etc.)
+	-   It is *not* permitted for it to be a record structure, set, 
+		list, array, or anything that can be broken into smaller 
+		elements.
 
-A	B	C
-2	5	3
-2	5	4
-4	5	6
-1	2	3
-Which of the following tuples appears in R ∩ S?
+-   It is further assumed that associated with each attribute of a
+	relation is a **domain**, a particular elementary type.
 
- 
- 		  a) 	 (2,4,3)	  		  b) 	 (2,5,3)	  		  c) 	 (2,5,4)	  		  d) 	 (1,2,4)
- 
-6.  	 Suppose relation R(A,B,C) has the tuples:
-A	B	C
-1	2	3
-4	2	3
-4	5	6
-2	5	3
-1	2	6
-Compute the projection πC,B(R), and identify one of its tuples from the list below.
+		Movies(title:string, year:integer, length:integer, genre:string)
 
- 
- 		  a) 	 (3,2)	  		  b) 	 (2,3)	  		  c) 	 (5,6)	  		  d) 	 (4,2,3)
+#### Keys of Relations
+
+-   A set of attributes forms a **key** for a relation if we do not
+	allow two tuples in a relation instance to have the same
+	values in all attributes of the key.
+
+### Defining a Relation Schema in SQL
+
+-   SQL is the principal language used to describe and manipulate
+	relational databases. There are two parts:
+	1.  The *Data-Definition* sublanguage for declaring schemas;
+	2.  The *Data-Manipulation* sublanguage for **querying** and
+		modifying the database.
+
+#### Relations in SQL
+
+-   SQL makes a distinction between three kinds of relations:
+	1.  Stored relations, called **tables**.
+		-   These are the kind we deal with typically.
+		-   Can be modified by changing it's tuples and queried. 
+
+	2.  **Views**, which are relations defined by a computation.
+		-   These relations are not stored, but are constructed.
+
+	3.  **Temporary tables**, which are constructed by the SQL
+		language processor when it performs its job of executing
+		queries and data modifications.
+		-   These relations are not stored.
+
+#### Data Types
+
+1.  Character string of fixed or varying length.
+2.  Bit string of fixed or varying length.
+3.  The type `BOOLEAN`, `TRUE`, `FALSE`, and `UNKNOWN`.
+4.  The type `INT` or `INTEGER`.
+5.  Floating point numbers, `FLOAT` or `REAL`.
+6.  Dates and times can be represented with the types `DATE` and `TIME`.
+
+#### Simple Table Declarations 
+
+	CREATE TABLE Movies (
+		title 		CHAR(IOO), 
+		year 		INT, 
+		length 		INT,
+		genre 		CHAR(10), 
+		studioName 		CHAR(30), 
+		producerC# 		INT	);
+
+### An Algebraic Query Language <small>Set Operations on Relations</small>
+
+-   There are four broad classes of operations:
+	1.  The usual set operations;
+		1. The **union** of R and S, is the set of elements
+			that are in R or S or both. Elements appear only once despite
+			being in multiple times;
+
+			$$R \cup S$$
+
+		2.  The **intersection** of R and S, is the set of
+			elements that are in both R and S;
+		
+			$$R \cap S$$
+
+		3.  The **difference** of R and S, is the set of elements
+			that are in R but not in S.
+
+			$$R - S$$
+
+	2.  Operations that remove parts of a relations;
+		1.  **Selection**, produces a new relation with a subset of R's
+			tuples, filter tuples, where *C* is a condition:
+
+			$$ \sigma_{C} R $$
+
+		2.  **Projection** is used to produce from a relation R a new
+			relation that has only some of R's columns, filter 
+			attributes:
+
+			$$ \pi_{A_1, A_2, …, A_n} R $$
+
+	3.  Operations that remove parts of the relation;
+		1.  **Cartesian product**, combines relations in all possible ways,
+		2.  **Joins**, selectively pair tuples from two relations,
+
+	4.  **Renaming**, which changes the attributes and/or name of relation.
+
+-   These are **queries**.
+
+-   We want to use these operations for queries, but there are these
+	constraints:
+	-   R and S must have schemas with identical sets of attributes.
+	-   Before we compute the set-theoretic union, intersection, or
+		difference of sets of tuples, the columns of R and S must be
+		ordered so that the order of attributes is the same for both
+		relations.
+
+September 24th, 2013 <small>Project 1</small>
+---------------------------------------------
+Your objective will be to extend significantly the famous db scheme with new attributes and new relations.  It has to be realistic and interesting. Add info about facebook friends of drinkers?  Offer information about bar’s  annual sales?  Provide more geo-location data about drinkers and bars? Temporal data?  Sky is the limit –).    Once you settle of the db scheme, you will have to populate it with realistic tuples. By realistic, I mean names of bars, drinker names,  dollar figures etc when appropriate. No a1, b1, c1!   No drinker X and drinker Y!   Generate and load your db with the large number of synthetic tuples, may be 10,000?  May be more. It is your choice.    But your instances should not be completely random. On the contrary – you should think of a few patterns which will have business significance.  For example, the larger the bar, the less it charges for a beer (most of the time).  The older the drinker, the less frequently s/he goes to a bar.  Evening beer sales are higher than afternoon beer sales. Embed a number of such patterns in your data and construct SQL queries which would prove that indeed your db satisfies such pattern.  Your patterns should be  intuitive and have actionable business value either for a bar o for a drinker. 
+Thus, there following  tasks: 
+	1.  Scheme definition 	2.  Realistic db instance generation and db loading + Pattern embedding in the instance as well as validation of the pattern using sql query 
+	3.  Simple DB GUI with search boxes which will find something interesting about your data.

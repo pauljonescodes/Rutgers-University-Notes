@@ -274,6 +274,18 @@ September 16th, 2013 <small>Chapter 2, part I, 'Evidentialism vs. Reliabilism'</
     tendency to generate (belief) outputs with a high percentage of
     truths.
 
+### Questions
+
+1.  pg. 4, "According to evidentialism, all (positive or negative) justifiers of a belief held by epistemic agent S at time t are evidential states S is in at t." This took a few reads and a cross-check with the Wikipedia to fully understand. Specifically, I didn't know what it meant for S to be "in an evidential state." When I worked out what that meant, the definition was easily understood.
+	-  This was supremely cleared up on pg. 7, with the precise formulation of evidentialism, what it implies.
+2.  pg. 10, "Nonetheless, it is perfectly plausible that her belief in this proposition is justified." This actually happens all the time! It may add something to the credibility and plausibility of the case to name the psychology term for it: Source Amnesia.
+	-  pg. 11, "it plays no causal role in her current belief in D." I cannot find anything defined with that variable, thought I think I can reasonably assume it's the claim about the earth.
+3.  pg. 18, "Thus, wishful thinking is “bad” because the beliefs it outputs are only occasionally true." Wouldn't wishful thinking still be bad even if the beliefs it outputs were more often than not true? It's not clear to me from the example wishful think is bad because of unreliability, but it is certainly unreliable.
+	-  pg. 18, "The overextended version of disjunctive syllogism is “bad” because it would frequently lead to erroneous conclusions even when the inputs to it are true." This is closer to my intuition, but all it would take for me to think that it was bad was one case where even one invalid logical schema was used. A good schema is always gets good conclusions for when the inputs are true.
+	-  After I read the definition for process reliablism a bit further down along with the suitably vague portion, it seems very plausible for longer belief forming processes like perception (which is vague, which has variable successes and failures), but not so applicable to using bad logic rules. I think the difference is that a bad logic schema has concrete, knowable cases of when it always gets it wrong.
+	-   After (CR) and (UR), this was cleared up I think. 
+4.  pg. 24, "By contrast, teliabilism seems to secure it easily." You may or may not have seen this typo, but I'll add it just in case.
+
 September 16th, 2013 <small>Seminar</small>
 -------------------------------------------
 
@@ -370,8 +382,162 @@ September 16th, 2013 <small>Seminar</small>
 September 23th, 2013 <small>Chapter 2, part II, 'Internalism vs. Externalism'</small>
 -------------------------------------------------------------------------------------
 
+### Framing the Debate
+
+-   Evidentialism belongs to internalism
+	-   While process reliablism belongs to externalism.
+	-   They are rivals for what are called "j-factors."
+	-   Externalism claims that all justifying factors are external,
+		internalism thinks they are internal.
+	-   Mentalism is a prime example of externalism.
+	-   Since truth is a function outside the mind, process reliablism
+		is external.
+
+-   Externalism has the air of being the default position because
+	internalism's premise is that *all* justifying factors are internal
+	to agents, and externalism's premise is that *not all* j-factors
+	are internal.
+	-   Externalism isn't as strong.
+	-   Internalism has some proofs to do.
+
+-   There are two approaches to internal justifiers:
+	1.  Mental states
+	2.  "Directly accessible" to the agent at time of doxastic decision
+		making.
+
+-   Ethical theory regularly work within normativity and rules.
+	-   A wrong action may fail to be within a rule.
+		-   A right action may be within the rules.
+
+	-   "we can say that *a doxastic attitude toward a proposition* is **justified** just in case *it conforms to what is permitted by correct epistemic rules* and unjustified in case it doesn’t conform to such rules"
+		-   This is an externalist notion, surely.
+		-   "If S's circumstances include the possession of a certain
+		 	body of evidence relevant to P, then the correct rules 
+			may permit S to believe P."
+		-   If S's doxastic attitude toward a proposition P is
+			justified, then it conforms to what is permitted by
+			correct epistemic rules.
+		-   If S's doxastic attitude towards a proposition P conforms
+			to what is permitted by correct epistemic rules, then
+			it is justified.
+
+-   What is meant by calling a justificationally relevant fact "internal"?
+	-   Two approaches:
+		1.  An older approach, anything that is **directly accesible**
+			to the subject at the time of decision making.
+			-   What is included in directly accessible?
+			-   Introspection.
+			-   *a priori* cognition
+
+-   A reason that might motivate internalists is that if you restrict
+	what might justify someone to those facts under their cognition,
+	then they can know just from themselves whether or not they are
+	justified.
+	-   For instance, a cook book needs to be usable!
+	-   While this is a nice motivation for studying knowledge,
+		I do not think you should restrict yourself to one view
+		of knowledge or justification because it helps people.
+		What will help people is the correct, coherent view.
+		-   "directions to which any epistemic agent can **conform**"
+
+	-   Another approach is the **infallible guidance** approach,
+		that the right rules will infallibly lead a subject to truth.
+
+### Internalism and Inferential Rules
+
+>   **(INF)**   If agent *S* has beliefs in propositions *K*, *L*, *M*, *N* (at time *t*), 
+>   and proposition *P* is logically entailed by the conjunction of *K*, *L*, *M*, *N*,
+>   then *S* is permitted (at time *t*) to believe *P*.
+
+-   So what about beliefs that *S* holds but doesn't have access to at
+	time *t* but still uses to form the belief that *P*.
+	-   All the time in science, portions of problems are abstracted
+		and ignored for the sake of being able to get work done.
+	-   If challenged, *of course* the subject believes that portion
+		of the body of evidence supporting *P*, but the subject doesn't
+		necessarily need that support to form the belief that *P*.
+	-   It's not that it would suffice not to have this proposition,
+		say *M*, it's just that it's not necessary.
+	-   Goldman writes that internalism is vindicated only when all
+		justifiers are internal, which is a definition, but is this
+		type of doxastic attitude or propositional support captured by 
+		internal or external?
+
+-   **(INF\*)** adds the condition of the belief being justified,
+	because it's not enough that the belief be a belief.
+	-   Justification comes from an external source, 
+		
+### Questions
+
+1.  "we can say that a doxastic attitude toward a proposition is justified just in case it conforms to what is permitted by correct epistemic rules and unjustified in case it doesn’t conform to such rules"
+This reads like a default application of normativity to epistemology, but then you write, "If S's circumstances include the possession of a certain body of evidence relevant to P, then the correct rules may permit S to believe P."
+	-   This uses an account of justification.
+	-   I don't understand how body of evidence got into this formulation. I think that evidentialists might like this formulation, but it could just as easily be something like, "If S's circumstances include the possession of a certain belief-forming process relevant to P, then the correct rules may permit S to believe P." 
+	-   Is there any reason that you used this language? A neutral application would be, "If S's doxastic attitude towards a proposition P conforms to what is permitted by correct epistemic rules, then it is justified."
+	-   This would allow a normative evaluation of epistemology to remain agnostic about the correct account of justification.
+2.  I noticed that the chapter was devoted largely to the reasons that internalism cannot work, (I think) largely because justification comes in some way from the truth of the proposition, and this is not accessible in any of the right ways. I see that externalism is the rejection of internalism, and so therefore any refutation of internalism makes externalism more compelling, but I still believe that we need independently good and compelling reasons to be an externalist.
+3.  Are there any coherent and compelling compatiblist positions about the internalism/externalism debate? From the reading, I understand that many necessary types of justification are best understood as external and that the chapter doesn't think there are no internal factors, but I don't see why one needs to be more prominent than the other. Justification's link to the truth and normative epistemic rules are clearly external factors, but an agent's access and conformity is, very generally, part of a process which ends internally. 
+
 September 23rd, 2013 <small>Seminar</small>
 -------------------------------------------
+
+### Organizational
+
+-   Next week we begin the knowledge portion of the course.
+-   This is the longest of the three knowledge chapters.
+-   Two sessions on this chapter.
+-   For chapter 5, the first half of the chapter and 1 extra reading,
+	and that's posted.
+	-   Nozick.
+
+### Internalism
+
+-   It's important for internalism that the evidence for a belief
+	be possessed at time of the belief forming, decision making.
+	-   Goldman is not shooting at a straw man with this restrictive
+		time.
+	-   Sometimes counterexamples and debates turn onto a feature of
+		internalism instead of the primary feature.
+
+-   Why is process reliablism externalism?
+	-   What processes? Belief forming processes.
+		-   This is internal.
+
+	-   What reliablism? Reliablism to the truth.
+		-   This is external.
+
+### Questions
+
+-   "Background belief-forming processes"
+-   Standing belief, "dispositional"
+
+> If agent S has justified beliefs in propositions K, L,
+> M, N (at time t), and S thinks that proposition P is logically 
+> entailed by the conjunction of K, L, M, N, then S is permitted 
+> (**at** time t) to believe P.
+
+-   I think a better rule would be *from* time *t* **onward**.
+	-   I do not think you need the justifying beliefs to be standing,
+		because that would be too strong.
+
+### Presentation
+
+-   Connee and Feldman give examples for internalism because it's
+	"good" to believe that one persons belief is better justified than
+	another belief.
+	-   In the example of Bob and Ray, what makes internalism compelling
+		is that Bob went outside and "internalized" the external
+		justification from the newspaper.
+	-   This is a bad example because the belief is made good by
+		the fact that there are *both* internal and external factors.
+	-   "Best explained by"
+
+#### Perception
+
+-   "He perceives that *p*."
+-   "Perceptual experience", which is something *in the head* from
+	the eyes, ears.
+
 
 September 30th, 2013 <small>Chapter 3, part I, 'Defining Knowledge'</small>
 ---------------------------------------------------------------------------

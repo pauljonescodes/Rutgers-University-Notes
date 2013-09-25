@@ -299,6 +299,22 @@ September 18th, 2013 <small>1st Meeting on Klein</small>
 September 23rd, 2013 <small>2nd Meeting on Klein</small>
 --------------------------------------------------------
 
+-   The recipe for Gettier cases is having a false, justified that
+	entails a true belief, and you have an accident!
+	-   The general view is that Gettier basically shows that there
+		cannot be a useful falsehood.
+	-   The way you work out what is essential evidence is dropping
+		it from the set of evidence justifying a belief, and if it
+		no longer justifies the belief, it was essential. If it still
+		justifies, it's a harmless falsehoods.
+
+-   You are entitled to believe a proposition if and only if you believe
+	the proposition on the grounds of the propositions which reliably
+	get that proposition on the grounds of the evidence.
+	-   You're doxasticly entitled to a belief if the propositional
+		evidence justifies you.
+
+
 September 25th, 2013 <small>3rd Meeting on Klein</small>
 --------------------------------------------------------
 
