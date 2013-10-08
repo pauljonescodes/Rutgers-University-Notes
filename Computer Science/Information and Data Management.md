@@ -829,3 +829,125 @@ October 1st, 2013 <small>6.4 Full-Relation Operations</small>
 -   When we perform any aggregation exception count over an empty
 	bag, the result is `NULL`. The count of an empty bag is 0.
 
+October 8th, 2013 <small>Study</small>
+--------------------------------------
+
+    bars (name, addr, license, phone)
+    likes (drinker, beer)
+    frequents (drinker, bar)
+    sells (bar, beer, price)
+    beer (manf, name)
+
+### Questions 1
+
+-   From Beers (name, manf), find those beers that are the only beer by
+    their manufacturer.
+
+        SELECT name
+        FROM Beers b1
+        WHERE _____ _____ ( -- NOT EXISTS
+            SELECT *
+            FROM ______ -- Beers
+            WHERE manf = ______ -- b1.manf 
+            AND ______    ______ b1.name -- name <>
+        );
+
+-   Find the drinkers and beers such that: The drinker likes the beer,
+    and the drinker frequents at least one bar that sells the beer.
+
+        (SELECT * FROM Likes)
+        ________ -- intersect
+        (SELECT ______,  _______ -- drinker, beer
+        FROM Sells, Frequents
+        WHERE _______ = _______); -- Frequents.bar == Sells.bar
+
+-   From Sells (bar, beer, price) and Beers (name,manf), find the
+    average price of those beers that are either served in at least
+    three bars or are manufactured by Pete’s.
+
+        SELECT beer, ______ -- AVG(Sells.price)
+        FROM Sells
+        GROUP BY beer
+        ______ COUNT (bar) >= _____  -- WHERE, 3
+            ______ beer _______ (SELECT name -- OR, IN
+                                FROM Beers
+                                WHERE manf = ______); -- "Pete's"
+
+-   Find the average price for each beer that is sold by more than one
+    bar in New Brunswick:
+
+        SELECT beer, ______ -- AVG(price)
+        FROM Sells
+        WHERE address = ‘New Brunswick’
+        _____   _____ beer -- GROUP BY
+        HAVING _____ > 1 -- COUNT(bar)
+
+-   Drinkers who live together frequent same bar(0/1).
+
+        SELECT IF (COUNT (*)>0, 1, 0)
+        FROM (SELECT ______, d1.addr 
+                FROM drinkers d1, drinkers d2
+                WHERE d1.name_____     _____ -- <> d2.name
+                    AND ____=_____) d, frequents -- d1.addr, d2.addr
+        WHERE ______=frequents.drinker
+
+### Questions 2
+
+-   Find bars where either Tim or John drink.
+
+        SELECT bars
+        FROM frequents f1
+        WHERE f1.drinker = 'Tim'
+        UNION
+        SELECT bars
+        FROM frequents f2
+        WHERE f2.drinker = 'John'
+
+-   Which bar sells cheapest 'Bud' ?
+
+        SELECT bar
+        FROM Sells
+        WHERE beer = "Bud" AND (
+            SELECT MIN(price)
+            FROM Sells
+            WHERE beer = "Bud"
+        )
+
+-   For each bar that serve both 'heineken' and 'bud', count the number
+    of drinkers that frequent that bar.
+
+        SELECT bar, COUNT(DISTINCT f.drinker)
+        FROM frequents f
+        WHERE EXISTS (SELECT 
+                FROM Sells s1, Sells s2
+                WHERE s1.beer == "Heineken"
+                    AND s2.beer == "Bud"
+                    AND s1.bar == s2.bar
+        )
+        GROUP BY bar
+
+-   Find the average price of common beers (where "common" means those
+    that are served in more than two bars).
+
+        SELECT beer, AVG(price)
+        FROM Sells
+        GROUP BY beer
+        HAVING COUNT(Sells.bar) > 2
+
+-   Bars having common drinkers must have common beers (false/true)
+
+-   There is at least one beer which is sold at all bars. (true/false)
+
+### Questions 3
+
+-   Beer that has the maximum average price over the bars.
+
+        SELECT s.beer 
+        FROM sells s 
+        __________ __________ __________ -- GROUP BY BEER
+        HAVING AVG(price) __________  __________ ( -- >= ALL
+            SELECT beer, __________ (price) AS av_p -- AVG
+            FROM sells 
+            __________ __________ __________) -- GROUP BY BEER
+
+#### Questions 4
