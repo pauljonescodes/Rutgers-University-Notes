@@ -16,37 +16,37 @@ user's perspective, rather than how one implements DBMS.
 -   Credits: 4
 
 -   Prerequisites:
-    -   01:198:112; 01:198:205 or 14:332:312.
+	-   01:198:112; 01:198:205 or 14:332:312.
 
 Please note that courses for which a student has received a grade of D 
 cannot be used to satisfy prerequisite requirements.
 
 -   Semesters Offered:
-    -   Spring, summer and fall
+	-   Spring, summer and fall
 
 -   Expected Work:
-    -   Homework and programming assignments; project
+	-   Homework and programming assignments; project
 
 -   Exams:
-    -   Midterm exam
-    -   Final exam
+	-   Midterm exam
+	-   Final exam
 
 ### Department Learning Goals:
 
 -   Computer Science majors ...
-    -   will be prepared to contribute to a rapidly changing field by acquiring a 
-        thorough grounding in the core principles and foundations of computer 
-        science (e.g., techniques of program design, creation, and testing; 
-        key aspects of computer hardware; algorithmic principles).
-    -   will acquire a deeper understanding on (elective) topics of 
-        more specialized interest, and be able to critically review, 
-        assess, and communicate current developments in the field.
-    -   will be prepared for the next step in their careers, for
-        example, by having done a research project (for those headed 
-        to graduate school), a programming project (for those going 
-        into the software industry), or some sort of business plan 
-        (for those going into startups).
-        
+	-   will be prepared to contribute to a rapidly changing field by acquiring a 
+		thorough grounding in the core principles and foundations of computer 
+		science (e.g., techniques of program design, creation, and testing; 
+		key aspects of computer hardware; algorithmic principles).
+	-   will acquire a deeper understanding on (elective) topics of 
+		more specialized interest, and be able to critically review, 
+		assess, and communicate current developments in the field.
+	-   will be prepared for the next step in their careers, for
+		example, by having done a research project (for those headed 
+		to graduate school), a programming project (for those going 
+		into the software industry), or some sort of business plan 
+		(for those going into startups).
+		
 September 4th, 2013 <small>Reading, SQL, pages 243-273</small>
 --------------------------------------------------------------
 
@@ -55,7 +55,7 @@ September 4th, 2013 <small>Reading, SQL, pages 243-273</small>
 ### Simple Queries in SQL
 
 -   The simplest form of query in SQL asks for those tuples 
-    of some one relation that satisfy a condition.
+	of some one relation that satisfy a condition.
 -   `SELECT`,`FROM`,and `WHERE` characterize SQL.
 -   Here's an example scheme:
 
@@ -67,7 +67,7 @@ September 4th, 2013 <small>Reading, SQL, pages 243-273</small>
 
 -   To get all movies by Disney, for instance, you'd query:
 
-		SELECT *    // get all
+		SELECT *	// get all
 		FROM Movies // the movies 
 		WHERE studioName = ’Disney’ AND year = 1990; // from Disney in 1990 
 
@@ -216,27 +216,27 @@ September 4th, 2013 <small>Reading, SQL, pages 243-273</small>
 		FROM MovieStar Starl, MovieStar Star2
 
 ### Subqueries
-        
+		
 September 5th, 2013 <small>Introduction to SQL</small>
 ------------------------------------------------------
 
 ### Why SQL?
 
 -   SQL is a very-high-level language.
-    -   Say “what to do” rather than “how to do it.”
-    -   Avoid a lot of data-manipulation details needed in 
-        procedural languages like C++ or Java.
-        -   In systems like MangoDB, you do a lot of data
-            manipulation yourself.
-        -   The name of the game now is scalabilty and millions
-            and millions of users.
-        -   SQL scales very well with ad-hoc, indeterminate number
-            of queries.
-    
-    -   Why not? Database management systems figures out best
-        way to executre queiry.
-        -   Called **query manipulation**.
-        
+	-   Say “what to do” rather than “how to do it.”
+	-   Avoid a lot of data-manipulation details needed in 
+		procedural languages like C++ or Java.
+		-   In systems like MangoDB, you do a lot of data
+			manipulation yourself.
+		-   The name of the game now is scalabilty and millions
+			and millions of users.
+		-   SQL scales very well with ad-hoc, indeterminate number
+			of queries.
+	
+	-   Why not? Database management systems figures out best
+		way to executre queiry.
+		-   Called **query manipulation**.
+		
 ### Select-From-Where Statements
 
 -   `SELECT` desired attributes.
@@ -246,42 +246,42 @@ September 5th, 2013 <small>Introduction to SQL</small>
 ### Our Running Examples
 
 -   All our SQL queries will be based on the following
-    database schema.
-    
-        Beers(name, manf) 
-        Bars(name, addr, license)
-        Drinkers(name, addr, phone) 
-        Likes(drinker, beer) 
-        Sells(bar, beer, price) 
-        Frequents(drinker, bar)
+	database schema.
+	
+		Beers(name, manf) 
+		Bars(name, addr, license)
+		Drinkers(name, addr, phone) 
+		Likes(drinker, beer) 
+		Sells(bar, beer, price) 
+		Frequents(drinker, bar)
 
 -   From this you can find out who sells Heineken, you
-    can find people who only frequent bars that sell beers
-    they like.
-    -   This is the "heart of the matter."
-    
+	can find people who only frequent bars that sell beers
+	they like.
+	-   This is the "heart of the matter."
+	
 -   **Ad-hoc queries** are unpredictable, and this is where
-    SQL shines.
-    -   You can find any objects in the database, you don't have
-        to write code. ... Very difficult, you write it, and a week
-        later to think, "What the hell did I do?"
-        
+	SQL shines.
+	-   You can find any objects in the database, you don't have
+		to write code. ... Very difficult, you write it, and a week
+		later to think, "What the hell did I do?"
+		
 #### Example <small>What beers are made by Anheuser-Busch</small>
 
 -   Query:
 
-    SELECT name
-    FROM Beers
-    WHERE manf = ’Anheuser-Busch’;
-    
+	SELECT name
+	FROM Beers
+	WHERE manf = ’Anheuser-Busch’;
+	
 -   Result:
 
-    Bud
-    Bud Lite 
-    Michelob
-    ...    
+	Bud
+	Bud Lite 
+	Michelob
+	...	
 
-    
+	
 ### Meaning of Single-Relation Query
 
 -   Begin with the relation in the `FROM` clause.
@@ -299,7 +299,7 @@ September 17th, 2013 <small>Keywords for Quiz 1</small>
 
 * `JOIN`: used to combine rows from two or more tables, based on a common field between them.
 
-	    SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate 
+		SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate 
 		FROM Orders
 		INNER JOIN Customers
 		ON Orders.CustomerID=Customers.CustomerID;
@@ -457,7 +457,8 @@ September 24th, 2013 <small>Chapter 2, Relational Model</small>
 		length 		INT,
 		genre 		CHAR(10), 
 		studioName 		CHAR(30), 
-		producerC# 		INT	);
+		producerC# 		INT
+	);
 
 ### An Algebraic Query Language <small>Set Operations on Relations</small>
 
@@ -509,7 +510,322 @@ September 24th, 2013 <small>Chapter 2, Relational Model</small>
 
 September 24th, 2013 <small>Project 1</small>
 ---------------------------------------------
-Your objective will be to extend significantly the famous db scheme with new attributes and new relations.  It has to be realistic and interesting. Add info about facebook friends of drinkers?  Offer information about bar’s  annual sales?  Provide more geo-location data about drinkers and bars? Temporal data?  Sky is the limit –).    Once you settle of the db scheme, you will have to populate it with realistic tuples. By realistic, I mean names of bars, drinker names,  dollar figures etc when appropriate. No a1, b1, c1!   No drinker X and drinker Y!   Generate and load your db with the large number of synthetic tuples, may be 10,000?  May be more. It is your choice.    But your instances should not be completely random. On the contrary – you should think of a few patterns which will have business significance.  For example, the larger the bar, the less it charges for a beer (most of the time).  The older the drinker, the less frequently s/he goes to a bar.  Evening beer sales are higher than afternoon beer sales. Embed a number of such patterns in your data and construct SQL queries which would prove that indeed your db satisfies such pattern.  Your patterns should be  intuitive and have actionable business value either for a bar o for a drinker. 
-Thus, there following  tasks: 
-	1.  Scheme definition 	2.  Realistic db instance generation and db loading + Pattern embedding in the instance as well as validation of the pattern using sql query 
-	3.  Simple DB GUI with search boxes which will find something interesting about your data.
+
+Your objective will be to extend significantly the famous db scheme with new attributes and new relations.  It has to be realistic and interesting. Add info about facebook friends of drinkers?  Offer information about bar’s  annual sales?  Provide more geo-location data about drinkers and bars? Temporal data?  Sky is the limit –).	Once you settle of the db scheme, you will have to populate it with realistic tuples. By realistic, I mean names of bars, drinker names,  dollar figures etc when appropriate. No a1, b1, c1!   No drinker X and drinker Y!   Generate and load your db with the large number of synthetic tuples, may be 10,000?  May be more. It is your choice.	But your instances should not be completely random. On the contrary – you should think of a few patterns which will have business significance.  For example, the larger the bar, the less it charges for a beer (most of the time).  The older the drinker, the less frequently s/he goes to a bar.  Evening beer sales are higher than afternoon beer sales. Embed a number of such patterns in your data and construct SQL queries which would prove that indeed your db satisfies such pattern.  Your patterns should be  intuitive and have actionable business value either for a bar o for a drinker. 
+
+Thus, there following  tasks: 
+
+1.  Scheme definition 
+2.  Realistic db instance generation and db loading + Pattern embedding in the instance as well as validation of the pattern using sql query 
+3.  Simple DB GUI with search boxes which will find something interesting about your data.
+
+October 1st, 2013 <small>Reading: pg. 125-171</small>
+-----------------------------------------------------
+
+### The Entity/Relationship Model
+
+-   In the **E/R model**, the structure of data is represented
+	graphically, as an "ER diagram", using three principal
+	element types:
+	1.  Entity sets,
+	2.  Attributes, and
+	3.  Relationships.
+
+#### Entity Sets
+
+-   An **entity** is an abstract object of some sort, a collection
+	of similar entities is an **entity set**.
+	-   An entity in some ways represents an "object" in the sense
+		of OO-programming. 
+	-   Likewise, an entity set resembles a class of objects.
+
+-   In the movie example, each movie is an entity, and the set of all
+	movies constitute an entity set.
+
+#### Attributes
+
+-   Entity sets have associated **attributes**, which are properties
+	of the entities in that set.
+	-   The entity set *Movies* might be given attributes such as
+		*title* and *length*.
+
+#### Relationships
+
+-   **Relationships** are connections among two or more entity sets.
+	-   For instance, if *Movies* and *Stars* are two entity sets,
+		we could have relationship *Stars-in* that connects movies
+		and stars.
+
+#### Entity-Relationship Diagrams
+
+-   Entity sets are represented by rectangles.
+-   Attributes are represented by ovals.
+-   Relationships are represented by diamonds.
+	-   "Is-a relationships" are special and represented with triangles.
+-   Edges connect an entity set to its attributes and also
+	connect a relationship to its entity set.
+
+#### Multiplicity of Binary E/R Relationships
+
+-   If each member of *E* can be connected by *R* to at most member
+	of *F*, then we say that *R* is a **many-one** from *E* to *F*.
+	-   Note that in a many-one relationship from *E* to *F*, each 
+		entity in *F* can be connected to many members of *E*.
+
+-   If *R* is both many-one from *E* to *F* and many-one from *F*
+	to *E*, then we say that *R* is **one-one**.
+	-   In a one-one relationship an entity of either entity
+		set can be connected to at most one entity of the other
+		set.
+
+-   If *R* is neither many-one from *E* to *F* or from *F* to *E*,
+	then we say *R* is **many-many**.
+
+#### Multiway Relationships
+
+-   The E/R model makes it convenient to define relationships
+	involving more than two entity sets. In practice, ternary
+	or higher degree relationships are rare, but occasionally are
+	necessary to represent the true state of affairs.
+	-   They are represented with lines between all involved
+		entity sets.
+-   An arrow pointing to an entity set *E* means that if we
+	select one entity from each of the other entity sets in the
+	relationships, those entities are related to at most entity in
+	*E*. 
+
+#### Roles in Relationships
+
+-   It is possible that one entity sets appears two or more times in
+	a single relationship.
+	-   If so, we draw as many lines from the relationship to the
+		entity sets as the entity set appears in the relationship.
+	-   Each line to the entity set represents a different role
+		that the entity set plays in that relationship.
+
+### Design Principles
+
+#### Faithfulness
+
+-   First and foremost, the design should be faithful to the specs.
+	-   The entity sets should reflect reality.
+
+#### Avoid Redundancy
+
+-   We should be careful to say everything once only.
+-   This is dangerous because:
+	1.  Doing so leads to repetition of fact, with the result
+		that the extra space is required to represent the data.
+	2.  There is an update-anomoly potential, since we might
+		change the relationship but not the attribute.
+
+#### Simplicity Counts
+
+-   Avoid introducing more elements into your design than is
+	absolutely necessary.
+
+#### Choosing the Right Relationships
+
+-   Entity sets can be connected in various ways by relationships.
+	-   However, adding 
+
+### Constraints in the E/R model
+
+#### Keys in the E/R Model
+
+-   A **key** for an entity set *E* is a set *K* of one or attributes
+	such that, given any two distinct entities *e1* and *e2*, *e1* and 
+	*e2* cannot have identical values for each of the attributes in
+	the key *K*.
+	-   Every entity set must have a key, although in some cases,
+		isa-hierarchies and "weak" entity sets, the key actually belongs
+		to another entity set.
+	-   There can be more than one possible key for an entity set.
+		However, it is customary to pick one key as the "primary key,"
+		and to act as if that were the only key.
+	-   When an entity set is involved in an isa-hierarchy, we require
+		that the root entity set have all the attributes needed for a
+		key, and that the key for each endtity is found from its
+		component in the root entity set, regardless of how many
+		entity sets in the hierarchy have components for the
+		entity.
+
+#### Representing Keys in the E/R Model
+
+-   In our E/R-diagram notation, we underline the attributes belonging
+	to a key for an entity set.
+
+#### Referential Integrity
+
+-   The arrow notation in E/R diagrams is able to indicate whether
+	a relationship is expected to support referential integrity in
+	one or more directions.
+	-   Suppose *R* is a relationship from entity set *E* to entity
+		set *F*. A rounded arrow-head poring to *F* indicates not only
+		that the relationship is many-one from *E* to *F*, but that
+		the entity of set *F* related to a given entity of set *E*
+		is required to exist.
+		-   The same idea applies when *R* is a relationship among more
+			than two entity sets.
+
+#### Degree Constraints
+
+-   In the E/R-model, we can attach a bounding number to the
+	edges that connect a relationship to en entity set, indicating
+	limits on the number of entities that can be connected to any
+	one entity of the related entity set.
+
+### Weak Entity Sets
+
+-   It is possible for an entity set's key to be composed of attributes,
+	some or all of which belong to another entity set.
+	-   Such an entity set is called **weak entity set**.
+
+#### Causes of Weak Entity Sets
+
+-   There are two principle reasons we need weak entity sets.
+	1.  Sometimes entity sets fall into a hierarchy  based on
+		classifications unrelated to "is-a hierarchy."
+	2.  Connecting entity sets that as a way to eliminate a multiway
+		relationship.
+
+#### Requirements for Weak Entity Sets
+
+-   If *E* is a weak entity set then its key consists of:
+	1.  Zero or more of its own attributes.
+	2.  Key attributes from entity sets that are reach by certain
+		many-one relationships from *E* to other entity sets.
+		-   These many-one relationsips are called **supporting
+			relationships** for *E*, and the entity sets reach from 
+			*E* are **supporting entity sets**.
+
+-   In order for *R*, a many-one relationship from *E* to some
+	entity set *F*, to be a supporting relationship for *E*,
+	the following conditions must be obeyed:
+	1.  *R* must be binary, many-one relationship from *E* to *F*.
+	2.  *R* must have referential integrity from *E* to *F*.
+		-   For every *E*-entity, there must be exactly one existing
+			*F*-entity related to it by *R*.
+		-  Put another way, a rounded arrow from *R* to *F* must be
+			justified.
+	3.  The attributes that *F* supplies for the key of *E* must be key
+		attributes of *F*.
+	4.  However, if *F* is itself weak, then some or all of the key
+		attributes of one or more entity sets *G* to which *F* is 
+		connected by a supporting relationship.
+		-   Recursively, if *F* is weak, some key attributes of *F* will
+			be supplied from elsewhere, and so on.
+
+#### Weak Entity Set Notation
+
+-   We shall adopt the following conventions to indicate that an
+	entity set is weak and to declare its key attributes:
+	1.  If an entity set is weak, it will be shown as a rectangle
+		weit a double border.
+	2.  Its supporting many-one relationships will be shown as diamonds
+		with a double border.
+	3.  If an entity set supplies any attributes for its own key,
+		the those attributes will be underlines.
+
+### From E/R Diagrams to Relational Designs
+
+-   To a first approximations, converting an E/R design to a relational
+	database schema is straightforward.
+	-   Turn each entity set into a relation with the same set of
+		attributes.
+	-   Replace a relationship by a relation whose attributes are the
+		keys for the connected entity sets.
+
+-   While these etwo rules cover much of the ground, there are apse
+	special situations that we need to deal with, including:
+	1.  Weak entity sets cannot be translated straightforwardly to 
+		relations.
+	2.  "Isa" relationship and subclasses require careful treatment.
+	3.  Sometimes, we do well to combine two relations, especially
+		the relation for an entity set *E* and the relation that comes
+		from *E* to some other entity set.
+
+### Summary
+
+-   **The Entity-Relationship Model**: In the E/R model we describe
+	entity sets, relationships among entity sets, and attributes of
+	entity sets and relationships. Members of entity sets are called
+	entities.
+-   **Entity-Relationship Diagrams**: We use rectangles, diamonds,
+	and ovals to draw entity sets, relationships, and attributes,
+	respectively.
+-   **Multiplicity of Relationships**: Binary relationships can be one-
+	one, many-one, or many-many.
+	-   In an one-one relationship, an entity of either set can be
+		associated with at most one entity in the other set.
+	-   In a many-one relationship, each entity in the "many" side
+		is associated with at most one entity on the other side.
+	-   In a many-many relationship, there is no restriction.
+
+-   **Good design**: Designing databased effectively requires
+	that we represent the real world faithfully, that we select
+	appropriate elements, and that we avoid redundancy.
+
+October 1st, 2013 <small>6.4 Full-Relation Operations</small>
+-------------------------------------------------------------
+
+### Eliminating Duplicates
+
+-   SQL's notion of relations differs from the abstract notion.
+	-   A relation, being a set, cannot have more than
+		one copy of a given tuple.
+	-   When a SQL query creates a new relation, the SQL system does
+		not ordinarily eliminate duplicates.
+		-   This, the SQL response to a query may list the same
+			tuple several times.
+
+-   One of the several equivalent definitions of the meaning of a
+	SQL select-from-where query is that we begin with the Cartesian
+	product of the relations referred to in the `FROM` clause.
+	-   Each tuple of the product is tested by the condition in the
+		`WHERE` clause.
+	-   The ones that pass the test are given to the output for
+		projection according to the `SELECT` clause.
+
+-   If we do not wish duplicates in the result, then we may follow
+	the keyword `SELECT` by the keyword `DISTINCT`.
+	-   This word tells SQL to produce only one copy of any
+		tuple.
+
+### Aggregation Operators
+
+-   SQL uses five aggregative operators `SUM`, `AVG`, `MIN`, `MAX`,
+	and `COUNT`.
+	-   `SUM` adds up up the field it's given.
+	-   `AVG` gets the average of the field given.
+	-   `MIN` finds the smallest
+	-   `COUNT` gets the number of fields
+
+### Duplicates in Unions, Intersections, and Differences
+
+-   Unlike the `SELECT` statement, which preserves duplicates as
+	a default and only eliminates them when instructed to by the
+	`DISTINCT` keyword, the union, intersection, and difference
+	operations normally eliminate duplicates.
+	-   If you *want* to include duplicates, you can do so by 
+		including the `ALL` keyword.
+
+### Grouping
+
+-   To group tuples, we use a `GROUP BY` clause following the
+	`WHERE` clause.
+
+### Grouping, Aggregating, and Nulls
+
+-   The value NULL is ignored in any aggregation.
+	-   It *does not* contribute to sum, average, or count of an
+		attribute.
+	-   Nor can it be the minimum or maximum of a column.
+
+-   `NULL` is treated as an ordinary value when forming groups.
+	-   That is, we can have a group in which one or more
+		of the grouping attribute are assigned the value `NULL`.
+
+-   When we perform any aggregation exception count over an empty
+	bag, the result is `NULL`. The count of an empty bag is 0.
+

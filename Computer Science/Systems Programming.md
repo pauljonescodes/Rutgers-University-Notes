@@ -566,3 +566,33 @@ You can check your pa2.tgz by either untarring it or running tar tfz pa2.tgz (se
 -   Quality of your code (how well written your code is, including modularity and comments), 
 -   Efficiency (of your implementation), and
 -   Testing thoroughness (quality of your test cases).
+
+September 24th, 2013 <small>Lecture, Multi-file Projects, Makefiles, and Directory I/O</small>
+----------------------------------------------------------------------------------------------
+
+    ar key libfile obj1.o obj2.o ...
+        r - add
+        t
+        d
+        v - verbose
+        c
+        
+    ar rv libsl.a sorted_list.o
+    
+    basename [directory path]/[basename].[extension]
+    [basename].[extension]
+    
+    drname [directory path]/[basename].[extension]
+    [directory path]
+    
+
+September 26th, 2013 <small>GDB</small>
+---------------------------------------
+
+### Reference Counter
+
+-   You increment a reference counter for every time a new pointer points to the node.
+-   You decrement a reference counter for every time you remove a pointer from a node.
+-   You free the memory for a node when you decrement it to zero.
+-   An iterator pointing to a node that is printing or up to some operation can make 
+	the reference counter not zero or one, leading to some interesting scenarios.

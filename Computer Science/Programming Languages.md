@@ -254,3 +254,19 @@ September 23rd, 2013 <small>Assignment 2</small>
     2.  List two examples the speaker uses and explain for each
         how it supports his point, or, if you think that it does not, 
         why not.
+        
+October 3rd, 2013 <small>Exercise 4: Scheme</small>
+---------------------------------------------------
+
+For these problems, you must use pure functional scheme. That is:
+You may not use a functions like set! whose name ends with '!'.
+You may not use for or while loops or do loops. All repetition must be via explicit recursion or the recursion implicit in map or similar functions. (You can do problems 1 – 3 before we cover map in class.)
+You may, however, use define – in fact you must use it.
+You may use any implementation of scheme that complies with the R5RS standard.
+ 
+1. Write the function echo. This function doubles each top-level element of it argument. E.g., (echo '(a b c)) returns (a a b b c c). (echo '(a (b c))) returns (a a (b c) (b c))
+2. Write the function nth. (nth i lst) returns the ith element of lst. E.g., (nth 0 '(a b c)) returns a, (nth 1 '(a b c)) returns b. You may assume that 0 ≤ i < (length lst).
+3. Write the function deep-reverse, which reverses its argument at all levels. E.g., (deep-reverse '(a (b c) (d))) returns ((d) (c b) a).
+4. Write a scheme function (assoc-all lst a-list) where lst is a list of symbols and a-list is an assoc-list. assoc-all returns a list of the data associated with elements of lst by assoc-list. E.g. (assoc-all '(a d c d) '((a apple)(b boy)(c cat)(d dog))) returns (apple dog cat dog). Use map. Note that you can't simply use assoc as one of the arguments to map. You need a lambda.
+4. Write a function filter-evens which takes a list of numbers as its argument and returns a new list containing only the even numbers in the input list. E.g., (filter-evens '(23 33 44 2 1 8)) returns (44 2 8). Use even? to test if a number is even. You must use map.  You may use a helper function but the only recursion should be the recursion implicit in map. 
+Hint:  Note that the result of map is exactly as long as its second argument.  E.g. the result of  (map foo '(23 33 44 2 1 8)) will be a list of 6 elements no matter what function foo is.  So how can this problem be solvable?  Do something to the result of map before you return it.  E.g., suppose the result of   (map foo '(23 33 44 2 1 8)) is ( ( ) ( ) (44)(2)( ) (8)).  Then (apply append   (map foo '(23 33 44 2 1 8))) will result in (44 2 8) .

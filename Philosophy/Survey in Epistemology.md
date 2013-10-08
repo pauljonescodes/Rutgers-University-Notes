@@ -542,8 +542,185 @@ September 23rd, 2013 <small>Seminar</small>
 September 30th, 2013 <small>Chapter 3, part I, 'Defining Knowledge'</small>
 ---------------------------------------------------------------------------
 
+-   'Know' is the eighth most commonly used verb in English. 
+	-    By contrast, 'justified belief' is used much more infrequently.
+
+-   We want a good definition of knowledge to solve the problem
+	of **skepticism about knowledge**.
+	-   The most common reason we want a good definition of knowedlge.
+	-   Descartes' evil deceiver.
+	-   Are you a brain in a vat?
+
+### The Traditional View of Knowledge: Knowledge as JTB
+
+-   K = JTB
+
+#### The truth condition
+
+-   If someone claims to know something, which we later find out to be
+	false, we feel justified in complaining that they didn't know
+	after all.
+-   Sometimes, however, we will say things like, "I just *knew* it, but
+	it wasn't so."
+	-   **free indirect speech**: One can speak from the perspective 
+		of someone with more limited or false information.
+
+#### The belief condition
+
+-   Knowledge is a matter of possessing the truth, and the sort of
+	possession involved seems to be psychological.
+	-   Memory and Radford cases.
+		-   "Something *like* belief."
+
+-   When you say, "I *merely* believe it.", you likely really know,
+	but are concealing some information for some reason or another.
+
+#### The justification condition
+
+-   In the **Meno**, the **Gorgias**, the **Theatetus**, and elsewhere,
+	Socrates distinguishes knowledge from right opinion.
+	-   If you form lucky beliefs, they do not constitute knowledge
+		because they are *unjustified*.
+	-   They are degrees of justification, like chicken-sexers and 
+		those with master intuition.
+
+### The Gettier problem
+
+-   Gettier's assumptions:
+	1.  **Fallibism about justification**: A belief can be justified
+		even if it is false.
+	2.  **Justification closure**: If you are justified in believing
+		P, P entails Q, and you (competently) deduce Q from P and accept
+		Q as a result of this deduction, then you are justified in 
+		believing Q.
+
+-   With these two assumptions in place, Gettier gives two cases
+	which he thinks are cases of having JTB while at the same time
+	lacking knowledge.
+	-   If he's right, the JTB cannot be knowledge because the
+		conditions are insufficient.
+
+-   Types of Gettier cases:
+	1.  Smith, Jones, and the Job.
+	2.  Sheep on the Hill
+	3.  Havit and Nogot
+	4.  Barn Facade Country
+
+-   What could we *add* to JTB to avoid Gettier?
+-   Some virtues we should look for in an account of knowledge:
+	1.  Knowledge should satisfy closure principles under competent
+		deduction.
+	2.  The account should show why knowledge is valuable,
+		and why it's better than true belief.
+	3.  The account should enable us to why when someone knows that P,
+		they can appropriate use P as a premix in their reasoning.
+	4.  The account should enable us to understand how someone could
+		know that P without being justified with absolute certainty
+		that P.
+
+-   In addition to justification closure, there is **knowledge closure**:
+	If you know that P, P entails Q, and you (competently) deduce Q
+	from P and accept Q as a result of this deduction, then you know
+	Q.
+	-   JTB has knowledge closure, but it isn't assured that JTB+X
+		will have knowledge closure.
+
+-   Can you deduce from your knowledge that you have hands that you
+	are not a brain in a vat?
+	-   Having hands entails not being a brain in a vat.
+	-   If you make this deduction, does this give you knowledge that
+		you *aren't* a brain in a vat?
+	-   Doesn't this beg the question?
+	-   The principle of knowledge closure doesn't say you come to have
+		new knowledge when you make deductions.
+		-   It just says that you do know the conclusions of those
+			deductions.
+		-   What knowledge closure denies is that you can make the
+			deduction but not know the conclusion.
+
+	-   **abominable conjunction**: “I know I have hands, and from this I infer that I’m not a BIV. But I don’t know I’m not a BIV.”
+
+### Defeasibility
+
+-   A quality of Gettier cases is that there is some fact which
+	if the believer learned, would cause them to revise their
+	beliefs.
+	-   These are called **defeaters**.
+	-   There is a defeater for Henry's belief that he sees a barn:
+		that he is in fake barn country.
+	-   There is a defeater in Gettier's Smith, Jones, and the Job
+		case too, which is that Jones will not get the job.
+	-   But what of *defeater defeaters*?
+		-   The Grabit case.
+
+### No False Assumptions
+
+-   Gettier cases don't always involve reasoning from false
+	premises.
+-   **No false assumptions account**: To know is to have justified true
+	belief that one's belief isn't based on a false assumption.
+	-   What does it means to be *based* on a false assumption?
+		-   your belief is based on a false assumption just if were you
+			to learn that the assumption is false then you would be
+			justified in giving your belief.
+
+	-   This condition satisfies the barn facade case.
+	-   The assumption may be that "things are the way they seem to
+		be."
+
+### Reliability
+
+-   What disqualifies Gettier cases from being knowledge is to do with
+	the lack of an objective connection between the subject's belief
+	and the truth.
+-   **Causal account**: To know is to have justified true belief such 
+	that one’s belief is caused by the fact that makes it true.
+-   When you see a sheep on a hill in a normal case, the sheep's being
+	there *causes* you to see them which *causes* you to believe
+	that there is a sheep on the hill.
+	-   In the Gettier cases, however, your belief is caused by the
+		sheep-shaped rock.
+
 September 30th, 2013 <small>Seminar</small>
 -------------------------------------------
+
+### Links
+
+-   [Kornblith](http://bit.ly/1bWomT5)
+-   [Speaking](http://bit.ly/19Qfpoi)
+-   [Key terms](http://bit.ly/19Q3ZSK)
+
+### Questions
+
+1.  Reflective knowledge and appropriate reasoning.
+	-   Don't use it in your reasoning unless you know it.
+	-   There are some circumstances where you cannot use a piece of knowledge.
+	-   What's the norm of assertion?
+		-   When is it appropriate to assert something.
+		-   An epistemological perspective.
+
+2.  Defeasibility
+	-   A wrinkle: two uses:
+		1.  Justification defeater
+		2.  Knowledge defeater
+
+3.  Strength of conditions
+	-   Is there a downside of making a knowledge-condition too strong?
+		-   A condition *for* knowledge?
+		-   If it ruled out many cases, if it's too strong,
+			it rules out cases when it shouldn't rule them out.
+		-   A bad analysis requires too much or too little,
+			not getting the right prediction for knowledge.
+
+	-   The possible solutions that McGrath suggests rules out too 
+		many cases where we would like to say that we have knowedlge,
+		but "wouldn't this be harmless?" …
+		-   We do not need to categorize our propositions to be knowedlge
+			for them to still be useful.
+		-   There is something that tis smuggled in here, which you
+			think knowledge has to be something we can act on.
+		-   It's standard analytical terms to get sufficient
+			and necessary conditions.
 
 October 14th, 2013 <small>Chapter 3, part II, 'Defining Knowledge'</small>
 --------------------------------------------------------------------------
