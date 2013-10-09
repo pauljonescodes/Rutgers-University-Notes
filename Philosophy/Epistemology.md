@@ -622,11 +622,70 @@ September 30th, 2013 <small>1st Meeting on Goldman</small>
 	-   Bad form, circular reasoning
 	-   Better form
 
-October 2nd, 2013 <small>2nd Meeting on Goldman</small>
------------------------------------------------------
+October 9th, 2013 <small>First Meeting on Conee & Feldman</small>
+-----------------------------------------------------------------
+
+-   Suppose you're driving along, and you see what you take to
+	be what is someone walking through a brick wall.
+	-   Well, you're *prima facie* justified in believing that
+		that person is walking through the wall, but you're
+		not going to think you have *ultima facie* justification.
+	-   It can be quickly overruled.
+
+>   Why when geese fly why is it that one leg is longer than
+>   the other? 
+>   
+>   More geese. 
 
 
+-   There are **direct realists** and **indirect realists**
+	-   *Direct realists* think that the basic propositions
+		in foundational justification are states of affairs,
+		-   "There are tables."
+		-   Claim about physical objects.
 
+	-   *Indirect realists*
+		-   Direct, non-inferential knowledge of objects.
+		-   I'm not just aware of ideas, I can infer there
+			are physical objects with constant properties.
 
-October 7th, 2013 <small>3rd Meeting on Goldman</small>
------------------------------------------------------
+	-   *Idealists*
+		-   This is not "'ideal'-ist", it is "'idea'-ist."
+		-   The only things that exists are ideas and collections
+			of ideas.
+
+-   If you think of a mind of something like a room where all
+	we see is something like images on the wall, like Plato's
+	cave, I *could* infer that these correspond to non
+	mind-independent, but I do not necessarily. 
+	-   How do I get *out of mind*?
+
+-   What Huemer thinks is that if I am having a phenomenal
+	experience, then I am entitled to the belief, and the
+	belief is knowledge if the proposition is not overridden
+	by other knowledge I have.
+	-   So this is where there is *prima facie*, "non-overriden."
+	-   And then there is *ultima facie*, "undefeated."
+
+-   Goldman is saying that there is the belief, "I have a pain."
+	-   Most people have taken this type of belief to be a basic
+		belief.
+	-   If they're like Huemer, also tables, because there are
+		basic beliefs about the world and about internal
+		mental states.
+		-   If indirect realism is correct there has to be a
+			seeming that there is a pain distinct from having
+			a pain.
+
+-   Suppose you are just terrible at distinguishing a tickle
+	from a pain, then you would, in some sense, could be wrong
+	about *how it seems to you*.
+	-   You're just terrible at classifying pains.
+	-   It's propositional *enough* in the sense that you could
+		say it about the seemings for the person going through
+		the wall.
+		-   I'm not sure if you should categorize that as going
+			through a wall or as a person.
+
+	-   There are people that believe they have pains that do not,
+		psychological problems, etc.
