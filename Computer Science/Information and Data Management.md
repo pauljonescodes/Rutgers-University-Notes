@@ -950,4 +950,29 @@ October 8th, 2013 <small>Study</small>
             FROM sells 
             __________ __________ __________) -- GROUP BY BEER
 
-#### Questions 4
+
+October 10th, 2013 <small>Lecture: Design Theory for Relational Databases</small>
+-----------------------------------------------------------------------------------------
+
+### Functional Dependency
+
+-   `X -> Y` is an assertion about a relation *R* that whenever
+	two types of *R* agree on all the attributes of *X*, then they
+	must also agree on all attributes in set *Y*.
+	-   Say "`X -> Y` holds in *R*."
+	-   Convention: *X*, *Y*, and *Z* represent sets of attributes.
+
+#### Splitting Right Sides of FDs
+
+
+-   `X -> A_1, A)2, ... A_n` holds for *R* exactly when each of
+	the expressions of for *R*.
+
+#### Example
+
+
+	Drinkers(name, addr, beersLiked, manf, favBeer)
+
+-   Reasonable FDs to assert:
+	1.  `name -> addr favBeer`
+	2.   `beersLiked -> manf`
