@@ -722,11 +722,72 @@ September 30th, 2013 <small>Seminar</small>
 		-   It's standard analytical terms to get sufficient
 			and necessary conditions.
 
-October 14th, 2013 <small>Chapter 3, part II, 'Defining Knowledge'</small>
+October 14th, 2013 <small>Chapter 3, part II, 'Defining Knowledge' and Chapter 4, 'Knowledge and Skepticism'</small>
 --------------------------------------------------------------------------
+
+### Questions 
+
+1. pg. 30, on safety, "To know that P is to have justified true belief such that if you were to believe that P, P would be true.” This seems dangerously close to begging the question. ‘If you were to believe that P, then P would be true.’ in use will allow me to point to cases where an agent believes a falsehood and say that what’s wrong about the false belief is that the belief is false, and the cases where the agent believes a truth and say the condition is satisfied because the belief is true. How can safety make truth somehow continent on belief?
+2. pg. 30, safety continued. Furthermore, it also seems very close to being equivalent with a Williamson’s thought that knowledge is unanalyzable, because the formulation holds that we form JTBs “somehow” and it means they’re true. Do or can knowledge-firsters subscribe to safety? 
+3. pg. 34, on relevant alternatives, "To know that P is to have JTB where one’s evidence rules out all the relevant alternatives to P.” Would “nearby possible worlds” be a good account of what is a relevant alternative? Admittedly, I haven’t read Lewis and I do not know how precise or supported the notion of “nearby” is.
+4. pg. 4, on skeptical arguments, "Unless I know I haven’t spent my life being deceived by an evil genius, I cannot know anything about the world around me (or even about mathematics or logic).” Why does this entail? I cannot see that it does or does not, but for the argument to be compelling.
+5. On skepticism, generally: I may not be able to provide justification for my not being a BIV or having an evil demon, but why does this necessarily affect my other candidates for knowledge? In “high standards contexts”, I’m satisfied in asserting something like, “It’s possible that I’m a BIV, have an evil demon, etc … and Obama is president.” The domain of the knowledge claim I’m making could be restricted to whatever is being appeared to me and true in that regard, and assume that I believe it and have valid justification. Is that too much to give up to skeptics?
 
 October 14th, 2013 <small>Seminar</small>
 -----------------------------------------
+
+>   $S$ knows that $p$ if and only if:
+>   1.  $P$ is true
+>   2.  $B_s p$
+>   3.  $B_s p$ is **caused by** a **generally reliable**
+>       belief forming process.
+>   4.  There is no relevant alternative situation in which
+>       $S$ would have believed $p$ (using the same process)
+
+### Relevant Alternatives, Constrastivism, and Closure
+
+>   **Relevant alternatives**: You know that *p* just when
+>   you have a JTB that *p* and your evidences **rules
+>   out** all the **relevant** alternatives to *p*.
+
+-   **Ruling out** (RO):
+	-   (RO)-**Sensitivity**: Your evidence rules out an alternative
+		if and only if that if that alternative *had* obtained,
+		you'd have very different evidence.
+	-   (RO)-**Safety**: Your evidence rules out an alternative
+		if and only if: you could not easily have had the same
+		evidence while the alternative was the case.
+
+-   **Relevance**: The relevance of an alternative *A* depends on
+	the objective probability of *A*-like events given the kind
+	of environment you're in and the kind of evidence you have.
+
+>   **Knowledge closure**: 
+>   If you know that *p*, and *p* entails *q*, you know *q*.
+
+-   For knowledge closure to hold, every relevant alternative
+	to *q* must be a relevant alternative to *p*.
+	-   *Relevant* must be **intersective**.
+		-   Blue is *intersective* because "blue book" breaks
+			down into "is a book" and "is blue."
+		-   Small is not intersective because "small planet"
+			does not break down into "is a planet" and "is
+			small."
+
+>    **Constrastivism**: Knowledge is a three-place
+>    relation between a knower, a proposition, and
+>    another "contrasting" proposition.
+
+-   Some important 'degrees' of knowing that *p* rather than
+	*a*:
+	1.  **Certainty**: *a* includes **all** alternatives to *p*;
+	2.  **Relevance theorist's knowledge**: *a* includes
+		**relevant** alternatives to *p*;
+	3.  **Useful concept**: *a* includes **some** 
+		alternatives to *p*;
+	4.  **No knowledge**: *a* includes **no** alternatives 
+		to *p*;
+
 
 October 21st, 2013 <small>Chapter 4, 'Knowledge Skepticism'</small>
 -------------------------------------------------------------------
