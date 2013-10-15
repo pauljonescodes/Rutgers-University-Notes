@@ -270,3 +270,38 @@ You may use any implementation of scheme that complies with the R5RS standard.
 4. Write a scheme function (assoc-all lst a-list) where lst is a list of symbols and a-list is an assoc-list. assoc-all returns a list of the data associated with elements of lst by assoc-list. E.g. (assoc-all '(a d c d) '((a apple)(b boy)(c cat)(d dog))) returns (apple dog cat dog). Use map. Note that you can't simply use assoc as one of the arguments to map. You need a lambda.
 4. Write a function filter-evens which takes a list of numbers as its argument and returns a new list containing only the even numbers in the input list. E.g., (filter-evens '(23 33 44 2 1 8)) returns (44 2 8). Use even? to test if a number is even. You must use map.  You may use a helper function but the only recursion should be the recursion implicit in map. 
 Hint:  Note that the result of map is exactly as long as its second argument.  E.g. the result of  (map foo '(23 33 44 2 1 8)) will be a list of 6 elements no matter what function foo is.  So how can this problem be solvable?  Do something to the result of map before you return it.  E.g., suppose the result of   (map foo '(23 33 44 2 1 8)) is ( ( ) ( ) (44)(2)( ) (8)).  Then (apply append   (map foo '(23 33 44 2 1 8))) will result in (44 2 8) .
+
+October 15th, 2013 <small>Midterm Study Guide</small>
+-----------------------------------------------------
+
+### Formal Languages
+
+-   Grammars 
+	-   parsing, derivation
+	-   ambiguity and removing ambiguity: precidence, associativity
+	-   regular grammars and context free grammars
+
+-   Regular Expressions
+	-   is this string in the language defined by this RE?
+	-   describe in English the language defined by this RE
+	-   write an RE that defines this language
+
+-   Finite State Automata
+	-   deterministic and nondeterministic
+	-   is this string accepted by this FA?
+	-   describe in English the language accepted by the FA.
+	-   write an FA that accepts this language
+
+### Functional Programming & Scheme
+
+-   shallow and deep recursion on lists		   
+-   accumulator recursion and tail recursion
+-   lambda and closures
+-   functions that take functions as arguments
+	-   apply, map, foldr, plot, compose, etc.
+
+-   functions that return functions
+	-   null-safe, repeat-cols, add-check
+	-   encapsulating patterns
+
+-   functions stored in data structures

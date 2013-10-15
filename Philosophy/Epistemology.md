@@ -622,8 +622,8 @@ September 30th, 2013 <small>1st Meeting on Goldman</small>
 	-   Bad form, circular reasoning
 	-   Better form
 
-October 9th, 2013 <small>First Meeting on Conee & Feldman</small>
------------------------------------------------------------------
+October 9th, 2013 <small>2nd Meeting on Conee & Feldman</small>
+---------------------------------------------------------------
 
 -   Suppose you're driving along, and you see what you take to
 	be what is someone walking through a brick wall.
@@ -689,3 +689,19 @@ October 9th, 2013 <small>First Meeting on Conee & Feldman</small>
 
 	-   There are people that believe they have pains that do not,
 		psychological problems, etc.
+
+October 14th, 2013 <small>3rd Meeting on Conee & Feldman</small>
+----------------------------------------------------------------
+
+-   Foundationalists think that there is a causal chain from basic
+	beliefs to more complex beliefs.
+	-   They will try to explain how the belief is caused by
+		evidence, or "the proposition."
+	-   Suppose I believe something on basis of bad evidence, I do
+		not know it. Suppose I come to believe it on good evidence,
+		does the citing reasons and justification make you 
+		doxastically justifiers.
+
+-   Decisions made by the Senate **supervene** on the votes of
+	individual Senators.
+	-   If a legislation *didn't* pass, it could
