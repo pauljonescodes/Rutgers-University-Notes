@@ -622,7 +622,7 @@ September 30th, 2013 <small>1st Meeting on Goldman</small>
 	-   Bad form, circular reasoning
 	-   Better form
 
-October 9th, 2013 <small>2nd Meeting on Conee & Feldman</small>
+October 9th, 2013 <small>1st Meeting on Conee & Feldman</small>
 ---------------------------------------------------------------
 
 -   Suppose you're driving along, and you see what you take to
@@ -690,7 +690,7 @@ October 9th, 2013 <small>2nd Meeting on Conee & Feldman</small>
 	-   There are people that believe they have pains that do not,
 		psychological problems, etc.
 
-October 14th, 2013 <small>3rd Meeting on Conee & Feldman</small>
+October 14th, 2013 <small>2nd Meeting on Conee & Feldman</small>
 ----------------------------------------------------------------
 
 -   Foundationalists think that there is a causal chain from basic
@@ -705,3 +705,106 @@ October 14th, 2013 <small>3rd Meeting on Conee & Feldman</small>
 -   Decisions made by the Senate **supervene** on the votes of
 	individual Senators.
 	-   If a legislation *didn't* pass, it could
+
+October 16th, 2013 <small>'Experiential Justification' by Anthony Brueckner</small>
+-----------------------------------------------------------------------------------------
+
+-   The topic is *justification and perceptual beliefs*.
+-   The most attractive view of perceptual justification is that
+	perceptual beliefs *are justified* in virtue of their relation
+	to *propositional-content-bearing* experiences.
+
+### Perception Beliefs and Theories of Justification
+
+-   At first pass, perceptual beliefs are beliefs that are caused
+	by perceptual experiences. Though this is too narrow and too
+	wide because:
+	1.  Seeing a red cup *can* cause the belief that 2 + 3 = 5
+	2.  Wide, because hallucinations
+
+-   Characterizing it in terms of propositions is problematic
+	because the belief with content that a red cup is present
+	could well be caused in multifarious ways.
+-   Some questions:
+	1.  Do perceptual beliefs amount to knowledge?
+	2.  When, if ever, are perceptual beliefs justified?
+		-   *How* are they justified?
+
+	3.  *In virtue of what* are justified perceptual beliefs
+		justified?
+
+-   Theories of justification:
+	-   Coheretism, justified beliefs depend for their justification
+		upon their relations to other beliefs.
+		-   *Pure* coherentism is all justified beliefs being 
+			justified in relation to other beliefs.
+
+### An application of the Foregoing Categorization
+
+-   Williamson thinks that "E = K", that one's *knowledge* is *equal*
+	to what one *evidentially believes*.
+	-   Experiences are never justifiers for one's perceptual
+		beliefs because experiences are obviously not believed
+		propositions.
+
+-   Then, Williamson has two options:
+	1.  Adopt that foundational beliefs are justified without
+		justifiers.
+	2.  A version of coherentism.
+
+-   Coherentism *is not* explored in *Knowledge and its Limits*,
+	so Williamson's view is undetermined.
+
+### Experiential Justification
+
+-   Returning to foundationalism, how do perceptual *experiences*
+	justify perceptual *beliefs*?
+	-   Perhaps the belief is caused by the experience and the
+		experience is cause by the thing in itself.
+		-   This leaves no rational for holding that
+			perceptual beliefs caused by *illusory* experiences.
+
+>   Beliefs have propositional content, while 
+>   perceptual representations have non-propositional 
+>   content. Both states can be **veridical**: beliefs 
+>   are veridical when their propositional truth 
+>   conditions are satisfied; perceptual experiences 
+>   are veridical when their non-propositional 
+>   correctness conditions are satisfied (as we find 
+>   in the cases of good maps and accurate photographs).
+
+-   If an experience has a propositional content, as does a 
+	belief, then the experience is to that degree belief-like.
+
+### Pryor
+
+>   If you're to have justification for believing p 
+>   on the basis of certain experiences or grounds E, 
+>   then for every q which is "bad" relative to E 
+>   and p, you have to have antecedent justification 
+>   for believing q to be false-justification which 
+>   doesn't rest on or presuppose any E-based 
+>   justification you may have for believing p. (p. 531)
+
+October 16th, 2013 <small>3rd Meeting on Connee/Feldman</small>
+---------------------------------------------------------------
+
+### A Note on Method From the Syllabus
+
+>   What is the **thesis** (sometimes a compound one) in 
+>   the essay? What are the **main steps** in arguing for 
+>   the thesis? What are some **plausible objections** to 
+>   the steps? Did the author *fairly represent and 
+>   adequately respond* to objections? What is your 
+>   view about the *soundness of the author’s arguments*?
+
+### Fallacy of Misplaced Necessity
+
+>   a) Bachelors are necessarily unmarried.
+>   b) John is a bachelor.
+>   Therefore, c) John cannot marry.
+
+	Necessary(If it's been raining two hours, the ground is wet)
+	!=
+	If it's been raining two hours, necessary(the ground is wet)
+

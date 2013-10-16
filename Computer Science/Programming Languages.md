@@ -276,21 +276,25 @@ October 15th, 2013 <small>Midterm Study Guide</small>
 
 ### Formal Languages
 
--   Grammars 
-	-   parsing, derivation
-	-   ambiguity and removing ambiguity: precidence, associativity
-	-   regular grammars and context free grammars
+#### Grammars 
 
--   Regular Expressions
-	-   is this string in the language defined by this RE?
-	-   describe in English the language defined by this RE
-	-   write an RE that defines this language
+-   parsing, derivation
+-   ambiguity and removing ambiguity: precidence, associativity
+-   regular grammars and context free grammars
 
--   Finite State Automata
-	-   deterministic and nondeterministic
-	-   is this string accepted by this FA?
-	-   describe in English the language accepted by the FA.
-	-   write an FA that accepts this language
+#### Regular Expressions
+	
+-   is this string in the language defined by this RE?
+-   describe in English the language defined by this RE
+-   write an RE that defines this language
+
+#### Finite State Automata
+
+-   deterministic and nondeterministic
+-   is this string accepted by this FA?
+-   describe in English the language accepted by the FA.
+-   write an FA that accepts this language
+
 
 ### Functional Programming & Scheme
 
@@ -305,3 +309,9 @@ October 15th, 2013 <small>Midterm Study Guide</small>
 	-   encapsulating patterns
 
 -   functions stored in data structures
+
+
+
+
+
+
