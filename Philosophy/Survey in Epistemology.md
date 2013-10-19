@@ -128,26 +128,24 @@ September 8th, 2013 <small>Chapter 1, 'The Structure of Justification'</small>
     -   They are justified.
 
 -   There are four questions that foundationalism must address to
-	succeed:
-	>   1.  Exactly what does it take for a belief to attain the status of 
-	>       "justified" in an unmediated or non-inferential fashion? 
-	>       What must take place or hold true of a belief to confer 
-	>       on it the property of being immediately justified?  
-	>   2.  Which types of belief or families of belief qualify as 
-	>       immediately justified? What kinds of propositional 
-	>       contents lend themselves to immediate justification?  
-	>   3.  What strength of justification do immediately justified 
-	>       beliefs need to attain according to foundationalism?  
-	>       Must basic beliefs exhibit the highest grade of 
-	>       justification, i.e., certainty, infallibility, or 
-	>       incorrigibility?  Or can basic beliefs have weaker 
-	>       degrees of justification while still being basic?
-	>   4.  Assuming that many immediately justified beliefs are 
-	>       available, does this enable epistemic agents to draw 
-	>       enough reasonable inferences that they can attain a 
-	>       large corpus of justified beliefs (both basic and non-basic), 
-	>       enough to dispel the specter of skepticism that is 
-	>       often laid at foundationalism's doorstep? 
+    succeed:
+    1.  Exactly what does it take for a belief to attain the status of
+        "justified" in an unmediated or non-inferential fashion? What
+        must take place or hold true of a belief to confer on it the
+        property of being immediately justified?
+    2.  Which types of belief or families of belief qualify as
+        immediately justified? What kinds of propositional contents lend
+        themselves to immediate justification?
+    3.  What strength of justification do immediately justified beliefs
+        need to attain according to foundationalism? Must basic beliefs
+        exhibit the highest grade of justification, i.e., certainty,
+        infallibility, or incorrigibility? Or can basic beliefs have
+        weaker degrees of justification while still being basic?
+    4.  Assuming that many immediately justified beliefs are available,
+        does this enable epistemic agents to draw enough reasonable
+        inferences that they can attain a large corpus of justified
+        beliefs (both basic and non-basic), enough to dispel the specter
+        of skepticism that is often laid at foundationalism's doorstep?
 
 September 9th, 2013 <small>Seminar</small>
 ------------------------------------------
@@ -276,15 +274,46 @@ September 16th, 2013 <small>Chapter 2, part I, 'Evidentialism vs. Reliabilism'</
 
 ### Questions
 
-1.  pg. 4, "According to evidentialism, all (positive or negative) justifiers of a belief held by epistemic agent S at time t are evidential states S is in at t." This took a few reads and a cross-check with the Wikipedia to fully understand. Specifically, I didn't know what it meant for S to be "in an evidential state." When I worked out what that meant, the definition was easily understood.
-	-  This was supremely cleared up on pg. 7, with the precise formulation of evidentialism, what it implies.
-2.  pg. 10, "Nonetheless, it is perfectly plausible that her belief in this proposition is justified." This actually happens all the time! It may add something to the credibility and plausibility of the case to name the psychology term for it: Source Amnesia.
-	-  pg. 11, "it plays no causal role in her current belief in D." I cannot find anything defined with that variable, thought I think I can reasonably assume it's the claim about the earth.
-3.  pg. 18, "Thus, wishful thinking is “bad” because the beliefs it outputs are only occasionally true." Wouldn't wishful thinking still be bad even if the beliefs it outputs were more often than not true? It's not clear to me from the example wishful think is bad because of unreliability, but it is certainly unreliable.
-	-  pg. 18, "The overextended version of disjunctive syllogism is “bad” because it would frequently lead to erroneous conclusions even when the inputs to it are true." This is closer to my intuition, but all it would take for me to think that it was bad was one case where even one invalid logical schema was used. A good schema is always gets good conclusions for when the inputs are true.
-	-  After I read the definition for process reliablism a bit further down along with the suitably vague portion, it seems very plausible for longer belief forming processes like perception (which is vague, which has variable successes and failures), but not so applicable to using bad logic rules. I think the difference is that a bad logic schema has concrete, knowable cases of when it always gets it wrong.
-	-   After (CR) and (UR), this was cleared up I think. 
-4.  pg. 24, "By contrast, teliabilism seems to secure it easily." You may or may not have seen this typo, but I'll add it just in case.
+1.  pg. 4, "According to evidentialism, all (positive or negative)
+    justifiers of a belief held by epistemic agent S at time t are
+    evidential states S is in at t." This took a few reads and a
+    cross-check with the Wikipedia to fully understand. Specifically, I
+    didn't know what it meant for S to be "in an evidential state." When
+    I worked out what that meant, the definition was easily understood.
+    -   This was supremely cleared up on pg. 7, with the precise
+        formulation of evidentialism, what it implies.
+
+2.  pg. 10, "Nonetheless, it is perfectly plausible that her belief in
+    this proposition is justified." This actually happens all the time!
+    It may add something to the credibility and plausibility of the case
+    to name the psychology term for it: Source Amnesia.
+    -   pg. 11, "it plays no causal role in her current belief in D." I
+        cannot find anything defined with that variable, thought I think
+        I can reasonably assume it's the claim about the earth.
+
+3.  pg. 18, "Thus, wishful thinking is “bad” because the beliefs it
+    outputs are only occasionally true." Wouldn't wishful thinking still
+    be bad even if the beliefs it outputs were more often than not true?
+    It's not clear to me from the example wishful think is bad because
+    of unreliability, but it is certainly unreliable.
+    -   pg. 18, "The overextended version of disjunctive syllogism is
+        “bad” because it would frequently lead to erroneous conclusions
+        even when the inputs to it are true." This is closer to my
+        intuition, but all it would take for me to think that it was bad
+        was one case where even one invalid logical schema was used. A
+        good schema is always gets good conclusions for when the inputs
+        are true.
+    -   After I read the definition for process reliablism a bit further
+        down along with the suitably vague portion, it seems very
+        plausible for longer belief forming processes like perception
+        (which is vague, which has variable successes and failures), but
+        not so applicable to using bad logic rules. I think the
+        difference is that a bad logic schema has concrete, knowable
+        cases of when it always gets it wrong.
+    -   After (CR) and (UR), this was cleared up I think.
+
+4.  pg. 24, "By contrast, teliabilism seems to secure it easily." You
+    may or may not have seen this typo, but I'll add it just in case.
 
 September 16th, 2013 <small>Seminar</small>
 -------------------------------------------
@@ -349,35 +378,36 @@ September 16th, 2013 <small>Seminar</small>
 
 ### Presentation on Evidentialism
 
--   **Epistemically justified**: Doxastic attitude *D* towards propositions *p* is
-    epistemically justified for *S* at *t* if and only if having *D*
-    towards *p* fits the evidence *S* has at *t*.
+-   **Epistemically justified**: Doxastic attitude *D* towards
+    propositions *p* is epistemically justified for *S* at *t* if and
+    only if having *D* towards *p* fits the evidence *S* has at *t*.
 -   **Well-foundedness**: A belief is well-founded only if:
-	1.  It is justified;
-	2.  It was formed based on a suitable body of evidence.
+    1.  It is justified;
+    2.  It was formed based on a suitable body of evidence.
 
 -   There are three different questions according to Conee and Feldman:
-	1.  Is she epistemically responsible in believing *p*?
-	2.  Is her belief that *p* well-founded?
-	3.  Is her belief that *p* justified?
+    1.  Is she epistemically responsible in believing *p*?
+    2.  Is her belief that *p* well-founded?
+    3.  Is her belief that *p* justified?
 
 ### Reliablism
 
 -   What do you mean by a process?
-	-   It's maybe not *wholly* mental.
-	-   Does it start with the environment?
-		-   "He formed the belief about the color of the fruit in
-			queer light." 
+    -   It's maybe not *wholly* mental.
+    -   Does it start with the environment?
+        -   "He formed the belief about the color of the fruit in queer
+            light."
 
-	-   Uncle Floyd and Niece Sally
-		-   Niece Sally believes Uncle Floyd, it starts with her
-			auditory system, it begins with the input to the auditory
-			system. Start from the inner ear? And then go into the neuro-processing
-			of the ear. 
-		-   Perhaps it begins with what the person says.
-		-   Goldman likes to keep the process on the inside, "skin in."
+    -   Uncle Floyd and Niece Sally
+        -   Niece Sally believes Uncle Floyd, it starts with her
+            auditory system, it begins with the input to the auditory
+            system. Start from the inner ear? And then go into the
+            neuro-processing of the ear.
+        -   Perhaps it begins with what the person says.
+        -   Goldman likes to keep the process on the inside, "skin in."
 
--    There are **belief-independent processes** and **belief-dependent processes**
+-   There are **belief-independent processes** and **belief-dependent
+    processes**
 
 September 23th, 2013 <small>Chapter 2, part II, 'Internalism vs. Externalism'</small>
 -------------------------------------------------------------------------------------
@@ -385,98 +415,133 @@ September 23th, 2013 <small>Chapter 2, part II, 'Internalism vs. Externalism'</s
 ### Framing the Debate
 
 -   Evidentialism belongs to internalism
-	-   While process reliablism belongs to externalism.
-	-   They are rivals for what are called "j-factors."
-	-   Externalism claims that all justifying factors are external,
-		internalism thinks they are internal.
-	-   Mentalism is a prime example of externalism.
-	-   Since truth is a function outside the mind, process reliablism
-		is external.
+    -   While process reliablism belongs to externalism.
+    -   They are rivals for what are called "j-factors."
+    -   Externalism claims that all justifying factors are external,
+        internalism thinks they are internal.
+    -   Mentalism is a prime example of externalism.
+    -   Since truth is a function outside the mind, process reliablism
+        is external.
 
 -   Externalism has the air of being the default position because
-	internalism's premise is that *all* justifying factors are internal
-	to agents, and externalism's premise is that *not all* j-factors
-	are internal.
-	-   Externalism isn't as strong.
-	-   Internalism has some proofs to do.
+    internalism's premise is that *all* justifying factors are internal
+    to agents, and externalism's premise is that *not all* j-factors are
+    internal.
+    -   Externalism isn't as strong.
+    -   Internalism has some proofs to do.
 
 -   There are two approaches to internal justifiers:
-	1.  Mental states
-	2.  "Directly accessible" to the agent at time of doxastic decision
-		making.
+    1.  Mental states
+    2.  "Directly accessible" to the agent at time of doxastic decision
+        making.
 
 -   Ethical theory regularly work within normativity and rules.
-	-   A wrong action may fail to be within a rule.
-		-   A right action may be within the rules.
+    -   A wrong action may fail to be within a rule.
+        -   A right action may be within the rules.
 
-	-   "we can say that *a doxastic attitude toward a proposition* is **justified** just in case *it conforms to what is permitted by correct epistemic rules* and unjustified in case it doesn’t conform to such rules"
-		-   This is an externalist notion, surely.
-		-   "If S's circumstances include the possession of a certain
-		 	body of evidence relevant to P, then the correct rules 
-			may permit S to believe P."
-		-   If S's doxastic attitude toward a proposition P is
-			justified, then it conforms to what is permitted by
-			correct epistemic rules.
-		-   If S's doxastic attitude towards a proposition P conforms
-			to what is permitted by correct epistemic rules, then
-			it is justified.
+    -   "we can say that *a doxastic attitude toward a proposition* is
+        **justified** just in case *it conforms to what is permitted by
+        correct epistemic rules* and unjustified in case it doesn’t
+        conform to such rules"
+        -   This is an externalist notion, surely.
+        -   "If S's circumstances include the possession of a certain
+            body of evidence relevant to P, then the correct rules may
+            permit S to believe P."
+        -   If S's doxastic attitude toward a proposition P is
+            justified, then it conforms to what is permitted by correct
+            epistemic rules.
+        -   If S's doxastic attitude towards a proposition P conforms to
+            what is permitted by correct epistemic rules, then it is
+            justified.
 
--   What is meant by calling a justificationally relevant fact "internal"?
-	-   Two approaches:
-		1.  An older approach, anything that is **directly accesible**
-			to the subject at the time of decision making.
-			-   What is included in directly accessible?
-			-   Introspection.
-			-   *a priori* cognition
+-   What is meant by calling a justificationally relevant fact
+    "internal"?
+    -   Two approaches:
+        1.  An older approach, anything that is **directly accesible**
+            to the subject at the time of decision making.
+            -   What is included in directly accessible?
+            -   Introspection.
+            -   *a priori* cognition
 
 -   A reason that might motivate internalists is that if you restrict
-	what might justify someone to those facts under their cognition,
-	then they can know just from themselves whether or not they are
-	justified.
-	-   For instance, a cook book needs to be usable!
-	-   While this is a nice motivation for studying knowledge,
-		I do not think you should restrict yourself to one view
-		of knowledge or justification because it helps people.
-		What will help people is the correct, coherent view.
-		-   "directions to which any epistemic agent can **conform**"
+    what might justify someone to those facts under their cognition,
+    then they can know just from themselves whether or not they are
+    justified.
+    -   For instance, a cook book needs to be usable!
+    -   While this is a nice motivation for studying knowledge, I do not
+        think you should restrict yourself to one view of knowledge or
+        justification because it helps people. What will help people is
+        the correct, coherent view.
+        -   "directions to which any epistemic agent can **conform**"
 
-	-   Another approach is the **infallible guidance** approach,
-		that the right rules will infallibly lead a subject to truth.
+    -   Another approach is the **infallible guidance** approach, that
+        the right rules will infallibly lead a subject to truth.
 
 ### Internalism and Inferential Rules
 
->   **(INF)**   If agent *S* has beliefs in propositions *K*, *L*, *M*, *N* (at time *t*), 
->   and proposition *P* is logically entailed by the conjunction of *K*, *L*, *M*, *N*,
->   then *S* is permitted (at time *t*) to believe *P*.
+> **(INF)** If agent *S* has beliefs in propositions *K*, *L*, *M*, *N*
+> (at time *t*), and proposition *P* is logically entailed by the
+> conjunction of *K*, *L*, *M*, *N*, then *S* is permitted (at time *t*)
+> to believe *P*.
 
 -   So what about beliefs that *S* holds but doesn't have access to at
-	time *t* but still uses to form the belief that *P*.
-	-   All the time in science, portions of problems are abstracted
-		and ignored for the sake of being able to get work done.
-	-   If challenged, *of course* the subject believes that portion
-		of the body of evidence supporting *P*, but the subject doesn't
-		necessarily need that support to form the belief that *P*.
-	-   It's not that it would suffice not to have this proposition,
-		say *M*, it's just that it's not necessary.
-	-   Goldman writes that internalism is vindicated only when all
-		justifiers are internal, which is a definition, but is this
-		type of doxastic attitude or propositional support captured by 
-		internal or external?
+    time *t* but still uses to form the belief that *P*.
+    -   All the time in science, portions of problems are abstracted and
+        ignored for the sake of being able to get work done.
+    -   If challenged, *of course* the subject believes that portion of
+        the body of evidence supporting *P*, but the subject doesn't
+        necessarily need that support to form the belief that *P*.
+    -   It's not that it would suffice not to have this proposition, say
+        *M*, it's just that it's not necessary.
+    -   Goldman writes that internalism is vindicated only when all
+        justifiers are internal, which is a definition, but is this type
+        of doxastic attitude or propositional support captured by
+        internal or external?
 
 -   **(INF\*)** adds the condition of the belief being justified,
-	because it's not enough that the belief be a belief.
-	-   Justification comes from an external source, 
-		
+    because it's not enough that the belief be a belief.
+    -   Justification comes from an external source,
+
 ### Questions
 
-1.  "we can say that a doxastic attitude toward a proposition is justified just in case it conforms to what is permitted by correct epistemic rules and unjustified in case it doesn’t conform to such rules"
-This reads like a default application of normativity to epistemology, but then you write, "If S's circumstances include the possession of a certain body of evidence relevant to P, then the correct rules may permit S to believe P."
-	-   This uses an account of justification.
-	-   I don't understand how body of evidence got into this formulation. I think that evidentialists might like this formulation, but it could just as easily be something like, "If S's circumstances include the possession of a certain belief-forming process relevant to P, then the correct rules may permit S to believe P." 
-	-   Is there any reason that you used this language? A neutral application would be, "If S's doxastic attitude towards a proposition P conforms to what is permitted by correct epistemic rules, then it is justified."
-	-   This would allow a normative evaluation of epistemology to remain agnostic about the correct account of justification.
-2.  I noticed that the chapter was devoted largely to the reasons that internalism cannot work, (I think) largely because justification comes in some way from the truth of the proposition, and this is not accessible in any of the right ways. I see that externalism is the rejection of internalism, and so therefore any refutation of internalism makes externalism more compelling, but I still believe that we need independently good and compelling reasons to be an externalist.
-3.  Are there any coherent and compelling compatiblist positions about the internalism/externalism debate? From the reading, I understand that many necessary types of justification are best understood as external and that the chapter doesn't think there are no internal factors, but I don't see why one needs to be more prominent than the other. Justification's link to the truth and normative epistemic rules are clearly external factors, but an agent's access and conformity is, very generally, part of a process which ends internally. 
+1.  "we can say that a doxastic attitude toward a proposition is
+    justified just in case it conforms to what is permitted by correct
+    epistemic rules and unjustified in case it doesn’t conform to such
+    rules" This reads like a default application of normativity to
+    epistemology, but then you write, "If S's circumstances include the
+    possession of a certain body of evidence relevant to P, then the
+    correct rules may permit S to believe P."
+    -   This uses an account of justification.
+    -   I don't understand how body of evidence got into this
+        formulation. I think that evidentialists might like this
+        formulation, but it could just as easily be something like, "If
+        S's circumstances include the possession of a certain
+        belief-forming process relevant to P, then the correct rules may
+        permit S to believe P."
+    -   Is there any reason that you used this language? A neutral
+        application would be, "If S's doxastic attitude towards a
+        proposition P conforms to what is permitted by correct epistemic
+        rules, then it is justified."
+    -   This would allow a normative evaluation of epistemology to
+        remain agnostic about the correct account of justification.
+
+2.  I noticed that the chapter was devoted largely to the reasons that
+    internalism cannot work, (I think) largely because justification
+    comes in some way from the truth of the proposition, and this is not
+    accessible in any of the right ways. I see that externalism is the
+    rejection of internalism, and so therefore any refutation of
+    internalism makes externalism more compelling, but I still believe
+    that we need independently good and compelling reasons to be an
+    externalist.
+3.  Are there any coherent and compelling compatiblist positions about
+    the internalism/externalism debate? From the reading, I understand
+    that many necessary types of justification are best understood as
+    external and that the chapter doesn't think there are no internal
+    factors, but I don't see why one needs to be more prominent than the
+    other. Justification's link to the truth and normative epistemic
+    rules are clearly external factors, but an agent's access and
+    conformity is, very generally, part of a process which ends
+    internally.
 
 September 23rd, 2013 <small>Seminar</small>
 -------------------------------------------
@@ -487,69 +552,68 @@ September 23rd, 2013 <small>Seminar</small>
 -   This is the longest of the three knowledge chapters.
 -   Two sessions on this chapter.
 -   For chapter 5, the first half of the chapter and 1 extra reading,
-	and that's posted.
-	-   Nozick.
+    and that's posted.
+    -   Nozick.
 
 ### Internalism
 
--   It's important for internalism that the evidence for a belief
-	be possessed at time of the belief forming, decision making.
-	-   Goldman is not shooting at a straw man with this restrictive
-		time.
-	-   Sometimes counterexamples and debates turn onto a feature of
-		internalism instead of the primary feature.
+-   It's important for internalism that the evidence for a belief be
+    possessed at time of the belief forming, decision making.
+    -   Goldman is not shooting at a straw man with this restrictive
+        time.
+    -   Sometimes counterexamples and debates turn onto a feature of
+        internalism instead of the primary feature.
 
 -   Why is process reliablism externalism?
-	-   What processes? Belief forming processes.
-		-   This is internal.
+    -   What processes? Belief forming processes.
+        -   This is internal.
 
-	-   What reliablism? Reliablism to the truth.
-		-   This is external.
+    -   What reliablism? Reliablism to the truth.
+        -   This is external.
 
 ### Questions
 
 -   "Background belief-forming processes"
 -   Standing belief, "dispositional"
 
-> If agent S has justified beliefs in propositions K, L,
-> M, N (at time t), and S thinks that proposition P is logically 
-> entailed by the conjunction of K, L, M, N, then S is permitted 
-> (**at** time t) to believe P.
+> If agent S has justified beliefs in propositions K, L, M, N (at time
+> t), and S thinks that proposition P is logically entailed by the
+> conjunction of K, L, M, N, then S is permitted (**at** time t) to
+> believe P.
 
 -   I think a better rule would be *from* time *t* **onward**.
-	-   I do not think you need the justifying beliefs to be standing,
-		because that would be too strong.
+    -   I do not think you need the justifying beliefs to be standing,
+        because that would be too strong.
 
 ### Presentation
 
--   Connee and Feldman give examples for internalism because it's
-	"good" to believe that one persons belief is better justified than
-	another belief.
-	-   In the example of Bob and Ray, what makes internalism compelling
-		is that Bob went outside and "internalized" the external
-		justification from the newspaper.
-	-   This is a bad example because the belief is made good by
-		the fact that there are *both* internal and external factors.
-	-   "Best explained by"
+-   Connee and Feldman give examples for internalism because it's "good"
+    to believe that one persons belief is better justified than another
+    belief.
+    -   In the example of Bob and Ray, what makes internalism compelling
+        is that Bob went outside and "internalized" the external
+        justification from the newspaper.
+    -   This is a bad example because the belief is made good by the
+        fact that there are *both* internal and external factors.
+    -   "Best explained by"
 
 #### Perception
 
 -   "He perceives that *p*."
--   "Perceptual experience", which is something *in the head* from
-	the eyes, ears.
-
+-   "Perceptual experience", which is something *in the head* from the
+    eyes, ears.
 
 September 30th, 2013 <small>Chapter 3, part I, 'Defining Knowledge'</small>
 ---------------------------------------------------------------------------
 
--   'Know' is the eighth most commonly used verb in English. 
-	-    By contrast, 'justified belief' is used much more infrequently.
+-   'Know' is the eighth most commonly used verb in English.
+    -   By contrast, 'justified belief' is used much more infrequently.
 
--   We want a good definition of knowledge to solve the problem
-	of **skepticism about knowledge**.
-	-   The most common reason we want a good definition of knowedlge.
-	-   Descartes' evil deceiver.
-	-   Are you a brain in a vat?
+-   We want a good definition of knowledge to solve the problem of
+    **skepticism about knowledge**.
+    -   The most common reason we want a good definition of knowedlge.
+    -   Descartes' evil deceiver.
+    -   Are you a brain in a vat?
 
 ### The Traditional View of Knowledge: Knowledge as JTB
 
@@ -558,128 +622,126 @@ September 30th, 2013 <small>Chapter 3, part I, 'Defining Knowledge'</small>
 #### The truth condition
 
 -   If someone claims to know something, which we later find out to be
-	false, we feel justified in complaining that they didn't know
-	after all.
+    false, we feel justified in complaining that they didn't know after
+    all.
 -   Sometimes, however, we will say things like, "I just *knew* it, but
-	it wasn't so."
-	-   **free indirect speech**: One can speak from the perspective 
-		of someone with more limited or false information.
+    it wasn't so."
+    -   **free indirect speech**: One can speak from the perspective of
+        someone with more limited or false information.
 
 #### The belief condition
 
 -   Knowledge is a matter of possessing the truth, and the sort of
-	possession involved seems to be psychological.
-	-   Memory and Radford cases.
-		-   "Something *like* belief."
+    possession involved seems to be psychological.
+    -   Memory and Radford cases.
+        -   "Something *like* belief."
 
--   When you say, "I *merely* believe it.", you likely really know,
-	but are concealing some information for some reason or another.
+-   When you say, "I *merely* believe it.", you likely really know, but
+    are concealing some information for some reason or another.
 
 #### The justification condition
 
 -   In the **Meno**, the **Gorgias**, the **Theatetus**, and elsewhere,
-	Socrates distinguishes knowledge from right opinion.
-	-   If you form lucky beliefs, they do not constitute knowledge
-		because they are *unjustified*.
-	-   They are degrees of justification, like chicken-sexers and 
-		those with master intuition.
+    Socrates distinguishes knowledge from right opinion.
+    -   If you form lucky beliefs, they do not constitute knowledge
+        because they are *unjustified*.
+    -   They are degrees of justification, like chicken-sexers and those
+        with master intuition.
 
 ### The Gettier problem
 
 -   Gettier's assumptions:
-	1.  **Fallibism about justification**: A belief can be justified
-		even if it is false.
-	2.  **Justification closure**: If you are justified in believing
-		P, P entails Q, and you (competently) deduce Q from P and accept
-		Q as a result of this deduction, then you are justified in 
-		believing Q.
+    1.  **Fallibism about justification**: A belief can be justified
+        even if it is false.
+    2.  **Justification closure**: If you are justified in believing P,
+        P entails Q, and you (competently) deduce Q from P and accept Q
+        as a result of this deduction, then you are justified in
+        believing Q.
 
--   With these two assumptions in place, Gettier gives two cases
-	which he thinks are cases of having JTB while at the same time
-	lacking knowledge.
-	-   If he's right, the JTB cannot be knowledge because the
-		conditions are insufficient.
+-   With these two assumptions in place, Gettier gives two cases which
+    he thinks are cases of having JTB while at the same time lacking
+    knowledge.
+    -   If he's right, the JTB cannot be knowledge because the
+        conditions are insufficient.
 
 -   Types of Gettier cases:
-	1.  Smith, Jones, and the Job.
-	2.  Sheep on the Hill
-	3.  Havit and Nogot
-	4.  Barn Facade Country
+    1.  Smith, Jones, and the Job.
+    2.  Sheep on the Hill
+    3.  Havit and Nogot
+    4.  Barn Facade Country
 
 -   What could we *add* to JTB to avoid Gettier?
 -   Some virtues we should look for in an account of knowledge:
-	1.  Knowledge should satisfy closure principles under competent
-		deduction.
-	2.  The account should show why knowledge is valuable,
-		and why it's better than true belief.
-	3.  The account should enable us to why when someone knows that P,
-		they can appropriate use P as a premix in their reasoning.
-	4.  The account should enable us to understand how someone could
-		know that P without being justified with absolute certainty
-		that P.
+    1.  Knowledge should satisfy closure principles under competent
+        deduction.
+    2.  The account should show why knowledge is valuable, and why it's
+        better than true belief.
+    3.  The account should enable us to why when someone knows that P,
+        they can appropriate use P as a premix in their reasoning.
+    4.  The account should enable us to understand how someone could
+        know that P without being justified with absolute certainty that
+        P.
 
--   In addition to justification closure, there is **knowledge closure**:
-	If you know that P, P entails Q, and you (competently) deduce Q
-	from P and accept Q as a result of this deduction, then you know
-	Q.
-	-   JTB has knowledge closure, but it isn't assured that JTB+X
-		will have knowledge closure.
+-   In addition to justification closure, there is **knowledge
+    closure**: If you know that P, P entails Q, and you (competently)
+    deduce Q from P and accept Q as a result of this deduction, then you
+    know Q.
+    -   JTB has knowledge closure, but it isn't assured that JTB+X will
+        have knowledge closure.
 
--   Can you deduce from your knowledge that you have hands that you
-	are not a brain in a vat?
-	-   Having hands entails not being a brain in a vat.
-	-   If you make this deduction, does this give you knowledge that
-		you *aren't* a brain in a vat?
-	-   Doesn't this beg the question?
-	-   The principle of knowledge closure doesn't say you come to have
-		new knowledge when you make deductions.
-		-   It just says that you do know the conclusions of those
-			deductions.
-		-   What knowledge closure denies is that you can make the
-			deduction but not know the conclusion.
+-   Can you deduce from your knowledge that you have hands that you are
+    not a brain in a vat?
+    -   Having hands entails not being a brain in a vat.
+    -   If you make this deduction, does this give you knowledge that
+        you *aren't* a brain in a vat?
+    -   Doesn't this beg the question?
+    -   The principle of knowledge closure doesn't say you come to have
+        new knowledge when you make deductions.
+        -   It just says that you do know the conclusions of those
+            deductions.
+        -   What knowledge closure denies is that you can make the
+            deduction but not know the conclusion.
 
-	-   **abominable conjunction**: “I know I have hands, and from this I infer that I’m not a BIV. But I don’t know I’m not a BIV.”
+    -   **abominable conjunction**: “I know I have hands, and from this
+        I infer that I’m not a BIV. But I don’t know I’m not a BIV.”
 
 ### Defeasibility
 
--   A quality of Gettier cases is that there is some fact which
-	if the believer learned, would cause them to revise their
-	beliefs.
-	-   These are called **defeaters**.
-	-   There is a defeater for Henry's belief that he sees a barn:
-		that he is in fake barn country.
-	-   There is a defeater in Gettier's Smith, Jones, and the Job
-		case too, which is that Jones will not get the job.
-	-   But what of *defeater defeaters*?
-		-   The Grabit case.
+-   A quality of Gettier cases is that there is some fact which if the
+    believer learned, would cause them to revise their beliefs.
+    -   These are called **defeaters**.
+    -   There is a defeater for Henry's belief that he sees a barn: that
+        he is in fake barn country.
+    -   There is a defeater in Gettier's Smith, Jones, and the Job case
+        too, which is that Jones will not get the job.
+    -   But what of *defeater defeaters*?
+        -   The Grabit case.
 
 ### No False Assumptions
 
--   Gettier cases don't always involve reasoning from false
-	premises.
+-   Gettier cases don't always involve reasoning from false premises.
 -   **No false assumptions account**: To know is to have justified true
-	belief that one's belief isn't based on a false assumption.
-	-   What does it means to be *based* on a false assumption?
-		-   your belief is based on a false assumption just if were you
-			to learn that the assumption is false then you would be
-			justified in giving your belief.
+    belief that one's belief isn't based on a false assumption.
+    -   What does it means to be *based* on a false assumption?
+        -   your belief is based on a false assumption just if were you
+            to learn that the assumption is false then you would be
+            justified in giving your belief.
 
-	-   This condition satisfies the barn facade case.
-	-   The assumption may be that "things are the way they seem to
-		be."
+    -   This condition satisfies the barn facade case.
+    -   The assumption may be that "things are the way they seem to be."
 
 ### Reliability
 
 -   What disqualifies Gettier cases from being knowledge is to do with
-	the lack of an objective connection between the subject's belief
-	and the truth.
--   **Causal account**: To know is to have justified true belief such 
-	that one’s belief is caused by the fact that makes it true.
+    the lack of an objective connection between the subject's belief and
+    the truth.
+-   **Causal account**: To know is to have justified true belief such
+    that one’s belief is caused by the fact that makes it true.
 -   When you see a sheep on a hill in a normal case, the sheep's being
-	there *causes* you to see them which *causes* you to believe
-	that there is a sheep on the hill.
-	-   In the Gettier cases, however, your belief is caused by the
-		sheep-shaped rock.
+    there *causes* you to see them which *causes* you to believe that
+    there is a sheep on the hill.
+    -   In the Gettier cases, however, your belief is caused by the
+        sheep-shaped rock.
 
 September 30th, 2013 <small>Seminar</small>
 -------------------------------------------
@@ -693,110 +755,279 @@ September 30th, 2013 <small>Seminar</small>
 ### Questions
 
 1.  Reflective knowledge and appropriate reasoning.
-	-   Don't use it in your reasoning unless you know it.
-	-   There are some circumstances where you cannot use a piece of knowledge.
-	-   What's the norm of assertion?
-		-   When is it appropriate to assert something.
-		-   An epistemological perspective.
+    -   Don't use it in your reasoning unless you know it.
+    -   There are some circumstances where you cannot use a piece of
+        knowledge.
+    -   What's the norm of assertion?
+        -   When is it appropriate to assert something.
+        -   An epistemological perspective.
 
 2.  Defeasibility
-	-   A wrinkle: two uses:
-		1.  Justification defeater
-		2.  Knowledge defeater
+    -   A wrinkle: two uses:
+        1.  Justification defeater
+        2.  Knowledge defeater
 
 3.  Strength of conditions
-	-   Is there a downside of making a knowledge-condition too strong?
-		-   A condition *for* knowledge?
-		-   If it ruled out many cases, if it's too strong,
-			it rules out cases when it shouldn't rule them out.
-		-   A bad analysis requires too much or too little,
-			not getting the right prediction for knowledge.
+    -   Is there a downside of making a knowledge-condition too strong?
+        -   A condition *for* knowledge?
+        -   If it ruled out many cases, if it's too strong, it rules out
+            cases when it shouldn't rule them out.
+        -   A bad analysis requires too much or too little, not getting
+            the right prediction for knowledge.
 
-	-   The possible solutions that McGrath suggests rules out too 
-		many cases where we would like to say that we have knowedlge,
-		but "wouldn't this be harmless?" …
-		-   We do not need to categorize our propositions to be knowedlge
-			for them to still be useful.
-		-   There is something that tis smuggled in here, which you
-			think knowledge has to be something we can act on.
-		-   It's standard analytical terms to get sufficient
-			and necessary conditions.
+    -   The possible solutions that McGrath suggests rules out too many
+        cases where we would like to say that we have knowedlge, but
+        "wouldn't this be harmless?" …
+        -   We do not need to categorize our propositions to be
+            knowedlge for them to still be useful.
+        -   There is something that tis smuggled in here, which you
+            think knowledge has to be something we can act on.
+        -   It's standard analytical terms to get sufficient and
+            necessary conditions.
 
 October 14th, 2013 <small>Chapter 3, part II, 'Defining Knowledge' and Chapter 4, 'Knowledge and Skepticism'</small>
---------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------------------
 
-### Questions 
+### Questions
 
-1. pg. 30, on safety, "To know that P is to have justified true belief such that if you were to believe that P, P would be true.” This seems dangerously close to begging the question. ‘If you were to believe that P, then P would be true.’ in use will allow me to point to cases where an agent believes a falsehood and say that what’s wrong about the false belief is that the belief is false, and the cases where the agent believes a truth and say the condition is satisfied because the belief is true. How can safety make truth somehow continent on belief?
-2. pg. 30, safety continued. Furthermore, it also seems very close to being equivalent with a Williamson’s thought that knowledge is unanalyzable, because the formulation holds that we form JTBs “somehow” and it means they’re true. Do or can knowledge-firsters subscribe to safety? 
-3. pg. 34, on relevant alternatives, "To know that P is to have JTB where one’s evidence rules out all the relevant alternatives to P.” Would “nearby possible worlds” be a good account of what is a relevant alternative? Admittedly, I haven’t read Lewis and I do not know how precise or supported the notion of “nearby” is.
-4. pg. 4, on skeptical arguments, "Unless I know I haven’t spent my life being deceived by an evil genius, I cannot know anything about the world around me (or even about mathematics or logic).” Why does this entail? I cannot see that it does or does not, but for the argument to be compelling.
-5. On skepticism, generally: I may not be able to provide justification for my not being a BIV or having an evil demon, but why does this necessarily affect my other candidates for knowledge? In “high standards contexts”, I’m satisfied in asserting something like, “It’s possible that I’m a BIV, have an evil demon, etc … and Obama is president.” The domain of the knowledge claim I’m making could be restricted to whatever is being appeared to me and true in that regard, and assume that I believe it and have valid justification. Is that too much to give up to skeptics?
+1.  pg. 30, on safety, "To know that P is to have justified true belief
+    such that if you were to believe that P, P would be true.” This
+    seems dangerously close to begging the question. ‘If you were to
+    believe that P, then P would be true.’ in use will allow me to point
+    to cases where an agent believes a falsehood and say that what’s
+    wrong about the false belief is that the belief is false, and the
+    cases where the agent believes a truth and say the condition is
+    satisfied because the belief is true. How can safety make truth
+    somehow continent on belief?
+2.  pg. 30, safety continued. Furthermore, it also seems very close to
+    being equivalent with a Williamson’s thought that knowledge is
+    unanalyzable, because the formulation holds that we form JTBs
+    “somehow” and it means they’re true. Do or can knowledge-firsters
+    subscribe to safety?
+3.  pg. 34, on relevant alternatives, "To know that P is to have JTB
+    where one’s evidence rules out all the relevant alternatives to P.”
+    Would “nearby possible worlds” be a good account of what is a
+    relevant alternative? Admittedly, I haven’t read Lewis and I do not
+    know how precise or supported the notion of “nearby” is.
+4.  pg. 4, on skeptical arguments, "Unless I know I haven’t spent my
+    life being deceived by an evil genius, I cannot know anything about
+    the world around me (or even about mathematics or logic).” Why does
+    this entail? I cannot see that it does or does not, but for the
+    argument to be compelling.
+5.  On skepticism, generally: I may not be able to provide justification
+    for my not being a BIV or having an evil demon, but why does this
+    necessarily affect my other candidates for knowledge? In “high
+    standards contexts”, I’m satisfied in asserting something like,
+    “It’s possible that I’m a BIV, have an evil demon, etc … and Obama
+    is president.” The domain of the knowledge claim I’m making could be
+    restricted to whatever is being appeared to me and true in that
+    regard, and assume that I believe it and have valid justification.
+    Is that too much to give up to skeptics?
 
 October 14th, 2013 <small>Seminar</small>
 -----------------------------------------
 
->   $S$ knows that $p$ if and only if:
->   1.  $P$ is true
->   2.  $B_s p$
->   3.  $B_s p$ is **caused by** a **generally reliable**
->       belief forming process.
->   4.  There is no relevant alternative situation in which
->       $S$ would have believed $p$ (using the same process)
+> $S$ knows that $p$ if and only if: 1. $P$ is true 2. $B_s p$ 3.
+> $B_s p$ is **caused by** a **generally reliable** belief forming
+> process. 4. There is no relevant alternative situation in which $S$
+> would have believed $p$ (using the same process)
 
 ### Relevant Alternatives, Constrastivism, and Closure
 
->   **Relevant alternatives**: You know that *p* just when
->   you have a JTB that *p* and your evidences **rules
->   out** all the **relevant** alternatives to *p*.
+> **Relevant alternatives**: You know that *p* just when you have a JTB
+> that *p* and your evidences **rules out** all the **relevant**
+> alternatives to *p*.
 
 -   **Ruling out** (RO):
-	-   (RO)-**Sensitivity**: Your evidence rules out an alternative
-		if and only if that if that alternative *had* obtained,
-		you'd have very different evidence.
-	-   (RO)-**Safety**: Your evidence rules out an alternative
-		if and only if: you could not easily have had the same
-		evidence while the alternative was the case.
+    -   (RO)-**Sensitivity**: Your evidence rules out an alternative if
+        and only if that if that alternative *had* obtained, you'd have
+        very different evidence.
+    -   (RO)-**Safety**: Your evidence rules out an alternative if and
+        only if: you could not easily have had the same evidence while
+        the alternative was the case.
 
--   **Relevance**: The relevance of an alternative *A* depends on
-	the objective probability of *A*-like events given the kind
-	of environment you're in and the kind of evidence you have.
+-   **Relevance**: The relevance of an alternative *A* depends on the
+    objective probability of *A*-like events given the kind of
+    environment you're in and the kind of evidence you have.
 
->   **Knowledge closure**: 
->   If you know that *p*, and *p* entails *q*, you know *q*.
+> **Knowledge closure**: If you know that *p*, and *p* entails *q*, you
+> know *q*.
 
--   For knowledge closure to hold, every relevant alternative
-	to *q* must be a relevant alternative to *p*.
-	-   *Relevant* must be **intersective**.
-		-   Blue is *intersective* because "blue book" breaks
-			down into "is a book" and "is blue."
-		-   Small is not intersective because "small planet"
-			does not break down into "is a planet" and "is
-			small."
+-   For knowledge closure to hold, every relevant alternative to *q*
+    must be a relevant alternative to *p*.
+    -   *Relevant* must be **intersective**.
+        -   Blue is *intersective* because "blue book" breaks down into
+            "is a book" and "is blue."
+        -   Small is not intersective because "small planet" does not
+            break down into "is a planet" and "is small."
 
->    **Constrastivism**: Knowledge is a three-place
->    relation between a knower, a proposition, and
->    another "contrasting" proposition.
+> **Constrastivism**: Knowledge is a three-place relation between a
+> knower, a proposition, and another "contrasting" proposition.
 
--   Some important 'degrees' of knowing that *p* rather than
-	*a*:
-	1.  **Certainty**: *a* includes **all** alternatives to *p*;
-	2.  **Relevance theorist's knowledge**: *a* includes
-		**relevant** alternatives to *p*;
-	3.  **Useful concept**: *a* includes **some** 
-		alternatives to *p*;
-	4.  **No knowledge**: *a* includes **no** alternatives 
-		to *p*;
+-   Some important 'degrees' of knowing that *p* rather than *a*:
+    1.  **Certainty**: *a* includes **all** alternatives to *p*;
+    2.  **Relevance theorist's knowledge**: *a* includes **relevant**
+        alternatives to *p*;
+    3.  **Useful concept**: *a* includes **some** alternatives to *p*;
+    4.  **No knowledge**: *a* includes **no** alternatives to *p*;
 
+October 21st, 2013 <small>Chapter 5, 'Contextualism and Pragmatic Encroachment'</small>
+---------------------------------------------------------------------------------------
 
-October 21st, 2013 <small>Chapter 4, 'Knowledge Skepticism'</small>
--------------------------------------------------------------------
+-   A recent development in epistemology is increased attention to
+    ordinary language.
+    -   Perhaps one of the failings of skepticism is it is not the same
+        sense of "know" that we actually use.
+    -   This is the contention of **contextualists**.
+
+-   Furthermore, in analyzing the semantics of the word "know", new
+    questions have arisen about knowledge itself.
+    -   In particular, **action** and **assertion**.
+    -   This discussion is labelled **pragmatic encroachment**.
+        -   Whichwhether a person can knows can vary on the practical
+            stakes.
+
+### Contextualism
+
+-   Context-sensitivty is familiar.
+    -   For instance, the first-person pronoun "I" differs from
+        situation to situation.
+
+-   **Contextualism about knowledge attributes** claims that "knows" is
+    similarly context sensitive.
+-   If these sense of "know that" vary by demandingness, then we can see
+    how "*S* knows that *P*" could be true in one context and false in
+    another context.
+    -   With *lax* and *demanding* contexts.
+    -   What skepticism and the analysis of knowledge might be up to is
+        *shiftiness* with the word "know."
+
+> Compare ‘empty’. If I say that the refrigerator is empty, when it only
+> has ketchup and baking soda in it, usually all will agree, “yes, it’s
+> empty.” However, if you really wanted to be a pest, you could say, “if
+> it’s empty, it doesn’t have anything in it, and ketchup is something ̧
+> isn’t it? So it’s really not empty, is it?” Here the emptiness-skeptic
+> (if you will) is pressuring you to use ‘empty’ in a strict sense. But
+> it’s hardly some great victory; it’s just playing on the shiftiness of
+> ‘empty’, i.e., its context-sensitivity. Is the skeptic about knowledge
+> doing something similar?
+
+-   A good analogy are tabletops and flatness, consider the argument:
+    1.  All table-tops have some bumps on them.
+    2.  If something has some bumps on it, it isn't flat.
+    3.  Therefore, no tabletops are flat.
+
+-   This is a *diagnosis* of skepticism rather than a *solution* to
+    skepticism.
+    -   The skeptical "problem" arises simply because we are *bewitched
+        by language*, to put it in Wittgenstein's way.
+
+-   Two clarifications:
+    1.  What "knowing is" does not change, what saying "know" *means*
+        changes.
+    2.  "Know" is not lexically ambigious like bank or pen.
+
+-   The contextualist needs a good story on the *implementation* of
+    contextualism. There are two approaches:
+    1.  **Relevant alternatives** approach and
+    2.  **Epistemic standards** approach.
+
+#### Relevant alternatives implementation
+
+-   **Relevant Alternatives Implementation**: A claim “*S* knows that
+    *P*” is true in a context of speech *C* iff *S* can rule out all
+    alternatives to *P* that *C* determines as relevant.
+
+#### The standards implementation
+
+-   The relevant alternatives approach doesn’t set up a **standard of
+    goodness of epistemic position** and declare that one can’t know
+    anything unless one meets that standard for the proposition.
+-   **Standards implementation**: A claim “S knows that P” is true in a
+    context of speech C iff S’s belief that P satisfies the epistemic
+    standard determined by C.
+
+#### Problems for the Contextualist diagnosis of skepticism
+
+-   We will briefly consider three sorts of objections in what follows:
+    1.  The diagnosis *concedes too much* to the skeptic.
+    2.  The diagnosis *underestimates the resources* of the skeptic.
+    3.  The diagnosis *misrepresents a substantial issue* as a *merely
+        verbal* one.
+
+##### Too concessive to the skeptic?
+
+-   You *do* know that you have hands *irrespective* of standards or
+    context or alternatives.
+
+##### Underestimation of the skeptic’s resources?
+
+-   The skeptic can avoid context-sensitity:
+    1.  For any epistemic standard, unless I meet that standard for I am
+        not a victim of an evil genius I don’t meet that standard for
+        anything about the external world. 2. I don’t meet even ordinary
+        low standards for I am not a victim of an evil genius. 3.
+        Therefore, I don’t meet even ordinary low standards for any
+        propositions about the external world, such as I have hands.
+
+##### Misrepresenting a substantive issue as verbal
+
+#### Contextualism apart from skepticism: the stakes-shifting cases
+
+### Pragmatic Encroachment
+
+#### The case for Pragmatic Encroachment
+
+-   **Knowledge-Reasons (KR)**:If you know that P, then P is
+    sufficiently warranted to be a reason you have to believe and do
+    other things.
+-   **Safe Reasons (final version)**: if P is sufficiently warranted to
+    be a reason you have to do or believe something, then P is
+    sufficiently warranted to justify you in that action or belief.
+
+#### Implications of Pragmatic Encroachment for Epistemology
+
+#### Objections
+
+#### Objections to arguments for pragmatic encroachment.
+
+### Knowledge and assertion
+
+### A Role for Psychology
+
+### Questions
+
+1.  Regarding relevant alternatives, "A claim “S knows that P” is true
+    in a context of speech C iff S can rule out all alternatives to P
+    that C determines as relevant.” It does not seem immediately clear
+    to me that all relevant alternatives are conceivable. There could
+    exist a possible world which is a relevant alternative I need to
+    discount on this view that I and my limited brain cannot imagine. Is
+    this a problem for the view?
+2.  Regarding the standards implementation, "The relevant alternatives
+    approach doesn’t set up a standard of goodness of epistemic position
+    and declare that one can’t know anything unless one meets that
+    standard for the proposition.” What does goodness refer to in this
+    context? Is it the sense of suitability, aptness, etc? Or is it the
+    sense of virtue?
+3.  Regarding safe reasons, "if P is sufficiently warranted to be a
+    reason you have to do or believe something, then P is sufficiently
+    warranted to justify you in that action or belief.” This seems open
+    to a whole slew of counterexamples, specifically cases of useful but
+    ultimately false beliefs. It is practical, but it does not seem
+    necessary on knowledge. Is this formulation okay with attributing
+    knowledge to, say, Ptolemic models?
+4.  Regarding Bank Case A and B, is it possible to teem out the ethical
+    issue from the epistemological issue? The ethical issue is regarding
+    whether the person going to the bank is morally obligated given the
+    level of justification. The epistemological issue is whether the
+    person going to the bank actually is or isn’t justified.
 
 October 21st, 2013 <small>Seminar</small>
 -----------------------------------------
 
-October 23rd, 2013 <small>Chapter 5, 'Contextualism and Pragmatic Encroachment'</small>
----------------------------------------------------------------------------------------
+October 23rd, 2013 <small>???</small>
+-------------------------------------
 
 October 23rd, 2013 <small>Seminar</small>
 -----------------------------------------
