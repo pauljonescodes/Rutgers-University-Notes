@@ -1534,7 +1534,7 @@ and running the **java** command from there.
             Photo <fileName> does not exist
 
 -   To retrieve all photos taken within a given range of dates, in
-    chronological order: \
+    chronological order:\
      getPhotosByDate <start date> <end date>\`
 
         Output: 
@@ -1745,7 +1745,7 @@ eclipse workspace project `bin` directory, and run the program from
 there.
 
 If you get a `ClassNotFoundError` from this, try adding `-cp .` to the
-command line, right after `java` as in: \
+command line, right after `java` as in:\
  `java -cp . <stuff>`
 
 The following sample works with this assumption. (And when we test your
@@ -2819,92 +2819,117 @@ February 25th, 2013 - Lecture
     -   [Awesome
         table](http://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html):
         <table class="table">
-        <tbody><tr>
-        <th id="h1">
+            <tbody><tr>
+            <th id="h1">
+            
         Modifier
         </th>
-        <th id="h2">
+            <th id="h2">
+            
         Class
         </th>
-        <th id="h3">
+            <th id="h3">
+            
         Package
         </th>
-        <th id="h4">
+            <th id="h4">
+            
         Subclass
         </th>
-        <th id="h5">
+            <th id="h5">
+            
         World
         </th>
-        </tr>
-        <tr>
-        <td headers="h1">
+            </tr>
+            <tr>
+            <td headers="h1">
+            
         <code>public</code>
         </td>
-        <td headers="h2">
+            <td headers="h2">
+            
         Y
         </td>
-        <td headers="h3">
+            <td headers="h3">
+            
         Y
         </td>
-        <td headers="h4">
+            <td headers="h4">
+            
         Y
         </td>
-        <td headers="h5">
+            <td headers="h5">
+            
         Y
         </td>
-        </tr>
-        <tr>
-        <td headers="h1">
+            </tr>
+            <tr>
+            <td headers="h1">
+            
         <code>protected</code>
         </td>
-        <td headers="h2">
+            <td headers="h2">
+            
         Y
         </td>
-        <td headers="h3">
+            <td headers="h3">
+            
         Y
         </td>
-        <td headers="h4">
+            <td headers="h4">
+            
         Y
         </td>
-        <td headers="h5">
+            <td headers="h5">
+            
         N
         </td>
-        </tr>
-        <tr>
-        <td headers="h1">
+            </tr>
+            <tr>
+            <td headers="h1">
+            
         no modifier
         </td>
-        <td headers="h2">
+            <td headers="h2">
+            
         Y
         </td>
-        <td headers="h3">
+            <td headers="h3">
+            
         Y
         </td>
-        <td headers="h4">
+            <td headers="h4">
+            
         N
         </td>
-        <td headers="h5">
+            <td headers="h5">
+            
         N
         </td>
-        </tr>
-        <tr>
-        <td headers="h1">
+            </tr>
+            <tr>
+            <td headers="h1">
+            
         <code>private</code>
         </td>
-        <td headers="h2">
+            <td headers="h2">
+            
         Y
         </td>
-        <td headers="h3">
+            <td headers="h3">
+            
         N
         </td>
-        <td headers="h4">
+            <td headers="h4">
+            
         N
         </td>
-        <td headers="h5">
+            <td headers="h5">
+            
         N
         </td>
-        </tr>
-        </tbody></table> 
+            </tr>
+            </tbody></table> 
 
 -   `interface`
     -   an interface is a group of related methods with empty bodies

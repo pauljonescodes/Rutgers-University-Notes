@@ -500,70 +500,130 @@ September 10th, 2013 <small>Lecture</small>
             return gcd(b, a % b);
         }
     }
-    
--   What you want to take from this is that it's pass by
-    value.
+
+-   What you want to take from this is that it's pass by value.
     -   The function can change the copies.
     -   Cannot change the original values.
-    
+
 September 30th, 2013 <small>Programming Assignment 2: Sorted List</small>
 -------------------------------------------------------------------------
 
 ### Introduction
 
-In this assignment, you will practice with more complex data structures, as well as practice using function pointers (along with using data pointers as in the last assignment).
+In this assignment, you will practice with more complex data structures,
+as well as practice using function pointers (along with using data
+pointers as in the last assignment).
 
-Your task is to write a set of types and functions that implement a sorted list. The sorted list will contain opaque objects. That is, the objects will be given to you as void* objects. When a sorted list is first created, the caller will provide you with a pointer to a comparator function. This comparator function will understand the actual type of the objects to be stored in the sorted list, and, given two objects, will return an ordering of the two objects. Subsequently, when new objects are inserted into the list, you will use the given comparator function to insert the new objects such that the list will remain sorted in descending order; that is, objects are ordered from largest (front of the list) to smallest (end of the list).
+Your task is to write a set of types and functions that implement a
+sorted list. The sorted list will contain opaque objects. That is, the
+objects will be given to you as void\* objects. When a sorted list is
+first created, the caller will provide you with a pointer to a
+comparator function. This comparator function will understand the actual
+type of the objects to be stored in the sorted list, and, given two
+objects, will return an ordering of the two objects. Subsequently, when
+new objects are inserted into the list, you will use the given
+comparator function to insert the new objects such that the list will
+remain sorted in descending order; that is, objects are ordered from
+largest (front of the list) to smallest (end of the list).
 
-You will also implement an iterator to help users walk through lists. This iterator, together with returning pointers to your sorted list objects as void*, will help you practice implementation hiding. That is, your implementation is similar to a Java class, where the users do not know about the implementation and so cannot access parts of the objects directly. (In C, there are obviously ways to get around your hiding; nevertheless, it is good programming practice because it requires effort to violate the hiding.)
+You will also implement an iterator to help users walk through lists.
+This iterator, together with returning pointers to your sorted list
+objects as void\*, will help you practice implementation hiding. That
+is, your implementation is similar to a Java class, where the users do
+not know about the implementation and so cannot access parts of the
+objects directly. (In C, there are obviously ways to get around your
+hiding; nevertheless, it is good programming practice because it
+requires effort to violate the hiding.)
 
 ### Implementation
 
-Your implementation needs to export the interface given in the attached sorted-list.h file. Specif- ically, you need to implement four functions for creating sorted lists, destroying sorted lists, and inserting and deleting an object into/from a sorted list. Your sorted-list data will be of the type void, so that you can pass any type into data struct. Rather, this is a way in C for you to practice a bit of implementation hiding. When writing your code for the sorted list, you will need to define a type for your sorted list objects. For example:
+Your implementation needs to export the interface given in the attached
+sorted-list.h file. Specif- ically, you need to implement four functions
+for creating sorted lists, destroying sorted lists, and inserting and
+deleting an object into/from a sorted list. Your sorted-list data will
+be of the type void, so that you can pass any type into data struct.
+Rather, this is a way in C for you to practice a bit of implementation
+hiding. When writing your code for the sorted list, you will need to
+define a type for your sorted list objects. For example:
 
     struct SortedList {
             
     };
     typedef struct SortedList* SortedListPtr;
-    
-You should create a pointer to struct `SortedList` object in `SLCreate()`.
+
+You should create a pointer to struct `SortedList` object in
+`SLCreate()`.
 
     SortedListPtr SLCreate(CompareFuncT cf) {
              SortedListPtr sl;
              ... /* do what is needed to create the sorted list object. */
     return sl; }
-    
-The comparator function must obey the following semantics: return -1 if the 1st object is smaller, 0 if the two objects are equal, and 1 if the 2nd object is smaller.
-You will also need to define a helper iterator type together with three functions for creating sorted list iterators, destroying sorted list iterators, and obtaining the objects in a sorted list one at a time. In this assignment, the iterator is just a wrapper around a sorted list that is used to help the caller walk through the list. Again, data is returned as void* to hide your implementation.
 
-One complication that you must deal with is what happens if the sorted list is modified (e.g., a new object inserted or an existing object is removed) while an iterator is being used. You should explain how your implementation deals with this complication as a comment in your code.
+The comparator function must obey the following semantics: return -1 if
+the 1st object is smaller, 0 if the two objects are equal, and 1 if the
+2nd object is smaller. You will also need to define a helper iterator
+type together with three functions for creating sorted list iterators,
+destroying sorted list iterators, and obtaining the objects in a sorted
+list one at a time. In this assignment, the iterator is just a wrapper
+around a sorted list that is used to help the caller walk through the
+list. Again, data is returned as void\* to hide your implementation.
 
-As always, your code should be well-designed, well-organized, and well-commented. Both your design and implementation should be efficient. However, for this assignment, you may use a linear structure rather than implement a more complex data structure such as a tree, heap, or hash table to make insertion/deletion more efficient. It is sufficient that you implement your linear structure efficiently.
+One complication that you must deal with is what happens if the sorted
+list is modified (e.g., a new object inserted or an existing object is
+removed) while an iterator is being used. You should explain how your
+implementation deals with this complication as a comment in your code.
+
+As always, your code should be well-designed, well-organized, and
+well-commented. Both your design and implementation should be efficient.
+However, for this assignment, you may use a linear structure rather than
+implement a more complex data structure such as a tree, heap, or hash
+table to make insertion/deletion more efficient. It is sufficient that
+you implement your linear structure efficiently.
 
 ### What to turn in
 
-A sorted-list.c file containing all of your data structure code. At the top of the file, you should include as a comment a big-O analysis of the runtime of your code. You should also carefully comment all of your code. Your grade will be based on how well your code is working as well as how well written your code is (including analysis of runtime and comments) and how carefully you tested your code. A main.c file should including test cases and code to call the libaray.
+A sorted-list.c file containing all of your data structure code. At the
+top of the file, you should include as a comment a big-O analysis of the
+runtime of your code. You should also carefully comment all of your
+code. Your grade will be based on how well your code is working as well
+as how well written your code is (including analysis of runtime and
+comments) and how carefully you tested your code. A main.c file should
+including test cases and code to call the libaray.
 
-A tarred gzipped file named pa2.tgz that contains a directory called pa2 with the following files in it:
+A tarred gzipped file named pa2.tgz that contains a directory called pa2
+with the following files in it:
 
--   An sorted-list.h file containing the interface we gave you and your structure definition. The function defintions must remain unaltered!
--   A sorted-list.c file containing your implementation of the sorted list.
--   A main.c file containing a main function that exercise your sorted list implementation using the test plan outlined in testplan.txt.
--   A Makefile that is used to compile your sorted list implementation into a library called libsl.a and an executable called sl that runs the code in main.c.
--   A file called testplan.txt that contains a test plan for your code, including input and expected output.
--   A readme.pdf file that contains analyses of the running time and memory usage of each of your sorted-list functions. Use big-O notation to describe the end result of each analysis.
+-   An sorted-list.h file containing the interface we gave you and your
+    structure definition. The function defintions must remain unaltered!
+-   A sorted-list.c file containing your implementation of the sorted
+    list.
+-   A main.c file containing a main function that exercise your sorted
+    list implementation using the test plan outlined in testplan.txt.
+-   A Makefile that is used to compile your sorted list implementation
+    into a library called libsl.a and an executable called sl that runs
+    the code in main.c.
+-   A file called testplan.txt that contains a test plan for your code,
+    including input and expected output.
+-   A readme.pdf file that contains analyses of the running time and
+    memory usage of each of your sorted-list functions. Use big-O
+    notation to describe the end result of each analysis.
 
-Suppose that you have a directory called pa2 in your account (on iLab), containing the above required files. Here’s how you create the required tar file. (The ls commands are just to help show you where you should be in relation to pa2. The only necessary command is the tar command.)
+Suppose that you have a directory called pa2 in your account (on iLab),
+containing the above required files. Here’s how you create the required
+tar file. (The ls commands are just to help show you where you should be
+in relation to pa2. The only necessary command is the tar command.)
 
     $ ls
     pa2
     $ tar cfz pa2.tgz pa2
-    
-You can check your pa2.tgz by either untarring it or running tar tfz pa2.tgz (see man tar). Your grade will be based on:
+
+You can check your pa2.tgz by either untarring it or running tar tfz
+pa2.tgz (see man tar). Your grade will be based on:
 
 -   Correctness (how well your code is working),
 -   Quality of your design (did you use reasonable algorithms),
--   Quality of your code (how well written your code is, including modularity and comments), 
+-   Quality of your code (how well written your code is, including
+    modularity and comments),
 -   Efficiency (of your implementation), and
 -   Testing thoroughness (quality of your test cases).
 
@@ -578,21 +638,315 @@ September 24th, 2013 <small>Lecture, Multi-file Projects, Makefiles, and Directo
         c
         
     ar rv libsl.a sorted_list.o
-    
+
     basename [directory path]/[basename].[extension]
     [basename].[extension]
-    
+
     drname [directory path]/[basename].[extension]
     [directory path]
-    
 
 September 26th, 2013 <small>GDB</small>
 ---------------------------------------
 
 ### Reference Counter
 
--   You increment a reference counter for every time a new pointer points to the node.
--   You decrement a reference counter for every time you remove a pointer from a node.
+-   You increment a reference counter for every time a new pointer
+    points to the node.
+-   You decrement a reference counter for every time you remove a
+    pointer from a node.
 -   You free the memory for a node when you decrement it to zero.
--   An iterator pointing to a node that is printing or up to some operation can make 
-	the reference counter not zero or one, leading to some interesting scenarios.
+-   An iterator pointing to a node that is printing or up to some
+    operation can make the reference counter not zero or one, leading to
+    some interesting scenarios.
+
+October 2nd, 2013 <small>Programming Assignment 3: Indexer</small>
+------------------------------------------------------------------
+
+**Warning**: As you will see below, the descriptions of the assignments
+will be increasingly complex because we are asking you to build
+increasingly bigger programs. *Make sure to read the assignment
+carefully!* This is critical because this document essentially describes
+the requirements for your program.
+
+### Introduction
+
+In this assignment, you will practice using the file system API (as well
+as pointers in different data structures). In particular, you will be
+creating, opening, reading, writing, and deleting files.Your task is to
+write an indexing program, called an *indexer*. Given a set of files, an
+indexer will parse the files and create an *inverted index*, which maps
+each term found in the files to the subset of files that contain that
+term. In your indexer, you will also maintain the frequency with which
+each term appears in each file.Here is an example of how the indexer
+should work. If you are given the following set of files:
+
+    +----------+---------------------+
+    | Filename | File Content        |
+    +----------+---------------------+
+    | boo      | A dog name name Boo |
+    +----------+---------------------+
+    | baa      | A cat name Baa      |
+    +--------------------------------+
+
+The indexer should read the files and produce the following inverted
+index, in sorted order by word:
+
+    “a” → (“boo”, 1), (“baa”, 1) “baa” → (“baa”, 1) “boo” → (“boo”, 1)  “cat” → (“baa”, 1)  “dog” → (“boo”, 1)  “name” → (“boo”, 2), (“baa”, 1)
+
+After constructing the entire inverted index in memory, the indexer will
+save it to a file.Some observations:
+
+-   An inverted index is just a sequence of mappings, where each mapping
+    maps a term (e.g., “dog”) to a list of records, with each record
+    containing the name of a file whose content contains the term and
+    the frequency with which the term appears in the file.
+-   The above depiction just gives a logical view of the inverted index.
+    In your program, you have to define data structures to hold the
+    mappings (term → list), the list of records, and the records (file
+    name, count).
+-   The mappings are maintained in sorted order of the terms. You will
+    see later why this is useful. Sorting in ascending or descending
+    order doesn’t matter so much. We will just arbitrarily say for this
+    assignment that the sequence should be maintained in ascending
+    sorted order based on the ASCII coding of characters (i.e., “a”
+    before “b” and “aa” before “ab”).
+-   Records in each list are maintained in descending sorted order based
+    on frequency counts of the terms in the files. Again, you will see
+    later why this is useful.
+-   Capitalization has been removed. For your indexer, “A” and “a”
+    should be
+-   considered the same term. Thus, you will need to normalize all upper
+    case letters to lower case letters in the terms. (The other way
+    around is OK too.)
+-   It should be obvious that the tokenizer and sorted-list that you
+    wrote in earlier assignments are useful for this assignment
+    (although you have to modify the tokenizer to work with a file,
+    rather than a string). Use the improved tokenizer.c file attached to
+    this assignment.
+
+### Implementation
+
+Since you are implementing a program in this assignment, there is no
+programming interface to follow. Instead, your program must support the
+following invocation interface:
+
+    index <inverted-index file name> <directory or file name>
+
+The first argument, <inverted-index file name>, gives the name of a file
+that you should create to hold your inverted index. The second argument,
+<directory or file name>, gives the name of the directory or file that
+your indexer should index. You need to check whether the second name is
+a directory or a file. If a directory, you need to recursively index all
+files in the directory (and its sub-directories). If a file, you just
+need to index that single file.When indexing files in a directory, you
+may have files that have the same name (but different pathnames). To
+differentiate between them, for now, you may use the pathname (relative
+to the input directory name) in each record in the inverted index,
+rather than just the file name.Tokenization is a little different in
+this assignment than in the previous assignment. You are not given a set
+of separators. Instead, we define terms as any sequence of consecutive
+alphanumeric characters (a-z, A-Z, 0-9). All other characters are
+separators. Note that you can use the entire ASCII coding minus the
+alphanumeric characters as your separators to minimize the change to
+your tokenizer. But, this is not efficient, since the alphanumeric
+characters is only a small subset of ASCII. This would be even truer if
+we extend the character set beyond ASCII. So, you should not take this
+easy way out.
+
+Examples of tokens according to the above definition include:
+
+    a, aba, c123, 1, 454
+
+If a file contains This an\$example12 mail@rutgersit should tokenize to
+this an example12 mail rutgers
+
+The inverted index file that your indexer writes must follow the
+following format, where I’m showing each space as a \_ to make it more
+clear:
+
+    <list>_term 
+    name1_count1_name2_count2_name3_count3_name4_count4_name5_count5 
+    </list>
+
+with the lists arranged in ascending sorted order of the terms. Note you
+must obey the line breaks as shown. Each line containing the (file name,
+count) records can contain at most 5 records. So, the example inverted
+index from Section 1 could look like:
+
+    <list> a    boo 1 baa 1 </list> <list> baa baa 1 </list> <list> boo boo 1 </list> <list> cat baa 1  </list> <list> dog boo 1    <list> name boo 2 baa 1 </list>
+
+This format is quite inefficient in a number of ways. We will optimize
+later. For now, we want to be able to easily read the inverted index for
+debugging.
+
+You should carefully consider all possible exception cases, outline a
+strategy to deal with them, and implement your strategy. For example, if
+a file already exists with the same name as the inverted-index file
+name, you should give the user the option of not overwriting it. If the
+name of the directory or file you are to index does not exist, your
+indexer should print an error message and exit gracefully rather than
+crash. There are many other error cases that you will need to
+consider.You should use multi-file compilation to carefully organize
+your code. For example, the tokenizer should be in its own .c file, with
+a .h file that callers should include. The same applies for the sorted
+list. You should also write a makefile to efficiently compile and link
+your indexer.
+
+### Hints
+
+-   Data structures that might be useful include the sorted list you
+    just implemented (of course) and a hash table.
+-   An object (e.g., a record {“baa”, 3}) can be inserted into multiple
+    containing data structures, such as a sorted list and a hash table).
+-   You can use your sorted list to maintain the set of terms in
+    ascending order. But, since we are asking for records for each term
+    sorted in descending order, you have to flip the meaning of \< and
+    \> in your comparator function.
+-   You should probably approach this in steps.
+-   First, you might get your tokenizer to generate correct tokens from
+    a file. - Next, you might get your program to walk through a
+    directory. - Next, you might implement a data structure that allows
+    you to countthe number of occurrences of each unique term in a file.
+    o Andsoon...
+
+### What to Turn In
+
+A tarred gzipped file name pa3.tgz that contains a directory called pa3
+with the following files in it:
+
+-   All the .h and .c files necessary to produce an executable named
+    index.
+-   A makefile used to compile and produce index. It must have a target
+    clean toprepare a fresh compilation of everything.
+-   A file called testplan.txt that contains a test plan for your
+    indexer. You should include the example files and/or directories
+    that you test your indexer on but keep these from being too large,
+    please. (We might test your program with a very large data set
+    though so don’t skip testing your program for scalability. In your
+    test plan, you should discuss the larger scale testing and the
+    results, but you can skip including the data set).
+-   A readme.pdf file that describes the design of your indexer. This
+    should also include the usual analysis of time and space usage of
+    your program. Starting in this assignment, you do not need analyze
+    every single function. Rather, you need to analyze the overall
+    program. (So, for example, analyzing initialization code is
+    typically not too important unless this initialization depends on
+    the size of the inputs.)
+
+As usual, your grade will be based on:
+
+-   Correctness (how well your code is working),
+-   Quality of your design (did you use reasonable algorithms),
+-   Quality of your code (how well written your code is, including
+    modularity andcomments),
+-   Efficiency (of your implementation), and
+-   Testing thoroughness (quality of your test cases).
+
+October 19th, 2013 <small>Programming Assignment 4: Search</small>
+------------------------------------------------------------------
+
+### Introduction
+
+In this assignment, you will put everything that you have done together
+into a simple search tool. For now, your search tool will look much like
+the `grep` utility. Your task is to implement a search tool that will
+load an inverted index produced by your indexer into memory and use it
+to answer users’ search queries. Using the same example from the indexer
+assignment, if you are given the following set of files:
+
+    +----------+---------------------+
+    | Filename | File Content        |
+    +----------+---------------------+
+    | boo      | A dog name name Boo |
+    +----------+---------------------+
+    | baa      | A cat name Baa      |
+    +--------------------------------+
+
+you would use your indexer to generate the following inverted list and
+save it to an index file:
+
+    “a” → (“boo”, 1), (“baa”, 1) 
+    “baa” → (“baa”, 1) 
+    “boo” → (“boo”, 1)  
+    “cat” → (“baa”, 1)  
+    “dog” → (“boo”, 1)  
+    “name” → (“boo”, 2), (“baa”, 1)
+
+When you run your search tool, it should read the content of the index
+file into memory. Then, it should continuously poll for user queries and
+output the names of the files with matching content. For example, if the
+user gives the query dog, your search tool should output boo. If the
+user gives the query name, your search tool should output boo, baa.
+
+### Code Reuse
+
+Your implementation will require the use of inverted-index files
+produced by the indexer you wrote for Assignment 4. If you could not get
+the previous assignment fully working, you must do so now. The search
+tool program must work with the index files produced by both partners’
+indexers. This means that, for example, if you did not get your indexer
+working, but your partner for the search tool project did, you must fix
+your indexer rather than simply relying on your partner’s. Either
+indexer’s output files should be able to support your search tool.In
+order to do this, you should encapsulate the reading and parsing of an
+index file into a module that is separate from the rest of the search
+tool. This module should have a fixed interface. You and your partner
+should each write a version of this module, conforming to the fixed
+interface, that reads and parses your own indexer output file.You should
+write a makefile that efficiently compiles and links your search tool.
+The makefile must allow the search tool to be linked with either of the
+two index file parsing modules, at the user’s option.
+
+### Implementation
+
+Your program must support the following invocation interface:
+
+    search <inverted-index file name>
+
+The first (and only) argument, `<inverted-index file name>`, gives the
+name of an index file that your search tool should read into memory. For
+now, you may assume that the entire index file will fit into memory (you
+will relax this assumption next week). You should design an in-memory
+data structure to make the search efficient.
+
+Once search has successfully read and process the index file, it should
+go into a loop asking for queries. It should be able to respond to at
+least two commands: 1. `sa <term> ...` : search for files containing the
+given terms. A query may contain 1 or more terms. If there are more than
+1 term, the search tool should return only files that contain all terms
+in the query. (The query is a “logical and” of all the given terms.)2.
+`so <term> ...`: search for files containing the given terms. A query
+may contain 1 or more terms. If there are more than 1 term, the search
+tool should return any file that contains any subset of the terms in the
+query. (The query is a “logical or” of all the given terms.)3. `q`: the
+search tool should gracefully shut itself down.The following example
+shows how a user of your application would search for all files
+containing ALL of the words ”cat”, ”dog”, and ”bird”:
+
+    sa cat dog bird
+
+As in the last assignment, you should carefully consider all possible
+exception cases, outline a strategy to deal with them, and implement
+your strategy.
+
+### What to Turn In
+
+-   A writeup documenting your design, including exception handling and
+    paying particular attention to the memory requirements of your
+    application. Your writeup should detail the format with which the
+    inverted index is written into a file.
+-   A file called hw5-testcases.txt that contains a thorough set of test
+    cases for your code, includ- ing inputs and expected outputs.
+-   All source code (for search tool and both versions of all parts of
+    the indexer) including both implementation (.c) and interface(.h)
+    files.
+-   A makefile for producing an executable search tool, with multiple
+    targets allowing selection of a compatible indexer.
+
+Your grade will be based on:
+
+-   Correctness (how well your code is working).- Testing thoroughness
+    (quality of your test cases).- Efficiency.- Good design (how well
+    written your design document and code are, including modularity and
+    comments).- Code reuse (that your index works with both indexers).
+
