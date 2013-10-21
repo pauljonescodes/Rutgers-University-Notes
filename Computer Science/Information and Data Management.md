@@ -1012,4 +1012,34 @@ October 10th, 2013 <small>Lecture: Design Theory for Relational Databases</small
     1.  `name -> addr favBeer`
     2.  `beersLiked -> manf`
 
+October 21st, 2013 <small>Quiz 4 Study</small>
+----------------------------------------------
+
+### Relational Model
+
+>   What is the core limitation of relational model?
+
+#### Keys
+
+#### Superkeys
+
+#### Closure of a set of Attributes
+
+### Normal Forms
+
+>   Why normal forms? Do they always work and when they 
+>   do not work?
+
+#### BCNF 
+
+##### Decomposition to BCNF
+
+#### 3NF
+
+>   synthesis of 3NF from the minimal base of given family 
+>   of functional dependencies
+
+#### 1NF 
+
+### Functional Dependencies
 
