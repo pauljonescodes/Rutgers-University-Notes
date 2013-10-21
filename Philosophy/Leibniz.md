@@ -588,22 +588,22 @@ February 4th, 2013 - Reading
     -   Cockerspaniels are a complex idea experienced through the
         concept of dog, along with the other properties of
         cockerspaniels.
-    -   Symbolically, cockerspaniels can be represented as {$
-        \mathrm{dog}, q\_1, q\_2, ... , q\_n $} where qs are qualities
+    -   Symbolically, cockerspaniels can be represented as {\$
+        \mathrm{dog}, q\_1, q\_2, ... , q\_n \$} where qs are qualities
         unique to cockerspaniels and "dog" is the set of all concepts in
         dog.
     -   The concept of dog is a complex idea experienced through other
         ideas, but it does not need to be defined here. Let {dog} be the
         set of all dog qualities.
-    -   Because {dog} $ \in $ {$ \mathrm{dog}, q\_1, q\_2, ... ,
-        q\_n $}, all cocker spaniels are dogs.
+    -   Because {dog} \$ \in \$ {\$ \mathrm{dog}, q\_1, q\_2, ... , q\_n
+        \$}, all cocker spaniels are dogs.
 
 -   All triangles have three angles.
     -   Triangle's are complex ideas experienced through: {shape,
         polygon, three angles, three edges, ...}
-    -   {three angles} $\in$ {shape, polygon, three angles, three
-        edges, ...}
-    -   So $ \forall x $ if x is a triangle $ \to $ x has three
+    -   {three angles} $\in$ {shape, polygon, three angles, three edges,
+        ...}
+    -   So \$ \forall x \$ if x is a triangle \$ \to \$ x has three
         angles
 
 -   Water is liquid at room temperature
@@ -622,7 +622,7 @@ February 4th, 2013 - Reading
 -   Creatures are contingent in that their existence does not follow
     from their essence.
     -   This is what it must be to be mortal.
-    -   Leibniz think that god's essence $ \to $ god's being.
+    -   Leibniz think that god's essence \$ \to \$ god's being.
 
 -   Necessary truths are those that can be demonstrated through analysis
     of terms.
@@ -726,8 +726,8 @@ February 4th, 2013 - Lecture: The infinite analysis theory of contingent truth
 -   He starts out by saying every proposition is either true or false,
     but not both.
 -   There is no proposition that is indeterminate.
--   If a proposition p is false, then the contradictory of p is true.
-    $ p $ and $\lnot p $ are contradictory.
+-   If a proposition p is false, then the contradictory of p is true. \$
+    p \$ and $\lnot p $ are contradictory.
     -   Law of non-contradiction
     -   Interestingly, this law cannot be proved, because you'd have to
         use propositions.
@@ -1422,9 +1422,9 @@ February 20th, 2013 - Lecture: Critique of Descartes' doctrine of corporal subst
 
     3.  An aggregate is real only if its constituents are true unities
         (substances).
-    4.  So if an aggregate is composed of aggregates, which are
-        composed of aggregates endlessly - the decomposition set
-        contains nothing but aggregates, and it is unreal.
+    4.  So if an aggregate is composed of aggregates, which are composed
+        of aggregates endlessly - the decomposition set contains nothing
+        but aggregates, and it is unreal.
     5.  So a C-body is unreal.
 
 -   Heaps of stones
@@ -1598,7 +1598,7 @@ February 25th, 2013 - Reading: Chris Swoyer, 'Leibnizian Expression', *Journal o
 
 -   In *New Essays*,
 
-> IXIV. ... [A]n ellipse, and even a parabola or hyperbola, has some
+> XIII. ... [A]n ellipse, and even a parabola or hyperbola, has some
 >     resem- blance to the circle of which it is a projection on a
 >     plane, since there is a certain precise and natural relationship
 >     between what is projected and the projection which is made from
@@ -1694,12 +1694,12 @@ February 25th, 2013 - Reading: Chris Swoyer, 'Leibnizian Expression', *Journal o
 
 #### Generalizing the Account of Perspectival Expression
 
--   A function, $\ast$, from the constituents of one thing, $O$,
-    to those of a second, $E$, preserves the $n$-place relation
-    $R^O$ of $O$ just in case, for each $n$-tuple of
-    constituents $\lt X_1 ... X_n \gt$ of $O$:
-    -   (PR) $R^O x_1 ... x_n $ if and only if $R^E x_1
-        \ast ... x^ast_n $
+-   A function, $\ast$, from the constituents of one thing, $O$, to
+    those of a second, $E$, preserves the $n$-place relation $R^O$ of
+    $O$ just in case, for each $n$-tuple of constituents
+    $\lt X_1 ... X_n \gt$ of $O$:
+    -   (PR) $R^O x_1 ... x_n $ if and only if
+        $R^E x_1     \ast ... x^ast_n $
     -   $R^E$ is the surrogate for the original relation $R^O$
 
 -   Isomorphism is too much to expect from an expression
@@ -1814,7 +1814,7 @@ February 25th, 2013 - Lecture
 February 26th, 2013 - Reading: Leibniz's theory of expression and cognitive representation
 ------------------------------------------------------------------------------------------
 
-1.   'That is said to express a thing in which there are relations
+1.  'That is said to express a thing in which there are relations
     [habitudines] which correspond to the relations of the thing
     expressed. But there are various kinds of expression; for example,
     the model of a machine expresses the machine itself, the projective
@@ -1844,35 +1844,35 @@ February 26th, 2013 - Reading: Leibniz's theory of expression and cognitive repr
     as for example, gesture and speech. So deaf people understand
     speakers, not by the sound, but by the motion of the mouth.' **'What
     is an Idea?' (1678) G 7.326-4; L 205T 2.**
-    
-    -  The model expresses the machine.
-    -  The way that things are arranged.
-    -  Some are natural, which means they depend on natural laws, or
-       natural ways of thinking about things. 
-       -  On the other hand, some correlate to signs and convetionality.
-    
-2.  'One thing expresses another (in my terminology) when there is a 
-    constant and ordered relation between what can be said of the one 
-    and what can be asserted of the other. This is the way that a perspectival
-    projection experesses its ground-plan. Expression is common to all
-    [substantial] forms, and it is a genus of which natural perception,
-    animal sensation and intellectual knowledge are species. In natural
-    perception and in sensation, it is enough for what is divisible and
-    material and dispersed into many entities to be expressed or
-    represented in a single indivisible entity or a substance which is
-    endowed with true unity. . . . But this representation is
-    accompanied by consciousness in the rational soul, and then it is
-    called thought.' **Letter to Arnauld, 9 Oct. 1687; G 2.71, Mason,
-    144**
 
-2.  'It is sufficient for the expression of one thing in another that
+    -   The model expresses the machine.
+    -   The way that things are arranged.
+    -   Some are natural, which means they depend on natural laws, or
+        natural ways of thinking about things.
+    -   On the other hand, some correlate to signs and convetionality.
+
+2.  'One thing expresses another (in my terminology) when there is a
+    constant and ordered relation between what can be said of the one
+    and what can be asserted of the other. This is the way that a
+    perspectival projection experesses its ground-plan. Expression is
+    common to all [substantial] forms, and it is a genus of which
+    natural perception, animal sensation and intellectual knowledge are
+    species. In natural perception and in sensation, it is enough for
+    what is divisible and material and dispersed into many entities to
+    be expressed or represented in a single indivisible entity or a
+    substance which is endowed with true unity. . . . But this
+    representation is accompanied by consciousness in the rational soul,
+    and then it is called thought.' **Letter to Arnauld, 9 Oct. 1687; G
+    2.71, Mason, 144**
+
+3.  'It is sufficient for the expression of one thing in another that
     there should be a certain constant relational law, by which
     particulars in the one can be referred to corresponding particulars
     in another.' **'Metaphysical consequences of the Principle of
     Sufficient Reason' (1715), MP 176-7**
-    -  There is a constant relational law betwen the constants.
+    -   There is a constant relational law betwen the constants.
 
-3.  'It is true that the same thing may be represented in different
+4.  'It is true that the same thing may be represented in different
     ways; but there must always be an exact relation between the
     representation and the thing, and consequently between the different
     representations of one and the same thing. The projections in
@@ -1881,13 +1881,13 @@ February 26th, 2013 - Reading: Leibniz's theory of expression and cognitive repr
     hyperbola, and even by another circle, a straight line and a point.'
     **Theodicy, 357 (1710); H 339**
 
-4.  'The doctrine of shadows is simply that of perspective in reverse
+5.  'The doctrine of shadows is simply that of perspective in reverse
     and results from it if we replace the eye by the luminous source,
     the object by the opaque body, and the projection by the shadow.'
     ?Precepts for Advancin the Sciences and Arts' **(1680), Leibniz
     Selections, Philip Wiener, 41**
 
-5.  '. . . the simplicity of a substance does not prevent the plurality
+6.  '. . . the simplicity of a substance does not prevent the plurality
     of modifications which must necessarily be found together in the
     same simple substance; and these modifications must consist in the
     variety of relations which the substance has with things outside. In
@@ -1895,7 +1895,7 @@ February 26th, 2013 - Reading: Leibniz's theory of expression and cognitive repr
     is perfectly simple, an infinity of angles formed by lines which
     meet in it.' **Principles of Nature and Grace (1714), AG 207**
 
-6.  'There are successive perceptions, but there are also simultaneous
+7.  'There are successive perceptions, but there are also simultaneous
     ones, for, when there is a perception of the whole, at the same time
     there are perceptions of its actual parts, and it is even the case
     that each part has more than one modification. There is a perception
@@ -1910,12 +1910,12 @@ February 26th, 2013 - Reading: Leibniz's theory of expression and cognitive repr
     internally from one another, and they would have no relation to
     external things.' **To Masson (1715); AG 228-9**
 
-7.  'Each soul is a world in perspective, representing things outside
+8.  'Each soul is a world in perspective, representing things outside
     according to its point of view, and confusedly or distinctly
     according to the organs that accompany it, . . . ' **To Sophie
     Charlotte (1706); G 7.566-7**
 
-8.  '. . . although each created monad represents the whole universe, it
+9.  '. . . although each created monad represents the whole universe, it
     represents more distinctly the body which is particularly affected
     by it and of which it is the entelechy. And as this body expresses
     the whole universe by the connection between all matter in the
@@ -1923,11 +1923,11 @@ February 26th, 2013 - Reading: Leibniz's theory of expression and cognitive repr
     the body which belongs to it in a particular way.' **Monadology 61
     (1714); AG 221**
 
-9.  'And since God's view is a always true, our perceptions are always
+10. 'And since God's view is a always true, our perceptions are always
     true; it is our judgments, which come from ourselves, that deceive
     us.' **Discourse on Metaphysics, 14 (1686); AG, 47**
 
-10. '[N]othing can limit [a monad] to representing only a part of
+11. '[N]othing can limit [a monad] to representing only a part of
     things, though it is true that its representation is merely confused
     as to the details of the whole universe and can be distinct for a
     small part of things only . . . It is not in the object but in the
@@ -1939,77 +1939,79 @@ February 26th, 2013 - Reading: Leibniz's theory of expression and cognitive repr
 February 27th, 2013 - Lecture: Expression, perception, soul, body
 -----------------------------------------------------------------
 
--   **Occasionalism**: Minds cause their states, but bodies are mostly 
+-   **Occasionalism**: Minds cause their states, but bodies are mostly
     passive, causally inert. Some occasionalists, even mind cannot
     change themselves.
-    -  [Wikipedia:](http://en.wikipedia.org/wiki/Occasionalism) 
-       **Occasionalism** is a philosophical theory about causation which
-       says that created substances cannot be efficient causes of 
-       events. Instead, all events are taken to be caused directly by 
-       God.
-- If you have a three dimensional scene,
-  -  If you pick an angle from every point on the scene, draw a straight 
-	   line.
-  -  If you take a plane and "stick it between" the lines to your point,
-	   you have a 2D representation of a 3D scene.
-  -  It can be so good you think you're seeing the scene, and illusion.
--  These cases, expressions is a symettrical relation, if there is a 
-   correspondence, there's going to be a reverse correspondence too.
-   -  A lot of the examples of expressions Leibniz gives are not this
-     strong.
-   -  If you think of the combustion engine, there are going to be 
-     features of the machine which will not be able to be expressed
-     in the model.
-   -  Very like loss of precision in computer science.
--  X is perceiving if and only if X is an individual substance and X
-   expresses something material, divisible, and multitude.
--  There's a substantial form, your substantial form, which expresses
-   perfectly the body that you animate.
--  Look a map expresses the territory it maps, no way that it cognizes
-   the territory.
-   -  I have true unity, which expresses this territory. According to 
-      Leibniz, this cognizes the territory.
-      
+    -   [Wikipedia:](http://en.wikipedia.org/wiki/Occasionalism)
+        **Occasionalism** is a philosophical theory about causation
+        which says that created substances cannot be efficient causes of
+        events. Instead, all events are taken to be caused directly by
+        God.
+
+-   If you have a three dimensional scene,
+-   If you pick an angle from every point on the scene, draw a straight
+    line.
+-   If you take a plane and "stick it between" the lines to your point,
+    you have a 2D representation of a 3D scene.
+-   It can be so good you think you're seeing the scene, and illusion.
+-   These cases, expressions is a symettrical relation, if there is a
+    correspondence, there's going to be a reverse correspondence too.
+-   A lot of the examples of expressions Leibniz gives are not this
+    strong.
+-   If you think of the combustion engine, there are going to be
+    features of the machine which will not be able to be expressed in
+    the model.
+-   Very like loss of precision in computer science.
+-   X is perceiving if and only if X is an individual substance and X
+    expresses something material, divisible, and multitude.
+-   There's a substantial form, your substantial form, which expresses
+    perfectly the body that you animate.
+-   Look a map expresses the territory it maps, no way that it cognizes
+    the territory.
+-   I have true unity, which expresses this territory. According to
+    Leibniz, this cognizes the territory.
+
 February 27th, 2013 - Short Paper Assignment
 --------------------------------------------
 
 The paper should be five pages in length (a little longer is acceptable)
 Some topics to write about are suggested below. The suggestions are
 starting points. You decide how you want to develop them. This may
-involve narrowing or focusing the topic. Remember - you only have five 
-pages for this. The paper must make a clear point or claim, and it
-must make *a strong case* for this claim.
+involve narrowing or focusing the topic. Remember - you only have five
+pages for this. The paper must make a clear point or claim, and it must
+make *a strong case* for this claim.
 
 You may write on a topic not mentioned below provided that it involves
-material we've discussed. Please consult with me before beginning to 
-write on such a topic. Even if you choose one of the listed topics,
-you may want to let me know how you intend to focus it.
+material we've discussed. Please consult with me before beginning to
+write on such a topic. Even if you choose one of the listed topics, you
+may want to let me know how you intend to focus it.
 
-1. According to Leibniz, there is no reason for doubting that God can 
-form a concept of Adam so complete that everything that happens to Adam
-and the Universe can be derived from it. 'It follows that he would not 
-have been our Adam, but another, if he had experienced other events.'
-('Remarks on Arnauld's Letter', etc., p. 73; G 2.42)
-What is the reasoning by which Leibniz purports to show that this 
-conclusion follows? Comment on the argument and/or consider some
-implications, e.g. whether Adam could have refused the apple, whether
-it is necessary that Adam took the apple.
+1.  According to Leibniz, there is no reason for doubting that God can
+    form a concept of Adam so complete that everything that happens to
+    Adam and the Universe can be derived from it. 'It follows that he
+    would not have been our Adam, but another, if he had experienced
+    other events.' ('Remarks on Arnauld's Letter', etc., p. 73; G 2.42)
+    What is the reasoning by which Leibniz purports to show that this
+    conclusion follows? Comment on the argument and/or consider some
+    implications, e.g. whether Adam could have refused the apple,
+    whether it is necessary that Adam took the apple.
 
-2. Arnauld complained that Leibniz's argument that extension alone
-is not sufficient to constitute a substance (*contra* Descartes'
-account of corporeal substance) depends on an arbitrary definition on an
-individual substance. Discuss the question whether or not this is a good
-objection.
+2.  Arnauld complained that Leibniz's argument that extension alone is
+    not sufficient to constitute a substance (*contra* Descartes'
+    account of corporeal substance) depends on an arbitrary definition
+    on an individual substance. Discuss the question whether or not this
+    is a good objection.
 
-3. Corporeal substances have a claim to be true unities in part because
-they are indestructible. Why is this important to Leibniz? Why do corporeal
-substances have this property? Consider some implications regarding what
-there is in the material world. You might consider, e.g., whether Leibniz
-can explain the fact that in some species, a worm can be cut into two
-and both half of it live; or, whether he can explain the fact that a cutting
-taken from a pear tree and grafted onto an apple tree grows and produces
-pears; or some other facts about living things. Do you think that the doctrine
-of corporeal substances is in some way problematic?
+3.  Corporeal substances have a claim to be true unities in part because
+    they are indestructible. Why is this important to Leibniz? Why do
+    corporeal substances have this property? Consider some implications
+    regarding what there is in the material world. You might consider,
+    e.g., whether Leibniz can explain the fact that in some species, a
+    worm can be cut into two and both half of it live; or, whether he
+    can explain the fact that a cutting taken from a pear tree and
+    grafted onto an apple tree grows and produces pears; or some other
+    facts about living things. Do you think that the doctrine of
+    corporeal substances is in some way problematic?
 
 March 4th, 2013 - Passages on relational predicates and the metaphysical status of relations
 --------------------------------------------------------------------------------------------
@@ -2023,8 +2025,8 @@ March 4th, 2013 - Passages on relational predicates and the metaphysical status 
     with someone else, is born and comes to light without any change in
     myself, but with a change in the other." A 6.4.308, tr. Mugnai
 
-    NB: An "extrinsic denomination" of X is a predicate applied to X 
-    from something else, Y; e.g. X is the father of Solomon; X is 
+    NB: An "extrinsic denomination" of X is a predicate applied to X
+    from something else, Y; e.g. X is the father of Solomon; X is
     greater than 3; X is similar to Plato.
 
 2.  ". . . there are no extrinsic denominations, and no one becomes a
@@ -2038,10 +2040,11 @@ March 4th, 2013 - Passages on relational predicates and the metaphysical status 
     concept of the predicate. Likewise, whenever the denomination of a
     thing is changed, some variation has to occur in the thing itself."
     "Primary Truths" (1689?), L 268
-	-   Leibniz is tying that there are no extrinsic denominations to
-		the concept containment theory of truth.
-	-   Titius expresses everything in the Universe, including "having
-		son" at moment one not at "moment two."
+    -   Leibniz is tying that there are no extrinsic denominations to
+        the concept containment theory of truth.
+    -   Titius expresses everything in the Universe, including "having
+        son" at moment one not at "moment two."
+
 4.  Philalethes-Locke: ". . . a change of relation can occur without
     there having been any change in the subject. . . [Titius, who is
     today a father] ceases to be so tomorrow, only by the death of his
@@ -2088,16 +2091,18 @@ March 4th, 2013 - Reading
     -   There is a necessary connection between a complete cause and the
         effect.
     -   There is an obstacle however! Consider the argument:
-        1.  Whether two parallelograms or two triangles are put together,
-            it will always produce the *same* square.
+        1.  Whether two parallelograms or two triangles are put
+            together, it will always produce the *same* square.
         2.  Neither square can be distinguished from the other square.
         3.  Therefore, not all complete causes have a 1 to 1 relation,
             they're not functions.
+
     -   Leibniz solves this problem by raising the point of how no two
         objects in his metaphysics can be identical.
         -   There will be some difference that retains the mind of the
             method in which change was produced.
         -   This can be discerned.
+
 -   This argument proves that matter is *not* homogenous.
     -   Our inmost mind is present both to itself and to matter,
         therefore nothing can be introduced to them which cannot be
@@ -2109,75 +2114,91 @@ March 4th, 2013 - Lecture
 -------------------------
 
 -   To have a position in space is to exist at a particular distance
-    from other things in time. 
+    from other things in time.
 -   What Leibniz says about relations in general holds true for spatial
     and temporal positions.
 -   The soul of Alexander expresses everything in the Universe, and we
     now know what this means.
--   What's a relation? 
+-   What's a relation?
     -   Non-identity is a relation
+
 -   Two issues:
-    1.   What is the metaphysical status?
-    2.   Something.
+    1.  What is the metaphysical status?
+    2.  Something.
+
 -   Near the end of Leibniz's life, there was a famous discussion about
     space.
 
 ### Relations
 
--   **A relational predicate**: $P$ is a relational predicate of $S$ if $P$ implies 
-	1.  That something other than $S$ exists.
-	2.  That thing (1) have a certain relation to $S$.
--   The motivation for the complete concept containment is from Aristotle.
-	-   That something that is predicated on something individually cannot
-	    be predicated on anything else.
-	-   Substances
+-   **A relational predicate**: $P$ is a relational predicate of $S$ if
+    $P$ implies
+    1.  That something other than $S$ exists.
+    2.  That thing (1) have a certain relation to $S$.
+
+-   The motivation for the complete concept containment is from
+    Aristotle.
+    -   That something that is predicated on something individually
+        cannot be predicated on anything else.
+    -   Substances
+
 -   The thought is that there are nine categories of axioms.
 -   Of the nine, they cannot exist unless they exist in some substance.
--   Another part of Aritstotle's doctrine is that some accident must exist
-    in some substance, must exist in only one.
--   An **accident**: 
-	-   Aristotle: A thing that is said of or exists in another.
-	-   Leibniz: Somethings that is predicated on another.
--   If you get the complete concept of an individual, the predicates of the 
-    individual are unique to that individual.
+-   Another part of Aritstotle's doctrine is that some accident must
+    exist in some substance, must exist in only one.
+-   An **accident**:
+    -   Aristotle: A thing that is said of or exists in another.
+    -   Leibniz: Somethings that is predicated on another.
+
+-   If you get the complete concept of an individual, the predicates of
+    the individual are unique to that individual.
 -   Accidents:
-	1. Quantity
-	2. Quality
-	3. Relations
-	4. Dispositions
+    1.  Quantity
+    2.  Quality
+    3.  Relations
+    4.  Dispositions
+
 -   Aristotle says a couple of interesting things about relations
-	1.  A relation, unlike quality or quality, is an eccident of a particular subject,
-	    but it is directed to another subject, so it implies the exist of another.
-		-   "Of" something or "than" something
-		-   "Towardness"
-	2.  A subject that has a relation can cease to have that relation without anything
-	    happening to that subject.
-		-   Socrates is taller than Simius, and then he is shorter than Simius,
-		    but nothing has happened to Socrates.
-		-   A thing can undergo a change with regards to its relational accidents
-			without anything happening to that thing.
-		-   Cambridge change
-		-   No strictly extrinsic denominations
+    1.  A relation, unlike quality or quality, is an eccident of a
+        particular subject, but it is directed to another subject, so it
+        implies the exist of another.
+        -   "Of" something or "than" something
+        -   "Towardness"
+
+    2.  A subject that has a relation can cease to have that relation
+        without anything happening to that subject.
+        -   Socrates is taller than Simius, and then he is shorter than
+            Simius, but nothing has happened to Socrates.
+        -   A thing can undergo a change with regards to its relational
+            accidents without anything happening to that thing.
+        -   Cambridge change
+        -   No strictly extrinsic denominations
+
 -   This shouldn't come as a surprise (no extrinsic denominations)
--   You can go from knowledge of the expression, you can learn truths about
-	the things expressed.
-	-   Provided you know the relations to be preserved are.
+-   You can go from knowledge of the expression, you can learn truths
+    about the things expressed.
+    -   Provided you know the relations to be preserved are.
+
 -   There are two parts to the relation,
-	1.  The soul expresses perfectly the S-body.
-		-   The body is surrounded perfectly by the S-body
+    1.  The soul expresses perfectly the S-body.
+        -   The body is surrounded perfectly by the S-body
+
 -   The connection of all things is spatial continuity
--   When the son of Titius dies, there is something in Titius' soul which
-    expresses that change.
+-   When the son of Titius dies, there is something in Titius' soul
+    which expresses that change.
 -   Leibniz denies that space is anything but an ordering relation
--   He agrees with Newton's empirical evidence for absolute acceleration.
-	-   But not absolute space and time.
+-   He agrees with Newton's empirical evidence for absolute
+    acceleration.
+    -   But not absolute space and time.
+
 -   Leibniz holds that space is relation of order
-	-   What are we talking about when we talk about space?
-		-   We observe that many of the things that exist at the same time
-			have an order of coexistence.
-		-   Say we have bunch of bodies that are simulteanosly existing,
-			and some of them, maintain the same distances from each other.
-			
+    -   What are we talking about when we talk about space?
+        -   We observe that many of the things that exist at the same
+            time have an order of coexistence.
+        -   Say we have bunch of bodies that are simulteanosly existing,
+            and some of them, maintain the same distances from each
+            other.
+
 March 11th, 2013 - Short Paper Assignment: Leibniz, Corporeal Substances, and Biology
 -------------------------------------------------------------------------------------
 
@@ -2370,18 +2391,20 @@ which inspire further research in both philosophy and natural science.
 
 ### Works Cited
 
-1.  Bolton, Martha. “Leibniz (01:730:416).” Rutgers University Lecture, 
+1.  Bolton, Martha. “Leibniz (01:730:416).” Rutgers University Lecture,
     Spring 2013.
 2.  Hottes, A.C. Practical plant propagation: an exposition of the art
-    and science of increasing plants as practiced by the nurseryman, 
+    and science of increasing plants as practiced by the nurseryman,
     florist and gardener. New York: De La Mare Company, Inc, 1925.
-3.  [Kolata, Gina. “In Good Health? Thank Your 100 Trillion Bacteria.” 
-    Print, online, June 13, 2012.](http://www.nytimes.com/2012/06/14/health/)
-4.  [McKay, Chris. “What Is Life and How Do We Search for It in Other 
-    Worlds?” Print, online, September 14, 2004.](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC516796/)
-5.  Ruppert, E. E., Fox, R. S., and Barnes, R. D. Invertebrate Zoology. 
+3.  [Kolata, Gina. “In Good Health? Thank Your 100 Trillion Bacteria.”
+    Print, online, June 13,
+    2012.](http://www.nytimes.com/2012/06/14/health/)
+4.  [McKay, Chris. “What Is Life and How Do We Search for It in Other
+    Worlds?” Print, online, September 14,
+    2004.](http://www.ncbi.nlm.nih.gov/pmc/articles/PMC516796/)
+5.  Ruppert, E. E., Fox, R. S., and Barnes, R. D. Invertebrate Zoology.
     New York: Brooks / Cole, 2004.
-6.  [Stanford Encyclopedia of Philosophy. “Gottfried Wilhelm Leibniz.” 
+6.  [Stanford Encyclopedia of Philosophy. “Gottfried Wilhelm Leibniz.”
     Online, 2013.](http://plato.stanford.edu/entries/leibniz/)
 
 March 11th, 2013 - Lecture: The notion of force in physics and metaphysics
@@ -2389,10 +2412,11 @@ March 11th, 2013 - Lecture: The notion of force in physics and metaphysics
 
 -   You could have two identical things different in space and time and
     that would be enough to make them different.
--   Nothing ever changes unless some intrinsic change in everything in 
+-   Nothing ever changes unless some intrinsic change in everything in
     the universe has a mark and trace of the change.
 -   Every individual substance expresses the whole Universe.
     -   It contains a "pointer."
+
 -   Spatial and temporal relations have relations.
 -   You can't get things in different spaces in different times unless
     you have something to put them there.
@@ -2402,9 +2426,10 @@ March 11th, 2013 - Lecture: The notion of force in physics and metaphysics
     -   Two ways to go from PSR to PII:
         1.  Look again at the argument in the third letter that Leibniz
             wrote to Clarke
+
 -   Newton and Clarke think space has an absolute frame of reference
     -   Clarke thinks the material world is finite
-     
+
                             N
                 x+--------+  y+--------+ 
                  |possible|   |possible|
@@ -2414,78 +2439,89 @@ March 11th, 2013 - Lecture: The notion of force in physics and metaphysics
                      |    |   |   |
                      +----+y  +---+x
                             S
-   
-    -   God would have no means to prefer a to b, therefore
-        space cannot be absolute by PSR.
-    -   **Divine preference argument**: If there indiscernables in the 
+
+    -   God would have no means to prefer a to b, therefore space cannot
+        be absolute by PSR.
+    -   **Divine preference argument**: If there indiscernables in the
         actual world, then there is another possible world where they
         are switched. God could have no reason to choose one rather than
         the other. But PSR.
--   **No Reason Argument**: There is no reason for saying that $A$ and $B$
-    are individually different, so they aren't individually different. Objections:
+
+-   **No Reason Argument**: There is no reason for saying that $A$ and
+    $B$ are individually different, so they aren't individually
+    different. Objections:
     1.  Why couldn't it run the other way around?
     2.  The mere fact that something has no reason is not enough to
-        suggest something. Perhaps there is no fact of the matter,
-        no objective truth.
+        suggest something. Perhaps there is no fact of the matter, no
+        objective truth.
+
 -   Premises
-    1. PSR
-    2. Exactly alike
-    3. Sufficnient reason to say alike
-    4. No possible differences
+    1.  PSR
+    2.  Exactly alike
+    3.  Sufficnient reason to say alike
+    4.  No possible differences
 
 April 3rd, 2013 - Lecture: How the soul 'knows' what to do
 ----------------------------------------------------------
 
--   The natures of soul and bodies means there are no possible connections.
+-   The natures of soul and bodies means there are no possible
+    connections.
 -   All souls are self-contained.
 -   There are no external forces or contributions.
 -   All go along with perceptions and volitions.
 -   On the other hand, the body obey mechanistic physics.
--   Logical positivists were bent on eliminating unverifiable, unfalsifiable claims.
+-   Logical positivists were bent on eliminating unverifiable,
+    unfalsifiable claims.
     -   There are forms that are logically valid or not.
     -   There is science.
-    -   And then any other discourse, either with forms or science, is meaningless.
+    -   And then any other discourse, either with forms or science, is
+        meaningless.
     -   So values, emotive expressions, are meaningless.
 
 -   If you go back to Aristotle, he's an empiricist, and a metaphysics
     is an abstract science.
 -   The scholastics mix up metaphysics and natural science.
 
-    > We have to go back to these substanstial forms <cite>Aristotle</cite>
+    > We have to go back to these substanstial forms
+    > <cite>Aristotle</cite>
 
 -   The scholastics confused a physics that appealed to forms.
 -   Different kinds of forms, different powers.
--   Since this is a long story, since they had no grips on the forms
-    and the source of the phenomea that was observed, they couldn't
-    say anything about the forms, but they caused the phenomena.
+-   Since this is a long story, since they had no grips on the forms and
+    the source of the phenomea that was observed, they couldn't say
+    anything about the forms, but they caused the phenomena.
     -   If this has an error of circularity about it, that's the point.
 
 -   Leibniz is advocating this metaphysical theory about the phenomena
-    we all agree up. 
+    we all agree up.
     -   Very abstract theory with physical evidence.
     -   Most general of the empirical scientists.
 
--   When you get to the positivists, metaphysics took an idealistic turn.
+-   When you get to the positivists, metaphysics took an idealistic
+    turn.
 -   For science, it put matter into a secondary position.
--   Science is what we can count on, and metaphysics follows (or other way around).
--   Examples of positivist: Schlick, Karl Hempel (last of the great), Quinne, Oppenheim
+-   Science is what we can count on, and metaphysics follows (or other
+    way around).
+-   Examples of positivist: Schlick, Karl Hempel (last of the great),
+    Quinne, Oppenheim
 -   He held German metaphysics responsible for the horrors of WWII.
 -   There's a big debate about the relevance of philosophy to physics
     -   Some say that philosophy has nothing to say about physics.
-    -   Some say that philosophy and metaphysics has a big role to play in the armchair.
+    -   Some say that philosophy and metaphysics has a big role to play
+        in the armchair.
     -   Physics should be talking about something that is real.
 
--   Leibniz is in a pretty clear position, whereas the connection between metaphysics
-    and science is unclear now.
-    -   When we're talking about the rules, laws of nature, that govern the world,
-        we're talking about necessary truth.
+-   Leibniz is in a pretty clear position, whereas the connection
+    between metaphysics and science is unclear now.
+    -   When we're talking about the rules, laws of nature, that govern
+        the world, we're talking about necessary truth.
 
 -   So we have the pre-establish harmony, what puzzles you most?
 -   2 clocks always tell the same time.
     1.  They causally effect each other.
     2.  There's a maintenance person who regularly adjests them.
     3.  Perfectly made each on its own tells the right time.
-    
+
 April 8th, 2013 - Handout
 -------------------------
 
@@ -2506,7 +2542,7 @@ April 8th, 2013 - Handout
             concur—so that the entelechy is joined with a mass which
             comprises many monads?
 
-				{Entekchy  + aggregate of monads} = monad
+                {Entekchy  + aggregate of monads} = monad
 
             implies that the monad is an embodied entelchy. On this
             view, there is one substance.
@@ -2544,20 +2580,19 @@ April 8th, 2013 - Handout
         whole mass, which is the aggregate containing many
         substances—this comports with the 1-substance view.,
 
-			{Ent + body=aggregate} 
+            {Ent + body=aggregate} 
 
         makes a monad; monads are embodied entelechies; an entelechy
         alone is not yet a substance.
         -   This is the 1-substance view.
 
     -   But the part in brackets in (b) comports with the 2-substance
-        view.
-        A monad, alone, is a substance formed from an entelechy and a
-        primary passive power which is distinct from the aggregate and
-        found only in that monad--=a lthough the primitive passive power
-        is somehow related to the aggregate.
+        view. A monad, alone, is a substance formed from an entelechy
+        and a primary passive power which is distinct from the aggregate
+        and found only in that monad--=a lthough the primitive passive
+        power is somehow related to the aggregate.
 
-			{Ent+PPF exclusive of all monads} 
+            {Ent+PPF exclusive of all monads} 
 
         -   makes a monad; monads are not embodied ents.
 
@@ -2566,38 +2601,43 @@ April 8th, 2013 - Handout
 
             {Dominant monad + organic machine, infinitely composed of org machines} make a corporeal substance, or animal. 
 
-        -   Leibniz may have hesitated, but he came down for the theory that monads are simple substances, 
-            and corporeal substances have mass which is the concurrence of many monads. 
-        -   This would seem to commit Leibniz to the existence of corporeal substances, 
-            which enjoy substantial unity in virtue of one of their constituents, viz, the dominant monad.
-        -   But it also would seem to imply that corporeal substances are reduced to aggregates of monads.  
-            Yet aggregates do not have true unity.  Is this a problem?
+        -   Leibniz may have hesitated, but he came down for the theory
+            that monads are simple substances, and corporeal substances
+            have mass which is the concurrence of many monads.
+        -   This would seem to commit Leibniz to the existence of
+            corporeal substances, which enjoy substantial unity in
+            virtue of one of their constituents, viz, the dominant
+            monad.
+        -   But it also would seem to imply that corporeal substances
+            are reduced to aggregates of monads.\
+             Yet aggregates do not have true unity. Is this a problem?
 
 2.  To De Volder (1704 or 1705); AG 181
 
     > I don't really eliminate body, but reduce [revoco] it to what it
-    > is. For I show that corporeal mass [massa], which is thought to have
-    > something over and above simple substances, is not a substance, but
-    > a phenomenon resulting from simple substances, which alone have
-    > unity and absolute reality. <cite>Leibniz</cite>
+    > is. For I show that corporeal mass [massa], which is thought to
+    > have something over and above simple substances, is not a
+    > substance, but a phenomenon resulting from simple substances,
+    > which alone have unity and absolute reality. <cite>Leibniz</cite>
 
-3.  To De Volder, 1704 or 1705, AG 182; ('[[' indicates material in Leibniz's
-    copy not sent to De Volder)
+3.  To De Volder, 1704 or 1705, AG 182; ('[[' indicates material in
+    Leibniz's copy not sent to De Volder)
 
     > Indeed, everywhere and throughout everything I place nothing but
     > what we all acknowledge in our souls on many occasions, namely,
-    > internal and spontaneous changes. And so, with one stroke of mind, I
-    > draw out the entirety of things. Moreover, I also put corporeal
-    > forces where I put bodies, namely, among the phenomena, if they are
-    > understood as adding something over and above simple substances or
-    > their modifications. In just the same way, a rainbow is not
-    > improperly said to be a thing, even though it is not a substance,
-    > that is, it said to be a phenomenon, [[a real or well-founded
-    > phenomenon that doesn't disappoint our expecations based on what
-    > precedes]]. And indeed, not only sight but also touch has its
-    > phenomena. [[And corporeal masses [massa] are like entities of
-    > aggregation, things whose unity derives from perceiving it. <cite>Leibniz</cite>
-    
+    > internal and spontaneous changes. And so, with one stroke of mind,
+    > I draw out the entirety of things. Moreover, I also put corporeal
+    > forces where I put bodies, namely, among the phenomena, if they
+    > are understood as adding something over and above simple
+    > substances or their modifications. In just the same way, a rainbow
+    > is not improperly said to be a thing, even though it is not a
+    > substance, that is, it said to be a phenomenon, [[a real or
+    > well-founded phenomenon that doesn't disappoint our expecations
+    > based on what precedes]]. And indeed, not only sight but also
+    > touch has its phenomena. [[And corporeal masses [massa] are like
+    > entities of aggregation, things whose unity derives from
+    > perceiving it. <cite>Leibniz</cite>
+
 April 8th, 2013 - Lecture
 -------------------------
 
@@ -2605,33 +2645,35 @@ April 8th, 2013 - Lecture
 
 #### A problem in the literature
 
-A problem in the literature: is Leibniz a realist or an idealist? 
-On the one hand, he seems committed to the claim that matter is a phenomenon, 
-whereas only spiritual substances are real. But on the other hand, 
-it is hard to square these claims with his deep attachment to natural sciences.
+A problem in the literature: is Leibniz a realist or an idealist? On the
+one hand, he seems committed to the claim that matter is a phenomenon,
+whereas only spiritual substances are real. But on the other hand, it is
+hard to square these claims with his deep attachment to natural
+sciences.
 
 #### Thesis
 
-Leibniz is both, he’s a realist because he’s an idealist, 
-and an idealist because a realist. In other words: the distinction 
-doesn’t fit into his thinking. 
+Leibniz is both, he’s a realist because he’s an idealist, and an
+idealist because a realist. In other words: the distinction doesn’t fit
+into his thinking.
 
 #### Argument
 
-Considering the sciences of life as an influence for his metaphysics 
-(especially the theme of unity, infinity and the pre-established harmony). 
+Considering the sciences of life as an influence for his metaphysics
+(especially the theme of unity, infinity and the pre-established
+harmony).
 
 #### Examples
 
 > Being freed from the trivial schools, I discovered the Moderns and
 > remember walking alone in a garden near Leipzig, called Rosendal at 15
-> and deliberating if I would keep the substantial forms.  <cite>Letter
+> and deliberating if I would keep the substantial forms. <cite>Letter
 > to Rémond 14 January 1710 G III 606</cite>
 
 > In every machine, a principle of motion is needed. I think that in the
 > animal motion comes from an already existing motion, as in an already
 > rotating pendulum, or from the chyle, which mixed with blood, permits
-> fermentation.  <cite>Machina Animalis 1677 LH III 5 f. 12</cite>
+> fermentation. <cite>Machina Animalis 1677 LH III 5 f. 12</cite>
 
 > Accordingly, it is one thing to describe the motion of a mill, but
 > quite another to describe the different possible uses of this mill,
@@ -2640,7 +2682,7 @@ Considering the sciences of life as an influence for his metaphysics
 > life is understood. <cite>Machina Animalis LH III 5 f. 12 1677
 
 > We can cut them [viz. the animals] open and examine them how and when
-> we please  <cite>Directiones ad rem medicame pertinentes LH III 1
+> we please <cite>Directiones ad rem medicame pertinentes LH III 1
 > 31671</cite>
 
 > We will thus rightly assert that an animal is not only a
@@ -2654,9 +2696,9 @@ Considering the sciences of life as an influence for his metaphysics
 > bodies the Soul, in Man the Mind, whence in animals the origin of
 > sense as well as appetite, and the union of the soul and the body, and
 > the way in which either the Soul acts in the body, or is acted upon by
-> the body will be able to be explained with unexpected
-> clarity <cite>Corpus hominis et unicuscujusque animalis machina est
-> quoedam LH III 1 2 1682</cite>
+> the body will be able to be explained with unexpected clarity
+> <cite>Corpus hominis et unicuscujusque animalis machina est quoedam LH
+> III 1 2 1682</cite>
 
 > The Bodies of Animals are Machines of perpetual motion, or, to put it
 > more clearly, they are machines comparable to a certain fixed and
@@ -2707,10 +2749,10 @@ Considering the sciences of life as an influence for his metaphysics
 > similar nature, he goes out of his path quite as much as that man who,
 > when facing an important practical question would wish to enter into
 > profound argumentations regarding the nature of destiny and of our
-> liberty  <cite>Discourse of Metaphysics §10 1686</cite>
+> liberty <cite>Discourse of Metaphysics §10 1686</cite>
 
 > Our body is a sort of world full of an infinity of creatures that
-> would also deserve to exist  <cite>Letter to Lady Masham G III 356
+> would also deserve to exist <cite>Letter to Lady Masham G III 356
 > 1704</cite>
 
 > That is why I define the Organism, or the Natural Machine, as a
@@ -2720,117 +2762,122 @@ Considering the sciences of life as an influence for his metaphysics
 > Lady Masham G III 356 1704</cite>
 
 > My two main meditations revolve around two things, to know unity and
-> to know infinity.  <cite>Letter to Sophie Charlotte G III 260
+> to know infinity. <cite>Letter to Sophie Charlotte G III 260
 > 1696</cite>
 
 > Any organized body being plura entia, there would have to be many
-> beings to render the bodies animated.  <cite>Leibniz to Arnauld October
+> beings to render the bodies animated. <cite>Leibniz to Arnauld October
 > 9th 1687</cite>
 
 > The Monad is nothing but a simple substance that compose the
-> aggregates; simple, in other words without any part.  <cite>Monadology
+> aggregates; simple, in other words without any part. <cite>Monadology
 > §1 1714</cite>
 
 > Every portion of matter may be conceived as a garden full of plants
 > and a pond full of fishes. But each leave of the plant, each member of
 > the animal, each drop of its humors is again such a garden or such a
-> pond.  <cite>Monadology §67 1714 </cite>
+> pond. <cite>Monadology §67 1714 </cite>
 
 > They [viz. the Monads] don’t have windows from which something could
-> enter or leave.  <cite>Monadology §7 1714</cite>
+> enter or leave. <cite>Monadology §7 1714</cite>
 
-> The living is a divine machine.  <cite>5th letter to Clarke GP VII
+> The living is a divine machine. <cite>5th letter to Clarke GP VII
 > 417-418 1714</cite>
 
-> A present pregnant of the future  <cite>Monadology §22 1714</cite>
+> A present pregnant of the future <cite>Monadology §22 1714</cite>
 
 > Extension was enough to Descartes; to Leibniz, life is needed
->  <cite>Emile Boutroux, edition and introduction to the Monadology,
+> <cite>Emile Boutroux, edition and introduction to the Monadology,
 > Delagrave 2005</cite>
 
 April 15th, 2013 - Passages
 ---------------------------
 
-1.  > Freedom, such as is required by the schools of theology, consists in
-    > intelligence, which includes a distinct knowledge of the object of
-    > deliberation; in spontaneity, in virtue of which we determine
-    > ourselves; and in contingency, that is, in the exclusion of
-    > logical or metaphysical necessity. Intelligence is, as it were,
-    > the soul of freedom, and the rest is as its body and basis. The
-    > free subject determines itself by itself; and this according to
-    > the motive of the good perceived by the understanding, which
-    > inclines it without necessitating it; and all the conditions are
-    > contained in these few world. <cite>*Theodicy* 288; G 6.288, tr.
+1.  Freedom, such as is required by the schools of theology, consists in
+    > \> intelligence, which includes a distinct knowledge of the object
+    > of \> deliberation; in spontaneity, in virtue of which we
+    > determine \> ourselves; and in contingency, that is, in the
+    > exclusion of \> logical or metaphysical necessity. Intelligence
+    > is, as it were, \> the soul of freedom, and the rest is as its
+    > body and basis. The \> free subject determines itself by itself;
+    > and this according to \> the motive of the good perceived by the
+    > understanding, which \> inclines it without necessitating it; and
+    > all the conditions are \> contained in these few world.
+    > <cite>*Theodicy* 288; G 6.288, tr. \> Rutherford</cite>
+
+2.  In order to better understand this point, we must realize that a \>
+    > genuine spontaneity is common to us and all simple substances, and
+    > \> that in the intelligent or free substances this becomes a
+    > dominion \> over its actions. . . <cite>T 290-1; G 6.298, tr.
     > Rutherford</cite>
 
-2.  > In order to better understand this point, we must realize that a
-    > genuine spontaneity is common to us and all simple substances, and
-    > that in the intelligent or free substances this becomes a dominion
-    > over its actions. . . <cite>T 290-1; G 6.298, tr. Rutherford</cite>
+3.  [E]veryone who accepts immaterial indivisible substances attributes
+    > \> to them a simultaneous multitude of perceptions, and
+    > spontaneity \> in their reasonings and their voluntary acts. I am
+    > therefore only \> extending that spontaneity to their confused and
+    > involuuntary \> thoughts, and showing that their nature is to
+    > contain relations to \> everything that is external. <cite>Reply
+    > to the Comments in the Second \> Edition of M. Bayle's,etc., WF
+    > 118</cite>
 
-3.  > [E]veryone who accepts immaterial indivisible substances attributes
-    > to them a simultaneous multitude of perceptions, and spontaneity
-    > in their reasonings and their voluntary acts. I am therefore only
-    > extending that spontaneity to their confused and involuuntary
-    > thoughts, and showing that their nature is to contain relations to
-    > everything that is external. <cite>Reply to the Comments in the Second
-    > Edition of M. Bayle's,etc., WF 118</cite>
-
-4.  > Change [transitio], or variation, itself . . . is nothing but a
-    > complex of two states which are immediate and opposite to each
+4.  Change [transitio], or variation, itself . . . is nothing but a \>
+    > complex of two states which are immediate and opposite to each \>
     > other, together with a force or [seu] reason for the change, which
-    > reason itself is a quality. MP 134
+    > \> reason itself is a quality. MP 134
 
-5.  > The laws of appetite [are] the laws of the final causes of Good and
-    > Evil. <cite>PNG 3</cite>
+5.  The laws of appetite [are] the laws of the final causes of Good and
+    > \> Evil. <cite>PNG 3</cite>
 
-6.  > Souls act according to the laws of final causes, through appetites,
-    > ends and means. Bodies act according to the laws of efficient
-    > causes, or of motions. And the two realms, that of efficient
-    > causes and that of final causes, are in mutual harmony. <cite>Mon 79; AG
-    > 223</cite>
+6.  Souls act according to the laws of final causes, through appetites,
+    > \> ends and means. Bodies act according to the laws of efficient
+    > \> causes, or of motions. And the two realms, that of efficient \>
+    > causes and that of final causes, are in mutual harmony. <cite>Mon
+    > 79; AG \> 223</cite>
 
-    -   This suggest that laws of final causes that pertain only to souls.
+    -   This suggest that laws of final causes that pertain only to
+        souls.
     -   Laws of efficient causes that apply only to bodies.
     -   But there are laws of final causes that apply to bodies, namely
         natural telological ones.
 
-7.  > . . . with confused perception and a corresponding appetite (which,
-    > with some, you might term instinct) [the soul] imitates divine
-    > infinity, in such a way that nothing happens in the body that the
-    > soul does not in fact, perceive, nothing concerning which [the
-    > soul] does not exercise [its] appetite . . . even if we are
-    > unaware. <cite>*Animadversiones . . . Stahli*, D 2.2.135; RF, 28</cite>
+7.  . . . with confused perception and a corresponding appetite (which,
+    > \> with some, you might term instinct) [the soul] imitates divine
+    > \> infinity, in such a way that nothing happens in the body that
+    > the \> soul does not in fact, perceive, nothing concerning which
+    > [the \> soul] does not exercise [its] appetite . . . even if we
+    > are \> unaware. <cite>*Animadversiones . . . Stahli*, D 2.2.135;
+    > RF, 28</cite>
 
-8.  > . . . let us say that everything in bodies happens mechanically, or
-    > in accordance with laws of motion, and that everything in the soul
-    > happens morally, or in accordance with appearances of good and
-    > evil, in such a way that even in our instinctive and involuntary
-    > actions, there is in the soul an appetite for good or an aversion
-    > to evil which drives it, even though our reflection is not able to
-    > pick it out in the confusion. <cite>To Sophie Charlotte (1704), WF 224</cite>
+8.  . . . let us say that everything in bodies happens mechanically, or
+    > \> in accordance with laws of motion, and that everything in the
+    > soul \> happens morally, or in accordance with appearances of good
+    > and \> evil, in such a way that even in our instinctive and
+    > involuntary \> actions, there is in the soul an appetite for good
+    > or an aversion \> to evil which drives it, even though our
+    > reflection is not able to \> pick it out in the confusion.
+    > <cite>To Sophie Charlotte (1704), WF 224</cite>
 
-    
-
-9.  > Leibniz explains what is required for an appetite of the soul to be
-    > executed by the body: [I]t is necessary that the appetites and
-    > consequently the perceptions from which they arise attain in
+9.  Leibniz explains what is required for an appetite of the soul to be
+    > \> executed by the body: [I]t is necessary that the appetites and
+    > \> consequently the perceptions from which they arise attain in \>
     > perfect detail everything which brings this about in the organs.
-    > For this reason: . . . will is not always sufficient to make the
-    > body act according to its desire, when the exact perception of the
-    > means is not conjoined with it . . . Thus it is necessary that end
-    > and means should always be joined together in the soul, as causes
-    > and effects are in the body, in order that the desired effect
-    > should be executed. <cite>To Hartsoeker, G 3.509-10</cite>
+    > \> For this reason: . . . will is not always sufficient to make
+    > the \> body act according to its desire, when the exact perception
+    > of the \> means is not conjoined with it . . . Thus it is
+    > necessary that end \> and means should always be joined together
+    > in the soul, as causes \> and effects are in the body, in order
+    > that the desired effect \> should be executed. <cite>To
+    > Hartsoeker, G 3.509-10</cite>
 
-10. > [I]t is true that the appetite cannot always completely reach the
-    > whole perception toward which it tends, but it always obtains
+10. [I]t is true that the appetite cannot always completely reach the \>
+    > whole perception toward which it tends, but it always obtains \>
     > something of it, and reaches new perceptions. <cite>Mon 15</cite>
 
-11. > . . . as I should prefer to define it, perfection is degree or
-    > quantity of reality or essence . . . <cite>To Eckhard (1677); L 177</cite>
+11. . . . as I should prefer to define it, perfection is degree or \>
+    > quantity of reality or essence . . . <cite>To Eckhard (1677); L
+    > 177</cite>
 
-12. > . . . there are no perceptions which are matters of complete
+12. . . . there are no perceptions which are matters of complete \>
     > indifference to us; <cite>NE 162</cite>
 
 April 15th, 2013 - Lecture
@@ -2840,160 +2887,177 @@ April 15th, 2013 - Lecture
 -   The subject of freedom "chooses itself for itself."
 -   Rutherford is worried that spontinaeity is wonderfully general.
 -   Applies to everything all the time.
--   Monadic spontienaty is a necessary but not sufficient condition for Leibniz.
--   It occurs when there is an absence of something that is not always abset.
--   Freedom from external causes, monad is always free from external causes.
--   Somehow Rutherford is thinking that Leibniz needs to add to spontinaiety some
-    further constraint, some other kind, not always absent, because we don't always
-    act freely.
+-   Monadic spontienaty is a necessary but not sufficient condition for
+    Leibniz.
+-   It occurs when there is an absence of something that is not always
+    abset.
+-   Freedom from external causes, monad is always free from external
+    causes.
+-   Somehow Rutherford is thinking that Leibniz needs to add to
+    spontinaiety some further constraint, some other kind, not always
+    absent, because we don't always act freely.
     -   When we do, something is absent that isn't always.
     -   Spontaneity can't be freedom because it's present in all cases.
     -   Some sort of break from what a monad can do.
     -   Absent when a monad acts volutarily.
-    
--   Rutherford is seeking this in the area where sponteoity is excluding external
-    constraints, that causal area, two sorts of circumstances, or conditions under which,
-    a monad causes itself to undergoe a change, where a monad acts freely.
+
+-   Rutherford is seeking this in the area where sponteoity is excluding
+    external constraints, that causal area, two sorts of circumstances,
+    or conditions under which, a monad causes itself to undergoe a
+    change, where a monad acts freely.
 -   Spontenaity is a necessary condition of freedom, not sufficient.
 -   There are many monads that are not intelligent.
     -   This involves the capacity to think of yourself as yourself.
     -   There are many monads that are not able to think of themselves.
-    -   Bale's dog thinks and feels and whatever it might be, anticipating
-        future states, but it cannot think of itself as doing that.
-    -   We, on the other hand, have a self-reflective quality about ourselves.
+    -   Bale's dog thinks and feels and whatever it might be,
+        anticipating future states, but it cannot think of itself as
+        doing that.
+    -   We, on the other hand, have a self-reflective quality about
+        ourselves.
     -   This is a condition when we have a freedom of action.
-    
+
 -   Distinct knowledge of the object under consideration.
--   It is not always the case that a disctinct monad perfectly understands all the
-    possibilities.
+-   It is not always the case that a disctinct monad perfectly
+    understands all the possibilities.
 -   Leibniz is stressing the importance of intelligence.
 -   Freedom and intelligence gives us freedom over our actions.
 -   Leibniz is placing a lot of clues about the importance.
--   We do think that free action requires freedom from certain constraints.
+-   We do think that free action requires freedom from certain
+    constraints.
 -   Rutherford is wanting a freedom from causal constraints.
 -   Leibniz thinks distinct knowledge is the key.
--   Rutherford's project is to assume that Leibniz hasn't laid out a full view.
--   Rutherford wants to suggest that Leibniz has the resources to make the distinction.
--   Part of his take on this, there is within a monad, a distinction between a monad
-    is active and monad is passive.
--   There's a little section where Rutherford talks about change, the constitution of the
-    for model of substance.
+-   Rutherford's project is to assume that Leibniz hasn't laid out a
+    full view.
+-   Rutherford wants to suggest that Leibniz has the resources to make
+    the distinction.
+-   Part of his take on this, there is within a monad, a distinction
+    between a monad is active and monad is passive.
+-   There's a little section where Rutherford talks about change, the
+    constitution of the for model of substance.
 -   I'll come back to it.
--   It articulates some of the things that Rutherford's proposal has to do.
--   There is a force or reason to take something from one state to another.
+-   It articulates some of the things that Rutherford's proposal has to
+    do.
+-   There is a force or reason to take something from one state to
+    another.
 
--   When we get an account of how change occurs in the monad we need to be able
-    to explain what goes on in a monad in these two ways.
+-   When we get an account of how change occurs in the monad we need to
+    be able to explain what goes on in a monad in these two ways.
 -   This brings Rutherford to what he calls "teleology."
--   Final cause of $A$'s doing $X$ why $A$ does $X$ in terms of an end doing $X$
-    is likely to produce.
--   It's common to describe freedom in terms of people's actions, "final cause"
-    in Leibniz's time, and those are ends from the point of which things act,
-    when an act is described by final actions it is described in terms of "goodness."
-    -   If you're going to talk about final causes, you're assuming that changes
-        often occur that being about good ends, then you need some explantion
-        about why changes bring about good ends.
-    -   When you explain things by final cause, you assume that there are explantions.
+-   Final cause of $A$'s doing $X$ why $A$ does $X$ in terms of an end
+    doing $X$ is likely to produce.
+-   It's common to describe freedom in terms of people's actions, "final
+    cause" in Leibniz's time, and those are ends from the point of which
+    things act, when an act is described by final actions it is
+    described in terms of "goodness."
+    -   If you're going to talk about final causes, you're assuming that
+        changes often occur that being about good ends, then you need
+        some explantion about why changes bring about good ends.
+    -   When you explain things by final cause, you assume that there
+        are explantions.
         -   Leibniz would say that god made the world this way.
-        -   "The eyes operate in order that we see things and that is good."
-        
+        -   "The eyes operate in order that we see things and that is
+            good."
+
 -   In monads there is nothing but perception and appetite.
-    -   Perceptions are states of the monads that express something something.
-    -   Appetites are derivative forces, driving the soul from perception to perception
-        to perception (?).
+    -   Perceptions are states of the monads that express something
+        something.
+    -   Appetites are derivative forces, driving the soul from
+        perception to perception to perception (?).
     -   The perception that a monad has at a given moment
-    -   When in acting we realize something good, 
-    
--   Leibniz need not deny that appetites take a monad from a past perception
-    to a future perception, but I think he means to say that the ends towards
-    the appetite are for and the impediments it meets (present states that
-    precede future states), doesn't occur in body.
-    -   There is a kind of law that proper to souls and a kind of law that are
-        proper to bodies.
-        
--   Force $F$ operates in accord with $N$-telelogical laws if and only if
-    the effectiveness of $F$ in bring about a change from $S_1$ to $S_2$ is
-    explained by the objective goodness of $S_2$.
-    
+    -   When in acting we realize something good,
+
+-   Leibniz need not deny that appetites take a monad from a past
+    perception to a future perception, but I think he means to say that
+    the ends towards the appetite are for and the impediments it meets
+    (present states that precede future states), doesn't occur in body.
+    -   There is a kind of law that proper to souls and a kind of law
+        that are proper to bodies.
+
+-   Force $F$ operates in accord with $N$-telelogical laws if and only
+    if the effectiveness of $F$ in bring about a change from $S_1$ to
+    $S_2$ is explained by the objective goodness of $S_2$.
+
 April 17th, 2013 - Passages
 ---------------------------
 
-1.  > With regard to the preestablished harmony between the modifications
-    > of the soul and those of the body, and the execution of our
+1.  With regard to the preestablished harmony between the modifications
+    > \> of the soul and those of the body, and the execution of our \>
     > appetites by the bodily organs, it is necessary that the appetites
-    > and consequently the perceptions from which they arise, should run
-    > in perfect detail with all of that which happens in the organs, in
-    > that these appetites be executed. This would appear to us if it
-    > were possible to analyze our confused perceptions. Otherwise, it
-    > would not be an appetite which is perfect and complete with regard
-    > to the whole of its object, but only something approaching it. And
-    > because our understanding and consequently our will is not capable
-    > of this detail, our simple will (if it goes to the end without
-    > going to means and means for the means) is not an appetite the
-    > body is obliged to follow and to execute. Execution by the body
-    > happens only in unimpeded interior voluntary movements, where
-    > confused appetite seconds the will or distinct appetite in perfect
-    > detail. However our interior involuntary motions do not cease to
-    > answer to our confused and unconscious appetites, but these
-    > movements depend as little on the empire of the will as these
-    > appetites depend on our understanding, so that the will is not
-    > always sufficient to set the body in motion according to its
-    > desire, when the perception of exact means is not joined with it.
-    > <cite>Letter to Hartsoeker, 30 October 1710; G 3.509-10</cite>
+    > \> and consequently the perceptions from which they arise, should
+    > run \> in perfect detail with all of that which happens in the
+    > organs, in \> that these appetites be executed. This would appear
+    > to us if it \> were possible to analyze our confused perceptions.
+    > Otherwise, it \> would not be an appetite which is perfect and
+    > complete with regard \> to the whole of its object, but only
+    > something approaching it. And \> because our understanding and
+    > consequently our will is not capable \> of this detail, our simple
+    > will (if it goes to the end without \> going to means and means
+    > for the means) is not an appetite the \> body is obliged to follow
+    > and to execute. Execution by the body \> happens only in unimpeded
+    > interior voluntary movements, where \> confused appetite seconds
+    > the will or distinct appetite in perfect \> detail. However our
+    > interior involuntary motions do not cease to \> answer to our
+    > confused and unconscious appetites, but these \> movements depend
+    > as little on the empire of the will as these \> appetites depend
+    > on our understanding, so that the will is not \> always sufficient
+    > to set the body in motion according to its \> desire, when the
+    > perception of exact means is not joined with it. \> <cite>Letter
+    > to Hartsoeker, 30 October 1710; G 3.509-10</cite>
 
     -   Set some goal, but you can't go directly to the goal, you have
         to do something to get there.
     -   If you don't have the means to get there, you wont get there.
     -   What are the means by the soul may or may not get there?
-    -   It cannot be anything but the types of perceptions ...     
+    -   It cannot be anything but the types of perceptions ...
 
-2.  > . . . fundamentally pleasure is a sense of perfection, and pain a
+2.  . . . fundamentally pleasure is a sense of perfection, and pain a \>
     > sense of imperfection, each being notable enough for one to become
-    > aware of it. For the minute [sc. confused] perceptions of some
-    > perfection or imperfection, which I have spoken of several times
-    > and which are as it were components of pleasure and of pain,
-    > constitute inclinations and propensities but not outright
-    > passions. So there are insensible inclinations of which we are
-    > unaware. <cite>NE 194</cite>
+    > \> aware of it. For the minute [sc. confused] perceptions of some
+    > \> perfection or imperfection, which I have spoken of several
+    > times \> and which are as it were components of pleasure and of
+    > pain, \> constitute inclinations and propensities but not outright
+    > \> passions. So there are insensible inclinations of which we are
+    > \> unaware. <cite>NE 194</cite>
 
     -   Pleasure is a distinguished sense of perfection
     -   While pain is a distinguished sense of pain.
-    -   "Inclinations and propresenties", insensible inclinations
-        which we are unaware of.
+    -   "Inclinations and propresenties", insensible inclinations which
+        we are unaware of.
 
-3.  > What usually drives us are those minute insensible perceptions which
-    > could be called sufferings that we cannot become aware of, if the
-    > notion of suffering did not involve awareness. These minute
-    > impulses consists in our continually overcoming small
+3.  What usually drives us are those minute insensible perceptions which
+    > \> could be called sufferings that we cannot become aware of, if
+    > the \> notion of suffering did not involve awareness. These minute
+    > \> impulses consists in our continually overcoming small \>
     > obstacles—our nature labors at this without our thinking about it.
-    > This is the true character of that disquiet which we sense without
-    > taking cognizance of it. . . for we are never without some
-    > activity and motion, simply because nature continually labors to
-    > be more completely at ease. <cite>NE 188</cite>
+    > \> This is the true character of that disquiet which we sense
+    > without \> taking cognizance of it. . . for we are never without
+    > some \> activity and motion, simply because nature continually
+    > labors to \> be more completely at ease. <cite>NE 188</cite>
 
     -   Here the emphasis is on aversions.
-    -   Our insensible perceptions are attached to aversions,
-        the activity is to remove the source of the disquiet or of
-        the semi-suffering.
+    -   Our insensible perceptions are attached to aversions, the
+        activity is to remove the source of the disquiet or of the
+        semi-suffering.
     -   There are many impulses of this of the soul at any moment.
     -   So that the soul will be more at each.
-    -   There are these little urges that are desiderous in nature,
-        but there is still something that is in this sense bad. (???)
+    -   There are these little urges that are desiderous in nature, but
+        there is still something that is in this sense bad. (???)
 
-4.  > It is true that the appetite cannot always completely reach the
-    > whole perception toward which it tends, but it always obtains
-    > something of it, and reaches new perceptions. <cite>Mon 15; AG 215</cite>
+4.  It is true that the appetite cannot always completely reach the \>
+    > whole perception toward which it tends, but it always obtains \>
+    > something of it, and reaches new perceptions. <cite>Mon 15; AG
+    > 215</cite>
 
-5.  > Re. the antecedent will of God (will prior to arriving at a definite
-    > volition) and the subsequent will of God (his definite eternal
-    > volition): Now this consequent will, final and decisive, results
-    > from the conflict of all the antecedent wills, of those which tend
-    > towards good, even as of those which repel evil; and from the
-    > concurrence of all these particular wills comes the total will. So
-    > in mechanics compound movement results from all the tendencies
-    > that concur in one and the same moving body, and satisfies each
-    > one equally, insofar as it is possible to do all at one time. <cite>T
-    > 22, H 137</cite>
+5.  Re. the antecedent will of God (will prior to arriving at a definite
+    > \> volition) and the subsequent will of God (his definite eternal
+    > \> volition): Now this consequent will, final and decisive,
+    > results \> from the conflict of all the antecedent wills, of those
+    > which tend \> towards good, even as of those which repel evil; and
+    > from the \> concurrence of all these particular wills comes the
+    > total will. So \> in mechanics compound movement results from all
+    > the tendencies \> that concur in one and the same moving body, and
+    > satisfies each \> one equally, insofar as it is possible to do all
+    > at one time. <cite>T \> 22, H 137</cite>
 
 April 17th, 2013 - Lecture
 --------------------------
@@ -3005,19 +3069,16 @@ April 17th, 2013 - Lecture
 -   Voluntary is something that happens because of distinct cognition.
     -   The army, the workers, of the will, is the involuntary.
     -   They'll do what they're inclined to do.
-    
--   We should be looking at the third condition, the circumstance
-    that is sometimes present in the soul, and sometimes not present
-    in the soul.
-    
-	    soul
-  	  ---------->    +-----+
-  	  ->   \         |     |
- 	  --->  \   /    |body |
- 	  ->       /     |     |
-  	                 +-----+
-    	    <-----
-        
+
+-   We should be looking at the third condition, the circumstance that
+    is sometimes present in the soul, and sometimes not present in the
+    soul.
+
+        soul
+
+    ----------\> +-----+ -\>   | | ---\>   / |body | -\> / | | +-----+
+    \<-----
+
 -   We do will things and our voltions have varying degrees of success.
 -   Leibniz is set against any soul body interaction.
 -   Pre-established harmony.
@@ -3025,63 +3086,95 @@ April 17th, 2013 - Lecture
 April 22nd, 2013 - Passages
 ---------------------------
 
-1.  ‘Perception is the expression of many things in one, or in a simple substance: if it is combined with the reflection of the percipient, it is called thought.  We judge perception to apply not only to us but also to other living things or organic beings, and thought to be not only in us but also (and indeed most perfectly) in God.  This quality of the percipient is treated in logic. “Nova Methodus Discendae Docendaeque Jurisprudentiae”, A 6.1, p. 286
- 
-2.  ‘So ‘understanding’ in my sense is what in Latin is called intellectus, and the exercise of this faculty is called ‘intellection’, which is a distinct perception combined with a faculty of reflection, which the beasts do not have.  Any perception which is combined with this faculty is a thought, and I do not allow thought to beasts any more than I do understanding. ‘  NE 173
- 
-3.  Locke challenges Leibniz to name a proposition which is innately known:
-“I would name . . . the propositions of arithmetic and geometry, which are all of that nature; and among necessary truths no other kind is to be found.” NE 86  
-With regard to ideas of contingent things:  “But there is no term which is so absolute or so detached that it does not involve relations and is not such that a complete analysis of it would lead to other things and indeed to all other things.” NE 288
- 
-4. A. Within a human mind, there are sets of ideas so related to thoughts of propositional truths that an ordered set of ideas {1,2,3,…}operating in accord with a tendency to produce thoughts of propositions framed by an ordered set of connectives {c, d, e, . . . } has this relation R to acts of thinking a proposition P just in case {1, 2 ,3, . . .} and {c, d, e,  . . . } contain all the ideas and proposition framing tendencies that are essentially individually necessary and jointly sufficient to cause thoughts of P.
- 
-B. In God’s understanding sets of ideas are related to truths in such a way that an ordered set of ideas {A, B, C, . . .} and an ordered set of connectives {c, d, e, . . .}has R* to a truth just in case {A, B, C, . . . }and {c, d, e, . . .} contain all and only the ideas and connectives from which the truth results.
+1.  ‘Perception is the expression of many things in one, or in a simple
+    substance: if it is combined with the reflection of the percipient,
+    it is called thought. We judge perception to apply not only to us
+    but also to other living things or organic beings, and thought to be
+    not only in us but also (and indeed most perfectly) in God. This
+    quality of the percipient is treated in logic. “Nova Methodus
+    Discendae Docendaeque Jurisprudentiae”, A 6.1, p. 286
+
+2.  ‘So ‘understanding’ in my sense is what in Latin is called
+    intellectus, and the exercise of this faculty is called
+    ‘intellection’, which is a distinct perception combined with a
+    faculty of reflection, which the beasts do not have. Any perception
+    which is combined with this faculty is a thought, and I do not allow
+    thought to beasts any more than I do understanding. ‘ NE 173
+
+3.  Locke challenges Leibniz to name a proposition which is innately
+    known: “I would name . . . the propositions of arithmetic and
+    geometry, which are all of that nature; and among necessary truths
+    no other kind is to be found.” NE 86\
+    With regard to ideas of contingent things: “But there is no term
+    which is so absolute or so detached that it does not involve
+    relations and is not such that a complete analysis of it would lead
+    to other things and indeed to all other things.” NE 288
+
+4.  A. Within a human mind, there are sets of ideas so related to
+    thoughts of propositional truths that an ordered set of ideas
+    {1,2,3,…}operating in accord with a tendency to produce thoughts of
+    propositions framed by an ordered set of connectives {c, d, e, . . .
+    } has this relation R to acts of thinking a proposition P just in
+    case {1, 2 ,3, . . .} and {c, d, e, . . . } contain all the ideas
+    and proposition framing tendencies that are essentially individually
+    necessary and jointly sufficient to cause thoughts of P.
+
+B. In God’s understanding sets of ideas are related to truths in such a
+way that an ordered set of ideas {A, B, C, . . .} and an ordered set of
+connectives {c, d, e, . . .}has R\* to a truth just in case {A, B, C, .
+. . }and {c, d, e, . . .} contain all and only the ideas and connectives
+from which the truth results.
 
 April 22nd, 2013 - Lecture
 --------------------------
 
--   One is abbreviations, so something stands for some content,
-	you can then replace every instance with that abbreviation.
-	-   You come to think of abbreviations as shorthand for the 
-		actual concept.
-	-   One strategy:
-		-   Say you want to think of 50, and you write:
-		
-				|||||||||| |||||||||| |||||||||| |||||||||| ||||||||||
-			
-		-   This requires having 50 things in your mind.
-		-   But if `10` stands for `||||||||||`,
-		
-				10 10 10 10 10
-			
-		-   Etc
-	
-	-   Other strategy:
-		-   If you want to think of a circle, draw one, and you
-			have a model that certain facts will be true about
-			and those things will be true of the abstract circle.
-	
+-   One is abbreviations, so something stands for some content, you can
+    then replace every instance with that abbreviation.
+    -   You come to think of abbreviations as shorthand for the actual
+        concept.
+    -   One strategy:
+        -   Say you want to think of 50, and you write:
+
+                |||||||||| |||||||||| |||||||||| |||||||||| ||||||||||
+
+        -   This requires having 50 things in your mind.
+        -   But if `10` stands for `||||||||||`,
+
+                10 10 10 10 10
+
+        -   Etc
+
+    -   Other strategy:
+        -   If you want to think of a circle, draw one, and you have a
+            model that certain facts will be true about and those things
+            will be true of the abstract circle.
+
 -   The problem is: How do we think about things that are complex.
--   He's talking about propositional knowledge, Leibniz thinks there's
-	a big different between propositional and 
-	
+-   He's talking about propositional knowledge, Leibniz thinks there's a
+    big different between propositional and
+
 -   Implications of Leibniz's perception:
-	1.  Implications cannot be mistaken (it's the judgements that are mistaken).
-	2.  It's impossible to perceive something that does not have parts.
-		-   The only way things register perceptively is through parts.
-		-   This is significant because we can think about monads.
-		-   This means we must have a way of knowing things that is not perceptual (intellectual).
-		-   From the letter to Arnauld, he's explaining what expression is,
-			and he's talking about geometric expressions, and then he says
-			that perception is universal (or something ... )
-		-   We do not have perception of things without parts, true unities,
-			propositions.
-		-   Intellect is linked with the ability to reflect.
-	
--   How do states of the soul express things that are represented by thoughts?
-	-   What's the metaphysical status of things like circles, numbers, etc.
-		-   Ideas are something that is in our mind.
-		-   Traces and 
-		
-	-   How do we get into contact with them?
-			
+    1.  Implications cannot be mistaken (it's the judgements that are
+        mistaken).
+    2.  It's impossible to perceive something that does not have parts.
+        -   The only way things register perceptively is through parts.
+        -   This is significant because we can think about monads.
+        -   This means we must have a way of knowing things that is not
+            perceptual (intellectual).
+        -   From the letter to Arnauld, he's explaining what expression
+            is, and he's talking about geometric expressions, and then
+            he says that perception is universal (or something ... )
+        -   We do not have perception of things without parts, true
+            unities, propositions.
+        -   Intellect is linked with the ability to reflect.
+
+-   How do states of the soul express things that are represented by
+    thoughts?
+    -   What's the metaphysical status of things like circles, numbers,
+        etc.
+        -   Ideas are something that is in our mind.
+        -   Traces and
+
+    -   How do we get into contact with them?
+
+

@@ -512,9 +512,9 @@ June 30th, 2013 <small>Reading: <em>Chapter 1, Computer Networks and the Interne
 
 -   End systems attached to the Intenet provide
     \*\*<abbr title="Application
-        Programming Interfaces">APIs</abbr> that specify how a program
-    on one end system asks the Internet infrastucture to deliver data to
-    a specific destination.
+            Programming Interfaces">APIs</abbr> that specify how a
+    program on one end system asks the Internet infrastucture to deliver
+    data to a specific destination.
 
 ### What Is a Protocol?
 
@@ -1187,6 +1187,7 @@ The project should be submitted through Sakai.
 -   The "main" method should be in a file called RUBTClient.java.
 -   The write-up in HTML or PDF format saved as a writeup.
     <html/pdf>
+        
     .
 -   All files should be submitted as a compressed archive. Acceptable
     formats are `.zip`, `.tgz`/`.tar.gz`, and `.tar.bz2`. This file
@@ -1247,7 +1248,6 @@ sniffing tool like Ethereal to capture the traffic and analyze it.
     usually faster to find an existing implementation than to write one
     yourself.
 
-
 July 1st, 2013 <small>Lecture</small>
 -------------------------------------
 
@@ -1256,9 +1256,9 @@ July 1st, 2013 <small>Lecture</small>
 -   Does the IP address of the host on which a process runs suffice for
     identifying the proces?
     -   No, *many* processes can be running on the same hosts.
-    
+
 July 3rd, 2013 <small>Lecture</small>
---------------------------------------
+-------------------------------------
 
 ### Transport layer
 
@@ -1270,15 +1270,16 @@ July 3rd, 2013 <small>Lecture</small>
 -   *Transport layer* logical communication between processes.
     -   Relies on, enhances, network layer services.
 
-        
 ##### Internet Transport Layer Protocols
 
 -   reliable, in-order delivery (TCP)
     -   congestion control
     -   flow control
     -   connection setup
+
 -   unreliable, unordered delivery: UDP
     -   no-frills extension of “best- effort” IP
+
 -   services not available:
     -   delay guarantees
     -   bandwidth guarantees
@@ -1290,19 +1291,20 @@ July 3rd, 2013 <small>Lecture</small>
 
 -   Demultiplexing at receive host:
     -   delivering received segments to correct socket
-    
+
 -   Multiplexing at send host
-    -   gathering data from multiple sockets, enveloping 
-        data with header (later used for demultiplexing)
-        
+    -   gathering data from multiple sockets, enveloping data with
+        header (later used for demultiplexing)
+
 ##### How Demultiplexing Works
 
 -   host receives IP datagrams
     -   each datagram has source IP address, destination IP address
     -   each datagram carries 1 transport-layer segment
     -   each segment has source, destination port number
-    -   host uses IP addresses & port numbers to direct segment to appropriate socket
-    
+    -   host uses IP addresses & port numbers to direct segment to
+        appropriate socket
+
                           32 bits
             +----------------+---------------+
             | source port #  |   dest port # |
@@ -1315,15 +1317,15 @@ July 3rd, 2013 <small>Lecture</small>
             |       application data msg     |
             |                                |
             +--------------------------------+
-            
+
 ##### Connectionless Demultiplexing
 
 -   When host receives UDP segment:
     -   checks destination port number in segment
     -   directs UDP segment to socket with that port number
 
--   IP datagrams with different source IP addresses and/or 
-    source port numbers directed to same socket
+-   IP datagrams with different source IP addresses and/or source port
+    numbers directed to same socket
 
 ##### How Demultiplexing Works
 
@@ -1331,7 +1333,7 @@ July 3rd, 2013 <small>Lecture</small>
     -   Each datagram has source IP, destination IP,
     -   Each datagram carries 1 tranpsot layer segment
     -   Each segment has source, destination, and port number
-    
+
 ##### Connection-Oriented Demultiplexing
 
 -   TCP socket identified by 4- tuple:
@@ -1339,14 +1341,15 @@ July 3rd, 2013 <small>Lecture</small>
     -   source port number
     -   dest IP address
     -   dest port number
-    
--   recv host uses all four values to direct segment to appropriate socket
+
+-   recv host uses all four values to direct segment to appropriate
+    socket
 -   Server host may support many simultaneous TCP sockets:
     -   each socket identified by its own 4-tuple
 
 -   Web servers have different sockets for each connecting client
     -   non-persistent HTTP will have different socket for each request
-    
+
 #### Connectionless transport: UDP
 
 ##### User Datagram Protocol [RFC 768]
@@ -1359,9 +1362,9 @@ July 3rd, 2013 <small>Lecture</small>
 -   app
     -   connectionless:no handshaking between UDP sender, receiver
     -   each UDP segment handled independently of others
-    
+
 -   Why is there UDP?
-    
+
 ### TCP and UDP
 
 #### The Internet Transport Layer
@@ -1369,10 +1372,11 @@ July 3rd, 2013 <small>Lecture</small>
 -   Two transport layer protocols supported by the Internet:
     -   Reliable: The Transmission Control Protocol (TCP)
     -   Unreliable: The Unreliable Datagram Protocol (UDP)
-    
+
 #### UDP
 
--   UDP is an unreliable transport protocol that can be used in the Internet
+-   UDP is an unreliable transport protocol that can be used in the
+    Internet
 -   UDP does not provide:
     -   connection management
     -   flow or error control
@@ -1382,132 +1386,178 @@ July 3rd, 2013 <small>Lecture</small>
 
 #### Retransmission Timeout (RTO)
 
--   The timeout value is then calculated by multiplying the smoothed RTT by some factor (greater than 1)
-    called
-    -   Timeout =  SRTT
-    -   This coefficient of is included to allow for some variation in the round trip times.
-    
+-   The timeout value is then calculated by multiplying the smoothed RTT
+    by some factor (greater than 1) called
+    -   Timeout = SRTT
+    -   This coefficient of is included to allow for some variation in
+        the round trip times.
+
 #### Karn’s Algorithm
 
 -   Retransmission ambiguity
-    -   Measure RTT from original data segment 
+    -   Measure RTT from original data segment
     -   Measure RTT from most recent segment
-    
+
 -   Either way there is a problem in RTT estimate One solution
-    -   Never update RTT measurements based on acknowledgements from retransmitted packets
-    
+    -   Never update RTT measurements based on acknowledgements from
+        retransmitted packets
+
 -   Problem: Sudden change in RTT can cause system never to update RTT
     -   Primary path failure leads to a slower secondary path
 
 -   Use back-off as part of RTT computation
 -   Whenever packet loss, RTO is increased by a factor
--   Use this increased RTO as RTO estimate for the next segment (not from SRTT)
--   Only after an acknowledgment received for a successful transmission is the timer set to new RTT obtained from SRTT
+-   Use this increased RTO as RTO estimate for the next segment (not
+    from SRTT)
+-   Only after an acknowledgment received for a successful transmission
+    is the timer set to new RTT obtained from SRTT
 
 #### Another Problem with RTT Calculation
 
 -   RTT measurements can sometimes fluctuate severely
-    -   smoothed RTT (SRTT) is not a good reflection of round-trip time in these cases
+    -   smoothed RTT (SRTT) is not a good reflection of round-trip time
+        in these cases
 
 -   Solution: Use Jacobson/Karels algorithm:
     -   Error =RTT - SRTT
-    -   SRTT = SRTT + Error Dev = Dev + δ(|Error| - Dev) Timeout = SRTT+  Dev
-    
+    -   SRTT = SRTT + Error Dev = Dev + δ(|Error| - Dev) Timeout =
+        SRTT+  Dev
+
 July 8th, 2013 <small>Lecture: TCP and UDP Part 2</small>
 ---------------------------------------------------------
 
 ### Principles of Congestion Control
 
--   informally: “too many sources sending too much data too fast for network to handle”
+-   informally: “too many sources sending too much data too fast for
+    network to handle”
 -   different from flow control! manifestations:
     -   lost packets (buffer overflow at routers)
-    -   long delays (queueing in router buffers) 
+    -   long delays (queueing in router buffers)
+
 -   a top-10 problem!
 
 ### TCP Congestion Control
 
 -   Recall: Network layer is responsible for congestion control
 -   However, TCP/IP blurs the distinction In TCP/IP:
-    -   the network layer (IP) simply handles routing and packet forwarding
+    -   the network layer (IP) simply handles routing and packet
+        forwarding
     -   congestion control is done end-to-end by TCP
-    
--   Goal: fully (fairly) utilize the resource (bandwidth) 
+
+-   Goal: fully (fairly) utilize the resource (bandwidth)
     -   Don’t over use - **congestion**
     -   Don’t under use - **waste**
 
 -   Goal: achieve self-clocking state
     -   Even if don’t know bandwidth of bottleneck
     -   Bottleneck may change over time
-    
+
 July 15th, 2013 <small>Assessment <em>Chapter 2</em></small>
 ------------------------------------------------------------
 
 ### Question 1 <small>(20 points)</small>
 
->   List at least four different applications that are naturally suitable 
->   for P2P architectures. For each application, provide a 1 to 2 sentence 
->   justification.
+> List at least four different applications that are naturally suitable
+> for P2P architectures. For each application, provide a 1 to 2 sentence
+> justification.
 
-There are two varieties of applications well suited to P2P architectures, the file distribution variety and the distributed hash table variety. (1) Of the first, you can imagine just the vanilla version being well suited to P2P. The reason file distribution is a good manifestation of P2P is because it does not require an constant connection to an always on server, file sharing can happen with many disparate peers with different portions of the file over time. (2) By extension, you can imagine a P2P architecture that is like file distribution, but is for generating large, random, prime numbers and sharing them or storing them. An example would be a peer group to generate BitCoins. The reason it is a good application of the P2P architecture is because not every peer needs to be connected to a tracker all the time, for instance, when the peer is trying to generate the large, random, prime number, it does not need that server connection. (3) Of the file sharing variety, it's also possible to imagine an apt application where the files distributed are not static, pre-existing files, but files being streamed from a lot of peers. It's a good use of P2P architecture because it requires the first initial always-on server connection, and everything after that is talking to peers and getting content. (4) Of the second variety, which is a P2P database called a distributed hash table, it could be useful to have a database stores the name of content and then the corresponding IP addresses, which means when you query for the content name you're returned it's IP address location. This is a good use of P2P DHT because there is the initial talking to the tracker, but then you talk to peers, who "know" what other peer has a given content in the case of a circular DHT.
+There are two varieties of applications well suited to P2P
+architectures, the file distribution variety and the distributed hash
+table variety. (1) Of the first, you can imagine just the vanilla
+version being well suited to P2P. The reason file distribution is a good
+manifestation of P2P is because it does not require an constant
+connection to an always on server, file sharing can happen with many
+disparate peers with different portions of the file over time. (2) By
+extension, you can imagine a P2P architecture that is like file
+distribution, but is for generating large, random, prime numbers and
+sharing them or storing them. An example would be a peer group to
+generate BitCoins. The reason it is a good application of the P2P
+architecture is because not every peer needs to be connected to a
+tracker all the time, for instance, when the peer is trying to generate
+the large, random, prime number, it does not need that server
+connection. (3) Of the file sharing variety, it's also possible to
+imagine an apt application where the files distributed are not static,
+pre-existing files, but files being streamed from a lot of peers. It's a
+good use of P2P architecture because it requires the first initial
+always-on server connection, and everything after that is talking to
+peers and getting content. (4) Of the second variety, which is a P2P
+database called a distributed hash table, it could be useful to have a
+database stores the name of content and then the corresponding IP
+addresses, which means when you query for the content name you're
+returned it's IP address location. This is a good use of P2P DHT because
+there is the initial talking to the tracker, but then you talk to peers,
+who "know" what other peer has a given content in the case of a circular
+DHT.
 
 ### Question 2 <small>(3 points)</small>
 
-What information is used by a process running on one host to 
-identify a process running on another host?
+What information is used by a process running on one host to identify a
+process running on another host?
 
-1.  Username and Password	
-1.  IP Address and Port Number	
-1.  URL and Filename	
-1.  Protocol and Filesize
+1.  Username and Password\
+2.  IP Address and Port Number\
+3.  URL and Filename\
+4.  Protocol and Filesize
 
 ### Question 3 <small>(0 points ?)</small>
 
-Two distinct Web pages (for example www.mit.edu/research.html and www.mit.edu/students.html) can be sent over the same persistent connection.		
-With nonpersistent connections between browser and origin server, it is possible for a single TCP segment to carry two distinct HTTP request messages.		
-The Date: header in the HTTP response message indicates when the object in the response was last modified.		
+Two distinct Web pages (for example www.mit.edu/research.html and
+www.mit.edu/students.html) can be sent over the same persistent
+connection.\
+With nonpersistent connections between browser and origin server, it is
+possible for a single TCP segment to carry two distinct HTTP request
+messages.\
+The Date: header in the HTTP response message indicates when the object
+in the response was last modified.\
 HTTP response messages never have an empty message body.
-
 
 ### Question 4 <small>(0 points ?)</small>
 
-Given the classes of services provided by transport layers listed below, indicate which are provided by TCP and UDP.
+Given the classes of services provided by transport layers listed below,
+indicate which are provided by TCP and UDP.
 
-TCP	UDP	Both	Neither
-Throughput				
-Timing				
-Security		
+TCP UDP Both Neither Throughput\
+Timing\
+Security
 
 ### Question 5 <small>(3 points)</small>
 
-Suppose you wanted to do a transaction from a remote client to a server as fast as possible. Would you use UDP or TCP? Why?
+Suppose you wanted to do a transaction from a remote client to a server
+as fast as possible. Would you use UDP or TCP? Why?
 
-1.  TCP	
-2.  UDP	
+1.  TCP
+2.  UDP
 
 ### Question 6 <small>(4 points)</small>
 
 Why is it said that FTP sends control information "out-of-band"?
 
-1.  The data transfer protocol has a flexible speed parameter (like a rubber band), but it occasionally goes too fast and is "out-of-band".	
-1.  The control information is sent over a TCP connection separate from the data transfer.	
-1.  It uses frequency division multiplexing and the control information is in a different frequency band than the data.
+1.  The data transfer protocol has a flexible speed parameter (like a
+    rubber band), but it occasionally goes too fast and is
+    "out-of-band".
+2.  The control information is sent over a TCP connection separate from
+    the data transfer.\
+3.  It uses frequency division multiplexing and the control information
+    is in a different frequency band than the data.
 
 July 16th, 2013 <small>Reading <em>Chapter 2</em></small>
 ---------------------------------------------------------
 
 ### Principles of Networking Applications
 
--   The **application architecture** is designed by the application developer 
-    and dictates how the application is structured over the various end systems.
--   a **client-server architecture**, there is an always-on *host*, called the 
-    server, which services requests from many other hosts, called *clients*.
-    -   Web, 
-    -   FTP, 
-    -   Telnet, and 
-    -   e-mail 
+-   The **application architecture** is designed by the application
+    developer and dictates how the application is structured over the
+    various end systems.
+-   a **client-server architecture**, there is an always-on *host*,
+    called the server, which services requests from many other hosts,
+    called *clients*.
+    -   Web,
+    -   FTP,
+    -   Telnet, and
+    -   e-mail
 
--   In a **P2P architecture**, there is minimal (or no) reliance on dedicated 
-    servers in data centers.
+-   In a **P2P architecture**, there is minimal (or no) reliance on
+    dedicated servers in data centers.
 
 -   Transport services can be:
     -   Reliable or not
@@ -1517,17 +1567,17 @@ July 16th, 2013 <small>Reading <em>Chapter 2</em></small>
 
 -   TCP is without error and in the proper order.
     -   There's handshaking and opening connections.
-    
+
 -   UDP is no-frills, lightweight, with minimal services.
     -   Connectionaless, no handshaking.
 
 ### The Web and HTTP
 
 -   The web's application protocol is HTTP
--   TCP connections can be persistent or not, meaning a new
-    one is opened each time or the same way is kept.
+-   TCP connections can be persistent or not, meaning a new one is
+    opened each time or the same way is kept.
 -   For non-persistent,
-    -   
+    -------------------
 
 ### File Transfer: FTP
 
@@ -1539,7 +1589,6 @@ July 16th, 2013 <small>Reading <em>Chapter 2</em></small>
 
 ### Socket Programming: Creating Networking Applications
 
-
 July 16th, 2013 <small>Midterm study guide</small>
 --------------------------------------------------
 
@@ -1547,22 +1596,26 @@ July 16th, 2013 <small>Midterm study guide</small>
 
 #### TCP/IP
 
->   Name the five layers of the TCP/IP protocol stack from highest to lowest
->   and given an example implementation.
+> Name the five layers of the TCP/IP protocol stack from highest to
+> lowest and given an example implementation.
 
 1.  Physical
     -   How bits and bytes are physically represented
     -   RS-232
+
 2.  Datalink
     -   This is how two connected nodes share information.
     -   Wireless and wired communication
     -   802.11
+
 3.  Network
     -   This is how two end hosts connected.
     -   The only network protocol on the Internet is IP
+
 4.  Transport
     -   "End to end abstraction" for hosts.
     -   TCP, UDP
+
 5.  Application.
     -   This is what the user actually sees and interacts with
     -   HTTP, FTP
@@ -1571,93 +1624,113 @@ July 16th, 2013 <small>Midterm study guide</small>
 
 1.  Packet-switching vs. message switching.
 
-    >  Briefly explain the difference(s) between packet switching and message 
-    >  switching. Under what circumstances would packet switching have an
-    >  advantage over message switching?
+    > Briefly explain the difference(s) between packet switching and
+    > message switching. Under what circumstances would packet switching
+    > have an advantage over message switching?
 
-    -   Message switching is where entire peices of unfied data
-        are sent across a network at once.
-    -   Packet switching is where all data is chopped up into packets
-        at potentially every level of hopping between clients.
-    -   The advantage of packet-swtiching is that if a message is dropped,
-        it has to be retransmitted in bulk. Whereas dropping a packet
-        is no big deal, you just ask for the small packet again.
+    -   Message switching is where entire peices of unfied data are sent
+        across a network at once.
+    -   Packet switching is where all data is chopped up into packets at
+        potentially every level of hopping between clients.
+    -   The advantage of packet-swtiching is that if a message is
+        dropped, it has to be retransmitted in bulk. Whereas dropping a
+        packet is no big deal, you just ask for the small packet again.
     -   If you're likely to drop, use packets.
 
 2.  Multi-threading
 
-    > In 2-3 sentences, explain why networked applications inherently 
-    > benefit from a multi- threaded design. Assume that network 
+    > In 2-3 sentences, explain why networked applications inherently
+    > benefit from a multi- threaded design. Assume that network
     > communication is a significant portion of the application.
 
-    -   There are two reasons that multi-threading is suitable
-        for networking:
+    -   There are two reasons that multi-threading is suitable for
+        networking:
         1.  Networking can be taking information from a user while
-            transmitting data, putting the user on one thread and
-            the transmission on the other.
+            transmitting data, putting the user on one thread and the
+            transmission on the other.
         2.  Oftentimes it is important to both send and receive data
             concurrently, or being listening for data while sending
             data. Any of this would require threading.
 
 3.  Classless inter-domain routing
 
-    > Give two reasons why CIDR replaced the original class-based 
+    > Give two reasons why CIDR replaced the original class-based
     > approach to IP address allocation.
-    
+
 4.  HTTP
 
-    > Describe one advantage and one disadvantage of persistent 
-    > connections in HTTP. Be sure to justify our answer for full credit.
-    
+    > Describe one advantage and one disadvantage of persistent
+    > connections in HTTP. Be sure to justify our answer for full
+    > credit.
+
 #### Delay Calculation
 
-> Two hosts communicate with each other via satellites positioned 
-> in a geosynchronous orbit, 35,000 km above the earth, 
-> the two satellites are 30,000 km apart. Each node (host/satellite) 
-> requires 20ms to process any messages. You may assume that 
-> any transmissions propagate at the speed of light (300,000 km/s), 
-> and that no other links are used.
-> 1. The hosts allocate a channel with 1 Mbps of capacity. How long will it take one of the hosts to transmit a 125 KB message to the other. Assume message switching is used, and ignore any response/acknowledgement from the receiving host.
+> Two hosts communicate with each other via satellites positioned in a
+> geosynchronous orbit, 35,000 km above the earth, the two satellites
+> are 30,000 km apart. Each node (host/satellite) requires 20ms to
+> process any messages. You may assume that any transmissions propagate
+> at the speed of light (300,000 km/s), and that no other links are
+> used. 1. The hosts allocate a channel with 1 Mbps of capacity. How
+> long will it take one of the hosts to transmit a 125 KB message to the
+> other. Assume message switching is used, and ignore any
+> response/acknowledgement from the receiving host.
 
-1. Transmission delay: 125 KB * 8 = 1Mb / 1 Mbps * 3 = 3 sec (1 s each link)
-2. Propagation delay: 35000 + 35000 + 30000 = 100,000 km / 300,000 km = 333 ms
-3. Protocol delay: 4*20ms = 80 ms
-4. Total = 3.413 s
+1.  Transmission delay: 125 KB \* 8 = 1Mb / 1 Mbps \* 3 = 3 sec (1 s
+    each link)
+2.  Propagation delay: 35000 + 35000 + 30000 = 100,000 km / 300,000 km =
+    333 ms
+3.  Protocol delay: 4\*20ms = 80 ms
+4.  Total = 3.413 s
 
-#### Distance-Vector Routing 
+#### Distance-Vector Routing
 
 #### BitTorrent Project
 
-> 1. What exactly is the “info hash” of a metainfo file? What purpose does it serve in the context of communication with trackers and peers? What problems might arise if it was removed from the peer handshake?
-> 2. Most contemporary BitTorrent clients are capable of utilizing a distributed hash table (DHT). The DHT allows the clients to identify other peers in the same swarm. Ignoring any legal issues concerning file sharing networks, why would this be considered an advantage for BitTorrent clients?
+> 1.  What exactly is the “info hash” of a metainfo file? What purpose
+>     does it serve in the context of communication with trackers and
+>     peers? What problems might arise if it was removed from the peer
+>     handshake?
+> 2.  Most contemporary BitTorrent clients are capable of utilizing a
+>     distributed hash table (DHT). The DHT allows the clients to
+>     identify other peers in the same swarm. Ignoring any legal issues
+>     concerning file sharing networks, why would this be considered an
+>     advantage for BitTorrent clients?
 
 ### Practice Exam <small>Summer 2011</small>
 
 #### Quickies
 
-> Differentiate between packet switching and message switching, specifically describing scenarios where each would be preferred over the other.
+> Differentiate between packet switching and message switching,
+> specifically describing scenarios where each would be preferred over
+> the other.
 
-> Explain the difference between the recursive and iterative methods of resolving DNS queries.
+> Explain the difference between the recursive and iterative methods of
+> resolving DNS queries.
 
-> List the 5 layers of the IP stack and give a brief description of the purpose of each, including an existing implementation (protocol).
+> List the 5 layers of the IP stack and give a brief description of the
+> purpose of each, including an existing implementation (protocol).
 
-> Describe why the Internet moved from class-based subnetting to the CIDR approach.
+> Describe why the Internet moved from class-based subnetting to the
+> CIDR approach.
 
 #### Network performance
 
-> Calculate the total time required to transfer a 800KB file in the following cases. Assume an RTT (Round Trip Time) of 25ms, a packet size of 5KB, and an initial 2xRTT of handshaking before data is sent. Show your work for full credit; there is no packet header/overhead; 1 KB = 1,000B.
+> Calculate the total time required to transfer a 800KB file in the
+> following cases. Assume an RTT (Round Trip Time) of 25ms, a packet
+> size of 5KB, and an initial 2xRTT of handshaking before data is sent.
+> Show your work for full credit; there is no packet header/overhead; 1
+> KB = 1,000B.
 
-1. The bandwidth is 1Mbps, and data packets can be sent continuously.
-    1. Handshake
-    2. Propagation
-    3. Transmission
-    4. Total
-    
-July 26th, 2013 <small>Project #1</small>
------------------------------------------
+1.  The bandwidth is 1Mbps, and data packets can be sent continuously.
+    1.  Handshake
+    2.  Propagation
+    3.  Transmission
+    4.  Total
 
+July 26th, 2013 <small>Project \#1</small>
+------------------------------------------
 
-### Theory of Operation 
+### Theory of Operation
 
 The second project will expand upon what you did for the first. Your
 client must now open a .torrent file, contact the tracker as well as
@@ -1682,7 +1755,7 @@ you write code defensively, which means that your application will
 likely be more robust than if you only had well-behaved peers to work
 with.
 
-### Assignment Overview 
+### Assignment Overview
 
 Your assignment should basically do the following:
 
@@ -1699,7 +1772,7 @@ Your assignment should basically do the following:
     necessary key/value pairs in the request.  The java.net.URL class is
     a convenient way to accomplish this.
 4.  Tracker announces should be performed no more frequently than the
-    value of "min_interval" (or 1/2 "interval" if "min_interval" is
+    value of "min\_interval" (or 1/2 "interval" if "min\_interval" is
     not present), and no less frequently than twice the value of
     "interval" returned by the tracker. 
 5.  Your client must correctly publish its connection information and
@@ -1745,7 +1818,7 @@ you, but an intuitive approach might be to allocate the total space to
 disk before downloading, and then writing the appropriate pieces into
 the file as they complete. 
 
-### Files Available 
+### Files Available
 
 There are several files available in the Resources section of the site
 in the folder "Project Resources."  The most important is
@@ -1775,7 +1848,7 @@ suggestions to make your code easier to understand and maintain:
 
 -   Naming - Names of classes, methods, and variables should be
     descriptive. For example, if a class has a field containing its hash
-    value, naming the field hash_value is much better than naming
+    value, naming the field hash\_value is much better than naming
     it hv .
 -   Exceptions - Catch exceptions and do something useful with them. For
     example, print a statement describing what went wrong to System.err.
@@ -1786,7 +1859,7 @@ suggestions to make your code easier to understand and maintain:
     clause should be avoided whenever possible.
 -   Efficiency - Avoid being terribly inefficient. For example, if you
     have to sort 10M objects, it's better to sort them with
-    a O(n*lg(n)) algorithm than a O(n^2^) algorithm.
+    a O(n\*lg(n)) algorithm than a O(n^2^) algorithm.
 -   **Encapsulation/Objects** - Encapsulation is a useful feature of
     object-oriented languages, and because you are writing your program
     in an OO language, your program **must** separate the functionality
@@ -1798,12 +1871,12 @@ suggestions to make your code easier to understand and maintain:
     your program into functional units, you will lose points on the
     Style portion of the grading.
 
-### Bencoding (Pronounced "Bee Encoding") 
+### Bencoding (Pronounced "Bee Encoding")
 
 Bencoding a method of encoding binary data. Tracker responses, and
 interpeer communication will be bencoded. Below is how data types are
 bencoded according to the BT protocol. [The following list is taken
-from[http://www.bittorrent.org/beps/bep_0003.html ](http://www.bittorrent.org/beps/bep_0003.html)]
+from[http://www.bittorrent.org/beps/bep\_0003.html ](http://www.bittorrent.org/beps/bep_0003.html)]
 
 -   Strings are length-prefixed base ten followed by a colon and the
     string. They are encoded in UTF-8. For example 4:spam corresponds to
@@ -1823,7 +1896,7 @@ from[http://www.bittorrent.org/beps/bep_0003.html ](http://www.bittorrent.org/b
     be strings and appear in sorted order (sorted as raw byte values,
     not alphanumerics).
 
-### Communication With the Tracker 
+### Communication With the Tracker
 
 Your client must take the information supplied by the TorrentFile object
 and use it to communicate with the tracker. The tracker's IP address and
@@ -1831,12 +1904,12 @@ port number will be given to you by the TorrentFile object, and your
 program must then contact the tracker. Your program will send an HTTP
 GET request to the tracker with the following key/value pairs. Note that
 these are NOT bencoded, but must be properly escaped [this list is taken
-from [http://www.bittorrent.org/beps/bep_0003.html ](http://www.bittorrent.org/beps/bep_0003.html)]:
+from [http://www.bittorrent.org/beps/bep\_0003.html ](http://www.bittorrent.org/beps/bep_0003.html)]:
 
--   info_hash - The 20 byte(160-bit) SHA1 hash of the bencoded form of
+-   info\_hash - The 20 byte(160-bit) SHA1 hash of the bencoded form of
     the info value from the metainfo file. This value will almost
     certainly have to be escaped.
--   peer_id - A string of length 20 which this downloader uses as its
+-   peer\_id - A string of length 20 which this downloader uses as its
     id. Each downloader generates its own id at random at the start of a
     new download. This value will almost certainly have to be escaped.
       You peer ID must NOT start with RUBT.
@@ -1877,29 +1950,30 @@ tracker. This may change during execution, so it should be updated each
 time the tracker is contacted. In the event that the *interval* value is
 excessively large, you may cap it at 180 seconds.
 
-### Communicating With the Peer 
+### Communicating With the Peer
 
 Handshaking between peers begins with byte nineteen (decimal) followed
 by the string 'BitTorrent protocol'. After the fixed headers are 8
 reserved bytes which are set to 0. Next is the 20-byte SHA-1 hash of the
 bencoded form of the info value from the metainfo (.torrent) file. The
-next 20-bytes are the peer id generated by the client. The info_hash
-should be the same as sent to the tracker, and the peer_id is the same
-as sent to the tracker. If the info_hash is different between two
+next 20-bytes are the peer id generated by the client. The info\_hash
+should be the same as sent to the tracker, and the peer\_id is the same
+as sent to the tracker. If the info\_hash is different between two
 peers, then the connection is dropped.
 
 -   All integers are encoded as 4-bytes big-endian. e.g. 1,234 should be
     encoded as (hex) 00 00 04 d2
--   The peer_id should be randomly generated each time the client
+-   The peer\_id should be randomly generated each time the client
     starts.  If you keep the value limited to ASCII alphanumerics,
     debugging can be a lot easier.
 
-After the handshake, messages between peers take the form of `<length
-prefix>``<message ID>``<payload>` , where length prefix is a 4-byte
-big-endian value and message ID is a single decimal character. The
-payload depends on the message. Please consult either of the BT-related
-resources for detailed information describing these messages. Below is a
-list of messages that need to be implemented in the project.
+After the handshake, messages between peers take the form
+of ``` <length prefix>``<message ID>``<payload> ``` , where length
+prefix is a 4-byte big-endian value and message ID is a single decimal
+character. The payload depends on the message. Please consult either of
+the BT-related resources for detailed information describing these
+messages. Below is a list of messages that need to be implemented in the
+project.
 
 -   keep-alive: `<length prefix>` is 0. There is no message ID and no
     payload. These should be sent around once every 2 minutes to prevent
@@ -1921,22 +1995,20 @@ list of messages that need to be implemented in the project.
     each piece in the torrent.  The most significant bit is piece index
     0, then piece index 1, and so on.
 -   request: `<length prefix>` is 13 and message ID is 6. The payload is
-    as follows:
-     `<index>``<begin>``<length>` 
-     Where `<index>` is an integer specifying the zero-based piece
-    index, `<begin>` is an integer specifying the zero-based byte offset
-    within the piece, and `<length>` is the integer specifying the
-    requested length.`<length>` is typically 2^14 (16384) bytes. A
-    smaller piece should only be used if the piece length is not
-    divisible by 16384. A peer may close the connection if a block
-    larger than 2^14 bytes is requested.
+    as follows: ``` <index>``<begin>``<length> ```  Where `<index>` is
+    an integer specifying the zero-based piece index, `<begin>` is an
+    integer specifying the zero-based byte offset within the piece,
+    and `<length>` is the integer specifying the requested
+    length.`<length>` is typically 2\^14 (16384) bytes. A smaller piece
+    should only be used if the piece length is not divisible by 16384. A
+    peer may close the connection if a block larger than 2\^14 bytes is
+    requested.
 -   piece: `<length prefix>` is 9+X and message ID is 7. The payload is
-    as follows:
-     `<index>``<begin>``<block>` 
-     Where `<index>` is an integer specifying the zero-based piece
-    index, `<begin>` is an integer specifying the zero-based byte offset
-    within the piece, and `<block>` which is a block of data, and is a
-    subset of the piece specified by `<index>` .
+    as follows: ``` <index>``<begin>``<block> ```  Where `<index>` is an
+    integer specifying the zero-based piece index, `<begin>` is an
+    integer specifying the zero-based byte offset within the piece,
+    and `<block>` which is a block of data, and is a subset of the piece
+    specified by `<index>` .
 
 During the first project, a lot of people were confused about the order
 of messages after the handshake. Below is an example of what would take
@@ -1946,9 +2018,9 @@ place between two peers setting-up a connection and starting sharing.
     handshake message. The local host then listens for the remote peer
     to respond.
 2.  Upon accepting the incoming connection, the remote peer immediately
-    sends a handshake message (with its' own peer_id). Be sure to
+    sends a handshake message (with its' own peer\_id). Be sure to
     verify the relevant portions of the handshake message. 
-3.  Upon receiving the handshake and verifying the info_hash, both
+3.  Upon receiving the handshake and verifying the info\_hash, both
     hosts then (optionally) send a bitfield message that tells the
     remote peer which pieces it has downloaded and verified so far.
 4.  If a host is interested in what the other peer has downloaded, then
@@ -1969,7 +2041,7 @@ sends a choke message during data transfer, any outstanding requests
 will be discarded and unanswered - they should be re-requested after the
 next unchoke message.
 
-### The Write-Up 
+### The Write-Up
 
 -   Include all group member names as they appear on the roster and your
     student ID.
@@ -2049,15 +2121,14 @@ It is strongly recommended that you bookmark or download the [Sun Java
 following pages:
 
 -   The Main BT Protocol
-    Explanation: [http://www.bittorrent.org/beps/bep_0003.html](http://www.bittorrent.org/beps/bep_0003.html)
+    Explanation: <http://www.bittorrent.org/beps/bep_0003.html>
 -   Another BT Protocol
-    Explanation: [http://wiki.theory.org/BitTorrentSpecification](http://wiki.theory.org/BitTorrentSpecification)
+    Explanation: <http://wiki.theory.org/BitTorrentSpecification>
 -   Java Cryptography: [Java Cryptography Architecture (JCA) Reference
     Guide](http://java.sun.com/javase/6/docs/technotes/guides/security/crypto/CryptoSpec.html)
--   A Page on Maintainable
-    Code: [http://advogato.org/article/258.html](http://advogato.org/article/258.html)
+-   A Page on Maintainable Code: <http://advogato.org/article/258.html>
 -   A Page on HTTP
-    escaping: [http://www.blooberry.com/indexdot/html/topics/urlencoding.htm](http://www.blooberry.com/indexdot/html/topics/urlencoding.htm)
+    escaping: <http://www.blooberry.com/indexdot/html/topics/urlencoding.htm>
 -   [Wireshark ](http://www.wireshark.org/)- A network traffic sniffing
     tool useful for watching network traffic between your client and the
     tracker/peer.
@@ -2081,50 +2152,52 @@ sniffing tool like Wireshark to capture the traffic and analyze it.
     sending the bytes through myself by grabbing the InputStream and
     OutputStream from the Socket, but I can't get a response from the
     tracker. What's going wrong?
-     
-     Contacting the tracker is a simple HTTP GET request. This type of
+
+    Contacting the tracker is a simple HTTP GET request. This type of
     operation is done by every web browser today and even some smaller
     programs. As a result, there exists a class `java.net.URL` that can
     easily handle this type of request. Whatever you're trying to do in
     Java has probably already been done a thousand times, so it's
     usually faster to find an existing implementation than to write one
     yourself.
-    
+
 August 5th, 2013 <small>Chapter 4 Review</small>
 ------------------------------------------------
 
 ### Question 1
 
->   What is the 32-bit binary equivalent of the IP address 192.168.1.55?
+> What is the 32-bit binary equivalent of the IP address 192.168.1.55?
 
 -   11000000101010000000000100110111
 
 ### Question 2
 
->   What are the two most important network-layer functions in a datagram network? [What third 
->   function is additionally important in a virtual circuit network?]
-> 
->   -   <del>Retransmission, Error Correction, [Connection Setup]</del>
->   -   Forwarding, <del>Error Correction</del>, [Session Management]	
->   -   **Forwarding, Routing, [Connection Setup]**
->   -   Routing, Retransmission, [Reliability]
-    
+> What are the two most important network-layer functions in a datagram
+> network? [What third function is additionally important in a virtual
+> circuit network?]
+>
+> -   <del>
+>     Retransmission, Error Correction, [Connection Setup]</del>
+> -   Forwarding, <del>Error Correction</del>, [Session Management]\
+> -   **Forwarding, Routing, [Connection Setup]**
+> -   Routing, Retransmission, [Reliability]
+
 ### Question 3
-    
->   What is the difference between forwarding and routing?
+
+> What is the difference between forwarding and routing?
 
 *Forwarding* refers to the router-local action of transferring a packet
-from an input link interface to the appropriate output link interface. 
+from an input link interface to the appropriate output link interface.
 
-*Routing* refers to the network-wide process that determines the 
+*Routing* refers to the network-wide process that determines the
 end-to-end paths that packets take from source to destination.
 
 ### Question 4
 
->   Suppose an ISP owns the block of addresses of the form 128.119.40.64/25. 
->   Suppose it wants to create four subnets from this block, with each block 
->   having the same number of IP addresses. What are the prefixes (of 
->   form a.b.c.d/x) for the four subnets?
+> Suppose an ISP owns the block of addresses of the form
+> 128.119.40.64/25. Suppose it wants to create four subnets from this
+> block, with each block having the same number of IP addresses. What
+> are the prefixes (of form a.b.c.d/x) for the four subnets?
 
 -   128.119.40.64/25
 -   128.119.40.80/25
@@ -2133,17 +2206,17 @@ end-to-end paths that packets take from source to destination.
 
 ### Question 5
 
->   Identify the different types of data units at different levels 
->   of the network protocol stack. If no answer matches exactly, 
->   choose the best fit. (A) Frame, (B) Segment, (C) Packet, (D) Message
+> Identify the different types of data units at different levels of the
+> network protocol stack. If no answer matches exactly, choose the best
+> fit. (A) Frame, (B) Segment, (C) Packet, (D) Message
 >
->   1. Transport Layer Data Unit **(B)**
->   2. Network Layer Data Unit **(C)**
->   3. Application Layer Data Unit **(D)**
->   4. Link Layer Data Unit **(A)**
-	
-August 7th, 2013 <small>Project #2</small>
-------------------------------------------
+> 1.  Transport Layer Data Unit **(B)**
+> 2.  Network Layer Data Unit **(C)**
+> 3.  Application Layer Data Unit **(D)**
+> 4.  Link Layer Data Unit **(A)**
+
+August 7th, 2013 <small>Project \#2</small>
+-------------------------------------------
 
 ### Theory of Operation
 
@@ -2152,19 +2225,19 @@ client must be able to interface with multiple peers, upload and
 download, accept incoming connections, publish appropriate information
 to the tracker (port, uploaded, downloaded, left, events, etc.) to allow
 remote peers to contact your client. 
- 
- The client must also use the rarest-piece-first algorithm for piece
+
+The client must also use the rarest-piece-first algorithm for piece
 selection; and perform choking and optimistic unchoking.  Throughput
 measurement is necessary to accomplish correct (un)choking behavior. 
 The client should be able to maintain connections to at least ten (10)
 peers, though not all peers need to be uploading/downloading
 simultaneously.
- 
- The user should be able to suspend (quit) the program at any time, and
+
+The user should be able to suspend (quit) the program at any time, and
 the client should NOT terminate until the user provides the appropriate
 input.
- 
- Extra credit will be available to groups that develop a Graphical User
+
+Extra credit will be available to groups that develop a Graphical User
 Interface (GUI) for their client.  The GUI should have complete
 functionality: displaying all relevant information about the client,
 allowing user input, and be aesthetically pleasing.  The extra credit
@@ -2201,7 +2274,7 @@ Your assignment should basically do the following:
 6.  You may limit the number of unchoked connections to 3.  No more than
     6 connections should be active (unchoked) at any point. 
 7.  Tracker scrapes should be performed no more frequently than the
-    value of "min_interval" (or 1/2 "interval" if "min_interval" is
+    value of "min\_interval" (or 1/2 "interval" if "min\_interval" is
     not present), and no less frequently than twice the value of
     "interval" returned by the tracker. 
 
@@ -2238,7 +2311,7 @@ suggestions to make your code easier to understand and maintain:
 
 -   Naming - Names of classes, methods, and variables should be
     descriptive. For example, if a class has a field containing its hash
-    value, naming the field hash_value is much better than naming
+    value, naming the field hash\_value is much better than naming
     it hv .
 -   Exceptions - Catch exceptions and do something useful with them. For
     example, print a statement describing what went wrong to System.err.
@@ -2249,7 +2322,7 @@ suggestions to make your code easier to understand and maintain:
     clause should be avoided whenever possible.
 -   Efficiency - Avoid being terribly inefficient. For example, if you
     have to sort 10M objects, it's better to sort them with
-    a O(n*lg(n)) algorithm than a O(n^2^) algorithm.
+    a O(n\*lg(n)) algorithm than a O(n^2^) algorithm.
 -   **Encapsulation/Objects** - Encapsulation is a useful feature of
     object-oriented languages, and because you are writing your program
     in an OO language, your program **must** separate the functionality
@@ -2266,7 +2339,7 @@ suggestions to make your code easier to understand and maintain:
 Bencoding a method of encoding binary data. Tracker responses, and
 interpeer communication will be bencoded. Below is how data types are
 bencoded according to the BT protocol. [The following list is taken
-from[http://www.bittorrent.org/beps/bep_0003.html ](http://www.bittorrent.org/beps/bep_0003.html)]
+from[http://www.bittorrent.org/beps/bep\_0003.html ](http://www.bittorrent.org/beps/bep_0003.html)]
 
 -   Strings are length-prefixed base ten followed by a colon and the
     string. They are encoded in UTF-8. For example 4:spam corresponds to
@@ -2294,12 +2367,12 @@ port number will be given to you by the TorrentFile object, and your
 program must then contact the tracker. Your program will send an HTTP
 GET request to the tracker with the following key/value pairs. Note that
 these are NOT bencoded, but must be properly escaped [this list is taken
-from [http://www.bittorrent.org/beps/bep_0003.html ](http://www.bittorrent.org/beps/bep_0003.html)]:
+from [http://www.bittorrent.org/beps/bep\_0003.html ](http://www.bittorrent.org/beps/bep_0003.html)]:
 
--   info_hash - The 20 byte(160-bit) SHA1 hash of the bencoded form of
+-   info\_hash - The 20 byte(160-bit) SHA1 hash of the bencoded form of
     the info value from the metainfo file. This value will almost
     certainly have to be escaped.
--   peer_id - A string of length 20 which this downloader uses as its
+-   peer\_id - A string of length 20 which this downloader uses as its
     id. Each downloader generates its own id at random at the start of a
     new download. This value will almost certainly have to be escaped.
 -   port - The port number this peer is listening on. Common behavior is
@@ -2334,10 +2407,10 @@ keys:
 
 In addition to what your program did for the last project, your client
 should also periodically update its status to the tracker. The update
-period should be **no less** than the *min_**interval* returned by the
-tracker (or half of *interval*, if *min_interval* is not present). This
-may change during execution, so it should be updated each time the
-tracker is contacted. In the event that the *interval* value is
+period should be **no less** than the \*min\_\*\*interval* returned by
+the tracker (or half of *interval*, if *min\_interval* is not present).
+This may change during execution, so it should be updated each time the
+tracker is contacted. In the event that the *interval\* value is
 excessively large, you may cap it at 180 seconds.
 
 ### Communicating With the Peer
@@ -2347,8 +2420,8 @@ followed by the string 'BitTorrent protocol'. After the fixed headers
 are 8 reserved bytes which are set to 0. Next is the 20-byte SHA-1 hash
 of the bencoded form of the info value from the metainfo (.torrent)
 file. The next 20-bytes are the peer id generated by the client. The
-info_hash should be the same as sent to the tracker, and the peer_id
-is the same as sent to the tracker. If the info_hash is different
+info\_hash should be the same as sent to the tracker, and the peer\_id
+is the same as sent to the tracker. If the info\_hash is different
 between two peers, then the connection is dropped.  You must verify the
 peer ID of the remote peer if it is available (e.g. from a tracker
 scrape), if the connection is incoming and you have no information about
@@ -2356,7 +2429,7 @@ the connecting peer, you may omit checking the peer ID.
 
 -   All integers are encoded as 4-bytes big-endian. e.g. 1,234 should be
     encoded as (hex) 00 00 04 d2
--   The peer_id should simply be random bytes.  It is suggested that
+-   The peer\_id should simply be random bytes.  It is suggested that
     you make the peer ID ASCII-printable for compatibility with other
     peers and debugging purposes.
 
@@ -2371,37 +2444,35 @@ list of messages that need to be implemented in the project.
     payload. These should be sent around once every 2 minutes to prevent
     peers from closing connections. These only need to be sent if no
     other packets are sent within a 2-minute interval.
--   choke: <**length prefix**> is 1 and message ID is 0. There is no
+-   choke: \<**length prefix**\> is 1 and message ID is 0. There is no
     payload.
--   unchoke: <**length prefix**> is 1 and the message ID is 1. There
+-   unchoke: \<**length prefix**\> is 1 and the message ID is 1. There
     is no payload.
 -   interested: <length prefix> is 1 and message ID is 2. There is no
     payload.
--   uninterested: <length prefix> is 1 and message ID is 3. There is
-    no payload.
+-   uninterested: <length prefix> is 1 and message ID is 3. There is no
+    payload.
 -   have: <length prefix> is 5 and message ID is 4. The payload is a
     zero-based index of the piece that has just been downloaded and
     verified.
--   bitfield: <length prefix> is 1+X and message ID is 5. The payload
-    is a sequence of *X* bytes where each bit indicates whether the peer
+-   bitfield: <length prefix> is 1+X and message ID is 5. The payload is
+    a sequence of *X* bytes where each bit indicates whether the peer
     has the piece at the bit's index. 
 -   request: <length prefix> is 13 and message ID is 6. The payload is
-    as follows:
-     <index><begin><length> 
-     Where <index> is an integer specifying the zero-based piece
-    index, <begin> is an integer specifying the zero-based byte offset
-    within the piece, and <length> is the integer specifying the
-    requested length.<length> is typically 2^14 (16384) bytes. A
-    smaller piece should only be used if the piece length is not
-    divisible by 16384. A peer may close the connection if a block
-    larger than 2^14 bytes is requested.
--   piece: <length prefix> is 9+X and message ID is 7. The payload is
-    as follows:
-     <index><begin><block> 
-     Where <index> is an integer specifying the zero-based piece
-    index, <begin> is an integer specifying the zero-based byte offset
-    within the piece, and <block> which is a block of data, and is a
-    subset of the piece specified by <index> .
+    as follows: <index><begin><length>  Where <index> is an integer
+    specifying the zero-based piece index, <begin> is an integer
+    specifying the zero-based byte offset within the piece,
+    and <length> is the integer specifying the requested
+    length.<length> is typically 2\^14 (16384) bytes. A smaller piece
+    should only be used if the piece length is not divisible by 16384. A
+    peer may close the connection if a block larger than 2\^14 bytes is
+    requested.
+-   piece: <length prefix> is 9+X and message ID is 7. The payload is as
+    follows: <index><begin><block>  Where <index> is an integer
+    specifying the zero-based piece index, <begin> is an integer
+    specifying the zero-based byte offset within the piece,
+    and <block> which is a block of data, and is a subset of the piece
+    specified by <index> .
 
 Below is an example of what would take place between two peers
 setting-up a connection and starting sharing.
@@ -2409,12 +2480,12 @@ setting-up a connection and starting sharing.
 1.  The local host opens a TCP Socket to the remote peer and sends the
     handshake packet. The local host then listens for the remote peer to
     respond.
-2.  Upon receiving the handshake packet and verifying the info_hash,
+2.  Upon receiving the handshake packet and verifying the info\_hash,
     the remote peer responds with a similar handshake packet (except
-    with its peer_id). The remote peer then listens for the local host
+    with its peer\_id). The remote peer then listens for the local host
     to send a bitfield or other packet. The remote host can send a
     bitfield packet to the local host at this time.
-3.  Upon receiving the handshake and verifying the info_hash, the local
+3.  Upon receiving the handshake and verifying the info\_hash, the local
     host then (optionally) sends a bitfield packet which tells the
     remote peer which pieces it has downloaded and verified so far.
 4.  If the local host is interested in what the remote peer has
@@ -2475,12 +2546,13 @@ The project should be submitted through Sakai.
     submitted.
 -   The "main" starting method should be in a file called
     RUBTClient.java.
--   The write-up in HTML or PDF format saved as a writeup.<html/pdf>.
-    Please do not submit a write-up in any other formats
+-   The write-up in HTML or PDF format saved as a writeup.
+    <html/pdf>
+    . Please do not submit a write-up in any other formats
 -   All files should be submitted as a compressed archive. Acceptable
     formats are .zip, .tgz/.tar.gz, and .tar.bz2. This file should be
-    named <NetID>.<EXT>, where <NetID> is your eden NetID and
-    <EXT> is the file type extension.
+    named <NetID>.<EXT>, where <NetID> is your eden NetID and <EXT> is
+    the file type extension.
 -   Late submissions will **not** be accepted. If you have not completed
     the project, submit what you have and you will be graded for partial
     credit.
@@ -2513,15 +2585,14 @@ It is strongly recommended that you bookmark or download the [Sun Java
 following pages:
 
 -   The Main BT Protocol
-    Explanation: [http://www.bittorrent.org/beps/bep_0003.html](http://www.bittorrent.org/beps/bep_0003.html)
+    Explanation: <http://www.bittorrent.org/beps/bep_0003.html>
 -   Another BT Protocol
-    Explanation: [http://wiki.theory.org/BitTorrentSpecification](http://wiki.theory.org/BitTorrentSpecification)
+    Explanation: <http://wiki.theory.org/BitTorrentSpecification>
 -   Java Cryptography: [Java Cryptography Architecture (JCA) Reference
     Guide](http://java.sun.com/javase/6/docs/technotes/guides/security/crypto/CryptoSpec.html)
--   A Page on Maintainable
-    Code: [http://advogato.org/article/258.html](http://advogato.org/article/258.html)
+-   A Page on Maintainable Code: <http://advogato.org/article/258.html>
 -   A Page on HTTP
-    escaping: [http://www.blooberry.com/indexdot/html/topics/urlencoding.htm](http://www.blooberry.com/indexdot/html/topics/urlencoding.htm)
+    escaping: <http://www.blooberry.com/indexdot/html/topics/urlencoding.htm>
 -   [Wireshark ](http://www.wireshark.org/)- A network traffic sniffing
     tool useful for watching network traffic between your client and the
     tracker/peer.
@@ -2545,75 +2616,79 @@ sniffing tool like Ethereal to capture the traffic and analyze it.
     sending the bytes through myself by grabbing the InputStream and
     OutputStream from the Socket, but I can't get a response from the
     tracker. What's going wrong?
-     
-     Contacting the tracker is a simple HTTP GET request. This type of
+
+    Contacting the tracker is a simple HTTP GET request. This type of
     operation is done by every web browser today and even some smaller
     programs. As a result, there exists a class `java.net.URL` that can
     easily handle this type of request. Whatever you're trying to do in
     Java has probably already been done a thousand times, so it's
     usually faster to find an existing implementation than to write one
     yourself.
-    
+
 August 12th, 2013 <small>Chapter 5 Review</small>
 -------------------------------------------------
 
 ### Question 1 <small>(2 points)</small>
 
->   How big is the MAC address space?
-> 
->   -   8 bytes	
->   -   4 bytes	
->   -   **6 bytes**
->   -   16 bytes	
+> How big is the MAC address space?
+>
+> -   8 bytes
+> -   4 bytes
+> -   **6 bytes**
+> -   16 bytes
 
 ### Question 2 <small>(2 points)</small>
 
->   How big is the IPv6 address space?
-> 
->   -   8 bytes	
->   -   4 bytes	
->   -   **16 bytes**
->   -   6 bytes	
+> How big is the IPv6 address space?
+>
+> -   8 bytes
+> -   4 bytes
+> -   **16 bytes**
+> -   6 bytes
 
-- [The length of an IPv6 address is 128 bits, compared with 32 bits in IPv4.](http://en.wikipedia.org/wiki/IPv6#Larger_address_space)
-- 128 bits is equal to 16 bytes.
+-   [The length of an IPv6 address is 128 bits, compared with 32 bits in
+    IPv4.](http://en.wikipedia.org/wiki/IPv6#Larger_address_space)
+-   128 bits is equal to 16 bytes.
 
 ### Question 3 <small>(2 points)</small>
 
->   How big is the IPv4 address space?
-> 
->   -   **4 bytes**	
->   -   6 bytes	
->   -   16 bytes
->   -   6 bytes	
+> How big is the IPv4 address space?
+>
+> -   **4 bytes**
+> -   6 bytes
+> -   16 bytes
+> -   6 bytes
 
 ### Question 4 <small>(5 points)</small>
 
->   Consider the 5-bit generator, G=10011, and suppose that D has the value 1010101010. What is the value of R (in binary)?
+> Consider the 5-bit generator, G=10011, and suppose that D has the
+> value 1010101010. What is the value of R (in binary)?
 
 `0100`
 
 ### Question 5 <small>(4 points)</small>
 
->   Imagine are building your own NAT. What is the MINIMUM 
->   amount of information the NAT's internal TCP connection 
->   table needs to store in order to relay packets?
+> Imagine are building your own NAT. What is the MINIMUM amount of
+> information the NAT's internal TCP connection table needs to store in
+> order to relay packets?
 >
->   -   LAN IP address, LAN port, Dst IP address, Dst port, WAN port	
->   -   LAN IP address, Dst IP address, WAN port ???
->   -   **LAN IP address, LAN port, WAN port**	
->   -   LAN IP address, LAN port, Dst IP address, Dst port
+> -   LAN IP address, LAN port, Dst IP address, Dst port, WAN port\
+> -   LAN IP address, Dst IP address, WAN port ???
+> -   **LAN IP address, LAN port, WAN port**\
+> -   LAN IP address, LAN port, Dst IP address, Dst port
 
 ### Question 6 <small>(8 points)</small>
 
-> While wired link layer communication protocols are able to detect collisions, 
-> wireless links can not. What property of wireless communication prevents 
-> collision detection? Presume all nodes can hear each other.
+> While wired link layer communication protocols are able to detect
+> collisions, wireless links can not. What property of wireless
+> communication prevents collision detection? Presume all nodes can hear
+> each other.
 
-Wireless communication prevents collision detection because, generally, the 
-sender cannot "hear" what the receiver actually receives. A single antenna
-is used to send and receive. More specifically, because a single antenna cannot
-send and receive at the same time, collision detection is impossible.
+Wireless communication prevents collision detection because, generally,
+the sender cannot "hear" what the receiver actually receives. A single
+antenna is used to send and receive. More specifically, because a single
+antenna cannot send and receive at the same time, collision detection is
+impossible.
 
 August 13th, 2013 <small>Final Exam Study Guide</small>
 -------------------------------------------------------
@@ -2624,38 +2699,42 @@ August 13th, 2013 <small>Final Exam Study Guide</small>
 -   communication path are **links**
 -   Link layers services:
     -   Framing
-        -   encapsulate datagram into frame, adding header, trailer link access
+        -   encapsulate datagram into frame, adding header, trailer link
+            access
+
     -   channel access if shared medium
     -   Reliable delivery between adjacent nodes
     -   Flow Control
     -   Error Detection
     -   Error Correction
     -   Half-duplex and full-duplex
-        -   with half duplex, nodes at both ends of link can transmit, but not at same time
+        -   with half duplex, nodes at both ends of link can transmit,
+            but not at same time
 
 ### Exam guesses and Questions
 
 #### Question 0
 
->   If every node in a network has implemented **Hamming Codes** at the
->   link layer to provide error detection and correction, 
->   why is it ___ to have __ __ at _____?
-    
--   Hamming codes correct all single bit errors with only 
-    `log(M)` extra bits and detect double bit errors
+> If every node in a network has implemented **Hamming Codes** at the
+> link layer to provide error detection and correction, why is it \_\_\_
+> to have \_\_ \_\_ at \_\_\_\_\_?
+
+-   Hamming codes correct all single bit errors with only `log(M)` extra
+    bits and detect double bit errors
 -   The question is about a layer other than the link, I think.
--   s othe receiver might deliver a corrupted datagram to the 
-    network layer, or be unaware that the contentf a
-    field in the frame’s header has been corrupted.
-    
+-   s othe receiver might deliver a corrupted datagram to the network
+    layer, or be unaware that the contentf a field in the frame’s header
+    has been corrupted.
+
 #### Question 1
 
->   Presume you have written ______ . Would ____ in order to ___ ? 
->   (think carefully about the **HTTP messages** you've seen and how they operate)
+> Presume you have written \_\_\_\_\_\_ . Would \_\_\_\_ in order to
+> \_\_\_ ? (think carefully about the **HTTP messages** you've seen and
+> how they operate)
 
 #### Question 2
 
->   What is the __ of the ____ at each of the following _?
+> What is the \_\_ of the \_\_\_\_ at each of the following \_?
 
 Presumably some sort of fill in the blank.
 
@@ -2667,39 +2746,44 @@ Presumably some sort of fill in the blank.
     -   Integrity
     -   Authorization
 
->   1.  Public/private key challenge mechanism does not provide authentication. 
->       _____ how the ___ can be ____. 
->   2.  Public key encryption by itself does not provide __. What can 
->       be _____ __ __ to provide ____. Explain why ____. 
->   3.  Does public  key encryption provide ____ without any modification? Why or why not?
->   4.  How ______ _ ___ a public key ___ ___ secure?
+> 1.  Public/private key challenge mechanism does not provide
+>     authentication. \_\_\_\_\_ how the \_\_\_ can be \_\_\_\_.
+> 2.  Public key encryption by itself does not provide **. What can be
+>     **\_\_\_ \_\_ \_\_ to provide \_\_\_\_. Explain why \_\_\_\_.
+> 3.  Does public key encryption provide \_\_\_\_ without any
+>     modification? Why or why not?
+> 4.  How \_\_\_\_\_\_ \_ \_\_\_ a public key \_\_\_ \_\_\_ secure?
 
 1.  Public key certification
-    -   
-    
-2. Message integrity.
-3. 
+    ------------------------
+
+2.  Message integrity.
+
+3.
 
 ##### Sub-question 2
 
 -   Possible attacks:
-    -   Man in the middle attack
-        >   Bob receives everything that Alice sends, and vice versa. 
-        >   (e.g., so Bob, Alice can meet one week later and recall conversation)
-        >   Problem to solve: key distribution
-        
+    -   Man in the middle attack \> Bob receives everything that Alice
+        sends, and vice versa. \> (e.g., so Bob, Alice can meet one week
+        later and recall conversation) \> Problem to solve: key
+        distribution
+
     -   playback attack
         -   To avoid playback, use a nonce.
-        -   Send R, large number, and expect it back encrypted with the private key.
-    
->   1.  _ can be broken with a _____ attack. Explain what a ____ attack is. What is '__'?
->   1.  What is a '____”?
->   1.  What is _____?
+        -   Send R, large number, and expect it back encrypted with the
+            private key.
+
+> 1.  \_ can be broken with a \_\_\_\_\_ attack. Explain what a \_\_\_\_
+>     attack is. What is '\_\_'?
+> 2.  What is a '\_\_\_\_”?
+> 3.  What is \_\_\_\_\_?
 
 ##### Sub-question 3
 
 ### Richie
 
-1. CRC
-2. Timing
-3. Routing table
+1.  CRC
+2.  Timing
+3.  Routing table
+

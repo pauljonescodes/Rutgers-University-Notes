@@ -186,9 +186,9 @@ May 28th, 2013 <small>Reading</small>
 >
 > (e) The man who will get the job has ten coins in his pocket.
 >
--   Smith has strong evidence for (d).
--   (d) entails (e).
-
+> -   Smith has strong evidence for (d).
+> -   (d) entails (e).
+>
 -   Smith accepts (e) on the grounds of (d), which he is justified in
     doing.
 -   But unknown to Smith, he, not Jones, will get the job.
@@ -207,10 +207,10 @@ May 28th, 2013 <small>Reading</small>
 >
 > (i) Either Jones owns a Ford, or Brown is in Brest-Litovsk.
 >
--   Smith has strong evidence to believe that (f).
--   Smith accepts (g), (h), and (i) *on the basis of* (f).
-    -   Smith is completely justified in doing so.
-
+> -   Smith has strong evidence to believe that (f).
+> -   Smith accepts (g), (h), and (i) *on the basis of* (f).
+>     -   Smith is completely justified in doing so.
+>
 -   Imagine that Jones does *not* own a Ford, but is driving a rented
     car.
     -   And by coincidence, Brown happens to be in Barcelona, making (h)
@@ -1903,30 +1903,28 @@ June 25th, 2013 <small>Reading</small>
 > a reason to believe $P$, then $S$ knows $D$ is false.
 
 June 27th, 2013 <small>Lecture: Testimony and Justification</small>
-------------------------------------------------------------------
+-------------------------------------------------------------------
 
 -   There are various pathways to knowledge.
     -   Some pathways are **generative**
-        -  Perception, for example.
-        
+        -   Perception, for example.
+
     -   Some pathways are **preservative**
         -   Inference
 
 -   There are controversies about how to classify certain sources of
-    knowledge.
-        -   You may think that they are preservative in that the follow way:            
-            >   It's natural to think that what memory does is transmit
-            >   some peice of knoweldge or justified belief from one's
-            >   earlier self to one's later self.
+    knowledge. - You may think that they are preservative in that the
+    follow way:\
+     \> It's natural to think that what memory does is transmit \> some
+    peice of knoweldge or justified belief from one's \> earlier self to
+    one's later self.
 
--   A strong version of preservative view of testimony is that
-    in order to come know $P$ from testimony, the testifier
-    must know $P$.
--   Lackey thinks that people who don't know something can come
-    to have you know that P.
-    >   **JP**: If $S$ reports that $P$ to $H$ and $H$ has no defeaters for 
-    >   $S$'s report that $P$, then $H$ is justified in accepting that 
-    >   $P$ on the basis of $S$'s testimony.
+-   A strong version of preservative view of testimony is that in order
+    to come know $P$ from testimony, the testifier must know $P$.
+-   Lackey thinks that people who don't know something can come to have
+    you know that P. \> **JP**: If $S$ reports that $P$ to $H$ and $H$
+    has no defeaters for \> $S$'s report that $P$, then $H$ is justified
+    in accepting that \> $P$ on the basis of $S$'s testimony.
 
 July 4th, 2013 <small>Paper</small>
 -----------------------------------

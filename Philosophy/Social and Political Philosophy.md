@@ -98,8 +98,8 @@ October 16th, 2012
 
 -   Egoists
     -   There is something that the fool and the egoist have in common.
-        1. Accepts the sum (aggregate) of individual utilities. 2. But
-        denies impartiality
+        1.  Accepts the sum (aggregate) of individual utilities. 2. But
+            denies impartiality
 
 November 9th, 2012
 ------------------
@@ -806,7 +806,7 @@ Mills On Liberty
             and that of one offended  by it. If we dont agree with ones
             behavior, we can avoid his company (without parading the
             avoidance), warn others, not offer him optional positions.\
-            Examples: temperance laws; Sabbatical precepts; persecution
+             Examples: temperance laws; Sabbatical precepts; persecution
             of Mormons because of polygamy.
 
 ### Chapter V: Applications

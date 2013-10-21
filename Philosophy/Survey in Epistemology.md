@@ -1026,11 +1026,116 @@ October 21st, 2013 <small>Chapter 5, 'Contextualism and Pragmatic Encroachment'<
 October 21st, 2013 <small>Seminar</small>
 -----------------------------------------
 
-October 23rd, 2013 <small>???</small>
--------------------------------------
+### Announcements
 
-October 23rd, 2013 <small>Seminar</small>
------------------------------------------
+-   No make-up class on October 28th, 2013.
+-   Paper due November 4th, 2013.
+
+### Presentation <small>The Bank Argument: A Non-Contextualist Explanation</small>
+
+#### Bottom-line Up-front
+
+-   Contextualists fail to consider a plausible explanation for the
+    cases, one that does not require an appeal to contextualism.
+    -   I will argue for this more plausible explanation.
+    -   I will not argue that Contextualism is false.
+        -   I simply hope to take away some motivation for it.
+
+#### Contextualism
+
+-   'knows that *p*' varies in its sense across context of speech. Thus,
+    '*S* knows that *p*' can have one sense in one context of use and
+    another in another context.
+
+#### The Bank Argument
+
+1.  In Case A, you speak the truth when you say, "I know it'll be open."
+2.  In Case B, you speak the truth when you say "I don't know it'll be
+    open."
+3.  Your epistemic position is the same across Cases A and B
+    (stipulated).
+4.  If (3), then if 'know' had the same sense in the two contexts, then
+    you couldn't speak the truth in both cases in saying what you do.
+5.  So, 'know' must have a different sense in the two contexts (i.e.
+    contextualism is true).
+
+> The two invariantist objections we considered so far, the loose use
+> objection to Premise 1 and the current objection to Premise 2 are
+> similar in nature. They both maintain that a certain statement can be
+> appropriate to make without being true, and they both try to explain
+> what makes the statement appropriate despite being false. The question
+> is whether their explanations are more plausible than Premises 1 and
+> 2.
+
+#### Goldman comments
+
+-   People who publish in a good journal or book have thought *very
+    closely* about the cases they've illustrated.
+    -   The case is supposed to have *only the cases the author wants*.
+    -   They wouldn't want any other peculiarities to set in.
+    -   It would always be possible when you're given a case, say a
+        Gettier one, and someone just says, "He doesn't know" and a
+        philosopher thinks this is a JTB without K.
+        -   Suppose someone says no, the reason he doesn't know is
+            because *there is a gun to his head*.
+
+-   On the basis that the agent thinks that certainty is necessary for
+    knowledge.
+-   If we're talking about philosophical investigations about a case,
+    then we want the carefully constructed case that everyone uses and
+    is aware of what ingredients went in and what features came out.
+-   If you add a feature to a case and do not take away any, it is still
+    too specific to be illuminating for what's captured by the more
+    general case.
+-   "How *natural* would it be to say this in this context."
+    -   We're trying to understand the *language* of knowledge.
+    -   Connect up theory of *language* with theory of *knowledge*.
+        -   The meanings, senses, of languages.
+        -   Is this a case in which this is a case of *f* or not a case
+            of *f*?
+
+-   No one has to explain a case that is inconsistent.
+-   When you make a case, you want it to be a case that non-philosophers
+    can read, understand, appreciate.
+-   Philosophers would deal with how you deal with cases.
+
+### Questions
+
+1.  How does an invariantist arrive a non-arbitrary standard for the
+    word "know"? How is one standard better than another?
+    -   You're noticing that contextualism is usually opposed to
+        invariantism now'a'days as a type of view.
+    -   If you *don't* accept contextualism, you're going to be an
+        invariantist.
+    -   The main person responsible is Peter Unger for this distinction.
+    -   One of two types of approaches:
+        1.  The standard is always the same.
+        2.  No, the standards *could vary*.
+
+    -   "How could this view *possibly* be endorsed?"
+    -   Unger's first book was called *Ignorance*, where everyone was
+        ignorant because everyone knew nothing.
+        -   He uses flatness as one of his examples.
+        -   There are *absolute terms*, where the terms are "*X* is *F*,
+            that *X* is as *F* as *F* can be."
+            -   Know is an *absolute term*.
+            -   This was his way of defending skepticism.
+            -   To know is to have absolute certainty.
+
+    -   To be honest, Goldman says, contextualism has made people worry
+        that people are uneasy about invariantism.
+        -   The *one unique threshold*.
+
+    -   There a lot of vague words used categorically.
+
+2.  On pg. 5, standards implementation, relevant alternatives. Do
+    heightened stakes last through time? Could a standard diminish over
+    time?
+    -   We're studying relation, phenomena *F*, and we want to see if we
+        have a case of *F*, to make an attribution of *F*.
+        -   There is a difference between what knowledge *is* and what
+            knowledge *attributions* are.
+        -   "Knowledge relations." *Really knowing*, *with certainty*.
 
 October 28th, 2013 <small>Chapter 6, 'Perceptual Justification'</small>
 -----------------------------------------------------------------------

@@ -158,13 +158,13 @@ in the exchange are liable; e.g. if you give away solutions to friends,
 you're putting yourself at risk too. If you get caught, it's a nasty
 process---| just don't go there! You're better off asking for help, or
 at worst, dropping the course and trying it again. The department
-academic integrity policy can be found at 
-[here](http://www.cs.rutgers.edu/policies/academicintegrity/). 
-You now need to click explicitly on a link when first login to our 
-computing facilities,use handin, etc., that says you acknowledge 
-being aware of the policy (which you can read through the login screen). 
-If you fail to do the click-through by the end of September, 
-your access to our facilities will cease October 1.
+academic integrity policy can be found at
+[here](http://www.cs.rutgers.edu/policies/academicintegrity/). You now
+need to click explicitly on a link when first login to our computing
+facilities,use handin, etc., that says you acknowledge being aware of
+the policy (which you can read through the login screen). If you fail to
+do the click-through by the end of September, your access to our
+facilities will cease October 1.
 
 #### The Gilligan's Island Rule
 
@@ -952,7 +952,7 @@ February 13th, 2013 - Lecture
 
 -   base 2, each digit is 0 or 1
 -   Numbers are written as \\( d\_n, ..., d\_2, d\_1, d\_0 \\)
--   Value of number is computer as \\[ \sum\_{i = 0}^n d\_i \times 2^i
+-   Value of number is computer as \\[ \sum\_{i = 0}\^n d\_i \times 2\^i
     \\]
 
 ### Hexadecimal numbers
@@ -961,7 +961,7 @@ February 13th, 2013 - Lecture
 -   Each digit c an be one of 16 different valyes
     -   Symbols = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F}
 
--   Value \\[ \sum\_{i = 0}^n d\_i \times 16^i \\]
+-   Value \\[ \sum\_{i = 0}\^n d\_i \times 16\^i \\]
 
 ### Octal numbers
 
@@ -970,7 +970,7 @@ February 13th, 2013 - Lecture
 -   Grabbing 3 bits at a time
 -   Value =
 
-\\[ \sum\_{i = 0}^n d\_i \times 8^i \\]
+\\[ \sum\_{i = 0}\^n d\_i \times 8\^i \\]
 
 ### Converting hex to binary
 
@@ -994,19 +994,19 @@ February 13th, 2013 - Lecture
 
 ### Decimal to binary
 
--   What is the largest power of 2, q, r... such that \\[ n = 2^p +
-    r\_1 \\] where \\(r\_1 \le 2^p \\) \\[n - 2^p = 2^q + r\_2\\]
-    where \\(\*r\_2 \le 2^q \\) \\[ n - (2^p + 2^q) = 2^r + r\_3\\]
-    where \\(r\_3 \< r^r\\)
+-   What is the largest power of 2, q, r... such that \\[ n = 2\^p +
+    r\_1 \\] where \\(r\_1 \le 2\^p \\) \\[n - 2\^p = 2\^q + r\_2\\]
+    where \\(\*r\_2 \le 2\^q \\) \\[ n - (2\^p + 2\^q) = 2\^r + r\_3\\]
+    where \\(r\_3 \< r\^r\\)
 
 ### Decimal and binary fractions
 
 -   In decimal, digits to the right of radix point have value
-    \\(\frac{1}{10}^i\\) for each digit in the \\(i^{th}\\) place
+    \\(\frac{1}{10}\^i\\) for each digit in the \\(i\^{th}\\) place
     -   0.25 is 2/10 + 5/100
 
 -   Similarly, ib binary, digits to the right of radix point have value
-    \\(1/2^i\\) for each ith place
+    \\(1/2\^i\\) for each ith place
     -   Just the base is different
 
 ### Data sizes
@@ -1051,10 +1051,10 @@ February 13th, 2013 - Lecture
         1100 = -4
         1011 = -3
 
--   Unsigned integers n bits \\[0 ... 2^n - 1\\]
+-   Unsigned integers n bits \\[0 ... 2\^n - 1\\]
 
--   Signed magnitude \\[ 10000*{10} = 00002710\\] \\[-10000*{10} =
-    80002710 \\] \\[-2^{n-1} ... 2^{n-1} \\]
+-   Signed magnitude \\[ 10000\*{10} = 00002710\\] \\[-10000\*{10} =
+    80002710 \\] \\[-2\^{n-1} ... 2\^{n-1} \\]
 
         00000000 = 0
         80000000 = 0
@@ -1085,12 +1085,12 @@ February 13th, 2013 - Lecture
 
 -   Two's complement in n bits
 
-    -   value \\[-d_{n-1}2^{n-1} \\]\\[\sum_{i=0}^{n-1}d_is^i\\]
+    -   value \\[-d\_{n-1}2\^{n-1} \\]\\[\sum\_{i=0}^{n-1}d\_is^i\\]
     -   range \\[ \left[ -2^{n-1}, 2^{n-1}-1\right]\\]
 
 -   Some math
 
-\\[1000*{10} = 000003E8 = \\] \\[0x2^{31} + 1000*{10} = 1000 \\]
+\\[1000\*{10} = 000003E8 = \\] \\[0x2\^{31} + 1000\*{10} = 1000 \\]
 
 \\[-1000\_{10} = FFFFFC18\\]
 
@@ -1612,7 +1612,7 @@ Represents the character which this node is responsible for. Every word
 in the subtree, defined later in this document, will begin with this
 character.
 
-##### char_tree_node *left, *right
+##### char\_tree\_node *left, *right
 
 These represent the edges between two nodes, forming a tree structure.
 
@@ -1647,7 +1647,7 @@ appeared in total. It is case-insensitive instances.
 
 When outputted, this will be called “Total No. Occurrences.”
 
-##### struct word_tree_node *left, *right
+##### struct word\_tree\_node *left, *right
 
 So as to create a tree structure, these pointers represent a left and
 right, where every sub-tree to the left contains values strictly smaller
@@ -1664,7 +1664,7 @@ exist in the document.
 
 When outputted, this will be called “No. Case-Sensitive Versions.”
 
-##### struct word_list_node *case_sensitive_list
+##### struct word\_list\_node \*case\_sensitive\_list
 
 This is a singly-linked-list which is defined below.
 
@@ -1829,7 +1829,7 @@ February 18th, 2013 - Lecture
 -   If in 32 bit quantity 0 is our least significant and 31 is the most,
     then shifting to the left yields to the left bit being lost (?)
 -   In C operators are `<<` and `<<=`
--   Shifting left n bits is exactly euivilent to mutiplying 2^n
+-   Shifting left n bits is exactly euivilent to mutiplying 2\^n
     -   if you want a nice way to multiply something by two, this is
         ideal.
 
@@ -2076,30 +2076,32 @@ February 26th, 2013 - Recitation
 February 26th, 2013 - Lecture: Assembly Language Programming
 ------------------------------------------------------------
 
-> How are you? <cite>Student</cite>
-> Not dead yet. <cite>Brian Russel</cite>
+> How are you? <cite>Student</cite> Not dead yet. <cite>Brian
+> Russel</cite>
 
 ### Indexed Mode Addressing
 
-- Add content of two registers to get address of operand
+-   Add content of two registers to get address of operand
 
-		movl (%eab, %esi), %eax
-		// Copy value at address = eab + esi into eax
-		movl 8(%eab, %esi), %eax
-		// Copy value at address = 8 + eab + esi into eax
-		
-- Useful for dealing with arrays
-- Autovariables and formal parameters are treated pretty much the same.
+        movl (%eab, %esi), %eax
+        // Copy value at address = eab + esi into eax
+        movl 8(%eab, %esi), %eax
+        // Copy value at address = 8 + eab + esi into eax
+
+-   Useful for dealing with arrays
+-   Autovariables and formal parameters are treated pretty much the
+    same.
 
 ### Address Computation Examples
 
-		%edx   0xf0000
-		%ecx   0x100
-		
-		Expression    Computation      Adress
-		0x8 (%edx)    0xf0000 + 0x8    0xf008
+        %edx   0xf0000
+        %ecx   0x100
+        
+        Expression    Computation      Adress
+        0x8 (%edx)    0xf0000 + 0x8    0xf008
 
-## February 28th, 2013 - Lecture
+February 28th, 2013 - Lecture
+-----------------------------
 
 ### Some Arithmetic Operations
 
@@ -2108,44 +2110,44 @@ February 26th, 2013 - Lecture: Assembly Language Programming
     subl  Src,Dest   Dest = Dest -  Src
     imull Src,Dest   Dest = Dest *  Src
     sall  src,Dest   Dest = Dest << Src (left shift)
-    
+
     sarl  Src,Dest   Dest = Dest >> Src (right shift)
     xorl  Src,Dest   Dest = Dest ^  Src
     andl  Src,Dest   Dest = Dest &  Src
     orl   Src,Dest   Dest = Dest |  Src
 
 March 1st, 2013 - Notes: [IEEE 754](http://en.wikipedia.org/wiki/Single-precision_floating-point_format#IEEE_754_single-precision_binary_floating-point_format:_binary32)
-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
         sign           exponent (8 bits)            fraction (23 bits)
         +--+    +--++--++--++--++--++--++--++--+    +--+          +--+
         |01|    |02||03||04||05||06||07||08||09|    |10|    ...   |23|
         +--+    +--++--++--++--++--++--++--++--+    +--+          +--+
         
-$$(-1)^\text{sign} \times $$
-$$(1 + \sum_{i=1}^{23} b_{23-i} 2^{-i} )$$
+
+$$(-1)^\text{sign} \times $$ $$(1 + \sum_{i=1}^{23} b_{23-i} 2^{-i} )$$
 $$\times 2^{(e-127)}$$
 
 March 5th, 2013 - Lecture
 -------------------------
 
-- Flags
+-   Flags
 
         cf  carry
         zf  zero
         sf  sign
         of  overflow
-    
+
 -   You can think of the compare as a "non destrutive subtraction."
 
         cmp  [b w l q] src,dst
         test [b w l w] src,dst
-    
+
 -   These, evidently, are not very interesting bu we need to know them
     anyway.
 -   A column of "conditional jumps" to some target, the target being
     some lable we can specify in the program.
-    
+
         ==          je
         !=          jne
         signed >    jg
@@ -2159,12 +2161,12 @@ March 5th, 2013 - Lecture
 
         negative?       js
         not negative?   jns
-        
+
 -   Jumps
     -   Direct
-    
+
             jmp .l37 (?)
-    
+
 -   if-else
 
         movl    12(%ebp),%edx
@@ -2179,7 +2181,7 @@ March 5th, 2013 - Lecture
         .
         .
         done
-        
+
 -   more code
 
         movl    12(%ebp),%edx
@@ -2191,7 +2193,7 @@ March 5th, 2013 - Lecture
         jmp     donez
 
 -   for loop
-    
+
         top:
             movl    $i, %eax
             jge     done
@@ -2201,7 +2203,7 @@ March 5th, 2013 - Lecture
             inc     %eax
             jmp     top
         done:
-        
+
 -   condition flags
 
         ==          zf
@@ -2217,7 +2219,6 @@ March 8th, 2013 - Calc and Format Readme
 ----------------------------------------
 
 ### Calc
-
 
 #### Design and Implementation
 
@@ -2469,34 +2470,34 @@ March 12th, 2013 - Lecture
         pushl   imm16   %esp-=2 %imm16->(%esp)
 
 -   32 bits
-    
+
         pushw   reg32   %esp-=4 %reg32->(%esp)
         pushl   mem32   %esp-=4 %reg32->(%esp)
         pushl   imm32   %esp-=4 %imm32->(%esp)
-    
+
 -   64 bits (quad words)
 
         pushw   reg32   %esp-=4 %reg32->(%esp)
         pushl   mem32   %esp-=4 %reg32->(%esp)
         pushl   imm32   %esp-=4 %imm32->(%esp)   
-        
+
 ### Pop instructions
 
 -   16 bits
 
         popw    reg16   (%esp)->reg16,  %esp+=2 
         popw    mem16   (%esp)->mem16,  %esp+=2
-        
+
 -   32 bits
 
         popl    reg32   (%esp)->reg32,  %esp+=4 
         popl    mem32   (%esp)->mem32,  %esp+=4
-        
+
 -   64 bits
 
         popq    reg64   (%esp)->reg64,  %esp+=8
         popq    mem64   (%esp)->mem64,  %esp+=8
-        
+
 ### Discussion
 
 -   If you push your bytes, pop your bytes.
@@ -2504,30 +2505,31 @@ March 12th, 2013 - Lecture
     -   Each stack frame corresponds to each function call in C.
     -   The stack frame contains space for formal parameters and
         automatic variables.
-        -   If I have a recursive function, every formal parameter
-            gets a seperate space with a seperate activation record.
-            
+        -   If I have a recursive function, every formal parameter gets
+            a seperate space with a seperate activation record.
+
     -   We are not limited to 2, 4, 8 bytes.
     -   Each stack frame needs a return address.
     -   The way to resume execution when we're done with the call.
     -   The same way we use the `%esp` register to point to the top of
         the stack, we use the `%ebp` call frame to point to the most
         recently called stack frame.
-        
+
 ### Call instructions
 
         call    label       direct
         call    *operand    indirect
         
+
 -   The first call just has a label as an operand, we call this a direct
     call
     -   Hard-coded
-    
+
 -   The indirect call can specify a memory location or a register.
     -   Goes to the place and pulls the traget location and transfers
         control there.
-        
-### Variables 
+
+### Variables
 
         pushl   %ebp
         movel   %esp, %ebp
@@ -2557,6 +2559,7 @@ March 12th, 2013 - Lecture
                 |return address   |
                 +-----------------+
                 
+
 March 5th, 2013 - Programming Assignment 3: Assembly Language Programming
 -------------------------------------------------------------------------
 
@@ -2675,13 +2678,13 @@ with and without the -O option (optimization). You should then compare
 the two versions and explain the differences inside the mystery
 function.
 
-For example: 
+For example:
 
-	\$ gcc -S mystery.c 
-	\$ mv mystery.s mystery.unoptimized.s
-	\$ gcc -S -O mystery.c 
-	\$ diff --side-by-side mystery.unoptimized.s
-	mystery.s
+    \$ gcc -S mystery.c 
+    \$ mv mystery.s mystery.unoptimized.s
+    \$ gcc -S -O mystery.c 
+    \$ diff --side-by-side mystery.unoptimized.s
+    mystery.s
 
 The last command in the above sequence will show you the differences
 between the two .s files side by side (use a large terminal window). You
@@ -2689,13 +2692,13 @@ should look at the differences inside the mystery function and explain
 why the compiler made the changes that it did when optimizing the code.
 Collaboration: Please do not share your solution with your classmates as
 this gives the problem away. You may help each other with understanding
-Assembly details but not the solution. 
+Assembly details but not the solution.
 
-### Submission 
+### Submission
 
-You have to e-submit the assignment using Sakai. Your submission should be a tar
-file named pa3.tar that can be extracted using the command: Your tar
-file must contain: tar xf pa3.tar
+You have to e-submit the assignment using Sakai. Your submission should
+be a tar file named pa3.tar that can be extracted using the command:
+Your tar file must contain: tar xf pa3.tar
 
 -   A sub-directory named formula. formula must contain:
 -   readme.pdf: this file should describe your design and implementation
@@ -2773,7 +2776,7 @@ be good:
     to make it easier for us to look at your code: - Define prototypes
     for all functions. - Place all prototype, typedef, and struct
     definitions in header (.h) files. - Error and warning messages
-    should be printed to stderr using fprintf. 
+    should be printed to stderr using fprintf.
 
 March 27th, 2013 - Midterm Study Guide <small>with special thanks to Matthew Resch</small>
 ------------------------------------------------------------------------------------------
@@ -2783,37 +2786,30 @@ March 27th, 2013 - Midterm Study Guide <small>with special thanks to Matthew Res
 #### Methods
 
 1.  Expansion
-    -   To convert a number, such as binary number, to decimal, 
-        use the definition of a number representation as an 
-        abbreviated polynomial.
-        
+    -   To convert a number, such as binary number, to decimal, use the
+        definition of a number representation as an abbreviated
+        polynomial.
+
         $$10101.1 = 1x2^4 + 0x2^3 + 1x2^2 + 0x2^1 + 1x2^0 + 1x2^{-1}$$
         $$16 + 0 + 4 + 0 + 1 + .5 = 21.5$$
 
 2.  Division Method
-    -   To convert a number from one base to another, take the 
-        number, divide it by the target base, keep the remainder 
-        and divide the quotient by the base until the quotient 
-        that remains is zero. Number generated from right/left.
-    -   Example:
-        $$13 \% 2 = 1$$
-        $$6 \% 2 = 0$$ 
-        $$3 \% 2 = 1$$ 
-        $$1 \% 2 = 1$$ 
-        
+    -   To convert a number from one base to another, take the number,
+        divide it by the target base, keep the remainder and divide the
+        quotient by the base until the quotient that remains is zero.
+        Number generated from right/left.
+    -   Example: $$13 \% 2 = 1$$ $$6 \% 2 = 0$$ $$3 \% 2 = 1$$
+        $$1 \% 2 = 1$$
+
 3.  Multiplication Method
     -   This method is generally used to convert fractions
-    -   Multiply the number by the base, and keep the digit that
-        is generated, then multiply the thing to the right of the
-        decimal by the base again, until you have nothing to the 
-        right of the decimal.
-    -   Ex:
-        $$.7812510 \to .110012$$
-        $$.78125 x 2 = 1.56250$$
-        $$.56250 x 2 = 1.1250$$
-        $$.1250 x 2 = 0.250$$
-        $$.250 x 2 =  0.50$$
-                $$.50 x 2 = 1.0$$
+    -   Multiply the number by the base, and keep the digit that is
+        generated, then multiply the thing to the right of the decimal
+        by the base again, until you have nothing to the right of the
+        decimal.
+    -   Ex: $$.7812510 \to .110012$$ $$.78125 x 2 = 1.56250$$
+        $$.56250 x 2 = 1.1250$$ $$.1250 x 2 = 0.250$$
+        $$.250 x 2 =  0.50$$ $$.50 x 2 = 1.0$$
 
 #### Binary
 
@@ -2839,27 +2835,36 @@ March 27th, 2013 - Midterm Study Guide <small>with special thanks to Matthew Res
 -   To octal
 -   To binary
 
-###  Endianess
+### Endianess
 
--   There are generally two forms of Endian-ness, **Big Endian** and 
+-   There are generally two forms of Endian-ness, **Big Endian** and
     **Little Endian**.
--   Endian-ness refers to the ordering of bytes stored in memory, determined by the significance of the byte.
+-   Endian-ness refers to the ordering of bytes stored in memory,
+    determined by the significance of the byte.
 -   What’s the difference between the two different types?
-    -   Little Endian machines store the **least** significant byte first, at the **lowest** byte address
-        -   Most machines that we use in our day-to-day life is Little Endian.
-        
-    -   Big Endian machines store the **most** significant byte first, at the **lowest** byte address
-        -   Most machines that use Big Endian do not run an architecture that we are likely to come in contact with.
+    -   Little Endian machines store the **least** significant byte
+        first, at the **lowest** byte address
+        -   Most machines that we use in our day-to-day life is Little
+            Endian.
 
+    -   Big Endian machines store the **most** significant byte first,
+        at the **lowest** byte address
+        -   Most machines that use Big Endian do not run an architecture
+            that we are likely to come in contact with.
 
 ### Assembly Language (x86, AT&T, 32-bit)
 
--   Basic assembly instructions are read from right to left source, right to left destination.
-    -   For example, 96(%ebp, %eax, 8) means “multiply 8 by the memory of eax, add to ebp and then add 96 to that.
+-   Basic assembly instructions are read from right to left source,
+    right to left destination.
+    -   For example, 96(%ebp, %eax, 8) means “multiply 8 by the memory
+        of eax, add to ebp and then add 96 to that.
+
 -   Parenthesis always denotes memory being used
--   The difference between leal and mov is mov actually moves the contents, leal simply copies the address but not the contents
+-   The difference between leal and mov is mov actually moves the
+    contents, leal simply copies the address but not the contents
 -   Operands can have the following types:
-    -   Register: These operands refer directly to the contents of the CPU’s registers, and are denoted with a % in front of them.
+    -   Register: These operands refer directly to the contents of the
+        CPU’s registers, and are denoted with a % in front of them.
         -   If you want to deal with address, put a ( ) around register
         -   Offset can be specified as an immediate
 
@@ -2870,22 +2875,25 @@ March 27th, 2013 - Midterm Study Guide <small>with special thanks to Matthew Res
         movl -8(%ebp), %eax;  // move what in "up eight bits" from base pointo into eax
         addl -4(%ebp), %eax;  // add to it what's "up four bits"
         movl %eax, -12(%ebp); // move what's in eax to -12 bits from base pointer
-        
+
 -   Another sample program
 
         mov al,[L1];     // copy byte at L1 into AL
-        mov	eax,L1;      // EAX now stores the address of byte at L1
-        mov	[L1],ah;     // copy AH into byte at L1
-        mov	eax,[L6];    // copy double word at L6 into EAX
-        add	eax,[L6];    // EAX = EAX + double word at L6
-        add	[L6],eax;    // double word at L6 += EAX
-        mov	al, [L6];    // copy first byte of double word at L6 into AL
+        mov eax,L1;      // EAX now stores the address of byte at L1
+        mov [L1],ah;     // copy AH into byte at L1
+        mov eax,[L6];    // copy double word at L6 into EAX
+        add eax,[L6];    // EAX = EAX + double word at L6
+        add [L6],eax;    // double word at L6 += EAX
+        mov al, [L6];    // copy first byte of double word at L6 into AL
 
 #### Basic commands
 
 -   `MOV`
-    -   The mov instruction moves data from one location to another, but cannot take two locations in memory as operands. The operands must also be the same size.
+    -   The mov instruction moves data from one location to another, but
+        cannot take two locations in memory as operands. The operands
+        must also be the same size.
     -   Format: mov source, destination
+
 -   `ADD`
     -   Used to add two integers together
     -   Format: add destination, source
@@ -2893,22 +2901,20 @@ March 27th, 2013 - Midterm Study Guide <small>with special thanks to Matthew Res
 
             add eax, 4 -> eax = eax + 4
             add al, ah -> al = al + ah
-            
+
 -   `SUB`
     -   Used to subtract two integers
     -   Format: sub destination, source
     -   Example:
-    
-        sub bx, 10 -> bx = bx -10
-        sub ebx, edi -> ebx = ebx – edi
-        
+
+        sub bx, 10 -\> bx = bx -10 sub ebx, edi -\> ebx = ebx – edi
+
 -   `INC`/`DEC`
-    -   Used to increment or decrement values by one. 
+    -   Used to increment or decrement values by one.
     -   Since one is implicit operand, code is smaller than for add/sub
     -   Example:
-        
-        inc ecx -> ecx++
-        dec dl -> dl—
+
+        inc ecx -\> ecx++ dec dl -\> dl—
 
 #### Operand Types
 
@@ -2916,20 +2922,20 @@ March 27th, 2013 - Midterm Study Guide <small>with special thanks to Matthew Res
     -   Constant integer data
     -   `$0x400`, `$-533`
     -   Encoded with 1, 2, or 4 bytes
-    
+
 -   Register
     -   One of 8 integer registers
     -   `%esp` and `%ebp` reserved for special use
         -   **S** tack **p** ointer
         -   **B** ase **p** ointer
-    
+
     -   Others have special uses for particular instructions
-        
+
 #### Memory
 
 -   4 consecutive bytes of memory
 -   Various “address modes”
-        
+
 #### Parameter order
 
 -   Source before the destination
@@ -2937,7 +2943,7 @@ March 27th, 2013 - Midterm Study Guide <small>with special thanks to Matthew Res
 
 #### Parameter size
 
--   `q` for qword, 
+-   `q` for qword,
 -   `l` for long (dword)
 -   `w` for word
 -   `b` for byte
@@ -2958,7 +2964,6 @@ March 27th, 2013 - Midterm Study Guide <small>with special thanks to Matthew Res
     -   `SI` points to a source in stream operations
     -   `DI` points to a destination in stream operations
 
-
 ### Call stack
 
 ### DeMorgan's laws
@@ -2968,41 +2973,42 @@ March 27th, 2013 - Midterm Study Guide <small>with special thanks to Matthew Res
 ### Radix
 
 ### Computer internals
--   CPU, 
-    -   registers, 
-    -   a program counter, 
-    -   ALU (Arithmetic Logic Unit), 
-        -   Gets instructions to do things on floating, bitwise, set
-            point, or comparison operations, and gives the results 
-            in a condition code.
-            
-    -   and a control unit
-    
--   Memory, 
-    -   any part can be accessed in constant time
-    -   Addresses are stored in either hex, or octal, points to a specific piece 
-        of memory
 
--   BUS, 
--   I/O devices, 
+-   CPU,
+    -   registers,
+    -   a program counter,
+    -   ALU (Arithmetic Logic Unit),
+        -   Gets instructions to do things on floating, bitwise, set
+            point, or comparison operations, and gives the results in a
+            condition code.
+
+    -   and a control unit
+
+-   Memory,
+    -   any part can be accessed in constant time
+    -   Addresses are stored in either hex, or octal, points to a
+        specific piece of memory
+
+-   BUS,
+-   I/O devices,
     -   Mouse
     -   Keyboard
     -   Screen
-    -   Magic Trackpad 
-    -   Magic Mouse 
-    
+    -   Magic Trackpad
+    -   Magic Mouse
+
 -   storage, NIC (network interface cards)
 
 April 11th, 2013 - Lecture
 --------------------------
 
 -   What I encourage you to do is to write minituare programs
-    -   For example, the .size directives, write a program that does 
-        nothing but read those strings of bytes, and turn them into a hex
-        number just to show that I can read these numbers and properly convert
-        them.
-    -   With this, you have a piece of code you can trust and transplant and 
-        really make sure it works.
+    -   For example, the .size directives, write a program that does
+        nothing but read those strings of bytes, and turn them into a
+        hex number just to show that I can read these numbers and
+        properly convert them.
+    -   With this, you have a piece of code you can trust and transplant
+        and really make sure it works.
     -   This is not a requirement, but it is strongly encouraged
 
 -   Moving on, the flags that affect various `Y86` instructions.
@@ -3021,15 +3027,19 @@ April 15th, 2013 - Programming Assignment 4: Y86 Emulation
 
 ### Introduction
 
-This assignment is designed to help you really understand how the 
-fetch-and-execute cycle works as well as the idea of program-as-data. 
-It will require a substantial implementation effort. The usual warning 
-goes double for this assignment: *Do not procrastinate*.
+This assignment is designed to help you really understand how the
+fetch-and-execute cycle works as well as the idea of program-as-data. It
+will require a substantial implementation effort. The usual warning goes
+double for this assignment: *Do not procrastinate*.
 
 ### Y86 Architecture
 
-The Y86 architecture has eight registers, three condition codes, a program counter and memory that holds machine instructions and data. All addresses, immediate values and displacements are 32 bit little-endian values.
-Each of the eight registers has a 4-bit ID that fits into the Y86 instructions. The eight registers and their encoding in the Y86 machine instructions are as follows:
+The Y86 architecture has eight registers, three condition codes, a
+program counter and memory that holds machine instructions and data. All
+addresses, immediate values and displacements are 32 bit little-endian
+values. Each of the eight registers has a 4-bit ID that fits into the
+Y86 instructions. The eight registers and their encoding in the Y86
+machine instructions are as follows:
 
      %eax 0
      %ecx 1
@@ -3040,40 +3050,72 @@ Each of the eight registers has a 4-bit ID that fits into the Y86 instructions. 
      %esi 6
      %edi 7
      
-The condition codes are single-bit flags set by arithmetic or logical instructions. The three condition codes are:
+
+The condition codes are single-bit flags set by arithmetic or logical
+instructions. The three condition codes are:
 
      OF overflow
      ZF zero
      SF negative
      
-The program counter is the address of the next machine instruction to execute. Total memory size will have to be determined as part of emulator execution.
-The Y86 instruction set is modeled on the larger Intelx86 instruction set, but is not a direct subset.
+
+The program counter is the address of the next machine instruction to
+execute. Total memory size will have to be determined as part of
+emulator execution. The Y86 instruction set is modeled on the larger
+Intelx86 instruction set, but is not a direct subset.
 
 ### Y86 Emulator
 
-An emulator is hardware or software that duplicates (or emulates) the functions of one computer system (in this case Y86 instructions) on another computer system (the Intel host). The Y86 instructions are different from the Intel x86 instructions. Your assignment is to write an emulator for the Y86 instruction set.
+An emulator is hardware or software that duplicates (or emulates) the
+functions of one computer system (in this case Y86 instructions) on
+another computer system (the Intel host). The Y86 instructions are
+different from the Intel x86 instructions. Your assignment is to write
+an emulator for the Y86 instruction set.
 
-Implement a program y86emul that executes Y86 executable files. Your program y86emul should support the following user interface:
+Implement a program y86emul that executes Y86 executable files. Your
+program y86emul should support the following user interface:
 
     y86emul [-h] <y86 input file>
 
-where <y86 input file> is the name of a Y86 input file, whose structure is defined in Section 5.
+where <y86 input file> is the name of a Y86 input file, whose structure
+is defined in Section 5.
 
-If -h is given as an argument, your program should just print out help for how the user can run the program and then quit.
+If -h is given as an argument, your program should just print out help
+for how the user can run the program and then quit.
 
 Erroneous inputs should cause your program to print out:
 
     ERROR: <an informative error message>
-    
-Otherwise, your program should run the Y86 code which may read whatever Y86 inputs from the terminal and/or write Y86 outputs to the terminal as your Y86 program executes.
 
-Your emulator will read the input file, allocate a chunk of memory of appropriate size which will act as the Y86 address space, populate that chunk of memory with data and machine instructions from the input file and then starts execution of the Y86 machine instructions. The entire address space of the Y86 program fits within this block of allocated memory. The lowest byte of the address of the allocated block is Y86 address 0 and all other Y86 addresses are offsets within this block.
+Otherwise, your program should run the Y86 code which may read whatever
+Y86 inputs from the terminal and/or write Y86 outputs to the terminal as
+your Y86 program executes.
 
-Your emulator will fetch, decode and execute Y86 instructions. This execution is tied to an status code that may take on the value AOK, HLT, ADR, INS. AOK means that everything is fine, no detected errors during execution. HLT means a halt instruction has been encountered, which is how Y86 programs normally end. ADR means some sort of invalid address has been encountered, which also stops Y86 program execution. INS is set for an invalid instruction, which also stops Y86 program execution. Your emulator should print out how the Y86 program execution ended.
+Your emulator will read the input file, allocate a chunk of memory of
+appropriate size which will act as the Y86 address space, populate that
+chunk of memory with data and machine instructions from the input file
+and then starts execution of the Y86 machine instructions. The entire
+address space of the Y86 program fits within this block of allocated
+memory. The lowest byte of the address of the allocated block is Y86
+address 0 and all other Y86 addresses are offsets within this block.
+
+Your emulator will fetch, decode and execute Y86 instructions. This
+execution is tied to an status code that may take on the value AOK, HLT,
+ADR, INS. AOK means that everything is fine, no detected errors during
+execution. HLT means a halt instruction has been encountered, which is
+how Y86 programs normally end. ADR means some sort of invalid address
+has been encountered, which also stops Y86 program execution. INS is set
+for an invalid instruction, which also stops Y86 program execution. Your
+emulator should print out how the Y86 program execution ended.
 
 ### Y86 Instructions
 
-The definition and encoding of the Y86 instructions are presented in the slides (also an attachment) and in the Bryant and O’Halloran book in Chapter 4.1. The instruction set presented there is minimal and almost functionally complete. What is missing are instructions for input and output. Your Y86 emulator will also handle instruction to read from and write to the terminal.
+The definition and encoding of the Y86 instructions are presented in the
+slides (also an attachment) and in the Bryant and O’Halloran book in
+Chapter 4.1. The instruction set presented there is minimal and almost
+functionally complete. What is missing are instructions for input and
+output. Your Y86 emulator will also handle instruction to read from and
+write to the terminal.
 
 Read byte and read long instructions
 
@@ -3081,8 +3123,17 @@ Read byte and read long instructions
     0 1 2 3 4 5
     readb d(rA) C0 rA F D 
     readl d(rA) C1 rA F D
-    
-The readb instruction reads a single byte from the terminal into memory, and the readl instruction reads a single 4-byte little-endian word into memory. The little-endian word is already compatible with the little-endian Intel architecture, where your emulator will run. Both instructions set the ZF condition code. On normal input, the ZF flag is set to zero, on end-of-file the ZF flag is set to one. Testing the conditon code is how the Y86 code can detect end of file. Note that the F in the second half of the second byte means ”no register”, just as it does for some of the other Y86 instructions. Both instructions are six bytes long with a 4-byte offset D.
+
+The readb instruction reads a single byte from the terminal into memory,
+and the readl instruction reads a single 4-byte little-endian word into
+memory. The little-endian word is already compatible with the
+little-endian Intel architecture, where your emulator will run. Both
+instructions set the ZF condition code. On normal input, the ZF flag is
+set to zero, on end-of-file the ZF flag is set to one. Testing the
+conditon code is how the Y86 code can detect end of file. Note that the
+F in the second half of the second byte means ”no register”, just as it
+does for some of the other Y86 instructions. Both instructions are six
+bytes long with a 4-byte offset D.
 
 Write byte and write long instructions
 
@@ -3091,35 +3142,48 @@ Write byte and write long instructions
     writeb d(rA) D0 rA F D 
     writel d(rA) D1 rA F D
 
-The writeb instruction writes a single byte from memory to the terminal, and the writel instruction writes a single 4-byte little-endian word from memory to the terminal. Neither instruction alters the condition codes. Both instructions are six bytes long with a 4-byte offset D.
+The writeb instruction writes a single byte from memory to the terminal,
+and the writel instruction writes a single 4-byte little-endian word
+from memory to the terminal. Neither instruction alters the condition
+codes. Both instructions are six bytes long with a 4-byte offset D.
 
 Multiplcation Instruction
 
-Encoding Bytes 
-0 1 2 3 4 5
-mull rA,rB 64 D
+Encoding Bytes 0 1 2 3 4 5 mull rA,rB 64 D
 
-The mull instruction multiplies the values in rA and rB and leaves the product in rB. This instruc- tion set the condition codes. The instruction is five bytes long.
+The mull instruction multiplies the values in rA and rB and leaves the
+product in rB. This instruc- tion set the condition codes. The
+instruction is five bytes long.
 
 ### Y86 Input file format
 
-The input file to your Y86 emulator does not contain Y86 assembler instructions. Instead, it contains an ASCII representation of the information needed to start and execute a ready-to-run program, including Y86 machine instructions. An input file will contain directives that specify data and Y86 machine instructions.
+The input file to your Y86 emulator does not contain Y86 assembler
+instructions. Instead, it contains an ASCII representation of the
+information needed to start and execute a ready-to-run program,
+including Y86 machine instructions. An input file will contain
+directives that specify data and Y86 machine instructions.
 
 #### Specifying Total Program Size and Base of Stack
 
-The .size directive 
+The .size directive
 
     .size hex-address
 
-This specifies the total size of the program in memory. The hex address also specifies the address of the bottom of the stack. The Y86 stack grows from larger addresses toward smaller addresses. There should be only one .size directive in the input file.
+This specifies the total size of the program in memory. The hex address
+also specifies the address of the bottom of the stack. The Y86 stack
+grows from larger addresses toward smaller addresses. There should be
+only one .size directive in the input file.
 
 #### Specifying String Constants
 
 The .string directive
-   
+
     .string hex-address "double-quoted string"
 
-specifies a string contained in the double quotes. The hex-address specifies the location of the string in the memory block allocated by your emulator. The input string will contain only printable characters and nothing that requires a backslash.
+specifies a string contained in the double quotes. The hex-address
+specifies the location of the string in the memory block allocated by
+your emulator. The input string will contain only printable characters
+and nothing that requires a backslash.
 
 #### Specifying Integer Values
 
@@ -3127,7 +3191,10 @@ The .long directive
 
     .long hex-address decimal-number
 
-specifies a 4-byte signed integer. The hex address specifies the location of the value and the decimal number is the initial value at that Y86 address. All Y86 arithmetic is 4-byte signed integer arithmetic.
+specifies a 4-byte signed integer. The hex address specifies the
+location of the value and the decimal number is the initial value at
+that Y86 address. All Y86 arithmetic is 4-byte signed integer
+arithmetic.
 
 #### Setting Aside Chunks of Memory
 
@@ -3135,7 +3202,9 @@ The .bss directive
 
     .bss hex-address decimal-size
 
-specifies a chunk of uninitialzed memory in the Y86 address space. The hex address specifies the location of the uninitialized chunk and the decimal size specifies the size.
+specifies a chunk of uninitialzed memory in the Y86 address space. The
+hex address specifies the location of the uninitialized chunk and the
+decimal size specifies the size.
 
 #### Specifying One-Byte Values
 
@@ -3143,7 +3212,9 @@ The .byte directive
 
     .byte hex-address hex-number
 
-specifies a one-byte value. The hex address specifies the location of the byte and the initial value is the hex number whose value is between 00 and FF, inclusive.
+specifies a one-byte value. The hex address specifies the location of
+the byte and the initial value is the hex number whose value is between
+00 and FF, inclusive.
 
 #### Specifying Y86 Machine Instructions
 
@@ -3151,61 +3222,63 @@ The .text directive
 
     .text hex-address ASCII string of hex Y86 instructions
 
-specifies the Y86 machine instructions. The hex address specifies where the machine instructions should be placed in the Y86 address space. This same address is also the initial value of the Y86
+specifies the Y86 machine instructions. The hex address specifies where
+the machine instructions should be placed in the Y86 address space. This
+same address is also the initial value of the Y86
 
 April 16th, 2013 - Processor Design I: Sequential Processor (Y86)
 -----------------------------------------------------------------
 
--   **Instruction Set Architecture** (ISA) is the interface between software
-    and hardware.
+-   **Instruction Set Architecture** (ISA) is the interface between
+    software and hardware.
 -   Y86 is a simplified ISA modeled after x86.
 -   Processor states
     -   Program registers are the same as IA32, each 32 bits.
-    -   Three condition codes, `OF` for overflow, `ZF` for zero, and `SF`
-        for negative.
-    -   Momery is byte addressable storage array, words stored in little-
-        endian byte order.
-        
+    -   Three condition codes, `OF` for overflow, `ZF` for zero, and
+        `SF` for negative.
+    -   Momery is byte addressable storage array, words stored in
+        little- endian byte order.
+
 ### Instructions
 
--   `nop` 
-    - no effect
-    
--   `halt` 
-    - stop execution
-    
--   `rrmovl rA, rB` 
-    - `rB <- rA`
-    
--   `irmovl V, rb` 
-    - `rB <- V`
-    
--   `rmmovl rA, D(rb)` 
-    - `Mem[rB + D] <- rA`
-    
--   `mrmovl D(rA), rB` 
-    - `rb <- Mem[rA + D]`
-    
--   `OP rA, rB` 
-    - `rB<-rBOPrA` (OP \in {+,-,xor})
-    
--   `jXX Dest` 
-    - `PC <- Dest`
-    
--   `call Dest` 
-    - invoke function at Dest
-    
--   `ret` 
-    - return from function
-    
--   `pushl rA` 
-    - `%esp <- %esp – 4; Mem[%esp] <- rA`
-    
--   `popl rA` 
-    - `rA <- Mem[%esp]; %esp <- %esp + 4`
-    
-### Registers 
-  
+-   `nop`
+    -   no effect
+
+-   `halt`
+    -   stop execution
+
+-   `rrmovl rA, rB`
+    -   `rB <- rA`
+
+-   `irmovl V, rb`
+    -   `rB <- V`
+
+-   `rmmovl rA, D(rb)`
+    -   `Mem[rB + D] <- rA`
+
+-   `mrmovl D(rA), rB`
+    -   `rb <- Mem[rA + D]`
+
+-   `OP rA, rB`
+    -   `rB<-rBOPrA` (OP \in {+,-,xor})
+
+-   `jXX Dest`
+    -   `PC <- Dest`
+
+-   `call Dest`
+    -   invoke function at Dest
+
+-   `ret`
+    -   return from function
+
+-   `pushl rA`
+    -   `%esp <- %esp – 4; Mem[%esp] <- rA`
+
+-   `popl rA`
+    -   `rA <- Mem[%esp]; %esp <- %esp + 4`
+
+### Registers
+
 -   `%eax` - 0
 -   `%ecx` - 1
 -   `%edx` - 2
@@ -3214,7 +3287,7 @@ April 16th, 2013 - Processor Design I: Sequential Processor (Y86)
 -   `%ebp` - 5
 -   `%esi` - 6
 -   `%edi` - 7
-    
+
 ### Condition codes
 
 -   `OF` - overflow
@@ -3229,7 +3302,7 @@ April 16th, 2013 - Processor Design I: Sequential Processor (Y86)
 -   `INS` - "an invalid instruction"
 
 > Your emulator should print out how the Y86 program execution ended.
-    
+
 ### Directives
 
 #### The `.size` directive
@@ -3244,20 +3317,20 @@ April 16th, 2013 - Processor Design I: Sequential Processor (Y86)
 #### The `.string` directive
 
     .string hex-address "double-quoted string"
-    
+
 -   the hex address
     -   specifies the location of the given string
 
 -   the double-quotes string
     -   will contain only printable characters
-    
+
 -   This is a contrived string, local to the program.
     -   To implement, save in an array, it seems.
 
 #### The `.long` directive
 
     .long hex-address decimal-number
-    
+
 -   The hex address specifies the location of the value
 -   The decimal number is the initial value at that address.
 -   **all arithmatic is 4-byte signed integer arithmatic**
@@ -3265,7 +3338,7 @@ April 16th, 2013 - Processor Design I: Sequential Processor (Y86)
 #### The `.bss` directive
 
     .bss hex-address decimal-size
-    
+
 -   specifies a chuck of uninitialized memory in Y86 address space
 -   the hex address is the location
 -   the decimal size is the size
@@ -3273,17 +3346,19 @@ April 16th, 2013 - Processor Design I: Sequential Processor (Y86)
 #### The `.byte` directive
 
     .byte hex-address hex-number
-    
-- specifies a one-byte value
-- the hex address specifcs the location
-- the hex number is between 00 and FF (inclusive)
+
+-   specifies a one-byte value
+-   the hex address specifcs the location
+-   the hex number is between 00 and FF (inclusive)
 
 #### The `.text` directive
 
     .text hex-address "ASCII string of hex Y86 instructions"
-    
-- The hex address specifies where the machine instructions should be placed in the Y86 address space.
-- The ASCII string in a single long encoding of the hex bytes on the machine instructions, two characters per byte, no leading ”0x”.
+
+-   The hex address specifies where the machine instructions should be
+    placed in the Y86 address space.
+-   The ASCII string in a single long encoding of the hex bytes on the
+    machine instructions, two characters per byte, no leading ”0x”.
 
 ### Instruction Encoding
 
@@ -3300,40 +3375,37 @@ April 16th, 2013 - Processor Design I: Sequential Processor (Y86)
     ret                 9   0 
     pul rA              A   0   rA  8
     popl rA             B   0   rA  8
-    
 
 -   The decimal values of operations (instructions are data):
 
-
-		+-------------+-----+---+
-		| Instruction | Hex |Siz|
-		+-------------+-----+---+
-		| nop         | 00  | 1 | 
-		| halt        | 10  | 1 | 
-		| rrmovl      | 20  | 2 | 
-		| irmovl      | 30  | 6 |
-		| rmmovl      | 40  | 6 |
-		| mrmovl      | 50  | 6 |
-		| addl        | 60  | 2 |
-		| subl        | 61  | 2 |
-		| andl        | 62  | 2 |
-		| mull        | 64  | 2 |
-		| xorl        | 63  | 2 |
-		| jmp         | 70  | 5 |
-		| jle         | 71  | 5 |
-		| jl          | 72  | 5 | 
-		| je          | 73  | 5 |
-		| jne         | 74  | 5 | 
-		| jge         | 75  | 5 | 
-		| jg          | 76  | 5 |
-		| call        | 80  | 5 |
-		| ret         | 90  | 1 |
-		| pushl       | a0  | 2 |
-		| popl        | b0  | 2 |
-		+-------------+-----+---+
-		this chart pushed my vim knowledge to the limit
-		ask @Tazato
-
+        +-------------+-----+---+
+        | Instruction | Hex |Siz|
+        +-------------+-----+---+
+        | nop         | 00  | 1 | 
+        | halt        | 10  | 1 | 
+        | rrmovl      | 20  | 2 | 
+        | irmovl      | 30  | 6 |
+        | rmmovl      | 40  | 6 |
+        | mrmovl      | 50  | 6 |
+        | addl        | 60  | 2 |
+        | subl        | 61  | 2 |
+        | andl        | 62  | 2 |
+        | mull        | 64  | 2 |
+        | xorl        | 63  | 2 |
+        | jmp         | 70  | 5 |
+        | jle         | 71  | 5 |
+        | jl          | 72  | 5 | 
+        | je          | 73  | 5 |
+        | jne         | 74  | 5 | 
+        | jge         | 75  | 5 | 
+        | jg          | 76  | 5 |
+        | call        | 80  | 5 |
+        | ret         | 90  | 1 |
+        | pushl       | a0  | 2 |
+        | popl        | b0  | 2 |
+        +-------------+-----+---+
+        this chart pushed my vim knowledge to the limit
+        ask @Tazato
 
 ### Summary
 
@@ -3353,21 +3425,22 @@ April 16th, 2013 - Processor Design I: Sequential Processor (Y86)
 April 15th, 2013 - Lecture: Memory
 ----------------------------------
 
-- RAM
-    - Key features
-        - RAM is packaged as a chip
-        - Basic storage unit is a cell
-        - Multiple RAM chips form a memory
-        
-    - Static RAM (SRAM)
-        - Each cell stores bit with a six-transistor circuit
-        - Retains value indefinitely, as long as it is kept powered
-        - Relative insnsitive to disturbances
-        - Faster and more expensive than DRAM
-        
-    - Dynamic RAM (DRAM)
-        - Each cell stores bit with a capacitor and transistor
-        - Value must be refereshed every 10-100ms
-        - Sensitive to disturbances
-        - Slower and cheaper than SRAM
-  
+-   RAM
+    -   Key features
+        -   RAM is packaged as a chip
+        -   Basic storage unit is a cell
+        -   Multiple RAM chips form a memory
+
+    -   Static RAM (SRAM)
+        -   Each cell stores bit with a six-transistor circuit
+        -   Retains value indefinitely, as long as it is kept powered
+        -   Relative insnsitive to disturbances
+        -   Faster and more expensive than DRAM
+
+    -   Dynamic RAM (DRAM)
+        -   Each cell stores bit with a capacitor and transistor
+        -   Value must be refereshed every 10-100ms
+        -   Sensitive to disturbances
+        -   Slower and cheaper than SRAM
+
+

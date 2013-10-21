@@ -371,43 +371,39 @@ October 15th, 2013 <small>Midterm Study Guide</small>
 
 #### Regular Expressions
 
-
 -   The letter itself represents just itself.
 -   The empty string represents just itself.
--   The "or" operator will union the sets of two
-	definitions.
--   Placing to expressions next to one another
-	will place both sets right next to each other,
-	"Cartesian product."
--   Two letters next to one another contain only
-	those two letters.
+-   The "or" operator will union the sets of two definitions.
+-   Placing to expressions next to one another will place both sets
+    right next to each other, "Cartesian product."
+-   Two letters next to one another contain only those two letters.
 
-	    a             {a}
-	    e             {e}
-	    R|S           L_r U L_s
-	    a|b           {a, b}
-	    RS            L_r L_s
-	    ab            {ab}
+        a             {a}
+        e             {e}
+        R|S           L_r U L_s
+        a|b           {a, b}
+        RS            L_r L_s
+        ab            {ab}
 
--   `*` will make the represented set the empty
-	string and any number of the contained expression.
--   `+` will make any number of the contained expression
-	excluding the empty string.
+-   `*` will make the represented set the empty string and any number of
+    the contained expression.
+-   `+` will make any number of the contained expression excluding the
+    empty string.
 
-	    a             {a}
-	    b             {b}
-	    ab            {ab}
-	    a|b           {a, b}
-	    ab|ac         {ab, ac}
-	    (a|b)(b|c)    {ac, ad, bc, bd}
-	    (abc|e)d      {abcd, ed}
-	
-	    a*            {e, a, aa, aaa, ...}
-	    ab*           {a, ab, abb, abbb, ...}
-	    (ab)*         {e, ab, abab, ababab, ...}
-	    (a|b)*        {e, a, b, aa, ab, ba, bb, ...}
-	    a+            {a, aa, aaa, ...} 
-	    ab+           {ab, abb, abbb, etc}
+        a             {a}
+        b             {b}
+        ab            {ab}
+        a|b           {a, b}
+        ab|ac         {ab, ac}
+        (a|b)(b|c)    {ac, ad, bc, bd}
+        (abc|e)d      {abcd, ed}
+
+        a*            {e, a, aa, aaa, ...}
+        ab*           {a, ab, abb, abbb, ...}
+        (ab)*         {e, ab, abab, ababab, ...}
+        (a|b)*        {e, a, b, aa, ab, ba, bb, ...}
+        a+            {a, aa, aaa, ...} 
+        ab+           {ab, abb, abbb, etc}
 
 -   is this string in the language defined by this regular expression?
 -   describe in English the language defined by this regular expression
@@ -514,67 +510,67 @@ October 15th, 2013 <small>Midterm Study Guide</small>
     Nondeterministic Finite State Automaton. The start state is D. The
     only accepting state is F.
 
-4.  The function `(repeat n x)` returns a list of `n` copies of `x`. E.g.,
-    `(repeat 3 'w)` should return `(w w w)`. `(repeat 2 '(a b))` 
+4.  The function `(repeat n x)` returns a list of `n` copies of `x`.
+    E.g., `(repeat 3 'w)` should return `(w w w)`. `(repeat 2 '(a b))`
     returns `((a b) (a b))`. If `n` is `0` repeat should return `( )`.
-    
-	    ;WRONG:
-	    (define (repeat n x)
-	    	(if (eq? n 0)
-	    		x                             ; this a number, not a list
-	    		(repeat (- n 1) (append x x)) ; this is just shitty, but ...
-	    	)
-	    )
-	    
-	    ;RIGHT:
-	    (define (repeat n x) 
-	    	(if (eq? n 0)                 ; if n == 0
-	    		'()                       ; return the empty list
-	    		(cons (repeat (- n 1) x)) ; else build a list with the return value
-	    		                          ; of repeat(n - 1, x)
-	    	)
-	    )
-    
-5.  The function `(deep-member x lst)` returns true if `x` is a member of
-    list `lst` at any depth and false otherwise. E.g., 
-    `(deep-member 's '(e r ((x s) t))` returns `#t` (true) 
-    while `(deep-member 'a '(e r ((x s) t)))` returns `#f` (false). 
-    You may assume `x` is a number or symbol, not a list.
-    
-    	(define (deep-member x lst)
-    		(if (null? lst)
-    			#f
-    			(if (eq? (car lst) x)
-    				#t
-    				(or (deep-member x (cdr lst)) (deep-member x ()))
-				)
-    		)
-    	)
-    
+
+        ;WRONG:
+        (define (repeat n x)
+            (if (eq? n 0)
+                x                             ; this a number, not a list
+                (repeat (- n 1) (append x x)) ; this is just shitty, but ...
+            )
+        )
+
+        ;RIGHT:
+        (define (repeat n x) 
+            (if (eq? n 0)                 ; if n == 0
+                '()                       ; return the empty list
+                (cons (repeat (- n 1) x)) ; else build a list with the return value
+                                          ; of repeat(n - 1, x)
+            )
+        )
+
+5.  The function `(deep-member x lst)` returns true if `x` is a member
+    of list `lst` at any depth and false otherwise. E.g.,
+    `(deep-member 's '(e r ((x s) t))` returns `#t` (true) while
+    `(deep-member 'a '(e r ((x s) t)))` returns `#f` (false). You may
+    assume `x` is a number or symbol, not a list.
+
+        (define (deep-member x lst)
+            (if (null? lst)
+                #f
+                (if (eq? (car lst) x)
+                    #t
+                    (or (deep-member x (cdr lst)) (deep-member x ()))
+                )
+            )
+        )
+
 6.  Define `(for-n start stop fn)`. It takes three arguments: start and
     stop, which are numbers, and fn which is a function of one argument.
-    `For-n` calls `fn` several times, first with the argument `start`, then
-    with `start+1` then ... finally with `stop`. It returns a list of the
-    results of these calls. If `start > stop`, `for-n` simply returns the
-    empty list without doing any calls to `fn`.
-    
-    	(define (for-n start stop fn)
-    		(if (> start stop)
-    			'()
-    			(cons (fn start) (for-n (+ start 1) stop fn))
-    		)
-    	)
-    
-7.  `(protect-zero fn)` takes one argument, `fn`, a function which itself
-    takes one argument. The value of `protect-zero` is also a function of
-    one argument. Let us call this the result function. If its argument
-    is not `0`, the result function just calls `fn` and returns whatever `fn`
-    returns. If the result function's argument is `0`, it does not call `fn`
-    but instead returns the symbol `OOPS`.
-    
-    	(define (protect-zero fn)
-    		
-    	)
+    `For-n` calls `fn` several times, first with the argument `start`,
+    then with `start+1` then ... finally with `stop`. It returns a list
+    of the results of these calls. If `start > stop`, `for-n` simply
+    returns the empty list without doing any calls to `fn`.
+
+        (define (for-n start stop fn)
+            (if (> start stop)
+                '()
+                (cons (fn start) (for-n (+ start 1) stop fn))
+            )
+        )
+
+7.  `(protect-zero fn)` takes one argument, `fn`, a function which
+    itself takes one argument. The value of `protect-zero` is also a
+    function of one argument. Let us call this the result function. If
+    its argument is not `0`, the result function just calls `fn` and
+    returns whatever `fn` returns. If the result function's argument is
+    `0`, it does not call `fn` but instead returns the symbol `OOPS`.
+
+        (define (protect-zero fn)
+
+        )
 
 ### Midterm Fall 2012
 
@@ -600,17 +596,17 @@ October 15th, 2013 <small>Midterm Study Guide</small>
         element in the list. E.g., (countFie ‘(a fie (fie b) fie))
         returns 2. Use recursion, but not higher-order functions, e.g.
         not map.
-        
-        	(define (countFie lst)                ; function definition
-        		(if (null? lst)                   ; base case
-        			0                             ; base case return value
-        			(if (eq? (car lst) 'fie)      ; current equal "fie"?
-        				(+ 1 (countFie (cdr lst))); then return 1 plus the rest
-        				(countFie (cdr lst))      ; else keep counting
-        			)
-        		)
-        	)
-        
+
+            (define (countFie lst)                ; function definition
+                (if (null? lst)                   ; base case
+                    0                             ; base case return value
+                    (if (eq? (car lst) 'fie)      ; current equal "fie"?
+                        (+ 1 (countFie (cdr lst))); then return 1 plus the rest
+                        (countFie (cdr lst))      ; else keep counting
+                    )
+                )
+            )
+
     2.  Write (countAllFie lst) takes a list and returns a count of how
         many times the symbol fie appears at any level of the list.
         E.g., (countAllFie '(fie foo ((fie 3)))) returns 2. (countAllFie
@@ -620,27 +616,27 @@ October 15th, 2013 <small>Midterm Study Guide</small>
         numbers and returns the sum of the squares of these numbers.
         E.g., (add-squares '(3 4)) returns 25. Accum is an accumulator.
         Add-squares-h must be tail-recursive.
-        
-        	(define (add-squares lst) (add-squares-h lst 0)) ; given
-        	(define (add-squares-h lst accum)                ; given
-        		(if (eq? lst null)                           ; if list is null
-        			accum                                    ; then return accum
-        			(add-squares-h (cdr lst) ; otherwise, call a-s-q on the next lst
-        			               (+ accum (* (car lst) (car lst))) ; can square the
-        			                                                 ; current thing
-        			)
-        		)
-        	)
-        
+
+            (define (add-squares lst) (add-squares-h lst 0)) ; given
+            (define (add-squares-h lst accum)                ; given
+                (if (eq? lst null)                           ; if list is null
+                    accum                                    ; then return accum
+                    (add-squares-h (cdr lst) ; otherwise, call a-s-q on the next lst
+                                   (+ accum (* (car lst) (car lst))) ; can square the
+                                                                     ; current thing
+                    )
+                )
+            )
+
     4.  Define (compose f g) The arguments f and g are each a function
         of one argument. The value returned by compose is a function,
         the composition of f and g. That is, ((compose (lambda (x) (+ 1
         x))(lambda (x)(\* x x))) 5) returns 26.
-        
-        	(define compose(f g) ; definition line
-        		(lambda(x)       ; this returns a function, need lambda
-        			(f(g x))     ; perform `f` on return of performing `g` on `x`
-        		)
-        	)
+
+            (define compose(f g) ; definition line
+                (lambda(x)       ; this returns a function, need lambda
+                    (f(g x))     ; perform `f` on return of performing `g` on `x`
+                )
+            )
 
 

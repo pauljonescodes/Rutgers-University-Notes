@@ -2819,113 +2819,113 @@ February 25th, 2013 - Lecture
     -   [Awesome
         table](http://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html):
         <table class="table">
-            <tbody><tr>
-            <th id="h1">
-            
+                <tbody><tr>
+                <th id="h1">
+
         Modifier
         </th>
             <th id="h2">
-            
+
         Class
         </th>
             <th id="h3">
-            
+
         Package
         </th>
             <th id="h4">
-            
+
         Subclass
         </th>
             <th id="h5">
-            
+
         World
         </th>
             </tr>
             <tr>
             <td headers="h1">
-            
+
         <code>public</code>
         </td>
             <td headers="h2">
-            
+
         Y
         </td>
             <td headers="h3">
-            
+
         Y
         </td>
             <td headers="h4">
-            
+
         Y
         </td>
             <td headers="h5">
-            
+
         Y
         </td>
             </tr>
             <tr>
             <td headers="h1">
-            
+
         <code>protected</code>
         </td>
             <td headers="h2">
-            
+
         Y
         </td>
             <td headers="h3">
-            
+
         Y
         </td>
             <td headers="h4">
-            
+
         Y
         </td>
             <td headers="h5">
-            
+
         N
         </td>
             </tr>
             <tr>
             <td headers="h1">
-            
+
         no modifier
         </td>
             <td headers="h2">
-            
+
         Y
         </td>
             <td headers="h3">
-            
+
         Y
         </td>
             <td headers="h4">
-            
+
         N
         </td>
             <td headers="h5">
-            
+
         N
         </td>
             </tr>
             <tr>
             <td headers="h1">
-            
+
         <code>private</code>
         </td>
             <td headers="h2">
-            
+
         Y
         </td>
             <td headers="h3">
-            
+
         N
         </td>
             <td headers="h4">
-            
+
         N
         </td>
             <td headers="h5">
-            
+
         N
         </td>
             </tr>

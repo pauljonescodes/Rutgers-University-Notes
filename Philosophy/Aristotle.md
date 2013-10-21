@@ -379,59 +379,59 @@ has the stronger claim and the evidence for it.
 -   Aristotle all thinks that all knowledge is either:
     -   knowledge of principles that govern a certain domain,
     -   knowledge from deduction of these principles
-    
+
 -   It is not immediately obvious that these claims go together
     -   Then, though all knowledge owes its epistemic mass to
         principles, science owes it to induction from these.
     -   So there is no problem in calling Aristotle an empiricist?
-    
+
 -   But this is not Aristotle's view
     -   He clearly thinks we have immediate knowledge of primary truths.
         -   He cannot think, therefore, that our knowledge of them
             depends on deductive confirmation.
-    
+
     -   There are seen by reason to be immediate truths.
-    -   And being as he thinks that all truths are derived from
-        reason, he is the paradigm of a rationalists.
+    -   And being as he thinks that all truths are derived from reason,
+        he is the paradigm of a rationalists.
 
 -   This is puzzling, because why would he insist that all we know is
-    derived from reason if he insists primary truths are the product
-    of perception.
+    derived from reason if he insists primary truths are the product of
+    perception.
 -   He is not so much interested in resolving this puzzle as he is
-    interested in exploring the role in which reason plays in 
+    interested in exploring the role in which reason plays in
     Aristotle's rationalism.
--   He focuses primarilly on the *Metaphysics* and *Posterior Analytics**
-    B19.
--   In *Metaphysics*, Aristotle thinks that perception falls short of 
+-   He focuses primarilly on the *Metaphysics* and \*Posterior
+    Analytics\*\* B19.
+-   In *Metaphysics*, Aristotle thinks that perception falls short of
     *true knowledge*, but does give rise to it in humans.
     -   True knowledge is universal
     -   Experiential knowledge is knowledge of the mere fact.
 
 -   Aristotle thinks that not only do you have to be justified in
-    knowing something to actually know it, the justification has to
-    be the actual justification of something.
+    knowing something to actually know it, the justification has to be
+    the actual justification of something.
     -   Like Plato, knowledge involves understanding.
-    -   Necessary relationship between what is the explanation
-        and what is explained.
-        -  Such that what is explained cannot be be the case.
+    -   Necessary relationship between what is the explanation and what
+        is explained.
+        -   Such that what is explained cannot be be the case.
 
 -   Experience does not offer true knowledge of universals.
--   True knowledge goes beyond experience in that it involves
-    the grasp of some universal feature.
-    -   Perceptions and memories, therefore, do not constitute
-        an account of knowledge.
-        
+-   True knowledge goes beyond experience in that it involves the grasp
+    of some universal feature.
+    -   Perceptions and memories, therefore, do not constitute an
+        account of knowledge.
+
 -   Reason is not *needed*, you can go far without it.
     -   In practice, experience seems more useful than pure reason.
-    
+
 -   Reason is only useful in specific and highly elevated instances.
--   What makes a notion an adequate notion is being properly related
-    to other true notions.
-    -   One imports a whole system of related concepts in a way that
-        one can understand.
+-   What makes a notion an adequate notion is being properly related to
+    other true notions.
+    -   One imports a whole system of related concepts in a way that one
+        can understand.
     -   The corresponding features stand in proper relation to each
         other.
-        
+
 -   To introduce reason is to grasp certain features and the necessary
     relations between them.
     -   What's distinctive about reason is to grasph universals.
@@ -439,35 +439,33 @@ has the stronger claim and the evidence for it.
 -   Animals don't have this, at least not *all*.
 -   Predecessor's failed to identify the human ability to grasp general
     features and the relations between them.
--   There is a distincitive human ability to grasph general features
-    and universal truths.
+-   There is a distincitive human ability to grasph general features and
+    universal truths.
     -   Like in considering a line or point, we know these have certain
         relationships that combine to make meaning.
 
--   Many philosophers reject Aristotle's theory of knowledge because
-    of obscurity and mystery of the mind's apparently (and falsely)
+-   Many philosophers reject Aristotle's theory of knowledge because of
+    obscurity and mystery of the mind's apparently (and falsely)
     mystical ability to grasp universals.
     -   Through our theoretical understanding of them being faint and
         dim.
 
--   The problem with this is the assumption about what it means to 
-    have reason.
- 
+-   The problem with this is the assumption about what it means to have
+    reason.
 
 ### *The Origin and Aim of* Posterior Analytics *II.19* <small>by David Bronstein</small>
 
--   Perception is the original prior knowledge through which
-    the first principles become known.
+-   Perception is the original prior knowledge through which the first
+    principles become known.
 
 ### Paper outline
-
 
 -   1 page introduction
 -   3 pages of Aristotle
     1.  First principles, demonstration
     2.  Objections, Menlo, trilemma
     3.  Solution, perception as a form of knowledge
-    
+
 -   1 page of Frede
 -   1 page of Bronstein
 
@@ -482,8 +480,8 @@ has the stronger claim and the evidence for it.
     Lecture
     Notes](http://faculty.washington.edu/smcohen/433/433Lecture.html)
 4.  New Oxford American Dictionary
-5.  Aristotle. *Aristotle's Prior and posterior analytics : a revised 
-    text*. Oxford: Clarendon Press, 2001. Print. 
+5.  Aristotle. *Aristotle's Prior and posterior analytics : a revised
+    text*. Oxford: Clarendon Press, 2001. Print.
 
 ### Posterior Analytics
 
@@ -716,24 +714,24 @@ has the stronger claim and the evidence for it.
         principles. Which raises two questions:
         1.  Whether these are objects of science, or of some other
             faculty.
-        2.  Whether such faculty comes into being or is present
-            without being recognized.
-    
-    -   It would be strange if we had knowledge better than 
+        2.  Whether such faculty comes into being or is present without
+            being recognized.
+
+    -   It would be strange if we had knowledge better than
         demonstration without knowing it.
-    
+
     -   Such a faculty, all animals have.
         -   An innate faculty of discernment, **perception**.
         -   For some animals, the knowledge does not persist.
         -   But for others, there is the power of **retention**.
-        
+
     -   Thus from perceptions arises **memory**.
         -   Repeated memory of the same things makes **experience**.
         -   When the whole universal has come to be in soul through
             experience, comes the one distinct from many and identical
             in all instance
             -   The beginning of art and science.
-            
+
     -   Thus these states of knowledge are neither innate, nor come from
         more cognitive states of the mind, but from **perception**.
     -   Induction through perception implants the universal in us.
@@ -748,9 +746,9 @@ has the stronger claim and the evidence for it.
     -   It is from intuitive reasons that we do.
     -   Demonstration cannot be the proof of demonstration.
         -   Therefore, science cannot be the proof of science.
-        
-    -   **Intuitive reason** is the only necessarily true state other than 
-        science.
+
+    -   **Intuitive reason** is the only necessarily true state other
+        than science.
         -   Yet we cannot acquire it equally without pre-existing
             knowledge.
         -   So we can neither already have it or acquire it.
@@ -759,11 +757,11 @@ has the stronger claim and the evidence for it.
 April 25th, 2013 - Final Paper Assignment
 -----------------------------------------
 
-> Discuss Aristotle's general account in De Anima II 5 and II 12 of 
-> how perception comes about. Explain in detail what methodological 
-> procedures Aristotle was following in the chapter and how following 
-> them enables him to guarantee the normal objective accuracy of 
-> perception. Consider the accounts of these matters offered by Sorabji, 
+> Discuss Aristotle's general account in De Anima II 5 and II 12 of how
+> perception comes about. Explain in detail what methodological
+> procedures Aristotle was following in the chapter and how following
+> them enables him to guarantee the normal objective accuracy of
+> perception. Consider the accounts of these matters offered by Sorabji,
 > Burnyeat, and Castion in your discussion.
 
 ### Introduction
@@ -771,77 +769,78 @@ April 25th, 2013 - Final Paper Assignment
 ### Aristotle on Perception <small>Course notes from Marc Cohen</small>
 
 -   Aristotle spends a great deal of time in *De Anima* discussin the
-	topic of sense-perception.
-	-   What is his theory of perception?
-	-   Is it suprisingly difficult to get clear on exactly what it is?
+    topic of sense-perception.
+    -   What is his theory of perception?
+    -   Is it suprisingly difficult to get clear on exactly what it is?
 
 -   He begins II 5 by saying that perception:
-	1.  "Occurs in being moved and affected."
-	2.  "Seems to be a type of alteration."
-	3.  Is a process in which "like is affected by like."
+    1.  "Occurs in being moved and affected."
+    2.  "Seems to be a type of alteration."
+    3.  Is a process in which "like is affected by like."
 
--   Much of his subsequent discussion is on the physics and physiology of
-	perception:
-	1.  Each sense has a **sense-organ** (eyes, ears)
-	2.  Each sense has a **medium** (air, water)
-	3.  Each sense has **proper objects** (color and sight, sound and hearing)
-	4.  The proper object of a sense is a **qualification** of an external
-		object, the color red we perceive is a quality of some indiviual
-		body.
-	5.  Perception is or involves a **causal process** of the external object
-		through the medium to the sense-organ, and ultimately to the "primary"
-		sense organ (which Aristotle thought was the heart, but we now believe
-		it to be the brain).
-	6.  This process is one in which the sensible quality of the external
-		object is transferred to the sense-organ of the perceiver.
+-   Much of his subsequent discussion is on the physics and physiology
+    of perception:
+    1.  Each sense has a **sense-organ** (eyes, ears)
+    2.  Each sense has a **medium** (air, water)
+    3.  Each sense has **proper objects** (color and sight, sound and
+        hearing)
+    4.  The proper object of a sense is a **qualification** of an
+        external object, the color red we perceive is a quality of some
+        indiviual body.
+    5.  Perception is or involves a **causal process** of the external
+        object through the medium to the sense-organ, and ultimately to
+        the "primary" sense organ (which Aristotle thought was the
+        heart, but we now believe it to be the brain).
+    6.  This process is one in which the sensible quality of the
+        external object is transferred to the sense-organ of the
+        perceiver.
 
 #### Perception is not an alteration
 
--   All of this makes it seem as if Aristotle thinks perception as a physiological
-	process.
-	-   But things are not so simple.
-	-   First, Aristotle emplyes his distinction between levels of potentiality
-		and between levels of actuality.
+-   All of this makes it seem as if Aristotle thinks perception as a
+    physiological process.
+    -   But things are not so simple.
+    -   First, Aristotle emplyes his distinction between levels of
+        potentiality and between levels of actuality.
 
 -   He then contrasts two cases.
-	1.  The transistion from level A to level B.
-	2.  The transition from level B to level C.
+    1.  The transistion from level A to level B.
+    2.  The transition from level B to level C.
 
->   In the first and second case we pass from potentially to actually knowing;
->   but in the first case we do so by being altered through learning, and by
->   frequent changes from the contrary state, while in the second case - where
->   we pase from having ... knowledge without actualizing it - we do so **in another way**.
+> In the first and second case we pass from potentially to actually
+> knowing; but in the first case we do so by being altered through
+> learning, and by frequent changes from the contrary state, while in
+> the second case - where we pase from having ... knowledge without
+> actualizing it - we do so **in another way**.
 
--   The passage from potentiality 1 to actuality 1 is an alteration,
-	the passage from potential to actuality is not an alteration.
--   His point is that a thing that is affected in the second way i not altered by
-	being so affected.
--   Since perception is "second case" transition, it should not be considered
-	an alteration at all.
-	-   Aristotle admits that ordinary language does not have
-		different words for transitions from two levels of potentiality.
+-   The passage from potentiality 1 to actuality 1 is an alteration, the
+    passage from potential to actuality is not an alteration.
+-   His point is that a thing that is affected in the second way i not
+    altered by being so affected.
+-   Since perception is "second case" transition, it should not be
+    considered an alteration at all.
+    -   Aristotle admits that ordinary language does not have different
+        words for transitions from two levels of potentiality.
 
--   Aristotle concludes II 5 by refining the curde claim with which he began,
-	that perception is an alteration in which like is affected by like,
-	and puts his point instead in terms of potentiality and actuality.
+-   Aristotle concludes II 5 by refining the curde claim with which he
+    began, that perception is an alteration in which like is affected by
+    like, and puts his point instead in terms of potentiality and
+    actuality.
 
->   The perceiver is potentially what the perceptible object is already,
->   as we have said. When it is being affected, then, it is unlike the
->   object; but when it has been affected it has been made like the object
->   and has acquired its quality.
+> The perceiver is potentially what the perceptible object is already,
+> as we have said. When it is being affected, then, it is unlike the
+> object; but when it has been affected it has been made like the object
+> and has acquired its quality.
 
 #### Physiological vs. Cognitive Interpretations
 
 -   Supporting P
-	1.  In perception the sense organ is "colored", and this explains
-		after-images.
+    1.  In perception the sense organ is "colored", and this explains
+        after-images.
+
 -   Supporting C
-	1.  Perceinving is like thinking, except that the object of perception
-		are external. Souls.
-
-
-
-	 
+    1.  Perceinving is like thinking, except that the object of
+        perception are external. Souls.
 
 ### How perception comes about
 
@@ -852,77 +851,81 @@ April 25th, 2013 - Final Paper Assignment
 #### Section I
 
 -   The most valuyable aspect of Aristotle's theory of sense perception
-	has been largely neglected.
-	-   This lies in "redrawing the map" where perception is drawn.
+    has been largely neglected.
+    -   This lies in "redrawing the map" where perception is drawn.
     -   This will be in section 1 of the paper.
 
--   Perception is not to be viewed as a rudimentary reaction with little 
-	content.
+-   Perception is not to be viewed as a rudimentary reaction with little
+    content.
     -   Not is it a work of reason or thought.
     -   It is halway between the two.
 
--   Plato argues that the soul uses the senses as channels to perceive sense
-    qualities like whiteness, but cannot use them for distinguishing and 
-    comparing qualities.
+-   Plato argues that the soul uses the senses as channels to perceive
+    sense qualities like whiteness, but cannot use them for
+    distinguishing and comparing qualities.
     -   Or for "something being the case"
     -   Or for the truth.
         -   This requires reasoning and belief.
 
-    -   Reasoning is described as the silent dialectical debate of the soul
-        with itself. 
+    -   Reasoning is described as the silent dialectical debate of the
+        soul with itself.
         -   Belief is the conclusion to this debate.
-    
+
     -   Plato greatly narrows the role of perception.
-        -   This narrowing becomes critical when Aristotle revives the other 
-            half of what Alcmaeon says by denying reasoning and belief.
-    
-    -   Aristotle is then obliged enomoursly to expand the content of 
+        -   This narrowing becomes critical when Aristotle revives the
+            other half of what Alcmaeon says by denying reasoning and
+            belief.
+
+    -   Aristotle is then obliged enomoursly to expand the content of
         perception.
 
--   Plato did not have to face this problem. 
+-   Plato did not have to face this problem.
 -   Aristotle does three things.
-    1.  First, he tidies up the concept of reason by bringing belief under
-        it.
-    2.  He gives the perceptual content one of the most massive expansions in   
-        in Greek philosophy.
-    3.  Despite expanding its role, he maintains that Plato's denial that
-        perception involves belief or is a function of reason.
+    1.  First, he tidies up the concept of reason by bringing belief
+        under it.
+    2.  He gives the perceptual content one of the most massive
+        expansions in\
+         in Greek philosophy.
+    3.  Despite expanding its role, he maintains that Plato's denial
+        that perception involves belief or is a function of reason.
 
--   He incorporates perception the function described by Plato, the perception
-    of whiteness and other sense-qualities perceptible to one self.
+-   He incorporates perception the function described by Plato, the
+    perception of whiteness and other sense-qualities perceptible to one
+    self.
     -   But also, he added movement, rest, shape, extension, number, and
-        unity. 
-    -   These are overlooked by Plato when he says that you cannot perceive
-        through one sense why you perceive through another.
+        unity.
+    -   These are overlooked by Plato when he says that you cannot
+        perceive through one sense why you perceive through another.
 
--   It would be wrong to suppose that this propositional perception really
-    involves an inference of reason merely on the ground that sense-qualities
-    like color, are said to be essential object of perception.
+-   It would be wrong to suppose that this propositional perception
+    really involves an inference of reason merely on the ground that
+    sense-qualities like color, are said to be essential object of
+    perception.
 -   Propositions are also involved in *phantasia*, which in Aristotle's
     *De Anima* is perceptual and post-perceptual appearance.
     -   Examples of post-perceptual appearances are imagination, dreams,
         and memory.
 
--   It has been thought that Aristotle oscillates wildly on the amount of
-    mental thought he allows to animals, and his propositional perception
-    also solves this problem.
+-   It has been thought that Aristotle oscillates wildly on the amount
+    of mental thought he allows to animals, and his propositional
+    perception also solves this problem.
     -   In *De Anima*, he allows that lions can entertain propositions
         about eating oxes.
-    -   He allows animals to have emtotions involving the belief of future
-        harm or benefit.
+    -   He allows animals to have emtotions involving the belief of
+        future harm or benefit.
 
--   These are examples of how generous a content Aristotle gives to sense-
-    percetion.
--   Aristotle now needs to show that his expansion of perception does not
-    turn perception into belief or make it a function of reason.
+-   These are examples of how generous a content Aristotle gives to
+    sense- percetion.
+-   Aristotle now needs to show that his expansion of perception does
+    not turn perception into belief or make it a function of reason.
     -   Aristotle employs a kind of discriminating to escape this.
 
 -   Aristotle has another way of making perception fall short of belief,
     a way which commits him to disagreeing with Aristotle.
     -   His argument is that perception may very way make you entertain
-        that the sun is a foot across, yet you actually do not believe that,
-        you believe that it is very big.
-    -   Tgus najes perceptual appearances a half-way house to *doxa*. 
+        that the sun is a foot across, yet you actually do not believe
+        that, you believe that it is very big.
+    -   Tgus najes perceptual appearances a half-way house to *doxa*.
 
 -   There are two more arguments.
     -   Belief involves being convinced, which animals cannot be.
@@ -930,410 +933,423 @@ April 25th, 2013 - Final Paper Assignment
 
 -   The Stoics are very similar to Aristotle, they deny animals reason
     and beliefs, and expand perceptual content.
--   Sorabji is not convinced by the argument that a lekton is defined
-    as corresponding only to a rational appearance, to the appearance
-    of a rational being, as opposed to an animal.
+-   Sorabji is not convinced by the argument that a lekton is defined as
+    corresponding only to a rational appearance, to the appearance of a
+    rational being, as opposed to an animal.
     -   Propositions are here being defined by reference to a sufficient
         condition.
-    -   What subsists in accordance with the appearance enjoyed by a rational
-        being 
+    -   What subsists in accordance with the appearance enjoyed by a
+        rational being
 
->   Sorabji spends some time discussing the views of Stoics and Epicurians
->   that I'm not *specifically* interested in because I'd like to know about
->   Aristotle and perception.
+> Sorabji spends some time discussing the views of Stoics and Epicurians
+> that I'm not *specifically* interested in because I'd like to know
+> about Aristotle and perception.
 
--   He's presented Aristotle as a catalyst in the debate on how perception
-    relates to other capacities of the mind, particularly belief and reason.
-    -   These debate was made urgent by his deinal of these capacities to
-        animals.
-    -   The debate necessitated the expansion of perception and how it relates
-        to other capacities of the mind.
+-   He's presented Aristotle as a catalyst in the debate on how
+    perception relates to other capacities of the mind, particularly
+    belief and reason.
+    -   These debate was made urgent by his deinal of these capacities
+        to animals.
+    -   The debate necessitated the expansion of perception and how it
+        relates to other capacities of the mind.
 
--   From this, Sorabji draws a general conclusion about Aristotle's philosophy
-    of mind.
-    -   Aristotle does not try to reduce perception to things at a different
-        level such as physiological states or behavior, or some performance
-        of functions.
-    -   Rather, he realtes it to capacaties at the same level, such as belief
-        reason, appearance, memory, experence, and concept formation.
+-   From this, Sorabji draws a general conclusion about Aristotle's
+    philosophy of mind.
+    -   Aristotle does not try to reduce perception to things at a
+        different level such as physiological states or behavior, or
+        some performance of functions.
+    -   Rather, he realtes it to capacaties at the same level, such as
+        belief reason, appearance, memory, experence, and concept
+        formation.
 
--   Sorabji adds that he thinks Aristotle's relation of sense-perception to
-    other capacities would be seen by him as throughing light on the 
+-   Sorabji adds that he thinks Aristotle's relation of sense-perception
+    to other capacities would be seen by him as throughing light on the
     *formal* cause of perception, not the *material* cause.
--   This brings Sorabji to the second part of his work, in which he argues
-    that commentators have been looking in the wrong place for information
-    about the physical process of perception.
+-   This brings Sorabji to the second part of his work, in which he
+    argues that commentators have been looking in the wrong place for
+    information about the physical process of perception.
 
 #### Section II
 
 -   There are a controversial set of Aristotelian phrases.
-	-   In perception, the sense-organ becomes like the thing perceived.
-	-   In perception, is potentially such as the thing perceived already,
-		and recieves the form of the thing perceived without matter.
-	-   Sorabji has taken these phrases to refer to the material cause
-		of perception, it's physiological process.
+    -   In perception, the sense-organ becomes like the thing perceived.
+    -   In perception, is potentially such as the thing perceived
+        already, and recieves the form of the thing perceived without
+        matter.
+    -   Sorabji has taken these phrases to refer to the material cause
+        of perception, it's physiological process.
 
 -   Sorabji thinks that all three phrases refer to the physiological
-	process and the 'reception of form' phrase is unclear.
+    process and the 'reception of form' phrase is unclear.
 -   Within academia, the reactions have been varied to this.
-	-   It has been rejected to support the functionalist interpretation.
-	-   Among those who disagree, some think that perhaps people
-		receive "vibrations" as "coded messages" as opposed to an actual
-		color.
-		-   This makes "recieving color" in the sense of "recieving form
-			without matter" synonymous with *to become aware* of color.
-	
-	-   Disagreement is widespread, however.
+    -   It has been rejected to support the functionalist
+        interpretation.
+    -   Among those who disagree, some think that perhaps people receive
+        "vibrations" as "coded messages" as opposed to an actual color.
+        -   This makes "recieving color" in the sense of "recieving form
+            without matter" synonymous with *to become aware* of color.
 
--   Sorabji thinks all of these interpretations are flawed, but particularly
-	Burnyeat's, because it is "the most daring and the most argued."
+    -   Disagreement is widespread, however.
+
+-   Sorabji thinks all of these interpretations are flawed, but
+    particularly Burnyeat's, because it is "the most daring and the most
+    argued."
 -   Burnyeat endorsed the Christian interpretation
-	-   Evidently, there is no physiological process at all needed for the
-		eye to see.
-	-   It is just a brute fact that animal matter is capable of awareness.
-	-   This is why Aristotle's philosophy of mind is no longer credible.
-		-   It turns the matter of animals into something that is 
-			impregnated with counciousness, whereas we are bound the
-			Descarte's conception of matter, which is distinct from 
-			awareness.
+    -   Evidently, there is no physiological process at all needed for
+        the eye to see.
+    -   It is just a brute fact that animal matter is capable of
+        awareness.
+    -   This is why Aristotle's philosophy of mind is no longer
+        credible.
+        -   It turns the matter of animals into something that is
+            impregnated with counciousness, whereas we are bound the
+            Descarte's conception of matter, which is distinct from
+            awareness.
 
 -   Sorabji has three initial disagreements with this interpretation.
-	1.  The position is not particularly Christian.
-	2.  Aristotle can not be making a physiological process unnecessary to
-		sense-perception.
-		-   *De Anima* holds that every mental process requires a physiological
-			process. 
-	
-	3.  Aristotle's theory comes out prosaic and commonsensical.
-		-   If we want a bizzare theory of awareness, we should look to
-			Descartes.
-		-   On the other hand, the coloration of eye-jelly is tame by
-			comparision.
+    1.  The position is not particularly Christian.
+    2.  Aristotle can not be making a physiological process unnecessary
+        to sense-perception.
+        -   *De Anima* holds that every mental process requires a
+            physiological process.
 
+    3.  Aristotle's theory comes out prosaic and commonsensical.
+        -   If we want a bizzare theory of awareness, we should look to
+            Descartes.
+        -   On the other hand, the coloration of eye-jelly is tame by
+            comparision.
 
 #### Section III
 
 -   With the literal coloration process defended, Sorabji brings in its
-	historical significance. 
-	-   In Section I, it was shown that Aristotle had plenty to say about
-		what we should call the intentional object of perception.
-	-   There is the idea of *intentional inexistence*, which is given well
-		by the metaphor:
-		-   If I inherit a fortune, the fortune must exists to be the object
-			of my inheritance.
-		-   If I hope for a fortune, the fortune need not exist outside my
-			mind in order to be the object of my hopes.
+    historical significance.
+    -   In Section I, it was shown that Aristotle had plenty to say
+        about what we should call the intentional object of perception.
+    -   There is the idea of *intentional inexistence*, which is given
+        well by the metaphor:
+        -   If I inherit a fortune, the fortune must exists to be the
+            object of my inheritance.
+        -   If I hope for a fortune, the fortune need not exist outside
+            my mind in order to be the object of my hopes.
 
-	-   Even in sense-perception, the square shaps I may represent
-		some scene as containing need not really exist in the external scene.
+    -   Even in sense-perception, the square shaps I may represent some
+        scene as containing need not really exist in the external scene.
 
--   But where did he find the idea of an intentional object expressed in	
-	Aristotle?
-	-   In the physiological doctrine of form received without matter.
-		-   Brentano interpreted that doctrine as meaning that the
-			object in sense perception is not, or not only, physically
-			present in the observer, but present in the object, as an object
-			of sense-perception.
+-   But where did he find the idea of an intentional object expressed
+    in\
+     Aristotle?
+    -   In the physiological doctrine of form received without matter.
+        -   Brentano interpreted that doctrine as meaning that the
+            object in sense perception is not, or not only, physically
+            present in the observer, but present in the object, as an
+            object of sense-perception.
 
--   This interpretation was only made possible by a long history of distortions,
--   The result of this is a theory in which hot, cold, fluid, etc ..., the 
-	reception of form is no longer understoord to be a physiological process.
--   Brentano's idea of intentionality was lent the authority of Aristotle,
-	but only through the distrotios of commentators.
-	-   We can alse see the value of getting clear on the physiological
-		interpretation which I have argued Aristotle originally intended.
-	-   Every commentator reconstructed Aristotle differently.
+-   This interpretation was only made possible by a long history of
+    distortions,
+-   The result of this is a theory in which hot, cold, fluid, etc ...,
+    the reception of form is no longer understoord to be a physiological
+    process.
+-   Brentano's idea of intentionality was lent the authority of
+    Aristotle, but only through the distrotios of commentators.
+    -   We can alse see the value of getting clear on the physiological
+        interpretation which I have argued Aristotle originally
+        intended.
+    -   Every commentator reconstructed Aristotle differently.
 
 ### 'De Anima *II 5*' <small>by M.F. Burnyeat</small>
 
 -   This is a close scrutiny of *De Anima II 5*.
 -   Questions:
-	1.  What can be learned from so long and intricate a chapter?
-	2.  What can the chapter, properly read, teach use about
-		some widely debated issues in Aristotle's theory
-		of perception?
+    1.  What can be learned from so long and intricate a chapter?
+    2.  What can the chapter, properly read, teach use about some widely
+        debated issues in Aristotle's theory of perception?
 
 -   Burnyeat argues that these points are wrong:
-	1.  That when Aristotle speaks of the perceiver becoming like
-		the object perceived
-		-   The assimilations he has in mind is ordinary alteration,
-			like when fire heats the surrounding air.
-	2.  That this alteration stands to perceptual awareness as matter
-		to form.
+    1.  That when Aristotle speaks of the perceiver becoming like the
+        object perceived
+        -   The assimilations he has in mind is ordinary alteration,
+            like when fire heats the surrounding air.
 
--   The point of *De Anima II 5% is to introduces the distinctions
-	between first and second potentiality, each with their own type
-	of actuality.
+    2.  That this alteration stands to perceptual awareness as matter to
+        form.
+
+-   The point of \*De Anima II 5% is to introduces the distinctions
+    between first and second potentiality, each with their own type of
+    actuality.
 -   He pays special attentions to issues of text and translations.
 
 #### Introduction
 
--   The negative message of II 5: this is the chapter in which
-	Aristotle infotrms us of his view that, although perceiving
-	is traditionally thought to be a case of being affecxted by something,
-	it is only a refined sense of being affected or altered that
-	this is true.
-	-   In the ordinary sense of these terms they *signify the loss
-		of a quality and its replacement by another*.
-	-   This is not what happens in perception.
+-   The negative message of II 5: this is the chapter in which Aristotle
+    infotrms us of his view that, although perceiving is traditionally
+    thought to be a case of being affecxted by something, it is only a
+    refined sense of being affected or altered that this is true.
+    -   In the ordinary sense of these terms they *signify the loss of a
+        quality and its replacement by another*.
+    -   This is not what happens in perception.
 
--   *De Anima II 5* is the chapter in which Aristotle expressely
-	denies that perceiving is the sort of alteration or chage
-	of quality which a clod thing undergoes when it is warmed or 
-	a green thing when it is colored red.
+-   *De Anima II 5* is the chapter in which Aristotle expressely denies
+    that perceiving is the sort of alteration or chage of quality which
+    a clod thing undergoes when it is warmed or a green thing when it is
+    colored red.
 -   Sorabji defined has defended and continues to an interpretation
-	where perception is an ordinary qualititative
-	alteration that would be observable by scientists.
-	-   On this account, what goes on inside the organ is an 
-		alteration, a replacement.
-	-   It is of the same kind as the alterations that occur outside
-		when a cold thing is warmed or a green thing is colored.
-	-   The object is that this sort of alteration that in II 5
-		Aristotle contrasts with the sort that perceiving is,
-		where the altered state is not lost but preserved.
+    where perception is an ordinary qualititative alteration that would
+    be observable by scientists.
+    -   On this account, what goes on inside the organ is an alteration,
+        a replacement.
+    -   It is of the same kind as the alterations that occur outside
+        when a cold thing is warmed or a green thing is colored.
+    -   The object is that this sort of alteration that in II 5
+        Aristotle contrasts with the sort that perceiving is, where the
+        altered state is not lost but preserved.
 
 -   The positive claim is harder to grasp.
-	-   What sort of alteration is perception if it is not
-		physical?
+    -   What sort of alteration is perception if it is not physical?
 
--   One possibility is suggested by details of Aristotle's account
-	of sense organs.
-	-   Aristotle will sy that the alteration is taking on of a color
-		by something *transparent*.
+-   One possibility is suggested by details of Aristotle's account of
+    sense organs.
+    -   Aristotle will sy that the alteration is taking on of a color by
+        something *transparent*.
 
--   This cannot be true, II 5 says nothing about the netruality of
-	the sense organ.
+-   This cannot be true, II 5 says nothing about the netruality of the
+    sense organ.
 -   There are some questions so familiar to scholars that they rarely
-	stop to ask:
-	1.  What are they doing here?
-	2.  How, in detail, do they contribute to the final result?
+    stop to ask:
+    1.  What are they doing here?
+    2.  How, in detail, do they contribute to the final result?
 
 #### A preliminary lusis
 
->   For P to perceive A, P and A must be unlike to begin with, so that
->   A can affect P (because of the unlikeness between them) and make
->   P like itself. The perceiving is an assimilation in which P becomes
->   like A.
+> For P to perceive A, P and A must be unlike to begin with, so that A
+> can affect P (because of the unlikeness between them) and make P like
+> itself. The perceiving is an assimilation in which P becomes like A.
 
 #### Conclusion
 
--   Perception is *alloisis tis* in the *alienans* sense,
-	an "alteration of a sort"
-	-   An alteration form which you cannot expect every
-		thing you would normally expect from alteration.
-	-   You cannot expect the perceiver to be really altered,
-		really reddened in the eye.
-		-   Seeing red is not at all like a case of interal
-			bleeding.
-	
-	-   You cannot even expect the alterations of perception
-		to take time, like ordinary changes do.
+-   Perception is *alloisis tis* in the *alienans* sense, an "alteration
+    of a sort"
+    -   An alteration form which you cannot expect every thing you would
+        normally expect from alteration.
+    -   You cannot expect the perceiver to be really altered, really
+        reddened in the eye.
+        -   Seeing red is not at all like a case of interal bleeding.
 
--   But the term has not "lost all connection" with the lessons
-	of other physical works. 
-	-   You can expect this type of alteration to be caused by
-		a sensible quality, which determines the qualitiative
-		character of the effect in the perceiver in such a manner
-		that the perceiver is in some new sense assimilated to it.
-	-   To see a red object is to be reddened by it *in a way*.
-	-   To feel the warmth of a fire is to be warmed by it,
-		bit not in the way the coled room or your chilled hands are
-		warmed by it.
+    -   You cannot even expect the alterations of perception to take
+        time, like ordinary changes do.
+
+-   But the term has not "lost all connection" with the lessons of other
+    physical works.
+    -   You can expect this type of alteration to be caused by a
+        sensible quality, which determines the qualitiative character of
+        the effect in the perceiver in such a manner that the perceiver
+        is in some new sense assimilated to it.
+    -   To see a red object is to be reddened by it *in a way*.
+    -   To feel the warmth of a fire is to be warmed by it, bit not in
+        the way the coled room or your chilled hands are warmed by it.
 
 -   What are these new ways of being reddened and warmed?
-	-   II 5 does not say.
+    -   II 5 does not say.
 
 -   In his study of II 7-8, he argues that according the Aristotelian
-	theory of perception the effect that colors and sounds have on the
-	relevant sense-organ is the same as their effect on the medium.
-	-   Suppose Aristotle sees a red object.
-		-   The effect of the red color is "quasi-alteration".
-	
-	-   Neither the medium nor the eye turns red, but red appears
-		through the medium at his eye.
-	-   All scientists observing an eye would see is the red object
-		seen or the flesh around the transparency.
-		-   Transparent stuff is the ideal material base for a second
-			potentiality which is to be preservered.
+    theory of perception the effect that colors and sounds have on the
+    relevant sense-organ is the same as their effect on the medium.
+    -   Suppose Aristotle sees a red object.
+        -   The effect of the red color is "quasi-alteration".
+
+    -   Neither the medium nor the eye turns red, but red appears
+        through the medium at his eye.
+    -   All scientists observing an eye would see is the red object seen
+        or the flesh around the transparency.
+        -   Transparent stuff is the ideal material base for a second
+            potentiality which is to be preservered.
 
 -   All that happens when you see red is that a person is "appeared to
-	redly."
-	-   This gives the sense in which he is reddened by the red object,
-		and comes to be like it.
-	-   The object's redness appears, bringing about awareness of red. 
-
-
+    redly."
+    -   This gives the sense in which he is reddened by the red object,
+        and comes to be like it.
+    -   The object's redness appears, bringing about awareness of red.
 
 #### Two controversial morals
 
 -   The Sorabji interpretation combines two claims:
-	1.  That ordinary alteration is what Aristotle
-		requires for perception
-	2.  That its role is to stand to awareness as matter to form.
+    1.  That ordinary alteration is what Aristotle requires for
+        perception
+    2.  That its role is to stand to awareness as matter to form.
 
 -   There are those that defend the thesis that Aristotle's psychology
-	is an ancient version of what modern philosophers call the
-	functionalist solution to the mind-body problem.
-	-   For the solution itself, as a solution suited to modern physics
-		for the mind-body problem bequethed to use by Descartes.
-	-   Aristotle's account of the soul-body relation cannot be
-		ressurected to help in the modern war against Cartesian
-		dualism because Aristotle's pyschology is designed to be the
-		crowning achievement of his physics.
-		-   His physics is irretrivably dead and gone.
+    is an ancient version of what modern philosophers call the
+    functionalist solution to the mind-body problem.
+    -   For the solution itself, as a solution suited to modern physics
+        for the mind-body problem bequethed to use by Descartes.
+    -   Aristotle's account of the soul-body relation cannot be
+        ressurected to help in the modern war against Cartesian dualism
+        because Aristotle's pyschology is designed to be the crowning
+        achievement of his physics.
+        -   His physics is irretrivably dead and gone.
 
 ### 'The Spirit and the Letter: Aristotle on Perception' <small>by Victor Caston</small>
 
--   Richard Sorabji claimed in a footnote that Aristotle thought perception
-	was a physiological process and this has sparked some contreversy.
-	-   The sense organ "literally takes one" the perceptible quality
-		of the object.i
-	-   This was intended to be a straightforward reading.
+-   Richard Sorabji claimed in a footnote that Aristotle thought
+    perception was a physiological process and this has sparked some
+    contreversy.
+    -   The sense organ "literally takes one" the perceptible quality of
+        the object.i
+    -   This was intended to be a straightforward reading.
 
 -   Burnyeat began forming a paper aimed at refuting this position.
-	-   On this reading, no physiological process occurs.
-	-   Perception is purely a "spritual change" on this reading.
+    -   On this reading, no physiological process occurs.
+    -   Perception is purely a "spritual change" on this reading.
 
 -   The stakes of this issue are high.
-	-   How psychologtical phenomena fit into a natural world for Aristotle.i
-	-   On a spiritualist reading, perceiving is not grounded in anything fur
-		ther, but instead constitues a basic form of interaction with a world.
-		-   We can no longer accept this according to Burnyeat.
+    -   How psychologtical phenomena fit into a natural world for
+        Aristotle.i
+    -   On a spiritualist reading, perceiving is not grounded in
+        anything fur ther, but instead constitues a basic form of
+        interaction with a world.
+        -   We can no longer accept this according to Burnyeat.
 
--   Sorabji's footnote is thrity years old.
-	>   Either Burnyeat's view is right or Sorabji's is, and Sorabji's isn't
-	>   <cite>Burnyeat</cite>
+-   Sorabji's footnote is thrity years old. \> Either Burnyeat's view is
+    right or Sorabji's is, and Sorabji's isn't \> <cite>Burnyeat</cite>
 
 #### A Budget of Interpretations
 
 -   It is impossible to access whether this is exhaustive.
-	-   Much less which is true
-	-   That is, without a precise formulation of both.
+    -   Much less which is true
+    -   That is, without a precise formulation of both.
 
 ##### Literalisms
 
 -   Literalism is Sorabji's position.
-	-   We are aware of out seeing because we are aware of our visual
-		organ.
-	-   A "literal taking on of color."
-	-   If something genuinely takes on a perceptible quality, such as violet,
-		then it should be possible to observe this.
-	-   We "replicate" the object in our body.
-	-   The sense organ "is potentially what its object actually is."
+    -   We are aware of out seeing because we are aware of our visual
+        organ.
+    -   A "literal taking on of color."
+    -   If something genuinely takes on a perceptible quality, such as
+        violet, then it should be possible to observe this.
+    -   We "replicate" the object in our body.
+    -   The sense organ "is potentially what its object actually is."
 
 -   This only concerns the perception of "proper" perciptbles.
-	-   Qualities such as "white" or "sweet."
-	>   **Primitive Literalism**: If a subject *S* comes to perceive a
-	>   perceptible quality *F* at time *t*, then *S* literally takes on
-	>   the quality of *F* in the relevant organ at *t*.
+    -   Qualities such as "white" or "sweet." \> **Primitive
+        Literalism**: If a subject *S* comes to perceive a \>
+        perceptible quality *F* at time *t*, then *S* literally takes on
+        \> the quality of *F* in the relevant organ at *t*.
 
-	-   It is intentionally weak, only stating the necessary conditions of
-		perceiving, of *coming* to perceive.
-	-   It is possible to take this a reductionist and ascribe to type-identical
-		perception.
+    -   It is intentionally weak, only stating the necessary conditions
+        of perceiving, of *coming* to perceive.
+    -   It is possible to take this a reductionist and ascribe to
+        type-identical perception.
 
 -   What does it mean to literally take on a perceptible quality?
-	-   Aristotle insists that the sense organ is tranformed by the action of the
-		perceptible quality.
-	>   **Fundamentalism**: If a subject *S* comes to perceive a perceptible quality
-	>   *F* in the relevant organ at *t*, such that the organ will be *F* in the same
-	>   way that the perceived object if *F*, in virtue of having the same material
-	>   composition.
+    -   Aristotle insists that the sense organ is tranformed by the
+        action of the perceptible quality. \> **Fundamentalism**: If a
+        subject *S* comes to perceive a perceptible quality \> *F* in
+        the relevant organ at *t*, such that the organ will be *F* in
+        the same \> way that the perceived object if *F*, in virtue of
+        having the same material \> composition.
 
-	-   Aristotle holds that the color of objects is determined by the proportion
-		of black and white at their surface.
-		-   Thus, when you look at a wisteria plant, the amount and distribution
-			of tranparent material in my eye jelly, anbd hence the amount of "earth
-			and fire", will change so as to exhibit the corresponding proporitions of
-			the wysteria.
+    -   Aristotle holds that the color of objects is determined by the
+        proportion of black and white at their surface.
+        -   Thus, when you look at a wisteria plant, the amount and
+            distribution of tranparent material in my eye jelly, anbd
+            hence the amount of "earth and fire", will change so as to
+            exhibit the corresponding proporitions of the wysteria.
 
 -   This is *not* how Sorabji understand literalism.
-	-   He believe that the eye's material disposition does not become like the
-		material disposition underlying the color in the visible object.
-		-   Instead, the eye jelly will be col9ored in a similar way to other
-			transparent bodies, such as the sea,
-	
-	-   Instead, the sea has only *extrinisic* color (or something ... ). 
+    -   He believe that the eye's material disposition does not become
+        like the material disposition underlying the color in the
+        visible object.
+        -   Instead, the eye jelly will be col9ored in a similar way to
+            other transparent bodies, such as the sea,
 
--   On Sarabji's view, there needn't be any change in the organ's material disposition
-	at least not of the sort that Fundamentalism demands,
-	>   **Latitudainarianism**: If a subject *S* comes to perceive a perceptible
-	>   quality *F* at time *t*, then *S* literally takes on the quyality *F* in the
-	>   relevant organ at *t*, even if it does not come to have the same underlying
-	>   material disposition and so does not come to be *F* in the same way the 
-	>   object perceived is *F*.
+    -   Instead, the sea has only *extrinisic* color (or something ...
+        ).
 
-	-   Sorabji still considers this to be a physiological change.
-	-   Spiritualism is distinct from this:
-	>   Receving the form of something just means becoming like it in form. So,
-	>   recevinging the form of something without its matters means becoming like it in
-	>   form but not becoming like it in matter.
+-   On Sarabji's view, there needn't be any change in the organ's
+    material disposition at least not of the sort that Fundamentalism
+    demands, \> **Latitudainarianism**: If a subject *S* comes to
+    perceive a perceptible \> quality *F* at time *t*, then *S*
+    literally takes on the quyality *F* in the \> relevant organ at *t*,
+    even if it does not come to have the same underlying \> material
+    disposition and so does not come to be *F* in the same way the \>
+    object perceived is *F*.
 
-	-   **In Byrnyeat's view, *like Sorabji's*, there is no change in the underlying
-		material qualities.**
+    -   Sorabji still considers this to be a physiological change.
+    -   Spiritualism is distinct from this: \> Receving the form of
+        something just means becoming like it in form. So, \>
+        recevinging the form of something without its matters means
+        becoming like it in \> form but not becoming like it in matter.
+
+    -   **In Byrnyeat's view, *like Sorabji's*, there is no change in
+        the underlying material qualities.**
 
 -   There is an iota of different.
-	-   Burnyeat's view, the eye jelly is only 'visible a way and coloured in a way, 
-		whiout realing being colored and, in consequence, without undergoing a *real*
-		alternation.'
+    -   Burnyeat's view, the eye jelly is only 'visible a way and
+        coloured in a way, whiout realing being colored and, in
+        consequence, without undergoing a *real* alternation.'
 
--   On Sorabji's view, the color predicates apply to the eye jelly in the same
-	sense that they do to solid objects.
--   Burnyeat denius what Sorabji affirs.
-	>   **Canonical literalism**: If a subject *S* comes to perceive a perciptible
-	>   quality *F* at time *t*, then *S* literally takes on the quality *F* in the
-	>   relevant organ at time *t*, such that it becomes true to say the organ is
-	>   *F* at *t* in the same sense that perceptible object is *F*.
+-   On Sorabji's view, the color predicates apply to the eye jelly in
+    the same sense that they do to solid objects.
+-   Burnyeat denius what Sorabji affirs. \> **Canonical literalism**: If
+    a subject *S* comes to perceive a perciptible \> quality *F* at time
+    *t*, then *S* literally takes on the quality *F* in the \> relevant
+    organ at time *t*, such that it becomes true to say the organ is \>
+    *F* at *t* in the same sense that perceptible object is *F*.
 
-	-   This thesis also captures what is come to Fundamentalism and 
-		Latitudinarianism.
+    -   This thesis also captures what is come to Fundamentalism and
+        Latitudinarianism.
 
 ##### 'As Matter to Form'
 
 -   Burnyeat rejects Canonical Literalism.
-	-   His position is "richer."
+    -   His position is "richer."
 
--   These formulations have left open the exact nature of the relation between 
-	perceiving and the literal taking on of a perceptible quality.
-	-   He explicitly rejects the reductive claim made by Thomas Slakey, that these
-		events are type identical.
+-   These formulations have left open the exact nature of the relation
+    between perceiving and the literal taking on of a perceptible
+    quality.
+    -   He explicitly rejects the reductive claim made by Thomas Slakey,
+        that these events are type identical.
 
--   Sorabji believes that the point Aristotle is making at the end of De Anime 2.12
-	when he claims that "smelling is something else besides the process of being 
-	afftected by odor. Perceptions is a phgysiological process, but it is more that
-	that.
+-   Sorabji believes that the point Aristotle is making at the end of De
+    Anime 2.12 when he claims that "smelling is something else besides
+    the process of being afftected by odor. Perceptions is a
+    phgysiological process, but it is more that that.
 
->   Chalcedonian orthodoxy: Perception has two natures, which are inseparable
->   and irreducible, related to each other as matter to form: it is neither a purely
->   material change nor a purely formal one, but rather 'a logos in matter.'
-	
--   Burnyeat rejects thigs, but he does this by arguing for a stronger position.
+> Chalcedonian orthodoxy: Perception has two natures, which are
+> inseparable and irreducible, related to each other as matter to form:
+> it is neither a purely material change nor a purely formal one, but
+> rather 'a logos in matter.'
+
+-   Burnyeat rejects thigs, but he does this by arguing for a stronger
+    position.
 
 -   Rejecting this need not cut all connection between matter and body.
 
->   Monophysitism: Although perception is a physical and bodily change, which requires
->   certain standing metaerial conditions, there is *no underlying physiological change
->   * in perception and hence none that is related to it as matter.
+> Monophysitism: Although perception is a physical and bodily change,
+> which requires certain standing metaerial conditions, there is *no
+> underlying physiological change * in perception and hence none that is
+> related to it as matter.
 
--   This position does not yet tell us what *does* occur in perception, and
-	doesn't properly constitute a form of spritiualism.
+-   This position does not yet tell us what *does* occur in perception,
+    and doesn't properly constitute a form of spritiualism.
 
 ##### Spiritualisms
 
->   It is impossible for the same thing to undergo contrary changes in so far as it is
->   undivided during an undivided period of time. For if it is sweet, then perception
->   undergoes change in this way, as does understanding, while if it is bitter in the
->   contrary way, and if white in a different way ... and it it is impossible for it
->   to be white and black at the same time, so that is cannot bear their forms either,
->   if perception and understanding are this sort of thing.
+> It is impossible for the same thing to undergo contrary changes in so
+> far as it is undivided during an undivided period of time. For if it
+> is sweet, then perception undergoes change in this way, as does
+> understanding, while if it is bitter in the contrary way, and if white
+> in a different way ... and it it is impossible for it to be white and
+> black at the same time, so that is cannot bear their forms either, if
+> perception and understanding are this sort of thing.
 
-***
+* * * * *
 
->   **High church spiritualism**: If a subject *S* comes to a perceptible
->   quality *F* at time *t*, then *S* takes on *F* spirituall in the relevant organ
->   at *t* - the quality *F* comes to have interntional being in the organ
->   , even if does not come to have natural being- so that it need not be true to say
->   organ is *F* at *t* in just the same sense that the perceptible object is *F*.
+> **High church spiritualism**: If a subject *S* comes to a perceptible
+> quality *F* at time *t*, then *S* takes on *F* spirituall in the
+> relevant organ at *t* - the quality *F* comes to have interntional
+> being in the organ , even if does not come to have natural being- so
+> that it need not be true to say organ is *F* at *t* in just the same
+> sense that the perceptible object is *F*.
 
 ##### Another way out?
 
@@ -1373,39 +1389,40 @@ April 25th, 2013 - Final Paper Assignment
 
 #### Conclusions
 
--   It should be plain from the opening survey that there is an alternative.
-	-   We are not confined to two dominant parties.
-	-   Aristotle thinks that there is *some* physiological change in perceptions.
-	-   That is just what it is form a form to be recived wihtout the matter.
-	-   For Aristotle, proporitions prive the relvent, information being feature in a
-		range of cases.
-		-   In exaplaining how we can think of certain things, he appeals to
-			the proportions of the underyling representations, and in account for
-			the quality-space of proper perceptibles, he likewise appeals to
-			propoitions.
-		-   By exemplifying the same proportions as the perceptible quality perceived,
-			but in a different set of contrary quyalities, the sense organ can come to
-			be relevantly like the perceptible quality, without replicating it.
+-   It should be plain from the opening survey that there is an
+    alternative.
+    -   We are not confined to two dominant parties.
+    -   Aristotle thinks that there is *some* physiological change in
+        perceptions.
+    -   That is just what it is form a form to be recived wihtout the
+        matter.
+    -   For Aristotle, proporitions prive the relvent, information being
+        feature in a range of cases.
+        -   In exaplaining how we can think of certain things, he
+            appeals to the proportions of the underyling
+            representations, and in account for the quality-space of
+            proper perceptibles, he likewise appeals to propoitions.
+        -   By exemplifying the same proportions as the perceptible
+            quality perceived, but in a different set of contrary
+            quyalities, the sense organ can come to be relevantly like
+            the perceptible quality, without replicating it.
 
 -   Sorabji's Latitudinarianism comes *extremely* close to this view.
-	-   He also insists on an underlying physiological change in all perceptions.
-		-   This consists in exemplifying the defining ratio of the perceptible
-			quality in question.
+    -   He also insists on an underlying physiological change in all
+        perceptions.
+        -   This consists in exemplifying the defining ratio of the
+            perceptible quality in question.
 
-	-   He denies that the proporitions of material elements in the porgan change in
-		such a way that quality *F* is exemplified in the same way that it is in the
-		object.
-		-   The main difference is that this results in another instance of the same
-			perceptible qualit, such that it will be true to say that the organ *F*
-			in just the same sense as the object, along with any of its consequences,
-			such as observability.
+    -   He denies that the proporitions of material elements in the
+        porgan change in such a way that quality *F* is exemplified in
+        the same way that it is in the object.
+        -   The main difference is that this results in another instance
+            of the same perceptible qualit, such that it will be true to
+            say that the organ *F* in just the same sense as the object,
+            along with any of its consequences, such as observability.
 
--   If Aristotle is opposed to replics in cognition as a general rule, this would have
-	to be jettisoned.
-	-   All Sorabji has to lose is Canonical Literalism.
-
-
-
+-   If Aristotle is opposed to replics in cognition as a general rule,
+    this would have to be jettisoned.
+    -   All Sorabji has to lose is Canonical Literalism.
 
 ### Conclusion
-
