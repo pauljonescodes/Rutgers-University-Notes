@@ -1017,29 +1017,83 @@ October 21st, 2013 <small>Quiz 4 Study</small>
 
 ### Relational Model
 
->   What is the core limitation of relational model?
+-   The **relational model** for database management is a database model
+    based on first-order predicate logic.
+    -   all data is represented in terms of **tuples**
+    -   grouped into **relations**
+
+-   A **table** in an SQL database schema corresponds to *a predicate
+    variable*;
+    -   the contents of a table to a **relation**;
+    -   key constraints, other constraints, and SQL queries correspond
+        to **predicates**
+
+> What is the core limitation of relational model?
+
+#### Application to Databases
+
+-   A **data type** as used in a typical relational database might be
+    the set of integers, the set of character strings, the set of dates,
+    or the two boolean values true and false, and so on.
+-   **Attribute** is the term used in the theory for what is commonly
+    referred to as a **column**.
+    -   Similarly, **table** is commonly used in place of the
+        theoretical term **relation**.
+
+-   A **tuple** is basically the same thing as a row
 
 #### Keys
 
+-   A **primary key** *uniquely specifies a tuple within a table*.
+
 #### Superkeys
+
+-   A **superkey** is defined in the relational model of database
+    organization *as a set of attributes of a relation variable for
+    which it holds that in all relations assigned to that variable,
+    there are no two distinct tuples (rows) that have the same values
+    for the attributes in this set*.
 
 #### Closure of a set of Attributes
 
 ### Normal Forms
 
->   Why normal forms? Do they always work and when they 
->   do not work?
+> Why normal forms? Do they always work and when they do not work?
 
-#### BCNF 
+#### BCNF
+
+-   A relational schema R is in **Boyce–Codd normal form** if and only
+    if for every one of its dependencies X → Y, *at least one* of the
+    following conditions hold:
+    -   X → Y is a trivial functional dependency (Y ⊆ X)
+    -   X is a **superkey** for schema R
 
 ##### Decomposition to BCNF
 
-#### 3NF
+#### Third Normal Form
 
->   synthesis of 3NF from the minimal base of given family 
->   of functional dependencies
+> synthesis of 3NF from the minimal base of given family of functional
+> dependencies
 
-#### 1NF 
+-   Codd's definition states that a table is in **3NF** *if and only if
+    both of the following conditions hold*:
+    -   The relation R (table) is in second normal form (2NF)
+    -   Every non-prime attribute of R is non-transitively dependent
+        (i.e. directly dependent) on every superkey of R.
+
+#### 1NF
+
+-   A relation is in **first normal form** if *the domain of each
+    attribute contains only atomic values*, and *the value of each
+    attribute contains only a single value from that domain*.
 
 ### Functional Dependencies
+
+-   A **functional dependency** is a constraint between two sets of
+    attributes in a relation from a database.
+-   Given a relation R, a set of attributes X in R is said to
+    **functionally determine** another set of attributes Y, also in R,
+    (written X → Y) if and only if each X value is associated with
+    precisely one Y value; R is then said to satisfy the functional
+    dependency X → Y.
 
