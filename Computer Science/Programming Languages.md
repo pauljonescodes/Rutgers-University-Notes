@@ -639,4 +639,33 @@ October 15th, 2013 <small>Midterm Study Guide</small>
                 )
             )
 
+October 26th, 2013 <small>Exercise Set 5: Prolog</small>
+--------------------------------------------------------
+
+1.  Translate the following into a set of prolog facts and rules. It
+    should be possible for Prolog to infer E from A – D.
+    1.  Joe is in the toy department
+    2.  If someone is in a department they report to the head of that
+        department.
+    3.  Sam is the head of the toy department.
+    4.  Everyone's salary is less that the salary of the person they
+        report to.
+    5.  Joe's salary is less than Sam's salary.
+
+2.  Write a definition in Prolog for the predicate `fib(N, F)` which is
+    true if $F$ is the $N$th fibonacci number, $fib_N$, defined as
+    follows: $fib_0$ is $0$, $fib_1$ is $1$, and for $N>1$,
+
+$$fibN= fibN-1+fibN-2$$
+
+3.  Write a definition in Prolog for the predicate double, where
+    double(A, B) is true for lists A and B if B has the same elements as
+    A, but repeated. E.g. double([dog, cat], [dog, dog, cat, cat]) is
+    true, but double([dog, cat], [dog, cat, dog, cat] is not true.
+    double([dog, cat], L) should bind L to [dog, dog, cat, cat]. The
+    query double([a, b], L). should succeed, binding L to [1, 1, b, b].
+4.  Write a definition in Prolog for the predicate without0(L1, L2)
+    which is true if L2 is a copy of L1 with all 0's removed. E.g.,
+    without0([4, 0, 5, 6, 0], [4, 5, 6]) is true and without0([4, 0, 5],
+    L) binds L to [4, 5].
 

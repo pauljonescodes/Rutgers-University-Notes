@@ -1107,3 +1107,39 @@ October 21st, 2013 <small>Quiz 4 Study</small>
     precisely one Y value; R is then said to satisfy the functional
     dependency X → Y.
 
+October 26th, 2013 <small>Reading, pages 350-359</small>
+--------------------------------------------------------
+
+### Indexes in SQLIndex
+
+:   An index on an attribute *A* of a relation is a data structure 
+	that makes it efficient to find those tuples that have a fixed 
+	value for attribute *A*.
+:   We could think of the index as a binary search tree of (key, value)
+	pairs, in which a key a (one of the values that attribute *A* 
+	may have) is associated with a "value" that is the set of 
+	locations of the tuples that have a in the component for 
+	attribute *A*.
+:   A database index is a data structure that improves the 
+	speed of data retrieval operations on a database table at the 
+	cost of additional writes and the use of more storage space 
+	to maintain the extra copy of data. Indexes are used to quickly
+	locate data without having to search every row in a database 
+	table every time a database table is accessed.
+
+Index key
+
+:   Note that the key for the index can be *any attribute* or *set 
+	of attributes*, and need not be the key for the relation on 
+	which the index is built. 
+:   We shall refer to the attributes of the index as the *index 
+	key* when a distinction needs to be made.#### Motivation for Indexes
+
+-   When relations are very large, it becomes expensive to scan all 
+	the tuples of a relation to find those (perhaps very few) tuples
+#### Declaring Indexes### Selection of Indexes #### A Simple Cost Model
+
+#### Some Useful Indexes
+
+#### Calculating the Best Indexes to Create
+#### Automatic Selection of Indexes to Create
