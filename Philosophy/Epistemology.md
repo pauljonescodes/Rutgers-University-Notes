@@ -843,3 +843,8 @@ October 21st, 2013 <small>Is Infinitism the Solution to the Regress Problem?<sma
     because the conclusions would be "I don't know.", whereas they
     concluded, "I don't know if I know."
 
+October 23rd, 2013 <small>Lecture</small>
+-----------------------------------------
+
+
+
