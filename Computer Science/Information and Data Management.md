@@ -1046,6 +1046,16 @@ October 21st, 2013 <small>Quiz 4 Study</small>
 
 -   A **primary key** *uniquely specifies a tuple within a table*.
 
+##### Method for finding keys
+
+1.  If the letter is in the relation and not in the FDs, it must
+	be a key.
+2.  If the letter appears on the left but never on the right in
+	the FDs, then it must be in the key.
+3.  If the letter appears *on the right but never on the left*, then
+	it **cannot** be in the key.
+4.  If the letter is *on both sides*, you **cannot** not use this method.
+
 #### Superkeys
 
 -   A **superkey** is defined in the relational model of database
