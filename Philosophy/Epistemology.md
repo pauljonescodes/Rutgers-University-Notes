@@ -843,8 +843,53 @@ October 21st, 2013 <small>Is Infinitism the Solution to the Regress Problem?<sma
     because the conclusions would be "I don't know.", whereas they
     concluded, "I don't know if I know."
 
-October 23rd, 2013 <small>Lecture</small>
------------------------------------------
+October 28rd, 2013 <small>Ginet's Response to Klein</small>
+-----------------------------------------------------------
 
+-   "Klein has confused being able to answer questions about
+	justifiedness with the state of being justifiedness."
+	-   Fred doesn't have to be able to do this in order to
+		be justified. It's not about the justification, it's
+		about how justification arises.
+	-   The *fact* about justification is that it arises in
+		a foundational way.
 
+-   On *a priori* beliefs, on pg. 142, Ginet will say, 
+	>   The fact that he understands it *is* his justification 
+	>   for believing it, because that fact entails his believing
+	>   it.
+	-   Merely *understanding* that "5 + 3 = 9" is not sufficient
+		for have a JTB. Does merely understanding do it?
+	-   My understanding is that "5 + 4 = 9" and this implies that
+		"5 + 3 = 9" is false.
+		-   So what's the difference between understanding and 
+			understanding it's true.
+		-   "I understand what it means for *x* to be true."
 
+-   Many people think that suppose I want to argue that arguing
+	for something is a good way to show that it's true.
+	-   "Arguing is a good way to show something is true. Give
+		me reasons and inferences and deductions."
+	-   Suppose someone argues that, "Reason to the best 
+		explanation is the best explanation for how to get 
+		the truth or something."
+		-   This is not typical circular reasoning. Circular
+			reasoning is when the conclusion of an argument is
+			contained in the premises from which the conclusion
+			was argued.
+		-   Begging the question has to do with the form of the
+			argument.
+
+	-   "What's the best way to argue for something?" Suppose Klein
+		responds, "$W_1$", well what's the best way for arguing for
+		that? "$W_2$", well why aren't you giving me your *best*
+		way?
+		-   If my practice is going to be consistent with my
+			belief, I have to use my *best way*, which isn't
+			way 2, it's way 1. If you ask for the best way and
+			I use it, you cannot be mad, because if I were to
+			use another way, you would say why didn't I use
+			my way?
+		-   I'm not assuming the proposition I'm trying to prove,
+			the proposition I'm trying to prove is about the method
+			I use to prove it.
