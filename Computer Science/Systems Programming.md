@@ -854,13 +854,10 @@ load an inverted index produced by your indexer into memory and use it
 to answer users’ search queries. Using the same example from the indexer
 assignment, if you are given the following set of files:
 
-    +----------+---------------------+
-    | Filename | File Content        |
-    +----------+---------------------+
-    | boo      | A dog name name Boo |
-    +----------+---------------------+
-    | baa      | A cat name Baa      |
-    +--------------------------------+
+| Filename   | File Content        |
+|------------|---------------------|
+| `boo`      | A dog name name Boo |
+| `baa`      | A cat name Baa      |
 
 you would use your indexer to generate the following inverted list and
 save it to an index file:

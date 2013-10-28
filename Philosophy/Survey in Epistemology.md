@@ -1140,6 +1140,77 @@ October 21st, 2013 <small>Seminar</small>
 October 28th, 2013 <small>Chapter 6, 'Perceptual Justification'</small>
 -----------------------------------------------------------------------
 
+-   Perception is a source of knowledge.
+	-   You come to know things about your surroundings.
+	-   It is hard to see how we could know much about the
+		world around us if we could not perceive how things
+		are.
+
+-   Perception is also a source of justified belief.
+-   So far, this is just the obvious, when we ask
+	*how* percetption provides us with knowledge and justfied
+	belief.
+
+>   [S]ome of the hardest and most interesting questions in 
+>   the epistemology of perception concern in the first instance 
+>   how perception can provide justification.
+
+### Preliminaries on perceptual experience
+
+-   Perception, in paradigm cases, involves **perceptual experience**.
+-   When we have experiences, things and their properties seem
+	**present** to the mind in a way they do not in **non-perceptual
+	thought**.
+
+### Can experiences justify beliefs?
+
+-   The best argument against perception being able to justify
+	beliefs is the **Sellarsian dilemma**, after Wilfrid Sellars.
+
+Dilemma
+
+:   A dilemma usually takes the following form:
+	
+	1.  Either A or B is true.
+	2.  If A is true, then such and such is true.
+	3.  If B is true, then such and such is true.
+	4.  Therefore, such and such is true.
+
+	2 and 3 are the **horns** of the dilemma.
+
+Sellarsian dillemma
+
+:   1.  Either experiences have propositional content or they do
+		not.
+	2.  If experiences have propositional content, then they
+		can justify beliefs only if the experiences themselves
+		are justified.
+	3.  Experiences cannot be justified.
+	4.  If experiences have propositional content, they cannot
+		justify beliefs. (From 2 and 3)
+	5.  If experiences lack propositional content, then having
+		them cannot be havint a reason to believe anything.
+	6.  If in having an experience we do not thereby have a reason
+		to believe anything, then having an experience
+		cannot justify a belief.
+	7.  So, if experiences lack propositional content, then they
+		cannot justify beliefs. (From 5 and 6)
+	8.  Therefore, experiences do not justify beliefs.
+
+Propositional content
+
+:   Beliefs have propositional content, they are beliefs that
+	*certain things are the case*.
+
+:   The belief that the squirrel is on the railing has the
+	propositional content that *the squirrel is on the railing*.
+
+:   Desires and intentions have propositional content. When you
+	desire something you always desire that such and such be the
+	case.
+
+
+
 October 28th, 2013 <small>Seminar</small>
 -----------------------------------------
 
@@ -1172,3 +1243,8 @@ December 2nd, 2013 <small>Chapter 11, part II, 'Social Epistemology (Institution
 
 December 2nd, 2013 <small>Seminar</small>
 -----------------------------------------
+
+*[JTB]: Justified true belief
+*[JTBs]: Justified true beliefs
+*[BIV]: Brain in a vat
+
