@@ -1178,6 +1178,8 @@ Dilemma
 
 	2 and 3 are the **horns** of the dilemma.
 
+#### The case for answering "No."
+
 Sellarsian dillemma
 
 :   1.  Either experiences have propositional content or they do
@@ -1209,7 +1211,148 @@ Propositional content
 	desire something you always desire that such and such be the
 	case.
 
+Justification-from-Reasons View
 
+:   >   If S is justified in believing that P, this holds in virtue of 
+	>   S’s having reasons to believe that P.
+
+:   This says that you are justified in believing something this is
+	because you have reason to believe it. This is related to
+	premise 6.
+
+Propositional View of Reasons
+
+:   >   a reason for belief is a piece of information – a claim, 
+	>   a proposition – and you have a piece of information as a 
+	>   reason only if you justifiably believe it is true. 
+
+:   The propositional view secures premise 5.
+
+-   Why can't we think of a headache itself as a reason for believing
+	that S has a headache?
+	-   Propositionalist reply: Reasons must be the sorts of things
+		that we can *give* in defense of ourselves or others.
+		-   Giving something in defense requires that it be
+			articulable.
+		-   Things like headaches and visual experiences are
+			not articulable.
+		-   I can *describe* these states, but I cannot
+			*express* them.
+
+#### Assuming they can, how?
+
+-   There are two categories of how they could.	-   **Direct justification**
+	-   **Indirect justification**
+
+Indirect theories
+
+:   -   "The apple looks green to you." How could that justify
+		you in believing the apple is green?
+		-   Don't you have to notice it looks green to you and
+			then to believe it is green *on that basis*.
+		-   According to indirect theories, yes.
+	-   There are three problems for indirect theories:
+		1.  It is difficult to get to the conclusion that the apple
+			is green if all you have to start with is the justified
+			belief that it looks green to you.
+			-   This is hardly conclusive.
+		2.  You might have justification to believe *p* but still
+			lack a justified belief in the cases where you don't
+			believe despite propositional justification or believe
+			on grounds of wishful thinking.
+		3.  Can’t one be wrong about even about how things look, 
+			sound, etc. to one? Couldn’t I get my experience 
+			wrong despite my best attempts to get it right?
+
+Basing requirement on doxastic justification
+
+:   >   Your belief that P is justified only if you are justified 
+	>   in believing P and you believe that P on the basis of the
+    >   factors that make you justified in believing P.
+
+### Dogmatism
+
+-   The simplest direct theory holds that when you have an
+	experience in which something looks, sounds, etc, a certain
+	way to you, this experience alone is enough to justify you
+	in believing it is that way, unless you have some special
+	reason to think otherwise.
+	-   the experience of a thing’s appearing a certain way to 
+		you provides you **immediate *prima facie* justification** 
+		to believe that the thing is that way.
+
+Dogmatism
+
+:   >   Whenever you have an experience in which a thing appears 
+	>   (i.e., looks, sounds, etc.) a certain way, *F*, to you, 
+	>   then you thereby have immediate prima facie justification 
+	>   to believe that it is *F*.
+
+:   But this does not account for hallucinations in which nothing
+	is appearing but it looks to you as if it is.
+
+Dogmatism (expanded version)
+
+:   >   Whenever you have an experience as of something being a 
+	>   certain way, *F*, to you, then you thereby have immediate 
+	>   prima facie justification to believe that it is *F*.
+
+Skeptical assumption
+
+:   >   In order for an experience of its looking to you that 
+	>   *P* to justify you in believing that *P*, you have to be
+	>   independently justified in believing that you aren’t 
+	>   a brain in a vat (aren’t dreaming, etc.)
+
+:   If dogmatism is true, then this assumption is false.
+	All you need is the experience of a thing looking *F* 
+	to be justified in believing it is *F*
+
+Cognitive penetrability objection
+
+:   -   Do we “see” different things depending on which theories 
+		we accept? 
+		-   If we do, then if we use what we see to justify 
+			those theories, aren’t we going in a circle?
+		-   For instance, preformationists believed that every
+			human cell contained an embryo. Imagine one of them
+			looked into a microscope and happened to see something
+			that looked a little like an embryo. This person
+			can not be as justified as a non-preformationist who
+			daw the same thing for what it is, but on this view
+			it may be.
+
+-   Consider other influences of our cognitive attitudes on our
+	experiences
+	-   A novice gold prospector wants to find gold and this desire
+		makes him see the dusty nugget in his pan as gold.
+		Is he justified?
+
+:   >   An experience is cognitively penetrated just in case a cognitive 
+	>   state of the person penetrates (i.e., causally influences) 
+	>   the post-attentional processing of sensory input
+
+#### The speckled hen objection
+
+>   Imagine seeing two hens, one with 48 speckles and the other 3. Before you count, you won’t be justified in thinking the first has 48-speckles, but you will be justified in thinking the second one has 3 speckles. The problem for dogmatism is that it seems that in some sense 48-speckledness is present in your experience when you look at the first hen, just as 3-speckledness is present in your experience when you look at the second hen. But if it looks 48-speckled to you, then by dogmatism, wouldn’t you be justified in thinking it is? But you aren’t. So we have a problem for dogmatism, the **speckled hen problem**.[^1]
+
+The seemings response[^2]
+
+:   the dogmatist should understand experiences in the relevant 
+	sense as mental states in which it seems to the subject that 
+	a thing is F; only such seemings can justify.
+
+The mode of presentation response
+
+:   the dogmatism might claim *that only experiences in which a 
+	property is present* in a certain mode or way provide prima 
+	facie justification
+
+The demonstrative response
+
+:   the dogmatist might severely restrict her dogmatism so that 
+	it only applies to beliefs *such as this thing is that way*
+	if an object looks a certain way to you, you are *prima facie 	immediately justified only in believing that it is that way*.
 
 October 28th, 2013 <small>Seminar</small>
 -----------------------------------------
@@ -1248,3 +1391,6 @@ December 2nd, 2013 <small>Seminar</small>
 *[JTBs]: Justified true beliefs
 *[BIV]: Brain in a vat
 
+[1]: Ernest Sosa (2003) raises this problem as a problem for 
+	 both dogmatists and indirectness theories.
+[2]: Michael Huemer's "phenomenal conservatism."
