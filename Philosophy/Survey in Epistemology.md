@@ -1336,26 +1336,169 @@ Cognitive penetrability objection
 
 >   Imagine seeing two hens, one with 48 speckles and the other 3. Before you count, you won’t be justified in thinking the first has 48-speckles, but you will be justified in thinking the second one has 3 speckles. The problem for dogmatism is that it seems that in some sense 48-speckledness is present in your experience when you look at the first hen, just as 3-speckledness is present in your experience when you look at the second hen. But if it looks 48-speckled to you, then by dogmatism, wouldn’t you be justified in thinking it is? But you aren’t. So we have a problem for dogmatism, the **speckled hen problem**.[^1]
 
-The seemings response[^2]
+##### Responses
 
-:   the dogmatist should understand experiences in the relevant 
-	sense as mental states in which it seems to the subject that 
-	a thing is F; only such seemings can justify.
+Seemings
 
-The mode of presentation response
+:   >   the dogmatist should understand experiences in the relevant 
+	>   sense as mental states in which it seems to the subject that 
+	>   a thing is F; only such seemings can justify[^2].
 
-:   the dogmatism might claim *that only experiences in which a 
-	property is present* in a certain mode or way provide prima 
-	facie justification
+Mode of presentation
 
-The demonstrative response
+:   >   the dogmatism might claim *that only experiences in which a 
+	>   property is present* in a certain mode or way provide prima 
+	>   facie justification
 
-:   the dogmatist might severely restrict her dogmatism so that 
-	it only applies to beliefs *such as this thing is that way*
-	if an object looks a certain way to you, you are *prima facie 	immediately justified only in believing that it is that way*.
+Demonstrative
+
+:   >   the dogmatist might severely restrict her dogmatism so that 
+	>   it only applies to beliefs *such as this thing is that way*
+	>   if an object looks a certain way to you, you are *prima facie 	>   immediately justified only in believing that it is that way*.
 
 October 28th, 2013 <small>Seminar</small>
 -----------------------------------------
+
+### Sellars argument
+
+#### Propositional content
+
+-   Not all content is propositional, it can be smaller.
+	-   Singular terms or concepts could be part of a proposition.
+	-   "That iPad that Olivia is using." "That iPad" is a part.
+
+-   The question is whether experiences as a mental state or any
+	state is a propositional attitude.
+	-   There is at least a subclass of mental states that have
+		propositional content.
+
+-   A feeling of pain, on the other hand, may not have propositional
+	content. It's just a feeling or something like that.
+-   So there are two kinds of mental states:
+	1.  Phenomenal character, feeling.
+	2.  Lacks phenomenal character, has propositional content.
+
+-   Everybody agrees that having the property of propositional content
+	is something that at least some mental states might have.
+	-   In particular, perceptual experiences.
+
+-   Sellars' way of defending coherentism by saying that *only beliefs
+	can justify beliefs*.
+	-   If you say that beliefs are the only thing that can do this,
+		it affects its justificational status. **Justifiers**
+	-   Which things and kinds of things are justifiers?
+	-   Beliefs, justified beliefs, are justifiers.
+	-   Perceptual experiences?
+	-   Process reliablism confers justificational changes by means
+		of *processes*.
+
+-   If you make an inference from two premises to a conclusion and
+	your inference and its structure are valid, then the fact that
+	it is valid makes it justified. Or at least contributes.
+	-   Or if it's invalid, then it contributes to its state.
+
+#### Evidentialism and Internalism
+
+-   For them, the only things that are justifiers are mental states.
+-   Suppose Jones believes *p* and that "if *p* then *q*".
+	-   Is he propositionally justified in believe in *q*?
+	-   You're in a state such that if you were in that state, then
+		it would be justified.
+
+-   What are the things that confer the justificational status?
+	-   It's not only that Jones believes it.
+	-   It's also that the argument is *valid*.
+		-   This is not a mental state.
+
+-   Would it be plausible that only mental states are justifiers
+	for doxastic?
+	-   No, because for process reliablists, it's not only the
+		doxastic *state* but the doxastic *process*.
+
+-   There's a lot of room of play for justifiers.
+
+#### The premises
+
+>   (2)  If experiences have propositional content, then they
+>   can justify beliefs only if the experiences themselves
+>   are justified.
+
+-   If we agree that nothing can be a justifier without itself
+	being justified.
+
+>   (3) But experiences cannot be justified[^3].
+
+-   This is uncomfortable.
+
+>   (5)  If experiences lack propositional content, then having
+>	them cannot be having a reason to believe anything.
+
+-   This horn is being pursued by *having a reason*.
+	-   We have not spoke much about reasons.
+	-   It's hard to sum up use of the word "reason."
+		-   Mostly until recently mainstream epistemologists have
+			not been using "reason" as a favorite word.
+
+#### Experience and Justification
+
+-   If you think that experiences have propositional content, then you
+	might think that the only beliefs that experiences have power 
+	over are the same ones.
+	$$V(GS) \iff B(GS)$$
+
+### Dogmatism
+
+-   If we're going to be accurate about our representation of the world
+	that everything happens from the analysis of the datum from the
+	sense.
+	-   You get sound waves, shapes, lights, etc.
+
+-   How much penetrability happens from high-level beliefs?
+	-   For present purposes, admit that it can happen *some of the
+		time*.
+	-   What should epistemologists do about this?
+		-   Theory-ladenness and perception in the 50s and 60s for
+			philosophy of science and Thomas Cuun and Hanson is
+			that what you already believe and already be trained on,
+			say the bird watcher and what they're trained to detect,
+			then the training is in your memory and part of your
+			prior cognition, can this warp your experience?
+		-   A lot goes on without your being aware of it.
+
+	-   For instance, distinguishing twins, sometimes you can
+		determine *that **that** is Sally and that **that** 
+		is Sandra*, but not *how* or *why* this is the case.
+		-   Does the processing make a causal difference in the way
+			that things appear? Top-down, Bottom-up processing.
+
+-   Your fears and emotions and wishes make it so that you "see"
+	people you might want or not want to see.
+-   Dogmatism takes the function of the what the perceptual state
+	is like to be the only determining factor in justification.
+	-   It's like jumping to a conclusion.
+
+-   What if it turns out that observation *is not* pure and 
+	unadulterated?
+	-   What if people in one laboratory have beliefs that make
+		them observe to fit their theory in a way that contradicts
+		the observations of people in another lab with another 
+		theory.
+		-   If emotions distort beliefs, it could make it
+			observation impossible.
+
+>   Maybe we have lower-level experiences that are not 
+>   penetrated.
+
+-   This is something that people in psychology and vision
+	science insofar as perceptual belief, not all belief is
+	perception based, what does it mean to be "directly
+	perception based"?
+	-   What is this special class and how is it picked out?
+		-   The intuitive idea with which people start are the
+			elements of the perceptual system.
+		-   In the case of vision, there are shapes. Within
+			visual science, people represent things in terms of
+			[geons](http://en.wikipedia.org/wiki/Geon_(psychology)).
 
 November 4th, 2013 <small>Chapter 8, 'Epistemology and Cognitive Science'</small>
 ---------------------------------------------------------------------------------
@@ -1387,10 +1530,20 @@ December 2nd, 2013 <small>Chapter 11, part II, 'Social Epistemology (Institution
 December 2nd, 2013 <small>Seminar</small>
 -----------------------------------------
 
+<!-- Accronyms -->
+
 *[JTB]: Justified true belief
 *[JTBs]: Justified true beliefs
 *[BIV]: Brain in a vat
 
-[1]: Ernest Sosa (2003) raises this problem as a problem for 
-	 both dogmatists and indirectness theories.
-[2]: Michael Huemer's "phenomenal conservatism."
+<!-- Footnotes -->
+
+[^1]:	Ernest Sosa (2003) raises this problem as a problem for 
+		both dogmatists and indirectness theories.
+
+[^2]:	Michael Huemer's "phenomenal conservatism."
+
+[^3]: 	I very much doubt this, or at least have reason to doubt 
+		this. Imagine that someone has face-blindness, is aware of
+		their face-blindness, and the experience of seeing a specific
+		person. 
