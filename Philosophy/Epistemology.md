@@ -15,11 +15,6 @@ September 4th, 2013 <small>The Gettier Problem</small>
         justification and belief and (by accident) truth. \> Yeah,
         Jones/Smith has a JTB, but he does not have \> knowledge.
 
--   Two claims about justification: \> 1. **The Closure Principle** \> -
-    What does it mean for a set of objects to be closed? \> - Every
-    member of the set is related to every other member? \>\
-    \> 2. **The K-thesis** \> 1. Kp $\to$ KKP \> 2. Kp $\to$ KKK ... Kp
-
 -   To know that `p` is to know everything about the concepts of `p`.
     -   To know that `Kp` you probably need to have the concepts of `K`,
         "knowledge."
@@ -893,3 +888,174 @@ October 28rd, 2013 <small>Ginet's Response to Klein</small>
 		-   I'm not assuming the proposition I'm trying to prove,
 			the proposition I'm trying to prove is about the method
 			I use to prove it.
+
+October 30th, 2013 <small>'Skeptical and Perceptual Knowledge' by Ernest Sosa</small>
+-----------------------------------------------------------------------------
+
+-   Dreams pose a deeper problem than that a BIV or EDD
+	-   In what follows Sosa takes up this paradox.
+	-   First, a heterodox conception of dreams.
+	-   Second, a resolution based on a conception of knowlege
+		as apt belief.
+
+### Varieties of skepticism
+
+-   There are many forms.
+	-   The **Pyrrhonian** suspends judgment using tropes that
+		counter any reasons offered in favor of belief.
+	-   The **Academic** are more assertive, by claiming that
+		we know nothing
+		-   In general or some large department of common sense or science.
+
+	-   Any attempt to refute this claims will *beg the question*.
+		-   Using *implicit claims of the realm in general*.
+
+-   *Irrefutable does not mean true.*
+	-   If refuting such a skeptic requires adducing some premise,
+		to do which is implictly claim knowledge of its truth,
+		so we're *bound to beg the question*.
+
+-   Such varieties of skepticism are less problematic than the variety
+	of main interest to Sosa.
+	-   At the heart of common sense, our skeptic claims to find a
+		commitment that precludes knowledge
+		-   Either in general or in some main department.
+	
+	-   According to this commitment, a belief can only amount to knowledge
+		if it is **sensitive**.
+		-   Which means *had its contents been false, then it would
+			not have been believed by the believer*.
+
+### Skepticism, sensitivity, and safety
+
+-   If a sensitivity requirement is indeed at the core of common sense,
+	it puts the skeptic in a good position.
+	-   Belief that one is not radicallt misled turns out to be
+		insensitive.
+	-   Radical scenarios are constructed to secure this result.
+
+Basis-relative sensitivity
+
+:   A belief constitutes knowledge if and only if 
+	had it been false, then the believer would not have
+	held it on the same basis on which he actually holds it.
+
+-   This is not helpful unless we externalize perceptual bases for belief.
+	-   Had its content been false, then trivially, it ould not have been
+		a *factive* basis, since any such basis has to be veridical.
+
+-   However, consider a normal perceiver and a counterpart BIV.
+	-   Deprived of factive perception, a BIV must bases their justified
+		beliefs on something more internal than that.
+
+-   The appeal to perceptual states falls short in resolving the skeptical
+	paradox because when one seens a white surface illuminated with red light,
+	one is justified in taking the surface to be red, provided one has
+	no reason to suspect the quality of the light.
+
+Basis-relative safety
+
+:   A belief cannot consitute knowledge if the believer might too
+	easily have so believed on the same basis while his belief was
+	false.
+
+:   In order to know one must believe on a certain basis, possibly
+	the null basis, where so believing on such a basis has a strong
+	enough tendancy to be right.
+
+-   Safety does not serve the skeptic as does sensitivity.
+	-   Belief that one is not radically deceived is insnsitive,
+		but a belief can be safe despite being insensitive.
+
+### Why the dream scenario is special
+
+-   Our line of reasoning is effect against the usual run of radical
+	skeptical scenarious, such as BIV, EDD, and the Matrix.
+	-   *Only the dream scenario stands apart.*
+	-   Dreams are so common that the possibility one dreams is not
+		outlandish.
+		-   Therefore, I cannoy defend the safety of my belief that
+			I am awake by adducing how remote is the possibility that
+			I go wrong in so believing.
+
+-   There are those who defend common sense against the sensitivity-
+	weilding skeptic by rejecting closure.
+	-   Even if we do not know ourselves to be free of radical scenarios,
+		we can still know of hands and fires.
+		-   This has very implausible consequences.
+
+	-   And this strategy could not be used against the safety-weilding
+		skeptic.
+		-	He can use the dream scenario for a direct attack on ordinary
+			perceptual beliefs.
+
+	-   Take a belief that one sees a hand, or a fire.
+		-   Too easily might one form such a belief on its usual
+			experiential basis, while only dreaming.
+		-   So it is not a safe belief.
+		-   This does not depend on closure.
+
+-   This is why the dream scenario has a distinctive important by comparision
+	with the familiar radical scenarios.
+	-   It is *not outlandish*
+	-   It threatens our perceptual beliefs *directly*.
+		-   "Not by way of closure."
+
+-   That does require an orthodox conception of dreams.
+	-   According to which, beliefs and experiences hosted not only
+		in the dream but also in actuality, while we dream.
+		-   *Only thus* would our ordinary perceptual beliefs be
+			threatened by the possibility that we might same on the
+			same experiential basis in a realistic dream.
+
+>   Is that really how we should conceive of our dreams?
+
+### Dreams: The orthodox conception
+
+-   Are dreams made up of conscious states just like those of
+	waking life?
+	-   Orthodoxy: yes.
+	-   Orthodoxy: Dream states and waking states are thought to
+		be instrinsically alike though different in cause and effects.
+
+-   This is highly flawed.
+
+>   Dreams-based skepticism stands out because the dream possibility
+>   is too close for comfort.
+
+-   "Subjectively indistinguishable"
+	-   Too easily we might have been dreaming.
+
+-   Fortuntely, the orthodoxly is not beyond question.
+
+### What are dreams made of?
+
+-   Do the characters in our dreams have beliefs and intentions?
+	-   They do *in general*, but do I myself also have them as
+		protagonist in my dream?
+		-   I do believe and intend things in my dream.
+		-   In my dream I, ...
+			1.  Am concious;
+			2.  Assent to this or that.
+			3.  I judge
+			4.  I choose.
+
+		-   But does this *really* happen?
+
+-   When something happens in my dream, reality tends to not follow
+	suit.
+	-   When I am chased by a lion, it poses no threat to my skin.
+	-   What is in question is the inference from (In my dream I believe
+		such and such) to (In actuality I so believe such and such).
+
+
+### Dreams and skepticism
+
+### Animal knowledge and apt belief
+
+### Apt belief and the problem of dreams
+
+### Conclusion
+
+*[BIV]: Brain in a vat
+*[EDD]: Evil demon deceived

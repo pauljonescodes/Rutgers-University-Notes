@@ -643,20 +643,32 @@ October 26th, 2013 <small>Exercise Set 5: Prolog</small>
 --------------------------------------------------------
 
 1.  Translate the following into a set of prolog facts and rules. It
-    should be possible for Prolog to infer E from A – D.
+    should be possible for Prolog to infer 5 from 1 through 4.
     1.  Joe is in the toy department
+
+			inside(joe, toy_dept).
+
     2.  If someone is in a department they report to the head of that
         department.
+
+			report(X, Y, dept) :- inside(x, dept), head(y, dept). 
+
     3.  Sam is the head of the toy department.
+
+			head(sam, toy_dept).
+
     4.  Everyone's salary is less that the salary of the person they
         report to.
+
+			paid_less(X, Y) :- report(X, Y, Z).
+
     5.  Joe's salary is less than Sam's salary.
 
 2.  Write a definition in Prolog for the predicate `fib(N, F)` which is
     true if $F$ is the $N$th fibonacci number, $fib_N$, defined as
     follows: $fib_0$ is $0$, $fib_1$ is $1$, and for $N>1$,
 
-$$fibN= fibN-1+fibN-2$$
+		$$fibN= fibN-1+fibN-2$$
 
 3.  Write a definition in Prolog for the predicate double, where
     double(A, B) is true for lists A and B if B has the same elements as
@@ -669,3 +681,198 @@ $$fibN= fibN-1+fibN-2$$
     without0([4, 0, 5, 6, 0], [4, 5, 6]) is true and without0([4, 0, 5],
     L) binds L to [4, 5].
 
+October 19th, 2013 <small>Logic Programming</small>
+---------------------------------------------------
+
+
+Constants
+
+:   Represent entities, which are "things" and not functions or relations.
+
+:	In Prolog, start with lower case.
+	
+		albert, my_house
+
+Variables
+
+:   Stands for constants
+
+	 In Prolog, start with upper case or `_`
+
+		X, House, _xyz, _321
+
+Functors
+
+:   -   Represent a function from entities to an entity.
+		-   "Function" = "Mapping" as in math, not a computation.
+
+:	-   In Prolog, start with lower case like constants.
+		-   In fact, a constant is just a term with no arguments.
+
+Terms
+
+:   Represent an entity.
+
+:	-   Constant, variable, or `<functor>[(<term> {, <term>})]`
+		-   `father(albert)` might represent the father of albert
+		-   `successor(victoria)` might represent the successor of victoria
+		-   `sum(1, 2)` might represent the sum of 1 and 2
+
+Predicates
+
+:   Represent a function from entity (terms) to a boolean.
+
+:   In Prolog, start with lower case like functors.
+
+Atoms
+
+:   Logical statement without and, or, not, etc.
+	
+		<predicate>(<term> {, <term>})
+		older( father(Person), Person) 
+		square(X, 4)
+
+Horn clauses
+
+:   A horn clause is 
+
+		c h1 ^ h2 ^ h3 ^ ... ^ h_n
+
+	Antecedent `h`
+
+	:   Conjunction of zero or more conditions which are *atomic
+		formulas*.
+
+	    Alternatively, **subgoal** or **tail**.
+
+	Consequent `c`
+
+	:   The consequent is true just in case all the antecedents are
+		true.	
+
+	    Alternatively, called **goal** or **head**.
+
+:   Written as,
+
+		c :- h1 , ... , hn.
+
+:   A horn clause with no tail is a **fact**.
+
+	A horn clause with tail is a **rule**.
+
+List
+
+:   A sequence of elements separated by commas.
+
+		[ first element | rest_of_list ]
+
+	list	|	head	|	tail
+	--------|-----------|---------
+	`[a, b, c]` | `a` | `[b, c]`
+	`[X,[cat],Y]` | `X` | `[[cat],Y]`
+	`[a,[b, c],d]`|`a`|`[[b,c],d]`
+	`[X | Y]` | `X` | `Y`
+
+:   List functions:
+	
+	-   `append`
+	-   `last`
+	-   `reverse`
+	-   `reverse-conc`	
+
+Member Function
+
+:	Goal-oriented semantics
+
+	:   can get value assignment for goal member(A,[B|C]) by 
+		showing truth of subgoal member(A,C) and retaining value 
+		bindings of the variables
+
+	Procedural semantics
+
+	:   think of head of clause as procedure entry, terms as 
+		parameters. then body consists of calls within this 
+		procedure to do the calculation. variables bindings 
+		are like "returned values".
+
+October 29th, 2013 <small>[Quick'n'Dirty Prolog Tutorial](http://www.cs.utexas.edu/~cannata/cs345/Class%20Notes/12%20prolog_intro.pdf)</small>
+---
+
+### Prolog Program Components
+
+-   A **fact** is a *single piece of information*.
+	-   To represent that the sky is blue, you would write:
+
+			blue(sky).
+
+	-   Simiarly, `mammal(rabbit).` says that rabbits are mammals.
+	-   Facts can have multiple arguments,
+
+			plays(john, hockey).
+
+		Which represents that John plays hockey.
+
+>   Prolog constants are in lower case, variables are in
+>   upper case, domains are not defined explicitly, and 
+>   entries always end with a period.
+
+
+-   **Rules** are used to generate new information from facts,
+	other rules, and themselves. They have the form:
+
+		head :- body.
+
+	Where the head and the body are clauses that typically
+	use variables instead of constants.
+	-   For instance, consider the rule:
+	
+			grandparent(X, Z) :- parent(X, Y), parent (Y, Z).
+	
+		The rule says that `X` is the grandparent of `Z` when `X`
+		is a perent of `Y` and `Y` is a parent of `Z`. 
+	-   Rules can be recursive. Consider:
+
+			ancestor(X,Y) :- parent(Z,Y), ancestor(X,Z).
+
+-  Now there are **queries**. When you want to ask Prolog a 
+	question, you supply a query.
+	-   Queries are like rules without bodies. Prolog will take
+		the head and find out if it is true or false. 
+	-   If the query has variables, Prolog will attempt to
+		find all possible values that can be used in place of
+		the variables to make the query true and tell you what
+		they are.
+	-   Consider the database:
+
+			parent(amy,bob).
+			parent(bob,cathy).
+			parent(bob,doug).
+			grandparent(X,Z) :- parent(X,Y) , parent(Y,Z).
+			ancestor(X,Y) :- parent(X,Y).
+			ancestor(X,Y) :- parent(Z,Y) , ancestor(X,Z).
+	
+		-   The query `parent(amy,bob)` will be true.
+		-   The query `ancestoru(bob, doug)` is also true.
+		-   The query `parent(bob,X)` will return all the facts
+			that would make the query true.
+
+### Connecting Prolog to Predicate Logic
+
+-   Think of the `:-` symbol in Prolog as representing the word "if".
+	-   Interanlly, Prolog represents rules in a form known as **horn clauses**.
+		These are the disjuction of predicates in which at most one of the predicates
+		is not negated. Consider the grandparent clause:
+
+			grandparent(X,Z) :- parent(X,Y) , parent(Y,Z).
+
+	-   Rewritten in logical notiation,
+
+		$$\forall x \forall y \forall z ((P(x,y) \land P(y,z))\to G(x, z))$$
+
+	-   We know that $p \to q \equiv \lnot p \lor q$, so the above is also:
+
+		$$\forall x \forall y \forall z (\lnot (P(x,y)\land P(y, z)) \lor G(x,z))$$
+
+	-   Apply de Morgans for a horn clause:
+
+		$$\forall x \forall y \forall z (\lnot P(x,y) \lnot P(y,z) \lor G(x, z))$$

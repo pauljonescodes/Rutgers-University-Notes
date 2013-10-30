@@ -1322,11 +1322,11 @@ Cognitive penetrability objection
 			daw the same thing for what it is, but on this view
 			it may be.
 
--   Consider other influences of our cognitive attitudes on our
-	experiences
-	-   A novice gold prospector wants to find gold and this desire
-		makes him see the dusty nugget in his pan as gold.
-		Is he justified?
+	-   Consider other influences of our cognitive attitudes on our
+		experiences
+		-   A novice gold prospector wants to find gold and this desire
+			makes him see the dusty nugget in his pan as gold.
+			Is he justified?
 
 :   >   An experience is cognitively penetrated just in case a cognitive 
 	>   state of the person penetrates (i.e., causally influences) 
