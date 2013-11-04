@@ -1048,14 +1048,28 @@ Basis-relative safety
 	-   What is in question is the inference from (In my dream I believe
 		such and such) to (In actuality I so believe such and such).
 
+November 4th, 2013 <small>2nd Meeting on Sosa</small>
+-----------------------------------------------------
 
-### Dreams and skepticism
+-   Subjective conditional is not closed under the contrapositive.
+-   Argument:
+	1.  $K_s h \to P(K_s \lnot BIV)$
+	2.  $\lnot P(R_s BIV)$
+	3.  $\therefore \lnot K_s h$
 
-### Animal knowledge and apt belief
+### A Counter Argument to Modus Ponens
 
-### Apt belief and the problem of dreams
+-   There are two Republics running, Reagen with 55%, Anderson with 10%
+-   One Democratic candidate: Carter at 10%
 
-### Conclusion
+### The Way Nozick Deals with Skepticism
+
+-   Take the claim that I have a hand.
+-   Take the claim that I am just a BIV.
+
+$$h \to \lnot BIV$$
+
+-   If you didn't have a hand, you wouldn't believe you have a hand.
 
 *[BIV]: Brain in a vat
 *[EDD]: Evil demon deceived
