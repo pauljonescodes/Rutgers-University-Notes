@@ -985,16 +985,6 @@ October 21st, 2013 <small>Chapter 5, 'Contextualism and Pragmatic Encroachment'<
     be a reason you have to do or believe something, then P is
     sufficiently warranted to justify you in that action or belief.
 
-#### Implications of Pragmatic Encroachment for Epistemology
-
-#### Objections
-
-#### Objections to arguments for pragmatic encroachment.
-
-### Knowledge and assertion
-
-### A Role for Psychology
-
 ### Questions
 
 1.  Regarding relevant alternatives, "A claim “S knows that P” is true
@@ -1505,6 +1495,51 @@ November 4th, 2013 <small>Chapter 8, 'Epistemology and Cognitive Science'</small
 
 November 4th, 2013 <small>Seminar</small>
 -----------------------------------------
+
+-   Theories of justification hold that j-factors, ones which affect
+	another beliefs warrant, what are the justifiers?
+	-   What are the *staes of affairs* that influence the status
+		as a belief being satisfied or unsatisfied.
+
+-  The problem for reliabalism is to define the process,
+	but everything else is explicit and not obscure.
+-   Maybe foundationalism, the perceptual side for instance,
+	there is some reference to psychological work.
+	-   So it's not just reliablism.
+	-   It would be natural to bring into the picture questions
+		of cognitive size is best positioned to address.
+		-   There's nothing we really know everything about.
+
+	-   It looks like addressing the question of "how do we go about
+		achieving justified belief?" is an entree into cognitive science.
+		-   The meliorative conception, "making better."
+		-   If you want to make better your cognitive or intellectual
+			or belief-forming or evidence-getting, you have to answer
+			this question.
+		-   For instance Descartes.
+
+	-   The rationalist empiricist debate, what is our main capacity
+		to get us to the truth. Some wanted to say *reason*.
+		Some wanted to say *observation*.
+		-   These are claims about how knowledge is acquired.
+		-   Hume: "This is the only way to do it."
+		-   So we're not leaving epistemology in doing this.
+
+	-   It really sounds like a lot of early thinkers are talking
+		about psychology. But there wasn't even such a word.
+		-   So we're not abandoning the field.
+
+	-   There are parts which has just lain fallow.
+
+-   Meliorism "making better", well to talk about what we could do better
+	we have to ask "What are we doing now?"
+	-   Maybe psychology is the way of avoiding glitches.
+	-   There general problem is "How should you go about conducting
+		your intellectual affairs?
+
+-   Looking at things from a psychological perspective
+-   A big part of epistemology is making normative judgments of justification
+	and warrant.
 
 November 11th, 2013 <small>Chapter 9, 'Philosophy's Intuitional Methodology and the Role of Science'</small>
 ------------------------------------------------------------------------------------------------------------
