@@ -1057,5 +1057,25 @@ Basis-relative safety
 
 ### Conclusion
 
+October 30th, 2013 <small>1st Meeting on 'Skeptical and Perceptual Knowledge'</small>
+-------------------------------------------------------------------------------------
+
+-   An automatic door opener *can register* and is an accurate gauge of the world
+	when the thing in question is of a certain size, at a certain speed, and
+	from a certain distance.
+	-   Alvin Goldman would flesh this out with "process reliablism."
+		-   Imagine a process in its whole history, if it's only
+			been used one and it got it or didn't, is that enough?
+		-   A gauge is reliable if it *tracks the facts*, the
+			"tracking account."
+
+-   Nozick thinks to know:
+	1.  *p* must be true.
+	2.  *S* must believe *p*.
+	3.  $\lnot p \rightarrowtail \lnot Bp$
+	4.  $p \rightarrowtail Bp$
+
+
+
 *[BIV]: Brain in a vat
 *[EDD]: Evil demon deceived
