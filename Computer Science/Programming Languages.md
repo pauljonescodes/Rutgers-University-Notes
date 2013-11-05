@@ -696,7 +696,6 @@ October 26th, 2013 <small>Exercise Set 5: Prolog</small>
     which is true if L2 is a copy of L1 with all 0's removed. E.g.,
     without0([4, 0, 5, 6, 0], [4, 5, 6]) is true and without0([4, 0, 5],
     L) binds L to [4, 5].
->>>>>>> 3d758451f555253f18d7b845449cc36a0e948e3e
 
 		remove0([], A, []).
 		remove0([H | T], A, Result) :- H = A, remove0(T, A, Result).
