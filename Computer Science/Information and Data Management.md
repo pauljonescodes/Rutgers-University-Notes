@@ -1048,13 +1048,14 @@ October 21st, 2013 <small>Quiz 4 Study</small>
 
 ##### Method for finding keys
 
-1.  If the letter is in the relation and not in the FDs, it must
-	be a key.
-2.  If the letter appears on the left but never on the right in
-	the FDs, then it must be in the key.
-3.  If the letter appears *on the right but never on the left*, then
-	it **cannot** be in the key.
-4.  If the letter is *on both sides*, you **cannot** not use this method.
+1.  If the letter is in the relation and not in the FDs, it must be a
+    key.
+2.  If the letter appears on the left but never on the right in the FDs,
+    then it must be in the key.
+3.  If the letter appears *on the right but never on the left*, then it
+    **cannot** be in the key.
+4.  If the letter is *on both sides*, you **cannot** not use this
+    method.
 
 #### Superkeys
 
@@ -1113,89 +1114,105 @@ October 26th, 2013 <small>Reading, pages 350-359</small>
 ### Indexes in SQL
 
 Index
-
-:   An index on an attribute *A* of a relation is a data structure 
-	that makes it efficient to find those tuples that have a fixed 
-	value for attribute *A*.
+:   An index on an attribute *A* of a relation is a data structure that
+    makes it efficient to find those tuples that have a fixed value for
+    attribute *A*.
 :   We could think of the index as a binary search tree of (key, value)
-	pairs, in which a key a (one of the values that attribute *A* 
-	may have) is associated with a "value" that is the set of 
-	locations of the tuples that have a in the component for 
-	attribute *A*.
-:   A database index is a data structure that improves the 
-	speed of data retrieval operations on a database table at the 
-	cost of additional writes and the use of more storage space 
-	to maintain the extra copy of data. Indexes are used to quickly
-	locate data without having to search every row in a database 
-	table every time a database table is accessed.
+    pairs, in which a key a (one of the values that attribute *A* may
+    have) is associated with a "value" that is the set of locations of
+    the tuples that have a in the component for attribute *A*.
+:   A database index is a data structure that improves the speed of data
+    retrieval operations on a database table at the cost of additional
+    writes and the use of more storage space to maintain the extra copy
+    of data. Indexes are used to quickly locate data without having to
+    search every row in a database table every time a database table is
+    accessed.
 
 Index key
-
-:   Note that the key for the index can be *any attribute* or *set 
-	of attributes*, and need not be the key for the relation on 
-	which the index is built. 
-:   We shall refer to the attributes of the index as the *index 
-	key* when a distinction needs to be made.
+:   Note that the key for the index can be *any attribute* or *set of
+    attributes*, and need not be the key for the relation on which the
+    index is built.
+:   We shall refer to the attributes of the index as the *index key*
+    when a distinction needs to be made.
 
 #### Motivation for Indexes
 
--   When relations are very large, it becomes expensive to scan all 
-	the tuples of a relation to find those (perhaps very few) tuples
--   Without indexes, we have to look at every tuple of the two 
-	relations.
+-   When relations are very large, it becomes expensive to scan all the
+    tuples of a relation to find those (perhaps very few) tuples
+-   Without indexes, we have to look at every tuple of the two
+    relations.
 
 #### Declaring Indexes
 
--   most commercial systems have a way for the database designer
-	to say that the system should create an index on a certain 
-	attribute for a certain relation.
+-   most commercial systems have a way for the database designer to say
+    that the system should create an index on a certain attribute for a
+    certain relation.
 
-		CREATE INDEX YearIndex ON Movies(year);
+        CREATE INDEX YearIndex ON Movies(year);
 
 ### Selection of Indexes
 
 -   Two important factors to consider are:
-	-   The existence of an index on an attribute may speed
-		up greatly the execution of those queries in which a 
-		value, or range of values, is specified for that 
-		attribute, and may speed up joins involving that 
-		attribute as well.
-	-   On the other hand, every index built for one or more 
-		attributes of some relation makes insertions, deletions, 
-		and updates to that relation more complex and time-consuming.
-
+    -   The existence of an index on an attribute may speed up greatly
+        the execution of those queries in which a value, or range of
+        values, is specified for that attribute, and may speed up joins
+        involving that attribute as well.
+    -   On the other hand, every index built for one or more attributes
+        of some relation makes insertions, deletions, and updates to
+        that relation more complex and time-consuming.
 
 #### Some Useful Indexes
 
--   Often, the most useful index we can put on a relation
-	is an index on its key. There are two reasons:
-	1.  Queries in which a value for the key is specified are
-		common. Thus, an index on the key will get used 
-		frequently.
-	2.  Since there is at most one typle with a given key
-		value, the index returns either nothing or one
-		location for a typle. Thus, at most one page must
-		be retrieved to get that tuple into main memory.
+-   Often, the most useful index we can put on a relation is an index on
+    its key. There are two reasons:
+    1.  Queries in which a value for the key is specified are common.
+        Thus, an index on the key will get used frequently.
+    2.  Since there is at most one typle with a given key value, the
+        index returns either nothing or one location for a typle. Thus,
+        at most one page must be retrieved to get that tuple into main
+        memory.
 
 #### Automatic Selection of Indexes to Create
 
-1.  The first step is to establish the query workload. 
-	Since a DBMS normally logs all operations anyway, 
-	we may be able to examine the log and find a set of 
-	representative queries and database modifications 
-	for the database at hand. Or it is possible that we 
-	know, from the application programs that use the 
-	database, what the typical queries will be.
-2.  The designer may be offered the opportunity to 
-	specify some constraints, e.g., indexes that must, 
-	or must not, be chosen.
-3.  The tuning advisor generates a set of possible 
-	candidate indexes, and evaluates each one. Typical 
-	queries are given to the query optimizer of the DBMS. 
-	The query optimizer has the ability to estimate the 
-	running times of these queries under the assumption 
-	that one particular set of indexes is available.
-4.  The index set resulting in the lowest cost for the 
-	given workload is sug­ gested to the designer, or 
-	it is automatically created.
+1.  The first step is to establish the query workload. Since a DBMS
+    normally logs all operations anyway, we may be able to examine the
+    log and find a set of representative queries and database
+    modifications for the database at hand. Or it is possible that we
+    know, from the application programs that use the database, what the
+    typical queries will be.
+2.  The designer may be offered the opportunity to specify some
+    constraints, e.g., indexes that must, or must not, be chosen.
+3.  The tuning advisor generates a set of possible candidate indexes,
+    and evaluates each one. Typical queries are given to the query
+    optimizer of the DBMS. The query optimizer has the ability to
+    estimate the running times of these queries under the assumption
+    that one particular set of indexes is available.
+4.  The index set resulting in the lowest cost for the given workload is
+    sug­ gested to the designer, or it is automatically created.
 
+November 5th <small>Transactions and Concurrency Control</small>
+----------------------------------------------------------------
+
+November 7th <small>Transactions and Concurrency Control</small>
+----------------------------------------------------------------
+
+November 12th <small>Quiz on Concurrency Control & Indexing + NoSQL intro lecture</small>
+-----------------------------------------------------------------------------------------
+
+November 14th <small>NoSQL class</small>
+----------------------------------------
+
+November 19 <small>Redemption Quiz</small>
+------------------------------------------
+
+November 21 <small>The "Interview"</small>
+------------------------------------------
+
+December 3rd <small>TBD (I may be away)</small>
+-----------------------------------------------
+
+December 5th <small>Class Projects Presentations</small>
+--------------------------------------------------------
+
+December 10th <small>Project Finalists and Crowning of the Winner</small>
+-------------------------------------------------------------------------
