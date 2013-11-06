@@ -950,7 +950,37 @@ Your grade will be based on:
 November 5th, 2013 <small>Midterm Study Guide</small>
 -----------------------------------------------------
 
-### Function pointers [↪](http://stackoverflow.com/questions/840501/how-do-function-pointers-in-c-work)
+### Meta
+
+-   Coding questions
+-   Size of answer space isn't the actual size of the answer
+-   Make him laugh if you do not know the answer
+-   C questions
+-   Write a macro
+-   Function questions
+-   Dynamic vs. Static
+	-   Static libraries stay the same
+		-   Goes in a link time
+		-   `.a` file
+
+	-   Dynamic libraries change
+		-   Goes in at run time
+		-   `.so` file
+		-   Can change behavior of the executable
+
+-   Signal disposition and forking
+
+### C Syntax
+
+#### Data types
+
+#### Macros
+
+#### C functions
+
+### Multi-programming
+
+### Function pointers
 
 Let's start with a basic function which we will be *pointing to*:
 
@@ -998,6 +1028,8 @@ But it's much nicer to use a `typedef`:
         return functionPtr;
     }
 
+[Source ↪](http://stackoverflow.com/questions/840501/how-do-function-pointers-in-c-work)
+
 ### Dynamic memory management
 
 ### Data Structure design
@@ -1009,6 +1041,230 @@ But it's much nicer to use a `typedef`:
 ### GDB
 
 ### Libraries
+
+-   Group multiple compiled object files into a single file.
+-   Used for sharing common pieces of code.
+-   Software developers can package code and release an API
+	without the actual source code.
+-   Libraries (or components) can be created for dynamic use.
+	-   Library is separate from executable, thus reduced its size.
+	-   Libraries can be invoked when needed.
+
+-   There are two types, dynamic and static libraries.
+
+Static library (`.a`)
+
+:   Library of object code which is linked with, and becomes part of 
+	the application
+
+Dynamic library (`.so`)
+
+:   There is only one form of this library but it can be used in two ways.
+	1.  Dynamically linked at run time but statically aware. The 
+		libraries must be available during compile/link phase. The shared 
+		objects are not included into the executable component but are tied 
+		to the execution.	2.  Dynamically loaded/unloaded and linked during execution 
+		(i.e. browser plug-in) using the dynamic linking loade
+		r system functions.
+
+-   Naming convention: `lib` prefix.
+-   Example:
+
+		gcc src-file.c -lm -lpthread
+
+#### Static library
+
+-   How to generate a library
+	1.  Compile: `cc -Wall -c ctest1.c ctest2.c`
+	2.  Create `.a`: `ar -cvq libctest.a ctest1.o ctest2.o`
+	3.  List files in library: `ar -t libctest.a`
+	4.  Linking:
+
+		cc -o prog prog.c libctest.a
+		cc -o prog prog.c libctest.a
+
+#### Shared Library
+
+-   How to create:
+
+		gcc -Wall -fPIC -c *.c
+		gcc -shared -Wl, -sonae, libctrst.so.1 -o libctest.so.1.0 *.o
+
+-   Cascade the linkageL
+
+		ln -sf /opt/lib/libctest.so.1.0 /opt/lib/libtest.so.1
+		ln -sf /opt/lib/libctest.so.1.0 /opt/lib/libtest.so
+
+-   Compiler options:
+	`-fPIC`
+	:   Compiler directive to output position independent code,
+		a characteristic required by shared libraries, also see
+		`-fpic`
+	`-shared`
+	:   Produce a shared object which can then be linked with other
+		objects to form an executable.
+	`Wl,options`
+	:   Pass options to linker.
+		
+			-soname libctest.so.1
+
+##### Linking
+
+-   The link to `/opt/lib/libctest.so` allows the naming convention
+	for the compile flag `-litest	` to work.
+-   The link to `/opt/lib/libctest.so.1` allows the run time binding
+	to work.
+
+##### Compiling and linking main program
+
+	gcc -Wall -L/opt/lib prog.c -lctest -o prog
+
+##### List dependencies
+
+	ldd prog
+
+##### Library path
+
+-  Add library directories to be included during dynamic linking to 
+	the file 
+
+		/etc/ld.so.conf 
+
+-  Add specified directory to library cache: 
+
+		ldconfig -n /opt/lib
+-  Specify the environment variable `LD_LIBRARY_PATH` to point to the 
+	directory paths containing the shared object library
+
+#### Process
+
+Process
+
+:   an address space with one or more threads executing within that 
+	address space, and the required system resources for those threads.
+
+:   Each instance of a running program constitutes a process.
+
+:   a program - or process - that is running consists of program code, 
+	data, variables (occupying system memory), open files (file 
+	descriptors), and an environment.
+
+:   A process has its own stack space, used for local variables 
+	in functions and for controlling function calls and returns. 
+	It also has its own environment space, containing environment 
+	variables that may be established solely for this process to use. 
+	A process must also maintain its own program counter, a record 
+	of where it has gotten to in its execution, which is the 
+	execution thread.
+
+Process Table
+
+:   The Linux process table is like a data structure describing all 
+	of the processes that are currently loaded with their PID, status, 
+	and command string etc.
+
+`STAT` Code | Description
+------------|------------
+`S` | Sleeping
+`R` | Running
+`D` | Uninterruptible sleep
+`T` | Stopped
+`z` | Defunct
+`N` | Low priority
+`W` | Paging
+`s` | Process is session leader
+`+` | Process is in the foreground process group
+`1` | Process is multithreaded
+`<` | High priority task
+
+Zombie process
+
+:   Using `forkto` create processes can be very useful, but 
+	you must keep track of child processes. When a child process 
+	terminates, an association with its parent survives until the 
+	parent in turn either terminates normally or calls wait. The 
+	child process entry in the process table is therefore not freed 
+	up immediately. Although no longer active, the child process 
+	is still in the system because its exit code needs to be stored 
+	in case the parent subsequently calls wait. It becomes what is 
+	known as defunct, or a zombie process.
+
+#### Signals
+
+
+-   A signal is an event generated by the UNIX and Linux systems 
+	in response to some condition, upon receipt of which a process 
+	may in turn take some action.
+-   Use the term *raise* to indicate the generation of a signal, and 
+	the term *catch* to indicate the receipt of a signal.
+-   Signals are raised by some error conditions, such as memory 
+	segment violations, floating-point processor errors, or 
+	illegal instructions. They are generated by the shell and terminal
+	handlers to cause interrupts and can also be explicitly sent from 
+	one process to another as a way of passing information or 
+	modifying behavior.-  Signals can be raised, caught and acted upon, or (for some at 
+	least) ignored.
+
+Signal name | Description
+------------|------------
+`SIGABORT	` | Process abort
+`SIGALRM` | Alarm clock
+`SIGFPR` | Floating point exception
+`SIGHUP` | Hangup
+`SIGILL` | Illegal instruction
+`SIGINT` | Terminal interuption
+`SIGKILL` | Can't be caught or ignored
+`SIGPIPE` | Write on a pipe with no reader
+`SIGQUIT` | Terminal wuit
+`SIGSEGV` | Invalid memory segment access
+`SIGTERM` | Termination
+`SIGUSR1` | User-defined signal 1
+`SIGUSR2` | User-defined signal 2
+`SIGCHLD` | Child process has stopped or exited
+`SIGCONT` | Contiuning executing, if stopped
+`SIGSTOP` | Stop executing
+`SIGTSTP` | Terminal stop signal
+`SIGTTIN` | Background process trying to read
+`SIGTTOU` | Background process trying to write.
+
+#### Signal handling
+
+	void (*signal(int sig, void (*func)(int)))(int);
+
+-   It takes two parameters, sig and func. 
+	-   The signal to be caught or ignored is given as argument sig. 
+	-   The function to be called when the specified signal is 
+		received is given as func. 
+	-   This function must be one that takes a single int 
+		argument (the signal received) and is of type void.
+
+-   The signal function itself returns a function of the same type, 
+	which is the previous value of the function set up to handle this 	signal, or one of these two special values:
+
+| Value | Meaning |
+| ------------- | ------------- |
+| `SIG_IGN`  | Ignore the signal  |
+| `SIG_DFL`  | Restore default behavior  |
+
+-   Sending signals (even to self): 
+
+		int kill(pid_t pid, int sig);
+
+-   The kill function sends the specified signal, sig, to the process 
+	whose identifier is given by pid. It returns 0 on success. 
+	To send a signal, the sending process must have permission 
+	to do so. Normally, this means that both processes must have the 	same user ID.
+-   Alarm clock (SIGALRM): 
+
+		unsigned int alarm(unsigned int seconds);
+
+-   The alarm call schedules the delivery of a SIGALRM signal in 
+	seconds seconds. In fact, the alarm will be delivered shortly 
+	after that, due to processing delays and scheduling uncertainties. 
+	A value of 0 will cancel any outstanding alarm request. 
+	Each process can have only one outstanding alarm. Alarm 
+	returns the number of seconds left before any outstanding 
+	alarm call would be sent, or -1 if the call fails.
 
 ### Signals and event-based programming
 
@@ -1148,6 +1404,7 @@ Semaphores
 	it.
 -   Must local the mutex before entering and unlock it when
 	you finish.
+		#include <pthread.h>		int pthread_mutex_init(pthread_mutex_t *mutex,		const pthread_mutexattr_t *mutexattr); int 		pthread_mutex_lock(pthread_mutex_t *mutex));		int pthread_mutex_unlock(pthread_mutex_t *mutex); int 		pthread_mutex_destroy(pthread_mutex_t *mutex);
 
 ###### Destruction
 
@@ -1162,5 +1419,6 @@ Semaphores
 
 
 ### Signals and threads
+
 
 
