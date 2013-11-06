@@ -947,3 +947,220 @@ Your grade will be based on:
     written your design document and code are, including modularity and
     comments).- Code reuse (that your index works with both indexers).
 
+November 5th, 2013 <small>Midterm Study Guide</small>
+-----------------------------------------------------
+
+### Function pointers [↪](http://stackoverflow.com/questions/840501/how-do-function-pointers-in-c-work)
+
+Let's start with a basic function which we will be *pointing to*:
+
+    int addInt(int n, int m) {
+        return n+m;
+    }
+
+First thing, lets define a pointer to a function which receives 2 `int`s and returns and `int`:
+
+    int (*functionPtr)(int,int);
+
+Now we can safely point to our function:
+
+    functionPtr = &addInt;
+
+Now that we have a pointer to the function, lets use it:
+
+    int sum = (*functionPtr)(2, 3); // sum == 5
+
+Passing the pointer to another function is basically the same:
+
+    int add2to3(int (*functionPtr)(int, int)) {
+        return (*functionPtr)(2, 3);
+    }
+
+We can use function pointers in return values as well (try to keep up, it gets messy):
+
+    // this is a function called functionFactory which receives parameter n
+    // and returns a pointer to another function which receives two ints
+    // and it returns another int
+    int (*functionFactory(int n))(int, int) {
+        printf("Got parameter %d", n);
+        int (*functionPtr)(int,int) = &addInt;
+        return functionPtr;
+    }
+
+But it's much nicer to use a `typedef`:
+    
+    typedef int (*myFuncDef)(int, int);
+    // note that the typedef name is indeed myFuncDef
+        
+    myFuncDef functionFactory(int n) {
+        printf("Got parameter %d", n);
+        myFuncDef functionPtr = &addInt;
+        return functionPtr;
+    }
+
+### Dynamic memory management
+
+### Data Structure design
+
+### File I/O
+
+### Multi-file projects, makefiles, directory I/O
+
+### GDB
+
+### Libraries
+
+### Signals and event-based programming
+
+### Signals and processes
+
+
+
+### Valgrind and memory-related bugs
+
+### Caching
+
+### Threads
+
+#### What is a thread?
+
+-   Threads are multiple strands of execution in a single program.
+-   A single is a sequence of control within a process.
+-   A process runs at least one thread, `main`.
+-   `fork()`ing a process: A new copy is created with its own everything
+	memory.
+-   Starting a new thread: It only has it's own *memory stack*, everything
+	else is shared with the process which created it.
+
+#### Advantages
+
+-   Make a program do a few things at once
+	-   Logically is not multicore.
+	-   Physically if multicore.
+
+-   A program can mix input, calculation, and output
+	efficiently.
+-   Accelerate processing on proper multi-core processors.
+-   Switching between threads requires less work than switching
+	between processes.
+
+#### Disadvantages
+
+-   Requires careful design.
+	-   Threads are also know as "how to shoot yourself
+		in both feet at once."
+
+-   Debugguging hell. By using a good IDE the job is largely
+	mitigated.
+-   A program that split a large calculation into two and the
+	the two parts a different threads will not necessarily run
+	more quickly on a single processor machine.
+
+#### POSIX Thread
+
+##### Creation
+
+	#include <pthread.h>
+	int pthread_create(pthread_t *thread, pthread_attr_t *attr,
+							void *(*start_routine)(void *), void *arg);
+
+##### Termination
+
+	void pthread_exit(void *retval);
+
+##### Termination callback
+
+	int pthread_join(pthread_t th, void **thread_return);
+
+#### Thread synchronization 
+
+Mutex locks
+
+:   Gatekeepers around a piece of code, mutex "guards an object".
+
+:   In computer science, a lock is a synchronization mechanism for 
+	enforcing limits on access to a resource in an environment where 
+	there are many threads of execution. A lock is designed to enforce 
+	a mutual exclusion concurrency control policy.
+	[↪](http://en.wikipedia.org/wiki/Lock_(computer_science))
+
+Semaphores
+
+:   Protect sections of code, semaphore "controls a set of objects"
+
+:   In computer science, particularly in operating systems, a 
+	semaphore is a variable or abstract data type that is used 
+	for controlling access, by multiple processes, to a common 
+	resource in a parallel programming or a multi user environment.
+	[↪](http://en.wikipedia.org/wiki/Semaphore_(programming))
+
+##### Semaphores
+
+-   A semaphore is a special type of variable that can be incremented
+	or decremented, but crucial access to the variable is guaranteed
+	to be atomic, even in a multi-threaded program.
+-  If two or more threads in a program attempt to change the value
+	of a semaphore, the system guarantees that all the operations will
+	in fact take place in sequence.
+-   Binary semaphore is commonly used. It means only one thread is
+	able to execute the guarded piece of code. 
+	-   Counting semaphore can allow a number of threads to execute
+		simultaneously.
+
+###### Initialization:
+
+	#include <semaphore.h>
+	int sem_init(sem_t * sem, int pshared, unsigned int value);
+
+-   This function intializaes a semaphore object pointed to
+	by `sem`, sets it sharing option, and gives it an initial 
+	integer value.
+-   The `pshared` parameter controls the type of semaphore.
+	-   If the value is 0, the semaphore is local to the current
+		process.
+
+###### Waiting
+
+-   Wait until allowed to execute:
+
+		int sem_wait(sem_t *sem);
+
+-   `sem_wait()` **atomically** decreases the value of the semaphore
+	by one, but always waits until the semaphore has a non-zero count
+	first.
+	-   If sem_wait is called on a semaphore with a value of 0, the
+		function will wait until some other thread has incremented
+		the valuye so that it is no longer 0.
+
+-   Post when enter the guarded execution.
+
+		int sem_post(sem_t * sem);
+
+-   `sem_post()` **atomically** increases the value of the semaphore by
+	one. 
+	-   If the both programs try to increase the value by 1, the
+		semaphore will always be correctly increased in value by 2.
+
+##### Mutex
+
+-   Mutual exclusion
+-   Allowing programmer to lock an object, only one thread can access
+	it.
+-   Must local the mutex before entering and unlock it when
+	you finish.
+
+###### Destruction
+
+	int sem_destroy(sem_t * sem);
+
+##### Condition Variables
+
+
+
+#### Thread patterns
+
+
+
+### Signals and threads
+
+
