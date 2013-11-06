@@ -665,6 +665,8 @@ October 26th, 2013 <small>Exercise Set 5: Prolog</small>
 
     5.  Joe's salary is less than Sam's salary.
 
+			paid_less(joe, sam).
+
 2.  Write a definition in Prolog for the predicate `fib(N, F)` which is
     true if $F$ is the $N$th fibonacci number, $fib_N$, defined as
     follows: $fib_0$ is $0$, $fib_1$ is $1$, and for $N>1$,

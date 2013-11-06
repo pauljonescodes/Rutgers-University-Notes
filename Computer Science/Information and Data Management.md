@@ -1214,5 +1214,9 @@ December 3rd <small>TBD (I may be away)</small>
 December 5th <small>Class Projects Presentations</small>
 --------------------------------------------------------
 
+<<<<<<< HEAD
+
+=======
 December 10th <small>Project Finalists and Crowning of the Winner</small>
 -------------------------------------------------------------------------
+>>>>>>> 3d758451f555253f18d7b845449cc36a0e948e3e
