@@ -1100,9 +1100,11 @@ Dynamic library (`.so`)
 	:   Compiler directive to output position independent code,
 		a characteristic required by shared libraries, also see
 		`-fpic`
+
 	`-shared`
 	:   Produce a shared object which can then be linked with other
 		objects to form an executable.
+
 	`Wl,options`
 	:   Pass options to linker.
 		
