@@ -1,10 +1,10 @@
-Data Structures <small>with Professor Sesh Venugopal</small> {#data-structures-with-professor-sesh-venugopal}
+Data Structures <small>with Professor Sesh Venugopal</small>
 ============================================================
 
-Chapter 3 - Efficiency {#chapter-3---efficiency}
+Chapter 3 - Efficiency
 ----------------------
 
-### Section 2 - Basic Operations {#section-2---basic-operations}
+### Section 2 - Basic Operations
 
 -   Generally, people talk about programs in terms of clock time.
 -   It is more helpful to talk about running time independent of CPU
@@ -14,14 +14,14 @@ Chapter 3 - Efficiency {#chapter-3---efficiency}
 -   It is also helpful to think of every operation as an algorithm
     independent of language
 
-### Section 3 - Input Size {#section-3---input-size}
+### Section 3 - Input Size
 
 -   If a two programs perform the same task basic operation is
     comparison, and yet for the same input one compares more than the
     other, one is faster than the other.
 -   Speed as a function of input
 
-### Section 5 - Order and Big Oh {#section-5---order-and-big-oh}
+### Section 5 - Order and Big Oh
 
 In order from fastest to slowest:
 
@@ -36,10 +36,10 @@ In order from fastest to slowest:
 7.  Exponential: *O*(*k*\^*n*)
 8.  Brute force
 
-Chapter 4 {#chapter-4}
+Chapter 4
 ---------
 
-### Section 4.5 - Linked Lists {#section-4.5---linked-lists}
+### Section 4.5 - Linked Lists
 
 -   A linked list overcomes a limitation of arrays in that additional
     space can be made on demand.
@@ -48,7 +48,7 @@ Chapter 4 {#chapter-4}
 -   The links can be thought of as "together", but are in actuality
     disparate.
 
-#### Insertion {#insertion}
+#### Insertion
 
 -   Adding to the beginning:
 
@@ -63,20 +63,20 @@ Chapter 4 {#chapter-4}
     through enumeration
 3.  Update the next link to which *P* refers to the new node
 
-#### Deletion {#deletion}
+#### Deletion
 
 -   Arbitrary and last node: set current.next to old.next
 -   First node: front = front.next
 
-#### Access {#access}
+#### Access
 
 -   Also known as traversing
 -   While next does not equal null, set current to next.
 
-Chapter 7 - Stack {#chapter-7---stack}
+Chapter 7 - Stack
 -----------------
 
-### Section 1 - Properties {#section-1---properties}
+### Section 1 - Properties
 
 -   Last in, first out. As in, the latest thing that went in will be the
     first thing to come off.
@@ -90,7 +90,7 @@ Chapter 7 - Stack {#chapter-7---stack}
     -   isEmpty returns if it has at least one entry
     -   Size returns the number of entries
 
-### Section 2.2 - Postfix {#section-2.2---postfix}
+### Section 2.2 - Postfix
 
 -   *a + b \* (c - f) / d* is an example of infix, where *a b c f - \*
     d/ +* is the corresponding postfix
@@ -99,7 +99,7 @@ Chapter 7 - Stack {#chapter-7---stack}
 -   When an operator is encountered, there must exist a most recent pair
     of operands or temporary results on the stack for application.
 
-Chapter 10 - Comparison Trees {#chapter-10---comparison-trees}
+Chapter 10 - Comparison Trees
 -----------------------------
 
 -   A comparison tree or binary search on an array is a binary tree that
@@ -118,7 +118,7 @@ Chapter 10 - Comparison Trees {#chapter-10---comparison-trees}
     -   Best case for failure
     -   Worst case for failure (*2h*)
 
-### Section 3 - Binary Search Tree Operations {#section-3---binary-search-tree-operations}
+### Section 3 - Binary Search Tree Operations
 
 -   Search
     -   Searching in a binary search tree is identical to tracing.
@@ -147,10 +147,10 @@ Chapter 10 - Comparison Trees {#chapter-10---comparison-trees}
     -   X has two children
         -   Switch X with the right most leaf of X's right child.
 
-Videos - Binary Search Tree {#videos---binary-search-tree}
+Videos - Binary Search Tree
 ---------------------------
 
-### Video 1 {#video-1}
+### Video 1
 
 -   Description of algorithm for binary search in an array:
     -   Make high variable equal to number of elements minus one or end
@@ -161,7 +161,7 @@ Videos - Binary Search Tree {#videos---binary-search-tree}
     -   Compare the item at mid to the sought after item.
     -   When high equals low, the loop quits, the final call.
 
-### Video 2 {#video-2}
+### Video 2
 
 -   I can use a binary search comparison tree to find the number of
     comparisons for successful and failure on arrays of specific
@@ -169,9 +169,9 @@ Videos - Binary Search Tree {#videos---binary-search-tree}
 -   I am going to learn how to find the average for success and
     failure.  
 -   The number of comparisons for failure is always one more than the
-    number for success.  
+    number for success.
 
-#### Average case success {#average-case-success}
+#### Average case success
 
 -   For an array of length seven, where k = 7, and it is flat and even,
     failure is one more than success.
@@ -182,7 +182,7 @@ Videos - Binary Search Tree {#videos---binary-search-tree}
     cases
 -   (Sum of all possible comparisons divided by the number of elements)
 
-#### Average case failure {#average-case-failure}
+#### Average case failure
 
 This is tricky because a failure can catch multiple failures, range
 matters. You need a domain. Without a domain, it is indeterminate, but
@@ -197,15 +197,15 @@ it will be between a set of values.
 -   Evidently, you never need to compute the average for failure for any
     tree. All failures are at the last level.
 
-#### Probabilistic search {#probabilistic-search}
+#### Probabilistic search
 
 -   Rethink the average as a sum of products.  
 -   Multiply the number of cases which each node covers by the
     probability of "landing" on it.  
 -   This is akin to "distributing" the division at the end of average
-    cases  
+    cases
 
-### Video 3 - Worst case for arbitrary length n and big o {#video-3---worst-case-for-arbitrary-length-n-and-big-o}
+### Video 3 - Worst case for arbitrary length n and big o
 
 -   Number of nodes at a level *k* increases as 2\^*k,* geometric
     series, relies on "ideal structure"
@@ -216,7 +216,7 @@ it will be between a set of values.
 -   The worst case for failure is just one more than the one for
     success.
 
-Midterm {#midterm}
+Midterm
 -------
 
 1.  Sorted Linked Lists Difference (20 pts, 15+5) Suppose you are given
@@ -329,10 +329,10 @@ Midterm {#midterm}
         but you may NOT change the BSTNode class itself. Credit depends
         both on correctness (50%) and efficiency (50%).
 
-AVL Tree {#avl-tree}
+AVL Tree
 --------
 
-### Lecture {#lecture}
+### Lecture
 
 -   An AVL tree is liked a BST but it's "balanced." Thus, more
     efficient.
@@ -345,7 +345,7 @@ AVL Tree {#avl-tree}
 -   Adelson-Velski and Landis
 -   Debalance at X
 
-### Problem Set 6 {#problem-set-6}
+### Problem Set 6
 
 1.  Each node of a BST can be filled with a height value, which is the
     height of the subtree rooted at that node. The height of a node is
@@ -407,10 +407,10 @@ AVL Tree {#avl-tree}
     count pointer assignments used in traversing the tree. Count only
     assignments used in changing the tree structure.)
 
-Huffman Coding {#huffman-coding}
+Huffman Coding
 --------------
 
-### Lecture {#lecture-1}
+### Lecture
 
 -   Each character is represented in some binary format, they are
     encoded.
@@ -444,7 +444,7 @@ Huffman Coding {#huffman-coding}
     character you go left for, add a zero. Every time you go right,
     assign a one.
 
-### Problem Set 7 {#problem-set-7}
+### Problem Set 7
 
 1.  Answer the following questions in terms of h, the height of a binary
     tree:
@@ -507,7 +507,7 @@ Huffman Coding {#huffman-coding}
     (the string has been broken up into 7-bit chunks for readability):
     1111011 1010111 1101110 0010011 111000
 
-Problem Set 8 - Hash table {#problem-set-8---hash-table}
+Problem Set 8 - Hash table
 --------------------------
 
 1.  You are given the following keys to be hashed into a hash table of
@@ -654,7 +654,7 @@ Problem Set 8 - Hash table {#problem-set-8---hash-table}
             -   Ordered list
                 -   The worst case is when all words are unique and hash
                     to the same spot, and then you need to go all the
-                    way to the end for it to be in order.  
+                    way to the end for it to be in order.
 
             -   AVL tree
                 -   Insertion into an AVL tree is `O(log(n))` for the
@@ -674,19 +674,19 @@ Problem Set 8 - Hash table {#problem-set-8---hash-table}
 
 [Permalink](http://www.cs.rutgers.edu/courses/112/classes/fall_2012_venugopal/assignments/prog3/prog3.html "Permalink to CS112 Fall 2012 - HTML DOM")
 
-Programming Assignment 3 - DOM Tree {#programming-assignment-3---dom-tree}
+Programming Assignment 3 - DOM Tree
 -----------------------------------
 
 In this assignment you will implement an HTML Document Object Model
 (DOM) Tree.
 
-### Summary {#summary}
+### Summary
 
 You will write an application to build a Document Object Model (DOM) for
 a given HTML file, and process it with a set of given input commands
 that will transform the tree.
 
-### Document Object Model {#document-object-model}
+### Document Object Model
 
 The Document Object Model (DOM) is a *platform- and language-neutral
 interface that will allow programs and scripts to dynamically access and
@@ -760,7 +760,7 @@ replaces em with b when you click a button. It does this by changing the
 DOM tree representation of the page. (Compare the DOM trees using the
 DOM Inspector before and after the transformation.)
 
-### Restricted HTML {#restricted-html}
+### Restricted HTML
 
 For this assignment, you will work with a restricted set of HTML tags.
 These are:
@@ -812,12 +812,12 @@ list item (within ol or ul)
 Moreover, the format of the HTML file itself will be restricted to the
 following:
 
-#### Examples {#examples}
+#### Examples
 
 Following are some sample HTML pages. Click on a link to see the page,
 and view the page source to see the underlying HTML:
 
-### Tree Structure {#tree-structure}
+### Tree Structure
 
 Since the nodes in the DOM tree have varying numbers of children, the
 structure is built using linked lists in which each node has three
@@ -861,7 +861,7 @@ the tags.**
 So, if a node stores em, it stores the string "em", NOT the string "".  
 **Also, closing tags ("/em") are NOT be stored in the tree.**
 
-### Implementation {#implementation}
+### Implementation
 
 Download the attached domtree\_project.zip file to your computer. DO NOT
 unzip it. Instead, follow the instructions on the Eclipse page under the
@@ -889,7 +889,7 @@ You will implement the following methods in the Tree class:
 (Note: 5 points have been added to every method to count toward 100
 points instead of the previous 75 points.)
 
-#### Examples of Transformations {#examples-of-transformations}
+#### Examples of Transformations
 
 Here are examples of applying transformations to some HTML pages, and
 the resulting HTML:
@@ -903,7 +903,7 @@ Observe the following rules while working on Tree.java:
 -   You MAY add helper methods if needed, as long as you make them
     private.
 
-### Grading {#grading}
+### Grading
 
 Since every method you will implement results in building or modifying
 the DOM tree structure, we will grade by examing the tree structure that
@@ -921,7 +921,7 @@ Help Contents -\> Java development user guide -\> References -\> Views
 -\> Variables View. Essentially, you need to know how to set breakpoints
 and examine variable values when the program stops at a breakpoint.
 
-Midterm 2 {#midterm-2}
+Midterm 2
 ---------
 
 -   array
@@ -1008,10 +1008,10 @@ Midterm 2 {#midterm-2}
         entries in the table to its size. Let n be the number of entries
         in the hash table, and N be the size (or capacity) of the table
 
-Chapter 11 - Heap {#chapter-11---heap}
+Chapter 11 - Heap
 -----------------
 
-### Heap As Priority Queue {#heap-as-priority-queue}
+### Heap As Priority Queue
 
 -   The role of the heap structure is to have different priorities of
     removal.
@@ -1019,7 +1019,7 @@ Chapter 11 - Heap {#chapter-11---heap}
 -   The FIFO queue is a special case of a priority queue in which the
     priory of an entry is the time of its arrival in the queue.
 
-### Heap Properties {#heap-properties}
+### Heap Properties
 
 -   A **heap** is a complete binary tree with the property that the key
     of the item at any node `x` is greater than or equal to the keys of
@@ -1031,7 +1031,7 @@ Chapter 11 - Heap {#chapter-11---heap}
         keys of the items at all the nodes in the subtree rooted at `x`.
         -   This implies that minimum key is at the top of the heap.
 
-### Heap Operations {#heap-operations}
+### Heap Operations
 
 -   **create-heap**: create an empty heap
 -   **heapify**: create a heap out of given array of elements
@@ -1045,7 +1045,7 @@ Chapter 11 - Heap {#chapter-11---heap}
 -   **merge**: joining two heaps to form a valid new heap containing all
     the elements of both.
 
-#### Insert {#insert}
+#### Insert
 
 -   Insert a new key in a heap must ensure that after insertion, both
     the heap structure and the heap ordering properties are satisfied.
@@ -1061,7 +1061,7 @@ Chapter 11 - Heap {#chapter-11---heap}
     3.  If not, swap the element with its parent and return to the
         previous step.
 
-##### Sifting Up {#sifting-up}
+##### Sifting Up
 
 -   Sifting up consists of comparing the new key with its parent, and
     exchanging them is the parent is less than the new key.
@@ -1069,7 +1069,7 @@ Chapter 11 - Heap {#chapter-11---heap}
 -   In the worst case, exchangers may have to be done repeatedly until
     the new key reaches the root.
 
-##### Code {#code}
+##### Code
 
     public void insert(int value) {
         heapSize++;
@@ -1090,7 +1090,7 @@ Chapter 11 - Heap {#chapter-11---heap}
         }
     }
 
-##### Runtime analysis {#runtime-analysis}
+##### Runtime analysis
 
 -   Sifting up during insertion takes one comparison per level between
     the new key and its parent.
@@ -1100,7 +1100,7 @@ Chapter 11 - Heap {#chapter-11---heap}
     as the number of nodes, which results in:
 -   **Big *O***: `log(n)`
 
-#### Delete {#delete}
+#### Delete
 
 -   The entry at the top of the heap is the one with the maximum key.
     Deletion removes this entry from the heap. This leaves a vacant spot
@@ -1116,7 +1116,7 @@ Chapter 11 - Heap {#chapter-11---heap}
     3.  If not, swap the element with one of its children and return to
         the previous step.
 
-##### Sifting down {#sifting-down}
+##### Sifting down
 
 -   The key `k` that is extracted from the last node and written into
     the root is moved as far down as necessary to ensure that placing
@@ -1126,7 +1126,7 @@ Chapter 11 - Heap {#chapter-11---heap}
     -   This larger key is then compared with `k`.
     -   If `k` is smaller, it is exchanged with the larger key.
 
-##### Code {#code-1}
+##### Code
 
     public void removeAt(int i) {
         data[i] = data[heapSize - 1];
@@ -1158,7 +1158,7 @@ Chapter 11 - Heap {#chapter-11---heap}
         }
     }
 
-##### Runtime analysis {#runtime-analysis-1}
+##### Runtime analysis
 
 -   Sifting down key `k` during deletion invokes two comparisons per
     level, one between the children of `k`, and another between the
@@ -1169,7 +1169,7 @@ Chapter 11 - Heap {#chapter-11---heap}
     a:
 -   **Big *O***: `log(n)`
 
-#### Runtime analysis {#runtime-analysis-2}
+#### Runtime analysis
 
 -   Let the heigh of the heap be `h`. The maximum number of nodes
     `N_{max}` in a binary tree of height `h` is `2^{h + 1} - 1`. In a
@@ -1179,7 +1179,7 @@ Chapter 11 - Heap {#chapter-11---heap}
     -   **Height**: `log(n + 1) - 1`
     -   **Nodes**: `2^{h + 1}  - 1`
 
-### Summary {#summary-1}
+### Summary
 
 -   A heap is a complete binary tree with the property that value of the
     item at any node `x` is greater than or equal to the values of the
@@ -1191,7 +1191,7 @@ Chapter 11 - Heap {#chapter-11---heap}
 -   Heaps are implemented using arrays for maximum efficiency.
 -   A heap is not a search structure.
 
-Problem Set 9 - Heaps {#problem-set-9---heaps}
+Problem Set 9 - Heaps
 ---------------------
 
 1.  Given the following sequence of integers: 12, 19, 10, 4, 23, 7, 45,
@@ -1288,13 +1288,13 @@ Problem Set 9 - Heaps {#problem-set-9---heaps}
 
     }
 
-Programming Assignment 4 - Friendship Graph Algorithms {#programming-assignment-4---friendship-graph-algorithms}
+Programming Assignment 4 - Friendship Graph Algorithms
 ------------------------------------------------------
 
 In this assignment, you will implement some useful algorithms that apply
 to friendship graphs of the Facebook kind.
 
-### Background {#background}
+### Background
 
 In this program, you will implement some useful algorithms for graphs
 that represent friendships, such as Facebook. A friendship graph is an
@@ -1333,7 +1333,7 @@ other by any edge. Also see that all the vertices represent students
 with names of schools, except for rachel and samir, who are not
 students.
 
-### Algorithms {#algorithms}
+### Algorithms
 
 1.  Subgraph: Students at a school
 
@@ -1466,14 +1466,14 @@ students.
 
 [Permalink](http://www.cs.rutgers.edu/courses/112/classes/fall_2012_venugopal/probs/ps10.html "Permalink to CS112 Fall 2012: Problem Set 10")
 
-Chapter 14 - Graph Algorithms {#chapter-14---graph-algorithms}
+Chapter 14 - Graph Algorithms
 -----------------------------
 
-### Traversals {#traversals}
+### Traversals
 
-#### Depth-First Search for Undirected Graphs {#depth-first-search-for-undirected-graphs}
+#### Depth-First Search for Undirected Graphs
 
-##### Description: {#description}
+##### Description:
 
 -   Sesh's:
     -   Suppose that traversal begins at `A`
@@ -1500,14 +1500,14 @@ Chapter 14 - Graph Algorithms {#chapter-14---graph-algorithms}
     -   In a non-recursive implementation, all freshly expanded nodes
         are added to a stack for exploration.
 
-##### Algorithm for `DFS(v)` {#algorithm-for-dfsv}
+##### Algorithm for `DFS(v)`
 
 1.  Visit `v` and mark `v` as visited
 2.  for each neighbor `w` of `v`
     1.  if `w` is not visited, then:
         1.  `DFS(w)`
 
-#### Breadth-First Search for Undirected Graphs {#breadth-first-search-for-undirected-graphs}
+#### Breadth-First Search for Undirected Graphs
 
 -   From book:
     -   The primary characteristic of this search is that is visits the
@@ -1530,7 +1530,7 @@ Chapter 14 - Graph Algorithms {#chapter-14---graph-algorithms}
         – quit the search and return "not found".
     4.  If the queue is not empty, repeat from Step 2.
 
-##### Algorithm `BFS(v)` {#algorithm-bfsv}
+##### Algorithm `BFS(v)`
 
 1.  visit `v` and mark `v` visited
 2.  add `v` to queue
@@ -1542,9 +1542,9 @@ Chapter 14 - Graph Algorithms {#chapter-14---graph-algorithms}
             1.  visit `p` and mark `p` as visited
             2.  add `p` to the queue
 
-### Topsort {#topsort}
+### Topsort
 
-#### Wikipedia Standard Algorithm {#wikipedia-standard-algorithm}
+#### Wikipedia Standard Algorithm
 
 1.  `L` ← Empty list that will contain the sorted elements
 2.  `S` ← Set of all nodes with no incoming edges
@@ -1562,7 +1562,7 @@ Chapter 14 - Graph Algorithms {#chapter-14---graph-algorithms}
 5.  else
     1.  return `L` (a topologically sorted order)
 
-#### Wikipedia Depth-first Version {#wikipedia-depth-first-version}
+#### Wikipedia Depth-first Version
 
 1.  `L` ← Empty list that will contain the sorted nodes
 2.  `S` ← Set of all nodes with no incoming edges
@@ -1577,14 +1577,14 @@ Chapter 14 - Graph Algorithms {#chapter-14---graph-algorithms}
 
         3.  add `n` to `L`
 
-#### Sesh's `DFStopsortdriver` {#seshs-dfstopsortdriver}
+#### Sesh's `DFStopsortdriver`
 
 1.  `topnum <- n`
 2.  for each vertex `v` in graph do
     1.  if `v` is not visited then
         1.  `DFStopsort(v, topnum)`
 
-#### Sesh's `DFStopsort(v, topnum)` {#seshs-dfstopsortv-topnum}
+#### Sesh's `DFStopsort(v, topnum)`
 
 1.  visit `v` and mark `v` as visited
 2.  for each neighbor `w` of `v` do
@@ -1594,9 +1594,9 @@ Chapter 14 - Graph Algorithms {#chapter-14---graph-algorithms}
 3.  number `v` with `topnum`
 4.  `topnum <- topnum - 1`
 
-### Connected components {#connected-components}
+### Connected components
 
-#### Sesh's DFSconndriver {#seshs-dfsconndriver}
+#### Sesh's DFSconndriver
 
 1.  `compnum <- 0`
 2.  for each vertex `v` in the graph do
@@ -1604,7 +1604,7 @@ Chapter 14 - Graph Algorithms {#chapter-14---graph-algorithms}
         1.  `compnum <- compnum + 1`
         2.  `DFSconn(v, compnum)`
 
-#### Sesh's DFSconn(v, compnum) {#seshs-dfsconnv-compnum}
+#### Sesh's DFSconn(v, compnum)
 
 1.  visit `v` and mark `v` as visited
 2.  mark `v` with `compnum`
@@ -1612,7 +1612,7 @@ Chapter 14 - Graph Algorithms {#chapter-14---graph-algorithms}
     1.  if `w` is not visited then
         1.  `DFS(w, compnum)`
 
-#### Running times {#running-times}
+#### Running times
 
 -   Both of these algorithms scan the vertices and edges of the graph,
     and the only difference is the order which they are visited.
@@ -1630,7 +1630,7 @@ Chapter 14 - Graph Algorithms {#chapter-14---graph-algorithms}
 -   The total time for traversal is there for `n + 2 * e` or `O(n + e)`.
     (This only holds when graphs are connected.)
 
-### Summary {#summary-2}
+### Summary
 
 -   Directed and undirected graphs can be used to model pair-wise
     relationships among entities.
@@ -1653,7 +1653,7 @@ Chapter 14 - Graph Algorithms {#chapter-14---graph-algorithms}
     `O(n + e)log(N)` if the fringe is implemented using a priority
     queue.
 
-Problem Set 10 - Graphs {#problem-set-10---graphs}
+Problem Set 10 - Graphs
 -----------------------
 
 1.  Suppose a weighted undirected graph has *n* vertices and *e* edges.
@@ -1813,10 +1813,10 @@ Problem Set 10 - Graphs {#problem-set-10---graphs}
                   ...
                }
 
-Lecture - November 27th, 2012 {#lecture---november-27th-2012}
+Lecture - November 27th, 2012
 -----------------------------
 
-### Dijkstra's Shortest Path Algorithm {#dijkstras-shortest-path-algorithm}
+### Dijkstra's Shortest Path Algorithm
 
 -   Question: What is the shortest path from `x` to `y`?
 -   Dijkstra's algorithms is a trial and error approach.
@@ -1842,7 +1842,7 @@ Lecture - November 27th, 2012 {#lecture---november-27th-2012}
     6.  Set the unvisited node marked with the smallest tentative
         distance as the next "current node" and go back to step 3.
 
-Final Review {#final-review}
+Final Review
 ------------
 
 -   Graphs

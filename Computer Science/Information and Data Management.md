@@ -1,7 +1,7 @@
-Principles of Information and Data Management <small>with Tomasz Imielinski</small> {#principles-of-information-and-data-management-with-tomasz-imielinski}
+Principles of Information and Data Management <small>with Tomasz Imielinski</small>
 ===================================================================================
 
-Description {#description}
+Description
 -----------
 
 Describing and querying various forms of information such as structured
@@ -30,7 +30,7 @@ cannot be used to satisfy prerequisite requirements.
     -   Midterm exam
     -   Final exam
 
-### Department Learning Goals: {#department-learning-goals}
+### Department Learning Goals:
 
 -   Computer Science majors ...
     -   will be prepared to contribute to a rapidly changing field by
@@ -47,12 +47,12 @@ cannot be used to satisfy prerequisite requirements.
         the software industry), or some sort of business plan (for those
         going into startups).
 
-September 4th, 2013 <small>Reading, SQL, pages 243-273</small> {#september-4th-2013-reading-sql-pages-243-273}
+September 4th, 2013 <small>Reading, SQL, pages 243-273</small>
 --------------------------------------------------------------
 
 -   SQL stands for "structured query language."
 
-### Simple Queries in SQL {#simple-queries-in-sql}
+### Simple Queries in SQL
 
 -   The simplest form of query in SQL asks for those tuples of some one
     relation that satisfy a condition.
@@ -90,7 +90,7 @@ September 4th, 2013 <small>Reading, SQL, pages 243-273</small> {#september-4th-2
     2.  the `WHERE` clause, to learn what about the tuples is important
     3.  the `SELECT` clause to see what the output is
 
-#### Projection in SQL {#projection-in-sql}
+#### Projection in SQL
 
 -   If you only wanted to see qualities about the movie in the example
     above instead of all of the information, that would be in the
@@ -108,7 +108,7 @@ September 4th, 2013 <small>Reading, SQL, pages 243-273</small> {#september-4th-2
 
 -   SQL is case-insensitive.
 
-#### Selection in SQL {#selection-in-sql}
+#### Selection in SQL
 
 -   Six comparison operators:
 
@@ -120,12 +120,12 @@ September 4th, 2013 <small>Reading, SQL, pages 243-273</small> {#september-4th-2
 
         ’foo’ || ’bar’ = ’foobar’
 
-#### Comparison of Strings {#comparison-of-strings}
+#### Comparison of Strings
 
 -   When you compare strings with the operators, you are asking about
     lexicographic values.
 
-#### Pattern Matching in SQL {#pattern-matching-in-sql}
+#### Pattern Matching in SQL
 
 -   To use patterns, you can add a `LIKE` statement to the `WHERE`
     clause. Example:
@@ -134,7 +134,7 @@ September 4th, 2013 <small>Reading, SQL, pages 243-273</small> {#september-4th-2
 
 -   Returns Star Wars, Star Gate, Star Trek, ...
 
-#### Dates and Times {#dates-and-times}
+#### Dates and Times
 
 -   SQL implementations are very specific about dates.
 -   The format described here is the SQL standard.
@@ -143,7 +143,7 @@ September 4th, 2013 <small>Reading, SQL, pages 243-273</small> {#september-4th-2
 -   You can combine the two with timestamps:
     `TIMESTAMP '1948-05-14 12:00:00'`
 
-#### Null Values and Comparisons Involving `NULL` {#null-values-and-comparisons-involving-null}
+#### Null Values and Comparisons Involving `NULL`
 
 -   There are three reasons that SQL will return a `NULL`:
     1.  **Value unknown**: that is, “I know there is some value that
@@ -167,7 +167,7 @@ September 4th, 2013 <small>Reading, SQL, pages 243-273</small> {#september-4th-2
     can get these legal comparisons and operations. However, if you do
     the operation on `NULL` directly, it is not valid SQL.
 
-#### The Truth-Value `UNKNOWN` {#the-truth-value-unknown}
+#### The Truth-Value `UNKNOWN`
 
 > 1.  The `AND` of two truth-values is the minimum of those values. That
 >     is, x `AND` y is `FALSE` if either x or y is `FALSE`; it is
@@ -181,7 +181,7 @@ September 4th, 2013 <small>Reading, SQL, pages 243-273</small> {#september-4th-2
 >     value `TRUE` when x is `FALSE`, the value `FALSE` when x is
 >     `TRUE`, and the value `UNKNOWN` when x has value `UNKNOWN`.
 
-#### Ordering the Output {#ordering-the-output}
+#### Ordering the Output
 
 -   You can add a fourth clause the the `SELECT-FROM-WHERE` semantic to
     order the output.
@@ -194,7 +194,7 @@ September 4th, 2013 <small>Reading, SQL, pages 243-273</small> {#september-4th-2
 
         ORDER BY length, title;
 
-### Queries Involving More Than One Relation {#queries-involving-more-than-one-relation}
+### Queries Involving More Than One Relation
 
 -   The set-theoretic operations — union, intersection, and difference —
     appear directly in SQL.
@@ -206,7 +206,7 @@ September 4th, 2013 <small>Reading, SQL, pages 243-273</small> {#september-4th-2
     -   This returns the producers of Star Wars, whatever you select
         from it.
 
-#### Disambiguating Attributes {#disambiguating-attributes}
+#### Disambiguating Attributes
 
 -   Ah! No, you do not have to have them unique across tables, and the
     book covers this next.
@@ -223,19 +223,19 @@ September 4th, 2013 <small>Reading, SQL, pages 243-273</small> {#september-4th-2
     -   The relation name, followed by a dot, is permissible even in
         situations where there is no ambiguity.
 
-#### Tuple Variables {#tuple-variables}
+#### Tuple Variables
 
 -   You may want to select from the same table twice, and you can do
     this with aliases.
 
         FROM MovieStar Starl, MovieStar Star2
 
-### Subqueries {#subqueries}
+### Subqueries
 
-September 5th, 2013 <small>Introduction to SQL</small> {#september-5th-2013-introduction-to-sql}
+September 5th, 2013 <small>Introduction to SQL</small>
 ------------------------------------------------------
 
-### Why SQL? {#why-sql}
+### Why SQL?
 
 -   SQL is a very-high-level language.
     -   Say “what to do” rather than “how to do it.”
@@ -252,13 +252,13 @@ September 5th, 2013 <small>Introduction to SQL</small> {#september-5th-2013-intr
         executre queiry.
         -   Called **query manipulation**.
 
-### Select-From-Where Statements {#select-from-where-statements}
+### Select-From-Where Statements
 
 -   `SELECT` desired attributes.
 -   `FROM` one or more tables.
 -   `WHERE` condition about tuples of the tables.
 
-### Our Running Examples {#our-running-examples}
+### Our Running Examples
 
 -   All our SQL queries will be based on the following database schema.
 
@@ -278,7 +278,7 @@ September 5th, 2013 <small>Introduction to SQL</small> {#september-5th-2013-intr
         write code. ... Very difficult, you write it, and a week later
         to think, "What the hell did I do?"
 
-#### Example <small>What beers are made by Anheuser-Busch</small> {#example-what-beers-are-made-by-anheuser-busch}
+#### Example <small>What beers are made by Anheuser-Busch</small>
 
 -   Query:
 
@@ -288,13 +288,13 @@ September 5th, 2013 <small>Introduction to SQL</small> {#september-5th-2013-intr
 
     Bud Bud Lite Michelob ...
 
-### Meaning of Single-Relation Query {#meaning-of-single-relation-query}
+### Meaning of Single-Relation Query
 
 -   Begin with the relation in the `FROM` clause.
 -   Apply the selection indicated by the `WHERE` clause.
 -   Apply the extended projection indicated by the `SELECT` clause.
 
-### `NULL` Values in SQL {#null-values-in-sql}
+### `NULL` Values in SQL
 
 -   The logic of conditions in SQL is really 3-valued logic: `TRUE`,
     `FALSE`, `UNKNOWN`.
@@ -303,7 +303,7 @@ September 5th, 2013 <small>Introduction to SQL</small> {#september-5th-2013-intr
 -   A tuple is in a query answer if and only if the `WHERE` clause is
     `TRUE` (not `FALSE` or `UNKNOWN`).
 
-September 17th, 2013 <small>Keywords for Quiz 1</small> {#september-17th-2013-keywords-for-quiz-1}
+September 17th, 2013 <small>Keywords for Quiz 1</small>
 -------------------------------------------------------
 
 -   `JOIN`: used to combine rows from two or more tables, based on a
@@ -370,10 +370,10 @@ September 17th, 2013 <small>Keywords for Quiz 1</small> {#september-17th-2013-ke
         FROM tables
         WHERE predicates;
 
-September 24th, 2013 <small>Chapter 2, Relational Model</small> {#september-24th-2013-chapter-2-relational-model}
+September 24th, 2013 <small>Chapter 2, Relational Model</small>
 ---------------------------------------------------------------
 
-### An Overview of Data Models {#an-overview-of-data-models}
+### An Overview of Data Models
 
 -   A **data model** is a notation for describing data. It has three
     parts:
@@ -390,15 +390,15 @@ September 24th, 2013 <small>Chapter 2, Relational Model</small> {#september-24th
         -   Often talked about as a tree with parents and children
             nodes.
 
-### Basics of the Relational Model {#basics-of-the-relational-model}
+### Basics of the Relational Model
 
-#### Attributes {#attributes}
+#### Attributes
 
 -   The columns of a relation are named **attributes**.
     -   For example, `title`, `year`, `length`, and `genre` if the the
         relation was `Movies`.
 
-#### Schemas {#schemas}
+#### Schemas
 
 -   The name of a relation and the set of attributes for a relation is
     called the **schema** for that relation.
@@ -408,14 +408,14 @@ September 24th, 2013 <small>Chapter 2, Relational Model</small> {#september-24th
 
 -   Attributes are a set, not a list.
 
-#### Tuples {#tuples}
+#### Tuples
 
 -   The rows of a relation, other than the header row, are called
     **tuples**.
     -   A tuple has one **component** for each attribute of the
         relation.
 
-#### Domains {#domains}
+#### Domains
 
 -   The relation model requires that each component of each tuple be
     atomic;
@@ -429,13 +429,13 @@ September 24th, 2013 <small>Chapter 2, Relational Model</small> {#september-24th
 
         Movies(title:string, year:integer, length:integer, genre:string)
 
-#### Keys of Relations {#keys-of-relations}
+#### Keys of Relations
 
 -   A set of attributes forms a **key** for a relation if we do not
     allow two tuples in a relation instance to have the same values in
     all attributes of the key.
 
-### Defining a Relation Schema in SQL {#defining-a-relation-schema-in-sql}
+### Defining a Relation Schema in SQL
 
 -   SQL is the principal language used to describe and manipulate
     relational databases. There are two parts:
@@ -443,7 +443,7 @@ September 24th, 2013 <small>Chapter 2, Relational Model</small> {#september-24th
     2.  The *Data-Manipulation* sublanguage for **querying** and
         modifying the database.
 
-#### Relations in SQL {#relations-in-sql}
+#### Relations in SQL
 
 -   SQL makes a distinction between three kinds of relations:
     1.  Stored relations, called **tables**.
@@ -458,7 +458,7 @@ September 24th, 2013 <small>Chapter 2, Relational Model</small> {#september-24th
         modifications.
         -   These relations are not stored.
 
-#### Data Types {#data-types}
+#### Data Types
 
 1.  Character string of fixed or varying length.
 2.  Bit string of fixed or varying length.
@@ -467,7 +467,7 @@ September 24th, 2013 <small>Chapter 2, Relational Model</small> {#september-24th
 5.  Floating point numbers, `FLOAT` or `REAL`.
 6.  Dates and times can be represented with the types `DATE` and `TIME`.
 
-#### Simple Table Declarations {#simple-table-declarations}
+#### Simple Table Declarations
 
     CREATE TABLE Movies (
         title       CHAR(IOO), 
@@ -478,7 +478,7 @@ September 24th, 2013 <small>Chapter 2, Relational Model</small> {#september-24th
         producerC#      INT
     );
 
-### An Algebraic Query Language <small>Set Operations on Relations</small> {#an-algebraic-query-language-set-operations-on-relations}
+### An Algebraic Query Language <small>Set Operations on Relations</small>
 
 -   There are four broad classes of operations:
     1.  The usual set operations;
@@ -528,7 +528,7 @@ September 24th, 2013 <small>Chapter 2, Relational Model</small> {#september-24th
         ordered so that the order of attributes is the same for both
         relations.
 
-September 24th, 2013 <small>Project 1</small> {#september-24th-2013-project-1}
+September 24th, 2013 <small>Project 1</small>
 ---------------------------------------------
 
 Your objective will be to extend significantly the famous db scheme with
@@ -558,10 +558,10 @@ Thus, there following tasks:
 3.  Simple DB GUI with search boxes which will find something
     interesting about your data.
 
-October 1st, 2013 <small>Reading: pg. 125-171</small> {#october-1st-2013-reading-pg.-125-171}
+October 1st, 2013 <small>Reading: pg. 125-171</small>
 -----------------------------------------------------
 
-### The Entity/Relationship Model {#the-entityrelationship-model}
+### The Entity/Relationship Model
 
 -   In the **E/R model**, the structure of data is represented
     graphically, as an "ER diagram", using three principal element
@@ -570,7 +570,7 @@ October 1st, 2013 <small>Reading: pg. 125-171</small> {#october-1st-2013-reading
     2.  Attributes, and
     3.  Relationships.
 
-#### Entity Sets {#entity-sets}
+#### Entity Sets
 
 -   An **entity** is an abstract object of some sort, a collection of
     similar entities is an **entity set**.
@@ -581,21 +581,21 @@ October 1st, 2013 <small>Reading: pg. 125-171</small> {#october-1st-2013-reading
 -   In the movie example, each movie is an entity, and the set of all
     movies constitute an entity set.
 
-#### Attributes {#attributes-1}
+#### Attributes
 
 -   Entity sets have associated **attributes**, which are properties of
     the entities in that set.
     -   The entity set *Movies* might be given attributes such as
         *title* and *length*.
 
-#### Relationships {#relationships}
+#### Relationships
 
 -   **Relationships** are connections among two or more entity sets.
     -   For instance, if *Movies* and *Stars* are two entity sets, we
         could have relationship *Stars-in* that connects movies and
         stars.
 
-#### Entity-Relationship Diagrams {#entity-relationship-diagrams}
+#### Entity-Relationship Diagrams
 
 -   Entity sets are represented by rectangles.
 -   Attributes are represented by ovals.
@@ -605,7 +605,7 @@ October 1st, 2013 <small>Reading: pg. 125-171</small> {#october-1st-2013-reading
 -   Edges connect an entity set to its attributes and also connect a
     relationship to its entity set.
 
-#### Multiplicity of Binary E/R Relationships {#multiplicity-of-binary-er-relationships}
+#### Multiplicity of Binary E/R Relationships
 
 -   If each member of *E* can be connected by *R* to at most member of
     *F*, then we say that *R* is a **many-one** from *E* to *F*.
@@ -620,7 +620,7 @@ October 1st, 2013 <small>Reading: pg. 125-171</small> {#october-1st-2013-reading
 -   If *R* is neither many-one from *E* to *F* or from *F* to *E*, then
     we say *R* is **many-many**.
 
-#### Multiway Relationships {#multiway-relationships}
+#### Multiway Relationships
 
 -   The E/R model makes it convenient to define relationships involving
     more than two entity sets. In practice, ternary or higher degree
@@ -633,7 +633,7 @@ October 1st, 2013 <small>Reading: pg. 125-171</small> {#october-1st-2013-reading
     entity from each of the other entity sets in the relationships,
     those entities are related to at most entity in *E*.
 
-#### Roles in Relationships {#roles-in-relationships}
+#### Roles in Relationships
 
 -   It is possible that one entity sets appears two or more times in a
     single relationship.
@@ -642,14 +642,14 @@ October 1st, 2013 <small>Reading: pg. 125-171</small> {#october-1st-2013-reading
     -   Each line to the entity set represents a different role that the
         entity set plays in that relationship.
 
-### Design Principles {#design-principles}
+### Design Principles
 
-#### Faithfulness {#faithfulness}
+#### Faithfulness
 
 -   First and foremost, the design should be faithful to the specs.
     -   The entity sets should reflect reality.
 
-#### Avoid Redundancy {#avoid-redundancy}
+#### Avoid Redundancy
 
 -   We should be careful to say everything once only.
 -   This is dangerous because:
@@ -658,19 +658,19 @@ October 1st, 2013 <small>Reading: pg. 125-171</small> {#october-1st-2013-reading
     2.  There is an update-anomoly potential, since we might change the
         relationship but not the attribute.
 
-#### Simplicity Counts {#simplicity-counts}
+#### Simplicity Counts
 
 -   Avoid introducing more elements into your design than is absolutely
     necessary.
 
-#### Choosing the Right Relationships {#choosing-the-right-relationships}
+#### Choosing the Right Relationships
 
 -   Entity sets can be connected in various ways by relationships.
     -   However, adding
 
-### Constraints in the E/R model {#constraints-in-the-er-model}
+### Constraints in the E/R model
 
-#### Keys in the E/R Model {#keys-in-the-er-model}
+#### Keys in the E/R Model
 
 -   A **key** for an entity set *E* is a set *K* of one or attributes
     such that, given any two distinct entities *e1* and *e2*, *e1* and
@@ -688,12 +688,12 @@ October 1st, 2013 <small>Reading: pg. 125-171</small> {#october-1st-2013-reading
         component in the root entity set, regardless of how many entity
         sets in the hierarchy have components for the entity.
 
-#### Representing Keys in the E/R Model {#representing-keys-in-the-er-model}
+#### Representing Keys in the E/R Model
 
 -   In our E/R-diagram notation, we underline the attributes belonging
     to a key for an entity set.
 
-#### Referential Integrity {#referential-integrity}
+#### Referential Integrity
 
 -   The arrow notation in E/R diagrams is able to indicate whether a
     relationship is expected to support referential integrity in one or
@@ -706,20 +706,20 @@ October 1st, 2013 <small>Reading: pg. 125-171</small> {#october-1st-2013-reading
         -   The same idea applies when *R* is a relationship among more
             than two entity sets.
 
-#### Degree Constraints {#degree-constraints}
+#### Degree Constraints
 
 -   In the E/R-model, we can attach a bounding number to the edges that
     connect a relationship to en entity set, indicating limits on the
     number of entities that can be connected to any one entity of the
     related entity set.
 
-### Weak Entity Sets {#weak-entity-sets}
+### Weak Entity Sets
 
 -   It is possible for an entity set's key to be composed of attributes,
     some or all of which belong to another entity set.
     -   Such an entity set is called **weak entity set**.
 
-#### Causes of Weak Entity Sets {#causes-of-weak-entity-sets}
+#### Causes of Weak Entity Sets
 
 -   There are two principle reasons we need weak entity sets.
     1.  Sometimes entity sets fall into a hierarchy based on
@@ -727,7 +727,7 @@ October 1st, 2013 <small>Reading: pg. 125-171</small> {#october-1st-2013-reading
     2.  Connecting entity sets that as a way to eliminate a multiway
         relationship.
 
-#### Requirements for Weak Entity Sets {#requirements-for-weak-entity-sets}
+#### Requirements for Weak Entity Sets
 
 -   If *E* is a weak entity set then its key consists of:
     1.  Zero or more of its own attributes.
@@ -755,7 +755,7 @@ October 1st, 2013 <small>Reading: pg. 125-171</small> {#october-1st-2013-reading
         -   Recursively, if *F* is weak, some key attributes of *F* will
             be supplied from elsewhere, and so on.
 
-#### Weak Entity Set Notation {#weak-entity-set-notation}
+#### Weak Entity Set Notation
 
 -   We shall adopt the following conventions to indicate that an entity
     set is weak and to declare its key attributes:
@@ -766,7 +766,7 @@ October 1st, 2013 <small>Reading: pg. 125-171</small> {#october-1st-2013-reading
     3.  If an entity set supplies any attributes for its own key, the
         those attributes will be underlines.
 
-### From E/R Diagrams to Relational Designs {#from-er-diagrams-to-relational-designs}
+### From E/R Diagrams to Relational Designs
 
 -   To a first approximations, converting an E/R design to a relational
     database schema is straightforward.
@@ -784,7 +784,7 @@ October 1st, 2013 <small>Reading: pg. 125-171</small> {#october-1st-2013-reading
         relation for an entity set *E* and the relation that comes from
         *E* to some other entity set.
 
-### Summary {#summary}
+### Summary
 
 -   **The Entity-Relationship Model**: In the E/R model we describe
     entity sets, relationships among entity sets, and attributes of
@@ -805,10 +805,10 @@ October 1st, 2013 <small>Reading: pg. 125-171</small> {#october-1st-2013-reading
     represent the real world faithfully, that we select appropriate
     elements, and that we avoid redundancy.
 
-October 1st, 2013 <small>6.4 Full-Relation Operations</small> {#october-1st-2013-6.4-full-relation-operations}
+October 1st, 2013 <small>6.4 Full-Relation Operations</small>
 -------------------------------------------------------------
 
-### Eliminating Duplicates {#eliminating-duplicates}
+### Eliminating Duplicates
 
 -   SQL's notion of relations differs from the abstract notion.
     -   A relation, being a set, cannot have more than one copy of a
@@ -830,7 +830,7 @@ October 1st, 2013 <small>6.4 Full-Relation Operations</small> {#october-1st-2013
     keyword `SELECT` by the keyword `DISTINCT`.
     -   This word tells SQL to produce only one copy of any tuple.
 
-### Aggregation Operators {#aggregation-operators}
+### Aggregation Operators
 
 -   SQL uses five aggregative operators `SUM`, `AVG`, `MIN`, `MAX`, and
     `COUNT`.
@@ -839,7 +839,7 @@ October 1st, 2013 <small>6.4 Full-Relation Operations</small> {#october-1st-2013
     -   `MIN` finds the smallest
     -   `COUNT` gets the number of fields
 
-### Duplicates in Unions, Intersections, and Differences {#duplicates-in-unions-intersections-and-differences}
+### Duplicates in Unions, Intersections, and Differences
 
 -   Unlike the `SELECT` statement, which preserves duplicates as a
     default and only eliminates them when instructed to by the
@@ -848,12 +848,12 @@ October 1st, 2013 <small>6.4 Full-Relation Operations</small> {#october-1st-2013
     -   If you *want* to include duplicates, you can do so by including
         the `ALL` keyword.
 
-### Grouping {#grouping}
+### Grouping
 
 -   To group tuples, we use a `GROUP BY` clause following the `WHERE`
     clause.
 
-### Grouping, Aggregating, and Nulls {#grouping-aggregating-and-nulls}
+### Grouping, Aggregating, and Nulls
 
 -   The value NULL is ignored in any aggregation.
     -   It *does not* contribute to sum, average, or count of an
@@ -867,7 +867,7 @@ October 1st, 2013 <small>6.4 Full-Relation Operations</small> {#october-1st-2013
 -   When we perform any aggregation exception count over an empty bag,
     the result is `NULL`. The count of an empty bag is 0.
 
-October 8th, 2013 <small>Study</small> {#october-8th-2013-study}
+October 8th, 2013 <small>Study</small>
 --------------------------------------
 
     bars (name, addr, license, phone)
@@ -876,7 +876,7 @@ October 8th, 2013 <small>Study</small> {#october-8th-2013-study}
     sells (bar, beer, price)
     beer (manf, name)
 
-### Questions 1 {#questions-1}
+### Questions 1
 
 -   From Beers (name, manf), find those beers that are the only beer by
     their manufacturer.
@@ -929,7 +929,7 @@ October 8th, 2013 <small>Study</small> {#october-8th-2013-study}
                     AND ____=_____) d, frequents -- d1.addr, d2.addr
         WHERE ______=frequents.drinker
 
-### Questions 2 {#questions-2}
+### Questions 2
 
 -   Find bars where either Tim or John drink.
 
@@ -976,7 +976,7 @@ October 8th, 2013 <small>Study</small> {#october-8th-2013-study}
 
 -   There is at least one beer which is sold at all bars. (true/false)
 
-### Questions 3 {#questions-3}
+### Questions 3
 
 -   Beer that has the maximum average price over the bars.
 
@@ -988,10 +988,10 @@ October 8th, 2013 <small>Study</small> {#october-8th-2013-study}
             FROM sells 
             __________ __________ __________) -- GROUP BY BEER
 
-October 10th, 2013 <small>Lecture: Design Theory for Relational Databases</small> {#october-10th-2013-lecture-design-theory-for-relational-databases}
+October 10th, 2013 <small>Lecture: Design Theory for Relational Databases</small>
 ---------------------------------------------------------------------------------
 
-### Functional Dependency {#functional-dependency}
+### Functional Dependency
 
 -   `X -> Y` is an assertion about a relation *R* that whenever two
     types of *R* agree on all the attributes of *X*, then they must also
@@ -999,12 +999,12 @@ October 10th, 2013 <small>Lecture: Design Theory for Relational Databases</small
     -   Say "`X -> Y` holds in *R*."
     -   Convention: *X*, *Y*, and *Z* represent sets of attributes.
 
-#### Splitting Right Sides of FDs {#splitting-right-sides-of-fds}
+#### Splitting Right Sides of FDs
 
 -   `X -> A_1, A)2, ... A_n` holds for *R* exactly when each of the
     expressions of for *R*.
 
-#### Example {#example}
+#### Example
 
     Drinkers(name, addr, beersLiked, manf, favBeer)
 
@@ -1012,10 +1012,10 @@ October 10th, 2013 <small>Lecture: Design Theory for Relational Databases</small
     1.  `name -> addr favBeer`
     2.  `beersLiked -> manf`
 
-October 21st, 2013 <small>Quiz 4 Study</small> {#october-21st-2013-quiz-4-study}
+October 21st, 2013 <small>Quiz 4 Study</small>
 ----------------------------------------------
 
-### Relational Model {#relational-model}
+### Relational Model
 
 -   The **relational model** for database management is a database model
     based on first-order predicate logic.
@@ -1030,7 +1030,7 @@ October 21st, 2013 <small>Quiz 4 Study</small> {#october-21st-2013-quiz-4-study}
 
 > What is the core limitation of relational model?
 
-#### Application to Databases {#application-to-databases}
+#### Application to Databases
 
 -   A **data type** as used in a typical relational database might be
     the set of integers, the set of character strings, the set of dates,
@@ -1042,11 +1042,11 @@ October 21st, 2013 <small>Quiz 4 Study</small> {#october-21st-2013-quiz-4-study}
 
 -   A **tuple** is basically the same thing as a row
 
-#### Keys {#keys}
+#### Keys
 
 -   A **primary key** *uniquely specifies a tuple within a table*.
 
-##### Method for finding keys {#method-for-finding-keys}
+##### Method for finding keys
 
 1.  If the letter is in the relation and not in the FDs, it must be a
     key.
@@ -1057,7 +1057,7 @@ October 21st, 2013 <small>Quiz 4 Study</small> {#october-21st-2013-quiz-4-study}
 4.  If the letter is *on both sides*, you **cannot** not use this
     method.
 
-#### Superkeys {#superkeys}
+#### Superkeys
 
 -   A **superkey** is defined in the relational model of database
     organization *as a set of attributes of a relation variable for
@@ -1065,13 +1065,13 @@ October 21st, 2013 <small>Quiz 4 Study</small> {#october-21st-2013-quiz-4-study}
     there are no two distinct tuples (rows) that have the same values
     for the attributes in this set*.
 
-#### Closure of a set of Attributes {#closure-of-a-set-of-attributes}
+#### Closure of a set of Attributes
 
-### Normal Forms {#normal-forms}
+### Normal Forms
 
 > Why normal forms? Do they always work and when they do not work?
 
-#### BCNF {#bcnf}
+#### BCNF
 
 -   A relational schema R is in **Boyce–Codd normal form** if and only
     if for every one of its dependencies X → Y, *at least one* of the
@@ -1079,9 +1079,9 @@ October 21st, 2013 <small>Quiz 4 Study</small> {#october-21st-2013-quiz-4-study}
     -   X → Y is a trivial functional dependency (Y ⊆ X)
     -   X is a **superkey** for schema R
 
-##### Decomposition to BCNF {#decomposition-to-bcnf}
+##### Decomposition to BCNF
 
-#### Third Normal Form {#third-normal-form}
+#### Third Normal Form
 
 > synthesis of 3NF from the minimal base of given family of functional
 > dependencies
@@ -1092,13 +1092,13 @@ October 21st, 2013 <small>Quiz 4 Study</small> {#october-21st-2013-quiz-4-study}
     -   Every non-prime attribute of R is non-transitively dependent
         (i.e. directly dependent) on every superkey of R.
 
-#### 1NF {#nf}
+#### 1NF
 
 -   A relation is in **first normal form** if *the domain of each
     attribute contains only atomic values*, and *the value of each
     attribute contains only a single value from that domain*.
 
-### Functional Dependencies {#functional-dependencies}
+### Functional Dependencies
 
 -   A **functional dependency** is a constraint between two sets of
     attributes in a relation from a database.
@@ -1108,10 +1108,10 @@ October 21st, 2013 <small>Quiz 4 Study</small> {#october-21st-2013-quiz-4-study}
     precisely one Y value; R is then said to satisfy the functional
     dependency X → Y.
 
-October 26th, 2013 <small>Reading, pages 350-359</small> {#october-26th-2013-reading-pages-350-359}
+October 26th, 2013 <small>Reading, pages 350-359</small>
 --------------------------------------------------------
 
-### Indexes in SQL {#indexes-in-sql}
+### Indexes in SQL
 
 Index
 :   An index on an attribute *A* of a relation is a data structure that
@@ -1135,14 +1135,14 @@ Index key
 :   We shall refer to the attributes of the index as the *index key*
     when a distinction needs to be made.
 
-#### Motivation for Indexes {#motivation-for-indexes}
+#### Motivation for Indexes
 
 -   When relations are very large, it becomes expensive to scan all the
     tuples of a relation to find those (perhaps very few) tuples
 -   Without indexes, we have to look at every tuple of the two
     relations.
 
-#### Declaring Indexes {#declaring-indexes}
+#### Declaring Indexes
 
 -   most commercial systems have a way for the database designer to say
     that the system should create an index on a certain attribute for a
@@ -1150,7 +1150,7 @@ Index key
 
         CREATE INDEX YearIndex ON Movies(year);
 
-### Selection of Indexes {#selection-of-indexes}
+### Selection of Indexes
 
 -   Two important factors to consider are:
     -   The existence of an index on an attribute may speed up greatly
@@ -1161,7 +1161,7 @@ Index key
         of some relation makes insertions, deletions, and updates to
         that relation more complex and time-consuming.
 
-#### Some Useful Indexes {#some-useful-indexes}
+#### Some Useful Indexes
 
 -   Often, the most useful index we can put on a relation is an index on
     its key. There are two reasons:
@@ -1172,7 +1172,7 @@ Index key
         at most one page must be retrieved to get that tuple into main
         memory.
 
-#### Automatic Selection of Indexes to Create {#automatic-selection-of-indexes-to-create}
+#### Automatic Selection of Indexes to Create
 
 1.  The first step is to establish the query workload. Since a DBMS
     normally logs all operations anyway, we may be able to examine the
@@ -1190,28 +1190,28 @@ Index key
 4.  The index set resulting in the lowest cost for the given workload is
     sug­ gested to the designer, or it is automatically created.
 
-November 5th <small>Transactions and Concurrency Control</small> {#november-5th-transactions-and-concurrency-control}
+November 5th <small>Transactions and Concurrency Control</small>
 ----------------------------------------------------------------
 
-November 7th <small>Transactions and Concurrency Control</small> {#november-7th-transactions-and-concurrency-control}
+November 7th <small>Transactions and Concurrency Control</small>
 ----------------------------------------------------------------
 
-November 12th <small>Quiz on Concurrency Control & Indexing + NoSQL intro lecture</small> {#november-12th-quiz-on-concurrency-control-indexing-nosql-intro-lecture}
+November 12th <small>Quiz on Concurrency Control & Indexing + NoSQL intro lecture</small>
 -----------------------------------------------------------------------------------------
 
-November 14th <small>NoSQL class</small> {#november-14th-nosql-class}
+November 14th <small>NoSQL class</small>
 ----------------------------------------
 
-November 19 <small>Redemption Quiz</small> {#november-19-redemption-quiz}
+November 19 <small>Redemption Quiz</small>
 ------------------------------------------
 
-November 21 <small>The "Interview"</small> {#november-21-the-interview}
+November 21 <small>The "Interview"</small>
 ------------------------------------------
 
-December 3rd <small>TBD (I may be away)</small> {#december-3rd-tbd-i-may-be-away}
+December 3rd <small>TBD (I may be away)</small>
 -----------------------------------------------
 
-December 5th <small>Class Projects Presentations</small> {#december-5th-class-projects-presentations}
+December 5th <small>Class Projects Presentations</small>
 --------------------------------------------------------
 
 \<\<\<\<\<\<\< HEAD

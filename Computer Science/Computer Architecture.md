@@ -1,7 +1,7 @@
-Computer Architecture <small>with Professor Brian Russell</small> {#computer-architecture-with-professor-brian-russell}
+Computer Architecture <small>with Professor Brian Russell</small>
 =================================================================
 
-Description {#description}
+Description
 -----------
 
 This course covers the fundamental issues in the design of modern
@@ -19,7 +19,7 @@ the software/hardware interface.
     -   Cache design
     -   Main memory design
 
-Syllabus {#syllabus}
+Syllabus
 --------
 
 -   Instructor: Brian Russell
@@ -43,7 +43,7 @@ Syllabus {#syllabus}
         -   <a href = "mailto:vilelmini.kalabratsidou@gmail.com">Email</a>
         -   Office Hours: Wednesdays 10:00 am-Noon, Hill 410
 
-### Objective {#objective}
+### Objective
 
 The aim of CS 211 is to provide an understanding of the fundamental
 logical organization of a computer (its parts and their relationship)
@@ -51,13 +51,13 @@ and how it actually works; exposure to a central processor's native
 language, and to basic computer components. Basic Architecture for high
 performance design.
 
-### Prerequisite Knowledge {#prerequisite-knowledge}
+### Prerequisite Knowledge
 
 -   Prior programming experience in a high-level language (such as
     Java).
 -   01:198:112. Credit not given for this course and 14:332:331.
 
-### Topics {#topics}
+### Topics
 
 The following list is organized by topic, not by chronological order of
 coverage in the course.
@@ -75,7 +75,7 @@ coverage in the course.
 10. Interrupts
 11. Input and Output, buses
 
-### Schedule {#schedule}
+### Schedule
 
 1.  Jan 22 Into to hardware trends, Moore's law. Chap 1.
 2.  Jan 24 Into to C programming
@@ -107,7 +107,7 @@ coverage in the course.
 28. Apr 25 I/O and Disks
 29. Apr 30 Review
 
-### Expected Work {#expected-work}
+### Expected Work
 
 Students are expected to attend all lectures and perform all reading
 assignments prior to lecture. Students are also expected to attend all
@@ -115,7 +115,7 @@ recitation section meetings. Students will be evaluated according to
 their performance on four programming projects, programming project, a
 mid-term examination, and a final examination.
 
-### Grading {#grading}
+### Grading
 
 -   40% Correctness
     -   Percent based on number of test cases
@@ -130,7 +130,7 @@ mid-term examination, and a final examination.
     -   5% Comments
     -   5% Documentation (Analysis, readme files, etc...)
 
-### Project Warning {#project-warning}
+### Project Warning
 
 This is a project course, which means that this course should give you
 more than a passing knowledge of computer architecture. The project work
@@ -149,7 +149,7 @@ out there and we cannot test your program on all of them. So all program
 assignments must run on the local iLab Linux machines. We will be
 grading your assignments on those machines as well.
 
-### Working Together and Academic Honesty {#working-together-and-academic-honesty}
+### Working Together and Academic Honesty
 
 Cheating on projects and exams will not be tolerated. We want to protect
 the fairness and integrity of the class, so we run code similarity
@@ -166,7 +166,7 @@ the policy (which you can read through the login screen). If you fail to
 do the click-through by the end of September, your access to our
 facilities will cease October 1.
 
-#### The Gilligan's Island Rule {#the-gilligans-island-rule}
+#### The Gilligan's Island Rule
 
 We do encourage you to talk to your classmates, provided you follow the
 Gilligan's Island Rule. After a joint discussion of an assignment or
@@ -179,7 +179,7 @@ you follow the Gilligan's island rule, often best route to follow to get
 a question answered is to ask, in order: 1. A classmate smarter than
 you. 2. Your TA. 3. The professor.
 
-January 22nd, 2013 - Lecture: Hardware trends, Moore's law, Chapter 1 {#january-22nd-2013---lecture-hardware-trends-moores-law-chapter-1}
+January 22nd, 2013 - Lecture: Hardware trends, Moore's law, Chapter 1
 ---------------------------------------------------------------------
 
 -   The modern computer is a general purpose computer which stores
@@ -239,10 +239,10 @@ January 22nd, 2013 - Lecture: Hardware trends, Moore's law, Chapter 1 {#january-
 
 -   Moore's law
 
-January 22nd, 2013 - Assignment 1: Wordstat {#january-22nd-2013---assignment-1-wordstat}
+January 22nd, 2013 - Assignment 1: Wordstat
 -------------------------------------------
 
-### Introduction {#introduction}
+### Introduction
 
 This assignment is designed to get you some initial experience with
 programming in C, as well as compiling, linking, running, and debugging
@@ -281,7 +281,7 @@ should produce:
     some            1                       1
     tent            1                       1
 
-### Implementation {#implementation}
+### Implementation
 
 Implement a program called `wordstat` with the following usage
 interface:
@@ -310,7 +310,7 @@ program compiles and runs correctly on these machines. You must compile
 all C code using the gcc compiler with the `-ansi -pedantic -Wall`
 flags.
 
-### Submission {#submission}
+### Submission
 
 You have to e-submit the assignment using Sakai. Your submission should
 be a tar file named pa1.tar. To create this file, put everything that
@@ -340,9 +340,9 @@ We will provide a small script that you can use to check for the above
 required items. You do not have to run it, but it might help you to
 check that you are handing in everything that we are asking for.
 
-### Grading Guidelines {#grading-guidelines}
+### Grading Guidelines
 
-#### Functionality {#functionality}
+#### Functionality
 
 This is a large class so that necessarily the most significant part of
 your grade will be based on programmatic checking of your program. That
@@ -357,7 +357,7 @@ argument file does not exist.
 Be careful to follow all instructions. If something doesn’t seem right,
 ask.
 
-#### Design {#design}
+#### Design
 
 Having said the above about functionality, design is a critical part of
 any programming exercise. In particular, we expect you to write
@@ -370,7 +370,7 @@ your grade. Give careful thoughts to your writing of this file, rather
 than writing whatever comes to your mind in the last few minutes before
 the assignment is due.
 
-#### Coding Style {#coding-style}
+#### Coding Style
 
 Finally, it is important that you write “good” code. Unfortunately, we
 won’t be able to look at your code as closely as we would like to give
@@ -390,7 +390,7 @@ Define prototypes for all functions. \* Place all prototype, typedef,
 and struct definitions in header (.h) files. \* Error and warning
 messages should be printed to stderr using fprintf.
 
-January 24th, 2013 - Lecture: Introduction to C programming {#january-24th-2013---lecture-introduction-to-c-programming}
+January 24th, 2013 - Lecture: Introduction to C programming
 -----------------------------------------------------------
 
 -   `.java` -\> `.class` (machine independant)
@@ -427,7 +427,7 @@ January 24th, 2013 - Lecture: Introduction to C programming {#january-24th-2013-
     -   there are no visibility restrictions (all public)
     -   no need for dynamically allocating them
 
-January 29th, 2013 - Lecture: C program structure, control flow structures {#january-29th-2013---lecture-c-program-structure-control-flow-structures}
+January 29th, 2013 - Lecture: C program structure, control flow structures
 --------------------------------------------------------------------------
 
 -   Sometimes we as programmers we need some a variable that can only
@@ -549,7 +549,7 @@ January 29th, 2013 - Lecture: C program structure, control flow structures {#jan
         char array[] = "hello";
         char a2[10] = "hello";
 
-January 30th, 2013 - Office hours {#january-30th-2013---office-hours}
+January 30th, 2013 - Office hours
 ---------------------------------
 
 -   Linux is a descendant if UNIX, which is derivative from command line
@@ -585,7 +585,7 @@ January 30th, 2013 - Office hours {#january-30th-2013---office-hours}
 -   `pwd`: "I am printing the working directory"
 -   `who`: who else, including you, is on the system
 
-January 31st, 2013 - Lecture: Pointers and arrays, C functions {#january-31st-2013---lecture-pointers-and-arrays-c-functions}
+January 31st, 2013 - Lecture: Pointers and arrays, C functions
 --------------------------------------------------------------
 
 -   String functions ('<string.h>')
@@ -641,7 +641,7 @@ January 31st, 2013 - Lecture: Pointers and arrays, C functions {#january-31st-20
             void * realloc (void * p, size_t newsize);
             void free(void*);
 
-February 5th, 2013 - Recitation {#february-5th-2013---recitation}
+February 5th, 2013 - Recitation
 -------------------------------
 
 -   The `include` command is used to use other code in your `.c` files,
@@ -707,7 +707,7 @@ February 5th, 2013 - Recitation {#february-5th-2013---recitation}
             return 0;
         }
 
-February 5th, 2013 - Lecture: Dynamic memory management {#february-5th-2013---lecture-dynamic-memory-management}
+February 5th, 2013 - Lecture: Dynamic memory management
 -------------------------------------------------------
 
         #include <stdio.h>
@@ -724,7 +724,7 @@ February 5th, 2013 - Lecture: Dynamic memory management {#february-5th-2013---le
 -   remember, C passes by value, so pass the address of the thing you
     want to change.
 
-February 7th, 2013 - Lecture: C preprocessor, formatted I/O {#february-7th-2013---lecture-c-preprocessor-formatted-io}
+February 7th, 2013 - Lecture: C preprocessor, formatted I/O
 -----------------------------------------------------------
 
 -   To print an error,
@@ -788,7 +788,7 @@ February 7th, 2013 - Lecture: C preprocessor, formatted I/O {#february-7th-2013-
         #ifndef some #define
         #endf
 
-February 10th, 2013 - [Notes: The ANSI C `string.h`](http://www.csse.uwa.edu.au/programming/ansic-library.html#string) {#february-10th-2013---notes-the-ansi-c-string.h}
+February 10th, 2013 - [Notes: The ANSI C `string.h`](http://www.csse.uwa.edu.au/programming/ansic-library.html#string)
 ----------------------------------------------------------------------------------------------------------------------
 
 -   Copy ct to s including terminating `NUL`. Return s.
@@ -889,17 +889,17 @@ February 10th, 2013 - [Notes: The ANSI C `string.h`](http://www.csse.uwa.edu.au/
 
         void* strchr(char* s, int c, int n);
 
-February 12th, 2013 - Recitation {#february-12th-2013---recitation}
+February 12th, 2013 - Recitation
 --------------------------------
 
-### What is GDB {#what-is-gdb}
+### What is GDB
 
 -   GDB is a debugger that helps you debug your program.
 -   The time you spend now learning gdb will save you days of debugging
     time.
 -   A debugger will make a good programmer and better programmer.
 
-### Compiling a program for GDB {#compiling-a-program-for-gdb}
+### Compiling a program for GDB
 
 -   You need to compile with the `-g` option to be able to debug a
     program with gdb.
@@ -907,7 +907,7 @@ February 12th, 2013 - Recitation {#february-12th-2013---recitation}
 
         gcc -g -o hello hello.c
 
-### Running a program with GDB {#running-a-program-with-gdb}
+### Running a program with GDB
 
 -   To run a program with `gdb` type
 
@@ -921,7 +921,7 @@ February 12th, 2013 - Recitation {#february-12th-2013---recitation}
 -   A breakpoint is a marker in your program to tell the porgram to stop
     and return control back to `gdb`
 
-### Stepping through your program {#stepping-through-your-program}
+### Stepping through your program
 
 -   Your porgram will start running and when it reaches `main()` it will
     stop.
@@ -939,22 +939,22 @@ February 12th, 2013 - Recitation {#february-12th-2013---recitation}
 
             gdb next
 
-### Printing the Value of a Variable {#printing-the-value-of-a-variable}
+### Printing the Value of a Variable
 
 -   This command prints a variable
 
         (gdb) print var
 
-February 13th, 2013 - Lecture {#february-13th-2013---lecture}
+February 13th, 2013 - Lecture
 -----------------------------
 
-### Binary Numbers {#binary-numbers}
+### Binary Numbers
 
 -   base 2, each digit is 0 or 1
 -   Numbers are written as \\( d\_n, ..., d\_2, d\_1, d\_0 \\)
 -   Value of number is computer as \\[ \_{i = 0}\^n d\_i 2\^i \\]
 
-### Hexadecimal numbers {#hexadecimal-numbers}
+### Hexadecimal numbers
 
 -   Base 16
 -   Each digit c an be one of 16 different valyes
@@ -962,7 +962,7 @@ February 13th, 2013 - Lecture {#february-13th-2013---lecture}
 
 -   Value \\[ \_{i = 0}\^n d\_i 16\^i \\]
 
-### Octal numbers {#octal-numbers}
+### Octal numbers
 
 -   Little more awkward
 -   Same basic idea, except power of 8
@@ -971,7 +971,7 @@ February 13th, 2013 - Lecture {#february-13th-2013---lecture}
 
 \\[ \_{i = 0}\^n d\_i 8\^i \\]
 
-### Converting hex to binary {#converting-hex-to-binary}
+### Converting hex to binary
 
 -   Each hexademical digit can be represented by 4 binary digits
 -   What is `0o45` in binary?
@@ -983,7 +983,7 @@ February 13th, 2013 - Lecture {#february-13th-2013---lecture}
 
 > Real programmers use hex
 
-### Converting binary to hex {#converting-binary-to-hex}
+### Converting binary to hex
 
 -   Grab 4 bits at a time, change to corresponding digit in hex
 -   Go from right to left
@@ -991,14 +991,14 @@ February 13th, 2013 - Lecture {#february-13th-2013---lecture}
 
         0b1011011110011100 = 0xb79
 
-### Decimal to binary {#decimal-to-binary}
+### Decimal to binary
 
 -   What is the largest power of 2, q, r... such that \\[ n = 2\^p +
     r\_1 \\] where \\(r\_1 2\^p \\) \\[n - 2\^p = 2\^q + r\_2\\] where
     \\(\*r\_2 2\^q \\) \\[ n - (2\^p + 2\^q) = 2\^r + r\_3\\] where
     \\(r\_3 \< r\^r\\)
 
-### Decimal and binary fractions {#decimal-and-binary-fractions}
+### Decimal and binary fractions
 
 -   In decimal, digits to the right of radix point have value \\(\^i\\)
     for each digit in the \\(i\^{th}\\) place
@@ -1008,7 +1008,7 @@ February 13th, 2013 - Lecture {#february-13th-2013---lecture}
     \\(1/2\^i\\) for each ith place
     -   Just the base is different
 
-### Data sizes {#data-sizes}
+### Data sizes
 
         C           32      64
         char        1       1
@@ -1016,7 +1016,7 @@ February 13th, 2013 - Lecture {#february-13th-2013---lecture}
         int         4       4
         pointer     4       8
 
-### Big endian vs. small endian {#big-endian-vs.-small-endian}
+### Big endian vs. small endian
 
 -   How toi determine value when have a sbinary number spread across
     multiple bytes
@@ -1038,7 +1038,7 @@ February 13th, 2013 - Lecture {#february-13th-2013---lecture}
 -   **Little endian**: LSB first, increasing numeric significane as byte
     address increase
 
-### Representing integers {#representing-integers}
+### Representing integers
 
 -   How do we represent negative number in computers?
     -   You use a bit
@@ -1094,7 +1094,7 @@ February 13th, 2013 - Lecture {#february-13th-2013---lecture}
 
 \\[-1000\_{10} = FFFFFC18\\]
 
-### ASCII table {#ascii-table}
+### ASCII table
 
         DEC OCT HEX BIN Symbol  HTML Number HTML Name   Description
         0   000 00  00000000    NUL &#000;      Null char
@@ -1130,7 +1130,7 @@ February 13th, 2013 - Lecture {#february-13th-2013---lecture}
         30  036 1E  00011110     RS &#030;      Record Separator
         31  037 1F  00011111     US &#031;      Unit Separator
 
-### Code {#code}
+### Code
 
         int at01(char * s) {
             int value,mult;
@@ -1155,7 +1155,7 @@ February 13th, 2013 - Lecture {#february-13th-2013---lecture}
             return mult * value;
         }
 
-### IEEE floating point standard {#ieee-floating-point-standard}
+### IEEE floating point standard
 
 -   Most computer follow IEEE 754 standard
     -   Single precision
@@ -1169,7 +1169,7 @@ February 13th, 2013 - Lecture {#february-13th-2013---lecture}
     -   Extended precision
         -   80 bits
 
-February 12th, 2013 - [Singly Linked List Implementation](http://www.cprogramming.com/snippets/source-code/singly-linked-list-insert-remove-add-count) {#february-12th-2013---singly-linked-list-implementation}
+February 12th, 2013 - [Singly Linked List Implementation](http://www.cprogramming.com/snippets/source-code/singly-linked-list-insert-remove-add-count)
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
         #include<stdio.h>
@@ -1368,10 +1368,10 @@ February 12th, 2013 - [Singly Linked List Implementation](http://www.cprogrammin
             return 0;
         }
 
-February 12th, 2013 - Programming Assignment 2: Data Representation and Computer Arithmetic {#february-12th-2013---programming-assignment-2-data-representation-and-computer-arithmetic}
+February 12th, 2013 - Programming Assignment 2: Data Representation and Computer Arithmetic
 -------------------------------------------------------------------------------------------
 
-### Introduction {#introduction-1}
+### Introduction
 
 This assignment is designed to help you learn the representation,
 interpretation, and manipulation of data as bits. There are two parts.
@@ -1381,7 +1381,7 @@ In the second part, you will implement a program format that will print
 the decimal values of bit sequences representing integer and floating
 point data types.
 
-### Numeric Base Conversion and Calculator {#numeric-base-conversion-and-calculator}
+### Numeric Base Conversion and Calculator
 
 Implement a program called calc with the following usage interface:
 
@@ -1441,7 +1441,7 @@ out an error message that starts with the string “ERROR”, followed by a
 string that gives an informative message about the error that it
 detected.
 
-### Format Interpretation {#format-interpretation}
+### Format Interpretation
 
 Implement a program called format with the following usage interface:
 format `<input bit sequence> <type>` The first argument,
@@ -1491,7 +1491,7 @@ inputs, it should print out an error message that starts with the string
 the error that it detected. For this program, you can assume that any
 input bit sequence that is shorter or longer than 32 bits is erroneous.
 
-### Submission {#submission-1}
+### Submission
 
 You have to e-submit the assignment using Sakai. Your submission should
 be a tar file named pa2.tar that can be extracted using the command:
@@ -1521,9 +1521,9 @@ so you should make sure that your program compiles and runs correctly on
 these machines. You must compile all C code using the gcc compiler with
 the -ansi -pedantic -Wall flags.
 
-### Grading Guidelines {#grading-guidelines-1}
+### Grading Guidelines
 
-#### Functionality {#functionality-1}
+#### Functionality
 
 This is a large class so that necessarily the most significant part of
 your grade will be based on programmatic checking of your program. That
@@ -1535,7 +1535,7 @@ as you can. In particular, your code should be adept at handling
 exceptional cases. Be careful to follow all instructions. If something
 doesn’t seem right, ask.
 
-#### Design {#design-1}
+#### Design
 
 Having said the above about functionality, design is a critical part of
 any programming exercise. In particular, we expect you to write
@@ -1548,7 +1548,7 @@ grade. Give careful thoughts to your writing of this file, rather than
 writing whatever comes to your mind in the last few minutes before the
 assignment is due.
 
-#### Coding Style {#coding-style-1}
+#### Coding Style
 
 Finally, it is important that you write “good” code. Unfortunately, we
 won’t be able to look at your code as closely as we would like to give
@@ -1568,17 +1568,17 @@ Define prototypes for all functions. - Place all prototype, typedef, and
 struct definitions in header (.h) files. • Error and warning messages
 should be printed to stderr using fprintf.
 
-February 13th, 2013 - Office hours {#february-13th-2013---office-hours}
+February 13th, 2013 - Office hours
 ----------------------------------
 
 -   Exceptions are bad.
 -   `strcasecmp` is fine.
 -   A buffer of 128 bytes is fine.
 
-February 15th, 2013 - Wordstat Readme {#february-15th-2013---wordstat-readme}
+February 15th, 2013 - Wordstat Readme
 -------------------------------------
 
-### Data Structures {#data-structures}
+### Data Structures
 
 The overarching design philosophy I have is object-oriented in
 perspective. I designed my `struct`s to behave like objects, with the
@@ -1599,28 +1599,28 @@ The short hand version of my implementation is: a balanced character BST
 of ‘a’ through ‘z’ with a nested BST of case insensitive words with a
 nested linked list of case sensitive word.
 
-#### `struct char_tree_node` {#struct-char_tree_node}
+#### `struct char_tree_node`
 
 This is my foundational data structure. It is a binary search tree which
 is loaded with character ‘a’ through ‘z’. They’re loaded in such a way
 that this particular tree ends up being balanced. Here’s a
 representation of the tree after the function `bld_char_tree` is called:
 
-##### `char letter` {#char-letter}
+##### `char letter`
 
 Represents the character which this node is responsible for. Every word
 in the subtree, defined later in this document, will begin with this
 character.
 
-##### char\_tree\_node *left, *right {#char_tree_node-left-right}
+##### char\_tree\_node *left, *right
 
 These represent the edges between two nodes, forming a tree structure.
 
-##### `word_tree_node *words` {#word_tree_node-words}
+##### `word_tree_node *words`
 
 This points to a struct which is another nested binary search tree.
 
-#### `struct word_tree_node` {#struct-word_tree_node}
+#### `struct word_tree_node`
 
 Every character node has a word node. A word node is the principal store
 for information of the statistic of a document. Any given word tree is
@@ -1631,7 +1631,7 @@ In order to make processing simple, the word tree is stored in its own
 file with a header which defines convenience functions for allocation,
 insertion, and retrieval.
 
-##### `char *case_insensitive_word` {#char-case_insensitive_word}
+##### `char *case_insensitive_word`
 
 This string stores the word that this node is representing. It is case
 insensitive in that it may change the case when it is inserted or it may
@@ -1640,14 +1640,14 @@ not, but when used you should disregard any case information.
 As the spec dictates, this stores any sequence of letters and digits
 that starts with a letter, followed by 0 or more letters and/or digits.
 
-##### `int total_instances` {#int-total_instances}
+##### `int total_instances`
 
 This integer is the number of time that `case_insensitive_word` has
 appeared in total. It is case-insensitive instances.
 
 When outputted, this will be called “Total No. Occurrences.”
 
-##### struct word\_tree\_node *left, *right {#struct-word_tree_node-left-right}
+##### struct word\_tree\_node *left, *right
 
 So as to create a tree structure, these pointers represent a left and
 right, where every sub-tree to the left contains values strictly smaller
@@ -1656,7 +1656,7 @@ root.
 
 The “number” of a string is determined lexicographically.
 
-##### `int cases_instances` {#int-cases_instances}
+##### `int cases_instances`
 
 Closely linked with the `struct` defined below, this number represents
 the number of case-sensitive variations on the word this node represents
@@ -1664,28 +1664,28 @@ exist in the document.
 
 When outputted, this will be called “No. Case-Sensitive Versions.”
 
-##### struct word\_list\_node \*case\_sensitive\_list {#struct-word_list_node-case_sensitive_list}
+##### struct word\_list\_node \*case\_sensitive\_list
 
 This is a singly-linked-list which is defined below.
 
-#### `struct word_list_node` {#struct-word_list_node}
+#### `struct word_list_node`
 
 Every character has a node in a tree. Every character node has a tree of
 case-insensitive words. Every case-insensitive node has a case-sensitive
 singly-linked-list.
 
-##### `char *case_sensitive_word` {#char-case_sensitive_word}
+##### `char *case_sensitive_word`
 
 A string which is case-sensitive, used to compare against when deciding
 if this is a new or previously discovered case instance.
 
-##### `struct word_list_node *next` {#struct-word_list_node-next}
+##### `struct word_list_node *next`
 
 A linked-list needs a pointer to the next element in the list.
 
-### Big-O Analysis {#big-o-analysis}
+### Big-O Analysis
 
-#### Space complexity {#space-complexity}
+#### Space complexity
 
 Where *r* is the number of words in a text,
 *n*<sub>0</sub>, *n*<sub>1</sub>, . . . *n*<sub>*t*</sub> represents the
@@ -1710,9 +1710,9 @@ case being unique, resulting in:
 
 *O*(*n*<sup>3</sup>)
 
-#### Time complexity {#time-complexity}
+#### Time complexity
 
-##### Worst case {#worst-case}
+##### Worst case
 
 Where we count assignments and steps with *n* words:
 
@@ -1729,7 +1729,7 @@ Where we count assignments and steps with *n* words:
 
 *O*(*n*<sup>3</sup>)
 
-##### Best case {#best-case}
+##### Best case
 
 -   Every word begins with ‘p’
 
@@ -1742,9 +1742,9 @@ This makes the runtime equal to the best case of insert on a BST. Where
 
 *O*(log(*n*))
 
-### Challenges {#challenges}
+### Challenges
 
-#### Functionality {#functionality-2}
+#### Functionality
 
 The functionality of the program was difficult to write in that it was a
 totally new language for me. This was ameliorated somewhat because I
@@ -1755,7 +1755,7 @@ Admittedly, I’m still uncertain about what the proper way to both keep
 declarations and operations separate (as the C90 standard dictates), and
 still keep complex operations from being complicated one-liners.
 
-#### Coding Style and Design {#coding-style-and-design}
+#### Coding Style and Design
 
 I struggled with what the best way to use C as C is. What I mean is my
 solution pastes onto functional programming an object-oriented mindset.
@@ -1764,15 +1764,15 @@ this problem. I think that this will be lessened as the semester
 continues. In this one experience, however, I have come to like C more
 than Java. Objective-C holds a special place in my heart, however.
 
-February 18th, 2013 - Recitation {#february-18th-2013---recitation}
+February 18th, 2013 - Recitation
 --------------------------------
 
-### Decimal to Binary {#decimal-to-binary-1}
+### Decimal to Binary
 
     _   _   _   _   _  
     2^4 2^3 2^2 2^1 2^0
 
-### Binary to Decimal {#binary-to-decimal}
+### Binary to Decimal
 
     1   0   0   1   0
     2^4 2^3 2^2 2^1 2^0
@@ -1782,7 +1782,7 @@ February 18th, 2013 - Recitation {#february-18th-2013---recitation}
     ____+___
           18
 
-### Hex to Binary {#hex-to-binary}
+### Hex to Binary
 
 The general algorithm is to convert each individual number into binary,
 and then concatenate the results.
@@ -1796,7 +1796,7 @@ and then concatenate the results.
     ____+____
     0001001001011010
 
-#### Hex alphabet values {#hex-alphabet-values}
+#### Hex alphabet values
 
     A -> 10
     B -> 11
@@ -1805,7 +1805,7 @@ and then concatenate the results.
     E -> 14
     F -> 15
 
-February 18th, 2013 - Lecture {#february-18th-2013---lecture}
+February 18th, 2013 - Lecture
 -----------------------------
 
     _______
@@ -1820,7 +1820,7 @@ February 18th, 2013 - Lecture {#february-18th-2013---lecture}
 -   The byte ordering in the real world starts with the most
     significiant and ends with the least significant.
 
-### Left shifting {#left-shifting}
+### Left shifting
 
 -   A byte to shift on and a direction.
 -   It can be evrything but negative.
@@ -1843,18 +1843,18 @@ February 18th, 2013 - Lecture {#february-18th-2013---lecture}
     into 64 bits, else you lose information.
 -   If you shift an n bit number by n, it results in 0.
 
-### Right shift {#right-shift}
+### Right shift
 
-#### Logical {#logical}
+#### Logical
 
 -   This means our new high bits are zero, including sign.
 
-#### Arithmetic {#arithmetic}
+#### Arithmetic
 
 -   Preserves sign, if you shift a negative number, it wont discard the
     last bit.
 
-### Bitwise operations {#bitwise-operations}
+### Bitwise operations
 
 -   **And**: C operator is `&`
 
@@ -1892,24 +1892,24 @@ February 18th, 2013 - Lecture {#february-18th-2013---lecture}
         ~10
          01
 
-### DeMorgan's Law {#demorgans-law}
+### DeMorgan's Law
 
         A || B = !(!A && !B)
         A && V = !(!A || !B)
 
-### Using two's complement {#using-twos-complement}
+### Using two's complement
 
 -   Do x and y have the same sign?
 
         (x^y) < 0
 
-### Swapping fixed-point x and y {#swapping-fixed-point-x-and-y}
+### Swapping fixed-point x and y
 
         x ^= y
         y ^= x
         x ^= y
 
-### Rotation {#rotation}
+### Rotation
 
         unsigned int rshift (unisgned int val, unisgned int n) {
             unisgned int intsize = sizeof(int)*8;
@@ -1921,7 +1921,7 @@ February 18th, 2013 - Lecture {#february-18th-2013---lecture}
             }
         }
 
-February 20th, 2013 - Lecture {#february-20th-2013---lecture}
+February 20th, 2013 - Lecture
 -----------------------------
 
 -   CPU
@@ -1936,29 +1936,29 @@ February 20th, 2013 - Lecture {#february-20th-2013---lecture}
     -   Object code
     -   Program data
 
-### Memory {#memory}
+### Memory
 
 -   I've got these buses which I communicate addresses through from the
     CPU to the memory.
 -   "Go to address 3 and read"
 -   Go to address 4 and write.
 
-### Processes: ALU and Registers {#processes-alu-and-registers}
+### Processes: ALU and Registers
 
 -   There are functions on operarnds A nd B
 
-### Why do we need registers? {#why-do-we-need-registers}
+### Why do we need registers?
 
 -   (iCQ): The register file looks just like a mini-memory
 
-### Basic CPU function {#basic-cpu-function}
+### Basic CPU function
 
 1.  Fetch[PC++]
 2.  Decode
 3.  Execute
 4.  See 1.
 
-### Assembly characteristics {#assembly-characteristics}
+### Assembly characteristics
 
 -   Minimal data types
     -   Integer data of 1, 2, or 4 bytes
@@ -1982,13 +1982,13 @@ February 20th, 2013 - Lecture {#february-20th-2013---lecture}
     -   Transfer data between memory and regggister
         -   Load data from memory into register
 
-### x86 Characteristic {#x86-characteristic}
+### x86 Characteristic
 
 -   Variable length between 1 and 15 bytes
 -   Can address memory directly in most instructions
 -   Uses little endian format
 
-### `MOV` instruction {#mov-instruction}
+### `MOV` instruction
 
 -   Most common instruction is data transfer instruction
     -   `mov s, d`
@@ -2023,7 +2023,7 @@ February 20th, 2013 - Lecture {#february-20th-2013---lecture}
              +-----------------------------------+
              31                   15             0
 
-### A little bit about the stack {#a-little-bit-about-the-stack}
+### A little bit about the stack
 
 -   I am pushing and popping individual values on this stack, a word
     byte
@@ -2043,7 +2043,7 @@ February 20th, 2013 - Lecture {#february-20th-2013---lecture}
         1.  Copy that value, wherever you're going to take it.
         2.  Add 4 to `%esp`
 
-### Instructions {#instructions}
+### Instructions
 
 -   An assembly program is just an ASCII file.
 -   You make it in text editors.
@@ -2061,10 +2061,10 @@ February 20th, 2013 - Lecture {#february-20th-2013---lecture}
         movq    movswq    movswq
                 movslq    movslq
 
-February 26th, 2013 - Recitation {#february-26th-2013---recitation}
+February 26th, 2013 - Recitation
 --------------------------------
 
-### Binary number to floating point numbers {#binary-number-to-floating-point-numbers}
+### Binary number to floating point numbers
 
 -   Lets assume we have 0.625 in the decimal system.
 -   We use a linear array
@@ -2074,13 +2074,13 @@ February 26th, 2013 - Recitation {#february-26th-2013---recitation}
         |__|  |__|  |__| . |__|  |__|  |__|
         2^3   2^1   2^0    2^-1  2^-2  2^-3
 
-February 26th, 2013 - Lecture: Assembly Language Programming {#february-26th-2013---lecture-assembly-language-programming}
+February 26th, 2013 - Lecture: Assembly Language Programming
 ------------------------------------------------------------
 
 > How are you? <cite>Student</cite> Not dead yet. <cite>Brian
 > Russel</cite>
 
-### Indexed Mode Addressing {#indexed-mode-addressing}
+### Indexed Mode Addressing
 
 -   Add content of two registers to get address of operand
 
@@ -2093,7 +2093,7 @@ February 26th, 2013 - Lecture: Assembly Language Programming {#february-26th-201
 -   Autovariables and formal parameters are treated pretty much the
     same.
 
-### Address Computation Examples {#address-computation-examples}
+### Address Computation Examples
 
         %edx   0xf0000
         %ecx   0x100
@@ -2101,10 +2101,10 @@ February 26th, 2013 - Lecture: Assembly Language Programming {#february-26th-201
         Expression    Computation      Adress
         0x8 (%edx)    0xf0000 + 0x8    0xf008
 
-February 28th, 2013 - Lecture {#february-28th-2013---lecture}
+February 28th, 2013 - Lecture
 -----------------------------
 
-### Some Arithmetic Operations {#some-arithmetic-operations}
+### Some Arithmetic Operations
 
     Instruction      Computation
     adll  Src,Dest   Dest = Dest +  Src
@@ -2117,7 +2117,7 @@ February 28th, 2013 - Lecture {#february-28th-2013---lecture}
     andl  Src,Dest   Dest = Dest &  Src
     orl   Src,Dest   Dest = Dest |  Src
 
-March 1st, 2013 - Notes: [IEEE 754](http://en.wikipedia.org/wiki/Single-precision_floating-point_format#IEEE_754_single-precision_binary_floating-point_format:_binary32) {#march-1st-2013---notes-ieee-754}
+March 1st, 2013 - Notes: [IEEE 754](http://en.wikipedia.org/wiki/Single-precision_floating-point_format#IEEE_754_single-precision_binary_floating-point_format:_binary32)
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
         sign           exponent (8 bits)            fraction (23 bits)
@@ -2130,7 +2130,7 @@ March 1st, 2013 - Notes: [IEEE 754](http://en.wikipedia.org/wiki/Single-precisio
 (1 + ∑ <sub>*i* = 1</sub><sup>23</sup>*b*<sub>23 − *i*</sub>2<sup> − *i*</sup>)
  × 2<sup>(*e* − 127)</sup>
 
-March 5th, 2013 - Lecture {#march-5th-2013---lecture}
+March 5th, 2013 - Lecture
 -------------------------
 
 -   Flags
@@ -2217,12 +2217,12 @@ March 5th, 2013 - Lecture {#march-5th-2013---lecture}
         signed <    sf^of
         unsigned <  cf
 
-March 8th, 2013 - Calc and Format Readme {#march-8th-2013---calc-and-format-readme}
+March 8th, 2013 - Calc and Format Readme
 ----------------------------------------
 
-### Calc {#calc}
+### Calc
 
-#### Design and Implementation {#design-and-implementation}
+#### Design and Implementation
 
 -   My design uses a string as the primary data structure.
 -   When numbers are inputted, no matter what the are, they go through
@@ -2247,7 +2247,7 @@ March 8th, 2013 - Calc and Format Readme {#march-8th-2013---calc-and-format-read
     -   The decimal input and output is limited to 128 bytes, as a
         `long double` is used.
 
-#### Challenges {#challenges-1}
+#### Challenges
 
 -   Time became a huge concern. I wrote one implementation using
     integers after that was given the okay, but having learned that this
@@ -2264,9 +2264,9 @@ March 8th, 2013 - Calc and Format Readme {#march-8th-2013---calc-and-format-read
     -   I could not find an algorith to go to or from binary and decimal
         that could handle arbitrily large input.
 
-#### Analysis {#analysis}
+#### Analysis
 
-##### Space {#space}
+##### Space
 
 -   The space is linearly related to the input.
 -   The only space that is allocated is for three strings: input one,
@@ -2276,7 +2276,7 @@ March 8th, 2013 - Calc and Format Readme {#march-8th-2013---calc-and-format-read
 
 *O*(*n*)
 
-##### Time {#time}
+##### Time
 
 -   Small and linear operations are performed while processing.
 -   Parsing as an activity rarely leads to anything other than linear.
@@ -2285,9 +2285,9 @@ March 8th, 2013 - Calc and Format Readme {#march-8th-2013---calc-and-format-read
 
 *O*(*n*)
 
-#### Test cases {#test-cases}
+#### Test cases
 
-##### Conversions to binary {#conversions-to-binary}
+##### Conversions to binary
 
 Conversions to binary have been flawless in every tested case. The
 family of functions which do the conversion are rigorous and basic. My
@@ -2300,7 +2300,7 @@ functions are core to my functionality.
 
 Now for some examples!
 
-###### Binary {#binary}
+###### Binary
 
     Inputted    111111111111111111111111111111111
     Expected    111111111111111111111111111111111
@@ -2313,7 +2313,7 @@ string representation and my internal representation is a string.
 Granted that the computer does not run out of memory and I parsed my
 input correctly, this will never, ever break.
 
-###### Octal {#octal}
+###### Octal
 
     Inputted    7654321
     Expected    111110101100011010001
@@ -2325,7 +2325,7 @@ input and 3 bits at a time on output.
 
 This approach has yielded a 100% success rate so far.
 
-###### Decimal {#decimal}
+###### Decimal
 
     Inputted    987654321
     Expected    111010110111100110100010110001
@@ -2339,7 +2339,7 @@ the other way around.
 If decimal is selected as an option on either input or output, then
 arbitrarily large numbers are not possible.
 
-###### Hexademical {#hexademical}
+###### Hexademical
 
     Inputted    FEDCBA987654321
     Expected    111111101101110010111010100110000111011001010100001100100001
@@ -2350,7 +2350,7 @@ arbitrarily large numbers are not possible.
 Hexadecimal is performed the same as octal, for both input and output,
 except I "grab" 4 bits at a time on output.
 
-##### Addition {#addition}
+##### Addition
 
 -   When both are not negative and you're adding, I add the values and
     display it
@@ -2396,7 +2396,7 @@ except I "grab" 4 bits at a time on output.
              ./calc + d1000 -d1250 d
             -d250
 
-##### Subtraction {#subtraction}
+##### Subtraction
 
 -   Both numbers are negative
     -   but neither number has a greater absolute value, so zero
@@ -2414,56 +2414,56 @@ except I "grab" 4 bits at a time on output.
             ./calc - -d1250 -d10000 d
             d8750
 
-##### Binary {#binary-1}
+##### Binary
 
     Inputted    ./calc + d1111111 d1111111 b
     Expected    b1000011110100010001110
     Actually    b1000011110100010001110
 
-##### Octal {#octal-1}
+##### Octal
 
     Inputted    ./calc + d1111111 d1111111 o
     Expected    o10364216
     Actually    o10364216
 
-##### Hexadecimal {#hexadecimal}
+##### Hexadecimal
 
     Inputted    ./calc + hFFFFFFFFFFFFFFFFFFFF hFFFFFFFFFFFFFFFFFFFF h
     Expected    h1FFFFFFFFFFFFFFFFFFFE
     Actually    h1FFFFFFFFFFFFFFFFFFFE
 
-### Format {#format}
+### Format
 
-#### Design and Implementation {#design-and-implementation-1}
+#### Design and Implementation
 
 -   Very basic, I take ints and mask them into an int, and then form a
     string from that int for output.
 -   Format float does not work.
 
-#### Challenges {#challenges-2}
+#### Challenges
 
 -   Time was a massive concern.
 
-#### Analysis {#analysis-1}
+#### Analysis
 
-##### Space {#space-1}
-
-*O*(*c*)
-
-##### Time {#time-1}
+##### Space
 
 *O*(*c*)
 
-March 12th, 2013 - Lecture {#march-12th-2013---lecture}
+##### Time
+
+*O*(*c*)
+
+March 12th, 2013 - Lecture
 --------------------------
 
-### Topics {#topics-1}
+### Topics
 
 -   IA32 stack disciple
 -   Register saving conventions
 -   Creating pointers to local variables
 
-### Push instructions {#push-instructions}
+### Push instructions
 
 -   16 bits
 
@@ -2483,7 +2483,7 @@ March 12th, 2013 - Lecture {#march-12th-2013---lecture}
         pushl   mem32   %esp-=4 %reg32->(%esp)
         pushl   imm32   %esp-=4 %imm32->(%esp)   
 
-### Pop instructions {#pop-instructions}
+### Pop instructions
 
 -   16 bits
 
@@ -2500,7 +2500,7 @@ March 12th, 2013 - Lecture {#march-12th-2013---lecture}
         popq    reg64   (%esp)->reg64,  %esp+=8
         popq    mem64   (%esp)->mem64,  %esp+=8
 
-### Discussion {#discussion}
+### Discussion
 
 -   If you push your bytes, pop your bytes.
 -   The call stack frames, or activation records.
@@ -2517,7 +2517,7 @@ March 12th, 2013 - Lecture {#march-12th-2013---lecture}
         the stack, we use the `%ebp` call frame to point to the most
         recently called stack frame.
 
-### Call instructions {#call-instructions}
+### Call instructions
 
         call    label       direct
         call    *operand    indirect
@@ -2531,7 +2531,7 @@ March 12th, 2013 - Lecture {#march-12th-2013---lecture}
     -   Goes to the place and pulls the traget location and transfers
         control there.
 
-### Variables {#variables}
+### Variables
 
         pushl   %ebp
         movel   %esp, %ebp
@@ -2542,7 +2542,7 @@ March 12th, 2013 - Lecture {#march-12th-2013---lecture}
         popl    %ebp
         ret
 
-### Vertical picture {#vertical-picture}
+### Vertical picture
 
                 |                 |
                 |Local autos      |
@@ -2562,10 +2562,10 @@ March 12th, 2013 - Lecture {#march-12th-2013---lecture}
                 +-----------------+
                 
 
-March 5th, 2013 - Programming Assignment 3: Assembly Language Programming {#march-5th-2013---programming-assignment-3-assembly-language-programming}
+March 5th, 2013 - Programming Assignment 3: Assembly Language Programming
 -------------------------------------------------------------------------
 
-### Introduction {#introduction-2}
+### Introduction
 
 This assignment is designed to give you additional practice in reading
 and writing Assembly Lan- guage programs. As discussed in lecture,
@@ -2591,7 +2591,7 @@ processors, with gcc configured to gen- erate x86-64 code. If you see
 Assembly code with registers beginning with %r (e.g., %rbx or %r9), then
 it is x86-64 and not what you want. Move to another iLab machine.
 
-### Writing x86 Assembly {#writing-x86-assembly}
+### Writing x86 Assembly
 
 In this part, you will implement a program formula that will print the
 formula for (1 + x)n. In particular, your program formula should support
@@ -2625,13 +2625,13 @@ with the help flag (-h). For example:
      $ ./formula -h
      Usage: formula <positive integer>
 
-### nCr Calculation {#ncr-calculation}
+### nCr Calculation
 
 Hopefully, you remember from one of your Math classes that each of the
-constant nCr above can be computed using the formula:
-\$nCr = n! \\frac{r!}{(n − r)!}\$
- Your task is to implement this computation in Assembly. In particular,
-you need to implement two functions in Assembly:
+constant nCr above can be computed using the formula: \$nCr = n!
+\\frac{r!}{(n − r)!}\$ Your task is to implement this computation in
+Assembly. In particular, you need to implement two functions in
+Assembly:
 
 `int nCr(int n, int r)`: This function computes the nCr constant
 according to Equation (1).
@@ -2653,7 +2653,7 @@ and nCr. Both nCr() and Factorial() must detect overflow conditions
 using the processor’s condition codes and return 0 to indicate that an
 error has been encountered.
 
-### Reading x86 Assembly Code {#reading-x86-assembly-code}
+### Reading x86 Assembly Code
 
 In this part, you are asked to decipher the Assembly Language program in
 the attached mystery.s file. Specifically, you need to provide a concise
@@ -2696,7 +2696,7 @@ Collaboration: Please do not share your solution with your classmates as
 this gives the problem away. You may help each other with understanding
 Assembly details but not the solution.
 
-### Submission {#submission-2}
+### Submission
 
 You have to e-submit the assignment using Sakai. Your submission should
 be a tar file named pa3.tar that can be extracted using the command:
@@ -2730,9 +2730,9 @@ Your tar file must contain: tar xf pa3.tar
     these machines. You must compile all C code using the gcc compiler
     with the `-ansi -pedantic -Wall` flags.
 
-### Grading Guidelines {#grading-guidelines-2}
+### Grading Guidelines
 
-#### Functionality {#functionality-3}
+#### Functionality
 
 This is a large class so that necessarily the most significant part of
 your grade will be based on programmatic checking of your program. That
@@ -2744,7 +2744,7 @@ as you can. In particular, your code should be adept at handling
 exceptional cases. Be careful to follow all instructions. If something
 doesn’t seem right, ask.
 
-#### Design {#design-2}
+#### Design
 
 Having said the above about functionality, design is a critical part of
 any programming exercise. In particular, we expect you to write
@@ -2757,7 +2757,7 @@ grade. Give careful thoughts to your writing of this file, rather than
 writing whatever comes to your mind in the last few minutes before the
 assignment is due.
 
-#### Coding Style {#coding-style-2}
+#### Coding Style
 
 Finally, it is important that you write "good" code. Unfortunately, we
 won’t be able to look at your code as closely as we would like to give
@@ -2780,12 +2780,12 @@ be good:
     definitions in header (.h) files. - Error and warning messages
     should be printed to stderr using fprintf.
 
-March 27th, 2013 - Midterm Study Guide <small>with special thanks to Matthew Resch</small> {#march-27th-2013---midterm-study-guide-with-special-thanks-to-matthew-resch}
+March 27th, 2013 - Midterm Study Guide <small>with special thanks to Matthew Resch</small>
 ------------------------------------------------------------------------------------------
 
-### Number conversion {#number-conversion}
+### Number conversion
 
-#### Methods {#methods}
+#### Methods
 
 1.  Expansion
     -   To convert a number, such as binary number, to decimal, use the
@@ -2800,11 +2800,7 @@ March 27th, 2013 - Midterm Study Guide <small>with special thanks to Matthew Res
         divide it by the target base, keep the remainder and divide the
         quotient by the base until the quotient that remains is zero.
         Number generated from right/left.
-    -   Example:
-        13%2 = 1
-        6%2 = 0
-        3%2 = 1
-        1%2 = 1
+    -   Example: 13%2 = 1 6%2 = 0 3%2 = 1 1%2 = 1
 
 3.  Multiplication Method
     -   This method is generally used to convert fractions
@@ -2812,39 +2808,35 @@ March 27th, 2013 - Midterm Study Guide <small>with special thanks to Matthew Res
         generated, then multiply the thing to the right of the decimal
         by the base again, until you have nothing to the right of the
         decimal.
-    -   Ex:
-        . 7812510 → . 110012
-        . 78125*x*2 = 1. 56250
-        . 56250*x*2 = 1. 1250
-        . 1250*x*2 = 0. 250
-        . 250*x*2 = 0. 50
+    -   Ex: . 7812510 → . 110012 . 78125*x*2 = 1. 56250
+        . 56250*x*2 = 1. 1250 . 1250*x*2 = 0. 250 . 250*x*2 = 0. 50
         . 50*x*2 = 1. 0
 
-#### Binary {#binary-2}
+#### Binary
 
 -   To octal
 -   To decimal
 -   To hexadecimal
 
-#### Octal {#octal-2}
+#### Octal
 
 -   To binary
 -   To decimal
 -   To hexadecimal
 
-#### Decimal {#decimal-1}
+#### Decimal
 
 -   To binary
 -   To octal
 -   To hexadecimal
 
-#### Hexadecimal {#hexadecimal-1}
+#### Hexadecimal
 
 -   To decimal
 -   To octal
 -   To binary
 
-### Endianess {#endianess}
+### Endianess
 
 -   There are generally two forms of Endian-ness, **Big Endian** and
     **Little Endian**.
@@ -2861,7 +2853,7 @@ March 27th, 2013 - Midterm Study Guide <small>with special thanks to Matthew Res
         -   Most machines that use Big Endian do not run an architecture
             that we are likely to come in contact with.
 
-### Assembly Language (x86, AT&T, 32-bit) {#assembly-language-x86-att-32-bit}
+### Assembly Language (x86, AT&T, 32-bit)
 
 -   Basic assembly instructions are read from right to left source,
     right to left destination.
@@ -2895,7 +2887,7 @@ March 27th, 2013 - Midterm Study Guide <small>with special thanks to Matthew Res
         add [L6],eax;    // double word at L6 += EAX
         mov al, [L6];    // copy first byte of double word at L6 into AL
 
-#### Basic commands {#basic-commands}
+#### Basic commands
 
 -   `MOV`
     -   The mov instruction moves data from one location to another, but
@@ -2925,7 +2917,7 @@ March 27th, 2013 - Midterm Study Guide <small>with special thanks to Matthew Res
 
         inc ecx -\> ecx++ dec dl -\> dl—
 
-#### Operand Types {#operand-types}
+#### Operand Types
 
 -   Immediate
     -   Constant integer data
@@ -2940,29 +2932,29 @@ March 27th, 2013 - Midterm Study Guide <small>with special thanks to Matthew Res
 
     -   Others have special uses for particular instructions
 
-#### Memory {#memory-1}
+#### Memory
 
 -   4 consecutive bytes of memory
 -   Various “address modes”
 
-#### Parameter order {#parameter-order}
+#### Parameter order
 
 -   Source before the destination
 -   `eax := 5` is `mov $5, %eax`
 
-#### Parameter size {#parameter-size}
+#### Parameter size
 
 -   `q` for qword,
 -   `l` for long (dword)
 -   `w` for word
 -   `b` for byte
 
-#### Immediate value sigils {#immediate-value-sigils}
+#### Immediate value sigils
 
 -   Values prefixed with a `$`
 -   registers must be prefixed with a `%`
 
-#### Registers {#registers}
+#### Registers
 
 -   `AX` multiply/divide, string load & store
 -   `CX` count for string operations & shifts
@@ -2973,15 +2965,15 @@ March 27th, 2013 - Midterm Study Guide <small>with special thanks to Matthew Res
     -   `SI` points to a source in stream operations
     -   `DI` points to a destination in stream operations
 
-### Call stack {#call-stack}
+### Call stack
 
-### DeMorgan's laws {#demorgans-laws}
+### DeMorgan's laws
 
-### Circuits {#circuits}
+### Circuits
 
-### Radix {#radix}
+### Radix
 
-### Computer internals {#computer-internals}
+### Computer internals
 
 -   CPU,
     -   registers,
@@ -3008,7 +3000,7 @@ March 27th, 2013 - Midterm Study Guide <small>with special thanks to Matthew Res
 
 -   storage, NIC (network interface cards)
 
-April 11th, 2013 - Lecture {#april-11th-2013---lecture}
+April 11th, 2013 - Lecture
 --------------------------
 
 -   What I encourage you to do is to write minituare programs
@@ -3031,17 +3023,17 @@ April 11th, 2013 - Lecture {#april-11th-2013---lecture}
         readb   y   0   0
         readw   y   0   0
 
-April 15th, 2013 - Programming Assignment 4: Y86 Emulation {#april-15th-2013---programming-assignment-4-y86-emulation}
+April 15th, 2013 - Programming Assignment 4: Y86 Emulation
 ----------------------------------------------------------
 
-### Introduction {#introduction-3}
+### Introduction
 
 This assignment is designed to help you really understand how the
 fetch-and-execute cycle works as well as the idea of program-as-data. It
 will require a substantial implementation effort. The usual warning goes
 double for this assignment: *Do not procrastinate*.
 
-### Y86 Architecture {#y86-architecture}
+### Y86 Architecture
 
 The Y86 architecture has eight registers, three condition codes, a
 program counter and memory that holds machine instructions and data. All
@@ -3073,7 +3065,7 @@ execute. Total memory size will have to be determined as part of
 emulator execution. The Y86 instruction set is modeled on the larger
 Intelx86 instruction set, but is not a direct subset.
 
-### Y86 Emulator {#y86-emulator}
+### Y86 Emulator
 
 An emulator is hardware or software that duplicates (or emulates) the
 functions of one computer system (in this case Y86 instructions) on
@@ -3117,7 +3109,7 @@ has been encountered, which also stops Y86 program execution. INS is set
 for an invalid instruction, which also stops Y86 program execution. Your
 emulator should print out how the Y86 program execution ended.
 
-### Y86 Instructions {#y86-instructions}
+### Y86 Instructions
 
 The definition and encoding of the Y86 instructions are presented in the
 slides (also an attachment) and in the Bryant and O’Halloran book in
@@ -3164,7 +3156,7 @@ The mull instruction multiplies the values in rA and rB and leaves the
 product in rB. This instruc- tion set the condition codes. The
 instruction is five bytes long.
 
-### Y86 Input file format {#y86-input-file-format}
+### Y86 Input file format
 
 The input file to your Y86 emulator does not contain Y86 assembler
 instructions. Instead, it contains an ASCII representation of the
@@ -3172,7 +3164,7 @@ information needed to start and execute a ready-to-run program,
 including Y86 machine instructions. An input file will contain
 directives that specify data and Y86 machine instructions.
 
-#### Specifying Total Program Size and Base of Stack {#specifying-total-program-size-and-base-of-stack}
+#### Specifying Total Program Size and Base of Stack
 
 The .size directive
 
@@ -3183,7 +3175,7 @@ also specifies the address of the bottom of the stack. The Y86 stack
 grows from larger addresses toward smaller addresses. There should be
 only one .size directive in the input file.
 
-#### Specifying String Constants {#specifying-string-constants}
+#### Specifying String Constants
 
 The .string directive
 
@@ -3194,7 +3186,7 @@ specifies the location of the string in the memory block allocated by
 your emulator. The input string will contain only printable characters
 and nothing that requires a backslash.
 
-#### Specifying Integer Values {#specifying-integer-values}
+#### Specifying Integer Values
 
 The .long directive
 
@@ -3205,7 +3197,7 @@ location of the value and the decimal number is the initial value at
 that Y86 address. All Y86 arithmetic is 4-byte signed integer
 arithmetic.
 
-#### Setting Aside Chunks of Memory {#setting-aside-chunks-of-memory}
+#### Setting Aside Chunks of Memory
 
 The .bss directive
 
@@ -3215,7 +3207,7 @@ specifies a chunk of uninitialzed memory in the Y86 address space. The
 hex address specifies the location of the uninitialized chunk and the
 decimal size specifies the size.
 
-#### Specifying One-Byte Values {#specifying-one-byte-values}
+#### Specifying One-Byte Values
 
 The .byte directive
 
@@ -3225,7 +3217,7 @@ specifies a one-byte value. The hex address specifies the location of
 the byte and the initial value is the hex number whose value is between
 00 and FF, inclusive.
 
-#### Specifying Y86 Machine Instructions {#specifying-y86-machine-instructions}
+#### Specifying Y86 Machine Instructions
 
 The .text directive
 
@@ -3235,7 +3227,7 @@ specifies the Y86 machine instructions. The hex address specifies where
 the machine instructions should be placed in the Y86 address space. This
 same address is also the initial value of the Y86
 
-April 16th, 2013 - Processor Design I: Sequential Processor (Y86) {#april-16th-2013---processor-design-i-sequential-processor-y86}
+April 16th, 2013 - Processor Design I: Sequential Processor (Y86)
 -----------------------------------------------------------------
 
 -   **Instruction Set Architecture** (ISA) is the interface between
@@ -3248,7 +3240,7 @@ April 16th, 2013 - Processor Design I: Sequential Processor (Y86) {#april-16th-2
     -   Momery is byte addressable storage array, words stored in
         little- endian byte order.
 
-### Instructions {#instructions-1}
+### Instructions
 
 -   `nop`
     -   no effect
@@ -3286,7 +3278,7 @@ April 16th, 2013 - Processor Design I: Sequential Processor (Y86) {#april-16th-2
 -   `popl rA`
     -   `rA <- Mem[%esp]; %esp <- %esp + 4`
 
-### Registers {#registers-1}
+### Registers
 
 -   `%eax` - 0
 -   `%ecx` - 1
@@ -3297,13 +3289,13 @@ April 16th, 2013 - Processor Design I: Sequential Processor (Y86) {#april-16th-2
 -   `%esi` - 6
 -   `%edi` - 7
 
-### Condition codes {#condition-codes}
+### Condition codes
 
 -   `OF` - overflow
 -   `ZF` - zero
 -   `SF` - negative
 
-### Error codes {#error-codes}
+### Error codes
 
 -   `AOK` - "everything is fine"
 -   `HLT` - "halt instruction has been encountered"
@@ -3312,9 +3304,9 @@ April 16th, 2013 - Processor Design I: Sequential Processor (Y86) {#april-16th-2
 
 > Your emulator should print out how the Y86 program execution ended.
 
-### Directives {#directives}
+### Directives
 
-#### The `.size` directive {#the-.size-directive}
+#### The `.size` directive
 
     .size hex-address
 
@@ -3323,7 +3315,7 @@ April 16th, 2013 - Processor Design I: Sequential Processor (Y86) {#april-16th-2
 -   stack grows from largers addresser toweard smaller address
 -   **there can be only one**
 
-#### The `.string` directive {#the-.string-directive}
+#### The `.string` directive
 
     .string hex-address "double-quoted string"
 
@@ -3336,7 +3328,7 @@ April 16th, 2013 - Processor Design I: Sequential Processor (Y86) {#april-16th-2
 -   This is a contrived string, local to the program.
     -   To implement, save in an array, it seems.
 
-#### The `.long` directive {#the-.long-directive}
+#### The `.long` directive
 
     .long hex-address decimal-number
 
@@ -3344,7 +3336,7 @@ April 16th, 2013 - Processor Design I: Sequential Processor (Y86) {#april-16th-2
 -   The decimal number is the initial value at that address.
 -   **all arithmatic is 4-byte signed integer arithmatic**
 
-#### The `.bss` directive {#the-.bss-directive}
+#### The `.bss` directive
 
     .bss hex-address decimal-size
 
@@ -3352,7 +3344,7 @@ April 16th, 2013 - Processor Design I: Sequential Processor (Y86) {#april-16th-2
 -   the hex address is the location
 -   the decimal size is the size
 
-#### The `.byte` directive {#the-.byte-directive}
+#### The `.byte` directive
 
     .byte hex-address hex-number
 
@@ -3360,7 +3352,7 @@ April 16th, 2013 - Processor Design I: Sequential Processor (Y86) {#april-16th-2
 -   the hex address specifcs the location
 -   the hex number is between 00 and FF (inclusive)
 
-#### The `.text` directive {#the-.text-directive}
+#### The `.text` directive
 
     .text hex-address "ASCII string of hex Y86 instructions"
 
@@ -3369,7 +3361,7 @@ April 16th, 2013 - Processor Design I: Sequential Processor (Y86) {#april-16th-2
 -   The ASCII string in a single long encoding of the hex bytes on the
     machine instructions, two characters per byte, no leading ”0x”.
 
-### Instruction Encoding {#instruction-encoding}
+### Instruction Encoding
 
     Byte                0   1   2   3   4   5
     nop                 0   0
@@ -3416,13 +3408,13 @@ April 16th, 2013 - Processor Design I: Sequential Processor (Y86) {#april-16th-2
         this chart pushed my vim knowledge to the limit
         ask @Tazato
 
-### Summary {#summary}
+### Summary
 
 -   Similar state and instruction as IA32
 -   Simpler encodings
 -   Somewhere between CISC and RISC
 
-### Stages {#stages}
+### Stages
 
 -   Fetch, read instructions from memory
 -   Decode, read operand register
@@ -3431,7 +3423,7 @@ April 16th, 2013 - Processor Design I: Sequential Processor (Y86) {#april-16th-2
 -   Write back, write destination register
 -   PC, update program counter
 
-April 15th, 2013 - Lecture: Memory {#april-15th-2013---lecture-memory}
+April 15th, 2013 - Lecture: Memory
 ----------------------------------
 
 -   RAM

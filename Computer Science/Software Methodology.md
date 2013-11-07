@@ -1,7 +1,7 @@
-Software Methodology <small>with Professor Sesh Venugopal</small> {#software-methodology-with-professor-sesh-venugopal}
+Software Methodology <small>with Professor Sesh Venugopal</small>
 =================================================================
 
-Description {#description}
+Description
 -----------
 
 This course teaches essential principles, techniques, tools, and methods
@@ -32,7 +32,7 @@ persistence.
     -   Introduction to multithreading
     -   Introduction to network programming
 
-Syllabus {#syllabus}
+Syllabus
 --------
 
 -   Topics
@@ -75,7 +75,7 @@ Syllabus {#syllabus}
     -   Quizzes: 100 (10%)
     -   Final exam: 200 (20%)
 
-January 22nd, 2012 - Lecture {#january-22nd-2012---lecture}
+January 22nd, 2012 - Lecture
 ----------------------------
 
 -   Many things that you use when building a Java GUI, you'll be using
@@ -98,7 +98,7 @@ January 22nd, 2012 - Lecture {#january-22nd-2012---lecture}
 -   If you set the location relative to `null`, then you get a centered
     window.
 
-January 24th, 2013 - Lecture {#january-24th-2013---lecture}
+January 24th, 2013 - Lecture
 ----------------------------
 
 -   `ActionListener` is an interface - you need to define a class.
@@ -130,7 +130,7 @@ January 24th, 2013 - Lecture {#january-24th-2013---lecture}
 -   Java is meant to be platform independant.
 -   An `Object` reference does not "know" what type of object it is.
 
-January 28th, 2013 - Recitation 1: GUI, Javadoc, Inheritence {#january-28th-2013---recitation-1-gui-javadoc-inheritence}
+January 28th, 2013 - Recitation 1: GUI, Javadoc, Inheritence
 ------------------------------------------------------------
 
 1.  Write a program that creates a frame with two buttons on it: OK and
@@ -292,7 +292,7 @@ January 28th, 2013 - Recitation 1: GUI, Javadoc, Inheritence {#january-28th-2013
     matching parameter type (`Parent`). So the method `Foo.bar(Parent)`
     is called.
 
-January 29th, 2013 - Lecture {#january-29th-2013---lecture}
+January 29th, 2013 - Lecture
 ----------------------------
 
 -   It's one thing to write code that hacks through a GUI, it's wholly
@@ -355,12 +355,12 @@ January 29th, 2013 - Lecture {#january-29th-2013---lecture}
     -   Because the `Object` class defines `equals`, you can
         indepentadly write code to compare two objects.
 
-### Announcements {#announcements}
+### Announcements
 
 -   iclicker test quiz on Thursday
 -   Quizzes in recitation will be "design based."
 
-January 31st, 2013 - Lecture {#january-31st-2013---lecture}
+January 31st, 2013 - Lecture
 ----------------------------
 
 -   Dynamic binding happens when at runtime a certain method happens
@@ -385,7 +385,7 @@ January 31st, 2013 - Lecture {#january-31st-2013---lecture}
 
 -   `static` methods
 
-February 4th, 2013 - Recitation 2: Inheritance, Interfaces {#february-4th-2013---recitation-2-inheritance-interfaces}
+February 4th, 2013 - Recitation 2: Inheritance, Interfaces
 ----------------------------------------------------------
 
 1.  Consider the following class definition:
@@ -757,7 +757,7 @@ February 4th, 2013 - Recitation 2: Inheritance, Interfaces {#february-4th-2013--
         between how our everday phrasing in English, and Java
         implementation.
 
-February 6th, 2013 - Lecture {#february-6th-2013---lecture}
+February 6th, 2013 - Lecture
 ----------------------------
 
 -   When you make UI, the first thing you should do is draw the mockup,
@@ -789,7 +789,7 @@ February 6th, 2013 - Lecture {#february-6th-2013---lecture}
 -   `protected` makes the scope of a variable visible to every class in
     the same package and any subclasses.
 
-February 7th, 2013 - Lecture: GridBagLayout {#february-7th-2013---lecture-gridbaglayout}
+February 7th, 2013 - Lecture: GridBagLayout
 -------------------------------------------
 
 -   Example
@@ -807,10 +807,10 @@ February 7th, 2013 - Lecture: GridBagLayout {#february-7th-2013---lecture-gridba
         compnents display area. \* Note: Component may r5dftnot always
         fill its desplay area. \* Default value is one.
 
-February 7th, 2013 - Assignment 1: Song Library GUI Design and Implementation {#february-7th-2013---assignment-1-song-library-gui-design-and-implementation}
+February 7th, 2013 - Assignment 1: Song Library GUI Design and Implementation
 -----------------------------------------------------------------------------
 
-### Description {#description-1}
+### Description
 
 Design and implement an application with a graphical user interface to
 add and display a library of songs. No two songs should have the same
@@ -860,7 +860,7 @@ find these links useful:
 -   [A Visual Guide to Layout
     Managers](http://docs.oracle.com/javase/tutorial/uiswing/layout/visual.html)
 
-### Grading {#grading}
+### Grading
 
     GUI Component           Points
     Song list+selection     8
@@ -893,7 +893,7 @@ for this because it's highly subjective), but you can certainly try to
 impress us with your creativity (just for the heck of it!) as long as it
 does not get in the way of functionality.
 
-### Submission Instructions {#submission-instructions}
+### Submission Instructions
 
 Call your main class SongLib (If you don't do this we will have to first
 find which of your classes has the main method so we can run your
@@ -910,7 +910,7 @@ Submit your songlib.zip file.
 
 [Source](https://github.com/PLJNS/Rutgers-Soft-Meth-Spring-2013/tree/master/Song%20Library/src/songLibrary)
 
-February 11th, 2013 - Recitation 3: Tokenizing, GridBagLayout, Interfaces {#february-11th-2013---recitation-3-tokenizing-gridbaglayout-interfaces}
+February 11th, 2013 - Recitation 3: Tokenizing, GridBagLayout, Interfaces
 -------------------------------------------------------------------------
 
 1.  Write a program to accept a string and extract tokens from it. A
@@ -1104,10 +1104,10 @@ February 11th, 2013 - Recitation 3: Tokenizing, GridBagLayout, Interfaces {#febr
         since `Contraption` is a subclass of `Thing`, i.e. all
         `Contraption` objects are `Thing` objects.
 
-February 12th, 2013 - Lecture: Interfaces {#february-12th-2013---lecture-interfaces}
+February 12th, 2013 - Lecture: Interfaces
 -----------------------------------------
 
-### Using interfaces {#using-interfaces}
+### Using interfaces
 
 -   Take a stack, for instance
 
@@ -1149,7 +1149,7 @@ February 12th, 2013 - Lecture: Interfaces {#february-12th-2013---lecture-interfa
 
     -   This allows for plug and play.
 
-### Interface and Polymorophism {#interface-and-polymorophism}
+### Interface and Polymorophism
 
         public class Point {
             int x,y;
@@ -1178,10 +1178,10 @@ February 12th, 2013 - Lecture: Interfaces {#february-12th-2013---lecture-interfa
             System.out.println(pts[i].toString());
         }
 
-February 14th, 2013 - Project Part 1: Photo Album (Design and Implementation I) {#february-14th-2013---project-part-1-photo-album-design-and-implementation-i}
+February 14th, 2013 - Project Part 1: Photo Album (Design and Implementation I)
 -------------------------------------------------------------------------------
 
-### The Model-View-Controller (MVC) Architecture {#the-model-view-controller-mvc-architecture}
+### The Model-View-Controller (MVC) Architecture
 
 For this first part of the project, your team will create the model and
 control parts of a **Model-View-Control** architecture for a **Photo
@@ -1228,7 +1228,7 @@ manipulation. (For example, getting the view can directly get the id of
 a user from the model, and display it. But things such as sorting a list
 of users should be done in the control.)
 
-### Project Structure {#project-structure}
+### Project Structure
 
 -   Name your project `PhotoAlbumXX`, where XX is the two digit group
     number (ie 1 becomes 01).
@@ -1253,12 +1253,12 @@ package explorer view, but when you look at the directory structure in
 your computer's filesystem, you will see that it has been automatically
 expanded into the hierarchy `cs213 --> photoAlbum --> model`
 
-### Model {#model}
+### Model
 
 The model has four main components: photo, album, user, and a backend.
 The photo, album, and user objects are simply data containers.
 
-#### Photo specification {#photo-specification}
+#### Photo specification
 
 -   A unique (per user) file name.
 -   A caption
@@ -1285,23 +1285,23 @@ The photo, album, and user objects are simply data containers.
 
 -   Functionality to edit the attributes of the photo
 
-#### Album specification {#album-specification}
+#### Album specification
 
 -   A unique (per user) album name
 -   Zero or more photos
 -   Functionality to add and delete photos to/from albums, and to
-    recaption photos  
+    recaption photos
 
 **Note**: A photo may appear in multiple albums of a user.
 
-#### User specification {#user-specification}
+#### User specification
 
 -   The user's unique ID (string, used to log in)
 -   The user's full name
 -   The user's albums, stored efficiently
 -   Functionality to add, delete and rename albums
 
-#### Backend specification {#backend-specification}
+#### Backend specification
 
 The backend refers to functionality that will allow for the storage and
 retrieval from the `data` directory, and the photo files pointed to by
@@ -1316,7 +1316,7 @@ structure](#structure)). The backend functionality includes:
 -   Delete a user, identified by user ID
 -   Get a list of existing users, identified by user IDs
 
-#### Model Versions {#model-versions}
+#### Model Versions
 
 Different version of the model may be used, depending on whether and at
 what time state changes in the user/photo data are written to disk. Here
@@ -1355,13 +1355,13 @@ are two contrasting models:
     minimal change to the other parts (view/control) of the program. See
     the [API Driven Coding](#api) section for more information.
 
-### View {#view}
+### View
 
 For this first stage of the project, you will implement a simple
 text-based view with two modes of input - a command line mode, and an
 interactive mode.
 
-#### Command Line Mode {#command-line-mode}
+#### Command Line Mode
 
 -   To list existing users:
 
@@ -1405,7 +1405,7 @@ arguments). However, this can get cumbersome. Instead, you can work in a
 command window/shell, by going to the bin directory inside the project,
 and running the **java** command from there.
 
-#### Interactive Mode {#interactive-mode}
+#### Interactive Mode
 
 -   To create an album:
 
@@ -1592,7 +1592,7 @@ of what exactly went wrong should be printed. The format is as follows:
     what "version" you think the code is at, nor do they appreciate the
     carefully drawn box of roses surrounding said information...)
 
-### Control {#control}
+### Control
 
 The control (or controller) does all manipulation/processing of data
 within the program including the creation (but not storage) and deletion
@@ -1611,7 +1611,7 @@ on the control apply to that user.
 The control should not be tied to any one particular model
 implementation, so it should interact with the model interface(s).
 
-### API Driven Coding {#api-driven-coding}
+### API Driven Coding
 
 API (Application Programming Interface) refers to explicit and implicit
 interfaces that serve as "contracts", enabling different parts of an
@@ -1654,9 +1654,9 @@ model and control interfaces well, it should be possible to swap
 different model or control implementations without changing any code
 that uses these interfaces.
 
-### Development Instructions {#development-instructions}
+### Development Instructions
 
-#### Development/Testing {#developmenttesting}
+#### Development/Testing
 
 Development may take place anywhere, as long as your code is compilable
 with Java Version 6. You can develop with a higher version installation,
@@ -1667,7 +1667,7 @@ running Java 6, you will lose credit.
 
 Also, you may only use the standard Java API. No external libraries!
 
-#### Mercurial {#mercurial}
+#### Mercurial
 
 Each group will access its Mercurial repository on BitBucket, which you
 will set up according to the instructions given in the
@@ -1675,9 +1675,9 @@ Mercurial/Bitbucket walkthrough page in Sakai. The repository name for
 your group will be `photoAlbumXX`, where `XX` is your two digit group
 number.
 
-### Submission {#submission}
+### Submission
 
-#### Friday, Feb 20, by 11 PM {#friday-feb-20-by-11-pm}
+#### Friday, Feb 20, by 11 PM
 
 -   HTML documentation (generated by javadocs) of all explicit and
     implicit interfaces as described in the [API Driven Coding](#api)
@@ -1702,7 +1702,7 @@ get the issue resolved. After this point, you are assumed to be working
 well together, and complaints about the partnership will only be
 entertained if one partner has dropped the class.
 
-#### Fri, Mar 8, by 11 PM {#fri-mar-8-by-11-pm}
+#### Fri, Mar 8, by 11 PM
 
 -   Complete code, UML diagram (PDF ONLY), updated javadoc generated
     HTML (if you have updated the javadocs after the February 22
@@ -1718,7 +1718,7 @@ have to do anything other than check out your project and run an
 appropriate (and generic except for your group numer) test script.
 Anything else will result in a deduction from the score.
 
-### Grading {#grading-1}
+### Grading
 
 The project will be graded on the following criteria:
 
@@ -1731,7 +1731,7 @@ The project will be graded on the following criteria:
 -   **Specification Adherence:** How well your project conforms to the
     guidelines in this document
 
-### Sample Run {#sample-run}
+### Sample Run
 
 Here is a sample test run. Your program should work on this test (and we
 will check!), but also others. You might find it convenient to make your
@@ -1818,7 +1818,7 @@ This run should produce the following output:
     DSC_001 - Album: Colorado Springs - Date: 02/12/2012-09:23:00
     DSC_005 - Album: Fall Colors - Date: 02/12/2012-15:42:00
 
-February 18th, 2013 - Recitation 4: Project Q&A, Debugging in Eclipse, Polymorphism {#february-18th-2013---recitation-4-project-qa-debugging-in-eclipse-polymorphism}
+February 18th, 2013 - Recitation 4: Project Q&A, Debugging in Eclipse, Polymorphism
 -----------------------------------------------------------------------------------
 
 1.  Project Q&A
@@ -2038,10 +2038,10 @@ February 18th, 2013 - Recitation 4: Project Q&A, Debugging in Eclipse, Polymorph
         since a class should support every single feature for which it
         has a public method (otherwise why is that method in the class?)
 
-February 19th, 2013 - Lecture {#february-19th-2013---lecture}
+February 19th, 2013 - Lecture
 -----------------------------
 
-### Object input and output streams {#object-input-and-output-streams}
+### Object input and output streams
 
 -   Jave provides a convinient way to dump all data.
 
@@ -2089,7 +2089,7 @@ February 19th, 2013 - Lecture {#february-19th-2013---lecture}
     -   So when you have new datatypes, it's compatible.
         -   This seems like magic.
 
-### Abstract Classes {#abstract-classes}
+### Abstract Classes
 
 -   When several classes have a common conceptual foundation, they can
     be generalized into an abstract superclass.
@@ -2101,7 +2101,7 @@ February 19th, 2013 - Lecture {#february-19th-2013---lecture}
 -   An abstract class cannot be instatiated even if all the methods have
     been implemented.
 
-#### Inheritancee Polymorphism {#inheritancee-polymorphism}
+#### Inheritancee Polymorphism
 
 -   Dynamically binding to same functionality in classes at different
     levels of an inhertance hierarchy.
@@ -2113,12 +2113,12 @@ February 19th, 2013 - Lecture {#february-19th-2013---lecture}
     type.
     -   Applied more boradly than just to abstract classes.
 
-February 20th, 2013 - Lecture {#february-20th-2013---lecture}
+February 20th, 2013 - Lecture
 -----------------------------
 
-### Abstract class vs. Interface {#abstract-class-vs.-interface}
+### Abstract class vs. Interface
 
-#### Compare and contrast {#compare-and-contrast}
+#### Compare and contrast
 
 -   You cannot have multiple inheritance with abstract classes,
     interfaces can.
@@ -2128,7 +2128,7 @@ February 20th, 2013 - Lecture {#february-20th-2013---lecture}
     -   Abstract classes close of the option.
     -   Depends on the context.
 
-### UML Class Diagram - I {#uml-class-diagram---i}
+### UML Class Diagram - I
 
 -   UML stands for Unified Modellling Language.
 -   Mail graphical notation used to express object-oriented designed.
@@ -2164,7 +2164,7 @@ February 20th, 2013 - Lecture {#february-20th-2013---lecture}
             |handleEvent()          |
             +-----------------------+       
 
-February 25th, 2013 - Recitation 5: Abstract Classes, Interfaces {#february-25th-2013---recitation-5-abstract-classes-interfaces}
+February 25th, 2013 - Recitation 5: Abstract Classes, Interfaces
 ----------------------------------------------------------------
 
 1.  This problem gives an example where polymorphism is useful. Consider
@@ -2607,7 +2607,7 @@ February 25th, 2013 - Recitation 5: Abstract Classes, Interfaces {#february-25th
             }
         }
 
-February 26th, 2013 - Assignment 2: 2-Player Chess {#february-26th-2013---assignment-2-2-player-chess}
+February 26th, 2013 - Assignment 2: 2-Player Chess
 --------------------------------------------------
 
 -   For this assignment you will explore how to apply the design ideas
@@ -2627,7 +2627,7 @@ February 26th, 2013 - Assignment 2: 2-Player Chess {#february-26th-2013---assign
     move is executed, the move should be played and the new board drawn,
     and the other player queried.
 
-### Output {#output}
+### Output
 
 -   The board should be drawn on the screen with with ascii art in some
     sort of grid. Everything should be easily viewable in a standard
@@ -2648,7 +2648,7 @@ February 26th, 2013 - Assignment 2: 2-Player Chess {#february-26th-2013---assign
 -   The last thing before termination should be a display of "Black
     wins", "White wins" or "Draw".
 
-### Input {#input}
+### Input
 
 -   Your program needs to accept input of the form "FileRank FileRank",
     where the first file (column) and rank (row) are the coordinates of
@@ -2706,7 +2706,7 @@ February 26th, 2013 - Assignment 2: 2-Player Chess {#february-26th-2013---assign
 
         White's move:
 
-#### Ending the game {#ending-the-game}
+#### Ending the game
 
 -   If checkmate occurs, the game shall end immediately with the result
     reported.
@@ -2719,7 +2719,7 @@ February 26th, 2013 - Assignment 2: 2-Player Chess {#february-26th-2013---assign
     will be no automatic draws (due to unchanging positions over long
     periods of time, etc).
 
-### Grading {#grading-2}
+### Grading
 
 -   Correctness, 75 pts: Implementation of all required functionality
     including drawing the board
@@ -2728,7 +2728,7 @@ February 26th, 2013 - Assignment 2: 2-Player Chess {#february-26th-2013---assign
     experience is that if you design your solution badly, you will have
     a lot of trouble implementing/debugging it.
 
-### Submission {#submission-1}
+### Submission
 
 -   Name your project `Chess`. Use packages as necessary. Name your main
     class `Chess`. Make sure you record your name in each Java file with
@@ -2740,10 +2740,10 @@ February 26th, 2013 - Assignment 2: 2-Player Chess {#february-26th-2013---assign
 
 -   [Source](https://github.com/PLJNS/Rutgers-Soft-Meth-Spring-2013/tree/master/Chess/src)
 
-February 25th, 2013 - Lecture {#february-25th-2013---lecture}
+February 25th, 2013 - Lecture
 -----------------------------
 
-### Quiz preparation {#quiz-preparation}
+### Quiz preparation
 
 -   Implemented `equals`
     -   An example of good equals, according to Dr. Sesh:
@@ -2819,8 +2819,8 @@ February 25th, 2013 - Lecture {#february-25th-2013---lecture}
     -   [Awesome
         table](http://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html):
         <table class="table">
-                    <tbody><tr>
-                    <th markdown="1" id="h1">
+                        <tbody><tr>
+                        <th markdown="1" id="h1">
 
         Modifier
         </th>
@@ -2954,14 +2954,14 @@ February 25th, 2013 - Lecture {#february-25th-2013---lecture}
 -   `static`
 -   dynamic binding
 
-### UML Class Diagram II {#uml-class-diagram-ii}
+### UML Class Diagram II
 
 -   Class A depends on class B if A **uses** B in such a way that a
     change in B will effect A
 -   Say A depends on B. Typically, then, B would appear as a parameter,
     return type, or local variable in a method of A.
 
-March 4th, 2013 - Recitation 6: UML {#march-4th-2013---recitation-6-uml}
+March 4th, 2013 - Recitation 6: UML
 -----------------------------------
 
 1.  Give one example UML each (not covered in class!) of a
@@ -3009,7 +3009,7 @@ March 4th, 2013 - Recitation 6: UML {#march-4th-2013---recitation-6-uml}
     interfaces (if applicable) with method specifications, fields in all
     classes, method headers in all classes
 
-March 5th, 2013 - Lecture {#march-5th-2013---lecture}
+March 5th, 2013 - Lecture
 -------------------------
 
 -   An **association class**is used to model an association between two
@@ -3017,16 +3017,16 @@ March 5th, 2013 - Lecture {#march-5th-2013---lecture}
     -   For example, if you had a `Company` and an `Employee` object,
         then you'd have a `Job` class to stand for the relationship.
 
-March 8th, 2013 - Project Part 2: Photo Album (Design and Implementation II) {#march-8th-2013---project-part-2-photo-album-design-and-implementation-ii}
+March 8th, 2013 - Project Part 2: Photo Album (Design and Implementation II)
 ----------------------------------------------------------------------------
 
-### Dates {#dates}
+### Dates
 
 -   Posted Fri, Mar 8  
 -   GUI Storyboard and Work Split Document Due Wed, Mar 27, 11 PM  
 -   Complete Implementation and Test Cases Due Fri, Apr 12, 11 PM.
 
-### Features {#features}
+### Features
 
 In Part 1, you built a simple view for your photo album. In this part,
 you will replace the simple view with a Graphical User Interface (GUI).
@@ -3112,7 +3112,7 @@ In the application all errors and exceptions should be handled
 gracefully within the GUI. (The console should NOT be used for any
 input, output, or error.)
 
-### GUI Storyboard {#gui-storyboard}
+### GUI Storyboard
 
 Your first task is to design the interface in the form of a
 **storyboard**.
@@ -3159,7 +3159,7 @@ of the grade for your storyboard will be given **after** you finish the
 implementation, and we can look at how useful your storyboard has been
 for your implementation.
 
-### Work Split Documentation {#work-split-documentation}
+### Work Split Documentation
 
 When you have finished designing the storyboard, you need to decide how
 to split the work of implementing all the windows. Implementing a window
@@ -3173,7 +3173,7 @@ will be accepted). Make a table with two columns: in one column list the
 name of the window to be implemented, and in the second, the team member
 who will implement it.
 
-### GUI Implementation (With UML, Javadocs and Data Files) {#gui-implementation-with-uml-javadocs-and-data-files}
+### GUI Implementation (With UML, Javadocs and Data Files)
 
 Implement your GUI using Java AWT and Swing components **only**. (We
 will test with the standard JRE so if you use any external packages,
@@ -3203,7 +3203,7 @@ drive all the tests you list in the test report, as described in the
 without any of the data files specified above (except for whatever
 information is needed to log in the **admin** user.)
 
-### Testing {#testing}
+### Testing
 
 Write down every test you performed or would have liked to perform on
 your photo album code, *including tests for robustness*. Write your test
@@ -3244,9 +3244,9 @@ Your spreadsheet should look like this:
     ...                                                           ...                                         ...
     ------------------------------------------------------------- ------------------------------------------- -----
 
-### Mercurial Contents {#mercurial-contents}
+### Mercurial Contents
 
-#### By Wednesday, March 27, 11 PM {#by-wednesday-march-27-11-pm}
+#### By Wednesday, March 27, 11 PM
 
 (The **docs** and **data** directories mentioned below should be created
 directly under the project, NOT under **src** or under any of the
@@ -3260,7 +3260,7 @@ packages).
     plain text (.txt) or PDF file, called **worksplit.txt** or
     **worksplit.pdf**, and must be in the **docs** directory.
 
-#### By Friday, Apr 12, 11 PM {#by-friday-apr-12-11-pm}
+#### By Friday, Apr 12, 11 PM
 
 -   **GUI Implementation**: Arrange your code elements in your GUI
     implementation to be consistent with how your arranged the model and
@@ -3275,7 +3275,7 @@ packages).
 -   **Test Cases**: The **tests.xls** spreadsheet, to be placed in the
     **docs** directory.
 
-### Grading {#grading-3}
+### Grading
 
 Your project will be graded on the following, for 200 points:
 
@@ -3303,7 +3303,7 @@ Your project will be graded on the following, for 200 points:
     many tens of photos or more) in a easily navigable way: **upto 10
     pts**
 
-March 11th, 2013 - Recitation 7: Table/Model, Image Handling {#march-11th-2013---recitation-7-tablemodel-image-handling}
+March 11th, 2013 - Recitation 7: Table/Model, Image Handling
 ------------------------------------------------------------
 
 1.  UML Quiz
@@ -3319,7 +3319,7 @@ March 11th, 2013 - Recitation 7: Table/Model, Image Handling {#march-11th-2013--
     javax.swing.Image, javax.swing.ImageIcon, javax.swing.JSlider,
     java.awt.BorderLayout, and javax.swing.JScrollPane.
 
-March 28th, 2013 - Recitation 8: Testing, Design Patterns {#march-28th-2013---recitation-8-testing-design-patterns}
+March 28th, 2013 - Recitation 8: Testing, Design Patterns
 ---------------------------------------------------------
 
 1.  Let `Tomorrow` be a function of three variables: `month`, `day`, and
@@ -3368,7 +3368,7 @@ March 28th, 2013 - Recitation 8: Testing, Design Patterns {#march-28th-2013---re
     instance, it gives it up, and this instance can be later dealt out
     in response to a new instance request.
 
-March 29th, 2013 - Assignment 3 (Web Discussion Groups UML) {#march-29th-2013---assignment-3-web-discussion-groups-uml}
+March 29th, 2013 - Assignment 3 (Web Discussion Groups UML)
 -----------------------------------------------------------
 
 You will work **individually** on this assignment. Read the [DCS
@@ -3381,7 +3381,7 @@ instructor to the appropriate Dean".**
 Develop an object-oriented design and draw UML for web discussion groups
 (such as Google groups).
 
-#### Discussion Groups {#discussion-groups}
+#### Discussion Groups
 
 The discussion groups are a part of a website of which a person first
 needs to be a user before they can participate in one or more groups.
@@ -3420,7 +3420,7 @@ needs to be a user before they can participate in one or more groups.
     2.  Resign as moderator by sending an email to the owner, at which
         point the owner becomes the moderator (by inviting self)
 
-#### UML {#uml}
+#### UML
 
 Choose the most appropriate representation for each entity in the model.
 (Entity here refers to class or interface.) Use interfaces and abstract
@@ -3443,7 +3443,7 @@ by definition bidirectional unless you explicitly show
 unidirectionality. Make sure you show multiplicities for all
 associations.
 
-#### Supplement to the UML {#supplement-to-the-uml}
+#### Supplement to the UML
 
 For each association, list the data structure (full type definition in
 Java) that will be used to implement that association, and name the
@@ -3453,7 +3453,7 @@ definition, and the other for the class in which it will be defined. (If
 it is a class that is neither end point of the association, then make
 this fact explicit in the table.)
 
-#### Grading {#grading-4}
+#### Grading
 
 Your UML and supplement will be graded on completeness, appropriate
 choices in class/interface/abstract class for entities, appropriate
@@ -3468,7 +3468,7 @@ be arise in implementation). Not all of these may apply with equal
 importance (every model is different) but you want to use this as a
 checklist against your design to spot, and correct obvious flaws.
 
-#### Submission Instructions {#submission-instructions-1}
+#### Submission Instructions
 
 Submit a single PDF file, called webgroups.pdf, to Sakai. (Whatever
 software you use to draw the diagrams/write text, you MUST convert to
@@ -3479,7 +3479,7 @@ them on one page, and then on other pages, draw the details for each
 entity. Scanned hand-drawn and hand-written submissions will NOT be
 accepted.
 
-April 1st, 2013 - Recitation 9: Multithreading, Android {#april-1st-2013---recitation-9-multithreading-android}
+April 1st, 2013 - Recitation 9: Multithreading, Android
 -------------------------------------------------------
 
 1.  Use threads to implement a stop watch that displays, *once every
@@ -3500,7 +3500,7 @@ April 1st, 2013 - Recitation 9: Multithreading, Android {#april-1st-2013---recit
     text area that lists the sub contents. Your UI doesn't have to be
     pretty - just make it work correctly.
 
-April 2nd, 2013 - Lecture: Android Development {#april-2nd-2013---lecture-android-development}
+April 2nd, 2013 - Lecture: Android Development
 ----------------------------------------------
 
 This document points you to the appropriate developer resources that
@@ -3515,9 +3515,9 @@ It is assumed that you have already installed Java and Eclipse on your
 machine before you do the Android setup. (Java and Eclipse are already
 available on the ilab machines.)
 
-### Android SDK {#android-sdk}
+### Android SDK
 
-#### Step 1: Download the SDK {#step-1-download-the-sdk}
+#### Step 1: Download the SDK
 
 The first thing you will need to do is download the Android SDK
 (software development toolkit), which has all the tools you will need to
@@ -3538,11 +3538,11 @@ agree to the terms, then download.
 
 (r21.0.1 is the latest version as of this writing).
 
-### Step 2: Set up the SDK {#step-2-set-up-the-sdk}
+### Step 2: Set up the SDK
 
 The next phase is to install the ADT for Eclipse.
 
-### ADT for Eclipse {#adt-for-eclipse}
+### ADT for Eclipse
 
 ADT stands for Android Development Toolkit. It is a plug in for Eclipse
 that comes with a full set of tools to build, test, and export Android
@@ -3551,7 +3551,7 @@ apps to the Android market. To plug the ADT into Eclipse, go to
 Plugin](http://developer.android.com/sdk/installing/installing-adt.html),
 and execute the following two steps.
 
-#### Step 1: Download the ADT Plugin {#step-1-download-the-adt-plugin}
+#### Step 1: Download the ADT Plugin
 
 The first thing you will need to do is download the Android SDK
 (software development toolkit), which has all the tools you will need to
@@ -3569,13 +3569,13 @@ agree to the terms, then download.
 -   For Windows, you will download an installer file,
     installer\_r21.0.1-windows.exe
 
-#### Step 2: Point the ADT to the SDK {#step-2-point-the-adt-to-the-sdk}
+#### Step 2: Point the ADT to the SDK
 
 -   Follow the instructions. On my Mac, I unpacked the file, moved the
     resulting directory to directly under my home directory, and renamed
     it as android-sdk-macosx. Here are the contents of this directory:
 
-### Adding Platforms and Packages {#adding-platforms-and-packages}
+### Adding Platforms and Packages
 
 An Android platform is basically a version of the Android API on which
 you can run your app.
@@ -3599,7 +3599,7 @@ platform needs SDK tool revision r12 of higher.
 Once you have identified which platforms you want to install, it is an
 easy matter to do it in Eclipse, with the Android SDK Manager.
 
-### Downloading Platforms and SDK Tools with SDK Manager {#downloading-platforms-and-sdk-tools-with-sdk-manager}
+### Downloading Platforms and SDK Tools with SDK Manager
 
 After plugging in the ADT into Eclipse, when you start Eclipse, you
 should see a set of extra icons in the task bar at the top.
@@ -3628,7 +3628,7 @@ Clicking on the "Install 2 packages..." button brings up this dialog:
 Choose "Accept all" and click "Install". After installation, you should
 see this in the SDK manager:
 
-### Creating an Emulator {#creating-an-emulator}
+### Creating an Emulator
 
 When you write an app, you can test it on emulators for various device
 sizes and pixel densities so you now that it works well on small and big
@@ -3662,12 +3662,12 @@ Leaving all other fields at their default settings, here's the
 configuration, to the left, and the resulting emulator list, to the
 right:
 
-### Writing a Simple App {#writing-a-simple-app}
+### Writing a Simple App
 
 You are ready to start writing Android apps! Here's a simple "hello
 world" app to get you started.
 
-#### Creating an Android Project {#creating-an-android-project}
+#### Creating an Android Project
 
 When you enter Hello World for the application name, the wizard will
 automatically fill in HelloWorld for the project name, and
@@ -3712,7 +3712,7 @@ Click next. If you see a window about a missing dependency, click on the
 
 Click Finish.
 
-#### App Project {#app-project}
+#### App Project
 
 In the left hand pane is the package explorer where you see the
 HelloWorld project. It has several folders, one of which is res (for
@@ -3728,7 +3728,7 @@ launched. So let's go ahead and run the app, then we'll come back to
 take a tour of the app's code, and some of the immediately relevant
 aspects of the project's framework.
 
-#### Running the App {#running-the-app}
+#### Running the App
 
 Right click on the HelloWorld project folder name in the package
 explorer, then choose "Run As", and "Android Application". This should
@@ -3748,7 +3748,7 @@ the Hello World app can be launched, of course - observe the Android
 icon used as the launcher icon, because we set it up that way in the
 project creation process.)
 
-April 22nd, 2013 - Recitation 12: Multithreading, Design Patterns {#april-22nd-2013---recitation-12-multithreading-design-patterns}
+April 22nd, 2013 - Recitation 12: Multithreading, Design Patterns
 -----------------------------------------------------------------
 
 1.  Suppose you use a search engine to search for a word or phrase that
@@ -3876,12 +3876,12 @@ April 22nd, 2013 - Recitation 12: Multithreading, Design Patterns {#april-22nd-2
                }
             }
 
-April 26th, 2013 - Final Exam Study Guide {#april-26th-2013---final-exam-study-guide}
+April 26th, 2013 - Final Exam Study Guide
 -----------------------------------------
 
-### Object-Oriented Design with Java. {#object-oriented-design-with-java.}
+### Object-Oriented Design with Java.
 
-#### Interfaces {#interfaces}
+#### Interfaces
 
 -   An abstract type that is used to specify an interface that clases
     must implement.
@@ -3907,7 +3907,7 @@ April 26th, 2013 - Final Exam Study Guide {#april-26th-2013---final-exam-study-g
             int compareTo(T o);
         }
 
-#### Inheritance {#inheritance}
+#### Inheritance
 
 -   A class that derived from another class is called a *subclass*.
 -   The class from which the subclass is derived is called the
@@ -3928,7 +3928,7 @@ April 26th, 2013 - Final Exam Study Guide {#april-26th-2013---final-exam-study-g
     -   A colored point is a point.
     -   A zebra is an animal.
 
-#### Abstract classes {#abstract-classes-1}
+#### Abstract classes
 
 -   An abstract class is a class that is declared by `abstract`.
 -   It may or may not include abstract methods.
@@ -3942,7 +3942,7 @@ April 26th, 2013 - Final Exam Study Guide {#april-26th-2013---final-exam-study-g
 -   An `abstract` method is one that has no implementation.
 -   An `abstract` class may have *zero or more* `abstract` methods.
 
-#### Polymorphism {#polymorphism}
+#### Polymorphism
 
 -   The ability to create a variable, function, or object that has more
     than one form.
@@ -3952,7 +3952,7 @@ April 26th, 2013 - Final Exam Study Guide {#april-26th-2013---final-exam-study-g
     levels of an inheritance hierarchy using a "least common
     denominator" type is known as **inheritance polymorphism**.
 
-### UML {#uml-1}
+### UML
 
 -   UML stands for Unified Modeling Language, which is a mainly
     graphical notation used to express object-oriented design.
@@ -3964,7 +3964,7 @@ April 26th, 2013 - Final Exam Study Guide {#april-26th-2013---final-exam-study-g
         methods are invoked on classes.
     -   **State diagram**, used to represent state based designs.
 
-#### Class diagrams {#class-diagrams}
+#### Class diagrams
 
 -   The class diagram is the main building block of OO modelling.
 -   It is used both for general conceptual modelling and for
@@ -4003,7 +4003,7 @@ April 26th, 2013 - Final Exam Study Guide {#april-26th-2013---final-exam-study-g
         0..*    Zero or more instances (also *)
         1..*    One or more instances (at least one)
 
-##### Association {#association}
+##### Association
 
 -   An *association* is a family of links.
 -   They are representing with simply a line.
@@ -4030,7 +4030,7 @@ April 26th, 2013 - Final Exam Study Guide {#april-26th-2013---final-exam-study-g
     -   This is represented by a jagged line stemming from where one
         might usually put the title of the association.
 
-##### Aggregation {#aggregation}
+##### Aggregation
 
 -   This differs from ordinary composition in that it does not imply
     ownership.
@@ -4050,7 +4050,7 @@ April 26th, 2013 - Final Exam Study Guide {#april-26th-2013---final-exam-study-g
     aggregate townships, police stations aggregate police officers, and
     directories aggregate files.
 
-##### Composition {#composition}
+##### Composition
 
 -   This is a stronger variant of the "owns a" relationship.
 -   Composition usualy has a strong *life cycle dependancy* between
@@ -4068,7 +4068,7 @@ April 26th, 2013 - Final Exam Study Guide {#april-26th-2013---final-exam-study-g
 -   Alternatively, one can represent composition by nesting a class
     within the class representation.
 
-##### Generalization {#generalization}
+##### Generalization
 
 -   The generalization relationship ("is a") indicates that one of the
     two related classes is considered to be a specialized form of the
@@ -4086,14 +4086,14 @@ April 26th, 2013 - Final Exam Study Guide {#april-26th-2013---final-exam-study-g
 -   A good example of generalization is shape is a generalization of a
     polygon, which is a generalization of rectangles and triangles.
 
-##### Dependancy {#dependancy}
+##### Dependancy
 
 -   Class `A` depends on `B` if `A` *uses* `B` in such a way that a
     change in `B` will effect `A`.
 -   Say `A` depends on `B`. Typically, `B` would appear as a parameter,
     return type, or local variable in a method of `A`.
 
-#### State diagram. {#state-diagram.}
+#### State diagram.
 
 -   A state diagram is a type of diagram used in computer science and
     related fields to describe the behavior of systems.
@@ -4132,9 +4132,9 @@ April 26th, 2013 - Final Exam Study Guide {#april-26th-2013---final-exam-study-g
         line leaving or 1 line entering and *x* \> 1 lines leaving.
         -   These denote join/fork respectively.
 
-### Design patterns {#design-patterns}
+### Design patterns
 
-#### Model-View-Controller (MVC) {#model-view-controller-mvc}
+#### Model-View-Controller (MVC)
 
 -   A **model** notifies its associated views and controllers when there
     has been a change in its state.
@@ -4143,7 +4143,7 @@ April 26th, 2013 - Final Exam Study Guide {#april-26th-2013---final-exam-study-g
 -   A **controller** can send commands to associated view to change the
     view's presentation of the model.
 
-#### State (Behavioral) {#state-behavioral}
+#### State (Behavioral)
 
 -   Allow an object to change its behavior when its internal state
     changes.
@@ -4183,7 +4183,7 @@ April 26th, 2013 - Final Exam Study Guide {#april-26th-2013---final-exam-study-g
                   input:  the location point the mouse is at
                   (this function must be implemented by subclasses)
 
-#### Singleton (Creational) {#singleton-creational}
+#### Singleton (Creational)
 
 -   *Ensure that a class has only one object or instance.*
 -   Only one point of global access.
@@ -4197,7 +4197,7 @@ April 26th, 2013 - Final Exam Study Guide {#april-26th-2013---final-exam-study-g
         |+ static getInstance()|
         +----------------------+
 
-#### Iterator {#iterator}
+#### Iterator
 
 -   An iterator is *used to traverse a container and access the
     containter's elements.*
@@ -4245,7 +4245,7 @@ April 26th, 2013 - Final Exam Study Guide {#april-26th-2013---final-exam-study-g
         | return new ConcreteIterator()|
         +------------------------------+
 
-#### Template Method {#template-method}
+#### Template Method
 
 -   Implements a set sequence of actions
 -   Each action is a method, some of which are abstract because their
@@ -4303,9 +4303,9 @@ April 26th, 2013 - Final Exam Study Guide {#april-26th-2013---final-exam-study-g
 
     -   The template method is not abstract!
 
-### Black-box Unit Testing {#black-box-unit-testing}
+### Black-box Unit Testing
 
-#### Boundary Value Analysis {#boundary-value-analysis}
+#### Boundary Value Analysis
 
 -   Consider `charAt(i)` in the `String` class. This method implements a
     function that takes as input an integer position, and returns the
@@ -4332,12 +4332,10 @@ April 26th, 2013 - Final Exam Study Guide {#april-26th-2013---final-exam-study-g
         range.
     -   *ε* is a small value, typically 1 for `int`.
 
-#### Robustness testing {#robustness-testing}
+#### Robustness testing
 
 -   A simple extension of the basic boundary value analysis that
-    includes two additional input values:
-    *l* − *ε*
-    *h* + *ε*
+    includes two additional input values: *l* − *ε* *h* + *ε*
 
 -   These value fall outside the range but are class to the end value.
     -   They should result in the function implementation returning
@@ -4355,7 +4353,7 @@ April 26th, 2013 - Final Exam Study Guide {#april-26th-2013---final-exam-study-g
     function.
 -   The main focus of robustness is on exception handling.
 
-#### Multi-variable boundary values {#multi-variable-boundary-values}
+#### Multi-variable boundary values
 
 -   Suppose you wrote a function `addHour` that, given a day and a time
     in hours, adds one hour to the time and outputs the resulting day
@@ -4363,8 +4361,7 @@ April 26th, 2013 - Final Exam Study Guide {#april-26th-2013---final-exam-study-g
 -   The input variables here are integer `d`, for day, and an interger
     `h` for hour. Ranges:
 
-    1 ≤ *d* ≤ 6
-    0 ≤ *h* ≤ 23
+    1 ≤ *d* ≤ 6 0 ≤ *h* ≤ 23
 
 -   To create the test cases, we follow the procedure for single
     variable boundary value analysis, except we repret for both
@@ -4411,7 +4408,7 @@ April 26th, 2013 - Final Exam Study Guide {#april-26th-2013---final-exam-study-g
     unless there are particular legitimate indivudual values whose
     combination is not legitimate.
 
-#### Equivalence classes {#equivalence-classes}
+#### Equivalence classes
 
 -   Divides the input data of a software into partitions of equivilent
     data from which test cases can be derived.
@@ -4490,9 +4487,9 @@ April 26th, 2013 - Final Exam Study Guide {#april-26th-2013---final-exam-study-g
         with, we will build equvilance classes for the possible correct
         outcomes.
 
-### Multithreading and synchronization on shared resources {#multithreading-and-synchronization-on-shared-resources}
+### Multithreading and synchronization on shared resources
 
-#### Multithreading I/0 with Computation {#multithreading-i0-with-computation}
+#### Multithreading I/0 with Computation
 
 -   The steps to make a program multithreaded:
     1.  Extend the `java.lang.Thread` class.
@@ -4527,7 +4524,7 @@ April 26th, 2013 - Final Exam Study Guide {#april-26th-2013---final-exam-study-g
     until the end of the current conditional or whatever might be
     happening in there.
 
-#### Why threads {#why-threads}
+#### Why threads
 
 -   A thread runs asynchronously, independant of the thread that created
     it.
@@ -4550,7 +4547,7 @@ April 26th, 2013 - Final Exam Study Guide {#april-26th-2013---final-exam-study-g
         withdraw money from an account, but the second does not see the
         withdrawal being made by the first.
 
-#### Lifecycle of a thread {#lifecycle-of-a-thread}
+#### Lifecycle of a thread
 
 A thread is born, started, run, and then terminated.
 
@@ -4569,7 +4566,7 @@ A thread is born, started, run, and then terminated.
 -   **Terminated**: A runnable thread enters the terminated state when
     it completes the task or is otherwise terminated.
 
-#### Thread priorities {#thread-priorities}
+#### Thread priorities
 
 -   Every Java thread has a priority that helps the operating system
     determine the order in which threads are scheduled.
@@ -4581,7 +4578,7 @@ A thread is born, started, run, and then terminated.
     should be allocated processor time before lower-priority threads,
     -   However, this is very platform dependant.
 
-#### A thread "Hello, World!" {#a-thread-hello-world}
+#### A thread "Hello, World!"
 
     class NewThread implements Runnable {
        Thread t;
@@ -4622,7 +4619,7 @@ A thread is born, started, run, and then terminated.
       }
     }
 
-#### Recitation 9, Question 1 {#recitation-9-question-1}
+#### Recitation 9, Question 1
 
 > Use threads to implement a stop watch that displays, once every five
 > seconds, the minutes and seconds that have passed since it was
@@ -4708,7 +4705,7 @@ A thread is born, started, run, and then terminated.
             }
         }
 
-#### Recitation 12, Question 1 {#recitation-12-question-1}
+#### Recitation 12, Question 1
 
 > Suppose you use a search engine to search for a word or phrase that
 > results in a match with a large number (hundreds) of web pages.
@@ -4778,14 +4775,14 @@ A thread is born, started, run, and then terminated.
           return hits;
        }
 
-May 6th, 2013 - Android Project: Chess OR Photo Album OR Roll Your Own {#may-6th-2013---android-project-chess-or-photo-album-or-roll-your-own}
+May 6th, 2013 - Android Project: Chess OR Photo Album OR Roll Your Own
 ----------------------------------------------------------------------
 
 You will continue working in pairs. You are allowed to roll your own
 project (RYO) but if you choose to do so, you must get approval from
 Prof. Venugopal.
 
-### Photo Album {#photo-album}
+### Photo Album
 
 You are not required to carry over all the functionality from the Swing
 implementation. Instead, you will implement a smaller set, as described
@@ -4828,7 +4825,7 @@ etc.) at any time, there is no single exit point. This means your app
 must save any update to the device as soon as the update is made by the
 user (*write persistence/write through*).
 
-### Chess {#chess}
+### Chess
 
 Following up on the terminal-based Chess program, create an android app
 that lets two people play chess with each other on the phone. You may
@@ -4840,7 +4837,7 @@ you are not required to implement checkmate and stalemate.
 Your app should have a Home activity that lets you choose from the
 following three other activities:
 
-#### Playing chess (120 pts) {#playing-chess-120-pts}
+#### Playing chess (120 pts)
 
 -   30 pts Two humans can use your app to play a game of Chess.
 -   20 pts Your app must draw the board with icons and correctly shaded
@@ -4857,7 +4854,7 @@ following three other activities:
 -   10 pts When the game is over, report the outcome (but not in a
     popup).
 
-#### Recording games (50 pts) {#recording-games-50-pts}
+#### Recording games (50 pts)
 
 -   20 pts Record all games as they're being played.
 -   10 pts At the conclusion of a game, offer to store it and prompt the
@@ -4865,7 +4862,7 @@ following three other activities:
 -   20 pts List all recorded games, sorted by both date and by title
     (user can select which view to choose).
 
-#### Game playback (30 pts) {#game-playback-30-pts}
+#### Game playback (30 pts)
 
 -   A button that allows the user to play a selected game one move at a
     time.

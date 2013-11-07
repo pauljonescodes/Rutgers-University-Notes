@@ -1,7 +1,7 @@
-Epistemology <small>with Peter Klein</small> {#epistemology-with-peter-klein}
+Epistemology <small>with Peter Klein</small>
 ============================================
 
-September 4th, 2013 <small>The Gettier Problem</small> {#september-4th-2013-the-gettier-problem}
+September 4th, 2013 <small>The Gettier Problem</small>
 ------------------------------------------------------
 
 > What's Gettier's main point?
@@ -23,7 +23,7 @@ September 4th, 2013 <small>The Gettier Problem</small> {#september-4th-2013-the-
 -   Look at the simple justification closure principle.
     -   Counterexamples?
 
-September 9th, 2013 <small>Reading, 'Knowledge Needs No Justification', Hilary Kornblith</small> {#september-9th-2013-reading-knowledge-needs-no-justification-hilary-kornblith}
+September 9th, 2013 <small>Reading, 'Knowledge Needs No Justification', Hilary Kornblith</small>
 ------------------------------------------------------------------------------------------------
 
 > **The Standard View**, that knowledge is justified true belief plus
@@ -41,7 +41,7 @@ September 9th, 2013 <small>Reading, 'Knowledge Needs No Justification', Hilary K
     -   In "A Causal Theory of Knowing", Goldman argued that knowledge
         of p is nothing more than true belief caused by the fact that p.
 
-### 2. Dialectical conceptions of justification {#dialectical-conceptions-of-justification}
+### 2. Dialectical conceptions of justification
 
 -   Justification is seen as a matter of the ability to present
     arguments in support of one's beliefs.
@@ -64,7 +64,7 @@ September 9th, 2013 <small>Reading, 'Knowledge Needs No Justification', Hilary K
 > in a position to justify one's beliefs to oneself, does not present us
 > with a plausible necessary condition on knowledge.
 
-### 3. Objective conceptions of justification {#objective-conceptions-of-justification}
+### 3. Objective conceptions of justification
 
 -   While objective standards for justification do not suffer from the
     same trouble of being arbitrary that dialectical ones do, Kornblith
@@ -81,7 +81,7 @@ September 9th, 2013 <small>Reading, 'Knowledge Needs No Justification', Hilary K
     process and the *perceived* reliability of a process, and so this is
     no grounds for justicational objectivity.
 
-### 4. Conclusion {#conclusion}
+### 4. Conclusion
 
 -   Failure to meet the standards of justification, either dialectical
     or objective, is evidence that one does not know.
@@ -98,7 +98,7 @@ September 9th, 2013 <small>Reading, 'Knowledge Needs No Justification', Hilary K
         thus no longer believe it.
     -   It's no longer knowledge.
 
-September 9th, 2013 <small>1st Meeting on Kornblith</small> {#september-9th-2013-1st-meeting-on-kornblith}
+September 9th, 2013 <small>1st Meeting on Kornblith</small>
 -----------------------------------------------------------
 
 -   Descartes thinks that knowledge needs to be indubitable.
@@ -125,7 +125,7 @@ September 9th, 2013 <small>1st Meeting on Kornblith</small> {#september-9th-2013
     knowledge, his formulation.
 -   Read carefully footnote 24.
 
-September 11th, 2013 <small>2nd Meeting on Kornblith</small> {#september-11th-2013-2nd-meeting-on-kornblith}
+September 11th, 2013 <small>2nd Meeting on Kornblith</small>
 ------------------------------------------------------------
 
 -   Starting with AJ Ayer and Alvin Goldman, what tied truth to belief
@@ -172,7 +172,7 @@ September 11th, 2013 <small>2nd Meeting on Kornblith</small> {#september-11th-20
         -   Cartesian
         -   Foley
 
-September 16th, 2013 <small>3rd Meeting on Kornblith</small> {#september-16th-2013-3rd-meeting-on-kornblith}
+September 16th, 2013 <small>3rd Meeting on Kornblith</small>
 ------------------------------------------------------------
 
 -   Argument:
@@ -245,13 +245,13 @@ September 16th, 2013 <small>3rd Meeting on Kornblith</small> {#september-16th-20
 
     3.  Therefore, *S* doesn't know that *h*.
 
-September 18th, 2013 <small>Reading, 'Useful False Beliefs', Peter Klein</small> {#september-18th-2013-reading-useful-false-beliefs-peter-klein}
+September 18th, 2013 <small>Reading, 'Useful False Beliefs', Peter Klein</small>
 --------------------------------------------------------------------------------
 
 -   Purpose: Examine the role of false beliefs in the production of
     knowledge.
 
-### Key notions {#key-notions}
+### Key notions
 
 1.  **Propositional** vs. **Doxastic** justification.
     -   Propositions are the contents of beliefs.
@@ -287,7 +287,7 @@ September 18th, 2013 <small>Reading, 'Useful False Beliefs', Peter Klein</small>
             defeater of the propositional justification of any
             proposition between *e* and *h*.
 
-### A review of Gettier {#a-review-of-gettier}
+### A review of Gettier
 
 -   Two Gettier principles:
 
@@ -299,7 +299,7 @@ September 18th, 2013 <small>Reading, 'Useful False Beliefs', Peter Klein</small>
 >     that *q* on the basis of deducing it from *p*, then *S* is
 >     doxastically justified in believing that *p*.
 >
-> ### Examples and prelimnary discussion of useful falsehoods {#examples-and-prelimnary-discussion-of-useful-falsehoods}
+> ### Examples and prelimnary discussion of useful falsehoods
 
 1.  The Appointment Case
     -   Klein believes that his secretary told him on Friday that he has
@@ -338,7 +338,7 @@ September 18th, 2013 <small>Reading, 'Useful False Beliefs', Peter Klein</small>
         say the answer is yes.
     -   They know.
 
-### The proposed characterization of useful falsehoods {#the-proposed-characterization-of-useful-falsehoods}
+### The proposed characterization of useful falsehoods
 
 -   The belief that *uf* is a useful falsehood to *S* for acquiring
     knowledge that *h* by producing a doxastically justified belief that
@@ -377,10 +377,10 @@ September 18th, 2013 <small>Reading, 'Useful False Beliefs', Peter Klein</small>
 > justificatory path taken by the agent, there is no genuine defeater
 > along the path not taken.
 
-September 18th, 2013 <small>1st Meeting on Klein</small> {#september-18th-2013-1st-meeting-on-klein}
+September 18th, 2013 <small>1st Meeting on Klein</small>
 --------------------------------------------------------
 
-### Some background {#some-background}
+### Some background
 
 -   What most people think Gettier showed was that JTB was not
     *sufficient* for knowledge, not that they were not *necessary*.
@@ -402,11 +402,11 @@ September 18th, 2013 <small>1st Meeting on Klein</small> {#september-18th-2013-1
         there, it will be "lucky break" that you had a JTB.
     -   This is the first evidentialist approach.
 
-### Evidentialism {#evidentialism}
+### Evidentialism
 
 -   **Disjunctive normal form**: {*a*, *b*, *c*, *d*. . . *x*}:
 
-    ∃ *x**F*(*x*) ≡ *F*(*a*) ∨ *F*(*b*) ∨ *F*(*c*) ∨ . . . 
+    ∃ \*x\*\*F*(*x*) ≡ *F*(*a*) ∨ *F*(*b*) ∨ *F*(*c\*) ∨ . . . 
 
 -   Michael Clark came up with a case where you have justified, true,
     belief that whose basis is good and you *still* do not have
@@ -435,7 +435,7 @@ September 18th, 2013 <small>1st Meeting on Klein</small> {#september-18th-2013-1
     it's just that, it's *ad-hoc*.
     -   So evidentialism was supposed to not work (for now).
 
-### Defeasibility {#defeasibility}
+### Defeasibility
 
 -   Many people think that **defeasibility theory** is part of the
     evidentialist tradition.
@@ -444,8 +444,7 @@ September 18th, 2013 <small>1st Meeting on Klein</small> {#september-18th-2013-1
 -   Say *E* is the set of all evidence, for and against, a proposition
     *p*.
 -   *e* is the set of evidence which justifies *S* in believing *p*.
-    Notation:
-    *e**J*<sub>*S*</sub>*p*
+    Notation: \*e\*\*J*<sub>*S*</sub>*p\*
 
 -   A good definition takes the cases where almost it's almost
     universally thought someone has knowledge and validates it, where
@@ -453,7 +452,7 @@ September 18th, 2013 <small>1st Meeting on Klein</small> {#september-18th-2013-1
     and where it's almost universally vague and clarifies it and why
     it's vague.
 
-### Reliablism {#reliablism}
+### Reliablism
 
 -   There can be misleading evidence, so defeasibility eliminates too
     much.
@@ -493,7 +492,7 @@ September 18th, 2013 <small>1st Meeting on Klein</small> {#september-18th-2013-1
     -   The barn is appropriately caused, it's justified true belief,
         but the intuition is that it is not knowledge.
 
-September 23rd, 2013 <small>2nd Meeting on Klein</small> {#september-23rd-2013-2nd-meeting-on-klein}
+September 23rd, 2013 <small>2nd Meeting on Klein</small>
 --------------------------------------------------------
 
 -   The recipe for Gettier cases is having a false, justified that
@@ -511,7 +510,7 @@ September 23rd, 2013 <small>2nd Meeting on Klein</small> {#september-23rd-2013-2
     -   You're doxasticly entitled to a belief if the propositional
         evidence justifies you.
 
-September 25th, 2013 <small>3rd Meeting on Klein</small> {#september-25th-2013-3rd-meeting-on-klein}
+September 25th, 2013 <small>3rd Meeting on Klein</small>
 --------------------------------------------------------
 
 -   The initial response to the Gettier literature was the **no false
@@ -546,10 +545,10 @@ September 25th, 2013 <small>3rd Meeting on Klein</small> {#september-25th-2013-3
     -   For defeasibility, there is the distinction between genuine and
         misleading defeaters *a la* Grabit and Grabit's brother.
 
-September 30th, 2013 <small>Reading, 'Immediate Justification and Process Reliablism', Alvin Goldman</small> {#september-30th-2013-reading-immediate-justification-and-process-reliablism-alvin-goldman}
+September 30th, 2013 <small>Reading, 'Immediate Justification and Process Reliablism', Alvin Goldman</small>
 ------------------------------------------------------------------------------------------------------------
 
-### Introduction {#introduction}
+### Introduction
 
 -   Is there a species of prima facie justification that is immediate,
     direct, basic, or foundational?
@@ -585,7 +584,7 @@ September 30th, 2013 <small>Reading, 'Immediate Justification and Process Reliab
     2.  Immediate justifiers are non-contentful.
     3.  They can be either.
 
-### Feldman's proposal <small>A proper response to experience</small> {#feldmans-proposal-a-proper-response-to-experience}
+### Feldman's proposal <small>A proper response to experience</small>
 
 > Being spontaneously formed makes a belief immediately justified.
 
@@ -596,7 +595,7 @@ September 30th, 2013 <small>Reading, 'Immediate Justification and Process Reliab
 > response to experience and is not defeated by other evidence the
 > believer has.
 
-September 30th, 2013 <small>1st Meeting on Goldman</small> {#september-30th-2013-1st-meeting-on-goldman}
+September 30th, 2013 <small>1st Meeting on Goldman</small>
 ----------------------------------------------------------
 
 -   Suppose there is some belief Bp.
@@ -627,7 +626,7 @@ September 30th, 2013 <small>1st Meeting on Goldman</small> {#september-30th-2013
     -   Bad form, circular reasoning
     -   Better form
 
-October 9th, 2013 <small>1st Meeting on Conee & Feldman</small> {#october-9th-2013-1st-meeting-on-conee-feldman}
+October 9th, 2013 <small>1st Meeting on Conee & Feldman</small>
 ---------------------------------------------------------------
 
 -   Suppose you're driving along, and you see what you take to be what
@@ -688,7 +687,7 @@ October 9th, 2013 <small>1st Meeting on Conee & Feldman</small> {#october-9th-20
     -   There are people that believe they have pains that do not,
         psychological problems, etc.
 
-October 14th, 2013 <small>2nd Meeting on Conee & Feldman</small> {#october-14th-2013-2nd-meeting-on-conee-feldman}
+October 14th, 2013 <small>2nd Meeting on Conee & Feldman</small>
 ----------------------------------------------------------------
 
 -   Foundationalists think that there is a causal chain from basic
@@ -704,7 +703,7 @@ October 14th, 2013 <small>2nd Meeting on Conee & Feldman</small> {#october-14th-
     individual Senators.
     -   If a legislation *didn't* pass, it could
 
-October 16th, 2013 <small>'Experiential Justification' by Anthony Brueckner</small> {#october-16th-2013-experiential-justification-by-anthony-brueckner}
+October 16th, 2013 <small>'Experiential Justification' by Anthony Brueckner</small>
 -----------------------------------------------------------------------------------
 
 -   The topic is *justification and perceptual beliefs*.
@@ -712,7 +711,7 @@ October 16th, 2013 <small>'Experiential Justification' by Anthony Brueckner</sma
     perceptual beliefs *are justified* in virtue of their relation to
     *propositional-content-bearing* experiences.
 
-### Perception Beliefs and Theories of Justification {#perception-beliefs-and-theories-of-justification}
+### Perception Beliefs and Theories of Justification
 
 -   At first pass, perceptual beliefs are beliefs that are caused by
     perceptual experiences. Though this is too narrow and too wide
@@ -736,7 +735,7 @@ October 16th, 2013 <small>'Experiential Justification' by Anthony Brueckner</sma
         -   *Pure* coherentism is all justified beliefs being justified
             in relation to other beliefs.
 
-### An application of the Foregoing Categorization {#an-application-of-the-foregoing-categorization}
+### An application of the Foregoing Categorization
 
 -   Williamson thinks that "E = K", that one's *knowledge* is *equal* to
     what one *evidentially believes*.
@@ -751,7 +750,7 @@ October 16th, 2013 <small>'Experiential Justification' by Anthony Brueckner</sma
 -   Coherentism *is not* explored in *Knowledge and its Limits*, so
     Williamson's view is undetermined.
 
-### Experiential Justification {#experiential-justification}
+### Experiential Justification
 
 -   Returning to foundationalism, how do perceptual *experiences*
     justify perceptual *beliefs*?
@@ -770,7 +769,7 @@ October 16th, 2013 <small>'Experiential Justification' by Anthony Brueckner</sma
 -   If an experience has a propositional content, as does a belief, then
     the experience is to that degree belief-like.
 
-### Pryor {#pryor}
+### Pryor
 
 > If you're to have justification for believing p on the basis of
 > certain experiences or grounds E, then for every q which is "bad"
@@ -779,10 +778,10 @@ October 16th, 2013 <small>'Experiential Justification' by Anthony Brueckner</sma
 > presuppose any E-based justification you may have for believing p. (p.
 > 531)
 
-October 16th, 2013 <small>3rd Meeting on Connee/Feldman</small> {#october-16th-2013-3rd-meeting-on-conneefeldman}
+October 16th, 2013 <small>3rd Meeting on Connee/Feldman</small>
 ---------------------------------------------------------------
 
-### A Note on Method From the Syllabus {#a-note-on-method-from-the-syllabus}
+### A Note on Method From the Syllabus
 
 > What is the **thesis** (sometimes a compound one) in the essay? What
 > are the **main steps** in arguing for the thesis? What are some
@@ -790,7 +789,7 @@ October 16th, 2013 <small>3rd Meeting on Connee/Feldman</small> {#october-16th-2
 > represent and adequately respond* to objections? What is your view
 > about the *soundness of the author’s arguments*?
 
-### Fallacy of Misplaced Necessity {#fallacy-of-misplaced-necessity}
+### Fallacy of Misplaced Necessity
 
 > 1.  Bachelors are necessarily unmarried.
 > 2.  John is a bachelor. Therefore, c) John cannot marry.
@@ -799,10 +798,10 @@ October 16th, 2013 <small>3rd Meeting on Connee/Feldman</small> {#october-16th-2
     !=
     If it's been raining two hours, necessary(the ground is wet)
 
-October 21st, 2013 <small>Is Infinitism the Solution to the Regress Problem?<small> {#october-21st-2013-is-infinitism-the-solution-to-the-regress-problem}
+October 21st, 2013 <small>Is Infinitism the Solution to the Regress Problem?<small>
 -----------------------------------------------------------------------------------
 
-### On Connee/Feldman {#on-conneefeldman}
+### On Connee/Feldman
 
 -   Most moral principle are defeasible.
     -   "Don't lie." *Well, the Nazis are the door ...*
@@ -813,12 +812,12 @@ October 21st, 2013 <small>Is Infinitism the Solution to the Regress Problem?<sma
 
 -   The way to solve the Gettier problem for deafisbility theorist is:
 
-    *K* = *J**T**B* + *E* = *e**J*<sub>*s*</sub>*p* = (*e* ∧ *d*)¬*J*<sub>*s*</sub>*p*
+    *K* = *J**T**B* + *E* = \*e\*\*J*<sub>*s*</sub>*p* = (*e* ∧ *d*)¬*J*<sub>*s*</sub>*p\*
 
 -   If knowledge is sometimes vague, that doesn't mean knowledge is
     always vague.
 
-### The Regress Problem {#the-regress-problem}
+### The Regress Problem
 
 > The phrase "I suspend judgement" we adopt in place of I am unable to
 > say which of the objects presented I should believe or which I should
@@ -839,7 +838,7 @@ October 21st, 2013 <small>Is Infinitism the Solution to the Regress Problem?<sma
     because the conclusions would be "I don't know.", whereas they
     concluded, "I don't know if I know."
 
-October 28rd, 2013 <small>Ginet's Response to Klein</small> {#october-28rd-2013-ginets-response-to-klein}
+October 28rd, 2013 <small>Ginet's Response to Klein</small>
 -----------------------------------------------------------
 
 -   "Klein has confused being able to answer questions about
@@ -886,7 +885,7 @@ October 28rd, 2013 <small>Ginet's Response to Klein</small> {#october-28rd-2013-
             proposition I'm trying to prove is about the method I use to
             prove it.
 
-October 30th, 2013 <small>'Skeptical and Perceptual Knowledge' by Ernest Sosa</small> {#october-30th-2013-skeptical-and-perceptual-knowledge-by-ernest-sosa}
+October 30th, 2013 <small>'Skeptical and Perceptual Knowledge' by Ernest Sosa</small>
 -------------------------------------------------------------------------------------
 
 -   Dreams pose a deeper problem than that a BIV or EDD
@@ -895,7 +894,7 @@ October 30th, 2013 <small>'Skeptical and Perceptual Knowledge' by Ernest Sosa</s
     -   Second, a resolution based on a conception of knowlege as apt
         belief.
 
-### Varieties of skepticism {#varieties-of-skepticism}
+### Varieties of skepticism
 
 -   There are many forms.
     -   The **Pyrrhonian** suspends judgment using tropes that counter
@@ -924,7 +923,7 @@ October 30th, 2013 <small>'Skeptical and Perceptual Knowledge' by Ernest Sosa</s
         -   Which means *had its contents been false, then it would not
             have been believed by the believer*.
 
-### Skepticism, sensitivity, and safety {#skepticism-sensitivity-and-safety}
+### Skepticism, sensitivity, and safety
 
 -   If a sensitivity requirement is indeed at the core of common sense,
     it puts the skeptic in a good position.
@@ -964,7 +963,7 @@ Basis-relative safety
     -   Belief that one is not radically deceived is insnsitive, but a
         belief can be safe despite being insensitive.
 
-### Why the dream scenario is special {#why-the-dream-scenario-is-special}
+### Why the dream scenario is special
 
 -   Our line of reasoning is effect against the usual run of radical
     skeptical scenarious, such as BIV, EDD, and the Matrix.
@@ -1007,7 +1006,7 @@ Basis-relative safety
 
 > Is that really how we should conceive of our dreams?
 
-### Dreams: The orthodox conception {#dreams-the-orthodox-conception}
+### Dreams: The orthodox conception
 
 -   Are dreams made up of conscious states just like those of waking
     life?
@@ -1025,7 +1024,7 @@ Basis-relative safety
 
 -   Fortuntely, the orthodoxly is not beyond question.
 
-### What are dreams made of? {#what-are-dreams-made-of}
+### What are dreams made of?
 
 -   Do the characters in our dreams have beliefs and intentions?
     -   They do *in general*, but do I myself also have them as
@@ -1045,7 +1044,7 @@ Basis-relative safety
     -   What is in question is the inference from (In my dream I believe
         such and such) to (In actuality I so believe such and such).
 
-November 4th, 2013 <small>2nd Meeting on Sosa</small> {#november-4th-2013-2nd-meeting-on-sosa}
+November 4th, 2013 <small>2nd Meeting on Sosa</small>
 -----------------------------------------------------
 
 -   Subjective conditional is not closed under the contrapositive.
@@ -1054,12 +1053,12 @@ November 4th, 2013 <small>2nd Meeting on Sosa</small> {#november-4th-2013-2nd-me
     2.  ¬*P*(*R*<sub>*s*</sub>*B**I**V*)
     3.  ∴ ¬*K*<sub>*s*</sub>*h*
 
-### A Counter Argument to Modus Ponens {#a-counter-argument-to-modus-ponens}
+### A Counter Argument to Modus Ponens
 
 -   There are two Republics running, Reagen with 55%, Anderson with 10%
 -   One Democratic candidate: Carter at 10%
 
-### The Way Nozick Deals with Skepticism {#the-way-nozick-deals-with-skepticism}
+### The Way Nozick Deals with Skepticism
 
 -   Take the claim that I have a hand.
 -   Take the claim that I am just a BIV.
@@ -1068,7 +1067,7 @@ November 4th, 2013 <small>2nd Meeting on Sosa</small> {#november-4th-2013-2nd-me
 
 -   If you didn't have a hand, you wouldn't believe you have a hand.
 
-October 30th, 2013 <small>1st Meeting on 'Skeptical and Perceptual Knowledge'</small> {#october-30th-2013-1st-meeting-on-skeptical-and-perceptual-knowledge}
+October 30th, 2013 <small>1st Meeting on 'Skeptical and Perceptual Knowledge'</small>
 -------------------------------------------------------------------------------------
 
 -   An automatic door opener *can register* and is an accurate gauge of

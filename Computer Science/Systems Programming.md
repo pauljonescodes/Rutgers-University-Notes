@@ -1,7 +1,7 @@
-Systems Programming <small>with Professor Brian Russel</small> {#systems-programming-with-professor-brian-russel}
+Systems Programming <small>with Professor Brian Russel</small>
 ==============================================================
 
-Description {#description}
+Description
 -----------
 
 This course teaches students how to think about, build, debug, and test
@@ -14,7 +14,7 @@ performance. Programming will be in C on Unix systems to introduce
 students to a new programming eco system, as well as enable the mapping
 of high-level language constructs to the underlying machine.
 
-### Topics {#topics}
+### Topics
 
 Systems programming in C and Unix: C programming Memory management and
 the C memory model System calls I/O Caching Multi-threaded programming
@@ -27,11 +27,11 @@ Tools: IDE (e.g., Eclipse) Source version control (e.g., CVS) Debugger
 (e.g., gdb) Memory errors (e.g., valgrind) Profiling (e.g., gprof,
 valgrind)
 
-### Expected Work {#expected-work}
+### Expected Work
 
 Large programming project spread across several parts
 
-### Department Learning Goals: {#department-learning-goals}
+### Department Learning Goals:
 
 Computer Science majors ...
 
@@ -47,15 +47,15 @@ headed to graduate school), a programming project (for those going into
 the software industry), or some sort of business plan (for those going
 into startups).
 
-Syllabus {#syllabus}
+Syllabus
 --------
 
-### Instructor {#instructor}
+### Instructor
 
 Brian Russell <morbius@cs.rutgers.edu>    Office Hours: Wednesdays
 8:00-9:00 pm, Hill 403.
 
-### TAs {#tas}
+### TAs
 
 Ying Zhan <yz280@cs.rutgers.edu>    Office Hours: Tuesdays 10:00-11:00
 am Hill 418
@@ -69,7 +69,7 @@ am Hill 418
 Zi Yan <zy56@cs.rutgers.edu>    Office Hours: Thursdays 1:00 pm 2:00 pm
 Hill 405
 
-### Objective {#objective}
+### Objective
 
 The aim of CS214 is to introduce the student to the process of writing
 low-level programs that interact directly with a computer's operating
@@ -79,12 +79,12 @@ course, the successful student should be able to design, write, test,
 and analyze moderately complicated programs using the C programming
 language and UNIX/Linux operating systems.
 
-### Prerequisite Knowledge {#prerequisite-knowledge}
+### Prerequisite Knowledge
 
 Structured programming in a high-level language (such as Java). Standard
 data structures (lists, trees, graphs, hash tables).
 
-### Textbook {#textbook}
+### Textbook
 
 The following texts are available online, free of charge.
 
@@ -93,7 +93,7 @@ The following texts are available online, free of charge.
 The textbooks do not cover all material discussed in class, and are not
 a substitute for attending lectures.
 
-### Topics Covered in CS214 {#topics-covered-in-cs214}
+### Topics Covered in CS214
 
 The following list is organized by topic, not by chronological order of
 coverage in the course.
@@ -121,7 +121,7 @@ coverage in the course.
 
     Developing an embedded application
 
-### Lecture Schedule {#lecture-schedule}
+### Lecture Schedule
 
 1.  Sept 04 Into to C
 2.  Sept 06 C program structure, C functions
@@ -154,7 +154,7 @@ coverage in the course.
 
 This schedule may change as needed.
 
-### Expected Work {#expected-work-1}
+### Expected Work
 
 Students are expected to attend all lectures and perform all reading
 assignments prior to lecture. Students are also expected to attend all
@@ -162,7 +162,7 @@ recitation section meetings. Students will be evaluated according to
 their performance on a semester long programming project, a mid-term
 examination, and a final examination.
 
-### Project {#project}
+### Project
 
 WARNING: This is a project course, which means that this course should
 give you more than a passing knowledge of what writing working network
@@ -186,7 +186,7 @@ and we cannot test your program on all of them. So all program
 assignments must run on the local iLab Linux machines. We will be
 grading your assignments on those machines as well.
 
-### Working Together and Academic Honesty {#working-together-and-academic-honesty}
+### Working Together and Academic Honesty
 
 Cheating on projects and exams will not be tolerated. We want to protect
 the fairness and integrity of the class, so we run code similarity
@@ -203,7 +203,7 @@ use handin, etc., that says you acknowledge being aware of the policy
 click-through by the end of September, your access to our facilities
 will cease October 1.
 
-### Grading {#grading}
+### Grading
 
 Midterm: 20 % Final: 30 % Project: 50%
 
@@ -229,7 +229,7 @@ Decomposition
 20% Documentation 10% Test Cases from Students 5% Comments 5%
 Documentation (Analysis, readme files, etc...)
 
-### The Gilligan's Island Rule {#the-gilligans-island-rule}
+### The Gilligan's Island Rule
 
 We do encourage you to talk to your classmates, provided you follow the
 Gilligan's Island Rule. After a joint discussion of an assignment or
@@ -242,10 +242,10 @@ you follow the Gilligan's island rule, often best route to follow to get
 a question answered is to ask, in order: 1. A classmate smarter than
 you. 2. Your TA. 3. The professor.
 
-September 5th, 2013 <small>Lecture on C program structure, C functions</small> {#september-5th-2013-lecture-on-c-program-structure-c-functions}
+September 5th, 2013 <small>Lecture on C program structure, C functions</small>
 ------------------------------------------------------------------------------
 
-### General Syntax {#general-syntax}
+### General Syntax
 
     struct point {
         int x,
@@ -292,7 +292,7 @@ A string is a series of characters, and array, followed by a null byte.
 Before there were no classes, there were structs. No visibility classes.
 No message passing, methods.
 
-### Pointers {#pointers}
+### Pointers
 
     int x;
     int *px;
@@ -333,7 +333,7 @@ Subscripts can be positive, negative, and zero. When you use arrays in
 C, there is no array bounds checking. If you have a ten element array, C
 does not mind if you just meander in either direction.
 
-### Pointers to Functions {#pointers-to-functions}
+### Pointers to Functions
 
     int f(int);     // defined but not implemented function
 
@@ -349,10 +349,10 @@ does not mind if you just meander in either direction.
     x = (*pf)(3);
     pf = g;
 
-September 18th, 2013 <small>Programming Assignment 1: Tokenizer</small> {#september-18th-2013-programming-assignment-1-tokenizer}
+September 18th, 2013 <small>Programming Assignment 1: Tokenizer</small>
 -----------------------------------------------------------------------
 
-### Introduction {#introduction}
+### Introduction
 
 In this assignment, you will practice programming with C pointers. Much
 of the pointer manipulation will come in the form of operating on C
@@ -401,7 +401,7 @@ special characters are represented with escape sequences:
     octal number \000 
     hex number \xhh
 
-### Implementation {#implementation}
+### Implementation
 
 Your implementation needs to export the interface given in the attached
 tokenizer.c file. In particular, you need to define the type needed to
@@ -469,7 +469,7 @@ compile and execute on the iLab machines or a zero grade will be given.
 Be sure to compile and execute your code on an Ilab machine before
 handing it in.
 
-### What to turn in {#what-to-turn-in}
+### What to turn in
 
 A tarred gzipped file named pa1.tgz that contains a directory called pa1
 with the following files in it: - A tokenizer.c file containing all of
@@ -490,7 +490,7 @@ algorithms). - Quality of your code (how well written your code is,
 including modularity and comments). - Efficiency (of your
 implementation). - Testing thoroughness (quality of your test cases).
 
-September 10th, 2013 <small>Lecture</small> {#september-10th-2013-lecture}
+September 10th, 2013 <small>Lecture</small>
 -------------------------------------------
 
     int gcd(int a, int b) {
@@ -505,10 +505,10 @@ September 10th, 2013 <small>Lecture</small> {#september-10th-2013-lecture}
     -   The function can change the copies.
     -   Cannot change the original values.
 
-September 30th, 2013 <small>Programming Assignment 2: Sorted List</small> {#september-30th-2013-programming-assignment-2-sorted-list}
+September 30th, 2013 <small>Programming Assignment 2: Sorted List</small>
 -------------------------------------------------------------------------
 
-### Introduction {#introduction-1}
+### Introduction
 
 In this assignment, you will practice with more complex data structures,
 as well as practice using function pointers (along with using data
@@ -535,7 +535,7 @@ objects directly. (In C, there are obviously ways to get around your
 hiding; nevertheless, it is good programming practice because it
 requires effort to violate the hiding.)
 
-### Implementation {#implementation-1}
+### Implementation
 
 Your implementation needs to export the interface given in the attached
 sorted-list.h file. Specif- ically, you need to implement four functions
@@ -580,7 +580,7 @@ implement a more complex data structure such as a tree, heap, or hash
 table to make insertion/deletion more efficient. It is sufficient that
 you implement your linear structure efficiently.
 
-### What to turn in {#what-to-turn-in-1}
+### What to turn in
 
 A sorted-list.c file containing all of your data structure code. At the
 top of the file, you should include as a comment a big-O analysis of the
@@ -627,7 +627,7 @@ pa2.tgz (see man tar). Your grade will be based on:
 -   Efficiency (of your implementation), and
 -   Testing thoroughness (quality of your test cases).
 
-September 24th, 2013 <small>Lecture, Multi-file Projects, Makefiles, and Directory I/O</small> {#september-24th-2013-lecture-multi-file-projects-makefiles-and-directory-io}
+September 24th, 2013 <small>Lecture, Multi-file Projects, Makefiles, and Directory I/O</small>
 ----------------------------------------------------------------------------------------------
 
     ar key libfile obj1.o obj2.o ...
@@ -645,10 +645,10 @@ September 24th, 2013 <small>Lecture, Multi-file Projects, Makefiles, and Directo
     drname [directory path]/[basename].[extension]
     [directory path]
 
-September 26th, 2013 <small>GDB</small> {#september-26th-2013-gdb}
+September 26th, 2013 <small>GDB</small>
 ---------------------------------------
 
-### Reference Counter {#reference-counter}
+### Reference Counter
 
 -   You increment a reference counter for every time a new pointer
     points to the node.
@@ -659,7 +659,7 @@ September 26th, 2013 <small>GDB</small> {#september-26th-2013-gdb}
     operation can make the reference counter not zero or one, leading to
     some interesting scenarios.
 
-October 2nd, 2013 <small>Programming Assignment 3: Indexer</small> {#october-2nd-2013-programming-assignment-3-indexer}
+October 2nd, 2013 <small>Programming Assignment 3: Indexer</small>
 ------------------------------------------------------------------
 
 **Warning**: As you will see below, the descriptions of the assignments
@@ -668,7 +668,7 @@ increasingly bigger programs. *Make sure to read the assignment
 carefully!* This is critical because this document essentially describes
 the requirements for your program.
 
-### Introduction {#introduction-2}
+### Introduction
 
 In this assignment, you will practice using the file system API (as well
 as pointers in different data structures). In particular, you will be
@@ -724,7 +724,7 @@ save it to a file.Some observations:
     rather than a string). Use the improved tokenizer.c file attached to
     this assignment.
 
-### Implementation {#implementation-2}
+### Implementation
 
 Since you are implementing a program in this assignment, there is no
 programming interface to follow. Instead, your program must support the
@@ -792,7 +792,7 @@ a .h file that callers should include. The same applies for the sorted
 list. You should also write a makefile to efficiently compile and link
 your indexer.
 
-### Hints {#hints}
+### Hints
 
 -   Data structures that might be useful include the sorted list you
     just implemented (of course) and a hash table.
@@ -809,7 +809,7 @@ your indexer.
     you to countthe number of occurrences of each unique term in a file.
     o Andsoon...
 
-### What to Turn In {#what-to-turn-in-2}
+### What to Turn In
 
 A tarred gzipped file name pa3.tgz that contains a directory called pa3
 with the following files in it:
@@ -842,10 +842,10 @@ As usual, your grade will be based on:
 -   Efficiency (of your implementation), and
 -   Testing thoroughness (quality of your test cases).
 
-October 19th, 2013 <small>Programming Assignment 4: Search</small> {#october-19th-2013-programming-assignment-4-search}
+October 19th, 2013 <small>Programming Assignment 4: Search</small>
 ------------------------------------------------------------------
 
-### Introduction {#introduction-3}
+### Introduction
 
 In this assignment, you will put everything that you have done together
 into a simple search tool. For now, your search tool will look much like
@@ -875,7 +875,7 @@ output the names of the files with matching content. For example, if the
 user gives the query dog, your search tool should output boo. If the
 user gives the query name, your search tool should output boo, baa.
 
-### Code Reuse {#code-reuse}
+### Code Reuse
 
 Your implementation will require the use of inverted-index files
 produced by the indexer you wrote for Assignment 4. If you could not get
@@ -894,7 +894,7 @@ write a makefile that efficiently compiles and links your search tool.
 The makefile must allow the search tool to be linked with either of the
 two index file parsing modules, at the user’s option.
 
-### Implementation {#implementation-3}
+### Implementation
 
 Your program must support the following invocation interface:
 
@@ -926,7 +926,7 @@ As in the last assignment, you should carefully consider all possible
 exception cases, outline a strategy to deal with them, and implement
 your strategy.
 
-### What to Turn In {#what-to-turn-in-3}
+### What to Turn In
 
 -   A writeup documenting your design, including exception handling and
     paying particular attention to the memory requirements of your
@@ -947,10 +947,10 @@ Your grade will be based on:
     written your design document and code are, including modularity and
     comments).- Code reuse (that your index works with both indexers).
 
-November 5th, 2013 <small>Midterm Study Guide</small> {#november-5th-2013-midterm-study-guide}
+November 5th, 2013 <small>Midterm Study Guide</small>
 -----------------------------------------------------
 
-### Meta {#meta}
+### Meta
 
 -   Coding questions
 -   Size of answer space isn't the actual size of the answer
@@ -970,9 +970,9 @@ November 5th, 2013 <small>Midterm Study Guide</small> {#november-5th-2013-midter
 
 -   Signal disposition and forking
 
-### C Syntax {#c-syntax}
+### C Syntax
 
-#### `const` and pointers {#const-and-pointers}
+#### `const` and pointers
 
 |Code|Can change data?|Can change pointer?|Initiliaze data?|Initialize pointer?|
 |:---|:---------------|:------------------|:---------------|:------------------|
@@ -981,13 +981,13 @@ November 5th, 2013 <small>Midterm Study Guide</small> {#november-5th-2013-midter
 |`int * const ptr = &x`|Yes|No|Optional|Yes|
 |`const int * const ptr = &x`|No|No|Yes|Yes|
 
-#### Data types {#data-types}
+#### Data types
 
-#### Macros {#macros}
+#### Macros
 
-#### C functions {#c-functions}
+#### C functions
 
-#### Preprocessor {#preprocessor}
+#### Preprocessor
 
 -   The C preprocessor (cpp)
     -   Macro processor
@@ -1011,7 +1011,7 @@ November 5th, 2013 <small>Midterm Study Guide</small> {#november-5th-2013-midter
     -   Line control
     -   Diagnostics
 
-#### Header Files {#header-files}
+#### Header Files
 
 -   Include a file
 -   Why use headers?
@@ -1042,7 +1042,7 @@ November 5th, 2013 <small>Midterm Study Guide</small> {#november-5th-2013-midter
 
         #endif
 
-#### Enumeration types {#enumeration-types}
+#### Enumeration types
 
     enum Boolean {true, false};
     Boolean flag = true;
@@ -1055,11 +1055,11 @@ November 5th, 2013 <small>Midterm Study Guide</small> {#november-5th-2013-midter
         printf("impossibru\n");
     }
 
-### Multi-programming {#multi-programming}
+### Multi-programming
 
-### Function pointers {#function-pointers}
+### Function pointers
 
-#### Compare Int {#compare-int}
+#### Compare Int
 
     int compareInts(void * p1, void * p2) {
         int i1 = *(int*)p1;
@@ -1075,7 +1075,7 @@ November 5th, 2013 <small>Midterm Study Guide</small> {#november-5th-2013-midter
 
     SortedListPtr SLCreate(CompareFuncT cf);
 
-#### Add Int {#add-int}
+#### Add Int
 
 Let's start with a basic function which we will be *pointing to*:
 
@@ -1128,7 +1128,7 @@ But it's much nicer to use a `typedef`:
 [Source
 ↪](http://stackoverflow.com/questions/840501/how-do-function-pointers-in-c-work)
 
-### Enumeration types {#enumeration-types-1}
+### Enumeration types
 
     enum Boolean {true, false};
     Boolean flag = true;
@@ -1141,7 +1141,7 @@ But it's much nicer to use a `typedef`:
         printf("impossibru\n");
     }
 
-### Makefiles, directory I/O {#makefiles-directory-io}
+### Makefiles, directory I/O
 
 -   Name of your makefile should be `Makefile` or `makefile`.
 -   Commands you can use:
@@ -1163,13 +1163,13 @@ But it's much nicer to use a `typedef`:
         clean:
             $(RM) tokenizer
 
-#### General form {#general-form}
+#### General form
 
     CC = gcc
     CFLAG = -g -Wall
     EXECUTABLE = tokenizer
 
-### Libraries {#libraries}
+### Libraries
 
 -   Group multiple compiled object files into a single file.
 -   Used for sharing common pieces of code.
@@ -1208,7 +1208,7 @@ Dynamic library (`.so`)
 
         gcc src-file.c -lm -lpthread
 
-#### Static library {#static-library}
+#### Static library
 
 -   How to generate a library
     1.  Compile: `cc -Wall -c ctest1.c ctest2.c`
@@ -1218,7 +1218,7 @@ Dynamic library (`.so`)
 
         cc -o prog prog.c libctest.a cc -o prog prog.c libctest.a
 
-#### Shared Library {#shared-library}
+#### Shared Library
 
 -   How to create:
 
@@ -1243,22 +1243,22 @@ Dynamic library (`.so`)
 
         -soname libctest.so.1
 
-##### Linking {#linking}
+##### Linking
 
 -   The link to `/opt/lib/libctest.so` allows the naming convention for
     the compile flag `-litest` to work.
 -   The link to `/opt/lib/libctest.so.1` allows the run time binding to
     work.
 
-##### Compiling and linking main program {#compiling-and-linking-main-program}
+##### Compiling and linking main program
 
     gcc -Wall -L/opt/lib prog.c -lctest -o prog
 
-##### List dependencies {#list-dependencies}
+##### List dependencies
 
     ldd prog
 
-##### Library path {#library-path}
+##### Library path
 
 -   Add library directories to be included during dynamic linking to the
     file
@@ -1272,7 +1272,7 @@ Dynamic library (`.so`)
 -   Specify the environment variable `LD_LIBRARY_PATH` to point to the
     directory paths containing the shared object library
 
-#### Process {#process}
+#### Process
 
 Process
 :   an address space with one or more threads executing within that
@@ -1320,7 +1320,7 @@ Zombie process
     exit code needs to be stored in case the parent subsequently calls
     wait. It becomes what is known as defunct, or a zombie process.
 
-### Signals {#signals}
+### Signals
 
 -   A signal is an event generated by the UNIX and Linux systems in
     response to some condition, upon receipt of which a process may in
@@ -1357,7 +1357,7 @@ Zombie process
 |`SIGTTIN`|Background process trying to read|
 |`SIGTTOU`|Background process trying to write.|
 
-#### Signal handling {#signal-handling}
+#### Signal handling
 
     void (*signal(int sig, void (*func)(int)))(int);
 
@@ -1423,7 +1423,7 @@ Signals
         for that process.
     -   C uses opaque type sigset\_t for signal mask implementation
 
-### Signal handler {#signal-handler}
+### Signal handler
 
 -   Not large
 -   Should not use global or static data structures
@@ -1438,7 +1438,7 @@ Signals
         static void sigint_handler( int signo );
         static void timeout_handler( int signo, siginfo_t * info, void * p);
 
-#### `signinfo_t` {#signinfo_t}
+#### `signinfo_t`
 
     signinfo_t struct
         int si_signo
@@ -1448,7 +1448,7 @@ Signals
 -   And a union of structure determined by different signals with
     detailed information.
 
-#### sigaction function {#sigaction-function}
+#### sigaction function
 
     int sigaction ( int signo, const struct sigaction * action,
                     struct sigaction * oldaction );
@@ -1463,7 +1463,7 @@ Signals
 `oldaction`
 :   pointer to previous `sigaction` for `signo`. Can be `null`
 
-#### Sigaction struct {#sigaction-struct}
+#### Sigaction struct
 
 |Member type|Name|Description|
 |:----------|:---|:----------|
@@ -1472,7 +1472,7 @@ Signals
 |`int`|`sa_flags`|Special falgs to affect behavior of signal.|
 |`void(*)(int, siginfo_t *, void *)`|`sa_sigaction`|Signal catching function.|
 
-#### Timer {#timer}
+#### Timer
 
     struct itimerval {
         struct timeval it_interval;
@@ -1484,7 +1484,7 @@ Signals
     expires with a zero `it_interval`.
 -   No multiple, seperate timers for the same process at the same time.
 
-#### Timer activation {#timer-activation}
+#### Timer activation
 
 |`it_value`|`it_interval`|Result|
 |:---------|:------------|:-----|
@@ -1493,9 +1493,9 @@ Signals
 |0,0|5,0|nothing|
 |0,0|0,0|nothing|
 
-### Threads {#threads}
+### Threads
 
-#### What is a thread? {#what-is-a-thread}
+#### What is a thread?
 
 -   Threads are multiple strands of execution in a single program.
 -   A single is a sequence of control within a process.
@@ -1505,7 +1505,7 @@ Signals
 -   Starting a new thread: It only has it's own *memory stack*,
     everything else is shared with the process which created it.
 
-#### Advantages {#advantages}
+#### Advantages
 
 -   Make a program do a few things at once
     -   Logically is not multicore.
@@ -1516,7 +1516,7 @@ Signals
 -   Switching between threads requires less work than switching between
     processes.
 
-#### Disadvantages {#disadvantages}
+#### Disadvantages
 
 -   Requires careful design.
     -   Threads are also know as "how to shoot yourself in both feet at
@@ -1527,23 +1527,23 @@ Signals
     parts a different threads will not necessarily run more quickly on a
     single processor machine.
 
-#### POSIX Thread {#posix-thread}
+#### POSIX Thread
 
-##### Creation {#creation}
+##### Creation
 
     #include <pthread.h>
     int pthread_create(pthread_t *thread, pthread_attr_t *attr,
                             void *(*start_routine)(void *), void *arg);
 
-##### Termination {#termination}
+##### Termination
 
     void pthread_exit(void *retval);
 
-##### Termination callback {#termination-callback}
+##### Termination callback
 
     int pthread_join(pthread_t th, void **thread_return);
 
-#### Thread synchronization {#thread-synchronization}
+#### Thread synchronization
 
 Mutex locks
 :   Gatekeepers around a piece of code, mutex "guards an object".
@@ -1563,7 +1563,7 @@ Semaphores
     programming or a multi user environment.
     [↪](http://en.wikipedia.org/wiki/Semaphore_(programming))
 
-##### Semaphores {#semaphores}
+##### Semaphores
 
 -   A semaphore is a special type of variable that can be incremented or
     decremented, but crucial access to the variable is guaranteed to be
@@ -1576,7 +1576,7 @@ Semaphores
     -   Counting semaphore can allow a number of threads to execute
         simultaneously.
 
-###### Initialization: {#initialization}
+###### Initialization:
 
     #include <semaphore.h>
     int sem_init(sem_t * sem, int pshared, unsigned int value);
@@ -1587,7 +1587,7 @@ Semaphores
     -   If the value is 0, the semaphore is local to the current
         process.
 
-###### Waiting {#waiting}
+###### Waiting
 
 -   Wait until allowed to execute:
 
@@ -1609,7 +1609,7 @@ Semaphores
     -   If the both programs try to increase the value by 1, the
         semaphore will always be correctly increased in value by 2.
 
-##### Mutex {#mutex}
+##### Mutex
 
 -   Mutual exclusion
 -   Allowing programmer to lock an object, only one thread can access
@@ -1622,10 +1622,10 @@ Semaphores
         const pthread_mutexattr_t *mutexattr); int      pthread_mutex_lock(pthread_mutex_t *mutex));
         int pthread_mutex_unlock(pthread_mutex_t *mutex); int       pthread_mutex_destroy(pthread_mutex_t *mutex);
 
-###### Destruction {#destruction}
+###### Destruction
 
     int sem_destroy(sem_t * sem);
 
-##### Condition Variables {#condition-variables}
+##### Condition Variables
 
-#### Thread patterns {#thread-patterns}
+#### Thread patterns

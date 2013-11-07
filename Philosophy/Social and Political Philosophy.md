@@ -1,10 +1,10 @@
-Topics in Social and Political Philosophy <small>with Professor Mark Colby</small> {#topics-in-social-and-political-philosophy-with-professor-mark-colby}
+Topics in Social and Political Philosophy <small>with Professor Mark Colby</small>
 ==================================================================================
 
-October 19th, 2012 {#october-19th-2012}
+October 19th, 2012
 ------------------
 
-### Chapter 4 of *Utilitarianism* {#chapter-4-of-utilitarianism}
+### Chapter 4 of *Utilitarianism*
 
 1.  Objectivity of judgement about "good."
 2.  Teleological - end, goal of action "good." Deontological, right
@@ -24,7 +24,7 @@ October 19th, 2012 {#october-19th-2012}
 -   "Desire" is the only evidence that's possible of the presence of
     good.
 
-### Naturalism and Empiricism {#naturalism-and-empiricism}
+### Naturalism and Empiricism
 
 -   Mill has been called and is both.
 -   The account of logic in empiricist terms, for Mill, logical truth
@@ -39,7 +39,7 @@ October 19th, 2012 {#october-19th-2012}
 -   Mill needs some way to experience the non-natural property of
     goodness or rightness through one of the senses.
 
-October 16th, 2012 {#october-16th-2012}
+October 16th, 2012
 ------------------
 
 -   Hedonism
@@ -101,7 +101,7 @@ October 16th, 2012 {#october-16th-2012}
         1.  Accepts the sum (aggregate) of individual utilities. 2. But
             denies impartiality
 
-November 9th, 2012 {#november-9th-2012}
+November 9th, 2012
 ------------------
 
 -   On Liberty and Utilitarianism are largely interconnected and a
@@ -238,7 +238,7 @@ November 9th, 2012 {#november-9th-2012}
     forms of function, which children fail to meet those stand;adds, the
     insane do as well.
 
-Chapter 5 of *Utilitarianism* - Of the Connection between Justice and Utility [(Adapted from)](http://www.personal.kent.edu/~jwattles/mill.htm) {#chapter-5-of-utilitarianism---of-the-connection-between-justice-and-utility-adapted-from}
+Chapter 5 of *Utilitarianism* - Of the Connection between Justice and Utility [(Adapted from)](http://www.personal.kent.edu/~jwattles/mill.htm)
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
 Can utilitarianism provide sturdy principles of rights and justice?
@@ -342,7 +342,7 @@ happiness, is ultimately best understood in utilitarian terms.
         exceptions). Hence the proof in favor of utilitarianism is
         complete.
 
-Mill’s Considerations on Representative Government (1860) by Professor Colby {#mills-considerations-on-representative-government-1860-by-professor-colby}
+Mill’s Considerations on Representative Government (1860) by Professor Colby
 ----------------------------------------------------------------------------
 
 The following are some basic principles espoused in the work and which
@@ -434,10 +434,10 @@ are in the background of On Liberty. The labels for principles 1 through
     the will of the governed, determined by the mentally superior with
     the rational consent of the governed.
 
-November 16th, 2012 {#november-16th-2012}
+November 16th, 2012
 -------------------
 
-### Chapter 1 of *On Liberty* {#chapter-1-of-on-liberty}
+### Chapter 1 of *On Liberty*
 
 -   There is an ethnological foundation of Mill's theories
     -   Cognitive
@@ -532,7 +532,7 @@ November 16th, 2012 {#november-16th-2012}
     it's not about holding any set of beliefs, but it's about how one
     holds them, are they up to challenge, or scrutiny.
 
-### Chapter 2 of *On Liberty* {#chapter-2-of-on-liberty}
+### Chapter 2 of *On Liberty*
 
 -   Here Mill attempts to defend the open society, the describe
     principles about the conduct of the search for truth in a civilized
@@ -671,10 +671,10 @@ November 16th, 2012 {#november-16th-2012}
     mind is like a muscle, it needs to be exercised, and this is done
     through the examinations of reasons for and against opinions
 
-Mills On Liberty {#mills-on-liberty}
+Mills On Liberty
 ----------------
 
-### Chapter I: Intro. {#chapter-i-intro.}
+### Chapter I: Intro.
 
 -   Need of protection against the magistrate and the non-legal tyranny
     of the majority. NOTE: the threat of mass-society to individual
@@ -690,7 +690,7 @@ Mills On Liberty {#mills-on-liberty}
 -   Method of argument: utilitarian argument (that is, PU) applied to
     the permanent interests of man as a progressive being.
 
-### Chapter II: Of the liberty of thought and discussion {#chapter-ii-of-the-liberty-of-thought-and-discussion}
+### Chapter II: Of the liberty of thought and discussion
 
 > First, if any opinion is compelled to silence, that opinion may, for
 > aught we can certainly know, be true. To deny this is to assume our
@@ -741,7 +741,7 @@ Mills On Liberty {#mills-on-liberty}
     truth will necessarily survive persecution and that society need
     only teach the grounds for truth, not the objections to it.
 
-### Chapter III: On individuality, as one of the elements of wellbeing {#chapter-iii-on-individuality-as-one-of-the-elements-of-wellbeing}
+### Chapter III: On individuality, as one of the elements of wellbeing
 
 > It really is of importance, not only what men do, but also what manner
 > of men they are that do it. Among the works of man, which human life
@@ -786,7 +786,7 @@ Mills On Liberty {#mills-on-liberty}
             oppressive custom: in this case, even mere eccentricity is a
             good.
 
-### Chapter IV: of the limits to the authority of society over the individual. {#chapter-iv-of-the-limits-to-the-authority-of-society-over-the-individual.}
+### Chapter IV: of the limits to the authority of society over the individual.
 
 -   Question: What are the limits to the sovereignty of individual over
     himself?
@@ -809,7 +809,7 @@ Mills On Liberty {#mills-on-liberty}
              Examples: temperance laws; Sabbatical precepts; persecution
             of Mormons because of polygamy.
 
-### Chapter V: Applications {#chapter-v-applications}
+### Chapter V: Applications
 
 1.  Cases in which liberty is unjustly denied because the actions
     involved are essentially self-regarding:
@@ -853,10 +853,10 @@ Mills On Liberty {#mills-on-liberty}
         consistent with efficiency and greatest possible centralization
         of information and diffusion from the center.
 
-Research for Second Paper {#research-for-second-paper}
+Research for Second Paper
 -------------------------
 
-### Mill on the Moral Right to Free Expression of Thought by J.P. Day {#mill-on-the-moral-right-to-free-expression-of-thought-by-j.p.-day}
+### Mill on the Moral Right to Free Expression of Thought by J.P. Day
 
 1.  That there ought to be an absolute freedom and sentiment on all
     subjections.
@@ -880,7 +880,7 @@ Research for Second Paper {#research-for-second-paper}
 > journalism in the famous essay of the great champion of Liberty. But
 > that sad conclusion is inescapable.
 
-### More about Mill on Free Expression by J.P. Day {#more-about-mill-on-free-expression-by-j.p.-day}
+### More about Mill on Free Expression by J.P. Day
 
 > Mill there maintains that there ought to be “absolute freedom of
 > opinion and sentiment on all subjects,” and that there ought also to
@@ -906,7 +906,7 @@ Research for Second Paper {#research-for-second-paper}
     2.  saying “corn-dealers are starvers of the poor” to an excited mob
         assembled before the house of a corn-dealer
 
-### Mill, Indecency, and the Liberty Principle by Jonathan Wolff {#mill-indecency-and-the-liberty-principle-by-jonathan-wolff}
+### Mill, Indecency, and the Liberty Principle by Jonathan Wolff
 
 1.  The interpretation of the liberty principle
     -   If the way we interpret Mill's liberty principle naively and

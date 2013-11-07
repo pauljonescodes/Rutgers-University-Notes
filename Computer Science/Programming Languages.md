@@ -1,7 +1,7 @@
-Principle of Programming Languages <small>with Professor Louis Steinberg</small> {#principle-of-programming-languages-with-professor-louis-steinberg}
+Principle of Programming Languages <small>with Professor Louis Steinberg</small>
 ================================================================================
 
-Description {#description}
+Description
 -----------
 
 The course is aimed at making the student familiar with the general
@@ -19,7 +19,7 @@ are discussed.
     D cannot be used to satisfy prerequisite requirements.
 -   Semesters Offered: Spring and fall
 
-### Topics {#topics}
+### Topics
 
 -   BNF and context free grammars; Data visibility (i.e., lexical and
     dynamic scoping);
@@ -34,7 +34,7 @@ are discussed.
     -   unification, generate and test;  
     -   Programming with pointers in C.
 
-### Expected Work {#expected-work}
+### Expected Work
 
 There are three graded programming projects and textbook homework
 assignments.
@@ -42,7 +42,7 @@ assignments.
 -   Exams:
     -   1 hourly, Final Exam
 
-### Department Learning Goals {#department-learning-goals}
+### Department Learning Goals
 
 -   Computer Science majors ...
     -   will be prepared to contribute to a rapidly changing field by
@@ -59,10 +59,10 @@ assignments.
         the software industry), or some sort of business plan (for those
         going into startups).
 
-Syllabus {#syllabus}
+Syllabus
 --------
 
-### Objective {#objective}
+### Objective
 
 -   Primary objective: Learn new ways of thinking about problems and
     programs.
@@ -70,12 +70,12 @@ Syllabus {#syllabus}
     learning principles that apply to many languages.
 -   Tertiary objective: Learn some interesting languages.
 
-### Prerequisite {#prerequisite}
+### Prerequisite
 
 -   CS 205, CS 211
 -   Java; the memory model of C, including pointers; predicate calculus
 
-### Book {#book}
+### Book
 
 -   Michael L. Scott, Programming Language Pragmatics, 3rd Edition.
     Morgan Kaufman
@@ -83,7 +83,7 @@ Syllabus {#syllabus}
 **The textbook does not cover all of the material for this course, and
 is not a substitute for attending class.**
 
-### Work {#work}
+### Work
 
 -   You are expected to attend all lectures and recitations, in both
     body and mind. That is, please do not access Facebook, games, email,
@@ -97,7 +97,7 @@ is not a substitute for attending class.**
     there will be exam questions directly based on the projects and
     exercises.
 
-### Tentative Grading {#tentative-grading}
+### Tentative Grading
 
 Your course grade is based on projects and exams, with the following
 tentative weighting:
@@ -107,7 +107,7 @@ tentative weighting:
 -   Midterm 2: 25%
 -   Final exam: 40%
 
-### Course grades {#course-grades}
+### Course grades
 
 Your course grade will be computed as follows: Each score (for each exam
 and each project) will be converted to a percentage score, and the
@@ -121,13 +121,13 @@ grades are:
 -   C: 70%
 -   D: 60%
 
-### Grading disputes {#grading-disputes}
+### Grading disputes
 
 If you feel an exam or a project has been misgraded, you must bring it
 to our attention within 2 weeks of when we first give back the graded
 exam or project.
 
-### Collaboration {#collaboration}
+### Collaboration
 
 All students in this class are expected to be familiar with the The DCS
 academic integrity policy, which can be found at
@@ -138,12 +138,12 @@ We do encourage you to us the Piazza site to discuss the concepts behind
 course material and assignments, but please do not post code. If you
 need help with code, email it to the professor or a TA.
 
-### Exams {#exams}
+### Exams
 
 Exam schedules and rules are in Resources \> Exam info. You are expected
 to know and to abide by these rules.
 
-### Poor grades {#poor-grades}
+### Poor grades
 
 If you get less than 70% on an exam please contact the 314 TA's or
 instructor immediately. Often students wait until after the final, and
@@ -151,7 +151,7 @@ then ask how they can raise their grade. At that point there is no way
 to raise their grade. The earlier you contact us the more chance we can
 be of help.
 
-### Topics {#topics-1}
+### Topics
 
 The following list is organized by topic, not by chronological order of
 coverage in the course.
@@ -180,7 +180,7 @@ coverage in the course.
     -   Scope & binding,lexical and dynamic
     -   Parameter passing modes
 
-September 16th, 2013 <small>Assignment 1</small> {#september-16th-2013-assignment-1}
+September 16th, 2013 <small>Assignment 1</small>
 ------------------------------------------------
 
 1.  Given grammar `G`: (capitals are non-terminals, everything else is a
@@ -293,7 +293,7 @@ September 16th, 2013 <small>Assignment 1</small> {#september-16th-2013-assignmen
 
     -   A possibly empty series of repeating `ab`.
 
-September 23rd, 2013 <small>Assignment 2</small> {#september-23rd-2013-assignment-2}
+September 23rd, 2013 <small>Assignment 2</small>
 ------------------------------------------------
 
 1.  View the video: https://www.youtube.com/watch?v=prAwkQt3ARg
@@ -302,7 +302,7 @@ September 23rd, 2013 <small>Assignment 2</small> {#september-23rd-2013-assignmen
     2.  List two examples the speaker uses and explain for each how it
         supports his point, or, if you think that it does not, why not.
 
-October 3rd, 2013 <small>Exercise 4: Scheme</small> {#october-3rd-2013-exercise-4-scheme}
+October 3rd, 2013 <small>Exercise 4: Scheme</small>
 ---------------------------------------------------
 
 For these problems, you must use pure functional scheme. That is: You
@@ -340,12 +340,12 @@ scheme that complies with the R5RS standard.
     33 44 2 1 8)) is ( ( ) ( ) (44)(2)( ) (8)). Then (apply append (map
     foo '(23 33 44 2 1 8))) will result in (44 2 8) .
 
-October 15th, 2013 <small>Midterm Study Guide</small> {#october-15th-2013-midterm-study-guide}
+October 15th, 2013 <small>Midterm Study Guide</small>
 -----------------------------------------------------
 
-### Formal Languages {#formal-languages}
+### Formal Languages
 
-#### Grammars {#grammars}
+#### Grammars
 
 -   **Parsing** works from the terminal string to the start
 
@@ -369,7 +369,7 @@ October 15th, 2013 <small>Midterm Study Guide</small> {#october-15th-2013-midter
 -   **Context-free grammars** are used to specify the overall structure
     of a programming language.
 
-#### Regular Expressions {#regular-expressions}
+#### Regular Expressions
 
 -   The letter itself represents just itself.
 -   The empty string represents just itself.
@@ -409,7 +409,7 @@ October 15th, 2013 <small>Midterm Study Guide</small> {#october-15th-2013-midter
 -   describe in English the language defined by this regular expression
 -   write an regular expression that defines this language
 
-#### Finite State Automata {#finite-state-automata}
+#### Finite State Automata
 
 -   An **automaton** is a machine *which corresponds to a language*.
     -   it *inputs* a *string*, one character at a time.
@@ -429,7 +429,7 @@ October 15th, 2013 <small>Midterm Study Guide</small> {#october-15th-2013-midter
 -   If the finite state automata does not follow these rules, it is a
     **deterministic** finite state automata.
 
-##### Types of questions {#types-of-questions}
+##### Types of questions
 
 -   is this string accepted by this finite automata?
     -   To solve this, use the starting state as the first letter in the
@@ -443,7 +443,7 @@ October 15th, 2013 <small>Midterm Study Guide</small> {#october-15th-2013-midter
 
 -   write an finite automata that accepts this language
 
-### Functional Programming & Scheme {#functional-programming-scheme}
+### Functional Programming & Scheme
 
 -   shallow and deep recursion on lists  
 -   accumulator recursion and tail recursion
@@ -457,7 +457,7 @@ October 15th, 2013 <small>Midterm Study Guide</small> {#october-15th-2013-midter
 
 -   functions stored in data structures
 
-### Midterm Fall 2011 {#midterm-fall-2011}
+### Midterm Fall 2011
 
 1.  Consider the Finite State Automaton (FSA) defined by the following
     diagram:
@@ -572,7 +572,7 @@ October 15th, 2013 <small>Midterm Study Guide</small> {#october-15th-2013-midter
 
         )
 
-### Midterm Fall 2012 {#midterm-fall-2012}
+### Midterm Fall 2012
 
 1.  Consider the Finite State Automaton (FSA) defined by the following
     transition table:
@@ -639,7 +639,7 @@ October 15th, 2013 <small>Midterm Study Guide</small> {#october-15th-2013-midter
                 )
             )
 
-October 26th, 2013 <small>Exercise Set 5: Prolog</small> {#october-26th-2013-exercise-set-5-prolog}
+October 26th, 2013 <small>Exercise Set 5: Prolog</small>
 --------------------------------------------------------
 
 1.  Translate the following into a set of prolog facts and rules. It
@@ -671,7 +671,7 @@ October 26th, 2013 <small>Exercise Set 5: Prolog</small> {#october-26th-2013-exe
     defined as follows: *f**i**b*<sub>0</sub> is 0,
     *f**i**b*<sub>1</sub> is 1, and for *N* \> 1,
 
-    *f**i**b**N* = *f**i**b**N* − 1 + *f**i**b**N* − 2
+    *f**i**b**N* = *f**i**b**N* − 1 + \*f**i**b\*\*N\* − 2
 
         fib(0, 0).
         fib(1, 1).
@@ -704,7 +704,7 @@ October 26th, 2013 <small>Exercise Set 5: Prolog</small> {#october-26th-2013-exe
         without0([], []). without0(A, B) :- remove0(A,0,Result), Result
         = B.
 
-October 19th, 2013 <small>Logic Programming</small> {#october-19th-2013-logic-programming}
+October 19th, 2013 <small>Logic Programming</small>
 ---------------------------------------------------
 
 Constants
@@ -805,10 +805,10 @@ Member Function
         then body consists of calls within this procedure to do the
         calculation. variables bindings are like "returned values".
 
-October 29th, 2013 <small>[Quick'n'Dirty Prolog Tutorial](http://www.cs.utexas.edu/~cannata/cs345/Class%20Notes/12%20prolog_intro.pdf)</small> {#october-29th-2013-quickndirty-prolog-tutorial}
+October 29th, 2013 <small>[Quick'n'Dirty Prolog Tutorial](http://www.cs.utexas.edu/~cannata/cs345/Class%20Notes/12%20prolog_intro.pdf)</small>
 ----------------------------------------------------------------------------------------------------------------------------------------------
 
-### Prolog Program Components {#prolog-program-components}
+### Prolog Program Components
 
 -   A **fact** is a *single piece of information*.
     -   To represent that the sky is blue, you would write:
@@ -864,7 +864,7 @@ October 29th, 2013 <small>[Quick'n'Dirty Prolog Tutorial](http://www.cs.utexas.e
         -   The query `parent(bob,X)` will return all the facts that
             would make the query true.
 
-### Connecting Prolog to Predicate Logic {#connecting-prolog-to-predicate-logic}
+### Connecting Prolog to Predicate Logic
 
 -   Think of the `:-` symbol in Prolog as representing the word "if".
     -   Interanlly, Prolog represents rules in a form known as **horn

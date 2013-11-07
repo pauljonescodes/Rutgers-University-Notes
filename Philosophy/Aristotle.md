@@ -1,7 +1,7 @@
-Aristotle <small>with Professor Robert Bolton</small> {#aristotle-with-professor-robert-bolton}
+Aristotle <small>with Professor Robert Bolton</small>
 =====================================================
 
-January 24th, 2013 - Lecture {#january-24th-2013---lecture}
+January 24th, 2013 - Lecture
 ----------------------------
 
 -   The class will deal mostly with perception. This affects four areas:
@@ -30,10 +30,10 @@ January 24th, 2013 - Lecture {#january-24th-2013---lecture}
 -   The main text for Aristotle and epistemology will be *Posterior
     Analytics*
 
-January 31st, 2013 - Lecture {#january-31st-2013---lecture}
+January 31st, 2013 - Lecture
 ----------------------------
 
-### Generation of Animals {#generation-of-animals}
+### Generation of Animals
 
 > In all this Nature acts like an intelligent workman. For to the
 > essence of plants belongs no other function or business than the
@@ -83,7 +83,7 @@ January 31st, 2013 - Lecture {#january-31st-2013---lecture}
     -   Perception cannot reach truth because perception cannot get at
         "what is."
 
-### On Interpretation {#on-interpretation}
+### On Interpretation
 
 > As there are in the mind thoughts which do not involve truth or
 > falsity, and also those which must be either true or false, so it is
@@ -95,7 +95,7 @@ January 31st, 2013 - Lecture {#january-31st-2013---lecture}
 > about it, unless 'is' or 'is not' is added, either in the present or
 > in some other tense.
 
-### De Anima {#de-anima}
+### De Anima
 
 > There are two distinctive peculiarities by reference to which we
 > characterize the soul (1) local movement and (2) thinking,
@@ -117,7 +117,7 @@ January 31st, 2013 - Lecture {#january-31st-2013---lecture}
 -   Because in both cases "like is known by like."
 -   What exactly does this have to do with anything?
 
-### Metaphysics {#metaphysics}
+### Metaphysics
 
 > And in general it is because these thinkers suppose knowledge to be
 > sensation, and this to be a physical alteration, that they say that
@@ -126,14 +126,14 @@ January 31st, 2013 - Lecture {#january-31st-2013---lecture}
 > others have fallen victims to opinions of this sort. For Empedocles
 > says that when men change their condition they change their knowledge.
 
-February 7th, 2013 - Lecture {#february-7th-2013---lecture}
+February 7th, 2013 - Lecture
 ----------------------------
 
 -   Knowledge (gnosis) split into two:
     1.  Perception
     2.  Intellection/intelligent
 
-### On Dreams {#on-dreams}
+### On Dreams
 
 > We must, in the next place, investigate the subject of the dream, and
 > first inquire to which of the faculties of the soul it presents
@@ -151,10 +151,10 @@ February 7th, 2013 - Lecture {#february-7th-2013---lecture}
     -   Perception can only deliver "red" and "card" and "here now" -
         they are restricted in what they can provide you with.
 
-February 14th, 2013 - Lecture {#february-14th-2013---lecture}
+February 14th, 2013 - Lecture
 -----------------------------
 
-### Nicomachean Ethics {#nicomachean-ethics}
+### Nicomachean Ethics
 
 -   Here are the kinds of things you get in intellectual learning, of
     the most advanced sort.
@@ -179,7 +179,7 @@ February 14th, 2013 - Lecture {#february-14th-2013---lecture}
     of something from inducition form particulars, where do we get
     knowledge of particulkars from?
 
-March 14th, 2013 - Short paper assignment {#march-14th-2013---short-paper-assignment}
+March 14th, 2013 - Short paper assignment
 -----------------------------------------
 
 -   Describe in detail Aristotle's epistomological program in the
@@ -189,7 +189,7 @@ March 14th, 2013 - Short paper assignment {#march-14th-2013---short-paper-assign
 -   In your description, describe and evaluate the account of this
     offered by Freda and Bronstein.
 
-### Aristotle, Knowledge, and Perception {#aristotle-knowledge-and-perception}
+### Aristotle, Knowledge, and Perception
 
 Science, knowledge, proof, perception, demonstration - in the many
 thousands of years since Aristotle wrote his *Posterior Analytics*,
@@ -369,7 +369,7 @@ about *perception* being the knowledge of FPs. It is because of this
 explicitness that Bronstein is more successful than Frede, in that he
 has the stronger claim and the evidence for it.
 
-### *Aristotle's Rationalism* <small>by Michael Frede</small> {#aristotles-rationalism-by-michael-frede}
+### *Aristotle's Rationalism* <small>by Michael Frede</small>
 
 -   Aristotle says our knowledge has roots in perception
     -   Also believe in detailed observation
@@ -453,12 +453,12 @@ has the stronger claim and the evidence for it.
 -   The problem with this is the assumption about what it means to have
     reason.
 
-### *The Origin and Aim of* Posterior Analytics *II.19* <small>by David Bronstein</small> {#the-origin-and-aim-of-posterior-analytics-ii.19-by-david-bronstein}
+### *The Origin and Aim of* Posterior Analytics *II.19* <small>by David Bronstein</small>
 
 -   Perception is the original prior knowledge through which the first
     principles become known.
 
-### Paper outline {#paper-outline}
+### Paper outline
 
 -   1 page introduction
 -   3 pages of Aristotle
@@ -469,7 +469,7 @@ has the stronger claim and the evidence for it.
 -   1 page of Frede
 -   1 page of Bronstein
 
-### Sources {#sources}
+### Sources
 
 1.  [Aristotle's Posterior Analytics, Aristotle's Theory of Knowledge
     and Demonstration, Dr. Cynthia Freeland, University of
@@ -483,7 +483,7 @@ has the stronger claim and the evidence for it.
 5.  Aristotle. *Aristotle's Prior and posterior analytics : a revised
     text*. Oxford: Clarendon Press, 2001. Print.
 
-### Posterior Analytics {#posterior-analytics}
+### Posterior Analytics
 
 -   **First principles**: there is nothing prior to them from which they
     can be derived. They are:
@@ -534,9 +534,9 @@ has the stronger claim and the evidence for it.
         it is the case that p is to deduce p from more basic principles.
     -   A syllogism that is necessary
 
-#### Book I {#book-i}
+#### Book I
 
-##### Chapter 1 {#chapter-1}
+##### Chapter 1
 
 -   Barnes
     -   All teaching/learning comes from **preexisting knowledge**.
@@ -568,7 +568,7 @@ has the stronger claim and the evidence for it.
     -   Solution to **Meno's Paradox**: We know in one way what we are
         learning, while being ignorant in another way.
 
-##### Chapter 2 {#chapter-2}
+##### Chapter 2
 
 -   Barnes
     -   We think we understand something in and of itself when we
@@ -633,7 +633,7 @@ has the stronger claim and the evidence for it.
         -   **definition** (*horismos*): does not assume something is (a
             kind of thesis, not a hypothesis)
 
-##### Chapter 3 {#chapter-3}
+##### Chapter 3
 
 -   Freeland
     -   It is not true that all things that are known are known by
@@ -648,7 +648,7 @@ has the stronger claim and the evidence for it.
             involving what he calls "counterpredicables," but that these
             will be very limited.)
 
-##### Chapter 6 {#chapter-6}
+##### Chapter 6
 
 -   Every demonstrative science is concerned with three things:
     1.  the kind (genos): things it posits to exist;
@@ -664,7 +664,7 @@ has the stronger claim and the evidence for it.
     4.  Postulates and hypotheses are universal or particular,
         definitions are neither.
 
-##### Chapter 18 {#chapter-18}
+##### Chapter 18
 
 -   If explanations do not arrive at what is atomic,
     -   If there is not one middle term but several,
@@ -679,9 +679,9 @@ has the stronger claim and the evidence for it.
         3.  B is explanotory of A for C
         4.  B is explanotory of A for itself.
 
-##### Chapter 31 {#chapter-31}
+##### Chapter 31
 
-##### Synopsis {#synopsis}
+##### Synopsis
 
 -   All knowledge depends on pre-existent knowledge of the learner
     -   Some things the learner does not need to know in advance
@@ -705,9 +705,9 @@ has the stronger claim and the evidence for it.
 
 -   Principles are unprovable
 
-#### Book II {#book-ii}
+#### Book II
 
-##### Chapter 19 {#chapter-19}
+##### Chapter 19
 
 -   Ross
     -   Demonstrative science is impossible without knowledge of first
@@ -736,7 +736,7 @@ has the stronger claim and the evidence for it.
         more cognitive states of the mind, but from **perception**.
     -   Induction through perception implants the universal in us.
 
-###### Commentary {#commentary}
+###### Commentary
 
 -   We now have to consider how first principles come to be known and
     what faculties know them.
@@ -754,7 +754,7 @@ has the stronger claim and the evidence for it.
         -   So we can neither already have it or acquire it.
         -   It follows that it must start with some **faculty**.
 
-April 25th, 2013 - Final Paper Assignment {#april-25th-2013---final-paper-assignment}
+April 25th, 2013 - Final Paper Assignment
 -----------------------------------------
 
 > Discuss Aristotle's general account in De Anima II 5 and II 12 of how
@@ -764,9 +764,9 @@ April 25th, 2013 - Final Paper Assignment {#april-25th-2013---final-paper-assign
 > perception. Consider the accounts of these matters offered by Sorabji,
 > Burnyeat, and Castion in your discussion.
 
-### Introduction {#introduction}
+### Introduction
 
-### Aristotle on Perception <small>Course notes from Marc Cohen</small> {#aristotle-on-perception-course-notes-from-marc-cohen}
+### Aristotle on Perception <small>Course notes from Marc Cohen</small>
 
 -   Aristotle spends a great deal of time in *De Anima* discussin the
     topic of sense-perception.
@@ -795,7 +795,7 @@ April 25th, 2013 - Final Paper Assignment {#april-25th-2013---final-paper-assign
         external object is transferred to the sense-organ of the
         perceiver.
 
-#### Perception is not an alteration {#perception-is-not-an-alteration}
+#### Perception is not an alteration
 
 -   All of this makes it seem as if Aristotle thinks perception as a
     physiological process.
@@ -832,7 +832,7 @@ April 25th, 2013 - Final Paper Assignment {#april-25th-2013---final-paper-assign
 > object; but when it has been affected it has been made like the object
 > and has acquired its quality.
 
-#### Physiological vs. Cognitive Interpretations {#physiological-vs.-cognitive-interpretations}
+#### Physiological vs. Cognitive Interpretations
 
 -   Supporting P
     1.  In perception the sense organ is "colored", and this explains
@@ -842,13 +842,13 @@ April 25th, 2013 - Final Paper Assignment {#april-25th-2013---final-paper-assign
     1.  Perceinving is like thinking, except that the object of
         perception are external. Souls.
 
-### How perception comes about {#how-perception-comes-about}
+### How perception comes about
 
-### Methodological procedures {#methodological-procedures}
+### Methodological procedures
 
-### 'Intentionality and Physiological Processes: Aristotle's Theory of Sense Perception' <small>by Richard Sorabji</small> {#intentionality-and-physiological-processes-aristotles-theory-of-sense-perception-by-richard-sorabji}
+### 'Intentionality and Physiological Processes: Aristotle's Theory of Sense Perception' <small>by Richard Sorabji</small>
 
-#### Section I {#section-i}
+#### Section I
 
 -   The most valuyable aspect of Aristotle's theory of sense perception
     has been largely neglected.
@@ -969,7 +969,7 @@ April 25th, 2013 - Final Paper Assignment {#april-25th-2013---final-paper-assign
     argues that commentators have been looking in the wrong place for
     information about the physical process of perception.
 
-#### Section II {#section-ii}
+#### Section II
 
 -   There are a controversial set of Aristotelian phrases.
     -   In perception, the sense-organ becomes like the thing perceived.
@@ -1019,7 +1019,7 @@ April 25th, 2013 - Final Paper Assignment {#april-25th-2013---final-paper-assign
         -   On the other hand, the coloration of eye-jelly is tame by
             comparision.
 
-#### Section III {#section-iii}
+#### Section III
 
 -   With the literal coloration process defended, Sorabji brings in its
     historical significance.
@@ -1056,7 +1056,7 @@ April 25th, 2013 - Final Paper Assignment {#april-25th-2013---final-paper-assign
         intended.
     -   Every commentator reconstructed Aristotle differently.
 
-### 'De Anima *II 5*' <small>by M.F. Burnyeat</small> {#de-anima-ii-5-by-m.f.-burnyeat}
+### 'De Anima *II 5*' <small>by M.F. Burnyeat</small>
 
 -   This is a close scrutiny of *De Anima II 5*.
 -   Questions:
@@ -1078,7 +1078,7 @@ April 25th, 2013 - Final Paper Assignment {#april-25th-2013---final-paper-assign
     actuality.
 -   He pays special attentions to issues of text and translations.
 
-#### Introduction {#introduction-1}
+#### Introduction
 
 -   The negative message of II 5: this is the chapter in which Aristotle
     infotrms us of his view that, although perceiving is traditionally
@@ -1118,13 +1118,13 @@ April 25th, 2013 - Final Paper Assignment {#april-25th-2013---final-paper-assign
     1.  What are they doing here?
     2.  How, in detail, do they contribute to the final result?
 
-#### A preliminary lusis {#a-preliminary-lusis}
+#### A preliminary lusis
 
 > For P to perceive A, P and A must be unlike to begin with, so that A
 > can affect P (because of the unlikeness between them) and make P like
 > itself. The perceiving is an assimilation in which P becomes like A.
 
-#### Conclusion {#conclusion}
+#### Conclusion
 
 -   Perception is *alloisis tis* in the *alienans* sense, an "alteration
     of a sort"
@@ -1169,7 +1169,7 @@ April 25th, 2013 - Final Paper Assignment {#april-25th-2013---final-paper-assign
         and comes to be like it.
     -   The object's redness appears, bringing about awareness of red.
 
-#### Two controversial morals {#two-controversial-morals}
+#### Two controversial morals
 
 -   The Sorabji interpretation combines two claims:
     1.  That ordinary alteration is what Aristotle requires for
@@ -1187,7 +1187,7 @@ April 25th, 2013 - Final Paper Assignment {#april-25th-2013---final-paper-assign
         achievement of his physics.
         -   His physics is irretrivably dead and gone.
 
-### 'The Spirit and the Letter: Aristotle on Perception' <small>by Victor Caston</small> {#the-spirit-and-the-letter-aristotle-on-perception-by-victor-caston}
+### 'The Spirit and the Letter: Aristotle on Perception' <small>by Victor Caston</small>
 
 -   Richard Sorabji claimed in a footnote that Aristotle thought
     perception was a physiological process and this has sparked some
@@ -1211,13 +1211,13 @@ April 25th, 2013 - Final Paper Assignment {#april-25th-2013---final-paper-assign
 -   Sorabji's footnote is thrity years old. \> Either Burnyeat's view is
     right or Sorabji's is, and Sorabji's isn't \> <cite>Burnyeat</cite>
 
-#### A Budget of Interpretations {#a-budget-of-interpretations}
+#### A Budget of Interpretations
 
 -   It is impossible to access whether this is exhaustive.
     -   Much less which is true
     -   That is, without a precise formulation of both.
 
-##### Literalisms {#literalisms}
+##### Literalisms
 
 -   Literalism is Sorabji's position.
     -   We are aware of out seeing because we are aware of our visual
@@ -1298,7 +1298,7 @@ April 25th, 2013 - Final Paper Assignment {#april-25th-2013---final-paper-assign
     -   This thesis also captures what is come to Fundamentalism and
         Latitudinarianism.
 
-##### 'As Matter to Form' {#as-matter-to-form}
+##### 'As Matter to Form'
 
 -   Burnyeat rejects Canonical Literalism.
     -   His position is "richer."
@@ -1332,7 +1332,7 @@ April 25th, 2013 - Final Paper Assignment {#april-25th-2013---final-paper-assign
 -   This position does not yet tell us what *does* occur in perception,
     and doesn't properly constitute a form of spritiualism.
 
-##### Spiritualisms {#spiritualisms}
+##### Spiritualisms
 
 > It is impossible for the same thing to undergo contrary changes in so
 > far as it is undivided during an undivided period of time. For if it
@@ -1351,43 +1351,43 @@ April 25th, 2013 - Final Paper Assignment {#april-25th-2013---final-paper-assign
 > that it need not be true to say organ is *F* at *t* in just the same
 > sense that the perceptible object is *F*.
 
-##### Another way out? {#another-way-out}
+##### Another way out?
 
-#### Against New Age Spiritualism {#against-new-age-spiritualism}
+#### Against New Age Spiritualism
 
-##### The Argument from Extraordinary Alterations {#the-argument-from-extraordinary-alterations}
+##### The Argument from Extraordinary Alterations
 
-##### The Argument from the Efficacy of Sensibilia {#the-argument-from-the-efficacy-of-sensibilia}
+##### The Argument from the Efficacy of Sensibilia
 
-##### The Argument from Anachronism {#the-argument-from-anachronism}
+##### The Argument from Anachronism
 
-##### The Argument from Silence {#the-argument-from-silence}
+##### The Argument from Silence
 
-###### The body always Undergoes Something {#the-body-always-undergoes-something}
+###### The body always Undergoes Something
 
-###### The Organ's Qualities Affect Sensitivity {#the-organs-qualities-affect-sensitivity}
+###### The Organ's Qualities Affect Sensitivity
 
-###### The Eye;s Moisture is Affect by Visible Objects {#the-eyes-moisture-is-affect-by-visible-objects}
+###### The Eye;s Moisture is Affect by Visible Objects
 
-###### Activities 'Common to Body and Soul' {#activities-common-to-body-and-soul}
+###### Activities 'Common to Body and Soul'
 
-##### Aristotle vs. Empedocles {#aristotle-vs.-empedocles}
+##### Aristotle vs. Empedocles
 
-#### Against Canoical Literalism {#against-canoical-literalism}
+#### Against Canoical Literalism
 
-##### A Disanalogy between Perception and Understanding? {#a-disanalogy-between-perception-and-understanding}
+##### A Disanalogy between Perception and Understanding?
 
-#### An Analogical Reading {#an-analogical-reading}
+#### An Analogical Reading
 
-##### Receving Form with the Matter {#receving-form-with-the-matter}
+##### Receving Form with the Matter
 
-##### Phantasia and Understanding {#phantasia-and-understanding}
+##### Phantasia and Understanding
 
-##### Phantasia and Proportions {#phantasia-and-proportions}
+##### Phantasia and Proportions
 
-##### Perceptible Qualities and Proportions {#perceptible-qualities-and-proportions}
+##### Perceptible Qualities and Proportions
 
-#### Conclusions {#conclusions}
+#### Conclusions
 
 -   It should be plain from the opening survey that there is an
     alternative.
@@ -1425,4 +1425,4 @@ April 25th, 2013 - Final Paper Assignment {#april-25th-2013---final-paper-assign
     this would have to be jettisoned.
     -   All Sorabji has to lose is Canonical Literalism.
 
-### Conclusion {#conclusion-1}
+### Conclusion
