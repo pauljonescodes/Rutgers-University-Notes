@@ -512,8 +512,8 @@ June 30th, 2013 <small>Reading: <em>Chapter 1, Computer Networks and the Interne
 
 -   End systems attached to the Intenet provide
     \*\*<abbr title="Application
-                    Programming Interfaces">APIs</abbr> that specify how
-    a program on one end system asks the Internet infrastucture to
+                        Programming Interfaces">APIs</abbr> that specify
+    how a program on one end system asks the Internet infrastucture to
     deliver data to a specific destination.
 
 ### What Is a Protocol?

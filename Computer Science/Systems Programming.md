@@ -950,29 +950,9 @@ Your grade will be based on:
 November 5th, 2013 <small>Midterm Study Guide</small>
 -----------------------------------------------------
 
-### Meta
+### The C Programming Language <small>Syntax</small>
 
--   Coding questions
--   Size of answer space isn't the actual size of the answer
--   Make him laugh if you do not know the answer
--   C questions
--   Write a macro
--   Function questions
--   Dynamic vs. Static
-    -   Static libraries stay the same
-        -   Goes in a link time
-        -   `.a` file
-
-    -   Dynamic libraries change
-        -   Goes in at run time
-        -   `.so` file
-        -   Can change behavior of the executable
-
--   Signal disposition and forking
-
-### C Syntax
-
-#### `const` and pointers
+#### Pointers and `const`
 
 |Code|Can change data?|Can change pointer?|Initiliaze data?|Initialize pointer?|
 |:---|:---------------|:------------------|:---------------|:------------------|
@@ -983,11 +963,7 @@ November 5th, 2013 <small>Midterm Study Guide</small>
 
 #### Data types
 
-#### Macros
-
-#### C functions
-
-#### Preprocessor
+#### Macros and the preprocessor
 
 -   The C preprocessor (cpp)
     -   Macro processor
@@ -996,70 +972,24 @@ November 5th, 2013 <small>Midterm Study Guide</small>
 -   Initial processing
     -   Read into memory and broken into lines
     -   Merge continued lines
-    -   Repalace comments with single spaces
+    -   Replace comments with single spaces
 
 -   Tokenization
-    -   Indentifiers
+    -   Identifiers
     -   Preprocessing numbers
     -   String literals
     -   Punctuators
 
 -   Preprocessing languages
-    -   Incluyde header files
+    -   Include header files
     -   Macro expansion
     -   Conditional compilations
     -   Line control
     -   Diagnostics
 
-#### Header Files
+#### Functions and function pointers
 
--   Include a file
--   Why use headers?
-    -   Copy and paste the same possible large amount of code many
-        times.
-
-            #include <stdlib.h>
-            #include "myheader.h"
-
--   Include headerfile only **once**
-
-        #ifndef SORTED_LIST_H
-        #define SORTED_LIST_H
-
-        /*
-        * Your header file content
-         */
-
-        #endif
-
--   Select a header from many
-
-        #if SYSTEM_1
-        #include "system_1.h"
-
-        #elif   SYSTEM_2
-        #include "system_2.h"
-
-        #endif
-
-#### Enumeration types
-
-    enum Boolean {true, false};
-    Boolean flag = true;
-
-    if (flag == true) {
-        printf("true\n");
-    } else if (flag == false) {
-        printf("false\n");
-    { else {
-        printf("impossibru\n");
-    }
-
-### Multi-programming
-
-### Function pointers
-
-#### Compare Int
+Consider this code:
 
     int compareInts(void * p1, void * p2) {
         int i1 = *(int*)p1;
@@ -1075,7 +1005,7 @@ November 5th, 2013 <small>Midterm Study Guide</small>
 
     SortedListPtr SLCreate(CompareFuncT cf);
 
-#### Add Int
+Now, for another example.
 
 Let's start with a basic function which we will be *pointing to*:
 
@@ -1128,7 +1058,38 @@ But it's much nicer to use a `typedef`:
 [Source
 ↪](http://stackoverflow.com/questions/840501/how-do-function-pointers-in-c-work)
 
-### Enumeration types
+#### Header Files
+
+-   Include a file
+-   Why use headers?
+    -   Copy and paste the same possible large amount of code many
+        times.
+
+            #include <stdlib.h>
+            #include "myheader.h"
+
+-   Include headerfile only **once**
+
+        #ifndef SORTED_LIST_H
+        #define SORTED_LIST_H
+
+        /*
+        * Your header file content
+         */
+
+        #endif
+
+-   Select a header from many
+
+        #if SYSTEM_1
+        #include "system_1.h"
+
+        #elif   SYSTEM_2
+        #include "system_2.h"
+
+        #endif
+
+#### Enumeration types
 
     enum Boolean {true, false};
     Boolean flag = true;
@@ -1141,7 +1102,7 @@ But it's much nicer to use a `typedef`:
         printf("impossibru\n");
     }
 
-### Makefiles, directory I/O
+### Makefiles
 
 -   Name of your makefile should be `Makefile` or `makefile`.
 -   Commands you can use:
@@ -1163,11 +1124,11 @@ But it's much nicer to use a `typedef`:
         clean:
             $(RM) tokenizer
 
-#### General form
+-   General form:
 
-    CC = gcc
-    CFLAG = -g -Wall
-    EXECUTABLE = tokenizer
+        CC = gcc
+        CFLAG = -g -Wall
+        EXECUTABLE = tokenizer
 
 ### Libraries
 
@@ -1223,12 +1184,7 @@ Dynamic library (`.so`)
 -   How to create:
 
         gcc -Wall -fPIC -c *.c
-        gcc -shared -Wl, -sonae, libctrst.so.1 -o libctest.so.1.0 *.o
-
--   Cascade the linkageL
-
-        ln -sf /opt/lib/libctest.so.1.0 /opt/lib/libtest.so.1
-        ln -sf /opt/lib/libctest.so.1.0 /opt/lib/libtest.so
+        gcc -shared -Wl, -shared, libctrst.so.1 -o libctest.so.1.0 *.o
 
 `-fPIC`
 :   Compiler directive to output position independent code, a
@@ -1243,22 +1199,22 @@ Dynamic library (`.so`)
 
         -soname libctest.so.1
 
-##### Linking
+-   Cascade the linkageL
+
+        ln -sf /opt/lib/libctest.so.1.0 /opt/lib/libtest.so.1
+        ln -sf /opt/lib/libctest.so.1.0 /opt/lib/libtest.so
 
 -   The link to `/opt/lib/libctest.so` allows the naming convention for
     the compile flag `-litest` to work.
 -   The link to `/opt/lib/libctest.so.1` allows the run time binding to
     work.
+-   Now, for adding the library to a program:
 
-##### Compiling and linking main program
+        gcc -Wall -L/opt/lib prog.c -lctest -o prog
 
-    gcc -Wall -L/opt/lib prog.c -lctest -o prog
+-   To list dependancies:
 
-##### List dependencies
-
-    ldd prog
-
-##### Library path
+        ldd prog
 
 -   Add library directories to be included during dynamic linking to the
     file
@@ -1272,7 +1228,7 @@ Dynamic library (`.so`)
 -   Specify the environment variable `LD_LIBRARY_PATH` to point to the
     directory paths containing the shared object library
 
-#### Process
+### Processes
 
 Process
 :   an address space with one or more threads executing within that
@@ -1296,6 +1252,16 @@ Process Table
     the processes that are currently loaded with their PID, status, and
     command string etc.
 
+Zombie process
+:   Using `forkto` create processes can be very useful, but you must
+    keep track of child processes. When a child process terminates, an
+    association with its parent survives until the parent in turn either
+    terminates normally or calls wait. The child process entry in the
+    process table is therefore not freed up immediately. Although no
+    longer active, the child process is still in the system because its
+    exit code needs to be stored in case the parent subsequently calls
+    wait. It becomes what is known as defunct, or a zombie process.
+
 |`STAT` Code|Description|
 |:----------|:----------|
 |`S`|Sleeping|
@@ -1310,30 +1276,27 @@ Process Table
 |`1`|Process is multithreaded|
 |`<`|High priority task|
 
-Zombie process
-:   Using `forkto` create processes can be very useful, but you must
-    keep track of child processes. When a child process terminates, an
-    association with its parent survives until the parent in turn either
-    terminates normally or calls wait. The child process entry in the
-    process table is therefore not freed up immediately. Although no
-    longer active, the child process is still in the system because its
-    exit code needs to be stored in case the parent subsequently calls
-    wait. It becomes what is known as defunct, or a zombie process.
-
 ### Signals
 
--   A signal is an event generated by the UNIX and Linux systems in
+Signal
+:   A signal is an event generated by the UNIX and Linux systems in
     response to some condition, upon receipt of which a process may in
     turn take some action.
--   Use the term *raise* to indicate the generation of a signal, and the
-    term *catch* to indicate the receipt of a signal.
--   Signals are raised by some error conditions, such as memory segment
-    violations, floating-point processor errors, or illegal
-    instructions. They are generated by the shell and terminal handlers
-    to cause interrupts and can also be explicitly sent from one process
-    to another as a way of passing information or modifying behavior.
--   Signals can be raised, caught and acted upon, or (for some at least)
-    ignored.
+:   Software interrupt mechanism. Notifies a process that a particular
+    event has occurred. Events may originate synchronously within the
+    process or asynchronously from outside the process.
+:   Signals are *raised* by some error conditions, such as memory
+    segment violations, floating-point processor errors, or illegal
+    instructions. They are *generated* by the shell and terminal
+    handlers to cause interrupts and can also be explicitly sent from
+    one process to another as a way of passing information or modifying
+    behavior.
+
+Raise
+:   Used to indicate the generation of a signal.
+
+Catch
+:   Used to indicate the receipt of a signal.
 
 |Signal name|Description|
 |:----------|:----------|
@@ -1372,6 +1335,16 @@ Zombie process
     which is the previous value of the function set up to handle this
     signal, or one of these two special values:
 
+-   Not large
+-   Should not use global or static data structures
+-   The signal that cause invocation of the signal handler is
+    **blocked** during the handler execution
+-   Different signals can use the same handler function.
+-   Allow multiple handlers (in the same functions)
+-   Allow different handlers for the same signal at different points of
+    program execution.
+-   Args determined by OS, not out program
+
 |Value|Meaning|
 |:----|:------|
 |`SIG_IGN`|Ignore the signal|
@@ -1402,16 +1375,6 @@ Zombie process
     -   Signals and event-based programming
     -   Signals and processes
 
-Signals
-:   Software interrupt mechanism
-
-:   Notifies a process that a particular event has occurred.
-
-:   Events may orginaly synchronously within the process or
-    asynchronously from outside the process.
-
-:   `usr/include/signal.h` predifines `NAME`s to signal `NUMBER`s
-
 -   Disposition
     -   For a delivered signal, the process can:
         -   Ignore
@@ -1423,32 +1386,21 @@ Signals
         for that process.
     -   C uses opaque type sigset\_t for signal mask implementation
 
-### Signal handler
+        static void sigint\_handler( int signo ); static void
+        timeout\_handler( int signo, siginfo\_t \* info, void \* p);
 
--   Not large
--   Should not use global or static data structures
--   The signal that cause invocation of the signal handler is
-    **blocked** during the handler execution
--   Different signals can use the same handler function.
--   Allow multiple handlers (in the same functions)
--   Allow different handlers for the same signal at different points of
-    program execution.
--   Args determined by OS, not out program
+#### Signal Info
 
-        static void sigint_handler( int signo );
-        static void timeout_handler( int signo, siginfo_t * info, void * p);
-
-#### `signinfo_t`
-
-    signinfo_t struct
-        int si_signo
-        int si_errno
-        int si_code
+    signinfo_t struct {
+        int si_signo;
+        int si_errno;
+        int si_code;
+    }
 
 -   And a union of structure determined by different signals with
     detailed information.
 
-#### sigaction function
+#### Signal Action
 
     int sigaction ( int signo, const struct sigaction * action,
                     struct sigaction * oldaction );
@@ -1463,8 +1415,6 @@ Signals
 `oldaction`
 :   pointer to previous `sigaction` for `signo`. Can be `null`
 
-#### Sigaction struct
-
 |Member type|Name|Description|
 |:----------|:---|:----------|
 |`void(*)(int)`|`sa_handler`|`SIG_DFL`, `SIG_IGN`, or pointer to function.|
@@ -1472,7 +1422,7 @@ Signals
 |`int`|`sa_flags`|Special falgs to affect behavior of signal.|
 |`void(*)(int, siginfo_t *, void *)`|`sa_sigaction`|Signal catching function.|
 
-#### Timer
+### Timer
 
     struct itimerval {
         struct timeval it_interval;
@@ -1495,8 +1445,6 @@ Signals
 
 ### Threads
 
-#### What is a thread?
-
 -   Threads are multiple strands of execution in a single program.
 -   A single is a sequence of control within a process.
 -   A process runs at least one thread, `main`.
@@ -1504,44 +1452,33 @@ Signals
     memory.
 -   Starting a new thread: It only has it's own *memory stack*,
     everything else is shared with the process which created it.
-
-#### Advantages
-
--   Make a program do a few things at once
+-   Advantages
+    -   Make a program do a few things at once
     -   Logically is not multicore.
     -   Physically if multicore.
+    -   A program can mix input, calculation, and output efficiently.
+    -   Accelerate processing on proper multi-core processors.
+    -   Switching between threads requires less work than switching
+        between processes.
 
--   A program can mix input, calculation, and output efficiently.
--   Accelerate processing on proper multi-core processors.
--   Switching between threads requires less work than switching between
-    processes.
+-   Disadvantages
+    -   Requires careful design.
+        -   Threads are also know as "how to shoot yourself in both feet
+            at once."
 
-#### Disadvantages
+    -   Debugguging hell. By using a good IDE the job is largely
+        mitigated.
+    -   A program that split a large calculation into two and the the
+        two parts a different threads will not necessarily run more
+        quickly on a single processor machine.
 
--   Requires careful design.
-    -   Threads are also know as "how to shoot yourself in both feet at
-        once."
-
--   Debugguging hell. By using a good IDE the job is largely mitigated.
--   A program that split a large calculation into two and the the two
-    parts a different threads will not necessarily run more quickly on a
-    single processor machine.
-
-#### POSIX Thread
-
-##### Creation
+#### POSIX Specification
 
     #include <pthread.h>
     int pthread_create(pthread_t *thread, pthread_attr_t *attr,
-                            void *(*start_routine)(void *), void *arg);
-
-##### Termination
-
-    void pthread_exit(void *retval);
-
-##### Termination callback
-
-    int pthread_join(pthread_t th, void **thread_return);
+                            void *(*start_routine)(void *), void *arg); 
+    void pthread_exit(void *retval); 
+    int pthread_join(pthread_t th, void **thread_return); /* termination callback */
 
 #### Thread synchronization
 
@@ -1576,18 +1513,14 @@ Semaphores
     -   Counting semaphore can allow a number of threads to execute
         simultaneously.
 
-###### Initialization:
-
-    #include <semaphore.h>
-    int sem_init(sem_t * sem, int pshared, unsigned int value);
+            #include <semaphore.h>
+            int sem_init(sem_t * sem, int pshared, unsigned int value);
 
 -   This function intializaes a semaphore object pointed to by `sem`,
     sets it sharing option, and gives it an initial integer value.
 -   The `pshared` parameter controls the type of semaphore.
     -   If the value is 0, the semaphore is local to the current
         process.
-
-###### Waiting
 
 -   Wait until allowed to execute:
 
@@ -1609,6 +1542,8 @@ Semaphores
     -   If the both programs try to increase the value by 1, the
         semaphore will always be correctly increased in value by 2.
 
+    int sem\_destroy(sem\_t \* sem);
+
 ##### Mutex
 
 -   Mutual exclusion
@@ -1617,15 +1552,9 @@ Semaphores
 -   Must local the mutex before entering and unlock it when you finish.
 
         #include <pthread.h>
+        int pthread_mutex_init(pthread_mutex_t *mutex, const pthread_mutexattr_t *mutexattr); 
+        int pthread_mutex_lock(pthread_mutex_t *mutex));
+        int pthread_mutex_unlock(pthread_mutex_t *mutex); 
+        int pthread_mutex_destroy(pthread_mutex_t *mutex);
 
-        int pthread_mutex_init(pthread_mutex_t *mutex,
-        const pthread_mutexattr_t *mutexattr); int      pthread_mutex_lock(pthread_mutex_t *mutex));
-        int pthread_mutex_unlock(pthread_mutex_t *mutex); int       pthread_mutex_destroy(pthread_mutex_t *mutex);
 
-###### Destruction
-
-    int sem_destroy(sem_t * sem);
-
-##### Condition Variables
-
-#### Thread patterns
