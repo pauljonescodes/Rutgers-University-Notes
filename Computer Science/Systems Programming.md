@@ -972,15 +972,112 @@ November 5th, 2013 <small>Midterm Study Guide</small>
 
 ### C Syntax
 
+#### `const` and pointers
+
+Code | Can change data? | Can change pointer? | Initiliaze data? | Initialize pointer?|
+-----|------------------|---------------------|------------------|--------------------|
+`int * ptr;` | Yes | Yes | Optional | Optional |
+`const int * ptr;` | No | Yes | Yes | Optional |
+`int * const ptr = &x` | Yes | No | Optional | Yes |
+`const int * const ptr = &x` | No | No | Yes | Yes |
+
 #### Data types
 
 #### Macros
 
 #### C functions
 
+#### Preprocessor
+
+-   The C preprocessor (cpp)
+	-   Macro processor
+	-   Transform code before compilation
+
+-   Initial processing
+	-   Read into memory and broken into lines
+	-   Merge continued lines
+	-   Repalace comments with single spaces
+
+-   Tokenization
+	-   Indentifiers
+	-   Preprocessing numbers
+	-   String literals
+	-   Punctuators
+
+-   Preprocessing languages
+	-   Incluyde header files
+	-   Macro expansion
+	-   Conditional compilations
+	-   Line control
+	-   Diagnostics
+
+#### Header Files
+
+-   Include a file
+-   Why use headers?
+	-   Copy and paste the same possible large amount
+		of code many times.
+
+			#include <stdlib.h>
+			#include "myheader.h"
+
+-   Include headerfile only **once**
+
+		#ifndef SORTED_LIST_H
+		#define SORTED_LIST_H
+
+		/*
+	 	* Your header file content
+		 */
+
+		#endif
+
+-   Select a header from many
+
+		#if SYSTEM_1
+		#include "system_1.h"
+	
+		#elif 	SYSTEM_2
+		#include "system_2.h"
+
+		#endif
+
+#### Enumeration types
+
+	enum Boolean {true, false};
+	Boolean flag = true;
+
+	if (flag == true) {
+		printf("true\n");
+	} else if (flag == false) {
+		printf("false\n");
+	{ else {
+		printf("impossibru\n");
+	}
+
+
+
 ### Multi-programming
 
 ### Function pointers
+
+#### Compare Int
+
+	int compareInts(void * p1, void * p2) {
+		int i1 = *(int*)p1;
+		int i2 = *(int*)p2;
+
+		return i1 - i2;
+	}
+
+	typedef int (*CompareFuncT)(void *, void *);
+	
+	CompareFunct cf = &compareInts;
+	cf = &compareDoubles;;
+
+	SortedListPtr SLCreate(CompareFuncT cf);
+
+#### Add Int
 
 Let's start with a basic function which we will be *pointing to*:
 
@@ -1030,15 +1127,46 @@ But it's much nicer to use a `typedef`:
 
 [Source ↪](http://stackoverflow.com/questions/840501/how-do-function-pointers-in-c-work)
 
-### Dynamic memory management
+### Enumeration types
 
-### Data Structure design
+	enum Boolean {true, false};
+	Boolean flag = true;
 
-### File I/O
+	if (flag == true) {
+		printf("true\n");
+	} else if (flag == false) {
+		printf("false\n");
+	{ else {
+		printf("impossibru\n");
+	}
 
-### Multi-file projects, makefiles, directory I/O
+### Makefiles, directory I/O
 
-### GDB
+-   Name of your makefile should be `Makefile` or `makefile`.
+-   Commands you can use:
+
+		make
+		make target_label
+		make clean
+
+-   What to write in makefile
+
+		target: dependency1 dependency2
+		<tab> system command
+
+		# build executable file tokenizer from tokenizer.c
+		all: tokenizer.c
+			gcc -g -Wall -o tokenizer tokenizer.c
+
+		#remove tokenizer file:
+		clean:
+			$(RM) tokenizer
+
+#### General form
+
+	CC = gcc
+	CFLAG = -g -Wall
+	EXECUTABLE = tokenizer
 
 ### Libraries
 
@@ -1052,20 +1180,25 @@ But it's much nicer to use a `typedef`:
 
 -   There are two types, dynamic and static libraries.
 
+
 Static library (`.a`)
 
-:   Library of object code which is linked with, and becomes part of 
-	the application
+:   Library of object code which is linked with, and becomes part of
+	something.
+
+:   In computer science, a static library or statically-linked library is a set of routines, external functions and variables which are resolved in a caller at compile-time and copied into a target application by a compiler, linker, or binder, producing an object file and a stand-alone executable.
 
 Dynamic library (`.so`)
 
 :   There is only one form of this library but it can be used in two ways.
-	1.  Dynamically linked at run time but statically aware. The 
-		libraries must be available during compile/link phase. The shared 
-		objects are not included into the executable component but are tied 
-		to the execution.	2.  Dynamically loaded/unloaded and linked during execution 
-		(i.e. browser plug-in) using the dynamic linking loade
-		r system functions.
+
+    1.  Dynamically linked at run time but statically aware. The
+        libraries must be available during compile/link phase. 
+	The shared objects are not included into the executable 
+	component but are tied to the executable.
+    2.  Dynamically loaded/unloaded and linked during execution 
+        (i.e. browser plug-in) using the dynamic linking loaded
+        r system functions.
 
 -   Naming convention: `lib` prefix.
 -   Example:
@@ -1095,20 +1228,22 @@ Dynamic library (`.so`)
 		ln -sf /opt/lib/libctest.so.1.0 /opt/lib/libtest.so.1
 		ln -sf /opt/lib/libctest.so.1.0 /opt/lib/libtest.so
 
--   Compiler options:
-	`-fPIC`
-	:   Compiler directive to output position independent code,
-		a characteristic required by shared libraries, also see
-		`-fpic`
+`-fPIC`
 
-	`-shared`
-	:   Produce a shared object which can then be linked with other
-		objects to form an executable.
+:   Compiler directive to output position independent code,
+	a characteristic required by shared libraries, also see `-fpic`
 
-	`Wl,options`
-	:   Pass options to linker.
+
+`-shared`
+
+:   Produce a shared object which can then be linked with other
+	objects to form an executable.
+
+`Wl,options`
+
+:   Pass options to linker.
 		
-			-soname libctest.so.1
+		-soname libctest.so.1
 
 ##### Linking
 
@@ -1191,7 +1326,7 @@ Zombie process
 	in case the parent subsequently calls wait. It becomes what is 
 	known as defunct, or a zombie process.
 
-#### Signals
+### Signals
 
 
 -   A signal is an event generated by the UNIX and Linux systems 
@@ -1268,15 +1403,109 @@ Signal name | Description
 	returns the number of seconds left before any outstanding 
 	alarm call would be sent, or -1 if the call fails.
 
-### Signals and event-based programming
+-   Be sure to know:
+	-   Signals and threads
+	-   Signals and event-based programming
+	-   Signals and processes
 
-### Signals and processes
+Signals
+
+:   Software interrupt mechanism
+
+:   Notifies a process that a particular event has occurred.
+
+:   Events may orginaly synchronously within the process
+	or asynchronously from outside the process.
+
+:   `usr/include/signal.h` predifines `NAME`s to signal `NUMBER`s
+
+-   Disposition
+	-   For a delivered signal, the process can:
+		-   Ignore
+		-   Catch - invoke user-written code in the process
+		-   Default action - kill process w/o core dump
+
+-   `signal.h`
+	-   Each process has a **signal mask** - the set of blocked signals
+		for that process.
+	-   C uses opaque type sigset_t for signal mask implementation
+
+### Signal handler
+
+-   Not large
+-   Should not use global or static data structures
+-   The signal that cause invocation of the signal handler
+	is **blocked** during the handler execution
+-   Different signals can use the same handler function.
+-   Allow multiple handlers (in the same functions)
+-   Allow different handlers for the same signal at different
+	points of program execution.
+-   Args determined by OS, not out program
+
+		static void sigint_handler( int signo );
+		static void timeout_handler( int signo, siginfo_t * info, void * p);
+
+#### `signinfo_t`
+
+	signinfo_t struct
+		int si_signo
+		int si_errno
+		int si_code
+
+-   And a union of structure determined by different signals with
+	detailed information.
+
+#### sigaction function
+
+	int sigaction ( int signo, const struct sigaction * action,
+					struct sigaction * oldaction );
+
+`signo`
+
+:   any valid signal except `sigkill` and `sigstop`
+
+`action`
+
+:   pointer to `sigaction` struct that specifies new process
+	response to `signo`. Can be `null` (default action will
+	be set to oldaction.
+
+`oldaction`
+
+:   pointer to previous `sigaction` for `signo`. Can be `null`
 
 
+#### Sigaction struct
 
-### Valgrind and memory-related bugs
+Membert type | Name | Description
+-------------|------|-------------
+`void(*)(int)` | `sa_handler` | `SIG_DFL`, `SIG_IGN`, or pointer to function
+`sigset_t` | `sa_mask` | Additional set of signals to be blocked during execution of signal catching function.
+`int` | `sa_flags` | Special falgs to affect behavior of signal.
+`void(*)(int, siginfo_t *, void *)` | `sa_sigaction` | Signal catching function.
 
-### Caching
+
+#### Timer
+
+	struct itimerval {
+		struct timeval it_interval;
+		struct timeval it_value;
+	}
+
+-   Activate: call `setitimer` with non-zero `it_value`
+-   Deactivate: call `setitimer()` with zero `it_value`, or when timer
+	expires with a zero `it_interval`.
+-   No multiple, seperate timers for the same process at the same time.
+
+#### Timer activation
+
+`it_value` | `it_interval` | Result
+-----------|---------------|-------
+2,0 | 5,0 | 2 second wait, 5 second interval
+2,0 | 0,0 | 2 second wait, no repeat
+0,0 | 5,0 | nothing
+0,0 | 0,0 | nothing
+
 
 ### Threads
 
@@ -1420,7 +1649,6 @@ Semaphores
 
 
 
-### Signals and threads
 
 
 
