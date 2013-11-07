@@ -1,7 +1,7 @@
-Principle of Programming Languages <small>with Professor Louis Steinberg</small>
+Principle of Programming Languages <small>with Professor Louis Steinberg</small> {#principle-of-programming-languages-with-professor-louis-steinberg}
 ================================================================================
 
-Description
+Description {#description}
 -----------
 
 The course is aimed at making the student familiar with the general
@@ -19,7 +19,7 @@ are discussed.
     D cannot be used to satisfy prerequisite requirements.
 -   Semesters Offered: Spring and fall
 
-### Topics
+### Topics {#topics}
 
 -   BNF and context free grammars; Data visibility (i.e., lexical and
     dynamic scoping);
@@ -31,10 +31,10 @@ are discussed.
     -   programming with recursion (i.e., without iteration);
 
 -   Logic programming paradigm:
-    -   unification, generate and test;\
+    -   unification, generate and test;  
     -   Programming with pointers in C.
 
-### Expected Work
+### Expected Work {#expected-work}
 
 There are three graded programming projects and textbook homework
 assignments.
@@ -42,7 +42,7 @@ assignments.
 -   Exams:
     -   1 hourly, Final Exam
 
-### Department Learning Goals
+### Department Learning Goals {#department-learning-goals}
 
 -   Computer Science majors ...
     -   will be prepared to contribute to a rapidly changing field by
@@ -59,10 +59,10 @@ assignments.
         the software industry), or some sort of business plan (for those
         going into startups).
 
-Syllabus
+Syllabus {#syllabus}
 --------
 
-### Objective
+### Objective {#objective}
 
 -   Primary objective: Learn new ways of thinking about problems and
     programs.
@@ -70,12 +70,12 @@ Syllabus
     learning principles that apply to many languages.
 -   Tertiary objective: Learn some interesting languages.
 
-### Prerequisite
+### Prerequisite {#prerequisite}
 
 -   CS 205, CS 211
 -   Java; the memory model of C, including pointers; predicate calculus
 
-### Book
+### Book {#book}
 
 -   Michael L. Scott, Programming Language Pragmatics, 3rd Edition.
     Morgan Kaufman
@@ -83,7 +83,7 @@ Syllabus
 **The textbook does not cover all of the material for this course, and
 is not a substitute for attending class.**
 
-### Work
+### Work {#work}
 
 -   You are expected to attend all lectures and recitations, in both
     body and mind. That is, please do not access Facebook, games, email,
@@ -97,7 +97,7 @@ is not a substitute for attending class.**
     there will be exam questions directly based on the projects and
     exercises.
 
-### Tentative Grading
+### Tentative Grading {#tentative-grading}
 
 Your course grade is based on projects and exams, with the following
 tentative weighting:
@@ -107,7 +107,7 @@ tentative weighting:
 -   Midterm 2: 25%
 -   Final exam: 40%
 
-### Course grades
+### Course grades {#course-grades}
 
 Your course grade will be computed as follows: Each score (for each exam
 and each project) will be converted to a percentage score, and the
@@ -121,13 +121,13 @@ grades are:
 -   C: 70%
 -   D: 60%
 
-### Grading disputes
+### Grading disputes {#grading-disputes}
 
 If you feel an exam or a project has been misgraded, you must bring it
 to our attention within 2 weeks of when we first give back the graded
 exam or project.
 
-### Collaboration
+### Collaboration {#collaboration}
 
 All students in this class are expected to be familiar with the The DCS
 academic integrity policy, which can be found at
@@ -138,12 +138,12 @@ We do encourage you to us the Piazza site to discuss the concepts behind
 course material and assignments, but please do not post code. If you
 need help with code, email it to the professor or a TA.
 
-### Exams
+### Exams {#exams}
 
 Exam schedules and rules are in Resources \> Exam info. You are expected
 to know and to abide by these rules.
 
-### Poor grades
+### Poor grades {#poor-grades}
 
 If you get less than 70% on an exam please contact the 314 TA's or
 instructor immediately. Often students wait until after the final, and
@@ -151,7 +151,7 @@ then ask how they can raise their grade. At that point there is no way
 to raise their grade. The earlier you contact us the more chance we can
 be of help.
 
-### Topics
+### Topics {#topics-1}
 
 The following list is organized by topic, not by chronological order of
 coverage in the course.
@@ -180,7 +180,7 @@ coverage in the course.
     -   Scope & binding,lexical and dynamic
     -   Parameter passing modes
 
-September 16th, 2013 <small>Assignment 1</small>
+September 16th, 2013 <small>Assignment 1</small> {#september-16th-2013-assignment-1}
 ------------------------------------------------
 
 1.  Given grammar `G`: (capitals are non-terminals, everything else is a
@@ -289,11 +289,11 @@ September 16th, 2013 <small>Assignment 1</small>
 
     -   Any number of `a`s followed by any number of `b`s.
 
-    3.  `(ab)*`
+    1.  `(ab)*`
 
     -   A possibly empty series of repeating `ab`.
 
-September 23rd, 2013 <small>Assignment 2</small>
+September 23rd, 2013 <small>Assignment 2</small> {#september-23rd-2013-assignment-2}
 ------------------------------------------------
 
 1.  View the video: https://www.youtube.com/watch?v=prAwkQt3ARg
@@ -302,7 +302,7 @@ September 23rd, 2013 <small>Assignment 2</small>
     2.  List two examples the speaker uses and explain for each how it
         supports his point, or, if you think that it does not, why not.
 
-October 3rd, 2013 <small>Exercise 4: Scheme</small>
+October 3rd, 2013 <small>Exercise 4: Scheme</small> {#october-3rd-2013-exercise-4-scheme}
 ---------------------------------------------------
 
 For these problems, you must use pure functional scheme. That is: You
@@ -340,12 +340,12 @@ scheme that complies with the R5RS standard.
     33 44 2 1 8)) is ( ( ) ( ) (44)(2)( ) (8)). Then (apply append (map
     foo '(23 33 44 2 1 8))) will result in (44 2 8) .
 
-October 15th, 2013 <small>Midterm Study Guide</small>
+October 15th, 2013 <small>Midterm Study Guide</small> {#october-15th-2013-midterm-study-guide}
 -----------------------------------------------------
 
-### Formal Languages
+### Formal Languages {#formal-languages}
 
-#### Grammars
+#### Grammars {#grammars}
 
 -   **Parsing** works from the terminal string to the start
 
@@ -369,7 +369,7 @@ October 15th, 2013 <small>Midterm Study Guide</small>
 -   **Context-free grammars** are used to specify the overall structure
     of a programming language.
 
-#### Regular Expressions
+#### Regular Expressions {#regular-expressions}
 
 -   The letter itself represents just itself.
 -   The empty string represents just itself.
@@ -409,7 +409,7 @@ October 15th, 2013 <small>Midterm Study Guide</small>
 -   describe in English the language defined by this regular expression
 -   write an regular expression that defines this language
 
-#### Finite State Automata
+#### Finite State Automata {#finite-state-automata}
 
 -   An **automaton** is a machine *which corresponds to a language*.
     -   it *inputs* a *string*, one character at a time.
@@ -421,7 +421,7 @@ October 15th, 2013 <small>Midterm Study Guide</small>
 
 -   To construct a **nondeterministic** finite state automata,
     1.  Allow more than one transition with the same label.
-    2.  Allow $\epsilon$ transition
+    2.  Allow *ε* transition
     3.  Recognize an input string just in case there exists *some* path
         from start state to a final state such that the labels on the
         path are the terminals in the string.
@@ -429,7 +429,7 @@ October 15th, 2013 <small>Midterm Study Guide</small>
 -   If the finite state automata does not follow these rules, it is a
     **deterministic** finite state automata.
 
-##### Types of questions
+##### Types of questions {#types-of-questions}
 
 -   is this string accepted by this finite automata?
     -   To solve this, use the starting state as the first letter in the
@@ -443,9 +443,9 @@ October 15th, 2013 <small>Midterm Study Guide</small>
 
 -   write an finite automata that accepts this language
 
-### Functional Programming & Scheme
+### Functional Programming & Scheme {#functional-programming-scheme}
 
--   shallow and deep recursion on lists\
+-   shallow and deep recursion on lists  
 -   accumulator recursion and tail recursion
 -   lambda and closures
 -   functions that take functions as arguments
@@ -457,13 +457,13 @@ October 15th, 2013 <small>Midterm Study Guide</small>
 
 -   functions stored in data structures
 
-### Midterm Fall 2011
+### Midterm Fall 2011 {#midterm-fall-2011}
 
 1.  Consider the Finite State Automaton (FSA) defined by the following
     diagram:
     -   Is this FSA deterministic or non-deterministic? Why?
         -   The necessary and sufficient conditions for a NFA are at
-            least one $\epsilon$ or multiple state transitions (multiple
+            least one *ε* or multiple state transitions (multiple
             edges).
 
     -   Write a Regular Expression that specifies the same language as
@@ -572,7 +572,7 @@ October 15th, 2013 <small>Midterm Study Guide</small>
 
         )
 
-### Midterm Fall 2012
+### Midterm Fall 2012 {#midterm-fall-2012}
 
 1.  Consider the Finite State Automaton (FSA) defined by the following
     transition table:
@@ -639,45 +639,45 @@ October 15th, 2013 <small>Midterm Study Guide</small>
                 )
             )
 
-
-October 26th, 2013 <small>Exercise Set 5: Prolog</small>
+October 26th, 2013 <small>Exercise Set 5: Prolog</small> {#october-26th-2013-exercise-set-5-prolog}
 --------------------------------------------------------
 
 1.  Translate the following into a set of prolog facts and rules. It
     should be possible for Prolog to infer 5 from 1 through 4.
     1.  Joe is in the toy department
 
-			inside(joe, toy_dept).
+            inside(joe, toy_dept).
 
     2.  If someone is in a department they report to the head of that
         department.
 
-			report(X, Y, dept) :- inside(x, dept), head(y, dept). 
+            report(X, Y, dept) :- inside(x, dept), head(y, dept). 
 
     3.  Sam is the head of the toy department.
 
-			head(sam, toy_dept).
+            head(sam, toy_dept).
 
     4.  Everyone's salary is less that the salary of the person they
         report to.
 
-			paid_less(X, Y) :- report(X, Y, Z).
+            paid_less(X, Y) :- report(X, Y, Z).
 
     5.  Joe's salary is less than Sam's salary.
 
-			paid_less(joe, sam).
+            paid_less(joe, sam).
 
 2.  Write a definition in Prolog for the predicate `fib(N, F)` which is
-    true if $F$ is the $N$th fibonacci number, $fib_N$, defined as
-    follows: $fib_0$ is $0$, $fib_1$ is $1$, and for $N>1$,
+    true if *F* is the *N*th fibonacci number, *f**i**b*<sub>*N*</sub>,
+    defined as follows: *f**i**b*<sub>0</sub> is 0,
+    *f**i**b*<sub>1</sub> is 1, and for *N* \> 1,
 
-	$fibN= fibN-1+fibN-2$
+    *f**i**b**N* = *f**i**b**N* − 1 + *f**i**b**N* − 2
 
-		fib(0, 0).
-		fib(1, 1).
-		fib(N, F) :- A is N - 1, 
-			B is N - 2,fib(A, AF), 
-			fib(B, BF),NF is AF + BF.
+        fib(0, 0).
+        fib(1, 1).
+        fib(N, F) :- A is N - 1, 
+            B is N - 2,fib(A, AF), 
+            fib(B, BF),NF is AF + BF.
 
 3.  Write a definition in Prolog for the predicate double, where
     double(A, B) is true for lists A and B if B has the same elements as
@@ -686,216 +686,204 @@ October 26th, 2013 <small>Exercise Set 5: Prolog</small>
     double([dog, cat], L) should bind L to [dog, dog, cat, cat]. The
     query double([a, b], L). should succeed, binding L to [1, 1, b, b].
 
-		double_up([], []).
-		double_up([A | As], [A, A | Rest]) :- double_up(As, Rest).
-		
-		double([], []).
-		double(A, B) :- double_up(A, A) = B.
+        double_up([], []).
+        double_up([A | As], [A, A | Rest]) :- double_up(As, Rest).
+
+        double([], []).
+        double(A, B) :- double_up(A, A) = B.
 
 4.  Write a definition in Prolog for the predicate without0(L1, L2)
     which is true if L2 is a copy of L1 with all 0's removed. E.g.,
     without0([4, 0, 5, 6, 0], [4, 5, 6]) is true and without0([4, 0, 5],
-    L) binds L to [4, 5].
+    1.  binds L to [4, 5].
 
-		remove0([], A, []).
-		remove0([H | T], A, Result) :- H = A, remove0(T, A, Result).
-		remove0([H | T], A, [H | Result]) :- remove0(T, A, Result).
+        remove0([], A, []). remove0([H | T], A, Result) :- H = A,
+        remove0(T, A, Result). remove0([H | T], A, [H | Result]) :-
+        remove0(T, A, Result).
 
-		without0([], []).
-		without0(A, B) :- remove0(A,0,Result), Result = B.
+        without0([], []). without0(A, B) :- remove0(A,0,Result), Result
+        = B.
 
-October 19th, 2013 <small>Logic Programming</small>
+October 19th, 2013 <small>Logic Programming</small> {#october-19th-2013-logic-programming}
 ---------------------------------------------------
 
-
 Constants
+:   Represent entities, which are "things" and not functions or
+    relations.
 
-:   Represent entities, which are "things" and not functions or relations.
+:   In Prolog, start with lower case.
 
-:	In Prolog, start with lower case.
-	
-		albert, my_house
+        albert, my_house
 
 Variables
-
 :   Stands for constants
 
-	 In Prolog, start with upper case or `_`
+    In Prolog, start with upper case or `_`
 
-		X, House, _xyz, _321
+        X, House, _xyz, _321
 
 Functors
-
 :   -   Represent a function from entities to an entity.
-		-   "Function" = "Mapping" as in math, not a computation.
+        -   "Function" = "Mapping" as in math, not a computation.
 
-:	-   In Prolog, start with lower case like constants.
-		-   In fact, a constant is just a term with no arguments.
+:   -   In Prolog, start with lower case like constants.
+        -   In fact, a constant is just a term with no arguments.
 
 Terms
-
 :   Represent an entity.
 
-:	-   Constant, variable, or `<functor>[(<term> {, <term>})]`
-		-   `father(albert)` might represent the father of albert
-		-   `successor(victoria)` might represent the successor of victoria
-		-   `sum(1, 2)` might represent the sum of 1 and 2
+:   -   Constant, variable, or `<functor>[(<term> {, <term>})]`
+        -   `father(albert)` might represent the father of albert
+        -   `successor(victoria)` might represent the successor of
+            victoria
+        -   `sum(1, 2)` might represent the sum of 1 and 2
 
 Predicates
-
 :   Represent a function from entity (terms) to a boolean.
 
 :   In Prolog, start with lower case like functors.
 
 Atoms
-
 :   Logical statement without and, or, not, etc.
-	
-		<predicate>(<term> {, <term>})
-		older( father(Person), Person) 
-		square(X, 4)
+
+        <predicate>(<term> {, <term>})
+        older( father(Person), Person) 
+        square(X, 4)
 
 Horn clauses
+:   A horn clause is
 
-:   A horn clause is 
+        c h1 ^ h2 ^ h3 ^ ... ^ h_n
 
-		c h1 ^ h2 ^ h3 ^ ... ^ h_n
+    Antecedent `h`
+    :   Conjunction of zero or more conditions which are *atomic
+        formulas*.
 
-	Antecedent `h`
+        Alternatively, **subgoal** or **tail**.
 
-	:   Conjunction of zero or more conditions which are *atomic
-		formulas*.
+    Consequent `c`
+    :   The consequent is true just in case all the antecedents are
+        true.
 
-	    Alternatively, **subgoal** or **tail**.
-
-	Consequent `c`
-
-	:   The consequent is true just in case all the antecedents are
-		true.	
-
-	    Alternatively, called **goal** or **head**.
+        Alternatively, called **goal** or **head**.
 
 :   Written as,
 
-		c :- h1 , ... , hn.
+        c :- h1 , ... , hn.
 
 :   A horn clause with no tail is a **fact**.
 
-	A horn clause with tail is a **rule**.
+    A horn clause with tail is a **rule**.
 
 List
-
 :   A sequence of elements separated by commas.
 
-		[ first element | rest_of_list ]
+        [ first element | rest_of_list ]
 
-	list	|	head	|	tail
-	--------|-----------|---------
-	`[a, b, c]` | `a` | `[b, c]`
-	`[X,[cat],Y]` | `X` | `[[cat],Y]`
-	`[a,[b, c],d]`|`a`|`[[b,c],d]`
-	`[X | Y]` | `X` | `Y`
+    |list|head|tail|
+    |----|----|----|
+    |`[a, b, c]`|`a`|`[b, c]`|
+    |`[X,[cat],Y]`|`X`|`[[cat],Y]`|
+    |`[a,[b, c],d]`|`a`|`[[b,c],d]`|
+    |`[X | Y]`|`X`|`Y`|
 
 :   List functions:
-	
-	-   `append`
-	-   `last`
-	-   `reverse`
-	-   `reverse-conc`	
+
+    -   `append`
+    -   `last`
+    -   `reverse`
+    -   `reverse-conc`
 
 Member Function
+:   Goal-oriented semantics
+    :   can get value assignment for goal member(A,[B|C]) by showing
+        truth of subgoal member(A,C) and retaining value bindings of the
+        variables
 
-:	Goal-oriented semantics
+    Procedural semantics
+    :   think of head of clause as procedure entry, terms as parameters.
+        then body consists of calls within this procedure to do the
+        calculation. variables bindings are like "returned values".
 
-	:   can get value assignment for goal member(A,[B|C]) by 
-		showing truth of subgoal member(A,C) and retaining value 
-		bindings of the variables
+October 29th, 2013 <small>[Quick'n'Dirty Prolog Tutorial](http://www.cs.utexas.edu/~cannata/cs345/Class%20Notes/12%20prolog_intro.pdf)</small> {#october-29th-2013-quickndirty-prolog-tutorial}
+----------------------------------------------------------------------------------------------------------------------------------------------
 
-	Procedural semantics
-
-	:   think of head of clause as procedure entry, terms as 
-		parameters. then body consists of calls within this 
-		procedure to do the calculation. variables bindings 
-		are like "returned values".
-
-October 29th, 2013 <small>[Quick'n'Dirty Prolog Tutorial](http://www.cs.utexas.edu/~cannata/cs345/Class%20Notes/12%20prolog_intro.pdf)</small>
----
-
-### Prolog Program Components
+### Prolog Program Components {#prolog-program-components}
 
 -   A **fact** is a *single piece of information*.
-	-   To represent that the sky is blue, you would write:
+    -   To represent that the sky is blue, you would write:
 
-			blue(sky).
+            blue(sky).
 
-	-   Simiarly, `mammal(rabbit).` says that rabbits are mammals.
-	-   Facts can have multiple arguments,
+    -   Simiarly, `mammal(rabbit).` says that rabbits are mammals.
+    -   Facts can have multiple arguments,
 
-			plays(john, hockey).
+            plays(john, hockey).
 
-		Which represents that John plays hockey.
+        Which represents that John plays hockey.
 
->   Prolog constants are in lower case, variables are in
->   upper case, domains are not defined explicitly, and 
->   entries always end with a period.
+> Prolog constants are in lower case, variables are in upper case,
+> domains are not defined explicitly, and entries always end with a
+> period.
 
+-   **Rules** are used to generate new information from facts, other
+    rules, and themselves. They have the form:
 
--   **Rules** are used to generate new information from facts,
-	other rules, and themselves. They have the form:
+        head :- body.
 
-		head :- body.
+    Where the head and the body are clauses that typically use variables
+    instead of constants.
+    -   For instance, consider the rule:
 
-	Where the head and the body are clauses that typically
-	use variables instead of constants.
-	-   For instance, consider the rule:
-	
-			grandparent(X, Z) :- parent(X, Y), parent (Y, Z).
-	
-		The rule says that `X` is the grandparent of `Z` when `X`
-		is a perent of `Y` and `Y` is a parent of `Z`. 
-	-   Rules can be recursive. Consider:
+            grandparent(X, Z) :- parent(X, Y), parent (Y, Z).
 
-			ancestor(X,Y) :- parent(Z,Y), ancestor(X,Z).
+        The rule says that `X` is the grandparent of `Z` when `X` is a
+        perent of `Y` and `Y` is a parent of `Z`.
+    -   Rules can be recursive. Consider:
 
--  Now there are **queries**. When you want to ask Prolog a 
-	question, you supply a query.
-	-   Queries are like rules without bodies. Prolog will take
-		the head and find out if it is true or false. 
-	-   If the query has variables, Prolog will attempt to
-		find all possible values that can be used in place of
-		the variables to make the query true and tell you what
-		they are.
-	-   Consider the database:
+            ancestor(X,Y) :- parent(Z,Y), ancestor(X,Z).
 
-			parent(amy,bob).
-			parent(bob,cathy).
-			parent(bob,doug).
-			grandparent(X,Z) :- parent(X,Y) , parent(Y,Z).
-			ancestor(X,Y) :- parent(X,Y).
-			ancestor(X,Y) :- parent(Z,Y) , ancestor(X,Z).
-	
-		-   The query `parent(amy,bob)` will be true.
-		-   The query `ancestoru(bob, doug)` is also true.
-		-   The query `parent(bob,X)` will return all the facts
-			that would make the query true.
+-   Now there are **queries**. When you want to ask Prolog a question,
+    you supply a query.
+    -   Queries are like rules without bodies. Prolog will take the head
+        and find out if it is true or false.
+    -   If the query has variables, Prolog will attempt to find all
+        possible values that can be used in place of the variables to
+        make the query true and tell you what they are.
+    -   Consider the database:
 
-### Connecting Prolog to Predicate Logic
+            parent(amy,bob).
+            parent(bob,cathy).
+            parent(bob,doug).
+            grandparent(X,Z) :- parent(X,Y) , parent(Y,Z).
+            ancestor(X,Y) :- parent(X,Y).
+            ancestor(X,Y) :- parent(Z,Y) , ancestor(X,Z).
+
+        -   The query `parent(amy,bob)` will be true.
+        -   The query `ancestoru(bob, doug)` is also true.
+        -   The query `parent(bob,X)` will return all the facts that
+            would make the query true.
+
+### Connecting Prolog to Predicate Logic {#connecting-prolog-to-predicate-logic}
 
 -   Think of the `:-` symbol in Prolog as representing the word "if".
-	-   Interanlly, Prolog represents rules in a form known as **horn clauses**.
-		These are the disjuction of predicates in which at most one of the predicates
-		is not negated. Consider the grandparent clause:
+    -   Interanlly, Prolog represents rules in a form known as **horn
+        clauses**. These are the disjuction of predicates in which at
+        most one of the predicates is not negated. Consider the
+        grandparent clause:
 
-			grandparent(X,Z) :- parent(X,Y) , parent(Y,Z).
+            grandparent(X,Z) :- parent(X,Y) , parent(Y,Z).
 
-	-   Rewritten in logical notiation,
+    -   Rewritten in logical notiation,
 
-		$$\forall x \forall y \forall z ((P(x,y) \land P(y,z))\to G(x, z))$$
+        ∀ *x*∀ *y*∀ *z*((*P*(*x*, *y*) ∧ *P*(*y*, *z*)) → *G*(*x*, *z*))
 
-	-   We know that $p \to q \equiv \lnot p \lor q$, so the above is also:
+    -   We know that *p* → *q* ≡ ¬*p* ∨ *q*, so the above is also:
 
-		$$\forall x \forall y \forall z (\lnot (P(x,y)\land P(y, z)) \lor G(x,z))$$
+        ∀ *x*∀ *y*∀ *z*(¬(*P*(*x*, *y*) ∧ *P*(*y*, *z*)) ∨ *G*(*x*, *z*))
 
-	-   Apply de Morgans for a horn clause:
+    -   Apply de Morgans for a horn clause:
 
-		$$\forall x \forall y \forall z (\lnot P(x,y) \lnot P(y,z) \lor G(x, z))$$
+        ∀ *x*∀ *y*∀ *z*(¬*P*(*x*, *y*)¬*P*(*y*, *z*) ∨ *G*(*x*, *z*))
+
+

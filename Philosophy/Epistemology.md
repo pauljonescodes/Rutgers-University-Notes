@@ -1,7 +1,7 @@
-Epistemology <small>with Peter Klein</small>
+Epistemology <small>with Peter Klein</small> {#epistemology-with-peter-klein}
 ============================================
 
-September 4th, 2013 <small>The Gettier Problem</small>
+September 4th, 2013 <small>The Gettier Problem</small> {#september-4th-2013-the-gettier-problem}
 ------------------------------------------------------
 
 > What's Gettier's main point?
@@ -23,7 +23,7 @@ September 4th, 2013 <small>The Gettier Problem</small>
 -   Look at the simple justification closure principle.
     -   Counterexamples?
 
-September 9th, 2013 <small>Reading, 'Knowledge Needs No Justification', Hilary Kornblith</small>
+September 9th, 2013 <small>Reading, 'Knowledge Needs No Justification', Hilary Kornblith</small> {#september-9th-2013-reading-knowledge-needs-no-justification-hilary-kornblith}
 ------------------------------------------------------------------------------------------------
 
 > **The Standard View**, that knowledge is justified true belief plus
@@ -41,7 +41,7 @@ September 9th, 2013 <small>Reading, 'Knowledge Needs No Justification', Hilary K
     -   In "A Causal Theory of Knowing", Goldman argued that knowledge
         of p is nothing more than true belief caused by the fact that p.
 
-### 2. Dialectical conceptions of justification
+### 2. Dialectical conceptions of justification {#dialectical-conceptions-of-justification}
 
 -   Justification is seen as a matter of the ability to present
     arguments in support of one's beliefs.
@@ -64,7 +64,7 @@ September 9th, 2013 <small>Reading, 'Knowledge Needs No Justification', Hilary K
 > in a position to justify one's beliefs to oneself, does not present us
 > with a plausible necessary condition on knowledge.
 
-### 3. Objective conceptions of justification
+### 3. Objective conceptions of justification {#objective-conceptions-of-justification}
 
 -   While objective standards for justification do not suffer from the
     same trouble of being arbitrary that dialectical ones do, Kornblith
@@ -81,7 +81,7 @@ September 9th, 2013 <small>Reading, 'Knowledge Needs No Justification', Hilary K
     process and the *perceived* reliability of a process, and so this is
     no grounds for justicational objectivity.
 
-### 4. Conclusion
+### 4. Conclusion {#conclusion}
 
 -   Failure to meet the standards of justification, either dialectical
     or objective, is evidence that one does not know.
@@ -98,7 +98,7 @@ September 9th, 2013 <small>Reading, 'Knowledge Needs No Justification', Hilary K
         thus no longer believe it.
     -   It's no longer knowledge.
 
-September 9th, 2013 <small>1st Meeting on Kornblith</small>
+September 9th, 2013 <small>1st Meeting on Kornblith</small> {#september-9th-2013-1st-meeting-on-kornblith}
 -----------------------------------------------------------
 
 -   Descartes thinks that knowledge needs to be indubitable.
@@ -125,7 +125,7 @@ September 9th, 2013 <small>1st Meeting on Kornblith</small>
     knowledge, his formulation.
 -   Read carefully footnote 24.
 
-September 11th, 2013 <small>2nd Meeting on Kornblith</small>
+September 11th, 2013 <small>2nd Meeting on Kornblith</small> {#september-11th-2013-2nd-meeting-on-kornblith}
 ------------------------------------------------------------
 
 -   Starting with AJ Ayer and Alvin Goldman, what tied truth to belief
@@ -147,7 +147,7 @@ September 11th, 2013 <small>2nd Meeting on Kornblith</small>
         -   They think knowledge is a property that many other animals
             have.
         -   Knowledge is a representational state.
-        -   The gypsie fortune-teller knows because the representation\
+        -   The gypsie fortune-teller knows because the representation  
         -   Does that mean our epistemic evaluation of the
             fortune-teller and the horse-race-scientist with rational
             reasons has to be the same? Not better?
@@ -172,7 +172,7 @@ September 11th, 2013 <small>2nd Meeting on Kornblith</small>
         -   Cartesian
         -   Foley
 
-September 16th, 2013 <small>3rd Meeting on Kornblith</small>
+September 16th, 2013 <small>3rd Meeting on Kornblith</small> {#september-16th-2013-3rd-meeting-on-kornblith}
 ------------------------------------------------------------
 
 -   Argument:
@@ -245,13 +245,13 @@ September 16th, 2013 <small>3rd Meeting on Kornblith</small>
 
     3.  Therefore, *S* doesn't know that *h*.
 
-September 18th, 2013 <small>Reading, 'Useful False Beliefs', Peter Klein</small>
+September 18th, 2013 <small>Reading, 'Useful False Beliefs', Peter Klein</small> {#september-18th-2013-reading-useful-false-beliefs-peter-klein}
 --------------------------------------------------------------------------------
 
 -   Purpose: Examine the role of false beliefs in the production of
     knowledge.
 
-### Key notions
+### Key notions {#key-notions}
 
 1.  **Propositional** vs. **Doxastic** justification.
     -   Propositions are the contents of beliefs.
@@ -267,7 +267,7 @@ September 18th, 2013 <small>Reading, 'Useful False Beliefs', Peter Klein</small>
         available for *S* each of which is sufficient to propositionally
         justify *p*.
 
-        $$ E(S) \iff \exists e_1 e_2 ( J_S p ) \land e_1 \neq e_2 $$
+        *E*(*S*) ⇔ ∃ *e*<sub>1</sub>*e*<sub>2</sub>(*J*<sub>*S*</sub>*p*) ∧ *e*<sub>1</sub> ≠ *e*<sub>2</sub>
 
 3.  **Knowledge**
     -   *S*'s doxastically justified, true belief falls short of being
@@ -287,19 +287,19 @@ September 18th, 2013 <small>Reading, 'Useful False Beliefs', Peter Klein</small>
             defeater of the propositional justification of any
             proposition between *e* and *h*.
 
-### A review of Gettier
+### A review of Gettier {#a-review-of-gettier}
 
 -   Two Gettier principles:
 
-> III. Fallibilism: A person, *S*, can be doxastically justified in
+> 1.  Fallibilism: A person, *S*, can be doxastically justified in
 >     believing a proposition, *p*, and *p* can be false.
 >
-> IV. Closure: If a person, *S*, is doxastically justified in believing
+> 2.  Closure: If a person, *S*, is doxastically justified in believing
 >     a proposition, *p*, and *p* entails *q*, and *S* comes to believe
 >     that *q* on the basis of deducing it from *p*, then *S* is
 >     doxastically justified in believing that *p*.
 >
-### Examples and prelimnary discussion of useful falsehoods
+> ### Examples and prelimnary discussion of useful falsehoods {#examples-and-prelimnary-discussion-of-useful-falsehoods}
 
 1.  The Appointment Case
     -   Klein believes that his secretary told him on Friday that he has
@@ -338,7 +338,7 @@ September 18th, 2013 <small>Reading, 'Useful False Beliefs', Peter Klein</small>
         say the answer is yes.
     -   They know.
 
-### The proposed characterization of useful falsehoods
+### The proposed characterization of useful falsehoods {#the-proposed-characterization-of-useful-falsehoods}
 
 -   The belief that *uf* is a useful falsehood to *S* for acquiring
     knowledge that *h* by producing a doxastically justified belief that
@@ -377,10 +377,10 @@ September 18th, 2013 <small>Reading, 'Useful False Beliefs', Peter Klein</small>
 > justificatory path taken by the agent, there is no genuine defeater
 > along the path not taken.
 
-September 18th, 2013 <small>1st Meeting on Klein</small>
+September 18th, 2013 <small>1st Meeting on Klein</small> {#september-18th-2013-1st-meeting-on-klein}
 --------------------------------------------------------
 
-### Some background
+### Some background {#some-background}
 
 -   What most people think Gettier showed was that JTB was not
     *sufficient* for knowledge, not that they were not *necessary*.
@@ -402,11 +402,11 @@ September 18th, 2013 <small>1st Meeting on Klein</small>
         there, it will be "lucky break" that you had a JTB.
     -   This is the first evidentialist approach.
 
-### Evidentialism
+### Evidentialism {#evidentialism}
 
--   **Disjunctive normal form**: $\lbrace a, b, c, d ... x \rbrace$:
+-   **Disjunctive normal form**: {*a*, *b*, *c*, *d*. . . *x*}:
 
-    $$\exists x F(x) \equiv F(a) \lor F(b) \lor F(c) \lor ... $$
+    ∃ *x**F*(*x*) ≡ *F*(*a*) ∨ *F*(*b*) ∨ *F*(*c*) ∨ . . . 
 
 -   Michael Clark came up with a case where you have justified, true,
     belief that whose basis is good and you *still* do not have
@@ -435,7 +435,7 @@ September 18th, 2013 <small>1st Meeting on Klein</small>
     it's just that, it's *ad-hoc*.
     -   So evidentialism was supposed to not work (for now).
 
-### Defeasibility
+### Defeasibility {#defeasibility}
 
 -   Many people think that **defeasibility theory** is part of the
     evidentialist tradition.
@@ -444,7 +444,8 @@ September 18th, 2013 <small>1st Meeting on Klein</small>
 -   Say *E* is the set of all evidence, for and against, a proposition
     *p*.
 -   *e* is the set of evidence which justifies *S* in believing *p*.
-    Notation: $$e J_S p$$
+    Notation:
+    *e**J*<sub>*S*</sub>*p*
 
 -   A good definition takes the cases where almost it's almost
     universally thought someone has knowledge and validates it, where
@@ -452,7 +453,7 @@ September 18th, 2013 <small>1st Meeting on Klein</small>
     and where it's almost universally vague and clarifies it and why
     it's vague.
 
-### Reliablism
+### Reliablism {#reliablism}
 
 -   There can be misleading evidence, so defeasibility eliminates too
     much.
@@ -492,7 +493,7 @@ September 18th, 2013 <small>1st Meeting on Klein</small>
     -   The barn is appropriately caused, it's justified true belief,
         but the intuition is that it is not knowledge.
 
-September 23rd, 2013 <small>2nd Meeting on Klein</small>
+September 23rd, 2013 <small>2nd Meeting on Klein</small> {#september-23rd-2013-2nd-meeting-on-klein}
 --------------------------------------------------------
 
 -   The recipe for Gettier cases is having a false, justified that
@@ -510,7 +511,7 @@ September 23rd, 2013 <small>2nd Meeting on Klein</small>
     -   You're doxasticly entitled to a belief if the propositional
         evidence justifies you.
 
-September 25th, 2013 <small>3rd Meeting on Klein</small>
+September 25th, 2013 <small>3rd Meeting on Klein</small> {#september-25th-2013-3rd-meeting-on-klein}
 --------------------------------------------------------
 
 -   The initial response to the Gettier literature was the **no false
@@ -545,10 +546,10 @@ September 25th, 2013 <small>3rd Meeting on Klein</small>
     -   For defeasibility, there is the distinction between genuine and
         misleading defeaters *a la* Grabit and Grabit's brother.
 
-September 30th, 2013 <small>Reading, 'Immediate Justification and Process Reliablism', Alvin Goldman</small>
+September 30th, 2013 <small>Reading, 'Immediate Justification and Process Reliablism', Alvin Goldman</small> {#september-30th-2013-reading-immediate-justification-and-process-reliablism-alvin-goldman}
 ------------------------------------------------------------------------------------------------------------
 
-### Introduction
+### Introduction {#introduction}
 
 -   Is there a species of prima facie justification that is immediate,
     direct, basic, or foundational?
@@ -584,7 +585,7 @@ September 30th, 2013 <small>Reading, 'Immediate Justification and Process Reliab
     2.  Immediate justifiers are non-contentful.
     3.  They can be either.
 
-### Feldman's proposal <small>A proper response to experience</small>
+### Feldman's proposal <small>A proper response to experience</small> {#feldmans-proposal-a-proper-response-to-experience}
 
 > Being spontaneously formed makes a belief immediately justified.
 
@@ -595,7 +596,7 @@ September 30th, 2013 <small>Reading, 'Immediate Justification and Process Reliab
 > response to experience and is not defeated by other evidence the
 > believer has.
 
-September 30th, 2013 <small>1st Meeting on Goldman</small>
+September 30th, 2013 <small>1st Meeting on Goldman</small> {#september-30th-2013-1st-meeting-on-goldman}
 ----------------------------------------------------------
 
 -   Suppose there is some belief Bp.
@@ -626,7 +627,7 @@ September 30th, 2013 <small>1st Meeting on Goldman</small>
     -   Bad form, circular reasoning
     -   Better form
 
-October 9th, 2013 <small>1st Meeting on Conee & Feldman</small>
+October 9th, 2013 <small>1st Meeting on Conee & Feldman</small> {#october-9th-2013-1st-meeting-on-conee-feldman}
 ---------------------------------------------------------------
 
 -   Suppose you're driving along, and you see what you take to be what
@@ -687,7 +688,7 @@ October 9th, 2013 <small>1st Meeting on Conee & Feldman</small>
     -   There are people that believe they have pains that do not,
         psychological problems, etc.
 
-October 14th, 2013 <small>2nd Meeting on Conee & Feldman</small>
+October 14th, 2013 <small>2nd Meeting on Conee & Feldman</small> {#october-14th-2013-2nd-meeting-on-conee-feldman}
 ----------------------------------------------------------------
 
 -   Foundationalists think that there is a causal chain from basic
@@ -703,7 +704,7 @@ October 14th, 2013 <small>2nd Meeting on Conee & Feldman</small>
     individual Senators.
     -   If a legislation *didn't* pass, it could
 
-October 16th, 2013 <small>'Experiential Justification' by Anthony Brueckner</small>
+October 16th, 2013 <small>'Experiential Justification' by Anthony Brueckner</small> {#october-16th-2013-experiential-justification-by-anthony-brueckner}
 -----------------------------------------------------------------------------------
 
 -   The topic is *justification and perceptual beliefs*.
@@ -711,7 +712,7 @@ October 16th, 2013 <small>'Experiential Justification' by Anthony Brueckner</sma
     perceptual beliefs *are justified* in virtue of their relation to
     *propositional-content-bearing* experiences.
 
-### Perception Beliefs and Theories of Justification
+### Perception Beliefs and Theories of Justification {#perception-beliefs-and-theories-of-justification}
 
 -   At first pass, perceptual beliefs are beliefs that are caused by
     perceptual experiences. Though this is too narrow and too wide
@@ -735,7 +736,7 @@ October 16th, 2013 <small>'Experiential Justification' by Anthony Brueckner</sma
         -   *Pure* coherentism is all justified beliefs being justified
             in relation to other beliefs.
 
-### An application of the Foregoing Categorization
+### An application of the Foregoing Categorization {#an-application-of-the-foregoing-categorization}
 
 -   Williamson thinks that "E = K", that one's *knowledge* is *equal* to
     what one *evidentially believes*.
@@ -750,7 +751,7 @@ October 16th, 2013 <small>'Experiential Justification' by Anthony Brueckner</sma
 -   Coherentism *is not* explored in *Knowledge and its Limits*, so
     Williamson's view is undetermined.
 
-### Experiential Justification
+### Experiential Justification {#experiential-justification}
 
 -   Returning to foundationalism, how do perceptual *experiences*
     justify perceptual *beliefs*?
@@ -769,7 +770,7 @@ October 16th, 2013 <small>'Experiential Justification' by Anthony Brueckner</sma
 -   If an experience has a propositional content, as does a belief, then
     the experience is to that degree belief-like.
 
-### Pryor
+### Pryor {#pryor}
 
 > If you're to have justification for believing p on the basis of
 > certain experiences or grounds E, then for every q which is "bad"
@@ -778,10 +779,10 @@ October 16th, 2013 <small>'Experiential Justification' by Anthony Brueckner</sma
 > presuppose any E-based justification you may have for believing p. (p.
 > 531)
 
-October 16th, 2013 <small>3rd Meeting on Connee/Feldman</small>
+October 16th, 2013 <small>3rd Meeting on Connee/Feldman</small> {#october-16th-2013-3rd-meeting-on-conneefeldman}
 ---------------------------------------------------------------
 
-### A Note on Method From the Syllabus
+### A Note on Method From the Syllabus {#a-note-on-method-from-the-syllabus}
 
 > What is the **thesis** (sometimes a compound one) in the essay? What
 > are the **main steps** in arguing for the thesis? What are some
@@ -789,19 +790,19 @@ October 16th, 2013 <small>3rd Meeting on Connee/Feldman</small>
 > represent and adequately respond* to objections? What is your view
 > about the *soundness of the author’s arguments*?
 
-### Fallacy of Misplaced Necessity
+### Fallacy of Misplaced Necessity {#fallacy-of-misplaced-necessity}
 
-> a)  Bachelors are necessarily unmarried.
-> b)  John is a bachelor. Therefore, c) John cannot marry.
+> 1.  Bachelors are necessarily unmarried.
+> 2.  John is a bachelor. Therefore, c) John cannot marry.
 
     Necessary(If it's been raining two hours, the ground is wet)
     !=
     If it's been raining two hours, necessary(the ground is wet)
 
-October 21st, 2013 <small>Is Infinitism the Solution to the Regress Problem?<small>
+October 21st, 2013 <small>Is Infinitism the Solution to the Regress Problem?<small> {#october-21st-2013-is-infinitism-the-solution-to-the-regress-problem}
 -----------------------------------------------------------------------------------
 
-### On Connee/Feldman
+### On Connee/Feldman {#on-conneefeldman}
 
 -   Most moral principle are defeasible.
     -   "Don't lie." *Well, the Nazis are the door ...*
@@ -812,12 +813,12 @@ October 21st, 2013 <small>Is Infinitism the Solution to the Regress Problem?<sma
 
 -   The way to solve the Gettier problem for deafisbility theorist is:
 
-    $$ K = JTB + E = eJ_sp = (e \land d)\lnot J_s p $$
+    *K* = *J**T**B* + *E* = *e**J*<sub>*s*</sub>*p* = (*e* ∧ *d*)¬*J*<sub>*s*</sub>*p*
 
 -   If knowledge is sometimes vague, that doesn't mean knowledge is
     always vague.
 
-### The Regress Problem
+### The Regress Problem {#the-regress-problem}
 
 > The phrase "I suspend judgement" we adopt in place of I am unable to
 > say which of the objects presented I should believe or which I should
@@ -838,258 +839,251 @@ October 21st, 2013 <small>Is Infinitism the Solution to the Regress Problem?<sma
     because the conclusions would be "I don't know.", whereas they
     concluded, "I don't know if I know."
 
-October 28rd, 2013 <small>Ginet's Response to Klein</small>
+October 28rd, 2013 <small>Ginet's Response to Klein</small> {#october-28rd-2013-ginets-response-to-klein}
 -----------------------------------------------------------
 
 -   "Klein has confused being able to answer questions about
-	justifiedness with the state of being justifiedness."
-	-   Fred doesn't have to be able to do this in order to
-		be justified. It's not about the justification, it's
-		about how justification arises.
-	-   The *fact* about justification is that it arises in
-		a foundational way.
+    justifiedness with the state of being justifiedness."
+    -   Fred doesn't have to be able to do this in order to be
+        justified. It's not about the justification, it's about how
+        justification arises.
+    -   The *fact* about justification is that it arises in a
+        foundational way.
 
--   On *a priori* beliefs, on pg. 142, Ginet will say, 
-	>   The fact that he understands it *is* his justification 
-	>   for believing it, because that fact entails his believing
-	>   it.
-	-   Merely *understanding* that "5 + 3 = 9" is not sufficient
-		for have a JTB. Does merely understanding do it?
-	-   My understanding is that "5 + 4 = 9" and this implies that
-		"5 + 3 = 9" is false.
-		-   So what's the difference between understanding and 
-			understanding it's true.
-		-   "I understand what it means for *x* to be true."
+-   On *a priori* beliefs, on pg. 142, Ginet will say, \> The fact that
+    he understands it *is* his justification \> for believing it,
+    because that fact entails his believing \> it.
+    -   Merely *understanding* that "5 + 3 = 9" is not sufficient for
+        have a JTB. Does merely understanding do it?
+    -   My understanding is that "5 + 4 = 9" and this implies that "5 +
+        3 = 9" is false.
+        -   So what's the difference between understanding and
+            understanding it's true.
+        -   "I understand what it means for *x* to be true."
 
--   Many people think that suppose I want to argue that arguing
-	for something is a good way to show that it's true.
-	-   "Arguing is a good way to show something is true. Give
-		me reasons and inferences and deductions."
-	-   Suppose someone argues that, "Reason to the best 
-		explanation is the best explanation for how to get 
-		the truth or something."
-		-   This is not typical circular reasoning. Circular
-			reasoning is when the conclusion of an argument is
-			contained in the premises from which the conclusion
-			was argued.
-		-   Begging the question has to do with the form of the
-			argument.
+-   Many people think that suppose I want to argue that arguing for
+    something is a good way to show that it's true.
+    -   "Arguing is a good way to show something is true. Give me
+        reasons and inferences and deductions."
+    -   Suppose someone argues that, "Reason to the best explanation is
+        the best explanation for how to get the truth or something."
+        -   This is not typical circular reasoning. Circular reasoning
+            is when the conclusion of an argument is contained in the
+            premises from which the conclusion was argued.
+        -   Begging the question has to do with the form of the
+            argument.
 
-	-   "What's the best way to argue for something?" Suppose Klein
-		responds, "$W_1$", well what's the best way for arguing for
-		that? "$W_2$", well why aren't you giving me your *best*
-		way?
-		-   If my practice is going to be consistent with my
-			belief, I have to use my *best way*, which isn't
-			way 2, it's way 1. If you ask for the best way and
-			I use it, you cannot be mad, because if I were to
-			use another way, you would say why didn't I use
-			my way?
-		-   I'm not assuming the proposition I'm trying to prove,
-			the proposition I'm trying to prove is about the method
-			I use to prove it.
+    -   "What's the best way to argue for something?" Suppose Klein
+        responds, "*W*<sub>1</sub>", well what's the best way for
+        arguing for that? "*W*<sub>2</sub>", well why aren't you giving
+        me your *best* way?
+        -   If my practice is going to be consistent with my belief, I
+            have to use my *best way*, which isn't way 2, it's way 1. If
+            you ask for the best way and I use it, you cannot be mad,
+            because if I were to use another way, you would say why
+            didn't I use my way?
+        -   I'm not assuming the proposition I'm trying to prove, the
+            proposition I'm trying to prove is about the method I use to
+            prove it.
 
-October 30th, 2013 <small>'Skeptical and Perceptual Knowledge' by Ernest Sosa</small>
------------------------------------------------------------------------------
+October 30th, 2013 <small>'Skeptical and Perceptual Knowledge' by Ernest Sosa</small> {#october-30th-2013-skeptical-and-perceptual-knowledge-by-ernest-sosa}
+-------------------------------------------------------------------------------------
 
 -   Dreams pose a deeper problem than that a BIV or EDD
-	-   In what follows Sosa takes up this paradox.
-	-   First, a heterodox conception of dreams.
-	-   Second, a resolution based on a conception of knowlege
-		as apt belief.
+    -   In what follows Sosa takes up this paradox.
+    -   First, a heterodox conception of dreams.
+    -   Second, a resolution based on a conception of knowlege as apt
+        belief.
 
-### Varieties of skepticism
+### Varieties of skepticism {#varieties-of-skepticism}
 
 -   There are many forms.
-	-   The **Pyrrhonian** suspends judgment using tropes that
-		counter any reasons offered in favor of belief.
-	-   The **Academic** are more assertive, by claiming that
-		we know nothing
-		-   In general or some large department of common sense or science.
+    -   The **Pyrrhonian** suspends judgment using tropes that counter
+        any reasons offered in favor of belief.
+    -   The **Academic** are more assertive, by claiming that we know
+        nothing
+        -   In general or some large department of common sense or
+            science.
 
-	-   Any attempt to refute this claims will *beg the question*.
-		-   Using *implicit claims of the realm in general*.
+    -   Any attempt to refute this claims will *beg the question*.
+        -   Using *implicit claims of the realm in general*.
 
 -   *Irrefutable does not mean true.*
-	-   If refuting such a skeptic requires adducing some premise,
-		to do which is implictly claim knowledge of its truth,
-		so we're *bound to beg the question*.
+    -   If refuting such a skeptic requires adducing some premise, to do
+        which is implictly claim knowledge of its truth, so we're *bound
+        to beg the question*.
 
 -   Such varieties of skepticism are less problematic than the variety
-	of main interest to Sosa.
-	-   At the heart of common sense, our skeptic claims to find a
-		commitment that precludes knowledge
-		-   Either in general or in some main department.
-	
-	-   According to this commitment, a belief can only amount to knowledge
-		if it is **sensitive**.
-		-   Which means *had its contents been false, then it would
-			not have been believed by the believer*.
+    of main interest to Sosa.
+    -   At the heart of common sense, our skeptic claims to find a
+        commitment that precludes knowledge
+        -   Either in general or in some main department.
 
-### Skepticism, sensitivity, and safety
+    -   According to this commitment, a belief can only amount to
+        knowledge if it is **sensitive**.
+        -   Which means *had its contents been false, then it would not
+            have been believed by the believer*.
+
+### Skepticism, sensitivity, and safety {#skepticism-sensitivity-and-safety}
 
 -   If a sensitivity requirement is indeed at the core of common sense,
-	it puts the skeptic in a good position.
-	-   Belief that one is not radicallt misled turns out to be
-		insensitive.
-	-   Radical scenarios are constructed to secure this result.
+    it puts the skeptic in a good position.
+    -   Belief that one is not radicallt misled turns out to be
+        insensitive.
+    -   Radical scenarios are constructed to secure this result.
 
 Basis-relative sensitivity
+:   A belief constitutes knowledge if and only if had it been false,
+    then the believer would not have held it on the same basis on which
+    he actually holds it.
 
-:   A belief constitutes knowledge if and only if 
-	had it been false, then the believer would not have
-	held it on the same basis on which he actually holds it.
-
--   This is not helpful unless we externalize perceptual bases for belief.
-	-   Had its content been false, then trivially, it ould not have been
-		a *factive* basis, since any such basis has to be veridical.
+-   This is not helpful unless we externalize perceptual bases for
+    belief.
+    -   Had its content been false, then trivially, it ould not have
+        been a *factive* basis, since any such basis has to be
+        veridical.
 
 -   However, consider a normal perceiver and a counterpart BIV.
-	-   Deprived of factive perception, a BIV must bases their justified
-		beliefs on something more internal than that.
+    -   Deprived of factive perception, a BIV must bases their justified
+        beliefs on something more internal than that.
 
--   The appeal to perceptual states falls short in resolving the skeptical
-	paradox because when one seens a white surface illuminated with red light,
-	one is justified in taking the surface to be red, provided one has
-	no reason to suspect the quality of the light.
+-   The appeal to perceptual states falls short in resolving the
+    skeptical paradox because when one seens a white surface illuminated
+    with red light, one is justified in taking the surface to be red,
+    provided one has no reason to suspect the quality of the light.
 
 Basis-relative safety
+:   A belief cannot consitute knowledge if the believer might too easily
+    have so believed on the same basis while his belief was false.
 
-:   A belief cannot consitute knowledge if the believer might too
-	easily have so believed on the same basis while his belief was
-	false.
-
-:   In order to know one must believe on a certain basis, possibly
-	the null basis, where so believing on such a basis has a strong
-	enough tendancy to be right.
+:   In order to know one must believe on a certain basis, possibly the
+    null basis, where so believing on such a basis has a strong enough
+    tendancy to be right.
 
 -   Safety does not serve the skeptic as does sensitivity.
-	-   Belief that one is not radically deceived is insnsitive,
-		but a belief can be safe despite being insensitive.
+    -   Belief that one is not radically deceived is insnsitive, but a
+        belief can be safe despite being insensitive.
 
-### Why the dream scenario is special
+### Why the dream scenario is special {#why-the-dream-scenario-is-special}
 
 -   Our line of reasoning is effect against the usual run of radical
-	skeptical scenarious, such as BIV, EDD, and the Matrix.
-	-   *Only the dream scenario stands apart.*
-	-   Dreams are so common that the possibility one dreams is not
-		outlandish.
-		-   Therefore, I cannoy defend the safety of my belief that
-			I am awake by adducing how remote is the possibility that
-			I go wrong in so believing.
+    skeptical scenarious, such as BIV, EDD, and the Matrix.
+    -   *Only the dream scenario stands apart.*
+    -   Dreams are so common that the possibility one dreams is not
+        outlandish.
+        -   Therefore, I cannoy defend the safety of my belief that I am
+            awake by adducing how remote is the possibility that I go
+            wrong in so believing.
 
 -   There are those who defend common sense against the sensitivity-
-	weilding skeptic by rejecting closure.
-	-   Even if we do not know ourselves to be free of radical scenarios,
-		we can still know of hands and fires.
-		-   This has very implausible consequences.
+    weilding skeptic by rejecting closure.
+    -   Even if we do not know ourselves to be free of radical
+        scenarios, we can still know of hands and fires.
+        -   This has very implausible consequences.
 
-	-   And this strategy could not be used against the safety-weilding
-		skeptic.
-		-	He can use the dream scenario for a direct attack on ordinary
-			perceptual beliefs.
+    -   And this strategy could not be used against the safety-weilding
+        skeptic.
+        -   He can use the dream scenario for a direct attack on
+            ordinary perceptual beliefs.
 
-	-   Take a belief that one sees a hand, or a fire.
-		-   Too easily might one form such a belief on its usual
-			experiential basis, while only dreaming.
-		-   So it is not a safe belief.
-		-   This does not depend on closure.
+    -   Take a belief that one sees a hand, or a fire.
+        -   Too easily might one form such a belief on its usual
+            experiential basis, while only dreaming.
+        -   So it is not a safe belief.
+        -   This does not depend on closure.
 
--   This is why the dream scenario has a distinctive important by comparision
-	with the familiar radical scenarios.
-	-   It is *not outlandish*
-	-   It threatens our perceptual beliefs *directly*.
-		-   "Not by way of closure."
+-   This is why the dream scenario has a distinctive important by
+    comparision with the familiar radical scenarios.
+    -   It is *not outlandish*
+    -   It threatens our perceptual beliefs *directly*.
+        -   "Not by way of closure."
 
 -   That does require an orthodox conception of dreams.
-	-   According to which, beliefs and experiences hosted not only
-		in the dream but also in actuality, while we dream.
-		-   *Only thus* would our ordinary perceptual beliefs be
-			threatened by the possibility that we might same on the
-			same experiential basis in a realistic dream.
+    -   According to which, beliefs and experiences hosted not only in
+        the dream but also in actuality, while we dream.
+        -   *Only thus* would our ordinary perceptual beliefs be
+            threatened by the possibility that we might same on the same
+            experiential basis in a realistic dream.
 
->   Is that really how we should conceive of our dreams?
+> Is that really how we should conceive of our dreams?
 
-### Dreams: The orthodox conception
+### Dreams: The orthodox conception {#dreams-the-orthodox-conception}
 
--   Are dreams made up of conscious states just like those of
-	waking life?
-	-   Orthodoxy: yes.
-	-   Orthodoxy: Dream states and waking states are thought to
-		be instrinsically alike though different in cause and effects.
+-   Are dreams made up of conscious states just like those of waking
+    life?
+    -   Orthodoxy: yes.
+    -   Orthodoxy: Dream states and waking states are thought to be
+        instrinsically alike though different in cause and effects.
 
 -   This is highly flawed.
 
->   Dreams-based skepticism stands out because the dream possibility
->   is too close for comfort.
+> Dreams-based skepticism stands out because the dream possibility is
+> too close for comfort.
 
 -   "Subjectively indistinguishable"
-	-   Too easily we might have been dreaming.
+    -   Too easily we might have been dreaming.
 
 -   Fortuntely, the orthodoxly is not beyond question.
 
-### What are dreams made of?
+### What are dreams made of? {#what-are-dreams-made-of}
 
 -   Do the characters in our dreams have beliefs and intentions?
-	-   They do *in general*, but do I myself also have them as
-		protagonist in my dream?
-		-   I do believe and intend things in my dream.
-		-   In my dream I, ...
-			1.  Am concious;
-			2.  Assent to this or that.
-			3.  I judge
-			4.  I choose.
+    -   They do *in general*, but do I myself also have them as
+        protagonist in my dream?
+        -   I do believe and intend things in my dream.
+        -   In my dream I, ...
+            1.  Am concious;
+            2.  Assent to this or that.
+            3.  I judge
+            4.  I choose.
 
-		-   But does this *really* happen?
+        -   But does this *really* happen?
 
 -   When something happens in my dream, reality tends to not follow
-	suit.
-	-   When I am chased by a lion, it poses no threat to my skin.
-	-   What is in question is the inference from (In my dream I believe
-		such and such) to (In actuality I so believe such and such).
+    suit.
+    -   When I am chased by a lion, it poses no threat to my skin.
+    -   What is in question is the inference from (In my dream I believe
+        such and such) to (In actuality I so believe such and such).
 
-November 4th, 2013 <small>2nd Meeting on Sosa</small>
+November 4th, 2013 <small>2nd Meeting on Sosa</small> {#november-4th-2013-2nd-meeting-on-sosa}
 -----------------------------------------------------
 
 -   Subjective conditional is not closed under the contrapositive.
 -   Argument:
-	1.  $K_s h \to P(K_s \lnot BIV)$
-	2.  $\lnot P(R_s BIV)$
-	3.  $\therefore \lnot K_s h$
+    1.  *K*<sub>*s*</sub>*h* → *P*(*K*<sub>*s*</sub>¬*B**I**V*)
+    2.  ¬*P*(*R*<sub>*s*</sub>*B**I**V*)
+    3.  ∴ ¬*K*<sub>*s*</sub>*h*
 
-### A Counter Argument to Modus Ponens
+### A Counter Argument to Modus Ponens {#a-counter-argument-to-modus-ponens}
 
 -   There are two Republics running, Reagen with 55%, Anderson with 10%
 -   One Democratic candidate: Carter at 10%
 
-### The Way Nozick Deals with Skepticism
+### The Way Nozick Deals with Skepticism {#the-way-nozick-deals-with-skepticism}
 
 -   Take the claim that I have a hand.
 -   Take the claim that I am just a BIV.
 
-$$h \to \lnot BIV$$
+*h* → ¬*B**I**V*
 
 -   If you didn't have a hand, you wouldn't believe you have a hand.
 
-October 30th, 2013 <small>1st Meeting on 'Skeptical and Perceptual Knowledge'</small>
+October 30th, 2013 <small>1st Meeting on 'Skeptical and Perceptual Knowledge'</small> {#october-30th-2013-1st-meeting-on-skeptical-and-perceptual-knowledge}
 -------------------------------------------------------------------------------------
 
--   An automatic door opener *can register* and is an accurate gauge of the world
-	when the thing in question is of a certain size, at a certain speed, and
-	from a certain distance.
-	-   Alvin Goldman would flesh this out with "process reliablism."
-		-   Imagine a process in its whole history, if it's only
-			been used one and it got it or didn't, is that enough?
-		-   A gauge is reliable if it *tracks the facts*, the
-			"tracking account."
+-   An automatic door opener *can register* and is an accurate gauge of
+    the world when the thing in question is of a certain size, at a
+    certain speed, and from a certain distance.
+    -   Alvin Goldman would flesh this out with "process reliablism."
+        -   Imagine a process in its whole history, if it's only been
+            used one and it got it or didn't, is that enough?
+        -   A gauge is reliable if it *tracks the facts*, the "tracking
+            account."
 
 -   Nozick thinks to know:
-	1.  *p* must be true.
-	2.  *S* must believe *p*.
-	3.  $\lnot p \rightarrowtail \lnot Bp$
-	4.  $p \rightarrowtail Bp$
+    1.  *p* must be true.
+    2.  *S* must believe *p*.
+    3.  \$\\lnot p \\rightarrowtail \\lnot Bp\$
+    4.  \$p \\rightarrowtail Bp\$
 
-
-
-*[BIV]: Brain in a vat
-*[EDD]: Evil demon deceived
+*[BIV]: Brain in a vat *[EDD]: Evil demon deceived

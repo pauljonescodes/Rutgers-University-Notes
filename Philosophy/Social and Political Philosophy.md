@@ -1,10 +1,10 @@
-Topics in Social and Political Philosophy <small>with Professor Mark Colby</small>
+Topics in Social and Political Philosophy <small>with Professor Mark Colby</small> {#topics-in-social-and-political-philosophy-with-professor-mark-colby}
 ==================================================================================
 
-October 19th, 2012
+October 19th, 2012 {#october-19th-2012}
 ------------------
 
-### Chapter 4 of *Utilitarianism*
+### Chapter 4 of *Utilitarianism* {#chapter-4-of-utilitarianism}
 
 1.  Objectivity of judgement about "good."
 2.  Teleological - end, goal of action "good." Deontological, right
@@ -24,7 +24,7 @@ October 19th, 2012
 -   "Desire" is the only evidence that's possible of the presence of
     good.
 
-### Naturalism and Empiricism
+### Naturalism and Empiricism {#naturalism-and-empiricism}
 
 -   Mill has been called and is both.
 -   The account of logic in empiricist terms, for Mill, logical truth
@@ -39,7 +39,7 @@ October 19th, 2012
 -   Mill needs some way to experience the non-natural property of
     goodness or rightness through one of the senses.
 
-October 16th, 2012
+October 16th, 2012 {#october-16th-2012}
 ------------------
 
 -   Hedonism
@@ -101,7 +101,7 @@ October 16th, 2012
         1.  Accepts the sum (aggregate) of individual utilities. 2. But
             denies impartiality
 
-November 9th, 2012
+November 9th, 2012 {#november-9th-2012}
 ------------------
 
 -   On Liberty and Utilitarianism are largely interconnected and a
@@ -238,7 +238,7 @@ November 9th, 2012
     forms of function, which children fail to meet those stand;adds, the
     insane do as well.
 
-Chapter 5 of *Utilitarianism* - Of the Connection between Justice and Utility [(Adapted from)](http://www.personal.kent.edu/~jwattles/mill.htm)
+Chapter 5 of *Utilitarianism* - Of the Connection between Justice and Utility [(Adapted from)](http://www.personal.kent.edu/~jwattles/mill.htm) {#chapter-5-of-utilitarianism---of-the-connection-between-justice-and-utility-adapted-from}
 -----------------------------------------------------------------------------------------------------------------------------------------------
 
 Can utilitarianism provide sturdy principles of rights and justice?
@@ -260,17 +260,17 @@ happiness, is ultimately best understood in utilitarian terms.
             promise; to be [unjustifiably] partial.
 
     -   The concept of impartiality is associated with equality (except
-        when inequalities are deemed expedient.\
+        when inequalities are deemed expedient.  
     -   It is not easy to see what the preceding "applications" of
-        justice have in common.\
+        justice have in common.  
     -   Etymologies indicate that the core notion of justice is
-        conformity to law.\
+        conformity to law.  
     -   Even in society regarding matters when we would not propose
         legislation, the notion of [quasi-legal] enforcement is in the
-        background.\
+        background.  
     -   To call something wrong (as opposed to merely disapproving of
         it) implies that it should be punished by law, opinion, or
-        conscience.\
+        conscience.  
     -   "Perfect" duties (unlike imperfect duties, e.g., of beneficence)
         give rise to correlative rights. An assignable person is
         wronged.
@@ -282,10 +282,10 @@ happiness, is ultimately best understood in utilitarian terms.
     -   It has two essential ingredients: the desire to punish the
         wrongdoer (based on natural or instinctive responses of
         self-defense and sympathy) plus the belief that someone has been
-        harmed.\
+        harmed.  
     -   Humans (unlike animals) are capable of extended sympathy and of
         understanding of how their own interests and those of the
-        community are linked.\
+        community are linked.  
     -   Moral resentment is attuned to the general good (Kant, e.g., is
         to be interpreted in this way). In sum, the idea of justice
         presupposes
@@ -297,7 +297,7 @@ happiness, is ultimately best understood in utilitarian terms.
     -   The importance of rights
         -   A right implies a valid claim on society to protect [someone
             or some group] or to provide some good by law or education
-            of opinion.\
+            of opinion.  
         -   Rights have utilitarian validation; the intensity of feeling
             is due to the importance of the security at stake.
 
@@ -305,18 +305,18 @@ happiness, is ultimately best understood in utilitarian terms.
         -   One alternative theory is that justice is independent of
             utility and discerned by simple introspection--which,
             however, is notoriously ambiguous and variable and is just
-            as much in dispute as utility is.\
+            as much in dispute as utility is.  
         -   Various conflicting theories of punishment have a certain
             plausibility considered in isolation (and perhaps for
-            certain types of case).\
+            certain types of case).  
         -   Some theories of justice place emphasis on the freedom of
             the will of the agent held responsible; others emphasize the
             social contract (broken by unjust conduct); others regard
-            punishment as a means to deter unlawful conduct.\
+            punishment as a means to deter unlawful conduct.  
         -   Views differ on how to determine the extent of
             punishment--an eye for an eye? Should the gravity of the
             offense determine it? Should remuneration be distributed on
-            the basis of effort or contribution?\
+            the basis of effort or contribution?  
         -   Utility alone can decide. Questions of taxation may also be
             treated from various standpoints--and utilitarianism alone
             can resolve the disputes.
@@ -324,25 +324,25 @@ happiness, is ultimately best understood in utilitarian terms.
 4.  Conclusion
     -   Justice is of supreme importance, since it pertains to the most
         absolute of obligations: the rules against hurting and
-        interfering with the liberty of others.\
+        interfering with the liberty of others.  
     -   To abandon such rules is to regress to the [misery of the
         anarchy of the] state of nature. Thus [perfect] duties are much
         more crucial than [imperfect] duties.
     -   The intensity of the sentiment of justice is explained by the
         intensities of feeling understandably associated with the
-        components.\
+        components.  
     -   Most (specific) maxims of justice are instrumental to the
-        previously noted principles.\
+        previously noted principles.  
     -   Equality--except where it is inexpedient--each person's having
-        an equal claim to happiness--is the heart of utilitarianism.\
+        an equal claim to happiness--is the heart of utilitarianism.  
     -   And social progress has unmasked the disutility of inequalities
         and will continue to do so regarding the false "aristocracies of
-        color, race, and sex".\
+        color, race, and sex".  
     -   "Justice" covers the most useful social rules (which do admit of
         exceptions). Hence the proof in favor of utilitarianism is
         complete.
 
-Mill’s Considerations on Representative Government (1860) by Professor Colby
+Mill’s Considerations on Representative Government (1860) by Professor Colby {#mills-considerations-on-representative-government-1860-by-professor-colby}
 ----------------------------------------------------------------------------
 
 The following are some basic principles espoused in the work and which
@@ -434,10 +434,10 @@ are in the background of On Liberty. The labels for principles 1 through
     the will of the governed, determined by the mentally superior with
     the rational consent of the governed.
 
-November 16th, 2012
+November 16th, 2012 {#november-16th-2012}
 -------------------
 
-### Chapter 1 of *On Liberty*
+### Chapter 1 of *On Liberty* {#chapter-1-of-on-liberty}
 
 -   There is an ethnological foundation of Mill's theories
     -   Cognitive
@@ -532,7 +532,7 @@ November 16th, 2012
     it's not about holding any set of beliefs, but it's about how one
     holds them, are they up to challenge, or scrutiny.
 
-### Chapter 2 of *On Liberty*
+### Chapter 2 of *On Liberty* {#chapter-2-of-on-liberty}
 
 -   Here Mill attempts to defend the open society, the describe
     principles about the conduct of the search for truth in a civilized
@@ -671,14 +671,14 @@ November 16th, 2012
     mind is like a muscle, it needs to be exercised, and this is done
     through the examinations of reasons for and against opinions
 
-Mills On Liberty
+Mills On Liberty {#mills-on-liberty}
 ----------------
 
-### Chapter I: Intro.
+### Chapter I: Intro. {#chapter-i-intro.}
 
 -   Need of protection against the magistrate and the non-legal tyranny
     of the majority. NOTE: the threat of mass-society to individual
-    liberty\
+    liberty  
 -   Thesis: The sole permissible end for individual or collective
     interference with individual liberty of action is the avoidance of
     harm to others (other regarding actions). In  matters concerning
@@ -690,7 +690,7 @@ Mills On Liberty
 -   Method of argument: utilitarian argument (that is, PU) applied to
     the permanent interests of man as a progressive being.
 
-### Chapter II: Of the liberty of thought and discussion
+### Chapter II: Of the liberty of thought and discussion {#chapter-ii-of-the-liberty-of-thought-and-discussion}
 
 > First, if any opinion is compelled to silence, that opinion may, for
 > aught we can certainly know, be true. To deny this is to assume our
@@ -741,7 +741,7 @@ Mills On Liberty
     truth will necessarily survive persecution and that society need
     only teach the grounds for truth, not the objections to it.
 
-### Chapter III: On individuality, as one of the elements of wellbeing
+### Chapter III: On individuality, as one of the elements of wellbeing {#chapter-iii-on-individuality-as-one-of-the-elements-of-wellbeing}
 
 > It really is of importance, not only what men do, but also what manner
 > of men they are that do it. Among the works of man, which human life
@@ -786,7 +786,7 @@ Mills On Liberty
             oppressive custom: in this case, even mere eccentricity is a
             good.
 
-### Chapter IV: of the limits to the authority of society over the individual.
+### Chapter IV: of the limits to the authority of society over the individual. {#chapter-iv-of-the-limits-to-the-authority-of-society-over-the-individual.}
 
 -   Question: What are the limits to the sovereignty of individual over
     himself?
@@ -805,11 +805,11 @@ Mills On Liberty
             parity between the feeling of a person for his own opinion
             and that of one offended  by it. If we dont agree with ones
             behavior, we can avoid his company (without parading the
-            avoidance), warn others, not offer him optional positions.\
+            avoidance), warn others, not offer him optional positions.  
              Examples: temperance laws; Sabbatical precepts; persecution
             of Mormons because of polygamy.
 
-### Chapter V: Applications
+### Chapter V: Applications {#chapter-v-applications}
 
 1.  Cases in which liberty is unjustly denied because the actions
     involved are essentially self-regarding:
@@ -853,10 +853,10 @@ Mills On Liberty
         consistent with efficiency and greatest possible centralization
         of information and diffusion from the center.
 
-Research for Second Paper
+Research for Second Paper {#research-for-second-paper}
 -------------------------
 
-### Mill on the Moral Right to Free Expression of Thought by J.P. Day
+### Mill on the Moral Right to Free Expression of Thought by J.P. Day {#mill-on-the-moral-right-to-free-expression-of-thought-by-j.p.-day}
 
 1.  That there ought to be an absolute freedom and sentiment on all
     subjections.
@@ -867,10 +867,10 @@ Research for Second Paper
         2.  There are exceptions to the claim (as even Mill admits).
 
     -   Mill has three reasons for this:
-        2.  That there ought to be an absolute duty to
+        1.  That there ought to be an absolute duty to
             **self-development**, which entails a corresponding absolute
             moral right and duty to self-expression.
-        3.  The third reason for Mill's strange view of the moral right
+        2.  The third reason for Mill's strange view of the moral right
             to free expression is his belief in the absolute value of
             liberty, which of course includes liberty of expression.
             Mill asserts that "all restraint, *qua restraint*, is an
@@ -880,14 +880,14 @@ Research for Second Paper
 > journalism in the famous essay of the great champion of Liberty. But
 > that sad conclusion is inescapable.
 
-### More about Mill on Free Expression by J.P. Day
+### More about Mill on Free Expression by J.P. Day {#more-about-mill-on-free-expression-by-j.p.-day}
 
 > Mill there maintains that there ought to be “absolute freedom of
 > opinion and sentiment on all subjects,” and that there ought also to
 > be a corresponding absolute “liberty of expressing and publishing
 > opinions,”
 
--   (I) Mill's principle of individual liberty: "that the only purpose
+-   1.  Mill's principle of individual liberty: "that the only purpose
         for which power can be rightfully exercised over any member of a
         civilized community, against his will, is to prevent harm to
         others."
@@ -895,7 +895,7 @@ Research for Second Paper
     -   a "secondary principle" of morality that is grounded in the
         first principle of morality
 
--   (II) Mill's principle of the liberty of expression: "a speaker or a
+-   1.  Mill's principle of the liberty of expression: "a speaker or a
         writer has an absolute moral right to absolute freedom of
         expression."
 
@@ -906,7 +906,7 @@ Research for Second Paper
     2.  saying “corn-dealers are starvers of the poor” to an excited mob
         assembled before the house of a corn-dealer
 
-### Mill, Indecency, and the Liberty Principle by Jonathan Wolff
+### Mill, Indecency, and the Liberty Principle by Jonathan Wolff {#mill-indecency-and-the-liberty-principle-by-jonathan-wolff}
 
 1.  The interpretation of the liberty principle
     -   If the way we interpret Mill's liberty principle naively and

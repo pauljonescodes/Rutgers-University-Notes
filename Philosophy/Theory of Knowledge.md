@@ -1,10 +1,10 @@
-Theory of Knowledge <small>with Kurt Sylvan</small>
+Theory of Knowledge <small>with Kurt Sylvan</small> {#theory-of-knowledge-with-kurt-sylvan}
 ===================================================
 
-Syllabus
+Syllabus {#syllabus}
 --------
 
-### Course Description
+### Course Description {#course-description}
 
 Epistemology is a major branch of philosophy dedicated to questions
 about the nature and structure of knowledge, justified belief, evidence,
@@ -25,7 +25,7 @@ good inference, etc. Examples of central questions include:
 We will read and argue about some classic answers to these questions
 (and others) in the class.
 
-### Readings
+### Readings {#readings}
 
 Many readings will come from Epistemology: An Anthology (eds. Sosa, Kim,
 Fantl and McGrath). I also recommend (but don't require) reading from
@@ -123,13 +123,13 @@ readings):
     -   Required. Pryor, J. "The Skeptic and the Dogmatist." on Sakai
         Recommended. Pryor, J. "What's Wrong with Moore's Argument?"
 
-### Assignments, Grading and Policies
+### Assignments, Grading and Policies {#assignments-grading-and-policies}
 
 Your grade will be based on:
 
 1.  *Discussion Board Comments/Questions*. You are responsible for
     posting
-    (I) some questions about the reading or (II) some critical comments
+    1.  some questions about the reading or (II) some critical comments
         or objections to the arguments in the reading on the Discussion
         Board on Sakai. These can be anywhere from a few sentences to
         several pages what matters is that they help you learn the
@@ -152,94 +152,94 @@ Your grade will be based on:
     grade. Do not plagiarize on your papers! This is severely penalized
     by the University and easy to detect.
 
-### Contact Information and Office Hours
+### Contact Information and Office Hours {#contact-information-and-office-hours}
 
 You can contact me via ksylvan@philosophy.rutgers.edu. I will hold
 office hours in Seminary 1, Room 012 on Tuesdays and Thursdays from
 4:00-5:30. Feel free to arrange an appointment with me if you can't make
 the office hours and have any questions or want to discuss your work.
 
-May 28th, 2013 <small>Reading</small>
+May 28th, 2013 <small>Reading</small> {#may-28th-2013-reading}
 -------------------------------------
 
-### "Is Justified True Belief Knowledge?" <small>Edmund Gettier</small>
+### "Is Justified True Belief Knowledge?" <small>Edmund Gettier</small> {#is-justified-true-belief-knowledge-edmund-gettier}
 
 -   What are the necessary and sufficient conditions for knowledge?
     -   Those attempts are of a form similar to:
 
-    > (a) $S$ knows that $P$ iff
+    > 1.  *S* knows that *P* iff
     >
-    > 1.  $P$ is true.
-    > 2.  $S$ believes that $P$, and
-    > 3.  $S$ is justified in believing that $P$.
+    > 1.  *P* is true.
+    > 2.  *S* believes that *P*, and
+    > 3.  *S* is justified in believing that *P*.
 
 -   It is possible in being justified in believing something that is *in
     fact* false.
-    -   For any proposition $P$ that $S$ is justified in believing,
-        where $P$ entails $Q$ and $P$ accepts $Q$, then $S$ is justified
-        in beliving $Q$.
+    -   For any proposition *P* that *S* is justified in believing,
+        where *P* entails *Q* and *P* accepts *Q*, then *S* is justified
+        in beliving *Q*.
 
-#### Case I
+#### Case I {#case-i}
 
-> (d) Jones is the man who will get the job, and Jones has ten conns in
+> 1.  Jones is the man who will get the job, and Jones has ten conns in
 >     his pocket.
 >
-> (e) The man who will get the job has ten coins in his pocket.
+> 2.  The man who will get the job has ten coins in his pocket.
 >
 > -   Smith has strong evidence for (d).
-> -   (d) entails (e).
+> -   1.  entails (e).
 >
--   Smith accepts (e) on the grounds of (d), which he is justified in
-    doing.
--   But unknown to Smith, he, not Jones, will get the job.
--   He also happens to have 10 coins in his pocket.
-    -   So (e) is true.
-    -   Smith believes (e).
-    -   Smith is justified in believing (e).
+> -   Smith accepts (e) on the grounds of (d), which he is justified in
+>     doing.
+> -   But unknown to Smith, he, not Jones, will get the job.
+> -   He also happens to have 10 coins in his pocket.
+>     -   So (e) is true.
+>     -   Smith believes (e).
+>     -   Smith is justified in believing (e).
+>
+#### Case II {#case-ii}
 
-#### Case II
-
-> (f) Jones owns a Ford.
+> 1.  Jones owns a Ford.
 >
-> (g) Either Jones owns a Ford, or Brown is in Boston.
+> 2.  Either Jones owns a Ford, or Brown is in Boston.
 >
-> (h) Either Jones owns a Ford, or Brown is in Barcelona.
+> 3.  Either Jones owns a Ford, or Brown is in Barcelona.
 >
-> (i) Either Jones owns a Ford, or Brown is in Brest-Litovsk.
+> 4.  Either Jones owns a Ford, or Brown is in Brest-Litovsk.
 >
 > -   Smith has strong evidence to believe that (f).
 > -   Smith accepts (g), (h), and (i) *on the basis of* (f).
 >     -   Smith is completely justified in doing so.
 >
--   Imagine that Jones does *not* own a Ford, but is driving a rented
-    car.
-    -   And by coincidence, Brown happens to be in Barcelona, making (h)
-        true.
-
+> -   Imagine that Jones does *not* own a Ford, but is driving a rented
+>     car.
+>     -   And by coincidence, Brown happens to be in Barcelona, making
+>         (h) true.
+>
 -   Therefore,
-    1.  (h) is true.
+    1.  1.  is true.
 
     2.  Smith does believe that (h) is true.
     3.  Smith is justified in believing that (h) is true.
 
-#### Conclusion
+#### Conclusion {#conclusion}
 
--   (a) does not state *sufficient* conditions for knowledge.
+-   1.  does not state *sufficient* conditions for knowledge.
 
-### "The Analysis of Knowledge" <small>Ichikawa, J. & Steup, M.</small>
+### "The Analysis of Knowledge" <small>Ichikawa, J. & Steup, M.</small> {#the-analysis-of-knowledge-ichikawa-j.-steup-m.}
 
-### [The Analysis of Knowledge](http://plato.stanford.edu/entries/knowledge-analysis/)
+### [The Analysis of Knowledge](http://plato.stanford.edu/entries/knowledge-analysis/) {#the-analysis-of-knowledge}
 
-May 28th, 2013 <small>Handout</small>
+May 28th, 2013 <small>Handout</small> {#may-28th-2013-handout}
 -------------------------------------
 
-### The Search for the Tether and the JTB Theory
+### The Search for the Tether and the JTB Theory {#the-search-for-the-tether-and-the-jtb-theory}
 
-#### Plato's Tether
+#### Plato's Tether {#platos-tether}
 
 Our question for the next several meetings:
 
-> (Q) What distinguishes knowledge from a lucky guess (or a mere true
+> 1.  What distinguishes knowledge from a lucky guess (or a mere true
 >     opinion)?
 
 ​(Q) goes back to the *Meno*, where Plato puts a metaphorical answer in
@@ -254,7 +254,7 @@ Socrates' mouth:
 >
 > MENO: Yes, by Zeus, Socrates, it does seem to go something like that.
 
-#### JTB
+#### JTB {#jtb}
 
 But what is this tether? Socrates suggests that it consists in a *chain
 of reasons why*. A natural way to make this more precise is to think
@@ -266,22 +266,22 @@ let's just use the intuitive idea, and consider this answer to (Q):
 > **(JTB)** Justification is what distinguishes knowledge from a lucky
 > guess.
 
-In other words: knowledge $=$ justified true belief.
+In other words: knowledge  =  justified true belief.
 
 After this suggestion hit the philosophical newsstand, little changed
 for the ensuing 2300+ years. Even in the first half of the 20th century,
 JTB was accepted in some form or another. One can find versions, e.g.,
 in Chisholm and Ayer:
 
-> **(Ayer's view)** $S$ knows that $P$ iff (i) $S$ is sure that $P$,
-> (ii) $S$ has the right to be sure that $P$, and (iii) $P$ is true.
+> **(Ayer's view)** *S* knows that *P* iff (i) *S* is sure that *P*,
+> (ii) *S* has the right to be sure that *P*, and (iii) *P* is true.
 
 <!-- -->
 
-> **(Chisholm's view)** $S$ knows that $P$ iff (i) $S$ accepts $P$, (ii)
-> $S$ has adequate evidence for $P$, and (iii) $P$ is true.
+> **(Chisholm's view)** *S* knows that *P* iff (i) *S* accepts *P*, (ii)
+> *S* has adequate evidence for *P*, and (iii) *P* is true.
 
-#### Elements of JTB
+#### Elements of JTB {#elements-of-jtb}
 
 Before moving on, it's worth saying a bit about the elements of the JTB
 theory, since it isn't wholly uncontroversial that each is really
@@ -297,7 +297,7 @@ necessary for knowledge:
 -   **Exam**: Albert is quizzed on English history. One question is:
     'When did Queen Elizabeth die?' Albert doesn't think he knows, but
     answers the question correctly, by writing that Elizabeth died in
-    1603. Moreover, he gives correct answers to many other questions to
+    1.  Moreover, he gives correct answers to many other questions to
         which he didn't think he knew the answer.
 
     -   There's some temptation to say that Albert knows that Elizabeth
@@ -341,7 +341,7 @@ necessary for knowledge:
         memory and intuition, etc., can yield justified beliefs that
         don't require independent evidence.
 
-### Gettier: JTB ≠ K
+### Gettier: JTB ≠ K {#gettier-jtb-k}
 
 Gettier's little paper presents two simple counterexamples to JTB. As
 we'll be seeing, there are heaps of similar cases that pop up to
@@ -349,11 +349,11 @@ undermine revisions of JTB (i.e., 'JTB+' views).
 
 > **(Case I)** Smith has strong evidence for the following proposition:
 >
-> (P) Jones will get the job and has ten coins in his pocket.
+> 1.  Jones will get the job and has ten coins in his pocket.
 >
 > This entails:
 >
-> (Q) Someone who has ten coins in his pocket will get the job. By
+> 1.  Someone who has ten coins in his pocket will get the job. By
 >     coincidence, Smith rather than Jones will get the job. Smith also
 >     has ten coins in his pocket, though he doesn't realize it. So, (Q)
 >     is true and Smith is justified in believing (Q).
@@ -362,11 +362,11 @@ But Smith does not know (Q).
 
 > **(Case II)** Smith has strong evidence for the following proposition:
 >
-> (R) Jones owns a Ford.
+> 1.  Jones owns a Ford.
 >
 > This entails
 >
-> (S) Jones owns a Ford or Brown is in Boston.
+> 1.  Jones owns a Ford or Brown is in Boston.
 >
 > Smith deductively infers (S) from (R), and so justifiedly believes
 > (S). By chance, Brown is in Boston, and (S) is true only for this
@@ -394,7 +394,7 @@ structure. Consider:
 > false: what Smith sees is a sheep dog. But (2) is true anyway: there's
 > a real sheep just behind the sheep dog which Smith can't see.
 
-### A Cheap Response: No False Grounds
+### A Cheap Response: No False Grounds {#a-cheap-response-no-false-grounds}
 
 Gettier gives us the recipe he used for generating these particular
 cases in the paper. Cases I and II are simply cases where (i) one is
@@ -445,7 +445,7 @@ which are false. Intuitively, Smith can still know that someone in his
 office owns a Ford even though *some* of these reasons are false. But
 JTB+No False Grounds predicts otherwise. So JTB+No False Grounds fails.
 
-### Epistemic Luck
+### Epistemic Luck {#epistemic-luck}
 
 If one wants to solve the Gettier problem while holding onto a broadly
 JTB+ theory, the strategy will be to (i) find an element that all
@@ -510,10 +510,10 @@ gotten a grip on a strategy that will guide us. In future meetings,
 we'll see some proposals that might help us to understand the nature of
 epistemic luck.
 
-May 28th, 2013 <small>Lecture</small>
+May 28th, 2013 <small>Lecture</small> {#may-28th-2013-lecture}
 -------------------------------------
 
-### Gettier
+### Gettier {#gettier}
 
 -   Some people try to make a strong connection between knowledge and
     justification.
@@ -527,21 +527,21 @@ May 28th, 2013 <small>Lecture</small>
 -   The article consists of 2 counterexamples about the belief that
     knowledge contains justified true beliefs (JTB).
 
-### Epistemic Luck
+### Epistemic Luck {#epistemic-luck-1}
 
 -   There are some scientific theories that assume things that just
     cannot be true.
     -   Like Newton's theory of gravitation, not as good as relativity.
     -   You can come to know true things from false premises.
 
-May 30th, 2013 <small>Reading</small>
+May 30th, 2013 <small>Reading</small> {#may-30th-2013-reading}
 -------------------------------------
 
-### Selections from *Thought* in *E:AA* <small>by Gilbert Harman</small>
+### Selections from *Thought* in *E:AA* <small>by Gilbert Harman</small> {#selections-from-thought-in-eaa-by-gilbert-harman}
 
-#### Knowledge and Probability
+#### Knowledge and Probability {#knowledge-and-probability}
 
-##### The lottery paradox
+##### The lottery paradox {#the-lottery-paradox}
 
 -   Some people think we never believe anything for which we are not
     certain.
@@ -553,12 +553,12 @@ May 30th, 2013 <small>Reading</small>
         know others.
 
 -   We might count as belief anything whose "subjective probability"
-    exceeds $.99$.
+    exceeds . 99.
     -   This would also conflict with ordinary views.
     -   We do not suppose that a man inconsistently believes of every
         participant in a fair lottery that the participant will lose.
         -   Even if we suppose that the man assigns a subjective
-            probability greater than $.99$ to each's person's losing.
+            probability greater than . 99 to each's person's losing.
 
     -   If ordinary views are to be preserved, belief must be
         distinguish from high degree of belief.
@@ -568,16 +568,16 @@ May 30th, 2013 <small>Reading</small>
     -   It tells us what we can accept given other beliefs and degrees
         of belief.
     -   A purely probability rule of acceptance says that we may accept
-        something if and only if its probability is greater than $.99$.
+        something if and only if its probability is greater than . 99.
     -   Kyburg points out that such rule leads to the "lottery paradox"
         because it authorizes an inconsistent set of beliefs.
 
 -   It is paradoxical to suppose that we could rationally believe of
     every participant in a lottery that he will lose.
 
-##### Gettier examples and probabilistic rules of acceptance
+##### Gettier examples and probabilistic rules of acceptance {#gettier-examples-and-probabilistic-rules-of-acceptance}
 
-> (P) Reasoning that essentially involves false conclusions,
+> 1.  Reasoning that essentially involves false conclusions,
 >     intermediate or final, cannot give one knowledge.
 
 -   Probabilistic rules of acceptance do not permit an explanation of
@@ -604,9 +604,9 @@ May 30th, 2013 <small>Reading</small>
     the natural account of Gettier examples by means of principle (P).
     -   The solution is not to modify (P) but modify inference.
 
-#### Knowledge and Explanation
+#### Knowledge and Explanation {#knowledge-and-explanation}
 
-##### A causal theory
+##### A causal theory {#a-causal-theory}
 
 -   Goldman suggests we know only if there is the *proper sort* of
     causal connection between our belief and what we know.
@@ -625,7 +625,7 @@ May 30th, 2013 <small>Reading</small>
         Nogot's past ownership is responsible for Nogot's present
         ownership.
 
-##### Inference to the best explanatory statement
+##### Inference to the best explanatory statement {#inference-to-the-best-explanatory-statement}
 
 -   It gets better is we replace "cause" with "because."
 -   This account better explains ordinary usage.
@@ -644,7 +644,7 @@ May 30th, 2013 <small>Reading</small>
     -   Because doctors are normally right, it will explain why the
         doctor is right in this case.
 
-##### Further examples
+##### Further examples {#further-examples}
 
 -   There is a box of Sure-Fire matches.
     -   I infer that the next match will late on the premise that all
@@ -654,7 +654,7 @@ May 30th, 2013 <small>Reading</small>
     -   I strike the match and a sudden blast of Q-radiation to 600
         degrees, and the match lights. Did I know it would light? *No.*
 
-##### Statistical inference
+##### Statistical inference {#statistical-inference}
 
 -   You walk into a casino and see the roulette wheel stop at red fifty
     times in a row.
@@ -668,7 +668,7 @@ May 30th, 2013 <small>Reading</small>
         -   It does *not* say why fifty red occurred this time rather
             than another time.
 
-##### Conclusion
+##### Conclusion {#conclusion-1}
 
 -   We are led to construe induction as inference to the best
     explanation.
@@ -678,20 +678,20 @@ May 30th, 2013 <small>Reading</small>
 -   We are led here because Gettier cases need to be accounted for.
 -   The present model replaces Goldman's "causal" with "explanatory."
 
-#### Evidence One Does Not Possess
+#### Evidence One Does Not Possess {#evidence-one-does-not-possess}
 
-##### Evidence against what one knows
+##### Evidence against what one knows {#evidence-against-what-one-knows}
 
 > One knows if there is no evidence such that if one knew about the
 > evidence one would be justified in believing one's conclusions.
 
-### "A Causal Theory of Knowing" <small>by Alvin Goldman</small>
+### "A Causal Theory of Knowing" <small>by Alvin Goldman</small> {#a-causal-theory-of-knowing-by-alvin-goldman}
 
 -   Begins with Gettier.
 
-    > (q) Jones owns a Ford.
+    > 1.  Jones owns a Ford.
     >
-    > (r) Either Jones owns a Ford or Brown is in Barcelona. ("Or-in")
+    > 2.  Either Jones owns a Ford or Brown is in Barcelona. ("Or-in")
     >
 -   One hypothesis for solving this is to say that Smith cannot be said
     to know this because it's false, and so he can't justify something
@@ -730,8 +730,8 @@ May 30th, 2013 <small>Reading</small>
 -   Now consider memory.
     -   A causal connection between earlier belief of (p) and later
         belief of (p) is certainly a necessary ingredient in memory.
-        -   This is the same as his last argument, maintained over $t_0$
-            to $t_1$.
+        -   This is the same as his last argument, maintained over
+            *t*<sub>0</sub> to *t*<sub>1</sub>.
 
 -   He can connect perception and memory, but more interestingly,
     Goldman moves to *inference*.
@@ -746,7 +746,7 @@ May 30th, 2013 <small>Reading</small>
                                       \
                             B_s(r) ---> B_s(p)
 
--   (S) can come to know (p) when he correctly reconstrucs the causal
+-   1.  can come to know (p) when he correctly reconstrucs the causal
         chain leading from (p) to the evidence for (p) that (S)
         perceives.
 
@@ -763,7 +763,7 @@ May 30th, 2013 <small>Reading</small>
 
 -   Meta-analysis of knowledge is *not* causal.
 
-May 30th, 2013 <small>Lecture</small>
+May 30th, 2013 <small>Lecture</small> {#may-30th-2013-lecture}
 -------------------------------------
 
 -   We looked at the original Gettier in the last class and saw how JTB
@@ -771,7 +771,7 @@ May 30th, 2013 <small>Lecture</small>
     -   Perhaps no false assumptions?
     -   Today we'll see a more sophisticated version of this.
 
-### Defeasibility Theories and Objective Defeaters
+### Defeasibility Theories and Objective Defeaters {#defeasibility-theories-and-objective-defeaters}
 
 -   Before Harman, there is another tradition that Harman criticizes.
     -   The theory was the "defeasibility theory."
@@ -802,7 +802,7 @@ May 30th, 2013 <small>Lecture</small>
 -   Objective defeaters are the evidence you do not have in a Gettier
     case.
 
-### Harman's Theory
+### Harman's Theory {#harmans-theory}
 
 -   He provides a more sophisticated version, the reasons why it's more
     sophisticated:
@@ -818,7 +818,7 @@ May 30th, 2013 <small>Lecture</small>
             that conditions are normal, that appearance reliably
             correspondends to reality.
 
-### Goldman's Theory
+### Goldman's Theory {#goldmans-theory}
 
 -   According to Goldman, what's going on in Gettier cases is causal.
     -   The holding a belief and the facts are not casually related, and
@@ -832,17 +832,17 @@ May 30th, 2013 <small>Lecture</small>
 -   There are "deviant causal chains" where things are wholly related to
     the facts in an intuitively non-perceptual, false-memory, etc, way.
 
-June 4th, 2013 <small>Reading</small>
+June 4th, 2013 <small>Reading</small> {#june-4th-2013-reading}
 -------------------------------------
 
-### "Knowledge and Skepticism" <small>Robert Nozick</small>
+### "Knowledge and Skepticism" <small>Robert Nozick</small> {#knowledge-and-skepticism-robert-nozick}
 
-#### Knowledge
+#### Knowledge {#knowledge}
 
 -   Our task is to formulate further conditions to go alongside:
 
-> 1.  $p$ is true.
-> 2.  $S$ believes that $p$.
+> 1.  *p* is true.
+> 2.  *S* believes that *p*.
 
 -   We want:
     -   Each condition to be necessary.
@@ -852,17 +852,17 @@ June 4th, 2013 <small>Reading</small>
     and ethical knowledge.
 -   Consider the third condition (two formulations):
 
-> 3.  If $p$ weren't true, $S$ woudn't believe that $p$.
-> 4.  $\lnot p \to \lnot B(S, p)$
+> 1.  If *p* weren't true, *S* woudn't believe that *p*.
+> 2.  ¬*p* → ¬*B*(*S*, *p*)
 
-### "How to Defeat Opposition to Moore" <small>by Ernest Sosa</small>
+### "How to Defeat Opposition to Moore" <small>by Ernest Sosa</small> {#how-to-defeat-opposition-to-moore-by-ernest-sosa}
 
-### "Knowledge and Subjunctive Conditionals" <small>by J. Comesaña</small>
+### "Knowledge and Subjunctive Conditionals" <small>by J. Comesaña</small> {#knowledge-and-subjunctive-conditionals-by-j.-comesana}
 
-June 4th, 2013 <small>Handout</small>
+June 4th, 2013 <small>Handout</small> {#june-4th-2013-handout}
 -------------------------------------
 
-June 4th, 2013 <small>Lecture</small>
+June 4th, 2013 <small>Lecture</small> {#june-4th-2013-lecture}
 -------------------------------------
 
 -   Now we're going to talk about theories that hold that it's just an
@@ -873,39 +873,40 @@ June 4th, 2013 <small>Lecture</small>
     -   People want to give an account of the accident.
     -   Non-accidentality
 
-### The Tether in Modal Terms
+### The Tether in Modal Terms {#the-tether-in-modal-terms}
 
 -   When philosophers talk about modality, they are talking about
     statements like "could", "would" "must."
 -   The counterfactual or subjenctive conditional statement is of the
     form:
 
-> If it were true that $A$, it would be true that $C$.
+> If it were true that *A*, it would be true that *C*.
 
 -   Philosophers have used "nearby possible worlds" as a concept
     recently.
 
-> In similar possible circumstances when $A$, then $C$ is also true.
+> In similar possible circumstances when *A*, then *C* is also true.
 
 <!-- -->
 
-> **(Sensitivity)** $S$ knows that $P$ only if if $P$ were false, $S$
-> would not believe that $P$.
+> **(Sensitivity)** *S* knows that *P* only if if *P* were false, *S*
+> would not believe that *P*.
 >
-> **(Safety)** $S$ knows that $P$ only if $S$ would believe $P$ only if
-> $P$ were true.
+> **(Safety)** *S* knows that *P* only if *S* would believe *P* only if
+> *P* were true.
 
 -   These are distinct logical conditions
 -   Order in questions:
-    -   First order questions are like "does $P$ know that $S$?" $$Kp$$
+    -   First order questions are like "does *P* know that *S*?"
+        *K**p*
 
-    -   Second order questions are "does $P$ know that $P$ knows $S$?"
-        $$KKp$$
+    -   Second order questions are "does *P* know that *P* knows *S*?"
+        *K**K**p*
 
 -   A good analogy is like thermometers: A thermometer that says 70
     degrees but is broken is not right when it is actually 70 degrees.
 
-### Nozick and Sensitivity
+### Nozick and Sensitivity {#nozick-and-sensitivity}
 
 -   Nozick notices that there is a counterexample which he calls the
     (Grandma) case.
@@ -931,20 +932,20 @@ June 4th, 2013 <small>Lecture</small>
 >
 > 1.  You know that: if you have hands, then you're not a brain in a
 >     vat.
-> 2.  (Closure) If you know that $P$ and know that if $P$, then $Q$,
->     then you know that $Q$.
+> 2.  (Closure) If you know that *P* and know that if *P*, then *Q*,
+>     then you know that *Q*.
 > 3.  But you don't know that you're not a brain in a vat.
 > 4.  So, *you don't know that you're not a brain in a vat.*
 
 -   Vices
     1.  (Closure) is right, making you wrong.
 
-June 6th, 2013 <small>Reading</small>
+June 6th, 2013 <small>Reading</small> {#june-6th-2013-reading}
 -------------------------------------
 
-### *Apt Belief and Reflective Knowledge* <small>Chapters 2 and 5, by Ernie Sosa</small>
+### *Apt Belief and Reflective Knowledge* <small>Chapters 2 and 5, by Ernie Sosa</small> {#apt-belief-and-reflective-knowledge-chapters-2-and-5-by-ernie-sosa}
 
-#### Lecture 2 <small>A Virtue Empistemology</small>
+#### Lecture 2 <small>A Virtue Empistemology</small> {#lecture-2-a-virtue-empistemology}
 
 -   When an archer takes aim and shoots, that shot is assessable in
     three respects:
@@ -953,14 +954,14 @@ June 6th, 2013 <small>Reading</small>
     3.  Whether it is apt, whether it is because he is accurate and
         adroit.
 
-### "Virtue Epistemology" <small>by Greco, J. and Turri, J.</small>
+### "Virtue Epistemology" <small>by Greco, J. and Turri, J.</small> {#virtue-epistemology-by-greco-j.-and-turri-j.}
 
-### Analysis of Knowledge <small>[Stanford Encyclopedia of Philosophy](http://plato.stanford.edu/entries/knowledge-analysis/)</small>
+### Analysis of Knowledge <small>[Stanford Encyclopedia of Philosophy](http://plato.stanford.edu/entries/knowledge-analysis/)</small> {#analysis-of-knowledge-stanford-encyclopedia-of-philosophy}
 
-June 6th, 2013 <small>Lecture</small>
+June 6th, 2013 <small>Lecture</small> {#june-6th-2013-lecture}
 -------------------------------------
 
-### Nozick and sensitivity
+### Nozick and sensitivity {#nozick-and-sensitivity-1}
 
 -   Nozick came up with the sensitivity argument.
 -   He noticed that it entailed it that closure is false.
@@ -974,7 +975,7 @@ June 6th, 2013 <small>Lecture</small>
     -   If your beliefs were false and you'd still hold them, that'd be
         a problem.
 
-### Safety
+### Safety {#safety}
 
 -   We can imagine easily a world where a common scenario is found in a
     dream, making you wrong, a wrong belief.
@@ -991,7 +992,7 @@ June 6th, 2013 <small>Lecture</small>
         time slice, while they later went on to reform their beliefs, in
         the moment they didn't know.
 
-#### An aside <small>Helpful Wishful Thinking</small>
+#### An aside <small>Helpful Wishful Thinking</small> {#an-aside-helpful-wishful-thinking}
 
 -   There are some cases where a worry similar to circular reasoning
     arising.
@@ -1000,12 +1001,12 @@ June 6th, 2013 <small>Lecture</small>
     -   If you pursue safety for this, you get to avoid the helpful
         wishful thinking.
 
-### Truth fairy
+### Truth fairy {#truth-fairy}
 
 -   Devastating for necessary truth.
 -   There is something behind the circular reasoning thought.
 
-### Virtue epistemology
+### Virtue epistemology {#virtue-epistemology}
 
 -   The more general pattern of evaluation is the AAA pattern.
 -   On an analogy about archers,
@@ -1018,7 +1019,7 @@ June 6th, 2013 <small>Lecture</small>
     understand Gettier cases as a specific instance of a failure of
     aptness.
 
-### First order and second order seperation motivation
+### First order and second order seperation motivation {#first-order-and-second-order-seperation-motivation}
 
 -   We don't need a criterion of truth to act.
     -   Does this mean you can act on belief?
@@ -1026,7 +1027,7 @@ June 6th, 2013 <small>Lecture</small>
 -   From an abstract point of view, it is better to act on knowledge
     rather than abstract belief.
 
-### Sosa and Analysis of knowledge
+### Sosa and Analysis of knowledge {#sosa-and-analysis-of-knowledge}
 
 -   Sheep in a field
     -   The accurary of the belief is not determined by your aptness.
@@ -1036,33 +1037,34 @@ June 6th, 2013 <small>Lecture</small>
     -   There's only one which doesn't reliably light.
     -   But when you strike it, a peice of Q-radiation lights it.
 
-### Animal knowledge and reflective knowledge
+### Animal knowledge and reflective knowledge {#animal-knowledge-and-reflective-knowledge}
 
 -   **Animal knowledge** is knowledge of primitive things, first order.
     -   It is *apt belief*.
 
--   **Reflective knowledge** is "apt belief aptly noted." $$RKp = KKp$$
+-   **Reflective knowledge** is "apt belief aptly noted."
+    *R**K**p* = *K**K**p*
 
 -   add something
 
-June 11th, 2013 <small>Reading</small>
+June 11th, 2013 <small>Reading</small> {#june-11th-2013-reading}
 --------------------------------------
 
-### Is there Immediate Justification? <small>by James Pryor</small>
+### Is there Immediate Justification? <small>by James Pryor</small> {#is-there-immediate-justification-by-james-pryor}
 
-#### Justification
+#### Justification {#justification}
 
 -   Can justification ever happen "immediately" or "non-inferentially"?
 -   There could be some mix up about what is an isn't justification with
     the author.
--   You have *justification to believe $P$* if and only if you are in a
-    position where $P$ is epistemically likely for you to be true.
+-   You have *justification to believe *P** if and only if you are in a
+    position where *P* is epistemically likely for you to be true.
     -   A very inclusive epistemic status.
 
 -   All it means for Pryor is that it is appropriate for you to believe
     it.
 -   If there is some state or condition you are in *in virtue of which*
-    you have justification to believe $P$, Pryor will call is
+    you have justification to believe *P*, Pryor will call is
     "justification making condition."
 -   It will be useful for us to distinguish between having justification
     to believe and appropriately holding a belief.
@@ -1077,7 +1079,7 @@ June 11th, 2013 <small>Reading</small>
         -   You need to believe it for the reasons that make you have
             justification to believe it.
 
-#### Immediate Justification
+#### Immediate Justification {#immediate-justification}
 
 -   There are some propositions that are believed because of other prior
     justification epistemically supporting them.
@@ -1104,7 +1106,7 @@ June 11th, 2013 <small>Reading</small>
     4.  Justification is usually defeasible.
     5.  Beliefs epistemically overdetermined.
 
-#### Why Believe in Immediate Justification?
+#### Why Believe in Immediate Justification? {#why-believe-in-immediate-justification}
 
 -   The most famous argument for immediate justification is the
     **Regress Argument**.
@@ -1117,9 +1119,9 @@ June 11th, 2013 <small>Reading</small>
     out:
     1.  The regress never ends, and justification chains go on
         endlessly. (Infinite regression.)
-    2.  What makes you justified in believing $P$ is having
+    2.  What makes you justified in believing *P* is having
         justification to believe other things, and what makes you
-        believe some of those is your justification to believe $P$.
+        believe some of those is your justification to believe *P*.
         (Closed loop.)
     3.  Eventually we get a proposition believed inappropriately.
         (Skepticism.)
@@ -1131,7 +1133,7 @@ June 11th, 2013 <small>Reading</small>
 -   Foundationalists argue that (1) and (2) are untenable.
     -   We must accept (3) or (4).
 
-##### Examples of Immediate Justification
+##### Examples of Immediate Justification {#examples-of-immediate-justification}
 
 > I am imagine my grandmother. The way I am imagining her is sitting in
 > her kitchen. Or at least, I believe it is. And it seems I could be
@@ -1143,12 +1145,12 @@ June 11th, 2013 <small>Reading</small>
 > only way to wholly cover two spaces on the board is to place the
 > domino horizontally or vertically.
 
-June 11th, 2013 <small>Lecture</small>
+June 11th, 2013 <small>Lecture</small> {#june-11th-2013-lecture}
 --------------------------------------
 
-### Highlights from Last Time <small>Handout</small>
+### Highlights from Last Time <small>Handout</small> {#highlights-from-last-time-handout}
 
-#### The AAA Scheme
+#### The AAA Scheme {#the-aaa-scheme}
 
 -   Recall the archer, aiming, taking a shot.
     -   Was it accurate?
@@ -1177,7 +1179,7 @@ June 11th, 2013 <small>Lecture</small>
         -   Form a true belief and you are justified, but it is not
             because of your competence.
 
-#### Virtue epistemology, Sosa-style
+#### Virtue epistemology, Sosa-style {#virtue-epistemology-sosa-style}
 
 -   Safety is bad
     -   The archer walks to the shooting range,
@@ -1193,7 +1195,7 @@ June 11th, 2013 <small>Lecture</small>
     -   Even if they are getting right, it is not explained by this
         higher order competence.
 
-### The Pyrrhonian Problem
+### The Pyrrhonian Problem {#the-pyrrhonian-problem}
 
 -   An extreme version of skepticism.
 -   Self-debasing, because the belief shows the belief was incorrectly
@@ -1211,13 +1213,13 @@ June 11th, 2013 <small>Lecture</small>
         -   What is *your* justification for believing this.
         -   For now thought, we stay here, with the first question.
 
-### Infinitism
+### Infinitism {#infinitism}
 
 -   The structure of justification can be infinite and non-repeating.
 -   It avoids skepticism because being justified in believing implies
     that there is an infinite, non-repeating justification for belief.
 
-### Foundationalism
+### Foundationalism {#foundationalism}
 
 -   There is a broad literature on how something can be non-inferential
     justification. Ways:
@@ -1231,13 +1233,13 @@ June 11th, 2013 <small>Lecture</small>
         -   When psychological, when from the agent, they can doubt
             their own or a crazy person can doubt all.
 
-#### Problems for Acquitance Foundatinalism
+#### Problems for Acquitance Foundatinalism {#problems-for-acquitance-foundatinalism}
 
 -   A big problem for acquitance foundationalism is the speckeled hen.
 -   Fumerton believes that you must think that you have *a priori*
     probabilistic account of justification, or **skepticism**!?
 
-#### Pryor's modest view
+#### Pryor's modest view {#pryors-modest-view}
 
 -   Does not commit you to:
     1.  It isn't infallible justification.
@@ -1259,31 +1261,31 @@ June 11th, 2013 <small>Lecture</small>
     1.  Mathematical knowledge
     2.  Stored knowledge, semantic memory, source amnesia
 
-June 13th, 2013 <small>Lecture</small>
+June 13th, 2013 <small>Lecture</small> {#june-13th-2013-lecture}
 --------------------------------------
 
-### Coherentism
+### Coherentism {#coherentism}
 
 > There's no ultimate anchor for justification of belief, beliefs get
 > individual justification by being in a system that is coherent.
 
 -   There are different reasons for rejecting them:
 
-#### Input
+#### Input {#input}
 
 -   Coherentism fails because it cannot account for the rational
     constraints by experience.
 -   Some set of beliefs could be perfectly coherent while exhibiting
     gross negligence with regards to reality.
 
-#### Isolation and Alternative systems
+#### Isolation and Alternative systems {#isolation-and-alternative-systems}
 
 -   Accordsing to the isolation objection, there is no reason to believe
     that sheer coherence as such is truth conducive.
 -   You could have an infinite number of equally coherent systems which
     come up with different results about truth.
 
-#### Virtuous Inconsistency
+#### Virtuous Inconsistency {#virtuous-inconsistency}
 
 1.  It is realistic to suppose that:
     1.  I've formed some false belief.
@@ -1299,7 +1301,7 @@ June 13th, 2013 <small>Lecture</small>
 
 > Incosistency can be rational, but truth is not consistent.
 
-### Mentalism
+### Mentalism {#mentalism}
 
 -   Doxastic attitudes:
     1.  Belief
@@ -1313,7 +1315,7 @@ June 13th, 2013 <small>Lecture</small>
 
     2.  Non-Doxastic Mentalism
 
-June 18th, 2013 <small>Lecture</small>
+June 18th, 2013 <small>Lecture</small> {#june-18th-2013-lecture}
 --------------------------------------
 
 -   We can imagine world in which wishful thinking is reliable, but we
@@ -1326,7 +1328,7 @@ June 18th, 2013 <small>Lecture</small>
     phenomenon where people who *cannot see* still *reliably* "guess"
     correctly when they are forced to "see" something, or asked.
 
-### The Generality Problem
+### The Generality Problem {#the-generality-problem}
 
 -   What type of process was being used?
     -   Reliabalism needs to give us a consistent response to "was he
@@ -1343,7 +1345,7 @@ June 18th, 2013 <small>Lecture</small>
 -   It's a problem because there are many true types of reliable
     processes which are not always true.
 
-### Problem of Logical/Probabilistic Relations
+### Problem of Logical/Probabilistic Relations {#problem-of-logicalprobabilistic-relations}
 
 -   The next problem is the problem of logical relations
     -   If you use a totally invalid inference, you can't come to know.
@@ -1353,10 +1355,10 @@ June 18th, 2013 <small>Lecture</small>
         if weak internalism says only mental states are important, it
         cannot explain why logical relations.
 
-June 20th, 2013 <small>Take-Home Midterm</small>
+June 20th, 2013 <small>Take-Home Midterm</small> {#june-20th-2013-take-home-midterm}
 ------------------------------------------------
 
-### Instructions
+### Instructions {#instructions}
 
 Answer prompt (1) and three other prompts of your choosing. Each answer
 should be one page long at minimum (double-spaced). You do not get
@@ -1365,7 +1367,7 @@ What matters is that your answer is complete, accurate, and adroit. When
 you give counterexamples, please indent them in their entirety and give
 them names. Type your answers up and print them.
 
-### Prompts
+### Prompts {#prompts}
 
 1.  Explain what the Gettier problem is and what kind of analysis of
     knowledge it refutes. Invent two Gettier cases of your own in
@@ -1439,94 +1441,94 @@ them names. Type your answers up and print them.
     objections. At the end, explain whether and why you think the
     generic foundationalist thesis is true or false.
 
-### Reponse
+### Reponse {#reponse}
 
-#### Question 1
+#### Question 1 {#question-1}
 
-##### Justified True Belief
+##### Justified True Belief {#justified-true-belief}
 
 Since Aristotle, the literature of epistemology has been centered on the
 Justified True Belief (JTB) theory of knowledge. The theory being that a
-person $S$ knows that $P$ if and only if
+person *S* knows that *P* if and only if
 
-1.  $P$ is true.
-2.  $S$ believes that $P$, and
-3.  $S$ is justified in believing that $P$.
+1.  *P* is true.
+2.  *S* believes that *P*, and
+3.  *S* is justified in believing that *P*.
 
 These have been speculated to be both necessary and sufficient
-conditions, meaning that if $S$ lacks any of them, $S$ does not know,
-and (supposedly) if $S$ has all of them, in *every case* $S$ knows. A
-prime example is a mathematical proof, where $S$ is presented with the
-demonstration of $P$, comes to believe $P$ on the grounds of the valid
+conditions, meaning that if *S* lacks any of them, *S* does not know,
+and (supposedly) if *S* has all of them, in *every case* *S* knows. A
+prime example is a mathematical proof, where *S* is presented with the
+demonstration of *P*, comes to believe *P* on the grounds of the valid
 proof, and the proof is of the Pythagorean theorem, which is true. This
 fits really well with intuition, this gloss feels clean, light, like a
 suitable definition.
 
-##### Gettier's Counterexample
+##### Gettier's Counterexample {#gettiers-counterexample}
 
 In his 1963 paper, "Is Justified True Belief Knowledge?", Edmund Gettier
 ingeniously comes to what he thinks is a counterexample to the (JTB)
-model. Gettier has the reader not that for the proposition $P$, where it
-entails $Q$, if $S$ is justified in believing $P$, then $S$ is also
-justified in believing $Q$. This is perfectly non-offensive and obvious,
-but Gettier shows that this can lead to $S$ justifiable believing
+model. Gettier has the reader not that for the proposition *P*, where it
+entails *Q*, if *S* is justified in believing *P*, then *S* is also
+justified in believing *Q*. This is perfectly non-offensive and obvious,
+but Gettier shows that this can lead to *S* justifiable believing
 something that is *in fact* false. These examples can take two logical
 forms, abusing the "and" and "or" operators.
 
-Imagine that $S$ goes out to the bar where he meets $D$ and $F$. $F$ is
+Imagine that *S* goes out to the bar where he meets *D* and *F*. *F* is
 quite the drinker, has been taking shots the whole time, and is behaving
-noticeably intoxicated. $D$ is quite the talker, and tells $S$ that she
-is a DJ. She shows $S$ pictures of DJ gear, tells vivid stories, and
-reliably answers questions about the vocation. $S$ comes to justifiably
-believe that $D$ is a DJ. $S$ has just taken an undergraduate class in
-logic, and eager to use that new knowledge, notes that "$D$ is a DJ or
-$F$ is sober" is a true proposition because of $S$'s belief that $D$ is
-a DJ. As it turns out, $D$ is a huge liar and self-obsessed.
-Furthermore, $F$ just likes the excuse of intoxication so that
+noticeably intoxicated. *D* is quite the talker, and tells *S* that she
+is a DJ. She shows *S* pictures of DJ gear, tells vivid stories, and
+reliably answers questions about the vocation. *S* comes to justifiably
+believe that *D* is a DJ. *S* has just taken an undergraduate class in
+logic, and eager to use that new knowledge, notes that "*D* is a DJ or
+*F* is sober" is a true proposition because of *S*'s belief that *D* is
+a DJ. As it turns out, *D* is a huge liar and self-obsessed.
+Furthermore, *F* just likes the excuse of intoxication so that
 socializing is easier, and has an agreement with the barman about only
-being served water. Notice that $S$ *believed* *justifiably* a *true*
-proposition, that "$D$ is a DJ or $F$ is sober," and that it is tempting
-to say that $S$ still does not know. So something is missing from (JTB)!
+being served water. Notice that *S* *believed* *justifiably* a *true*
+proposition, that "*D* is a DJ or *F* is sober," and that it is tempting
+to say that *S* still does not know. So something is missing from (JTB)!
 
-##### Harman's Response
+##### Harman's Response {#harmans-response}
 
 In *Thought*, Gilbert Harman believes it is easy to respond to this sort
 or counterexample to (JTB). Harman sees that the problem with Gettier
-cases is that $S$ has false grounds for justifiably believing a true
+cases is that *S* has false grounds for justifiably believing a true
 proposition. So, reasonably, Harman notes that if a "no false grounds"
 clause (NFG) was added as another necessary and sufficient condition to
-(JTB), these Gettier cases could be accounted for. More formally, $S$
-knows that $P$ if and only if all conditions of (JTB) and all of $S$'s
-grounds for believing $P$ are true. Unfortunately (JTB + NFG) does not
+(JTB), these Gettier cases could be accounted for. More formally, *S*
+knows that *P* if and only if all conditions of (JTB) and all of *S*'s
+grounds for believing *P* are true. Unfortunately (JTB + NFG) does not
 work because it is equally susceptible to Gettier cases.
 
-Imagine that $S$ is still at the bar when he gets a call from his
-friend. His friend, $G$, is just recently single, and is looking to get
-back into the dating world. $G$ asks $S$ what the party is like, and $S$
-is looking at someone, $H$, who is just $G$'s type, so $S$ comments that
-the party is just the type that $G$ wants to be at. $S$ is a really good
-judge of character and knows $G$ really well, so assume he has
+Imagine that *S* is still at the bar when he gets a call from his
+friend. His friend, *G*, is just recently single, and is looking to get
+back into the dating world. *G* asks *S* what the party is like, and *S*
+is looking at someone, *H*, who is just *G*'s type, so *S* comments that
+the party is just the type that *G* wants to be at. *S* is a really good
+judge of character and knows *G* really well, so assume he has
 impeccable visual and other evidence of their going well together.
-Unbeknownst to $S$, it is actually LGBT night at this particular bar,
-and it so happens that $G$ is heterosexual. But it also so happens that
-$S$ was right about $H$ being a $G$'s type, but $H$ was at the bar with
-a LGBT friend. Here, $S$ does not reason from anything false, but he
+Unbeknownst to *S*, it is actually LGBT night at this particular bar,
+and it so happens that *G* is heterosexual. But it also so happens that
+*S* was right about *H* being a *G*'s type, but *H* was at the bar with
+a LGBT friend. Here, *S* does not reason from anything false, but he
 does not know because had he turned his attention to any other person he
-would have noticed that it was LGBT night and that $G$ would not enjoy
+would have noticed that it was LGBT night and that *G* would not enjoy
 it.
 
-#### Question 3
+#### Question 3 {#question-3}
 
-##### Goldman's theory
+##### Goldman's theory {#goldmans-theory-1}
 
 In his "A Causal Theory of Knowing," Alvin Goldman takes a specific
 Gettier case, analyzes it, and generalizes it to a new take on the old
-"$S$ knows that $P$." He begins with the case where $S$ has good grounds
+"*S* knows that *P*." He begins with the case where *S* has good grounds
 for believing that
 
 > ​(Q) Jones owns a Ford.
 
-As a logic game, $S$ notices that it is true that
+As a logic game, *S* notices that it is true that
 
 > ​(P) Either Jones owns a Ford or Brown is in Barcelona.
 
@@ -1534,40 +1536,40 @@ As in all Gettier cases, this belief is a (JTB), and it also so happens
 that Jones *does not* own a Ford by Brown *is in* Barcelona. What
 Goldman wants to say about this is that what makes (P) true is that fact
 that Brown is in Barcelona, but the fact that Brown is in Barcelona has
-nothing to do with $S$ believing that (P). The requirement of a **causal
+nothing to do with *S* believing that (P). The requirement of a **causal
 connection** is what Goldman wants to add to (JTB). Goldman posits that
 there has to be a *proper sort* of causal chain between belief and
 justification. Formally, Goldman's theory is as follows,
 
-> (JTB+ACC) $S$ knows that $P$ if and only if the fact $P$ is causally
-> connected in an appropriate way with $S$'s believing $P$.
+> (JTB+ACC) *S* knows that *P* if and only if the fact *P* is causally
+> connected in an appropriate way with *S*'s believing *P*.
 
-This means that $S$'s belief fails because the causal connection is
+This means that *S*'s belief fails because the causal connection is
 lacking, and this is the right outcome.
 
-##### Counterexamples
+##### Counterexamples {#counterexamples}
 
 It is possible to explain Goldman theory with this (as we shall see) too
 simple formulation, which is:
 
-> (Too Simple) $S$ knows that $P$ if and only if $S$'s belief that $P$
-> is caused by the fact that $P$.
+> (Too Simple) *S* knows that *P* if and only if *S*'s belief that *P*
+> is caused by the fact that *P*.
 
 In order to understand how this is not the same as (JTB+ACC), imagine a
-case where $S$'s belief that $P$ is cause by $P$'s truth, but $S$ does
+case where *S*'s belief that *P* is cause by *P*'s truth, but *S* does
 not know because the chain is inappropriate. For instance, imagine that
-$S$ is very, very religious and has a book that he will believe whatever
-is found inside. $G$ is a mathematician and really respects $S$'s
-religiosity. $G$ decides to express this respect by, unbeknownst to $S$,
-writing in $S$'s book the conclusions of many mathematical proofs. When
-$S$ comes to read them, being very religious, accepts them
-unquestionably. In this case, (Too Simple) fails because $S$'s belief
-that $P$ is actually caused by the fact that $P$, which $G$ discovered
-and shared. But still, if $G$ had written down the wrong formulas, $S$
-would have still believed, the intuition is that $S$ did not know. While
+*S* is very, very religious and has a book that he will believe whatever
+is found inside. *G* is a mathematician and really respects *S*'s
+religiosity. *G* decides to express this respect by, unbeknownst to *S*,
+writing in *S*'s book the conclusions of many mathematical proofs. When
+*S* comes to read them, being very religious, accepts them
+unquestionably. In this case, (Too Simple) fails because *S*'s belief
+that *P* is actually caused by the fact that *P*, which *G* discovered
+and shared. But still, if *G* had written down the wrong formulas, *S*
+would have still believed, the intuition is that *S* did not know. While
 some may think that this is chain of events is also a counterexample to
 (JTB+ACC), Goldman would say that this is not an "appropriate" way for
-$S$'s believing. In this way, (JTB+ACC) gets a different result to (Too
+*S*'s believing. In this way, (JTB+ACC) gets a different result to (Too
 Simple), and so is distinct.
 
 This pattern of counterexample can be generalized. The way that it works
@@ -1606,7 +1608,7 @@ to represents the world outside of the vat exactly, and the subject
 comes to form justified true beliefs which a causally connected to the
 facts. Yet, this subject does not know these things.
 
-##### Response
+##### Response {#response}
 
 I think that there is still hope for the causal theory of knowledge. The
 failures of the theory with epistemic luck, deviant causal chains, and
@@ -1623,9 +1625,9 @@ of the brain and a better understanding of how the brain collects
 information from the world, a rigorous and intuitive definition of
 "appropriate" can be formulated.
 
-#### Question 7
+#### Question 7 {#question-7}
 
-##### The Pyrrhonian Problematic
+##### The Pyrrhonian Problematic {#the-pyrrhonian-problematic}
 
 The Pyrrhonian Problematic is an extreme version of skepticism. While
 the view is self-debasing in the sense that accepting the view entails
@@ -1643,7 +1645,7 @@ something like this:
 5.  Foundational justification is arbitrary.
 6.  Therefore, justification is impossible.
 
-##### Generic foundationalism
+##### Generic foundationalism {#generic-foundationalism}
 
 The answer that the foundationalist gives to the Pyrrhonian is that some
 foundational justification is not arbitrary. Some beliefs are
@@ -1652,32 +1654,32 @@ non-inferentially justified true beliefs that an epistemic agent derives
 all other beliefs from. Examples of beliefs that might be
 non-inferentially justified are ones formed immediately by perception,
 like Henry noticing the barn in papiere-mache barn country. Or perhaps
-the subject $S$ noticing the truth of a mathematical proof is becoming
+the subject *S* noticing the truth of a mathematical proof is becoming
 immediately acquainted with truth.
 
 As these two examples show, there are different ways that a belief could
 be non-inferentially justified. For instance, some foundationalists
-think that $S$'s belief that $P$ is non-inferentially justified if and
-only if $S$'s believing that $P$ entails that $P$ is true, which is
+think that *S*'s belief that *P* is non-inferentially justified if and
+only if *S*'s believing that *P* entails that *P* is true, which is
 called infalliblism. This would mean that everything that is necessarily
 true is non-inferentially justified, which is unlikely. This is unlikely
-because imagine that $S$ is presented and accepts the proof Euler's
+because imagine that *S* is presented and accepts the proof Euler's
 formula. It is not tempting to say that this is non-inferentially
 justified belief. Furthermore, the connection between truth and belief
 is so strong that skepticism likely follows from this theory.
 
 There is also "acquaintance foundationalism." Its formal definition is:
 
-> $S$ is non-inferentially justified in believing that $P$ if and only
-> if $S$ is directly acquainted with the fact that $P$, her thought that
-> $P$, and the relation of correspondence between the fact and the
+> *S* is non-inferentially justified in believing that *P* if and only
+> if *S* is directly acquainted with the fact that *P*, her thought that
+> *P*, and the relation of correspondence between the fact and the
 > thought.
 
-This theory suffers from an issue when $S$ is presented with something
-like a "many speckled hen." Imagine that the hen has 47 speckles. $S$ is
+This theory suffers from an issue when *S* is presented with something
+like a "many speckled hen." Imagine that the hen has 47 speckles. *S* is
 directly acquainted with the fact that the hen has 47 speckles when the
-hen comes in to her visual experience, and $S$ has the thought (in some
-way) that the hen has 47 speckles. Yet, despite this, unless $S$ is
+hen comes in to her visual experience, and *S* has the thought (in some
+way) that the hen has 47 speckles. Yet, despite this, unless *S* is
 "rain man", she likely does not *know* that the hen has 47 speckles,
 despite this acquaintance.
 
@@ -1701,10 +1703,10 @@ consumed by the brain. The vocabulary needed to restrict non-inferential
 justification via sense data includes terms like order of magnitude and
 "on/off" ordered states of small clusters of neurons.
 
-June 25th, 2013 <small>Reading</small>
+June 25th, 2013 <small>Reading</small> {#june-25th-2013-reading}
 --------------------------------------
 
-### "Is Knowledge Easy — or Impossible?" <small>by James Van Cleve</small>
+### "Is Knowledge Easy — or Impossible?" <small>by James Van Cleve</small> {#is-knowledge-easy-or-impossible-by-james-van-cleve}
 
 -   Cleve has defeneded the idea that we obtain knowledge of the
     reliability of our faculties with the faculties,
@@ -1721,7 +1723,7 @@ June 25th, 2013 <small>Reading</small>
             try for the medium between the externalist's easy knowledge
             and the skeptic's unattainable knowledge.
 
-#### Varieties of Externalism
+#### Varieties of Externalism {#varieties-of-externalism}
 
 -   He is going to define internalisms positively and externalisms as
     the rejection of the preceding internalism.
@@ -1772,8 +1774,10 @@ June 25th, 2013 <small>Reading</small>
 
 -   The "track-record argument":
 
-    > 1.  At $t_1$, I formed the perceptual belief that $p$, and $p$.
-    > 2.  At $t_2$, I formed the perceptual belief that $q$, and $q$.
+    > 1.  At *t*<sub>1</sub>, I formed the perceptual belief that *p*,
+    >     and *p*.
+    > 2.  At *t*<sub>2</sub>, I formed the perceptual belief that *q*,
+    >     and *q*.
     > 3.  Therefore, sense perception is a reliable source of belief.
 
 -   There is a strong tendency to regard such arguments as circular.
@@ -1783,20 +1787,20 @@ June 25th, 2013 <small>Reading</small>
 -   Externalism suggests that what needs to be added is knowledge of
     reliability.
 
-    > **(KR)**: A source $K$ yields knowledge for a subject if and only
-    > if $S$ knows that $K$ is reliable.
+    > **(KR)**: A source *K* yields knowledge for a subject if and only
+    > if *S* knows that *K* is reliable.
 
-#### (KR) as Leading to Skepticism
+#### (KR) as Leading to Skepticism {#kr-as-leading-to-skepticism}
 
 -   We find ourselves in the following predicament:
-    1.  We can know that a deliverance of $K$ is true if and only if we
-        first know that $K$ is reliable.
-    2.  We can know that $K$ is realiable if and only if we first know,
+    1.  We can know that a deliverance of *K* is true if and only if we
+        first know that *K* is reliable.
+    2.  We can know that *K* is realiable if and only if we first know,
         concerning certain of its deliverances, that they are true.
 
 -   If both are true, skepticism is the only option.
 
-#### The Reidian Alternative
+#### The Reidian Alternative {#the-reidian-alternative}
 
 -   Basic first principles:
     1.  The exitence of all things which I am concious.
@@ -1805,9 +1809,9 @@ June 25th, 2013 <small>Reading</small>
     4.  The natural faculties we distinguish truth from error are not
         fallacious.
 
-### A formulation of my own
+### A formulation of my own {#a-formulation-of-my-own}
 
-#### Description
+#### Description {#description}
 
       Truth +----------------------------------------------+ 
         |   |               +----------------------------+ |       
@@ -1857,7 +1861,7 @@ June 25th, 2013 <small>Reading</small>
 -   Senses are a type of event which is about another event, events
     which rely on other events for their content.
 
-#### Explanatory power
+#### Explanatory power {#explanatory-power}
 
 -   Knowledge is when the thought-event is of an actual event which came
     through sense-events.
@@ -1877,32 +1881,32 @@ June 25th, 2013 <small>Reading</small>
         senses are more apt at distinguishing events which make
         repoduction more likely.
 
-### "Basic Knowledge and the Problem of Easy Knowledge." <small>by Stewart Cohen</small>
+### "Basic Knowledge and the Problem of Easy Knowledge." <small>by Stewart Cohen</small> {#basic-knowledge-and-the-problem-of-easy-knowledge.-by-stewart-cohen}
 
-#### Basic Knowledge and the KR Principle
+#### Basic Knowledge and the KR Principle {#basic-knowledge-and-the-kr-principle}
 
 -   The problem is that we can't use anything but our senses to
     determine if our senses are reliable except our senses.
     Bootstrapping.
 
-    > **(KR)**: A potential knowledge source $K$ can yield knowledge for
-    > $S$, only if $S$ knows $K$ is reliable.
+    > **(KR)**: A potential knowledge source *K* can yield knowledge for
+    > *S*, only if *S* knows *K* is reliable.
 
--   An evidentialist is someone who denies one can know $P$ on the basis
-    of evidence $E$ without knowing that $E$ is a reliable indication of
-    $P$
+-   An evidentialist is someone who denies one can know *P* on the basis
+    of evidence *E* without knowing that *E* is a reliable indication of
+    *P*
 
-#### The Problem of Easy Knowledge: Closure
+#### The Problem of Easy Knowledge: Closure {#the-problem-of-easy-knowledge-closure}
 
-> If $S$ knows $P$ and $S$ knows $P$ entails $Q$, then $S$ knows (or at
-> least is in a position to know) $Q$.
+> If *S* knows *P* and *S* knows *P* entails *Q*, then *S* knows (or at
+> least is in a position to know) *Q*.
 
 -   Nozick uses his view to deny closure.
 
-> If $S$ knows $P$ on the basis of $R$, and $D$ is a defeater of $R$ as
-> a reason to believe $P$, then $S$ knows $D$ is false.
+> If *S* knows *P* on the basis of *R*, and *D* is a defeater of *R* as
+> a reason to believe *P*, then *S* knows *D* is false.
 
-June 27th, 2013 <small>Lecture: Testimony and Justification</small>
+June 27th, 2013 <small>Lecture: Testimony and Justification</small> {#june-27th-2013-lecture-testimony-and-justification}
 -------------------------------------------------------------------
 
 -   There are various pathways to knowledge.
@@ -1914,28 +1918,28 @@ June 27th, 2013 <small>Lecture: Testimony and Justification</small>
 
 -   There are controversies about how to classify certain sources of
     knowledge. - You may think that they are preservative in that the
-    follow way:\
+    follow way:  
      \> It's natural to think that what memory does is transmit \> some
     peice of knoweldge or justified belief from one's \> earlier self to
     one's later self.
 
 -   A strong version of preservative view of testimony is that in order
-    to come know $P$ from testimony, the testifier must know $P$.
+    to come know *P* from testimony, the testifier must know *P*.
 -   Lackey thinks that people who don't know something can come to have
-    you know that P. \> **JP**: If $S$ reports that $P$ to $H$ and $H$
-    has no defeaters for \> $S$'s report that $P$, then $H$ is justified
-    in accepting that \> $P$ on the basis of $S$'s testimony.
+    you know that P. \> **JP**: If *S* reports that *P* to *H* and *H*
+    has no defeaters for \> *S*'s report that *P*, then *H* is justified
+    in accepting that \> *P* on the basis of *S*'s testimony.
 
-July 4th, 2013 <small>Paper</small>
+July 4th, 2013 <small>Paper</small> {#july-4th-2013-paper}
 -----------------------------------
 
-### Instructions
+### Instructions {#instructions-1}
 
 Write a paper of 6–10 pages (double-spaced) on a topic below. You are
 more than welcome to invent your own topic. Just create a prompt and
 pass it by me first.
 
-### Topics
+### Topics {#topics}
 
 1.  Which of the approaches to the Gettier problem gets closest to
     solving it, in your view? Explain the solution and compare and

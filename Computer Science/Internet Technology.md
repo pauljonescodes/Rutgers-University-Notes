@@ -1,14 +1,14 @@
-Internet Technology <small>with John-Austen Francisco</small>
+Internet Technology <small>with John-Austen Francisco</small> {#internet-technology-with-john-austen-francisco}
 =============================================================
 
-Description
+Description {#description}
 -----------
 
 To provide a practical understanding of computer networks with respect
 to system architectures, protocols, and client-server interaction. These
 objectives are accomplished through extensive laboratory exercises.
 
-### Topics
+### Topics {#topics}
 
 -   Communication media;
     -   protocol layers,
@@ -26,7 +26,7 @@ objectives are accomplished through extensive laboratory exercises.
     -   wireless communication,
     -   and videoconferencing.
 
-### Department Learning Goals
+### Department Learning Goals {#department-learning-goals}
 
 -   Computer Science majors ...
     -   will be prepared to contribute to a rapidly changing field by
@@ -43,10 +43,10 @@ objectives are accomplished through extensive laboratory exercises.
         the software industry), or some sort of business plan (for those
         going into startups).
 
-Syllabus
+Syllabus {#syllabus}
 --------
 
-### Instructor Info
+### Instructor Info {#instructor-info}
 
 -   **Instructor**: John-Austen Francisco
     -   **Office**: Room 335 (DATAMAN Lab), CoRE Building, Busch Campus
@@ -59,7 +59,7 @@ Syllabus
     -   **Email**: jeff.ames@cs.rutgers.edu
     -   **Office Hours**: Wednesday 1300-1500
 
-### Requirements
+### Requirements {#requirements}
 
 Students are expected to attend all lectures and perform all reading
 assignments prior to lecture. Students will be evaluated according to
@@ -76,7 +76,7 @@ communication with your group partners. In addition, students needing
 help outside of class should attend office hours, lab meetings, and
 utilize the Discussion Board on Sakai to get additional assistance.
 
-### Grading
+### Grading {#grading}
 
 This course has 1 midterm exam, held during the normal lecture time, and
 a cumulative final exam. There will be periodic homework assignments,
@@ -88,71 +88,71 @@ multi-threading, and protocol implementation.
 <table class="table">
 <tbody>
 <tr>
-<th>
+<th markdown="1">
 Assignment
 </th>
 
-<th>
+<th markdown="1">
 Weight
 </th>
 </tr>
 
 <tr>
-<td>
+<td markdown="1">
 Homework
 </td>
 
-<td>
+<td markdown="1">
 15%
 </td>
 </tr>
 
 <tr>
-<td>
+<td markdown="1">
 Midterm
 </td>
 
-<td>
+<td markdown="1">
 20%
 </td>
 </tr>
 
 <tr>
-<td>
+<td markdown="1">
 Final examination
 </td>
 
-<td>
+<td markdown="1">
 30%
 </td>
 </tr>
 
 <tr>
-<td>
+<td markdown="1">
 Project part 0
 </td>
 
-<td>
+<td markdown="1">
 10%
 </td>
 </tr>
 
 <tr>
-<td>
+<td markdown="1">
 Project part 1
 </td>
 
-<td>
+<td markdown="1">
 10%
 </td>
 </tr>
 
 <tr>
-<td>
+<td markdown="1">
 Project part 2
 </td>
 
-<td>
+<td markdown="1">
 15%
 </td>
 </tr>
@@ -160,97 +160,97 @@ Project part 2
 </table>
 
 
-### Important Dates
+### Important Dates {#important-dates}
 
 <table class="table">
 <tbody>
 <tr>
-<th>
+<th markdown="1">
 Date
 </th>
 
-<th>
+<th markdown="1">
 Event
 </th>
 
-<th>
+<th markdown="1">
 Notes
 </th>
 </tr>
 
 <tr>
-<td>
+<td markdown="1">
 7/15
 </td>
 
-<td>
+<td markdown="1">
 Project 0 Due
 </td>
 
-<td>
+<td markdown="1">
 Online submission through Sakai.
 </td>
 </tr>
 
 <tr>
-<td>
+<td markdown="1">
 7/17
 </td>
 
-<td>
+<td markdown="1">
 Midterm
 </td>
 
-<td>
+<td markdown="1">
 In-class exam.
 </td>
 </tr>
 
 <tr>
-<td>
+<td markdown="1">
 7/29
 </td>
 
-<td>
+<td markdown="1">
 Project 1 Due
 </td>
 
-<td>
+<td markdown="1">
 Online submission through Sakai.
 </td>
 </tr>
 
 <tr>
-<td>
+<td markdown="1">
 8/14
 </td>
 
-<td>
+<td markdown="1">
 Project 2 Due
 </td>
 
-<td>
+<td markdown="1">
 Online submission through Sakai.
 </td>
 </tr>
 
 <tr>
-<td>
+<td markdown="1">
 8/14
 </td>
 
-<td>
+<td markdown="1">
 Final Exam
 </td>
 
-<td>
+<td markdown="1">
 In-class exam.
 </td>
 </tr>
 </tbody>
 </table>
 
-### Policy on Missed Examinations
+### Policy on Missed Examinations {#policy-on-missed-examinations}
 
 You must have a pressing reason (such as a medical emergency or personal
 crisis) to miss a scheduled mid-term or final examination. Make-up
@@ -260,14 +260,14 @@ attend. If you miss an examination due to an unforeseen emergency, you
 may take a make-up examination only after providing written
 documentation of an excuse that is acceptable to the instructor.
 
-### Required Textbook
+### Required Textbook {#required-textbook}
 
 -   *Computer Networking*, 6th Edition
     -   **Authors**: James Kurose and Keith Ross
     -   **Publisher**: Addison Wesley
     -   **ISBN**: 0-13-285620-4
 
-### Policy on Disability Accomodation
+### Policy on Disability Accomodation {#policy-on-disability-accomodation}
 
 Rutgers, the State University of New Jersey abides by the Americans with
 Disabilities Act of 1990, the Americans with Disabilities Act Amendments
@@ -286,7 +286,7 @@ Stone Hall, Livingston Campus, 54 Joyce Kilmer Ave., Suite A145, phone
 number 848-445-6800. I look forward to talking with you soon to learn
 how I may be helpful in enhancing your academic success in this course.
 
-June 24th, 2013 <small>Lecture: Socket Programming</small>
+June 24th, 2013 <small>Lecture: Socket Programming</small> {#june-24th-2013-lecture-socket-programming}
 ----------------------------------------------------------
 
 -   What is a socket? An interface
@@ -336,10 +336,10 @@ June 24th, 2013 <small>Lecture: Socket Programming</small>
     close!
     -   It can only help.
 
-June 26th, 2013 <small>Recitation</small>
+June 26th, 2013 <small>Recitation</small> {#june-26th-2013-recitation}
 -----------------------------------------
 
-### Threading and concurrency
+### Threading and concurrency {#threading-and-concurrency}
 
 -   When you run an application on your machine, on the OS level that is
     represented by a process.
@@ -409,7 +409,7 @@ June 26th, 2013 <small>Recitation</small>
             b = 1;
             a = 2;
 
-June 26th, 2013 <small>Lecture: Network Switching Techniques</small>
+June 26th, 2013 <small>Lecture: Network Switching Techniques</small> {#june-26th-2013-lecture-network-switching-techniques}
 --------------------------------------------------------------------
 
 -   Core networks are run by ISP
@@ -458,10 +458,10 @@ June 26th, 2013 <small>Lecture: Network Switching Techniques</small>
 
             Circuit < Message < Packet
 
-June 30th, 2013 <small>Reading: <em>Chapter 1, Computer Networks and the Internet</em></small>
+June 30th, 2013 <small>Reading: <em>Chapter 1, Computer Networks and the Internet</em></small> {#june-30th-2013-reading-chapter-1-computer-networks-and-the-internet}
 ----------------------------------------------------------------------------------------------
 
-### A Nuts-and-Bolts Description
+### A Nuts-and-Bolts Description {#a-nuts-and-bolts-description}
 
 -   The Internet is a computer network that interconnects hundreds of
     millions of computers.
@@ -497,7 +497,7 @@ June 30th, 2013 <small>Reading: <em>Chapter 1, Computer Networks and the Interne
         -   The Internet's pirncipal protocols are collectively known as
             **TCP/IP**.
 
-### A Services Description
+### A Services Description {#a-services-description}
 
 -   We can describe the Internet from an entirely different angle, that
     it's *an infrastructure that provides services to applications*.
@@ -512,18 +512,18 @@ June 30th, 2013 <small>Reading: <em>Chapter 1, Computer Networks and the Interne
 
 -   End systems attached to the Intenet provide
     \*\*<abbr title="Application
-            Programming Interfaces">APIs</abbr> that specify how a
+                Programming Interfaces">APIs</abbr> that specify how a
     program on one end system asks the Internet infrastucture to deliver
     data to a specific destination.
 
-### What Is a Protocol?
+### What Is a Protocol? {#what-is-a-protocol}
 
 > A **protocol** defines the format and the order of messages exchanged
 > between two or more communicating entities, as well as the actions
 > taken on the trans- mission and/or receipt of a message or other
 > event.
 
-### The Network Edge
+### The Network Edge {#the-network-edge}
 
 -   Hosts are grouped into two categories:
     -   **Clients**, which tend to be desktops, mobile PCs, smartphones,
@@ -532,7 +532,7 @@ June 30th, 2013 <small>Reading: <em>Chapter 1, Computer Networks and the Interne
         and distribute Web pages, stream video, relay email, etc.
     -   **Data centers** have possibly thousands of servers.
 
-#### Access Networks <small>Home Access: DSL, Cable, FTTH, Dial-Up and Stellite</small>
+#### Access Networks <small>Home Access: DSL, Cable, FTTH, Dial-Up and Stellite</small> {#access-networks-home-access-dsl-cable-ftth-dial-up-and-stellite}
 
 -   <abbr title="Digital subscriber line">DSL</abbr> and cable are the
     two most prevelant types of broadband.
@@ -540,7 +540,7 @@ June 30th, 2013 <small>Reading: <em>Chapter 1, Computer Networks and the Interne
     cable television infrastructure.
 -   <abbr title="Fiber to the home">FTTH</abbr> is growing.
 
-### Physical media
+### Physical media {#physical-media}
 
 -   For each transmitter-receiver pain, a bit is sent by propagating
     electromagnetic waves or optical pulses across a **physical
@@ -555,7 +555,7 @@ June 30th, 2013 <small>Reading: <em>Chapter 1, Computer Networks and the Interne
         and in outer-space, such as wireless LAN or a digital satellite
         channel.
 
-#### Twisted-Pair Copper Wire
+#### Twisted-Pair Copper Wire {#twisted-pair-copper-wire}
 
 -   This is the least expensive and most commonly used transmission
     medium.
@@ -565,7 +565,7 @@ June 30th, 2013 <small>Reading: <em>Chapter 1, Computer Networks and the Interne
 -   <abbr title="Unshielded twisted pair">UTP</abbr> is commonly used
     for computer netowkrs withing a building, for LAN.
 
-#### Coaxial Cable
+#### Coaxial Cable {#coaxial-cable}
 
 -   Like twisted pair, coaxial consists of two copper conductors.
     -   But they're concentric rather than parallel.
@@ -576,15 +576,15 @@ June 30th, 2013 <small>Reading: <em>Chapter 1, Computer Networks and the Interne
     -   With each end receiving whatever is sent by the other end
         system.
 
-#### Fiber Optics
+#### Fiber Optics {#fiber-optics}
 
 -   Thin, flexible medium that conducts pulses of light, each pulse
     representing a bit.
 -   Long distance communication uses this.
 
-### The Network Core
+### The Network Core {#the-network-core}
 
-#### Packet Switching
+#### Packet Switching {#packet-switching}
 
 -   End systems enchange **messages** with each other.
     -   These contain anything the application designer wants.
@@ -596,10 +596,10 @@ June 30th, 2013 <small>Reading: <em>Chapter 1, Computer Networks and the Interne
         -   **Routers**
         -   **Link-layer switches**
 
-July 1st, 2013 <small>Assessment <em>Chapter 1</em></small>
+July 1st, 2013 <small>Assessment <em>Chapter 1</em></small> {#july-1st-2013-assessment-chapter-1}
 -----------------------------------------------------------
 
-### Question 1 <small>(5 points)</small>
+### Question 1 <small>(5 points)</small> {#question-1-5-points}
 
 > Write out the canonical OSI 7-layer stack from highest to lowest:
 
@@ -611,11 +611,11 @@ July 1st, 2013 <small>Assessment <em>Chapter 1</em></small>
 -   Layer 2: **Link**
 -   Layer 1: **Physical**
 
-### Question 2 <small>(5 points)</small>
+### Question 2 <small>(5 points)</small> {#question-2-5-points}
 
 > Consider an application that transmits data at a steady rate (for
-> example, the sender generates an $N$-bit unit of data every $k$ time
-> units, where $k$ is small and fixed). Also, when such an application
+> example, the sender generates an *N*-bit unit of data every *k* time
+> units, where *k* is small and fixed). Also, when such an application
 > starts, it will continue running for a relatively long period of time.
 > Answer the following questions, briefly justifying your answer:
 
@@ -665,7 +665,7 @@ July 1st, 2013 <small>Assessment <em>Chapter 1</em></small>
         application to implement congestion control. Furthermore, it
         would be wise to do it. Yes.
 
-### Question 3 <small>(7 points)</small>
+### Question 3 <small>(7 points)</small> {#question-3-7-points}
 
 -   **Offline Application**: Runs as an application on the local host
     (computer), and does not require network access for its' primary
@@ -680,103 +680,103 @@ July 1st, 2013 <small>Assessment <em>Chapter 1</em></small>
 <tbody>
     <tr>
         <th></th>
-        <th>
+        <th markdown="1">
 Offline Application
 </th>
-        <th>
+        <th markdown="1">
 Utilizes Network Access
 </th>
-        <th>
+        <th markdown="1">
 Software as a Service/Cloud Application
 </th>
     </tr>
     <tr>
-        <td>
+        <td markdown="1">
 Google Maps
 </td>
         <td></td>
         <td></td>
-        <td>
+        <td markdown="1">
 <i class="icon-ok"></i>
 </td>
     </tr>
     <tr>
-        <td>
+        <td markdown="1">
 Bittorrent
 </td>
         <td></td>
-        <td>
+        <td markdown="1">
 <i class="icon-ok"></i>
 </td>
         <td></td>
     </tr>
     <tr>
-        <td>
+        <td markdown="1">
 Microsoft Office
 </td>
-        <td>
+        <td markdown="1">
 <i class="icon-ok"></i>
 </td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <td>
+        <td markdown="1">
 Mozilla Firefox
 </td>
         <td></td>
-        <td>
+        <td markdown="1">
 <i class="icon-ok"></i>
 </td>
         <td></td>
     </tr>
     <tr>
-        <td>
+        <td markdown="1">
 Solitaire
 </td>
-        <td>
+        <td markdown="1">
 <i class="icon-ok"></i>
 </td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <td>
+        <td markdown="1">
 Adobe Photoshop
 </td>
-        <td>
+        <td markdown="1">
 <i class="icon-ok"></i>
 </td>
         <td></td>
         <td></td>
     </tr>
     <tr>
-        <td>
+        <td markdown="1">
 Yahoo! Mail
 </td>
         <td></td>
         <td></td>
-        <td>
+        <td markdown="1">
 <i class="icon-ok">
 </td>
     </tr>
 </tbody>
 </table>
 
-### Question 4 <small>(3 points)</small>
+### Question 4 <small>(3 points)</small> {#question-4-3-points}
 
 The network core is defined as:
 
 1.  The technicians and administrators in charge of the network's
     computers.
 2.  The collection of routers, switches, and network links responsible
-    for routing packets from host to host.<i class="icon-ok"></i>\
+    for routing packets from host to host.<i class="icon-ok"></i>  
 3.  The collection of web servers, email servers, and personal computers
     connected to the network.
 4.  The telecommunication (telecom) companies responsible for the
     majority of the packet routing performed in the network.
 
-### Question 5 <small>(10 points)</small>
+### Question 5 <small>(10 points)</small> {#question-5-10-points}
 
 > In this problem we consider sending real-time voice from Host A to
 > Host B over a packet-switched network (VoIP). Host A converts analog
@@ -798,10 +798,10 @@ The network core is defined as:
 -   The last bit of the packet will arrive 10 msec later, bringing the
     total to 17.224 msec from analog to analog.
 
-July 1st, 2013 <small>Homework: <em>Simple Socket Programming</em></small>
+July 1st, 2013 <small>Homework: <em>Simple Socket Programming</em></small> {#july-1st-2013-homework-simple-socket-programming}
 --------------------------------------------------------------------------
 
-### Overview
+### Overview {#overview}
 
 For this assignment you will need to create a simple network client that
 communicates with an "echo" server.  The echo server will accept your
@@ -820,7 +820,7 @@ It is due **before class** on Monday, 1 July. You must submit via the
 Sakai Assignments 2 tool.  Only on-time assignments submitted through
 Sakai will be accepted.
 
-### Specifics of Operation
+### Specifics of Operation {#specifics-of-operation}
 
 Your program MUST be completely contained in a file called
 "EchoClient.java" without any Java packaging. This means that compiling
@@ -866,7 +866,7 @@ in the client example above (3456) you would execute:
 
     java -jar echo-server-1.0.0.jar 3456
 
-### Grading Outline
+### Grading Outline {#grading-outline}
 
 -   Source code organization and comments: 30%
 -   Reading command-line parameters: 10%
@@ -875,7 +875,7 @@ in the client example above (3456) you would execute:
 -   Reading server response and printing it to the user: 15%
 -   Closing all Sockets/IOStreams before exit: 10%
 
-### Hints and Suggestions
+### Hints and Suggestions {#hints-and-suggestions}
 
 If this is your first time working directly with Sockets, IOStreams, and
 Strings, you may find the following classes/resources helpful:
@@ -893,10 +893,10 @@ Strings, you may find the following classes/resources helpful:
     Socket](http://docs.oracle.com/javase/tutorial/networking/sockets/readingWriting.html)
     (oracle.com)
 
-July 1st, 2013 <small>Project \#0</small>
+July 1st, 2013 <small>Project \#0</small> {#july-1st-2013-project-0}
 -----------------------------------------
 
-### Updates
+### Updates {#updates}
 
 Before jumping into the project I would like to mention one thing. Most
 of the time your first attempt at a software project is either too slow,
@@ -905,7 +905,7 @@ the first versions of most of your code. You can even plan to have them
 as throw-aways. You don't waste time doing this because you learn where
 you can make improvements in your final version.
 
-### Theory of Operation
+### Theory of Operation {#theory-of-operation}
 
 In this project, you will build a simple BitTorrent(BT) client which
 will serve as the foundation for a fully-featured BT client you will
@@ -918,7 +918,7 @@ be done over TCP.
 The file your program will read in is a .torrent file containing
 metadata for the file to be downloaded.
 
-### Assignment Specifics
+### Assignment Specifics {#assignment-specifics}
 
 Your assignment should basically do the following:
 
@@ -951,7 +951,7 @@ Your assignment should basically do the following:
 10. Save the file to the hard disk according to the second command-line
     argument.
 
-### Files Available
+### Files Available {#files-available}
 
 There are several files available in the Resources section of the site
 in the folder "Project files."  The most important is the "Project 1
@@ -960,7 +960,7 @@ use to develop your client.  The other files available are helpful, but
 not necessary.  Be sure to check the resources section for updates or
 changes as the semester progresses.
 
-### Programming Style
+### Programming Style {#programming-style}
 
 Writing maintainable code is just as important as writing correct code.
 Consequently, you will be graded on your style. Below is a list of
@@ -986,13 +986,13 @@ suggestions to make your code easier to understand and maintain:
     often translate it into a loop.
 -   Efficiency - Avoid being terribly inefficient. For example, if you
     have to sort 10M objects, it's better to sort them with
-    a O(n\*lg(n)) algorithm than a O(n^2^) algorithm.
+    a O(n\*lg(n)) algorithm than a O(n<sup>2</sup>) algorithm.
 -   Encapsulation - Encapsulation is a useful feature of object-oriented
     languages, and so you should try to write classes that expose as
     little as possible. This way you can change the implementation of a
     class without affecting the rest of your program.
 
-### Bencoding (Pronounced "Bee Encoding")
+### Bencoding (Pronounced "Bee Encoding") {#bencoding-pronounced-bee-encoding}
 
 Bencoding a method of encoding binary data. Tracker responses, and
 interpeer communication will be bencoded. Below is how data types are
@@ -1017,7 +1017,7 @@ from[http://www.bittorrent.org/beps/bep\_0003.html ](http://www.bittorrent.org/
     be strings and appear in sorted order (sorted as raw strings, not
     alphanumerics).
 
-### Communication With the Tracker
+### Communication With the Tracker {#communication-with-the-tracker}
 
 Your client must take the information supplied by the metadata file and
 use it to communicate with the tracker. The tracker's IP address and
@@ -1064,7 +1064,7 @@ keys:
     to the peer's self-selected ID, IP address or dns name as a string,
     and port number, respectively.
 
-### Communicating With the Peer
+### Communicating With the Peer {#communicating-with-the-peer}
 
 Handshaking between peers begins with byte nineteen followed by the
 string 'BitTorrent protocol'. After the fixed headers are 8 reserved
@@ -1158,7 +1158,7 @@ sends a choke message during data transfer, any outstanding requests
 will be discarded and unanswered - they should be re-requested after the
 next unchoke message.
 
-### The Write-Up
+### The Write-Up {#the-write-up}
 
 -   Include your name as it appears on the roster and your student ID.
 -   A high-level description of how your program works. Specifically,
@@ -1178,7 +1178,7 @@ next unchoke message.
     easiest? Did you have trouble finding resources for the project?
     Were any parts confusing to you?
 
-### Submitting the Project
+### Submitting the Project {#submitting-the-project}
 
 The project should be submitted through Sakai.
 
@@ -1186,15 +1186,15 @@ The project should be submitted through Sakai.
     submitted.
 -   The "main" method should be in a file called RUBTClient.java.
 -   The write-up in HTML or PDF format saved as a writeup.
-    <html/pdf>
-        
+    <html markdown="1" pdf>
+
     .
 -   All files should be submitted as a compressed archive. Acceptable
     formats are `.zip`, `.tgz`/`.tar.gz`, and `.tar.bz2`. This file
     should be named `<NetID>.<EXT>`, where `<NetID>` is your eden NetID
     and `<EXT>` is the file type extension.
 
-### Grading
+### Grading {#grading-1}
 
 -   Programming Style: 15%
 -   Correctly setting up TCP sockets/connections: 15%
@@ -1203,7 +1203,7 @@ The project should be submitted through Sakai.
 -   Correctly downloading and verifying the file: 20%
 -   Write-up 10%
 
-### Resources
+### Resources {#resources}
 
 It is strongly recommended that you bookmark or download the [Sun Java
 1.6 API ](http://java.sun.com/javase/6/docs/api/), as well as read the
@@ -1226,7 +1226,7 @@ Any questions about the project in general should be posted to the
 Discussion Board tool.  If you have a question that is specific to you
 (*e.g.,* JVM install, Eclipse setup), send an email to your TA.
 
-### Frequently Asked Questions
+### Frequently Asked Questions {#frequently-asked-questions}
 
 I've been getting a lot of similar questions lately, so I'll post
 general forms of them as well as advice on how to solve the underlying
@@ -1248,7 +1248,7 @@ sniffing tool like Ethereal to capture the traffic and analyze it.
     usually faster to find an existing implementation than to write one
     yourself.
 
-July 1st, 2013 <small>Lecture</small>
+July 1st, 2013 <small>Lecture</small> {#july-1st-2013-lecture}
 -------------------------------------
 
 -   In order to receive messages, a process must an identifier.
@@ -1257,20 +1257,20 @@ July 1st, 2013 <small>Lecture</small>
     identifying the proces?
     -   No, *many* processes can be running on the same hosts.
 
-July 3rd, 2013 <small>Lecture</small>
+July 3rd, 2013 <small>Lecture</small> {#july-3rd-2013-lecture}
 -------------------------------------
 
-### Transport layer
+### Transport layer {#transport-layer}
 
-#### Transport-layer services
+#### Transport-layer services {#transport-layer-services}
 
-##### Transport Layer vs. Network layer
+##### Transport Layer vs. Network layer {#transport-layer-vs.-network-layer}
 
 -   *Network layer* is logical communication between hosts.
 -   *Transport layer* logical communication between processes.
     -   Relies on, enhances, network layer services.
 
-##### Internet Transport Layer Protocols
+##### Internet Transport Layer Protocols {#internet-transport-layer-protocols}
 
 -   reliable, in-order delivery (TCP)
     -   congestion control
@@ -1285,9 +1285,9 @@ July 3rd, 2013 <small>Lecture</small>
     -   bandwidth guarantees
     -   jitter (variance) guarantees
 
-#### Multiplexing and demultiplexing
+#### Multiplexing and demultiplexing {#multiplexing-and-demultiplexing}
 
-##### General
+##### General {#general}
 
 -   Demultiplexing at receive host:
     -   delivering received segments to correct socket
@@ -1296,7 +1296,7 @@ July 3rd, 2013 <small>Lecture</small>
     -   gathering data from multiple sockets, enveloping data with
         header (later used for demultiplexing)
 
-##### How Demultiplexing Works
+##### How Demultiplexing Works {#how-demultiplexing-works}
 
 -   host receives IP datagrams
     -   each datagram has source IP address, destination IP address
@@ -1318,7 +1318,7 @@ July 3rd, 2013 <small>Lecture</small>
             |                                |
             +--------------------------------+
 
-##### Connectionless Demultiplexing
+##### Connectionless Demultiplexing {#connectionless-demultiplexing}
 
 -   When host receives UDP segment:
     -   checks destination port number in segment
@@ -1327,14 +1327,14 @@ July 3rd, 2013 <small>Lecture</small>
 -   IP datagrams with different source IP addresses and/or source port
     numbers directed to same socket
 
-##### How Demultiplexing Works
+##### How Demultiplexing Works {#how-demultiplexing-works-1}
 
 -   Host receives IP datagrames
     -   Each datagram has source IP, destination IP,
     -   Each datagram carries 1 tranpsot layer segment
     -   Each segment has source, destination, and port number
 
-##### Connection-Oriented Demultiplexing
+##### Connection-Oriented Demultiplexing {#connection-oriented-demultiplexing}
 
 -   TCP socket identified by 4- tuple:
     -   source IP address
@@ -1350,9 +1350,9 @@ July 3rd, 2013 <small>Lecture</small>
 -   Web servers have different sockets for each connecting client
     -   non-persistent HTTP will have different socket for each request
 
-#### Connectionless transport: UDP
+#### Connectionless transport: UDP {#connectionless-transport-udp}
 
-##### User Datagram Protocol [RFC 768]
+##### User Datagram Protocol [RFC 768] {#user-datagram-protocol-rfc-768}
 
 -   no frills,” “bare bones” Internet transport protocol
     -   “best effort” service, UDP segments may be:
@@ -1365,15 +1365,15 @@ July 3rd, 2013 <small>Lecture</small>
 
 -   Why is there UDP?
 
-### TCP and UDP
+### TCP and UDP {#tcp-and-udp}
 
-#### The Internet Transport Layer
+#### The Internet Transport Layer {#the-internet-transport-layer}
 
 -   Two transport layer protocols supported by the Internet:
     -   Reliable: The Transmission Control Protocol (TCP)
     -   Unreliable: The Unreliable Datagram Protocol (UDP)
 
-#### UDP
+#### UDP {#udp}
 
 -   UDP is an unreliable transport protocol that can be used in the
     Internet
@@ -1384,7 +1384,7 @@ July 3rd, 2013 <small>Lecture</small>
 
 -   UDP is almost a “null” transport layer
 
-#### Retransmission Timeout (RTO)
+#### Retransmission Timeout (RTO) {#retransmission-timeout-rto}
 
 -   The timeout value is then calculated by multiplying the smoothed RTT
     by some factor (greater than 1) called
@@ -1392,7 +1392,7 @@ July 3rd, 2013 <small>Lecture</small>
     -   This coefficient of is included to allow for some variation in
         the round trip times.
 
-#### Karn’s Algorithm
+#### Karn’s Algorithm {#karns-algorithm}
 
 -   Retransmission ambiguity
     -   Measure RTT from original data segment
@@ -1412,7 +1412,7 @@ July 3rd, 2013 <small>Lecture</small>
 -   Only after an acknowledgment received for a successful transmission
     is the timer set to new RTT obtained from SRTT
 
-#### Another Problem with RTT Calculation
+#### Another Problem with RTT Calculation {#another-problem-with-rtt-calculation}
 
 -   RTT measurements can sometimes fluctuate severely
     -   smoothed RTT (SRTT) is not a good reflection of round-trip time
@@ -1423,10 +1423,10 @@ July 3rd, 2013 <small>Lecture</small>
     -   SRTT = SRTT + Error Dev = Dev + δ(|Error| - Dev) Timeout =
         SRTT+  Dev
 
-July 8th, 2013 <small>Lecture: TCP and UDP Part 2</small>
+July 8th, 2013 <small>Lecture: TCP and UDP Part 2</small> {#july-8th-2013-lecture-tcp-and-udp-part-2}
 ---------------------------------------------------------
 
-### Principles of Congestion Control
+### Principles of Congestion Control {#principles-of-congestion-control}
 
 -   informally: “too many sources sending too much data too fast for
     network to handle”
@@ -1436,7 +1436,7 @@ July 8th, 2013 <small>Lecture: TCP and UDP Part 2</small>
 
 -   a top-10 problem!
 
-### TCP Congestion Control
+### TCP Congestion Control {#tcp-congestion-control}
 
 -   Recall: Network layer is responsible for congestion control
 -   However, TCP/IP blurs the distinction In TCP/IP:
@@ -1452,10 +1452,10 @@ July 8th, 2013 <small>Lecture: TCP and UDP Part 2</small>
     -   Even if don’t know bandwidth of bottleneck
     -   Bottleneck may change over time
 
-July 15th, 2013 <small>Assessment <em>Chapter 2</em></small>
+July 15th, 2013 <small>Assessment <em>Chapter 2</em></small> {#july-15th-2013-assessment-chapter-2}
 ------------------------------------------------------------
 
-### Question 1 <small>(20 points)</small>
+### Question 1 <small>(20 points)</small> {#question-1-20-points}
 
 > List at least four different applications that are naturally suitable
 > for P2P architectures. For each application, provide a 1 to 2 sentence
@@ -1489,38 +1489,38 @@ there is the initial talking to the tracker, but then you talk to peers,
 who "know" what other peer has a given content in the case of a circular
 DHT.
 
-### Question 2 <small>(3 points)</small>
+### Question 2 <small>(3 points)</small> {#question-2-3-points}
 
 What information is used by a process running on one host to identify a
 process running on another host?
 
-1.  Username and Password\
-2.  IP Address and Port Number\
-3.  URL and Filename\
+1.  Username and Password  
+2.  IP Address and Port Number  
+3.  URL and Filename  
 4.  Protocol and Filesize
 
-### Question 3 <small>(0 points ?)</small>
+### Question 3 <small>(0 points ?)</small> {#question-3-0-points}
 
 Two distinct Web pages (for example www.mit.edu/research.html and
 www.mit.edu/students.html) can be sent over the same persistent
-connection.\
+connection.  
 With nonpersistent connections between browser and origin server, it is
 possible for a single TCP segment to carry two distinct HTTP request
-messages.\
+messages.  
 The Date: header in the HTTP response message indicates when the object
-in the response was last modified.\
+in the response was last modified.  
 HTTP response messages never have an empty message body.
 
-### Question 4 <small>(0 points ?)</small>
+### Question 4 <small>(0 points ?)</small> {#question-4-0-points}
 
 Given the classes of services provided by transport layers listed below,
 indicate which are provided by TCP and UDP.
 
-TCP UDP Both Neither Throughput\
-Timing\
+TCP UDP Both Neither Throughput  
+Timing  
 Security
 
-### Question 5 <small>(3 points)</small>
+### Question 5 <small>(3 points)</small> {#question-5-3-points}
 
 Suppose you wanted to do a transaction from a remote client to a server
 as fast as possible. Would you use UDP or TCP? Why?
@@ -1528,7 +1528,7 @@ as fast as possible. Would you use UDP or TCP? Why?
 1.  TCP
 2.  UDP
 
-### Question 6 <small>(4 points)</small>
+### Question 6 <small>(4 points)</small> {#question-6-4-points}
 
 Why is it said that FTP sends control information "out-of-band"?
 
@@ -1536,14 +1536,14 @@ Why is it said that FTP sends control information "out-of-band"?
     rubber band), but it occasionally goes too fast and is
     "out-of-band".
 2.  The control information is sent over a TCP connection separate from
-    the data transfer.\
+    the data transfer.  
 3.  It uses frequency division multiplexing and the control information
     is in a different frequency band than the data.
 
-July 16th, 2013 <small>Reading <em>Chapter 2</em></small>
+July 16th, 2013 <small>Reading <em>Chapter 2</em></small> {#july-16th-2013-reading-chapter-2}
 ---------------------------------------------------------
 
-### Principles of Networking Applications
+### Principles of Networking Applications {#principles-of-networking-applications}
 
 -   The **application architecture** is designed by the application
     developer and dictates how the application is structured over the
@@ -1571,30 +1571,29 @@ July 16th, 2013 <small>Reading <em>Chapter 2</em></small>
 -   UDP is no-frills, lightweight, with minimal services.
     -   Connectionaless, no handshaking.
 
-### The Web and HTTP
+### The Web and HTTP {#the-web-and-http}
 
 -   The web's application protocol is HTTP
 -   TCP connections can be persistent or not, meaning a new one is
     opened each time or the same way is kept.
--   For non-persistent,
-    -------------------
+-   For non-persistent, -------------------
 
-### File Transfer: FTP
+### File Transfer: FTP {#file-transfer-ftp}
 
-### Electronic Mail in the Internet
+### Electronic Mail in the Internet {#electronic-mail-in-the-internet}
 
-### DNS
+### DNS {#dns}
 
-### Peer-to-Peer Applcations
+### Peer-to-Peer Applcations {#peer-to-peer-applcations}
 
-### Socket Programming: Creating Networking Applications
+### Socket Programming: Creating Networking Applications {#socket-programming-creating-networking-applications}
 
-July 16th, 2013 <small>Midterm study guide</small>
+July 16th, 2013 <small>Midterm study guide</small> {#july-16th-2013-midterm-study-guide}
 --------------------------------------------------
 
-### Practice Exam <small>Spring 2012</small>
+### Practice Exam <small>Spring 2012</small> {#practice-exam-spring-2012}
 
-#### TCP/IP
+#### TCP/IP {#tcpip}
 
 > Name the five layers of the TCP/IP protocol stack from highest to
 > lowest and given an example implementation.
@@ -1620,7 +1619,7 @@ July 16th, 2013 <small>Midterm study guide</small>
     -   This is what the user actually sees and interacts with
     -   HTTP, FTP
 
-#### "Quickies"
+#### "Quickies" {#quickies}
 
 1.  Packet-switching vs. message switching.
 
@@ -1663,7 +1662,7 @@ July 16th, 2013 <small>Midterm study guide</small>
     > connections in HTTP. Be sure to justify our answer for full
     > credit.
 
-#### Delay Calculation
+#### Delay Calculation {#delay-calculation}
 
 > Two hosts communicate with each other via satellites positioned in a
 > geosynchronous orbit, 35,000 km above the earth, the two satellites
@@ -1682,9 +1681,9 @@ July 16th, 2013 <small>Midterm study guide</small>
 3.  Protocol delay: 4\*20ms = 80 ms
 4.  Total = 3.413 s
 
-#### Distance-Vector Routing
+#### Distance-Vector Routing {#distance-vector-routing}
 
-#### BitTorrent Project
+#### BitTorrent Project {#bittorrent-project}
 
 > 1.  What exactly is the “info hash” of a metainfo file? What purpose
 >     does it serve in the context of communication with trackers and
@@ -1696,9 +1695,9 @@ July 16th, 2013 <small>Midterm study guide</small>
 >     concerning file sharing networks, why would this be considered an
 >     advantage for BitTorrent clients?
 
-### Practice Exam <small>Summer 2011</small>
+### Practice Exam <small>Summer 2011</small> {#practice-exam-summer-2011}
 
-#### Quickies
+#### Quickies {#quickies-1}
 
 > Differentiate between packet switching and message switching,
 > specifically describing scenarios where each would be preferred over
@@ -1713,7 +1712,7 @@ July 16th, 2013 <small>Midterm study guide</small>
 > Describe why the Internet moved from class-based subnetting to the
 > CIDR approach.
 
-#### Network performance
+#### Network performance {#network-performance}
 
 > Calculate the total time required to transfer a 800KB file in the
 > following cases. Assume an RTT (Round Trip Time) of 25ms, a packet
@@ -1727,10 +1726,10 @@ July 16th, 2013 <small>Midterm study guide</small>
     3.  Transmission
     4.  Total
 
-July 26th, 2013 <small>Project \#1</small>
+July 26th, 2013 <small>Project \#1</small> {#july-26th-2013-project-1}
 ------------------------------------------
 
-### Theory of Operation
+### Theory of Operation {#theory-of-operation-1}
 
 The second project will expand upon what you did for the first. Your
 client must now open a .torrent file, contact the tracker as well as
@@ -1755,7 +1754,7 @@ you write code defensively, which means that your application will
 likely be more robust than if you only had well-behaved peers to work
 with.
 
-### Assignment Overview
+### Assignment Overview {#assignment-overview}
 
 Your assignment should basically do the following:
 
@@ -1818,7 +1817,7 @@ you, but an intuitive approach might be to allocate the total space to
 disk before downloading, and then writing the appropriate pieces into
 the file as they complete. 
 
-### Files Available
+### Files Available {#files-available-1}
 
 There are several files available in the Resources section of the site
 in the folder "Project Resources."  The most important is
@@ -1829,7 +1828,7 @@ changes as the course progresses.  Do not modify the provided
 files/classes.  If you want to modify their behavior, subclass (extend)
 them instead and provide the functionality there.
 
-### Programming Style
+### Programming Style {#programming-style-1}
 
 Writing maintainable code is just as important as writing correct code.
 Consequently, you will be graded on your style. Below is a list of
@@ -1859,7 +1858,7 @@ suggestions to make your code easier to understand and maintain:
     clause should be avoided whenever possible.
 -   Efficiency - Avoid being terribly inefficient. For example, if you
     have to sort 10M objects, it's better to sort them with
-    a O(n\*lg(n)) algorithm than a O(n^2^) algorithm.
+    a O(n\*lg(n)) algorithm than a O(n<sup>2</sup>) algorithm.
 -   **Encapsulation/Objects** - Encapsulation is a useful feature of
     object-oriented languages, and because you are writing your program
     in an OO language, your program **must** separate the functionality
@@ -1871,7 +1870,7 @@ suggestions to make your code easier to understand and maintain:
     your program into functional units, you will lose points on the
     Style portion of the grading.
 
-### Bencoding (Pronounced "Bee Encoding")
+### Bencoding (Pronounced "Bee Encoding") {#bencoding-pronounced-bee-encoding-1}
 
 Bencoding a method of encoding binary data. Tracker responses, and
 interpeer communication will be bencoded. Below is how data types are
@@ -1896,7 +1895,7 @@ from[http://www.bittorrent.org/beps/bep\_0003.html ](http://www.bittorrent.org/
     be strings and appear in sorted order (sorted as raw byte values,
     not alphanumerics).
 
-### Communication With the Tracker
+### Communication With the Tracker {#communication-with-the-tracker-1}
 
 Your client must take the information supplied by the TorrentFile object
 and use it to communicate with the tracker. The tracker's IP address and
@@ -1950,7 +1949,7 @@ tracker. This may change during execution, so it should be updated each
 time the tracker is contacted. In the event that the *interval* value is
 excessively large, you may cap it at 180 seconds.
 
-### Communicating With the Peer
+### Communicating With the Peer {#communicating-with-the-peer-1}
 
 Handshaking between peers begins with byte nineteen (decimal) followed
 by the string 'BitTorrent protocol'. After the fixed headers are 8
@@ -2041,7 +2040,7 @@ sends a choke message during data transfer, any outstanding requests
 will be discarded and unanswered - they should be re-requested after the
 next unchoke message.
 
-### The Write-Up
+### The Write-Up {#the-write-up-1}
 
 -   Include all group member names as they appear on the roster and your
     student ID.
@@ -2069,7 +2068,7 @@ next unchoke message.
     the direction of the next project as well as help in pointing-out
     trouble spots to look at during grading.
 
-### Submitting the Project
+### Submitting the Project {#submitting-the-project-1}
 
 The project should be submitted through Sakai.
 
@@ -2096,7 +2095,7 @@ The project should be submitted through Sakai.
     the project, submit what you have and you will be graded for partial
     credit.
 
-### Grading
+### Grading {#grading-2}
 
 -   Programming Style: 15%
 -   Correctly interfacing with the tracker (retrieving peer list,
@@ -2114,7 +2113,7 @@ The project should be submitted through Sakai.
     evaluated based on the repository commit logs (see above), so be
     sure to commit as often as practical.
 
-### Resources
+### Resources {#resources-1}
 
 It is strongly recommended that you bookmark or download the [Sun Java
 1.6 API ](http://java.sun.com/javase/6/docs/api/), as well as read the
@@ -2139,7 +2138,7 @@ Discussion Board tool.  If you have a question that is specific to you
 
  
 
-### Frequently Asked Questions
+### Frequently Asked Questions {#frequently-asked-questions-1}
 
 I've been getting a lot of similar questions lately, so I'll post
 general forms of them as well as advice on how to solve the underlying
@@ -2161,28 +2160,29 @@ sniffing tool like Wireshark to capture the traffic and analyze it.
     usually faster to find an existing implementation than to write one
     yourself.
 
-August 5th, 2013 <small>Chapter 4 Review</small>
+August 5th, 2013 <small>Chapter 4 Review</small> {#august-5th-2013-chapter-4-review}
 ------------------------------------------------
 
-### Question 1
+### Question 1 {#question-1}
 
 > What is the 32-bit binary equivalent of the IP address 192.168.1.55?
 
 -   11000000101010000000000100110111
 
-### Question 2
+### Question 2 {#question-2}
 
 > What are the two most important network-layer functions in a datagram
 > network? [What third function is additionally important in a virtual
 > circuit network?]
 >
-> -   <del>
+> -   <del markdown="1">
+>         
 >     Retransmission, Error Correction, [Connection Setup]</del>
-> -   Forwarding, <del>Error Correction</del>, [Session Management]\
+> -   Forwarding, <del>Error Correction</del>, [Session Management]  
 > -   **Forwarding, Routing, [Connection Setup]**
 > -   Routing, Retransmission, [Reliability]
 
-### Question 3
+### Question 3 {#question-3}
 
 > What is the difference between forwarding and routing?
 
@@ -2192,7 +2192,7 @@ from an input link interface to the appropriate output link interface.
 *Routing* refers to the network-wide process that determines the
 end-to-end paths that packets take from source to destination.
 
-### Question 4
+### Question 4 {#question-4}
 
 > Suppose an ISP owns the block of addresses of the form
 > 128.119.40.64/25. Suppose it wants to create four subnets from this
@@ -2204,7 +2204,7 @@ end-to-end paths that packets take from source to destination.
 -   128.119.40.96/25
 -   128.119.40.112/25
 
-### Question 5
+### Question 5 {#question-5}
 
 > Identify the different types of data units at different levels of the
 > network protocol stack. If no answer matches exactly, choose the best
@@ -2215,10 +2215,10 @@ end-to-end paths that packets take from source to destination.
 > 3.  Application Layer Data Unit **(D)**
 > 4.  Link Layer Data Unit **(A)**
 
-August 7th, 2013 <small>Project \#2</small>
+August 7th, 2013 <small>Project \#2</small> {#august-7th-2013-project-2}
 -------------------------------------------
 
-### Theory of Operation
+### Theory of Operation {#theory-of-operation-2}
 
 The third project will expand upon what you did for the first two. Your
 client must be able to interface with multiple peers, upload and
@@ -2245,7 +2245,7 @@ GUI has a maximum value of 15% of the project grade (115% with full
 credit).  To achieve the full 15%, the GUI will need to be very
 well-designed and -implemented.
 
-### Assignment Specifics
+### Assignment Specifics {#assignment-specifics-1}
 
 Your assignment should basically do the following:
 
@@ -2284,7 +2284,7 @@ disk before downloading, and then writing the appropriate pieces into
 the file as they complete. It is recommended that you do not use
 serialization of Java objects to save client state.
 
-### Files Available
+### Files Available {#files-available-2}
 
 There are several files available in the Resources section of the site
 in the folder "Project files."  The most important is project2.torrent,
@@ -2292,7 +2292,7 @@ which will continue to be used for part 3.  The other files available
 are helpful, but not necessary.  Be sure to check the resources section
 for updates or changes.
 
-### Programming Style
+### Programming Style {#programming-style-2}
 
 Writing maintainable code is just as important as writing correct code.
 Consequently, you will be graded on your style. Below is a list of
@@ -2322,7 +2322,7 @@ suggestions to make your code easier to understand and maintain:
     clause should be avoided whenever possible.
 -   Efficiency - Avoid being terribly inefficient. For example, if you
     have to sort 10M objects, it's better to sort them with
-    a O(n\*lg(n)) algorithm than a O(n^2^) algorithm.
+    a O(n\*lg(n)) algorithm than a O(n<sup>2</sup>) algorithm.
 -   **Encapsulation/Objects** - Encapsulation is a useful feature of
     object-oriented languages, and because you are writing your program
     in an OO language, your program **must** separate the functionality
@@ -2334,7 +2334,7 @@ suggestions to make your code easier to understand and maintain:
     your program into functional units, you will lose points on the
     Style portion of the grading.
 
-### Bencoding (Pronounced "Bee Encoding")
+### Bencoding (Pronounced "Bee Encoding") {#bencoding-pronounced-bee-encoding-2}
 
 Bencoding a method of encoding binary data. Tracker responses, and
 interpeer communication will be bencoded. Below is how data types are
@@ -2359,7 +2359,7 @@ from[http://www.bittorrent.org/beps/bep\_0003.html ](http://www.bittorrent.org/
     be strings and appear in sorted order (sorted as raw strings, not
     alphanumerics).
 
-### Communication With the Tracker
+### Communication With the Tracker {#communication-with-the-tracker-2}
 
 Your client must take the information supplied by the TorrentFile object
 and use it to communicate with the tracker. The tracker's IP address and
@@ -2413,7 +2413,7 @@ This may change during execution, so it should be updated each time the
 tracker is contacted. In the event that the *interval\* value is
 excessively large, you may cap it at 180 seconds.
 
-### Communicating With the Peer
+### Communicating With the Peer {#communicating-with-the-peer-2}
 
 Handshaking between peers begins with character nineteen (decimal)
 followed by the string 'BitTorrent protocol'. After the fixed headers
@@ -2506,7 +2506,7 @@ a choke packet during data transfer, any outstanding requests will be
 discarded and unanswered - they should be re-requested after the next
 unchoke packet.
 
-### The Write-Up
+### The Write-Up {#the-write-up-2}
 
 -   Include your name as it appears on the roster and your student ID.
 -   A high-level written description of how your program works.
@@ -2533,7 +2533,7 @@ unchoke packet.
     the direction of the next project as well as help in pointing-out
     trouble spots to look at during grading.
 
-### Submitting the Project
+### Submitting the Project {#submitting-the-project-2}
 
 The project should be submitted through Sakai.
 
@@ -2547,7 +2547,8 @@ The project should be submitted through Sakai.
 -   The "main" starting method should be in a file called
     RUBTClient.java.
 -   The write-up in HTML or PDF format saved as a writeup.
-    <html/pdf>
+    <html markdown="1" pdf>
+        
     . Please do not submit a write-up in any other formats
 -   All files should be submitted as a compressed archive. Acceptable
     formats are .zip, .tgz/.tar.gz, and .tar.bz2. This file should be
@@ -2557,7 +2558,7 @@ The project should be submitted through Sakai.
     the project, submit what you have and you will be graded for partial
     credit.
 
-### Grading
+### Grading {#grading-3}
 
 -   Programming Style: 15%
 -   Correctly interfacing with the tracker (retrieving peer list,
@@ -2578,7 +2579,7 @@ The project should be submitted through Sakai.
     based on the repository commit logs (see above), so be sure to
     commit as often as practical.
 
-### Resources
+### Resources {#resources-2}
 
 It is strongly recommended that you bookmark or download the [Sun Java
 1.6 API ](http://java.sun.com/javase/6/docs/api/), as well as read the
@@ -2603,7 +2604,7 @@ Discussion Board tool.  If you have a question that is specific to you
 
  
 
-### Frequently Asked Questions
+### Frequently Asked Questions {#frequently-asked-questions-2}
 
 I've been getting a lot of similar questions lately, so I'll post
 general forms of them as well as advice on how to solve the underlying
@@ -2625,10 +2626,10 @@ sniffing tool like Ethereal to capture the traffic and analyze it.
     usually faster to find an existing implementation than to write one
     yourself.
 
-August 12th, 2013 <small>Chapter 5 Review</small>
+August 12th, 2013 <small>Chapter 5 Review</small> {#august-12th-2013-chapter-5-review}
 -------------------------------------------------
 
-### Question 1 <small>(2 points)</small>
+### Question 1 <small>(2 points)</small> {#question-1-2-points}
 
 > How big is the MAC address space?
 >
@@ -2637,7 +2638,7 @@ August 12th, 2013 <small>Chapter 5 Review</small>
 > -   **6 bytes**
 > -   16 bytes
 
-### Question 2 <small>(2 points)</small>
+### Question 2 <small>(2 points)</small> {#question-2-2-points}
 
 > How big is the IPv6 address space?
 >
@@ -2650,7 +2651,7 @@ August 12th, 2013 <small>Chapter 5 Review</small>
     IPv4.](http://en.wikipedia.org/wiki/IPv6#Larger_address_space)
 -   128 bits is equal to 16 bytes.
 
-### Question 3 <small>(2 points)</small>
+### Question 3 <small>(2 points)</small> {#question-3-2-points}
 
 > How big is the IPv4 address space?
 >
@@ -2659,25 +2660,25 @@ August 12th, 2013 <small>Chapter 5 Review</small>
 > -   16 bytes
 > -   6 bytes
 
-### Question 4 <small>(5 points)</small>
+### Question 4 <small>(5 points)</small> {#question-4-5-points}
 
 > Consider the 5-bit generator, G=10011, and suppose that D has the
 > value 1010101010. What is the value of R (in binary)?
 
 `0100`
 
-### Question 5 <small>(4 points)</small>
+### Question 5 <small>(4 points)</small> {#question-5-4-points}
 
 > Imagine are building your own NAT. What is the MINIMUM amount of
 > information the NAT's internal TCP connection table needs to store in
 > order to relay packets?
 >
-> -   LAN IP address, LAN port, Dst IP address, Dst port, WAN port\
+> -   LAN IP address, LAN port, Dst IP address, Dst port, WAN port  
 > -   LAN IP address, Dst IP address, WAN port ???
-> -   **LAN IP address, LAN port, WAN port**\
+> -   **LAN IP address, LAN port, WAN port**  
 > -   LAN IP address, LAN port, Dst IP address, Dst port
 
-### Question 6 <small>(8 points)</small>
+### Question 6 <small>(8 points)</small> {#question-6-8-points}
 
 > While wired link layer communication protocols are able to detect
 > collisions, wireless links can not. What property of wireless
@@ -2690,10 +2691,10 @@ antenna is used to send and receive. More specifically, because a single
 antenna cannot send and receive at the same time, collision detection is
 impossible.
 
-August 13th, 2013 <small>Final Exam Study Guide</small>
+August 13th, 2013 <small>Final Exam Study Guide</small> {#august-13th-2013-final-exam-study-guide}
 -------------------------------------------------------
 
-### Datalink layers <small>Part 1</small>
+### Datalink layers <small>Part 1</small> {#datalink-layers-part-1}
 
 -   hosts and routers are **nodes**
 -   communication path are **links**
@@ -2711,9 +2712,9 @@ August 13th, 2013 <small>Final Exam Study Guide</small>
         -   with half duplex, nodes at both ends of link can transmit,
             but not at same time
 
-### Exam guesses and Questions
+### Exam guesses and Questions {#exam-guesses-and-questions}
 
-#### Question 0
+#### Question 0 {#question-0}
 
 > If every node in a network has implemented **Hamming Codes** at the
 > link layer to provide error detection and correction, why is it \_\_\_
@@ -2726,19 +2727,19 @@ August 13th, 2013 <small>Final Exam Study Guide</small>
     layer, or be unaware that the contentf a field in the frame’s header
     has been corrupted.
 
-#### Question 1
+#### Question 1 {#question-1-1}
 
 > Presume you have written \_\_\_\_\_\_ . Would \_\_\_\_ in order to
 > \_\_\_ ? (think carefully about the **HTTP messages** you've seen and
 > how they operate)
 
-#### Question 2
+#### Question 2 {#question-2-1}
 
 > What is the \_\_ of the \_\_\_\_ at each of the following \_?
 
 Presumably some sort of fill in the blank.
 
-##### Sub-question 1
+##### Sub-question 1 {#sub-question-1}
 
 -   The five services:
     -   Confidentiality
@@ -2754,14 +2755,13 @@ Presumably some sort of fill in the blank.
 >     modification? Why or why not?
 > 4.  How \_\_\_\_\_\_ \_ \_\_\_ a public key \_\_\_ \_\_\_ secure?
 
-1.  Public key certification
-    ------------------------
+1.  Public key certification ------------------------
 
 2.  Message integrity.
 
 3.
 
-##### Sub-question 2
+##### Sub-question 2 {#sub-question-2}
 
 -   Possible attacks:
     -   Man in the middle attack \> Bob receives everything that Alice
@@ -2779,9 +2779,9 @@ Presumably some sort of fill in the blank.
 > 2.  What is a '\_\_\_\_”?
 > 3.  What is \_\_\_\_\_?
 
-##### Sub-question 3
+##### Sub-question 3 {#sub-question-3}
 
-### Richie
+### Richie {#richie}
 
 1.  CRC
 2.  Timing

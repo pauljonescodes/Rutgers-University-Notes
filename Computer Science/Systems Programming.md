@@ -1,7 +1,7 @@
-Systems Programming <small>with Professor Brian Russel</small>
+Systems Programming <small>with Professor Brian Russel</small> {#systems-programming-with-professor-brian-russel}
 ==============================================================
 
-Description
+Description {#description}
 -----------
 
 This course teaches students how to think about, build, debug, and test
@@ -14,7 +14,7 @@ performance. Programming will be in C on Unix systems to introduce
 students to a new programming eco system, as well as enable the mapping
 of high-level language constructs to the underlying machine.
 
-### Topics
+### Topics {#topics}
 
 Systems programming in C and Unix: C programming Memory management and
 the C memory model System calls I/O Caching Multi-threaded programming
@@ -27,11 +27,11 @@ Tools: IDE (e.g., Eclipse) Source version control (e.g., CVS) Debugger
 (e.g., gdb) Memory errors (e.g., valgrind) Profiling (e.g., gprof,
 valgrind)
 
-### Expected Work
+### Expected Work {#expected-work}
 
 Large programming project spread across several parts
 
-### Department Learning Goals:
+### Department Learning Goals: {#department-learning-goals}
 
 Computer Science majors ...
 
@@ -47,15 +47,15 @@ headed to graduate school), a programming project (for those going into
 the software industry), or some sort of business plan (for those going
 into startups).
 
-Syllabus
+Syllabus {#syllabus}
 --------
 
-### Instructor
+### Instructor {#instructor}
 
 Brian Russell <morbius@cs.rutgers.edu>    Office Hours: Wednesdays
 8:00-9:00 pm, Hill 403.
 
-### TAs
+### TAs {#tas}
 
 Ying Zhan <yz280@cs.rutgers.edu>    Office Hours: Tuesdays 10:00-11:00
 am Hill 418
@@ -69,7 +69,7 @@ am Hill 418
 Zi Yan <zy56@cs.rutgers.edu>    Office Hours: Thursdays 1:00 pm 2:00 pm
 Hill 405
 
-### Objective
+### Objective {#objective}
 
 The aim of CS214 is to introduce the student to the process of writing
 low-level programs that interact directly with a computer's operating
@@ -79,12 +79,12 @@ course, the successful student should be able to design, write, test,
 and analyze moderately complicated programs using the C programming
 language and UNIX/Linux operating systems.
 
-### Prerequisite Knowledge
+### Prerequisite Knowledge {#prerequisite-knowledge}
 
 Structured programming in a high-level language (such as Java). Standard
 data structures (lists, trees, graphs, hash tables).
 
-### Textbook
+### Textbook {#textbook}
 
 The following texts are available online, free of charge.
 
@@ -93,7 +93,7 @@ The following texts are available online, free of charge.
 The textbooks do not cover all material discussed in class, and are not
 a substitute for attending lectures.
 
-### Topics Covered in CS214
+### Topics Covered in CS214 {#topics-covered-in-cs214}
 
 The following list is organized by topic, not by chronological order of
 coverage in the course.
@@ -121,7 +121,7 @@ coverage in the course.
 
     Developing an embedded application
 
-### Lecture Schedule
+### Lecture Schedule {#lecture-schedule}
 
 1.  Sept 04 Into to C
 2.  Sept 06 C program structure, C functions
@@ -154,7 +154,7 @@ coverage in the course.
 
 This schedule may change as needed.
 
-### Expected Work
+### Expected Work {#expected-work-1}
 
 Students are expected to attend all lectures and perform all reading
 assignments prior to lecture. Students are also expected to attend all
@@ -162,7 +162,7 @@ recitation section meetings. Students will be evaluated according to
 their performance on a semester long programming project, a mid-term
 examination, and a final examination.
 
-### Project
+### Project {#project}
 
 WARNING: This is a project course, which means that this course should
 give you more than a passing knowledge of what writing working network
@@ -186,7 +186,7 @@ and we cannot test your program on all of them. So all program
 assignments must run on the local iLab Linux machines. We will be
 grading your assignments on those machines as well.
 
-### Working Together and Academic Honesty
+### Working Together and Academic Honesty {#working-together-and-academic-honesty}
 
 Cheating on projects and exams will not be tolerated. We want to protect
 the fairness and integrity of the class, so we run code similarity
@@ -203,7 +203,7 @@ use handin, etc., that says you acknowledge being aware of the policy
 click-through by the end of September, your access to our facilities
 will cease October 1.
 
-### Grading
+### Grading {#grading}
 
 Midterm: 20 % Final: 30 % Project: 50%
 
@@ -229,7 +229,7 @@ Decomposition
 20% Documentation 10% Test Cases from Students 5% Comments 5%
 Documentation (Analysis, readme files, etc...)
 
-### The Gilligan's Island Rule
+### The Gilligan's Island Rule {#the-gilligans-island-rule}
 
 We do encourage you to talk to your classmates, provided you follow the
 Gilligan's Island Rule. After a joint discussion of an assignment or
@@ -242,10 +242,10 @@ you follow the Gilligan's island rule, often best route to follow to get
 a question answered is to ask, in order: 1. A classmate smarter than
 you. 2. Your TA. 3. The professor.
 
-September 5th, 2013 <small>Lecture on C program structure, C functions</small>
+September 5th, 2013 <small>Lecture on C program structure, C functions</small> {#september-5th-2013-lecture-on-c-program-structure-c-functions}
 ------------------------------------------------------------------------------
 
-### General Syntax
+### General Syntax {#general-syntax}
 
     struct point {
         int x,
@@ -292,7 +292,7 @@ A string is a series of characters, and array, followed by a null byte.
 Before there were no classes, there were structs. No visibility classes.
 No message passing, methods.
 
-### Pointers
+### Pointers {#pointers}
 
     int x;
     int *px;
@@ -333,7 +333,7 @@ Subscripts can be positive, negative, and zero. When you use arrays in
 C, there is no array bounds checking. If you have a ten element array, C
 does not mind if you just meander in either direction.
 
-### Pointers to Functions
+### Pointers to Functions {#pointers-to-functions}
 
     int f(int);     // defined but not implemented function
 
@@ -349,10 +349,10 @@ does not mind if you just meander in either direction.
     x = (*pf)(3);
     pf = g;
 
-September 18th, 2013 <small>Programming Assignment 1: Tokenizer</small>
+September 18th, 2013 <small>Programming Assignment 1: Tokenizer</small> {#september-18th-2013-programming-assignment-1-tokenizer}
 -----------------------------------------------------------------------
 
-### Introduction
+### Introduction {#introduction}
 
 In this assignment, you will practice programming with C pointers. Much
 of the pointer manipulation will come in the form of operating on C
@@ -401,7 +401,7 @@ special characters are represented with escape sequences:
     octal number \000 
     hex number \xhh
 
-### Implementation
+### Implementation {#implementation}
 
 Your implementation needs to export the interface given in the attached
 tokenizer.c file. In particular, you need to define the type needed to
@@ -423,7 +423,7 @@ Your implementation must not modify the two original strings in any way.
 Further, your implementation must return each token as a C string in a
 character array of the exact right length. For example, the token usr
 should be returned in a character array with 4 elements (the last holds
-the character ’\0’ to signify the end of a C string).
+the character ’’ to signify the end of a C string).
 
 You may use string functions from the standard C library accessible
 through string.h (e.g, strlen()). However, you may not use strtok(),
@@ -469,7 +469,7 @@ compile and execute on the iLab machines or a zero grade will be given.
 Be sure to compile and execute your code on an Ilab machine before
 handing it in.
 
-### What to turn in
+### What to turn in {#what-to-turn-in}
 
 A tarred gzipped file named pa1.tgz that contains a directory called pa1
 with the following files in it: - A tokenizer.c file containing all of
@@ -490,7 +490,7 @@ algorithms). - Quality of your code (how well written your code is,
 including modularity and comments). - Efficiency (of your
 implementation). - Testing thoroughness (quality of your test cases).
 
-September 10th, 2013 <small>Lecture</small>
+September 10th, 2013 <small>Lecture</small> {#september-10th-2013-lecture}
 -------------------------------------------
 
     int gcd(int a, int b) {
@@ -505,10 +505,10 @@ September 10th, 2013 <small>Lecture</small>
     -   The function can change the copies.
     -   Cannot change the original values.
 
-September 30th, 2013 <small>Programming Assignment 2: Sorted List</small>
+September 30th, 2013 <small>Programming Assignment 2: Sorted List</small> {#september-30th-2013-programming-assignment-2-sorted-list}
 -------------------------------------------------------------------------
 
-### Introduction
+### Introduction {#introduction-1}
 
 In this assignment, you will practice with more complex data structures,
 as well as practice using function pointers (along with using data
@@ -535,7 +535,7 @@ objects directly. (In C, there are obviously ways to get around your
 hiding; nevertheless, it is good programming practice because it
 requires effort to violate the hiding.)
 
-### Implementation
+### Implementation {#implementation-1}
 
 Your implementation needs to export the interface given in the attached
 sorted-list.h file. Specif- ically, you need to implement four functions
@@ -580,7 +580,7 @@ implement a more complex data structure such as a tree, heap, or hash
 table to make insertion/deletion more efficient. It is sufficient that
 you implement your linear structure efficiently.
 
-### What to turn in
+### What to turn in {#what-to-turn-in-1}
 
 A sorted-list.c file containing all of your data structure code. At the
 top of the file, you should include as a comment a big-O analysis of the
@@ -627,7 +627,7 @@ pa2.tgz (see man tar). Your grade will be based on:
 -   Efficiency (of your implementation), and
 -   Testing thoroughness (quality of your test cases).
 
-September 24th, 2013 <small>Lecture, Multi-file Projects, Makefiles, and Directory I/O</small>
+September 24th, 2013 <small>Lecture, Multi-file Projects, Makefiles, and Directory I/O</small> {#september-24th-2013-lecture-multi-file-projects-makefiles-and-directory-io}
 ----------------------------------------------------------------------------------------------
 
     ar key libfile obj1.o obj2.o ...
@@ -645,10 +645,10 @@ September 24th, 2013 <small>Lecture, Multi-file Projects, Makefiles, and Directo
     drname [directory path]/[basename].[extension]
     [directory path]
 
-September 26th, 2013 <small>GDB</small>
+September 26th, 2013 <small>GDB</small> {#september-26th-2013-gdb}
 ---------------------------------------
 
-### Reference Counter
+### Reference Counter {#reference-counter}
 
 -   You increment a reference counter for every time a new pointer
     points to the node.
@@ -659,7 +659,7 @@ September 26th, 2013 <small>GDB</small>
     operation can make the reference counter not zero or one, leading to
     some interesting scenarios.
 
-October 2nd, 2013 <small>Programming Assignment 3: Indexer</small>
+October 2nd, 2013 <small>Programming Assignment 3: Indexer</small> {#october-2nd-2013-programming-assignment-3-indexer}
 ------------------------------------------------------------------
 
 **Warning**: As you will see below, the descriptions of the assignments
@@ -668,7 +668,7 @@ increasingly bigger programs. *Make sure to read the assignment
 carefully!* This is critical because this document essentially describes
 the requirements for your program.
 
-### Introduction
+### Introduction {#introduction-2}
 
 In this assignment, you will practice using the file system API (as well
 as pointers in different data structures). In particular, you will be
@@ -724,7 +724,7 @@ save it to a file.Some observations:
     rather than a string). Use the improved tokenizer.c file attached to
     this assignment.
 
-### Implementation
+### Implementation {#implementation-2}
 
 Since you are implementing a program in this assignment, there is no
 programming interface to follow. Instead, your program must support the
@@ -792,7 +792,7 @@ a .h file that callers should include. The same applies for the sorted
 list. You should also write a makefile to efficiently compile and link
 your indexer.
 
-### Hints
+### Hints {#hints}
 
 -   Data structures that might be useful include the sorted list you
     just implemented (of course) and a hash table.
@@ -809,7 +809,7 @@ your indexer.
     you to countthe number of occurrences of each unique term in a file.
     o Andsoon...
 
-### What to Turn In
+### What to Turn In {#what-to-turn-in-2}
 
 A tarred gzipped file name pa3.tgz that contains a directory called pa3
 with the following files in it:
@@ -842,10 +842,10 @@ As usual, your grade will be based on:
 -   Efficiency (of your implementation), and
 -   Testing thoroughness (quality of your test cases).
 
-October 19th, 2013 <small>Programming Assignment 4: Search</small>
+October 19th, 2013 <small>Programming Assignment 4: Search</small> {#october-19th-2013-programming-assignment-4-search}
 ------------------------------------------------------------------
 
-### Introduction
+### Introduction {#introduction-3}
 
 In this assignment, you will put everything that you have done together
 into a simple search tool. For now, your search tool will look much like
@@ -854,10 +854,10 @@ load an inverted index produced by your indexer into memory and use it
 to answer users’ search queries. Using the same example from the indexer
 assignment, if you are given the following set of files:
 
-| Filename   | File Content        |
-|------------|---------------------|
-| `boo`      | A dog name name Boo |
-| `baa`      | A cat name Baa      |
+|Filename|File Content|
+|:-------|:-----------|
+|`boo`|A dog name name Boo|
+|`baa`|A cat name Baa|
 
 you would use your indexer to generate the following inverted list and
 save it to an index file:
@@ -875,7 +875,7 @@ output the names of the files with matching content. For example, if the
 user gives the query dog, your search tool should output boo. If the
 user gives the query name, your search tool should output boo, baa.
 
-### Code Reuse
+### Code Reuse {#code-reuse}
 
 Your implementation will require the use of inverted-index files
 produced by the indexer you wrote for Assignment 4. If you could not get
@@ -894,7 +894,7 @@ write a makefile that efficiently compiles and links your search tool.
 The makefile must allow the search tool to be linked with either of the
 two index file parsing modules, at the user’s option.
 
-### Implementation
+### Implementation {#implementation-3}
 
 Your program must support the following invocation interface:
 
@@ -926,7 +926,7 @@ As in the last assignment, you should carefully consider all possible
 exception cases, outline a strategy to deal with them, and implement
 your strategy.
 
-### What to Turn In
+### What to Turn In {#what-to-turn-in-3}
 
 -   A writeup documenting your design, including exception handling and
     paying particular attention to the memory requirements of your
@@ -947,10 +947,10 @@ Your grade will be based on:
     written your design document and code are, including modularity and
     comments).- Code reuse (that your index works with both indexers).
 
-November 5th, 2013 <small>Midterm Study Guide</small>
+November 5th, 2013 <small>Midterm Study Guide</small> {#november-5th-2013-midterm-study-guide}
 -----------------------------------------------------
 
-### Meta
+### Meta {#meta}
 
 -   Coding questions
 -   Size of answer space isn't the actual size of the answer
@@ -959,125 +959,123 @@ November 5th, 2013 <small>Midterm Study Guide</small>
 -   Write a macro
 -   Function questions
 -   Dynamic vs. Static
-	-   Static libraries stay the same
-		-   Goes in a link time
-		-   `.a` file
+    -   Static libraries stay the same
+        -   Goes in a link time
+        -   `.a` file
 
-	-   Dynamic libraries change
-		-   Goes in at run time
-		-   `.so` file
-		-   Can change behavior of the executable
+    -   Dynamic libraries change
+        -   Goes in at run time
+        -   `.so` file
+        -   Can change behavior of the executable
 
 -   Signal disposition and forking
 
-### C Syntax
+### C Syntax {#c-syntax}
 
-#### `const` and pointers
+#### `const` and pointers {#const-and-pointers}
 
-Code | Can change data? | Can change pointer? | Initiliaze data? | Initialize pointer?|
------|------------------|---------------------|------------------|--------------------|
-`int * ptr;` | Yes | Yes | Optional | Optional |
-`const int * ptr;` | No | Yes | Yes | Optional |
-`int * const ptr = &x` | Yes | No | Optional | Yes |
-`const int * const ptr = &x` | No | No | Yes | Yes |
+|Code|Can change data?|Can change pointer?|Initiliaze data?|Initialize pointer?|
+|:---|:---------------|:------------------|:---------------|:------------------|
+|`int * ptr;`|Yes|Yes|Optional|Optional|
+|`const int * ptr;`|No|Yes|Yes|Optional|
+|`int * const ptr = &x`|Yes|No|Optional|Yes|
+|`const int * const ptr = &x`|No|No|Yes|Yes|
 
-#### Data types
+#### Data types {#data-types}
 
-#### Macros
+#### Macros {#macros}
 
-#### C functions
+#### C functions {#c-functions}
 
-#### Preprocessor
+#### Preprocessor {#preprocessor}
 
 -   The C preprocessor (cpp)
-	-   Macro processor
-	-   Transform code before compilation
+    -   Macro processor
+    -   Transform code before compilation
 
 -   Initial processing
-	-   Read into memory and broken into lines
-	-   Merge continued lines
-	-   Repalace comments with single spaces
+    -   Read into memory and broken into lines
+    -   Merge continued lines
+    -   Repalace comments with single spaces
 
 -   Tokenization
-	-   Indentifiers
-	-   Preprocessing numbers
-	-   String literals
-	-   Punctuators
+    -   Indentifiers
+    -   Preprocessing numbers
+    -   String literals
+    -   Punctuators
 
 -   Preprocessing languages
-	-   Incluyde header files
-	-   Macro expansion
-	-   Conditional compilations
-	-   Line control
-	-   Diagnostics
+    -   Incluyde header files
+    -   Macro expansion
+    -   Conditional compilations
+    -   Line control
+    -   Diagnostics
 
-#### Header Files
+#### Header Files {#header-files}
 
 -   Include a file
 -   Why use headers?
-	-   Copy and paste the same possible large amount
-		of code many times.
+    -   Copy and paste the same possible large amount of code many
+        times.
 
-			#include <stdlib.h>
-			#include "myheader.h"
+            #include <stdlib.h>
+            #include "myheader.h"
 
 -   Include headerfile only **once**
 
-		#ifndef SORTED_LIST_H
-		#define SORTED_LIST_H
+        #ifndef SORTED_LIST_H
+        #define SORTED_LIST_H
 
-		/*
-	 	* Your header file content
-		 */
+        /*
+        * Your header file content
+         */
 
-		#endif
+        #endif
 
 -   Select a header from many
 
-		#if SYSTEM_1
-		#include "system_1.h"
-	
-		#elif 	SYSTEM_2
-		#include "system_2.h"
+        #if SYSTEM_1
+        #include "system_1.h"
 
-		#endif
+        #elif   SYSTEM_2
+        #include "system_2.h"
 
-#### Enumeration types
+        #endif
 
-	enum Boolean {true, false};
-	Boolean flag = true;
+#### Enumeration types {#enumeration-types}
 
-	if (flag == true) {
-		printf("true\n");
-	} else if (flag == false) {
-		printf("false\n");
-	{ else {
-		printf("impossibru\n");
-	}
+    enum Boolean {true, false};
+    Boolean flag = true;
 
+    if (flag == true) {
+        printf("true\n");
+    } else if (flag == false) {
+        printf("false\n");
+    { else {
+        printf("impossibru\n");
+    }
 
+### Multi-programming {#multi-programming}
 
-### Multi-programming
+### Function pointers {#function-pointers}
 
-### Function pointers
+#### Compare Int {#compare-int}
 
-#### Compare Int
+    int compareInts(void * p1, void * p2) {
+        int i1 = *(int*)p1;
+        int i2 = *(int*)p2;
 
-	int compareInts(void * p1, void * p2) {
-		int i1 = *(int*)p1;
-		int i2 = *(int*)p2;
+        return i1 - i2;
+    }
 
-		return i1 - i2;
-	}
+    typedef int (*CompareFuncT)(void *, void *);
 
-	typedef int (*CompareFuncT)(void *, void *);
-	
-	CompareFunct cf = &compareInts;
-	cf = &compareDoubles;;
+    CompareFunct cf = &compareInts;
+    cf = &compareDoubles;;
 
-	SortedListPtr SLCreate(CompareFuncT cf);
+    SortedListPtr SLCreate(CompareFuncT cf);
 
-#### Add Int
+#### Add Int {#add-int}
 
 Let's start with a basic function which we will be *pointing to*:
 
@@ -1085,7 +1083,8 @@ Let's start with a basic function which we will be *pointing to*:
         return n+m;
     }
 
-First thing, lets define a pointer to a function which receives 2 `int`s and returns and `int`:
+First thing, lets define a pointer to a function which receives 2 `int`s
+and returns and `int`:
 
     int (*functionPtr)(int,int);
 
@@ -1103,7 +1102,8 @@ Passing the pointer to another function is basically the same:
         return (*functionPtr)(2, 3);
     }
 
-We can use function pointers in return values as well (try to keep up, it gets messy):
+We can use function pointers in return values as well (try to keep up,
+it gets messy):
 
     // this is a function called functionFactory which receives parameter n
     // and returns a pointer to another function which receives two ints
@@ -1115,7 +1115,7 @@ We can use function pointers in return values as well (try to keep up, it gets m
     }
 
 But it's much nicer to use a `typedef`:
-    
+
     typedef int (*myFuncDef)(int, int);
     // note that the typedef name is indeed myFuncDef
         
@@ -1125,530 +1125,507 @@ But it's much nicer to use a `typedef`:
         return functionPtr;
     }
 
-[Source ↪](http://stackoverflow.com/questions/840501/how-do-function-pointers-in-c-work)
+[Source
+↪](http://stackoverflow.com/questions/840501/how-do-function-pointers-in-c-work)
 
-### Enumeration types
+### Enumeration types {#enumeration-types-1}
 
-	enum Boolean {true, false};
-	Boolean flag = true;
+    enum Boolean {true, false};
+    Boolean flag = true;
 
-	if (flag == true) {
-		printf("true\n");
-	} else if (flag == false) {
-		printf("false\n");
-	{ else {
-		printf("impossibru\n");
-	}
+    if (flag == true) {
+        printf("true\n");
+    } else if (flag == false) {
+        printf("false\n");
+    { else {
+        printf("impossibru\n");
+    }
 
-### Makefiles, directory I/O
+### Makefiles, directory I/O {#makefiles-directory-io}
 
 -   Name of your makefile should be `Makefile` or `makefile`.
 -   Commands you can use:
 
-		make
-		make target_label
-		make clean
+        make
+        make target_label
+        make clean
 
 -   What to write in makefile
 
-		target: dependency1 dependency2
-		<tab> system command
+        target: dependency1 dependency2
+        <tab> system command
 
-		# build executable file tokenizer from tokenizer.c
-		all: tokenizer.c
-			gcc -g -Wall -o tokenizer tokenizer.c
+        # build executable file tokenizer from tokenizer.c
+        all: tokenizer.c
+            gcc -g -Wall -o tokenizer tokenizer.c
 
-		#remove tokenizer file:
-		clean:
-			$(RM) tokenizer
+        #remove tokenizer file:
+        clean:
+            $(RM) tokenizer
 
-#### General form
+#### General form {#general-form}
 
-	CC = gcc
-	CFLAG = -g -Wall
-	EXECUTABLE = tokenizer
+    CC = gcc
+    CFLAG = -g -Wall
+    EXECUTABLE = tokenizer
 
-### Libraries
+### Libraries {#libraries}
 
 -   Group multiple compiled object files into a single file.
 -   Used for sharing common pieces of code.
--   Software developers can package code and release an API
-	without the actual source code.
+-   Software developers can package code and release an API without the
+    actual source code.
 -   Libraries (or components) can be created for dynamic use.
-	-   Library is separate from executable, thus reduced its size.
-	-   Libraries can be invoked when needed.
+    -   Library is separate from executable, thus reduced its size.
+    -   Libraries can be invoked when needed.
 
 -   There are two types, dynamic and static libraries.
 
-
 Static library (`.a`)
-
 :   Library of object code which is linked with, and becomes part of
-	something.
+    something.
 
-:   In computer science, a static library or statically-linked library is a set of routines, external functions and variables which are resolved in a caller at compile-time and copied into a target application by a compiler, linker, or binder, producing an object file and a stand-alone executable.
+:   In computer science, a static library or statically-linked library
+    is a set of routines, external functions and variables which are
+    resolved in a caller at compile-time and copied into a target
+    application by a compiler, linker, or binder, producing an object
+    file and a stand-alone executable.
 
 Dynamic library (`.so`)
-
-:   There is only one form of this library but it can be used in two ways.
+:   There is only one form of this library but it can be used in two
+    ways.
 
     1.  Dynamically linked at run time but statically aware. The
-        libraries must be available during compile/link phase. 
-	The shared objects are not included into the executable 
-	component but are tied to the executable.
-    2.  Dynamically loaded/unloaded and linked during execution 
-        (i.e. browser plug-in) using the dynamic linking loaded
-        r system functions.
+        libraries must be available during compile/link phase. The
+        shared objects are not included into the executable component
+        but are tied to the executable.
+    2.  Dynamically loaded/unloaded and linked during execution (i.e.
+        browser plug-in) using the dynamic linking loaded r system
+        functions.
 
 -   Naming convention: `lib` prefix.
 -   Example:
 
-		gcc src-file.c -lm -lpthread
+        gcc src-file.c -lm -lpthread
 
-#### Static library
+#### Static library {#static-library}
 
 -   How to generate a library
-	1.  Compile: `cc -Wall -c ctest1.c ctest2.c`
-	2.  Create `.a`: `ar -cvq libctest.a ctest1.o ctest2.o`
-	3.  List files in library: `ar -t libctest.a`
-	4.  Linking:
+    1.  Compile: `cc -Wall -c ctest1.c ctest2.c`
+    2.  Create `.a`: `ar -cvq libctest.a ctest1.o ctest2.o`
+    3.  List files in library: `ar -t libctest.a`
+    4.  Linking:
 
-		cc -o prog prog.c libctest.a
-		cc -o prog prog.c libctest.a
+        cc -o prog prog.c libctest.a cc -o prog prog.c libctest.a
 
-#### Shared Library
+#### Shared Library {#shared-library}
 
 -   How to create:
 
-		gcc -Wall -fPIC -c *.c
-		gcc -shared -Wl, -sonae, libctrst.so.1 -o libctest.so.1.0 *.o
+        gcc -Wall -fPIC -c *.c
+        gcc -shared -Wl, -sonae, libctrst.so.1 -o libctest.so.1.0 *.o
 
 -   Cascade the linkageL
 
-		ln -sf /opt/lib/libctest.so.1.0 /opt/lib/libtest.so.1
-		ln -sf /opt/lib/libctest.so.1.0 /opt/lib/libtest.so
+        ln -sf /opt/lib/libctest.so.1.0 /opt/lib/libtest.so.1
+        ln -sf /opt/lib/libctest.so.1.0 /opt/lib/libtest.so
 
 `-fPIC`
-
-:   Compiler directive to output position independent code,
-	a characteristic required by shared libraries, also see `-fpic`
-
+:   Compiler directive to output position independent code, a
+    characteristic required by shared libraries, also see `-fpic`
 
 `-shared`
-
-:   Produce a shared object which can then be linked with other
-	objects to form an executable.
+:   Produce a shared object which can then be linked with other objects
+    to form an executable.
 
 `Wl,options`
-
 :   Pass options to linker.
-		
-		-soname libctest.so.1
 
-##### Linking
+        -soname libctest.so.1
 
--   The link to `/opt/lib/libctest.so` allows the naming convention
-	for the compile flag `-litest	` to work.
--   The link to `/opt/lib/libctest.so.1` allows the run time binding
-	to work.
+##### Linking {#linking}
 
-##### Compiling and linking main program
+-   The link to `/opt/lib/libctest.so` allows the naming convention for
+    the compile flag `-litest` to work.
+-   The link to `/opt/lib/libctest.so.1` allows the run time binding to
+    work.
 
-	gcc -Wall -L/opt/lib prog.c -lctest -o prog
+##### Compiling and linking main program {#compiling-and-linking-main-program}
 
-##### List dependencies
+    gcc -Wall -L/opt/lib prog.c -lctest -o prog
 
-	ldd prog
+##### List dependencies {#list-dependencies}
 
-##### Library path
+    ldd prog
 
--  Add library directories to be included during dynamic linking to 
-	the file 
+##### Library path {#library-path}
 
-		/etc/ld.so.conf 
+-   Add library directories to be included during dynamic linking to the
+    file
 
--  Add specified directory to library cache: 
+        /etc/ld.so.conf 
 
-		ldconfig -n /opt/lib
--  Specify the environment variable `LD_LIBRARY_PATH` to point to the 
-	directory paths containing the shared object library
+-   Add specified directory to library cache:
 
-#### Process
+        ldconfig -n /opt/lib
+
+-   Specify the environment variable `LD_LIBRARY_PATH` to point to the
+    directory paths containing the shared object library
+
+#### Process {#process}
 
 Process
-
-:   an address space with one or more threads executing within that 
-	address space, and the required system resources for those threads.
+:   an address space with one or more threads executing within that
+    address space, and the required system resources for those threads.
 
 :   Each instance of a running program constitutes a process.
 
-:   a program - or process - that is running consists of program code, 
-	data, variables (occupying system memory), open files (file 
-	descriptors), and an environment.
+:   a program - or process - that is running consists of program code,
+    data, variables (occupying system memory), open files (file
+    descriptors), and an environment.
 
-:   A process has its own stack space, used for local variables 
-	in functions and for controlling function calls and returns. 
-	It also has its own environment space, containing environment 
-	variables that may be established solely for this process to use. 
-	A process must also maintain its own program counter, a record 
-	of where it has gotten to in its execution, which is the 
-	execution thread.
+:   A process has its own stack space, used for local variables in
+    functions and for controlling function calls and returns. It also
+    has its own environment space, containing environment variables that
+    may be established solely for this process to use. A process must
+    also maintain its own program counter, a record of where it has
+    gotten to in its execution, which is the execution thread.
 
 Process Table
+:   The Linux process table is like a data structure describing all of
+    the processes that are currently loaded with their PID, status, and
+    command string etc.
 
-:   The Linux process table is like a data structure describing all 
-	of the processes that are currently loaded with their PID, status, 
-	and command string etc.
-
-`STAT` Code | Description
-------------|------------
-`S` | Sleeping
-`R` | Running
-`D` | Uninterruptible sleep
-`T` | Stopped
-`z` | Defunct
-`N` | Low priority
-`W` | Paging
-`s` | Process is session leader
-`+` | Process is in the foreground process group
-`1` | Process is multithreaded
-`<` | High priority task
+|`STAT` Code|Description|
+|:----------|:----------|
+|`S`|Sleeping|
+|`R`|Running|
+|`D`|Uninterruptible sleep|
+|`T`|Stopped|
+|`z`|Defunct|
+|`N`|Low priority|
+|`W`|Paging|
+|`s`|Process is session leader|
+|`+`|Process is in the foreground process group|
+|`1`|Process is multithreaded|
+|`<`|High priority task|
 
 Zombie process
+:   Using `forkto` create processes can be very useful, but you must
+    keep track of child processes. When a child process terminates, an
+    association with its parent survives until the parent in turn either
+    terminates normally or calls wait. The child process entry in the
+    process table is therefore not freed up immediately. Although no
+    longer active, the child process is still in the system because its
+    exit code needs to be stored in case the parent subsequently calls
+    wait. It becomes what is known as defunct, or a zombie process.
 
-:   Using `forkto` create processes can be very useful, but 
-	you must keep track of child processes. When a child process 
-	terminates, an association with its parent survives until the 
-	parent in turn either terminates normally or calls wait. The 
-	child process entry in the process table is therefore not freed 
-	up immediately. Although no longer active, the child process 
-	is still in the system because its exit code needs to be stored 
-	in case the parent subsequently calls wait. It becomes what is 
-	known as defunct, or a zombie process.
+### Signals {#signals}
 
-### Signals
+-   A signal is an event generated by the UNIX and Linux systems in
+    response to some condition, upon receipt of which a process may in
+    turn take some action.
+-   Use the term *raise* to indicate the generation of a signal, and the
+    term *catch* to indicate the receipt of a signal.
+-   Signals are raised by some error conditions, such as memory segment
+    violations, floating-point processor errors, or illegal
+    instructions. They are generated by the shell and terminal handlers
+    to cause interrupts and can also be explicitly sent from one process
+    to another as a way of passing information or modifying behavior.
+-   Signals can be raised, caught and acted upon, or (for some at least)
+    ignored.
 
+|Signal name|Description|
+|:----------|:----------|
+|`SIGABORT`|Process abort|
+|`SIGALRM`|Alarm clock|
+|`SIGFPR`|Floating point exception|
+|`SIGHUP`|Hangup|
+|`SIGILL`|Illegal instruction|
+|`SIGINT`|Terminal interuption|
+|`SIGKILL`|Can't be caught or ignored|
+|`SIGPIPE`|Write on a pipe with no reader|
+|`SIGQUIT`|Terminal wuit|
+|`SIGSEGV`|Invalid memory segment access|
+|`SIGTERM`|Termination|
+|`SIGUSR1`|User-defined signal 1|
+|`SIGUSR2`|User-defined signal 2|
+|`SIGCHLD`|Child process has stopped or exited|
+|`SIGCONT`|Contiuning executing, if stopped|
+|`SIGSTOP`|Stop executing|
+|`SIGTSTP`|Terminal stop signal|
+|`SIGTTIN`|Background process trying to read|
+|`SIGTTOU`|Background process trying to write.|
 
--   A signal is an event generated by the UNIX and Linux systems 
-	in response to some condition, upon receipt of which a process 
-	may in turn take some action.
--   Use the term *raise* to indicate the generation of a signal, and 
-	the term *catch* to indicate the receipt of a signal.
--   Signals are raised by some error conditions, such as memory 
-	segment violations, floating-point processor errors, or 
-	illegal instructions. They are generated by the shell and terminal
-	handlers to cause interrupts and can also be explicitly sent from 
-	one process to another as a way of passing information or 
-	modifying behavior.-  Signals can be raised, caught and acted upon, or (for some at 
-	least) ignored.
+#### Signal handling {#signal-handling}
 
-Signal name | Description
-------------|------------
-`SIGABORT	` | Process abort
-`SIGALRM` | Alarm clock
-`SIGFPR` | Floating point exception
-`SIGHUP` | Hangup
-`SIGILL` | Illegal instruction
-`SIGINT` | Terminal interuption
-`SIGKILL` | Can't be caught or ignored
-`SIGPIPE` | Write on a pipe with no reader
-`SIGQUIT` | Terminal wuit
-`SIGSEGV` | Invalid memory segment access
-`SIGTERM` | Termination
-`SIGUSR1` | User-defined signal 1
-`SIGUSR2` | User-defined signal 2
-`SIGCHLD` | Child process has stopped or exited
-`SIGCONT` | Contiuning executing, if stopped
-`SIGSTOP` | Stop executing
-`SIGTSTP` | Terminal stop signal
-`SIGTTIN` | Background process trying to read
-`SIGTTOU` | Background process trying to write.
+    void (*signal(int sig, void (*func)(int)))(int);
 
-#### Signal handling
+-   It takes two parameters, sig and func.
+    -   The signal to be caught or ignored is given as argument sig.
+    -   The function to be called when the specified signal is received
+        is given as func.
+    -   This function must be one that takes a single int argument (the
+        signal received) and is of type void.
 
-	void (*signal(int sig, void (*func)(int)))(int);
+-   The signal function itself returns a function of the same type,
+    which is the previous value of the function set up to handle this
+    signal, or one of these two special values:
 
--   It takes two parameters, sig and func. 
-	-   The signal to be caught or ignored is given as argument sig. 
-	-   The function to be called when the specified signal is 
-		received is given as func. 
-	-   This function must be one that takes a single int 
-		argument (the signal received) and is of type void.
+|Value|Meaning|
+|:----|:------|
+|`SIG_IGN`|Ignore the signal|
+|`SIG_DFL`|Restore default behavior|
 
--   The signal function itself returns a function of the same type, 
-	which is the previous value of the function set up to handle this 	signal, or one of these two special values:
+-   Sending signals (even to self):
 
-| Value | Meaning |
-| ------------- | ------------- |
-| `SIG_IGN`  | Ignore the signal  |
-| `SIG_DFL`  | Restore default behavior  |
+        int kill(pid_t pid, int sig);
 
--   Sending signals (even to self): 
+-   The kill function sends the specified signal, sig, to the process
+    whose identifier is given by pid. It returns 0 on success. To send a
+    signal, the sending process must have permission to do so. Normally,
+    this means that both processes must have the same user ID.
+-   Alarm clock (SIGALRM):
 
-		int kill(pid_t pid, int sig);
+        unsigned int alarm(unsigned int seconds);
 
--   The kill function sends the specified signal, sig, to the process 
-	whose identifier is given by pid. It returns 0 on success. 
-	To send a signal, the sending process must have permission 
-	to do so. Normally, this means that both processes must have the 	same user ID.
--   Alarm clock (SIGALRM): 
-
-		unsigned int alarm(unsigned int seconds);
-
--   The alarm call schedules the delivery of a SIGALRM signal in 
-	seconds seconds. In fact, the alarm will be delivered shortly 
-	after that, due to processing delays and scheduling uncertainties. 
-	A value of 0 will cancel any outstanding alarm request. 
-	Each process can have only one outstanding alarm. Alarm 
-	returns the number of seconds left before any outstanding 
-	alarm call would be sent, or -1 if the call fails.
+-   The alarm call schedules the delivery of a SIGALRM signal in seconds
+    seconds. In fact, the alarm will be delivered shortly after that,
+    due to processing delays and scheduling uncertainties. A value of 0
+    will cancel any outstanding alarm request. Each process can have
+    only one outstanding alarm. Alarm returns the number of seconds left
+    before any outstanding alarm call would be sent, or -1 if the call
+    fails.
 
 -   Be sure to know:
-	-   Signals and threads
-	-   Signals and event-based programming
-	-   Signals and processes
+    -   Signals and threads
+    -   Signals and event-based programming
+    -   Signals and processes
 
 Signals
-
 :   Software interrupt mechanism
 
 :   Notifies a process that a particular event has occurred.
 
-:   Events may orginaly synchronously within the process
-	or asynchronously from outside the process.
+:   Events may orginaly synchronously within the process or
+    asynchronously from outside the process.
 
 :   `usr/include/signal.h` predifines `NAME`s to signal `NUMBER`s
 
 -   Disposition
-	-   For a delivered signal, the process can:
-		-   Ignore
-		-   Catch - invoke user-written code in the process
-		-   Default action - kill process w/o core dump
+    -   For a delivered signal, the process can:
+        -   Ignore
+        -   Catch - invoke user-written code in the process
+        -   Default action - kill process w/o core dump
 
 -   `signal.h`
-	-   Each process has a **signal mask** - the set of blocked signals
-		for that process.
-	-   C uses opaque type sigset_t for signal mask implementation
+    -   Each process has a **signal mask** - the set of blocked signals
+        for that process.
+    -   C uses opaque type sigset\_t for signal mask implementation
 
-### Signal handler
+### Signal handler {#signal-handler}
 
 -   Not large
 -   Should not use global or static data structures
--   The signal that cause invocation of the signal handler
-	is **blocked** during the handler execution
+-   The signal that cause invocation of the signal handler is
+    **blocked** during the handler execution
 -   Different signals can use the same handler function.
 -   Allow multiple handlers (in the same functions)
--   Allow different handlers for the same signal at different
-	points of program execution.
+-   Allow different handlers for the same signal at different points of
+    program execution.
 -   Args determined by OS, not out program
 
-		static void sigint_handler( int signo );
-		static void timeout_handler( int signo, siginfo_t * info, void * p);
+        static void sigint_handler( int signo );
+        static void timeout_handler( int signo, siginfo_t * info, void * p);
 
-#### `signinfo_t`
+#### `signinfo_t` {#signinfo_t}
 
-	signinfo_t struct
-		int si_signo
-		int si_errno
-		int si_code
+    signinfo_t struct
+        int si_signo
+        int si_errno
+        int si_code
 
 -   And a union of structure determined by different signals with
-	detailed information.
+    detailed information.
 
-#### sigaction function
+#### sigaction function {#sigaction-function}
 
-	int sigaction ( int signo, const struct sigaction * action,
-					struct sigaction * oldaction );
+    int sigaction ( int signo, const struct sigaction * action,
+                    struct sigaction * oldaction );
 
 `signo`
-
 :   any valid signal except `sigkill` and `sigstop`
 
 `action`
-
-:   pointer to `sigaction` struct that specifies new process
-	response to `signo`. Can be `null` (default action will
-	be set to oldaction.
+:   pointer to `sigaction` struct that specifies new process response to
+    `signo`. Can be `null` (default action will be set to oldaction.
 
 `oldaction`
-
 :   pointer to previous `sigaction` for `signo`. Can be `null`
 
+#### Sigaction struct {#sigaction-struct}
 
-#### Sigaction struct
+|Member type|Name|Description|
+|:----------|:---|:----------|
+|`void(*)(int)`|`sa_handler`|`SIG_DFL`, `SIG_IGN`, or pointer to function.|
+|`sigset_t`|`sa_mask`|Additional set of signals to be blocked during execution of signal catching function.|
+|`int`|`sa_flags`|Special falgs to affect behavior of signal.|
+|`void(*)(int, siginfo_t *, void *)`|`sa_sigaction`|Signal catching function.|
 
-Membert type | Name | Description
--------------|------|-------------
-`void(*)(int)` | `sa_handler` | `SIG_DFL`, `SIG_IGN`, or pointer to function
-`sigset_t` | `sa_mask` | Additional set of signals to be blocked during execution of signal catching function.
-`int` | `sa_flags` | Special falgs to affect behavior of signal.
-`void(*)(int, siginfo_t *, void *)` | `sa_sigaction` | Signal catching function.
+#### Timer {#timer}
 
-
-#### Timer
-
-	struct itimerval {
-		struct timeval it_interval;
-		struct timeval it_value;
-	}
+    struct itimerval {
+        struct timeval it_interval;
+        struct timeval it_value;
+    }
 
 -   Activate: call `setitimer` with non-zero `it_value`
 -   Deactivate: call `setitimer()` with zero `it_value`, or when timer
-	expires with a zero `it_interval`.
+    expires with a zero `it_interval`.
 -   No multiple, seperate timers for the same process at the same time.
 
-#### Timer activation
+#### Timer activation {#timer-activation}
 
-`it_value` | `it_interval` | Result
------------|---------------|-------
-2,0 | 5,0 | 2 second wait, 5 second interval
-2,0 | 0,0 | 2 second wait, no repeat
-0,0 | 5,0 | nothing
-0,0 | 0,0 | nothing
+|`it_value`|`it_interval`|Result|
+|:---------|:------------|:-----|
+|2,0|5,0|2 second wait, 5 second interval|
+|2,0|0,0|2 second wait, no repeat|
+|0,0|5,0|nothing|
+|0,0|0,0|nothing|
 
+### Threads {#threads}
 
-### Threads
-
-#### What is a thread?
+#### What is a thread? {#what-is-a-thread}
 
 -   Threads are multiple strands of execution in a single program.
 -   A single is a sequence of control within a process.
 -   A process runs at least one thread, `main`.
 -   `fork()`ing a process: A new copy is created with its own everything
-	memory.
--   Starting a new thread: It only has it's own *memory stack*, everything
-	else is shared with the process which created it.
+    memory.
+-   Starting a new thread: It only has it's own *memory stack*,
+    everything else is shared with the process which created it.
 
-#### Advantages
+#### Advantages {#advantages}
 
 -   Make a program do a few things at once
-	-   Logically is not multicore.
-	-   Physically if multicore.
+    -   Logically is not multicore.
+    -   Physically if multicore.
 
--   A program can mix input, calculation, and output
-	efficiently.
+-   A program can mix input, calculation, and output efficiently.
 -   Accelerate processing on proper multi-core processors.
--   Switching between threads requires less work than switching
-	between processes.
+-   Switching between threads requires less work than switching between
+    processes.
 
-#### Disadvantages
+#### Disadvantages {#disadvantages}
 
 -   Requires careful design.
-	-   Threads are also know as "how to shoot yourself
-		in both feet at once."
+    -   Threads are also know as "how to shoot yourself in both feet at
+        once."
 
--   Debugguging hell. By using a good IDE the job is largely
-	mitigated.
--   A program that split a large calculation into two and the
-	the two parts a different threads will not necessarily run
-	more quickly on a single processor machine.
+-   Debugguging hell. By using a good IDE the job is largely mitigated.
+-   A program that split a large calculation into two and the the two
+    parts a different threads will not necessarily run more quickly on a
+    single processor machine.
 
-#### POSIX Thread
+#### POSIX Thread {#posix-thread}
 
-##### Creation
+##### Creation {#creation}
 
-	#include <pthread.h>
-	int pthread_create(pthread_t *thread, pthread_attr_t *attr,
-							void *(*start_routine)(void *), void *arg);
+    #include <pthread.h>
+    int pthread_create(pthread_t *thread, pthread_attr_t *attr,
+                            void *(*start_routine)(void *), void *arg);
 
-##### Termination
+##### Termination {#termination}
 
-	void pthread_exit(void *retval);
+    void pthread_exit(void *retval);
 
-##### Termination callback
+##### Termination callback {#termination-callback}
 
-	int pthread_join(pthread_t th, void **thread_return);
+    int pthread_join(pthread_t th, void **thread_return);
 
-#### Thread synchronization 
+#### Thread synchronization {#thread-synchronization}
 
 Mutex locks
-
 :   Gatekeepers around a piece of code, mutex "guards an object".
 
-:   In computer science, a lock is a synchronization mechanism for 
-	enforcing limits on access to a resource in an environment where 
-	there are many threads of execution. A lock is designed to enforce 
-	a mutual exclusion concurrency control policy.
-	[↪](http://en.wikipedia.org/wiki/Lock_(computer_science))
+:   In computer science, a lock is a synchronization mechanism for
+    enforcing limits on access to a resource in an environment where
+    there are many threads of execution. A lock is designed to enforce a
+    mutual exclusion concurrency control policy.
+    [↪](http://en.wikipedia.org/wiki/Lock_(computer_science))
 
 Semaphores
-
 :   Protect sections of code, semaphore "controls a set of objects"
 
-:   In computer science, particularly in operating systems, a 
-	semaphore is a variable or abstract data type that is used 
-	for controlling access, by multiple processes, to a common 
-	resource in a parallel programming or a multi user environment.
-	[↪](http://en.wikipedia.org/wiki/Semaphore_(programming))
+:   In computer science, particularly in operating systems, a semaphore
+    is a variable or abstract data type that is used for controlling
+    access, by multiple processes, to a common resource in a parallel
+    programming or a multi user environment.
+    [↪](http://en.wikipedia.org/wiki/Semaphore_(programming))
 
-##### Semaphores
+##### Semaphores {#semaphores}
 
--   A semaphore is a special type of variable that can be incremented
-	or decremented, but crucial access to the variable is guaranteed
-	to be atomic, even in a multi-threaded program.
--  If two or more threads in a program attempt to change the value
-	of a semaphore, the system guarantees that all the operations will
-	in fact take place in sequence.
--   Binary semaphore is commonly used. It means only one thread is
-	able to execute the guarded piece of code. 
-	-   Counting semaphore can allow a number of threads to execute
-		simultaneously.
+-   A semaphore is a special type of variable that can be incremented or
+    decremented, but crucial access to the variable is guaranteed to be
+    atomic, even in a multi-threaded program.
+-   If two or more threads in a program attempt to change the value of a
+    semaphore, the system guarantees that all the operations will in
+    fact take place in sequence.
+-   Binary semaphore is commonly used. It means only one thread is able
+    to execute the guarded piece of code.
+    -   Counting semaphore can allow a number of threads to execute
+        simultaneously.
 
-###### Initialization:
+###### Initialization: {#initialization}
 
-	#include <semaphore.h>
-	int sem_init(sem_t * sem, int pshared, unsigned int value);
+    #include <semaphore.h>
+    int sem_init(sem_t * sem, int pshared, unsigned int value);
 
--   This function intializaes a semaphore object pointed to
-	by `sem`, sets it sharing option, and gives it an initial 
-	integer value.
+-   This function intializaes a semaphore object pointed to by `sem`,
+    sets it sharing option, and gives it an initial integer value.
 -   The `pshared` parameter controls the type of semaphore.
-	-   If the value is 0, the semaphore is local to the current
-		process.
+    -   If the value is 0, the semaphore is local to the current
+        process.
 
-###### Waiting
+###### Waiting {#waiting}
 
 -   Wait until allowed to execute:
 
-		int sem_wait(sem_t *sem);
+        int sem_wait(sem_t *sem);
 
--   `sem_wait()` **atomically** decreases the value of the semaphore
-	by one, but always waits until the semaphore has a non-zero count
-	first.
-	-   If sem_wait is called on a semaphore with a value of 0, the
-		function will wait until some other thread has incremented
-		the valuye so that it is no longer 0.
+-   `sem_wait()` **atomically** decreases the value of the semaphore by
+    one, but always waits until the semaphore has a non-zero count
+    first.
+    -   If sem\_wait is called on a semaphore with a value of 0, the
+        function will wait until some other thread has incremented the
+        valuye so that it is no longer 0.
 
 -   Post when enter the guarded execution.
 
-		int sem_post(sem_t * sem);
+        int sem_post(sem_t * sem);
 
 -   `sem_post()` **atomically** increases the value of the semaphore by
-	one. 
-	-   If the both programs try to increase the value by 1, the
-		semaphore will always be correctly increased in value by 2.
+    one.
+    -   If the both programs try to increase the value by 1, the
+        semaphore will always be correctly increased in value by 2.
 
-##### Mutex
+##### Mutex {#mutex}
 
 -   Mutual exclusion
 -   Allowing programmer to lock an object, only one thread can access
-	it.
--   Must local the mutex before entering and unlock it when
-	you finish.
-		#include <pthread.h>		int pthread_mutex_init(pthread_mutex_t *mutex,		const pthread_mutexattr_t *mutexattr); int 		pthread_mutex_lock(pthread_mutex_t *mutex));		int pthread_mutex_unlock(pthread_mutex_t *mutex); int 		pthread_mutex_destroy(pthread_mutex_t *mutex);
+    it.
+-   Must local the mutex before entering and unlock it when you finish.
 
-###### Destruction
+        #include <pthread.h>
 
-	int sem_destroy(sem_t * sem);
+        int pthread_mutex_init(pthread_mutex_t *mutex,
+        const pthread_mutexattr_t *mutexattr); int      pthread_mutex_lock(pthread_mutex_t *mutex));
+        int pthread_mutex_unlock(pthread_mutex_t *mutex); int       pthread_mutex_destroy(pthread_mutex_t *mutex);
 
-##### Condition Variables
+###### Destruction {#destruction}
 
+    int sem_destroy(sem_t * sem);
 
+##### Condition Variables {#condition-variables}
 
-#### Thread patterns
-
-
-
-
-
-
+#### Thread patterns {#thread-patterns}

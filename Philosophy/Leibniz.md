@@ -1,10 +1,10 @@
-Leibniz <small>with Professor Martha Bolton</small>
+Leibniz <small>with Professor Martha Bolton</small> {#leibniz-with-professor-martha-bolton}
 ===================================================
 
-Syllabus
+Syllabus {#syllabus}
 --------
 
-### Texts
+### Texts {#texts}
 
 Assigned and recommended readings will be papers, letters, and published
 articles of Leibniz, as well as some secondary sources. Readings will be
@@ -14,7 +14,7 @@ is available at the bookstore, G. W. Leibniz, Philosophical Essays, tr.
 Roger Ariew and Daniel Garber. Purchase is optional; all assigned
 readings will be available electronically.
 
-### Requirements
+### Requirements {#requirements}
 
 You are expected to attend all meetings of the class and to do all
 reading assignments thoroughly and promptly. Assignments should be read
@@ -26,7 +26,7 @@ semester and a long paper (roughly 12-15 pages) due at the end of
 course. There may be additional out-of-class written assignments,
 quizzes, or in-class exercises.
 
-### Learning goals
+### Learning goals {#learning-goals}
 
 The course is intended to provide a good understanding of some of the
 central doctrines of Leibniz's metaphysics and theory of cognition, the
@@ -35,7 +35,7 @@ historical context and significance. It is also meant to develop skill
 in analyzing and evaluating arguments, as well as developing,
 supporting, and expressing views of one's own.
 
-### Schedule
+### Schedule {#schedule}
 
 1.  January 28: The alphabet of thought and method of demonstrating
     truths
@@ -80,7 +80,7 @@ supporting, and expressing views of one's own.
     assignment)
     -   Letter to Arnauld 9 Oct 1687
     -   Suggested: Chris Swoyer, 'Leibnizian Expression', *Journal of
-        the History of Philosophy* 33 (1995), 65-94\
+        the History of Philosophy* 33 (1995), 65-94  
 
 11. March 4
     -   'Meditation on the Principle of the Individual' (1676)
@@ -102,7 +102,7 @@ supporting, and expressing views of one's own.
         Rerum*'
 
 14. March 13: Pre-established harmony, miracles and occasionalism
-    -   'New System, etc.' (1695);\
+    -   'New System, etc.' (1695);  
     -   'First Explanation of the New System, etc' (1696);
     -   Letter to Damaris Masham (1704);
     -   Letter to Arnauld 30 Apr 1687
@@ -149,12 +149,12 @@ supporting, and expressing views of one's own.
     -   New Essays concerning Human Understanding (1702-04) excerpt from
         Preface, Book 2.1
 
-24. May 1 same\
+24. May 1 same  
 25. May 6 Same
 
 Final paper due on regularly scheduled exam date for this class period.
 
-January 23rd, 2013 - Lecture: The alphabet of thought and method of demonstrating truths
+January 23rd, 2013 - Lecture: The alphabet of thought and method of demonstrating truths {#january-23rd-2013---lecture-the-alphabet-of-thought-and-method-of-demonstrating-truths}
 ----------------------------------------------------------------------------------------
 
 -   Leibniz lived between 1646 to 1716
@@ -280,10 +280,10 @@ January 23rd, 2013 - Lecture: The alphabet of thought and method of demonstratin
         3.  *Specimen of Dynamics* (1695)
         4.  'New System of the nature and Communications of Substances'
 
-January 28th, 2013 - Reading
+January 28th, 2013 - Reading {#january-28th-2013---reading}
 ----------------------------
 
-### Leibniz's 'Of an Oragnum or Ars Magna of Thinking' (1679)
+### Leibniz's 'Of an Oragnum or Ars Magna of Thinking' (1679) {#leibnizs-of-an-oragnum-or-ars-magna-of-thinking-1679}
 
 -   The supreme happiness is the greatest increase in one's own
     perfection.
@@ -303,7 +303,7 @@ January 28th, 2013 - Reading
 -   Another example is that all numbers can be built on using everything
     and nothing, 0 and 1, using the binary system.
 
-### Leibniz's 'Preface to Universal Characteristic' (1678-9)
+### Leibniz's 'Preface to Universal Characteristic' (1678-9) {#leibnizs-preface-to-universal-characteristic-1678-9}
 
 -   God made all using weight, measure, and number. Mechanism.
 -   Those things that cannot be weighed because they have no force or
@@ -332,7 +332,7 @@ January 28th, 2013 - Reading
 > whether arguments are indeed materially sound and draw the right
 > conclusions.
 
-### Leibniz's 'Samples of the Numerical Characteristic' (1679)
+### Leibniz's 'Samples of the Numerical Characteristic' (1679) {#leibnizs-samples-of-the-numerical-characteristic-1679}
 
 -   Observes that while sometimes an argument leads to the correct
     conclusion, it is not because of sound argument or true premises.
@@ -346,7 +346,7 @@ January 28th, 2013 - Reading
 -   Leibniz does some weird and goofy number assignment and negative
     stuff here.
 
-January 28th, 2013 - Lecture
+January 28th, 2013 - Lecture {#january-28th-2013---lecture}
 ----------------------------
 
 -   Remember that Leibniz escapes from nothern Germany to Paris, and he
@@ -434,10 +434,10 @@ January 28th, 2013 - Lecture
 
 -   Anything that satisfies the subject satisfies the predicate.
 
-January 30th, 2013 - Reading
+January 30th, 2013 - Reading {#january-30th-2013---reading}
 ----------------------------
 
-### Leibniz's 'That a Most Perfect Being Exists' (1676)
+### Leibniz's 'That a Most Perfect Being Exists' (1676) {#leibnizs-that-a-most-perfect-being-exists-1676}
 
 -   Simple concepts are perfect forms and they are impossible to access.
 -   Only "universal propositions" can be stated about that which cannot
@@ -456,7 +456,7 @@ January 30th, 2013 - Reading
     -   Whatever necessarilly exists, exists.
     -   Therefore, a necessary being exists.
 
-#### [Stanford Encyclopedia of Philosophy - Leibniz: The Existence of God](http://plato.stanford.edu/entries/leibniz/#ExiGod)
+#### [Stanford Encyclopedia of Philosophy - Leibniz: The Existence of God](http://plato.stanford.edu/entries/leibniz/#ExiGod) {#stanford-encyclopedia-of-philosophy---leibniz-the-existence-of-god}
 
 -   Leibniz thinks that perfection is a "simple quality which is
     positive and absolute, or, which expresses without any limits
@@ -469,7 +469,7 @@ January 30th, 2013 - Reading
 -   This argument is not sufficient to demonstrate that god necessarilly
     exists.
 
-January 30th, 2013 - Lecture: Method of demonstration and the existence of God
+January 30th, 2013 - Lecture: Method of demonstration and the existence of God {#january-30th-2013---lecture-method-of-demonstration-and-the-existence-of-god}
 ------------------------------------------------------------------------------
 
 -   There are two things: things you think of through others and things
@@ -500,7 +500,7 @@ January 30th, 2013 - Lecture: Method of demonstration and the existence of God
     anticpation.
 -   If you grant "simple concepts", all of the above follows.
 
-### Leibniz's 'That a Most Perfect Being Exists' (1676)
+### Leibniz's 'That a Most Perfect Being Exists' (1676) {#leibnizs-that-a-most-perfect-being-exists-1676-1}
 
 -   Ontological argument
 -   Subject to a lot of objections
@@ -575,10 +575,10 @@ January 30th, 2013 - Lecture: Method of demonstration and the existence of God
     -   All triangles have three angels.
     -   Water is liquid at room temperature.
 
-February 4th, 2013 - Reading
+February 4th, 2013 - Reading {#february-4th-2013---reading}
 ----------------------------
 
-### Homework
+### Homework {#homework}
 
 -   All cockerspaniels are dogs.
     -   Subject: cocker spaniels
@@ -588,23 +588,21 @@ February 4th, 2013 - Reading
     -   Cockerspaniels are a complex idea experienced through the
         concept of dog, along with the other properties of
         cockerspaniels.
-    -   Symbolically, cockerspaniels can be represented as {\$
-        \mathrm{dog}, q\_1, q\_2, ... , q\_n \$} where qs are qualities
-        unique to cockerspaniels and "dog" is the set of all concepts in
-        dog.
+    -   Symbolically, cockerspaniels can be represented as {\$ , q\_1,
+        q\_2, ... , q\_n \$} where qs are qualities unique to
+        cockerspaniels and "dog" is the set of all concepts in dog.
     -   The concept of dog is a complex idea experienced through other
         ideas, but it does not need to be defined here. Let {dog} be the
         set of all dog qualities.
-    -   Because {dog} \$ \in \$ {\$ \mathrm{dog}, q\_1, q\_2, ... , q\_n
-        \$}, all cocker spaniels are dogs.
+    -   Because {dog} \$ \$ {\$ , q\_1, q\_2, ... , q\_n \$}, all cocker
+        spaniels are dogs.
 
 -   All triangles have three angles.
     -   Triangle's are complex ideas experienced through: {shape,
         polygon, three angles, three edges, ...}
-    -   {three angles} $\in$ {shape, polygon, three angles, three edges,
+    -   {three angles}  ∈  {shape, polygon, three angles, three edges,
         ...}
-    -   So \$ \forall x \$ if x is a triangle \$ \to \$ x has three
-        angles
+    -   So \$ x \$ if x is a triangle \$ \$ x has three angles
 
 -   Water is liquid at room temperature
     -   We experience water through the simpler concepts of: {chemical
@@ -614,7 +612,7 @@ February 4th, 2013 - Reading
     -   The concept of liquid is not "contained within" the concept of
         water.
 
-### Leibniz's 'On Contingency' (1686?)
+### Leibniz's 'On Contingency' (1686?) {#leibnizs-on-contingency-1686}
 
 -   Existence does not differ from essence for god.
 -   It is essential for god to exist.
@@ -622,7 +620,7 @@ February 4th, 2013 - Reading
 -   Creatures are contingent in that their existence does not follow
     from their essence.
     -   This is what it must be to be mortal.
-    -   Leibniz think that god's essence \$ \to \$ god's being.
+    -   Leibniz think that god's essence \$ \$ god's being.
 
 -   Necessary truths are those that can be demonstrated through analysis
     of terms.
@@ -656,7 +654,7 @@ February 4th, 2013 - Reading
     -   Exists means "is true"
     -   This proposition is necessarily true.
 
-February 4th, 2013 - Lecture: The infinite analysis theory of contingent truth
+February 4th, 2013 - Lecture: The infinite analysis theory of contingent truth {#february-4th-2013---lecture-the-infinite-analysis-theory-of-contingent-truth}
 ------------------------------------------------------------------------------
 
 -   Even without the proof of the possibility of god, the argument
@@ -717,7 +715,7 @@ February 4th, 2013 - Lecture: The infinite analysis theory of contingent truth
 -   But keep track of your assumptions and check them - this is how you
     make progress.
 
-### Leibniz's 'On the Nature of Truth' (1686)
+### Leibniz's 'On the Nature of Truth' (1686) {#leibnizs-on-the-nature-of-truth-1686}
 
 -   This is later than the Paris period, and he's still thinking his way
     through the concept cointainment theory of truth.
@@ -727,7 +725,7 @@ February 4th, 2013 - Lecture: The infinite analysis theory of contingent truth
     but not both.
 -   There is no proposition that is indeterminate.
 -   If a proposition p is false, then the contradictory of p is true. \$
-    p \$ and $\lnot p $ are contradictory.
+    p \$ and ¬*p* are contradictory.
     -   Law of non-contradiction
     -   Interestingly, this law cannot be proved, because you'd have to
         use propositions.
@@ -758,7 +756,7 @@ February 4th, 2013 - Lecture: The infinite analysis theory of contingent truth
             happening rather than otherwise.
         -   No proposition is true without there being a reason.
 
-### Homework
+### Homework {#homework-1}
 
 -   Look at the last paragraph of 'On the Nature of Truth'
 -   Principle of Sufficient Reason
@@ -769,12 +767,12 @@ February 4th, 2013 - Lecture: The infinite analysis theory of contingent truth
 -   'On Freedom'
 -   'Primary Truths' (read but we will not talk about)
 
-February 6th, 2013 - Reading
+February 6th, 2013 - Reading {#february-6th-2013---reading}
 ----------------------------
 
-### Principle of Sufficient Reason
+### Principle of Sufficient Reason {#principle-of-sufficient-reason}
 
-#### [Wikipedia](http://en.wikipedia.org/wiki/Principle_of_sufficient_reason)
+#### [Wikipedia](http://en.wikipedia.org/wiki/Principle_of_sufficient_reason) {#wikipedia}
 
 The principle of sufficient reason states that nothing is without a
 ground or reason why it is.
@@ -799,7 +797,7 @@ ground or reason why it is.
 > distinction must be made between that which is certain and that which
 > is necessary.
 
-#### [Stanford Encyclopedia of Philosophy](http://plato.stanford.edu/entries/sufficient-reason/)
+#### [Stanford Encyclopedia of Philosophy](http://plato.stanford.edu/entries/sufficient-reason/) {#stanford-encyclopedia-of-philosophy}
 
 > The principle of sufficient reason, namely, that nothing happens
 > without a reason.
@@ -809,7 +807,7 @@ ground or reason why it is.
         necessary just in case its negation is a contradiction)
     2.  and the PSR
 
-### Leibniz's 'On Freedom' (1689?)
+### Leibniz's 'On Freedom' (1689?) {#leibnizs-on-freedom-1689}
 
 -   How freedom and contingency can coexist is one of the oldest human
     worries.
@@ -850,7 +848,7 @@ ground or reason why it is.
 -   Having accepted the notion that necessity everyone accepts, which is
     that those things whose contrary implies a contradiction.
 
-### Leibniz's 'Primary Truths' (1689)
+### Leibniz's 'Primary Truths' (1689) {#leibnizs-primary-truths-1689}
 
 -   The primary truths are those which assert the same thing of itself
     or deny the opposite of its opposite.
@@ -904,7 +902,7 @@ ground or reason why it is.
     -   Animate things neither arise nor perish, but are only
         transformed.
 
-February 6th, 2013 - Lecture: More consequences of the 'predicate in notion' theory of truth
+February 6th, 2013 - Lecture: More consequences of the 'predicate in notion' theory of truth {#february-6th-2013---lecture-more-consequences-of-the-predicate-in-notion-theory-of-truth}
 --------------------------------------------------------------------------------------------
 
 -   The infinite analysis will always yield a reason a true proposition
@@ -967,7 +965,7 @@ February 6th, 2013 - Lecture: More consequences of the 'predicate in notion' the
 -   If Zero Dark Thirty won the Oscar, it got the most number of votes.
     If it wins, it is necessary it does. But it's not necessary it does.
 
-### Leibniz's 'On Freedom'
+### Leibniz's 'On Freedom' {#leibnizs-on-freedom}
 
 -   One of the reasons Leibniz is so interested in matters of fact being
     contigent in the actual world is that he wants to preserve
@@ -975,7 +973,7 @@ February 6th, 2013 - Lecture: More consequences of the 'predicate in notion' the
 -   He wants to preserve freedom.
 -   What counts as freedom?
 
-### Definitions
+### Definitions {#definitions}
 
 -   **Concept Containment Theory of Truth**: In every true proposition,
     the concept of the predicate is contained in the concept of the
@@ -985,12 +983,12 @@ February 6th, 2013 - Lecture: More consequences of the 'predicate in notion' the
 -   **Principle of Sufficient Reason**: For every true proposition there
     is a reason for it, being true rather than false.
 
-February 11th, 2013 - Reading
+February 11th, 2013 - Reading {#february-11th-2013---reading}
 -----------------------------
 
-### 'Discourse on Metaphysics' (1686)
+### 'Discourse on Metaphysics' (1686) {#discourse-on-metaphysics-1686}
 
-#### 1. On Divine Perfection, and That God Does Everything in the Most Desirable Way
+#### 1. On Divine Perfection, and That God Does Everything in the Most Desirable Way {#on-divine-perfection-and-that-god-does-everything-in-the-most-desirable-way}
 
 -   God is an absolutely perfect being
     -   This is the best way we can describe god
@@ -1014,7 +1012,7 @@ February 11th, 2013 - Reading
         -   Metaphysical matters,
         -   Moral matters
 
-#### 2. Against Those Who Claim That There Is No Goodness in God's Work, or That the Rules of Goodness and Beauty Are Arbitrary
+#### 2. Against Those Who Claim That There Is No Goodness in God's Work, or That the Rules of Goodness and Beauty Are Arbitrary {#against-those-who-claim-that-there-is-no-goodness-in-gods-work-or-that-the-rules-of-goodness-and-beauty-are-arbitrary}
 
 -   Leibniz is far removed from those who maintain there is no good or
     perfect
@@ -1035,7 +1033,7 @@ February 11th, 2013 - Reading
     -   Descartes thought that god "could have" willed that a triangle
         have four sides.
 
-#### 3. Against Those Who Believe That God Might Have Made Things Better
+#### 3. Against Those Who Believe That God Might Have Made Things Better {#against-those-who-believe-that-god-might-have-made-things-better}
 
 -   Nor can Leibniz approve of those who maintain that god could have
     made the world better.
@@ -1064,7 +1062,7 @@ February 11th, 2013 - Reading
 
     -   God does nothing for which he does not deserve to be praised.
 
-#### 4. That the Love of God Requires Our Complete Satisfaction and Acquiescence with Respect to What He Has Done without Our Being Quietists as a Result
+#### 4. That the Love of God Requires Our Complete Satisfaction and Acquiescence with Respect to What He Has Done without Our Being Quietists as a Result {#that-the-love-of-god-requires-our-complete-satisfaction-and-acquiescence-with-respect-to-what-he-has-done-without-our-being-quietists-as-a-result}
 
 -   The genral knowlege of this truth is the foundation of the love that
     we owe god
@@ -1086,7 +1084,7 @@ February 11th, 2013 - Reading
         1.  Act in accordance with what we presume to be the will of god
         2.  Contribute to the general good
 
-#### 5. What the Rules of the Perfection of Divine Conduct Consist in, and That the Simplicity of the Ways Is in Balance with the Richness of the Effects
+#### 5. What the Rules of the Perfection of Divine Conduct Consist in, and That the Simplicity of the Ways Is in Balance with the Richness of the Effects {#what-the-rules-of-the-perfection-of-divine-conduct-consist-in-and-that-the-simplicity-of-the-ways-is-in-balance-with-the-richness-of-the-effects}
 
 -   Therefore it is sufficient to have the confidence that god does
     everthing for the best.
@@ -1104,7 +1102,7 @@ February 11th, 2013 - Reading
         come into being
     -   The simplest system is always preferred in astronomy.
 
-#### 6. God Does Nothing Which Is Not Orderly and It Is Not Even Possible to Imagine Events That Are Not Regular
+#### 6. God Does Nothing Which Is Not Orderly and It Is Not Even Possible to Imagine Events That Are Not Regular {#god-does-nothing-which-is-not-orderly-and-it-is-not-even-possible-to-imagine-events-that-are-not-regular}
 
 -   The volitions or acts of god are divided into two groups:
     1.  Ordinary
@@ -1120,7 +1118,7 @@ February 11th, 2013 - Reading
         -   Just like a line in geometry whose construction is easy and
             whose properties and effects are remarkable and widespread.
 
-#### 7. That Miracles Conform to the General Order, Even Though They May Be Contrary to the Subordinate Maxims; and about What God Wills or Permits by a General or Particular Volition
+#### 7. That Miracles Conform to the General Order, Even Though They May Be Contrary to the Subordinate Maxims; and about What God Wills or Permits by a General or Particular Volition {#that-miracles-conform-to-the-general-order-even-though-they-may-be-contrary-to-the-subordinate-maxims-and-about-what-god-wills-or-permits-by-a-general-or-particular-volition}
 
 -   Nothing happens which is not in order.
     -   Miracles are therefore part of that natural order.
@@ -1153,7 +1151,7 @@ February 11th, 2013 - Reading
         established and because he knows how to draw greater good from
         it.
 
-#### 8. To Distinguish the Actions of God from Those of Creatures We Explain the Notion of an Individual Substance
+#### 8. To Distinguish the Actions of God from Those of Creatures We Explain the Notion of an Individual Substance {#to-distinguish-the-actions-of-god-from-those-of-creatures-we-explain-the-notion-of-an-individual-substance}
 
 -   It is difficult to distinguish the actions of god and creatures
     -   Some believe god does everything.
@@ -1188,10 +1186,10 @@ February 11th, 2013 - Reading
         happened to him and marks everyhing that will happen to him and
         even marks of everything that will happen in the universe.
 
-February 11th, 2013 - Lecture
+February 11th, 2013 - Lecture {#february-11th-2013---lecture}
 -----------------------------
 
-### Discourse on Metaphysics
+### Discourse on Metaphysics {#discourse-on-metaphysics}
 
 -   Leibniz starts out in the first four sections laying out basic
     claims about god.
@@ -1306,7 +1304,7 @@ February 11th, 2013 - Lecture
         within the concept containment theory of truth.
     -   "Green is predicated of grass."
 
-February 13th, 2013 - Lecture
+February 13th, 2013 - Lecture {#february-13th-2013---lecture}
 -----------------------------
 
 -   **Concept containment definition of individual substance**: *X* is
@@ -1336,16 +1334,16 @@ February 13th, 2013 - Lecture
         1.  Is analogous to god's perception of the infinite
         2.  Is such that every other is accommodating it.
 
-### Notable paradoxes
+### Notable paradoxes {#notable-paradoxes}
 
 -   If we know about an individual substance that has a complete
     concept, then certain things have to be true about everything that
     satisfy that concept.
 
-February 18th, 2013 - Reading: Excerpts from Leibniz's first two letters to Arnauld (May 1686; 14 July, 1686)
+February 18th, 2013 - Reading: Excerpts from Leibniz's first two letters to Arnauld (May 1686; 14 July, 1686) {#february-18th-2013---reading-excerpts-from-leibnizs-first-two-letters-to-arnauld-may-1686-14-july-1686}
 -------------------------------------------------------------------------------------------------------------
 
-### Remarks on Arnauld's Letter about My Proposition That the Individual Notion of Each Person Includes Once and for All Everything That Will Ever Happen to Him [May 1686]
+### Remarks on Arnauld's Letter about My Proposition That the Individual Notion of Each Person Includes Once and for All Everything That Will Ever Happen to Him [May 1686] {#remarks-on-arnaulds-letter-about-my-proposition-that-the-individual-notion-of-each-person-includes-once-and-for-all-everything-that-will-ever-happen-to-him-may-1686}
 
 -   Arnauld: god was free to create Adam or not, but assuming that he
     wanted to create him, everything that has happened to humankind had
@@ -1359,7 +1357,7 @@ February 18th, 2013 - Reading: Excerpts from Leibniz's first two letters to Arna
     notions of individual is the same process as deducing the notions of
     a spehere from its properties.
 
-February 18th, 2013 - Lecture: Fatal necessity and the structure of the concept of an individual substance.
+February 18th, 2013 - Lecture: Fatal necessity and the structure of the concept of an individual substance. {#february-18th-2013---lecture-fatal-necessity-and-the-structure-of-the-concept-of-an-individual-substance.}
 -----------------------------------------------------------------------------------------------------------
 
 -   Leibniz's points:
@@ -1406,10 +1404,10 @@ February 18th, 2013 - Lecture: Fatal necessity and the structure of the concept 
 -   **Super-intrinsicalism**: If there were a thing *x* which differs in
     any predicate from *i*, *x* would not be equal to *i*.
 
-February 20th, 2013 - Reading: Excerpts from letters to Arnauld 28 Nov/8 Dec 1686 and 30 Apr 1687; 9 Oct 1687;
+February 20th, 2013 - Reading: Excerpts from letters to Arnauld 28 Nov/8 Dec 1686 and 30 Apr 1687; 9 Oct 1687; {#february-20th-2013---reading-excerpts-from-letters-to-arnauld-28-nov8-dec-1686-and-30-apr-1687-9-oct-1687}
 --------------------------------------------------------------------------------------------------------------
 
-February 20th, 2013 - Lecture: Critique of Descartes' doctrine of corporal substance, substantial forms, corporeal substances
+February 20th, 2013 - Lecture: Critique of Descartes' doctrine of corporal substance, substantial forms, corporeal substances {#february-20th-2013---lecture-critique-of-descartes-doctrine-of-corporal-substance-substantial-forms-corporeal-substances}
 -----------------------------------------------------------------------------------------------------------------------------
 
 -   This was written on the board, on page 85 of the reading. Where a
@@ -1499,31 +1497,31 @@ February 20th, 2013 - Lecture: Critique of Descartes' doctrine of corporal subst
 
 -   Read for monday the assignment for wednesday
 
-February 25th, 2013 - Reading: Chris Swoyer, 'Leibnizian Expression', *Journal of the History of Philosophy* 33 (1995), 65-94
+February 25th, 2013 - Reading: Chris Swoyer, 'Leibnizian Expression', *Journal of the History of Philosophy* 33 (1995), 65-94 {#february-25th-2013---reading-chris-swoyer-leibnizian-expression-journal-of-the-history-of-philosophy-33-1995-65-94}
 -----------------------------------------------------------------------------------------------------------------------------
 
-### Leibniz on Expression
+### Leibniz on Expression {#leibniz-on-expression}
 
 > I set out the relevant data for this project, including Leibniz's
 > terse characterizations of expression, his examples of it, and, what
 > is often neglected by those commentators who do explore the notion,
 > his views about the role of expression in human reasoning.
 
-#### Leibniz's Characterizations of Expression.
+#### Leibniz's Characterizations of Expression. {#leibnizs-characterizations-of-expression.}
 
 > I. That is said to express a thing in which there are relations that
 > correspond to the relations of the thing expressed.
 
-> II. One thing expresses another, when there is a constant and ordered
+> 1.  One thing expresses another, when there is a constant and ordered
 >     relation between what can be asserted of the one and what can be
 >     asserted of the other.
 
-> III. it is sufficient for the expression of one thing in another
+> 1.  it is sufficient for the expression of one thing in another
 >     [sufficit enim ad expressionem unius in alio] that there should be
 >     a certain constant relational law, by which particulars in the one
 >     can be referred to corresponding particulars in the other.
 
-#### Leibniz's Examples of Expression
+#### Leibniz's Examples of Expression {#leibnizs-examples-of-expression}
 
 -   But these are too brief.
 -   Leibniz's favorite example is the perspectival projection of a
@@ -1547,9 +1545,9 @@ February 25th, 2013 - Reading: Chris Swoyer, 'Leibnizian Expression', *Journal o
     -   Speech expresses thought
     -   each monad expresses the entire universe
 
-#### Leibniz on the Role of Expression in Human Reasoning.
+#### Leibniz on the Role of Expression in Human Reasoning. {#leibniz-on-the-role-of-expression-in-human-reasoning.}
 
-> IV. What is common to all these expressions is that we can pass from a
+> 1.  What is common to all these expressions is that we can pass from a
 >     consideration of the relations in the expression to a knowledge of
 >     the corresponding properties of the thing expressed.
 
@@ -1568,13 +1566,13 @@ February 25th, 2013 - Reading: Chris Swoyer, 'Leibnizian Expression', *Journal o
 > All of our reasoning is nothing but the combining and substitution of
 > characters, whether those characters are words, marks, or even images
 
-### Perspectival Projection As The Paradigm Of Expression
+### Perspectival Projection As The Paradigm Of Expression {#perspectival-projection-as-the-paradigm-of-expression}
 
 -   These explicit sources are not enough for inquiry.
 
-#### Perspectival projections
+#### Perspectival projections {#perspectival-projections}
 
-> VI. Thus, a circle can be represented by an ellipse (that is, an oval
+> 1.  Thus, a circle can be represented by an ellipse (that is, an oval
 >     curve) in a perspectival projection, and indeed by a hyperbola,
 >     which is most unlike it, and does not even return upon itself; for
 >     to any point of the hyperbola a corresponding point of the circle
@@ -1583,22 +1581,22 @@ February 25th, 2013 - Reading: Chris Swoyer, 'Leibnizian Expression', *Journal o
 
 -   And his response to Arnauld in passage (2) runs more fully:
 
-> VII. One thing expresses another, in my language, when there is a con-
+> 1.  One thing expresses another, in my language, when there is a con-
 >     stant and ordered relation between what can be asserted of the one
 >     and what can be asserted of the other. It is in this way that a
 >     projec- tion in perspective expresses a geometric figure.
 
 -   In *Theodicy*,
 
-> VIII. There must always be an exact relation between the
->     representation and the thing [it expresses].... The projections in
->     perspective of the conic sections of the circle show that one and
->     the same circle may be represented by an ellipse, a parabola, a
->     hyperbola, and even another circle, a straight line and a point.
+> 1.  There must always be an exact relation between the representation
+>     and the thing [it expresses].... The projections in perspective of
+>     the conic sections of the circle show that one and the same circle
+>     may be represented by an ellipse, a parabola, a hyperbola, and
+>     even another circle, a straight line and a point.
 
 -   In *New Essays*,
 
-> XIII. ... [A]n ellipse, and even a parabola or hyperbola, has some
+> 1.  ... [A]n ellipse, and even a parabola or hyperbola, has some
 >     resem- blance to the circle of which it is a projection on a
 >     plane, since there is a certain precise and natural relationship
 >     between what is projected and the projection which is made from
@@ -1613,7 +1611,7 @@ February 25th, 2013 - Reading: Chris Swoyer, 'Leibnizian Expression', *Journal o
         figure to their counterparts in the figure that expresses it.
         Bijective.
 
-#### The Method of Projection and Section.
+#### The Method of Projection and Section. {#the-method-of-projection-and-section.}
 
 -   Just like when an artist paints something, the representation being
     dependant on the angle of view, distorting the original form into
@@ -1633,7 +1631,7 @@ February 25th, 2013 - Reading: Chris Swoyer, 'Leibnizian Expression', *Journal o
     ship that holds between a conic section and its perspectival
     projections
 
-#### Morals for an Account of Perspectival Expression
+#### Morals for an Account of Perspectival Expression {#morals-for-an-account-of-perspectival-expression}
 
 -   **Perspectival expression**: The expression of one geometrical
     figure by a perspectival projection of it onto another.
@@ -1662,7 +1660,7 @@ February 25th, 2013 - Reading: Chris Swoyer, 'Leibnizian Expression', *Journal o
         both ways, and so we can make the return trip to a conclusion
         about relationships among the original items of interest.
 
-#### An Account of Perspectival Expression
+#### An Account of Perspectival Expression {#an-account-of-perspectival-expression}
 
 -   **Perspectival expression**: "the points in the original figure
     stand in a given projective relation (or have a given projective
@@ -1684,7 +1682,7 @@ February 25th, 2013 - Reading: Chris Swoyer, 'Leibnizian Expression', *Journal o
     relational law, by which particulars in the one can be referred to
     corresponding particulars in the other."
 
-### A General Account of Leibnizian Expression
+### A General Account of Leibnizian Expression {#a-general-account-of-leibnizian-expression}
 
 -   This section provides:
     1.  A simple a natural generalization of Leibnizian expression
@@ -1692,15 +1690,17 @@ February 25th, 2013 - Reading: Chris Swoyer, 'Leibnizian Expression', *Journal o
         characterizations
     3.  Explains how it relates to surrogative reasoning
 
-#### Generalizing the Account of Perspectival Expression
+#### Generalizing the Account of Perspectival Expression {#generalizing-the-account-of-perspectival-expression}
 
--   A function, $\ast$, from the constituents of one thing, $O$, to
-    those of a second, $E$, preserves the $n$-place relation $R^O$ of
-    $O$ just in case, for each $n$-tuple of constituents
-    $\lt X_1 ... X_n \gt$ of $O$:
-    -   (PR) $R^O x_1 ... x_n $ if and only if
-        $R^E x_1     \ast ... x^ast_n $
-    -   $R^E$ is the surrogate for the original relation $R^O$
+-   A function,  \* , from the constituents of one thing, *O*, to those
+    of a second, *E*, preserves the *n*-place relation *R*<sup>*O*</sup>
+    of *O* just in case, for each *n*-tuple of constituents
+     \< *X*<sub>1</sub>. . . *X*<sub>*n*</sub> \>  of *O*:
+    -   (PR) *R*<sup>*O*</sup>*x*<sub>1</sub>. . . *x*<sub>*n*</sub> if
+        and only if
+        *R*<sup>*E*</sup>*x*<sub>1</sub> \* . . . *x*<sup>*a*</sup>*s**t*<sub>*n*</sub>
+    -   *R*<sup>*E*</sup> is the surrogate for the original relation
+        *R*<sup>*O*</sup>
 
 -   Isomorphism is too much to expect from an expression
     -   For example, a circle does not have enough of it's relations
@@ -1729,7 +1729,7 @@ February 25th, 2013 - Reading: Chris Swoyer, 'Leibnizian Expression', *Journal o
             expressions have these features (total, onto, one-to-one
             functions)
 
-February 25th, 2013 - Lecture
+February 25th, 2013 - Lecture {#february-25th-2013---lecture}
 -----------------------------
 
 > The soule, however, is nevertheless the form of its body, because it
@@ -1811,7 +1811,7 @@ February 25th, 2013 - Lecture
         -   Now that we have a substantial form that animates the
             corporeal substance
 
-February 26th, 2013 - Reading: Leibniz's theory of expression and cognitive representation
+February 26th, 2013 - Reading: Leibniz's theory of expression and cognitive representation {#february-26th-2013---reading-leibnizs-theory-of-expression-and-cognitive-representation}
 ------------------------------------------------------------------------------------------
 
 1.  'That is said to express a thing in which there are relations
@@ -1936,7 +1936,7 @@ February 26th, 2013 - Reading: Leibniz's theory of expression and cognitive repr
     by the degrees of their distinct perceptions.' **Monadology 60; AG
     220**
 
-February 27th, 2013 - Lecture: Expression, perception, soul, body
+February 27th, 2013 - Lecture: Expression, perception, soul, body {#february-27th-2013---lecture-expression-perception-soul-body}
 -----------------------------------------------------------------
 
 -   **Occasionalism**: Minds cause their states, but bodies are mostly
@@ -1971,7 +1971,7 @@ February 27th, 2013 - Lecture: Expression, perception, soul, body
 -   I have true unity, which expresses this territory. According to
     Leibniz, this cognizes the territory.
 
-February 27th, 2013 - Short Paper Assignment
+February 27th, 2013 - Short Paper Assignment {#february-27th-2013---short-paper-assignment}
 --------------------------------------------
 
 The paper should be five pages in length (a little longer is acceptable)
@@ -2013,7 +2013,7 @@ may want to let me know how you intend to focus it.
     facts about living things. Do you think that the doctrine of
     corporeal substances is in some way problematic?
 
-March 4th, 2013 - Passages on relational predicates and the metaphysical status of relations
+March 4th, 2013 - Passages on relational predicates and the metaphysical status of relations {#march-4th-2013---passages-on-relational-predicates-and-the-metaphysical-status-of-relations}
 --------------------------------------------------------------------------------------------
 
 1.  "Therefore there seem to pertain to relations all the extrinsic
@@ -2080,10 +2080,10 @@ March 4th, 2013 - Passages on relational predicates and the metaphysical status 
     supreme intelligence which determines all of them from all time." NE
     265
 
-March 4th, 2013 - Reading
+March 4th, 2013 - Reading {#march-4th-2013---reading}
 -------------------------
 
-### 'Meditation on the Principle of the Individual' (1676)
+### 'Meditation on the Principle of the Individual' (1676) {#meditation-on-the-principle-of-the-individual-1676}
 
 -   Someone who understands an effect perfectly will also understand the
     cause of that effect.
@@ -2108,9 +2108,9 @@ March 4th, 2013 - Reading
         therefore nothing can be introduced to them which cannot be
         understood by us in some way.
 
-### 'Substance and Individuation in Leibniz', Cover and Hawthorne, pp. 184-99
+### 'Substance and Individuation in Leibniz', Cover and Hawthorne, pp. 184-99 {#substance-and-individuation-in-leibniz-cover-and-hawthorne-pp.-184-99}
 
-March 4th, 2013 - Lecture
+March 4th, 2013 - Lecture {#march-4th-2013---lecture}
 -------------------------
 
 -   To have a position in space is to exist at a particular distance
@@ -2129,12 +2129,12 @@ March 4th, 2013 - Lecture
 -   Near the end of Leibniz's life, there was a famous discussion about
     space.
 
-### Relations
+### Relations {#relations}
 
--   **A relational predicate**: $P$ is a relational predicate of $S$ if
-    $P$ implies
-    1.  That something other than $S$ exists.
-    2.  That thing (1) have a certain relation to $S$.
+-   **A relational predicate**: *P* is a relational predicate of *S* if
+    *P* implies
+    1.  That something other than *S* exists.
+    2.  That thing (1) have a certain relation to *S*.
 
 -   The motivation for the complete concept containment is from
     Aristotle.
@@ -2199,7 +2199,7 @@ March 4th, 2013 - Lecture
             and some of them, maintain the same distances from each
             other.
 
-March 11th, 2013 - Short Paper Assignment: Leibniz, Corporeal Substances, and Biology
+March 11th, 2013 - Short Paper Assignment: Leibniz, Corporeal Substances, and Biology {#march-11th-2013---short-paper-assignment-leibniz-corporeal-substances-and-biology}
 -------------------------------------------------------------------------------------
 
 The breadth and precision of the work of Gottfried Wilhelm Leibniz is
@@ -2389,7 +2389,7 @@ advancement of science and understanding of the natural world have not
 vanquished his theory. Instead, his system raises perplexing questions
 which inspire further research in both philosophy and natural science.
 
-### Works Cited
+### Works Cited {#works-cited}
 
 1.  Bolton, Martha. “Leibniz (01:730:416).” Rutgers University Lecture,
     Spring 2013.
@@ -2407,7 +2407,7 @@ which inspire further research in both philosophy and natural science.
 6.  [Stanford Encyclopedia of Philosophy. “Gottfried Wilhelm Leibniz.”
     Online, 2013.](http://plato.stanford.edu/entries/leibniz/)
 
-March 11th, 2013 - Lecture: The notion of force in physics and metaphysics
+March 11th, 2013 - Lecture: The notion of force in physics and metaphysics {#march-11th-2013---lecture-the-notion-of-force-in-physics-and-metaphysics}
 --------------------------------------------------------------------------
 
 -   You could have two identical things different in space and time and
@@ -2447,8 +2447,8 @@ March 11th, 2013 - Lecture: The notion of force in physics and metaphysics
         are switched. God could have no reason to choose one rather than
         the other. But PSR.
 
--   **No Reason Argument**: There is no reason for saying that $A$ and
-    $B$ are individually different, so they aren't individually
+-   **No Reason Argument**: There is no reason for saying that *A* and
+    *B* are individually different, so they aren't individually
     different. Objections:
     1.  Why couldn't it run the other way around?
     2.  The mere fact that something has no reason is not enough to
@@ -2461,7 +2461,7 @@ March 11th, 2013 - Lecture: The notion of force in physics and metaphysics
     3.  Sufficnient reason to say alike
     4.  No possible differences
 
-April 3rd, 2013 - Lecture: How the soul 'knows' what to do
+April 3rd, 2013 - Lecture: How the soul 'knows' what to do {#april-3rd-2013---lecture-how-the-soul-knows-what-to-do}
 ----------------------------------------------------------
 
 -   The natures of soul and bodies means there are no possible
@@ -2522,7 +2522,7 @@ April 3rd, 2013 - Lecture: How the soul 'knows' what to do
     2.  There's a maintenance person who regularly adjests them.
     3.  Perfectly made each on its own tells the right time.
 
-April 8th, 2013 - Handout
+April 8th, 2013 - Handout {#april-8th-2013---handout}
 -------------------------
 
 1.  Analysis of the passage (L 530) in which Leibniz lists the
@@ -2609,7 +2609,7 @@ April 8th, 2013 - Handout
             virtue of one of their constituents, viz, the dominant
             monad.
         -   But it also would seem to imply that corporeal substances
-            are reduced to aggregates of monads.\
+            are reduced to aggregates of monads.  
              Yet aggregates do not have true unity. Is this a problem?
 
 2.  To De Volder (1704 or 1705); AG 181
@@ -2638,12 +2638,12 @@ April 8th, 2013 - Handout
     > entities of aggregation, things whose unity derives from
     > perceiving it. <cite>Leibniz</cite>
 
-April 8th, 2013 - Lecture
+April 8th, 2013 - Lecture {#april-8th-2013---lecture}
 -------------------------
 
-### Presentation from Lucas
+### Presentation from Lucas {#presentation-from-lucas}
 
-#### A problem in the literature
+#### A problem in the literature {#a-problem-in-the-literature}
 
 A problem in the literature: is Leibniz a realist or an idealist? On the
 one hand, he seems committed to the claim that matter is a phenomenon,
@@ -2651,19 +2651,19 @@ whereas only spiritual substances are real. But on the other hand, it is
 hard to square these claims with his deep attachment to natural
 sciences.
 
-#### Thesis
+#### Thesis {#thesis}
 
 Leibniz is both, he’s a realist because he’s an idealist, and an
 idealist because a realist. In other words: the distinction doesn’t fit
 into his thinking.
 
-#### Argument
+#### Argument {#argument}
 
 Considering the sciences of life as an influence for his metaphysics
 (especially the theme of unity, infinity and the pre-established
 harmony).
 
-#### Examples
+#### Examples {#examples}
 
 > Being freed from the trivial schools, I discovered the Moderns and
 > remember walking alone in a garden near Leipzig, called Rosendal at 15
@@ -2790,49 +2790,49 @@ harmony).
 > <cite>Emile Boutroux, edition and introduction to the Monadology,
 > Delagrave 2005</cite>
 
-April 15th, 2013 - Passages
+April 15th, 2013 - Passages {#april-15th-2013---passages}
 ---------------------------
 
 1.  Freedom, such as is required by the schools of theology, consists in
-    > \> intelligence, which includes a distinct knowledge of the object
-    > of \> deliberation; in spontaneity, in virtue of which we
-    > determine \> ourselves; and in contingency, that is, in the
-    > exclusion of \> logical or metaphysical necessity. Intelligence
-    > is, as it were, \> the soul of freedom, and the rest is as its
-    > body and basis. The \> free subject determines itself by itself;
-    > and this according to \> the motive of the good perceived by the
-    > understanding, which \> inclines it without necessitating it; and
-    > all the conditions are \> contained in these few world.
-    > <cite>*Theodicy* 288; G 6.288, tr. \> Rutherford</cite>
+    \> \> intelligence, which includes a distinct knowledge of the
+    object \> of \> deliberation; in spontaneity, in virtue of which we
+    \> determine \> ourselves; and in contingency, that is, in the \>
+    exclusion of \> logical or metaphysical necessity. Intelligence \>
+    is, as it were, \> the soul of freedom, and the rest is as its \>
+    body and basis. The \> free subject determines itself by itself; \>
+    and this according to \> the motive of the good perceived by the \>
+    understanding, which \> inclines it without necessitating it; and \>
+    all the conditions are \> contained in these few world. \>
+    <cite>*Theodicy* 288; G 6.288, tr. \> Rutherford</cite>
 
 2.  In order to better understand this point, we must realize that a \>
-    > genuine spontaneity is common to us and all simple substances, and
-    > \> that in the intelligent or free substances this becomes a
-    > dominion \> over its actions. . . <cite>T 290-1; G 6.298, tr.
-    > Rutherford</cite>
+    \> genuine spontaneity is common to us and all simple substances,
+    and \> \> that in the intelligent or free substances this becomes a
+    \> dominion \> over its actions. . . <cite>T 290-1; G 6.298, tr. \>
+    Rutherford</cite>
 
 3.  [E]veryone who accepts immaterial indivisible substances attributes
-    > \> to them a simultaneous multitude of perceptions, and
-    > spontaneity \> in their reasonings and their voluntary acts. I am
-    > therefore only \> extending that spontaneity to their confused and
-    > involuuntary \> thoughts, and showing that their nature is to
-    > contain relations to \> everything that is external. <cite>Reply
-    > to the Comments in the Second \> Edition of M. Bayle's,etc., WF
-    > 118</cite>
+    \> \> to them a simultaneous multitude of perceptions, and \>
+    spontaneity \> in their reasonings and their voluntary acts. I am \>
+    therefore only \> extending that spontaneity to their confused and
+    \> involuuntary \> thoughts, and showing that their nature is to \>
+    contain relations to \> everything that is external. <cite>Reply \>
+    to the Comments in the Second \> Edition of M. Bayle's,etc., WF \>
+    118</cite>
 
 4.  Change [transitio], or variation, itself . . . is nothing but a \>
-    > complex of two states which are immediate and opposite to each \>
-    > other, together with a force or [seu] reason for the change, which
-    > \> reason itself is a quality. MP 134
+    \> complex of two states which are immediate and opposite to each \>
+    \> other, together with a force or [seu] reason for the change,
+    which \> \> reason itself is a quality. MP 134
 
 5.  The laws of appetite [are] the laws of the final causes of Good and
-    > \> Evil. <cite>PNG 3</cite>
+    \> \> Evil. <cite>PNG 3</cite>
 
 6.  Souls act according to the laws of final causes, through appetites,
-    > \> ends and means. Bodies act according to the laws of efficient
-    > \> causes, or of motions. And the two realms, that of efficient \>
-    > causes and that of final causes, are in mutual harmony. <cite>Mon
-    > 79; AG \> 223</cite>
+    \> \> ends and means. Bodies act according to the laws of efficient
+    \> \> causes, or of motions. And the two realms, that of efficient
+    \> \> causes and that of final causes, are in mutual harmony.
+    <cite>Mon \> 79; AG \> 223</cite>
 
     -   This suggest that laws of final causes that pertain only to
         souls.
@@ -2841,46 +2841,46 @@ April 15th, 2013 - Passages
         natural telological ones.
 
 7.  . . . with confused perception and a corresponding appetite (which,
-    > \> with some, you might term instinct) [the soul] imitates divine
-    > \> infinity, in such a way that nothing happens in the body that
-    > the \> soul does not in fact, perceive, nothing concerning which
-    > [the \> soul] does not exercise [its] appetite . . . even if we
-    > are \> unaware. <cite>*Animadversiones . . . Stahli*, D 2.2.135;
-    > RF, 28</cite>
+    \> \> with some, you might term instinct) [the soul] imitates divine
+    \> \> infinity, in such a way that nothing happens in the body that
+    \> the \> soul does not in fact, perceive, nothing concerning which
+    \> [the \> soul] does not exercise [its] appetite . . . even if we
+    \> are \> unaware. <cite>*Animadversiones . . . Stahli*, D 2.2.135;
+    \> RF, 28</cite>
 
 8.  . . . let us say that everything in bodies happens mechanically, or
-    > \> in accordance with laws of motion, and that everything in the
-    > soul \> happens morally, or in accordance with appearances of good
-    > and \> evil, in such a way that even in our instinctive and
-    > involuntary \> actions, there is in the soul an appetite for good
-    > or an aversion \> to evil which drives it, even though our
-    > reflection is not able to \> pick it out in the confusion.
-    > <cite>To Sophie Charlotte (1704), WF 224</cite>
+    \> \> in accordance with laws of motion, and that everything in the
+    \> soul \> happens morally, or in accordance with appearances of
+    good \> and \> evil, in such a way that even in our instinctive and
+    \> involuntary \> actions, there is in the soul an appetite for good
+    \> or an aversion \> to evil which drives it, even though our \>
+    reflection is not able to \> pick it out in the confusion. \>
+    <cite>To Sophie Charlotte (1704), WF 224</cite>
 
 9.  Leibniz explains what is required for an appetite of the soul to be
-    > \> executed by the body: [I]t is necessary that the appetites and
-    > \> consequently the perceptions from which they arise attain in \>
-    > perfect detail everything which brings this about in the organs.
-    > \> For this reason: . . . will is not always sufficient to make
-    > the \> body act according to its desire, when the exact perception
-    > of the \> means is not conjoined with it . . . Thus it is
-    > necessary that end \> and means should always be joined together
-    > in the soul, as causes \> and effects are in the body, in order
-    > that the desired effect \> should be executed. <cite>To
-    > Hartsoeker, G 3.509-10</cite>
+    \> \> executed by the body: [I]t is necessary that the appetites and
+    \> \> consequently the perceptions from which they arise attain in
+    \> \> perfect detail everything which brings this about in the
+    organs. \> \> For this reason: . . . will is not always sufficient
+    to make \> the \> body act according to its desire, when the exact
+    perception \> of the \> means is not conjoined with it . . . Thus it
+    is \> necessary that end \> and means should always be joined
+    together \> in the soul, as causes \> and effects are in the body,
+    in order \> that the desired effect \> should be executed. <cite>To
+    \> Hartsoeker, G 3.509-10</cite>
 
 10. [I]t is true that the appetite cannot always completely reach the \>
-    > whole perception toward which it tends, but it always obtains \>
-    > something of it, and reaches new perceptions. <cite>Mon 15</cite>
+    \> whole perception toward which it tends, but it always obtains \>
+    \> something of it, and reaches new perceptions. <cite>Mon 15</cite>
 
-11. . . . as I should prefer to define it, perfection is degree or \>
-    > quantity of reality or essence . . . <cite>To Eckhard (1677); L
-    > 177</cite>
+11. . . . as I should prefer to define it, perfection is degree or \> \>
+    quantity of reality or essence . . . <cite>To Eckhard (1677); L \>
+    177</cite>
 
-12. . . . there are no perceptions which are matters of complete \>
-    > indifference to us; <cite>NE 162</cite>
+12. . . . there are no perceptions which are matters of complete \> \>
+    indifference to us; <cite>NE 162</cite>
 
-April 15th, 2013 - Lecture
+April 15th, 2013 - Lecture {#april-15th-2013---lecture}
 --------------------------
 
 -   Intelligence is the soul of freedom
@@ -2943,8 +2943,8 @@ April 15th, 2013 - Lecture
 -   When we get an account of how change occurs in the monad we need to
     be able to explain what goes on in a monad in these two ways.
 -   This brings Rutherford to what he calls "teleology."
--   Final cause of $A$'s doing $X$ why $A$ does $X$ in terms of an end
-    doing $X$ is likely to produce.
+-   Final cause of *A*'s doing *X* why *A* does *X* in terms of an end
+    doing *X* is likely to produce.
 -   It's common to describe freedom in terms of people's actions, "final
     cause" in Leibniz's time, and those are ends from the point of which
     things act, when an act is described by final actions it is
@@ -2973,36 +2973,38 @@ April 15th, 2013 - Lecture
     -   There is a kind of law that proper to souls and a kind of law
         that are proper to bodies.
 
--   Force $F$ operates in accord with $N$-telelogical laws if and only
-    if the effectiveness of $F$ in bring about a change from $S_1$ to
-    $S_2$ is explained by the objective goodness of $S_2$.
+-   Force *F* operates in accord with *N*-telelogical laws if and only
+    if the effectiveness of *F* in bring about a change from
+    *S*<sub>1</sub> to *S*<sub>2</sub> is explained by the objective
+    goodness of *S*<sub>2</sub>.
 
-April 17th, 2013 - Passages
+April 17th, 2013 - Passages {#april-17th-2013---passages}
 ---------------------------
 
 1.  With regard to the preestablished harmony between the modifications
-    > \> of the soul and those of the body, and the execution of our \>
-    > appetites by the bodily organs, it is necessary that the appetites
-    > \> and consequently the perceptions from which they arise, should
-    > run \> in perfect detail with all of that which happens in the
-    > organs, in \> that these appetites be executed. This would appear
-    > to us if it \> were possible to analyze our confused perceptions.
-    > Otherwise, it \> would not be an appetite which is perfect and
-    > complete with regard \> to the whole of its object, but only
-    > something approaching it. And \> because our understanding and
-    > consequently our will is not capable \> of this detail, our simple
-    > will (if it goes to the end without \> going to means and means
-    > for the means) is not an appetite the \> body is obliged to follow
-    > and to execute. Execution by the body \> happens only in unimpeded
-    > interior voluntary movements, where \> confused appetite seconds
-    > the will or distinct appetite in perfect \> detail. However our
-    > interior involuntary motions do not cease to \> answer to our
-    > confused and unconscious appetites, but these \> movements depend
-    > as little on the empire of the will as these \> appetites depend
-    > on our understanding, so that the will is not \> always sufficient
-    > to set the body in motion according to its \> desire, when the
-    > perception of exact means is not joined with it. \> <cite>Letter
-    > to Hartsoeker, 30 October 1710; G 3.509-10</cite>
+    \> \> of the soul and those of the body, and the execution of our \>
+    \> appetites by the bodily organs, it is necessary that the
+    appetites \> \> and consequently the perceptions from which they
+    arise, should \> run \> in perfect detail with all of that which
+    happens in the \> organs, in \> that these appetites be executed.
+    This would appear \> to us if it \> were possible to analyze our
+    confused perceptions. \> Otherwise, it \> would not be an appetite
+    which is perfect and \> complete with regard \> to the whole of its
+    object, but only \> something approaching it. And \> because our
+    understanding and \> consequently our will is not capable \> of this
+    detail, our simple \> will (if it goes to the end without \> going
+    to means and means \> for the means) is not an appetite the \> body
+    is obliged to follow \> and to execute. Execution by the body \>
+    happens only in unimpeded \> interior voluntary movements, where \>
+    confused appetite seconds \> the will or distinct appetite in
+    perfect \> detail. However our \> interior involuntary motions do
+    not cease to \> answer to our \> confused and unconscious appetites,
+    but these \> movements depend \> as little on the empire of the will
+    as these \> appetites depend \> on our understanding, so that the
+    will is not \> always sufficient \> to set the body in motion
+    according to its \> desire, when the \> perception of exact means is
+    not joined with it. \> <cite>Letter \> to Hartsoeker, 30 October
+    1710; G 3.509-10</cite>
 
     -   Set some goal, but you can't go directly to the goal, you have
         to do something to get there.
@@ -3011,13 +3013,13 @@ April 17th, 2013 - Passages
     -   It cannot be anything but the types of perceptions ...
 
 2.  . . . fundamentally pleasure is a sense of perfection, and pain a \>
-    > sense of imperfection, each being notable enough for one to become
-    > \> aware of it. For the minute [sc. confused] perceptions of some
-    > \> perfection or imperfection, which I have spoken of several
-    > times \> and which are as it were components of pleasure and of
-    > pain, \> constitute inclinations and propensities but not outright
-    > \> passions. So there are insensible inclinations of which we are
-    > \> unaware. <cite>NE 194</cite>
+    \> sense of imperfection, each being notable enough for one to
+    become \> \> aware of it. For the minute [sc. confused] perceptions
+    of some \> \> perfection or imperfection, which I have spoken of
+    several \> times \> and which are as it were components of pleasure
+    and of \> pain, \> constitute inclinations and propensities but not
+    outright \> \> passions. So there are insensible inclinations of
+    which we are \> \> unaware. <cite>NE 194</cite>
 
     -   Pleasure is a distinguished sense of perfection
     -   While pain is a distinguished sense of pain.
@@ -3025,14 +3027,14 @@ April 17th, 2013 - Passages
         we are unaware of.
 
 3.  What usually drives us are those minute insensible perceptions which
-    > \> could be called sufferings that we cannot become aware of, if
-    > the \> notion of suffering did not involve awareness. These minute
-    > \> impulses consists in our continually overcoming small \>
-    > obstacles—our nature labors at this without our thinking about it.
-    > \> This is the true character of that disquiet which we sense
-    > without \> taking cognizance of it. . . for we are never without
-    > some \> activity and motion, simply because nature continually
-    > labors to \> be more completely at ease. <cite>NE 188</cite>
+    \> \> could be called sufferings that we cannot become aware of, if
+    \> the \> notion of suffering did not involve awareness. These
+    minute \> \> impulses consists in our continually overcoming small
+    \> \> obstacles—our nature labors at this without our thinking about
+    it. \> \> This is the true character of that disquiet which we sense
+    \> without \> taking cognizance of it. . . for we are never without
+    \> some \> activity and motion, simply because nature continually \>
+    labors to \> be more completely at ease. <cite>NE 188</cite>
 
     -   Here the emphasis is on aversions.
     -   Our insensible perceptions are attached to aversions, the
@@ -3044,22 +3046,22 @@ April 17th, 2013 - Passages
         there is still something that is in this sense bad. (???)
 
 4.  It is true that the appetite cannot always completely reach the \>
-    > whole perception toward which it tends, but it always obtains \>
-    > something of it, and reaches new perceptions. <cite>Mon 15; AG
-    > 215</cite>
+    \> whole perception toward which it tends, but it always obtains \>
+    \> something of it, and reaches new perceptions. <cite>Mon 15; AG \>
+    215</cite>
 
 5.  Re. the antecedent will of God (will prior to arriving at a definite
-    > \> volition) and the subsequent will of God (his definite eternal
-    > \> volition): Now this consequent will, final and decisive,
-    > results \> from the conflict of all the antecedent wills, of those
-    > which tend \> towards good, even as of those which repel evil; and
-    > from the \> concurrence of all these particular wills comes the
-    > total will. So \> in mechanics compound movement results from all
-    > the tendencies \> that concur in one and the same moving body, and
-    > satisfies each \> one equally, insofar as it is possible to do all
-    > at one time. <cite>T \> 22, H 137</cite>
+    \> \> volition) and the subsequent will of God (his definite eternal
+    \> \> volition): Now this consequent will, final and decisive, \>
+    results \> from the conflict of all the antecedent wills, of those
+    \> which tend \> towards good, even as of those which repel evil;
+    and \> from the \> concurrence of all these particular wills comes
+    the \> total will. So \> in mechanics compound movement results from
+    all \> the tendencies \> that concur in one and the same moving
+    body, and \> satisfies each \> one equally, insofar as it is
+    possible to do all \> at one time. <cite>T \> 22, H 137</cite>
 
-April 17th, 2013 - Lecture
+April 17th, 2013 - Lecture {#april-17th-2013---lecture}
 --------------------------
 
 -   Everything that is is good.
@@ -3083,7 +3085,7 @@ April 17th, 2013 - Lecture
 -   Leibniz is set against any soul body interaction.
 -   Pre-established harmony.
 
-April 22nd, 2013 - Passages
+April 22nd, 2013 - Passages {#april-22nd-2013---passages}
 ---------------------------
 
 1.  ‘Perception is the expression of many things in one, or in a simple
@@ -3104,8 +3106,8 @@ April 22nd, 2013 - Passages
 3.  Locke challenges Leibniz to name a proposition which is innately
     known: “I would name . . . the propositions of arithmetic and
     geometry, which are all of that nature; and among necessary truths
-    no other kind is to be found.” NE 86\
-    With regard to ideas of contingent things: “But there is no term
+    no other kind is to be found.” NE 86  
+     With regard to ideas of contingent things: “But there is no term
     which is so absolute or so detached that it does not involve
     relations and is not such that a complete analysis of it would lead
     to other things and indeed to all other things.” NE 288
@@ -3125,7 +3127,7 @@ connectives {c, d, e, . . .}has R\* to a truth just in case {A, B, C, .
 . . }and {c, d, e, . . .} contain all and only the ideas and connectives
 from which the truth results.
 
-April 22nd, 2013 - Lecture
+April 22nd, 2013 - Lecture {#april-22nd-2013---lecture}
 --------------------------
 
 -   One is abbreviations, so something stands for some content, you can

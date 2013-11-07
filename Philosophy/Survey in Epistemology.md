@@ -1,10 +1,10 @@
-Survey in Epistemology <small>with Professor Alvin Goldman</small>
+Survey in Epistemology <small>with Professor Alvin Goldman</small> {#survey-in-epistemology-with-professor-alvin-goldman}
 ==================================================================
 
-September 8th, 2013 <small>Chapter 1, 'The Structure of Justification'</small>
+September 8th, 2013 <small>Chapter 1, 'The Structure of Justification'</small> {#september-8th-2013-chapter-1-the-structure-of-justification}
 ------------------------------------------------------------------------------
 
-### The Concepts and Questions of Epistemology
+### The Concepts and Questions of Epistemology {#the-concepts-and-questions-of-epistemology}
 
 -   Epistemology is the study of knowledge and related phenomena.
 -   Why is this important?
@@ -49,7 +49,7 @@ September 8th, 2013 <small>Chapter 1, 'The Structure of Justification'</small>
         in order to know it;
     3.  Knowledge requires justification.
 
-### The Epistemic Regress Problem
+### The Epistemic Regress Problem {#the-epistemic-regress-problem}
 
 -   Many sources of justification are inference.
 -   Justification needn't be spoken.
@@ -62,7 +62,7 @@ September 8th, 2013 <small>Chapter 1, 'The Structure of Justification'</small>
 
 -   Possible solutions:
     -   **Infinitism**: An unending continuation of reasons, without
-        repetition or end.\
+        repetition or end.  
     -   **Foundationalism**: An ending tree of reasons.
     -   **Coherentism**: A tree that loops back on itself.
     -   **Skepticism**. None of the first three solutions to the regress
@@ -75,7 +75,7 @@ September 8th, 2013 <small>Chapter 1, 'The Structure of Justification'</small>
     -   **Diachronic**: A diachronic reason is unavailable at the
         formation of the target belief?
 
-### Infinitism
+### Infinitism {#infinitism}
 
 > Infinitism is rarely given serious consideration.
 
@@ -102,7 +102,7 @@ September 8th, 2013 <small>Chapter 1, 'The Structure of Justification'</small>
 
 -   "Justification is limited in RAM, unlimited in HDD storage."
 
-### Coherentism
+### Coherentism {#coherentism}
 
 -   Coherentism is a minority view today, but historically important.
     -   Largely, the view *tolerates circular inference*.
@@ -117,7 +117,7 @@ September 8th, 2013 <small>Chapter 1, 'The Structure of Justification'</small>
     coherence and truth are similarly unlinked (thought not for the same
     reasons, justification and truth are distinct).
 
-### Foundationalism and Basic Beliefs
+### Foundationalism and Basic Beliefs {#foundationalism-and-basic-beliefs}
 
 > Foundationalism’s response to the regress problem says that every root
 > in a tree of (successful) inferential justification terminates after
@@ -147,10 +147,10 @@ September 8th, 2013 <small>Chapter 1, 'The Structure of Justification'</small>
         beliefs (both basic and non-basic), enough to dispel the specter
         of skepticism that is often laid at foundationalism's doorstep?
 
-September 9th, 2013 <small>Seminar</small>
+September 9th, 2013 <small>Seminar</small> {#september-9th-2013-seminar}
 ------------------------------------------
 
-### Concepts and Questions
+### Concepts and Questions {#concepts-and-questions}
 
 -   Doxastic attitudes, "Epistemic terms of appraisal"
     -   Beliefs, non-belief,
@@ -190,7 +190,7 @@ September 9th, 2013 <small>Seminar</small>
 
 -   "You're justified in believing, and you do."
 
-### The Regress Problem
+### The Regress Problem {#the-regress-problem}
 
 -   An inferential regress.
 -   To give a reason is to say something.
@@ -203,7 +203,7 @@ September 9th, 2013 <small>Seminar</small>
     maybe we cannot have infinitely many psychological states.
     -   "Propositional justifiedness"
 
-### Coherentism
+### Coherentism {#coherentism-1}
 
 -   Was popular in idealism (one or another) in Britain and American
     dominant.
@@ -234,7 +234,7 @@ September 9th, 2013 <small>Seminar</small>
 
 -   Can coherence account for non-coherent justified beliefs?
 
-### Foundationalism
+### Foundationalism {#foundationalism}
 
 -   Descartes thought that "basic beliefs" (new terminology) are about
     the agent's mental states.
@@ -242,7 +242,7 @@ September 9th, 2013 <small>Seminar</small>
     -   Early on, beliefs about mental states.
     -   Later, beliefs from perception.
 
-September 16th, 2013 <small>Chapter 2, part I, 'Evidentialism vs. Reliabilism'</small>
+September 16th, 2013 <small>Chapter 2, part I, 'Evidentialism vs. Reliabilism'</small> {#september-16th-2013-chapter-2-part-i-evidentialism-vs.-reliabilism}
 --------------------------------------------------------------------------------------
 
 -   **justifier** refers to anything that helps make a belief state
@@ -272,7 +272,7 @@ September 16th, 2013 <small>Chapter 2, part I, 'Evidentialism vs. Reliabilism'</
     tendency to generate (belief) outputs with a high percentage of
     truths.
 
-### Questions
+### Questions {#questions}
 
 1.  pg. 4, "According to evidentialism, all (positive or negative)
     justifiers of a belief held by epistemic agent S at time t are
@@ -315,10 +315,10 @@ September 16th, 2013 <small>Chapter 2, part I, 'Evidentialism vs. Reliabilism'</
 4.  pg. 24, "By contrast, teliabilism seems to secure it easily." You
     may or may not have seen this typo, but I'll add it just in case.
 
-September 16th, 2013 <small>Seminar</small>
+September 16th, 2013 <small>Seminar</small> {#september-16th-2013-seminar}
 -------------------------------------------
 
-### Question time
+### Question time {#question-time}
 
 -   Well-foundedness was introduced later by Feldman, it isn't there on
     the literature of foundationalism or coherentism. "Current-time
@@ -376,7 +376,7 @@ September 16th, 2013 <small>Seminar</small>
             unjustified because he could have gotten it wrong. (I think,
             will expand later.)
 
-### Presentation on Evidentialism
+### Presentation on Evidentialism {#presentation-on-evidentialism}
 
 -   **Epistemically justified**: Doxastic attitude *D* towards
     propositions *p* is epistemically justified for *S* at *t* if and
@@ -390,7 +390,7 @@ September 16th, 2013 <small>Seminar</small>
     2.  Is her belief that *p* well-founded?
     3.  Is her belief that *p* justified?
 
-### Reliablism
+### Reliablism {#reliablism}
 
 -   What do you mean by a process?
     -   It's maybe not *wholly* mental.
@@ -409,10 +409,10 @@ September 16th, 2013 <small>Seminar</small>
 -   There are **belief-independent processes** and **belief-dependent
     processes**
 
-September 23th, 2013 <small>Chapter 2, part II, 'Internalism vs. Externalism'</small>
+September 23th, 2013 <small>Chapter 2, part II, 'Internalism vs. Externalism'</small> {#september-23th-2013-chapter-2-part-ii-internalism-vs.-externalism}
 -------------------------------------------------------------------------------------
 
-### Framing the Debate
+### Framing the Debate {#framing-the-debate}
 
 -   Evidentialism belongs to internalism
     -   While process reliablism belongs to externalism.
@@ -477,7 +477,7 @@ September 23th, 2013 <small>Chapter 2, part II, 'Internalism vs. Externalism'</s
     -   Another approach is the **infallible guidance** approach, that
         the right rules will infallibly lead a subject to truth.
 
-### Internalism and Inferential Rules
+### Internalism and Inferential Rules {#internalism-and-inferential-rules}
 
 > **(INF)** If agent *S* has beliefs in propositions *K*, *L*, *M*, *N*
 > (at time *t*), and proposition *P* is logically entailed by the
@@ -502,7 +502,7 @@ September 23th, 2013 <small>Chapter 2, part II, 'Internalism vs. Externalism'</s
     because it's not enough that the belief be a belief.
     -   Justification comes from an external source,
 
-### Questions
+### Questions {#questions-1}
 
 1.  "we can say that a doxastic attitude toward a proposition is
     justified just in case it conforms to what is permitted by correct
@@ -543,10 +543,10 @@ September 23th, 2013 <small>Chapter 2, part II, 'Internalism vs. Externalism'</s
     conformity is, very generally, part of a process which ends
     internally.
 
-September 23rd, 2013 <small>Seminar</small>
+September 23rd, 2013 <small>Seminar</small> {#september-23rd-2013-seminar}
 -------------------------------------------
 
-### Organizational
+### Organizational {#organizational}
 
 -   Next week we begin the knowledge portion of the course.
 -   This is the longest of the three knowledge chapters.
@@ -555,7 +555,7 @@ September 23rd, 2013 <small>Seminar</small>
     and that's posted.
     -   Nozick.
 
-### Internalism
+### Internalism {#internalism}
 
 -   It's important for internalism that the evidence for a belief be
     possessed at time of the belief forming, decision making.
@@ -571,7 +571,7 @@ September 23rd, 2013 <small>Seminar</small>
     -   What reliablism? Reliablism to the truth.
         -   This is external.
 
-### Questions
+### Questions {#questions-2}
 
 -   "Background belief-forming processes"
 -   Standing belief, "dispositional"
@@ -585,7 +585,7 @@ September 23rd, 2013 <small>Seminar</small>
     -   I do not think you need the justifying beliefs to be standing,
         because that would be too strong.
 
-### Presentation
+### Presentation {#presentation}
 
 -   Connee and Feldman give examples for internalism because it's "good"
     to believe that one persons belief is better justified than another
@@ -597,13 +597,13 @@ September 23rd, 2013 <small>Seminar</small>
         fact that there are *both* internal and external factors.
     -   "Best explained by"
 
-#### Perception
+#### Perception {#perception}
 
 -   "He perceives that *p*."
 -   "Perceptual experience", which is something *in the head* from the
     eyes, ears.
 
-September 30th, 2013 <small>Chapter 3, part I, 'Defining Knowledge'</small>
+September 30th, 2013 <small>Chapter 3, part I, 'Defining Knowledge'</small> {#september-30th-2013-chapter-3-part-i-defining-knowledge}
 ---------------------------------------------------------------------------
 
 -   'Know' is the eighth most commonly used verb in English.
@@ -615,11 +615,11 @@ September 30th, 2013 <small>Chapter 3, part I, 'Defining Knowledge'</small>
     -   Descartes' evil deceiver.
     -   Are you a brain in a vat?
 
-### The Traditional View of Knowledge: Knowledge as JTB
+### The Traditional View of Knowledge: Knowledge as JTB {#the-traditional-view-of-knowledge-knowledge-as-jtb}
 
 -   K = JTB
 
-#### The truth condition
+#### The truth condition {#the-truth-condition}
 
 -   If someone claims to know something, which we later find out to be
     false, we feel justified in complaining that they didn't know after
@@ -629,7 +629,7 @@ September 30th, 2013 <small>Chapter 3, part I, 'Defining Knowledge'</small>
     -   **free indirect speech**: One can speak from the perspective of
         someone with more limited or false information.
 
-#### The belief condition
+#### The belief condition {#the-belief-condition}
 
 -   Knowledge is a matter of possessing the truth, and the sort of
     possession involved seems to be psychological.
@@ -639,7 +639,7 @@ September 30th, 2013 <small>Chapter 3, part I, 'Defining Knowledge'</small>
 -   When you say, "I *merely* believe it.", you likely really know, but
     are concealing some information for some reason or another.
 
-#### The justification condition
+#### The justification condition {#the-justification-condition}
 
 -   In the **Meno**, the **Gorgias**, the **Theatetus**, and elsewhere,
     Socrates distinguishes knowledge from right opinion.
@@ -648,7 +648,7 @@ September 30th, 2013 <small>Chapter 3, part I, 'Defining Knowledge'</small>
     -   They are degrees of justification, like chicken-sexers and those
         with master intuition.
 
-### The Gettier problem
+### The Gettier problem {#the-gettier-problem}
 
 -   Gettier's assumptions:
     1.  **Fallibism about justification**: A belief can be justified
@@ -705,7 +705,7 @@ September 30th, 2013 <small>Chapter 3, part I, 'Defining Knowledge'</small>
     -   **abominable conjunction**: “I know I have hands, and from this
         I infer that I’m not a BIV. But I don’t know I’m not a BIV.”
 
-### Defeasibility
+### Defeasibility {#defeasibility}
 
 -   A quality of Gettier cases is that there is some fact which if the
     believer learned, would cause them to revise their beliefs.
@@ -717,7 +717,7 @@ September 30th, 2013 <small>Chapter 3, part I, 'Defining Knowledge'</small>
     -   But what of *defeater defeaters*?
         -   The Grabit case.
 
-### No False Assumptions
+### No False Assumptions {#no-false-assumptions}
 
 -   Gettier cases don't always involve reasoning from false premises.
 -   **No false assumptions account**: To know is to have justified true
@@ -730,7 +730,7 @@ September 30th, 2013 <small>Chapter 3, part I, 'Defining Knowledge'</small>
     -   This condition satisfies the barn facade case.
     -   The assumption may be that "things are the way they seem to be."
 
-### Reliability
+### Reliability {#reliability}
 
 -   What disqualifies Gettier cases from being knowledge is to do with
     the lack of an objective connection between the subject's belief and
@@ -743,16 +743,16 @@ September 30th, 2013 <small>Chapter 3, part I, 'Defining Knowledge'</small>
     -   In the Gettier cases, however, your belief is caused by the
         sheep-shaped rock.
 
-September 30th, 2013 <small>Seminar</small>
+September 30th, 2013 <small>Seminar</small> {#september-30th-2013-seminar}
 -------------------------------------------
 
-### Links
+### Links {#links}
 
 -   [Kornblith](http://bit.ly/1bWomT5)
 -   [Speaking](http://bit.ly/19Qfpoi)
 -   [Key terms](http://bit.ly/19Q3ZSK)
 
-### Questions
+### Questions {#questions-3}
 
 1.  Reflective knowledge and appropriate reasoning.
     -   Don't use it in your reasoning unless you know it.
@@ -785,10 +785,10 @@ September 30th, 2013 <small>Seminar</small>
         -   It's standard analytical terms to get sufficient and
             necessary conditions.
 
-October 14th, 2013 <small>Chapter 3, part II, 'Defining Knowledge' and Chapter 4, 'Knowledge and Skepticism'</small>
+October 14th, 2013 <small>Chapter 3, part II, 'Defining Knowledge' and Chapter 4, 'Knowledge and Skepticism'</small> {#october-14th-2013-chapter-3-part-ii-defining-knowledge-and-chapter-4-knowledge-and-skepticism}
 --------------------------------------------------------------------------------------------------------------------
 
-### Questions
+### Questions {#questions-4}
 
 1.  pg. 30, on safety, "To know that P is to have justified true belief
     such that if you were to believe that P, P would be true.” This
@@ -824,15 +824,16 @@ October 14th, 2013 <small>Chapter 3, part II, 'Defining Knowledge' and Chapter 4
     regard, and assume that I believe it and have valid justification.
     Is that too much to give up to skeptics?
 
-October 14th, 2013 <small>Seminar</small>
+October 14th, 2013 <small>Seminar</small> {#october-14th-2013-seminar}
 -----------------------------------------
 
-> $S$ knows that $p$ if and only if: 1. $P$ is true 2. $B_s p$ 3.
-> $B_s p$ is **caused by** a **generally reliable** belief forming
-> process. 4. There is no relevant alternative situation in which $S$
-> would have believed $p$ (using the same process)
+> *S* knows that *p* if and only if: 1. *P* is true 2.
+> *B*<sub>*s*</sub>*p* 3. *B*<sub>*s*</sub>*p* is **caused by** a
+> **generally reliable** belief forming process. 4. There is no relevant
+> alternative situation in which *S* would have believed *p* (using the
+> same process)
 
-### Relevant Alternatives, Constrastivism, and Closure
+### Relevant Alternatives, Constrastivism, and Closure {#relevant-alternatives-constrastivism-and-closure}
 
 > **Relevant alternatives**: You know that *p* just when you have a JTB
 > that *p* and your evidences **rules out** all the **relevant**
@@ -871,7 +872,7 @@ October 14th, 2013 <small>Seminar</small>
     3.  **Useful concept**: *a* includes **some** alternatives to *p*;
     4.  **No knowledge**: *a* includes **no** alternatives to *p*;
 
-October 21st, 2013 <small>Chapter 5, 'Contextualism and Pragmatic Encroachment'</small>
+October 21st, 2013 <small>Chapter 5, 'Contextualism and Pragmatic Encroachment'</small> {#october-21st-2013-chapter-5-contextualism-and-pragmatic-encroachment}
 ---------------------------------------------------------------------------------------
 
 -   A recent development in epistemology is increased attention to
@@ -887,7 +888,7 @@ October 21st, 2013 <small>Chapter 5, 'Contextualism and Pragmatic Encroachment'<
         -   Whichwhether a person can knows can vary on the practical
             stakes.
 
-### Contextualism
+### Contextualism {#contextualism}
 
 -   Context-sensitivty is familiar.
     -   For instance, the first-person pronoun "I" differs from
@@ -932,13 +933,13 @@ October 21st, 2013 <small>Chapter 5, 'Contextualism and Pragmatic Encroachment'<
     1.  **Relevant alternatives** approach and
     2.  **Epistemic standards** approach.
 
-#### Relevant alternatives implementation
+#### Relevant alternatives implementation {#relevant-alternatives-implementation}
 
 -   **Relevant Alternatives Implementation**: A claim “*S* knows that
     *P*” is true in a context of speech *C* iff *S* can rule out all
     alternatives to *P* that *C* determines as relevant.
 
-#### The standards implementation
+#### The standards implementation {#the-standards-implementation}
 
 -   The relevant alternatives approach doesn’t set up a **standard of
     goodness of epistemic position** and declare that one can’t know
@@ -947,7 +948,7 @@ October 21st, 2013 <small>Chapter 5, 'Contextualism and Pragmatic Encroachment'<
     context of speech C iff S’s belief that P satisfies the epistemic
     standard determined by C.
 
-#### Problems for the Contextualist diagnosis of skepticism
+#### Problems for the Contextualist diagnosis of skepticism {#problems-for-the-contextualist-diagnosis-of-skepticism}
 
 -   We will briefly consider three sorts of objections in what follows:
     1.  The diagnosis *concedes too much* to the skeptic.
@@ -955,12 +956,12 @@ October 21st, 2013 <small>Chapter 5, 'Contextualism and Pragmatic Encroachment'<
     3.  The diagnosis *misrepresents a substantial issue* as a *merely
         verbal* one.
 
-##### Too concessive to the skeptic?
+##### Too concessive to the skeptic? {#too-concessive-to-the-skeptic}
 
 -   You *do* know that you have hands *irrespective* of standards or
     context or alternatives.
 
-##### Underestimation of the skeptic’s resources?
+##### Underestimation of the skeptic’s resources? {#underestimation-of-the-skeptics-resources}
 
 -   The skeptic can avoid context-sensitity:
     1.  For any epistemic standard, unless I meet that standard for I am
@@ -970,13 +971,13 @@ October 21st, 2013 <small>Chapter 5, 'Contextualism and Pragmatic Encroachment'<
         Therefore, I don’t meet even ordinary low standards for any
         propositions about the external world, such as I have hands.
 
-##### Misrepresenting a substantive issue as verbal
+##### Misrepresenting a substantive issue as verbal {#misrepresenting-a-substantive-issue-as-verbal}
 
-#### Contextualism apart from skepticism: the stakes-shifting cases
+#### Contextualism apart from skepticism: the stakes-shifting cases {#contextualism-apart-from-skepticism-the-stakes-shifting-cases}
 
-### Pragmatic Encroachment
+### Pragmatic Encroachment {#pragmatic-encroachment}
 
-#### The case for Pragmatic Encroachment
+#### The case for Pragmatic Encroachment {#the-case-for-pragmatic-encroachment}
 
 -   **Knowledge-Reasons (KR)**:If you know that P, then P is
     sufficiently warranted to be a reason you have to believe and do
@@ -985,7 +986,7 @@ October 21st, 2013 <small>Chapter 5, 'Contextualism and Pragmatic Encroachment'<
     be a reason you have to do or believe something, then P is
     sufficiently warranted to justify you in that action or belief.
 
-### Questions
+### Questions {#questions-5}
 
 1.  Regarding relevant alternatives, "A claim “S knows that P” is true
     in a context of speech C iff S can rule out all alternatives to P
@@ -1013,17 +1014,17 @@ October 21st, 2013 <small>Chapter 5, 'Contextualism and Pragmatic Encroachment'<
     level of justification. The epistemological issue is whether the
     person going to the bank actually is or isn’t justified.
 
-October 21st, 2013 <small>Seminar</small>
+October 21st, 2013 <small>Seminar</small> {#october-21st-2013-seminar}
 -----------------------------------------
 
-### Announcements
+### Announcements {#announcements}
 
 -   No make-up class on October 28th, 2013.
 -   Paper due November 4th, 2013.
 
-### Presentation <small>The Bank Argument: A Non-Contextualist Explanation</small>
+### Presentation <small>The Bank Argument: A Non-Contextualist Explanation</small> {#presentation-the-bank-argument-a-non-contextualist-explanation}
 
-#### Bottom-line Up-front
+#### Bottom-line Up-front {#bottom-line-up-front}
 
 -   Contextualists fail to consider a plausible explanation for the
     cases, one that does not require an appeal to contextualism.
@@ -1031,13 +1032,13 @@ October 21st, 2013 <small>Seminar</small>
     -   I will not argue that Contextualism is false.
         -   I simply hope to take away some motivation for it.
 
-#### Contextualism
+#### Contextualism {#contextualism-1}
 
 -   'knows that *p*' varies in its sense across context of speech. Thus,
     '*S* knows that *p*' can have one sense in one context of use and
     another in another context.
 
-#### The Bank Argument
+#### The Bank Argument {#the-bank-argument}
 
 1.  In Case A, you speak the truth when you say, "I know it'll be open."
 2.  In Case B, you speak the truth when you say "I don't know it'll be
@@ -1057,7 +1058,7 @@ October 21st, 2013 <small>Seminar</small>
 > is whether their explanations are more plausible than Premises 1 and
 > 2.
 
-#### Goldman comments
+#### Goldman comments {#goldman-comments}
 
 -   People who publish in a good journal or book have thought *very
     closely* about the cases they've illustrated.
@@ -1089,7 +1090,7 @@ October 21st, 2013 <small>Seminar</small>
     can read, understand, appreciate.
 -   Philosophers would deal with how you deal with cases.
 
-### Questions
+### Questions {#questions-6}
 
 1.  How does an invariantist arrive a non-arbitrary standard for the
     word "know"? How is one standard better than another?
@@ -1127,458 +1128,442 @@ October 21st, 2013 <small>Seminar</small>
             knowledge *attributions* are.
         -   "Knowledge relations." *Really knowing*, *with certainty*.
 
-October 28th, 2013 <small>Chapter 6, 'Perceptual Justification'</small>
+October 28th, 2013 <small>Chapter 6, 'Perceptual Justification'</small> {#october-28th-2013-chapter-6-perceptual-justification}
 -----------------------------------------------------------------------
 
 -   Perception is a source of knowledge.
-	-   You come to know things about your surroundings.
-	-   It is hard to see how we could know much about the
-		world around us if we could not perceive how things
-		are.
+    -   You come to know things about your surroundings.
+    -   It is hard to see how we could know much about the world around
+        us if we could not perceive how things are.
 
 -   Perception is also a source of justified belief.
--   So far, this is just the obvious, when we ask
-	*how* percetption provides us with knowledge and justfied
-	belief.
+-   So far, this is just the obvious, when we ask *how* percetption
+    provides us with knowledge and justfied belief.
 
->   [S]ome of the hardest and most interesting questions in 
->   the epistemology of perception concern in the first instance 
->   how perception can provide justification.
+> [S]ome of the hardest and most interesting questions in the
+> epistemology of perception concern in the first instance how
+> perception can provide justification.
 
-### Preliminaries on perceptual experience
+### Preliminaries on perceptual experience {#preliminaries-on-perceptual-experience}
 
 -   Perception, in paradigm cases, involves **perceptual experience**.
 -   When we have experiences, things and their properties seem
-	**present** to the mind in a way they do not in **non-perceptual
-	thought**.
+    **present** to the mind in a way they do not in **non-perceptual
+    thought**.
 
-### Can experiences justify beliefs?
+### Can experiences justify beliefs? {#can-experiences-justify-beliefs}
 
--   The best argument against perception being able to justify
-	beliefs is the **Sellarsian dilemma**, after Wilfrid Sellars.
+-   The best argument against perception being able to justify beliefs
+    is the **Sellarsian dilemma**, after Wilfrid Sellars.
 
 Dilemma
-
 :   A dilemma usually takes the following form:
-	
-	1.  Either A or B is true.
-	2.  If A is true, then such and such is true.
-	3.  If B is true, then such and such is true.
-	4.  Therefore, such and such is true.
 
-	2 and 3 are the **horns** of the dilemma.
+    1.  Either A or B is true.
+    2.  If A is true, then such and such is true.
+    3.  If B is true, then such and such is true.
+    4.  Therefore, such and such is true.
 
-#### The case for answering "No."
+    2 and 3 are the **horns** of the dilemma.
+
+#### The case for answering "No." {#the-case-for-answering-no.}
 
 Sellarsian dillemma
-
-:   1.  Either experiences have propositional content or they do
-		not.
-	2.  If experiences have propositional content, then they
-		can justify beliefs only if the experiences themselves
-		are justified.
-	3.  Experiences cannot be justified.
-	4.  If experiences have propositional content, they cannot
-		justify beliefs. (From 2 and 3)
-	5.  If experiences lack propositional content, then having
-		them cannot be havint a reason to believe anything.
-	6.  If in having an experience we do not thereby have a reason
-		to believe anything, then having an experience
-		cannot justify a belief.
-	7.  So, if experiences lack propositional content, then they
-		cannot justify beliefs. (From 5 and 6)
-	8.  Therefore, experiences do not justify beliefs.
+:   1.  Either experiences have propositional content or they do not.
+    2.  If experiences have propositional content, then they can justify
+        beliefs only if the experiences themselves are justified.
+    3.  Experiences cannot be justified.
+    4.  If experiences have propositional content, they cannot justify
+        beliefs. (From 2 and 3)
+    5.  If experiences lack propositional content, then having them
+        cannot be havint a reason to believe anything.
+    6.  If in having an experience we do not thereby have a reason to
+        believe anything, then having an experience cannot justify a
+        belief.
+    7.  So, if experiences lack propositional content, then they cannot
+        justify beliefs. (From 5 and 6)
+    8.  Therefore, experiences do not justify beliefs.
 
 Propositional content
+:   Beliefs have propositional content, they are beliefs that *certain
+    things are the case*.
 
-:   Beliefs have propositional content, they are beliefs that
-	*certain things are the case*.
+:   The belief that the squirrel is on the railing has the propositional
+    content that *the squirrel is on the railing*.
 
-:   The belief that the squirrel is on the railing has the
-	propositional content that *the squirrel is on the railing*.
-
-:   Desires and intentions have propositional content. When you
-	desire something you always desire that such and such be the
-	case.
+:   Desires and intentions have propositional content. When you desire
+    something you always desire that such and such be the case.
 
 Justification-from-Reasons View
-
-:   >   If S is justified in believing that P, this holds in virtue of 
-	>   S’s having reasons to believe that P.
+:   If S is justified in believing that P, this holds in virtue of S’s
+    > having reasons to believe that P.
 
 :   This says that you are justified in believing something this is
-	because you have reason to believe it. This is related to
-	premise 6.
+    because you have reason to believe it. This is related to premise 6.
 
 Propositional View of Reasons
-
-:   >   a reason for belief is a piece of information – a claim, 
-	>   a proposition – and you have a piece of information as a 
-	>   reason only if you justifiably believe it is true. 
+:   a reason for belief is a piece of information – a claim, a
+    > proposition – and you have a piece of information as a reason only
+    > if you justifiably believe it is true.
 
 :   The propositional view secures premise 5.
 
 -   Why can't we think of a headache itself as a reason for believing
-	that S has a headache?
-	-   Propositionalist reply: Reasons must be the sorts of things
-		that we can *give* in defense of ourselves or others.
-		-   Giving something in defense requires that it be
-			articulable.
-		-   Things like headaches and visual experiences are
-			not articulable.
-		-   I can *describe* these states, but I cannot
-			*express* them.
+    that S has a headache?
+    -   Propositionalist reply: Reasons must be the sorts of things that
+        we can *give* in defense of ourselves or others.
+        -   Giving something in defense requires that it be articulable.
+        -   Things like headaches and visual experiences are not
+            articulable.
+        -   I can *describe* these states, but I cannot *express* them.
 
-#### Assuming they can, how?
+#### Assuming they can, how? {#assuming-they-can-how}
 
--   There are two categories of how they could.	-   **Direct justification**
-	-   **Indirect justification**
+-   There are two categories of how they could. - **Direct
+    justification**
+    -   **Indirect justification**
 
 Indirect theories
+:   -   "The apple looks green to you." How could that justify you in
+        believing the apple is green?
+        -   Don't you have to notice it looks green to you and then to
+            believe it is green *on that basis*.
+        -   According to indirect theories, yes.
 
-:   -   "The apple looks green to you." How could that justify
-		you in believing the apple is green?
-		-   Don't you have to notice it looks green to you and
-			then to believe it is green *on that basis*.
-		-   According to indirect theories, yes.
-	-   There are three problems for indirect theories:
-		1.  It is difficult to get to the conclusion that the apple
-			is green if all you have to start with is the justified
-			belief that it looks green to you.
-			-   This is hardly conclusive.
-		2.  You might have justification to believe *p* but still
-			lack a justified belief in the cases where you don't
-			believe despite propositional justification or believe
-			on grounds of wishful thinking.
-		3.  Can’t one be wrong about even about how things look, 
-			sound, etc. to one? Couldn’t I get my experience 
-			wrong despite my best attempts to get it right?
+    -   There are three problems for indirect theories:
+        1.  It is difficult to get to the conclusion that the apple is
+            green if all you have to start with is the justified belief
+            that it looks green to you.
+            -   This is hardly conclusive.
+
+        2.  You might have justification to believe *p* but still lack a
+            justified belief in the cases where you don't believe
+            despite propositional justification or believe on grounds of
+            wishful thinking.
+        3.  Can’t one be wrong about even about how things look, sound,
+            etc. to one? Couldn’t I get my experience wrong despite my
+            best attempts to get it right?
 
 Basing requirement on doxastic justification
+:   Your belief that P is justified only if you are justified in
+    > believing P and you believe that P on the basis of the factors
+    > that make you justified in believing P.
 
-:   >   Your belief that P is justified only if you are justified 
-	>   in believing P and you believe that P on the basis of the
-    >   factors that make you justified in believing P.
+### Dogmatism {#dogmatism}
 
-### Dogmatism
-
--   The simplest direct theory holds that when you have an
-	experience in which something looks, sounds, etc, a certain
-	way to you, this experience alone is enough to justify you
-	in believing it is that way, unless you have some special
-	reason to think otherwise.
-	-   the experience of a thing’s appearing a certain way to 
-		you provides you **immediate *prima facie* justification** 
-		to believe that the thing is that way.
+-   The simplest direct theory holds that when you have an experience in
+    which something looks, sounds, etc, a certain way to you, this
+    experience alone is enough to justify you in believing it is that
+    way, unless you have some special reason to think otherwise.
+    -   the experience of a thing’s appearing a certain way to you
+        provides you **immediate *prima facie* justification** to
+        believe that the thing is that way.
 
 Dogmatism
+:   Whenever you have an experience in which a thing appears (i.e.,
+    > looks, sounds, etc.) a certain way, *F*, to you, then you thereby
+    > have immediate prima facie justification to believe that it is
+    > *F*.
 
-:   >   Whenever you have an experience in which a thing appears 
-	>   (i.e., looks, sounds, etc.) a certain way, *F*, to you, 
-	>   then you thereby have immediate prima facie justification 
-	>   to believe that it is *F*.
-
-:   But this does not account for hallucinations in which nothing
-	is appearing but it looks to you as if it is.
+:   But this does not account for hallucinations in which nothing is
+    appearing but it looks to you as if it is.
 
 Dogmatism (expanded version)
-
-:   >   Whenever you have an experience as of something being a 
-	>   certain way, *F*, to you, then you thereby have immediate 
-	>   prima facie justification to believe that it is *F*.
+:   Whenever you have an experience as of something being a certain way,
+    > *F*, to you, then you thereby have immediate prima facie
+    > justification to believe that it is *F*.
 
 Skeptical assumption
+:   In order for an experience of its looking to you that *P* to justify
+    > you in believing that *P*, you have to be independently justified
+    > in believing that you aren’t a brain in a vat (aren’t dreaming,
+    > etc.)
 
-:   >   In order for an experience of its looking to you that 
-	>   *P* to justify you in believing that *P*, you have to be
-	>   independently justified in believing that you aren’t 
-	>   a brain in a vat (aren’t dreaming, etc.)
-
-:   If dogmatism is true, then this assumption is false.
-	All you need is the experience of a thing looking *F* 
-	to be justified in believing it is *F*
+:   If dogmatism is true, then this assumption is false. All you need is
+    the experience of a thing looking *F* to be justified in believing
+    it is *F*
 
 Cognitive penetrability objection
+:   -   Do we “see” different things depending on which theories we
+        accept?
+        -   If we do, then if we use what we see to justify those
+            theories, aren’t we going in a circle?
+        -   For instance, preformationists believed that every human
+            cell contained an embryo. Imagine one of them looked into a
+            microscope and happened to see something that looked a
+            little like an embryo. This person can not be as justified
+            as a non-preformationist who daw the same thing for what it
+            is, but on this view it may be.
 
-:   -   Do we “see” different things depending on which theories 
-		we accept? 
-		-   If we do, then if we use what we see to justify 
-			those theories, aren’t we going in a circle?
-		-   For instance, preformationists believed that every
-			human cell contained an embryo. Imagine one of them
-			looked into a microscope and happened to see something
-			that looked a little like an embryo. This person
-			can not be as justified as a non-preformationist who
-			daw the same thing for what it is, but on this view
-			it may be.
+    -   Consider other influences of our cognitive attitudes on our
+        experiences
+        -   A novice gold prospector wants to find gold and this desire
+            makes him see the dusty nugget in his pan as gold. Is he
+            justified?
 
-	-   Consider other influences of our cognitive attitudes on our
-		experiences
-		-   A novice gold prospector wants to find gold and this desire
-			makes him see the dusty nugget in his pan as gold.
-			Is he justified?
+:   An experience is cognitively penetrated just in case a cognitive
+    > state of the person penetrates (i.e., causally influences) the
+    > post-attentional processing of sensory input
 
-:   >   An experience is cognitively penetrated just in case a cognitive 
-	>   state of the person penetrates (i.e., causally influences) 
-	>   the post-attentional processing of sensory input
+#### The speckled hen objection {#the-speckled-hen-objection}
 
-#### The speckled hen objection
+> Imagine seeing two hens, one with 48 speckles and the other 3. Before
+> you count, you won’t be justified in thinking the first has
+> 48-speckles, but you will be justified in thinking the second one has
+> 3 speckles. The problem for dogmatism is that it seems that in some
+> sense 48-speckledness is present in your experience when you look at
+> the first hen, just as 3-speckledness is present in your experience
+> when you look at the second hen. But if it looks 48-speckled to you,
+> then by dogmatism, wouldn’t you be justified in thinking it is? But
+> you aren’t. So we have a problem for dogmatism, the **speckled hen
+> problem**.[^1]
 
->   Imagine seeing two hens, one with 48 speckles and the other 3. Before you count, you won’t be justified in thinking the first has 48-speckles, but you will be justified in thinking the second one has 3 speckles. The problem for dogmatism is that it seems that in some sense 48-speckledness is present in your experience when you look at the first hen, just as 3-speckledness is present in your experience when you look at the second hen. But if it looks 48-speckled to you, then by dogmatism, wouldn’t you be justified in thinking it is? But you aren’t. So we have a problem for dogmatism, the **speckled hen problem**.[^1]
-
-##### Responses
+##### Responses {#responses}
 
 Seemings
-
-:   >   the dogmatist should understand experiences in the relevant 
-	>   sense as mental states in which it seems to the subject that 
-	>   a thing is F; only such seemings can justify[^2].
+:   the dogmatist should understand experiences in the relevant sense as
+    > mental states in which it seems to the subject that a thing is F;
+    > only such seemings can justify[^2].
 
 Mode of presentation
-
-:   >   the dogmatism might claim *that only experiences in which a 
-	>   property is present* in a certain mode or way provide prima 
-	>   facie justification
+:   the dogmatism might claim *that only experiences in which a property
+    > is present* in a certain mode or way provide prima facie
+    > justification
 
 Demonstrative
+:   the dogmatist might severely restrict her dogmatism so that it only
+    > applies to beliefs *such as this thing is that way* if an object
+    > looks a certain way to you, you are *prima facie \> immediately
+    > justified only in believing that it is that way*.
 
-:   >   the dogmatist might severely restrict her dogmatism so that 
-	>   it only applies to beliefs *such as this thing is that way*
-	>   if an object looks a certain way to you, you are *prima facie 	>   immediately justified only in believing that it is that way*.
-
-October 28th, 2013 <small>Seminar</small>
+October 28th, 2013 <small>Seminar</small> {#october-28th-2013-seminar}
 -----------------------------------------
 
-### Sellars argument
+### Sellars argument {#sellars-argument}
 
-#### Propositional content
+#### Propositional content {#propositional-content}
 
 -   Not all content is propositional, it can be smaller.
-	-   Singular terms or concepts could be part of a proposition.
-	-   "That iPad that Olivia is using." "That iPad" is a part.
+    -   Singular terms or concepts could be part of a proposition.
+    -   "That iPad that Olivia is using." "That iPad" is a part.
 
--   The question is whether experiences as a mental state or any
-	state is a propositional attitude.
-	-   There is at least a subclass of mental states that have
-		propositional content.
+-   The question is whether experiences as a mental state or any state
+    is a propositional attitude.
+    -   There is at least a subclass of mental states that have
+        propositional content.
 
 -   A feeling of pain, on the other hand, may not have propositional
-	content. It's just a feeling or something like that.
+    content. It's just a feeling or something like that.
 -   So there are two kinds of mental states:
-	1.  Phenomenal character, feeling.
-	2.  Lacks phenomenal character, has propositional content.
+    1.  Phenomenal character, feeling.
+    2.  Lacks phenomenal character, has propositional content.
 
 -   Everybody agrees that having the property of propositional content
-	is something that at least some mental states might have.
-	-   In particular, perceptual experiences.
+    is something that at least some mental states might have.
+    -   In particular, perceptual experiences.
 
 -   Sellars' way of defending coherentism by saying that *only beliefs
-	can justify beliefs*.
-	-   If you say that beliefs are the only thing that can do this,
-		it affects its justificational status. **Justifiers**
-	-   Which things and kinds of things are justifiers?
-	-   Beliefs, justified beliefs, are justifiers.
-	-   Perceptual experiences?
-	-   Process reliablism confers justificational changes by means
-		of *processes*.
+    can justify beliefs*.
+    -   If you say that beliefs are the only thing that can do this, it
+        affects its justificational status. **Justifiers**
+    -   Which things and kinds of things are justifiers?
+    -   Beliefs, justified beliefs, are justifiers.
+    -   Perceptual experiences?
+    -   Process reliablism confers justificational changes by means of
+        *processes*.
 
--   If you make an inference from two premises to a conclusion and
-	your inference and its structure are valid, then the fact that
-	it is valid makes it justified. Or at least contributes.
-	-   Or if it's invalid, then it contributes to its state.
+-   If you make an inference from two premises to a conclusion and your
+    inference and its structure are valid, then the fact that it is
+    valid makes it justified. Or at least contributes.
+    -   Or if it's invalid, then it contributes to its state.
 
-#### Evidentialism and Internalism
+#### Evidentialism and Internalism {#evidentialism-and-internalism}
 
 -   For them, the only things that are justifiers are mental states.
 -   Suppose Jones believes *p* and that "if *p* then *q*".
-	-   Is he propositionally justified in believe in *q*?
-	-   You're in a state such that if you were in that state, then
-		it would be justified.
+    -   Is he propositionally justified in believe in *q*?
+    -   You're in a state such that if you were in that state, then it
+        would be justified.
 
 -   What are the things that confer the justificational status?
-	-   It's not only that Jones believes it.
-	-   It's also that the argument is *valid*.
-		-   This is not a mental state.
+    -   It's not only that Jones believes it.
+    -   It's also that the argument is *valid*.
+        -   This is not a mental state.
 
--   Would it be plausible that only mental states are justifiers
-	for doxastic?
-	-   No, because for process reliablists, it's not only the
-		doxastic *state* but the doxastic *process*.
+-   Would it be plausible that only mental states are justifiers for
+    doxastic?
+    -   No, because for process reliablists, it's not only the doxastic
+        *state* but the doxastic *process*.
 
 -   There's a lot of room of play for justifiers.
 
-#### The premises
+#### The premises {#the-premises}
 
->   (2)  If experiences have propositional content, then they
->   can justify beliefs only if the experiences themselves
->   are justified.
+> 1.  If experiences have propositional content, then they can justify
+>     beliefs only if the experiences themselves are justified.
 
--   If we agree that nothing can be a justifier without itself
-	being justified.
+-   If we agree that nothing can be a justifier without itself being
+    justified.
 
->   (3) But experiences cannot be justified[^3].
+> 1.  But experiences cannot be justified[^3].
 
 -   This is uncomfortable.
 
->   (5)  If experiences lack propositional content, then having
->	them cannot be having a reason to believe anything.
+> 1.  If experiences lack propositional content, then having them cannot
+>     be having a reason to believe anything.
 
 -   This horn is being pursued by *having a reason*.
-	-   We have not spoke much about reasons.
-	-   It's hard to sum up use of the word "reason."
-		-   Mostly until recently mainstream epistemologists have
-			not been using "reason" as a favorite word.
+    -   We have not spoke much about reasons.
+    -   It's hard to sum up use of the word "reason."
+        -   Mostly until recently mainstream epistemologists have not
+            been using "reason" as a favorite word.
 
-#### Experience and Justification
+#### Experience and Justification {#experience-and-justification}
 
 -   If you think that experiences have propositional content, then you
-	might think that the only beliefs that experiences have power 
-	over are the same ones.
-	$$V(GS) \iff B(GS)$$
+    might think that the only beliefs that experiences have power over
+    are the same ones.
+    *V*(*G**S*) ⇔ *B*(*G**S*)
 
-### Dogmatism
+### Dogmatism {#dogmatism-1}
 
 -   If we're going to be accurate about our representation of the world
-	that everything happens from the analysis of the datum from the
-	sense.
-	-   You get sound waves, shapes, lights, etc.
+    that everything happens from the analysis of the datum from the
+    sense.
+    -   You get sound waves, shapes, lights, etc.
 
 -   How much penetrability happens from high-level beliefs?
-	-   For present purposes, admit that it can happen *some of the
-		time*.
-	-   What should epistemologists do about this?
-		-   Theory-ladenness and perception in the 50s and 60s for
-			philosophy of science and Thomas Cuun and Hanson is
-			that what you already believe and already be trained on,
-			say the bird watcher and what they're trained to detect,
-			then the training is in your memory and part of your
-			prior cognition, can this warp your experience?
-		-   A lot goes on without your being aware of it.
+    -   For present purposes, admit that it can happen *some of the
+        time*.
+    -   What should epistemologists do about this?
+        -   Theory-ladenness and perception in the 50s and 60s for
+            philosophy of science and Thomas Cuun and Hanson is that
+            what you already believe and already be trained on, say the
+            bird watcher and what they're trained to detect, then the
+            training is in your memory and part of your prior cognition,
+            can this warp your experience?
+        -   A lot goes on without your being aware of it.
 
-	-   For instance, distinguishing twins, sometimes you can
-		determine *that **that** is Sally and that **that** 
-		is Sandra*, but not *how* or *why* this is the case.
-		-   Does the processing make a causal difference in the way
-			that things appear? Top-down, Bottom-up processing.
+    -   For instance, distinguishing twins, sometimes you can determine
+        *that **that** is Sally and that **that** is Sandra*, but not
+        *how* or *why* this is the case.
+        -   Does the processing make a causal difference in the way that
+            things appear? Top-down, Bottom-up processing.
 
--   Your fears and emotions and wishes make it so that you "see"
-	people you might want or not want to see.
--   Dogmatism takes the function of the what the perceptual state
-	is like to be the only determining factor in justification.
-	-   It's like jumping to a conclusion.
+-   Your fears and emotions and wishes make it so that you "see" people
+    you might want or not want to see.
+-   Dogmatism takes the function of the what the perceptual state is
+    like to be the only determining factor in justification.
+    -   It's like jumping to a conclusion.
 
--   What if it turns out that observation *is not* pure and 
-	unadulterated?
-	-   What if people in one laboratory have beliefs that make
-		them observe to fit their theory in a way that contradicts
-		the observations of people in another lab with another 
-		theory.
-		-   If emotions distort beliefs, it could make it
-			observation impossible.
+-   What if it turns out that observation *is not* pure and
+    unadulterated?
+    -   What if people in one laboratory have beliefs that make them
+        observe to fit their theory in a way that contradicts the
+        observations of people in another lab with another theory.
+        -   If emotions distort beliefs, it could make it observation
+            impossible.
 
->   Maybe we have lower-level experiences that are not 
->   penetrated.
+> Maybe we have lower-level experiences that are not penetrated.
 
--   This is something that people in psychology and vision
-	science insofar as perceptual belief, not all belief is
-	perception based, what does it mean to be "directly
-	perception based"?
-	-   What is this special class and how is it picked out?
-		-   The intuitive idea with which people start are the
-			elements of the perceptual system.
-		-   In the case of vision, there are shapes. Within
-			visual science, people represent things in terms of
-			[geons](http://en.wikipedia.org/wiki/Geon_(psychology)).
+-   This is something that people in psychology and vision science
+    insofar as perceptual belief, not all belief is perception based,
+    what does it mean to be "directly perception based"?
+    -   What is this special class and how is it picked out?
+        -   The intuitive idea with which people start are the elements
+            of the perceptual system.
+        -   In the case of vision, there are shapes. Within visual
+            science, people represent things in terms of
+            [geons](http://en.wikipedia.org/wiki/Geon_(psychology)).
 
-November 4th, 2013 <small>Chapter 8, 'Epistemology and Cognitive Science'</small>
+November 4th, 2013 <small>Chapter 8, 'Epistemology and Cognitive Science'</small> {#november-4th-2013-chapter-8-epistemology-and-cognitive-science}
 ---------------------------------------------------------------------------------
 
-November 4th, 2013 <small>Seminar</small>
+November 4th, 2013 <small>Seminar</small> {#november-4th-2013-seminar}
 -----------------------------------------
 
 -   Theories of justification hold that j-factors, ones which affect
-	another beliefs warrant, what are the justifiers?
-	-   What are the *staes of affairs* that influence the status
-		as a belief being satisfied or unsatisfied.
+    another beliefs warrant, what are the justifiers?
+    -   What are the *staes of affairs* that influence the status as a
+        belief being satisfied or unsatisfied.
 
--  The problem for reliabalism is to define the process,
-	but everything else is explicit and not obscure.
--   Maybe foundationalism, the perceptual side for instance,
-	there is some reference to psychological work.
-	-   So it's not just reliablism.
-	-   It would be natural to bring into the picture questions
-		of cognitive size is best positioned to address.
-		-   There's nothing we really know everything about.
+-   The problem for reliabalism is to define the process, but everything
+    else is explicit and not obscure.
+-   Maybe foundationalism, the perceptual side for instance, there is
+    some reference to psychological work.
+    -   So it's not just reliablism.
+    -   It would be natural to bring into the picture questions of
+        cognitive size is best positioned to address.
+        -   There's nothing we really know everything about.
 
-	-   It looks like addressing the question of "how do we go about
-		achieving justified belief?" is an entree into cognitive science.
-		-   The meliorative conception, "making better."
-		-   If you want to make better your cognitive or intellectual
-			or belief-forming or evidence-getting, you have to answer
-			this question.
-		-   For instance Descartes.
+    -   It looks like addressing the question of "how do we go about
+        achieving justified belief?" is an entree into cognitive
+        science.
+        -   The meliorative conception, "making better."
+        -   If you want to make better your cognitive or intellectual or
+            belief-forming or evidence-getting, you have to answer this
+            question.
+        -   For instance Descartes.
 
-	-   The rationalist empiricist debate, what is our main capacity
-		to get us to the truth. Some wanted to say *reason*.
-		Some wanted to say *observation*.
-		-   These are claims about how knowledge is acquired.
-		-   Hume: "This is the only way to do it."
-		-   So we're not leaving epistemology in doing this.
+    -   The rationalist empiricist debate, what is our main capacity to
+        get us to the truth. Some wanted to say *reason*. Some wanted to
+        say *observation*.
+        -   These are claims about how knowledge is acquired.
+        -   Hume: "This is the only way to do it."
+        -   So we're not leaving epistemology in doing this.
 
-	-   It really sounds like a lot of early thinkers are talking
-		about psychology. But there wasn't even such a word.
-		-   So we're not abandoning the field.
+    -   It really sounds like a lot of early thinkers are talking about
+        psychology. But there wasn't even such a word.
+        -   So we're not abandoning the field.
 
-	-   There are parts which has just lain fallow.
+    -   There are parts which has just lain fallow.
 
--   Meliorism "making better", well to talk about what we could do better
-	we have to ask "What are we doing now?"
-	-   Maybe psychology is the way of avoiding glitches.
-	-   There general problem is "How should you go about conducting
-		your intellectual affairs?
+-   Meliorism "making better", well to talk about what we could do
+    better we have to ask "What are we doing now?"
+    -   Maybe psychology is the way of avoiding glitches.
+    -   There general problem is "How should you go about conducting
+        your intellectual affairs?
 
 -   Looking at things from a psychological perspective
--   A big part of epistemology is making normative judgments of justification
-	and warrant.
+-   A big part of epistemology is making normative judgments of
+    justification and warrant.
 
-November 11th, 2013 <small>Chapter 9, 'Philosophy's Intuitional Methodology and the Role of Science'</small>
+November 11th, 2013 <small>Chapter 9, 'Philosophy's Intuitional Methodology and the Role of Science'</small> {#november-11th-2013-chapter-9-philosophys-intuitional-methodology-and-the-role-of-science}
 ------------------------------------------------------------------------------------------------------------
 
-November 11th, 2013 <small>Seminar</small>
+November 11th, 2013 <small>Seminar</small> {#november-11th-2013-seminar}
 ------------------------------------------
 
-November 18th, 2013 <small>Chapter 10, 'Social Epistemology (Testimony and Peer Disagreement)'</small>
+November 18th, 2013 <small>Chapter 10, 'Social Epistemology (Testimony and Peer Disagreement)'</small> {#november-18th-2013-chapter-10-social-epistemology-testimony-and-peer-disagreement}
 ------------------------------------------------------------------------------------------------------
 
-November 18th, 2013 <small>Seminar</small>
+November 18th, 2013 <small>Seminar</small> {#november-18th-2013-seminar}
 ------------------------------------------
 
-November 25th, 2013 <small>Chapter 11, 'Social Epistemology (Collective Epistemology)'</small>
+November 25th, 2013 <small>Chapter 11, 'Social Epistemology (Collective Epistemology)'</small> {#november-25th-2013-chapter-11-social-epistemology-collective-epistemology}
 ----------------------------------------------------------------------------------------------
 
-November 25th, 2013 <small>Seminar</small>
+November 25th, 2013 <small>Seminar</small> {#november-25th-2013-seminar}
 ------------------------------------------
 
-December 2nd, 2013 <small>Chapter 11, part II, 'Social Epistemology (Institutional Social Epistemology)'</small>
+December 2nd, 2013 <small>Chapter 11, part II, 'Social Epistemology (Institutional Social Epistemology)'</small> {#december-2nd-2013-chapter-11-part-ii-social-epistemology-institutional-social-epistemology}
 ----------------------------------------------------------------------------------------------------------------
 
-December 2nd, 2013 <small>Seminar</small>
+December 2nd, 2013 <small>Seminar</small> {#december-2nd-2013-seminar}
 -----------------------------------------
 
 <!-- Accronyms -->
 
-*[JTB]: Justified true belief
-*[JTBs]: Justified true beliefs
-*[BIV]: Brain in a vat
+*[JTB]: Justified true belief *[JTBs]: Justified true beliefs \*[BIV]:
+Brain in a vat
 
 <!-- Footnotes -->
 
-[^1]:	Ernest Sosa (2003) raises this problem as a problem for 
-		both dogmatists and indirectness theories.
+[^1]: Ernest Sosa (2003) raises this problem as a problem for both
+    dogmatists and indirectness theories.
 
-[^2]:	Michael Huemer's "phenomenal conservatism."
+[^2]: Michael Huemer's "phenomenal conservatism."
 
-[^3]: 	I very much doubt this, or at least have reason to doubt 
-		this. Imagine that someone has face-blindness, is aware of
-		their face-blindness, and the experience of seeing a specific
-		person. 
+[^3]: I very much doubt this, or at least have reason to doubt this.
+    Imagine that someone has face-blindness, is aware of their
+    face-blindness, and the experience of seeing a specific person.
