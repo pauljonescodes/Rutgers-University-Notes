@@ -2819,8 +2819,8 @@ February 25th, 2013 - Lecture
     -   [Awesome
         table](http://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html):
         <table class="table">
-                            <tbody><tr>
-                            <th markdown="1" id="h1">
+                                        <tbody><tr>
+                                        <th markdown="1" id="h1">
 
         Modifier
         </th>

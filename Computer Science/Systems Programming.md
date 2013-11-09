@@ -1103,87 +1103,75 @@ But it's much nicer to use a `typedef`:
 #### Types, Operators, Expressions
 
 Variables & Constants
-
 :   Basic objects
 
-:   Variables are memory location in computer's memory to store data. 
-	To indicate the memory location, each variable should be given a 
-	unique name called identifier. Variable names are just the 
-	symbolic representation of a memory location. 
+:   Variables are memory location in computer's memory to store data. To
+    indicate the memory location, each variable should be given a unique
+    name called identifier. Variable names are just the symbolic
+    representation of a memory location.
 
 Declarations
-
-:   Name the variables to be used, and additionally their 
-	initial values.
+:   Name the variables to be used, and additionally their initial
+    values.
 
 Operators
-
 :   Specify what to do to varaibles and constants.
 
 Expressions
-
-:   Combine variables, constants, and operators to produce new
-	values.
+:   Combine variables, constants, and operators to produce new values.
 
 Types
-
-:   Object belongs to a specific type, which determines what range
-	of values it can have, which operations canbe performed.
+:   Object belongs to a specific type, which determines what range of
+    values it can have, which operations canbe performed.
 
 Variable names
-
 :   Names are made of letters and digits and underscores.
 
 :   Case-sensitive
 
-:   C language-specific keyword such as `if`, `else`, `for`,
-	`int`, are reserved.
+:   C language-specific keyword such as `if`, `else`, `for`, `int`, are
+    reserved.
 
-:   It's advisiable to give variables descriptive names,
-	plus prefix/suffix to indicate type and/or scope.
+:   It's advisiable to give variables descriptive names, plus
+    prefix/suffix to indicate type and/or scope.
 
-		strABC; // string
-		iXYZ; // integer
-		g_iXYZ; // global variable
-		a_iXYZ; // a function argument
+        strABC; // string
+        iXYZ; // integer
+        g_iXYZ; // global variable
+        a_iXYZ; // a function argument
 
 Data types
-
 :   Same as Java
 
-	For integer, there is `signed` and `unsigned`
+    For integer, there is `signed` and `unsigned`
 
-	Type   |   Description   |   Size   
-	-------|-----------------|-------
-	`char` | Capable of hold one character in ASCII table | 1-byte
-	`short int` | 16-bit integer | 2-byte
-	`int/long/long int` | 32-bit integer | 4-byte
-	`long long` | 64-bit integer | 8-byte
-	`float` | Single-precision floating point | 4-byte
-	`double` | Double-precision floating point | 8-byte
+    |Type|Description|Size|
+    |----|-----------|----|
+    |`char`|Capable of hold one character in ASCII table|1-byte|
+    |`short int`|16-bit integer|2-byte|
+    |`int/long/long int`|32-bit integer|4-byte|
+    |`long long`|64-bit integer|8-byte|
+    |`float`|Single-precision floating point|4-byte|
+    |`double`|Double-precision floating point|8-byte|
 
 Character constants
-
-:   Is an integer written as one character within single quote,
-	such as `x`, and can be used used like any other intger.
+:   Is an integer written as one character within single quote, such as
+    `x`, and can be used used like any other intger.
 
 Enumeration constant
-
 :   An enumeration is a list of constant integers
 
-		enum Color { BLACK, WHITE, YELLOW };
+        enum Color { BLACK, WHITE, YELLOW };
 
-	You can achieve the same purpose with `#define`.
+    You can achieve the same purpose with `#define`.
 
 #### Functions and Program Structure
 
 Functions
-
 :   Functions break large tasks into smaller ones.
 
-:   Functions help hiding parts of code from other parts which
-	do not need to know about them, readibility, source code
-	organizition.
+:   Functions help hiding parts of code from other parts which do not
+    need to know about them, readibility, source code organizition.
 
 :   Functions allow reusability.
 
@@ -1192,72 +1180,67 @@ Functions
 #### Pointers
 
 Pointer
-
 :   A pointer is a variable that contains the address of a variable.
 
-:   Points are used very often in a high-performance program because
-	of direct memory access.
+:   Points are used very often in a high-performance program because of
+    direct memory access.
 
 Pointers as function arguments
-
 :   The wrong way of doing it:
 
-		void swap(int x, int y) {
-			int temp;
+        void swap(int x, int y) {
+            int temp;
 
-			temp = x;
-			x = y;
-			y = temp;
-		}
+            temp = x;
+            x = y;
+            y = temp;
+        }
 
-		swap(a, b);
+        swap(a, b);
 
 :   The right way of doing it:
 
-		void swap(int *px, int *py) {
-			int temp;
+        void swap(int *px, int *py) {
+            int temp;
 
-			temp = *px;
-			*px = *py;
-			*py = temp;
-		}
+            temp = *px;
+            *px = *py;
+            *py = temp;
+        }
 
-		swap(&a, &b);
-
+        swap(&a, &b);
 
 ### Makefiles
 
 Target
-
 :   A file to becreated.
 
-	Target depends on a set of source files or other targets in the
-	dependency list.
+    Target depends on a set of source files or other targets in the
+    dependency list.
 
 Rules
-
 :   Commands to create the target.
 
-	Each command occupies 1 line, starting with TAB. Be careful with
-	space.
+    Each command occupies 1 line, starting with TAB. Be careful with
+    space.
 
-~~~{.prettyprint}
-app: main.o mod_a.o mod_b.o
-	cc -o app main.o mod_a.o mod_b.o
+<!-- -->
 
-main.o: main.c inc_a.h inc_b.h 
-	cc -c main.c
+    app: main.o mod_a.o mod_b.o
+        cc -o app main.o mod_a.o mod_b.o
 
-mod_a.o: mod_a.c inc_a.h 
-	cc -c mod_a.c
+    main.o: main.c inc_a.h inc_b.h 
+        cc -c main.c
 
-mod_b.o: mod_b.c inc_b.h 
-	cc -c mod_b.c
+    mod_a.o: mod_a.c inc_a.h 
+        cc -c mod_a.c
 
-clean:
-	rm -f app
-	rm -f *.o
-~~~
+    mod_b.o: mod_b.c inc_b.h 
+        cc -c mod_b.c
+
+    clean:
+        rm -f app
+        rm -f *.o
 
 -   Name of your makefile should be `Makefile` or `makefile`.
 -   Commands you can use:
@@ -1288,55 +1271,51 @@ clean:
 ### I/O and Directory
 
 Linux file structure
-
 :   In Linux, everything is seen as a file:
-	
-	-   Disk files
-	-   Ports
-	-   Network connections
-	-   Devices
 
-	The difference is in how they are treated, however,
-	but the general principle holds.
+    -   Disk files
+    -   Ports
+    -   Network connections
+    -   Devices
+
+    The difference is in how they are treated, however, but the general
+    principle holds.
 
 File I/O
-
 :   File I/O low-level system calls:
 
-	Function | Description
-	---------|------------
-	`open()` | Open a file or device
-	`read()` | Read from an open file or device
-	`write()`| Write to an open file or device
-	`close()`| Close the file or device
-	`ioctl()`| Pass control info to device driver
+    |Function|Description|
+    |--------|-----------|
+    |`open()`|Open a file or device|
+    |`read()`|Read from an open file or device|
+    |`write()`|Write to an open file or device|
+    |`close()`|Close the file or device|
+    |`ioctl()`|Pass control info to device driver|
 
-:   There's a performance penality in making a system call.
-	It's a good idea to keep the number of system calls to a minimum,
-	and do more work in each call, such as reading or writing in bulk.
+:   There's a performance penality in making a system call. It's a good
+    idea to keep the number of system calls to a minimum, and do more
+    work in each call, such as reading or writing in bulk.
 
-:   Standard (high-level) I/O library provides buffered I/O,
-	and arranged system calls to reduce overhead. Library functions
-	are provided in `<stdio.h>`.
+:   Standard (high-level) I/O library provides buffered I/O, and
+    arranged system calls to reduce overhead. Library functions are
+    provided in `<stdio.h>`.
 
 Standard I/O library
-
 :   It is:
 
-	-   Part of ANSI C
-	-   Takes care of buffering
-	-   Provides formatted input/output
-	-   Functions: 
-		-   `fopen`
-		-   `fclose`
-		-   `fread`
-		-   `fwrite`
-		-   `fseek`
-		-   `fflush`
-		-   `fprintf`
-		-   `fscanf`
-		-   `fputc`
-
+    -   Part of ANSI C
+    -   Takes care of buffering
+    -   Provides formatted input/output
+    -   Functions:
+        -   `fopen`
+        -   `fclose`
+        -   `fread`
+        -   `fwrite`
+        -   `fseek`
+        -   `fflush`
+        -   `fprintf`
+        -   `fscanf`
+        -   `fputc`
 
 ### Libraries
 
@@ -1380,21 +1359,21 @@ Dynamic library (`.so`)
 #### Static library
 
 -   How to generate a library
-    1.  Compile: 
+    1.  Compile:
 
-			cc -Wall -c ctest1.c ctest2.c
-    
-	2.  Create `.a`:
+            cc -Wall -c ctest1.c ctest2.c
 
-			ar -cvq libctest.a ctest1.o ctest2.o
+    2.  Create `.a`:
 
-    3.  List files in library: 
+            ar -cvq libctest.a ctest1.o ctest2.o
 
-			ar -t libctest.a
+    3.  List files in library:
+
+            ar -t libctest.a
 
     4.  Linking:
 
-        	cc -o prog prog.c libctest.a 
+            cc -o prog prog.c libctest.a 
 
 #### Shared Library
 
@@ -1466,50 +1445,46 @@ Process
 
 :   All proceeses have:
 
-	-   Process ID (PID)
-	-   Parent process ID (PPID)
-	-   Signal mask
-	-   Signal dispositions
-	-   File descriptors
+    -   Process ID (PID)
+    -   Parent process ID (PPID)
+    -   Signal mask
+    -   Signal dispositions
+    -   File descriptors
 
-:   Every process belongs to one process group.
-	A *child* process inherits the process group of it's a parent.
+:   Every process belongs to one process group. A *child* process
+    inherits the process group of it's a parent.
 
 Process ID
-
-:   a number used by most operating system kernels to temporarily 
-	uniquely identify a process
+:   a number used by most operating system kernels to temporarily
+    uniquely identify a process
 
 :   `PID 0`
+    :   Scheduler process
 
-	:   Scheduler process
+        -   Kernal level process
+        -   Responsible for all the process scheduling that takes place
+            inside the system always running.
+        -   Always running.
 
-		-   Kernal level process
-		-   Responsible for all the process scheduling that takes place
-			inside the system always running.
-		-   Always running.
+    `PID 1`
+    :   Initilization process
 
-	`PID 1`
-
-	:   Initilization process
-		
-		-   User level process running with root privileges.
-		-   Responsible for bringing up linux system, the first process
-			started once a system boot up.
-		-   Always running.
+        -   User level process running with root privileges.
+        -   Responsible for bringing up linux system, the first process
+            started once a system boot up.
+        -   Always running.
 
 File descriptors
+:   In POSIX, a file descriptor is an integer, specifically of the C
+    type int. There are three standard POSIX file descriptors,
+    corresponding to the three standard streams, which presumably every
+    process (save perhaps a daemon) should expect to have:
 
-:   In POSIX, a file descriptor is an integer, specifically of the C type int. 
-	There are three standard POSIX file descriptors, corresponding to the 
-	three standard streams, which presumably every process (save perhaps 
-	a daemon) should expect to have:	
-
-	Integer value	|  Name
-	----------------|----------
-	0	| Standard input (`stdin`)
-	1	| Standard output (`stdout`)
-	2	| Standard error (`stderr`)
+    |Integer value|Name|
+    |-------------|----|
+    |0|Standard input (`stdin`)|
+    |1|Standard output (`stdout`)|
+    |2|Standard error (`stderr`)|
 
 Process Table
 :   The Linux process table is like a data structure describing all of
@@ -1519,18 +1494,18 @@ Process Table
 Parent process
 :   A parent process shares the following this it's children:
 
-	-   Memory
-	-   File descriptors
-	-   File positions
-	-   Signal dispositions
-	-   Signal mask
+    -   Memory
+    -   File descriptors
+    -   File positions
+    -   Signal dispositions
+    -   Signal mask
 
 :   A parent process *does not* share the following with's children:
 
-	-   A parent must *wait* on a child
-	-   `fork != 0` for parent (`-1` for error)
-	-   `fork == 0` for child
-	-   Execute asynchrously
+    -   A parent must *wait* on a child
+    -   `fork != 0` for parent (`-1` for error)
+    -   `fork == 0` for child
+    -   Execute asynchrously
 
 Zombie process
 :   Using `forkto` create processes can be very useful, but you must
@@ -1543,37 +1518,35 @@ Zombie process
     wait. It becomes what is known as defunct, or a zombie process.
 
 :   A process that has completed execution but still has an entry in the
-	porcess table.
+    porcess table.
 
-	-   Refer to child process.
-	-   Child dies before parent.
-	-   Parent process does not `wait` so it is unaware of the termination
-		of the child.
-	-   `kill` does not work for zombie process
+    -   Refer to child process.
+    -   Child dies before parent.
+    -   Parent process does not `wait` so it is unaware of the
+        termination of the child.
+    -   `kill` does not work for zombie process
 
 Orphan process
-
 :   -   Refer to child process
-	-   Parent dies before child
-	-   Will be immediately adopted by `init` process
+    -   Parent dies before child
+    -   Will be immediately adopted by `init` process
 
 Process state
-
 :   In POSIX,
 
-	|`STAT` Code|Description|
-	|:----------|:----------|
-	|`S`|Sleeping|
-	|`R`|Running|
-	|`D`|Uninterruptible sleep|
-	|`T`|Stopped|
-	|`z`|Defunct|
-	|`N`|Low priority|
-	|`W`|Paging|
-	|`s`|Process is session leader|
-	|`+`|Process is in the foreground process group|
-	|`1`|Process is multithreaded|
-	|`<`|High priority task|
+    |`STAT` Code|Description|
+    |:----------|:----------|
+    |`S`|Sleeping|
+    |`R`|Running|
+    |`D`|Uninterruptible sleep|
+    |`T`|Stopped|
+    |`z`|Defunct|
+    |`N`|Low priority|
+    |`W`|Paging|
+    |`s`|Process is session leader|
+    |`+`|Process is in the foreground process group|
+    |`1`|Process is multithreaded|
+    |`<`|High priority task|
 
 ### Signals
 
@@ -1590,42 +1563,39 @@ Signal
     handlers to cause interrupts and can also be explicitly sent from
     one process to another as a way of passing information or modifying
     behavior.
-:   
-
-		
-	| Valye | Name |   Default Action | Description
-	|---|------|------------------|---------------------------
-	| 1 | SIGHUP | terminate process | terminal line hangup
-	| 2 | SIGINT | terminate process | interrupt program
-	| 3 | SIGQUIT |  create core image | quit program
-	| 4 | SIGILL | create core image | illegal instruction
-	| 5 | SIGTRAP |  create core image | trace trap
-	| 6 | SIGABRT |  create core image | abort program (formerly SIGIOT)
-	| 7 | SIGEMT | create core image | emulate instruction executed
-	| 8 | SIGFPE | create core image | floating-point exception
-	| 9 | SIGKILL |  terminate process | kill program
-	| 10 | SIGBUS | create core image | bus error
-	| 11 | SIGSEGV |  create core image | segmentation violation
-	| 12 | SIGSYS | create core image | non-existent system call invoked
-	| 13 | SIGPIPE |  terminate process | write on a pipe with no reader
-	| 14 | SIGALRM |  terminate process | real-time timer expired
-	| 15 | SIGTERM |  terminate process | software termination signal
-	| 16 | SIGURG | discard signal | urgent condition present onsocket
-	| 17 | SIGSTOP |  stop process |   stop (cannot be caught orignored)
-	| 18 | SIGTSTP |  stop process |   stop signal generated fromkeyboard
-	| 19 | SIGCONT |  discard signal | continue after stop
-	| 20 | SIGCHLD |  discard signal | child status has changed
-	| 21 | SIGTTIN |  stop process |   background read attempted fromcontrol terminal
-	| 22 | SIGTTOU |  stop process |   background write attempted tocontrol terminal
-	| 23 | SIGIO |  discard signal | I/O is possible on a descriptor(see fcntl(2))
-	| 24 | SIGXCPU |  terminate process | cpu time limit exceeded (seesetrlimit(2))
-	| 25 | SIGXFSZ |  terminate process | file size limit exceeded (seesetrlimit(2))
-	| 26 | SIGVTALRM | terminate process | virtual time alarm (seesetitimer(2))
-	| 27 | SIGPROF |  terminate process | profiling timer alarm (seesetitimer(2))
-	| 28 | SIGWINCH | discard signal | Window size change
-	| 29 | SIGINFO |  discard signal | status request from keyboard
-	| 30 | SIGUSR1 |  terminate process | User defined signal 1
-	| 31 | SIGUSR2 |  terminate process | User defined signal 2
+:   |Valye|Name|Default Action|Description|
+    |-----|----|--------------|-----------|
+    |1|SIGHUP|terminate process|terminal line hangup|
+    |2|SIGINT|terminate process|interrupt program|
+    |3|SIGQUIT|create core image|quit program|
+    |4|SIGILL|create core image|illegal instruction|
+    |5|SIGTRAP|create core image|trace trap|
+    |6|SIGABRT|create core image|abort program (formerly SIGIOT)|
+    |7|SIGEMT|create core image|emulate instruction executed|
+    |8|SIGFPE|create core image|floating-point exception|
+    |9|SIGKILL|terminate process|kill program|
+    |10|SIGBUS|create core image|bus error|
+    |11|SIGSEGV|create core image|segmentation violation|
+    |12|SIGSYS|create core image|non-existent system call invoked|
+    |13|SIGPIPE|terminate process|write on a pipe with no reader|
+    |14|SIGALRM|terminate process|real-time timer expired|
+    |15|SIGTERM|terminate process|software termination signal|
+    |16|SIGURG|discard signal|urgent condition present onsocket|
+    |17|SIGSTOP|stop process|stop (cannot be caught orignored)|
+    |18|SIGTSTP|stop process|stop signal generated fromkeyboard|
+    |19|SIGCONT|discard signal|continue after stop|
+    |20|SIGCHLD|discard signal|child status has changed|
+    |21|SIGTTIN|stop process|background read attempted fromcontrol terminal|
+    |22|SIGTTOU|stop process|background write attempted tocontrol terminal|
+    |23|SIGIO|discard signal|I/O is possible on a descriptor(see fcntl(2))|
+    |24|SIGXCPU|terminate process|cpu time limit exceeded (seesetrlimit(2))|
+    |25|SIGXFSZ|terminate process|file size limit exceeded (seesetrlimit(2))|
+    |26|SIGVTALRM|terminate process|virtual time alarm (seesetitimer(2))|
+    |27|SIGPROF|terminate process|profiling timer alarm (seesetitimer(2))|
+    |28|SIGWINCH|discard signal|Window size change|
+    |29|SIGINFO|discard signal|status request from keyboard|
+    |30|SIGUSR1|terminate process|User defined signal 1|
+    |31|SIGUSR2|terminate process|User defined signal 2|
 
 Raise
 :   Used to indicate the generation of a signal.
@@ -1722,8 +1692,8 @@ Catch
 :   any valid signal except kill and stop
 
 `action`
-:   pointer to an sigaction struct that specifies new process response to
-    signo. Can be null (default action will be set to oldaction).
+:   pointer to an sigaction struct that specifies new process response
+    to signo. Can be null (default action will be set to oldaction).
 
 `oldaction`
 :   pointer to previous sigaction for signo. Can be null
@@ -1870,4 +1840,143 @@ Semaphores
         int pthread_mutex_unlock(pthread_mutex_t *mutex); 
         int pthread_mutex_destroy(pthread_mutex_t *mutex);
 
+November 9th, 2013 <small>Programming Assignment 5: Multithreaded Book Order System</small>
+-------------------------------------------------------------------------------------------
+
+### Introduction
+
+For this assignment, you will write a multithreaded book order
+simulation program. This will give you an opportunity to exercise
+mutexes and thread coordination. You will write a producer- consumer
+program with a single producer and multiple consumers. Your producer and
+your con- sumers will run as separate threads, so you will use mutexes
+to protect and manage shared data structures.
+
+### Producer: Book Order Input Thread
+
+Your program will spawn a single order input thread (the producer). The
+input thread will read in a data file containing multiple book orders,
+one book order per line. Each book order will consist of:
+
+-   Book Title (a string in double quotes)
+-   Customer ID number (a unique integer)
+-   Category (a unique alphanumeric string)
+
+Each book order will be handled by a separate book order processor
+thread (the consumers). You have (at least) two choices for where the
+producer thread puts the book orders. First, you may opt to put the book
+orders into separate queues, one for each category. Each consumer thread
+will have exclusive access to a specialized queue. Second, you may
+choose to put all book orders into a single shared buffer that will be
+used by all the consumer threads. The book order queues (or buffer) are
+initially empty.Example book categories may include `Sports`, `Housing`
+or `Politics`.
+
+### Consumers: Book Order Processor Threads
+
+Your program will also spawn multiple Book Order Processor threads (the
+consumers), one con- sumer thread for each book category. The Book Order
+Processor threads will extract all book orders for their category from
+the data structure shared with the producer and print the individual
+orders as they are processed. See below for a description of order
+processing. Remember that individual customers can and will make
+different book orders for books from different categories.The Book Order
+Processor thread will also use a customer database that holds:
+
+-   Customer name
+-   Customer ID number (should match order entered into queue)
+-   Credit Limit (a dollar amount)
+
+An order is processed by first finding the customer in the database,
+then deciding if the customer’s credit limit is greater than or equal to
+the price of the ordered book. If the customer has sufficient funds, the
+credit limit is debited and the order processor thread prints an order
+confirmation listing the book name, price and shipping information
+(customer name, address, state, zip code). If the customer does not have
+sufficient funds, the order processor thread should print out an order
+rejection that identifies the customer name, the book order details and
+the remaining credit limit value for the customer. After all book orders
+have been processed, the program must print out a final report listing
+the following for each customer:
+
+-   Customer name
+-   Customer ID number
+-   Remaining credit balance after all purchases (a dollar amount)
+
+And for each customer, make two lists. The first list is for successful
+book orders (the ones they can afford), and the second is for
+unsuccessful book orders (the ones they could not afford). Each line of
+the successful book orders should include:
+
+-   Book title
+-   Book price (a dollar amount)
+-   Remaining credit balance after this purchase (a dollar amount)
+
+Each line of unsuccessful book orders would include:
+
+-   Book title
+-   Book price (a dollar amount)
+
+The program should also print the total revenue gained from all
+successful book orders.You may have to spawn other threads to make this
+book ordering system work.
+
+> Requirement 1: there should be NO BUSYWAITING in any of your code.
+>
+> Requirement 2: there should be NO DEADLOCKS and NO RACE CONDITIONS in
+> your code.
+
+### Program Start-up
+
+The command-line arguments will specify the following:
+
+-   `Arg 1: the name of the database input file`
+-   `Arg 2: the name of the book order input file`
+-   `Arg 3: the list of category names (alphanumeric strings 
+	separated by blanks in a single- or double-quoted string)`
+
+Your program starts by reading in the customer database file and setting
+up the customer data base. It then spawns the producer thread and the
+consumer threads, one consumer thread for each category.
+
+### Program Termination
+
+After all in input has been processed, the producer and all the consumer
+threads shut shut down and the program should print out the final report
+as described above.
+
+### Extra Credit
+
+Normally, the producer and consumer threads run in the same process. For
+extra credit, you can make the producer and consumer threads run as
+separate processes that communicate through `shared memory`. Your
+producer program would set up the shared memory and then use `fork()`
+and `exec()` to spawn the consumer process(es). You could have a single
+consumer process that handles all book categories (maybe with separate
+threads for each category) or you could have separate consumer
+processes, each of which handles a separate book category. As a
+responsible parent process, the producer process would use wait() to
+clean up the child consumer process(es) and clean up the shared
+memory.If you choose to use separate processes, it would be useful (and
+look cool) to have the producer process print out messages about the
+consumer process(es) is creates–something like ”Created child consumer
+process `<PID>` to handle category `<CATEGORY>`”. You can also add
+similar messages about how the producer parent wait()s for each of its
+children. You could also add messages about set up and removal of shared
+memory.
+
+### What to turn in
+
+A writeup documenting your design paying particular attention to the
+thread syn- chronization requirements of your application.All source
+code including both implementation (.c) and interface(.h) files. A
+makefile for producing an executable program file.Your grade will be
+based on:
+
+-   Correctness (how well your code is working, including avoidance of
+    deadlocks.
+-   Efficiency (avoidance of recomputation of the same results,
+    avoidance of busy-waits).
+-   Good design (how well written your design document and code are,
+    including modularity and comments).
 
