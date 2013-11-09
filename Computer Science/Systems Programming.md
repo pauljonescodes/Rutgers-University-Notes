@@ -961,8 +961,6 @@ November 5th, 2013 <small>Midterm Study Guide</small>
 |`int * const ptr = &x`|Yes|No|Optional|Yes|
 |`const int * const ptr = &x`|No|No|Yes|Yes|
 
-#### Data types
-
 #### Macros and the preprocessor
 
 -   The C preprocessor (cpp)
@@ -1102,7 +1100,164 @@ But it's much nicer to use a `typedef`:
         printf("impossibru\n");
     }
 
+#### Types, Operators, Expressions
+
+Variables & Constants
+
+:   Basic objects
+
+:   Variables are memory location in computer's memory to store data. 
+	To indicate the memory location, each variable should be given a 
+	unique name called identifier. Variable names are just the 
+	symbolic representation of a memory location. 
+
+Declarations
+
+:   Name the variables to be used, and additionally their 
+	initial values.
+
+Operators
+
+:   Specify what to do to varaibles and constants.
+
+Expressions
+
+:   Combine variables, constants, and operators to produce new
+	values.
+
+Types
+
+:   Object belongs to a specific type, which determines what range
+	of values it can have, which operations canbe performed.
+
+Variable names
+
+:   Names are made of letters and digits and underscores.
+
+:   Case-sensitive
+
+:   C language-specific keyword such as `if`, `else`, `for`,
+	`int`, are reserved.
+
+:   It's advisiable to give variables descriptive names,
+	plus prefix/suffix to indicate type and/or scope.
+
+		strABC; // string
+		iXYZ; // integer
+		g_iXYZ; // global variable
+		a_iXYZ; // a function argument
+
+Data types
+
+:   Same as Java
+
+	For integer, there is `signed` and `unsigned`
+
+	Type   |   Description   |   Size   
+	-------|-----------------|-------
+	`char` | Capable of hold one character in ASCII table | 1-byte
+	`short int` | 16-bit integer | 2-byte
+	`int/long/long int` | 32-bit integer | 4-byte
+	`long long` | 64-bit integer | 8-byte
+	`float` | Single-precision floating point | 4-byte
+	`double` | Double-precision floating point | 8-byte
+
+Character constants
+
+:   Is an integer written as one character within single quote,
+	such as `x`, and can be used used like any other intger.
+
+Enumeration constant
+
+:   An enumeration is a list of constant integers
+
+		enum Color { BLACK, WHITE, YELLOW };
+
+	You can achieve the same purpose with `#define`.
+
+#### Functions and Program Structure
+
+Functions
+
+:   Functions break large tasks into smaller ones.
+
+:   Functions help hiding parts of code from other parts which
+	do not need to know about them, readibility, source code
+	organizition.
+
+:   Functions allow reusability.
+
+:   C is essentially a functional language.
+
+#### Pointers
+
+Pointer
+
+:   A pointer is a variable that contains the address of a variable.
+
+:   Points are used very often in a high-performance program because
+	of direct memory access.
+
+Pointers as function arguments
+
+:   The wrong way of doing it:
+
+		void swap(int x, int y) {
+			int temp;
+
+			temp = x;
+			x = y;
+			y = temp;
+		}
+
+		swap(a, b);
+
+:   The right way of doing it:
+
+		void swap(int *px, int *py) {
+			int temp;
+
+			temp = *px;
+			*px = *py;
+			*py = temp;
+		}
+
+		swap(&a, &b);
+
+
 ### Makefiles
+
+Target
+
+:   A file to becreated.
+
+	Target depends on a set of source files or other targets in the
+	dependency list.
+
+Rules
+
+:   Commands to create the target.
+
+	Each command occupies 1 line, starting with TAB. Be careful with
+	space.
+
+~~~{.prettyprint}
+app: main.o mod_a.o mod_b.o
+	cc -o app main.o mod_a.o mod_b.o
+
+main.o: main.c inc_a.h inc_b.h 
+	cc -c main.c
+
+mod_a.o: mod_a.c inc_a.h 
+	cc -c mod_a.c
+
+mod_b.o: mod_b.c inc_b.h 
+	cc -c mod_b.c
+
+clean:
+	rm -f app
+	rm -f *.o
+~~~
 
 -   Name of your makefile should be `Makefile` or `makefile`.
 -   Commands you can use:
@@ -1129,6 +1284,59 @@ But it's much nicer to use a `typedef`:
         CC = gcc
         CFLAG = -g -Wall
         EXECUTABLE = tokenizer
+
+### I/O and Directory
+
+Linux file structure
+
+:   In Linux, everything is seen as a file:
+	
+	-   Disk files
+	-   Ports
+	-   Network connections
+	-   Devices
+
+	The difference is in how they are treated, however,
+	but the general principle holds.
+
+File I/O
+
+:   File I/O low-level system calls:
+
+	Function | Description
+	---------|------------
+	`open()` | Open a file or device
+	`read()` | Read from an open file or device
+	`write()`| Write to an open file or device
+	`close()`| Close the file or device
+	`ioctl()`| Pass control info to device driver
+
+:   There's a performance penality in making a system call.
+	It's a good idea to keep the number of system calls to a minimum,
+	and do more work in each call, such as reading or writing in bulk.
+
+:   Standard (high-level) I/O library provides buffered I/O,
+	and arranged system calls to reduce overhead. Library functions
+	are provided in `<stdio.h>`.
+
+Standard I/O library
+
+:   It is:
+
+	-   Part of ANSI C
+	-   Takes care of buffering
+	-   Provides formatted input/output
+	-   Functions: 
+		-   `fopen`
+		-   `fclose`
+		-   `fread`
+		-   `fwrite`
+		-   `fseek`
+		-   `fflush`
+		-   `fprintf`
+		-   `fscanf`
+		-   `fputc`
+
 
 ### Libraries
 
@@ -1172,12 +1380,21 @@ Dynamic library (`.so`)
 #### Static library
 
 -   How to generate a library
-    1.  Compile: `cc -Wall -c ctest1.c ctest2.c`
-    2.  Create `.a`: `ar -cvq libctest.a ctest1.o ctest2.o`
-    3.  List files in library: `ar -t libctest.a`
+    1.  Compile: 
+
+			cc -Wall -c ctest1.c ctest2.c
+    
+	2.  Create `.a`:
+
+			ar -cvq libctest.a ctest1.o ctest2.o
+
+    3.  List files in library: 
+
+			ar -t libctest.a
+
     4.  Linking:
 
-        cc -o prog prog.c libctest.a cc -o prog prog.c libctest.a
+        	cc -o prog prog.c libctest.a 
 
 #### Shared Library
 
@@ -1247,10 +1464,73 @@ Process
     also maintain its own program counter, a record of where it has
     gotten to in its execution, which is the execution thread.
 
+:   All proceeses have:
+
+	-   Process ID (PID)
+	-   Parent process ID (PPID)
+	-   Signal mask
+	-   Signal dispositions
+	-   File descriptors
+
+:   Every process belongs to one process group.
+	A *child* process inherits the process group of it's a parent.
+
+Process ID
+
+:   a number used by most operating system kernels to temporarily 
+	uniquely identify a process
+
+:   `PID 0`
+
+	:   Scheduler process
+
+		-   Kernal level process
+		-   Responsible for all the process scheduling that takes place
+			inside the system always running.
+		-   Always running.
+
+	`PID 1`
+
+	:   Initilization process
+		
+		-   User level process running with root privileges.
+		-   Responsible for bringing up linux system, the first process
+			started once a system boot up.
+		-   Always running.
+
+File descriptors
+
+:   In POSIX, a file descriptor is an integer, specifically of the C type int. 
+	There are three standard POSIX file descriptors, corresponding to the 
+	three standard streams, which presumably every process (save perhaps 
+	a daemon) should expect to have:	
+
+	Integer value	|  Name
+	----------------|----------
+	0	| Standard input (`stdin`)
+	1	| Standard output (`stdout`)
+	2	| Standard error (`stderr`)
+
 Process Table
 :   The Linux process table is like a data structure describing all of
     the processes that are currently loaded with their PID, status, and
     command string etc.
+
+Parent process
+:   A parent process shares the following this it's children:
+
+	-   Memory
+	-   File descriptors
+	-   File positions
+	-   Signal dispositions
+	-   Signal mask
+
+:   A parent process *does not* share the following with's children:
+
+	-   A parent must *wait* on a child
+	-   `fork != 0` for parent (`-1` for error)
+	-   `fork == 0` for child
+	-   Execute asynchrously
 
 Zombie process
 :   Using `forkto` create processes can be very useful, but you must
@@ -1262,19 +1542,38 @@ Zombie process
     exit code needs to be stored in case the parent subsequently calls
     wait. It becomes what is known as defunct, or a zombie process.
 
-|`STAT` Code|Description|
-|:----------|:----------|
-|`S`|Sleeping|
-|`R`|Running|
-|`D`|Uninterruptible sleep|
-|`T`|Stopped|
-|`z`|Defunct|
-|`N`|Low priority|
-|`W`|Paging|
-|`s`|Process is session leader|
-|`+`|Process is in the foreground process group|
-|`1`|Process is multithreaded|
-|`<`|High priority task|
+:   A process that has completed execution but still has an entry in the
+	porcess table.
+
+	-   Refer to child process.
+	-   Child dies before parent.
+	-   Parent process does not `wait` so it is unaware of the termination
+		of the child.
+	-   `kill` does not work for zombie process
+
+Orphan process
+
+:   -   Refer to child process
+	-   Parent dies before child
+	-   Will be immediately adopted by `init` process
+
+Process state
+
+:   In POSIX,
+
+	|`STAT` Code|Description|
+	|:----------|:----------|
+	|`S`|Sleeping|
+	|`R`|Running|
+	|`D`|Uninterruptible sleep|
+	|`T`|Stopped|
+	|`z`|Defunct|
+	|`N`|Low priority|
+	|`W`|Paging|
+	|`s`|Process is session leader|
+	|`+`|Process is in the foreground process group|
+	|`1`|Process is multithreaded|
+	|`<`|High priority task|
 
 ### Signals
 
@@ -1291,34 +1590,48 @@ Signal
     handlers to cause interrupts and can also be explicitly sent from
     one process to another as a way of passing information or modifying
     behavior.
+:   
+
+		
+	| Valye | Name |   Default Action | Description
+	|---|------|------------------|---------------------------
+	| 1 | SIGHUP | terminate process | terminal line hangup
+	| 2 | SIGINT | terminate process | interrupt program
+	| 3 | SIGQUIT |  create core image | quit program
+	| 4 | SIGILL | create core image | illegal instruction
+	| 5 | SIGTRAP |  create core image | trace trap
+	| 6 | SIGABRT |  create core image | abort program (formerly SIGIOT)
+	| 7 | SIGEMT | create core image | emulate instruction executed
+	| 8 | SIGFPE | create core image | floating-point exception
+	| 9 | SIGKILL |  terminate process | kill program
+	| 10 | SIGBUS | create core image | bus error
+	| 11 | SIGSEGV |  create core image | segmentation violation
+	| 12 | SIGSYS | create core image | non-existent system call invoked
+	| 13 | SIGPIPE |  terminate process | write on a pipe with no reader
+	| 14 | SIGALRM |  terminate process | real-time timer expired
+	| 15 | SIGTERM |  terminate process | software termination signal
+	| 16 | SIGURG | discard signal | urgent condition present onsocket
+	| 17 | SIGSTOP |  stop process |   stop (cannot be caught orignored)
+	| 18 | SIGTSTP |  stop process |   stop signal generated fromkeyboard
+	| 19 | SIGCONT |  discard signal | continue after stop
+	| 20 | SIGCHLD |  discard signal | child status has changed
+	| 21 | SIGTTIN |  stop process |   background read attempted fromcontrol terminal
+	| 22 | SIGTTOU |  stop process |   background write attempted tocontrol terminal
+	| 23 | SIGIO |  discard signal | I/O is possible on a descriptor(see fcntl(2))
+	| 24 | SIGXCPU |  terminate process | cpu time limit exceeded (seesetrlimit(2))
+	| 25 | SIGXFSZ |  terminate process | file size limit exceeded (seesetrlimit(2))
+	| 26 | SIGVTALRM | terminate process | virtual time alarm (seesetitimer(2))
+	| 27 | SIGPROF |  terminate process | profiling timer alarm (seesetitimer(2))
+	| 28 | SIGWINCH | discard signal | Window size change
+	| 29 | SIGINFO |  discard signal | status request from keyboard
+	| 30 | SIGUSR1 |  terminate process | User defined signal 1
+	| 31 | SIGUSR2 |  terminate process | User defined signal 2
 
 Raise
 :   Used to indicate the generation of a signal.
 
 Catch
 :   Used to indicate the receipt of a signal.
-
-|Signal name|Description|
-|:----------|:----------|
-|`SIGABORT`|Process abort|
-|`SIGALRM`|Alarm clock|
-|`SIGFPR`|Floating point exception|
-|`SIGHUP`|Hangup|
-|`SIGILL`|Illegal instruction|
-|`SIGINT`|Terminal interuption|
-|`SIGKILL`|Can't be caught or ignored|
-|`SIGPIPE`|Write on a pipe with no reader|
-|`SIGQUIT`|Terminal wuit|
-|`SIGSEGV`|Invalid memory segment access|
-|`SIGTERM`|Termination|
-|`SIGUSR1`|User-defined signal 1|
-|`SIGUSR2`|User-defined signal 2|
-|`SIGCHLD`|Child process has stopped or exited|
-|`SIGCONT`|Contiuning executing, if stopped|
-|`SIGSTOP`|Stop executing|
-|`SIGTSTP`|Terminal stop signal|
-|`SIGTTIN`|Background process trying to read|
-|`SIGTTOU`|Background process trying to write.|
 
 #### Signal handling
 
@@ -1406,14 +1719,14 @@ Catch
                     struct sigaction * oldaction );
 
 `signo`
-:   any valid signal except `sigkill` and `sigstop`
+:   any valid signal except kill and stop
 
 `action`
-:   pointer to `sigaction` struct that specifies new process response to
-    `signo`. Can be `null` (default action will be set to oldaction.
+:   pointer to an sigaction struct that specifies new process response to
+    signo. Can be null (default action will be set to oldaction).
 
 `oldaction`
-:   pointer to previous `sigaction` for `signo`. Can be `null`
+:   pointer to previous sigaction for signo. Can be null
 
 |Member type|Name|Description|
 |:----------|:---|:----------|
