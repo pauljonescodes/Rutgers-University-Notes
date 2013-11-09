@@ -1475,9 +1475,6 @@ October 28th, 2013 <small>Seminar</small>
             science, people represent things in terms of
             [geons](http://en.wikipedia.org/wiki/Geon_(psychology)).
 
-November 4th, 2013 <small>Chapter 8, 'Epistemology and Cognitive Science'</small>
----------------------------------------------------------------------------------
-
 November 4th, 2013 <small>Seminar</small>
 -----------------------------------------
 
@@ -1530,6 +1527,239 @@ November 4th, 2013 <small>Seminar</small>
 November 11th, 2013 <small>Chapter 9, 'Philosophy's Intuitional Methodology and the Role of Science'</small>
 ------------------------------------------------------------------------------------------------------------
 
+### The Armchair or the Laboratory? Where and How to Do Philosophy.
+
+-   This chapter is concerned with a methodology that cuts across
+	most branch of philosophy.
+	-   A feature of philosophy that stands out because of disapproval
+		a disuse from the sciences: *intuitions*.
+	-   Empirical evidence is based on *observation*.
+		-   *Truth* is obtained by observing the world.
+
+-   Why is philosophy so different? Is this method legitimate?
+
+Intuition
+
+:   It is a seeming-that-$p$-is-the-case which is not based on 
+	conscious perception, memory, or inference.
+
+:   It is a sense that $p$ is the case that wells up in the mind without
+	a readily specifiable reason; it just strikes one (often compellingly) 
+	that P is so. 
+
+:   In contrast to hunches or guesses, however, intuitions do not 
+	feel arbitrary or ill-founded. On the contrary, they "present 
+	themselves" as obvious and often routine.
+
+> But why do we say that philosophers regularly appeal to such 
+> seemings? Where and when do they appeal to them?
+
+-   A principle context is when philosophers try to define or analyze
+	a philosophically interesting term.
+	-   For instance, *knowledge* in epistemology.
+	-   Alternative, *causation* and *moral rightness*.
+	-   Definitions typically seek the necessary and sufficient conditions
+		for the use of the term.
+	-   For instance, $JTB \to K \land K \to JTB$.
+		-   But the Gettier's counterexample showed that at least one time,
+			$\lnot K \to JTB$.
+		-   $\lnot K$ was derived from intuition, whereas $JTB$ was derived
+			from analysis and the case.
+		-   All epistemologists, or most, agreed about the intuition, so
+			the definition was shown to be insufficient.
+
+> Exactly how did the "refutation" take place? Was there 
+> some other theory of knowledge epistemologists agreed upon 
+> from which they deduced that Smith did not know Q (the 
+> job-getter proposition)?
+
+-   No. There was no alternative theory of that sort.
+	-   It *would* be wrong to classify it as knowledge, however.
+	-   This is what philosophers call "having a intuition."
+
+-   However, for a theory to be refuted, isn't it required that the
+	person have a *bona fide* counterexample?
+	-   How does the Gettier reader form a justified belief that
+		Jones does not have knowledge?
+		-   Well, apparently, intuition confers this justification.
+	
+	-   This is the role of intuition where *intuitions confer
+		justification*, *intuitions serve as evidence*.
+
+> What makes intuitions constitute evidence for their contents?
+> Are they like perceptual experiences, which might serve an
+> analogous role?
+
+-   Maybe we are really wrong to grant this epistemic role to intuitions.
+	-   Scientists never use them.
+	-   Psychologists dismiss other psychologists that use them.
+	-   So why should philosophers be allowed to use them?
+		-   Maybe philosophers just arrogate to themselves what is in fact
+			a dubious epistemic practice.
+		-   This is what philosophers of the last few decades have worried
+			about.
+
+-   Intuitions are clearly not sense experiences
+	-   They are not part of any empirical method.
+	-   Philosophy, as we described it above, is more into thinking
+		up definitions, analyses, and theories and using one's imagination
+		to test them
+	-   This "imaginative" testing, often called thought experiments,
+		is in some respects what transpires in science.
+		-   Philosophers want to test their theories too.
+
+	-   Philosophers tests traditionally involve no manipulation of
+		worldly subject matter to see how outcomes change.
+		-   Merely imaginative constructs of possible scenarios.
+		-   This can be done from the armchair, and thus constitutes
+			an **armchair discipline**.
+		-   Notice that mathematics may also be characterized as such.
+
+### Rationalism vs. Empiricism
+
+-   This entire issue harks back to an extremely important debate in the
+	history of epistemology between *empiricism* and *rationalism*.
+	-   The debate is framed between three rationalists:
+		1.  Descartes
+		2.  Spinoza
+		3.  and Leibniz
+
+	-   And three empiricists:
+		1.  Locke
+		2.  Berkeley
+		3.  and Hume
+
+Rationalism
+
+:   emphasizes the role of *reason* in knowledge
+
+:   paradigmatic cases include mathematical thought, logical thought,
+	and other kinds of abstract thinking that feature purely abstract
+	contents rather than sensory, or sense-derived concepts.
+
+Empiricism
+
+:   emphasizes the role of *sense-experience* in knowledge
+
+:   highlighted the centrality of sense-based cognition and rationalists 
+	the centrality of abstract modes of cognition.
+
+:   Gained fairly clear ascendance in the early 20th century, because of the
+	association between science and empiricism and the success of science
+
+:   The rise of logical positivism berated the standing of rationalist
+	notions of "rational insight" and "intuitive insight" and the like.
+
+> ... [T]he truths of pure reason, the propositions which we 
+> know to be valid independently of all experience, are so 
+> only in virtue of their lack of factual content. 
+> <cite>(A.J. Ayer, 1952. Language, Truth, and Logic. 
+> New York: Dover, pp. 93-94)</cite>
+
+-   Ayer did not wholly reject non-empirical knowledge.
+	-   Relegated it to a lesser domain.
+
+> Can we show that reliance on intuition in philosophical
+> methodology has a firm epistemological ground?
+
+### Kinds of Intuition and the Nature of Intuition
+
+-   Presumably, intuitional states are propositional attitudes,
+	which imply the state has two parts:
+	1.  An attitude type
+	2.  Propositional content
+
+> Are logical and mathematical intuitions the same kind of
+> mental states as moral intuitions? Type or content?
+
+### A Criterion of Evidencehood
+
+-   The author proposes *reliabilist evidencehood*, specifically
+	*indicator reliablism*.
+
+> The occurrence of an event or state of affairs of type
+> $\Sigma$ is counted as evidence for proposition $p$ if
+> $\Sigma$ is a generally reliable indicator of the truth
+> of $p$.
+
+-   For example, the fact that S seems to remember eating a 
+	croissant for breakfast is evidence that he did eat a 
+	croissant for breakfast.
+	-   Analogously, why shouldn't it be plausible that 
+		someone's having an intuition that Gettier's 
+		coin-in-the-pocket example is not a case of knowledge 
+		(on the part of Smith) should also be evidence?
+
+> **(IND-EV)** If being in a propositional attitude of type $M$ 
+> is a generally reliable indicator[^5] of the truth of $M$'s content,
+> then if $S$ is in a token state of type $M$ with respect to 
+> proposition $P$, this is evidence of the truth of $P$. It is
+> evidence for $S$ of the truth of $P$, and if another person $S$' 
+> is justified in believing that $S$ is in this state, then $S$'s 
+> being in a token state of type $M$ is also evidence for $S$' of 
+> the truth of $P$.[^4]
+
+### Philosophical Intuitions as Classification Judgements
+
+-   A pervasive part of cognitive activity is: 
+	-   **(A)** forming representations of *categories*.
+		-   Ex: dogs, books, red things, explosions
+
+	-   **(B)** *classifying* or *categorizing* *objects* or *events*
+		-   Ex: Is this animal a book or dog?
+
+	-   Spontaneous answers to classifications of knowledge
+		are intuitions.
+
+-   If intuitions are *reliable indicators* of the truth of their 
+	contents, then they qualify as a non-empirical type of evidence.
+	-   We can find this out with experimental philosophy, Goldman
+		claims.
+
+### Applying the Experimental Method to the Reliability Question
+
+-   If a pool of participants in a dichotomous (yes-no) survey 
+	question splits their responses 60% to 40%, we can infer that 
+	at least 40% of the respondents were giving wrong answers, 
+	and therefore have wrong intuitions.[^6]
+-   The results of X-Phi diverged from near unanimity from philosophers
+	with regards to Gettier.
+	-   A 74% majority of subjects with Western ethnic origins 
+		responded that Smith in one of the "only believes" the 
+		proposition rather than "really knows" it.
+		-   East Asian and Indian subjects thought Smith knew.
+
+-   This undercuts the prospect of intuitions being reliable
+	indicators of the truth.
+-   The results have been undercut by lack of replication.
+-   Also do these results equate to intuitions? Maybe not.
+-   Also maybe these subjects do not have the relevant or necessary
+	tools to sufficiently analyze the cases.
+-   *Properly conducted* scientific methodology is very relevant to
+	philosophy.
+	-   The remedy is *better science*.
+
+
+[^6]: We can construct a Sorites paradox from this.
+
+### A More Refined Model of Classification Reliability
+
+> **(C-J RELIABILITY)**: The general process of classification
+> judgment has high conditional reliability if and only if it
+> outputs a high ratio of true classification judgments whenever
+> both the case representation and the category representation
+> are accurate.
+
+### Possible Targets of Philosophical Theorizing and the Method of Philosophical Analysis
+
+-   A traditional aim of analytic philosophy is to analyze, define,
+	or give an account of philosophically interesting targets.
+	-   According to the free-floater approach, philosophy should
+		not concern itself with mere word meanings.
+		-   It should concern itself with the *content* of words.
+
+-   The notion of "direct acquaintance" is appealing to rationalists.
+
 November 11th, 2013 <small>Seminar</small>
 ------------------------------------------
 
@@ -1551,10 +1781,15 @@ December 2nd, 2013 <small>Chapter 11, part II, 'Social Epistemology (Institution
 December 2nd, 2013 <small>Seminar</small>
 -----------------------------------------
 
-<!-- Accronyms -->
+<!-- Acronyms -->
 
-*[JTB]: Justified true belief *[JTBs]: Justified true beliefs \*[BIV]:
-Brain in a vat
+*[JTB]: Justified true belief 
+
+*[JTBs]: Justified true beliefs 
+
+*[BIV]: Brain in a vat.
+
+*[X-Phi]: Experimental philosophy.
 
 <!-- Footnotes -->
 
@@ -1566,3 +1801,12 @@ Brain in a vat
 [^3]: I very much doubt this, or at least have reason to doubt this.
     Imagine that someone has face-blindness, is aware of their
     face-blindness, and the experience of seeing a specific person.
+
+[^4]: Does that mean that when experimental philosophy's intuition 
+findings do not correspond to philosophical tradition we should throw
+out experimental philosophy's methodology or traditional philosophy's
+thought? I think the former.
+
+[^5]: No one would disagree here, the conditional is valid. But the
+question is *are intuitions reliable indicators* and *which intuitions
+are reliable indicators of what*?
