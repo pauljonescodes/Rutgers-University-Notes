@@ -16,13 +16,15 @@ are discussed.
     -   01:198:205 or 14:332:312.
 
 -   Please note that courses for which a student has received a grade of
-    D cannot be used to satisfy prerequisite requirements.
+        D cannot be used to satisfy prerequisite requirements.
+
 -   Semesters Offered: Spring and fall
 
 ### Topics
 
 -   BNF and context free grammars; Data visibility (i.e., lexical and
-    dynamic scoping);
+        dynamic scoping);
+
 -   Procedures and parameter passing techniques;
 -   Types, type checking and type equivalence;
 -   Functional programming paradigm:
@@ -31,7 +33,7 @@ are discussed.
     -   programming with recursion (i.e., without iteration);
 
 -   Logic programming paradigm:
-    -   unification, generate and test;  
+    -   unification, generate and test;
     -   Programming with pointers in C.
 
 ### Expected Work
@@ -46,18 +48,20 @@ assignments.
 
 -   Computer Science majors ...
     -   will be prepared to contribute to a rapidly changing field by
-        acquiring a thorough grounding in the core principles and
-        foundations of computer science (e.g., techniques of program
-        design, creation, and testing; key aspects of computer hardware;
-        algorithmic principles).
+            acquiring a thorough grounding in the core principles and
+            foundations of computer science (e.g., techniques of program
+            design, creation, and testing; key aspects of computer hardware;
+            algorithmic principles).
+
     -   will acquire a deeper understanding on (elective) topics of more
-        specialized interest, and be able to critically review, assess,
-        and communicate current developments in the field.
+            specialized interest, and be able to critically review, assess,
+            and communicate current developments in the field.
+
     -   will be prepared for the next step in their careers, for
-        example, by having done a research project (for those headed to
-        graduate school), a programming project (for those going into
-        the software industry), or some sort of business plan (for those
-        going into startups).
+            example, by having done a research project (for those headed to
+            graduate school), a programming project (for those going into
+            the software industry), or some sort of business plan (for those
+            going into startups).
 
 Syllabus
 --------
@@ -65,9 +69,11 @@ Syllabus
 ### Objective
 
 -   Primary objective: Learn new ways of thinking about problems and
-    programs.
+        programs.
+
 -   Secondary objective: Make it easier to learn new languages by
-    learning principles that apply to many languages.
+        learning principles that apply to many languages.
+
 -   Tertiary objective: Learn some interesting languages.
 
 ### Prerequisite
@@ -78,24 +84,25 @@ Syllabus
 ### Book
 
 -   Michael L. Scott, Programming Language Pragmatics, 3rd Edition.
-    Morgan Kaufman
+        Morgan Kaufman
 
-**The textbook does not cover all of the material for this course, and
-is not a substitute for attending class.**
+\*\*The textbook does not cover all of the material for this course, and
+is not a substitute for attending class.\*\*
 
 ### Work
 
 -   You are expected to attend all lectures and recitations, in both
-    body and mind. That is, please do not access Facebook, games, email,
-    or the like during class.
+        body and mind. That is, please do not access Facebook, games, email,
+        or the like during class.
+
 -   There will be two midterms exams and a final, as well as graded
-    programing projects and ungraded exercises. The projects only count
-    for a small part of your grade directly, because there is no way to
-    be sure that they are really your own work. However, they count for
-    a large part of your grade indirectly. If you do not do the
-    exercises and projects you will not learn the material. Furthermore,
-    there will be exam questions directly based on the projects and
-    exercises.
+        programing projects and ungraded exercises. The projects only count
+        for a small part of your grade directly, because there is no way to
+        be sure that they are really your own work. However, they count for
+        a large part of your grade indirectly. If you do not do the
+        exercises and projects you will not learn the material. Furthermore,
+        there will be exam questions directly based on the projects and
+        exercises.
 
 ### Tentative Grading
 
@@ -184,7 +191,7 @@ September 16th, 2013 <small>Assignment 1</small>
 ------------------------------------------------
 
 1.  Given grammar `G`: (capitals are non-terminals, everything else is a
-    terminal)
+        terminal)
 
         S -> A | S # S | S @ S      
         A -> C | C A        
@@ -192,9 +199,11 @@ September 16th, 2013 <small>Assignment 1</small>
 
     -   For each of the strings below:
         1.  if it is in `L(G)` prove it by giving both - a leftmost
-            derivation
+                derivation
+
         2.  a parse tree. If it is ambiguous demonstrate that fact with
-            parse trees.
+                parse trees.
+
         3.  if it is not in `L(G)` say so and explain why
 
     -   Strings:
@@ -220,8 +229,8 @@ September 16th, 2013 <small>Assignment 1</small>
             4.  `ab`
 
 2.  Rewrite the grammar `G` above so that no string in its language is
-    ambiguous. Make \# have higher precedence than `@` and make both `#`
-    and `@` be left-associative.
+        ambiguous. Make \# have higher precedence than `@` and make both `#`
+        and `@` be left-associative.
 
         S -> A | @ S       
         A -> C | # A        
@@ -244,10 +253,11 @@ September 16th, 2013 <small>Assignment 1</small>
         infinite `x`s or `y`s.
 
 4.  Let `L1` be a formal language using the binary digits `0` and `1` as
-    its character set, such that a string is in `L1` if and only if it
-    has `3` or more `1`'s in a row somewhere in it.
+        its character set, such that a string is in `L1` if and only if it
+        has `3` or more `1`'s in a row somewhere in it.
+
     1.  Draw a deterministic finite state automaton that recognizes
-        `L1`.
+            `L1`.
 
                 +---+    +---+    +---+    +---+
               ->| 1 |--->| 1 |--->| 1 |--->| 0 |
@@ -260,8 +270,9 @@ September 16th, 2013 <small>Assignment 1</small>
             /([01]*[111]+[01]*)/
 
 5.  Let `L3` be a formal language using the letters `o`, `a`, and `y`,
-    such that a string is in `L3` if and only if it has the string
-    `yoya` somewhere within it.
+        such that a string is in `L3` if and only if it has the string
+        `yoya` somewhere within it.
+
     1.  Draw a nondeterministic FSA that recognizes `L3`.
 
                   ______________________         _
@@ -275,7 +286,7 @@ September 16th, 2013 <small>Assignment 1</small>
         (y|o|a)*(yoya)+(y|o|a)*
 
 6.  Describe in English the language accepted by this DFSA: `S1` is the
-    start state and only `S2` is an accepting state.
+        start state and only `S2` is an accepting state.
 
     A series of zeroes and ones with at least a single one and possibly
     no zeroes.
@@ -283,7 +294,7 @@ September 16th, 2013 <small>Assignment 1</small>
 7.  Describe in English the language of each of the following RE's:
     1.  `ab*c*`
         -   This is a series `b`s preceded by an `a`, followed by any
-            number of `c`s.
+                number of `c`s.
 
     2.  `a*|b*`
 
@@ -300,7 +311,7 @@ September 23rd, 2013 <small>Assignment 2</small>
 2.  Answer these questions:
     1.  What is the main point the speaker is trying to make
     2.  List two examples the speaker uses and explain for each how it
-        supports his point, or, if you think that it does not, why not.
+            supports his point, or, if you think that it does not, why not.
 
 October 3rd, 2013 <small>Exercise 4: Scheme</small>
 ---------------------------------------------------
@@ -314,34 +325,38 @@ use define – in fact you must use it. You may use any implementation of
 scheme that complies with the R5RS standard.
 
 1.  Write the function echo. This function doubles each top-level
-    element of it argument. E.g., (echo '(a b c)) returns (a a b b c c).
-    (echo '(a (b c))) returns (a a (b c) (b c))
-2.  Write the function nth. (nth i lst) returns the ith element of lst.
-    E.g., (nth 0 '(a b c)) returns a, (nth 1 '(a b c)) returns b. You
-    may assume that 0 ≤ i \< (length lst).
-3.  Write the function deep-reverse, which reverses its argument at all
-    levels. E.g., (deep-reverse '(a (b c) (d))) returns ((d) (c b) a).
-4.  Write a scheme function (assoc-all lst a-list) where lst is a list
-    of symbols and a-list is an assoc-list. assoc-all returns a list of
-    the data associated with elements of lst by assoc-list. E.g.
-    (assoc-all '(a d c d) '((a apple)(b boy)(c cat)(d dog))) returns
-    (apple dog cat dog). Use map. Note that you can't simply use assoc
-    as one of the arguments to map. You need a lambda.
-5.  Write a function filter-evens which takes a list of numbers as its
-    argument and returns a new list containing only the even numbers in
-    the input list. E.g., (filter-evens '(23 33 44 2 1 8)) returns (44 2
-    8). Use even? to test if a number is even. You must use map. You may
-    use a helper function but the only recursion should be the recursion
-    implicit in map. Hint: Note that the result of map is exactly as
-    long as its second argument. E.g. the result of (map foo '(23 33 44
-    2 1 8)) will be a list of 6 elements no matter what function foo is.
-    So how can this problem be solvable? Do something to the result of
-    map before you return it. E.g., suppose the result of (map foo '(23
-    33 44 2 1 8)) is ( ( ) ( ) (44)(2)( ) (8)). Then (apply append (map
-    foo '(23 33 44 2 1 8))) will result in (44 2 8) .
+        element of it argument. E.g., (echo '(a b c)) returns (a a b b c c).
+        (echo '(a (b c))) returns (a a (b c) (b c))
 
-October 15th, 2013 <small>Midterm Study Guide</small>
------------------------------------------------------
+2.  Write the function nth. (nth i lst) returns the ith element of lst.
+        E.g., (nth 0 '(a b c)) returns a, (nth 1 '(a b c)) returns b. You
+        may assume that 0 ≤ i \< (length lst).
+
+3.  Write the function deep-reverse, which reverses its argument at all
+        levels. E.g., (deep-reverse '(a (b c) (d))) returns ((d) (c b) a).
+
+4.  Write a scheme function (assoc-all lst a-list) where lst is a list
+        of symbols and a-list is an assoc-list. assoc-all returns a list of
+        the data associated with elements of lst by assoc-list. E.g.
+        (assoc-all '(a d c d) '((a apple)(b boy)(c cat)(d dog))) returns
+        (apple dog cat dog). Use map. Note that you can't simply use assoc
+        as one of the arguments to map. You need a lambda.
+
+5.  Write a function filter-evens which takes a list of numbers as its
+        argument and returns a new list containing only the even numbers in
+        the input list. E.g., (filter-evens '(23 33 44 2 1 8)) returns (44 2
+        8). Use even? to test if a number is even. You must use map. You may
+        use a helper function but the only recursion should be the recursion
+        implicit in map. Hint: Note that the result of map is exactly as
+        long as its second argument. E.g. the result of (map foo '(23 33 44
+        2 1 8)) will be a list of 6 elements no matter what function foo is.
+        So how can this problem be solvable? Do something to the result of
+        map before you return it. E.g., suppose the result of (map foo '(23
+        33 44 2 1 8)) is ( ( ) ( ) (44)(2)( ) (8)). Then (apply append (map
+        foo '(23 33 44 2 1 8))) will result in (44 2 8) .
+
+October 15th, 2013 <small>Midterm 1 Study Guide</small>
+-------------------------------------------------------
 
 ### Formal Languages
 
@@ -352,8 +367,8 @@ October 15th, 2013 <small>Midterm Study Guide</small>
         terminal string => ... => <start>
 
     -   A **parse-tree** has internal nodes as nonterminals, where the
-        children make up the right-hard side of one of the productions
-        for that nonterminal.
+            children make up the right-hard side of one of the productions
+            for that nonterminal.
 
 -   **Derivation** works from the start and *to* the terminal string
 
@@ -361,13 +376,14 @@ October 15th, 2013 <small>Midterm Study Guide</small>
 
 -   ambiguity and removing ambiguity:
     -   To add **precedence** to a parse tree, make the edge "higher in
-        the tree" where higher means lower precedence.
+            the tree" where higher means lower precedence.
+
     -   **Associativity** can distinguish `a ~ b ~ c` in two ways: 1.
-        `(a ~ b) ~ c` or 2. `a ~ (b ~ c)`.
+            `(a ~ b) ~ c` or 2. `a ~ (b ~ c)`.
 
 -   **Regular grammars** are used to specify the structure of tokens.
 -   **Context-free grammars** are used to specify the overall structure
-    of a programming language.
+        of a programming language.
 
 #### Regular Expressions
 
@@ -375,7 +391,8 @@ October 15th, 2013 <small>Midterm Study Guide</small>
 -   The empty string represents just itself.
 -   The "or" operator will union the sets of two definitions.
 -   Placing to expressions next to one another will place both sets
-    right next to each other, "Cartesian product."
+        right next to each other, "Cartesian product."
+
 -   Two letters next to one another contain only those two letters.
 
         a             {a}
@@ -386,9 +403,10 @@ October 15th, 2013 <small>Midterm Study Guide</small>
         ab            {ab}
 
 -   `*` will make the represented set the empty string and any number of
-    the contained expression.
+        the contained expression.
+
 -   `+` will make any number of the contained expression excluding the
-    empty string.
+        empty string.
 
         a             {a}
         b             {b}
@@ -416,36 +434,36 @@ October 15th, 2013 <small>Midterm Study Guide</small>
     -   it *outputs* a *boolean*: is the string in the language?
 
 -   **Finite automata** accepts or recognizes an input string if and
-    only if there exists a path from its start state to a final state
-    such that the labels on the path are the terminals in that string.
+        only if there exists a path from its start state to a final state
+        such that the labels on the path are the terminals in that string.
 
 -   To construct a **nondeterministic** finite state automata,
     1.  Allow more than one transition with the same label.
     2.  Allow *ε* transition
     3.  Recognize an input string just in case there exists *some* path
-        from start state to a final state such that the labels on the
-        path are the terminals in the string.
+            from start state to a final state such that the labels on the
+            path are the terminals in the string.
 
 -   If the finite state automata does not follow these rules, it is a
-    **deterministic** finite state automata.
+        **deterministic** finite state automata.
 
 ##### Types of questions
 
 -   is this string accepted by this finite automata?
     -   To solve this, use the starting state as the first letter in the
-        string and only go through those states with edges with ensuing
-        letters. If there exists no path from the start state to a valid
-        end state through existing edges, then the string is not valid.
+            string and only go through those states with edges with ensuing
+            letters. If there exists no path from the start state to a valid
+            end state through existing edges, then the string is not valid.
 
 -   describe in English the language accepted by the finite automata.
     -   To solve this, step through a few possible and valid paths for
-        the FSA and generalize from the pattern.
+            the FSA and generalize from the pattern.
 
 -   write an finite automata that accepts this language
 
 ### Functional Programming & Scheme
 
--   shallow and deep recursion on lists  
+-   shallow and deep recursion on lists
 -   accumulator recursion and tail recursion
 -   lambda and closures
 -   functions that take functions as arguments
@@ -460,14 +478,15 @@ October 15th, 2013 <small>Midterm Study Guide</small>
 ### Midterm Fall 2011
 
 1.  Consider the Finite State Automaton (FSA) defined by the following
-    diagram:
+        diagram:
+
     -   Is this FSA deterministic or non-deterministic? Why?
         -   The necessary and sufficient conditions for a NFA are at
-            least one *ε* or multiple state transitions (multiple
-            edges).
+                least one *ε* or multiple state transitions (multiple
+                edges).
 
     -   Write a Regular Expression that specifies the same language as
-        the FSA
+            the FSA
 
 2.  Consider the following grammar, `G1`:
 
@@ -496,23 +515,24 @@ October 15th, 2013 <small>Midterm Study Guide</small>
         intutively for small cases, I suspect.
 
     -   Add parentheses to the following to show the order of operations
-        implied by `G1`.
+            implied by `G1`.
+
         -   `(a % b) % 0`
         -   `0 # (1 % a)`
         -   I think the strategy to solve these is to begin with the
-            "deepest" level of the language, the furthest from the
-            starting expression, and those expressions that are together
-            there are "implied" to be connected with higher precedence
-            than those are higher levels. Because the `#` is "higher"
-            than the `%` operator, it's precedence is lower.
+                "deepest" level of the language, the furthest from the
+                starting expression, and those expressions that are together
+                there are "implied" to be connected with higher precedence
+                than those are higher levels. Because the `#` is "higher"
+                than the `%` operator, it's precedence is lower.
 
 3.  Describe in English the language accepted by the following
-    Nondeterministic Finite State Automaton. The start state is D. The
-    only accepting state is F.
+        Nondeterministic Finite State Automaton. The start state is D. The
+        only accepting state is F.
 
 4.  The function `(repeat n x)` returns a list of `n` copies of `x`.
-    E.g., `(repeat 3 'w)` should return `(w w w)`. `(repeat 2 '(a b))`
-    returns `((a b) (a b))`. If `n` is `0` repeat should return `( )`.
+        E.g., `(repeat 3 'w)` should return `(w w w)`. `(repeat 2 '(a b))`
+        returns `((a b) (a b))`. If `n` is `0` repeat should return `( )`.
 
         ;WRONG:
         (define (repeat n x)
@@ -532,10 +552,10 @@ October 15th, 2013 <small>Midterm Study Guide</small>
         )
 
 5.  The function `(deep-member x lst)` returns true if `x` is a member
-    of list `lst` at any depth and false otherwise. E.g.,
-    `(deep-member 's '(e r ((x s) t))` returns `#t` (true) while
-    `(deep-member 'a '(e r ((x s) t)))` returns `#f` (false). You may
-    assume `x` is a number or symbol, not a list.
+        of list `lst` at any depth and false otherwise. E.g.,
+        `(deep-member 's '(e r ((x s) t))` returns `#t` (true) while
+        `(deep-member 'a '(e r ((x s) t)))` returns `#f` (false). You may
+        assume `x` is a number or symbol, not a list.
 
         (define (deep-member x lst)
             (if (null? lst)
@@ -548,11 +568,11 @@ October 15th, 2013 <small>Midterm Study Guide</small>
         )
 
 6.  Define `(for-n start stop fn)`. It takes three arguments: start and
-    stop, which are numbers, and fn which is a function of one argument.
-    `For-n` calls `fn` several times, first with the argument `start`,
-    then with `start+1` then ... finally with `stop`. It returns a list
-    of the results of these calls. If `start > stop`, `for-n` simply
-    returns the empty list without doing any calls to `fn`.
+        stop, which are numbers, and fn which is a function of one argument.
+        `For-n` calls `fn` several times, first with the argument `start`,
+        then with `start+1` then ... finally with `stop`. It returns a list
+        of the results of these calls. If `start > stop`, `for-n` simply
+        returns the empty list without doing any calls to `fn`.
 
         (define (for-n start stop fn)
             (if (> start stop)
@@ -562,11 +582,11 @@ October 15th, 2013 <small>Midterm Study Guide</small>
         )
 
 7.  `(protect-zero fn)` takes one argument, `fn`, a function which
-    itself takes one argument. The value of `protect-zero` is also a
-    function of one argument. Let us call this the result function. If
-    its argument is not `0`, the result function just calls `fn` and
-    returns whatever `fn` returns. If the result function's argument is
-    `0`, it does not call `fn` but instead returns the symbol `OOPS`.
+        itself takes one argument. The value of `protect-zero` is also a
+        function of one argument. Let us call this the result function. If
+        its argument is not `0`, the result function just calls `fn` and
+        returns whatever `fn` returns. If the result function's argument is
+        `0`, it does not call `fn` but instead returns the symbol `OOPS`.
 
         (define (protect-zero fn)
 
@@ -575,27 +595,30 @@ October 15th, 2013 <small>Midterm Study Guide</small>
 ### Midterm Fall 2012
 
 1.  Consider the Finite State Automaton (FSA) defined by the following
-    transition table:
+        transition table:
+
     -   Is this FSA deterministic or non-deterministic? Why?
     -   Complete the following grammar. It must specify the language
-        accepted by the FSA above.
-    -   Write a Regular Expression that specifies the same language as
-        the FSA above.
+            accepted by the FSA above.
 
-2.  Suppose a language had logical expressions using the operators \^
-    and v, with \^ having higher precedence. The letters t and f are
-    constants and p and q are variables. An expression of the form
-    <value> \^ <value> \^ <value> means (<value> \^ <value>) \^ <value>
-    and <value> v <value> v <value> means <value> v (<value> v <value>)
-    Complete the following grammar for these expressions.
+    -   Write a Regular Expression that specifies the same language as
+            the FSA above.
+
+2.  Suppose a language had logical expressions using the operators \\\^
+        and v, with \^ having higher precedence. The letters t and f are
+        constants and p and q are variables. An expression of the form
+        <value> \^ <value> \^ <value> means (<value> \^ <value>) \^ <value>
+        and <value> v <value> v <value> means <value> v (<value> v <value>)
+        Complete the following grammar for these expressions.
 
 3.  Write scheme functions for each of the following. You may write
-    additional helper functions if you wish.
+        additional helper functions if you wish.
+
     1.  Function countFie takes a list as its argument and returns a
-        count of how many times the symbol fie appears as a top-level
-        element in the list. E.g., (countFie ‘(a fie (fie b) fie))
-        returns 2. Use recursion, but not higher-order functions, e.g.
-        not map.
+            count of how many times the symbol fie appears as a top-level
+            element in the list. E.g., (countFie ‘(a fie (fie b) fie))
+            returns 2. Use recursion, but not higher-order functions, e.g.
+            not map.
 
             (define (countFie lst)                ; function definition
                 (if (null? lst)                   ; base case
@@ -608,14 +631,15 @@ October 15th, 2013 <small>Midterm Study Guide</small>
             )
 
     2.  Write (countAllFie lst) takes a list and returns a count of how
-        many times the symbol fie appears at any level of the list.
-        E.g., (countAllFie '(fie foo ((fie 3)))) returns 2. (countAllFie
-        'fie) returns 1. Your definition must use map.
+            many times the symbol fie appears at any level of the list.
+            E.g., (countAllFie '(fie foo ((fie 3)))) returns 2. (countAllFie
+            'fie) returns 1. Your definition must use map.
+
     3.  Finish the function add-squares-h below. Add-squares-h is a
-        helper function for add-squares. Add-squares takes a list of
-        numbers and returns the sum of the squares of these numbers.
-        E.g., (add-squares '(3 4)) returns 25. Accum is an accumulator.
-        Add-squares-h must be tail-recursive.
+            helper function for add-squares. Add-squares takes a list of
+            numbers and returns the sum of the squares of these numbers.
+            E.g., (add-squares '(3 4)) returns 25. Accum is an accumulator.
+            Add-squares-h must be tail-recursive.
 
             (define (add-squares lst) (add-squares-h lst 0)) ; given
             (define (add-squares-h lst accum)                ; given
@@ -629,9 +653,9 @@ October 15th, 2013 <small>Midterm Study Guide</small>
             )
 
     4.  Define (compose f g) The arguments f and g are each a function
-        of one argument. The value returned by compose is a function,
-        the composition of f and g. That is, ((compose (lambda (x) (+ 1
-        x))(lambda (x)(\* x x))) 5) returns 26.
+            of one argument. The value returned by compose is a function,
+            the composition of f and g. That is, ((compose (lambda (x) (+ 1
+            x))(lambda (x)(\* x x))) 5) returns 26.
 
             (define compose(f g) ; definition line
                 (lambda(x)       ; this returns a function, need lambda
@@ -643,13 +667,14 @@ October 26th, 2013 <small>Exercise Set 5: Prolog</small>
 --------------------------------------------------------
 
 1.  Translate the following into a set of prolog facts and rules. It
-    should be possible for Prolog to infer 5 from 1 through 4.
+        should be possible for Prolog to infer 5 from 1 through 4.
+
     1.  Joe is in the toy department
 
             inside(joe, toy_dept).
 
     2.  If someone is in a department they report to the head of that
-        department.
+            department.
 
             report(X, Y, dept) :- inside(x, dept), head(y, dept). 
 
@@ -658,7 +683,7 @@ October 26th, 2013 <small>Exercise Set 5: Prolog</small>
             head(sam, toy_dept).
 
     4.  Everyone's salary is less that the salary of the person they
-        report to.
+            report to.
 
             paid_less(X, Y) :- report(X, Y, Z).
 
@@ -667,9 +692,9 @@ October 26th, 2013 <small>Exercise Set 5: Prolog</small>
             paid_less(joe, sam).
 
 2.  Write a definition in Prolog for the predicate `fib(N, F)` which is
-    true if *F* is the *N*th fibonacci number, *f**i**b*<sub>*N*</sub>,
-    defined as follows: *f**i**b*<sub>0</sub> is 0,
-    *f**i**b*<sub>1</sub> is 1, and for *N* \> 1,
+        true if *F* is the *N*th fibonacci number, *f**i**b*<sub>*N*</sub>,
+        defined as follows: *f**i**b*<sub>0</sub> is 0,
+        *f**i**b*<sub>1</sub> is 1, and for *N* \> 1,
 
     *f**i**b**N* = *f**i**b**N* − 1 + \*f**i**b\*\*N\* − 2
 
@@ -680,11 +705,11 @@ October 26th, 2013 <small>Exercise Set 5: Prolog</small>
             fib(B, BF),NF is AF + BF.
 
 3.  Write a definition in Prolog for the predicate double, where
-    double(A, B) is true for lists A and B if B has the same elements as
-    A, but repeated. E.g. double([dog, cat], [dog, dog, cat, cat]) is
-    true, but double([dog, cat], [dog, cat, dog, cat] is not true.
-    double([dog, cat], L) should bind L to [dog, dog, cat, cat]. The
-    query double([a, b], L). should succeed, binding L to [1, 1, b, b].
+        double(A, B) is true for lists A and B if B has the same elements as
+        A, but repeated. E.g. double([dog, cat], [dog, dog, cat, cat]) is
+        true, but double([dog, cat], [dog, cat, dog, cat] is not true.
+        double([dog, cat], L) should bind L to [dog, dog, cat, cat]. The
+        query double([a, b], L). should succeed, binding L to [1, 1, b, b].
 
         double_up([], []).
         double_up([A | As], [A, A | Rest]) :- double_up(As, Rest).
@@ -693,8 +718,9 @@ October 26th, 2013 <small>Exercise Set 5: Prolog</small>
         double(A, B) :- double_up(A, A) = B.
 
 4.  Write a definition in Prolog for the predicate without0(L1, L2)
-    which is true if L2 is a copy of L1 with all 0's removed. E.g.,
-    without0([4, 0, 5, 6, 0], [4, 5, 6]) is true and without0([4, 0, 5],
+        which is true if L2 is a copy of L1 with all 0's removed. E.g.,
+        without0([4, 0, 5, 6, 0], [4, 5, 6]) is true and without0([4, 0, 5],
+
     1.  binds L to [4, 5].
 
         remove0([], A, []). remove0([H | T], A, Result) :- H = A,
@@ -735,7 +761,8 @@ Terms
 :   -   Constant, variable, or `<functor>[(<term> {, <term>})]`
         -   `father(albert)` might represent the father of albert
         -   `successor(victoria)` might represent the successor of
-            victoria
+                victoria
+
         -   `sum(1, 2)` might represent the sum of 1 and 2
 
 Predicates
@@ -756,8 +783,8 @@ Horn clauses
         c h1 ^ h2 ^ h3 ^ ... ^ h_n
 
     Antecedent `h`
-    :   Conjunction of zero or more conditions which are *atomic
-        formulas*.
+    :   Conjunction of zero or more conditions which are \*atomic
+        formulas\*.
 
         Alternatively, **subgoal** or **tail**.
 
@@ -827,7 +854,7 @@ October 29th, 2013 <small>[Quick'n'Dirty Prolog Tutorial](http://www.cs.utexas.e
 > period.
 
 -   **Rules** are used to generate new information from facts, other
-    rules, and themselves. They have the form:
+        rules, and themselves. They have the form:
 
         head :- body.
 
@@ -844,12 +871,15 @@ October 29th, 2013 <small>[Quick'n'Dirty Prolog Tutorial](http://www.cs.utexas.e
             ancestor(X,Y) :- parent(Z,Y), ancestor(X,Z).
 
 -   Now there are **queries**. When you want to ask Prolog a question,
-    you supply a query.
+        you supply a query.
+
     -   Queries are like rules without bodies. Prolog will take the head
-        and find out if it is true or false.
+            and find out if it is true or false.
+
     -   If the query has variables, Prolog will attempt to find all
-        possible values that can be used in place of the variables to
-        make the query true and tell you what they are.
+            possible values that can be used in place of the variables to
+            make the query true and tell you what they are.
+
     -   Consider the database:
 
             parent(amy,bob).
@@ -862,15 +892,15 @@ October 29th, 2013 <small>[Quick'n'Dirty Prolog Tutorial](http://www.cs.utexas.e
         -   The query `parent(amy,bob)` will be true.
         -   The query `ancestoru(bob, doug)` is also true.
         -   The query `parent(bob,X)` will return all the facts that
-            would make the query true.
+                would make the query true.
 
 ### Connecting Prolog to Predicate Logic
 
 -   Think of the `:-` symbol in Prolog as representing the word "if".
-    -   Interanlly, Prolog represents rules in a form known as **horn
-        clauses**. These are the disjuction of predicates in which at
-        most one of the predicates is not negated. Consider the
-        grandparent clause:
+    -   Interanlly, Prolog represents rules in a form known as \*\*horn
+            clauses**. These are the disjuction of predicates in which at
+            most one of the predicates is not negated. Consider the
+            grandparent clause:
 
             grandparent(X,Z) :- parent(X,Y) , parent(Y,Z).
 
@@ -885,5 +915,116 @@ October 29th, 2013 <small>[Quick'n'Dirty Prolog Tutorial](http://www.cs.utexas.e
     -   Apply de Morgans for a horn clause:
 
         ∀ *x*∀ *y*∀ *z*(¬*P*(*x*, *y*)¬*P*(*y*, *z*) ∨ *G*(*x*, *z*))
+
+November 9th, 2013 <small>Midterm 2 Study Guide</small>
+-------------------------------------------------------
+
+### Prolog <small>Basic operation of Prolog</small>
+
+Unification
+:   TBD
+
+Backward chaining
+:   TBD
+
+Backtracking
+:   TBD
+
+### Logical meaning of Prolog
+
+### Prolog programming
+
+Ordering goals & clauses
+:   TBD
+
+Cut
+:   TBD
+
+Numbers, is
+:   TBD
+
+Recursion
+:   TBD
+
+Lists
+:   TBD
+
+Trees
+:   TBD
+
+Graphs
+:   TBD
+
+### Practice Exam 2
+
+1.  Finish the definition below of the scheme macro and-not, so that
+    (and-not x y) is the equivalent of (and x (not y)). Note that
+    and-not should have the same kind of “short cut” behavior as and and
+    or have, and as x && y has in Java: if x is false, it should not
+    evaluate y, but should just return false. (This is why and-not needs
+    to be a macro.)
+
+        (define-syntax and-not          (syntax-rules ( )               ((_ x y) (      )))
+
+2.  Fill in the following prolog predicates.
+    1.  `inOrder(List)`. Assume `List` is a list of numbers;
+        `inOrder(List)` is true if and only if the numbers in `List` are
+        in increasing order. If `List` has `0` or `1` element it is in
+        order.
+
+            inOrder( ___ ) .
+
+            inOrder( ____ ) .
+
+            nOrder( [ N1, N2 | T ] ) :- 
+
+    2.  `suffix(L1, L2)`. Assumes `L1` and `L2` are lists. It is true if
+        `L2` is a tail of `L1`. E.g., `suffix([x, a, b], [a, b])` is
+        true, as is `suffix([x, y, a, b], [a, b])`,
+        `suffix([x, y, z, a, b], [a, b])`, and so on.
+
+            suffix( ______ ).           suffix( ______ ):- 
+
+3.  For each of the following pairs of fact and goal, say whether they
+    will unify, and if so with which bindings
+
+|Fact|Goal|Unfify?|
+|----|----|-------|
+|`foo(Bar, baz).`|`foo(baz, Bletch).`|???|
+|`foo(a, b)`|`fie(X,Y)`|???|
+|`foo(a, fie(Y, X))`|`foo(X, fie(a,a))`|???|
+
+1.  The predicate `odd(All, Odds)` is true if `Odds` and `All` are lists
+    and `Odds` contains the 1st, 3rd, 5th, etc, elements of `All` (in
+    that order), Hint: `[a, b | c]` is a list whose first two elements
+    are `a` and `b`, and whose tail after `b` (i.e. the `cddr`) is c.
+    `odds([],[])` is also true. Define `odds`:
+
+2.  What is the translation into predicate calculus of the prolog rule:
+    `cousin(X,Y):- grandparent(X, G), grandparent(Y, G), nonsibling(X, Y)`.
+
+3.  What will this print for the query `foo(X, Y).`? (The predicate
+    write simply prints its argument.
+            foo( 1, 2):-write(12), 1<1.     foo(X, 2):- fie(X), 
+            write(x2), 2<1. foo(1,Y):- write(y1).       fie(a):-write(a). 
+            fie(b):-write(b).
+
+4.  Define the predicate `insertInOrder(Lst, Num, Res)`, where `Lst` is
+    a list of numbers in ascending order and `Res` is the result of
+    inserting `Num` in its correct place in `Lst`. E.G.,
+    `insertInOrder([1, 3, 6, 9], 5, [1, 3, 5, 6, 9])` is `true`.
+
+5.  Given the following code, what will the query `vacation(A)` print?
+    Hint: If the variable `V` has value `a`, `write([fun, V])` prints
+    `[fun, a]`. fail is a predicate that always fails.
+
+        vacation(Activity):- 
+        fun(Activity), 
+        write([fun, Activity]),     cheap(Activity), 
+        write([cheap, Activity]), 
+        !,      fail.       fun(Activity):- speed(Activity, S), S > 50. 
+        fun(Activity):- outdoors(Activity). 
+        speed(skiing, 75).      outdoors(skiing).       outdoors(hiking). 
+        cheap(hiking).
 
 
