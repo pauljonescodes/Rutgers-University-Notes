@@ -62,7 +62,7 @@ September 8th, 2013 <small>Chapter 1, 'The Structure of Justification'</small>
 
 -   Possible solutions:
     -   **Infinitism**: An unending continuation of reasons, without
-        repetition or end.  
+        repetition or end.\
     -   **Foundationalism**: An ending tree of reasons.
     -   **Coherentism**: A tree that loops back on itself.
     -   **Skepticism**. None of the first three solutions to the regress
@@ -1529,239 +1529,543 @@ November 11th, 2013 <small>Chapter 9, 'Philosophy's Intuitional Methodology and 
 
 ### The Armchair or the Laboratory? Where and How to Do Philosophy.
 
--   This chapter is concerned with a methodology that cuts across
-	most branch of philosophy.
-	-   A feature of philosophy that stands out because of disapproval
-		a disuse from the sciences: *intuitions*.
-	-   Empirical evidence is based on *observation*.
-		-   *Truth* is obtained by observing the world.
+-   This chapter is concerned with a methodology that cuts across most
+    branch of philosophy.
+    -   A feature of philosophy that stands out because of disapproval a
+        disuse from the sciences: *intuitions*.
+    -   Empirical evidence is based on *observation*.
+        -   *Truth* is obtained by observing the world.
 
 -   Why is philosophy so different? Is this method legitimate?
 
 Intuition
-
-:   It is a seeming-that-$p$-is-the-case which is not based on 
-	conscious perception, memory, or inference.
+:   It is a seeming-that-$p$-is-the-case which is not based on conscious
+    perception, memory, or inference.
 
 :   It is a sense that $p$ is the case that wells up in the mind without
-	a readily specifiable reason; it just strikes one (often compellingly) 
-	that P is so. 
+    a readily specifiable reason; it just strikes one (often
+    compellingly) that P is so.
 
-:   In contrast to hunches or guesses, however, intuitions do not 
-	feel arbitrary or ill-founded. On the contrary, they "present 
-	themselves" as obvious and often routine.
+:   In contrast to hunches or guesses, however, intuitions do not feel
+    arbitrary or ill-founded. On the contrary, they "present themselves"
+    as obvious and often routine.
 
-> But why do we say that philosophers regularly appeal to such 
-> seemings? Where and when do they appeal to them?
+> But why do we say that philosophers regularly appeal to such seemings?
+> Where and when do they appeal to them?
 
--   A principle context is when philosophers try to define or analyze
-	a philosophically interesting term.
-	-   For instance, *knowledge* in epistemology.
-	-   Alternative, *causation* and *moral rightness*.
-	-   Definitions typically seek the necessary and sufficient conditions
-		for the use of the term.
-	-   For instance, $JTB \to K \land K \to JTB$.
-		-   But the Gettier's counterexample showed that at least one time,
-			$\lnot K \to JTB$.
-		-   $\lnot K$ was derived from intuition, whereas $JTB$ was derived
-			from analysis and the case.
-		-   All epistemologists, or most, agreed about the intuition, so
-			the definition was shown to be insufficient.
+-   A principle context is when philosophers try to define or analyze a
+    philosophically interesting term.
+    -   For instance, *knowledge* in epistemology.
+    -   Alternative, *causation* and *moral rightness*.
+    -   Definitions typically seek the necessary and sufficient
+        conditions for the use of the term.
+    -   For instance, $JTB \to K \land K \to JTB$.
+        -   But the Gettier's counterexample showed that at least one
+            time, $\lnot K \to JTB$.
+        -   $\lnot K$ was derived from intuition, whereas $JTB$ was
+            derived from analysis and the case.
+        -   All epistemologists, or most, agreed about the intuition, so
+            the definition was shown to be insufficient.
 
-> Exactly how did the "refutation" take place? Was there 
-> some other theory of knowledge epistemologists agreed upon 
-> from which they deduced that Smith did not know Q (the 
-> job-getter proposition)?
+> Exactly how did the "refutation" take place? Was there some other
+> theory of knowledge epistemologists agreed upon from which they
+> deduced that Smith did not know Q (the job-getter proposition)?
 
 -   No. There was no alternative theory of that sort.
-	-   It *would* be wrong to classify it as knowledge, however.
-	-   This is what philosophers call "having a intuition."
+    -   It *would* be wrong to classify it as knowledge, however.
+    -   This is what philosophers call "having a intuition."
 
 -   However, for a theory to be refuted, isn't it required that the
-	person have a *bona fide* counterexample?
-	-   How does the Gettier reader form a justified belief that
-		Jones does not have knowledge?
-		-   Well, apparently, intuition confers this justification.
-	
-	-   This is the role of intuition where *intuitions confer
-		justification*, *intuitions serve as evidence*.
+    person have a *bona fide* counterexample?
+    -   How does the Gettier reader form a justified belief that Jones
+        does not have knowledge?
+        -   Well, apparently, intuition confers this justification.
 
-> What makes intuitions constitute evidence for their contents?
-> Are they like perceptual experiences, which might serve an
-> analogous role?
+    -   This is the role of intuition where *intuitions confer
+        justification*, *intuitions serve as evidence*.
 
--   Maybe we are really wrong to grant this epistemic role to intuitions.
-	-   Scientists never use them.
-	-   Psychologists dismiss other psychologists that use them.
-	-   So why should philosophers be allowed to use them?
-		-   Maybe philosophers just arrogate to themselves what is in fact
-			a dubious epistemic practice.
-		-   This is what philosophers of the last few decades have worried
-			about.
+> What makes intuitions constitute evidence for their contents? Are they
+> like perceptual experiences, which might serve an analogous role?
+
+-   Maybe we are really wrong to grant this epistemic role to
+    intuitions.
+    -   Scientists never use them.
+    -   Psychologists dismiss other psychologists that use them.
+    -   So why should philosophers be allowed to use them?
+        -   Maybe philosophers just arrogate to themselves what is in
+            fact a dubious epistemic practice.
+        -   This is what philosophers of the last few decades have
+            worried about.
 
 -   Intuitions are clearly not sense experiences
-	-   They are not part of any empirical method.
-	-   Philosophy, as we described it above, is more into thinking
-		up definitions, analyses, and theories and using one's imagination
-		to test them
-	-   This "imaginative" testing, often called thought experiments,
-		is in some respects what transpires in science.
-		-   Philosophers want to test their theories too.
+    -   They are not part of any empirical method.
+    -   Philosophy, as we described it above, is more into thinking up
+        definitions, analyses, and theories and using one's imagination
+        to test them
+    -   This "imaginative" testing, often called thought experiments, is
+        in some respects what transpires in science.
+        -   Philosophers want to test their theories too.
 
-	-   Philosophers tests traditionally involve no manipulation of
-		worldly subject matter to see how outcomes change.
-		-   Merely imaginative constructs of possible scenarios.
-		-   This can be done from the armchair, and thus constitutes
-			an **armchair discipline**.
-		-   Notice that mathematics may also be characterized as such.
+    -   Philosophers tests traditionally involve no manipulation of
+        worldly subject matter to see how outcomes change.
+        -   Merely imaginative constructs of possible scenarios.
+        -   This can be done from the armchair, and thus constitutes an
+            **armchair discipline**.
+        -   Notice that mathematics may also be characterized as such.
 
 ### Rationalism vs. Empiricism
 
 -   This entire issue harks back to an extremely important debate in the
-	history of epistemology between *empiricism* and *rationalism*.
-	-   The debate is framed between three rationalists:
-		1.  Descartes
-		2.  Spinoza
-		3.  and Leibniz
+    history of epistemology between *empiricism* and *rationalism*.
+    -   The debate is framed between three rationalists:
+        1.  Descartes
+        2.  Spinoza
+        3.  and Leibniz
 
-	-   And three empiricists:
-		1.  Locke
-		2.  Berkeley
-		3.  and Hume
+    -   And three empiricists:
+        1.  Locke
+        2.  Berkeley
+        3.  and Hume
 
 Rationalism
-
 :   emphasizes the role of *reason* in knowledge
 
 :   paradigmatic cases include mathematical thought, logical thought,
-	and other kinds of abstract thinking that feature purely abstract
-	contents rather than sensory, or sense-derived concepts.
+    and other kinds of abstract thinking that feature purely abstract
+    contents rather than sensory, or sense-derived concepts.
 
 Empiricism
-
 :   emphasizes the role of *sense-experience* in knowledge
 
-:   highlighted the centrality of sense-based cognition and rationalists 
-	the centrality of abstract modes of cognition.
+:   highlighted the centrality of sense-based cognition and rationalists
+    the centrality of abstract modes of cognition.
 
-:   Gained fairly clear ascendance in the early 20th century, because of the
-	association between science and empiricism and the success of science
+:   Gained fairly clear ascendance in the early 20th century, because of
+    the association between science and empiricism and the success of
+    science
 
 :   The rise of logical positivism berated the standing of rationalist
-	notions of "rational insight" and "intuitive insight" and the like.
+    notions of "rational insight" and "intuitive insight" and the like.
 
-> ... [T]he truths of pure reason, the propositions which we 
-> know to be valid independently of all experience, are so 
-> only in virtue of their lack of factual content. 
-> <cite>(A.J. Ayer, 1952. Language, Truth, and Logic. 
-> New York: Dover, pp. 93-94)</cite>
+> ... [T]he truths of pure reason, the propositions which we know to be
+> valid independently of all experience, are so only in virtue of their
+> lack of factual content. <cite>(A.J. Ayer, 1952. Language, Truth, and
+> Logic. New York: Dover, pp. 93-94)</cite>
 
 -   Ayer did not wholly reject non-empirical knowledge.
-	-   Relegated it to a lesser domain.
+    -   Relegated it to a lesser domain.
 
-> Can we show that reliance on intuition in philosophical
-> methodology has a firm epistemological ground?
+> Can we show that reliance on intuition in philosophical methodology
+> has a firm epistemological ground?
 
 ### Kinds of Intuition and the Nature of Intuition
 
--   Presumably, intuitional states are propositional attitudes,
-	which imply the state has two parts:
-	1.  An attitude type
-	2.  Propositional content
+-   Presumably, intuitional states are propositional attitudes, which
+    imply the state has two parts:
+    1.  An attitude type
+    2.  Propositional content
 
-> Are logical and mathematical intuitions the same kind of
-> mental states as moral intuitions? Type or content?
+> Are logical and mathematical intuitions the same kind of mental states
+> as moral intuitions? Type or content?
 
 ### A Criterion of Evidencehood
 
 -   The author proposes *reliabilist evidencehood*, specifically
-	*indicator reliablism*.
+    *indicator reliablism*.
 
-> The occurrence of an event or state of affairs of type
-> $\Sigma$ is counted as evidence for proposition $p$ if
-> $\Sigma$ is a generally reliable indicator of the truth
-> of $p$.
+> The occurrence of an event or state of affairs of type $\Sigma$ is
+> counted as evidence for proposition $p$ if $\Sigma$ is a generally
+> reliable indicator of the truth of $p$.
 
--   For example, the fact that S seems to remember eating a 
-	croissant for breakfast is evidence that he did eat a 
-	croissant for breakfast.
-	-   Analogously, why shouldn't it be plausible that 
-		someone's having an intuition that Gettier's 
-		coin-in-the-pocket example is not a case of knowledge 
-		(on the part of Smith) should also be evidence?
+-   For example, the fact that S seems to remember eating a croissant
+    for breakfast is evidence that he did eat a croissant for breakfast.
+    -   Analogously, why shouldn't it be plausible that someone's having
+        an intuition that Gettier's coin-in-the-pocket example is not a
+        case of knowledge (on the part of Smith) should also be
+        evidence?
 
-> **(IND-EV)** If being in a propositional attitude of type $M$ 
-> is a generally reliable indicator[^5] of the truth of $M$'s content,
-> then if $S$ is in a token state of type $M$ with respect to 
-> proposition $P$, this is evidence of the truth of $P$. It is
-> evidence for $S$ of the truth of $P$, and if another person $S$' 
-> is justified in believing that $S$ is in this state, then $S$'s 
-> being in a token state of type $M$ is also evidence for $S$' of 
-> the truth of $P$.[^4]
+> **(IND-EV)** If being in a propositional attitude of type $M$ is a
+> generally reliable indicator[^4] of the truth of $M$'s content, then
+> if $S$ is in a token state of type $M$ with respect to proposition
+> $P$, this is evidence of the truth of $P$. It is evidence for $S$ of
+> the truth of $P$, and if another person $S$' is justified in believing
+> that $S$ is in this state, then $S$'s being in a token state of type
+> $M$ is also evidence for $S$' of the truth of $P$.[^5]
 
 ### Philosophical Intuitions as Classification Judgements
 
--   A pervasive part of cognitive activity is: 
-	-   **(A)** forming representations of *categories*.
-		-   Ex: dogs, books, red things, explosions
+-   A pervasive part of cognitive activity is:
+    -   **(A)** forming representations of *categories*.
+        -   Ex: dogs, books, red things, explosions
 
-	-   **(B)** *classifying* or *categorizing* *objects* or *events*
-		-   Ex: Is this animal a book or dog?
+    -   **(B)** *classifying* or *categorizing* *objects* or *events*
+        -   Ex: Is this animal a book or dog?
 
-	-   Spontaneous answers to classifications of knowledge
-		are intuitions.
+    -   Spontaneous answers to classifications of knowledge are
+        intuitions.
 
--   If intuitions are *reliable indicators* of the truth of their 
-	contents, then they qualify as a non-empirical type of evidence.
-	-   We can find this out with experimental philosophy, Goldman
-		claims.
+-   If intuitions are *reliable indicators* of the truth of their
+    contents, then they qualify as a non-empirical type of evidence.
+    -   We can find this out with experimental philosophy, Goldman
+        claims.
 
 ### Applying the Experimental Method to the Reliability Question
 
--   If a pool of participants in a dichotomous (yes-no) survey 
-	question splits their responses 60% to 40%, we can infer that 
-	at least 40% of the respondents were giving wrong answers, 
-	and therefore have wrong intuitions.[^6]
+-   If a pool of participants in a dichotomous (yes-no) survey question
+    splits their responses 60% to 40%, we can infer that at least 40% of
+    the respondents were giving wrong answers, and therefore have wrong
+    intuitions.[^6]
 -   The results of X-Phi diverged from near unanimity from philosophers
-	with regards to Gettier.
-	-   A 74% majority of subjects with Western ethnic origins 
-		responded that Smith in one of the "only believes" the 
-		proposition rather than "really knows" it.
-		-   East Asian and Indian subjects thought Smith knew.
+    with regards to Gettier.
+    -   A 74% majority of subjects with Western ethnic origins responded
+        that Smith in one of the "only believes" the proposition rather
+        than "really knows" it.
+        -   East Asian and Indian subjects thought Smith knew.
 
--   This undercuts the prospect of intuitions being reliable
-	indicators of the truth.
+-   This undercuts the prospect of intuitions being reliable indicators
+    of the truth.
 -   The results have been undercut by lack of replication.
 -   Also do these results equate to intuitions? Maybe not.
 -   Also maybe these subjects do not have the relevant or necessary
-	tools to sufficiently analyze the cases.
+    tools to sufficiently analyze the cases.
 -   *Properly conducted* scientific methodology is very relevant to
-	philosophy.
-	-   The remedy is *better science*.
-
-
-[^6]: We can construct a Sorites paradox from this.
+    philosophy.
+    -   The remedy is *better science*.
 
 ### A More Refined Model of Classification Reliability
 
-> **(C-J RELIABILITY)**: The general process of classification
-> judgment has high conditional reliability if and only if it
-> outputs a high ratio of true classification judgments whenever
-> both the case representation and the category representation
-> are accurate.
+> **(C-J RELIABILITY)**: The general process of classification judgment
+> has high conditional reliability if and only if it outputs a high
+> ratio of true classification judgments whenever both the case
+> representation and the category representation are accurate.
 
 ### Possible Targets of Philosophical Theorizing and the Method of Philosophical Analysis
 
--   A traditional aim of analytic philosophy is to analyze, define,
-	or give an account of philosophically interesting targets.
-	-   According to the free-floater approach, philosophy should
-		not concern itself with mere word meanings.
-		-   It should concern itself with the *content* of words.
+-   A traditional aim of analytic philosophy is to analyze, define, or
+    give an account of philosophically interesting targets.
+    -   According to the free-floater approach, philosophy should not
+        concern itself with mere word meanings.
+        -   It should concern itself with the *content* of words.
 
 -   The notion of "direct acquaintance" is appealing to rationalists.
 
 November 11th, 2013 <small>Seminar</small>
 ------------------------------------------
+
+### Questions
+
+#### On Meliorative Epistemology
+
+-   There is no consensus on the thesis of meliorative epistemology.
+    -   The people that have used it most are not mainstream, and if
+        different people have used it, they maybe haven't defined it.
+    -   Others topics will be much more well defined.
+
+-   Nonetheless, there is a lot of precedent for it.
+    -   Descartes, for example, has a book called [*Rules for the
+        Direction of the
+        Mind*](http://en.wikipedia.org/wiki/Rules_for_the_Direction_of_the_Mind).
+    -   "Here are rules for how to do things right."
+    -   Regulative vs. Meliorative.
+
+-   A lot of X-Phi is aimed at this regulative/ameliorative approach.
+    -   Ameliorative epistemology is both descriptive and normative.
+    -   Mainstream epistemology are not "in this business."
+    -   Sometimes there is the presupposition that "what we do is good."
+    -   Psychologists have a conception of what we *should* be doing as
+        well, from heuristics and biases.
+
+-   If you expect there to be one consensus view on what to say here,
+    you will disappointed.
+-   Things are not that neat.
+    -   In general, though not about all four chapters, there's a lot
+        less consensus about how things should be done.
+
+#### On Rationality, Normativity, and Description
+
+> Does melioristic epistemology affect our definition of knowledge? One
+> of the projects of epistemology is to define knowledge, does
+> melioristic epistemology affect our definitions?
+
+-   Here's how some of the discourse has gone, the debates on these
+    issues:
+    -   Going back 25 years at least, after the first main papers on
+        Kahneman and Frisky on heuristics and biases, there was an
+        article by an Oxford philosopher on Cohen, in *Behavioral and
+        Brain Sciences*, BBS
+        -   An interdisciplinary journal from a whole lot of people from
+            different schools.
+        -   A necessary condition of publishing a target article is of
+            it being of interest to more than one discipline.
+        -   It's got to be a kind of paper on a topic that will illicit
+            reactions from different disciplines.
+        -   30 responses to target articles.
+
+    -   Cohen's article was in the 70s, a while back, was something
+        like, "Can Human Irrationality be Proved?"
+        -   "There's no way psychologists can come along and *prove
+            irrationality*, because *there is no alternative standard*"
+        -   Empirical psychology cannot make comments on the normative
+            standard, to be rational is what we're capable of doing. "By
+            what we do."
+
+    -   Now, the psychologists wanted no proof *a priori* of our
+        rationality. This was taken for granted by a lot of
+        philosophers.
+        -   They assume that logic and probability calculus tell us what
+            it is to be rational.
+        -   It is to be given by the formal system.
+        -   Which is a line that people that work in the sciences assume
+            that these probability.
+        -   People like Stanovich, Canadian, in Toronto.
+
+-   Stanovich clearly puts the option on the table, the idea that, you
+    cannot specify what is rational or irrational, you've got to take
+    into account the limits and capacities, to define these, you have to
+    define rationality in terms of these capacities.
+    -   Well, what are its design capacities, what would it be rational
+        for *that* kind of agent to do with its resources.
+        -   This is not how philosophers generally proceed.
+
+    -   The usual thing to do is, "What does logic, probability,
+        statistics tell us we should do or pick?"
+
+-   If you're talking about good and bad ways of reasoning and thinking,
+    even though it isn't *morally bad*, but it is "derogation of the
+    activity", well, if you ought, you can. Ought implies can.
+    -   "Only if something is within your capacity."
+    -   "If we want to talk about what you *should* do, we need to know
+        about what you *can* do."
+    -   What would be good to do? It must be something doable.
+
+#### The Problem Posed by Empirical Results
+
+> Why are we supposed to be that worried? You say stuff like, "Can
+> psychology come to the rescue showing us that we can be the rational
+> creatures we have ourselves being?"
+
+-   There are several things here, and you can pick one of them
+    -   But first of all, this presupposes there have been one or more
+        serious challenges.
+    -   Certain people that I (Alvin Goldman) talk about, judgment and
+        decision making, but the heuristic and biases approach, people
+        think that in a fundamental sense, people are irrational.
+    -   This is just a "little sampling."
+
+> To even do this kind of research is to assume that we know what
+> rational is.
+
+-   Naive people, where naive is not having special training in the
+    field.
+    -   I'm not sure there is one line about what system 2 is.
+    -   But, to get back to main theme, they are interested in saying
+        "How do people, without any special tutoring or training, what
+        are our native capacities?"
+        -   Naive is not insulting, just descriptive.
+
+    -   How do we, say, "read the minds of others."
+        -   To have "trouble" understanding other people.
+        -   Nobody has to go to school to read others minds. Babies
+            start doing it very early[^7].
+        -   It's the naive ability to do that we're interested in.
+
+> Why should I care *as an epistemologist*? Is this a skeptical
+> challenge? Maybe just because I never thought we were that great at
+> knowledge with our naive abilities.
+
+-   Here's response I was presupposing.
+    -   Mainstream epistemologists think that the skeptical thesis is
+        that we do not know nearly as much knowledge as we think we do.
+        -   Not necessarily that we have no knowledge.
+        -   It's even a skeptical thesis that we have fewer justified
+            beliefs than we think we do.
+
+    -   Well, we believe a lot in bad ways. So we're not justified and
+        we do not know.
+    -   Who is the we?
+        -   "The ordinary person in the street."
+        -   Philosophers of science are interested in scientists.
+
+    -   The underlying theme of mainstream epistemology is something
+        like what I'm talking about now, naive cognition, rather than
+        sophisticated, trained belief.
+
+#### One Kind of Example <small>The Availability Heuristic</small>
+
+> Which has a higher frequency? Words that end in "ing" or words that
+> have "n" in the second to last position?
+
+-   There is both the mistake, and what leads to the the mistake.
+-   They dub the availability heuristic as what is happening here, where
+    we're using memory to answer questions a zillion times a minute.
+    -   It's easier to recall from memory cases of "ing" that cases of
+        "n" in the second to last position.
+    -   It's hard because we do not mentally classify words based on
+        there second to last letter.
+        -   We do, alternatively, store words with syllables, or at
+            least more so.
+
+-   There is a kind of bias in this kind of thinking, because a lot of
+    tasks happen using your memory, and so if there are flaws, or if we
+    do it a lot, we can generate zillions of such examples of what gets
+    retrieved from memory and how.
+    -   It "silently shapes" how we see things.
+    -   What's available for retrievably is not well ordered to truth.
+    -   We have things that systematically take us in the wrong
+        direction.
+
+-   You're asked a probability question, where Linda is given a
+    description, and you rank whether she is a bank-teller or feminist,
+    etc, but in related experiments, if people are asked how
+    representative of a bank-teller Linda is, people give roughly the
+    same answer in answering that question for how representative she
+    is, the same answer as the probability question.
+    -   Maybe people are substituting that question. They are ranking in
+        representative similarity.
+    -   The tendency to substitute one question for another.
+    -   The whole tendency of this group of psychologists is to
+        emphasize what we do incorrectly[^8].
+
+### Presentation
+
+#### Some Preliminary Remarks
+
+-   Validity: Necessarily, if the set of premises in are argument all
+    true, then the conclusion cannot be false.
+-   If we take ourselves to have intrinsic abilities to deductively
+    reason, then having a grasp on validity should be thought of as a
+    necessary condition for being a skilled deductive reasoner.
+    -   Lets accept the view that we posses native deductive reasoning
+        abilities and call it the optimistic view (Goldman 1986)
+    -   But note that it isn't always a good strategy to mindlessly add
+        all logical entailments into your belief set.
+
+#### Belief Bias
+
+-   Whether or not conclusion is believably influences how we judge the
+    argument's validity.
+-   Makovits and Nantel (1989) tested the following syllogism on
+    university students:
+    1.  All living things need water.
+    2.  Roses need water.
+    3.  Roses are living things.
+
+-   Logical form:
+    1.  $\forall(Lx \to Wx)$
+    2.  $Wr$
+    3.  $Lr$
+
+-   70 percent of the subject population deemed the dressed up argument
+    as valid, while its logical form is clearly invalid.
+-   This lends well to the mental model theory of the psychology of
+    deductive reasoning, while seemingly undercutting the mental logic
+    theory.
+
+> **(Mental Logic Theory)**: We posses some internal logical deduction
+> schemata and rules, analogous to an internalized natural deduction
+> model.
+> 
+> **(Mental Model Theory)**: We construct an inner semantics for the
+> arguments premises which we then manipulate to asses validity.
+
+-   With regards to the rose argument, it seems much clearer to see how
+    one could go wrong in the mental model theory, sine once could
+    construct an inadequate model. However, if we have an internalized
+    version of logical schemata and rules, the it seems as if subjects
+    should see the argument's invalidity since there is no valid
+    inference to get from P1 and P2 to C.
+-   One plausible explanation (from Stanovich 2004) is that we have this
+    innate tendency to take into account all of the contextual
+    information when attempting to solve a problem.
+-   Compare the above with Johnson Laird (1983): 
+
+> The heart of the process is interpreting premises as mental models 
+> that take *general knowledge* into account, and searching for 
+> counterexamples to conclusions by constructing alternative models 
+> of the premises.
+
+-   Object to Mental Model Theory: Although we make up the inference
+    rules in MMT, they still have properties of logical syntax. So,
+    manipulating mental models is not different than manipulating mental
+    propositions. Thus, we already have inference rules in order to
+    operate on the models and these rule are those predicted by the MLT.
+
+#### Content bias
+
+-   Wason card selection task conditional: If a card has a bowl on it,
+    then it has en even number on the other side:
+
+        +---+  +---+  +---+  +---+  
+        | A |  | D |  | 4 |  | 7 |  
+        +---+  +---+  +---+  +---+  
+
+-   How does one falsify the conditional? By flipping the A and the 7.
+    However, most subjects (46%) chose A with the 4 instead.
+    -   Only 4% of Wason's subjects correctly answered A,7.
+
+-   Yet, when given the following task, subjects performed far better.
+    -   Conditional: If drinking beer, then subject is over 19.
+
+            +------+  +------+  +------+  +------+  
+            | Beer |  | Soda |  |  25  |  |  17  |  
+            +------+  +------+  +------+  +------+  
+
+-   73% of subjects correctly answered that one should turn over the
+    "beer" and "17" cards (Grigs and Cox 1982)
+-   The different in the results between the abstract vowels/even number
+    selection task and the beer/age selection task can be understood
+    through the content bias, namely the basis we have towards familiar
+    contents.
+
+#### Two Explanations
+
+> **(Permission Schema)**: If a person satisfies condition $A$, then
+> that person gets to carry out actions $B$.
+
+<!-- -->
+
+> **(Social Exchange Theory)**: We have adapted certain intuitions
+> regarding the trade off of goods.
+
+### Lesley, Induction, and Philosophy of Science
+
+-   There's good reason to thnk that lots of animals have a built-in
+    mechanism to induce from experience.
+    -   The epistemological problems about the justification of
+        induction, and then the empirical questions of the general
+        picture of the mind and its cognitive capacities, well, that's
+        interesting.
+    -   In general, the topic of induction is talked about not specific
+        in this respect is applied to thought, not necessarily language.
+
+-   Lesley is working on the problem of generics.
+    -   Generics is something that is investigated by linguists.
+    -   More recently by psychologists.
+    -   Generics are not universals or existential.
+
+-   Generics:
+    -   Tigers growl.
+    -   Fish swim.
+
+-   Pointing is important to humans ability to learn.
+    -   Giving content to utterances.
+    -   Similarly, following the gaze of what people look at.
+
+-   "Mosquitoes carry the West Nile virus."
+	-   Only 1% of these creatures do this.
+
+-   "Cats are female."
+	-   Only 50% of cats are female.
+
+-   Useful ways of generalizing. 
+	-   You can decide that they are true on evidence that is
+		well shy of investigation of many cases.
+
+-   Life is such that you want to be able to act quickly and you
+	can make judgments quickly. 
+-   There is difference between what it takes to accept a generic
+	and your tendency to assume of some member of that group has
+	that property.
 
 November 18th, 2013 <small>Chapter 10, 'Social Epistemology (Testimony and Peer Disagreement)'</small>
 ------------------------------------------------------------------------------------------------------
@@ -1783,9 +2087,9 @@ December 2nd, 2013 <small>Seminar</small>
 
 <!-- Acronyms -->
 
-*[JTB]: Justified true belief 
+*[JTB]: Justified true belief
 
-*[JTBs]: Justified true beliefs 
+*[JTBs]: Justified true beliefs
 
 *[BIV]: Brain in a vat.
 
@@ -1802,11 +2106,27 @@ December 2nd, 2013 <small>Seminar</small>
     Imagine that someone has face-blindness, is aware of their
     face-blindness, and the experience of seeing a specific person.
 
-[^4]: Does that mean that when experimental philosophy's intuition 
-findings do not correspond to philosophical tradition we should throw
-out experimental philosophy's methodology or traditional philosophy's
-thought? I think the former.
+[^4]: No one would disagree here, the conditional is valid. But the
+    question is *are intuitions reliable indicators* and *which
+    intuitions are reliable indicators of what*?
 
-[^5]: No one would disagree here, the conditional is valid. But the
-question is *are intuitions reliable indicators* and *which intuitions
-are reliable indicators of what*?
+[^5]: Does that mean that when experimental philosophy's intuition
+    findings do not correspond to philosophical tradition we should
+    throw out experimental philosophy's methodology or traditional
+    philosophy's thought? I think the former.
+
+[^6]: We can construct a Sorites paradox from this.
+
+[^7]: By three or four, you can give verbal tests and work out that the
+    babies can read minds, even children as 14 months have some sort of
+    mind reading, obviously not verbal tests. How long an infant fixates
+    on a certain individual, if you're surprised, that can be an
+    indicator. Mind-reading is believing that so or so is a mental
+    state.
+
+[^8]: Heurestics fits nicely with process reliability, and I think that
+    in at least some way, our heuristics must be useful in abstracting
+    something at sometime, for instance if we're be hunted by some other
+    animal, it is not useful to question whether our perception is good,
+    but we can engage in this question in moments of safety and luxury,
+    but what we may be programmed might no longer fit.
