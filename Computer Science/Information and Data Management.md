@@ -12,7 +12,7 @@ reliability, security, optimization). Advanced topics: finding patterns
 in data, information mapping and integration. The course focuses on a
 user's perspective, rather than how one implements DBMS.
 
--   Credits: 4
+-   Credits: 49
 
 -   Prerequisites:
     -   01:198:112; 01:198:205 or 14:332:312.
@@ -1295,9 +1295,6 @@ November 9th, 2013 <small>Study Guide to Quiz</small>
 > Likes has 1 million records and Drinker has also 100,000 records.
 > Assume that each block of data (page) holds 100 records.
 
-block
-:   the smallest addressable unit on the hard disk.
-
 -   Assume average seek time is 10ms. and average block transfer time is
     5ms.
 
@@ -1437,6 +1434,7 @@ $$nr ∗ bs + br$$
     overall. But if the index on beer was non-primary, that would be 100
     blocks and 10 million I/Os…..not nearly as good.
 
+### Serial and Serializable Schedules
 
 Scheduler
 :   The timing of individual steps of different transactions needs to be
@@ -1473,8 +1471,6 @@ Serializability
 Conflict-serializability
 :   A stronger conditions that most schedulers actually enforce.
 
-### Serial and Serializable Schedules
-
 > **(Correctness Principle)**: Every transaction, if executed in
 > isolation (without any other transactions running concurrently), will
 > transform any consistent state to another consistent state.
@@ -1492,21 +1488,20 @@ Serial
     of one transaction, then all the actions of another transaction, and
     so on. No mixing of actions is allowed.
 
-      |$T_1$           |$T_2$          |$A$    |$B$
-      |----------------|---------------|-------|-------
-      |                |               |$25$   |$25$
-      |`READ(A,t)`     |               |       |
-      |`t := t + 100`  |               |       |
-      |`WRITE(A,t)`    |               |$125$  |
-      |`READ(B,t)`     |               |       |
-      |`t := t + 100`  |               |       |
-      |`WRITE(B, t)`   |               |       |$125$
-      |                |`READ(A, s)`   |       |
-      |                |`s := s * 2`   |       |
-      |                |`WRITE(A, s)`  |$250$  |
-      |                |`READ(B, s)`   |       |
-      |                |`s := s * 2`   |       |
-      |                |`WRITE(B, s)`  |       |$250$
+	|$T_1$           |$T_2$          |$A$    |$B$     |
+    |----------------|---------------|-------|--------|
+    |`READ(A,t)`     |               |$25$   |$25$    |
+    |`t := t + 100`  |               |       |        |
+    |`WRITE(A,t)`    |               |$125$  |        |
+    |`READ(B,t)`     |               |       |        |
+    |`t := t + 100`  |               |       |        |
+    |`WRITE(B, t)`   |               |       |$125$   |
+    |                |`READ(A, s)`   |       |        |
+    |                |`s := s * 2`   |       |        |
+    |                |`WRITE(A, s)`  |$250$  |        |
+    |                |`READ(B, s)`   |       |        |
+    |                |`s := s * 2`   |       |        |
+    |                |`WRITE(B, s)`  |       |$250$   |
 
     For the transaction here, there are two serial schedules. There in
     $T_1$ which precedes $T_2$, and the initial state is $A = B = 25$.
@@ -1514,6 +1509,10 @@ Serial
     process down the page. Also the values of $A$ and $B$ shown refer to
     their valleys in main-memory buffers, not necessarily to their
     values on disk.
+
+:   The transactions are executed non-interleaved (see example above) 
+	i.e., a serial schedule is one in which no transaction starts 
+	until a running transaction has ended.
 
 #### Serializable Schedules
 
@@ -1526,21 +1525,20 @@ Serializable
     a serial schedule $S\prime$ such that for every initial database
     state, the effects of $S$ and $S\prime$ are the same.
 
-      |$T_1$           |$T_2$          |$A$    |$B$
-      |----------------|---------------|-------|-------
-      |                |               |$25$   |$25$
-      |`READ(A,t)`     |               |       |
-      |`t := t + 100`  |               |       |
-      |`WRITE(A,t)`    |               | $125$ |
-      |                |`READ(A,s)`    |       |
-      |                |`s := s * 2`   |       |
-      |                |`WRITE(A, s)`  |$250$  |
-      |`READ(B, t)`    |               |       |
-      |`t := t + 100`  |               |       |
-      |`WRITE(B, t)`   |               |       |$125$
-      |                |`READ(B, s)`   |       |
-      |                |`s := s * 2`   |       |
-      |                |`WRITE(B, s)`  |       |$250$
+    |$T_1$           |$T_2$          |$A$    |$B$
+    |----------------|---------------|-------|-------
+    |`READ(A,t)`     |               |$25$   |$25$
+    |`t := t + 100`  |               |       |
+    |`WRITE(A,t)`    |               | $125$ |
+    |                |`READ(A,s)`    |       |
+    |                |`s := s * 2`   |       |
+    |                |`WRITE(A, s)`  |$250$  |
+    |`READ(B, t)`    |               |       |
+    |`t := t + 100`  |               |       |
+    |`WRITE(B, t)`   |               |       |$125$
+    |                |`READ(B, s)`   |       |
+    |                |`s := s * 2`   |       |
+    |                |`WRITE(B, s)`  |       |$250$
 
     This shows a schedule of the transactions of the first example that
     is seriablizable but not serial. In this schedule, $T_2$ acts on $A$
@@ -1551,6 +1549,13 @@ Serializable
     To convince ourselves of the truth of this statement, we must
     consider not only the effect from the database state $A = B = 25$,
     but from any consistent database state.
+
+:   A *transaction schedule* is *serializable* if its outcome (e.g., 
+	the resulting database state) is equal to the outcome of its 
+	transactions executed sequentially without overlapping in time.
+
+:   A schedule that is equivalent (in its outcome) to a serial schedule 
+	has the serializability property.
 
 #### The Effect of Transaction Semantics
 
@@ -1580,7 +1585,6 @@ $$T_2 : r_2(A); w_2(A); r_2(B); w_2(B)$$
     1.  A *action* is an expression of the form $R_i(X)$ or $w_i(X)$,
         meaning that transaction $T_i$ reads or writes, respectively,
         the database element $X$.
-
     2.  A *transaction* $T_i$ is a sequence of actions with subscript
         $i$.
     3.  A *schedule* $S$ is a set of transactions $T$ is a sequences of
@@ -1595,15 +1599,22 @@ $$T_2 : r_2(A); w_2(A); r_2(B); w_2(B)$$
     called "conflict-serializablity", that is stronger than the general
     notion of serialiability introduced ealier.
 
+#### Conflicts
+
 Conflict
 :   A pair of consecutive actions in a schedule that, if their order is
     interchanged, then the behavior of at least one of transactions can
     change.
 
-#### Conflicts
+:   Two actions are said to be in conflict (conflicting pair) if:
 
--   Most pairs of actions do *not* conflict.
--   In what follows, we assume that $T_i$ and $T_j$ are different
+	1.  The actions belong to different transactions.
+	2.  At least one of the actions is a write operation.
+	3.  The actions access the same object (read or write).
+
+:   Most pairs of actions do *not* conflict.
+
+:   In what follows, we assume that $T_i$ and $T_j$ are different
     transactions:
 
     1.  $r_i(X); r_j(Y)$ is never a conflict, even if $X = Y$. The
@@ -1616,15 +1627,53 @@ Conflict
 
     3.  $w_i(X); r_j(Y)$ is not a confict if $X \neq Y$.
 
-#### Atomicity
+:   Three ways that always conflict:
 
-#### Transactions
+	1.  Two actions of the same transactions always conflict.
+	2.  Two writes of the same database element by different transactions
+		conflict. That is, $w_i(X); w_j(X)$ is a conflict.
+	3.  A read and a write of the same database element by different
+		transaction also close.
 
-#### Read-Only Transactions
+Conflict equivalence
 
-#### Dirty Reads
+:   The schedules S1 and S2 are said to be conflict-equivalent if 
+	following two conditions are satisfied:
 
-#### Other Isolation Levels
+	1.  Both schedules S1 and S2 involve the same set of transactions 
+		(including ordering of actions within each transaction).
+	2.  The set of conflicting pairs in S1 is the same as in S2.
+
+Conflict-serializable
+
+:   A schedule is said to be conflict-serializable when the schedule 
+	is conflict-equivalent to one or more serial schedules.
+
+### ACID
+
+ACID
+:   Atomicity, Consistency, Isolation, Durability
+
+Atomicity
+:   In an *atomic* transaction, a series of database operations either all 
+	occur, or nothing occurs.
+
+Consistency
+:   A *consistent* transaction is one that *does not 
+	violate any integrity constraints* during its execution. If a 
+	transaction leaves the database in an illegal state, it is aborted 
+	and an error is reported.
+
+Isolation
+:   *Isolation* is a property that defines how/when the
+	changes made by one operation become *visible to other concurrent 
+	operations*.
+
+Durability
+:   The property which guarantees that *transactions* that have 
+	committed *will survive permanently*. For example, if a flight 
+	booking reports that a seat has successfully been booked, 
+	then the seat will remain booked even if the system crashes.
 
 ### Concurrency Control
 
@@ -1644,12 +1693,6 @@ Transaction
     status. To provide isolation between programs accessing a database
     concurrently. If this isolation is not provided, the program's
     outcome are possibly erroneous.
-
-### Blocks
-
-### Seeks
-
-### Transfers
 
 ### Indexes
 
