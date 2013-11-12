@@ -1282,14 +1282,333 @@ Index key
     that one particular set of indexes is available.
 
 4.  The index set resulting in the lowest cost for the given workload is
-    sug­ gested to the designer, or it is automatically created.
+    suggested to the designer, or it is automatically created.
 
 November 9th, 2013 <small>Study Guide to Quiz</small>
 -----------------------------------------------------
 
-### Transactions
+### Data Access
+
+#### I/Os
+
+> Assume: Tables Sells, Likes and Drinker. Sells has 100,000 records,
+> Likes has 1 million records and Drinker has also 100,000 records.
+> Assume that each block of data (page) holds 100 records.
+
+block
+:   the smallest addressable unit on the hard disk.
+
+-   Assume average seek time is 10ms. and average block transfer time is
+    5ms.
+-   Take the largest table, Likes.
+-   Time to read Likes: \> Transfer + Seek time = 10,000 blocks x 5ms =
+    50 seconds + 10ms
+
+-   Time to find a specific record by sequentially scanning the file
+    (does Joe like Sam Adams?) - on average half of all the blocks will
+    have to be transferred and read, thus it is \> 5,000 blocks x 5ms =
+    25 seconds + 10ms (seek time)
+
+-   Now, lets assume that table Drinker has an index on the key
+    attribute which is the Drinker’s name. Lets assume that index is
+    organized as binary search tree and that drinkers table is ordered
+    by drinker’s names. There is 1000 blocks and 1000 index entries. If
+    there was miniscule amount of RAM – technically accessing each level
+    in the binary search tree would generate a disk seek, for 1000
+    entries, around 12! But realistically, the whole index would easily
+    fit to RAM even 20 years ago. So it would be 1 seek time and
+    probably several blocks of data to transfer the index to RAM. Then
+    perhaps 1 seek time + 1 transfer for the block which may contain the
+    record in drinker’s file. Thus, realistically we would need the
+    total of few transfer times and 2 x seek time = milliseconds!
+-   In the class slides – the options A3 and A4 (and A5 and A6) all
+    account for the height of the index (number of index levels, hi).
+    But we need to be realistic. With current large RAM sizes I do not
+    believe one would have to access index one block at a time, that is
+    assuming that only one block of an index fits to the main memory.
+    This time is long gone. I am assuming that there is enough RAM to
+    hold all index there. Thus, to access index only one seek time is
+    needed (assuming index is located contiguously) and several block
+    transfers to move to index from the disk to the main memory.
+-   So there are really only two cases worth comparing: the primary and
+    the secondary indexes. If index is primary all records with that
+    index value are consecutive on the disk. If index is secondary they
+    are not. This is particularly important for attributes which are not
+    key attributes. Consider two hypothetical attributes of Drinker
+    table: Zip Code and Gender. Lets assume there is 1000 drinkers per
+    zip code. And lets assume that there is roughly the same number of
+    male and female drinkers.
+-   Lets start with index on zip code. Assume that zip code index is
+    primary. In that case data on the disk is arranged by zip codes.
+    There is ten blocks of “drinkers” per zip code. Thus we will need
+    one seek for index to bring it from the disk and transfer several
+    blocks of index (negligible) plus another seek time for the first
+    block of zipcode 08901 and transfer time for ten blocks of data.
+    Total: \> 2 x seek time = 20 ms \> 20 block transfers = 100 ms \>
+    Total of 120 ms
+
+-   Now assume that index on zip code is not primary (clustering).
+    Drinkers in 08901 zip code may now be located on different blocks of
+    the Drinker file. While Index transfer and seek time remains
+    unchanged, we may now have to seek and transfer 1000 blocks from the
+    hard disk since in the worst case each of the drinkers may be on
+    different block. This time will dominate the overall performance
+    since it will be \> 1000 x (10ms +5ms) = 15 seconds
+
+-   Now, just imagine what would happen if we repeated the same
+    reasoning for much less selective index on “Gender”! All in all, the
+    overall performance of a simple select from one table query is
+    determined by whether there is an index, how selective is an
+    attribute and if index is primary (clustering) or secondary.
+    Selectivity of an index and proximity of records on the disk are the
+    main factors in determination of overall performance. As I said in
+    class, using an index is not always a great idea. For example, if a
+    query asks for all female drinkers and the index on gender is
+    non-primary, one may need to access 50,000 drinkers and transfer
+    blocks of data 50,000 times (assuming no caching of previously
+    accessed blocks). This would be: \> 50,000 x 15ms = 750 seconds!
+
+-   This is as opposed just to reading the file sequentially – roughly
+    1000 x 10ms = 10 seconds (1000 blocks of data transferred and one
+    additional seek)
+
+#### Joins
+
+-   This is where the real performance bottlenecks begin. One can easily
+    choke the db system on joins. Even joining two tables may prove to
+    be very expensive. But joins of more than two tables (even self
+    joins) will quickly make your system unresponsive. Just to
+    illustrate this points lets use calculations from the slides.
+-   Suppose we make natural join of tables “sells” with “likes” on the
+    beer attribute. For outer table always chose a smaller of the two
+    tables – arguments of the natural join. Thus, our outer table will
+    be the Sells table and our inner table will be Likes table.
+-   In the worst case, if there is enough memory only to hold one block
+    of each relation (OK, this is really not so realistic in this case!)
+    the estimated cost is
+
+$$nr ∗ bs + br$$
+
+-   Which is $100,000 \times 10,000 + 1000$ block transfers = roughly
+    one billon block transfers! That would be $5 x 10^6$ seconds! What
+    is it, a few months or something?
+-   And $100,000 + 1000$ seeks = $101,000$ seeks $= 1000 seconds$, very
+    brisk comparing with the data transfer…..
+-   Yes, true, very unrealistic, tuple at a time and practically no RAM.
+    Below is a more realistic calculations with block nested loop join
+-   Worst case estimate: $b_r \times b_s + b_r$ block transfers
+    $+ 2 \times br  $seeks
+-   Each block in the inner relation s is read once for each block in
+    the outer relation (instead of once for each tuple in the outer
+    relation
+-   Best case: $b_r + b_s$ block transfers $+ 2$ seeks.
+-   Now we have $1000 \times 10,000 + 1000 = 10$ million block transfers
+    this is merely just $50,000$ seconds.\
+-   Finally suppose we have an index on “beer” which is an attribute we
+    join both tables on Now the cost is:
+-   Cost of the join: $b_r (t_T + t_S) + n_r ∗ c$
+-   Where c is the cost of traversing index and fetching all matching s
+    tuples for one tuple or r
+-   c can be estimated as cost of a single selection on s using the join
+    condition
+-   Thus, on our case, it is 1000 block transfers and seeks (since now
+    we bring one block at a time) for sells and then for each record in
+    sells we will use index on beer 100,000 times just to retrieve the
+    matching tuples in Likes in order to compute the natural join. Lets
+    first assume there is 1000 beers so each of them is liked by 100
+    drinkers on average. If the index on beer is a primary one that
+    would be just 1 block of drinkers. Overall that would translate to
+    roughly only 100,000 I/Os (transfer + seek time), 500 seconds
+    overall. But if the index on beer was non-primary, that would be 100
+    blocks and 10 million I/Os…..not nearly as good.
+
+### Transactions <small>Chapter 6, pg. 296-</small>
+
+Scheduler
+:   The timing of individual steps of different transactions needs to be
+    regulated in some manner. This is the job of a *scheduler* component
+    of a DBMS.
+
+        +-----------------+
+        | Transaction     |
+        | Manager         |
+        +-----------------+
+            | Read/write
+            | requests
+            v
+        +-----------------+
+        | Scheduler       |
+        |                 |
+        +-----------------+
+            | Reads and
+            | writes
+            V
+        +-----------------+
+        |||||||||||||||||||
+        |||||||||||||||||||
+        +-----------------+
+
+Concurrency control
+:   The general process of assuring that transactions preserve
+    consistency when executing simultaneously.
+
+Serializability
+:   Assuring that concurrently executing transactions preserve
+    correctness of the database state.
+
+Conflict-serializability
+:   A stronger conditions that most schedulers actually enforce.
+
+### Serial and Serializable Schedules
+
+> **(Correctness Principle)**: Every transaction, if executed in
+> isolation (without any other transactions running concurrently), will
+> transform any consistent state to another consistent state.
+
+#### Schedules
+
+Schedule
+:   A sequence of the important actions taken by one or more
+    transactions.
+
+  $T_1$            $T_2$
+  ---------------- ---------------
+  `READ(A, t)`     `READ(A, s)`
+  `t := t + 100`   `s := s * 2`
+  `WRITE(A, t)`    `WRITE(A, s)`
+  `READ(B, t)`     `READ(B, s)`
+  `t := t + 100`   `s := s * 2`
+  `WRITE(B, t)`    `WRITE(B, s)`
+
+#### Serial Schedules
+
+Serial
+:   A *schedule* is *serial* if its actions consist of all the actions
+    of one transaction, then all the actions of another transaction, and
+    so on. No mixing of actions is allowed.
+
+      $T_1$            $T_2$           $A$     $B$
+      ---------------- --------------- ------- -------
+                                       $25$    $25$
+      `READ(A,t)`                              
+      `t := t + 100`                           
+      `WRITE(A,t)`     $125$                   
+      `READ(B,t)`                              
+      `t := t + 100`                           
+      `WRITE(B, t)`                            $125$
+                       `READ(A, s)`            
+                       `s := s * 2`            
+                       `WRITE(A, s)`   $250$   
+                       `READ(B, s)`            
+                       `s := s * 2`            
+                       `WRITE(B, s)`           $250$
+
+    For the transaction here, there are two serial schedules. There in
+    $T_1$ which precedes $T_2$, and the initial state is $A = B = 25$.
+    We shall take the convention that when displayed vertically, time
+    process down the page. Also the values of $A$ and $B$ shown refer to
+    their valleys in main-memory buffers, not necessarily to their
+    values on disk.
+
+#### Serializable Schedules
+
+The Correctness Principle for Transactions
+:   Every serial schedule will preserve consistency of the database
+    state.
+
+Serializable
+:   In general, we say that a schedule $S$ is *serializable* if there is
+    a serial schedule $S\prime$ such that for every initial database
+    state, the effects of $S$ and $S\prime$ are the same.
+
+      $T_1$            $T_2$           $A$     $B$
+      ---------------- --------------- ------- -------
+                                       $25$    $25$
+      `READ(A,t)`                              
+      `t := t + 100`                           
+      `WRITE(A,t)`     $125$                   
+                       `READ(A,s)`             
+                       `s := s * 2`            
+                       `WRITE(A, s)`   $250$   
+      `READ(B, t)`                             
+      `t := t + 100`                           
+      `WRITE(B, t)`                            $125$
+                       `READ(B, s)`            
+                       `s := s * 2`            
+                       `WRITE(B, s)`           $250$
+
+    This shows a schedule of the transactions of the first example that
+    is seriablizable but not serial. In this schedule, $T_2$ acts on $A$
+    after $T_1$ does, but before $T_1$ acts on $B$. However, we see that
+    the effect of the two transactions scheduled in this manner is the
+    same as for the serial schedule.
+
+    To convince ourselves of the truth of this statement, we must
+    consider not only the effect from the database state $A = B = 25$,
+    but from any consistent database state.
+
+#### The Effect of Transaction Semantics
+
+> Any database element $A$ that a transaction $T$ writes is given a
+> value that depends on the database state in such a way that no
+> arithmetic coincidences occur.
+
+#### A Notation for Transactions and Schedules
+
+-   If we assume "no conincidences," the only the reads and writes
+    performed by the transactions matter, not the actual values
+    involved.
+    -   Thus, we shall represent transactions and schedules by a
+        shorthand notation, in which the actions are $r_T (X)$ and
+        $w_T (X)$,
+        -   Meaning that transactions $T$ reads, or respectively writes,
+            database element $X$.
+
+-   The first table can be written:
+
+$$T_1 : r_1(A); w_1(A); r_1(B); w_1(B)$$
+$$T_2 : r_2(A); w_2(A); r_2(B); w_2(B)$$
+
+-   To make notation precise:
+    1.  A *action* is an expression of the form $R_i(X)$ or $w_i(X)$,
+        meaning that transaction $T_i$ reads or writes, respectively,
+        the database element $X$.
+    2.  A *transaction* $T_i$ is a sequence of actions with subscript
+        $i$.
+    3.  A *schedule* $S$ is a set of transactions $T$ is a sequences of
+        actions, in which each transaction $T_i$ in $T$, the actions of
+        $T_i$ appear in $S$ in the same order that they appear in the
+        definition of $T_i$ itself. We say that $S$ is an *interleaving*
+        of the actions of the transactions of which it is composed.
+
+#### Atomicity
+
+#### Transactions
+
+#### Read-Only Transactions
+
+#### Dirty Reads
+
+#### Other Isolation Levels
 
 ### Concurrency Control
+
+Concurrency control
+:   ensures that correct results for concurrent operations are
+    generated, while getting those results as quickly as possible.
+
+Transaction
+:   A transaction comprises a unit of work performed within a database
+    management system (or similar system) against a database, and
+    treated in a coherent and reliable way independent of other
+    transactions. Transactions in a database environment have two main
+    purposes: To provide reliable units of work that allow correct
+    recovery from failures and keep a database consistent even in cases
+    of system failure, when execution stops (completely or partially)
+    and many operations upon a database remain uncompleted, with unclear
+    status. To provide isolation between programs accessing a database
+    concurrently. If this isolation is not provided, the program's
+    outcome are possibly erroneous.
 
 ### Blocks
 
@@ -1298,6 +1617,209 @@ November 9th, 2013 <small>Study Guide to Quiz</small>
 ### Transfers
 
 ### Indexes
+
+Indexes
+:   While not part of the SQL standard, commercial SQL systems allow the
+    declaration of indexes on attributes; the indexes speed up certain
+    queries that involve specification of value, or range of values, for
+    the indexed attribute(s).
+
+Choosing indexes
+:   While indexes speed up queries, they slow down database
+    modifications, since the indexes on the modified relation must also
+    be modified. Thus, the choice of indexes is a complex problem,
+    depending on the actual mix of queries and modifications perfumed on
+    the database.
+
+Automatic index selection
+:   Some DBMS's offer tools to choose indexes for a database
+    automatically. They examine the typical queries and modifications
+    performed on the database and evaluate the cost trade-off for
+    different indexes that might be created.
+
+November 11th, 2013 <small>Gradiance reading</small>
+----------------------------------------------------
+
+Scheduler
+:   The timing of individual steps of different transactions needs to be
+    regulated in some manner. This is the job of a *scheduler* component
+    of a DBMS.
+
+        +-----------------+
+        | Transaction     |
+        | Manager         |
+        +-----------------+
+            | Read/write
+            | requests
+            v
+        +-----------------+
+        | Scheduler       |
+        |                 |
+        +-----------------+
+            | Reads and
+            | writes
+            V
+        +-----------------+
+        |||||||||||||||||||
+        |||||||||||||||||||
+        +-----------------+
+
+Concurrency control
+:   The general process of assuring that transactions preserve
+    consistency when executing simultaneously.
+
+Serializability
+:   Assuring that concurrently executing transactions preserve
+    correctness of the database state.
+
+Conflict-serializability
+:   A stronger conditions that most schedulers actually enforce.
+
+### Serial and Serializable Schedules
+
+> **(Correctness Principle)**: Every transaction, if executed in
+> isolation (without any other transactions running concurrently), will
+> transform any consistent state to another consistent state.
+
+#### Schedules
+
+Schedule
+:   A sequence of the important actions taken by one or more
+    transactions.
+
+  $T_1$            $T_2$
+  ---------------- ---------------
+  `READ(A, t)`     `READ(A, s)`
+  `t := t + 100`   `s := s * 2`
+  `WRITE(A, t)`    `WRITE(A, s)`
+  `READ(B, t)`     `READ(B, s)`
+  `t := t + 100`   `s := s * 2`
+  `WRITE(B, t)`    `WRITE(B, s)`
+
+#### Serial Schedules
+
+Serial
+:   A *schedule* is *serial* if its actions consist of all the actions
+    of one transaction, then all the actions of another transaction, and
+    so on. No mixing of actions is allowed.
+
+      $T_1$            $T_2$           $A$     $B$
+      ---------------- --------------- ------- -------
+                                       $25$    $25$
+      `READ(A,t)`                              
+      `t := t + 100`                           
+      `WRITE(A,t)`     $125$                   
+      `READ(B,t)`                              
+      `t := t + 100`                           
+      `WRITE(B, t)`                            $125$
+                       `READ(A, s)`            
+                       `s := s * 2`            
+                       `WRITE(A, s)`   $250$   
+                       `READ(B, s)`            
+                       `s := s * 2`            
+                       `WRITE(B, s)`           $250$
+
+    For the transaction here, there are two serial schedules. There in
+    $T_1$ which precedes $T_2$, and the initial state is $A = B = 25$.
+    We shall take the convention that when displayed vertically, time
+    process down the page. Also the values of $A$ and $B$ shown refer to
+    their valleys in main-memory buffers, not necessarily to their
+    values on disk.
+
+#### Serializable Schedules
+
+The Correctness Principle for Transactions
+:   Every serial schedule will preserve consistency of the database
+    state.
+
+Serializable
+:   In general, we say that a schedule $S$ is *serializable* if there is
+    a serial schedule $S\prime$ such that for every initial database
+    state, the effects of $S$ and $S\prime$ are the same.
+
+      $T_1$            $T_2$           $A$     $B$
+      ---------------- --------------- ------- -------
+                                       $25$    $25$
+      `READ(A,t)`                              
+      `t := t + 100`                           
+      `WRITE(A,t)`     $125$                   
+                       `READ(A,s)`             
+                       `s := s * 2`            
+                       `WRITE(A, s)`   $250$   
+      `READ(B, t)`                             
+      `t := t + 100`                           
+      `WRITE(B, t)`                            $125$
+                       `READ(B, s)`            
+                       `s := s * 2`            
+                       `WRITE(B, s)`           $250$
+
+    This shows a schedule of the transactions of the first example that
+    is seriablizable but not serial. In this schedule, $T_2$ acts on $A$
+    after $T_1$ does, but before $T_1$ acts on $B$. However, we see that
+    the effect of the two transactions scheduled in this manner is the
+    same as for the serial schedule.
+
+    To convince ourselves of the truth of this statement, we must
+    consider not only the effect from the database state $A = B = 25$,
+    but from any consistent database state.
+
+#### The Effect of Transaction Semantics
+
+> Any database element $A$ that a transaction $T$ writes is given a
+> value that depends on the database state in such a way that no
+> arithmetic coincidences occur.
+
+#### A Notation for Transactions and Schedules
+
+-   If we assume "no conincidences," the only the reads and writes
+    performed by the transactions matter, not the actual values
+    involved.
+    -   Thus, we shall represent transactions and schedules by a
+        shorthand notation, in which the actions are $r_T (X)$ and
+        $w_T (X)$,
+        -   Meaning that transactions $T$ reads, or respectively writes,
+            database element $X$.
+
+-   The first table can be written:
+
+$$T_1 : r_1(A); w_1(A); r_1(B); w_1(B)$$
+$$T_2 : r_2(A); w_2(A); r_2(B); w_2(B)$$
+
+-   To make notation precise:
+    1.  A *action* is an expression of the form $R_i(X)$ or $w_i(X)$,
+        meaning that transaction $T_i$ reads or writes, respectively,
+        the database element $X$.
+    2.  A *transaction* $T_i$ is a sequence of actions with subscript
+        $i$.
+    3.  A *schedule* $S$ is a set of transactions $T$ is a sequences of
+        actions, in which each transaction $T_i$ in $T$, the actions of
+        $T_i$ appear in $S$ in the same order that they appear in the
+        definition of $T_i$ itself. We say that $S$ is an *interleaving*
+        of the actions of the transactions of which it is composed.
+
+### Conflict-Serializability <small>pg. 800</small>
+
+-   Schedulers in commercial systems generally enforce a condition,
+    called "conflict-serializablity", that is stronger than the general
+    notion of serialiability introduced ealier.
+
+Conflict
+:   A pair of consecutive actions in a schedule that, if their order is
+    interchanged, then the behavior of at least one of transactions can
+    change.
+
+#### Conflicts
+
+-   Most pairs of actions do *not* conflict.
+-   In what follows, we assume that $T_i$ and $T_j$ are different
+    transactions:
+    1.  $r_i(X); r_j(Y)$ is never a conflict, even if $X = Y$. The
+        reason is that neither of these steps change the value of any
+        database element.
+    2.  $r_i(X); w_j(Y)$ is not a conflict *provided* that
+        $X \nequal Y$. The reason is that should $T_j$ write $Y$ before
+        $T_i$ reads $X$, the value of $X$ is not change.
+    3.  $w_i(X); r_j(Y)$ is not a confict if $X \nequal Y$.
 
 November 5th <small>Transactions and Concurrency Control</small>
 ----------------------------------------------------------------
