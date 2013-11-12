@@ -1497,7 +1497,7 @@ Serial
       |                |               |$25$   |$25$
       |`READ(A,t)`     |               |       |
       |`t := t + 100`  |               |       |
-      |`WRITE(A,t)`    |$125$          |       |
+      |`WRITE(A,t)`    |               |$125$  |
       |`READ(B,t)`     |               |       |
       |`t := t + 100`  |               |       |
       |`WRITE(B, t)`   |               |       |$125$
@@ -1531,7 +1531,7 @@ Serializable
       |                |               |$25$   |$25$
       |`READ(A,t)`     |               |       |
       |`t := t + 100`  |               |       |
-      |`WRITE(A,t)`    |$125$          |       |
+      |`WRITE(A,t)`    |               | $125$ |
       |                |`READ(A,s)`    |       |
       |                |`s := s * 2`   |       |
       |                |`WRITE(A, s)`  |$250$  |
@@ -1611,10 +1611,10 @@ Conflict
         database element.
 
     2.  $r_i(X); w_j(Y)$ is not a conflict *provided* that
-        $X \nequal Y$. The reason is that should $T_j$ write $Y$ before
+        $X \neq Y$. The reason is that should $T_j$ write $Y$ before
         $T_i$ reads $X$, the value of $X$ is not change.
 
-    3.  $w_i(X); r_j(Y)$ is not a confict if $X \nequal Y$.
+    3.  $w_i(X); r_j(Y)$ is not a confict if $X \neq Y$.
 
 #### Atomicity
 
