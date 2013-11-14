@@ -1085,4 +1085,10 @@ October 30th, 2013 <small>1st Meeting on 'Skeptical and Perceptual Knowledge'</s
     3.  \$\\lnot p \\rightarrowtail \\lnot Bp\$
     4.  \$p \\rightarrowtail Bp\$
 
-*[BIV]: Brain in a vat *[EDD]: Evil demon deceived
+November 11th, 2013 <small>1st Meeting on Closure</small>
+-------------------------------------------------------------------------------------
+
+
+
+*[BIV]: Brain in a vat 
+*[EDD]: Evil demon deceived

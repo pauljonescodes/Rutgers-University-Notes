@@ -30,18 +30,20 @@ objectives are accomplished through extensive laboratory exercises.
 
 -   Computer Science majors ...
     -   will be prepared to contribute to a rapidly changing field by
-        acquiring a thorough grounding in the core principles and
-        foundations of computer science (e.g., techniques of program
-        design, creation, and testing; key aspects of computer hardware;
-        algorithmic principles).
+            acquiring a thorough grounding in the core principles and
+            foundations of computer science (e.g., techniques of program
+            design, creation, and testing; key aspects of computer hardware;
+            algorithmic principles).
+
     -   will acquire a deeper understanding on (elective) topics of more
-        specialized interest, and be able to critically review, assess,
-        and communicate current developments in the field.
+            specialized interest, and be able to critically review, assess,
+            and communicate current developments in the field.
+
     -   will be prepared for the next step in their careers, for
-        example, by having done a research project (for those headed to
-        graduate school), a programming project (for those going into
-        the software industry), or some sort of business plan (for those
-        going into startups).
+            example, by having done a research project (for those headed to
+            graduate school), a programming project (for those going into
+            the software industry), or some sort of business plan (for those
+            going into startups).
 
 Syllabus
 --------
@@ -160,6 +162,7 @@ Project part 2
 </table>
 
 
+
 ### Important Dates
 
 <table class="table">
@@ -250,6 +253,7 @@ In-class exam.
 </tbody>
 </table>
 
+
 ### Policy on Missed Examinations
 
 You must have a pressing reason (such as a medical emergency or personal
@@ -333,7 +337,8 @@ June 24th, 2013 <small>Lecture: Socket Programming</small>
         outToServer.writeBytes("Hello, World!");
 
 -   Close your socket, when you're done, exception code, catch and
-    close!
+        close!
+
     -   It can only help.
 
 June 26th, 2013 <small>Recitation</small>
@@ -342,7 +347,8 @@ June 26th, 2013 <small>Recitation</small>
 ### Threading and concurrency
 
 -   When you run an application on your machine, on the OS level that is
-    represented by a process.
+        represented by a process.
+
     -   If I'm running Chrome, that's a process.
     -   There's only ever one process running.
     -   There's usually an interface for having multiple threads.
@@ -355,17 +361,20 @@ June 26th, 2013 <small>Recitation</small>
         }
 
     -   This only allows for conversation where one person talks, then
-        the other talks, then the other.
+            the other talks, then the other.
+
         -   This is odd.
 
     -   Whenever there is a message from either person, it'd be great to
-        have that done on a seperate thread.
+            have that done on a seperate thread.
+
         -   You can also imagine you get a connection from a client, and
-            you can send back some data, but 100 clients that also want
-            to connect.
+                you can send back some data, but 100 clients that also want
+                to connect.
+
         -   A lot of servers have a feature where they're listening for
-            new connections and for every new one, it spins a new
-            thread.
+                new connections and for every new one, it spins a new
+                thread.
 
 -   Synchronization can be done with locks
 
@@ -376,8 +385,9 @@ June 26th, 2013 <small>Recitation</small>
         unlock L; // allows others to start now
 
     -   There is a way to make an entire function synchronized, and,
-        well, it's with the word `synchronized` in the method name after
-        public.
+            well, it's with the word `synchronized` in the method name after
+            public.
+
     -   But you can also synchronize on a variable.
 
             public void increment() {
@@ -416,7 +426,8 @@ June 26th, 2013 <small>Lecture: Network Switching Techniques</small>
 -   There are the big ones, medium ones, and small ones.
 -   ISPs connect to ISPs
 -   A packet has to pass through your local ISP, your Tier 3, Tier 2
-    ISP, and finally to the root. Then back again.
+        ISP, and finally to the root. Then back again.
+
     -   Seven used to be average, now 14.
     -   At Rutgers it's like 2-3.
 
@@ -428,12 +439,14 @@ June 26th, 2013 <small>Lecture: Network Switching Techniques</small>
         -   Steps:
             1.  Control message sets up a path from origin to dest.
             2.  Return signal informs source that data transmission may
-                proceed.
+                    proceed.
+
             3.  Data transmission begins.
             4.  Entire path remains allocated to the transmission
-                (whether used or not).
+                    (whether used or not).
+
             5.  When transmission is complete, source relerases the
-                circuit.
+                    circuit.
 
     2.  Message switching
         -   Sends the whole peice of data into the ISPs.
@@ -441,7 +454,8 @@ June 26th, 2013 <small>Lecture: Network Switching Techniques</small>
     3.  Packet switching
         -   Messages are split into smaller pieces called packets.
         -   These packets are numbered and addressed and sent through
-            the network one at a time.
+                the network one at a time.
+
         -   Allows pipelining.
         -   **Overlap sending**
 
@@ -464,43 +478,52 @@ June 30th, 2013 <small>Reading: <em>Chapter 1, Computer Networks and the Interne
 ### A Nuts-and-Bolts Description
 
 -   The Internet is a computer network that interconnects hundreds of
-    millions of computers.
+        millions of computers.
+
     -   These use to be desktops
     -   All devices that are hooked up to the Internet are called
-        **hosts** or **end systems**.
+            **hosts** or **end systems**.
 
 -   End systems are connected by a network of **communication links**
-    and **packet switches**.
+        and **packet switches**.
+
     -   Different links can transmit data at different rates, with the
-        **transmission rate** of a link measured in bits per second.
+            **transmission rate** of a link measured in bits per second.
+
     -   The resulting packages of information are known as **packets**.
         -   These are taken apart and reassembeled during this process.
 
 -   Packet switches come in many shapes and flavors, the two most
-    prominent bing **routers** and **link-layer switches**.
+        prominent bing **routers** and **link-layer switches**.
+
     -   **Link-layer switches** are typically used to access networks.
     -   **Routers** are using in the network core.
     -   The sequence of communication layers that information goes
-        through to reach the end system is known as the **route** or
-        **path**.
+            through to reach the end system is known as the **route** or
+            **path**.
 
 -   End system access to the internet is thourugh
-    <abbr title="Internet Service Providers">ISPs</abbr>.
+        <abbr title="Internet Service Providers">ISPs</abbr>.
+
 -   End systems, packet switches, and other pieces of the Internet run
-    **protocols** that control the sending and receiving of information
-    within in the Internet.
+        **protocols** that control the sending and receiving of information
+        within in the Internet.
+
     -   The <abbr title="Transmission Control Protocol">TCP</abbr> and
-        the <abbr title="Internet Protocol">IP</abbr> are two of the
-        most important protocols on the Internet.
+            the <abbr title="Internet Protocol">IP</abbr> are two of the
+            most important protocols on the Internet.
+
         -   IP protocol specifies the format of the packets that are
-            sent and recieved among routers and other end systems.
+                sent and recieved among routers and other end systems.
+
         -   The Internet's pirncipal protocols are collectively known as
-            **TCP/IP**.
+                **TCP/IP**.
 
 ### A Services Description
 
 -   We can describe the Internet from an entirely different angle, that
-    it's *an infrastructure that provides services to applications*.
+        it's *an infrastructure that provides services to applications*.
+
     -   For example, here are some **distributed applications**,
         -   Email
         -   Web surfing
@@ -511,10 +534,10 @@ June 30th, 2013 <small>Reading: <em>Chapter 1, Computer Networks and the Interne
         -   Remote loging
 
 -   End systems attached to the Intenet provide
-    \*\*<abbr title="Application
-                                    Programming Interfaces">APIs</abbr>
-    that specify how a program on one end system asks the Internet
-    infrastucture to deliver data to a specific destination.
+        \*\*<abbr title="Application
+                                        Programming Interfaces">APIs</abbr>
+        that specify how a program on one end system asks the Internet
+        infrastucture to deliver data to a specific destination.
 
 ### What Is a Protocol?
 
@@ -527,43 +550,50 @@ June 30th, 2013 <small>Reading: <em>Chapter 1, Computer Networks and the Interne
 
 -   Hosts are grouped into two categories:
     -   **Clients**, which tend to be desktops, mobile PCs, smartphones,
-        etc.
+            etc.
+
     -   **Servers**, which tend to be more powerful machines that store
-        and distribute Web pages, stream video, relay email, etc.
+            and distribute Web pages, stream video, relay email, etc.
+
     -   **Data centers** have possibly thousands of servers.
 
 #### Access Networks <small>Home Access: DSL, Cable, FTTH, Dial-Up and Stellite</small>
 
 -   <abbr title="Digital subscriber line">DSL</abbr> and cable are the
-    two most prevelant types of broadband.
+        two most prevelant types of broadband.
+
 -   **Cable Internet access** makes use of cable television's existing
-    cable television infrastructure.
+        cable television infrastructure.
+
 -   <abbr title="Fiber to the home">FTTH</abbr> is growing.
 
 ### Physical media
 
 -   For each transmitter-receiver pain, a bit is sent by propagating
-    electromagnetic waves or optical pulses across a **physical
-    medium**. These have two categories:
+        electromagnetic waves or optical pulses across a **physical
+        medium**. These have two categories:
+
     -   **Guided media**, which the waves are guided along a solid
-        medium, such as:
+            medium, such as:
+
         -   Fiber-optic cable
         -   Twisted-pair copper wire
         -   Coaxial cable
 
     -   **Unguided media**, where the waves propogate in the atmosphere
-        and in outer-space, such as wireless LAN or a digital satellite
-        channel.
+            and in outer-space, such as wireless LAN or a digital satellite
+            channel.
 
 #### Twisted-Pair Copper Wire
 
 -   This is the least expensive and most commonly used transmission
-    medium.
+        medium.
+
     -   For hundreds of years, it has been used for telephones.
     -   99 percet of wired connections use twisted-pair copper wire.
 
 -   <abbr title="Unshielded twisted pair">UTP</abbr> is commonly used
-    for computer netowkrs withing a building, for LAN.
+        for computer netowkrs withing a building, for LAN.
 
 #### Coaxial Cable
 
@@ -574,12 +604,13 @@ June 30th, 2013 <small>Reading: <em>Chapter 1, Computer Networks and the Interne
 -   Coaxial cable can be used as a guided **shared medium**.
     -   A number of end systems can be connected directly to the cable.
     -   With each end receiving whatever is sent by the other end
-        system.
+            system.
 
 #### Fiber Optics
 
 -   Thin, flexible medium that conducts pulses of light, each pulse
-    representing a bit.
+        representing a bit.
+
 -   Long distance communication uses this.
 
 ### The Network Core
@@ -589,10 +620,12 @@ June 30th, 2013 <small>Reading: <em>Chapter 1, Computer Networks and the Interne
 -   End systems enchange **messages** with each other.
     -   These contain anything the application designer wants.
     -   To send a message from source end systems to destination end
-        systems, the source breaks long messages into smaller chunks of
-        data known as **packets**.
+            systems, the source breaks long messages into smaller chunks of
+            data known as **packets**.
+
     -   **Packet switches** are where the information travels tbhrough.
-        There are:
+            There are:
+
         -   **Routers**
         -   **Link-layer switches**
 
@@ -619,62 +652,69 @@ July 1st, 2013 <small>Assessment <em>Chapter 1</em></small>
 > starts, it will continue running for a relatively long period of time.
 > Answer the following questions, briefly justifying your answer:
 
-1.  Would a **packet-switched network** or a **circuit-switched
-    network** be more appropriate for this application? Why?
+1.  Would a **packet-switched network** or a \*\*circuit-switched
+        network** be more appropriate for this application? Why?
+
     -   The benefit of using a packet-switched network for this
-        application would be that it is inherently packet-based. Packets
-        are fixed units of data.
+            application would be that it is inherently packet-based. Packets
+            are fixed units of data.
+
     -   The benefit of using a circuit-switched network for this
-        application would be that you wouldn't have the overhead of
-        packet headers for each piece of data, which is small.
+            application would be that you wouldn't have the overhead of
+            packet headers for each piece of data, which is small.
+
     -   The downside of using a packet-switched network would be exactly
-        that, that because the data is sent very, very often, you have
-        the overhead of a packet for each transmission.
+            that, that because the data is sent very, very often, you have
+            the overhead of a packet for each transmission.
+
     -   The downside of using a circuit-switched network is that there
-        expensive up-front, because you actually have to establish a
-        circuit between both locations you want to transmit data from,
-        but you benefit from this if an application is truly
-        long-running.
+            expensive up-front, because you actually have to establish a
+            circuit between both locations you want to transmit data from,
+            but you benefit from this if an application is truly
+            long-running.
+
     -   Assuming that this is a long-running application and the
-        organizer has enough funds, circuit based switching would be a
-        better choice because you pay the cost once to establish a
-        connection between the two nodes and you can then transmit all
-        the data instantly for as long as you want. For example,
-        landlines are exactly what this problem describes, and landlines
-        use circuit-based switching. Furthermore, packet-based switching
-        to optimize utilization of available link capacity, which is
-        this case, it wouldn't fully utilize because of the small nature
-        of the packets. If the information could be assumed to be larger
-        and fewer between, packets would be perfect. Because the
-        information is small and often, and with the assumption that it
-        is possible to set up a dedicated circuit, circuit switching is
-        a better idea.
+            organizer has enough funds, circuit based switching would be a
+            better choice because you pay the cost once to establish a
+            connection between the two nodes and you can then transmit all
+            the data instantly for as long as you want. For example,
+            landlines are exactly what this problem describes, and landlines
+            use circuit-based switching. Furthermore, packet-based switching
+            to optimize utilization of available link capacity, which is
+            this case, it wouldn't fully utilize because of the small nature
+            of the packets. If the information could be assumed to be larger
+            and fewer between, packets would be perfect. Because the
+            information is small and often, and with the assumption that it
+            is possible to set up a dedicated circuit, circuit switching is
+            a better idea.
 
 2.  Suppose that a packet-switched network is used and the only traffic
-    in this network comes from such applications as described above.
-    Furthermore, assume that the sum of the application data rates is
-    less than the capacities of each and every link. Is some form of
-    congestion control needed? Why?
+        in this network comes from such applications as described above.
+        Furthermore, assume that the sum of the application data rates is
+        less than the capacities of each and every link. Is some form of
+        congestion control needed? Why?
 
     -   Network congestion is what happens when there are so many
-        requests for service put out that the queue is flooded and the
-        quality of the connection suffers as a result. If
-        packet-switched networking was implemented for a steady rate
-        data stream with a short time regeneration, then yes,
-        absolutely, you could use your knowledge in advance of
-        application to implement congestion control. Furthermore, it
-        would be wise to do it. Yes.
+            requests for service put out that the queue is flooded and the
+            quality of the connection suffers as a result. If
+            packet-switched networking was implemented for a steady rate
+            data stream with a short time regeneration, then yes,
+            absolutely, you could use your knowledge in advance of
+            application to implement congestion control. Furthermore, it
+            would be wise to do it. Yes.
 
 ### Question 3 <small>(7 points)</small>
 
 -   **Offline Application**: Runs as an application on the local host
-    (computer), and does not require network access for its' primary
-    functionality.
+        (computer), and does not require network access for its' primary
+        functionality.
+
 -   **Utilizes Network Access**: Runs as an application on the local
-    host (computer) but uses the network for basic functionality.
+        host (computer) but uses the network for basic functionality.
+
 -   **Software as a Service (SaaS)/Cloud Application**: Applications
-    that operate either as a web service or otherwise run completely
-    remotely on a computer other than the local host.
+        that operate either as a web service or otherwise run completely
+        remotely on a computer other than the local host.
 
 <table class="table">
 <tbody>
@@ -763,18 +803,22 @@ Yahoo! Mail
 </tbody>
 </table>
 
+
 ### Question 4 <small>(3 points)</small>
 
 The network core is defined as:
 
 1.  The technicians and administrators in charge of the network's
-    computers.
+        computers.
+
 2.  The collection of routers, switches, and network links responsible
-    for routing packets from host to host.<i class="icon-ok"></i>  
+        for routing packets from host to host.<i class="icon-ok"></i>  
+
 3.  The collection of web servers, email servers, and personal computers
-    connected to the network.
+        connected to the network.
+
 4.  The telecommunication (telecom) companies responsible for the
-    majority of the packet routing performed in the network.
+        majority of the packet routing performed in the network.
 
 ### Question 5 <small>(10 points)</small>
 
@@ -790,13 +834,15 @@ The network core is defined as:
 > decoded (as part of the analog signal at Host B)?
 
 -   The analog data is digitized at 64kbps, and Host A will need to
-    capture 56 bytes (448 bits) of data. 448/64,000 = .007 so this will
-    take 7 msec.
+        capture 56 bytes (448 bits) of data. 448/64,000 = .007 so this will
+        take 7 msec.
+
 -   Next, the 448-bit packet must be transmitted onto the link at 2
-    Mbps. This will take an additional .224 msec (448/2,000,000 =
-    .000224). So far it has taken 7.224 msec.
+        Mbps. This will take an additional .224 msec (448/2,000,000 =
+        .000224). So far it has taken 7.224 msec.
+
 -   The last bit of the packet will arrive 10 msec later, bringing the
-    total to 17.224 msec from analog to analog.
+        total to 17.224 msec from analog to analog.
 
 July 1st, 2013 <small>Homework: <em>Simple Socket Programming</em></small>
 --------------------------------------------------------------------------
@@ -838,18 +884,23 @@ as your class has the same name (`EchoClient`). To successfully complete
 this assignment, your program must do the following:
 
 1.  Accept the echo server hostname/IP address as `args[0]` and the port
-    as `args[1]` in the main method.  The port should be parsed into an
-    int or `Integer`.
+        as `args[1]` in the main method.  The port should be parsed into an
+        int or `Integer`.
+
 2.  Construct a socket connected to the echo server based on the
-    hostname/port specified in the command-line arguments.
+        hostname/port specified in the command-line arguments.
+
 3.  Read a single line of text from System.in and send it to the echo
-    server including any newline characters (CR/LF).
+        server including any newline characters (CR/LF).
+
 4.  Read a single line response from the echo server and print it to
-    System.out.
+        System.out.
+
 5.  Close the Socket to the echo server and any IOStreams that you may
-    have opened during the program's lifetime.
+        have opened during the program's lifetime.
+
 6.  Exit your program.  At no point in your application should you call
-    `System.exit(int)`.
+        `System.exit(int)`.
 
 Two resources are available to you: an example outline of a client and a
 JAR archive containing an appropriate echo server.  The client example
@@ -880,18 +931,21 @@ in the client example above (3456) you would execute:
 If this is your first time working directly with Sockets, IOStreams, and
 Strings, you may find the following classes/resources helpful:
 
--   [Java Tutorials Lesson: Basic
-    I/O](http://docs.oracle.com/javase/tutorial/essential/io/)
-    (oracle.com)
--   [I/O From the Command
-    Line](http://docs.oracle.com/javase/tutorial/essential/io/cl.html)
-    (oracle.com)
--   [Java Tutorials Lesson: All About
-    Sockets](http://docs.oracle.com/javase/tutorial/networking/sockets/)
-    (oracle.com)
--   [Reading from and Writing to a
-    Socket](http://docs.oracle.com/javase/tutorial/networking/sockets/readingWriting.html)
-    (oracle.com)
+-   [Java Tutorials Lesson:
+    Basic](http://docs.oracle.com/javase/tutorial/essential/io/)
+        (oracle.com)
+
+-   [I/O From the
+    Command](http://docs.oracle.com/javase/tutorial/essential/io/cl.html)
+        (oracle.com)
+
+-   [Java Tutorials Lesson: All
+    About](http://docs.oracle.com/javase/tutorial/networking/sockets/)
+        (oracle.com)
+
+-   [Reading from and Writing to
+    a](http://docs.oracle.com/javase/tutorial/networking/sockets/readingWriting.html)
+        (oracle.com)
 
 July 1st, 2013 <small>Project \#0</small>
 -----------------------------------------
@@ -923,33 +977,41 @@ metadata for the file to be downloaded.
 Your assignment should basically do the following:
 
 1.  Take as a command-line argument the name of the .torrent file to be
-    loaded and the name of the file to save the data to. For example:
+        loaded and the name of the file to save the data to. For example:
 
         java -cp . RUBTClient somefile.torrent picture.jpg
 
 2.  Open the .torrent file and parse the data inside. You may use
-    the `Bencoder2.java` class to decode the data.
+        the `Bencoder2.java` class to decode the data.
+
 3.  Send an HTTP GET request to the tracker at the IP address and port
-    specified by the TorrentFile object. The java.net.URL class is very
-    useful for this.
+        specified by the TorrentFile object. The java.net.URL class is very
+        useful for this.
+
 4.  Capture the response from the tracker and decode it in order to get
-    the list of peers. From this list of peers, use only the peer at IP
-    address 128.6.171.3. You must extract this IP from the list,
-    hard-coding it is not acceptable.
+        the list of peers. From this list of peers, use only the peer at IP
+        address 128.6.171.3. You must extract this IP from the list,
+        hard-coding it is not acceptable.
+
 5.  Open a TCP socket on the local machine and contact the peer using
-    the BT peer protocol and request a piece of the file.
+        the BT peer protocol and request a piece of the file.
+
 6.  Download the piece of the file and verify its SHA-1 hash against the
-    hash stored in the metadata file. The first time you begin the
-    download, you need to contact the tracker and let it know you are
-    starting to download.
+        hash stored in the metadata file. The first time you begin the
+        download, you need to contact the tracker and let it know you are
+        starting to download.
+
 7.  After a piece is downloaded and verified, the peer is notified that
-    you have completed the piece.
+        you have completed the piece.
+
 8.  Repeat steps 5-7 (using the same TCP connection) for the rest of the
-    file.
+        file.
+
 9.  When the file is finished, you must contact the tracker and send it
-    the completed event and properly close all TCP connections
+        the completed event and properly close all TCP connections
+
 10. Save the file to the hard disk according to the second command-line
-    argument.
+        argument.
 
 ### Files Available
 
@@ -967,55 +1029,61 @@ Consequently, you will be graded on your style. Below is a list of
 suggestions to make your code easier to understand and maintain:
 
 -   Comments - Comments for variables and for sections of code that do
-    not have an obvious purpose. Please do not comment obvious
-    statements or sections of code. For example,
+        not have an obvious purpose. Please do not comment obvious
+        statements or sections of code. For example,
 
         int i = 0;  //i is an integer and the initial value is 0        
 
     is not useful and unnecessarily clutters the code.
 
 -   Naming - Names of classes, methods, and variables should be
-    descriptive. For example, if a class has a field containing its hash
-    value, naming the field hash\_value is much better than naming
-    it hv .
+        descriptive. For example, if a class has a field containing its hash
+        value, naming the field hash\_value is much better than naming
+        it hv .
+
 -   Exceptions - Catch exceptions and do something useful with them. For
-    example, print a statement describing what went wrong to System.err.
+        example, print a statement describing what went wrong to System.err.
+
 -   Easy to understand loops/recursion. When possible, it's best to
-    avoid break statements whenever possible. When using recursion,
-    tail-recursion is often preferable because "smart" compilers can
-    often translate it into a loop.
+        avoid break statements whenever possible. When using recursion,
+        tail-recursion is often preferable because "smart" compilers can
+        often translate it into a loop.
+
 -   Efficiency - Avoid being terribly inefficient. For example, if you
-    have to sort 10M objects, it's better to sort them with
-    a O(n\*lg(n)) algorithm than a O(n<sup>2</sup>) algorithm.
+        have to sort 10M objects, it's better to sort them with
+        a O(n\*lg(n)) algorithm than a O(n<sup>2</sup>) algorithm.
+
 -   Encapsulation - Encapsulation is a useful feature of object-oriented
-    languages, and so you should try to write classes that expose as
-    little as possible. This way you can change the implementation of a
-    class without affecting the rest of your program.
+        languages, and so you should try to write classes that expose as
+        little as possible. This way you can change the implementation of a
+        class without affecting the rest of your program.
 
 ### Bencoding (Pronounced "Bee Encoding")
 
 Bencoding a method of encoding binary data. Tracker responses, and
 interpeer communication will be bencoded. Below is how data types are
-bencoded according to the BT protocol. [The following list is taken
-from[http://www.bittorrent.org/beps/bep\_0003.html ](http://www.bittorrent.org/beps/bep_0003.html)]
+bencoded according to the BT protocol. [The following list is taken]
 
 -   Strings are length-prefixed base-10 followed by a colon and the
-    string. They are encoded in UTF-8. For example 4:spam corresponds to
-    'spam'.
+        string. They are encoded in UTF-8. For example 4:spam corresponds to
+        'spam'.
+
 -   Integers are represented by an 'i' followed by the number in ASCII
-    base-10 followed by an 'e'. For example i3e corresponds to 3 and
-    i-3e corresponds to -3. Integers have no size limitation. i-0e is
-    invalid. All encodings with a leading zero, such as i03e, are
-    invalid, other than i0e, which of course corresponds to 0.
+        base-10 followed by an 'e'. For example i3e corresponds to 3 and
+        i-3e corresponds to -3. Integers have no size limitation. i-0e is
+        invalid. All encodings with a leading zero, such as i03e, are
+        invalid, other than i0e, which of course corresponds to 0.
+
 -   Lists are encoded as an 'l' followed by their elements (also
-    bencoded) followed by an 'e'. For example, l4:spam4:eggse
-    corresponds to ['spam', 'eggs'].
+        bencoded) followed by an 'e'. For example, l4:spam4:eggse
+        corresponds to ['spam', 'eggs'].
+
 -   Dictionaries are encoded as a 'd' followed by a list of alternating
-    keys and their corresponding values followed by an 'e'. For example,
-    d3:cow3:moo4:spam4:eggse corresponds to {'cow':'moo', 'spam':'eggs'}
-    and d4:spaml1:a1:bee corresponds to {'spam': ['a', 'b']}. Keys must
-    be strings and appear in sorted order (sorted as raw strings, not
-    alphanumerics).
+        keys and their corresponding values followed by an 'e'. For example,
+        d3:cow3:moo4:spam4:eggse corresponds to {'cow':'moo', 'spam':'eggs'}
+        and d4:spaml1:a1:bee corresponds to {'spam': ['a', 'b']}. Keys must
+        be strings and appear in sorted order (sorted as raw strings, not
+        alphanumerics).
 
 ### Communication With the Tracker
 
@@ -1024,45 +1092,52 @@ use it to communicate with the tracker. The tracker's IP address and
 port number must be extracted from the metainfo dictionary, and your
 program must then contact the tracker. Your program will send an HTTP
 GET request to the tracker with the following key/value pairs. Note that
-these are NOT bencoded, but must be properly escaped [this list is taken
-from[http://www.bittorrent.org/beps/bep\_0003.html ](http://www.bittorrent.org/beps/bep_0003.html)]:
+these are NOT bencoded, but must be properly escaped [this list is
+taken]:
 
 -   `info_hash` - The 20 byte(160-bit) SHA1 hash of the bencoded form of
-    the info value from the metainfo file. This value will almost
-    certainly have to be escaped.
+        the info value from the metainfo file. This value will almost
+        certainly have to be escaped.
+
 -   `peer_id` - A string of length 20 which this downloader uses as its
-    id. Each downloader generates its own id at random at the start of a
-    new download. This value will almost certainly have to be escaped.
-    You peer ID must NOT start with RUBT.
+        id. Each downloader generates its own id at random at the start of a
+        new download. This value will almost certainly have to be escaped.
+        You peer ID must NOT start with RUBT.
+
 -   `port` - The port number this peer is listening on. Common behavior
-    is for a downloader to try to listen on port 6881 and if that port
-    is taken try 6882, then 6883, etc. and give up after 6889.
+        is for a downloader to try to listen on port 6881 and if that port
+        is taken try 6882, then 6883, etc. and give up after 6889.
+
 -   `uploaded` - The total amount uploaded so far, encoded in base-10
-    ascii.
+        ascii.
+
 -   `downloaded` - The total amount downloaded so far, encoded in
-    base-10 ascii.
+        base-10 ascii.
+
 -   `left` - The number of bytes this peer still has to downloaded,
-    encoded in base-10 ascii. This key is important - If you do not
-    specify how much you have left to download, the tracker assumes you
-    are a seed and will not return any seeds in the peer list.
+        encoded in base-10 ascii. This key is important - If you do not
+        specify how much you have left to download, the tracker assumes you
+        are a seed and will not return any seeds in the peer list.
+
 -   `event` - This is an optional key which maps
-    to started , completed , or stopped (or empty , which is the same as
-    not being present. If not present, this is one of the announcements
-    done at regular intervals. An announcement using started is sent
-    when a download first begins, and one using completed is sent when
-    the download is complete. No completed is sent if the file was
-    complete when started. Downloaders send an announcement
-    using stopped when they cease downloading.
+        to started , completed , or stopped (or empty , which is the same as
+        not being present. If not present, this is one of the announcements
+        done at regular intervals. An announcement using started is sent
+        when a download first begins, and one using completed is sent when
+        the download is complete. No completed is sent if the file was
+        complete when started. Downloaders send an announcement
+        using stopped when they cease downloading.
 
 The response from the tracker is a bencoded dictionary and contains two
 keys:
 
 -   `interval` - Maps to the number of seconds the downloader should
-    wait between regular rerequests.
+        wait between regular rerequests.
+
 -   `peers` - Maps to a list of dictionaries corresponding to peers,
-    each of which contains the keys peer id , ip , and port , which map
-    to the peer's self-selected ID, IP address or dns name as a string,
-    and port number, respectively.
+        each of which contains the keys peer id , ip , and port , which map
+        to the peer's self-selected ID, IP address or dns name as a string,
+        and port number, respectively.
 
 ### Communicating With the Peer
 
@@ -1076,11 +1151,12 @@ to the tracker. If the info\_hash is different between two peers, then
 the connection is dropped.
 
 -   All integers are encoded as 4-bytes big-endian (e.g. 1,234 should be
-    encoded as (hex) `00 00 04 d2`).
+        encoded as (hex) `00 00 04 d2`).
+
 -   The `peer_id` should be randomly-generated for each process your
-    program generates. (Meaning that it should probably change in some
-    way each time the client is run.)  Stick to alphanumerics for easier
-    debugging.
+        program generates. (Meaning that it should probably change in some
+        way each time the client is run.)  Stick to alphanumerics for easier
+        debugging.
 
 After the handshake, messages between peers take the form
 of `<length prefix><message ID><payload>`, where length prefix is a
@@ -1090,34 +1166,40 @@ resources for detailed information describing these messages. Below is a
 list of messages that need to be implemented in the project.
 
 -   keep-alive: `<length prefix>` is 0. There is no message ID and no
-    payload. These should be sent around once every 2 minutes to prevent
-    peers from closing connections. These only need to be sent if no
-    other messages are sent within a 2-minute interval.
+        payload. These should be sent around once every 2 minutes to prevent
+        peers from closing connections. These only need to be sent if no
+        other messages are sent within a 2-minute interval.
+
 -   choke: `<length prefix>` is 1 and message ID is 0. There is no
-    payload.
+        payload.
+
 -   unchoke: `<length prefix>` is 1 and the message ID is 1. There is no
-    payload.
+        payload.
+
 -   interested: `<length prefix>` is 1 and message ID is 2. There is no
-    payload.
+        payload.
+
 -   uninterested: `<length prefix>` is 1 and message ID is 3. There is
-    no payload.
+        no payload.
+
 -   have: `<length prefix>` is 5 and message ID is 4. The payload is a
-    zero-based index of the piece that has just been downloaded and
-    verified.
+        zero-based index of the piece that has just been downloaded and
+        verified.
+
 -   request: `<length prefix>` is 13 and message ID is 6. The payload is
-    as follows:
+        as follows:
 
         <index><begin><length> 
 
     Where `<index>` is an integer specifying the zero-based piece
     index, `<begin>` is an integer specifying the zero-based byte offset
     within the piece, and `<length>` is the integer specifying the
-    requested length.`<length>` is typically 2\^14 (16384) bytes. A
+    requested length.`<length>` is typically 2\\\^14 (16384) bytes. A
     smaller piece should only be used if the piece length is not
     divisible by 16384. A peer may close the connection if a block
-    larger than 2\^14 bytes is requested.
+    larger than 2\\\^14 bytes is requested.
 -   piece: `<length prefix>` is 9+X and message ID is 7. The payload is
-    as follows:
+        as follows:
 
         <index><begin><block> 
 
@@ -1130,23 +1212,28 @@ Below is an example of what would take place between two peers
 setting-up a connection and starting sharing.
 
 1.  The local host opens a TCP Socket to the remote peer and sends the
-    handshake message. The local host then listens for the remote peer
-    to respond.
+        handshake message. The local host then listens for the remote peer
+        to respond.
+
 2.  Upon accepting the incoming connection, the remote peer responds
-    with a similar handshake message (except with its peer\_id). Be sure
-    to verify the relevant portions of the handshake message. 
+        with a similar handshake message (except with its peer\_id). Be sure
+        to verify the relevant portions of the handshake message. 
+
 3.  Upon receiving the handshake and verifying the info\_hash, the local
-    host then (optionally) sends a bitfield message which tells the
-    remote peer which pieces it has downloaded and verified so far.
+        host then (optionally) sends a bitfield message which tells the
+        remote peer which pieces it has downloaded and verified so far.
+
 4.  If the local host is interested in what the remote peer has
-    downloaded, then it sends an interested message, otherwise it should
-    simply await messages from the remote peer. If the remote peer is
-    interested in what the local host has downloaded, then it sends an
-    interested message.
+        downloaded, then it sends an interested message, otherwise it should
+        simply await messages from the remote peer. If the remote peer is
+        interested in what the local host has downloaded, then it sends an
+        interested message.
+
 5.  When the local host, or the remote peer, is ready to upload to the
-    other, it will send an unchoke message.
+        other, it will send an unchoke message.
+
 6.  Once a peer is unchoked, it can send a request message for one of
-    the pieces that the other peer announced it has completed.
+        the pieces that the other peer announced it has completed.
 
 Please note that clients will, and your client should, ignore any
 request messages received while a remote peer is choked. A client should
@@ -1162,37 +1249,40 @@ next unchoke message.
 
 -   Include your name as it appears on the roster and your student ID.
 -   A high-level description of how your program works. Specifically,
-    describe the high-level interactions between the classes. This is a
-    good way to make sure that your program doesn't have any classes
-    depending on the implementations of other classes. Drawing a
-    dependency diagram is a simple way to visualize these dependencies.
-    If you know how to use LaTeX, this should be fairly easy to diagram.
-    Also, OpenOffice.org's Draw program has an Export to PDF feature
-    that is very simple to use.
+        describe the high-level interactions between the classes. This is a
+        good way to make sure that your program doesn't have any classes
+        depending on the implementations of other classes. Drawing a
+        dependency diagram is a simple way to visualize these dependencies.
+        If you know how to use LaTeX, this should be fairly easy to diagram.
+        Also, OpenOffice.org's Draw program has an Export to PDF feature
+        that is very simple to use.
+
 -   A brief (about 1 paragraph) description of each class in the
-    program.
+        program.
+
 -   Be sure the file is in PDF format.
 -   Optionally, you may include a section on feedback about the program.
-    Please only provide constructive/useful comments or insights. What
-    parts of the project were the most challenging and which were the
-    easiest? Did you have trouble finding resources for the project?
-    Were any parts confusing to you?
+        Please only provide constructive/useful comments or insights. What
+        parts of the project were the most challenging and which were the
+        easiest? Did you have trouble finding resources for the project?
+        Were any parts confusing to you?
 
 ### Submitting the Project
 
 The project should be submitted through Sakai.
 
 -   Make sure your name is in comments at the top of every file
-    submitted.
+        submitted.
+
 -   The "main" method should be in a file called RUBTClient.java.
 -   The write-up in HTML or PDF format saved as a writeup.
-    <html markdown="1" pdf>
+        <html markdown="1" pdf>
 
     .
 -   All files should be submitted as a compressed archive. Acceptable
-    formats are `.zip`, `.tgz`/`.tar.gz`, and `.tar.bz2`. This file
-    should be named `<NetID>.<EXT>`, where `<NetID>` is your eden NetID
-    and `<EXT>` is the file type extension.
+        formats are `.zip`, `.tgz`/`.tar.gz`, and `.tar.bz2`. This file
+        should be named `<NetID>.<EXT>`, where `<NetID>` is your eden NetID
+        and `<EXT>` is the file type extension.
 
 ### Grading
 
@@ -1205,22 +1295,25 @@ The project should be submitted through Sakai.
 
 ### Resources
 
-It is strongly recommended that you bookmark or download the [Sun Java
-1.6 API ](http://java.sun.com/javase/6/docs/api/), as well as read the
+It is strongly recommended that you bookmark or download the [Sun
+Java](http://java.sun.com/javase/6/docs/api/), as well as read the
 following pages:
 
 -   The Main BT Protocol
-    Explanation: <http://www.bittorrent.org/beps/bep_0003.html>
+        Explanation: <http://www.bittorrent.org/beps/bep_0003.html>
+
 -   Another BT Protocol
-    Explanation: <http://wiki.theory.org/BitTorrentSpecification>
--   Java Cryptography: [Java Cryptography Architecture (JCA) Reference
-    Guide](http://java.sun.com/javase/6/docs/technotes/guides/security/crypto/CryptoSpec.html)
+        Explanation: <http://wiki.theory.org/BitTorrentSpecification>
+
+-   Java Cryptography: [Java Cryptography Architecture (JCA)
+    Reference](http://java.sun.com/javase/6/docs/technotes/guides/security/crypto/CryptoSpec.html)
 -   A Page on Maintainable Code: <http://advogato.org/article/258.html>
 -   A Page on HTTP
-    escaping: <http://www.blooberry.com/indexdot/html/topics/urlencoding.htm>
+        escaping: <http://www.blooberry.com/indexdot/html/topics/urlencoding.htm>
+
 -   [Wireshark ](http://www.wireshark.org/)- A network traffic sniffing
-    tool useful for watching network traffic between your client and the
-    tracker/peer.
+        tool useful for watching network traffic between your client and the
+        tracker/peer.
 
 Any questions about the project in general should be posted to the
 Discussion Board tool.  If you have a question that is specific to you
@@ -1236,9 +1329,9 @@ mainline BitTorrent client, for example) and then use a network packet
 sniffing tool like Ethereal to capture the traffic and analyze it.
 
 1.  I can't connect to the tracker. I've tried creating a Socket and
-    sending the bytes through myself by grabbing the InputStream and
-    OutputStream from the Socket, but I can't get a response from the
-    tracker. What's going wrong?
+        sending the bytes through myself by grabbing the InputStream and
+        OutputStream from the Socket, but I can't get a response from the
+        tracker. What's going wrong?
 
     Contacting the tracker is a simple HTTP GET request. This type of
     operation is done by every web browser today and even some smaller
@@ -1254,7 +1347,8 @@ July 1st, 2013 <small>Lecture</small>
 -   In order to receive messages, a process must an identifier.
 -   Each host device has a unique 32-bit IPv4 address.
 -   Does the IP address of the host on which a process runs suffice for
-    identifying the proces?
+        identifying the proces?
+
     -   No, *many* processes can be running on the same hosts.
 
 July 3rd, 2013 <small>Lecture</small>
@@ -1294,7 +1388,7 @@ July 3rd, 2013 <small>Lecture</small>
 
 -   Multiplexing at send host
     -   gathering data from multiple sockets, enveloping data with
-        header (later used for demultiplexing)
+            header (later used for demultiplexing)
 
 ##### How Demultiplexing Works
 
@@ -1303,7 +1397,7 @@ July 3rd, 2013 <small>Lecture</small>
     -   each datagram carries 1 transport-layer segment
     -   each segment has source, destination port number
     -   host uses IP addresses & port numbers to direct segment to
-        appropriate socket
+            appropriate socket
 
                           32 bits
             +----------------+---------------+
@@ -1325,7 +1419,7 @@ July 3rd, 2013 <small>Lecture</small>
     -   directs UDP segment to socket with that port number
 
 -   IP datagrams with different source IP addresses and/or source port
-    numbers directed to same socket
+        numbers directed to same socket
 
 ##### How Demultiplexing Works
 
@@ -1343,7 +1437,8 @@ July 3rd, 2013 <small>Lecture</small>
     -   dest port number
 
 -   recv host uses all four values to direct segment to appropriate
-    socket
+        socket
+
 -   Server host may support many simultaneous TCP sockets:
     -   each socket identified by its own 4-tuple
 
@@ -1376,7 +1471,8 @@ July 3rd, 2013 <small>Lecture</small>
 #### UDP
 
 -   UDP is an unreliable transport protocol that can be used in the
-    Internet
+        Internet
+
 -   UDP does not provide:
     -   connection management
     -   flow or error control
@@ -1387,10 +1483,11 @@ July 3rd, 2013 <small>Lecture</small>
 #### Retransmission Timeout (RTO)
 
 -   The timeout value is then calculated by multiplying the smoothed RTT
-    by some factor (greater than 1) called
+        by some factor (greater than 1) called
+
     -   Timeout = SRTT
     -   This coefficient of is included to allow for some variation in
-        the round trip times.
+            the round trip times.
 
 #### Karn’s Algorithm
 
@@ -1400,7 +1497,7 @@ July 3rd, 2013 <small>Lecture</small>
 
 -   Either way there is a problem in RTT estimate One solution
     -   Never update RTT measurements based on acknowledgements from
-        retransmitted packets
+            retransmitted packets
 
 -   Problem: Sudden change in RTT can cause system never to update RTT
     -   Primary path failure leads to a slower secondary path
@@ -1408,20 +1505,21 @@ July 3rd, 2013 <small>Lecture</small>
 -   Use back-off as part of RTT computation
 -   Whenever packet loss, RTO is increased by a factor
 -   Use this increased RTO as RTO estimate for the next segment (not
-    from SRTT)
+        from SRTT)
+
 -   Only after an acknowledgment received for a successful transmission
-    is the timer set to new RTT obtained from SRTT
+        is the timer set to new RTT obtained from SRTT
 
 #### Another Problem with RTT Calculation
 
 -   RTT measurements can sometimes fluctuate severely
     -   smoothed RTT (SRTT) is not a good reflection of round-trip time
-        in these cases
+            in these cases
 
 -   Solution: Use Jacobson/Karels algorithm:
     -   Error =RTT - SRTT
     -   SRTT = SRTT + Error Dev = Dev + δ(|Error| - Dev) Timeout =
-        SRTT+  Dev
+            SRTT+  Dev
 
 July 8th, 2013 <small>Lecture: TCP and UDP Part 2</small>
 ---------------------------------------------------------
@@ -1429,7 +1527,8 @@ July 8th, 2013 <small>Lecture: TCP and UDP Part 2</small>
 ### Principles of Congestion Control
 
 -   informally: “too many sources sending too much data too fast for
-    network to handle”
+        network to handle”
+
 -   different from flow control! manifestations:
     -   lost packets (buffer overflow at routers)
     -   long delays (queueing in router buffers)
@@ -1441,7 +1540,8 @@ July 8th, 2013 <small>Lecture: TCP and UDP Part 2</small>
 -   Recall: Network layer is responsible for congestion control
 -   However, TCP/IP blurs the distinction In TCP/IP:
     -   the network layer (IP) simply handles routing and packet
-        forwarding
+            forwarding
+
     -   congestion control is done end-to-end by TCP
 
 -   Goal: fully (fairly) utilize the resource (bandwidth)
@@ -1494,21 +1594,21 @@ DHT.
 What information is used by a process running on one host to identify a
 process running on another host?
 
-1.  Username and Password  
-2.  IP Address and Port Number  
-3.  URL and Filename  
+1.  Username and Password
+2.  IP Address and Port Number
+3.  URL and Filename
 4.  Protocol and Filesize
 
 ### Question 3 <small>(0 points ?)</small>
 
 Two distinct Web pages (for example www.mit.edu/research.html and
 www.mit.edu/students.html) can be sent over the same persistent
-connection.  
+connection.
 With nonpersistent connections between browser and origin server, it is
 possible for a single TCP segment to carry two distinct HTTP request
-messages.  
+messages.
 The Date: header in the HTTP response message indicates when the object
-in the response was last modified.  
+in the response was last modified.
 HTTP response messages never have an empty message body.
 
 ### Question 4 <small>(0 points ?)</small>
@@ -1516,8 +1616,8 @@ HTTP response messages never have an empty message body.
 Given the classes of services provided by transport layers listed below,
 indicate which are provided by TCP and UDP.
 
-TCP UDP Both Neither Throughput  
-Timing  
+TCP UDP Both Neither Throughput
+Timing
 Security
 
 ### Question 5 <small>(3 points)</small>
@@ -1533,12 +1633,14 @@ as fast as possible. Would you use UDP or TCP? Why?
 Why is it said that FTP sends control information "out-of-band"?
 
 1.  The data transfer protocol has a flexible speed parameter (like a
-    rubber band), but it occasionally goes too fast and is
-    "out-of-band".
+        rubber band), but it occasionally goes too fast and is
+        "out-of-band".
+
 2.  The control information is sent over a TCP connection separate from
-    the data transfer.  
+        the data transfer.  
+
 3.  It uses frequency division multiplexing and the control information
-    is in a different frequency band than the data.
+        is in a different frequency band than the data.
 
 July 16th, 2013 <small>Reading <em>Chapter 2</em></small>
 ---------------------------------------------------------
@@ -1546,18 +1648,20 @@ July 16th, 2013 <small>Reading <em>Chapter 2</em></small>
 ### Principles of Networking Applications
 
 -   The **application architecture** is designed by the application
-    developer and dictates how the application is structured over the
-    various end systems.
+        developer and dictates how the application is structured over the
+        various end systems.
+
 -   a **client-server architecture**, there is an always-on *host*,
-    called the server, which services requests from many other hosts,
-    called *clients*.
+        called the server, which services requests from many other hosts,
+        called *clients*.
+
     -   Web,
     -   FTP,
     -   Telnet, and
     -   e-mail
 
 -   In a **P2P architecture**, there is minimal (or no) reliance on
-    dedicated servers in data centers.
+        dedicated servers in data centers.
 
 -   Transport services can be:
     -   Reliable or not
@@ -1575,7 +1679,8 @@ July 16th, 2013 <small>Reading <em>Chapter 2</em></small>
 
 -   The web's application protocol is HTTP
 -   TCP connections can be persistent or not, meaning a new one is
-    opened each time or the same way is kept.
+        opened each time or the same way is kept.
+
 -   For non-persistent, -------------------
 
 ### File Transfer: FTP
@@ -1628,12 +1733,15 @@ July 16th, 2013 <small>Midterm study guide</small>
     > have an advantage over message switching?
 
     -   Message switching is where entire peices of unfied data are sent
-        across a network at once.
+            across a network at once.
+
     -   Packet switching is where all data is chopped up into packets at
-        potentially every level of hopping between clients.
+            potentially every level of hopping between clients.
+
     -   The advantage of packet-swtiching is that if a message is
-        dropped, it has to be retransmitted in bulk. Whereas dropping a
-        packet is no big deal, you just ask for the small packet again.
+            dropped, it has to be retransmitted in bulk. Whereas dropping a
+            packet is no big deal, you just ask for the small packet again.
+
     -   If you're likely to drop, use packets.
 
 2.  Multi-threading
@@ -1643,13 +1751,15 @@ July 16th, 2013 <small>Midterm study guide</small>
     > communication is a significant portion of the application.
 
     -   There are two reasons that multi-threading is suitable for
-        networking:
+            networking:
+
         1.  Networking can be taking information from a user while
-            transmitting data, putting the user on one thread and the
-            transmission on the other.
+                transmitting data, putting the user on one thread and the
+                transmission on the other.
+
         2.  Oftentimes it is important to both send and receive data
-            concurrently, or being listening for data while sending
-            data. Any of this would require threading.
+                concurrently, or being listening for data while sending
+                data. Any of this would require threading.
 
 3.  Classless inter-domain routing
 
@@ -1675,9 +1785,11 @@ July 16th, 2013 <small>Midterm study guide</small>
 > response/acknowledgement from the receiving host.
 
 1.  Transmission delay: 125 KB \* 8 = 1Mb / 1 Mbps \* 3 = 3 sec (1 s
-    each link)
+        each link)
+
 2.  Propagation delay: 35000 + 35000 + 30000 = 100,000 km / 300,000 km =
-    333 ms
+        333 ms
+
 3.  Protocol delay: 4\*20ms = 80 ms
 4.  Total = 3.413 s
 
@@ -1686,15 +1798,16 @@ July 16th, 2013 <small>Midterm study guide</small>
 #### BitTorrent Project
 
 > 1.  What exactly is the “info hash” of a metainfo file? What purpose
->     does it serve in the context of communication with trackers and
->     peers? What problems might arise if it was removed from the peer
->     handshake?
+>         does it serve in the context of communication with trackers and
+>         peers? What problems might arise if it was removed from the peer
+>         handshake?
+>
 > 2.  Most contemporary BitTorrent clients are capable of utilizing a
->     distributed hash table (DHT). The DHT allows the clients to
->     identify other peers in the same swarm. Ignoring any legal issues
->     concerning file sharing networks, why would this be considered an
->     advantage for BitTorrent clients?
-
+>         distributed hash table (DHT). The DHT allows the clients to
+>         identify other peers in the same swarm. Ignoring any legal issues
+>         concerning file sharing networks, why would this be considered an
+>         advantage for BitTorrent clients?
+>
 ### Practice Exam <small>Summer 2011</small>
 
 #### Quickies
@@ -1759,49 +1872,60 @@ with.
 Your assignment should basically do the following:
 
 1.  Take as a command-line argument the name of the .torrent file to be
-    loaded and the name of the file to save the data to. Your main class
-    MUST be called "RUBTClient.java", but may reside in any package. For
-    example:
+        loaded and the name of the file to save the data to. Your main class
+        MUST be called "RUBTClient.java", but may reside in any package. For
+        example:
 
         java RUBTClient somefile.torrent picture.jpg
 
 2.  Open the .torrent file and parse the data inside. You may use the
-    Bencoder2 or TorrentInfo classes to decode the data.
+        Bencoder2 or TorrentInfo classes to decode the data.
+
 3.  Contact the tracker via the announce URL, including all of the
-    necessary key/value pairs in the request.  The java.net.URL class is
-    a convenient way to accomplish this.
+        necessary key/value pairs in the request.  The java.net.URL class is
+        a convenient way to accomplish this.
+
 4.  Tracker announces should be performed no more frequently than the
-    value of "min\_interval" (or 1/2 "interval" if "min\_interval" is
-    not present), and no less frequently than twice the value of
-    "interval" returned by the tracker. 
+        value of "min\_interval" (or 1/2 "interval" if "min\_interval" is
+        not present), and no less frequently than twice the value of
+        "interval" returned by the tracker. 
+
 5.  Your client must correctly publish its connection information and
-    status to the tracker.  This includes the port, uploaded,
-    downloaded, left, and event arguments, when applicable.  Your client
-    must accept incoming connections from other peers.  It should not
-    maintain more than one TCP connection with another peer.
+        status to the tracker.  This includes the port, uploaded,
+        downloaded, left, and event arguments, when applicable.  Your client
+        must accept incoming connections from other peers.  It should not
+        maintain more than one TCP connection with another peer.
+
 6.  Capture the response from the tracker and decode it in order to get
-    the list of peers. From this list of peers, use only the peers
-    located at 128.6.171.3 and 128.6.171.4 . You must extract these IP
-    addresses from the list, hard-coding it is not acceptable, except
-    the comparison itself.
+        the list of peers. From this list of peers, use only the peers
+        located at 128.6.171.3 and 128.6.171.4 . You must extract these IP
+        addresses from the list, hard-coding it is not acceptable, except
+        the comparison itself.
+
 7.  Open TCP connections to the peers and be able to download and
-    upload **simultaneously** from several at the same time.
+        upload **simultaneously** from several at the same time.
+
 8.  Download one or more pieces of the file and verify its SHA-1 hash
-    against the hash stored in the .torrent file. 
+        against the hash stored in the .torrent file. 
+
 9.  After a piece is downloaded and verified, the peers are notified
-    that you have completed the piece.
+        that you have completed the piece.
+
 10. Other peers should be able to request pieces from your client that
-    you have verified, and your client should send those pieces to the
-    peers, according to the protocol.  Remember that you should be able
-    to serve multiple clients simultaneously.
+        you have verified, and your client should send those pieces to the
+        peers, according to the protocol.  Remember that you should be able
+        to serve multiple clients simultaneously.
+
 11. Repeat steps 5-8 (using the same TCP connections) for the rest of
-    the file.  The client should continue uploading until the user
-    provides the appropriate input to shut down the client.
+        the file.  The client should continue uploading until the user
+        provides the appropriate input to shut down the client.
+
 12. When the client has downloaded and verified the entire file, be sure
-    to contact the tracker with the *completed* event (even if it is
-    shorter than the *interval* value).
+        to contact the tracker with the *completed* event (even if it is
+        shorter than the *interval* value).
+
 13. When the client exits, you must contact the tracker and send it
-    the stopped event and properly close all connections.
+        the stopped event and properly close all connections.
 
 In addition to the above basic run-through of your program's execution,
 your program should be able to detect input from the user at any point
@@ -1835,65 +1959,72 @@ Consequently, you will be graded on your style. Below is a list of
 suggestions to make your code easier to understand and maintain:
 
 -   Javadoc - All classes, fields, and methods that are not private must
-    be documented with Javadoc.  Supplying Javadoc comments for private
-    classes, methods, and fields is encouraged but optional.
+        be documented with Javadoc.  Supplying Javadoc comments for private
+        classes, methods, and fields is encouraged but optional.
+
 -   Comments - Comments for variables and for sections of code that does
-    not have an obvious purpose. Please do not comment obvious
-    statements or sections of code. For example,
+        not have an obvious purpose. Please do not comment obvious
+        statements or sections of code. For example,
 
         int i = 0; //i is an integer and the initial value is 0
 
     is not useful and unnecessarily clutters the code.
 
 -   Naming - Names of classes, methods, and variables should be
-    descriptive. For example, if a class has a field containing its hash
-    value, naming the field hash\_value is much better than naming
-    it hv .
+        descriptive. For example, if a class has a field containing its hash
+        value, naming the field hash\_value is much better than naming
+        it hv .
+
 -   Exceptions - Catch exceptions and do something useful with them. For
-    example, print a statement describing what went wrong to System.err.
+        example, print a statement describing what went wrong to System.err.
+
 -   Easy to understand loops/recursion. When possible, it's best to
-    avoid break statements whenever possible. When using recursion,
-    tail-recursion is often preferable because "smart" compilers can
-    often translate it into a loop. Return statements within an if/else
-    clause should be avoided whenever possible.
+        avoid break statements whenever possible. When using recursion,
+        tail-recursion is often preferable because "smart" compilers can
+        often translate it into a loop. Return statements within an if/else
+        clause should be avoided whenever possible.
+
 -   Efficiency - Avoid being terribly inefficient. For example, if you
-    have to sort 10M objects, it's better to sort them with
-    a O(n\*lg(n)) algorithm than a O(n<sup>2</sup>) algorithm.
+        have to sort 10M objects, it's better to sort them with
+        a O(n\*lg(n)) algorithm than a O(n<sup>2</sup>) algorithm.
+
 -   **Encapsulation/Objects** - Encapsulation is a useful feature of
-    object-oriented languages, and because you are writing your program
-    in an OO language, your program **must** separate the functionality
-    into multiple classes. This way you can change the implementation of
-    a class without affecting the rest of your program. An example of
-    separation would be to have separate FileHandler, PeerInterface, and
-    TrackerInterface classes to manipulate files, interface with peers
-    and interface with the tracker, respectively. If you do not separate
-    your program into functional units, you will lose points on the
-    Style portion of the grading.
+        object-oriented languages, and because you are writing your program
+        in an OO language, your program **must** separate the functionality
+        into multiple classes. This way you can change the implementation of
+        a class without affecting the rest of your program. An example of
+        separation would be to have separate FileHandler, PeerInterface, and
+        TrackerInterface classes to manipulate files, interface with peers
+        and interface with the tracker, respectively. If you do not separate
+        your program into functional units, you will lose points on the
+        Style portion of the grading.
 
 ### Bencoding (Pronounced "Bee Encoding")
 
 Bencoding a method of encoding binary data. Tracker responses, and
 interpeer communication will be bencoded. Below is how data types are
-bencoded according to the BT protocol. [The following list is taken
-from[http://www.bittorrent.org/beps/bep\_0003.html ](http://www.bittorrent.org/beps/bep_0003.html)]
+bencoded according to the BT protocol. [The following list is taken]
 
 -   Strings are length-prefixed base ten followed by a colon and the
-    string. They are encoded in UTF-8. For example 4:spam corresponds to
-    'spam'.
+        string. They are encoded in UTF-8. For example 4:spam corresponds to
+        'spam'.
+
 -   Integers are represented by an 'i' followed by the number in ASCII
-    base 10 followed by an 'e'. For example i3e corresponds to 3 and
-    i-3e corresponds to -3. Integers have no size limitation. i-0e is
-    invalid. All encodings with a leading zero, such as i03e, are
-    invalid, other than i0e, which of course corresponds to 0.
+        base 10 followed by an 'e'. For example i3e corresponds to 3 and
+        i-3e corresponds to -3. Integers have no size limitation. i-0e is
+        invalid. All encodings with a leading zero, such as i03e, are
+        invalid, other than i0e, which of course corresponds to 0.
+
 -   Lists are encoded as an 'l' followed by their elements (also
-    bencoded) followed by an 'e'. For example, l4:spam4:egse corresponds
-    to ['spam', 'eggs'].
+        bencoded) followed by an 'e'. For example, l4:spam4:egse corresponds
+        to ['spam', 'eggs'].
+
 -   Dictionaries are encoded as a 'd' followed by a list of alternating
-    keys and their corresponding values followed by an 'e'. For example,
-    d3:cow3:moo4:spam4:eggse corresponds to {'cow':'moo', 'spam':'eggs'}
-    and d4:spaml1:a1:bee corresponds to {'spam': ['a', 'b']}. Keys must
-    be strings and appear in sorted order (sorted as raw byte values,
-    not alphanumerics).
+        keys and their corresponding values followed by an 'e'. For example,
+        d3:cow3:moo4:spam4:eggse corresponds to {'cow':'moo', 'spam':'eggs'}
+        and d4:spaml1:a1:bee corresponds to {'spam': ['a', 'b']}. Keys must
+        be strings and appear in sorted order (sorted as raw byte values,
+        not alphanumerics).
 
 ### Communication With the Tracker
 
@@ -1902,45 +2033,52 @@ and use it to communicate with the tracker. The tracker's IP address and
 port number will be given to you by the TorrentFile object, and your
 program must then contact the tracker. Your program will send an HTTP
 GET request to the tracker with the following key/value pairs. Note that
-these are NOT bencoded, but must be properly escaped [this list is taken
-from [http://www.bittorrent.org/beps/bep\_0003.html ](http://www.bittorrent.org/beps/bep_0003.html)]:
+these are NOT bencoded, but must be properly escaped [this list is
+taken]:
 
 -   info\_hash - The 20 byte(160-bit) SHA1 hash of the bencoded form of
-    the info value from the metainfo file. This value will almost
-    certainly have to be escaped.
+        the info value from the metainfo file. This value will almost
+        certainly have to be escaped.
+
 -   peer\_id - A string of length 20 which this downloader uses as its
-    id. Each downloader generates its own id at random at the start of a
-    new download. This value will almost certainly have to be escaped.
-      You peer ID must NOT start with RUBT.
+        id. Each downloader generates its own id at random at the start of a
+        new download. This value will almost certainly have to be escaped.
+          You peer ID must NOT start with RUBT.
+
 -   port - The port number this peer is listening on. Common behavior is
-    for a downloader to try to listen on port 6881 and if that port is
-    taken try 6882, then 6883, etc. and give up after 6889.
+        for a downloader to try to listen on port 6881 and if that port is
+        taken try 6882, then 6883, etc. and give up after 6889.
+
 -   uploaded - The total amount uploaded so far, encoded in base ten
-    ascii.
+        ascii.
+
 -   downloaded - The total amount downloaded so far, encoded in base ten
-    ascii.
+        ascii.
+
 -   left - The number of bytes this peer still has to downloaded,
-    encoded in base ten ascii. This key is important - If you do not
-    specify how much you have left to download, the tracker assumes you
-    are a seed and will not return any seeds in the peer list.
+        encoded in base ten ascii. This key is important - If you do not
+        specify how much you have left to download, the tracker assumes you
+        are a seed and will not return any seeds in the peer list.
+
 -   event - This is an optional key which maps to started , completed ,
-    or stopped (or empty , which is the same as not being present. If
-    not present, this is one of the announcements done at regular
-    intervals. An announcement using started is sent when a download
-    first begins, and one using completed is sent when the download is
-    complete. No completed is sent if the file was complete when
-    started. Downloaders send an announcement using stopped when they
-    cease downloading.
+        or stopped (or empty , which is the same as not being present. If
+        not present, this is one of the announcements done at regular
+        intervals. An announcement using started is sent when a download
+        first begins, and one using completed is sent when the download is
+        complete. No completed is sent if the file was complete when
+        started. Downloaders send an announcement using stopped when they
+        cease downloading.
 
 The response from the tracker is a bencoded dictionary and contains two
 keys:
 
 -   interval - Maps to the number of seconds the downloader should wait
-    between regular rerequests.
+        between regular rerequests.
+
 -   peers - Maps to a list of dictionaries corresponding to peers, each
-    of which contains the keys peer id , ip , and port , which map to
-    the peer's self-selected ID, IP address or dns name as a string, and
-    port number, respectively.
+        of which contains the keys peer id , ip , and port , which map to
+        the peer's self-selected ID, IP address or dns name as a string, and
+        port number, respectively.
 
 In addition to what your program did for the last project, your client
 should also periodically update its status to the tracker. The update
@@ -1961,10 +2099,11 @@ as sent to the tracker. If the info\_hash is different between two
 peers, then the connection is dropped.
 
 -   All integers are encoded as 4-bytes big-endian. e.g. 1,234 should be
-    encoded as (hex) 00 00 04 d2
+        encoded as (hex) 00 00 04 d2
+
 -   The peer\_id should be randomly generated each time the client
-    starts.  If you keep the value limited to ASCII alphanumerics,
-    debugging can be a lot easier.
+        starts.  If you keep the value limited to ASCII alphanumerics,
+        debugging can be a lot easier.
 
 After the handshake, messages between peers take the form
 of ``` <length prefix>``<message ID>``<payload> ``` , where length
@@ -1975,60 +2114,73 @@ messages. Below is a list of messages that need to be implemented in the
 project.
 
 -   keep-alive: `<length prefix>` is 0. There is no message ID and no
-    payload. These should be sent around once every 2 minutes to prevent
-    peers from closing connections. These only need to be sent if no
-    other messages are sent within a 2-minute interval.
+        payload. These should be sent around once every 2 minutes to prevent
+        peers from closing connections. These only need to be sent if no
+        other messages are sent within a 2-minute interval.
+
 -   choke: `<**length prefix**>` is 1 and message ID is 0. There is no
-    payload.
+        payload.
+
 -   unchoke: `<**length prefix**>` is 1 and the message ID is 1. There
-    is no payload.
+        is no payload.
+
 -   interested: `<length prefix>` is 1 and message ID is 2. There is no
-    payload.
+        payload.
+
 -   uninterested: `<length prefix>` is 1 and message ID is 3. There is
-    no payload.
+        no payload.
+
 -   have: `<length prefix>` is 5 and message ID is 4. The payload is a
-    zero-based index of the piece that has just been downloaded and
-    verified.
+        zero-based index of the piece that has just been downloaded and
+        verified.
+
 -   bitfield: `<length prefix>` is 1+X (X is number of pieces/8) and
-    message ID is 5. The payload is a byte[] containing a single bit for
-    each piece in the torrent.  The most significant bit is piece index
-    0, then piece index 1, and so on.
+        message ID is 5. The payload is a byte[] containing a single bit for
+        each piece in the torrent.  The most significant bit is piece index
+        0, then piece index 1, and so on.
+
 -   request: `<length prefix>` is 13 and message ID is 6. The payload is
-    as follows: ``` <index>``<begin>``<length> ```  Where `<index>` is
-    an integer specifying the zero-based piece index, `<begin>` is an
-    integer specifying the zero-based byte offset within the piece,
-    and `<length>` is the integer specifying the requested
-    length.`<length>` is typically 2\^14 (16384) bytes. A smaller piece
-    should only be used if the piece length is not divisible by 16384. A
-    peer may close the connection if a block larger than 2\^14 bytes is
-    requested.
+        as follows: ``` <index>``<begin>``<length> ```  Where `<index>` is
+        an integer specifying the zero-based piece index, `<begin>` is an
+        integer specifying the zero-based byte offset within the piece,
+        and `<length>` is the integer specifying the requested
+        length.`<length>` is typically 2\^14 (16384) bytes. A smaller piece
+        should only be used if the piece length is not divisible by 16384. A
+        peer may close the connection if a block larger than 2\^14 bytes is
+        requested.
+
 -   piece: `<length prefix>` is 9+X and message ID is 7. The payload is
-    as follows: ``` <index>``<begin>``<block> ```  Where `<index>` is an
-    integer specifying the zero-based piece index, `<begin>` is an
-    integer specifying the zero-based byte offset within the piece,
-    and `<block>` which is a block of data, and is a subset of the piece
-    specified by `<index>` .
+        as follows: ``` <index>``<begin>``<block> ```  Where `<index>` is an
+        integer specifying the zero-based piece index, `<begin>` is an
+        integer specifying the zero-based byte offset within the piece,
+        and `<block>` which is a block of data, and is a subset of the piece
+        specified by `<index>` .
 
 During the first project, a lot of people were confused about the order
 of messages after the handshake. Below is an example of what would take
 place between two peers setting-up a connection and starting sharing.
 
 1.  The local host opens a TCP Socket to the remote peer and sends the
-    handshake message. The local host then listens for the remote peer
-    to respond.
+        handshake message. The local host then listens for the remote peer
+        to respond.
+
 2.  Upon accepting the incoming connection, the remote peer immediately
-    sends a handshake message (with its' own peer\_id). Be sure to
-    verify the relevant portions of the handshake message. 
+        sends a handshake message (with its' own peer\_id). Be sure to
+        verify the relevant portions of the handshake message. 
+
 3.  Upon receiving the handshake and verifying the info\_hash, both
-    hosts then (optionally) send a bitfield message that tells the
-    remote peer which pieces it has downloaded and verified so far.
+        hosts then (optionally) send a bitfield message that tells the
+        remote peer which pieces it has downloaded and verified so far.
+
 4.  If a host is interested in what the other peer has downloaded, then
-    it sends an interested message, otherwise it should simply await
-    messages from the other peer. 
+        it sends an interested message, otherwise it should simply await
+        messages from the other peer. 
+
 5.  When either peer is ready to upload to the other, it will send an
-    unchoke message.
+        unchoke message.
+
 6.  Once a peer is unchoked, it can send a request message for one of
-    the pieces that the other peer announced previously.
+        the pieces that the other peer announced previously.
 
 Please note that clients will, and your client should, ignore any
 request messages received while a remote peer is choked. A client should
@@ -2043,94 +2195,107 @@ next unchoke message.
 ### The Write-Up
 
 -   Include all group member names as they appear on the roster and your
-    student ID.
+        student ID.
+
 -   A high-level written description of how your program works.
-    Specifically, describe the high-level interactions between the
-    classes. This is a good way to make sure that your program doesn't
-    have any classes depending on the implementations of other classes.
-    You may include diagrams or illustrations if you feel it would aid
-    your explanation or if you have a hard time explaining how your
-    program works. However, you MUST include some written description of
-    your program. If you know how to use LaTeX, this should be fairly
-    easy to diagram. Also, LibreOffice's Draw program has an Export to
-    PDF feature that is very simple to use. This section should be
-    around 100 words, or 2 paragraphs.
+        Specifically, describe the high-level interactions between the
+        classes. This is a good way to make sure that your program doesn't
+        have any classes depending on the implementations of other classes.
+        You may include diagrams or illustrations if you feel it would aid
+        your explanation or if you have a hard time explaining how your
+        program works. However, you MUST include some written description of
+        your program. If you know how to use LaTeX, this should be fairly
+        easy to diagram. Also, LibreOffice's Draw program has an Export to
+        PDF feature that is very simple to use. This section should be
+        around 100 words, or 2 paragraphs.
+
 -   A brief (about 1 paragraph) description of each class in the
-    program. Describe what it does in general, the main public methods
-    it provides, and any public fields it exposes. Note that classes
-    should generally NOT have public fields unless they are static final
-    (e.g. constants).
+        program. Describe what it does in general, the main public methods
+        it provides, and any public fields it exposes. Note that classes
+        should generally NOT have public fields unless they are static final
+        (e.g. constants).
+
 -   Optionally, you may include a section on feedback about the program.
-    Please only provide constructive/useful comments or insights. What
-    parts of the project were the most challenging and which were the
-    easiest? Did you have trouble finding resources for the project?
-    Were any parts confusing to you? Including feedback will help shape
-    the direction of the next project as well as help in pointing-out
-    trouble spots to look at during grading.
+        Please only provide constructive/useful comments or insights. What
+        parts of the project were the most challenging and which were the
+        easiest? Did you have trouble finding resources for the project?
+        Were any parts confusing to you? Including feedback will help shape
+        the direction of the next project as well as help in pointing-out
+        trouble spots to look at during grading.
 
 ### Submitting the Project
 
 The project should be submitted through Sakai.
 
 -   **UPDATE**: Your project MUST be managed by either Git or Mercurial
-    (Hg) version control systems.  To submit your project, you may
-    either submit the entire repository (not only your working
-    directory), or you can give the instructor read-only access to your
-    repository hosted on BitBucket.org or GitHub.com.  If you choose to
-    submit, ensure the entire repository is available in the submitted
-    archive (download it and check it).  If you want to grant  access
-    and aren't sure how, please contact the instructor via email.
+        (Hg) version control systems.  To submit your project, you may
+        either submit the entire repository (not only your working
+        directory), or you can give the instructor read-only access to your
+        repository hosted on BitBucket.org or GitHub.com.  If you choose to
+        submit, ensure the entire repository is available in the submitted
+        archive (download it and check it).  If you want to grant  access
+        and aren't sure how, please contact the instructor via email.
+
 -   Make sure your names are in comments at the top of every file
-    submitted.
+        submitted.
+
 -   The "main" starting method should be in a file called
-    RUBTClient.java.
+        RUBTClient.java.
+
 -   The write-up in HTML or PDF format saved as a writeup.`<html/pdf>`.
-    Please do not submit a write-up in any other formats
+        Please do not submit a write-up in any other formats
+
 -   All files should be submitted as a compressed archive. Acceptable
-    formats are .zip, .tgz/.tar.gz, and .tar.bz2. This file should be
-    named `<Group>`.`<EXT>`, where `<Group>` is your group and `<EXT>`
-    is the file type extension.  For example, group 14 might submit
-    "group14.zip" or "group14.tgz".
+        formats are .zip, .tgz/.tar.gz, and .tar.bz2. This file should be
+        named `<Group>`.`<EXT>`, where `<Group>` is your group and `<EXT>`
+        is the file type extension.  For example, group 14 might submit
+        "group14.zip" or "group14.tgz".
+
 -   Late submissions will **not** be accepted. If you have not completed
-    the project, submit what you have and you will be graded for partial
-    credit.
+        the project, submit what you have and you will be graded for partial
+        credit.
 
 ### Grading
 
 -   Programming Style: 15%
 -   Correctly interfacing with the tracker (retrieving peer list,
-    periodic updates, after completing download): 10%
+        periodic updates, after completing download): 10%
+
 -   Correctly interfacing with the peers (handshaking, maintaining
-    state, keep-alive): 10%
+        state, keep-alive): 10%
+
 -   Correctly downloading from at least 2 peers **simultaneously**: 15%
 -   Correctly uploading to at least 2 peers **simultaneously**: 15%
 -   Stopping from user input and resuming correctly: 10%
 -   Correctly downloading and verifying the file: 15%
 -   Write-up 10%
 -   **UPDATE:** To ensure everyone in the group contributes to the final
-    submission, your individual grade will be weighted by how much you
-    contributed, up to 50% of the project grade.  Contribution will be
-    evaluated based on the repository commit logs (see above), so be
-    sure to commit as often as practical.
+        submission, your individual grade will be weighted by how much you
+        contributed, up to 50% of the project grade.  Contribution will be
+        evaluated based on the repository commit logs (see above), so be
+        sure to commit as often as practical.
 
 ### Resources
 
-It is strongly recommended that you bookmark or download the [Sun Java
-1.6 API ](http://java.sun.com/javase/6/docs/api/), as well as read the
+It is strongly recommended that you bookmark or download the [Sun
+Java](http://java.sun.com/javase/6/docs/api/), as well as read the
 following pages:
 
 -   The Main BT Protocol
-    Explanation: <http://www.bittorrent.org/beps/bep_0003.html>
+        Explanation: <http://www.bittorrent.org/beps/bep_0003.html>
+
 -   Another BT Protocol
-    Explanation: <http://wiki.theory.org/BitTorrentSpecification>
--   Java Cryptography: [Java Cryptography Architecture (JCA) Reference
-    Guide](http://java.sun.com/javase/6/docs/technotes/guides/security/crypto/CryptoSpec.html)
+        Explanation: <http://wiki.theory.org/BitTorrentSpecification>
+
+-   Java Cryptography: [Java Cryptography Architecture (JCA)
+    Reference](http://java.sun.com/javase/6/docs/technotes/guides/security/crypto/CryptoSpec.html)
 -   A Page on Maintainable Code: <http://advogato.org/article/258.html>
 -   A Page on HTTP
-    escaping: <http://www.blooberry.com/indexdot/html/topics/urlencoding.htm>
+        escaping: <http://www.blooberry.com/indexdot/html/topics/urlencoding.htm>
+
 -   [Wireshark ](http://www.wireshark.org/)- A network traffic sniffing
-    tool useful for watching network traffic between your client and the
-    tracker/peer.
+        tool useful for watching network traffic between your client and the
+        tracker/peer.
 
 Any questions about the project in general should be posted to the
 Discussion Board tool.  If you have a question that is specific to you
@@ -2148,9 +2313,9 @@ mainline BitTorrent client, for example) and then use a network message
 sniffing tool like Wireshark to capture the traffic and analyze it.
 
 1.  I can't connect to the tracker. I've tried creating a Socket and
-    sending the bytes through myself by grabbing the InputStream and
-    OutputStream from the Socket, but I can't get a response from the
-    tracker. What's going wrong?
+        sending the bytes through myself by grabbing the InputStream and
+        OutputStream from the Socket, but I can't get a response from the
+        tracker. What's going wrong?
 
     Contacting the tracker is a simple HTTP GET request. This type of
     operation is done by every web browser today and even some smaller
@@ -2172,13 +2337,13 @@ August 5th, 2013 <small>Chapter 4 Review</small>
 ### Question 2
 
 > What are the two most important network-layer functions in a datagram
-> network? [What third function is additionally important in a virtual
-> circuit network?]
+> network? [What third function is additionally important in a virtual]
 >
 > -   <del markdown="1">
 >
+>
 >     Retransmission, Error Correction, [Connection Setup]</del>
-> -   Forwarding, <del>Error Correction</del>, [Session Management]  
+> -   Forwarding, <del>Error Correction</del>, [Session Management]
 > -   **Forwarding, Routing, [Connection Setup]**
 > -   Routing, Retransmission, [Reliability]
 
@@ -2250,33 +2415,37 @@ well-designed and -implemented.
 Your assignment should basically do the following:
 
 1.  Take as a command-line argument the name of the .torrent file to be
-    loaded and the name of the file to save the data to. For example:
+        loaded and the name of the file to save the data to. For example:
 
         java my.package.RUBTClient somefile.torrent somepicture.jpg
 
 2.  See Project Part 2 for the basics of how your client should behave.
 3.  Your client must correctly publish its connection information and
-    status to the tracker.  This includes the port, uploaded,
-    downloaded, left, and event arguments.  Your client must accept
-    incoming connections from other peers.  It should not maintain more
-    than one TCP connection to another peer.
+        status to the tracker.  This includes the port, uploaded,
+        downloaded, left, and event arguments.  Your client must accept
+        incoming connections from other peers.  It should not maintain more
+        than one TCP connection to another peer.
+
 4.  Piece requests should be ordered based on piece rarity for all
-    connected (not only unchoked) clients.  The rarest piece available
-    from a peer should be requested first, and if there are more than
-    one pieces with the same rarity available, a randomized selection
-    scheme should be used.
+        connected (not only unchoked) clients.  The rarest piece available
+        from a peer should be requested first, and if there are more than
+        one pieces with the same rarity available, a randomized selection
+        scheme should be used.
+
 5.  Every 30 seconds, the client should analyze the performance of the
-    connected peers, choke the "worst" peer, and randomly unchoke a
-    choked peer.  Priority should be given to peers with high upload
-    speeds while downloading (you finish sooner), or peers with high
-    download speeds while seeding (they finish sooner), in order to
-    maximize swarm throughput.
+        connected peers, choke the "worst" peer, and randomly unchoke a
+        choked peer.  Priority should be given to peers with high upload
+        speeds while downloading (you finish sooner), or peers with high
+        download speeds while seeding (they finish sooner), in order to
+        maximize swarm throughput.
+
 6.  You may limit the number of unchoked connections to 3.  No more than
-    6 connections should be active (unchoked) at any point. 
+        6 connections should be active (unchoked) at any point. 
+
 7.  Tracker scrapes should be performed no more frequently than the
-    value of "min\_interval" (or 1/2 "interval" if "min\_interval" is
-    not present), and no less frequently than twice the value of
-    "interval" returned by the tracker. 
+        value of "min\_interval" (or 1/2 "interval" if "min\_interval" is
+        not present), and no less frequently than twice the value of
+        "interval" returned by the tracker. 
 
 How you choose to implement saving the state of your program is up to
 you, but an intuitive approach might be to allocate the total space to
@@ -2299,65 +2468,72 @@ Consequently, you will be graded on your style. Below is a list of
 suggestions to make your code easier to understand and maintain:
 
 -   Javadoc - All classes, fields, and methods that are not private must
-    be documented with Javadoc.  Supplying Javadoc comments for private
-    classes, methods, and fields is encouraged but optional.
+        be documented with Javadoc.  Supplying Javadoc comments for private
+        classes, methods, and fields is encouraged but optional.
+
 -   Comments - Comments for variables and for sections of code that does
-    not have an obvious purpose. Please do not comment obvious
-    statements or sections of code. For example,
+        not have an obvious purpose. Please do not comment obvious
+        statements or sections of code. For example,
 
         int i = 0;  //i is an integer and the initial value is 0
 
     is not useful and unnecessarily clutters the code.
 
 -   Naming - Names of classes, methods, and variables should be
-    descriptive. For example, if a class has a field containing its hash
-    value, naming the field hash\_value is much better than naming
-    it hv .
+        descriptive. For example, if a class has a field containing its hash
+        value, naming the field hash\_value is much better than naming
+        it hv .
+
 -   Exceptions - Catch exceptions and do something useful with them. For
-    example, print a statement describing what went wrong to System.err.
+        example, print a statement describing what went wrong to System.err.
+
 -   Easy to understand loops/recursion. When possible, it's best to
-    avoid break statements whenever possible. When using recursion,
-    tail-recursion is often preferable because "smart" compilers can
-    often translate it into a loop. Return statements within an if/else
-    clause should be avoided whenever possible.
+        avoid break statements whenever possible. When using recursion,
+        tail-recursion is often preferable because "smart" compilers can
+        often translate it into a loop. Return statements within an if/else
+        clause should be avoided whenever possible.
+
 -   Efficiency - Avoid being terribly inefficient. For example, if you
-    have to sort 10M objects, it's better to sort them with
-    a O(n\*lg(n)) algorithm than a O(n<sup>2</sup>) algorithm.
+        have to sort 10M objects, it's better to sort them with
+        a O(n\*lg(n)) algorithm than a O(n<sup>2</sup>) algorithm.
+
 -   **Encapsulation/Objects** - Encapsulation is a useful feature of
-    object-oriented languages, and because you are writing your program
-    in an OO language, your program **must** separate the functionality
-    into multiple classes. This way you can change the implementation of
-    a class without affecting the rest of your program. An example of
-    separation would be to have separate FileHandler, PeerInterface, and
-    TrackerInterface classes to manipulate files, interface with peers
-    and interface with the tracker, respectively. If you do not separate
-    your program into functional units, you will lose points on the
-    Style portion of the grading.
+        object-oriented languages, and because you are writing your program
+        in an OO language, your program **must** separate the functionality
+        into multiple classes. This way you can change the implementation of
+        a class without affecting the rest of your program. An example of
+        separation would be to have separate FileHandler, PeerInterface, and
+        TrackerInterface classes to manipulate files, interface with peers
+        and interface with the tracker, respectively. If you do not separate
+        your program into functional units, you will lose points on the
+        Style portion of the grading.
 
 ### Bencoding (Pronounced "Bee Encoding")
 
 Bencoding a method of encoding binary data. Tracker responses, and
 interpeer communication will be bencoded. Below is how data types are
-bencoded according to the BT protocol. [The following list is taken
-from[http://www.bittorrent.org/beps/bep\_0003.html ](http://www.bittorrent.org/beps/bep_0003.html)]
+bencoded according to the BT protocol. [The following list is taken]
 
 -   Strings are length-prefixed base ten followed by a colon and the
-    string. They are encoded in UTF-8. For example 4:spam corresponds to
-    'spam'.
+        string. They are encoded in UTF-8. For example 4:spam corresponds to
+        'spam'.
+
 -   Integers are represented by an 'i' followed by the number in ASCII
-    base 10 followed by an 'e'. For example i3e corresponds to 3 and
-    i-3e corresponds to -3. Integers have no size limitation. i-0e is
-    invalid. All encodings with a leading zero, such as i03e, are
-    invalid, other than i0e, which of course corresponds to 0.
+        base 10 followed by an 'e'. For example i3e corresponds to 3 and
+        i-3e corresponds to -3. Integers have no size limitation. i-0e is
+        invalid. All encodings with a leading zero, such as i03e, are
+        invalid, other than i0e, which of course corresponds to 0.
+
 -   Lists are encoded as an 'l' followed by their elements (also
-    bencoded) followed by an 'e'. For example, l4:spam4:egse corresponds
-    to ['spam', 'eggs'].
+        bencoded) followed by an 'e'. For example, l4:spam4:egse corresponds
+        to ['spam', 'eggs'].
+
 -   Dictionaries are encoded as a 'd' followed by a list of alternating
-    keys and their corresponding values followed by an 'e'. For example,
-    d3:cow3:moo4:spam4:eggse corresponds to {'cow':'moo', 'spam':'eggs'}
-    and d4:spaml1:a1:bee corresponds to {'spam': ['a', 'b']}. Keys must
-    be strings and appear in sorted order (sorted as raw strings, not
-    alphanumerics).
+        keys and their corresponding values followed by an 'e'. For example,
+        d3:cow3:moo4:spam4:eggse corresponds to {'cow':'moo', 'spam':'eggs'}
+        and d4:spaml1:a1:bee corresponds to {'spam': ['a', 'b']}. Keys must
+        be strings and appear in sorted order (sorted as raw strings, not
+        alphanumerics).
 
 ### Communication With the Tracker
 
@@ -2366,51 +2542,58 @@ and use it to communicate with the tracker. The tracker's IP address and
 port number will be given to you by the TorrentFile object, and your
 program must then contact the tracker. Your program will send an HTTP
 GET request to the tracker with the following key/value pairs. Note that
-these are NOT bencoded, but must be properly escaped [this list is taken
-from [http://www.bittorrent.org/beps/bep\_0003.html ](http://www.bittorrent.org/beps/bep_0003.html)]:
+these are NOT bencoded, but must be properly escaped [this list is
+taken]:
 
 -   info\_hash - The 20 byte(160-bit) SHA1 hash of the bencoded form of
-    the info value from the metainfo file. This value will almost
-    certainly have to be escaped.
+        the info value from the metainfo file. This value will almost
+        certainly have to be escaped.
+
 -   peer\_id - A string of length 20 which this downloader uses as its
-    id. Each downloader generates its own id at random at the start of a
-    new download. This value will almost certainly have to be escaped.
+        id. Each downloader generates its own id at random at the start of a
+        new download. This value will almost certainly have to be escaped.
+
 -   port - The port number this peer is listening on. Common behavior is
-    for a downloader to try to listen on port 6881 and if that port is
-    taken try 6882, then 6883, etc. and give up after 6889.
+        for a downloader to try to listen on port 6881 and if that port is
+        taken try 6882, then 6883, etc. and give up after 6889.
+
 -   uploaded - The total amount uploaded so far, encoded in base ten
-    ascii.
+        ascii.
+
 -   downloaded - The total amount downloaded so far, encoded in base ten
-    ascii.
+        ascii.
+
 -   left - The number of bytes this peer still has to downloaded,
-    encoded in base ten ascii. This key is important - If you do not
-    specify how much you have left to download, the tracker assumes you
-    are a seed and will not return any seeds in the peer list.
+        encoded in base ten ascii. This key is important - If you do not
+        specify how much you have left to download, the tracker assumes you
+        are a seed and will not return any seeds in the peer list.
+
 -   event - This is an optional key which maps to started , completed ,
-    or stopped (or empty , which is the same as not being present. If
-    not present, this is one of the announcements done at regular
-    intervals. An announcement using started is sent when a download
-    first begins, and one using completed is sent when the download is
-    complete. No completed is sent if the file was complete when
-    started. Peers send an announcement using stopped when they exit.
+        or stopped (or empty , which is the same as not being present. If
+        not present, this is one of the announcements done at regular
+        intervals. An announcement using started is sent when a download
+        first begins, and one using completed is sent when the download is
+        complete. No completed is sent if the file was complete when
+        started. Peers send an announcement using stopped when they exit.
 
 The response from the tracker is a bencoded dictionary and contains two
 keys:
 
 -   interval - Maps to the number of seconds the downloader should wait
-    between regular requests.  Scrapes should occur within (interval *
-    .5, interval *2) seconds of the previous scrape.
+        between regular requests.  Scrapes should occur within (interval *
+        .5, interval *2) seconds of the previous scrape.
+
 -   peers - Maps to a list of dictionaries corresponding to peers, each
-    of which contains the keys peer id , ip , and port , which map to
-    the peer's self-selected ID, IP address or dns name as a string, and
-    port number, respectively.
+        of which contains the keys peer id , ip , and port , which map to
+        the peer's self-selected ID, IP address or dns name as a string, and
+        port number, respectively.
 
 In addition to what your program did for the last project, your client
 should also periodically update its status to the tracker. The update
-period should be **no less** than the \*min\_\*\*interval* returned by
+period should be **no less** than the \*min\_\*\*interval\* returned by
 the tracker (or half of *interval*, if *min\_interval* is not present).
 This may change during execution, so it should be updated each time the
-tracker is contacted. In the event that the *interval\* value is
+tracker is contacted. In the event that the \*interval\* value is
 excessively large, you may cap it at 180 seconds.
 
 ### Communicating With the Peer
@@ -2428,10 +2611,11 @@ scrape), if the connection is incoming and you have no information about
 the connecting peer, you may omit checking the peer ID.
 
 -   All integers are encoded as 4-bytes big-endian. e.g. 1,234 should be
-    encoded as (hex) 00 00 04 d2
+        encoded as (hex) 00 00 04 d2
+
 -   The peer\_id should simply be random bytes.  It is suggested that
-    you make the peer ID ASCII-printable for compatibility with other
-    peers and debugging purposes.
+        you make the peer ID ASCII-printable for compatibility with other
+        peers and debugging purposes.
 
 After the handshake, messages between peers take the form of <length
 prefix><message ID><payload> , where length prefix is a 4-byte
@@ -2441,60 +2625,72 @@ resources for detailed information describing these messages. Below is a
 list of messages that need to be implemented in the project.
 
 -   keep-alive: <length prefix> is 0. There is no message ID and no
-    payload. These should be sent around once every 2 minutes to prevent
-    peers from closing connections. These only need to be sent if no
-    other packets are sent within a 2-minute interval.
--   choke: \<**length prefix**\> is 1 and message ID is 0. There is no
-    payload.
--   unchoke: \<**length prefix**\> is 1 and the message ID is 1. There
-    is no payload.
+        payload. These should be sent around once every 2 minutes to prevent
+        peers from closing connections. These only need to be sent if no
+        other packets are sent within a 2-minute interval.
+
+-   choke: \\\<**length prefix**\> is 1 and message ID is 0. There is no
+        payload.
+
+-   unchoke: \\\<**length prefix**\> is 1 and the message ID is 1. There
+        is no payload.
+
 -   interested: <length prefix> is 1 and message ID is 2. There is no
-    payload.
+        payload.
+
 -   uninterested: <length prefix> is 1 and message ID is 3. There is no
-    payload.
+        payload.
+
 -   have: <length prefix> is 5 and message ID is 4. The payload is a
-    zero-based index of the piece that has just been downloaded and
-    verified.
+        zero-based index of the piece that has just been downloaded and
+        verified.
+
 -   bitfield: <length prefix> is 1+X and message ID is 5. The payload is
-    a sequence of *X* bytes where each bit indicates whether the peer
-    has the piece at the bit's index. 
+        a sequence of *X* bytes where each bit indicates whether the peer
+        has the piece at the bit's index. 
+
 -   request: <length prefix> is 13 and message ID is 6. The payload is
-    as follows: <index><begin><length>  Where <index> is an integer
-    specifying the zero-based piece index, <begin> is an integer
-    specifying the zero-based byte offset within the piece,
-    and <length> is the integer specifying the requested
-    length.<length> is typically 2\^14 (16384) bytes. A smaller piece
-    should only be used if the piece length is not divisible by 16384. A
-    peer may close the connection if a block larger than 2\^14 bytes is
-    requested.
+        as follows: <index><begin><length>  Where <index> is an integer
+        specifying the zero-based piece index, <begin> is an integer
+        specifying the zero-based byte offset within the piece,
+        and <length> is the integer specifying the requested
+        length.<length> is typically 2\^14 (16384) bytes. A smaller piece
+        should only be used if the piece length is not divisible by 16384. A
+        peer may close the connection if a block larger than 2\^14 bytes is
+        requested.
+
 -   piece: <length prefix> is 9+X and message ID is 7. The payload is as
-    follows: <index><begin><block>  Where <index> is an integer
-    specifying the zero-based piece index, <begin> is an integer
-    specifying the zero-based byte offset within the piece,
-    and <block> which is a block of data, and is a subset of the piece
-    specified by <index> .
+        follows: <index><begin><block>  Where <index> is an integer
+        specifying the zero-based piece index, <begin> is an integer
+        specifying the zero-based byte offset within the piece,
+        and <block> which is a block of data, and is a subset of the piece
+        specified by <index> .
 
 Below is an example of what would take place between two peers
 setting-up a connection and starting sharing.
 
 1.  The local host opens a TCP Socket to the remote peer and sends the
-    handshake packet. The local host then listens for the remote peer to
-    respond.
+        handshake packet. The local host then listens for the remote peer to
+        respond.
+
 2.  Upon receiving the handshake packet and verifying the info\_hash,
-    the remote peer responds with a similar handshake packet (except
-    with its peer\_id). The remote peer then listens for the local host
-    to send a bitfield or other packet. The remote host can send a
-    bitfield packet to the local host at this time.
+        the remote peer responds with a similar handshake packet (except
+        with its peer\_id). The remote peer then listens for the local host
+        to send a bitfield or other packet. The remote host can send a
+        bitfield packet to the local host at this time.
+
 3.  Upon receiving the handshake and verifying the info\_hash, the local
-    host then (optionally) sends a bitfield packet which tells the
-    remote peer which pieces it has downloaded and verified so far.
+        host then (optionally) sends a bitfield packet which tells the
+        remote peer which pieces it has downloaded and verified so far.
+
 4.  If the local host is interested in what the remote peer has
-    downloaded, then it sends an interested packet, otherwise it sends
-    an uninterested packet. If the remote peer is interested in what the
-    local host has downloaded, then it sends an interested packet,
-    otherwise it sends an uninterested packet.
+        downloaded, then it sends an interested packet, otherwise it sends
+        an uninterested packet. If the remote peer is interested in what the
+        local host has downloaded, then it sends an interested packet,
+        otherwise it sends an uninterested packet.
+
 5.  When the local host, or the remote peer, is ready to download/upload
-    to the other, it will send an unchoke packet.
+        to the other, it will send an unchoke packet.
 
 Please note that clients will, and your client should, ignore any
 request messages received while a remote peer is choked. A client should
@@ -2510,93 +2706,105 @@ unchoke packet.
 
 -   Include your name as it appears on the roster and your student ID.
 -   A high-level written description of how your program works.
-    Specifically, describe the high-level interactions between the
-    classes. This is a good way to make sure that your program doesn't
-    have any classes depending on the implementations of other classes.
-    You may include diagrams or illustrations if you feel it would aid
-    your explanation or if you have a hard time explaining how your
-    program works. However, you MUST include some written description of
-    your program. If you know how to use LaTeX, this should be fairly
-    easy to diagram. Also, OpenOffice.org's Draw program has an Export
-    to PDF feature that is very simple to use. This section should be
-    around 100 words, or 2 paragraphs.
+        Specifically, describe the high-level interactions between the
+        classes. This is a good way to make sure that your program doesn't
+        have any classes depending on the implementations of other classes.
+        You may include diagrams or illustrations if you feel it would aid
+        your explanation or if you have a hard time explaining how your
+        program works. However, you MUST include some written description of
+        your program. If you know how to use LaTeX, this should be fairly
+        easy to diagram. Also, OpenOffice.org's Draw program has an Export
+        to PDF feature that is very simple to use. This section should be
+        around 100 words, or 2 paragraphs.
+
 -   A brief (about 1 paragraph) description of each class in the
-    program. Describe what it does in general, the main public methods
-    it provides, and any public fields it exposes. Note that classes
-    should generally NOT have public fields unless they are Static (e.g.
-    constants).
+        program. Describe what it does in general, the main public methods
+        it provides, and any public fields it exposes. Note that classes
+        should generally NOT have public fields unless they are Static (e.g.
+        constants).
+
 -   Optionally, you may include a section on feedback about the program.
-    Please only provide constructive/useful comments or insights. What
-    parts of the project were the most challenging and which were the
-    easiest? Did you have trouble finding resources for the project?
-    Were any parts confusing to you? Including feedback will help shape
-    the direction of the next project as well as help in pointing-out
-    trouble spots to look at during grading.
+        Please only provide constructive/useful comments or insights. What
+        parts of the project were the most challenging and which were the
+        easiest? Did you have trouble finding resources for the project?
+        Were any parts confusing to you? Including feedback will help shape
+        the direction of the next project as well as help in pointing-out
+        trouble spots to look at during grading.
 
 ### Submitting the Project
 
 The project should be submitted through Sakai.
 
 -   Your project MUST be managed by either Git or Mercurial (Hg) version
-    control systems.  To submit your project, you may either submit the
-    entire repository (not only your working directory), or you can give
-    the instructor read-only access to your repository hosted on
-    BitBucket.org or GitHub.com. 
+        control systems.  To submit your project, you may either submit the
+        entire repository (not only your working directory), or you can give
+        the instructor read-only access to your repository hosted on
+        BitBucket.org or GitHub.com. 
+
 -   Make sure your names are in comments at the top of every file
-    submitted.
+        submitted.
+
 -   The "main" starting method should be in a file called
-    RUBTClient.java.
+        RUBTClient.java.
+
 -   The write-up in HTML or PDF format saved as a writeup.
-    <html markdown="1" pdf>
+        <html markdown="1" pdf>
 
     . Please do not submit a write-up in any other formats
 -   All files should be submitted as a compressed archive. Acceptable
-    formats are .zip, .tgz/.tar.gz, and .tar.bz2. This file should be
-    named <NetID>.<EXT>, where <NetID> is your eden NetID and <EXT> is
-    the file type extension.
+        formats are .zip, .tgz/.tar.gz, and .tar.bz2. This file should be
+        named <NetID>.<EXT>, where <NetID> is your eden NetID and <EXT> is
+        the file type extension.
+
 -   Late submissions will **not** be accepted. If you have not completed
-    the project, submit what you have and you will be graded for partial
-    credit.
+        the project, submit what you have and you will be graded for partial
+        credit.
 
 ### Grading
 
 -   Programming Style: 15%
 -   Correctly interfacing with the tracker (retrieving peer list,
-    periodic updates, after completing download): 10%
+        periodic updates, after completing download): 10%
+
 -   Correctly interfacing with the peers (handshaking, maintaining
-    state, keep-alive): 10%
+        state, keep-alive): 10%
+
 -   Correctly downloading from at least 2 peers **simultaneously**: 10%
 -   Correctly uploading to at least 2 peers **simultaneously**: 10%
 -   Correctly downloading and verifying the file: 15%
 -   Rarest-piece-first selection algorithm: 5%
 -   Ability to maintain at least 10 peer connections: 5%
 -   Optimistic choking/unchoking (includes rate measurement and
-    throttling): 10%
+        throttling): 10%
+
 -   Write-up 10%
 -   To ensure everyone in the group contributes to the final submission,
-    your individual grade will be weighted by how much you contributed,
-    up to 50% of the project grade.  Contribution will be evaluated
-    based on the repository commit logs (see above), so be sure to
-    commit as often as practical.
+        your individual grade will be weighted by how much you contributed,
+        up to 50% of the project grade.  Contribution will be evaluated
+        based on the repository commit logs (see above), so be sure to
+        commit as often as practical.
 
 ### Resources
 
-It is strongly recommended that you bookmark or download the [Sun Java
-1.6 API ](http://java.sun.com/javase/6/docs/api/), as well as read the
+It is strongly recommended that you bookmark or download the [Sun
+Java](http://java.sun.com/javase/6/docs/api/), as well as read the
 following pages:
 
 -   The Main BT Protocol
-    Explanation: <http://www.bittorrent.org/beps/bep_0003.html>
+        Explanation: <http://www.bittorrent.org/beps/bep_0003.html>
+
 -   Another BT Protocol
-    Explanation: <http://wiki.theory.org/BitTorrentSpecification>
--   Java Cryptography: [Java Cryptography Architecture (JCA) Reference
-    Guide](http://java.sun.com/javase/6/docs/technotes/guides/security/crypto/CryptoSpec.html)
+        Explanation: <http://wiki.theory.org/BitTorrentSpecification>
+
+-   Java Cryptography: [Java Cryptography Architecture (JCA)
+    Reference](http://java.sun.com/javase/6/docs/technotes/guides/security/crypto/CryptoSpec.html)
 -   A Page on Maintainable Code: <http://advogato.org/article/258.html>
 -   A Page on HTTP
-    escaping: <http://www.blooberry.com/indexdot/html/topics/urlencoding.htm>
+        escaping: <http://www.blooberry.com/indexdot/html/topics/urlencoding.htm>
+
 -   [Wireshark ](http://www.wireshark.org/)- A network traffic sniffing
-    tool useful for watching network traffic between your client and the
-    tracker/peer.
+        tool useful for watching network traffic between your client and the
+        tracker/peer.
 
 Any questions about the project in general should be posted to the
 Discussion Board tool.  If you have a question that is specific to you
@@ -2614,9 +2822,9 @@ mainline BitTorrent client, for example) and then use a network packet
 sniffing tool like Ethereal to capture the traffic and analyze it.
 
 1.  I can't connect to the tracker. I've tried creating a Socket and
-    sending the bytes through myself by grabbing the InputStream and
-    OutputStream from the Socket, but I can't get a response from the
-    tracker. What's going wrong?
+        sending the bytes through myself by grabbing the InputStream and
+        OutputStream from the Socket, but I can't get a response from the
+        tracker. What's going wrong?
 
     Contacting the tracker is a simple HTTP GET request. This type of
     operation is done by every web browser today and even some smaller
@@ -2647,8 +2855,8 @@ August 12th, 2013 <small>Chapter 5 Review</small>
 > -   **16 bytes**
 > -   6 bytes
 
--   [The length of an IPv6 address is 128 bits, compared with 32 bits in
-    IPv4.](http://en.wikipedia.org/wiki/IPv6#Larger_address_space)
+-   [The length of an IPv6 address is 128 bits, compared with 32 bits
+    in](http://en.wikipedia.org/wiki/IPv6#Larger_address_space)
 -   128 bits is equal to 16 bytes.
 
 ### Question 3 <small>(2 points)</small>
@@ -2673,9 +2881,9 @@ August 12th, 2013 <small>Chapter 5 Review</small>
 > information the NAT's internal TCP connection table needs to store in
 > order to relay packets?
 >
-> -   LAN IP address, LAN port, Dst IP address, Dst port, WAN port  
+> -   LAN IP address, LAN port, Dst IP address, Dst port, WAN port
 > -   LAN IP address, Dst IP address, WAN port ???
-> -   **LAN IP address, LAN port, WAN port**  
+> -   **LAN IP address, LAN port, WAN port**
 > -   LAN IP address, LAN port, Dst IP address, Dst port
 
 ### Question 6 <small>(8 points)</small>
@@ -2701,7 +2909,7 @@ August 13th, 2013 <small>Final Exam Study Guide</small>
 -   Link layers services:
     -   Framing
         -   encapsulate datagram into frame, adding header, trailer link
-            access
+                access
 
     -   channel access if shared medium
     -   Reliable delivery between adjacent nodes
@@ -2710,7 +2918,7 @@ August 13th, 2013 <small>Final Exam Study Guide</small>
     -   Error Correction
     -   Half-duplex and full-duplex
         -   with half duplex, nodes at both ends of link can transmit,
-            but not at same time
+                but not at same time
 
 ### Exam guesses and Questions
 
@@ -2721,11 +2929,12 @@ August 13th, 2013 <small>Final Exam Study Guide</small>
 > to have \_\_ \_\_ at \_\_\_\_\_?
 
 -   Hamming codes correct all single bit errors with only `log(M)` extra
-    bits and detect double bit errors
+        bits and detect double bit errors
+
 -   The question is about a layer other than the link, I think.
 -   s othe receiver might deliver a corrupted datagram to the network
-    layer, or be unaware that the contentf a field in the frame’s header
-    has been corrupted.
+        layer, or be unaware that the contentf a field in the frame’s header
+        has been corrupted.
 
 #### Question 1
 
@@ -2748,11 +2957,14 @@ Presumably some sort of fill in the blank.
     -   Authorization
 
 > 1.  Public/private key challenge mechanism does not provide
->     authentication. \_\_\_\_\_ how the \_\_\_ can be \_\_\_\_.
-> 2.  Public key encryption by itself does not provide **. What can be
->     **\_\_\_ \_\_ \_\_ to provide \_\_\_\_. Explain why \_\_\_\_.
+>         authentication. \_\_\_\_\_ how the \_\_\_ can be \_\_\_\_.
+>
+> 2.  Public key encryption by itself does not provide \*\*. What can be
+>         **\_\_\_ \_\_ \_\_ to provide \_\_\_\_. Explain why \_\_\_\_.
+>
 > 3.  Does public key encryption provide \_\_\_\_ without any
->     modification? Why or why not?
+>         modification? Why or why not?
+>
 > 4.  How \_\_\_\_\_\_ \_ \_\_\_ a public key \_\_\_ \_\_\_ secure?
 
 1.  Public key certification ------------------------
@@ -2765,17 +2977,18 @@ Presumably some sort of fill in the blank.
 
 -   Possible attacks:
     -   Man in the middle attack \> Bob receives everything that Alice
-        sends, and vice versa. \> (e.g., so Bob, Alice can meet one week
-        later and recall conversation) \> Problem to solve: key
-        distribution
+            sends, and vice versa. \> (e.g., so Bob, Alice can meet one week
+            later and recall conversation) \> Problem to solve: key
+            distribution
 
     -   playback attack
         -   To avoid playback, use a nonce.
         -   Send R, large number, and expect it back encrypted with the
-            private key.
+                private key.
 
 > 1.  \_ can be broken with a \_\_\_\_\_ attack. Explain what a \_\_\_\_
->     attack is. What is '\_\_'?
+>         attack is. What is '\_\_'?
+>
 > 2.  What is a '\_\_\_\_”?
 > 3.  What is \_\_\_\_\_?
 

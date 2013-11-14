@@ -54,7 +54,8 @@ performance design.
 ### Prerequisite Knowledge
 
 -   Prior programming experience in a high-level language (such as
-    Java).
+        Java).
+
 -   01:198:112. Credit not given for this course and 14:332:331.
 
 ### Topics
@@ -63,7 +64,8 @@ The following list is organized by topic, not by chronological order of
 coverage in the course.
 
 1.  Von Neumann Architecture, Hardware trends, Importance of Speed,
-    Cost, Energy
+        Cost, Energy
+
 2.  Intro to C programming
 3.  Data Representation, Computer Arithmetic
 4.  Assembly language techniques, including macro-instruction definition
@@ -183,20 +185,25 @@ January 22nd, 2013 - Lecture: Hardware trends, Moore's law, Chapter 1
 ---------------------------------------------------------------------
 
 -   The modern computer is a general purpose computer which stores
-    programs as data.
+        programs as data.
+
 -   The hardware understands the encoded instructions and reacts
-    predictably.
+        predictably.
+
 -   The way the hardware executes a program is specific to the hardware,
-    yet with similar results.
+        yet with similar results.
+
 -   We'll look at assembly for the Intel structure.
 -   Instructions as data - ones and zeros.
 -   Main components of computer
     -   CPU
     -   Memory
         -   It is sometimes still called "core memory" for hustorical
-            reasons.
+                reasons.
+
         -   It is now "transistorized", computer programs "barf and
-            die."
+                die."
+
         -   It is random access - it can be done in constant time.
         -   It is volatile - turn the power off and memory is gone.
 
@@ -215,25 +222,33 @@ January 22nd, 2013 - Lecture: Hardware trends, Moore's law, Chapter 1
 -   Von Neumann Model
     -   Fetch and execute cycle
         -   What the CPU is doing is taking a bunch of instructions
-            physcially next to each other in memory.
+                physcially next to each other in memory.
+
         -   The Intel architecture, and I love this, takes the address
-            `0xFFFFFFF0` to boot the machine.
+                `0xFFFFFFF0` to boot the machine.
+
         -   First step is the fetch cycle, go get the instruction at the
-            startup address.
+                startup address.
+
         -   Then decode the instruction, what is encoded? What do I do
-            with it?
+                with it?
+
         -   There are input operands on the instructions.
         -   Then execute the operation, put the operations back on the
-            register operands, get the pointer to the next instruction.
+                register operands, get the pointer to the next instruction.
 
     -   This guy got credit for work that was done previously, by Alan
-        Turing.
+            Turing.
+
     -   This was known as the "Turing Machine", which was a theoretical
-        machine at the time.
+            machine at the time.
+
     -   A few other contempories applied for pantents about instructions
-        in memory.
+            in memory.
+
     -   There was some dispute with Von Neumann and drafts and whose
-        names appeared.
+            names appeared.
+
     -   A CPU and memory are connected by a bus.
     -   The Von Neumann bottleneck.
 
@@ -431,7 +446,8 @@ January 29th, 2013 - Lecture: C program structure, control flow structures
 --------------------------------------------------------------------------
 
 -   Sometimes we as programmers we need some a variable that can only
-    take on a few values.
+        take on a few values.
+
 -   Java, evidently, screwed this up.
 
         enum stoplight {
@@ -450,7 +466,8 @@ January 29th, 2013 - Lecture: C program structure, control flow structures
     -   `green = 3`
 
 -   If the first line was `red = 5`, then the following values would be
-    incremeneted from that.
+        incremeneted from that.
+
 -   `typedef`
 
         typedef int size;
@@ -488,7 +505,8 @@ January 29th, 2013 - Lecture: C program structure, control flow structures
         int x;
 
     -   In C, C++ you get pointers, which are the address in memory of
-        an variable.
+            an variable.
+
     -   `p` is a pointer to an integer
 
 -   functions
@@ -503,9 +521,10 @@ January 29th, 2013 - Lecture: C program structure, control flow structures
 
     -   this is afunction in C that swaps two values
     -   if you try to pass two integers directly, the compiler will
-        complain
+            complain
+
     -   I want to pass something that I want to change, and if I want to
-        do that, I should pass the address of what I want to change.
+            do that, I should pass the address of what I want to change.
 
 -   Pointers and arrays
 
@@ -553,7 +572,8 @@ January 30th, 2013 - Office hours
 ---------------------------------
 
 -   Linux is a descendant if UNIX, which is derivative from command line
-    operating systems from Bell labs.
+        operating systems from Bell labs.
+
 -   The wanted a nice, modular OS.
 -   There's a directory structure. Everyone has a "subtree"
 -   gcc commands
@@ -579,7 +599,8 @@ January 30th, 2013 - Office hours
 
 -   linux does not care about suffixes
 -   `pg` or `more`: "I want to see the file, but it might be larger than
-    my screen."
+        my screen."
+
 -   `ps` for "process status"
 -   `rm` and `rmdir` for "remove" and "remove directory"
 -   `pwd`: "I am printing the working directory"
@@ -601,7 +622,7 @@ January 31st, 2013 - Lecture: Pointers and arrays, C functions
 
     -   `strncopy` says I will copy at most `n` bytes.
     -   both of these argument pointers better be set to something valid
-        in memory.
+            in memory.
 
 -   Something with memory
 
@@ -645,23 +666,26 @@ February 5th, 2013 - Recitation
 -------------------------------
 
 -   The `include` command is used to use other code in your `.c` files,
-    you include `.h` files.
+        you include `.h` files.
+
 -   Typical files to include are `stdio.h` and `stdlib.h` (standard
-    input/output and library, respectively).
+        input/output and library, respectively).
 
         [return_type] [function_name] ([datatype arg1, ... ) {
             [function body]
         }
 
 -   Because C is parsed line by line, you must define a function before
-    you use it otherwise it doesn't know it exists.
+        you use it otherwise it doesn't know it exists.
+
 -   So you can make a function prototype.
 
         [return_type] [function_name] ([datatype arg1, ... )
 
 -   You should include these things before `main`.
 -   `fopen` and `fclose` are commands you use one `FILE`s to get
-    information from them.
+        information from them.
+
     -   Specify parameters for read, write, etc.
 
             FILE * fopen(const char * filename, const char * mode);
@@ -722,7 +746,7 @@ February 5th, 2013 - Lecture: Dynamic memory management
          int scanf(const char * fmt, ...);
 
 -   remember, C passes by value, so pass the address of the thing you
-    want to change.
+        want to change.
 
 February 7th, 2013 - Lecture: C preprocessor, formatted I/O
 -----------------------------------------------------------
@@ -751,13 +775,14 @@ February 7th, 2013 - Lecture: C preprocessor, formatted I/O
         char * fgets(char *s, int n, file *);
 
     -   `fgetc` and `getc` are basically interchangable for our
-        purposes.
+            purposes.
+
     -   you are getting the next character from the file.
     -   `gets` wil read a string until a new line or an end of file.
         -   reading by file one line at a time.
 
     -   `fgets` will read a maximum of `n` characters or a new line,
-        whicever ccomes first.
+            whicever ccomes first.
 
 -   some overlap
 
@@ -796,7 +821,7 @@ February 10th, 2013 - [Notes: The ANSI C `string.h`](http://www.csse.uwa.edu.au/
         char* strcpy(char* s, const char* ct);
 
 -   Copy at most n characters of ct to s Pad with `NUL`s if ct is of
-    length less than n. Return s.
+        length less than n. Return s.
 
         char* strncpy(char* s, const char* ct, int n);
 
@@ -805,47 +830,47 @@ February 10th, 2013 - [Notes: The ANSI C `string.h`](http://www.csse.uwa.edu.au/
         char* strcat(char* s, const char* ct);
 
 -   Concatenate at most n characters of ct to s. Terminate s with `NUL`
-    and return it.
+        and return it.
 
         char* strncat(char* s, const char* ct, int n);
 
 -   Compare cs and ct. Return negative if `cs < ct`, zero if `cs == ct`,
-    positive if `cs > ct`.
+        positive if `cs > ct`.
 
         int strcmp(const char* cs, const char* ct);
 
 -   Compare at most n characters of cs and ct. Return negative if
-    `cs < ct`, zero if `cs == ct`, positive if `cs > ct`.
+        `cs < ct`, zero if `cs == ct`, positive if `cs > ct`.
 
         int strncmp(const char* cs, const char* ct, int n);
 
 -   Return pointer to first occurrence of c in cs, or `NULL` if not
-    found.
+        found.
 
         char* strchr(const char* cs, int c);
 
 -   Return pointer to last occurrence of c in cs, or `NULL` if not
-    found.
+        found.
 
         char* strrchr(const char* cs, int c);
 
 -   Return length of prefix of cs consisting entirely of characters in
-    ct.
+        ct.
 
         size_t strspn(const char* cs, const char* ct);
 
 -   Return length of prefix of cs consisting entirely of characters
-    *not* in ct.
+        *not* in ct.
 
         size_t strcspn(const char* cs, const char* ct);
 
 -   Return pointer to first occurrence within cs of any character of ct,
-    or `NULL` if not found.
+        or `NULL` if not found.
 
         char* strpbrk(const char* cs, const char* ct);
 
 -   Return pointer to first occurrence of ct in cs, or `NULL` if not
-    found.
+        found.
 
         char* strstr(const char* cs, const char* ct);
 
@@ -854,34 +879,34 @@ February 10th, 2013 - [Notes: The ANSI C `string.h`](http://www.csse.uwa.edu.au/
         size_t strlen(const char* cs);
 
 -   Return pointer to implementation-defined string corresponding with
-    error n.
+        error n.
 
         char* strerror(int n);
 
 -   A sequence of calls to `strtok` returns tokens from s delimted by a
-    character in ct. Non-`NULL` s indicates the first call in a
-    sequence. ct may differ on each call. Returns `NULL` when no such
-    token found.
+        character in ct. Non-`NULL` s indicates the first call in a
+        sequence. ct may differ on each call. Returns `NULL` when no such
+        token found.
 
         char* strtok(char* s, const char* t);
 
 -   Copy n characters from ct to s. Return s. Does not work correctly if
-    objects overlap.
+        objects overlap.
 
         void* memcpy(void* s, const void* ct, int n);
 
 -   Copy n characters from ct to s. Return s. Works correctly even if
-    objects overlap.
+        objects overlap.
 
         void* memmove(void* s, const void* ct, int n);
 
 -   Compare first n characters of cs with ct. Return negative if
-    `cs < ct`, zero if `cs == ct`, positive if `cs > ct`.
+        `cs < ct`, zero if `cs == ct`, positive if `cs > ct`.
 
         int memcmp(const void* cs, const void* ct, int n);
 
 -   Return pointer to first occurrence of c in first n characters of cs,
-    or `NULL` if not found.
+        or `NULL` if not found.
 
         void* strchr(const char* cs, int c, int n);
 
@@ -896,13 +921,15 @@ February 12th, 2013 - Recitation
 
 -   GDB is a debugger that helps you debug your program.
 -   The time you spend now learning gdb will save you days of debugging
-    time.
+        time.
+
 -   A debugger will make a good programmer and better programmer.
 
 ### Compiling a program for GDB
 
 -   You need to compile with the `-g` option to be able to debug a
-    program with gdb.
+        program with gdb.
+
 -   The `-g` option adds debugging information to your program.
 
         gcc -g -o hello hello.c
@@ -919,19 +946,20 @@ February 12th, 2013 - Recitation
         (gdb) break main
 
 -   A breakpoint is a marker in your program to tell the porgram to stop
-    and return control back to `gdb`
+        and return control back to `gdb`
 
 ### Stepping through your program
 
 -   Your porgram will start running and when it reaches `main()` it will
-    stop.
+        stop.
 
         gdb>
 
 -   Now you have the folloiwing commands to run your program step by
-    step:
+        step:
+
     -   Run the next line of code and stop, it will enter into a
-        function
+            function
 
             gdb step
 
@@ -952,7 +980,7 @@ February 13th, 2013 - Lecture
 
 -   base 2, each digit is 0 or 1
 -   Numbers are written as \\( d\_n, ..., d\_2, d\_1, d\_0 \\)
--   Value of number is computer as \\[ \_{i = 0}\^n d\_i 2\^i \\]
+-   Value of number is computer as \\[ \_{i = 0}\\\^n d\_i 2\\\^i \\]
 
 ### Hexadecimal numbers
 
@@ -960,7 +988,7 @@ February 13th, 2013 - Lecture
 -   Each digit c an be one of 16 different valyes
     -   Symbols = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F}
 
--   Value \\[ \_{i = 0}\^n d\_i 16\^i \\]
+-   Value \\[ \_{i = 0}\\\^n d\_i 16\\\^i \\]
 
 ### Octal numbers
 
@@ -969,7 +997,7 @@ February 13th, 2013 - Lecture
 -   Grabbing 3 bits at a time
 -   Value =
 
-\\[ \_{i = 0}\^n d\_i 8\^i \\]
+\\[ \_{i = 0}\\\^n d\_i 8\\\^i \\]
 
 ### Converting hex to binary
 
@@ -993,19 +1021,22 @@ February 13th, 2013 - Lecture
 
 ### Decimal to binary
 
--   What is the largest power of 2, q, r... such that \\[ n = 2\^p +
-    r\_1 \\] where \\(r\_1 2\^p \\) \\[n - 2\^p = 2\^q + r\_2\\] where
-    \\(\*r\_2 2\^q \\) \\[ n - (2\^p + 2\^q) = 2\^r + r\_3\\] where
-    \\(r\_3 \< r\^r\\)
+-   What is the largest power of 2, q, r... such that \\[ n = 2\\\^p +]
+    where \\(r\_1 2\\\^p \\) \\[n - 2\\\^p = 2\\\^q + r\_2\\] where
+        \\(\*r\_2 2\^q \\) \\[ n - (2\^p + 2\^q) = 2\^r + r\_3\\] where
+        \\(r\_3 \< r\^r\\)
 
 ### Decimal and binary fractions
 
--   In decimal, digits to the right of radix point have value \\(\^i\\)
-    for each digit in the \\(i\^{th}\\) place
+-   In decimal, digits to the right of radix point have value
+    \\(\\\^i\\)
+        for each digit in the \\(i\^{th}\\) place
+
     -   0.25 is 2/10 + 5/100
 
 -   Similarly, ib binary, digits to the right of radix point have value
-    \\(1/2\^i\\) for each ith place
+        \\(1/2\^i\\) for each ith place
+
     -   Just the base is different
 
 ### Data sizes
@@ -1019,13 +1050,14 @@ February 13th, 2013 - Lecture
 ### Big endian vs. small endian
 
 -   How toi determine value when have a sbinary number spread across
-    multiple bytes
+        multiple bytes
 
         A0 BC 00 12
 
     -   Is this `A0BC0012` or `1200BCA0`
         -   One is called little endian and the other is called big
-            endian
+                endian
+
         -   Makes no difference to computer architecture
 
     -   Why do we care?
@@ -1034,9 +1066,10 @@ February 13th, 2013 - Lecture
         -   Need to convert to standard before transmitting
 
 -   **Big endian**: MSB first, decreasing numeric significiance as byte
-    address increases
+        address increases
+
 -   **Little endian**: LSB first, increasing numeric significane as byte
-    address increase
+        address increase
 
 ### Representing integers
 
@@ -1050,16 +1083,16 @@ February 13th, 2013 - Lecture
         1100 = -4
         1011 = -3
 
--   Unsigned integers n bits \\[0 ... 2\^n - 1\\]
+-   Unsigned integers n bits \\[0 ... 2\\\^n - 1\\]
 
--   Signed magnitude \\[ 10000\*{10} = 00002710\\] \\[-10000\*{10} =
-    80002710 \\] \\[-2\^{n-1} ... 2\^{n-1} \\]
+-   Signed magnitude \\[ 10000\*{10} = 00002710\\] \\[-10000\*{10} =]
+    \\[-2\\\^{n-1} ... 2\\\^{n-1} \\]
 
         00000000 = 0
         80000000 = 0
 
     -   This complicated the hardware because two representaitons equal
-        the same thing.
+            the same thing.
 
 -   The complelemtn
 
@@ -1084,13 +1117,12 @@ February 13th, 2013 - Lecture
 
 -   Two's complement in n bits
 
-    -   value \\[-d\_{n-1}2\^{n-1}
-        \\]\\[\_{i=0}<sup>{n-1}d\_is</sup>i\\]
+    -   value \\[-d\_{n-1}2\\\^{n-1}]\\[\_{i=0}<sup>{n-1}d\_is</sup>i\\]
     -   range \\[ \\]
 
 -   Some math
 
-\\[1000\*{10} = 000003E8 = \\] \\[0x2\^{31} + 1000\*{10} = 1000 \\]
+\\[1000\*{10} = 000003E8 = \\] \\[0x2\\\^{31} + 1000\*{10} = 1000 \\]
 
 \\[-1000\_{10} = FFFFFC18\\]
 
@@ -1587,10 +1619,10 @@ following properties:
 -   Every structure is contained in its own header file.
 
 -   Every structure has helper functions that handle allocating of
-    memory.
+        memory.
 
 -   Every structure has helper functions which “put” and “get”
-    references.
+        references.
 
 This allowed the main function to work as a *tour de force*, where
 nothing is defined and everything is used.
@@ -1696,10 +1728,10 @@ the number of case-sensitive variations on each corresponding *t* word.
 -   The character tree requires 26 × 8 bytes for the characters.
 
 -   Each word tree node’s case-insensitive string requires the number of
-    bytes of each of the *n* words.
+        bytes of each of the *n* words.
 
 -   Each word list node’s case-sensitive string requires the number of
-    bytes of each of the *m* case-sensitive variations.
+        bytes of each of the *m* case-sensitive variations.
 
 The “specific” space is:
 
@@ -1717,15 +1749,15 @@ case being unique, resulting in:
 Where we count assignments and steps with *n* words:
 
 -   If every word in the document begins with a letter at the bottom of
-    the character tree, there will be +4 assignments to get the
-    character. Say every word begins with the same one.
+        the character tree, there will be +4 assignments to get the
+        character. Say every word begins with the same one.
 
 -   If every word is lexicographically greater than the previous one or
-    lexicographically less the previous one, you end up with a
-    “linked-list.”
+        lexicographically less the previous one, you end up with a
+        “linked-list.”
 
 -   If every word is a unique case-variation, you have to step through
-    the whole-linked list every time.
+        the whole-linked list every time.
 
 *O*(*n*<sup>3</sup>)
 
@@ -1818,7 +1850,7 @@ February 18th, 2013 - Lecture
     31                            0
 
 -   The byte ordering in the real world starts with the most
-    significiant and ends with the least significant.
+        significiant and ends with the least significant.
 
 ### Left shifting
 
@@ -1826,13 +1858,15 @@ February 18th, 2013 - Lecture
 -   It can be evrything but negative.
 -   Shfiting by zero is nothing is changing.
 -   Sometimes your calcuation is dynamically shifting based on some
-    information, which could result in zero.
+        information, which could result in zero.
+
 -   If in 32 bit quantity 0 is our least significant and 31 is the most,
-    then shifting to the left yields to the left bit being lost (?)
+        then shifting to the left yields to the left bit being lost (?)
+
 -   In C operators are `<<` and `<<=`
--   Shifting left n bits is exactly euivilent to mutiplying 2\^n
+-   Shifting left n bits is exactly euivilent to mutiplying 2\\\^n
     -   if you want a nice way to multiply something by two, this is
-        ideal.
+            ideal.
 
             //__ these two bits get discarded
                 0000 1000 << 2
@@ -1840,7 +1874,8 @@ February 18th, 2013 - Lecture
                    //^^ these two bits get zeroes
 
 -   If I had a 32 bit number, you'd just move the "thrown out stuff"
-    into 64 bits, else you lose information.
+        into 64 bits, else you lose information.
+
 -   If you shift an n bit number by n, it results in 0.
 
 ### Right shift
@@ -1852,7 +1887,7 @@ February 18th, 2013 - Lecture
 #### Arithmetic
 
 -   Preserves sign, if you shift a negative number, it wont discard the
-    last bit.
+        last bit.
 
 ### Bitwise operations
 
@@ -1866,8 +1901,8 @@ February 18th, 2013 - Lecture
     -   This is all the posibilites for a single bit, evidently.
     -   They both have to be one. They both have to be one.
     -   This is comparing numbers to their respective others in the
-        other number and returning a number which represents where they
-        are both one, or there is at least one zero.
+            other number and returning a number which represents where they
+            are both one, or there is at least one zero.
 
 -   **Or**: C operator is `|`
 
@@ -1878,7 +1913,7 @@ February 18th, 2013 - Lecture
 
     -   Just like the last operation, but the result is or.
     -   This means only and at least on of the bits must be one for the
-        final bit to be one.
+            final bit to be one.
 
 -   Exclusive or: C operator is `^`
 
@@ -1939,7 +1974,8 @@ February 20th, 2013 - Lecture
 ### Memory
 
 -   I've got these buses which I communicate addresses through from the
-    CPU to the memory.
+        CPU to the memory.
+
 -   "Go to address 3 and read"
 -   Go to address 4 and write.
 
@@ -2026,11 +2062,13 @@ February 20th, 2013 - Lecture
 ### A little bit about the stack
 
 -   I am pushing and popping individual values on this stack, a word
-    byte
+        byte
+
 -   Double word, quad work.
 -   1, 2, 4 eight byte values.
 -   From the stack I can build a call stack, indivudal values for all I
-    need for a particular function invocation.
+        need for a particular function invocation.
+
 -   "Call brain" or "activation brain"
 -   With the intel arch, a few things to take away:
     -   Grow towards smaller addresses
@@ -2049,7 +2087,8 @@ February 20th, 2013 - Lecture
 -   You make it in text editors.
 -   An assembly program is a sequence of assembly instructions.
 -   The general form of the assembly instruction is the neumonic which
-    is intented, and then operands.
+        is intented, and then operands.
+
 -   The neumonic defines the operation.
 -   There may be zero or more operands depending on the operation.
 -   Multiple operands are seperated by commas.
@@ -2091,7 +2130,7 @@ February 26th, 2013 - Lecture: Assembly Language Programming
 
 -   Useful for dealing with arrays
 -   Autovariables and formal parameters are treated pretty much the
-    same.
+        same.
 
 ### Address Computation Examples
 
@@ -2146,9 +2185,10 @@ March 5th, 2013 - Lecture
         test [b w l w] src,dst
 
 -   These, evidently, are not very interesting bu we need to know them
-    anyway.
+        anyway.
+
 -   A column of "conditional jumps" to some target, the target being
-    some lable we can specify in the program.
+        some lable we can specify in the program.
 
         ==          je
         !=          jne
@@ -2226,43 +2266,54 @@ March 8th, 2013 - Calc and Format Readme
 
 -   My design uses a string as the primary data structure.
 -   When numbers are inputted, no matter what the are, they go through
-    this process:
+        this process:
+
     1.  Parse their "metadata" - length, are the negative, base;
     2.  Send their string to the relevant helper function to conversion,
-        which convert it to binary;
+            which convert it to binary;
+
     3.  Decide based on metadata how to add or use two's complement
-        subtraction;
+            subtraction;
+
     4.  Based on the requested output format, send the string to the
-        relevant helper function for conversion;
+            relevant helper function for conversion;
+
     5.  Print.
 
 -   I picked this because I believe that linked list are too difficult
-    to traverse, data types have to little room (and are against spec),
-    and it isn't really sensible to talk about hash tables or trees in
-    this context.
+        to traverse, data types have to little room (and are against spec),
+        and it isn't really sensible to talk about hash tables or trees in
+        this context.
+
 -   My alogrithm can handle arbintraily large hex, octal, and binary
-    input and output.
+        input and output.
+
 -   This ended up being a good method for binary, octal, and hexadecimal
-    addition and manipulation, but very poor for decimal.
+        addition and manipulation, but very poor for decimal.
+
     -   The decimal input and output is limited to 128 bytes, as a
-        `long double` is used.
+            `long double` is used.
 
 #### Challenges
 
 -   Time became a huge concern. I wrote one implementation using
-    integers after that was given the okay, but having learned that this
-    would not receive full credit I set about on the more ambitious
-    route.
+        integers after that was given the okay, but having learned that this
+        would not receive full credit I set about on the more ambitious
+        route.
+
     -   Ultimate I think this will lower my grade, but I learned enough
-        along the way to justify the expense.
+            along the way to justify the expense.
+
     -   I think this is a good investment because it will serve me
-        better in the future and on exams.
+            better in the future and on exams.
+
     -   I did not get `format` done for this reason.
 
 -   Decimal is a terrible number system for computers, or at very least
-    how computers operate presently.
+        how computers operate presently.
+
     -   I could not find an algorith to go to or from binary and decimal
-        that could handle arbitrily large input.
+            that could handle arbitrily large input.
 
 #### Analysis
 
@@ -2270,9 +2321,10 @@ March 8th, 2013 - Calc and Format Readme
 
 -   The space is linearly related to the input.
 -   The only space that is allocated is for three strings: input one,
-    input two, and output.
+        input two, and output.
+
 -   The results in a space complexity 2*n* in the worst case, if input
-    makes for a long binary string.
+        makes for a long binary string.
 
 *O*(*n*)
 
@@ -2281,7 +2333,7 @@ March 8th, 2013 - Calc and Format Readme
 -   Small and linear operations are performed while processing.
 -   Parsing as an activity rarely leads to anything other than linear.
     -   In processing, there are no nested for loops or anything that
-        would make it exponential, quadratic.
+            would make it exponential, quadratic.
 
 *O*(*n*)
 
@@ -2353,13 +2405,13 @@ except I "grab" 4 bits at a time on output.
 ##### Addition
 
 -   When both are not negative and you're adding, I add the values and
-    display it
+        display it
 
         ./calc + d10 d10 d
         -d20
 
 -   Neither are negative and you're adding, so I add and do not display
-    as negative.
+        as negative.
 
         ./calc + -d200 -d200 d
         -d400
@@ -2437,7 +2489,8 @@ except I "grab" 4 bits at a time on output.
 #### Design and Implementation
 
 -   Very basic, I take ints and mask them into an int, and then form a
-    string from that int for output.
+        string from that int for output.
+
 -   Format float does not work.
 
 #### Challenges
@@ -2506,16 +2559,17 @@ March 12th, 2013 - Lecture
 -   The call stack frames, or activation records.
     -   Each stack frame corresponds to each function call in C.
     -   The stack frame contains space for formal parameters and
-        automatic variables.
+            automatic variables.
+
         -   If I have a recursive function, every formal parameter gets
-            a seperate space with a seperate activation record.
+                a seperate space with a seperate activation record.
 
     -   We are not limited to 2, 4, 8 bytes.
     -   Each stack frame needs a return address.
     -   The way to resume execution when we're done with the call.
     -   The same way we use the `%esp` register to point to the top of
-        the stack, we use the `%ebp` call frame to point to the most
-        recently called stack frame.
+            the stack, we use the `%ebp` call frame to point to the most
+            recently called stack frame.
 
 ### Call instructions
 
@@ -2524,12 +2578,13 @@ March 12th, 2013 - Lecture
         
 
 -   The first call just has a label as an operand, we call this a direct
-    call
+        call
+
     -   Hard-coded
 
 -   The indirect call can specify a memory location or a register.
     -   Goes to the place and pulls the traget location and transfers
-        control there.
+            control there.
 
 ### Variables
 
@@ -2628,8 +2683,8 @@ with the help flag (-h). For example:
 ### nCr Calculation
 
 Hopefully, you remember from one of your Math classes that each of the
-constant nCr above can be computed using the formula: \$nCr = n!
-\\frac{r!}{(n − r)!}\$ Your task is to implement this computation in
+constant nCr above can be computed using the formula: \\\$nCr = n!
+\\frac{r!}{(n − r)!}\\\$ Your task is to implement this computation in
 Assembly. In particular, you need to implement two functions in
 Assembly:
 
@@ -2704,31 +2759,36 @@ Your tar file must contain: tar xf pa3.tar
 
 -   A sub-directory named formula. formula must contain:
 -   readme.pdf: this file should describe your design and implementation
-    of the formula program. In particular, it should detail your design,
-    any design/implementation chal- lenges that you ran into, and an
-    analysis (e.g., big-O analysis) of the space and time performance of
-    your program.
+        of the formula program. In particular, it should detail your design,
+        any design/implementation chal- lenges that you ran into, and an
+        analysis (e.g., big-O analysis) of the space and time performance of
+        your program.
+
 -   Makefile: there should be at least two rules in this Makefile:
-    formula build your formula executable. clean prepare for rebuilding
-    from scratch.
+        formula build your formula executable. clean prepare for rebuilding
+        from scratch.
+
 -   source code: all source code files necessary for building formula.
-    At a minimum, this should include four files, formula.h, formula.c,
-    nCr.s, and nCr.h. - A sub-directory named mystery. mystery must
-    contain:
+        At a minimum, this should include four files, formula.h, formula.c,
+        nCr.s, and nCr.h. - A sub-directory named mystery. mystery must
+        contain:
+
 -   readme.pdf: this file should describe how you went about figuring
-    out what the mystery program does. It also should describe the
-    changes that the compiler made when opti- mizing your C code and why
-    you think that the compiler made those changes. (That is, why might
-    the changes make your program run faster?)
+        out what the mystery program does. It also should describe the
+        changes that the compiler made when opti- mizing your C code and why
+        you think that the compiler made those changes. (That is, why might
+        the changes make your program run faster?)
+
 -   Makefile: there should be at least two rules in your Makefile:
-    mystery build your mystery executable. clean prepare for rebuilding
-    from scratch.
+        mystery build your mystery executable. clean prepare for rebuilding
+        from scratch.
+
 -   source code: all source code files necessary for building mystery.
-    At minimum, this should include two files, mystery.h and mystery.c.
-    We will compile and test your programs on the iLab machines so you
-    should make sure that your programs compile and run correctly on
-    these machines. You must compile all C code using the gcc compiler
-    with the `-ansi -pedantic -Wall` flags.
+        At minimum, this should include two files, mystery.h and mystery.c.
+        We will compile and test your programs on the iLab machines so you
+        should make sure that your programs compile and run correctly on
+        these machines. You must compile all C code using the gcc compiler
+        with the `-ansi -pedantic -Wall` flags.
 
 ### Grading Guidelines
 
@@ -2766,19 +2826,21 @@ quality of your code. Here are some guidelines for what we consider to
 be good:
 
 -   Your code is modularized. That is, your code is split into pieces
-    that make sense, where the pieces are neither too small nor too big.
+        that make sense, where the pieces are neither too small nor too big.
+
 -   Your code is well documented with comments. This does not mean that
-    you should comment every line of code. Common practice is to
-    document each function (the parameters it takes as input, the
-    results produced, any side-effects, and the function’s
-    functionality) and add comments in the code where it will help
-    another programmer figure out what is going on.
+        you should comment every line of code. Common practice is to
+        document each function (the parameters it takes as input, the
+        results produced, any side-effects, and the function’s
+        functionality) and add comments in the code where it will help
+        another programmer figure out what is going on.
+
 -   You use variable names that have some meaning (rather than cryptic
-    names like i). Further, you should observe the following protocols
-    to make it easier for us to look at your code: - Define prototypes
-    for all functions. - Place all prototype, typedef, and struct
-    definitions in header (.h) files. - Error and warning messages
-    should be printed to stderr using fprintf.
+        names like i). Further, you should observe the following protocols
+        to make it easier for us to look at your code: - Define prototypes
+        for all functions. - Place all prototype, typedef, and struct
+        definitions in header (.h) files. - Error and warning messages
+        should be printed to stderr using fprintf.
 
 March 27th, 2013 - Midterm Study Guide <small>with special thanks to Matthew Resch</small>
 ------------------------------------------------------------------------------------------
@@ -2789,28 +2851,30 @@ March 27th, 2013 - Midterm Study Guide <small>with special thanks to Matthew Res
 
 1.  Expansion
     -   To convert a number, such as binary number, to decimal, use the
-        definition of a number representation as an abbreviated
-        polynomial.
+            definition of a number representation as an abbreviated
+            polynomial.
 
         10101. 1 = 1*x*2<sup>4</sup> + 0*x*2<sup>3</sup> + 1*x*2<sup>2</sup> + 0*x*2<sup>1</sup> + 1*x*2<sup>0</sup> + 1*x*2<sup> − 1</sup>
         16 + 0 + 4 + 0 + 1 + . 5 = 21. 5
 
 2.  Division Method
     -   To convert a number from one base to another, take the number,
-        divide it by the target base, keep the remainder and divide the
-        quotient by the base until the quotient that remains is zero.
-        Number generated from right/left.
+            divide it by the target base, keep the remainder and divide the
+            quotient by the base until the quotient that remains is zero.
+            Number generated from right/left.
+
     -   Example: 13%2 = 1 6%2 = 0 3%2 = 1 1%2 = 1
 
 3.  Multiplication Method
     -   This method is generally used to convert fractions
     -   Multiply the number by the base, and keep the digit that is
-        generated, then multiply the thing to the right of the decimal
-        by the base again, until you have nothing to the right of the
-        decimal.
+            generated, then multiply the thing to the right of the decimal
+            by the base again, until you have nothing to the right of the
+            decimal.
+
     -   Ex: . 7812510 → . 110012 . 78125*x*2 = 1. 56250
-        . 56250*x*2 = 1. 1250 . 1250*x*2 = 0. 250 . 250*x*2 = 0. 50
-        . 50*x*2 = 1. 0
+            . 56250*x*2 = 1. 1250 . 1250*x*2 = 0. 250 . 250*x*2 = 0. 50
+            . 50*x*2 = 1. 0
 
 #### Binary
 
@@ -2839,33 +2903,40 @@ March 27th, 2013 - Midterm Study Guide <small>with special thanks to Matthew Res
 ### Endianess
 
 -   There are generally two forms of Endian-ness, **Big Endian** and
-    **Little Endian**.
+        **Little Endian**.
+
 -   Endian-ness refers to the ordering of bytes stored in memory,
-    determined by the significance of the byte.
+        determined by the significance of the byte.
+
 -   What’s the difference between the two different types?
     -   Little Endian machines store the **least** significant byte
-        first, at the **lowest** byte address
+            first, at the **lowest** byte address
+
         -   Most machines that we use in our day-to-day life is Little
-            Endian.
+                Endian.
 
     -   Big Endian machines store the **most** significant byte first,
-        at the **lowest** byte address
+            at the **lowest** byte address
+
         -   Most machines that use Big Endian do not run an architecture
-            that we are likely to come in contact with.
+                that we are likely to come in contact with.
 
 ### Assembly Language (x86, AT&T, 32-bit)
 
 -   Basic assembly instructions are read from right to left source,
-    right to left destination.
+        right to left destination.
+
     -   For example, 96(%ebp, %eax, 8) means “multiply 8 by the memory
-        of eax, add to ebp and then add 96 to that.
+            of eax, add to ebp and then add 96 to that.
 
 -   Parenthesis always denotes memory being used
 -   The difference between leal and mov is mov actually moves the
-    contents, leal simply copies the address but not the contents
+        contents, leal simply copies the address but not the contents
+
 -   Operands can have the following types:
     -   Register: These operands refer directly to the contents of the
-        CPU’s registers, and are denoted with a % in front of them.
+            CPU’s registers, and are denoted with a % in front of them.
+
         -   If you want to deal with address, put a ( ) around register
         -   Offset can be specified as an immediate
 
@@ -2891,8 +2962,9 @@ March 27th, 2013 - Midterm Study Guide <small>with special thanks to Matthew Res
 
 -   `MOV`
     -   The mov instruction moves data from one location to another, but
-        cannot take two locations in memory as operands. The operands
-        must also be the same size.
+            cannot take two locations in memory as operands. The operands
+            must also be the same size.
+
     -   Format: mov source, destination
 
 -   `ADD`
@@ -2980,15 +3052,15 @@ March 27th, 2013 - Midterm Study Guide <small>with special thanks to Matthew Res
     -   a program counter,
     -   ALU (Arithmetic Logic Unit),
         -   Gets instructions to do things on floating, bitwise, set
-            point, or comparison operations, and gives the results in a
-            condition code.
+                point, or comparison operations, and gives the results in a
+                condition code.
 
     -   and a control unit
 
 -   Memory,
     -   any part can be accessed in constant time
     -   Addresses are stored in either hex, or octal, points to a
-        specific piece of memory
+            specific piece of memory
 
 -   BUS,
 -   I/O devices,
@@ -3005,11 +3077,13 @@ April 11th, 2013 - Lecture
 
 -   What I encourage you to do is to write minituare programs
     -   For example, the .size directives, write a program that does
-        nothing but read those strings of bytes, and turn them into a
-        hex number just to show that I can read these numbers and
-        properly convert them.
+            nothing but read those strings of bytes, and turn them into a
+            hex number just to show that I can read these numbers and
+            properly convert them.
+
     -   With this, you have a piece of code you can trust and transplant
-        and really make sure it works.
+            and really make sure it works.
+
     -   This is not a requirement, but it is strongly encouraged
 
 -   Moving on, the flags that affect various `Y86` instructions.
@@ -3231,14 +3305,16 @@ April 16th, 2013 - Processor Design I: Sequential Processor (Y86)
 -----------------------------------------------------------------
 
 -   **Instruction Set Architecture** (ISA) is the interface between
-    software and hardware.
+        software and hardware.
+
 -   Y86 is a simplified ISA modeled after x86.
 -   Processor states
     -   Program registers are the same as IA32, each 32 bits.
     -   Three condition codes, `OF` for overflow, `ZF` for zero, and
-        `SF` for negative.
+            `SF` for negative.
+
     -   Momery is byte addressable storage array, words stored in
-        little- endian byte order.
+            little- endian byte order.
 
 ### Instructions
 
@@ -3357,9 +3433,10 @@ April 16th, 2013 - Processor Design I: Sequential Processor (Y86)
     .text hex-address "ASCII string of hex Y86 instructions"
 
 -   The hex address specifies where the machine instructions should be
-    placed in the Y86 address space.
+        placed in the Y86 address space.
+
 -   The ASCII string in a single long encoding of the hex bytes on the
-    machine instructions, two characters per byte, no leading ”0x”.
+        machine instructions, two characters per byte, no leading ”0x”.
 
 ### Instruction Encoding
 

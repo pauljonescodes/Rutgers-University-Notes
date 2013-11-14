@@ -594,19 +594,24 @@ A tarred gzipped file named pa2.tgz that contains a directory called pa2
 with the following files in it:
 
 -   An sorted-list.h file containing the interface we gave you and your
-    structure definition. The function defintions must remain unaltered!
+        structure definition. The function defintions must remain unaltered!
+
 -   A sorted-list.c file containing your implementation of the sorted
-    list.
+        list.
+
 -   A main.c file containing a main function that exercise your sorted
-    list implementation using the test plan outlined in testplan.txt.
+        list implementation using the test plan outlined in testplan.txt.
+
 -   A Makefile that is used to compile your sorted list implementation
-    into a library called libsl.a and an executable called sl that runs
-    the code in main.c.
+        into a library called libsl.a and an executable called sl that runs
+        the code in main.c.
+
 -   A file called testplan.txt that contains a test plan for your code,
-    including input and expected output.
+        including input and expected output.
+
 -   A readme.pdf file that contains analyses of the running time and
-    memory usage of each of your sorted-list functions. Use big-O
-    notation to describe the end result of each analysis.
+        memory usage of each of your sorted-list functions. Use big-O
+        notation to describe the end result of each analysis.
 
 Suppose that you have a directory called pa2 in your account (on iLab),
 containing the above required files. Here’s how you create the required
@@ -623,7 +628,8 @@ pa2.tgz (see man tar). Your grade will be based on:
 -   Correctness (how well your code is working),
 -   Quality of your design (did you use reasonable algorithms),
 -   Quality of your code (how well written your code is, including
-    modularity and comments),
+        modularity and comments),
+
 -   Efficiency (of your implementation), and
 -   Testing thoroughness (quality of your test cases).
 
@@ -651,21 +657,24 @@ September 26th, 2013 <small>GDB</small>
 ### Reference Counter
 
 -   You increment a reference counter for every time a new pointer
-    points to the node.
+        points to the node.
+
 -   You decrement a reference counter for every time you remove a
-    pointer from a node.
+        pointer from a node.
+
 -   You free the memory for a node when you decrement it to zero.
 -   An iterator pointing to a node that is printing or up to some
-    operation can make the reference counter not zero or one, leading to
-    some interesting scenarios.
+        operation can make the reference counter not zero or one, leading to
+        some interesting scenarios.
 
 October 2nd, 2013 <small>Programming Assignment 3: Indexer</small>
 ------------------------------------------------------------------
 
 **Warning**: As you will see below, the descriptions of the assignments
 will be increasingly complex because we are asking you to build
-increasingly bigger programs. *Make sure to read the assignment
-carefully!* This is critical because this document essentially describes
+increasingly bigger programs. \*Make sure to read the assignment
+carefully!\* This is critical because this document essentially
+describes
 the requirements for your program.
 
 ### Introduction
@@ -697,32 +706,38 @@ After constructing the entire inverted index in memory, the indexer will
 save it to a file.Some observations:
 
 -   An inverted index is just a sequence of mappings, where each mapping
-    maps a term (e.g., “dog”) to a list of records, with each record
-    containing the name of a file whose content contains the term and
-    the frequency with which the term appears in the file.
+        maps a term (e.g., “dog”) to a list of records, with each record
+        containing the name of a file whose content contains the term and
+        the frequency with which the term appears in the file.
+
 -   The above depiction just gives a logical view of the inverted index.
-    In your program, you have to define data structures to hold the
-    mappings (term → list), the list of records, and the records (file
-    name, count).
+        In your program, you have to define data structures to hold the
+        mappings (term → list), the list of records, and the records (file
+        name, count).
+
 -   The mappings are maintained in sorted order of the terms. You will
-    see later why this is useful. Sorting in ascending or descending
-    order doesn’t matter so much. We will just arbitrarily say for this
-    assignment that the sequence should be maintained in ascending
-    sorted order based on the ASCII coding of characters (i.e., “a”
-    before “b” and “aa” before “ab”).
+        see later why this is useful. Sorting in ascending or descending
+        order doesn’t matter so much. We will just arbitrarily say for this
+        assignment that the sequence should be maintained in ascending
+        sorted order based on the ASCII coding of characters (i.e., “a”
+        before “b” and “aa” before “ab”).
+
 -   Records in each list are maintained in descending sorted order based
-    on frequency counts of the terms in the files. Again, you will see
-    later why this is useful.
+        on frequency counts of the terms in the files. Again, you will see
+        later why this is useful.
+
 -   Capitalization has been removed. For your indexer, “A” and “a”
-    should be
+        should be
+
 -   considered the same term. Thus, you will need to normalize all upper
-    case letters to lower case letters in the terms. (The other way
-    around is OK too.)
+        case letters to lower case letters in the terms. (The other way
+        around is OK too.)
+
 -   It should be obvious that the tokenizer and sorted-list that you
-    wrote in earlier assignments are useful for this assignment
-    (although you have to modify the tokenizer to work with a file,
-    rather than a string). Use the improved tokenizer.c file attached to
-    this assignment.
+        wrote in earlier assignments are useful for this assignment
+        (although you have to modify the tokenizer to work with a file,
+        rather than a string). Use the improved tokenizer.c file attached to
+        this assignment.
 
 ### Implementation
 
@@ -757,7 +772,8 @@ Examples of tokens according to the above definition include:
 
     a, aba, c123, 1, 454
 
-If a file contains This an\$example12 mail@rutgersit should tokenize to
+If a file contains This an\\\$example12 mail@rutgersit should tokenize
+to
 this an example12 mail rutgers
 
 The inverted index file that your indexer writes must follow the
@@ -795,19 +811,22 @@ your indexer.
 ### Hints
 
 -   Data structures that might be useful include the sorted list you
-    just implemented (of course) and a hash table.
+        just implemented (of course) and a hash table.
+
 -   An object (e.g., a record {“baa”, 3}) can be inserted into multiple
-    containing data structures, such as a sorted list and a hash table).
+        containing data structures, such as a sorted list and a hash table).
+
 -   You can use your sorted list to maintain the set of terms in
-    ascending order. But, since we are asking for records for each term
-    sorted in descending order, you have to flip the meaning of \< and
-    \> in your comparator function.
+        ascending order. But, since we are asking for records for each term
+        sorted in descending order, you have to flip the meaning of \< and
+        \> in your comparator function.
+
 -   You should probably approach this in steps.
 -   First, you might get your tokenizer to generate correct tokens from
-    a file. - Next, you might get your program to walk through a
-    directory. - Next, you might implement a data structure that allows
-    you to countthe number of occurrences of each unique term in a file.
-    o Andsoon...
+        a file. - Next, you might get your program to walk through a
+        directory. - Next, you might implement a data structure that allows
+        you to countthe number of occurrences of each unique term in a file.
+        o Andsoon...
 
 ### What to Turn In
 
@@ -815,30 +834,34 @@ A tarred gzipped file name pa3.tgz that contains a directory called pa3
 with the following files in it:
 
 -   All the .h and .c files necessary to produce an executable named
-    index.
+        index.
+
 -   A makefile used to compile and produce index. It must have a target
-    clean toprepare a fresh compilation of everything.
+        clean toprepare a fresh compilation of everything.
+
 -   A file called testplan.txt that contains a test plan for your
-    indexer. You should include the example files and/or directories
-    that you test your indexer on but keep these from being too large,
-    please. (We might test your program with a very large data set
-    though so don’t skip testing your program for scalability. In your
-    test plan, you should discuss the larger scale testing and the
-    results, but you can skip including the data set).
+        indexer. You should include the example files and/or directories
+        that you test your indexer on but keep these from being too large,
+        please. (We might test your program with a very large data set
+        though so don’t skip testing your program for scalability. In your
+        test plan, you should discuss the larger scale testing and the
+        results, but you can skip including the data set).
+
 -   A readme.pdf file that describes the design of your indexer. This
-    should also include the usual analysis of time and space usage of
-    your program. Starting in this assignment, you do not need analyze
-    every single function. Rather, you need to analyze the overall
-    program. (So, for example, analyzing initialization code is
-    typically not too important unless this initialization depends on
-    the size of the inputs.)
+        should also include the usual analysis of time and space usage of
+        your program. Starting in this assignment, you do not need analyze
+        every single function. Rather, you need to analyze the overall
+        program. (So, for example, analyzing initialization code is
+        typically not too important unless this initialization depends on
+        the size of the inputs.)
 
 As usual, your grade will be based on:
 
 -   Correctness (how well your code is working),
 -   Quality of your design (did you use reasonable algorithms),
 -   Quality of your code (how well written your code is, including
-    modularity andcomments),
+        modularity andcomments),
+
 -   Efficiency (of your implementation), and
 -   Testing thoroughness (quality of your test cases).
 
@@ -929,23 +952,26 @@ your strategy.
 ### What to Turn In
 
 -   A writeup documenting your design, including exception handling and
-    paying particular attention to the memory requirements of your
-    application. Your writeup should detail the format with which the
-    inverted index is written into a file.
+        paying particular attention to the memory requirements of your
+        application. Your writeup should detail the format with which the
+        inverted index is written into a file.
+
 -   A file called hw5-testcases.txt that contains a thorough set of test
-    cases for your code, includ- ing inputs and expected outputs.
+        cases for your code, includ- ing inputs and expected outputs.
+
 -   All source code (for search tool and both versions of all parts of
-    the indexer) including both implementation (.c) and interface(.h)
-    files.
+        the indexer) including both implementation (.c) and interface(.h)
+        files.
+
 -   A makefile for producing an executable search tool, with multiple
-    targets allowing selection of a compatible indexer.
+        targets allowing selection of a compatible indexer.
 
 Your grade will be based on:
 
 -   Correctness (how well your code is working).- Testing thoroughness
-    (quality of your test cases).- Efficiency.- Good design (how well
-    written your design document and code are, including modularity and
-    comments).- Code reuse (that your index works with both indexers).
+        (quality of your test cases).- Efficiency.- Good design (how well
+        written your design document and code are, including modularity and
+        comments).- Code reuse (that your index works with both indexers).
 
 November 5th, 2013 <small>Midterm Study Guide</small>
 -----------------------------------------------------
@@ -1053,15 +1079,14 @@ But it's much nicer to use a `typedef`:
         return functionPtr;
     }
 
-[Source
-↪](http://stackoverflow.com/questions/840501/how-do-function-pointers-in-c-work)
+[Source](http://stackoverflow.com/questions/840501/how-do-function-pointers-in-c-work)
 
 #### Header Files
 
 -   Include a file
 -   Why use headers?
     -   Copy and paste the same possible large amount of code many
-        times.
+            times.
 
             #include <stdlib.h>
             #include "myheader.h"
@@ -1226,6 +1251,7 @@ Rules
 
 <!-- -->
 
+
     app: main.o mod_a.o mod_b.o
         cc -o app main.o mod_a.o mod_b.o
 
@@ -1322,7 +1348,8 @@ Standard I/O library
 -   Group multiple compiled object files into a single file.
 -   Used for sharing common pieces of code.
 -   Software developers can package code and release an API without the
-    actual source code.
+        actual source code.
+
 -   Libraries (or components) can be created for dynamic use.
     -   Library is separate from executable, thus reduced its size.
     -   Libraries can be invoked when needed.
@@ -1344,12 +1371,13 @@ Dynamic library (`.so`)
     ways.
 
     1.  Dynamically linked at run time but statically aware. The
-        libraries must be available during compile/link phase. The
-        shared objects are not included into the executable component
-        but are tied to the executable.
+            libraries must be available during compile/link phase. The
+            shared objects are not included into the executable component
+            but are tied to the executable.
+
     2.  Dynamically loaded/unloaded and linked during execution (i.e.
-        browser plug-in) using the dynamic linking loaded r system
-        functions.
+            browser plug-in) using the dynamic linking loaded r system
+            functions.
 
 -   Naming convention: `lib` prefix.
 -   Example:
@@ -1401,9 +1429,11 @@ Dynamic library (`.so`)
         ln -sf /opt/lib/libctest.so.1.0 /opt/lib/libtest.so
 
 -   The link to `/opt/lib/libctest.so` allows the naming convention for
-    the compile flag `-litest` to work.
+        the compile flag `-litest` to work.
+
 -   The link to `/opt/lib/libctest.so.1` allows the run time binding to
-    work.
+        work.
+
 -   Now, for adding the library to a program:
 
         gcc -Wall -L/opt/lib prog.c -lctest -o prog
@@ -1413,7 +1443,7 @@ Dynamic library (`.so`)
         ldd prog
 
 -   Add library directories to be included during dynamic linking to the
-    file
+        file
 
         /etc/ld.so.conf 
 
@@ -1422,7 +1452,7 @@ Dynamic library (`.so`)
         ldconfig -n /opt/lib
 
 -   Specify the environment variable `LD_LIBRARY_PATH` to point to the
-    directory paths containing the shared object library
+        directory paths containing the shared object library
 
 ### Processes
 
@@ -1463,7 +1493,8 @@ Process ID
 
         -   Kernal level process
         -   Responsible for all the process scheduling that takes place
-            inside the system always running.
+                inside the system always running.
+
         -   Always running.
 
     `PID 1`
@@ -1471,7 +1502,8 @@ Process ID
 
         -   User level process running with root privileges.
         -   Responsible for bringing up linux system, the first process
-            started once a system boot up.
+                started once a system boot up.
+
         -   Always running.
 
 File descriptors
@@ -1523,7 +1555,8 @@ Zombie process
     -   Refer to child process.
     -   Child dies before parent.
     -   Parent process does not `wait` so it is unaware of the
-        termination of the child.
+            termination of the child.
+
     -   `kill` does not work for zombie process
 
 Orphan process
@@ -1610,22 +1643,25 @@ Catch
 -   It takes two parameters, sig and func.
     -   The signal to be caught or ignored is given as argument sig.
     -   The function to be called when the specified signal is received
-        is given as func.
+            is given as func.
+
     -   This function must be one that takes a single int argument (the
-        signal received) and is of type void.
+            signal received) and is of type void.
 
 -   The signal function itself returns a function of the same type,
-    which is the previous value of the function set up to handle this
-    signal, or one of these two special values:
+        which is the previous value of the function set up to handle this
+        signal, or one of these two special values:
 
 -   Not large
 -   Should not use global or static data structures
 -   The signal that cause invocation of the signal handler is
-    **blocked** during the handler execution
+        **blocked** during the handler execution
+
 -   Different signals can use the same handler function.
 -   Allow multiple handlers (in the same functions)
 -   Allow different handlers for the same signal at different points of
-    program execution.
+        program execution.
+
 -   Args determined by OS, not out program
 
 |Value|Meaning|
@@ -1638,20 +1674,21 @@ Catch
         int kill(pid_t pid, int sig);
 
 -   The kill function sends the specified signal, sig, to the process
-    whose identifier is given by pid. It returns 0 on success. To send a
-    signal, the sending process must have permission to do so. Normally,
-    this means that both processes must have the same user ID.
+        whose identifier is given by pid. It returns 0 on success. To send a
+        signal, the sending process must have permission to do so. Normally,
+        this means that both processes must have the same user ID.
+
 -   Alarm clock (SIGALRM):
 
         unsigned int alarm(unsigned int seconds);
 
 -   The alarm call schedules the delivery of a SIGALRM signal in seconds
-    seconds. In fact, the alarm will be delivered shortly after that,
-    due to processing delays and scheduling uncertainties. A value of 0
-    will cancel any outstanding alarm request. Each process can have
-    only one outstanding alarm. Alarm returns the number of seconds left
-    before any outstanding alarm call would be sent, or -1 if the call
-    fails.
+        seconds. In fact, the alarm will be delivered shortly after that,
+        due to processing delays and scheduling uncertainties. A value of 0
+        will cancel any outstanding alarm request. Each process can have
+        only one outstanding alarm. Alarm returns the number of seconds left
+        before any outstanding alarm call would be sent, or -1 if the call
+        fails.
 
 -   Be sure to know:
     -   Signals and threads
@@ -1666,7 +1703,8 @@ Catch
 
 -   `signal.h`
     -   Each process has a **signal mask** - the set of blocked signals
-        for that process.
+            for that process.
+
     -   C uses opaque type sigset\_t for signal mask implementation
 
         static void sigint\_handler( int signo ); static void
@@ -1681,7 +1719,7 @@ Catch
     }
 
 -   And a union of structure determined by different signals with
-    detailed information.
+        detailed information.
 
 #### Signal Action
 
@@ -1714,7 +1752,8 @@ Catch
 
 -   Activate: call `setitimer` with non-zero `it_value`
 -   Deactivate: call `setitimer()` with zero `it_value`, or when timer
-    expires with a zero `it_interval`.
+        expires with a zero `it_interval`.
+
 -   No multiple, seperate timers for the same process at the same time.
 
 #### Timer activation
@@ -1732,9 +1771,11 @@ Catch
 -   A single is a sequence of control within a process.
 -   A process runs at least one thread, `main`.
 -   `fork()`ing a process: A new copy is created with its own everything
-    memory.
+        memory.
+
 -   Starting a new thread: It only has it's own *memory stack*,
-    everything else is shared with the process which created it.
+        everything else is shared with the process which created it.
+
 -   Advantages
     -   Make a program do a few things at once
     -   Logically is not multicore.
@@ -1742,18 +1783,19 @@ Catch
     -   A program can mix input, calculation, and output efficiently.
     -   Accelerate processing on proper multi-core processors.
     -   Switching between threads requires less work than switching
-        between processes.
+            between processes.
 
 -   Disadvantages
     -   Requires careful design.
         -   Threads are also know as "how to shoot yourself in both feet
-            at once."
+                at once."
 
     -   Debugguging hell. By using a good IDE the job is largely
-        mitigated.
+            mitigated.
+
     -   A program that split a large calculation into two and the the
-        two parts a different threads will not necessarily run more
-        quickly on a single processor machine.
+            two parts a different threads will not necessarily run more
+            quickly on a single processor machine.
 
 #### POSIX Specification
 
@@ -1786,44 +1828,50 @@ Semaphores
 ##### Semaphores
 
 -   A semaphore is a special type of variable that can be incremented or
-    decremented, but crucial access to the variable is guaranteed to be
-    atomic, even in a multi-threaded program.
+        decremented, but crucial access to the variable is guaranteed to be
+        atomic, even in a multi-threaded program.
+
 -   If two or more threads in a program attempt to change the value of a
-    semaphore, the system guarantees that all the operations will in
-    fact take place in sequence.
+        semaphore, the system guarantees that all the operations will in
+        fact take place in sequence.
+
 -   Binary semaphore is commonly used. It means only one thread is able
-    to execute the guarded piece of code.
+        to execute the guarded piece of code.
+
     -   Counting semaphore can allow a number of threads to execute
-        simultaneously.
+            simultaneously.
 
             #include <semaphore.h>
             int sem_init(sem_t * sem, int pshared, unsigned int value);
 
 -   This function intializaes a semaphore object pointed to by `sem`,
-    sets it sharing option, and gives it an initial integer value.
+        sets it sharing option, and gives it an initial integer value.
+
 -   The `pshared` parameter controls the type of semaphore.
     -   If the value is 0, the semaphore is local to the current
-        process.
+            process.
 
 -   Wait until allowed to execute:
 
         int sem_wait(sem_t *sem);
 
 -   `sem_wait()` **atomically** decreases the value of the semaphore by
-    one, but always waits until the semaphore has a non-zero count
-    first.
+        one, but always waits until the semaphore has a non-zero count
+        first.
+
     -   If sem\_wait is called on a semaphore with a value of 0, the
-        function will wait until some other thread has incremented the
-        valuye so that it is no longer 0.
+            function will wait until some other thread has incremented the
+            valuye so that it is no longer 0.
 
 -   Post when enter the guarded execution.
 
         int sem_post(sem_t * sem);
 
 -   `sem_post()` **atomically** increases the value of the semaphore by
-    one.
+        one.
+
     -   If the both programs try to increase the value by 1, the
-        semaphore will always be correctly increased in value by 2.
+            semaphore will always be correctly increased in value by 2.
 
     int sem\_destroy(sem\_t \* sem);
 
@@ -1831,7 +1879,8 @@ Semaphores
 
 -   Mutual exclusion
 -   Allowing programmer to lock an object, only one thread can access
-    it.
+        it.
+
 -   Must local the mutex before entering and unlock it when you finish.
 
         #include <pthread.h>
@@ -1932,8 +1981,7 @@ The command-line arguments will specify the following:
 
 -   `Arg 1: the name of the database input file`
 -   `Arg 2: the name of the book order input file`
--   `Arg 3: the list of category names (alphanumeric strings 
-	separated by blanks in a single- or double-quoted string)`
+-   `Arg 3: the list of category names (alphanumeric strings      separated by blanks in a single- or double-quoted string)`
 
 Your program starts by reading in the customer database file and setting
 up the customer data base. It then spawns the producer thread and the
@@ -1974,9 +2022,12 @@ makefile for producing an executable program file.Your grade will be
 based on:
 
 -   Correctness (how well your code is working, including avoidance of
-    deadlocks.
+        deadlocks.
+
 -   Efficiency (avoidance of recomputation of the same results,
-    avoidance of busy-waits).
+        avoidance of busy-waits).
+
 -   Good design (how well written your design document and code are,
-    including modularity and comments).
+        including modularity and comments).
+
 

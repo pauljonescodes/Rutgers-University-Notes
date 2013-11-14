@@ -18,14 +18,17 @@ persistence.
     -   Inheritance, interfaces, abstract classes, polymorphism
     -   Unified Modeling Language (UML)
     -   Essential design patterns, including Singleton,
-        Model-View-Controller (MVC), Template Method, State
+            Model-View-Controller (MVC), Template Method, State
+
     -   Black-box unit testing, debugging, developing large applications
-        in Eclipse
+            in Eclipse
+
     -   Object persistence, serialization
     -   Code management using CVS
     -   Designing and implementing GUIs using Java Swing and AWT
     -   Frames, dialogs, panels, widgets, tables, layouts, colors,
-        fonts, drawing, painting
+            fonts, drawing, painting
+
     -   The Swing MVC architecture and working with data models
     -   Event handling
     -   Introduction to software development on mobile platforms
@@ -37,35 +40,44 @@ Syllabus
 
 -   Topics
     1.  Overview of software methodology. Object-oriented programming.
-        Iterative development. Testing. Documentation. Source code
-        management with Mercurial.
+            Iterative development. Testing. Documentation. Source code
+            management with Mercurial.
+
     2.  Object-Oriented Design with Java. Class design, interfaces,
-        inheritance, abstract classes, polymorphism.
+            inheritance, abstract classes, polymorphism.
+
     3.  UML class diagrams to represent object-oriented design. Classes,
-        generalizations, associations, dependencies.
+            generalizations, associations, dependencies.
+
     4.  Event-driven Graphical User Interface (GUI) programming. Event
-        registration, listeners, handling events. Java Swing and AWT.
-        Components and containers. Frames, dialogs, panels, layouts,
-        colors, fonts, drawing, painting.
+            registration, listeners, handling events. Java Swing and AWT.
+            Components and containers. Frames, dialogs, panels, layouts,
+            colors, fonts, drawing, painting.
+
     5.  Model-View-Controller (MVC) design pattern. The Swing MVC
-        architecture and working with data models.
+            architecture and working with data models.
+
     6.  State-based programming. State design pattern.
     7.  Iterative development - feature extension, code reuse,
-        versioning, backward compatibility, object serialization.
+            versioning, backward compatibility, object serialization.
+
     8.  Block-box unit testing. Boundary values. Equivalence Classes.
-        Debugging in Eclipse.
+            Debugging in Eclipse.
+
     9.  Multithreading and synchronization on shared resources.
     10. Developing Android apps in Eclipse. Device emulators. Structure
-        of Android apps. Java source code, resources, manifest file, xml
-        layout, density independent pixels.
+            of Android apps. Java source code, resources, manifest file, xml
+            layout, density independent pixels.
+
     11. App lifecycle, activities, passing information between
-        activities. Layouts, views, widgets, menus, context menus,
-        dialogs, inflating views from xml.
+            activities. Layouts, views, widgets, menus, context menus,
+            dialogs, inflating views from xml.
+
     12. Implementing search with search bar. I/O. Icons and drawables.
     13. Packaging an app for publishing to the Android Market.
     14. Introduction to network programming. Java networking API.
-        Client-server programming with TCP/IP sockets and server
-        sockets.
+            Client-server programming with TCP/IP sockets and server
+            sockets.
 
 -   Grading
     -   Recitation attendance: 50 (5%)
@@ -79,54 +91,71 @@ January 22nd, 2012 - Lecture
 ----------------------------
 
 -   Many things that you use when building a Java GUI, you'll be using
-    widgets from Swing API.
+        widgets from Swing API.
+
 -   With JButtons, the simplest way to have something in the button is
-    tompass text to the constructor.
+        tompass text to the constructor.
+
 -   With JFrames, you want to display content in a certain arragement,
-    using something called a layout manager.
+        using something called a layout manager.
+
 -   With different LayoutManagers, you get different arrangments.
 -   Other LayoutManagers include BorderLayout, GridLayout, ...
 -   For any frame and any window, you can set a size.
 -   Alyways set your frame to being visible.
 -   For every button or widget that sets off an action, you're going to
-    need an event listener.
+        need an event listener.
+
 -   Before Swing, there was AWT. And if you thought Swing was bad, well,
-    AWT was worse.
+        AWT was worse.
+
 -   ActionListeners are interfaces - a la Comparable, Iterable, etc ...
 -   LayoutManagers can handle resizing of windows and other unexpected
-    happenings.
+        happenings.
+
 -   If you set the location relative to `null`, then you get a centered
-    window.
+        window.
 
 January 24th, 2013 - Lecture
 ----------------------------
 
 -   `ActionListener` is an interface - you need to define a class.
 -   In the package `jwt.java.event`, `ActionListener` is a subclass of
-    the subclass of all interfaces.
+        the subclass of all interfaces.
+
 -   You will localize interface definitions if you will never need the
-    code again, generalize it otherwise.
+        code again, generalize it otherwise.
+
 -   We defined another class called `ButtonListener` which is in the
-    same source file as `FC.java`.
+        same source file as `FC.java`.
+
 -   You can have multiple classes in the same source, but only one of
-    them can be public.
+        them can be public.
+
 -   If you define a class that implements an interface after an
-    instantion, it is called an "anonymous class."
+        instantion, it is called an "anonymous class."
+
 -   Whenever you add a listener, it sets in motion a mechanism within
-    Java to handle the action.
+        Java to handle the action.
+
 -   With `ActionListener`, all the information about the widget that the
-    action was performed on is included.
+        action was performed on is included.
+
     -   For example, you can get the text from a text button.
 
 -   If you add a class to listen to an action, it must implement
-    `ActionPerformed(ActionEvent e)`.
+        `ActionPerformed(ActionEvent e)`.
+
 -   If you have multiple classes defined in the same source code, and
-    you want to import one of them, you'll need to
-    `import [filename].[classname]`.
+        you want to import one of them, you'll need to
+        `import [filename].[classname]`.
+
 -   When you program in static, you working outside of the object
-    oriented framework.
+        oriented framework.
+
 -   You are only limited to one public class when the classes are
-    defined at the same level.
+        defined at the same level.
+
 -   Java is meant to be platform independant.
 -   An `Object` reference does not "know" what type of object it is.
 
@@ -134,11 +163,11 @@ January 28th, 2013 - Recitation 1: GUI, Javadoc, Inheritence
 ------------------------------------------------------------
 
 1.  Write a program that creates a frame with two buttons on it: OK and
-    Quit. When OK is clicked, nothing will happen. When Quit is clicked,
-    the application will exit. The application window (frame) should be
-    launched in the center of the screen, and should NOT be closed when
-    the user clicks on the 'x' button in the title bar. (In other words,
-    the only way to close the window is to click on the 'Quit' button.)
+        Quit. When OK is clicked, nothing will happen. When Quit is clicked,
+        the application will exit. The application window (frame) should be
+        launched in the center of the screen, and should NOT be closed when
+        the user clicks on the 'x' button in the title bar. (In other words,
+        the only way to close the window is to click on the 'Quit' button.)
 
         package recitation;
         import java.awt.FlowLayout;
@@ -179,10 +208,10 @@ January 28th, 2013 - Recitation 1: GUI, Javadoc, Inheritence
         }
 
 2.  Redesign the Fahrenheit-Celsius GUI we did in the first lecture to
-    do away with the buttons to convert between F and C. Instead, when
-    the user types something in one of the text fields, the converted
-    value shows up immediately in the other. So your GUI looks like
-    this:
+        do away with the buttons to convert between F and C. Instead, when
+        the user types something in one of the text fields, the converted
+        value shows up immediately in the other. So your GUI looks like
+        this:
 
                 Fahrenheit       Celsius
                 ----------     ----------
@@ -260,9 +289,10 @@ January 28th, 2013 - Recitation 1: GUI, Javadoc, Inheritence
 3.  Documenting with Javadoc
     -   Make a comment which begins with two stars
     -   Then hit "generate javadoc" in Eclipse to create a generic
-        website based on that information.
+            website based on that information.
+
     -   Can include fields such as `@see`, `@author`, `@version`, and
-        `@since`
+            `@since`
 
 4.  What is the output of this code? Why?
 
@@ -296,15 +326,19 @@ January 29th, 2013 - Lecture
 ----------------------------
 
 -   It's one thing to write code that hacks through a GUI, it's wholly
-    another to write an extensible, usuable GUI.
+        another to write an extensible, usuable GUI.
+
 -   How can we write code that is easily extensible?
 -   Inheritence simply means that the code you've written in the parent
-    need not be rewritten.
+        need not be rewritten.
+
 -   You have to initialize the superclass portion first, and then then
-    the subclass portion afterwards.
+        the subclass portion afterwards.
+
 -   The constructors are not inherited.
 -   The name of the constructor is taken from the name of the class, so
-    they're not inherited.
+        they're not inherited.
+
 -   Static vs. dynamic type
     -   There is a difference between compile time and run time types.
 
@@ -319,22 +353,25 @@ January 29th, 2013 - Lecture
         -   Run time type: `ColoredPoint 3,4,"red"`
 
     -   Dynamic binding: at runtime, the actual method being called is
-        bound to that call.
+            bound to that call.
+
     -   You can't initialize a child as a parent, and every parent
     -   If an object is statically declared to be of a certain type, it
-        can only calls those methods in that type.
+            can only calls those methods in that type.
+
     -   However, at runtime, it can call whatever it is dynamically
-        assigned to be.
+            assigned to be.
+
     -   Typecasting tells the compiler to ignore the declared type and
-        use this "typecast" type instead. Example:
+            use this "typecast" type instead. Example:
 
             (ColoredPoint)p2.getColor();
 
     -   Typecasting usually is indicative of not following design intent
-        or having poor design.
+            or having poor design.
 
 -   You cannot access private variables through the object.
--   A subclass inherits the subclasses private fields.  
+-   A subclass inherits the subclasses private fields.
 -   It's a beginner's mistake to write an `equals` method like this:
 
         public boolean equals (Point p) {
@@ -342,7 +379,7 @@ January 29th, 2013 - Lecture
         }
 
 -   Here's an instance where typecasting is fine, and a good `equals`
-    method:
+        method:
 
         public boolean equals (Object o) {
             if (o == null || !(o instanceof Point))
@@ -353,7 +390,7 @@ January 29th, 2013 - Lecture
 
 -   Writing code banking on equals being there
     -   Because the `Object` class defines `equals`, you can
-        indepentadly write code to compare two objects.
+            indepentadly write code to compare two objects.
 
 ### Announcements
 
@@ -364,24 +401,30 @@ January 31st, 2013 - Lecture
 ----------------------------
 
 -   Dynamic binding happens when at runtime a certain method happens
-    when a call is bound to a subclasses version.
+        when a call is bound to a subclasses version.
+
 -   A lot of times you'll do things with things with `static`. What *is*
-    `static`?
+        `static`?
+
     -   If you make something `static`, you're making it "not object
-        oriented."
+            oriented."
+
     -   `static` is the non-OO portion of Java.
     -   Say, for instance, you need a program that just repeats whatever
-        is typed in?
+            is typed in?
+
     -   You don't need an echo object for this – there's no object
-        anywhere here.
+            anywhere here.
+
     -   `Math.java`, for instance, is a `static` class, and it is what's
-        called a "utility" class.
+            called a "utility" class.
 
 -   `static` variables
     -   There are two static constant fields in `Math.java` – `E` and
-        `PI`.
+            `PI`.
+
     -   A classic example of a `static` non-`constant` variable is a
-        counter that keeps track of how many objects are in existence.
+            counter that keeps track of how many objects are in existence.
 
 -   `static` methods
 
@@ -421,11 +464,11 @@ February 4th, 2013 - Recitation 2: Inheritance, Interfaces
 
     6.  `B b = new A(1, 2);`
         -   b is of static type B, and cannot refer to object of dynamic
-            type A since A is not a subclass of B
+                type A since A is not a subclass of B
 
 2.  In this exercise we will try to see how static and final methods
-    work with inheritance.  Consider the two classes defined below,
-    `Parent` and `Child`:
+        work with inheritance.  Consider the two classes defined below,
+        `Parent` and `Child`:
 
         public class Parent {
           /*
@@ -453,7 +496,7 @@ February 4th, 2013 - Recitation 2: Inheritance, Interfaces
 
     1.  Compile both the classes.  What do you see?
         -   Compiling the classes results in the Java compiler printing
-            the following error message:
+                the following error message:
 
                 1. ERROR in Child.java (at line 10)
                 public void printName()
@@ -461,11 +504,12 @@ February 4th, 2013 - Recitation 2: Inheritance, Interfaces
                 Cannot override the final method from Parent
 
     2.  Now comment out the `printName()` method from the child class
-        and uncomment the `printClassName()` method in both classes. 
-        Compile both classes.  What do you see?  Is it different from
-        part (A)?  Why?
+            and uncomment the `printClassName()` method in both classes. 
+            Compile both classes.  What do you see?  Is it different from
+            part (A)?  Why?
+
         -   Compiling the classes results in the Java compiler printing
-            the following error message:
+                the following error message:
 
                 ERROR in Child.java (at line 3)
                 public static void printClassName()
@@ -476,8 +520,9 @@ February 4th, 2013 - Recitation 2: Inheritance, Interfaces
             error—trying to override a `final` method in a subclass.
 
     3.  Uncomment the `Child.printName()` method and remove the `final`
-        modifier from `Parent.printName()` and
-        `Parent.printClassName()`.  Recompile both classes.
+            modifier from `Parent.printName()` and
+            `Parent.printClassName()`.  Recompile both classes.
+
         -   It compiles successfully.
 
     4.  Compile and run the following class:
@@ -493,19 +538,19 @@ February 4th, 2013 - Recitation 2: Inheritance, Interfaces
         Explain the difference in *which* methods are invoked in these
         two method calls.
         -   The `App.java` program compiles, but the compiler issues a
-            warning because `printClassName()` should be invoked on the
-            class, not on an instance.  The `printName()` call invokes
-            the `Child` class's implementation because `p` refers to an
-            instance of `Child`.  The `printClassName()` call invokes
-            the `Parent` class's implementation because `p` is a
-            reference of type `Parent`
+                warning because `printClassName()` should be invoked on the
+                class, not on an instance.  The `printName()` call invokes
+                the `Child` class's implementation because `p` refers to an
+                instance of `Child`.  The `printClassName()` call invokes
+                the `Parent` class's implementation because `p` is a
+                reference of type `Parent`
 
 3.  Suppose you design a class, `Set`, whose members behave like finite,
-    unordered mathematical sets of integers, and can support the
-    operations of membership query, union of two sets, intersection of
-    two sets, and difference of two sets. Consider the intersection
-    operation.  There are at least two ways of declaring such an
-    operation in the class `Set`:
+        unordered mathematical sets of integers, and can support the
+        operations of membership query, union of two sets, intersection of
+        two sets, and difference of two sets. Consider the intersection
+        operation.  There are at least two ways of declaring such an
+        operation in the class `Set`:
 
         public Set intersect(Set otherSet)
 
@@ -515,17 +560,17 @@ February 4th, 2013 - Recitation 2: Inheritance, Interfaces
 
     Give one pro and one con for the static version.
     -   The static version of the method is semantically closer to the
-        mathematical idea of set operations. The static approach makes
-        it clear to programmers that the intersect method is a symmetric
-        operation. The drawback of a static definition is that it cannot
-        be overridden by subclasses if we wanted to extend the Set class
-        and apply polymorphism.
+            mathematical idea of set operations. The static approach makes
+            it clear to programmers that the intersect method is a symmetric
+            operation. The drawback of a static definition is that it cannot
+            be overridden by subclasses if we wanted to extend the Set class
+            and apply polymorphism.
 
 4.  You know of the `java.lang.Comparable<T>` interface used for
-    comparing objects of a class. The `java.util` package has an
-    interface, `Comparator<T>` that may also be used to compare objects.
-    What is the difference between these two interfaces, and how may
-    this difference be usefully employed in applications?
+        comparing objects of a class. The `java.util` package has an
+        interface, `Comparator<T>` that may also be used to compare objects.
+        What is the difference between these two interfaces, and how may
+        this difference be usefully employed in applications?
 
     Here's an example of a simplified user-defined type:
 
@@ -605,11 +650,12 @@ February 4th, 2013 - Recitation 2: Inheritance, Interfaces
           Collections.sort (customerList, comparator);
 
 5.  Suppose we need to have the `Point` and `ColoredPoint` classes
-    provide functionality to parse text representations of points and
-    colored points (as would be returned by the `toString` method), and
-    return `Point` and `ColoredPoint` objects, respectively.
+        provide functionality to parse text representations of points and
+        colored points (as would be returned by the `toString` method), and
+        return `Point` and `ColoredPoint` objects, respectively.
+
     1.  Show how you would implement this functionality. In `Point`
-        class:
+            class:
 
                public static Point parsePoint(String pointStr) {
                   String[] tokens = pointStr.split(",");
@@ -642,26 +688,28 @@ February 4th, 2013 - Recitation 2: Inheritance, Interfaces
            }
 
     1.  How much of the `Point` implementation of this functionality is
-        reused in `ColoredPoint`? (Reuse meaning using code from `Point`
-        by calling on it in `ColoredPoint`.) If yes, indicate which
-        part, else explain why not.
+            reused in `ColoredPoint`? (Reuse meaning using code from `Point`
+            by calling on it in `ColoredPoint`.) If yes, indicate which
+            part, else explain why not.
+
         -   No code is reused. The only way to reuse code in
-            `ColoredPoint.parsePoint` would be with a call to
-            `Point.parsePoint`. However, the latter returns a `Point`
-            object, which would not fit in the former's implementation
-            because it has no use for a `Point` object. (The idea of
-            reuse arises because parsing a colored point equals parsing
-            a point, plus parsing the color part.)
+                `ColoredPoint.parsePoint` would be with a call to
+                `Point.parsePoint`. However, the latter returns a `Point`
+                object, which would not fit in the former's implementation
+                because it has no use for a `Point` object. (The idea of
+                reuse arises because parsing a colored point equals parsing
+                a point, plus parsing the color part.)
 
     2.  Does your implementation give rise to dynamic binding of the
-        parsing functionality? (Recall that dynamic binding means the
-        subclass version of a method is "bound" to the call made via an
-        object reference that is statically typed to the superclass.)
+            parsing functionality? (Recall that dynamic binding means the
+            subclass version of a method is "bound" to the call made via an
+            object reference that is statically typed to the superclass.)
+
         -   No, there is no dynamic binding since the methods involved
-            are both `static`. So, binding is done purely on the
-            static/compile-time type of the reference variable, without
-            regard to what object it is pointing to. This means if you
-            have:
+                are both `static`. So, binding is done purely on the
+                static/compile-time type of the reference variable, without
+                regard to what object it is pointing to. This means if you
+                have:
 
                 Point ptest = new ColoredPoint(3,4,"orange");
 
@@ -761,10 +809,12 @@ February 6th, 2013 - Lecture
 ----------------------------
 
 -   When you make UI, the first thing you should do is draw the mockup,
-    every window, every scheme.
+        every window, every scheme.
+
 -   This way you fine tune the UI before you write code.
 -   When you have more complex layouts, you need the `JPanel` class to
-    put in your `JFrame`.
+        put in your `JFrame`.
+
 -   A `JPanel` goes into a top level `JFrame`.
 -   Generally, you should not allow the user to make mistakes.
 -   For our project, we will have to make a storyboard.
@@ -776,36 +826,42 @@ February 6th, 2013 - Lecture
 
 -   `setEditable(boolean)` makes a panel read only (to the user).
 -   `setForeground(Color)` and `setBackground(Color)` set the color of
-    the interface.
+        the interface.
+
 -   `setFont(Font)` ... sets the font ...
 -   A text field can have its horitniztonal alignment set with
-    `setHorizontalAlignment()`
+        `setHorizontalAlignment()`
+
 -   A `GridLayout` creates ... a grid for you to put UI elements in.
 -   The difference between default and no argument constructors is that
-    the compiler gives you no argument for free.
+        the compiler gives you no argument for free.
+
 -   Make sure to always to ... `setVisible(boolean)`
 -   `pack()` will make your `JFrame` as small as possible given your UI
-    elements.
+        elements.
+
 -   `protected` makes the scope of a variable visible to every class in
-    the same package and any subclasses.
+        the same package and any subclasses.
 
 February 7th, 2013 - Lecture: GridBagLayout
 -------------------------------------------
 
 -   Example
     -   Fours buttons are added to a fram, constraints are all default
-        values. On enlarging the fram, notice how the buttons *maintain
-        their sizes* and stay centered within the container.
+            values. On enlarging the fram, notice how the buttons *maintain
+            their sizes* and stay centered within the container.
+
     -   `gridx` and `gridy`
         -   leftmost colum has `gridx = 0` and topmost row has
-            `gridy= 0`
+                `gridy= 0`
+
         -   Defult value is `GridBagConstraints.RELATIVE` - component is
-            placed to the right of (if `gridx`) or in the row
-            immediately below,
+                placed to the right of (if `gridx`) or in the row
+                immediately below,
 
     -   `gridwidth` and `gridheight` \* Number of columns and row in the
-        compnents display area. \* Note: Component may r5dftnot always
-        fill its desplay area. \* Default value is one.
+            compnents display area. \* Note: Component may r5dftnot always
+            fill its desplay area. \* Default value is one.
 
 February 7th, 2013 - Assignment 1: Song Library GUI Design and Implementation
 -----------------------------------------------------------------------------
@@ -818,13 +874,17 @@ name and artist (case insensitive match.) Your application should have a
 SINGLE FRAME with three interfaces:
 
 -   A song list interface, with the ability to select ONE song from the
-    list. The list will only display the names of the songs
+        list. The list will only display the names of the songs
+
 -   A song detail interface, with name, artist, album, and year, of the
-    song that is selected in the song list area.
+        song that is selected in the song list area.
+
 -   An add/delete/edit interface, for adding new songs, deleting
-    selected song, and editing selected song information:
+        selected song, and editing selected song information:
+
     -   When adding a new song, the song name and artist should be
-        entered at the very least. Year and album are optional.
+            entered at the very least. Year and album are optional.
+
     -   For editing, any of the fields can be changed.
 
 There should be NO other windows in your application. While these three
@@ -855,10 +915,10 @@ covered in class. However, you may need to add other aspects from
 Swing/AWT, and you are expected to discover these for yourself. You may
 find these links useful:
 
--   [How to Use Various
-    Components](http://docs.oracle.com/javase/tutorial/uiswing/components/componentlist.html)
--   [A Visual Guide to Layout
-    Managers](http://docs.oracle.com/javase/tutorial/uiswing/layout/visual.html)
+-   [How to Use
+    Various](http://docs.oracle.com/javase/tutorial/uiswing/components/componentlist.html)
+-   [A Visual Guide to
+    Layout](http://docs.oracle.com/javase/tutorial/uiswing/layout/visual.html)
 
 ### Grading
 
@@ -914,19 +974,19 @@ February 11th, 2013 - Recitation 3: Tokenizing, GridBagLayout, Interfaces
 -------------------------------------------------------------------------
 
 1.  Write a program to accept a string and extract tokens from it. A
-    token (string) is any sequence of non-whitespace characters, unless
-    it is enclosed in double quotes, in which case everything inside
-    double quotes (including whitespaces if any) is a token.
+        token (string) is any sequence of non-whitespace characters, unless
+        it is enclosed in double quotes, in which case everything inside
+        double quotes (including whitespaces if any) is a token.
 
 2.  Create a GUI application using a GridBagLayout. There should be 4
-    buttons (one each for north, south, east, and west). Each button
-    should have a visible amount of spacing between itself and other
-    components. At the center of the application create a label. This
-    label's text should initially read "default." When one of the
-    buttons is pressed, the label's text should read one of north,
-    south, east, or west as appropriate. When the window is resized, the
-    buttons should continue to hug the borders, and the label should
-    continue to be centered.
+        buttons (one each for north, south, east, and west). Each button
+        should have a visible amount of spacing between itself and other
+        components. At the center of the application create a label. This
+        label's text should initially read "default." When one of the
+        buttons is pressed, the label's text should read one of north,
+        south, east, or west as appropriate. When the window is resized, the
+        buttons should continue to hug the borders, and the label should
+        continue to be centered.
 
         package rec3;
 
@@ -1003,16 +1063,16 @@ February 11th, 2013 - Recitation 3: Tokenizing, GridBagLayout, Interfaces
         }
 
 3.  Suppose you built a Java library of sorting algorithms: insertion
-    sort, quicksort, and heapsort. You want to sell this library. How
-    would you package your library so users could use any of these
-    algorithms in their applications, and switch from using one to
-    another (plug-n-play) with the least amount of code rewrite? Come up
-    with the most appropriate design.
+        sort, quicksort, and heapsort. You want to sell this library. How
+        would you package your library so users could use any of these
+        algorithms in their applications, and switch from using one to
+        another (plug-n-play) with the least amount of code rewrite? Come up
+        with the most appropriate design.
 
     -   Write an interface called `SortingAlgorithm` with one or more
-        methods called `sort`, and then write various sorting classes
-        for the different sorting algorithms, that implement the
-        `SortingAlgorithm` interface.
+            methods called `sort`, and then write various sorting classes
+            for the different sorting algorithms, that implement the
+            `SortingAlgorithm` interface.
 
 4.  Examine the following classes, then answer the questions below.
 
@@ -1046,52 +1106,56 @@ February 11th, 2013 - Recitation 3: Tokenizing, GridBagLayout, Interfaces
         }
 
     1.  As implemented above, these classes contain an error which will
-        prevent them from compiling. Find and describe the error. Note
-        that you should assume getThingValue() and getContraptionValue()
-        are properly implemented. Do not change the compareTo() methods
-        for this part.
+            prevent them from compiling. Find and describe the error. Note
+            that you should assume getThingValue() and getContraptionValue()
+            are properly implemented. Do not change the compareTo() methods
+            for this part.
 
         -   Attempting to implement `Comparable` interface twice with
-            different generic types. Not possible.  
+                different generic types. Not possible.  
+
         -   The problem encountered at compilation time is that
-            `Comparable< >` has been implemented twice for the
-            `Contraption`. Because `Contraption` extends `Thing`, it
-            also implements the interfaces that `Thing` implements, i.e.
-            `Comparable<Thing>`. So `Contraption` implements
-            `Comparable<Thing>` due to inheritance. But the explicit
-            declaration that `Contraption` implements
-            `Comparable<Contraption>` conflicts with the
-            `Comparable<Thing>` implementation. Java will only allow one
-            implementation of `Comparable<someType>`. This is true for
-            any interface: SomeInterface can only be implemented once
-            regardless of what is.
+                `Comparable< >` has been implemented twice for the
+                `Contraption`. Because `Contraption` extends `Thing`, it
+                also implements the interfaces that `Thing` implements, i.e.
+                `Comparable<Thing>`. So `Contraption` implements
+                `Comparable<Thing>` due to inheritance. But the explicit
+                declaration that `Contraption` implements
+                `Comparable<Contraption>` conflicts with the
+                `Comparable<Thing>` implementation. Java will only allow one
+                implementation of `Comparable<someType>`. This is true for
+                any interface: SomeInterface can only be implemented once
+                regardless of what is.
 
     2.  Re-implement the two classes so that two instantiations of
-        Contraption can be compared via one of their compareTo methods.
-        You will need to fully implement the two compareTo methods,
-        however you may not change either compareTo methods' signature.
-        Be sure to i) remove the compareTo methods' current return
-        values and ii) correct the error from part (a). Assume that
-        getThingValue() and getContraptionValue() are properly
-        implemented. Use the following ordering rules for implementing
-        the compareTo functions:
+            Contraption can be compared via one of their compareTo methods.
+            You will need to fully implement the two compareTo methods,
+            however you may not change either compareTo methods' signature.
+            Be sure to i) remove the compareTo methods' current return
+            values and ii) correct the error from part (a). Assume that
+            getThingValue() and getContraptionValue() are properly
+            implemented. Use the following ordering rules for implementing
+            the compareTo functions:
+
         -   Comparing two instantiations of Thing:
             -   Compare the "a" values. Return -1, 0, or 1 as
-                appropriate for a compareTo function.
+                    appropriate for a compareTo function.
 
         -   Compare the "a" values. Return -1, 0, or 1 as appropriate
-            for a compareTo function.
+                for a compareTo function.
+
         -   Comparing two instantiations of Contraption: A Contraption's
-            "a" value has a higher precedence than its "b" value. First
-            compare the "a" values. If possible, return either -1 or 1.
-            If an ordering cannot be established using only "a" values,
-            compare the "b" values. This function should return -1, 0,
-            or 1 as appropriate for a compareTo function.
+                "a" value has a higher precedence than its "b" value. First
+                compare the "a" values. If possible, return either -1 or 1.
+                If an ordering cannot be established using only "a" values,
+                compare the "b" values. This function should return -1, 0,
+                or 1 as appropriate for a compareTo function.
+
             -   A Contraption's "a" value has a higher precedence than
-                its "b" value.
+                    its "b" value.
 
     3.  Which classes' compareTo method will line 3 of the following
-        code execute? Why?
+            code execute? Why?
 
             Thing myThing = new Thing();
             Contraption myContraption = new Contraption();
@@ -1128,8 +1192,8 @@ February 12th, 2013 - Lecture: Interfaces
         }
 
     -   Had this been production code, and you go from using `Stack` to
-        `LLStack`, the client has to do a lot of work to convert
-        everything from one to the other.
+            `LLStack`, the client has to do a lot of work to convert
+            everything from one to the other.
 
 -   Solution:
 
@@ -1184,15 +1248,15 @@ February 14th, 2013 - Project Part 1: Photo Album (Design and Implementation I)
 ### The Model-View-Controller (MVC) Architecture
 
 For this first part of the project, your team will create the model and
-control parts of a **Model-View-Control** architecture for a **Photo
-Album** application.
+control parts of a **Model-View-Control** architecture for a \*\*Photo
+Album\*\* application.
 
 A system using the MVC architecture has three main components:
 
 -   **Model** - The representation and management of the systems data
 -   **View** - The user's interface to the system
 -   **Control** - The algorithmic logic, decision making and data
-    manipulation processes
+        manipulation processes
 
 Breaking up a system into these three components is beneficial for a
 number of reasons. The most obvious reason is for modularity. Properly
@@ -1200,9 +1264,9 @@ coded, a system using MVC should be able to change the way any of the
 components is implemented without breaking the others. For instance, the
 model could store data in flat files. Later, if there is a reason to
 move to a database storage scheme, then the model can be reimplemented,
-but the view and controller can be left untouched, **if the model had
+but the view and controller can be left untouched, \*\*if the model had
 been implemented to an interface, and the view and controller interacted
-with the model solely through this interface**. (Here the word
+with the model solely through this interface\*\*. (Here the word
 "interface" is used to refer broadly to one or more interfaces.)
 
 Another motivation for using the MVC architecture is ease of testing. If
@@ -1231,20 +1295,25 @@ of users should be done in the control.)
 ### Project Structure
 
 -   Name your project `PhotoAlbumXX`, where XX is the two digit group
-    number (ie 1 becomes 01).
+        number (ie 1 becomes 01).
+
 -   The **model** component should be in its own package
-    `cs213.photoAlbum.model`
+        `cs213.photoAlbum.model`
+
 -   The simple command line **view** client should be in the package
-    `cs213.photoAlbum.simpleview` and have a main class `CmdView`
+        `cs213.photoAlbum.simpleview` and have a main class `CmdView`
+
 -   The **control** should be in package `cs213.photoAlbum.control`
 -   Any utility classes shared by the MVC components can go in the
-    package `cs213.photoAlbum.util`
+        package `cs213.photoAlbum.util`
+
 -   Data (users, albums, information about the photos except the actual
-    files) should be stored in a folder called `data` directly under the
-    `PhotoAlbumXX` folder. (The actual photos can be anywhere in the
-    local filesystem.)
+        files) should be stored in a folder called `data` directly under the
+        `PhotoAlbumXX` folder. (The actual photos can be anywhere in the
+        local filesystem.)
+
 -   All documentation (PDFS, HTMLs) should be in a folder called `docs`
-    directly under the `PhotoAlbumXX` folder.
+        directly under the `PhotoAlbumXX` folder.
 
 NOTE: In Eclipse, create packages with the complete name, such as
 `cs213.photoAlbum.model`. DO NOT separate this into a 3-package
@@ -1263,9 +1332,9 @@ The photo, album, and user objects are simply data containers.
 -   A unique (per user) file name.
 -   A caption
 -   A `java.util.Calendar` instance for the date and time the photo was
-    taken/file was created  
-     **Note:** When you set a date and time in a `Calendar` instance,
-    also make sure you set milliseconds to zero, as in:
+        taken/file was created  
+         **Note:** When you set a date and time in a `Calendar` instance,
+        also make sure you set milliseconds to zero, as in:
 
              cal.set(Calendar.MILLISECOND,0);
 
@@ -1290,7 +1359,7 @@ The photo, album, and user objects are simply data containers.
 -   A unique (per user) album name
 -   Zero or more photos
 -   Functionality to add and delete photos to/from albums, and to
-    recaption photos
+        recaption photos
 
 **Note**: A photo may appear in multiple albums of a user.
 
@@ -1305,14 +1374,16 @@ The photo, album, and user objects are simply data containers.
 
 The backend refers to functionality that will allow for the storage and
 retrieval from the `data` directory, and the photo files pointed to by
-file name information in the data directory. (See [Project
-structure](#structure)). The backend functionality includes:
+file name information in the data directory. (See
+[Project](#structure)). The backend functionality includes:
 
--   Read a user (including all constituent user data, see **User
-    Specification** above) identified by user ID from storage into
-    memory
+-   Read a user (including all constituent user data, see \*\*User
+        Specification** above) identified by user ID from storage into
+        memory
+
 -   Write a user (including all constituent user data) to storage from
-    memory
+        memory
+
 -   Delete a user, identified by user ID
 -   Get a list of existing users, identified by user IDs
 
@@ -1323,21 +1394,23 @@ what time state changes in the user/photo data are written to disk. Here
 are two contrasting models:
 
 -   **Session Persistence**: This model does not store anything to disk
-    when the program is running, but stores all data when the program
-    terminates. Every program run is a session. When a session starts
-    up, data from the previous session is read from disk - this is the
-    start state. This model version is sufficient for a single-user mode
-    where users cannot see each other's albums.
+        when the program is running, but stores all data when the program
+        terminates. Every program run is a session. When a session starts
+        up, data from the previous session is read from disk - this is the
+        start state. This model version is sufficient for a single-user mode
+        where users cannot see each other's albums.
+
 -   **Write Persistence**: This model stores state changes to disk every
-    time a command that updates the state is executed, i.e. the state
-    change is a "write". For instance, if a user adds a photo, the new
-    photo information will be immediately written to disk. That is, at
-    any time, the user/photo data on disk would be a copy of the
-    corresponding data in memory. (As in the session persistence model,
-    when a session starts up, data resulting from the previous session
-    is read from disk.) This version is required for a program that runs
-    in multi-user mode, where users can see each other's albums (think
-    of a web-based shared photo album such as Flickr).
+        time a command that updates the state is executed, i.e. the state
+        change is a "write". For instance, if a user adds a photo, the new
+        photo information will be immediately written to disk. That is, at
+        any time, the user/photo data on disk would be a copy of the
+        corresponding data in memory. (As in the session persistence model,
+        when a session starts up, data resulting from the previous session
+        is read from disk.) This version is required for a program that runs
+        in multi-user mode, where users can see each other's albums (think
+        of a web-based shared photo album such as Flickr).
+
 -   **Your Model Version Implementation**
 
     For your project, you will need to implement **session persistence**
@@ -1430,7 +1503,7 @@ and running the **java** command from there.
             <name>
 
 -   To list all albums, with their number of photos and the range of
-    dates that the photos were taken:
+        dates that the photos were taken:
 
         listAlbums
 
@@ -1464,15 +1537,16 @@ and running the **java** command from there.
 
     -   Notes:
         -   The date and time for the photo should be obtained from the
-            properties of the photo file.
+                properties of the photo file.
+
         -   The caption is a property of the photo, not the album. This
-            means if you add a photo to more than one album, you specify
-            the caption when adding to the first album. Then, when
-            adding to subsequent albums, you specify an empty string for
-            the caption, meaning that the caption is retained from the
-            first add. The output message for the subsequent adds
-            however should have the original caption, so it's clear that
-            the caption has been retained.
+                means if you add a photo to more than one album, you specify
+                the caption when adding to the first album. Then, when
+                adding to subsequent albums, you specify an empty string for
+                the caption, meaning that the caption is retained from the
+                first add. The output message for the subsequent adds
+                however should have the original caption, so it's clear that
+                the caption has been retained.
 
 -   To move a photo from one album to another:
 
@@ -1485,7 +1559,7 @@ and running the **java** command from there.
             Photo <fileName> does not exist in <oldAlbumName>
 
     -   Note: If the photo already exists in the new album, the command
-        should return silently without doing anything.
+            should return silently without doing anything.
 
 -   To remove a photo from an album:
 
@@ -1534,8 +1608,8 @@ and running the **java** command from there.
             Photo <fileName> does not exist
 
 -   To retrieve all photos taken within a given range of dates, in
-    chronological order:  
-     getPhotosByDate <start date> <end date>\`
+        chronological order:  
+         getPhotosByDate <start date> <end date>\`
 
         Output: 
             Photos for user <user id> in range <start date> to <end date>:
@@ -1543,8 +1617,8 @@ and running the **java** command from there.
             ...
 
 -   To retrieve all photos that have all the given tags, in
-    chronological order. Tags can be specified with or without their
-    types:
+        chronological order. Tags can be specified with or without their
+        types:
 
         getPhotosByTag [<tagType>:]"<tagValue>" [,[<tagType>:]"<tagValue>"]...
 
@@ -1568,29 +1642,30 @@ of what exactly went wrong should be printed. The format is as follows:
 **Important:**
 
 -   All names (such as user names, file names, etc.) in the commands are
-    contained within quotes. The reason is you can have spaces in any of
-    these, but the whole thing needs to be treated as a single quantity
-    (token). So if a picture location is Busch Campus, say, it should
-    not be read as two tokens, which necessitates typing in "Busch
-    Campus", within double quotes.
+        contained within quotes. The reason is you can have spaces in any of
+        these, but the whole thing needs to be treated as a single quantity
+        (token). So if a picture location is Busch Campus, say, it should
+        not be read as two tokens, which necessitates typing in "Busch
+        Campus", within double quotes.
 
 -   Quantities in angle brackets stand for corresponding *values*. That
-    is, anything contained in an angle bracket should be replaced with
-    an actual value. The angle brackets themselves should not be typed.
+        is, anything contained in an angle bracket should be replaced with
+        an actual value. The angle brackets themselves should not be typed.
+
 -   Quantities in square brackets are optional.
 -   `...` stands for repetition.
 
 -   If you use a `java.io.BufferedReader` or `java.util.Scanner` to read
-    input from `System.in`, be sure you do not instantiate a new one for
-    every single input. This causes problems when the graders copy a
-    larger set of commands into your program at once. Instantiate the
-    reader/scanner *once* and re-use it for each read.
+        input from `System.in`, be sure you do not instantiate a new one for
+        every single input. This causes problems when the graders copy a
+        larger set of commands into your program at once. Instantiate the
+        reader/scanner *once* and re-use it for each read.
 
 -   Stick to the input and output guidelines exactly. Any deviation from
-    the specified formats will be penalized. **This means no ascii art
-    or clever intros at the beginning!** (The graders do not care about
-    what "version" you think the code is at, nor do they appreciate the
-    carefully drawn box of roses surrounding said information...)
+        the specified formats will be penalized. **This means no ascii art
+        or clever intros at the beginning!** (The graders do not care about
+        what "version" you think the code is at, nor do they appreciate the
+        carefully drawn box of roses surrounding said information...)
 
 ### Control
 
@@ -1623,8 +1698,8 @@ code for all the classes you are responsible for.
 
 For each of the main components for this first part--model and
 control--you will need to provide an API, which should be in the form of
-a set of **documented interfaces and public/package/protected class
-fields, constructors, and methods**. (Private fields, constructors,
+a set of \*\*documented interfaces and public/package/protected class
+fields, constructors, and methods\*\*. (Private fields, constructors,
 inner classes, and methods need not be documented for sharing, but you
 will document them all by the time you finish coding the entire part 1.)
 
@@ -1680,10 +1755,10 @@ number.
 #### Friday, Feb 20, by 11 PM
 
 -   HTML documentation (generated by javadocs) of all explicit and
-    implicit interfaces as described in the [API Driven Coding](#api)
-    section. This should be in the `docs` directory as described in the
-    [Project Structure](#structure) section, committed to your Mercurial
-    repository in BitBucket.
+        implicit interfaces as described in the [API Driven Coding](#api)
+        section. This should be in the `docs` directory as described in the
+        [Project Structure](#structure) section, committed to your Mercurial
+        repository in BitBucket.
 
     Important: All interfaces and classes should have authorship, so
     that it is clear as to who will be developing what parts of the
@@ -1705,13 +1780,14 @@ entertained if one partner has dropped the class.
 #### Fri, Mar 8, by 11 PM
 
 -   Complete code, UML diagram (PDF ONLY), updated javadoc generated
-    HTML (if you have updated the javadocs after the February 22
-    submission), sample user data in the `data` directory, all committed
-    to your Mercurial repository in BitBucket.
+        HTML (if you have updated the javadocs after the February 22
+        submission), sample user data in the `data` directory, all committed
+        to your Mercurial repository in BitBucket.
 
 Any changes made to the repository after the deadline will not be graded
-- the grader will pull the project in its state at the deadline, not the
-most recent version.
+-   the grader will pull the project in its state at the deadline, not
+    the
+    most recent version.
 
 Be sure that there are no hard coded file paths. The grader should not
 have to do anything other than check out your project and run an
@@ -1723,13 +1799,15 @@ Anything else will result in a deduction from the score.
 The project will be graded on the following criteria:
 
 -   **Good design:** How well the project conforms to the MVC pattern,
-    how well your submission of February 22 anticipated the completed
-    implementation, and how well your UML diagram represents the code.
+        how well your submission of February 22 anticipated the completed
+        implementation, and how well your UML diagram represents the code.
+
 -   **Implementation**: Everyting described in the the **Model**,
-    **View**, and **Control** specifications.
+        **View**, and **Control** specifications.
+
 -   **Documentation:** Appropriately detailed javadocs
 -   **Specification Adherence:** How well your project conforms to the
-    guidelines in this document
+        guidelines in this document
 
 ### Sample Run
 
@@ -1745,8 +1823,8 @@ eclipse workspace project `bin` directory, and run the program from
 there.
 
 If you get a `ClassNotFoundError` from this, try adding `-cp .` to the
-command line, right after `java` as in:  
- `java -cp . <stuff>`
+command line, right after `java` as in:
+`java -cp . <stuff>`
 
 The following sample works with this assumption. (And when we test your
 program, we will run java outside Eclipse.)
@@ -1823,13 +1901,16 @@ February 18th, 2013 - Recitation 4: Project Q&A, Debugging in Eclipse, Polymorph
 
 1.  Project Q&A
     -   This friday we have to hand in the APIs, how we're going to
-        design it.
+            design it.
+
     -   We have "work to do", we have to implement what we do this
-        Friday.
+            Friday.
+
     -   Making an API is what you do in the real world.
     -   This is not naive paper work.
     -   Minor changes are likely okay, but major changes will lead to
-        deductions.
+            deductions.
+
     -   Photo objects and data containers are only getters and setters?
         -   Basically, yes.
 
@@ -1839,9 +1920,9 @@ February 18th, 2013 - Recitation 4: Project Q&A, Debugging in Eclipse, Polymorph
     Eclipse. Use the debugger to track down the bug(s) and fix the code.
 
 3.  There is an application that defines a `Person` class and a
-    `Student` class. The `Student` class is defined as a subclass of
-    `Person`. Every person has a home address, while every student has a
-    school address as well.
+        `Student` class. The `Student` class is defined as a subclass of
+        `Person`. Every person has a home address, while every student has a
+        school address as well.
 
     Consider printing addresses of all people in the application,
     assuming there is a single array list that stores all `Person` and
@@ -1852,13 +1933,14 @@ February 18th, 2013 - Recitation 4: Project Q&A, Debugging in Eclipse, Polymorph
     addresses?
 
     -   Every Person is expected to have one default home address, but
-        Student can have another address for school.
+            Student can have another address for school.
+
     -   There are two ways to think about this.
         1.  One way is to think purely from the polymorphism point of
-            view. If you were to run a loop through all objects in a
-            mixed collection of Person and Student objects to print
-            address, you will statically type the stepping reference as
-            Person, say like this:
+                view. If you were to run a loop through all objects in a
+                mixed collection of Person and Student objects to print
+                address, you will statically type the stepping reference as
+                Person, say like this:
 
                     for (Person p: ) {
                         System.out.println(p.getAddress());
@@ -1871,15 +1953,15 @@ February 18th, 2013 - Recitation 4: Project Q&A, Debugging in Eclipse, Polymorph
             inherited getAddress method from Person, and should have a
             new getSchoolAddress method.
         2.  The other way to think about this is from the point of view
-            of class design independent of how applications might use
-            objects at run time. In this case, the method getAddress for
-            a Student would override the inherited-from-Person
-            implementation to return the school address instead. And a
-            new getHomeAddress method would be coded to return the home
-            address.
+                of class design independent of how applications might use
+                objects at run time. In this case, the method getAddress for
+                a Student would override the inherited-from-Person
+                implementation to return the school address instead. And a
+                new getHomeAddress method would be coded to return the home
+                address.
 
 4.  In class we saw how you could write code to print a collection of
-    mixed `Point` and `ColoredPoint` objects:
+        mixed `Point` and `ColoredPoint` objects:
 
            Point[] pts = new Point[n];
            pts[0] = new Point(2,3);
@@ -1891,15 +1973,15 @@ February 18th, 2013 - Recitation 4: Project Q&A, Debugging in Eclipse, Polymorph
 
     1.  Where is the *polymorphic* behavior in this code?
         -   Every time the `System.out.println(pts[i])` is executed,
-            either a `Point` object is printed, or a `ColoredPoint` is
-            printed, depending on the run-time type of the object to
-            which `pts[i]` (which is statically typed to `Point`)
-            refers. So `pts[i]` exhibits polymorphic behavior because it
-            *automatically* changes "shape" between `Point` and
-            `ColoredPoint` objects without any programmer intervention.
+                either a `Point` object is printed, or a `ColoredPoint` is
+                printed, depending on the run-time type of the object to
+                which `pts[i]` (which is statically typed to `Point`)
+                refers. So `pts[i]` exhibits polymorphic behavior because it
+                *automatically* changes "shape" between `Point` and
+                `ColoredPoint` objects without any programmer intervention.
 
     2.  Give an example of code using the `pts` array that is NOT
-        polymorphic, and explain why it is not polymorphic.
+            polymorphic, and explain why it is not polymorphic.
 
             for (int i=0; i < pts.length; i++) {
                   if (pts[i] instanceof ColoredPoint) {
@@ -1912,29 +1994,31 @@ February 18th, 2013 - Recitation 4: Project Q&A, Debugging in Eclipse, Polymorph
         `ColoredPoint` - there is not any automatic shape-shifting.
 
 5.  Suppose classes `A` and `B` are in package `ab`, and classes `C` and
-    `D` are in package `cd`. Furthermore, both `C` and `B` extend `A`,
-    and `D` extends `B`. Assume all classes are declared to be `public`.
+        `D` are in package `cd`. Furthermore, both `C` and `B` extend `A`,
+        and `D` extends `B`. Assume all classes are declared to be `public`.
 
     1.  Are `protected` members of `A` accessible in `C`?  If yes,
-        explain how. If not, explain why.
+            explain how. If not, explain why.
+
         -   Protected members of `A` are *inherited* by `C`, but not
-            accessible in `C` via instances of `A`.
+                accessible in `C` via instances of `A`.
 
     2.  Are `protected` members of `A` accessible in `D`?  If yes, how?
-        If not, why?
+            If not, why?
+
         -   Protected members of `A` are *inherited* by `D` via `B` (in
-            other words, `B` inherits protected fields from `A`, and `D`
-            from `B`), but as with `C` protected members in `A` are not
-            visible in `D` via instance of `A`.
+                other words, `B` inherits protected fields from `A`, and `D`
+                from `B`), but as with `C` protected members in `A` are not
+                visible in `D` via instance of `A`.
 
     3.  Answer the same question as in 1. replacing `A` with `B`
         -   Protected members of `B` are *NOT* inherited by `C`, nor are
-            they accessible in `C` via instances of `A`, since `C` is in
-            a different package than `B`, but does not extend `B`.
+                they accessible in `C` via instances of `A`, since `C` is in
+                a different package than `B`, but does not extend `B`.
 
     4.  Answer the same question as in 2. replacing `A` with `B`
         -   `D` inherits protected members of `B` since it subclasses
-            from `B`
+                from `B`
 
 6.  You are given the followig `Employee` class:
 
@@ -2015,28 +2099,29 @@ February 18th, 2013 - Recitation 4: Project Q&A, Debugging in Eclipse, Polymorph
         }
 
 7.  (Adapted from an example in Interface Oriented Design by Ken Pugh,
-    sec. 4.2) Suppose you want to create a printing subsystem for
-    several different printers, each with different
-    capabilities/features (e.g. color printing, high-resolution, duplex,
-    multiple trays, etc.).  How could you place the different
-    capabilities into an interface?  Should you use a single interface
-    or multiple interfaces (e.g. ColorPrinter, DuplexPrinter,
-    MultiTrayPrinter)?  Describe the advantages and disadvantages of
-    both approaches.
+        sec. 4.2) Suppose you want to create a printing subsystem for
+        several different printers, each with different
+        capabilities/features (e.g. color printing, high-resolution, duplex,
+        multiple trays, etc.).  How could you place the different
+        capabilities into an interface?  Should you use a single interface
+        or multiple interfaces (e.g. ColorPrinter, DuplexPrinter,
+        MultiTrayPrinter)?  Describe the advantages and disadvantages of
+        both approaches.
 
     -   It is generally better to produce several interfaces that are
-        more specific to the various types of printers than to produce
-        one large interface that covers all possibilities. If the
-        interface is modified, then only code utilizing the modified
-        interface must be changed. Programming each separate interface
-        can take place independently and in parallel, so that the tasks
-        can be distributed to different programmers.
+            more specific to the various types of printers than to produce
+            one large interface that covers all possibilities. If the
+            interface is modified, then only code utilizing the modified
+            interface must be changed. Programming each separate interface
+            can take place independently and in parallel, so that the tasks
+            can be distributed to different programmers.
+
     -   Also, any printer that did not make use of certain features of a
-        single, combined interface, would have to write method stubs
-        (empty method bodies) for non-implemented features, and throw
-        exceptions if those methods were called. This is bad design,
-        since a class should support every single feature for which it
-        has a public method (otherwise why is that method in the class?)
+            single, combined interface, would have to write method stubs
+            (empty method bodies) for non-implemented features, and throw
+            exceptions if those methods were called. This is bad design,
+            since a class should support every single feature for which it
+            has a public method (otherwise why is that method in the class?)
 
 February 19th, 2013 - Lecture
 -----------------------------
@@ -2059,12 +2144,14 @@ February 19th, 2013 - Lecture
         }
 
 -   This takes the object and writes the definitions of the classes
-    before it writes the instances.
+        before it writes the instances.
+
 -   It'll actually write the geomApp class and it has references to
-    points and it'll write that stuff out.
+        points and it'll write that stuff out.
+
 -   When it gets to an instance it'll give it a serial number.
 -   Serial numbers are given so that if there are multiple instances of
-    a given class there is only one definition that they all refer to.
+        a given class there is only one definition that they all refer to.
 
         public static GeomApp readApp() 
                 throws IOException, ClassNotFoundException {
@@ -2076,41 +2163,48 @@ February 19th, 2013 - Lecture
         }
 
 -   Say you have a class which you serialize and someone else has it and
-    you share the data, but that other person changes the class.
+        you share the data, but that other person changes the class.
+
     -   What do?
 
 -   This means that version 1 data could be incompatible with version 2.
-    How do you fix this.
+        How do you fix this.
+
 -   You have to declare a serial version UID.
     -   This is a static variable.
     -   By default it is 1.
     -   When you serialize, it doesn't write out the generated UID, it
-        makes the 1.
+            makes the 1.
+
     -   So when you have new datatypes, it's compatible.
         -   This seems like magic.
 
 ### Abstract Classes
 
 -   When several classes have a common conceptual foundation, they can
-    be generalized into an abstract superclass.
+        be generalized into an abstract superclass.
+
 -   In Java a class is defined abstract in the class header.
 -   An abstract method is one that has no implementation
     -   An abstract class may have zero or more abstract method.
 
 -   An abstract class may implement non default constractors.
 -   An abstract class cannot be instatiated even if all the methods have
-    been implemented.
+        been implemented.
 
 #### Inheritancee Polymorphism
 
 -   Dynamically binding to same functionality in classes at different
-    levels of an inhertance hierarchy.
+        levels of an inhertance hierarchy.
+
 -   This is interesting because it allows to write code that allows you
-    to change entire implementation usage with just one change in code,
-    so long as it implements an abstract class.
+        to change entire implementation usage with just one change in code,
+        so long as it implements an abstract class.
+
 -   Dynamically binding to same functionality in classes at different
-    levels of an inhertance hirarchy using a "least common denominator"
-    type.
+        levels of an inhertance hirarchy using a "least common denominator"
+        type.
+
     -   Applied more boradly than just to abstract classes.
 
 February 20th, 2013 - Lecture
@@ -2121,10 +2215,12 @@ February 20th, 2013 - Lecture
 #### Compare and contrast
 
 -   You cannot have multiple inheritance with abstract classes,
-    interfaces can.
+        interfaces can.
+
 -   Interfaces do not have any implentation, abstract class can.
 -   If you find yourself with an abstract class with little
-    implementation, you likely want an interface.
+        implementation, you likely want an interface.
+
     -   Abstract classes close of the option.
     -   Depends on the context.
 
@@ -2135,11 +2231,12 @@ February 20th, 2013 - Lecture
 -   Most of it is arrows.
 -   Types:
     -   **Class interaction diagram**: Used to show classes and the
-        relations between them.
+            relations between them.
+
         -   **State diagram**: Used to represent state based designs.
 
     -   **Sequence diagram**: Used to show sequences of activity when
-        methods are invoked on classes.
+            methods are invoked on classes.
 
 -   Class diagram
     -   A class diagram shows classes and the realtions between them.
@@ -2150,7 +2247,8 @@ February 20th, 2013 - Lecture
             +-----------------------+
 
     -   An even reater level of detail can be adde by specifyin the type
-        of each attribute, as well as type of each parameter.
+            of each attribute, as well as type of each parameter.
+
     -   And the access level for each member
 
             +-----------------------+
@@ -2168,7 +2266,7 @@ February 25th, 2013 - Recitation 5: Abstract Classes, Interfaces
 ----------------------------------------------------------------
 
 1.  This problem gives an example where polymorphism is useful. Consider
-    the class hierarchy given below :
+        the class hierarchy given below :
 
          public abstract class Shape implements Comparable<Shape {
 
@@ -2258,10 +2356,10 @@ February 25th, 2013 - Recitation 5: Abstract Classes, Interfaces
     rhombus, then will your method run without any problems?
 
 2.  In a previous problem set, you packaged a Java library of sorting
-    algorithms:  insertion sort, quicksort, and heapsort.  using
-    interfaces so that users could use any of these algorithms in their
-    applications, and switch from using one to another (plug-n-play).
-    Redo the exercise using abstract classes instead of interfaces.
+        algorithms:  insertion sort, quicksort, and heapsort.  using
+        interfaces so that users could use any of these algorithms in their
+        applications, and switch from using one to another (plug-n-play).
+        Redo the exercise using abstract classes instead of interfaces.
 
     This is the abstract superclass of all the sorting algorithms:
 
@@ -2296,11 +2394,11 @@ February 25th, 2013 - Recitation 5: Abstract Classes, Interfaces
             // list is now in sorted order
 
 3.  Think of a board game in which there are two kinds of pieces:  a
-    slow piece that moves only one square at a time, and a fast piece
-    that moves any number of squares (as required by the player) at a
-    time.  Each piece can also be either flexible or not:  a
-    non-flexible piece can only move horizontally or vertically, while a
-    flexible piece can also move diagonally.
+        slow piece that moves only one square at a time, and a fast piece
+        that moves any number of squares (as required by the player) at a
+        time.  Each piece can also be either flexible or not:  a
+        non-flexible piece can only move horizontally or vertically, while a
+        flexible piece can also move diagonally.
 
     How would you write Java code for all these pieces?  You need to
     have one class for each kind of actual piece.  Use interfaces and
@@ -2539,17 +2637,18 @@ February 25th, 2013 - Recitation 5: Abstract Classes, Interfaces
 
     -   Is one implementation better than the other?
     -   Is there any code redundancy in the second implementation? If
-        so, how can it be removed?
+            so, how can it be removed?
+
     -   Can you think of another possibility that does not involve any
-        abstract classes?
+            abstract classes?
 
 4.  A game developer asks you to make a set of classes to represent the
-    monsters in a game. There are at least two different types of
-    monsters, those that walk and those that bounce, but the code you
-    write needs to be easily expandable to different types.
-    Specifically, the code to keep track of a monster's appearance and
-    to draw the monster needs to be in only one place. You are given an
-    interface to start out:
+        monsters in a game. There are at least two different types of
+        monsters, those that walk and those that bounce, but the code you
+        write needs to be easily expandable to different types.
+        Specifically, the code to keep track of a monster's appearance and
+        to draw the monster needs to be in only one place. You are given an
+        interface to start out:
 
         public interface Monster {
             void drawMonster();
@@ -2611,64 +2710,66 @@ February 26th, 2013 - Assignment 2: 2-Player Chess
 --------------------------------------------------
 
 -   For this assignment you will explore how to apply the design ideas
-    learned in class to design and implement a board game.
+        learned in class to design and implement a board game.
 
--   You will work **individually** on this assignment. Read the [DCS
-    Academic Integrity Policy for Programming
-    Assignments](http://www.cs.rutgers.edu/policies/academicintegrity/index.php?page=3)
--   you are responsible for this. In particular, note that **"All
-    Violations of the Academic Integrity Policy will be reported by the
-    instructor to the appropriate Dean".**
+-   You will work **individually** on this assignment. Read the
+    [DCS](http://www.cs.rutgers.edu/policies/academicintegrity/index.php?page=3)
+-   you are responsible for this. In particular, note that \*\*"All
+        Violations of the Academic Integrity Policy will be reported by the
+        instructor to the appropriate Dean".**
 
 -   You will implement the game of
-    [Chess](http://en.wikipedia.org/wiki/Chess) for two players. Your
-    program, when launched, should draw the board using the terminal and
-    prompt whomever's turn it is (white or black) for a move. Once the
-    move is executed, the move should be played and the new board drawn,
-    and the other player queried.
+        [Chess](http://en.wikipedia.org/wiki/Chess) for two players. Your
+        program, when launched, should draw the board using the terminal and
+        prompt whomever's turn it is (white or black) for a move. Once the
+        move is executed, the move should be played and the new board drawn,
+        and the other player queried.
 
 ### Output
 
 -   The board should be drawn on the screen with with ascii art in some
-    sort of grid. Everything should be easily viewable in a standard
-    sized terminal with 80 columns and 24 rows. The identity of each
-    piece, color and type, must be easily discernible from the display.
-    If the player whose turn it is is in check, that must be reported.
-    The details are left to you.
+        sort of grid. Everything should be easily viewable in a standard
+        sized terminal with 80 columns and 24 rows. The identity of each
+        piece, color and type, must be easily discernible from the display.
+        If the player whose turn it is is in check, that must be reported.
+        The details are left to you.
 
 -   Every piece must know what moves are allowed on it. If a player
-    attempts an illegal move on a piece, your program should not execute
-    the move, but instead, print an explanatory message detailing all
-    legal moves the piece can make from the current position.
+        attempts an illegal move on a piece, your program should not execute
+        the move, but instead, print an explanatory message detailing all
+        legal moves the piece can make from the current position.
+
 -   When a move is made, and it puts the opponent's King under check,
-    your program should print "Check" before asking for the opponent's
-    move.
+        your program should print "Check" before asking for the opponent's
+        move.
+
 -   If a checkmate or stalemate is detected, your program should print
-    "Checkmate" or "Stalemate".
+        "Checkmate" or "Stalemate".
+
 -   The last thing before termination should be a display of "Black
-    wins", "White wins" or "Draw".
+        wins", "White wins" or "Draw".
 
 ### Input
 
 -   Your program needs to accept input of the form "FileRank FileRank",
-    where the first file (column) and rank (row) are the coordinates of
-    the piece to be moved, and the second file and rank are the
-    coordinates of where it should end up.
+        where the first file (column) and rank (row) are the coordinates of
+        the piece to be moved, and the second file and rank are the
+        coordinates of where it should end up.
 
 -   The figure immediately below should make it clear which rank and
-    file combinations belong to which squares. The white pieces always
-    initially occupy ranks 1 and 2. The black pieces always initially
-    occupy ranks 7 and 8. The queen always starts on the d file.
+        file combinations belong to which squares. The white pieces always
+        initially occupy ranks 1 and 2. The black pieces always initially
+        occupy ranks 7 and 8. The queen always starts on the d file.
 
 -   As an example, advancing the white king's pawn two spaces would be
-    input as "e2 e4".
+        input as "e2 e4".
 
 -   A castling move is indicated by specifying where the king begins and
-    ends. So, white castling king's side would be "e1 g1".
+        ends. So, white castling king's side would be "e1 g1".
 
 -   A pawn promotion is indicated by putting the piece to be promoted to
-    after the move. So, promoting a pawn to a knight might be "g7 g8 N".
-    If no promotion is indicated, it is assumed to be a queen.
+        after the move. So, promoting a pawn to a knight might be "g7 g8 N".
+        If no promotion is indicated, it is assumed to be a queen.
 
         bR bN bB bQ bK bB bN bR 8
         bp bp bp bp bp bp bp bp 7
@@ -2709,34 +2810,35 @@ February 26th, 2013 - Assignment 2: 2-Player Chess
 #### Ending the game
 
 -   If checkmate occurs, the game shall end immediately with the result
-    reported.
+        reported.
 
 -   A player may resign by entering "resign".
 
 -   A player may offer a draw by appending "draw?" to the end of an
-    otherwise regular move. The draw may be accepted by the other player
-    submitting "draws" as the entirety of his or her next move. There
-    will be no automatic draws (due to unchanging positions over long
-    periods of time, etc).
+        otherwise regular move. The draw may be accepted by the other player
+        submitting "draws" as the entirety of his or her next move. There
+        will be no automatic draws (due to unchanging positions over long
+        periods of time, etc).
 
 ### Grading
 
 -   Correctness, 75 pts: Implementation of all required functionality
-    including drawing the board
+        including drawing the board
+
 -   Design, 5 pts: Appropriate application of object-oriented design
-    ideas you have learned. Although design points are low, our
-    experience is that if you design your solution badly, you will have
-    a lot of trouble implementing/debugging it.
+        ideas you have learned. Although design points are low, our
+        experience is that if you design your solution badly, you will have
+        a lot of trouble implementing/debugging it.
 
 ### Submission
 
 -   Name your project `Chess`. Use packages as necessary. Name your main
-    class `Chess`. Make sure you record your name in each Java file with
-    the @author Javadoc tag.
+        class `Chess`. Make sure you record your name in each Java file with
+        the @author Javadoc tag.
 
 -   Zip your project source into a zip archive called `chess.zip` (see
-    Eclipse tab, under "Zipping up a Project") and submit this file to
-    Sakai.
+        Eclipse tab, under "Zipping up a Project") and submit this file to
+        Sakai.
 
 -   [Source](https://github.com/PLJNS/Rutgers-Soft-Meth-Spring-2013/tree/master/Chess/src)
 
@@ -2756,7 +2858,7 @@ February 25th, 2013 - Lecture
                 }
 
 -   Another example from
-    [StackOverflow](http://stackoverflow.com/a/27609/1489522):
+        [StackOverflow](http://stackoverflow.com/a/27609/1489522):
 
             public boolean equals(Object obj) {
               if (obj == null)
@@ -2779,155 +2881,185 @@ February 25th, 2013 - Lecture
     -   transitive
     -   consistent
 
--   [access
-    levels](http://www.tutorialspoint.com/java/java_access_modifiers.htm)
+-   [access](http://www.tutorialspoint.com/java/java_access_modifiers.htm)
     -   `private`
         -   Methods, Variables and Constructors that are declared
-            private **can only be accessed within the declared class
-            itself**.
+                private **can only be accessed within the declared class
+                itself**.
+
         -   Private access modifier is the most restrictive access
-            level. **Class and interfaces cannot be private**.
-        -   Variables that are declared private *can be accessed outside
-            the class if public getter methods are present in the
-            class*.
+                level. **Class and interfaces cannot be private**.
+
+        -   Variables that are declared private \*can be accessed
+            outside
+                the class if public getter methods are present in the
+                class*.
 
     -   `package`
     -   `protected`
         -   Variables, methods and constructors which are declared
-            protected in a superclass can be accessed only by the
-            subclasses in other package or any class within the package
-            of the protected members' class.
+                protected in a superclass can be accessed only by the
+                subclasses in other package or any class within the package
+                of the protected members' class.
+
         -   The protected access modifier cannot be applied to class and
-            interfaces. Methods, fields can be declared protected,
-            however methods and fields in a interface cannot be declared
-            protected.
+                interfaces. Methods, fields can be declared protected,
+                however methods and fields in a interface cannot be declared
+                protected.
+
         -   Protected access gives the subclass a chance to use the
-            helper method or variable, while preventing a nonrelated
-            class from trying to use it.
+                helper method or variable, while preventing a nonrelated
+                class from trying to use it.
 
     -   `public`
         -   A class, method, constructor, interface etc declared public
-            **can be accessed from any other class**. Therefore fields,
-            methods, blocks declared inside a public class can be
-            accessed from any class belonging to the Java Universe.
-        -   However if the public class we are trying to access is in a
-            different package, then the public class **still need to be
-            imported**.
-        -   Because of class inheritance, **all public methods and
-            variables of a class are inherited by its subclasses**.
+                **can be accessed from any other class**. Therefore fields,
+                methods, blocks declared inside a public class can be
+                accessed from any class belonging to the Java Universe.
 
-    -   [Awesome
-        table](http://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html):
-        <table class="table">
-                                        <tbody><tr>
-                                        <th markdown="1" id="h1">
+        -   However if the public class we are trying to access is in a
+                different package, then the public class **still need to be
+                imported**.
+
+        -   Because of class inheritance, \*\*all public methods and
+                variables of a class are inherited by its subclasses**.
+
+    -   [Awesome](http://docs.oracle.com/javase/tutorial/java/javaOO/accesscontrol.html):
+            <table class="table">
+                                            <tbody><tr>
+                                            <th markdown="1" id="h1">
 
         Modifier
         </th>
+
             <th markdown="1" id="h2">
 
         Class
         </th>
+
             <th markdown="1" id="h3">
 
         Package
         </th>
+
             <th markdown="1" id="h4">
 
         Subclass
         </th>
+
             <th markdown="1" id="h5">
 
         World
         </th>
+
             </tr>
             <tr>
             <td markdown="1" headers="h1">
 
         <code>public</code>
         </td>
+
             <td markdown="1" headers="h2">
 
         Y
         </td>
+
             <td markdown="1" headers="h3">
 
         Y
         </td>
+
             <td markdown="1" headers="h4">
 
         Y
         </td>
+
             <td markdown="1" headers="h5">
 
         Y
         </td>
+
             </tr>
             <tr>
             <td markdown="1" headers="h1">
 
         <code>protected</code>
         </td>
+
             <td markdown="1" headers="h2">
 
         Y
         </td>
+
             <td markdown="1" headers="h3">
 
         Y
         </td>
+
             <td markdown="1" headers="h4">
 
         Y
         </td>
+
             <td markdown="1" headers="h5">
 
         N
         </td>
+
             </tr>
             <tr>
             <td markdown="1" headers="h1">
 
         no modifier
         </td>
+
             <td markdown="1" headers="h2">
 
         Y
         </td>
+
             <td markdown="1" headers="h3">
 
         Y
         </td>
+
             <td markdown="1" headers="h4">
 
         N
         </td>
+
             <td markdown="1" headers="h5">
 
         N
         </td>
+
             </tr>
             <tr>
             <td markdown="1" headers="h1">
 
         <code>private</code>
         </td>
+
             <td markdown="1" headers="h2">
 
         Y
         </td>
+
             <td markdown="1" headers="h3">
 
         N
         </td>
+
             <td markdown="1" headers="h4">
 
         N
         </td>
+
             <td markdown="1" headers="h5">
 
         N
         </td>
+
             </tr>
             </tbody></table> 
 
@@ -2935,19 +3067,20 @@ February 25th, 2013 - Lecture
     -   an interface is a group of related methods with empty bodies
     -   Interfaces cannot be instantiated, but rather are implemented
     -   One benefit of using interfaces is that they simulate multiple
-        inheritance
+            inheritance
 
--   [`abstract`
-    classes](http://docs.oracle.com/javase/tutorial/java/IandI/abstract.html)
+-   [`abstract`](http://docs.oracle.com/javase/tutorial/java/IandI/abstract.html)
     -   An abstract class is a class that is declared abstract - it may
-        or may not include abstract methods. Abstract classes **cannot
-        be instantiated**, but they **can be subclassed**.
-    -   An abstract method is a method that is declared **without an
-        implementation**
+            or may not include abstract methods. Abstract classes **cannot
+            be instantiated**, but they **can be subclassed**.
+
+    -   An abstract method is a method that is declared \*\*without an
+            implementation**
+
     -   When an abstract class is subclassed, the subclass usually
-        provides implementations for all of the abstract methods in its
-        parent class. However, if it does not, the subclass must also be
-        declared abstract.
+            provides implementations for all of the abstract methods in its
+            parent class. However, if it does not, the subclass must also be
+            declared abstract.
 
 -   polymorphism
 -   inheritance
@@ -2957,25 +3090,26 @@ February 25th, 2013 - Lecture
 ### UML Class Diagram II
 
 -   Class A depends on class B if A **uses** B in such a way that a
-    change in B will effect A
+        change in B will effect A
+
 -   Say A depends on B. Typically, then, B would appear as a parameter,
-    return type, or local variable in a method of A.
+        return type, or local variable in a method of A.
 
 March 4th, 2013 - Recitation 6: UML
 -----------------------------------
 
 1.  Give one example UML each (not covered in class!) of a
-    uni-directional association, a bi-directional association, and an
-    association class. (We stopped just short of the association class
-    in lecture on Feb 28, but look at the last three slides in the
-    feb28-uml.pdf that was posted in Resources.) By writing minimal
-    amount of code (class headers and fields only), show how the
-    relationship information depicted by the UML shows up in the
-    implementation.
+        uni-directional association, a bi-directional association, and an
+        association class. (We stopped just short of the association class
+        in lecture on Feb 28, but look at the last three slides in the
+        feb28-uml.pdf that was posted in Resources.) By writing minimal
+        amount of code (class headers and fields only), show how the
+        relationship information depicted by the UML shows up in the
+        implementation.
 
 2.  For each of the following pairs/groups of classes, show the most
-    appropriate relationship between them using UML (include
-    multiplicities, and relationship classes for associations):
+        appropriate relationship between them using UML (include
+        multiplicities, and relationship classes for associations):
 
     1.  `Document`-`Keyword` in a search engine
     2.  `Friend-Friend` on Facebook
@@ -2984,11 +3118,11 @@ March 4th, 2013 - Recitation 6: UML
     5.  `Book-Author-Publisher` on Amazon
 
 3.  You are on a project that is developing software to manage a
-    hospital. In particular, you are working on a sub-system that will
-    model the patient care aspect including doctors, patients, hospital
-    rooms, and services for which patients are billed. Services include
-    medical services such as x-rays, as well as room services such as
-    bed, TV, etc.
+        hospital. In particular, you are working on a sub-system that will
+        model the patient care aspect including doctors, patients, hospital
+        rooms, and services for which patients are billed. Services include
+        medical services such as x-rays, as well as room services such as
+        bed, TV, etc.
 
     Draw a UML class diagram of your model, with key attributes and
     methods for every class. Pay particular attention to making decisons
@@ -3013,17 +3147,18 @@ March 5th, 2013 - Lecture
 -------------------------
 
 -   An **association class**is used to model an association between two
-    classes.
+        classes.
+
     -   For example, if you had a `Company` and an `Employee` object,
-        then you'd have a `Job` class to stand for the relationship.
+            then you'd have a `Job` class to stand for the relationship.
 
 March 8th, 2013 - Project Part 2: Photo Album (Design and Implementation II)
 ----------------------------------------------------------------------------
 
 ### Dates
 
--   Posted Fri, Mar 8  
--   GUI Storyboard and Work Split Document Due Wed, Mar 27, 11 PM  
+-   Posted Fri, Mar 8
+-   GUI Storyboard and Work Split Document Due Wed, Mar 27, 11 PM
 -   Complete Implementation and Test Cases Due Fri, Apr 12, 11 PM.
 
 ### Features
@@ -3035,12 +3170,13 @@ Your GUI will implement the following single-user paradigm, using
 session persistence:
 
 -   When the application starts, a user logs in with username. Password
-    implementation is optional. It makes for a "real" scenario, but is
-    irrelevant to the essence of the project.
+        implementation is optional. It makes for a "real" scenario, but is
+        irrelevant to the essence of the project.
 
 -   There must be a special username **admin** that will take
-    application to an administration sub-system. The **admin** user can
-    do the following:
+        application to an administration sub-system. The **admin** user can
+        do the following:
+
     -   List users
     -   Create a new user
     -   Delete an existing user
@@ -3072,13 +3208,14 @@ open the user can do the following:
 -   Remove a photo
 -   Recaption a photo
 -   Display a photo. Displaying a photo should fit the image in its
-    display area, and should also show caption, date-time of capture,
-    and all the tags.
+        display area, and should also show caption, date-time of capture,
+        and all the tags.
+
 -   Add a tag to a photo
 -   Delete a tag from a photo
 -   Move a photo from one album to another
 -   Go through photos in album in sequence forward or backward (manual
-    slideshow)
+        slideshow)
 
 Search for photos (Photos that match the search criteria should be
 displayed in a similar way to how photos in an album are displayed).
@@ -3086,8 +3223,8 @@ Under this, you should provide the following specific features:
 
 1.  Search for photos by a date range.
 2.  Search for photos by tag type-value pairs. This should follow the
-    same rules as the command line version, where not specifying the tag
-    type implies it can match any tag type.
+        same rules as the command line version, where not specifying the tag
+        type implies it can match any tag type.
 
 There should be functionality to make an album out of the result of
 either of the above searches.
@@ -3132,15 +3269,17 @@ components within the screens themselves. This is an overview that can
 give the complete picture in one shot. The rest of the storyboard will
 then draw each screen in detail.
 
-Each screen must be drawn using some drawing package. **Screenshots that
-you take off a program WILL NOT be accepted.** In other words, there
+Each screen must be drawn using some drawing package. \*\*Screenshots
+that
+you take off a program WILL NOT be accepted.\*\* In other words, there
 should be **no program code** written at this stage at all.
 
 Each screen will represent one window of your GUI and will contain all
 the widgets that go into that screen - text fields, buttons, etc. Be as
 precise as you can about the selection and layout of the components in a
-screen. **You must LABEL each component with the Swing class of which it
-is an instance, as shown in the model storyboard.**
+screen. \*\*You must LABEL each component with the Swing class of which
+it
+is an instance, as shown in the model storyboard.\*\*
 
 Each screen will show transitions to other screens and the events that
 trigger these transitions. When all is said and done, you will have
@@ -3196,8 +3335,9 @@ represented, but perform data-management functions, as well as broker
 between the visual classes and the backend. These should be in your UML
 as well.
 
-**Load the application with some sample data of users, albums, and
-photos that can be used to test your code.** This data should be able to
+\*\*Load the application with some sample data of users, albums, and
+photos that can be used to test your code.\*\* This data should be able
+to
 drive all the tests you list in the test report, as described in the
 **Testing** section that follows. Your program should be runnable
 without any of the data files specified above (except for whatever
@@ -3210,16 +3350,17 @@ your photo album code, *including tests for robustness*. Write your test
 report with the following structure:
 
 -   List all the "use cases" of your application. A use case is any
-    single request-response functionality that is implemented. For
-    instance, creating an album is a use case.
+        single request-response functionality that is implemented. For
+        instance, creating an album is a use case.
 
 -   For each use case:
     -   Define the equivalence classes of tests for that use case,
-        *including equivalence classes for error conditions*.
+            *including equivalence classes for error conditions*.
+
     -   For each equivalence class, list all the test cases you used.
-        The test case should list the data exactly as entered into the
-        interface. For each test, either list (if it is a small set) or
-        describe (if it is a large set) the expected result.
+            The test case should list the data exactly as entered into the
+            interface. For each test, either list (if it is a small set) or
+            describe (if it is a large set) the expected result.
 
 Write your test report in a spreadsheet called **tests.xls** (If you
 don't have a spreadsheet program on your computer, you can use Microsoft
@@ -3253,27 +3394,32 @@ directly under the project, NOT under **src** or under any of the
 packages).
 
 -   **GUI Storyboard**: The final form of your storyboard should be a
-    PDF file called **storyboard.pdf**, which should be placed in the
-    **docs** directory (where you put your javadoc documents for Part
-    1).
+        PDF file called **storyboard.pdf**, which should be placed in the
+        **docs** directory (where you put your javadoc documents for Part
+        1).
+
 -   **Work Split Document**: The final form of this document should be a
-    plain text (.txt) or PDF file, called **worksplit.txt** or
-    **worksplit.pdf**, and must be in the **docs** directory.
+        plain text (.txt) or PDF file, called **worksplit.txt** or
+        **worksplit.pdf**, and must be in the **docs** directory.
 
 #### By Friday, Apr 12, 11 PM
 
 -   **GUI Implementation**: Arrange your code elements in your GUI
-    implementation to be consistent with how your arranged the model and
-    control code in Part 1.
+        implementation to be consistent with how your arranged the model and
+        control code in Part 1.
+
 -   **UML**: The complete UML class diagram (updated for this part) for
-    the project should be a PDF file called **uml2.pdf**, placed in the
-    **docs** directory.
+        the project should be a PDF file called **uml2.pdf**, placed in the
+        **docs** directory.
+
 -   **Javadocs**: The complete Javadocs documentation should be
-    generated and placed in the **docs** directory.
+        generated and placed in the **docs** directory.
+
 -   **Sample Data**: Users, albums, and photos for testing, to be placed
-    in a **data** directory.
+        in a **data** directory.
+
 -   **Test Cases**: The **tests.xls** spreadsheet, to be placed in the
-    **docs** directory.
+        **docs** directory.
 
 ### Grading
 
@@ -3296,12 +3442,14 @@ Your project will be graded on the following, for 200 points:
 **Penalties** (up to 25 points) will be assessed on the following:
 
 -   Needing extra configuration on our part to test your project because
-    you did not follow specifications: **upto 5 pts**
+        you did not follow specifications: **upto 5 pts**
+
 -   Usability is poor such as roundabout ways to get at data, and/or
-    confusing interface: **upto 10 pts**
+        confusing interface: **upto 10 pts**
+
 -   Lacks scalability i.e. doesn't display large amounts of data (e.g.
-    many tens of photos or more) in a easily navigable way: **upto 10
-    pts**
+        many tens of photos or more) in a easily navigable way: **upto 10
+        pts**
 
 March 11th, 2013 - Recitation 7: Table/Model, Image Handling
 ------------------------------------------------------------
@@ -3309,35 +3457,36 @@ March 11th, 2013 - Recitation 7: Table/Model, Image Handling
 1.  UML Quiz
 
 2.  You will learn how to create a GUI application for a simple
-    spreadsheet. You are to use javax.swing.JTable,
-    javax.swing.table.TableModel, and
-    javax.swing.table.DefaultTableModel. The contents of each cell may
-    be either a floating point number or one of four simple formulas:
-    =sumcol, =sumrow, =avgcol, =avgrow.
+        spreadsheet. You are to use javax.swing.JTable,
+        javax.swing.table.TableModel, and
+        javax.swing.table.DefaultTableModel. The contents of each cell may
+        be either a floating point number or one of four simple formulas:
+        =sumcol, =sumrow, =avgcol, =avgrow.
 
 3.  You will learn how to load, display, and resize images using
-    javax.swing.Image, javax.swing.ImageIcon, javax.swing.JSlider,
-    java.awt.BorderLayout, and javax.swing.JScrollPane.
+        javax.swing.Image, javax.swing.ImageIcon, javax.swing.JSlider,
+        java.awt.BorderLayout, and javax.swing.JScrollPane.
 
 March 28th, 2013 - Recitation 8: Testing, Design Patterns
 ---------------------------------------------------------
 
 1.  Let `Tomorrow` be a function of three variables: `month`, `day`, and
-    `year`. It returns the date of the next day that follows the given
-    input date. You may assume that `year` is in the range 1901 through
+        `year`. It returns the date of the next day that follows the given
+        input date. You may assume that `year` is in the range 1901 through
+
     1.  Using equivalance classes and boundary values, determine the
-        test cases you would use to test a software implementation of
-        this function. Include robustness tests.
+            test cases you would use to test a software implementation of
+            this function. Include robustness tests.
 
 2.  A polynomial may be represented as a linked list as follows: for
-    every term in the polynomial there is one entry in the linked list
-    consisting of the term's coefficient and degree. (There will be
-    exactly one term in any degree.) The entries are ordered according
-    to ascending degrees, and zero-coefficient terms are not stored. An
-    empty (zero) polynomial is represented by a linked list with no
-    nodes in it.
+        every term in the polynomial there is one entry in the linked list
+        consisting of the term's coefficient and degree. (There will be
+        exactly one term in any degree.) The entries are ordered according
+        to ascending degrees, and zero-coefficient terms are not stored. An
+        empty (zero) polynomial is represented by a linked list with no
+        nodes in it.
 
-    For example, the following polynomial (the symbol '\^' is used to
+    For example, the following polynomial (the symbol '\\\^' is used to
     mean 'raised to the power'):
 
     4*x*<sup>5</sup> − 2*x*<sup>3</sup> + 2*x* + 3
@@ -3358,25 +3507,24 @@ March 28th, 2013 - Recitation 8: Testing, Design Patterns
     (robustness).
 
 3.  Draw a state diagram that models a user's shopping session at
-    amazon.com, starting with a search. Show the UML for an
-    implementation using the state design pattern including key fields
-    and headers for the methods in the states.
+        amazon.com, starting with a search. Show the UML for an
+        implementation using the state design pattern including key fields
+        and headers for the methods in the states.
 
 4.  Show how you would enhance the Singleton pattern to allow up to a
-    maximum number of instances of an object. There should be a way for
-    clients to recycle instances, i.e. when a client is finished with an
-    instance, it gives it up, and this instance can be later dealt out
-    in response to a new instance request.
+        maximum number of instances of an object. There should be a way for
+        clients to recycle instances, i.e. when a client is finished with an
+        instance, it gives it up, and this instance can be later dealt out
+        in response to a new instance request.
 
 March 29th, 2013 - Assignment 3 (Web Discussion Groups UML)
 -----------------------------------------------------------
 
-You will work **individually** on this assignment. Read the [DCS
-Academic Integrity Policy for Programmming
-Assignments](http://www.cs.rutgers.edu/policies/academicintegrity/index.php?page=3)
-- you are responsible for this. In particular, note that **"All
-Violations of the Academic Integrity Policy will be reported by the
-instructor to the appropriate Dean".**
+You will work **individually** on this assignment. Read the
+[DCS](http://www.cs.rutgers.edu/policies/academicintegrity/index.php?page=3)
+-   you are responsible for this. In particular, note that \*\*"All
+    Violations of the Academic Integrity Policy will be reported by the
+    instructor to the appropriate Dean".\*\*
 
 Develop an object-oriented design and draw UML for web discussion groups
 (such as Google groups).
@@ -3390,35 +3538,41 @@ needs to be a user before they can participate in one or more groups.
 -   Members of a group can:
     1.  post messages to the group
     2.  read messages posted by other members to the group sorted
-        according to combinations of message author, thread, or date
+            according to combinations of message author, thread, or date
 
 -   Each message is part of a discussion thread. It can be the
-    initiating message for a new thread, or a response to a previous
-    message in a thread
+        initiating message for a new thread, or a response to a previous
+        message in a thread
+
 -   Users of the website can:
     1.  create new groups
     2.  join an existing group as member
     3.  leave a group
 
 -   Every group has a single owner, who is initially the creator of the
-    group. (The creator of a group automatically becomes its first
-    member.)
+        group. (The creator of a group automatically becomes its first
+        member.)
+
 -   Each group has one moderator, who is initially the creator of the
-    group. Only a member can be a moderator.
+        group. Only a member can be a moderator.
+
 -   Owners can:
     1.  invite users to join their group by sending them an email
-        invitation
+            invitation
+
     2.  invite a member (including self) to be the moderator - if the
-        invitation is accepted, the new moderator replaces the current
-        moderator
+            invitation is accepted, the new moderator replaces the current
+            moderator
+
     3.  invite a member to take over ownership - if the invitation is
-        accepted, the ownership is transferred to that member
+            accepted, the ownership is transferred to that member
+
     4.  delete the group
 
 -   Moderators can:
     1.  Deny or pass through messages posted to the group by members
     2.  Resign as moderator by sending an email to the owner, at which
-        point the owner becomes the moderator (by inviting self)
+            point the owner becomes the moderator (by inviting self)
 
 #### UML
 
@@ -3482,23 +3636,23 @@ accepted.
 April 1st, 2013 - Recitation 9: Multithreading, Android
 -------------------------------------------------------
 
-1.  Use threads to implement a stop watch that displays, *once every
-    five seconds*, the minutes and seconds that have passed since it was
-    started. The display should be in the form `mm:ss` for minutes and
-    seconds. When the clock reaches 15 minutes, it should wrap back and
-    start at 0 minutes and 0 seconds. The user should be able to stop
-    the watch at any time. Write the complete code for the application.
-    (Not the most accurate stop watch, but the model is useful for
-    animations in which slight inaccuracies in time would not be
-    detrimental.)
+1.  Use threads to implement a stop watch that displays, \*once every
+        five seconds*, the minutes and seconds that have passed since it was
+        started. The display should be in the form `mm:ss` for minutes and
+        seconds. When the clock reaches 15 minutes, it should wrap back and
+        start at 0 minutes and 0 seconds. The user should be able to stop
+        the watch at any time. Write the complete code for the application.
+        (Not the most accurate stop watch, but the model is useful for
+        animations in which slight inaccuracies in time would not be
+        detrimental.)
 
 2.  Write an Android app that can accept an order to make a sub. Have
-    checkboxes to select (or unselect) items to add (lettuce, tomato,
-    etc.) Have combo boxes or equivalent to select one out of many
-    (exclusive) options like the type of cheese to put in the sub. When
-    the user confirms the order (via a button), display a message in a
-    text area that lists the sub contents. Your UI doesn't have to be
-    pretty - just make it work correctly.
+        checkboxes to select (or unselect) items to add (lettuce, tomato,
+        etc.) Have combo boxes or equivalent to select one out of many
+        (exclusive) options like the type of cheese to put in the sub. When
+        the user confirms the order (via a button), display a message in a
+        text area that lists the sub contents. Your UI doesn't have to be
+        pretty - just make it work correctly.
 
 April 2nd, 2013 - Lecture: Android Development
 ----------------------------------------------
@@ -3532,9 +3686,10 @@ Windows, you should a Windows download button. Click on the button,
 agree to the terms, then download.
 
 -   For the Mac, you will download a zip file called
-    **android-sdk\_r21.0.1-macosx.zip**
+        **android-sdk\_r21.0.1-macosx.zip**
+
 -   For Windows, you will download an installer file,
-    **installer\_r21.0.1-windows.exe**
+        **installer\_r21.0.1-windows.exe**
 
 (r21.0.1 is the latest version as of this writing).
 
@@ -3547,8 +3702,8 @@ The next phase is to install the ADT for Eclipse.
 ADT stands for Android Development Toolkit. It is a plug in for Eclipse
 that comes with a full set of tools to build, test, and export Android
 apps to the Android market. To plug the ADT into Eclipse, go to
-[Installing the Eclipse
-Plugin](http://developer.android.com/sdk/installing/installing-adt.html),
+[Installing the
+Eclipse](http://developer.android.com/sdk/installing/installing-adt.html),
 and execute the following two steps.
 
 #### Step 1: Download the ADT Plugin
@@ -3565,15 +3720,16 @@ Windows, you should a Windows download button. Click on the button,
 agree to the terms, then download.
 
 -   For the Mac, you will download a zip file called
-    android-sdk\_r21.0.1-macosx.zip
+        android-sdk\_r21.0.1-macosx.zip
+
 -   For Windows, you will download an installer file,
-    installer\_r21.0.1-windows.exe
+        installer\_r21.0.1-windows.exe
 
 #### Step 2: Point the ADT to the SDK
 
 -   Follow the instructions. On my Mac, I unpacked the file, moved the
-    resulting directory to directly under my home directory, and renamed
-    it as android-sdk-macosx. Here are the contents of this directory:
+        resulting directory to directly under my home directory, and renamed
+        it as android-sdk-macosx. Here are the contents of this directory:
 
 ### Adding Platforms and Packages
 
@@ -3644,8 +3800,8 @@ right hand bar, which brings up a create wizard, shown on the right.
 The important fields here are "Device" and "Target", at the top. If you
 pull down the "Device" choices you will see a list of "skins",
 corresponding to devices of various sizes and densities. The following
-table, from the page [Supporting Multiple
-Screens](http://developer.android.com/guide/practices/screens_support.html)
+table, from the page [Supporting
+Multiple](http://developer.android.com/guide/practices/screens_support.html)
 of the Android documentation site:
 
 The "Device" pull down list in the new AVD creator lists many of these
@@ -3752,15 +3908,15 @@ April 22nd, 2013 - Recitation 12: Multithreading, Design Patterns
 -----------------------------------------------------------------
 
 1.  Suppose you use a search engine to search for a word or phrase that
-    results in a match with a large number (hundreds) of web pages.
-    However, the browser will only display a list of n (some variable
-    parameter) page links in one screenful. Implement a multi-threaded
-    program with one thread for the browser display, and another for the
-    search engine, and have the search engine deal out hits in batches
-    of the max size the browser can display in one screenful. You may
-    assume that a method called fetch has already been written in the
-    search engine to fetch the next batch of hits, returned as a list of
-    URL strings.
+        results in a match with a large number (hundreds) of web pages.
+        However, the browser will only display a list of n (some variable
+        parameter) page links in one screenful. Implement a multi-threaded
+        program with one thread for the browser display, and another for the
+        search engine, and have the search engine deal out hits in batches
+        of the max size the browser can display in one screenful. You may
+        assume that a method called fetch has already been written in the
+        search engine to fetch the next batch of hits, returned as a list of
+        URL strings.
 
         public class Searcher implements Runnable {
               private Request req;   // search request
@@ -3820,23 +3976,23 @@ April 22nd, 2013 - Recitation 12: Multithreading, Design Patterns
            }
 
 2.  In class you saw how one prime producer synchronized with one prime
-    consumer. Rewrite the `PrimeCentral` class with appropriate
-    synchronization to handle 3 producers and 1 consumer. For a given
-    bound (max number up to which primes need to be computed), each
-    producer will generate primes for a third of the range 2..bound.
-    (So, for instance, if bound is 9000 then the first producer will
-    generate primes between 2 and 3000, the second between 3001 and
-    6000, and the third, between 6001 and 9000). The consumer should be
-    able to get at any available prime in any of the three ranges. Make
-    sure that you do not over-synchronize, i.e. if a consumer is trying
-    to get at a prime in one of the ranges, a producers that may be
-    attempting to put a prime in one of the other ranges should not be
-    locked out.
+        consumer. Rewrite the `PrimeCentral` class with appropriate
+        synchronization to handle 3 producers and 1 consumer. For a given
+        bound (max number up to which primes need to be computed), each
+        producer will generate primes for a third of the range 2..bound.
+        (So, for instance, if bound is 9000 then the first producer will
+        generate primes between 2 and 3000, the second between 3001 and
+        6000, and the third, between 6001 and 9000). The consumer should be
+        able to get at any available prime in any of the three ranges. Make
+        sure that you do not over-synchronize, i.e. if a consumer is trying
+        to get at a prime in one of the ranges, a producers that may be
+        attempting to put a prime in one of the other ranges should not be
+        locked out.
 
 3.  You are asked to implement an application that can plot graphs of
-    mathematical functions, each function being of the form `y = f(x)`.
-    While there may be a choice of functions that can be plotted, only
-    one function is plotted at a time on a given 2-D screen.
+        mathematical functions, each function being of the form `y = f(x)`.
+        While there may be a choice of functions that can be plotted, only
+        one function is plotted at a time on a given 2-D screen.
 
     How would you use the `Template Method` design pattern to build your
     code? Write the outline of each class in your design, including
@@ -3844,7 +4000,7 @@ April 22nd, 2013 - Recitation 12: Multithreading, Design Patterns
     mathematical functions to demonstrate the pattern.
 
     -   The abstract class hosting the template method (NOT abstract)
-        and the hook method (abstract):
+            and the hook method (abstract):
 
             public abstract class Plotter {
 
@@ -3861,7 +4017,7 @@ April 22nd, 2013 - Recitation 12: Multithreading, Design Patterns
             }
 
     -   A specific line plotter, using the function of the form
-        `y = mx + b`
+            `y = mx + b`
 
             public class LinePlotter extends Plotter {
 
@@ -3884,23 +4040,28 @@ April 26th, 2013 - Final Exam Study Guide
 #### Interfaces
 
 -   An abstract type that is used to specify an interface that clases
-    must implement.
+        must implement.
+
 -   Declared using the `interface` keyword.
 -   May contain method signature and constant declarations.
 -   May not be instantiated.
--   *A class that implements and interface must implement all of the
-    methods described in the interface or be an abstract class.*
+-   \*A class that implements and interface must implement all of the
+        methods described in the interface or be an abstract class.*
+
 -   Can be used to simulate multiple inheritance.
 -   An interface can extend any number of interfaces.
 -   An interface may not implement an interface.
 -   An interface is *generally* public.
 -   An interface defines a new type name that is tracked by the
-    compiler.
+        compiler.
+
 -   All fields in an interface are implicity `public`, `static`, and
-    `final`.
+        `final`.
+
 -   All methods in an interface are implicity `public` and `abstract`.
--   When a class implements an interface, it *must implement every
-    single method* that is prescribed in the interface.
+-   When a class implements an interface, it \*must implement every
+        single method* that is prescribed in the interface.
+
 -   An interface may be generic.
 
         public interface Comparable<T> {
@@ -3911,18 +4072,22 @@ April 26th, 2013 - Final Exam Study Guide
 
 -   A class that derived from another class is called a *subclass*.
 -   The class from which the subclass is derived is called the
-    *superclass*.
+        *superclass*.
+
 -   Except for `Object`, which has no superclass, every class has one
-    and one only direct superclass (single inheritance).
+        and one only direct superclass (single inheritance).
+
 -   In the absence of any other explicit superclass, every class is
-    implicitiy a subclass of `Object`.
+        implicitiy a subclass of `Object`.
+
     -   From `Object`, every Java class has, and you have likely seen,
         -   `equals()` - compares address of objects
         -   `toString()` - returns address of object
         -   `hashCode()` - returns the hash code value for object
 
 -   The design aspect of inheritance is to model the "is a" relationship
-    between objects.
+        between objects.
+
     -   A car is a motor vehicle.
     -   A motor cycle is a motor vehicle.
     -   A colored point is a point.
@@ -3932,12 +4097,16 @@ April 26th, 2013 - Final Exam Study Guide
 
 -   An abstract class is a class that is declared by `abstract`.
 -   It may or may not include abstract methods.
--   *Abstract classes may not be instantiated, but they can be
-    subclassed.*
--   Unlike interfaces, abstract classes *may contain values that are not
-    static and final*, and they *may contain implemented methods.*
+-   \*Abstract classes may not be instantiated, but they can be
+        subclassed.*
+
+-   Unlike interfaces, abstract classes \*may contain values that are
+    not
+        static and final*, and they *may contain implemented methods.*
+
 -   When several classes have a common conceptual foundation they can be
-    **generalized** into an `abstract` superclass.
+        **generalized** into an `abstract` superclass.
+
 -   In Java, a class is defined `abstract` in the class header.
 -   An `abstract` method is one that has no implementation.
 -   An `abstract` class may have *zero or more* `abstract` methods.
@@ -3945,38 +4114,45 @@ April 26th, 2013 - Final Exam Study Guide
 #### Polymorphism
 
 -   The ability to create a variable, function, or object that has more
-    than one form.
+        than one form.
+
 -   Used to implement a style of programming called *message-passing* in
-    the literature.
+        the literature.
+
 -   Dynamically binding to same functionality in classes at different
-    levels of an inheritance hierarchy using a "least common
-    denominator" type is known as **inheritance polymorphism**.
+        levels of an inheritance hierarchy using a "least common
+        denominator" type is known as **inheritance polymorphism**.
 
 ### UML
 
 -   UML stands for Unified Modeling Language, which is a mainly
-    graphical notation used to express object-oriented design.
+        graphical notation used to express object-oriented design.
+
 -   There are three kinds of UML diagrams that are most useful in
-    practice:
+        practice:
+
     -   **Class interaction diagram**, used to show classes and the
-        relationships between them.
+            relationships between them.
+
     -   **Sequence diagram**, used to show sequences of activity when
-        methods are invoked on classes.
+            methods are invoked on classes.
+
     -   **State diagram**, used to represent state based designs.
 
 #### Class diagrams
 
 -   The class diagram is the main building block of OO modelling.
 -   It is used both for general conceptual modelling and for
-    systematics.
+        systematics.
+
 -   Classes contain three parts:
     1.  The upper part holds the name of the class
     2.  The middle part contains the attributes of the class.
     3.  The bottom part gives the methods or operations the class can
-        take or undertake.
+            take or undertake.
 
 -   To specify the visibility of a class member, these are the notations
-    used before the name:
+        used before the name:
 
         +   Public
         -   Private
@@ -3986,7 +4162,7 @@ April 26th, 2013 - Final Exam Study Guide
         _   Static
 
 -   UML allows you to specify a relationship of class members using
-    external links.
+        external links.
 
         Association:    --------+> // solid line,  filled triangle
         Aggregation:    -------<=> // solid line,  empty diamond
@@ -3995,8 +4171,8 @@ April 26th, 2013 - Final Exam Study Guide
         Dependancy:     - - - - |> // jagged line, empty triagnle 
 
 -   To specific the multiplicity of an association of at least two
-    related classes is done with the **multiplicity** entity, which is
-    defined as follows:
+        related classes is done with the **multiplicity** entity, which is
+        defined as follows:
 
         0..1    No instances, or one instance (optional, may)
         1       Exactly one instance
@@ -4010,12 +4186,15 @@ April 26th, 2013 - Final Exam Study Guide
 -   It can be named.
 -   At the both ends of the line, the members can have role names.
 -   The four types are bi-directional, uni-directional, aggregation, and
-    reflexive. (The first two are the most common.)
--   *Association defines a relationship between classes of objects that
-    allows one object instance to cause another to perform an action on
-    its behalf.*
+        reflexive. (The first two are the most common.)
+
+-   \*Association defines a relationship between classes of objects that
+        allows one object instance to cause another to perform an action on
+        its behalf.*
+
 -   "Sending a message" or "invoking a method" or "calling a member
-    function."
+        function."
+
 -   An "owns a" relationship.
 
         1     Owns     1..1
@@ -4023,23 +4202,28 @@ April 26th, 2013 - Final Exam Study Guide
         Owner        Owned
 
 -   Directed associations happen when the `Owner`, in this case, knows
-    about what it `Owns`, but the `Owned` does not "know" about its
-    `Owner`.
+        about what it `Owns`, but the `Owned` does not "know" about its
+        `Owner`.
+
 -   At time, an association between two classes itself has properties,
-    an **association class** is used to model these properties.
+        an **association class** is used to model these properties.
+
     -   This is represented by a jagged line stemming from where one
-        might usually put the title of the association.
+            might usually put the title of the association.
 
 ##### Aggregation
 
 -   This differs from ordinary composition in that it does not imply
-    ownership.
+        ownership.
+
 -   In composition, when the owning object is destroyed, so are the
-    contained objects.
+        contained objects.
+
 -   In aggregation, this is not *necessarily* true.
 -   For example, if a University closes, the departments it owns, like
-    Computer Science, will likely close along with it. On the other
-    hand, the Professors and Students will still exist.
+        Computer Science, will likely close along with it. On the other
+        hand, the Professors and Students will still exist.
+
 -   A "has a" relationship.
 -   Represented with an empty diamond and a line, an unfilled diamond.
 
@@ -4047,89 +4231,106 @@ April 26th, 2013 - Final Exam Study Guide
                 0..1      0..*
 
 -   Good examples of aggregation are states aggregating counties that
-    aggregate townships, police stations aggregate police officers, and
-    directories aggregate files.
+        aggregate townships, police stations aggregate police officers, and
+        directories aggregate files.
 
 ##### Composition
 
 -   This is a stronger variant of the "owns a" relationship.
 -   Composition usualy has a strong *life cycle dependancy* between
-    instances of the container class and instances of the contained
-    classes.
+        instances of the container class and instances of the contained
+        classes.
+
 -   It is a way to combine simple objects into more complex ones.
 -   Compositions are a criticle building block of basic data structures.
 -   Example: An automobile is composed from objects including steering
-    wheel, seat, gearbox, and engine.
+        wheel, seat, gearbox, and engine.
+
 -   Represented with a filled diamond.
 
         Car<+>----------Carburetor
               0..1  1..1
 
 -   Alternatively, one can represent composition by nesting a class
-    within the class representation.
+        within the class representation.
 
 ##### Generalization
 
 -   The generalization relationship ("is a") indicates that one of the
-    two related classes is considered to be a specialized form of the
-    other and a superclass is considered a generalization of the
-    subclass.
+        two related classes is considered to be a specialized form of the
+        other and a superclass is considered a generalization of the
+        subclass.
+
 -   It means that any instances of the subclass is also an instance of
-    the superclass.
+        the superclass.
+
 -   The generalization relationship is also known as the inheritance or
-    "is a" relationship.
+        "is a" relationship.
+
 -   This is almost synomymous with interface implementation.
 -   The representation in UML is a hollow triangle.
 
         Student ----------|> Person
 
 -   A good example of generalization is shape is a generalization of a
-    polygon, which is a generalization of rectangles and triangles.
+        polygon, which is a generalization of rectangles and triangles.
 
 ##### Dependancy
 
 -   Class `A` depends on `B` if `A` *uses* `B` in such a way that a
-    change in `B` will effect `A`.
+        change in `B` will effect `A`.
+
 -   Say `A` depends on `B`. Typically, `B` would appear as a parameter,
-    return type, or local variable in a method of `A`.
+        return type, or local variable in a method of `A`.
 
 #### State diagram.
 
 -   A state diagram is a type of diagram used in computer science and
-    related fields to describe the behavior of systems.
+        related fields to describe the behavior of systems.
+
     -   State diagrams require that the system described is composed of
-        a finite number of states.
+            a finite number of states.
+
         -   Sometimes this is the case, in other there is a reasonable
-            abstraction.
+                abstraction.
 
     -   Many forms of state diagrams exists, which different slight and
-        have different semantics.
+            have different semantics.
 
 -   The state diagram in the Unified Modelling Language is essentially a
-    Harel statechart with standardized notation.
+        Harel statechart with standardized notation.
+
     -   This can be used to describe many systems, from computer
-        programs to business processors.
+            programs to business processors.
+
     -   In UML 2 the name has been changed to *State Machine Diagram*.
 
 -   The basic notational elements that can be used to make a diagram
-    are:
+        are:
+
     -   Filled circle, pointing to the initial state.
     -   Hollow circle, containing a smaller filled circle indicating the
-        final state.
+            final state.
+
     -   Rounded rectangle, denoting a state. Top of the rectagnle
-        contains a name of the state.
+            contains a name of the state.
+
         -   Can contain a horizaontal line in the middle, below which
-            the activities that can be done are indicated.
+                the activities that can be done are indicated.
 
     -   Arrow, denoting transtion. The name of the event (if any)
-        causing this transition labels the arrow bodyu.
-        -   A guard expression may be added before a "/" and enclosed in
-            square-brackets. Ex: `eventName[guardExpression]`.
-        -   If an action is performed during this transition, it is
-            added to the label following a "/".
+            causing this transition labels the arrow bodyu.
 
-    -   Thick horizontal line with wither \$ x 1 \$ lines entering and 1
-        line leaving or 1 line entering and *x* \> 1 lines leaving.
+        -   A guard expression may be added before a "/" and enclosed in
+                square-brackets. Ex: `eventName[guardExpression]`.
+
+        -   If an action is performed during this transition, it is
+                added to the label following a "/".
+
+    -   Thick horizontal line with wither \\\$ x 1 \\\$ lines entering
+        and 1
+            line leaving or 1 line entering and *x* \> 1 lines leaving.
+
         -   These denote join/fork respectively.
 
 ### Design patterns
@@ -4137,21 +4338,25 @@ April 26th, 2013 - Final Exam Study Guide
 #### Model-View-Controller (MVC)
 
 -   A **model** notifies its associated views and controllers when there
-    has been a change in its state.
+        has been a change in its state.
+
 -   A **view** requests from the model the information that needs to
-    generate an output representation to the user.
+        generate an output representation to the user.
+
 -   A **controller** can send commands to associated view to change the
-    view's presentation of the model.
+        view's presentation of the model.
 
 #### State (Behavioral)
 
 -   Allow an object to change its behavior when its internal state
-    changes.
+        changes.
+
 -   *The "object" is a subclass of an abstract class, polymorphism.*
 -   Context (client code) has a state object that is one of the concrete
-    instances.
+        instances.
+
 -   The request method executes handle on this concrete instance
-    dynamically binding the appropriate class method.
+        dynamically binding the appropriate class method.
 
         +-----------+          +-----------+
         |  Context  |<>--------|   State   |
@@ -4188,7 +4393,7 @@ April 26th, 2013 - Final Exam Study Guide
 -   *Ensure that a class has only one object or instance.*
 -   Only one point of global access.
 -   The single private constructor ensures that an instance of the class
-    cannot be created with `new`.
+        cannot be created with `new`.
 
         +----------------------+
         |       Singleton      |
@@ -4199,19 +4404,22 @@ April 26th, 2013 - Final Exam Study Guide
 
 #### Iterator
 
--   An iterator is *used to traverse a container and access the
-    containter's elements.*
+-   An iterator is \*used to traverse a container and access the
+        containter's elements.*
+
 -   This *decouples algorithms from containers.*
 -   The alogirthm `SearchForElement` can be implemented generally using
-    a specific type of iterator rather than implementing
-    container-specific algorithm.
+        a specific type of iterator rather than implementing
+        container-specific algorithm.
+
 -   This allows `SearchForElement` to be used on any container that
-    supports the required type of iterator. \> Provide a way to access
-    the elements of an aggregate object \> sequentially without exposing
-    its underlying representation.
+        supports the required type of iterator. \> Provide a way to access
+        the elements of an aggregate object \> sequentially without exposing
+        its underlying representation.
 
 -   Java has an `Iterator` interface that the Collections should
-    implement in order to traverse the collection.
+        implement in order to traverse the collection.
+
 -   Classic implementations were using the `next()` method.
 -   Java also supports `hasNext()` and `remove()` methods.
 
@@ -4222,7 +4430,8 @@ April 26th, 2013 - Final Exam Study Guide
         }
 
 -   Access the contents of a collection without exposing its internal
-    representation.
+        representation.
+
 -   Suppoer overlapping multiple traversals.
 -   Provide a uniform interface for traversing different collections.
 -   Polymorphic iteration.
@@ -4249,12 +4458,13 @@ April 26th, 2013 - Final Exam Study Guide
 
 -   Implements a set sequence of actions
 -   Each action is a method, some of which are abstract because their
-    implementation is specific to concrete subclasses.
+        implementation is specific to concrete subclasses.
+
 -   The abstract metods are referred to as "hook" methods.
 -   *The template method is hosted in an abstract class.*
 -   The template method itself is *not abstract*.
 -   Each specific algorithm can then extend this abstract host class,
-    and provide its own specific version of the hook method.
+        and provide its own specific version of the hook method.
 
         +-------------------+   +--------+  
         |   Template Host   |   | . . .  |
@@ -4273,32 +4483,39 @@ April 26th, 2013 - Final Exam Study Guide
         +-------------------+
 
 -   In software engineering, the *template design pattern* is a
-    behavioral design pattern that defines the program skeleton of an
-    algorithm in a method, called the *template method*, which defers
-    some steps to subclasses.
+        behavioral design pattern that defines the program skeleton of an
+        algorithm in a method, called the *template method*, which defers
+        some steps to subclasses.
+
     -   It lets one redefine certain steps of an algorithm without
-        changing the algorithms structure.
+            changing the algorithms structure.
 
 -   In the template method of this design pattern, one or more
-    algorithms can be overridden by subclasses to allow differing
-    behaviors enusuring that the overarching algorithm is still
-    followed.
+        algorithms can be overridden by subclasses to allow differing
+        behaviors enusuring that the overarching algorithm is still
+        followed.
+
     -   In object-oriented programming, first a class is created that
-        provides the basic steps of an algorithm design.
+            provides the basic steps of an algorithm design.
+
     -   These steps are implemented using abstract methods.
     -   Later on, subclasses change the abstract methods to implement
-        real actions.
+            real actions.
+
         -   Thus, the general algorithm is saved in one place but the
-            concrete steps may be changed by subclasses.
+                concrete steps may be changed by subclasses.
 
 -   The template method pattern thus manages the larger picture of task
-    semantics, and more refined implementation details of selection and
-    sequence of methods.
+        semantics, and more refined implementation details of selection and
+        sequence of methods.
+
     -   This larger picture calls abstract and non-abstract methods for
-        the task at hand.
+            the task at hand.
+
     -   The non-abstract methods are completely controlled by the
-        template method, but the abstract methods, implemented by
-        subclasses, are implemented by the concrete subclasses.
+            template method, but the abstract methods, implemented by
+            subclasses, are implemented by the concrete subclasses.
+
         -   These are called "hooks"
 
     -   The template method is not abstract!
@@ -4308,66 +4525,74 @@ April 26th, 2013 - Final Exam Study Guide
 #### Boundary Value Analysis
 
 -   Consider `charAt(i)` in the `String` class. This method implements a
-    function that takes as input an integer position, and returns the
-    character at that position in the string.
+        function that takes as input an integer position, and returns the
+        character at that position in the string.
+
 -   The range of input, *i*, where *s* is the length of the string:
 
     0 ≤ *i* ≤ *s* − 1
 
 -   To test that `charAt` works correctly for a given string of length
-    s, we would need to build the following input test cases
+        s, we would need to build the following input test cases
+
     -   Lower boundary value *i* = 0.
     -   Upper boundary value *i* = *s* − 1.
     -   A small increment on the lower boundary value, *i* = 1.
     -   A small decrement on the upper boundary value, *i* = *s* − 2.
     -   A nominal valye of *i* that is somewhere in the range that is
-        not any of the above. \$i = \\frac{s}{2}\$
+            not any of the above. \$i = \\frac{s}{2}\$
 
 -   This is the basic **boundary value analysis** approach.
 -   In general, if a function has an integer input *i*, which is between
-    *l* and *h* in value, then the boundary analysis of the function
-    selects the test input values *l*, *l* + *ε*, *l* + *ε*,
-    *i*<sub>*n*</sub>, *h* − *ε*, and *h*, where:
+        *l* and *h* in value, then the boundary analysis of the function
+        selects the test input values *l*, *l* + *ε*, *l* + *ε*,
+        *i*<sub>*n*</sub>, *h* − *ε*, and *h*, where:
+
     -   *i*<sub>*n*</sub> is a nominal value of *i* somewhere in the
-        range.
+            range.
+
     -   *ε* is a small value, typically 1 for `int`.
 
 #### Robustness testing
 
 -   A simple extension of the basic boundary value analysis that
-    includes two additional input values: *l* − *ε* *h* + *ε*
+        includes two additional input values: *l* − *ε* *h* + *ε*
 
 -   These value fall outside the range but are class to the end value.
     -   They should result in the function implementation returning
-        gracefully, without computing a result.
+            gracefully, without computing a result.
 
 -   A Java method such as `charAt` would handle thes einputs by throwing
-    an exception.
+        an exception.
+
     -   It is graceful exit because it gives the client the choice to
-        hangle this situation how they see fit.
+            hangle this situation how they see fit.
 
 -   The test cases with robust testing of `charAt` would be:
-    −1, 0, 1, *s* / 2, *s*−2, *s*−1, *s*
+        −1, 0, 1, *s* / 2, *s*−2, *s*−1, *s*
 
 -   Robustness testing uses seven test cases on a single-variable input
-    function.
+        function.
+
 -   The main focus of robustness is on exception handling.
 
 #### Multi-variable boundary values
 
 -   Suppose you wrote a function `addHour` that, given a day and a time
-    in hours, adds one hour to the time and outputs the resulting day
-    and time.
+        in hours, adds one hour to the time and outputs the resulting day
+        and time.
+
 -   The input variables here are integer `d`, for day, and an interger
-    `h` for hour. Ranges:
+        `h` for hour. Ranges:
 
     1 ≤ *d* ≤ 6 0 ≤ *h* ≤ 23
 
 -   To create the test cases, we follow the procedure for single
-    variable boundary value analysis, except we repret for both
-    variables.
+        variable boundary value analysis, except we repret for both
+        variables.
+
     -   When we run through the gamut for one variable, we keep the
-        value of the other fixed at the nominal value.
+            value of the other fixed at the nominal value.
 
 -   Then the list of test cases using (day, hour)
 
@@ -4376,7 +4601,7 @@ April 26th, 2013 - Final Exam Study Guide
     -   One test appears twice, so there are 9 distinct cases.
 
 -   For the numbers 4 and 12 for day and hour, there are nine distinct
-    test cases:
+        test cases:
 
     (4, 0), (4, 1), (4, 12), (4, 22), (4, 23), (1, 12), (2, 12), (6, 12), (7, 12)
 
@@ -4385,43 +4610,52 @@ April 26th, 2013 - Final Exam Study Guide
     (*d*<sub>*n*</sub>, −1), (*d*<sub>*n*</sub>, 24), (0, *h*<sub>*n*</sub>), (8, *h*<sub>*n*</sub>)
 
 -   However, this general approach does not capture the important test
-    cases (1, 23) and (7, 23) mentioned at the beginning of this
-    discussion.
+        cases (1, 23) and (7, 23) mentioned at the beginning of this
+        discussion.
+
 -   The reason the general approach followed above only works if the
-    variables are *independant*.
+        variables are *independant*.
+
     -   That is, if there are *n* independant variables, then the test
-        cases are built by varying each indepedant variable thorugh all
-        its test values while holding all the other variables at their
-        respective nominal values.
+            cases are built by varying each indepedant variable thorugh all
+            its test values while holding all the other variables at their
+            respective nominal values.
 
 -   If the variables are dependant on each other, then we need to use
-    all value tuples obtained by combining the test values of the
-    variables in all possible ways.
+        all value tuples obtained by combining the test values of the
+        variables in all possible ways.
+
 -   For the `addHour` examples, this would mean all possible combination
-    of *d* boundary values with those of *h* boundary values.
+        of *d* boundary values with those of *h* boundary values.
+
 -   The test values for *d* are 1, 2, 3, 4, 5, 6, 7 and those for *h*
-    are 0, 1, 12, 22, 23.
+        are 0, 1, 12, 22, 23.
+
     -   So there are 25 combinations, each of which will be a test case.
 
 -   These combinations will include 1, 23 and 7, 23, among others.
 -   Robustness testing does not get affected due to inter-dependance
-    unless there are particular legitimate indivudual values whose
-    combination is not legitimate.
+        unless there are particular legitimate indivudual values whose
+        combination is not legitimate.
 
 #### Equivalence classes
 
 -   Divides the input data of a software into partitions of equivilent
-    data from which test cases can be derived.
+        data from which test cases can be derived.
+
 -   In principle, test cases are designed to cover each partition at
-    least once.
--   This technique tries to define test cases that uncover *classes of
-    errors*.
+        least once.
+
+-   This technique tries to define test cases that uncover \*classes of
+        errors*.
+
 -   Equivilence partitioning is typically applied to the inputs of a
-    tested component.
+        tested component.
+
     -   May be applied to outputs in rare cases.
 
 -   The fundamental concept of ECP comes from equivilence class, which
-    in turn comes from equivilence relation.
+        in turn comes from equivilence relation.
 
         int safe_add( int a, int b ) {
             int c = a + b;
@@ -4437,7 +4671,7 @@ April 26th, 2013 - Final Exam Study Guide
         }
 
 -   The boundary values approach results in a lot of test cases, many of
-    which are repetitious or redundant.
+        which are repetitious or redundant.
 
         +------+---+---+
         | Test | d | h |
@@ -4458,34 +4692,41 @@ April 26th, 2013 - Final Exam Study Guide
 
 -   Consider each group of tests with the same *d* and different *h*'s.
     -   In the first group of 5 tests, with *d* = 1, all tests except
-        the last result in the same type of input.
+            the last result in the same type of input.
 
 -   Why not break these into categories? All tests in each category
-    would produce similar successes or failures.
+        would produce similar successes or failures.
+
     -   Category 1: All tests for which output *d* is same as input *d*.
     -   Category 2: All tests for which the output *d* is different from
-        input *d*, but not 1.
+            input *d*, but not 1.
+
     -   Category 3: All tests for which the output *d* is different from
-        the input *d*, and is 1.
+            the input *d*, and is 1.
 
 -   Each category is called an *equivilence class* and the cetgorization
-    is called *equivilence partitioning*
+        is called *equivilence partitioning*
+
     -   Equivilence partitioning can also be done for test cases that
-        are expected to result in errors, for robustness testing.
+            are expected to result in errors, for robustness testing.
 
 -   Consider the example of a rectangle, where you have a method called
-    `pointInRectangle`. It returns `0` if the point is *on* the
-    rectangle, `-1` if the point is *not* on or in the rectangle, and
-    `1` if it is *in* the rectangle.
+        `pointInRectangle`. It returns `0` if the point is *on* the
+        rectangle, `-1` if the point is *not* on or in the rectangle, and
+        `1` if it is *in* the rectangle.
+
     -   This function does not have a continuum of results, insteads it
-        partitions the results into three calses of outcomes.
+            partitions the results into three calses of outcomes.
+
     -   This then leads to partitioning the input into equvilence
-        classes.
+            classes.
+
     -   Each equivilence class would comprise all inputs that result in
-        one of the possible outcomes, or force one type of error.
+            one of the possible outcomes, or force one type of error.
+
     -   Since we are assuming all inputs are legal coordinates, to start
-        with, we will build equvilance classes for the possible correct
-        outcomes.
+            with, we will build equvilance classes for the possible correct
+            outcomes.
 
 ### Multithreading and synchronization on shared resources
 
@@ -4502,80 +4743,94 @@ April 26th, 2013 - Final Exam Study Guide
 
     3.  Make any parameters you need static fields.
     4.  Define a constructor that starts up an independant thread for
-        run.
+            run.
 
             public ProgramThread() { start(); }
 
         -   This method is defined in the `Thread` class, calling it
-            sets up the necessary resources to run an independant thread
-            and starts up the thread to execute the run method.
+                sets up the necessary resources to run an independant thread
+                and starts up the thread to execute the run method.
 
         > Note: Calling run directly (instead of start) will *not* start
         > an independant thread.
 
     5.  Change the main method to set up and independant thread for your
-        computation. When the user interupts your program, report the
-        current computation.
+            computation. When the user interupts your program, report the
+            current computation.
 
 -   Every time the user hits enter, the main thread fetches the current
-    status of your computation and prints it out.
+        status of your computation and prints it out.
+
 -   Meanwhile, the program thread continues its computation.
 -   If the user types "quit", the program thread continues indepedantly
-    until the end of the current conditional or whatever might be
-    happening in there.
+        until the end of the current conditional or whatever might be
+        happening in there.
 
 #### Why threads
 
 -   A thread runs asynchronously, independant of the thread that created
-    it.
+        it.
+
 -   A Java application or applet itself runs as a thread, and can spin
-    off as many threads as needed.
+        off as many threads as needed.
+
 -   A collection of asyncrhously running threads may communicate with
-    each other via a buffer, or directly invoking methods on each other.
+        each other via a buffer, or directly invoking methods on each other.
+
 -   Asynchrous computing allows several tasks to be performed in
-    parallel, resulting in:
+        parallel, resulting in:
+
     -   **improved executing time** for the application as a whole.
     -   **improved turn around time** seen by the user, for instance the
-        consumer thread displays data on the fly as it comes from the
-        server, instead of blocking until all data is available.
+            consumer thread displays data on the fly as it comes from the
+            server, instead of blocking until all data is available.
 
 -   Asynchrounous computing places more onus on the programmer to ensure
-    that the program:
+        that the program:
+
     -   **avoids race conditions**, two threads trying to update a
-        variable at the same time.
+            variable at the same time.
+
     -   **maintains consistency of data**, two transactions both
-        withdraw money from an account, but the second does not see the
-        withdrawal being made by the first.
+            withdraw money from an account, but the second does not see the
+            withdrawal being made by the first.
 
 #### Lifecycle of a thread
 
 A thread is born, started, run, and then terminated.
 
 -   **New**: A new thread begins its life cycle in the new state. It
-    remains in this state until the program starts the thread.
+        remains in this state until the program starts the thread.
+
 -   **Runnable**: After a newly born thread is started, the thread
-    becomes runnable. It is executing a task.
+        becomes runnable. It is executing a task.
+
 -   **Waiting**: Sometimes a thread transitions to the waiting state
-    while the thread waits for another thread to perform a task. A
-    thread transitions back to the runnable state only when another
-    thread signals the waiting thread to continue executing.
+        while the thread waits for another thread to perform a task. A
+        thread transitions back to the runnable state only when another
+        thread signals the waiting thread to continue executing.
+
 -   **Timed waiting**: A runnable thread can enter the timed waiting
-    state for a specified interal of time. A thread in this state
-    transitions back to the runnable state when that time interval
-    expires or when the event it is waiting for occurs.
+        state for a specified interal of time. A thread in this state
+        transitions back to the runnable state when that time interval
+        expires or when the event it is waiting for occurs.
+
 -   **Terminated**: A runnable thread enters the terminated state when
-    it completes the task or is otherwise terminated.
+        it completes the task or is otherwise terminated.
 
 #### Thread priorities
 
 -   Every Java thread has a priority that helps the operating system
-    determine the order in which threads are scheduled.
+        determine the order in which threads are scheduled.
+
 -   Java priorities are in the range between `MIN_PRIORITY` (1) and
-    `MAX_PRIORITY` (10),
+        `MAX_PRIORITY` (10),
+
     -   By default, every thread is `NORM_PRIORITY` (5).
 
 -   Threads with higher priority are more important to a program and
-    should be allocated processor time before lower-priority threads,
+        should be allocated processor time before lower-priority threads,
+
     -   However, this is very platform dependant.
 
 #### A thread "Hello, World!"
@@ -4797,26 +5052,30 @@ either.
 Your app should implement the following features:
 
 -   30 pts Home screen. When the app comes up, it should load album and
-    photo data from the previous session, if any, and list all albums.
-    Off this "home" screen, you should be able to do the following, in
-    one or more navigational steps.
+        photo data from the previous session, if any, and list all albums.
+        Off this "home" screen, you should be able to do the following, in
+        one or more navigational steps.
+
 -   40 pts Open, create, delete, and rename albums as listed in the GUI
-    project description. When opening an album, display all its photos,
-    with their thumbnail images.
+        project description. When opening an album, display all its photos,
+        with their thumbnail images.
+
 -   40 pts Once an album is open, you should be able to add, remove, or
-    display a photo. Displaying a photo could trigger a manual
-    slideshow, allowing you to go backward or forward in the album one
-    photo at a time.
+        display a photo. Displaying a photo could trigger a manual
+        slideshow, allowing you to go backward or forward in the album one
+        photo at a time.
+
 -   20 pts When a photo is displayed, you should be able to add a tag to
-    a photo. Only person and location are valid tag types; there are no
-    typeless tags. You should also be able to delete a tag from a photo.
-    Note: When displaying a photo, tags (if any) should be visible.
+        a photo. Only person and location are valid tag types; there are no
+        typeless tags. You should also be able to delete a tag from a photo.
+        Note: When displaying a photo, tags (if any) should be visible.
+
 -   20 pts You should be able to move a photo from one album to another
 -   50 pts You should be able to search for photos by tag (person or
-    location), and matches should allow completion. For instance, if a
-    location "New" is typed, matches should include photos taken in New
-    York, New Mexico, New Zealand, etc. Note: You are not required to
-    implement functionality to save the matching photos in an album.
+        location), and matches should allow completion. For instance, if a
+        location "New" is typed, matches should include photos taken in New
+        York, New Mexico, New Zealand, etc. Note: You are not required to
+        implement functionality to save the matching photos in an album.
 
 You may serialize the albums and photos, but are not required to do so -
 you can use alternative formats for storage on the device. Also, because
@@ -4841,29 +5100,35 @@ following three other activities:
 
 -   30 pts Two humans can use your app to play a game of Chess.
 -   20 pts Your app must draw the board with icons and correctly shaded
-    squares.
+        squares.
+
 -   20 pts Players must move their pieces using touch input - either
-    dragging a piece or touching first the piece's original square and
-    then its destination.
+        dragging a piece or touching first the piece's original square and
+        then its destination.
+
 -   10 pts Provide an 'undo' button that will undo the last move (but no
-    farther).
+        farther).
+
 -   10 pts Provide an 'AI' button that will choose a move for the
-    current player. Choosing randomly from the set of legal moves is
-    sufficient.
+        current player. Choosing randomly from the set of legal moves is
+        sufficient.
+
 -   20 pts Provide functional 'draw' and 'resign' buttons.
 -   10 pts When the game is over, report the outcome (but not in a
-    popup).
+        popup).
 
 #### Recording games (50 pts)
 
 -   20 pts Record all games as they're being played.
 -   10 pts At the conclusion of a game, offer to store it and prompt the
-    user for a game title.
+        user for a game title.
+
 -   20 pts List all recorded games, sorted by both date and by title
-    (user can select which view to choose).
+        (user can select which view to choose).
 
 #### Game playback (30 pts)
 
 -   A button that allows the user to play a selected game one move at a
-    time.
+        time.
+
 

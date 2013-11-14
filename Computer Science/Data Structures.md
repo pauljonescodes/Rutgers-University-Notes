@@ -8,17 +8,20 @@ Chapter 3 - Efficiency
 
 -   Generally, people talk about programs in terms of clock time.
 -   It is more helpful to talk about running time independent of CPU
-    speed and system load
+        speed and system load
+
 -   Every program can be reduced into a basic operation, a comparison, a
-    parse, or a function
+        parse, or a function
+
 -   It is also helpful to think of every operation as an algorithm
-    independent of language
+        independent of language
 
 ### Section 3 - Input Size
 
 -   If a two programs perform the same task basic operation is
-    comparison, and yet for the same input one compares more than the
-    other, one is faster than the other.
+        comparison, and yet for the same input one compares more than the
+        other, one is faster than the other.
+
 -   Speed as a function of input
 
 ### Section 5 - Order and Big Oh
@@ -26,14 +29,16 @@ Chapter 3 - Efficiency
 In order from fastest to slowest:
 
 1.  Constant: *O*(1) As denoted by the lack of *n*, this is independent
-    of input size. It is always the same.
+        of input size. It is always the same.
+
 2.  Linear: *O*(*n*) The running time exactly as the input size grows.
-    Very common.
-3.  Quadratic: *O*(n\^2) Often sorting is quadratic.
+        Very common.
+
+3.  Quadratic: *O*(n\\\^2) Often sorting is quadratic.
 4.  *En log en*: *O*(*n* log *n*)
 5.  Logarithmic: *O*(log *n*)
-6.  Cubic: *O*(*n*\^3)
-7.  Exponential: *O*(*k*\^*n*)
+6.  Cubic: *O*(*n*\\\^3)
+7.  Exponential: *O*(*k*\\\^*n*)
 8.  Brute force
 
 Chapter 4
@@ -42,11 +47,13 @@ Chapter 4
 ### Section 4.5 - Linked Lists
 
 -   A linked list overcomes a limitation of arrays in that additional
-    space can be made on demand.
+        space can be made on demand.
+
 -   A linked list is a linear structure consisting of nodes. Nodes have
-    data and a pointer, which point to other nodes.
+        data and a pointer, which point to other nodes.
+
 -   The links can be thought of as "together", but are in actuality
-    disparate.
+        disparate.
 
 #### Insertion
 
@@ -60,7 +67,8 @@ Chapter 4
 
 1.  Create a new node
 2.  Make new node's link refer to the node following *P*, compare
-    through enumeration
+        through enumeration
+
 3.  Update the next link to which *P* refers to the new node
 
 #### Deletion
@@ -79,10 +87,12 @@ Chapter 7 - Stack
 ### Section 1 - Properties
 
 -   Last in, first out. As in, the latest thing that went in will be the
-    first thing to come off.
+        first thing to come off.
+
 -   A stack is a linear collection of entries in which for every entry
-    *y* that enters the stack after another entry *x*, *y* leaves the
-    stack before *x*.
+        *y* that enters the stack after another entry *x*, *y* leaves the
+        stack before *x*.
+
 -   Operations:
 -   Push adds an entry to the top.
     -   Pop deletes the entry from the top.
@@ -92,23 +102,27 @@ Chapter 7 - Stack
 
 ### Section 2.2 - Postfix
 
--   *a + b \* (c - f) / d* is an example of infix, where *a b c f - \*
-    d/ +* is the corresponding postfix
+-   *a + b \* (c - f) / d* is an example of infix, where \*a b c f - \*
+        d/ +* is the corresponding postfix
+
 -   A general postfix expression is best defined by describing how it is
-    evaluated using a stack. (!!!)
+        evaluated using a stack. (!!!)
+
 -   When an operator is encountered, there must exist a most recent pair
-    of operands or temporary results on the stack for application.
+        of operands or temporary results on the stack for application.
 
 Chapter 10 - Comparison Trees
 -----------------------------
 
 -   A comparison tree or binary search on an array is a binary tree that
-    depicts all possible search paths. It shows all the different
-    sequences of comparison undertaken by binary search when searching
-    for keys that may or may not be present in the array.
+        depicts all possible search paths. It shows all the different
+        sequences of comparison undertaken by binary search when searching
+        for keys that may or may not be present in the array.
+
 -   Failure nodes are represented underneath the "leaves" of the tree,
-    and represent the comparison that occurs when the program is
-    searching through and discovers the end of the tree.
+        and represent the comparison that occurs when the program is
+        searching through and discovers the end of the tree.
+
 -   There are the best case scenarios and worst case scenarios.
 -   There are the success scenarios and the failure scenarios.
 -   There are then probabilities and average cases.
@@ -123,18 +137,20 @@ Chapter 10 - Comparison Trees
 -   Search
     -   Searching in a binary search tree is identical to tracing.
         -   Each node has a basic operation of equality test, and each
-            branch has a basic operation of less-than/greater-than
-            performed on it.
+                branch has a basic operation of less-than/greater-than
+                performed on it.
+
             -   If it is equal, the search terminates successfully.
             -   If not, the search continues on the left or right
-                branches.
+                    branches.
 
 -   Insert
     -   In order to insert a value, the search process is employed to
-        *force a failure*, and the new value is inserted at the place
-        where the search failed.
+            *force a failure*, and the new value is inserted at the place
+            where the search failed.
+
         -   A newly inserted node always becomes a leaf node in the
-            search tree.
+                search tree.
 
 -   Delete
     -   X is a leaf node
@@ -154,32 +170,39 @@ Videos - Binary Search Tree
 
 -   Description of algorithm for binary search in an array:
     -   Make high variable equal to number of elements minus one or end
-        of relevant search.
+            of relevant search.
+
     -   Make low variable equal to zero or start of relevant search.
     -   Make mid equal to high plus low divided by two in integer
-        division.
+            division.
+
     -   Compare the item at mid to the sought after item.
     -   When high equals low, the loop quits, the final call.
 
 ### Video 2
 
 -   I can use a binary search comparison tree to find the number of
-    comparisons for successful and failure on arrays of specific
-    length.  
+        comparisons for successful and failure on arrays of specific
+        length.  
+
 -   I am going to learn how to find the average for success and
-    failure.  
+        failure.  
+
 -   The number of comparisons for failure is always one more than the
-    number for success.
+        number for success.
 
 #### Average case success
 
 -   For an array of length seven, where k = 7, and it is flat and even,
-    failure is one more than success.
+        failure is one more than success.
+
 -   For successes, you first locate all places where a match could
-    occur, success nodes.
+        occur, success nodes.
+
 -   Get comparisons for the positions, and add them up.
 -   Divide this by the number of success positions. Add up all possible
-    cases
+        cases
+
 -   (Sum of all possible comparisons divided by the number of elements)
 
 #### Average case failure
@@ -189,41 +212,44 @@ matters. You need a domain. Without a domain, it is indeterminate, but
 it will be between a set of values.
 
 1.  Multiply the number of failure values for a node with the number of
-    comparisons to get to that node. Add up all these values for all
-    nodes.  
+        comparisons to get to that node. Add up all these values for all
+        nodes.  
+
 2.  Divide by the total number of failure values. (Subtract number of
-    elements from extent of array)
+        elements from extent of array)
 
 -   Evidently, you never need to compute the average for failure for any
-    tree. All failures are at the last level.
+        tree. All failures are at the last level.
 
 #### Probabilistic search
 
--   Rethink the average as a sum of products.  
+-   Rethink the average as a sum of products.
 -   Multiply the number of cases which each node covers by the
-    probability of "landing" on it.  
+        probability of "landing" on it.  
+
 -   This is akin to "distributing" the division at the end of average
-    cases
+        cases
 
 ### Video 3 - Worst case for arbitrary length n and big o
 
--   Number of nodes at a level *k* increases as 2\^*k,* geometric
-    series, relies on "ideal structure"
--   A tree of height *k* has *k+1* levels and 2\^*k* nodes.
+-   Number of nodes at a level *k* increases as 2\\\^*k,* geometric
+        series, relies on "ideal structure"
+
+-   A tree of height *k* has *k+1* levels and 2\\\^*k* nodes.
 -   Every descent uses 2 more comparisons.
 -   The formula for an ideal tree is *2\*log\_2(n + 1) - 1*
 -   To make it apply generally, apply ceiling to the logarithm.
 -   The worst case for failure is just one more than the one for
-    success.
+        success.
 
 Midterm
 -------
 
 1.  Sorted Linked Lists Difference (20 pts, 15+5) Suppose you are given
-    two sorted lists of integers. The difference of the first list with
-    respect to the second is the set of all entries that are in the
-    first list but not in the second. For instance, given these two
-    sorted lists:
+        two sorted lists of integers. The difference of the first list with
+        respect to the second is the set of all entries that are in the
+        first list but not in the second. For instance, given these two
+        sorted lists:
 
     L1: 3 --\> 5 --\> 9 --\> 15 --\> 19 --\> 25
 
@@ -269,24 +295,27 @@ Midterm
     total the counts, and convert to big O. You will not get any credit
     without an adequate derivation, even if your answer is correct.
 
-    -   The worst case running time of my implementation is o(m\*n).  
+    -   The worst case running time of my implementation is o(m\*n).
     -   This is because the program loops through every element in list
-        1 by the number of elements in list 2 times.
+            1 by the number of elements in list 2 times.
+
     -   The basic unit operations are the comparison of the elements in
-        the first list to the elements in the second.
+            the first list to the elements in the second.
+
     -   There is no information about the number of elements this code
-        is likely to get. The worst case, though, is that m = n, because
-        this would result in the most possible comparisons.
-    -   This results in a Big-O of O(n\^2)
+            is likely to get. The worst case, though, is that m = n, because
+            this would result in the most possible comparisons.
+
+    -   This results in a Big-O of O(n\\\^2)
 
 2.  Sorted Array Insertion (20 pts, 15+5)
     -   Implement the fastest possible algorithm to insert a new entry
-        into a sorted (in ascending order) array of items. Duplicates
-        are NOT allowed (throw an exception if a duplicate is attempted
-        to be inserted.) After insertion, the array should still be in
-        sorted order. You will get at most half the credit if your
-        algorithm is not the fastest possible. (Fastest here refers to
-        the real clock time, not big O).
+            into a sorted (in ascending order) array of items. Duplicates
+            are NOT allowed (throw an exception if a duplicate is attempted
+            to be inserted.) After insertion, the array should still be in
+            sorted order. You will get at most half the credit if your
+            algorithm is not the fastest possible. (Fastest here refers to
+            the real clock time, not big O).
 
               public static void sortedInsert(int[] A, int n, int item) {
                        int imax = n - 1;
@@ -309,25 +338,25 @@ Midterm
               }\
 
     -   What is the worst case big O running time for your
-        implementation? Identify the basic operations and show how they
-        add up to the running time. (For any of the search algorithms
-        done in class, you may assume its known running time without
-        derivaton.) You will not get any credit without an adequate
-        derivation, even if your answer is correct.
+            implementation? Identify the basic operations and show how they
+            add up to the running time. (For any of the search algorithms
+            done in class, you may assume its known running time without
+            derivaton.) You will not get any credit without an adequate
+            derivation, even if your answer is correct.
 
 3.  BST Ranking (17 pts, 10+7) You are given a Binary Search Tree (BST)
-    with nodes defined as follows:
+        with nodes defined as follows:
 
           public class BSTNode\<T extends Comparable\<T\>\> { T data;
              BSTNode\<T\> left, right;
         ... }
 
     -   Describe an algorithm to find the k-th smallest item in the BST.
-        (k=1 means smallest, k=2 means second smallest, etc.) Your
-        description must be precise enough to be able to translate into
-        Java code. You can use additional data structure(s) if you like,
-        but you may NOT change the BSTNode class itself. Credit depends
-        both on correctness (50%) and efficiency (50%).
+            (k=1 means smallest, k=2 means second smallest, etc.) Your
+            description must be precise enough to be able to translate into
+            Java code. You can use additional data structure(s) if you like,
+            but you may NOT change the BSTNode class itself. Credit depends
+            both on correctness (50%) and efficiency (50%).
 
 AVL Tree
 --------
@@ -335,23 +364,26 @@ AVL Tree
 ### Lecture
 
 -   An AVL tree is liked a BST but it's "balanced." Thus, more
-    efficient.
+        efficient.
+
 -   AVL tree is a BST I. Which at every node X, the heights of the sub
-    trees of x differ at most by 1.
+        trees of x differ at most by 1.
+
 -   Height is the number of branches from root to the farthest leaf.
 -   Height of empty tree is -1, single node is zero.
 -   Balance factor at every node: '-' (equal high), '/' (left high), or
-    '\\' (right high)
+        '\\' (right high)
+
 -   Adelson-Velski and Landis
 -   Debalance at X
 
 ### Problem Set 6
 
 1.  Each node of a BST can be filled with a height value, which is the
-    height of the subtree rooted at that node. The height of a node is
-    the maximum of the height of its children, plus one. The height of
-    an empty tree is -1. Here's an example, with the value in
-    parentheses indicating the height of the corresponding node:
+        height of the subtree rooted at that node. The height of a node is
+        the maximum of the height of its children, plus one. The height of
+        an empty tree is -1. Here's an example, with the value in
+        parentheses indicating the height of the corresponding node:
 
                   P(3)
                 /   \
@@ -385,7 +417,7 @@ AVL Tree
            }
 
 2.  In the AVL tree shown below, the leaf "nodes" are actually subtrees
-    whose heights are marked in parentheses:
+        whose heights are marked in parentheses:
 
                        ------ D -------
                       /                 \
@@ -399,13 +431,13 @@ AVL Tree
     Mark the heights of the subtrees at every node in the tree. What is
     the height of the tree? Mark the balance factor of each node.
 3.  Starting with an empty AVL tree, the following sequence of keys are
-    inserted one at a time: 1, 2, 5, 3, 4 Assume that the tree allows
-    the insertion of duplicate keys. What is the total units of work
-    performed to get to the final AVL tree, counting only key-to-key
-    comparisons and pointer assignments? Assume each comparison is a
-    unit of work and each pointer assignment is a unit of work. (Do not
-    count pointer assignments used in traversing the tree. Count only
-    assignments used in changing the tree structure.)
+        inserted one at a time: 1, 2, 5, 3, 4 Assume that the tree allows
+        the insertion of duplicate keys. What is the total units of work
+        performed to get to the final AVL tree, counting only key-to-key
+        comparisons and pointer assignments? Assume each comparison is a
+        unit of work and each pointer assignment is a unit of work. (Do not
+        count pointer assignments used in traversing the tree. Count only
+        assignments used in changing the tree structure.)
 
 Huffman Coding
 --------------
@@ -413,27 +445,32 @@ Huffman Coding
 ### Lecture
 
 -   Each character is represented in some binary format, they are
-    encoded.
+        encoded.
+
     -   For every character, there is a character encoding scheme.
     -   The present standard is UTF-8
         -   This is part of the Unicode program.
         -   UTF-8 defines defines greater than a million chars in 1 to 4
-            bytes.
+                bytes.
+
         -   It is of variable length, then.
 
     -   The old way is ASCII
         -   Each character in ASCII has 7 bits
-        -   This means that you could have 2\^7 different characters,
-            128.
+        -   This means that you could have 2\\\^7 different characters,
+                128.
+
         -   Being as the smallest unit of memory is the byte, this left
-            an extra bit to play with.
+                an extra bit to play with.
+
         -   If you don't mind your program not being internationalized,
-            you can still use ASCII and keep everything smaller.
+                you can still use ASCII and keep everything smaller.
 
 -   More frequent characters get smaller code.
 -   Variable length encoding is Huffman coding.
 -   Given a set of characters, Huffman came up with an algorithm to
-    determine the encoding needed.
+        determine the encoding needed.
+
 -   With ASCII, the average is always 8.
 -   An attempt at drawing this:
     -   `Queue S: a   w   u   e   t   $`
@@ -441,34 +478,40 @@ Huffman Coding
         -   Failed.
 
 -   After a Huffman tree is built, to create the encoding, for every
-    character you go left for, add a zero. Every time you go right,
-    assign a one.
+        character you go left for, add a zero. Every time you go right,
+        assign a one.
 
 ### Problem Set 7
 
 1.  Answer the following questions in terms of h, the height of a binary
-    tree:
+        tree:
+
     -   What is the minimum possible number of nodes in a binary tree of
-        height h?
+            height h?
+
         -   The case is where it's a stalk, and the height is `h + 1`
 
     -   A strictly binary tree is one in which every node has either no
-        children or two children; in other words, there is no node that
-        has exactly one child. What is the minimum possible number of
-        nodes in a strictly binary tree of height h?
+            children or two children; in other words, there is no node that
+            has exactly one child. What is the minimum possible number of
+            nodes in a strictly binary tree of height h?
+
     -   A complete binary tree is one in which every level but the last
-        has the maximum number of nodes possible at that level; the last
-        level may have any number of nodes. What is the minimum possible
-        number of nodes in a complete binary tree of height h?
+            has the maximum number of nodes possible at that level; the last
+            level may have any number of nodes. What is the minimum possible
+            number of nodes in a complete binary tree of height h?
 
 2.  Two binary trees are *isomorphic* if they have the same shape (i.e.
-    they have identical structures.) Implement the following recursive
-    method:
+        they have identical structures.) Implement the following recursive
+        method:
+
 3.  The *radix tree* data structure shown below stores the bit strings
-    `0,1,01,010,100,` and `1011` in such a way that each left branch
-    represents a 0 and each right branch represents a 1.
+        `0,1,01,010,100,` and `1011` in such a way that each left branch
+        represents a 0 and each right branch represents a 1.
+
 4.  You are given the following preorder and inorder traversals of a
-    (boolean) expression tree:
+        (boolean) expression tree:
+
     -   Preorder traversal:
 
                 ||  &&  ||  a  >  b  c  <  d  e  &&  ==  !=  c  a  f  <  p  q
@@ -492,7 +535,7 @@ Huffman Coding
                 c  !=  a  ==  f  &&  p  <  q
 
 5.  Exercise 9.4, page 295 of the textbook. Build a Huffman tree for the
-    following set of characters, given their frequencies:
+        following set of characters, given their frequencies:
 
                 R   C   L   B   H   A   E
                 6   6   6  10  15  20  37
@@ -511,11 +554,13 @@ Problem Set 8 - Hash table
 --------------------------
 
 1.  You are given the following keys to be hashed into a hash table of
-    size 11: `{96,  43,  72,  68,  63,  28}`. Assume the following hash
-    function is used: `H(key) = key mod 11`, and chaining (array of
-    linked lists) is used to resolve collisions.
+        size 11: `{96,  43,  72,  68,  63,  28}`. Assume the following hash
+        function is used: `H(key) = key mod 11`, and chaining (array of
+        linked lists) is used to resolve collisions.
+
     1.  Show the hash table that results after all the keys are
-        inserted.
+            inserted.
+
         -   `96 % 11 = 8`
         -   `43 % 11 = 10`
         -   `72 % 11 = 6`
@@ -537,38 +582,44 @@ Problem Set 8 - Hash table
 
     2.  Compute the average number of comparisons for successful search.
         -   Access should be `O(1)`. Two elements require iterating
-            through a linked list, each with two elements. Two elements
-            are found instantly. So, half the time, it will be `O(1)`,
-            and then the rest of the time, it will take two comparisons,
-            which is still `O(1)`.
+                through a linked list, each with two elements. Two elements
+                are found instantly. So, half the time, it will be `O(1)`,
+                and then the rest of the time, it will take two comparisons,
+                which is still `O(1)`.
 
 2.  Using chaining to resolve collisions, give the worst-case running
-    time (big O) for inserting *n* keys into an initially empty hash
-    table for each of the following kinds of chains:
+        time (big O) for inserting *n* keys into an initially empty hash
+        table for each of the following kinds of chains:
+
     -   **Chain is an unordered list**: If the list is simply unordered,
-        you should be able to just put it on the front and call it a
-        day. `O(1)`
+            you should be able to just put it on the front and call it a
+            day. `O(1)`
+
         -   The worst case is where all the elements are hashed into the
-            same list. So `O(n)`.
+                same list. So `O(n)`.
 
     -   **Chain is an ordered list**: Assuming this is a linked list,
-        insertion would be constant time plus whatever it takes to add
-        this element, which would depend on the length of the linked
-        list. `O(n)`
+            insertion would be constant time plus whatever it takes to add
+            this element, which would depend on the length of the linked
+            list. `O(n)`
+
         -   `O(n^2)`. The worst case is when all the items are in one
-            spot.
+                spot.
 
     -   **Chain is an AVL tree**: Insertion into an AVL tree take that
-        amount of time, and that's the logic I've used throughout.
-        `O(log(n))`
+            amount of time, and that's the logic I've used throughout.
+            `O(log(n))`
+
         -   The keyword is balanced, the maximum possible difference in
-            subtrees is one.
+                subtrees is one.
+
         -   If you have `n` items, the height is `log(n)`. If you want
-            to insert an item into the tree, you're going to have to
-            search through the tree. For searching, the worst case is
-            the height, `log(n)`.
+                to insert an item into the tree, you're going to have to
+                search through the tree. For searching, the worst case is
+                the height, `log(n)`.
+
         -   If I know how many items there are in the tree, I can get
-            the height of the tree.
+                the height of the tree.
 
 3.  Using the following class definitions:
 
@@ -616,61 +667,72 @@ Problem Set 8 - Hash table
     Note: When expanding the hash table, double its size.
 
 4.  Suppose you are asked to write a program to count the frequency of
-    occurrence of each word in a document. Describe how you would
-    implement your program using:
+        occurrence of each word in a document. Describe how you would
+        implement your program using:
+
     1.  **A hash table to store words and their frequencies.** This
-        would require that each word have a unique key, there could be
-        no overloading. In which case, I would probably convert
-        Strings`to`ints.`So here you have`m\` words to and you need to
-        hash the words and store the frequency of the words. I'd resolve
-        collision by chaining with an unordered list or ordered list,
-        depending on the amount of lookup that needed to be done.
-    2.  **An AVL tree to store words and their frequencies. For each of
-        these implementations:** The way I would implement this is by
-        creating a node which has a value called "frequency". Other than
-        that, this would be typical implementation of an AVL tree. I'd
-        likely decided to use "compareTo" to decide whether to go left
-        or right in the tree. I think the question may indicate that
-        you're supposed to use an AVL tree to resolve collisions. Which
-        is cool too. That would mean that you'd have some hash function
-        instead of a big tree, which would likely be more efficient. So
-        you use your hash function, and then insert into the tree. If
-        there is no node with your current word, create one. If there is
-        a node with your current word, increment its frequency value.
-        This is the best implementation because it would be very fast.
-        1.  **What would be the worst case time to populate the data
-            structure with all the words and their frequencies?**
+            would require that each word have a unique key, there could be
+            no overloading. In which case, I would probably convert
+            Strings`to`ints.`So here you have`m\` words to and you need to
+            hash the words and store the frequency of the words. I'd resolve
+            collision by chaining with an unordered list or ordered list,
+            depending on the amount of lookup that needed to be done.
+
+    2.  \*\*An AVL tree to store words and their frequencies. For each
+        of
+            these implementations:** The way I would implement this is by
+            creating a node which has a value called "frequency". Other than
+            that, this would be typical implementation of an AVL tree. I'd
+            likely decided to use "compareTo" to decide whether to go left
+            or right in the tree. I think the question may indicate that
+            you're supposed to use an AVL tree to resolve collisions. Which
+            is cool too. That would mean that you'd have some hash function
+            instead of a big tree, which would likely be more efficient. So
+            you use your hash function, and then insert into the tree. If
+            there is no node with your current word, create one. If there is
+            a node with your current word, increment its frequency value.
+            This is the best implementation because it would be very fast.
+
+        1.  \*\*What would be the worst case time to populate the data
+                structure with all the words and their frequencies?**
+
             -   Unordered list
                 -   The worst case is that they're all the different
-                    words that hash to the same location. This would
-                    result in one long unordered chain of single
-                    frequency words.
+                        words that hash to the same location. This would
+                        result in one long unordered chain of single
+                        frequency words.
+
                 -   So you get a big chain.
                 -   The worst case running time would be that simply be
-                    `O(n)`, because insertion is always one unit of
-                    work, and your doing insertion `n` times for `n`
-                    keys.
+                        `O(n)`, because insertion is always one unit of
+                        work, and your doing insertion `n` times for `n`
+                        keys.
 
             -   Ordered list
                 -   The worst case is when all words are unique and hash
-                    to the same spot, and then you need to go all the
-                    way to the end for it to be in order.
+                        to the same spot, and then you need to go all the
+                        way to the end for it to be in order.
 
             -   AVL tree
                 -   Insertion into an AVL tree is `O(log(n))` for the
-                    worst case.
+                        worst case.
+
                 -   Every word needs to be unique and hash to the same
-                    location.
+                        location.
+
                 -   So, you're doing `m` insertions of `log(n)`
-                    efficiency where `m = n`.
+                        efficiency where `m = n`.
+
                 -   `O(n * log(n))`
 
-        2.  **What would be the worst case time to look up the frequency
-            of a word?**
-        3.  **What would be the worst case time to print all words and
-            their frequencies, in alphabetical order of the words?
-            Assume there are *n* distinct words in the document, and a
-            total of *m* words.**
+        2.  \*\*What would be the worst case time to look up the
+            frequency
+                of a word?**
+
+        3.  \*\*What would be the worst case time to print all words and
+                their frequencies, in alphabetical order of the words?
+                Assume there are *n* distinct words in the document, and a
+                total of *m* words.**
 
 [Permalink](http://www.cs.rutgers.edu/courses/112/classes/fall_2012_venugopal/assignments/prog3/prog3.html "Permalink to CS112 Fall 2012 - HTML DOM")
 
@@ -688,11 +750,11 @@ that will transform the tree.
 
 ### Document Object Model
 
-The Document Object Model (DOM) is a *platform- and language-neutral
+The Document Object Model (DOM) is a \*platform- and language-neutral
 interface that will allow programs and scripts to dynamically access and
 update the content, structure and style of documents. The document can
 be further processed and the results of that processing can be
-incorporated back into the presented page. * (This is quoted from the
+incorporated back into the presented page. \* (This is quoted from the
 [W3C Document Object Model](http://www.w3.org/DOM) specification web
 page.)
 
@@ -721,8 +783,8 @@ the HTML content in the page. Consider the following HTML example:
      (Note: there is an invisible space character after "The", and before "brown") 
 
 You can see the DOM tree for any HTML document by using the DOM
-Inspector in Firefox - you can add on [DOM
-Inspector](https://addons.mozilla.org/en-US/firefox/addon/6622) to
+Inspector in Firefox - you can add on
+[DOM](https://addons.mozilla.org/en-US/firefox/addon/6622) to
 Firefox. Then, you can see the DOM tree for the currently active
 document via Tools --\> Web Developer --\> DOM Inspector. You will
 notice that under the root html node, in addition to the body node,
@@ -856,9 +918,9 @@ HTML:
                            |quick|||
                            -----------
 
-**Note: Tree nodes containing tags do NOT include angle brackets with
-the tags.**  
-So, if a node stores em, it stores the string "em", NOT the string "".  
+\*\*Note: Tree nodes containing tags do NOT include angle brackets with
+the tags.\*\*
+So, if a node stores em, it stores the string "em", NOT the string "".
 **Also, closing tags ("/em") are NOT be stored in the tree.**
 
 ### Implementation
@@ -901,7 +963,7 @@ Observe the following rules while working on Tree.java:
 -   You may NOT modify the headers of any of the given methods.
 -   You may NOT delete any methods.
 -   You MAY add helper methods if needed, as long as you make them
-    private.
+        private.
 
 ### Grading
 
@@ -933,80 +995,95 @@ Midterm 2
 -   binary search
 -   binary search tree
     -   Worst Case number of comparisons for success:
-        `2 ∗ log2 (n + 1) − 1`
+            `2 ∗ log2 (n + 1) − 1`
+
     -   Worst Case number of comparisons for failure: `2 ∗ log2 (n + 1)`
     -   Big O: `O(log(n))`
 
 -   AVL tree
     -   An AVL tree is a binary search tree in which the heights of the
-        left and right substrees differ in height by at most 1. It can
-        also be recursively defined as a binary search tree in which the
-        left and right subtrees of the root are AVL subtrees that differ
-        at most by 1.
+            left and right substrees differ in height by at most 1. It can
+            also be recursively defined as a binary search tree in which the
+            left and right subtrees of the root are AVL subtrees that differ
+            at most by 1.
+
     -   Worst case Insertion, Delete, Search: `O(log(n))`
     -   Average number of comparisons for failure: `∼ 2 log (n)`
     -   AVL tree operations
         -   Rotation - Locally rearranging the structure of an AVL tree,
-            done to rebalance an AVL tree. - Takes O(1) time. - Done
-            once if the off-balance balance factors are pointing in the
-            same direction, done twice if the balance factors are
-            pointing in opposite directions
+                done to rebalance an AVL tree. - Takes O(1) time. - Done
+                once if the off-balance balance factors are pointing in the
+                same direction, done twice if the balance factors are
+                pointing in opposite directions
+
         -   Insertion - Insert the new value in like a normal BST -
-            Backtrack up the tree and change balance factors accordingly
+                Backtrack up the tree and change balance factors accordingly
+
             -   If one becomes imbalanced in the direction of its
-                balance factor, a rebalance is necessary - check two
-                parent nodes up to see if the balance factors are the
-                same or not - Rotate the first two nodes, then if the
-                balance factors were different, rotate the first node
-                with the top node, placing the first node at the top of
-                observed AVL tree - After one rebalance is done, or one
-                backtracks to the top of the tree, Insertion is
-                complete!
+                    balance factor, a rebalance is necessary - check two
+                    parent nodes up to see if the balance factors are the
+                    same or not - Rotate the first two nodes, then if the
+                    balance factors were different, rotate the first node
+                    with the top node, placing the first node at the top of
+                    observed AVL tree - After one rebalance is done, or one
+                    backtracks to the top of the tree, Insertion is
+                    complete!
 
 -   binary tree
     -   Inorder Traversal of Tree T: First recursively traverse the Left
-        subtree of T, then Visit the root of T, then recursively
-        traverse the Right subtree of T. (LVR) ̄
+            subtree of T, then Visit the root of T, then recursively
+            traverse the Right subtree of T. (LVR) ̄
+
     -   Preorder Traversal of Tree T: First Visits the root of T, then
-        recursively traverse the Left subtree of T, then recursively
-        traverse the Right subtree of T. (VLR) ̄
+            recursively traverse the Left subtree of T, then recursively
+            traverse the Right subtree of T. (VLR) ̄
+
     -   Postorder Traversal of Tree T: First recursively traverse the
-        Left subtree of T, then recursively traverse the Right subtree
-        of T, then Visit the root of T. (RVL)
+            Left subtree of T, then recursively traverse the Right subtree
+            of T, then Visit the root of T. (RVL)
 
 -   Huffman coding
     1.  Construct a single-node binary tree for each symbol, place them
-        all in queue S
+            all in queue S
+
     2.  Pick the two smallest weight trees from queue S and T
     3.  Construct a new tree by creating a root and attaching the two
-        trees as the subtrees of the root
+            trees as the subtrees of the root
+
     4.  Add the tree to queue T
     5.  Repeat until S is empty
 
 -   hash table
     -   A hash table is a storage array.
     -   Hashing is the process of storing an object in a hash table by
-        deriving a numeric hashcode for it and mapping this hashcode to
-        a location in the table.
+            deriving a numeric hashcode for it and mapping this hashcode to
+            a location in the table.
+
     -   Collision Resolution is required when a new entry hashes to a
-        place in the table that is already occupied, and it is the
-        process then used to determine where the entry gets inserted.
+            place in the table that is already occupied, and it is the
+            process then used to determine where the entry gets inserted.
+
     -   Hashing function: h(k) = (sum of digits of k) mod (length of
-        hash table array)
+            hash table array)
+
     -   Requirements are `O(1)` time, and it must distribute keys
-        uniformly over the hash table, ideally every location in the
-        hash table would have the same probably of being filled as any
-        other location.
+            uniformly over the hash table, ideally every location in the
+            hash table would have the same probably of being filled as any
+            other location.
+
     -   If a collision occurs at location i of the hash table, it simply
-        adds the colliding entry to a linked list that is built at that
-        location.
+            adds the colliding entry to a linked list that is built at that
+            location.
+
     -   When a new entry is to be inserted at an occupied location, it
-        is inserted in the front of the chain at that location, O(1)
+            is inserted in the front of the chain at that location, O(1)
+
     -   The worst case running time of a hash table using Chaining as
-        collision resolution is `O(n)`
+            collision resolution is `O(n)`
+
     -   The load factor of a hash table is the ratio of the number of
-        entries in the table to its size. Let n be the number of entries
-        in the hash table, and N be the size (or capacity) of the table
+            entries in the table to its size. Let n be the number of entries
+            in the hash table, and N be the size (or capacity) of the table
 
 Chapter 11 - Heap
 -----------------
@@ -1014,21 +1091,25 @@ Chapter 11 - Heap
 ### Heap As Priority Queue
 
 -   The role of the heap structure is to have different priorities of
-    removal.
+        removal.
+
 -   Generalization of the first-in, first-out (FIFO) queue.
 -   The FIFO queue is a special case of a priority queue in which the
-    priory of an entry is the time of its arrival in the queue.
+        priory of an entry is the time of its arrival in the queue.
 
 ### Heap Properties
 
 -   A **heap** is a complete binary tree with the property that the key
-    of the item at any node `x` is greater than or equal to the keys of
-    the item at all the nodes in the subtree rooted at `x`.
+        of the item at any node `x` is greater than or equal to the keys of
+        the item at all the nodes in the subtree rooted at `x`.
+
     -   A **max heap** is one which has the greatest element at the top
-        of the tree.
+            of the tree.
+
     -   A **min heap** is a complete binary tree with the property that
-        the key of the item at any node `x` is less than or equal to the
-        keys of the items at all the nodes in the subtree rooted at `x`.
+            the key of the item at any node `x` is less than or equal to the
+            keys of the items at all the nodes in the subtree rooted at `x`.
+
         -   This implies that minimum key is at the top of the heap.
 
 ### Heap Operations
@@ -1036,38 +1117,46 @@ Chapter 11 - Heap
 -   **create-heap**: create an empty heap
 -   **heapify**: create a heap out of given array of elements
 -   **find-max** or **find-min**: find the maximum item of a max-heap or
-    a minimum item of a min-heap, respectively (aka, peek)
+        a minimum item of a min-heap, respectively (aka, peek)
+
 -   **delete-max** or **delete-min**: removing the root node of a max-
-    or min-heap, respectively
+        or min-heap, respectively
+
 -   **increase-key** or **decrease-key**: updating a key within a max-
-    or min-heap, respectively
+        or min-heap, respectively
+
 -   **insert**: adding a new key to the heap
 -   **merge**: joining two heaps to form a valid new heap containing all
-    the elements of both.
+        the elements of both.
 
 #### Insert
 
 -   Insert a new key in a heap must ensure that after insertion, both
-    the heap structure and the heap ordering properties are satisfied.
+        the heap structure and the heap ordering properties are satisfied.
+
 -   First, insert the new key so that the heap structure property is
-    satisfied, meaning that the new tree after insertion is also
-    complete.
+        satisfied, meaning that the new tree after insertion is also
+        complete.
+
 -   Second, makes sure that the heap ordering property is satisfied by
-    sifting up the newly inserted key.
+        sifting up the newly inserted key.
+
 -   Steps
     1.  Add the element to the bottom level of the heap.
     2.  Compare the added element with its parent; if they are in the
-        correct order, stop.
+            correct order, stop.
+
     3.  If not, swap the element with its parent and return to the
-        previous step.
+            previous step.
 
 ##### Sifting Up
 
 -   Sifting up consists of comparing the new key with its parent, and
-    exchanging them is the parent is less than the new key.
+        exchanging them is the parent is less than the new key.
+
 -   In the best case, no exchanged are done.
 -   In the worst case, exchangers may have to be done repeatedly until
-    the new key reaches the root.
+        the new key reaches the root.
 
 ##### Code
 
@@ -1093,36 +1182,45 @@ Chapter 11 - Heap
 ##### Runtime analysis
 
 -   Sifting up during insertion takes one comparison per level between
-    the new key and its parent.
+        the new key and its parent.
+
 -   The worst case is that the new key needs to be sifted to the root,
-    resulting in `h` comparison.
+        resulting in `h` comparison.
+
 -   This means that the worst case takes the same amount of comparisons
-    as the number of nodes, which results in:
+        as the number of nodes, which results in:
+
 -   **Big *O***: `log(n)`
 
 #### Delete
 
 -   The entry at the top of the heap is the one with the maximum key.
-    Deletion removes this entry from the heap. This leaves a vacant spot
-    at the root, and the has to be restored.
+        Deletion removes this entry from the heap. This leaves a vacant spot
+        at the root, and the has to be restored.
+
 -   Finding an item in a heap is an `O(n)` operation (it is not a search
-    structure), but if you already know where it is in the heap,
-    removing it is `O(log n)`.
+        structure), but if you already know where it is in the heap,
+        removing it is `O(log n)`.
+
 -   Steps:
     1.  Replace the root of the heap with the last element on the last
-        level.
+            level.
+
     2.  Compare the new root with its children; if they are in the
-        correct order, stop.
+            correct order, stop.
+
     3.  If not, swap the element with one of its children and return to
-        the previous step.
+            the previous step.
 
 ##### Sifting down
 
 -   The key `k` that is extracted from the last node and written into
-    the root is moved as far down as necessary to ensure that placing
-    `k` in this spot will preserve the heap ordering property.
+        the root is moved as far down as necessary to ensure that placing
+        `k` in this spot will preserve the heap ordering property.
+
 -   The children of `k` are first compared with each other to determine
-    the larger key.
+        the larger key.
+
     -   This larger key is then compared with `k`.
     -   If `k` is smaller, it is exchanged with the larger key.
 
@@ -1161,31 +1259,36 @@ Chapter 11 - Heap
 ##### Runtime analysis
 
 -   Sifting down key `k` during deletion invokes two comparisons per
-    level, one between the children of `k`, and another between the
-    larger child and `k`.
+        level, one between the children of `k`, and another between the
+        larger child and `k`.
+
 -   In the worst case, `k` may be sifted all the way down to a leaf
-    nodes, or `h` levels, for a total of `2h` comparisons.
+        nodes, or `h` levels, for a total of `2h` comparisons.
+
 -   In terms of `n`, this amounts to `2 * log(n + 1) - 2`, resulting in
-    a:
+        a:
+
 -   **Big *O***: `log(n)`
 
 #### Runtime analysis
 
 -   Let the heigh of the heap be `h`. The maximum number of nodes
-    `N_{max}` in a binary tree of height `h` is `2^{h + 1} - 1`. In a
-    heap, if we assume that the last level is full, we have number of
-    nodes `n = N_{max} = 2^{h + 1}  - 1` which implies
-    `h  = log(n + 1) - 1`.
+        `N_{max}` in a binary tree of height `h` is `2^{h + 1} - 1`. In a
+        heap, if we assume that the last level is full, we have number of
+        nodes `n = N_{max} = 2^{h + 1}  - 1` which implies
+        `h  = log(n + 1) - 1`.
+
     -   **Height**: `log(n + 1) - 1`
     -   **Nodes**: `2^{h + 1}  - 1`
 
 ### Summary
 
 -   A heap is a complete binary tree with the property that value of the
-    item at any node `x` is greater than or equal to the values of the
-    items at all the nodes in the subtree rooted at `x`.
+        item at any node `x` is greater than or equal to the values of the
+        items at all the nodes in the subtree rooted at `x`.
+
     -   This defines a max heap, to create a min head, redefine it
-        replacing greater than with less than.
+            replacing greater than with less than.
 
 -   A heap can be used a priority queue. It can also be used to sort.
 -   Heaps are implemented using arrays for maximum efficiency.
@@ -1195,33 +1298,35 @@ Problem Set 9 - Heaps
 ---------------------
 
 1.  Given the following sequence of integers: 12, 19, 10, 4, 23, 7, 45,
-    8, 15
+        8, 15
 
     1.  Build a heap by inserting the above set, one integer at a time,
-        in the given sequence. Show the heap after every insertion. How
-        many comparisons in all did it take to build the heap?
+            in the given sequence. Show the heap after every insertion. How
+            many comparisons in all did it take to build the heap?
+
         -   The way that inserting into a heap works is you place your
-            element at the leftmost bottom open spot, and then sift up
-            (compare) until the tree is structured.
+                element at the leftmost bottom open spot, and then sift up
+                (compare) until the tree is structured.
 
     2.  Perform successive *delete* operations on the heap constructed
-        in the previous step, until the heap is empty. Show the heap
-        after every deletion. How many comparisons in all did it take to
-        perform these deletions?
+            in the previous step, until the heap is empty. Show the heap
+            after every deletion. How many comparisons in all did it take to
+            perform these deletions?
+
         -   The way that deleting works in this question is you take
-            away the top not, and compare the two children, sifting down
-            until you have a balanced tree. The worst case is `h`
-            comparisons each time.
+                away the top not, and compare the two children, sifting down
+                until you have a balanced tree. The worst case is `h`
+                comparisons each time.
 
 2.  Suppose we have a (**max**) heap that stores integers. (By contrast,
-    in a "min" heap the key at any node is *less than or equal to* the
-    key at its children, so the *smallest* valued key is at the top of
-    the heap.) Then, given an integer *k*, we would like to print all
-    the values in this heap that are greater than k. Implement the
-    following method to do this. *H* is the array storage for the max
-    heap, and *n* is the number of entries in the heap. Note: The
-    challenge is to do this efficiently. Use the heap order to reduce
-    the number of entries of the heap to be examined.
+        in a "min" heap the key at any node is *less than or equal to* the
+        key at its children, so the *smallest* valued key is at the top of
+        the heap.) Then, given an integer *k*, we would like to print all
+        the values in this heap that are greater than k. Implement the
+        following method to do this. *H* is the array storage for the max
+        heap, and *n* is the number of entries in the heap. Note: The
+        challenge is to do this efficiently. Use the heap order to reduce
+        the number of entries of the heap to be examined.
 
         public void printGreater(int[] H, int n, int k) {
            this.printGreater(H[], n, k, 0); 
@@ -1238,26 +1343,28 @@ Problem Set 9 - Heaps
         }
 
     -   You're going to need a recursive algorithm that passes in both
-        `2k + 1` and `2k + 2` with a base case of either of those values
-        being greater than `n`, and the program quitting on that.
-        Additionally, if the value at `2k + 1` or `2k + 2`.
+            `2k + 1` and `2k + 2` with a base case of either of those values
+            being greater than `n`, and the program quitting on that.
+            Additionally, if the value at `2k + 1` or `2k + 2`.
 
 3.  Consider a max heap that only supports the operations **insert**,
-    **deleteMax**, **size**, and **isEmpty**. A client of the heap wants
-    to update the priority of an entry in the heap. Since there is no
-    search operation, the only way to accomplish the update is this:
+        **deleteMax**, **size**, and **isEmpty**. A client of the heap wants
+        to update the priority of an entry in the heap. Since there is no
+        search operation, the only way to accomplish the update is this:
+
     -   Perform successive **deleteMax** operations until the entry is
-        extracted
+            extracted
+
     -   Update the entry's priority
     -   **Insert** the entry, as well as all the other deleted entries
-        back into the heap
+            back into the heap
 
 -   What would be the worst case running time (big *O*) of this update
-    process on a heap with *n* entries?
+        process on a heap with *n* entries?
 
 1.  Suppose you are given two heaps, stored in arrays. Write a method to
-    merge them into a single heap, and return this heap. The original
-    heaps are not modified:
+        merge them into a single heap, and return this heap. The original
+        heaps are not modified:
 
         public static <T extends Comparable<T>> T[] merge(T[] heap1, T[] heap2) {
           T[] res = new int[heap1.length + heap2.length];
@@ -1432,14 +1539,17 @@ students.
     every vertex v. These are:
 
     -   dfsnum(v): This is the dfs number, assigned when a vertex is
-        visited, dealt out in increasing order.
+            visited, dealt out in increasing order.
+
     -   back(v): This is a number that is initially assigned when a
-        vertex is visited, and is equal to dfsnum, but can be changed
-        later based on three conditions:
+            vertex is visited, and is equal to dfsnum, but can be changed
+            later based on three conditions:
+
         -   When the DFS backs up from a neighbor, w, to v, if dfsnum(v)
-            \> back(w), then back(v) is set to min(back(v),back(w))
+                \> back(w), then back(v) is set to min(back(v),back(w))
+
         -   If a neighbor, w, is already visited then back(v) is set to
-            min(back(v),dfsnum(w))
+                min(back(v),dfsnum(w))
 
     When the DFS backs up from a neighbor, w, to v, if dfsnum(v) ≤
     back(w), then v is identified as a connector, IF v is NOT the
@@ -1451,7 +1561,7 @@ students.
     Here are some examples that show how this works.
 
     -   Example 1: (B is a connector) A--B--C The DFS starts at A.
-        Neighbors for a vertex are stored in REVERSE alphabetical order:
+            Neighbors for a vertex are stored in REVERSE alphabetical order:
 
             A: B
               B: C,A
@@ -1478,27 +1588,32 @@ Chapter 14 - Graph Algorithms
 -   Sesh's:
     -   Suppose that traversal begins at `A`
     -   The algorithms visits `A` and has to chose a vertex to visit
-        next, and `A` has neighbors `B`, `D`, `E`, and `G`. Any of these
-        can be picked next.
+            next, and `A` has neighbors `B`, `D`, `E`, and `G`. Any of these
+            can be picked next.
+
     -   While visiting `B`, our algorithm observes that it has neighbor
-        `A`, which has already been visited, so it skips it. The
-        algorithm keeps track of this by "marking" vertices.
+            `A`, which has already been visited, so it skips it. The
+            algorithm keeps track of this by "marking" vertices.
+
     -   Continuing this motion, this particular algorithm reaches the
-        last element (which happens to be `G`), and finds that both of
-        the neighbors have been visited, so this is a dead end for the
-        algorithm.
+            last element (which happens to be `G`), and finds that both of
+            the neighbors have been visited, so this is a dead end for the
+            algorithm.
+
     -   When at the end, the last element, this algorithm backs out to
-        try and visit unexamined neighbors of previously visited nodes.
+            try and visit unexamined neighbors of previously visited nodes.
 
 -   Wikipedia:
     -   Formally, DFS is an uninformed search that progresses by
-        expanding the first child node of the search tree that appears
-        and thus going deeper and deeper until a goal node is found, or
-        until it hits a node that has no children.
+            expanding the first child node of the search tree that appears
+            and thus going deeper and deeper until a goal node is found, or
+            until it hits a node that has no children.
+
     -   Then the search backtracks, returning to the most recent node it
-        hasn't finished exploring.
+            hasn't finished exploring.
+
     -   In a non-recursive implementation, all freshly expanded nodes
-        are added to a stack for exploration.
+            are added to a stack for exploration.
 
 ##### Algorithm for `DFS(v)`
 
@@ -1511,23 +1626,28 @@ Chapter 14 - Graph Algorithms
 
 -   From book:
     -   The primary characteristic of this search is that is visits the
-        vertices following a wave like motion over the graph.
+            vertices following a wave like motion over the graph.
+
     -   The traversal first visits `A`, then it visits each neighbor of
-        `A` in turn. These visits mark the first wave.
+            `A` in turn. These visits mark the first wave.
+
     -   The algorithm then goes to this vertex's first neighbor, and
-        visits all of it's unvisited neighbors.
+            visits all of it's unvisited neighbors.
 
 -   From Wikipedia (Note: Using a stack instead of a queue would turn
-    this algorithm into a depth-first search.):
+        this algorithm into a depth-first search.):
+
     1.  Enqueue the root node
     2.  Dequeue a node and examine it
         1.  If the element sought is found in this node, quit the search
-            and return a result.
+                and return a result.
+
         2.  Otherwise enqueue any successors (the direct child nodes)
-            that have not yet been discovered.
+                that have not yet been discovered.
 
     3.  If the queue is empty, every node on the graph has been examined
-        – quit the search and return "not found".
+            – quit the search and return "not found".
+
     4.  If the queue is not empty, repeat from Step 2.
 
 ##### Algorithm `BFS(v)`
@@ -1554,7 +1674,7 @@ Chapter 14 - Graph Algorithms
     3.  for each node `m` with an edge `e` from `n` to `m` do
         1.  remove edge `e` from the graph
         2.  if `m` has no other incoming edges then 1. insert `m` into
-            `S`
+                `S`
 
 4.  if graph has edges then
     1.  return error (graph has at least one cycle)
@@ -1615,62 +1735,72 @@ Chapter 14 - Graph Algorithms
 #### Running times
 
 -   Both of these algorithms scan the vertices and edges of the graph,
-    and the only difference is the order which they are visited.
+        and the only difference is the order which they are visited.
+
 -   The running time is computer by counting a unit of time for every
-    vertex visit and a unit of time for every vertex inspection to see
-    if it is visited.
+        vertex visit and a unit of time for every vertex inspection to see
+        if it is visited.
+
 -   We assume that the graph has `e` edges and `v` vertices.
 -   Being as each vertex is visited exactly once, the total time for
-    this adds `n` units of time.
+        this adds `n` units of time.
+
 -   How many times are vertices inspected?
     -   In general, a vertex is inspected as many times as the degree.
     -   The total number of vertex inspections is there the sum of the
-        degree of all the graph vertices.
+            degree of all the graph vertices.
 
 -   The total time for traversal is there for `n + 2 * e` or `O(n + e)`.
-    (This only holds when graphs are connected.)
+        (This only holds when graphs are connected.)
 
 ### Summary
 
 -   Directed and undirected graphs can be used to model pair-wise
-    relationships among entities.
+        relationships among entities.
+
 -   Every undirected graph is a special kind of directed graph.
 -   The adjacency matrix representation of a graph is useful when the
-    graph is dense or the application makes very frequent random queries
-    on edges, such as "is edge `(x,y)` in the graph?"
+        graph is dense or the application makes very frequent random queries
+        on edges, such as "is edge `(x,y)` in the graph?"
+
 -   The adjacency linked-lists representations is useful when the graph
-    is relatively sparse, and/or the application needs to access all or
-    most neighbors of vertices.
+        is relatively sparse, and/or the application needs to access all or
+        most neighbors of vertices.
+
 -   Both depth-first and bread-first traversals are linear-time
-    graph-traversal algorithms, with a running time of `O(n + e)`.
+        graph-traversal algorithms, with a running time of `O(n + e)`.
+
 -   Topological sorting is applicable only to directed or DAGs. It is a
-    linear \`((O(n + e)) algorithm that is typically used on precedence
-    graphs.
+        linear \`((O(n + e)) algorithm that is typically used on precedence
+        graphs.
+
 -   Dikstra's shortest-path algorithm is an instance of a greedy
-    algorithm.
+        algorithm.
+
 -   The worst-case running time of Dijkstra's algorithm is `O(n^2)` if
-    the fringe is a simple unordered list. This time can be improved to
-    `O(n + e)log(N)` if the fringe is implemented using a priority
-    queue.
+        the fringe is a simple unordered list. This time can be improved to
+        `O(n + e)log(N)` if the fringe is implemented using a priority
+        queue.
 
 Problem Set 10 - Graphs
 -----------------------
 
 1.  Suppose a weighted undirected graph has *n* vertices and *e* edges.
-    The weights are all integers. Assume that the space needed to store
-    an integer is the same as the space needed to store an object
-    reference, both equal to one unit. *What is the minimum value of e*
-    for which the adjacency matrix representation would require less
-    space than the adjacency linked lists representation? Ignore the
-    space needed to store vertex labels.
-    -   So the storage for an adjacency matrix is always `n^2`, as every
-        edge and vertex is represented in two-dimensional boolean
-        values.
+        The weights are all integers. Assume that the space needed to store
+        an integer is the same as the space needed to store an object
+        reference, both equal to one unit. *What is the minimum value of e*
+        for which the adjacency matrix representation would require less
+        space than the adjacency linked lists representation? Ignore the
+        space needed to store vertex labels.
 
-2.  Given an **undirected** graph represented as an **adjacency
-    matrix**, implement a method to count the number of edges in the
-    graph. What is the worst case running time (big O) of your
-    implementation for a graph with *n* vertices and *e* edges?
+    -   So the storage for an adjacency matrix is always `n^2`, as every
+            edge and vertex is represented in two-dimensional boolean
+            values.
+
+2.  Given an **undirected** graph represented as an \*\*adjacency
+        matrix**, implement a method to count the number of edges in the
+        graph. What is the worst case running time (big O) of your
+        implementation for a graph with *n* vertices and *e* edges?
 
         public class Graph {
         int n;  // number of vertices
@@ -1690,17 +1820,19 @@ Problem Set 10 - Graphs
     }
 
     -   Let a comparison be a unit of work and `n` be the number of
-        vertices. Every vertex has the potential of having an edge with
-        every other vertex, so they must all be compared against each
-        other. This result in a big O of `O(n^2)`.
+            vertices. Every vertex has the potential of having an edge with
+            every other vertex, so they must all be compared against each
+            other. This result in a big O of `O(n^2)`.
 
 3.  The complement of an **undirected** graph, **G**, is a graph **GC**
-    such that:
+        such that:
+
     -   **GC** has the same set of vertices as **G**
     -   For every edge *(i,j)* in **G**, there is no edge *(i,j)* in
-        **GC**
+            **GC**
+
     -   For every pair of vertices *p* and *q* in **G** for which there
-        is no edge *(p,q)*, there is an edge *(p,q)* in **GC**.
+            is no edge *(p,q)*, there is an edge *(p,q)* in **GC**.
 
     Implement a method that would return the complement of the
     **undirected** graph on which this method is applied.
@@ -1727,7 +1859,7 @@ Problem Set 10 - Graphs
     for a graph with *n* vertices and *e* edges?
 
 4.  Repeat the complement exercise for an **undirected** graph that is
-    stored in the adjacency linked lists format:
+        stored in the adjacency linked lists format:
 
         class Edge {
                 int vnum;
@@ -1751,14 +1883,15 @@ Problem Set 10 - Graphs
     labeled *i*, *1 , there is an edge from *S\* to *i*, and an edge
     from *i* to *T*.
     1.  How many different depth-first search sequences are possible if
-        the start vertex is *S*?
+            the start vertex is *S*?
+
     2.  How many different breadth-first search sequences are possible
-        if the start vertex is *S*?
+            if the start vertex is *S*?
 
     -   -   You can use DFS to check if there is a path from one vertex
-            to another in a directed graph. Implement the method
-            **hasPath** in the following. Use additional class
-            fields/helper methods as needed:
+                    to another in a directed graph. Implement the method
+                    **hasPath** in the following. Use additional class
+                    fields/helper methods as needed:
 
             public class Neighbor { public int vertex; public Neighbor
             next; ... }
@@ -1775,10 +1908,10 @@ Problem Set 10 - Graphs
             }
 
 6.  You are given a directed acyclic graph. Complete the following
-    implementation to toplogically sort the vertices using **using BFS
-    (breadth-first search)**. Assume that the graph has already been
-    read in. You may implement helper methods as needed. You may use the
-    following Queue class:
+        implementation to toplogically sort the vertices using **using BFS
+        (breadth-first search)**. Assume that the graph has already been
+        read in. You may implement helper methods as needed. You may use the
+        following Queue class:
 
             public class Queue {
                   ...
@@ -1822,25 +1955,30 @@ Lecture - November 27th, 2012
 -   Dijkstra's algorithms is a trial and error approach.
 -   Steps to Dijkstra's AlgorithL:
     1.  For each neighbor of the source `S`, set distance of `d(x)` to
-        `wt(s,x)`, which is the wight of edge `s->x`. Assign to every
-        node a tentative distance (it is zero for our initial node and
-        to infinity for all other nodes).
+            `wt(s,x)`, which is the wight of edge `s->x`. Assign to every
+            node a tentative distance (it is zero for our initial node and
+            to infinity for all other nodes).
+
     2.  Mark all nodes unvisited. Set the initial node as current.
-        Create a set of the unvisited nodes called the unvisited set
-        consisting of all the nodes except the initial node.
+            Create a set of the unvisited nodes called the unvisited set
+            consisting of all the nodes except the initial node.
+
     3.  For the current node, consider all of its unvisited neighbors
-        and calculate their tentative distances.
+            and calculate their tentative distances.
+
     4.  When we are done considering all of the neighbors of the current
-        node, mark the current node as visited and remove it from the
-        unvisited set. A visited node will never be checked again; its
-        distance recorded now is final and minimal.
+            node, mark the current node as visited and remove it from the
+            unvisited set. A visited node will never be checked again; its
+            distance recorded now is final and minimal.
+
     5.  If the destination node has been marked visited (when planning a
-        route between two specific nodes) or if the smallest tentative
-        distance among the nodes in the unvisited set is infinity (when
-        planning a complete traversal), then stop. The algorithm has
-        finished.
+            route between two specific nodes) or if the smallest tentative
+            distance among the nodes in the unvisited set is infinity (when
+            planning a complete traversal), then stop. The algorithm has
+            finished.
+
     6.  Set the unvisited node marked with the smallest tentative
-        distance as the next "current node" and go back to step 3.
+            distance as the next "current node" and go back to step 3.
 
 Final Review
 ------------
@@ -1849,102 +1987,114 @@ Final Review
     -   DFS and BFS
         -   Space analysis:
             1.  The visited array contributed `O(n)` where `n` is the
-                number of vertices.
+                    number of vertices.
 
         -   Time analysis: The running time is computer by counting a
-            unit of time for every vertex visit and a unit of time for
-            every vertex inspection to see if it has been visited.
+                unit of time for every vertex visit and a unit of time for
+                every vertex inspection to see if it has been visited.
+
             1.  We assume that the graph has `n` vertices and `e` edges.
             2.  Each vertex is visited exactly once. `n` vertex visits.
             3.  A vertex is visited as many times as the degree of that
-                vertex. The sum of the vertex degrees is related to the
-                number of edges. However, a shared edge is counted
-                twice, resulting in a number of inspections of `2e`.
+                    vertex. The sum of the vertex degrees is related to the
+                    number of edges. However, a shared edge is counted
+                    twice, resulting in a number of inspections of `2e`.
+
             4.  `n + 2 * e` or `O(n + e)`
 
     -   Topological Sort
         -   DFS
             -   Space analysis: `O(n)` because of the visited array.
             -   Time analysis: `O(n + e)` because every edge is "walked"
-                and every vertex is "hit."
+                    and every vertex is "hit."
 
     -   Dijkstra's algorithm
         -   Space analysis: Depends on implementation, generally, it
-            will be `O(n)` or `O(n^2)` where `n` is the number of
-            vertices.
+                will be `O(n)` or `O(n^2)` where `n` is the number of
+                vertices.
+
         -   Time analysis: Assuming a graph of `n` vertices and `e`
-            edges.
+                edges.
+
             1.  Every edge in the graph is used in at most one distance
-                computation. The total number of distance computations
-                is at most `e`.
+                    computation. The total number of distance computations
+                    is at most `e`.
+
             2.  Starting with at most `n - 1` vertices in the fringe,
-                the number of vertices is reduced by one after every
-                selection. Thus, the total time for selection never
-                exceeds: (n - 1) + (n - 2) + … 2 + 1 = n(n - 1)/2.
+                    the number of vertices is reduced by one after every
+                    selection. Thus, the total time for selection never
+                    exceeds: (n - 1) + (n - 2) + … 2 + 1 = n(n - 1)/2.
+
             3.  Therefore, the total time is `n(n - 1)/2 + e`, resulting
-                in `O(n^2)`.
+                    in `O(n^2)`.
 
     -   Adjacency matrix graph time/space analysis:
         -   The adjacency matrix representation of a graph is useful
-            when the graph is dense or the application makes very
-            frequent random queries on edges, such as “is edge (x,y) in
-            the graph?”
+                when the graph is dense or the application makes very
+                frequent random queries on edges, such as “is edge (x,y) in
+                the graph?”
 
     -   Adjacency linked lists graph time/space analysis:
         -   The adjacency linked-lists representations is useful when
-            the graph is relatively sparse, and/or the application needs
-            to access all or most neighbors of vertices.
+                the graph is relatively sparse, and/or the application needs
+                to access all or most neighbors of vertices.
 
 -   Sorting
     -   Best case big O running times of insertion sort, quicksort, and
-        mergesort
+            mergesort
+
         -   Insertion: `O(n)` comparisons, `O(1)` swaps
         -   Quicksort: `O(n log n)`
         -   Mergesort: `O(n log n)`
 
     -   Worst case big O running times of insertion sort, quicksort, and
-        mergesort, heapsort
+            mergesort, heapsort
+
         -   Insertion: `О(n^2)`
         -   Quicksort: `O(n^2)`
         -   Mergesort: `O(n log n)`
         -   Heapsort: `O(n log n)`
 
     -   Linear worst case running time of the build-heap algorithm with
-        repeated sift downs.
+            repeated sift downs.
 
 -   Other data structures (worst case big O)
     -   Heap
         -   Insert: The worst case is when you have to sift back up to
-            the top, and because if the number of nodes is `n`, the
-            height is going to be `log(n)`, so the number of sifts is
-            `log(n)`.
+                the top, and because if the number of nodes is `n`, the
+                height is going to be `log(n)`, so the number of sifts is
+                `log(n)`.
+
         -   Delete: The worst case is when you have to sift down to the
-            bottom, because if the number of nodes is `n`, the height
-            will be `log(n)`, so the number of sifts is `log(n)`.
+                bottom, because if the number of nodes is `n`, the height
+                will be `log(n)`, so the number of sifts is `log(n)`.
 
     -   AVL tree (assuming that the height of an is `O(log n)`)
-        -   Search  
+        -   Search
         -   Insert
 
     -   Hash table
         -   Search: The worst case is that everything is hashed to one
-            location and is unsorted, so you have to linearly search
-            through the linked list, and you get the last element.
-            Resulting in `O(n)`.
+                location and is unsorted, so you have to linearly search
+                through the linked list, and you get the last element.
+                Resulting in `O(n)`.
+
         -   Insert: `O(n)` because you have to rehash in the worst case.
 
 -   Sorts
     -   Insertion sort [Sec 13.1]
         -   Steps:
             1.  Search int eh partially sorted list to find the correct
-                position, `p`, for `x`.
+                    position, `p`, for `x`.
+
             2.  Move all the entries between positions `p` and `i - 1`
-                over to the right by one place.
+                    over to the right by one place.
+
             3.  Write `x` into position `p`. The partially sorted list
-                has now grown to occupy positions `0` through `i`.
+                    has now grown to occupy positions `0` through `i`.
 
         -   Runtime analysis: The two operations are the comparisons
-            between pair of entries in the list, and shifting the
+                between pair of entries in the list, and shifting the
 
     -   Quicksort [Sec 13.2.1]
         -   Steps:
