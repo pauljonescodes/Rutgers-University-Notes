@@ -1141,16 +1141,16 @@ November 9th, 2013 <small>Midterm 2 Study Guide</small>
 
 #### Arithmetic
 
--   The useual arithmetic operators are available in Prolog, but they play
+-   The usual arithmetic operators are available in Prolog, but they play
     a role of predicates, not of functions.
     -   Thus, `+(2, 3)`, which may also be written `2 + 3` is a two-
-        argument structure, not a functino call.
-        -   It will not unifiy with `5`:
+        argument structure, not a function call.
+        -   It will not unify with `5`:
 
                 ?- (2 + 3) = 5
                 No
 
--   To handle arithmetic, Prolog procides a built-in predicate, `is`, that
+-   To handle arithmetic, Prolog provides a built-in predicate, `is`, that
     unifies its first argument with the arithmetic value of its second
     argument:
 
@@ -1168,7 +1168,108 @@ November 9th, 2013 <small>Midterm 2 Study Guide</small>
         Y=3
         X = 3 % Y is instantiated by the time it is needed
 
-#### Search/Excution Order
+#### Search/Execution Order
+
+> How does Prolog go about answering a query? 
+
+-   What it needs is a sequence of resolution steps that will
+    build the goal out of clauses in the database, or a proof
+    that no such sequence exists. 
+    -   In the realm of formal logic, one can imagine two
+        principal search strategies:
+        -   Starting with the existing clauses and work forward,
+            attempting to derive the goal. This strategy is known
+            as *forward chaining*.
+        -   Start with the goal and work backward, attempting to
+            "unresolve" it into a set of preexisting clauses.
+            This strategy is known as *backward chaining*.
+
+    -   If the number of existing rules is very large, but the number
+        of facts is small, it is possible for forward chaining to
+        discover a solution more quickly than backward chaining.
+        -   In most circumstances, however, backward chaining turns
+            out to be more efficient.
+        -   Prolog is defined to use backward chaining.
+
+-   Because resolution is associative and commutative, a backward
+    chaining theorem prover can limit its search to sequences of
+    resolutions in which terms on the righ-hand side of a cluase
+    are unified with the heads of other cluases on by one in some
+    particular order.
+    -   The resulting search can be described in terms of a tree of
+        subgoals.
+    -   The Prolog interpreter explores this tree-depth first,
+        from left to right.
+    -   It starts at the beginning of the database, searching for
+        a rule $R$ whose head can be unified with the top-level goal.
+    -   It then considers the terms in the body or $R$ as subgoals,
+        and attempts to satisfy them, recursively, from left to right.
+    -   If at any point a subgoal fails, the interpreter returns to the
+        previous subgoal and attempts to satisfy it in a different way.
+
+![Backtracking search in Prolog](../img/cs-pl-prolog.png)
+
+-   The process of returning to previous goals is known as *backtracing*
+    -   Whenever a unification operation is "undone" in order to pursue
+        a different path through the search tree, variables that were given
+        values or associated with one another as a result of that unification
+        are returned to their uninstantiated or unassociated state.
+    -   The effect is similar to the breaking of bindings between actual and
+        formal parameters in an imperative programming language, except
+        that Prolog couches the bindings in terms of unification rather
+        than subroutine calls.
+
+-   Space management for backtracking search in Prolog usually follows
+    the single-stack implementation of iterators.
+    -   The interpreter pushes a frame onto its stack every time it begins
+        to pursue a new subgoal $G$.
+    -   If $G$ succeeds, control returns to the "caller.""
+        -   But $G$'s frame remains on the stack.
+
+    -   Later subgoals will be given space *above* this dormant frame.
+        -   If subsequent backtracing causes the interpreter to search
+            for alternative ways of satisfying $G$, control will be able
+            to resume where it last left off.
+            
+-   The fact that clauses are ordered, and that the interpreter considers
+    them from first to last, means that the results of a Prolog program
+    are determinitic and predictable.
+    -   In fact, the combinatino of ordering and depth-first search means
+        that the Prolog programmer must oftern consider the order to ensure
+        that recursive programs will terminate.
+    -   Suppose for example that we have a database describing a directed
+        acyclic graph:
+
+            edge(a, b).  edge(b, c).  edge(c, d).
+            edge(d, e).  edge(b, e).  edge(d, f).
+            path(X, X).
+            path(X, Y) :- edge(Z, Y), path(X, Z).
+
+        The last two clause tell us how to determine whether there is
+        a path from node `X` to node `Y`.
+        -   If we were to reverse the order of the terms in the right-hand
+            side of the final clause, the the Prolog interpreter would search
+            for node `Z` that is reachable from `X` before checking to see 
+            whether there is an edge from `Z` to `Y`.
+        -   The program would still work, but it would not be as efficient.
+
+-   Consider what would happen if in addition we were to reverse the
+    order of the last two clauses:
+
+        path(X, Y) :- path(X, Z), edge(Z, Y).
+        path(X, X).
+
+    From a logical point of view, our database still defines the same
+    relationships.
+    -   A Prolog interpreter, however, will no longer be able to find answers.
+        -   Even a simple query like `?- path(a, a)` will never terminate.
+
+    -   The interpreter first unifies `path(a, a)` with the left-hand side of 
+        `path(X, Y) :- path(X, Z), edge(Z, Y).` It then considers the goals 
+        on the right-hand side, the first of which `(path(X, Z))`, 
+        unifies with the left-hand side of the very same rule, leading 
+        to an infinite regression.
+
 
 #### Imperative Control Flow
 
