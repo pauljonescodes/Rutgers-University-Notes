@@ -919,6 +919,261 @@ October 29th, 2013 <small>[Quick'n'Dirty Prolog Tutorial](http://www.cs.utexas.e
 November 9th, 2013 <small>Midterm 2 Study Guide</small>
 -------------------------------------------------------
 
+### Textbook <small>Chapter 11.2 *Prolog*</small>
+
+#### Introduction
+
+-   A Prolog interpreters runs in the context of *databases*
+    and *clauses* that are assumed to be true.
+    -   Each clause is composed of *terms*, which may be constants
+        variables, or *structures*.
+    -   A constant is either an tom or a number.
+    -   A Strucutre can be thought of as either a logical predicate
+        or data strucutre.
+
+-   Atoms in Polorg looks like an identifier beignning with a lowercase
+    letter, a sequences of "punctuation" characters.
+-   Variables can be *instantiated*.
+-   Structures consist of an atom called a *functor* and a list of
+    arguments:
+
+        rainy(rochester).
+        teaches(scott, cs254).
+        bin_tree(foo(bin_tree(bar, glarch))).
+
+-   Prolog requires the opening parenthesis to come immediately after
+    the functor, with no intervening space.
+    -   Arguments can be arbitrary terms: constants, variables, or
+        nested structures.
+    -   We use the term *predicate* to refer to the combination of a
+        functor and an arity.
+
+-   The clauses in a Prolog databse can be classified as *facts* or
+    *rules*, each of which ends with a period.
+    -   A fact is a horn clause without a right-hand side.
+
+-   A rule has a right hand side:
+
+        snowy(X) :- rainy(X), cold(X).
+
+-   The toke `:-` is the implication symbol.
+    -   The comma indicates "and."
+    -   Variables that appear in the head of a Horn cluase are
+        universally quantified: for all `X`, `X` is snowy is `X` is
+        raining and `X` is cold.
+
+-   It is possible to write a clause with an empty left-hand side.
+    Such a clause is called a *query* or a *goal*.
+    -   Queiries do not appear in Prolog programs.
+        -   Rather, one build a databse of facts and rules and then
+            initiates execution by giving the Prolog interpreter
+            a query to be answered.
+
+-   It most implementation of Prolog, queiries are entere with
+    a special `?-` version of the implication symbol. An example:
+
+        rainy(seattle).
+        rainy(rochester).
+        ?- rainy(C).
+
+    -   The Prolog interpreter would respond with:
+
+            C = seattle
+
+    -   Of course, `C = rochester` would also be a valid answer, but
+        Prolog will find `seattle` first, because it comes first in
+        the database.
+        -   If we want to find all possible solutions, we can ask the
+            interpreter to continue by typing a semicolon:
+
+                C = seattle ;
+                C = rochester ;
+                No
+
+    -   Similarly, given:
+
+            rainy(seattle).
+            rainy(rochester).
+            cold(rochester).
+            snowy(X) :- rainy(X), cold(X).
+
+        -   The query:
+
+                ?- snowy(C).
+
+            Will yield only one solution.
+
+#### Resolution and Unification
+
+-   The *resolution principle*, says that if $C_1$ and $C_2$ are
+    Horn clauses and the head of $C_1$ mathches on of the terms in
+    the body of $C_2$, then we can replace the term in $C_2$ with
+    the body of $C_1$.
+    -   Consider the following example:
+
+            takes(jane_doe, his201).
+            takes(jane_doe, cs254).
+            takes(ajit_chandra, art302).
+            takes(ajit_chandra, cs254).
+            classmates(X, Y) :- takes(X, Z), takes(Y, Z).
+
+        -   If we let `X` be `jane_doe` and `Z` be `cs254`, we can replace
+            the first term on the right hand side of the last clause with
+            the empty body of the second clause, yielding the new rule:
+
+                classmates(jane_doe, Y) :- takes(Y, cs 254).
+
+            In other words, `Y` is a classmate of `jane_doe` if `Y` takes
+            `cs254`.
+
+        -   The pattern-matching process ised to associate `X` with `jane_doe`
+            and `Z` with `cs254 is known as *unification*.
+        -   Variables that are given values as a result of unification are
+            said to be *instantiated*
+
+-   The unfication rules for Prolog state:
+    1.  A constant unifies only with itself.
+    2.  Two strctures unify if and only if they have the same functor
+        and the same arity, and the corresponding arguments unify
+        recursively.
+    3.  A variable unifies with anything. If the other thing has a value,
+        then the variable is instantiated. If the other thing is an
+        uninstantiated variable, then the two variables are associated
+        in such a way that if either is given a value later,
+        that value will be shared by both.
+
+-   Equality in Prolog is defined in terms of "unifiability."
+
+        ?- a = a.
+        Yes             % constant unifies with itself
+        ?- a = b.
+        No              % but not with another constant
+        ?- foo(a, b) = foo(a, b).
+        Yes
+        ?- X = a.
+        X = a ;
+        No
+        ?- foo(a, b) = foo(X, b).
+        X = a ;         % arguments must unify
+        No              % only one possibility
+
+    -   It is possible for two variable to be unified wihout
+        instantiating them. If we type:
+
+            ?- A = B.
+
+        the interpreter will simply respond
+
+            A = B
+
+        -   If, however, we type
+
+                ?- A = B, A = a, B = Y.
+
+            (unifying `A` and `B` before binding `a` to `A`) the interpreter
+            will respond
+
+                A = a
+                B = a
+                Y = a
+
+    -   In a similar vein, suppose we are given the following rules:
+
+            takes_lab(S) :- takes(S, C), has_lab(C).
+            has_lab(D) :- meets_in(D, R), is_lab(R).
+
+        -   (S takes a lab class if S takes C and C is a lab class. 
+            Moreover D is a lab class if D meets in room R and R is a lab.) 
+            An attempt to resolve these rules will unify the head of the 
+            second with the second term in the body of the first, causing 
+            C and D to be unified, even though neither is instantiated.
+
+#### Lists
+
+-   Like equality checking, list manipulation is a sufficiently common
+    operation in Prolog to warrant its own notation.
+    -   The constuct `[a, b, c]` is syntatic sugar for the structure
+        `.(a, .(b, .(c, [])))` where `[]` is the empty list and
+        `.` is a built in `cons`-like predicate.
+    -   Prolog adds an extra convinience, however: an optional vertical
+        bar that delimits the "tail" of the list.
+        -   Using this notiation, `[a, b, c]` could be expressed as
+            `[a, | [b ,c]], [a, b | [c]], or [a, b, c | []]`.
+
+    -   This vertical bar-notation is particularly handy when the
+        tail of the list is a vraible:
+
+                member(X, [X | _]).
+                member(X, [_ | T]) :- member(X, T).
+                sorted([]).         % empty list is sorted
+                sorted([_]).        % singleton is sorted
+                sorted([A, B | T]) :- A =< B, sorted([B | T]).
+                   % compound list is sorted if first two elements are in order and
+                   % remainder of list (after first element) is sorted
+
+        -   Here `<=` is a built-in predicate that operates on numbers.
+            -   The underscode is a placeholder for a variable that is not 
+                needed anywhere else in the clause.
+            -   Note that `[a, b | c]` is the *improper* list `.(a, .(b
+                c)).`
+            -   The sequence of tokens `[a | b, c]` is syntactically invalid.
+
+-   One of the interesting about Prolog resolution is that it does not
+    in general distinguish between "input" and "output" arguments.
+    -   Thus, given:
+
+            append([], A, A).
+            append([H | T], A, [H | L]) :- append(T, A, L).
+
+        We can type:
+
+            ?- append([a, b, c], [d, e], L).
+            L = [a, b, c, d, e]
+            ?- append(X, [d, e], [a, b, c, d, e]).
+            X = [a, b, c]
+            ?- append([a, b, c], Y, [a, b, c, d, e]).
+            Y = [d, e]
+
+    -   This example highlight the difference between functions and Prolog
+        predicates.
+        -   The former have a clear notion of inputs (arguments) and
+            outputs (results).
+
+#### Arithmetic
+
+-   The useual arithmetic operators are available in Prolog, but they play
+    a role of predicates, not of functions.
+    -   Thus, `+(2, 3)`, which may also be written `2 + 3` is a two-
+        argument structure, not a functino call.
+        -   It will not unifiy with `5`:
+
+                ?- (2 + 3) = 5
+                No
+
+-   To handle arithmetic, Prolog procides a built-in predicate, `is`, that
+    unifies its first argument with the arithmetic value of its second
+    argument:
+
+        ?- is(X, 1+2). X=3
+        ?- X is 1+2.
+        X = 3
+        ?- 1+2 is 4-1.
+        No
+        ?- X is Y.
+        ERROR
+        % infix is also ok
+        % first argument (1+2) is already instantiated
+        % second argument (Y) must already be instantiated
+        ?- Y is 1+2, X is Y.
+        Y=3
+        X = 3 % Y is instantiated by the time it is needed
+
+#### Search/Excution Order
+
+#### Imperative Control Flow
+
+#### Database Manipulation
+
 ### Prolog <small>Basic operation of Prolog</small>
 
 Unification
