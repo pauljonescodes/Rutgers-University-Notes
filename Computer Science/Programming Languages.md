@@ -1369,6 +1369,7 @@ November 9th, 2013 <small>Midterm 2 Study Guide</small>
 		           #f)))))
 
 
+
 ### Prolog <small>Basic operation of Prolog</small>
 
 Unification
@@ -1431,26 +1432,124 @@ Backtracking
 
 ### Prolog programming
 
-Ordering goals & clauses
-:   TBD
+Unification (on lists)
+
+:   Consider the rule:
+
+		append([A|B],Y,[A|Z]):- ...
+
+	And the query:
+
+		?- append([a,b],[c],W)
+
+	Unify?
+
+		A=a, B=[b], Y=[c], W=[a | Z]
 
 Cut
-:   TBD
+:   The cut, in Prolog, is a goal, written as !, which always succeeds, 
+	but cannot be backtracked past. It is best used to prevent unwanted 
+	backtracking, for example, to prevent extra solutions being found by 
+	Prolog and avoid additional computations that are not desired or 
+	required in a program.
 
-Numbers, is
-:   TBD
+	The cut should be used sparingly. There is a temptation to insert 
+	cuts experimentally into code that is not working correctly. If a 
+	test is unnecessary because a cut has guaranteed that it is true, 
+	it is good practice to say so in a comment at the appropriate place.
 
-Recursion
-:   TBD
+:   Green cut
 
-Lists
-:   TBD
+	:   A use of a *cut* which only improves efficiency is referred to as a *green cut*. 
+		For example:
+
+			gamble(X) :- gotmoney(X),!.
+			gamble(X) :- gotcredit(X), \+ gotmoney(X).
+
+		This is called a green cut operator. The `!` simply tells the interpreter to 
+		stop looking for alternatives. But you'll notice that if `gotmoney(X)` fails 
+		it will check the second rule. Checking for `gotmoney(X)` in the second rule 
+		seems useless since you already know that if Prolog is there then 
+		`gotmoney(X)` failed before, otherwise the second rule wouldn't be 
+		evaluated in the first place. However, by explicitly writing `\+ gotmoney(X)`, 
+		you guarantee that the second rule will always work, even if the first 
+		one is removed by accident or changed.
+
+	Red Cut
+
+	:   A *cut* that isn't a *green cut* is referred as a *red cut*, for example:
+
+			gamble(X) :- gotmoney(X),!.
+			gamble(X) :- gotcredit(X).
+
+		You depend on the proper placement of the cut operator and the order 
+		of the rules to determine their logical meaning. If for any reason the 
+		first rule is removed (e.g. by a cut-and-paste accident), the second 
+		rule will be broken, i.e., it will not guarantee the rule `\+ gotmoney(X)`.
+
+:   A cut, simply stated, commits Prolog to the instantiations made prior to it.
+
+Numbers, `is`
+:   The is built-in predicate is used in Prolog to force the evaluation of 
+	arithmetic expressions. If you just write something like `X = 2 + 4`, the 
+	result is to bind `X` to the unevaluated term `2 + 4`, not to `6`.
+
+		?- X = 2 + 4.
+		X = 2+4
+
+	If instead you write X is 2 + 4, Prolog arranges for the second argument, 
+	the arithmetic expression 2 + 4, to be evaluated (giving the result 6) 
+	before binding the result to X.
+
+		?- X is 2 + 4.
+		X = 6
+
+	If you want to check some arithmetic with a function or something or another,
+	it would look like this:
+
+		0 is N mod 2
 
 Trees
-:   TBD
+:   -   Really have built an evaluation tree for the query `member(X,[a,b,c])`.
+	-   Search trees provide a formalism to consider all possible computation paths.
+	-   Leaves are success nodes or failures where computation can proceed no further.
+	-   By convention, to model Prolog, leftmost subgoal is tried first.
 
 Graphs
-:   TBD
+:   A list of nodes.
+
+	Node
+
+	:   `node(Name, Color, Nbrnames).`
+
+		`node_structure(Name, Graph, node).`
+
+		1.  How to grab all *names* of a node? 
+			`all_names(+Graph, -Names) =>`
+
+				all_names([], []).
+				all_name([H | T], Namelist) :- 
+					node_structure(Name, [H | T], H),
+					all_names(T, Tnamelist),           ; until the end level of recursion
+					append([Name], Tnamelist, Namelist).
+
+		2.  How to grab the *neighbor* of a node?
+			`node_backlinks_valid(+Name, +Nbrnames, +Graph) =>`
+
+				node_backlinks_valid(_, [], _).
+				node_backlinks_valid(Name, [H | T], Graph) :-
+					node_structure(H, Graph, node(H, _, NbrNames)),
+					member(Name, Nbrnames),
+					node_backlinks_valid(Name, T, Graph).
+
+		3.  How to grab the *color* of a node?
+			`colors_of(+Names, +Graph, -Colors) =>`
+
+				colors_of([], _, []).
+				colors_of([H | T], Graph, Colorslist) :-
+					node_structure(H, Graph, node(H, Color, _)),
+					colors_of(T, Graph, Tcolorlist),
+					append([Color], Tcolorlist, Colorlist).
 
 ### Practice Exam 2
 
@@ -1465,6 +1564,7 @@ Graphs
 			(syntax-rules()
 				((_ x y)
 					(and x (not y) ; <- this is the answer fill-in
+		           ; the exam will provide the name of the macro
 				))
 			)
 
@@ -1492,9 +1592,9 @@ Graphs
 
 	| Fact              | Goal              | Unify                     |
 	|-------------------|-------------------|---------------------------|
-	|`foo(Bar, baz).`   |`foo(baz, Bletch).`|`baz = Bar`, `Bletch = baz`|
+	|`foo(Bar, baz).`   |`foo(baz, Bletch).`|`Bar = baz`, `Bletch = baz`|
 	|`foo(a, b)`        |`fie(X,Y)`         | Will not unify            |
-	|`foo(a, fie(Y, X))`|`foo(X, fie(a,a))` | `X = a, a = Y = X`        |
+	|`foo(a, fie(Y, X))`|`foo(X, fie(a,a))` | `X = a, X = Y = a`[^1]    |
 
 1.  The predicate `odd(All, Odds)` is true if `Odds` and `All` are lists
     and `Odds` contains the 1st, 3rd, 5th, etc, elements of `All` (in
@@ -1518,28 +1618,28 @@ Graphs
 3.  What will this print for the query `foo(X, Y).`? (The predicate
     write simply prints its argument.
 
-			foo( 1, 2):-write(12), 1<1.
-			foo(X, 2):- fie(X), 
-			write(x2), 2<1. foo(1,Y):- write(y1).
+		foo(1, 2) :- write(12), 1 < 1.
+		foo(X, 2) :- fie(X), write(x2), 2<1. 
+		foo(1, Y) :- write(y1).
 
-			fie(a):-write(a). 
-			fie(b):-write(b).
+		fie(a) :- write(a). 
+		fie(b) :- write(b).
 
 4.  Define the predicate `insertInOrder(Lst, Num, Res)`, where `Lst` is
     a list of numbers in ascending order and `Res` is the result of
     inserting `Num` in its correct place in `Lst`. E.G.,
     `insertInOrder([1, 3, 6, 9], 5, [1, 3, 5, 6, 9])` is `true`.
 
-			insertInOrder([], N, [N | T]).
-			insertInOrder([H | T], N, [H, N | T])
-			insertInOrder([H1 | T1], N, [H2 | T2]) :- H1 <= N, 
-			                                          insertInOrder(T1, N, T2)
+		insertInOrder([], N, [N | T]).
+		insertInOrder([H | T], N, [H, N | T]).
+		insertInOrder([H1 | T1], N, [H2 | T2]) :- H1 <= N, 
+			                                      insertInOrder(T1, N, T2).
 
 5.  Given the following code, what will the query `vacation(A)` print?
     Hint: If the variable `V` has value `a`, `write([fun, V])` prints
     `[fun, a]`. fail is a predicate that always fails.
 
-        vacation(Activity) :- fun(Activity), write([fun, Activity]),
+		vacation(Activity) :- fun(Activity), write([fun, Activity]),
 		                       cheap(Activity), write([cheap, Activity]), !, fail.       
 		fun(Activity):- speed(Activity, S), S > 50. 
 		fun(Activity):- outdoors(Activity). 
@@ -1548,4 +1648,10 @@ Graphs
 		outdoors(hiking). 
 		cheap(hiking).
 
-
+		?- vacation(A)
+		[fun,skiing][fun,skiing][fun,hiking][cheap,hiking] 
+		false
+		
+[^1]: Note that order matters here, where you always have variables on one side,
+those with capital letters first, and constants on the other, those with lowercase
+letters first. Also note that it will fail when you get a conflicting binding.
