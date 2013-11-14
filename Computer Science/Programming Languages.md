@@ -928,10 +928,10 @@ November 9th, 2013 <small>Midterm 2 Study Guide</small>
     -   Each clause is composed of *terms*, which may be constants
         variables, or *structures*.
     -   A constant is either an tom or a number.
-    -   A Strucutre can be thought of as either a logical predicate
-        or data strucutre.
+    -   A Structure can be thought of as either a logical predicate
+        or data structure.
 
--   Atoms in Polorg looks like an identifier beignning with a lowercase
+-   Atoms in Prolog looks like an identifier beginning with a lowercase
     letter, a sequences of "punctuation" characters.
 -   Variables can be *instantiated*.
 -   Structures consist of an atom called a *functor* and a list of
@@ -948,7 +948,7 @@ November 9th, 2013 <small>Midterm 2 Study Guide</small>
     -   We use the term *predicate* to refer to the combination of a
         functor and an arity.
 
--   The clauses in a Prolog databse can be classified as *facts* or
+-   The clauses in a Prolog database can be classified as *facts* or
     *rules*, each of which ends with a period.
     -   A fact is a horn clause without a right-hand side.
 
@@ -956,20 +956,20 @@ November 9th, 2013 <small>Midterm 2 Study Guide</small>
 
         snowy(X) :- rainy(X), cold(X).
 
--   The toke `:-` is the implication symbol.
+-   The token `:-` is the implication symbol.
     -   The comma indicates "and."
-    -   Variables that appear in the head of a Horn cluase are
+    -   Variables that appear in the head of a Horn clause are
         universally quantified: for all `X`, `X` is snowy is `X` is
         raining and `X` is cold.
 
 -   It is possible to write a clause with an empty left-hand side.
     Such a clause is called a *query* or a *goal*.
-    -   Queiries do not appear in Prolog programs.
-        -   Rather, one build a databse of facts and rules and then
+    -   Queries do not appear in Prolog programs.
+        -   Rather, one build a database of facts and rules and then
             initiates execution by giving the Prolog interpreter
             a query to be answered.
 
--   It most implementation of Prolog, queiries are entere with
+-   It most implementation of Prolog, queries are entered with
     a special `?-` version of the implication symbol. An example:
 
         rainy(seattle).
@@ -1031,9 +1031,9 @@ November 9th, 2013 <small>Midterm 2 Study Guide</small>
         -   Variables that are given values as a result of unification are
             said to be *instantiated*
 
--   The unfication rules for Prolog state:
+-   The unification rules for Prolog state:
     1.  A constant unifies only with itself.
-    2.  Two strctures unify if and only if they have the same functor
+    2.  Two structures unify if and only if they have the same functor
         and the same arity, and the corresponding arguments unify
         recursively.
     3.  A variable unifies with anything. If the other thing has a value,
@@ -1274,7 +1274,7 @@ November 9th, 2013 <small>Midterm 2 Study Guide</small>
 #### Imperative Control Flow
 
 -   We have seen that the ordering of clauses and of terms in Prolog is
-	signigicant, with ramifications for efficieny, termination, and choice
+	significant, with ramifications for efficient, termination, and choice
 	among alternatives.
 	-   In addition  to simple ordering, Prolog provides the programmer
 		with several explicit control-flow features
@@ -1312,13 +1312,62 @@ November 9th, 2013 <small>Midterm 2 Study Guide</small>
 			`member(X, L)` with the left hand side of the second rule,
 			the cut commits us to the first rule.
 
--   An alertnative way to ensure that `member(X, L)` succeeds no more than
+-   An alternative way to ensure that `member(X, L)` succeeds no more than
 	once is ember a use of `\+` in the seoncd cluase:
 
 		member(X, [X | _]).
 		member(X, [H | T]) :- X \= H, member(X, T).
 
 	Here `X \= H` means `X` and `H` will not unify.
+
+### Scheme Macros <small>via [Will Donnelly](http://www.willdonnelly.net/blog/scheme-syntax-rules/)</small>
+
+-   You use define-syntax to create a top level binding, and let-syntax 
+	bears the same relationship to define-syntax as you’d expect.
+
+		;; define-syntax is used to create
+		;;  a top-level binding of a macro
+		(define-syntax macro
+		  <syntax transformer>)
+
+-   Lets say we want to define a `while` loop to work like this:
+
+		;; A simple while loop
+		(define x 0)
+			(while (< x 5)
+			(set! x (+ x 1))
+			(print x))
+
+-   To do this, we need to use a **syntax transformer**.
+
+		(define-syntax while
+			(syntax-rules (<keywords>)
+			((<pattern>) <template>)
+			...
+			((<pattern>) <template>)))
+
+-   This is how to code a `while` loop in Scheme:
+
+		(let loop ()
+			(if condition
+				(begin
+					body ...
+					(loop))
+				#f)
+			)
+
+-   This code above is what is to be placed in `<template>`.
+
+		(define-syntax while
+		  (syntax-rules ()
+		    ((while condition body ...)
+		     (let loop ()
+		       (if condition
+		           (begin
+		             body ...
+		             (loop))
+		           #f)))))
+
 
 ### Prolog <small>Basic operation of Prolog</small>
 
@@ -1339,7 +1388,7 @@ Unification
 		?- p(X, f(Y), a) = p(a, f(b), Y).
 		No
 
-	In the first case the succesful substitution is `{X/a, Y/b}`,
+	In the first case the successful substitution is `{X/a, Y/b}`,
 	and for the second example there is no substitution that would
 	result in equal terms.
 
@@ -1373,6 +1422,13 @@ Backtracking
 
 ### Logical meaning of Prolog
 
+> The token `:-` is the implication symbol.
+>
+> The comma indicates "logical and."
+> 
+> Variables that appear in the head of a Horn clause are
+> universally quantified.
+
 ### Prolog programming
 
 Ordering goals & clauses
@@ -1400,12 +1456,17 @@ Graphs
 
 1.  Finish the definition below of the scheme macro and-not, so that
     (and-not x y) is the equivalent of (and x (not y)). Note that
-    and-not should have the same kind of “short cut” behavior as and and
-    or have, and as x && y has in Java: if x is false, it should not
-    evaluate y, but should just return false. (This is why and-not needs
+    `and-not` should have the same kind of “short cut” behavior as `and` and
+    `or` have, and as `x && y` has in Java: if `x` is false, it should not
+    evaluate `y`, but should just return false. (This is why `and-not` needs
     to be a macro.)
 
-        (define-syntax and-not          (syntax-rules ( )               ((_ x y) (      )))
+        (define-syntax and-not
+			(syntax-rules()
+				((_ x y)
+					(and x (not y) ; <- this is the answer fill-in
+				))
+			)
 
 2.  Fill in the following prolog predicates.
     1.  `inOrder(List)`. Assume `List` is a list of numbers;
@@ -1413,27 +1474,27 @@ Graphs
         in increasing order. If `List` has `0` or `1` element it is in
         order.
 
-            inOrder( ___ ) .
-
-            inOrder( ____ ) .
-
-            nOrder( [ N1, N2 | T ] ) :- 
+            inOrder([]).  ; if it has no elements
+            inOrder([_]). ; if it has one element, any element
+            inOrder([ N1, N2 | T]) :- N1 <= N2, inOrder([N2 | T]).
 
     2.  `suffix(L1, L2)`. Assumes `L1` and `L2` are lists. It is true if
         `L2` is a tail of `L1`. E.g., `suffix([x, a, b], [a, b])` is
         true, as is `suffix([x, y, a, b], [a, b])`,
         `suffix([x, y, z, a, b], [a, b])`, and so on.
 
-            suffix( ______ ).           suffix( ______ ):- 
+			suffix([H | T], T).                  ; general pattern
+			suffix([H, T], L2) :- suffix(T, L2). ; split first list,
+			                                     ; implies T is equal to L2
 
 3.  For each of the following pairs of fact and goal, say whether they
     will unify, and if so with which bindings
 
-|Fact|Goal|Unfify?|
-|----|----|-------|
-|`foo(Bar, baz).`|`foo(baz, Bletch).`|???|
-|`foo(a, b)`|`fie(X,Y)`|???|
-|`foo(a, fie(Y, X))`|`foo(X, fie(a,a))`|???|
+	| Fact              | Goal              | Unify                     |
+	|-------------------|-------------------|---------------------------|
+	|`foo(Bar, baz).`   |`foo(baz, Bletch).`|`baz = Bar`, `Bletch = baz`|
+	|`foo(a, b)`        |`fie(X,Y)`         | Will not unify            |
+	|`foo(a, fie(Y, X))`|`foo(X, fie(a,a))` | `X = a, a = Y = X`        |
 
 1.  The predicate `odd(All, Odds)` is true if `Odds` and `All` are lists
     and `Odds` contains the 1st, 3rd, 5th, etc, elements of `All` (in
@@ -1441,31 +1502,50 @@ Graphs
     are `a` and `b`, and whose tail after `b` (i.e. the `cddr`) is c.
     `odds([],[])` is also true. Define `odds`:
 
+		odds([],[]).                             ; trivially true base case
+		odds([X], [X]).                          ; equality clause
+		odds([A, B | C], [H | T]) :- odds(C, T). ; ignores evens in first list
+
 2.  What is the translation into predicate calculus of the prolog rule:
     `cousin(X,Y):- grandparent(X, G), grandparent(Y, G), nonsibling(X, Y)`.
 
+	For all `X` and `Y`, if `X` and `Y` are cousins, then there exists 
+	`G` is a grandparent of `X`, `G` is a grandparent for `Y`, and `X` 
+	and `Y` are not siblings.
+
+	$$ \forall x y (C(x, y) \to \exists g (G(x, g) \land G(y, g) \land \lnot S(x, y)))$$
+
 3.  What will this print for the query `foo(X, Y).`? (The predicate
     write simply prints its argument.
-            foo( 1, 2):-write(12), 1<1.     foo(X, 2):- fie(X), 
-            write(x2), 2<1. foo(1,Y):- write(y1).       fie(a):-write(a). 
-            fie(b):-write(b).
+
+			foo( 1, 2):-write(12), 1<1.
+			foo(X, 2):- fie(X), 
+			write(x2), 2<1. foo(1,Y):- write(y1).
+
+			fie(a):-write(a). 
+			fie(b):-write(b).
 
 4.  Define the predicate `insertInOrder(Lst, Num, Res)`, where `Lst` is
     a list of numbers in ascending order and `Res` is the result of
     inserting `Num` in its correct place in `Lst`. E.G.,
     `insertInOrder([1, 3, 6, 9], 5, [1, 3, 5, 6, 9])` is `true`.
 
+			insertInOrder([], N, [N | T]).
+			insertInOrder([H | T], N, [H, N | T])
+			insertInOrder([H1 | T1], N, [H2 | T2]) :- H1 <= N, 
+			                                          insertInOrder(T1, N, T2)
+
 5.  Given the following code, what will the query `vacation(A)` print?
     Hint: If the variable `V` has value `a`, `write([fun, V])` prints
     `[fun, a]`. fail is a predicate that always fails.
 
-        vacation(Activity):- 
-        fun(Activity), 
-        write([fun, Activity]),     cheap(Activity), 
-        write([cheap, Activity]), 
-        !,      fail.       fun(Activity):- speed(Activity, S), S > 50. 
-        fun(Activity):- outdoors(Activity). 
-        speed(skiing, 75).      outdoors(skiing).       outdoors(hiking). 
-        cheap(hiking).
+        vacation(Activity) :- fun(Activity), write([fun, Activity]),
+		                       cheap(Activity), write([cheap, Activity]), !, fail.       
+		fun(Activity):- speed(Activity, S), S > 50. 
+		fun(Activity):- outdoors(Activity). 
+		speed(skiing, 75).
+		outdoors(skiing).
+		outdoors(hiking). 
+		cheap(hiking).
 
 
