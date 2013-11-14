@@ -922,13 +922,53 @@ November 9th, 2013 <small>Midterm 2 Study Guide</small>
 ### Prolog <small>Basic operation of Prolog</small>
 
 Unification
-:   TBD
+:   An algorithmic process of solving equations between symbolic
+	expressions. 
+
+:   Prolog unification matches two Prolog terms T1 and T2 by finding
+	a substitution of variables mappich M such that if M is applied
+	T1 and M is applied to T2 and the results are equal.
+
+	For example, Prolog uses unification in order to satisfy
+	equations ...
+
+		?- p(X, f(Y), a) = p(a, f(a), Y).
+		X = a  Y = a
+
+		?- p(X, f(Y), a) = p(a, f(b), Y).
+		No
+
+	In the first case the succesful substitution is `{X/a, Y/b}`,
+	and for the second example there is no substitution that would
+	result in equal terms.
 
 Backward chaining
-:   TBD
+:   An inference method that can be described as working backwards
+	from the goal(s). It is used in automated theorem provers,
+	proof assistants, and other AI application, but it has also
+	been observed in primates. 
 
 Backtracking
-:   TBD
+:   Suppose that we have the following database:
+
+		eats(fred, pears).
+		eats(fred, t_bone_steak).
+		eats(fred, apples).
+
+	So far we have only been able to ask if Fred eats specific thing.
+	Suppose that I wish to instead to answer the question, "What are
+	all the things that Fred eats?" To answer this I can use variables
+	again. Thus, I can type in the query.
+	
+		?- eats(fred, FootItem).
+
+	As we have seen earlier, Prolog will answer with
+
+		FoodItem = pears
+
+	This is because it has found the first clause in the database.
+	If you keep asking, Prolog will respond `t_bone_steak` then
+	`apples` then `no`. 
 
 ### Logical meaning of Prolog
 
