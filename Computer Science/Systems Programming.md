@@ -1563,7 +1563,9 @@ Signal
     handlers to cause interrupts and can also be explicitly sent from
     one process to another as a way of passing information or modifying
     behavior.
-:   |Valye|Name|Default Action|Description|
+:   Here's a table! 
+
+	|Valye|Name|Default Action|Description|
     |-----|----|--------------|-----------|
     |1|SIGHUP|terminate process|terminal line hangup|
     |2|SIGINT|terminate process|interrupt program|
@@ -1980,3 +1982,115 @@ based on:
 -   Good design (how well written your design document and code are,
     including modularity and comments).
 
+November 8th, 2013 <small>Shared Memory</small>
+-----------------------------------------------
+
+-   The lifetime is larger than a process but less than a file.
+	-   If you reboot, it goes away.
+	-   If no process is using them, they still remain, or can.
+
+-   Shut down the system and the shared memory ceases to exit.
+	-   We have shared memory segments that exist indepedant of
+		procesesses.
+
+-   Are not tied to the file memory model we're familiar with.
+	-   They do, however, have read/write permissions just like
+		files do.
+
+-   Instead of a directory structure, shared memory exists in
+	a shared, flat list.
+	-   They're identified by a numeric key, a number.
+
+-   They key is generated from existing files and directories.
+	-   Metadata *about* the files.
+
+-   It's like virtual memory.
+	-   The shared memory system has a lifetime that's shorter
+		than the directory structure.
+		-   This is how we have *persistance* of identification.
+
+	-   But if the file goes away, **heaven help you**.
+		-   Something something, that would be bad.
+
+> If you change the file, what happens?
+
+-   If you delete the file, you may no longer be able to find
+	the key.
+	-   I'll talk about this later.
+
+-   Multiple shared memory segments can exist.
+	-   These things can be of different sizes.
+	-   You can get *multiple* shared memory segments.
+
+> Is this like caches?
+
+-   No, because we're not getting efficiency from this.
+	-   It *is* faster than reads or writes or socket
+		connections.
+
+-   Different processes may attach the same addresses
+	to different segments.
+	-   Any attempt to share pointers will be dangerous.
+
+> Is there any reason that different processes have different
+> pointers?
+
+-   Probably not.
+	-   He understands *part of it*.
+
+-   The same program may attach the same memory segment to
+	different addresses at different invocations.
+-   The shared memory does not have an address until you
+	"attach" to it.
+	-   Processes *attach* and *detach* to and from shared
+		memory segments.
+
+-   Multiple programs running simultaneously may attach different
+	addresses to the same memory segments.
+-   Because these things exist indepedantly of any process,
+	not only do we have an API but because we have commands.
+
+`ipcs -m`
+
+:   This is like "list all shared memory segments"
+
+		nbp-168-15:~ pauljones$ ipcs -m
+		IPC status from <running system> as of Tue Nov 12 20:31:44 EST 2013
+		T     ID     KEY        MODE       OWNER    GROUP
+		Shared Memory:
+
+		nbp-168-15:~ pauljones$ 
+
+`ipcrm -m ID`
+
+:   Removes shared memory with ID.
+
+> Could there be two addresses for the same one?
+
+-   Only within programs, not physically.
+
+		for i in `ipcs -m | grep morbius`; do
+			ipcrm -m $i > /dev/null 2 >& 1
+		done
+
+-   The maximum size of shared segments seems to be
+	`2147483647` and `256` of them.
+	-   But this is machine dependant.
+
+> CLEAN UP.
+
+	for i in `ipcs -m | grep [your id here] | colrm 1 11 \ colrm 11`; do
+		ipcrm -m $i
+		done
+		ipcs -m
+
+<!-- -->
+
+	#include <sys/types.h>
+	#include <sys/ipc.h>
+
+-   The beauty of `ftoke` is ...
+
+		int shmctl(int shmid, int cmd, struct shmid_ds *);
+
+*[API]: Application Programming Interface

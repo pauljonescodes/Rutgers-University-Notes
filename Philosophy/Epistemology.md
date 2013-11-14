@@ -1,6 +1,215 @@
 Epistemology <small>with Peter Klein</small>
 ============================================
 
+Syllabus
+--------
+
+### The Goals of the Course
+
+During the course we will explore nine issues in epistemology – each
+discussed in recently published essays. The primary goals of the course
+are for you to:
+
+1.  Gain a good understanding of the issues including alternative ways
+    of responding to each issue and
+2.  Develop your own position on each issue.
+
+I encourage you to work together in study groups; I will circulate an
+email sign-up sheet and distribute it to those people who sign up.
+
+### Prerequisites
+
+The prerequisites are *Intro to Logic* (730:201 or a higher level logic
+course) and two other courses in philosophy. If you have not satisfied
+those prerequisites and have not already received special permission to
+take the course, please see me after the first class meeting.
+
+### Requirements
+
+In accordance with the University policy that states that students are
+expected to attend all classes, class attendance is required. If you
+expect to miss any classes for any reason whatsoever, please use the
+[University absence reporting website](https://sims.rutgers.edu/ssra/).
+An email is automatically sent to me, so you needn’t inform me directly
+of your expectation that you will miss a class. Nevertheless, if you
+miss a class (or classes), you should discuss the absence with me
+immediately ***after*** the ***first*** class meeting that you return.
+***If you don't, the absence will not be excused.***
+
+There will be two papers plus a final take-home exam. Each is worth 200
+points. In addition, there will be at least six surprise quizzes. Each
+is worth 25 points and the best four (4) will count towards your final
+point total. Thus, there is a total of 700 possible points. A bonus of
+up to 25 points can be added for class participation; also, you will
+lose 25 points for each unexcused class absence beyond the first one.
+That is, you have one “free” absence.
+
+### Grade equivalents
+
+Using a 200 point scale, the grade equivalences are: 
+
+-   $A \ge 180$ 
+-   $B+ = 170 - 179$ 
+-   $B = 160 - 169$ 
+-   $C+ = 150 - 159$ 
+-   $C = 140 - 149$
+-   $D = 120 - 139$ 
+-   $F \le 119$
+
+### Surprise Quizzes
+
+There will be at least six surprise quizzes. The quizzes will be on the
+reading assigned for the day of the quiz. There are no make-up surprise
+quizzes, but none will be given on religious holidays. Typically, they
+will be of this general form:
+
+1.  State as carefully as you can X’s argument that y and
+2.  State what do you take to be the best objection to X’s view
+    (regardless of whether you endorse the objection).
+
+During the quiz you may consult any notes you have taken on the
+reading(s) but you may not consult the reading itself. The quiz will be
+given at the beginning of the class and will last ONLY 20 minutes. Thus,
+if you are 5 minutes late to class, you will have only 15 minutes to
+complete the quiz. If you have scored 25 points on four surprise
+quizzes, you need not take any more of them.
+
+### Papers
+
+No late papers will be accepted unless something you could not have
+anticipated prevented you from getting it to me. “The printer didn’t
+work” and “my hard drive crashed” are not a legitimate reasons for
+papers being late because those things happen often enough to require
+some backup plan. If you miss a class on the day that the paper is due
+because of a religious holiday or University sponsored event, please
+make sure that either someone else hands in the paper for you or it is
+put in my mailbox (basement of Seminary 1) before the class (the
+building closes at 4:30.).
+
+All papers must be typed, double-spaced (with a 12 point font, and inch
+margins) and free of grammatical/spelling errors. If there are more than
+two such errors on any given page, the paper will be returned to you for
+correction and it will automatically lose ten (10) points. I urge you to
+get some help in proof reading your papers. (The word “argument” has
+just one “e.” It is a sacred word!)All papers (including the take home
+final) must employ some standard reference form for footnotes and
+bibliography. [Here’s a good
+website](http://owl.english.purdue.edu/owl/search.php)Every paper and
+every answer on the final exam must have a thesis. The first sentence of
+the paper (or exam question) MUST state the thesis and begin as follows:
+“The purpose of this paper (answer) is to... First, I will... Second, I
+will ... etc ... Finally,I will...” Papers and answers to questions on
+the final that do not begin that exact way will lose twenty (20) points.
+Please use words like “therefore” and “hence” with great caution. This
+is not a thesis: “The purpose of this paper is to explore . . .” These
+are theses: “The purpose of this paper is to show that . . .” “The
+purpose of this paper is to defend the claim that . . .” “The purpose of
+this paper is to demonstrate that . . .” Please do not use the
+expression “I feel that . . .” to express what you believe to be true;
+use “I believe that . . .” Of course, “I feel warm” is fine but “I feel
+that Descartes is right” is not.
+
+A title for your paper that encapsulates your thesis is required. The
+paper may be on any essay that we have read up to the point that the
+paper is due as long as it is not a second paper on the same essay that
+was discussed in your first paper. No BS is allowed. What you would not
+say to a thoughtful roommate you should not write in a philosophy paper.
+Don’t make claims that you cannot substantiate with good, generally
+available, and acknowledged evidence that you have examined carefully.
+For most of us that means we should not make claims about Einstein’s
+relativity theory, the Higgs boson, Darwin’s account of the transmission
+of traits, or properties of infinitely large sets. Always give examples
+of universal or partial generalizations. So, if you claim that all/some
+people act only out of self-interest, give some examples to show that it
+is a universal or widely distributed property.Finally, writing a
+philosophy paper is a way of discovering what you ought to think, not a
+way of describing what you thought before you began writing the paper.
+Have fun with the ideas! The truth is not always the first or second or
+third thing that pops into your head. Unexamined thoughts aren’t worth
+having – to (mis)appropriate what Socrates said in the Apology [38a].
+
+### Plagiarism
+
+Academic communities depend upon academic integrity, and a necessary
+condition of your having academic integrity is that the work you
+represent as yours is, in fact, yours. You MUST indicate ***when and to
+what extent*** you have relied upon anyone else’s ***texts*** or
+***ideas***. That being said, I encourage you to form study groups.
+
+### Disabilities
+
+If you have a learning disability (I have dyslexia, so I know what
+that’s like), please see me and we can make some appropriate
+arrangements.
+
+### Office and Office Hours
+
+I strongly encourage you to come to my office to discuss the readings,
+your papers, the class lectures/discussions with me. I will have
+regularly scheduled office hours on M and W from 4:30-6:00 in room 207,
+Seminary 3, but I could meet you at other times if you have a class
+during the regularly scheduled office hours. To set up an appointment,
+please email me at: pdklein@rci.rutgers.edu. I ask that you set up an
+appointment (even during the regular hours) so that you don’t have to
+spend too much time waiting and so that I can unlock the front door to
+let you into Seminary 3 (which closes at 4:30).
+
+### Materials for the Course
+
+There are two books to buy: Epistemology: New Essays, ed. Quentin Smith,
+(Oxford University Press, 2008); Contemporary Debates in Epistemology,
+ed. Matthais Steup and Ernest Sosa, (Blackwell Publishing, 2005). BOTH
+are in paperback.
+
+### Schedule of Assignments
+
+Date | Assignments
+-----|------------
+1/23 | Introduction to the Course, Gettier Problem (handout) 
+1/28 | E, Kornblith, 5-23
+1/30 | 2nd meeting on Kornblith
+2/4 | 3rd meeting on Kornblith
+2/6 | E, Klein, 25-61 (Group 1 papers due) 
+2/11 | 2nd meeting on Klein
+2/13 | 3rd meeting on Klein
+2/18 | E, Goldman, 63-82 (Group 2 papers due) 
+2/20 | 2nd meeting on Goldman
+2/25 | 3rd meeting on Goldman
+2/27 | E, Conee and Feldman, 83-104 (Group 3 papers due) 
+3/4 | 2nd meeting on Conee and Feldman
+3/6 | 3rd meeting on Conee and Feldman
+3/11 | C, Klein/Ginet, 131-156 (Group 4 papers due)
+3/13 | 2nd meeting on Klein/Ginet
+SPRING | BREAK
+3/25 | 3rd meeting on Klein/Ginet
+3/27 | E, Sosa, 121-136 (Group 2 papers due)
+4/1 | 2nd meeting on Sosa
+4/3 | 3rd meeting on Sosa
+4/8 | C, Dretske/Hawthorne, 13-46 (Group 3 papers due) 
+4/10 | 2nd meeting on Dretske/Hawthorne
+4/15 | 3rd meeting on Dretske/Hawthorne
+4/17 | C, Vogel/Fumerton, 72-97 (Group 4 papers due) 
+4/22 | 2nd meeting on V ogel/Fumerton
+4/24 | 3rd meeting on V ogel/Fumerton
+4/29 | C, Conee/Cohen, 47-71 (Group 1 papers due)
+5/1 | 2nd meeting on Conee/Cohen (final exam distributed) 
+5/6 | 3rd meeting on Conee/Cohen
+
+### Final Exam
+
+The final exam is a take-home exam, due in the Undergraduate Philosophy
+Department Office in 1 Seminary Place on 5/13 by 3 p.m. (Sharp!). The
+exam will be distributed on 5/1. You may not talk with anyone about it
+until after 3 p.m. on 5/13. You may consult any written material you
+wish in preparing your answer(s), but be sure to make clear the extent
+to which you have relied upon the work of others. (Please re-read the
+section on plagiarism in the syllabus.) Note: If you have 450 points
+(not including class participation, but including absences) prior to the
+final exam, you do not have to take it. You will be assigned an “A” for
+the course. (If you do take it and your total points are less than 624,
+you will not be assigned an “A.”)
+
+
 September 4th, 2013 <small>The Gettier Problem</small>
 ------------------------------------------------------
 
@@ -1080,9 +1289,26 @@ October 30th, 2013 <small>1st Meeting on 'Skeptical and Perceptual Knowledge'</s
             account."
 
 -   Nozick thinks to know:
-    1.  *p* must be true.
-    2.  *S* must believe *p*.
-    3.  \$\\lnot p \\rightarrowtail \\lnot Bp\$
-    4.  \$p \\rightarrowtail Bp\$
+    1.  $p$ must be true.
+    2.  $S$ must believe $p$.
+    3.  $\lnot p \rightarrowtail \lnot Bp$
+    4.  $p \rightarrowtail Bp$
+
+November 13th, 2013 <small>3rd Meeting on Dretske/Hawthorne</small>
+-------------------------------------------------------------------
+
+1.  $K_S A \land A \equiv B$
+2.  $K_S (A \land B) \to K_S A \land K_S B$
+	1.  $A \to B$
+	2.  $A \to A$
+	3.  $A \to (A \land B)$
+	4.  $(A \land B) \to A$
+	5.  $A \to (A \land B) \land (A \land B) \to A)$
+	6.  $A \equiv (A \land B)$
+3.  $K_S (A \land B) \to K_S B$
+ 
+November 18th, 2013 <small>Reading: C, Vogel/Fumerton, 72-97</small>
+--------------------------------------------------------------------
+
 
 *[BIV]: Brain in a vat *[EDD]: Evil demon deceived

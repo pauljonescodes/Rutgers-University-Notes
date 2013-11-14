@@ -1273,7 +1273,52 @@ November 9th, 2013 <small>Midterm 2 Study Guide</small>
 
 #### Imperative Control Flow
 
-#### Database Manipulation
+-   We have seen that the ordering of clauses and of terms in Prolog is
+	signigicant, with ramifications for efficieny, termination, and choice
+	among alternatives.
+	-   In addition  to simple ordering, Prolog provides the programmer
+		with several explicit control-flow features
+		-   The most important of these features is known as `cut`.
+
+-   The `cut` is a zero-argument predicate written as an exclamation point
+	-   As a sungal it alwauys succeeds, but with a crucual side effect: 
+		it commit the interpreter to whatever choices have been made
+		since unfifying the parent goal with the left-hand side of the
+		current rule, including the choice of the unification itself.
+	-   If a given atom `a` appears in list `L` $n$ times, the goal
+		then the goal `?- member(a, L)` can succeed $n$ times.
+	-   They can lead to wasted computation, particularly from long
+		lists, when `member` is following by a goal that may fail:
+
+			prime_candidate(X) :- member(X, candidates), prime(X).
+
+		Suppose that `prime(X)` is expensive to compute. To determine
+		whether `s` is a prime candidate, we first check to see whether
+		it is a member of the `candidates	 list, and then check to see
+		whether it is prime.
+		-   If `prime(a)` fails, Prolog will backtrack and attempt to 
+			satisfy `member(a, candidates)` again. If `a` is in the
+			`candidates` list more than once, then the goal will suceed
+			again, leading to the reconsideration of the `prime(a)` subgoal,
+			even though it is doomed to fail. *We can save substantial
+			time by cutting off all further searches for `a` after
+			the first is found:
+
+				member(X, [X | _]) :- !.
+				member(X, [_ | T]) :- member(X, T).
+
+			The cut on the right hand side of the first rule says that if
+			`X` is the head of `L`, we should not attempt to unify
+			`member(X, L)` with the left hand side of the second rule,
+			the cut commits us to the first rule.
+
+-   An alertnative way to ensure that `member(X, L)` succeeds no more than
+	once is ember a use of `\+` in the seoncd cluase:
+
+		member(X, [X | _]).
+		member(X, [H | T]) :- X \= H, member(X, T).
+
+	Here `X \= H` means `X` and `H` will not unify.
 
 ### Prolog <small>Basic operation of Prolog</small>
 
