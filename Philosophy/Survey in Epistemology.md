@@ -2067,8 +2067,227 @@ November 11th, 2013 <small>Seminar</small>
 	and your tendency to assume of some member of that group has
 	that property.
 
-November 18th, 2013 <small>Chapter 10, 'Social Epistemology (Testimony and Peer Disagreement)'</small>
+November 18th, 2013 <small>Philosophical Naturalism and Intuitional Methodology *by Alvin I. Goldman*</small>
 ------------------------------------------------------------------------------------------------------
+
+### Intuitions in Philosophy: What’s the Controversy?
+
+-   A debate is raging over philosophical method.
+	-   There are *traditionalists* and *naturalists*.
+		-   Naturalists are distinct in that they are science
+			oriented towards intuitions in philosophy.
+
+	-   Not everyone likes the term "intuition," but it is the most
+		common term.
+
+Intuition 
+
+:   The philosophical activity in question consists of specifying 
+	a hypothetical scenario and rendering an intuitive judgment 
+	about the correctness or incorrectness of classifying it under 
+	a stipulated heading. 
+
+:   Does a given predicate ‘F’ apply to an event, an individual, 
+	a pair of objects, etc. in the scenario? Putting the question 
+	less linguistically, is a certain property or relation exemplified 
+	in the scenario?
+
+-   Intuitions in philosophy are important because, for example, Gettier
+	debunked the entire JTB analysis of knowledge with nothing but an
+	intuition.
+-   Consulting intuitions about imaginary cases is paradigmatic of
+	"armchair philosophy."
+	-   Philosophical naturalists use "real empirical experimentation."
+	-   Philosophy should not be dragged into epistemological disrepute
+		by utilizing suspect faculties like intuition.
+
+-   The debate has intensified with X-Phi.
+	-   Stephen Stich, a proponent of the "negative" variety, claim
+		their experimental studies raise skeptical doubts about the
+		epistemic soundness or robustness of philosophical intuition.
+	-   Although X-Phi doesn't speak for all of philosophy, 
+		they do raise questions about the epistemic credentials of
+		intuitions. 
+	-   They challenge the evidential status that the bulk of the
+		profession routinely accords with. 
+
+### Two Types of Evidential Questions: First-order and Second-order Questions
+
+-   The debate over intuitional methodology is customarily formulated	in terms of "evidence" and "evidential quality."
+
+Intuitions
+
+:   Occurrent mental states, either intuitive judgments 
+	(a species of doxastic states) or non-doxastic states such as 
+	intellectual "seemings" or "attractions," which tend to generate 
+	intuitive judgments.
+
+First-order questions of evidence
+
+:   > Are intuitions, or intuitive judgments, evidence at all?
+
+:   > What is their evidential quality or strength?
+
+:   > For what propositions or hypotheses are they good evidence?
+
+:   > For whom are they good evidence (their subjects only, or other 
+	> people as well)? 
+
+:   > What kind of evidence do intuitions have or confer: 
+	> empirical evidence or a priori evidence?
+
+Second-order questions of evidence
+
+:   > Is there evidence (good evidence?) for the first-order 
+	> evidential status of intuitions? 
+
+:   > If we don’t already have good enough evidence for the 
+	> first-order evidential status of intuitions, how should 
+	> we go about gathering evidence about the first-order 
+	> status of intuitions? 
+
+:   > What are the most appropriate or most helpful kinds 
+	> of second-order evidence: empirical or a priori?
+
+-   The work advances the view that the two orders of status for
+	intuitions are of different types.
+	-   *Intutions may have first-order evidential status of a substantially
+		a priori kind*.
+	-   While their second-order evidential status, the evidence for their
+		evidential status, is mainly an *empirical* kind.
+	-   Goldman does not firmly endorse the bifurcated view.
+
+### The Nature of Evidential States
+
+> What is evidence?
+> That is, what kinds of evidence of states-of-affairs constitutes 
+> pieces of evidence, and in virtue of what relation to an 
+> appropriate relatum do they so qualify?
+
+-   Kelly (2008) distinguishes between several senses of evidence.
+	-   There is the "reliable indicator" sense of evidence, in which
+		some thing is evidence for another just in case that first thing
+		is a fairly reliable sign, or indicator, of the truth or existence
+		of that second thing.
+	-   When using the reliable indicator sense of "evidence", we
+		should use the *state-of-affairs* or *factive* entities that
+		constitute evidence.
+		-   For example, there being 743 rings on the trunk of a given
+			tree is good evidence for the proposition that the tree is 743
+			years old.
+
+> Can a mental state qualify as good evidence under the proposed sense
+> of evidence?
+
+-   Certainly, if we tweak the proposal to read that *somebody's
+	being in a certain mental state* is the item of evidence. 
+-   Not all mental states with contents, however, are reliable indicators of
+	the truth of their contents.
+	-   Wish, imagining, fearing, and so forth, that $p$, may not be
+		reliable indicates of the truth of their contents.
+	-   Perhaps intuiting that $p$ is a reliable indicator for a suitably
+		delimited class of intuitings. 
+
+-   When a philosopher judges that a character in a Gettier case fails
+	know a proposition, the item of evidence isn't the philosopher's
+	intuitive judgement, it is the truth of the proposition so judged,
+	namely, that the character does not know.
+	-   Williamson contends that the psychological view:
+		1.  Misdescribes philosophical practice,
+		2.  Rests on a false principle about evidence
+		3.  Opens up an epistemologically unfortunate gap between the
+			thought-expermimental evidence and what it is supposed
+			to be evidence for.
+
+-   There is no room to respond to these worries in detail, but none of
+	them provide well-founded reason to reject a psychological approach
+	to intuitional evidence.
+
+### Indicator Reliability and Process Reliability
+
+-   Interesting case: there was an "ACE-V" method of fingerprint
+	running to match prints, which the FBI used, including the
+	best laboratories.
+	-   Upon investigating and statistical analysis, there was not
+		second-order evidence to suggest the evidence found with ACE-V
+		was any good at all.
+
+-   This illustrates that was is *taken* as evidence does not confer
+	*genuine* evidencehood, or at least not *good evidencehood*.
+	-   Just as the legal system should surely demand good second-order
+		evidence about the reliability of courtroom forensic testimony,
+		it is reasonable for philosopher to seek analogous tests to
+		obtain second-order evidence about the evidential quality of
+		philosophical methods[^9] 
+
+### The Negative Program of Experimental Philosophy
+
+> Exactly what experimental evidence challenges the reliability of
+> intuitions, specifically, singular classification intuitions?
+
+-   Singular classification intuitions are intuitive judgments that arise
+	when a person is aced whether a certain example is an instance of a
+	specific property or relation.
+	-   The interesting ones are knowledge, causation, and reference.
+	-   X-Phi practitioners of all strings use survey method to
+		compare and contrast intuitions of groups of respondents.
+
+Positive program
+
+:   Draw various kinds of inferences from differnces in responses, but
+	they don't fundamentally challenge the epistemologically soundness
+	of intuition-based method.
+
+:   > We certainly do not take ourselves to have offered anything 
+	> like a general proof of the unreliability of all 
+	> intuitions... (Alexander and Weinberg 2008: 153)
+
+Negative Program
+
+:   Try to find evidence that raises doubts about the quality go intuition
+	evidence.
+
+-   Experimental philosophers should be understood to be presenting 
+	second-order evidence in support of the proposition that intuitions
+	have first-order evidential status.
+-   There is room for skepticism, experts might have valid intuitions
+	while other intuitions are devoid of evidential value.
+
+<!-- ### A Framework for Studying Classification Judgments and Error Possibilities -->
+
+### Problems for Evidential Status under Free-Floating Classifiers-   The next class of classifiers I shall consider for philosophical
+	analysis are FFC,
+	-   Under any approach to the proper type of classifier, respondents
+		engaged in classification will need to execute two prior tasks to
+		be successful:
+		1.  Acquire a proper understanding of the case,
+		2.  Acquire a proper understanding of the classification.
+
+	-   To defend intuitional methodology, these must be possible.
+		-   The classifications?
+			1.  Knowledge
+			2.  Causation
+			3.  Object composition
+			4.  Personal identity[^10]-   If we have the requisite concepts to intuitively make judgements
+	about the anlsysis of philosophical objects, why should we engage
+	in point-counterpoint with intuitional methodology, we should just
+	*consult the faculties* we have.### Community-Specific Classifiers
+
+-   Given the bleak outlook of FFC, we should turn to "community-specific
+	classifiers."
+
+<!-- ### Processes of Classification Judgement: Preparatory and Final -->
+
+<!-- ### A Dispositional Conception of Classificational Competence -->### A Social-Epistemological Perspective on Intuitional Evidence
+
+> **(Basic evidence-possession)** If S is in a conscious mental 
+> state at t that is an evidential state, then S possesses that 
+> evidence at t.
+>> **(Non-basic evidence-possession)** If proposition p is true 
+> and S justifiably believes p at t, then S possesses p as an 
+> item of evidence at t.
+
+<!-- ### Intuitional Methodology and the A Priori -->
 
 November 18th, 2013 <small>Seminar</small>
 ------------------------------------------
@@ -2089,11 +2308,13 @@ December 2nd, 2013 <small>Seminar</small>
 
 *[JTB]: Justified true belief
 
-*[JTBs]: Justified true beliefs
+*[BIV]: Brain in a vat
 
-*[BIV]: Brain in a vat.
+*[X-Phi]: Experimental philosophy
 
-*[X-Phi]: Experimental philosophy.
+*[FFC]: Free-floating classifiers
+
+*[CCF]: Community-specific classifiers
 
 <!-- Footnotes -->
 
@@ -2130,3 +2351,7 @@ December 2nd, 2013 <small>Seminar</small>
     animal, it is not useful to question whether our perception is good,
     but we can engage in this question in moments of safety and luxury,
     but what we may be programmed might no longer fit.
+
+[^9]: And here we have a regress problem! Oh no!
+
+[^10]: These change with culture because they are normative! Oh no!
