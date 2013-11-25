@@ -2255,7 +2255,9 @@ Negative Program
 
 <!-- ### A Framework for Studying Classification Judgments and Error Possibilities -->
 
-### Problems for Evidential Status under Free-Floating Classifiers-   The next class of classifiers I shall consider for philosophical
+### Problems for Evidential Status under Free-Floating Classifiers
+
+-   The next class of classifiers I shall consider for philosophical
 	analysis are FFC,
 	-   Under any approach to the proper type of classifier, respondents
 		engaged in classification will need to execute two prior tasks to
@@ -2268,22 +2270,29 @@ Negative Program
 			1.  Knowledge
 			2.  Causation
 			3.  Object composition
-			4.  Personal identity[^10]-   If we have the requisite concepts to intuitively make judgements
+			4.  Personal identity[^10]
+
+-   If we have the requisite concepts to intuitively make judgements
 	about the anlsysis of philosophical objects, why should we engage
 	in point-counterpoint with intuitional methodology, we should just
-	*consult the faculties* we have.### Community-Specific Classifiers
+	*consult the faculties* we have.
+
+### Community-Specific Classifiers
 
 -   Given the bleak outlook of FFC, we should turn to "community-specific
 	classifiers."
 
 <!-- ### Processes of Classification Judgement: Preparatory and Final -->
 
-<!-- ### A Dispositional Conception of Classificational Competence -->### A Social-Epistemological Perspective on Intuitional Evidence
+<!-- ### A Dispositional Conception of Classificational Competence -->
+
+### A Social-Epistemological Perspective on Intuitional Evidence
 
 > **(Basic evidence-possession)** If S is in a conscious mental 
 > state at t that is an evidential state, then S possesses that 
 > evidence at t.
->> **(Non-basic evidence-possession)** If proposition p is true 
+>
+> **(Non-basic evidence-possession)** If proposition p is true 
 > and S justifiably believes p at t, then S possesses p as an 
 > item of evidence at t.
 
@@ -2292,8 +2301,136 @@ Negative Program
 November 18th, 2013 <small>Seminar</small>
 ------------------------------------------
 
+Occurrent 
+
+:   Present mental states
+
+Dispositional
+
+:   Stored mental states
+
+Intution
+
+:   Occurrent mental states, either intuitive judgments or non-doxastic
+	intellectual "seemings" or "attractions." Spontaneous, non-inferential.
+
+-   Mostly what we philosophically theorize about in the core branches of
+	philosophy, like epistemology, metaphysics, ethics, ..., these are
+	topics about which ordinary people think and deal and have some
+	competence.
+
+This is where empiricism and rationalism are injected into the
+the philosophical method debate, where the role of philosophers
+is to tease out relevant features for a concept and then "putting
+it to the vote" to the folk, and systematizing those intuition.
+Because the folk cannot theorize and the philosophers cannot intuit.
+
+-   There is a right answer, it is necessarily true
+-   We can get it from the armchair, before looking for evidence
+	-   The theory is hard and not easily accessible
+
+-   The answer is easily accessible to folk without theory
+-   Theorist cannot intuit and folk cannot theorize
+-   We have to go to the armchair for the necessarily true candidate theories
+-   We have to go to the laboratory to get the intuitions to refute candidates
+
+> What is the philosopher trying to do?
+
+-   General meaning or concept of knowledge.
+	-   There is some correct answer.
+		-   We used to think JTB.
+
+	-   Knowledge is a relation between a person and a proposition.
+		-   When does it hold?
+
+Classifiers | Epistemologically Possible? | Philosophical Desirability |
+------------|-----------------------------|----------------------------|
+PSC         | +                           | -                          |
+CSC         | +                           | -                          |
+FFC         | -                           | +                          |
+
 November 25th, 2013 <small>Chapter 11, 'Social Epistemology (Collective Epistemology)'</small>
 ----------------------------------------------------------------------------------------------
+
+
+### Some Terminology
+
+Disagree
+
+:   $S_1$ and $S_2$ *disagree* about $p$ just in case one believe
+	$p$ and the other believes $\lnot p$ 
+
+Reasonably disagree
+
+:   $S_1$ and $S_2$ *reasonably disagree* about $p$ just in case $S_1$
+	and $S_2$ disagree about $p$ and both are reasonable (or justified) in
+	their respective beliefs about $p$.
+
+Epistemic peers
+
+:   $S_1$ and $S_2$ are epistemic peers (with respect to a roman $D$) just
+	in case $S_1$ and $S_2$ are equally rational, knowledgeable, intelligent,
+	and evidentially informed about matters pertaining to $D$.
+
+Epistemic inferiority and superiority
+
+:   $S_1$ is $S_2$'s *epistemic inferior* and $S_2$ is $S_1$'s *epistemic
+	superior* with respect to a domain just in case $S_2$ is more rational
+	more intelligent, and more evidentially informed about matters pertaining
+	to $D$ than $S_1$.
+
+> If you have the general idea of what peer hood, it is not being
+> explained well by the usual definitions. For instance, consider the
+> actual peers that do not believe they are peers. Alternatively,
+> that the peers believe they are peers but are not justified in 
+> believing that (and it's false).
+
+![Goldman's picture of Peer Disagreement](../img/pic_se_pd.png)
+
+### The Problem
+
+-   What does rationality require or permit when known epistemic peers disagree
+	about $p$? What does it require or permit when:
+	1.  You and I are epistemic peers with regard to a domain;
+	2.  We are both aware of (1);
+	3.  You believe $p$ and I hold the opposite;
+	4.  We are both away of (3);
+	5.  We have compared notes and evaluated all relevant evidence with
+		respect to the matter[^11].
+
+> **(Liar Politician)**: A politician may have lied. You're convinced he
+> he did; I'm convinced he didn't. We have read the exact same evidence,
+> and know as much. Moreover, we acknowledge each other's epistemic 
+> peer-hood relation with respect to the issue. Still, we disagree over
+> the matter.
+
+Conciliationism
+
+:   The rational response in the above case is to suspend judgement/retreat
+	to agnosticism about the case[^12].
+	
+Equal Weight View
+
+:   In cases of peer disagreement, one should give equal weight to the opinion
+	of a peer and to one's own opinion.
+
+Steadfastness[^13]
+
+:   The rational response in the above case is to retain one's initial belief.
+
+### Conciliationism, Steadfastness, and Uniqueness
+
+-   An argument for Conciliationism:
+	1.  Epistemic peers disagree about $p$ at $t$.
+	2.  UT: For any proposition and body of evidence,
+		exactly one attitude is reasonable to take towards the proposition.
+	3.  If UT and (1), at least one person is in violation of the reasonable
+		attitude towards $p$.
+	4.  So our initial attitudes can't both be reasonable.
+	5.  Insofar as we acknowledge each other as peers, neither of us can
+		rationally conclude that the other is violation of the epistemic
+		principle concerning $p$.
+	6.  So, we should both suspend judgement.
 
 November 25th, 2013 <small>Seminar</small>
 ------------------------------------------
@@ -2315,6 +2452,8 @@ December 2nd, 2013 <small>Seminar</small>
 *[FFC]: Free-floating classifiers
 
 *[CCF]: Community-specific classifiers
+
+*[UT]: Uniqueness Thesis
 
 <!-- Footnotes -->
 
@@ -2345,7 +2484,7 @@ December 2nd, 2013 <small>Seminar</small>
     indicator. Mind-reading is believing that so or so is a mental
     state.
 
-[^8]: Heurestics fits nicely with process reliability, and I think that
+[^8]: Heuristics fits nicely with process reliability, and I think that
     in at least some way, our heuristics must be useful in abstracting
     something at sometime, for instance if we're be hunted by some other
     animal, it is not useful to question whether our perception is good,
@@ -2355,3 +2494,14 @@ December 2nd, 2013 <small>Seminar</small>
 [^9]: And here we have a regress problem! Oh no!
 
 [^10]: These change with culture because they are normative! Oh no!
+
+[^11]: What about when the domain is the criteria for peer hood, the
+	proposition is "$S_1$ and $S_2$ are peers." and $S_1$ and $S_2$
+	assent and dissent respectively.
+
+[^12]: There are two sense of suspension. There is the "time out" sense
+	of suspension, "Hold on! Let me think about this." And then there
+	chess. There is a difference between "no view" and "middle view."
+
+[^13]: What I think this is answering is "When is a peer's disagreeing
+	with me evidence sufficient to change my attitude?"
