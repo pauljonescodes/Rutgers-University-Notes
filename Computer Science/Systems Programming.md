@@ -2144,4 +2144,22 @@ November 8th, 2013 <small>Shared Memory</small>
 
 		int shmctl(int shmid, int cmd, struct shmid_ds *);
 
+November 14th, 2013 <small></small>
+----
+
+-   We have two ways of resolving an interesting problem:
+	1.  How does a program find out how big a peice of shared memory is?
+		-   These programs have *shared knowledge*.
+
+-   If the same process which creates the linked list also *accesses*
+	the linked list, that's fine.
+	-   On the other hand, if another process creates and another
+		acceses, big trouble.
+
+-   The idea is to say, "Oh, yeah, the idea is to have not pointers,
+	but offsets by which we access shared memory in multiple programs."
+-   *Do not put pointers in shared memory*.
+	-   *Array is a **really good idea***.
+
+
 *[API]: Application Programming Interface

@@ -1307,12 +1307,25 @@ November 13th, 2013 <small>3rd Meeting on Dretske/Hawthorne</small>
 	6.  $A \equiv (A \land B)$
 3.  $K_S (A \land B) \to K_S B$
  
-November 18th, 2013 <small>Reading: C, Vogel/Fumerton, 72-97</small>
---------------------------------------------------------------------
+November 18th, 2013 <small>Equivilence and the Distribution of Knowledge</small>
+--------------------------------------------------------------------------------
 
+-   There are going to be conjuctions that a subject knows but you do
+	not know each conjunct.
+	-   Ex: "I have a headache and I am not a BIV."
+		-   Dretske's account is: $p$ on the basis of $r$ where $r$ is
+			a *conclusive reason* for believing $p$.
 
-November 11th, 2013 <small>1st Meeting on Closure</small>
--------------------------------------------------------------------------------------
+$H$ | $\land$ | $\lnot$ BIV |
+----|---------|-------------|
+F | F | T |
+T | F | F |
+F | F | F |
+T | T | T |
+
+> To take skepticsm seriously is not to seriously think you do not
+> know you're a BIV. You have to employ principles that correctly
+> formulate knowledge.
 
 
 
