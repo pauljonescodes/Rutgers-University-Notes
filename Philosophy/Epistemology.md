@@ -1307,10 +1307,10 @@ November 13th, 2013 <small>3rd Meeting on Dretske/Hawthorne</small>
 	6.  $A \equiv (A \land B)$
 3.  $K_S (A \land B) \to K_S B$
  
-November 18th, 2013 <small>Equivilence and the Distribution of Knowledge</small>
+November 18th, 2013 <small>Equivalence and the Distribution of Knowledge</small>
 --------------------------------------------------------------------------------
 
--   There are going to be conjuctions that a subject knows but you do
+-   There are going to be conjunctions that a subject knows but you do
 	not know each conjunct.
 	-   Ex: "I have a headache and I am not a BIV."
 		-   Dretske's account is: $p$ on the basis of $r$ where $r$ is
@@ -1323,11 +1323,39 @@ T | F | F |
 F | F | F |
 T | T | T |
 
-> To take skepticsm seriously is not to seriously think you do not
+> To take skepticism seriously is not to seriously think you do not
 > know you're a BIV. You have to employ principles that correctly
 > formulate knowledge.
 
 
+November 25th, 2013 <small></small>
+----
+
+-   You have to add lines of code that account for modal truths, because
+	otherwise it does not appear to be the case or something.
+-   Virtues of theory:
+	-   Consistency
+	-   Simplicity
+
+-   William Lyram
+	-   "Occam's Razor", Metaphilosophy
+	-   "Epistemic Value", 
+
+-   The evidence chain:
+	$$E \to H \to H \lor \lnot E$$
+
+> If I am justified in believing something, then I am entitled to
+> use it for something else.
+
+-   If $eJh$, what justifies me in believing not BIV is $h$ (not $e$!).
+-   Argument:
+	-   Sally is a clever car theif in stealing car C
+	-   Sally, by being a clever car theif:
+		-   Garages it
+		-   Has friends that say she owns it
+		-   Has the title
+
+	-   You can have some evidence that can justify you in
 
 *[BIV]: Brain in a vat 
 *[EDD]: Evil demon deceived
