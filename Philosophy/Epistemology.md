@@ -1357,5 +1357,35 @@ November 25th, 2013 <small></small>
 
 	-   You can have some evidence that can justify you in
 
+December 2nd, 2013
+----
+
+Internal properties
+
+:   A property of a mind.
+
+External properties
+
+:   A property of no mind.
+
+
+Domestic skepticism
+
+:   Take what we think knowledge is and what governs it. For example,
+	this is a principle that describes what we thing knowledge is:
+
+	$$Kp \land (p \to q) \to K_{position\_to} q$$
+
+	Domestic skepticism responds to knowledge on our everyday terms.
+	
+:   Appeals to our intuitions about what knowledge is
+
+Exotic skepticism
+
+:   Exotic skepticism defines knowledge and show that the definition is
+	unsatisfiable.
+
+
+
 *[BIV]: Brain in a vat 
 *[EDD]: Evil demon deceived

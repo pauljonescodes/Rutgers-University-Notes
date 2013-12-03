@@ -2358,7 +2358,7 @@ November 25th, 2013 <small>Chapter 11, 'Social Epistemology (Collective Epistemo
 Disagree
 
 :   $S_1$ and $S_2$ *disagree* about $p$ just in case one believe
-	$p$ and the other believes $\lnot p$ 
+	$p$ and the other believes $\lnot p$[^14]
 
 Reasonably disagree
 
@@ -2379,11 +2379,24 @@ Epistemic inferiority and superiority
 	more intelligent, and more evidentially informed about matters pertaining
 	to $D$ than $S_1$.
 
-> If you have the general idea of what peer hood, it is not being
-> explained well by the usual definitions. For instance, consider the
-> actual peers that do not believe they are peers. Alternatively,
-> that the peers believe they are peers but are not justified in 
-> believing that (and it's false).
+Peerhood
+
+:   > If you have the general idea of what peer hood, it is not being
+	> explained well by the usual definitions. For instance, consider the
+	> actual peers that do not believe they are peers. Alternatively,
+	> that the peers believe they are peers but are not justified in 
+	> believing that (and it's false).
+
+:   Feldman (2007): intelligence; reasoning powers; background information, etc.
+
+:   Goldman (2012): Feldman’s (above) criteria; both parties exchange 
+	evidence and discuss the matter; neither party withholds information 
+	from the other
+
+:   Kelly (2010): parties should assess relevant evidence equally well; 
+	they should have comparable track records in making reliable 
+	judgments in the relevant domain.
+
 
 ![Goldman's picture of Peer Disagreement](../img/pic_se_pd.png)
 
@@ -2432,14 +2445,37 @@ Steadfastness[^13]
 		principle concerning $p$.
 	6.  So, we should both suspend judgement.
 
-November 25th, 2013 <small>Seminar</small>
-------------------------------------------
+> **The Total Evidence View**: “... what it is reasonable to believe 
+> depends on both the original, first-order evidence as well as 
+> on the higher-order evidence that is afforded by the fact that 
+> one’s peers believe as they do” (p. 33).  
+
+-   Conciliationism is self-undermining
+	-   Disagreement about disagreement: conciliationism would “call 
+		for its own rejection”
+	-   This is incoherent: conciliation would seem to recommend 
+		taking an action that would suggest that it is false.
 
 December 2nd, 2013 <small>Chapter 11, part II, 'Social Epistemology (Institutional Social Epistemology)'</small>
 ----------------------------------------------------------------------------------------------------------------
 
 December 2nd, 2013 <small>Seminar</small>
 -----------------------------------------
+
+### Terminology
+
+Belief aggregation function
+
+:   At least for a certain range of groups it is natural to think that a 
+	group’s doxastic attitude toward a given proposition is grounded in 
+	(or supervenes on) the doxastic attitudes of its members.  We can 
+	represent such a grounding or supervenience relation in terms of 
+	a function, or mapping, from beliefs of the members into a belief 
+	of the group. 
+
+
+Intrapersonal justification transmission
+
 
 <!-- Acronyms -->
 
@@ -2505,3 +2541,5 @@ December 2nd, 2013 <small>Seminar</small>
 
 [^13]: What I think this is answering is "When is a peer's disagreeing
 	with me evidence sufficient to change my attitude?"
+
+[^14]: Note: Disagreement requires that S1 and S2 hold two positive, yet incompatible, doxastic attitudes toward p. To affirm that p is to positively believe that p is true (and thereby to believe that its negation is false). To deny that p is to positively believe that ¬ p is true (and thereby to believe that its negation is false).

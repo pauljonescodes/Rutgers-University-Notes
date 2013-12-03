@@ -1731,6 +1731,215 @@ November 14th <small>NoSQL class</small>
 November 19 <small>Redemption Quiz</small>
 ------------------------------------------
 
+### Study
+
+#### [How to use functional dependancies to determine keys](http://www.youtube.com/watch?v=s1DNVWKeQ_w)
+
+-   If an attribute only appears on the left hand side of a set of dependancies,
+	it is part of every key.
+-   If an attribute only appears on the right hand side of a set of dependancies,
+	it is part of not key.
+-   If it is in middle, it could be but might not be.
+
+-   Consider:
+
+		R(ABCD)
+		F { AB -> C, C -> B, C -> D }
+
+Left | Middle | Right
+-----|--------|-------
+A | BC | D
+
+> A is not the key because it does not determine every attribute.
+
+-   `AB` is a key, but we also have the try the other attribute.
+-   Let's look at `AC+` closure
+
+-   Consider:
+
+		R(ABC)
+
+		FD = { A -> B, B -> C, C -> A }
+
+-   Everything is in the middle!
+	-   We have to try the attributes one at a time, then two at a time,
+		then three at a time.
+
+			A+ = ABC
+			B+ = ABC
+			C+ = ABC
+
+P | NP
+--|----
+ABCD | NA 
+
+#### [First and Second Normal Forms](http://www.youtube.com/watch?v=cbJ-xaBfWLM)
+
+-   What is a normal form?
+	-   Informally, it is a way of formatting a database.
+	-   The higher the form, the more constraints there are.
+
+##### 1NF
+
+-   All attributes are atomic.
+-   One value per cell.
+-   Consider:
+
+	Course | Student
+	-------|--------
+	Database | Bob
+	 | Joe
+	 | Sue
+	Math | Tim
+	 | Mary
+
+-   To make this in `INF`:
+
+	Course | Student
+	-------|--------
+	Database | Bob
+	Database | Joe
+	Database | Sue
+	Math | Tim
+	Math | Mary
+
+##### 2NF
+
+> Let $R$ be a relation schema with FDs $F$.
+> Let **$X$ be a set of attributes** of $R$ and 
+> $A$ is a **non-prime attribute** not in $X$.
+> Then $R$ is in `2NF` if whenever $X \to A \in F+$,
+> then $X$ is not a proper subset of any key. 
+
+-   "How do we know if a relation table is in `2NF`?" Consider:
+
+		R(ABCDE)
+		F = { ABD -> C, BC -> D, CD -> E }
+
+	Left | Middle | Right
+	-----|--------|------
+	AB | CD | E
+
+	-   `AB+ = { }`
+	-   `ABC+ = { ABCDE }`
+	-   `ABD+ = { ABCDE }`
+
+	Prime | Non-Prime
+	------|----------
+	`ABCD` | `E`
+
+	-   By our definition of `2NF`, the way you violate `2NF`, you have a 
+		FD where the right-hand side is non-prime and not part of $X$ and
+		left hand side is a proper subset of a key.
+		-   Our keys our `ABC` and `ABD`
+
+#### [Third Normal Form and Database Design Shortcuts](http://www.youtube.com/watch?v=nUbp9MRN0To)
+
+-   If $A$ is non-prime, $X$ has to be a super key.
+
+### Quiz 1
+
+### Quiz 2
+
+### Quiz 5
+
+#### Question 1
+
+> Consider a relation $R = (ABCD)$, for each of the following sets 
+> of functional dependencies, do the following (4 questions for 
+> **each** set of FDs):
+> 
+> 1.  Compute.[^1]
+> 2.  Specify all of the candidate keys.
+> 3.  Identify whether R is in BCNF?
+> 4.  If R is not in BCNF, decompose it into a collection of BCNF relations.
+
+
+1.  $FD = \lbrace B \to C, D \to A \rbrace$
+	1.  Compute `AB+`
+		-   This is a closure, which means see what you "can get with"
+			A and B.
+		-   You get AB by *reflexivity*.
+		-   You get C by the fact you have B.
+		-   `AB+ = { A, B, C }`
+
+	2.  Specify all of the candidate keys.
+		-   Consider:
+
+			Left | Middle | Right 
+			-----|--------|-------
+			B D  | | A C 
+
+		-   The only key is BD.
+
+	3.  Identify whether R is in BCNF?
+		-   You can check to see if every closure of a left hand side of 
+			a FD is equal to all attributes in the relation.
+		-   $B+ = BC$
+			-   Not a superkey.
+
+		-   $D+ = DA$
+			-   Not a superkey.
+
+	4.  If R is not in BCNF, decompose it into a collection of BCNF 
+		relations.
+
+
+2.  $FD = \lbrace C \to D, C \to A, B \to C \rbrace$
+	1.  $AB+ = ABCD$
+	2.  For keys, consider:
+
+		Left | Middle | Right 
+		-----|--------|------
+		| B | C | AD
+
+		-   B is every key.
+		-   C could be in any key.
+		-   AD are in no keys.
+		-   B is the only key.
+
+3.  $FD = \brace ABC \to D, D \to A \rbrace$
+	1.  $AB+ = AB$
+	2.  For keys, consider:
+
+		Left | Middle | Right
+		-----|--------|------
+		BC | AD | 
+
+		-   It can be BCD or ABC.
+
+### Quiz 6
+
+#### Question 1
+
+> For each of the following schedules, state whether they are serializable and whether they are conflict-serializable. For each schedule, draw the corresponding precedence graph. If the schedule is conflict-serializable, show all the conflict-equivalent serial schedules. If the schedule is not serializable, provide an example to show that no serial schedule has the same effect as given schedule.
+
+1.  S = r1 (A); r2 (A); w1 (A); w2 (A)
+
+$T_1$ | $T_2$
+------|------
+r(A)  |  
+      | r(A)
+w(A)  | 
+      | w(A)
+
+> 1.  For each transaction $T_i$ participating in schedule $S$, create a 
+> node labelled $T_i$ in the precedence graph.
+> 2.  For each case in $S$ where $T_i$ executes a `write_item(X)` then $T_j$
+> executes a `read_item(X)`, create an edge ($T_i \to T_j$) in the 
+> precedence graph. 
+> 3. For each case in $S$ where $T_i$ executes a `read_item(X)` then $T_j$ 
+> executes a
+> `write_item(X)`, create an edge ($Ti \to Tj$) in the precedence graph. 
+> This will bring to front a directed graph from $T_1$ to $T_2$.
+> 4. For each case in $S$ where $T_i$ executes a `write_item(X)` then $T_j$ 
+> executes a `write_item(X)`, create an edge ($T_i \to T_j$) in the 
+> precedence graph. 
+> 5. The schedule $S$ is serializable if the precedence graph has no 
+> cycles.
+>
+> <footer>- [Wikipedia](http://en.wikipedia.org/wiki/Precedence_graph)</footer>
+
 November 21 <small>The "Interview"</small>
 ------------------------------------------
 
@@ -1742,3 +1951,5 @@ December 5th <small>Class Projects Presentations</small>
 
 December 10th <small>Project Finalists and Crowning of the Winner</small>
 ------------------------------------------------------------------------
+
+[^1]: Compute what? It seems to be `AB+`.
