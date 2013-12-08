@@ -2456,9 +2456,6 @@ Steadfastness[^13]
 	-   This is incoherent: conciliation would seem to recommend 
 		taking an action that would suggest that it is false.
 
-December 2nd, 2013 <small>Chapter 11, part II, 'Social Epistemology (Institutional Social Epistemology)'</small>
-----------------------------------------------------------------------------------------------------------------
-
 December 2nd, 2013 <small>Seminar</small>
 -----------------------------------------
 
@@ -2473,8 +2470,9 @@ Belief aggregation function
 	a function, or mapping, from beliefs of the members into a belief 
 	of the group. 
 
+December 5th, 2013 <small>Notes on Second Paper</small>
+-------------------------------------------------------
 
-Intrapersonal justification transmission
 
 
 <!-- Acronyms -->
