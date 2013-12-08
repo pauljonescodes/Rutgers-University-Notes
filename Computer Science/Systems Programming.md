@@ -2162,4 +2162,233 @@ November 14th, 2013 <small></small>
 	-   *Array is a **really good idea***.
 
 
+December 5th, 2013 <small>Lecture</small>
+-----------------------------------------
+
+### Exam topics
+
+1. mutex locks
+2. signal locks
+3. signal handling
+4. multiprogramming, fork, exec, wait
+5. shell scripting
+6. shared memory
+7. pointers to functions
+8. deadlock
+9. semaphores
+
+### Shell Programming
+
+-   All programs return signal numbers back to the shell.
+-   They use exit, return.
+-   The if, while, for, until return an exit status.
+	-   The last symbol command
+
+-   Pipelines and lists
+	-   The exit status is captured in the `\$?`
+
+
+#### Tests
+
+| Flag | Function 
+| -----|----------
+| `-e` | file exists
+| `-a` | file exists[^1]
+| `-f` | file is a *regular* file (not a directory or device file)
+| `-s` | file is not zero size
+| `-d` | file is a directory
+| `-b` | file is a block device
+| `-c` | file is a character device
+| `-p` | file is a pipe
+| `-h` | file is a [symbolic link](basic.html#SYMLINKREF)
+| `-L` | file is a symbolic link
+| `-S` | file is a [socket](devref1.html#SOCKETREF)
+| `-t` | file descriptor is associated with a terminal device
+| `-r` | file has read permission (_for the user running the test_)
+| `-w` | file has write permission (for the user running the test)
+| `-x` | file has execute permission (for the user running the test)
+| `-g` | set-group-id (sgid) flag set on file or directory
+| `-u` | set-user-id (suid) flag set on file
+| `-k` | *sticky bit* set
+| `-O` | you are owner of file
+| `-G` | group-id of file same as yours
+| `-N` | file modified since it was last read
+| `f1 -nt f2` | file `f1` is newer than `f2`
+| `f1 -ot f2` | file `f1` is older than `f2`
+| `f1 -ef f2` | files `f1` and `f2` are hard links to the same file
+
+#### Functions via (Tutorials Point)[http://www.tutorialspoint.com/unix/unix-shell-functions.htm]
+
+Functions enable you to break down the overall functionality of a script into
+smaller, logical subsections, which can then be called upon to perform their
+individual task when it is needed.
+
+Using functions to perform repetitive tasks is an excellent way to create code
+reuse. Code reuse is an important part of modern object-oriented programming
+principles.
+
+Shell functions are similar to subroutines, procedures, and functions in other
+programming languages.
+
+##### Creating Functions:
+
+To declare a function, simply use the following syntax:    
+    
+    function_name () { 
+       list of commands
+    }
+    
+
+The name of your function is function_name, and that's what you will use to
+call it from elsewhere in your scripts. The function name must be followed by
+parentheses, which are followed by a list of commands enclosed within braces.
+
+##### Example:
+
+Following is the simple example of using function:
+    
+    #!/bin/sh
+    
+    # Define your function here
+    Hello () {
+       echo "Hello World"
+    }
+    
+    # Invoke your function
+    Hello
+    
+When you would execute above script it would produce following result:
+ 
+    $./test.sh
+    Hello World
+    $
+    
+
+##### Pass Parameters to a Function:
+
+You can define a function which would accept parameters while calling those
+function. These parameters would be represented by $1, $2 and so on.
+
+Following is an example where we pass two parameters _Zara_ and _Ali_ and then
+we capture and print these parameters in the function.
+    
+    #!/bin/sh
+    
+    # Define your function here
+    Hello () {
+       echo "Hello World $1 $2"
+    }
+    
+    # Invoke your function
+    Hello Zara Ali
+    
+This would produce following result:
+
+    $./test.sh
+    Hello World Zara Ali
+    $
+    
+##### Returning Values from Functions:
+
+If you execute an exit command from inside a function, its effect is not only
+to terminate execution of the function but also of the shell program that
+called the function.
+
+If you instead want to just terminate execution of the function, then there is
+way to come out of a defined function.
+
+Based on the situation you can return any value from your function using the
+**return** command whose syntax is as follows:
+  
+    return code
+    
+Here _code_ can be anything you choose here, but obviously you should choose
+something that is meaningful or useful in the context of your script as a
+whole.
+
+##### Example:
+
+Following function returns a value 1:
+    
+    #!/bin/sh
+    
+    # Define your function here
+    Hello () {
+       echo "Hello World $1 $2"
+       return 10
+    }
+    
+    # Invoke your function
+    Hello Zara Ali
+    
+    # Capture value returnd by last command
+    ret=$?
+    
+    echo "Return value is $ret"
+
+This would produce following result:
+    
+    $./test.sh
+    Hello World Zara Ali
+    Return value is 10
+    $
+    
+
+##### Nested Functions:
+
+One of the more interesting features of functions is that they can call
+themselves as well as call other functions. A function that calls itself is
+known as a _recursive function_.
+
+Following simple example demonstrates a nesting of two functions:
+    
+    #!/bin/sh
+    
+    # Calling one function from another
+    number_one () {
+       echo "This is the first function speaking..."
+       number_two
+    }
+    
+    number_two () {
+       echo "This is now the second function speaking..."
+    }
+    
+    # Calling function one.
+    number_one
+    
+This would produce following result:
+    
+    This is the first function speaking...
+    This is now the second function speaking...
+    
+
+##### Function Call from Prompt:
+
+You can put definitions for commonly used functions inside your _.profile_ so
+that they'll be available whenever you log in and you can use them at command
+prompt.
+
+Alternatively, you can group the definitions in a file, say _test.sh_, and
+then execute the file in the current shell by typing:
+    
+    $. test.sh
+    
+This has the effect of causing any functions defined inside test.sh to be read
+in and defined to the current shell as follows:
+
+    $ number_one
+    This is the first function speaking...
+    This is now the second function speaking...
+    $
+    
+To remove the definition of a function from the shell, you use the unset
+command with the .f option. This is the same command you use to remove the
+definition of a variable to the shell. 
+    
+    $unset .f function_name
+    
+
+[^1]: This is identical in effect to -e. It has been "deprecated," and its use is discouraged.
+
 *[API]: Application Programming Interface

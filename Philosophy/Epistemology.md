@@ -1385,7 +1385,238 @@ Exotic skepticism
 :   Exotic skepticism defines knowledge and show that the definition is
 	unsatisfiable.
 
+December 4th, 2013 <small>Reading on Contextualism with Connee/Cohen</small>
+-------------------------------------------------------------------------
 
+### Contextualism Contested (from Jennifer Nagel)[http://www.utm.utoronto.ca/~nageljen/333/]
+
+Some terms have a content that is uncontroversially context-dependent:
+the truth-conditions of sentences involving these terms depends on their
+context of use.
+
+**Indexicals** are the clearest examples. Terms like I, he, you,
+here and tomorrow pick out different things depending on the
+identity or location of the speaker. The sentence I will be here
+tomorrow might be true, if said by George in the Oval Office today and
+false, if said by Bob Dylan in Montreal yesterday. No contradiction
+arises here: *what is said* by the sentence varies with the context. A
+term like I has a single sense or meaning (= the person speaking) but
+refers to different individuals in different contexts.
+
+**Demonstratives** like this and that are also context-sensitive.
+
+**Gradable adjectives** like tall, empty, and flat also seem to be
+context-sensitive. When you mention that someone is tall, it matters
+whether you are doing this evaluation in the context of a discussion of
+NBA players or seven-year-olds. (Weve already seen in Dretske some
+discussion of flat and empty as terms that are supposed to be
+associated with a standard that varies across different contexts, and
+the related .)
+
+**Quantifiers** like every are also often understood to have a scope
+determined by conversational context. You can say, I cleaned everything
+up or Everyone was invited to the party without implying that you
+cleaned everything in the universe or invited the entire population of
+the earth. 
+
+Note that you could be an *invariantist* about quantifiers, take
+every use of a quantifier to have an utterly unrestricted domain, and
+argue that most of the time we are using quantifiers loosely, so the
+person who says I cleaned everything up is saying some that is
+strictly speaking or literally false, like the person who says Im so
+hungry I could eat an ox. The practical implications of the statement
+are what matter. One advantage of invariantism: the stickler who comes
+in and says, No, you didnt clean up *everything -- * you didnt clean
+up the dark side of the moon is obviously an annoying person, but still
+seems to be saying something true. Contextualists have to say that the
+loose claim and the sticklers rebuttal dont really contradict each
+other, if the context has changed, but does this make sense of the
+sticklers response?
+
+According to Conee, **epistemic contextualism** arises as an attempt to
+make sense of a pattern of variation in how we attribute knowledge. We
+are confident about saying people know various things when stakes are
+low, and become gradually less confident when stakes are higher or
+hitherto unmentioned possibilities of error are made salient. There is a
+widespread inclination to start doubting that anyone knows anything when
+skeptical arguments are pressed.
+
+Taking account of these patterns, you could think that (1) **standards
+are fixed, and very high**  so the man in the street is wrong to think
+he *knows *where has car is parked, or even whether he has hands; (2)
+**standards are fixed and low**  so you do know where your car is even
+if youre not looking at it this instant, and people who start doubting
+that they know things when confronted by skeptical arguments are just
+making a mistake and should go ahead and assert that they know things,
+or (3) **standards shift**: the guy in the street is right to say he
+knows where his car is, because he remembers parking it on level P3, and
+the guy in the epistemology seminar is right to say that no one knows
+whether or not they have hands, since we cant rule out the possibility
+that we are bodiless brains in a vat.
+
+Conee argues that you could go for option (1) **high standards**, and
+explain our casual use of knows by appeal to loose talk.
+
+Conee thinks that even if option (3) explains our everyday use of
+knows, if we are interested in what *knowledge really is, *then we are
+always in a high- standards context when we are engaged in philosophical
+discussions of knowledge, so contextualism doesnt tell us anything
+special about the nature of knowledge itself. All contextualism will do
+is tell us not to take too seriously data about casual ascriptions of
+knowledge, but thats not a very surprising warning.
+
+More seriously, Conee thinks that (3) doesnt do justice to the worries
+of skepticism; the skeptic doesnt want at the end of the day to be
+told, Youre right. And the guy in the street who thinks he knows
+things is also right.
+
+Conee is also worried about our apparent lack of awareness of the shifts
+in truth-conditions for knows. Why?
+
+### Contextualism Defended (from Jennifer Nagel)[http://www.utm.utoronto.ca/~nageljen/333/]
+
+**Stewart Cohen: Contextualism Defended**
+
+> **The skeptical paradox**
+> 
+> 1.  I know that P.
+> 2.  I do not know that not-H.
+> 3.  I know that P only if I know that not-H.
+
+-   Conclusions:
+	1.  (1), (2), and (3) all initially appear to be true. 
+	2.  (1), (2), and (3) appear to be in conflict.
+
+-   Low-standards invariantists think that (1) and (3) are TRUE and (2)
+    is false.
+-   High-standards invariantists think that (2) and (3) are TRUE and (1)
+    is false.
+-   Those denying closure (Dretske, Nozick) think that (1) and (2) are
+    TRUE and (3) is false.
+-   Contextualists think that in low stakes contexts (1) and (3) are
+    true and (2) is false; in high-stakes contexts (2) and (3) are true
+    and (1) is false.
+
+> What mistake are we making when we fall into the skeptical paradox?
+
+1.  Low-standards invariantists think that (1) and (3) are TRUE and 
+	(2) is false.
+2.  High-standards invariantists think that (2) and (3) are TRUE and 
+	(1) is false.
+3.  Those denying closure (Dretske, Nozick) think that (1) and 
+	(2) are TRUE and (3) is false.
+
+Contextualists think that the real mistake is (B)  the supposition that
+the original claims are in conflict. In some contexts (1) and (3) are
+true and (2) is false, in others (2) and (3) are true and (1) is false.
+Usually you dont make claims (1) and (2) within a single context  if
+you are talking about skepticism you dont claim (1), and if you are
+making a common sense claim, you dont claim (2). For each of claims (1)
+ (3), in the context where youd most often make that claim, it would
+be true. There is no conflict between the truth of these claims in the
+different contexts in which they are typically made.
+
+-   Cohen argues:
+	-   The high-standards invariantist cant explain why in skeptical contexts
+we really want to deny (1).
+-   Not all philosophical contexts involve denying claims like (1).
+-   Contextualism does have to explain why we dont immediately see that
+(1)-(3) arent really in conflict; Cohen argues that the explanation
+here is similar to the one called for in explaining our
+shifting-standards use of terms like flat.
+
+### Contextualism Contested
+
+Semantic contextualism
+
+:   Something semantic about a symbol varies with some differences in context 
+	that involves tokens of the symbol.
+
+:   Sentence *tokens* of the same *type* have different truth conditions.
+
+:   Some differences in the contextt where a sentence is used affect which
+	conditions about the world must obtain for the use of the sentence
+	to state truth.
+
+Indexical expressions
+
+:   Undoutedly contextual
+
+	> I am happy.
+
+#### Epistemic Contextualism
+
+> **(EC)** Broadly speaking, what varies with some difference 
+> in the context in
+> which "knows" is used is the strength of the epistemic position
+> that the subject of the sentence must be in, in order for the sentence
+> to assert a truth.
+
+Heart of Contextualism
+
+:   In the context of everyday life, the conditions knowledge attributions
+	are loose enough to be met easily.
+
+:   Skepticism somehow gives rise to truth conditions that are unsatifiable.
+
+#### Loose Talk
+
+-   Knowledge attributions have the same truth conditions, but people apply
+	contextually varying standards for making the attributions[^1].
+-   To tease this out, ask people "Do you *really and truly* know $p$?"
+
+#### Strict Truth	
+
+-   The fact that contextualism is true says nothing about the philosophical
+	issue of knowledge. (Does it answer the paradox? No.)
+	-   All philosophical discussion is carried out in the best context.
+	-   The "really and truly" context.
+
+-   EC leaves epistemological issues unresolved.
+
+### Contextualism Defended
+
+#### Alternative Accounts
+
+-   The two theses of contextualism:
+
+> (a) Ascriptions of knowledge are context - attributor - sensitive.
+> 
+> (b) The context-sensitivity of knowledge ascriptions provides the
+> basis for resolving the skeptical paradox.
+
+-   Connee challenges (a) by arguing for alternative explanations.
+	-   There is no intuitive reason, Connee says, to support contextualism
+		over this altnerative. 
+		-   But no, it's not about intuition, it's just not as good.
+		-   For instance, the accounts cannot account for "really and truly"
+			contexts.
+
+-   Connee is right that nothing strictly follows from EC, and (b) is logically
+	stronger than (a) (that is, harder to satisfy, more needs to obtain).
+	-   The method we should use to evaluate contextualism is how the proposals
+		differ in resolving the paradox.
+
+-   The contextualism can concede that the falsity of the contextualist solution
+	to the skeptical paradox is consistent with the thesis that ascriptions
+	of knowledge are context-sensitive.
+-   Futhermore, if the correct theory tells us something that conflicts with
+	intuition, how does it account for those intuitions?
+-   The second proposal is that philosophy has a single context and so nothing
+	about contextualism truth confers information about other issues.
+	-   How do we explain the shiftiness of our knowledge ascriptions in a way
+		that avoid skepticism while explaining its appeal?
+		-   EC proposes a way in terms of contextual shifting truth 
+			conditions.
+		-   Connee's view does not do this.
+
+#### Is the Contextualism Model Coherent?
+
+-   Explanatory power does not hold for much is the model is incoherent.
 
 *[BIV]: Brain in a vat 
 *[EDD]: Evil demon deceived
+*[EC]: Epistemological contextualism
+
+[^1]:  This really isn't very far from the contextualist thesis. "Not true
+	*in theory* but true *in practice*" or akin?
