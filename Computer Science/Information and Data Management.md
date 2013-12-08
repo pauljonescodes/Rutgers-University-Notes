@@ -1882,7 +1882,17 @@ ABCD | NA
 			-   Not a superkey.
 
 	4.  If R is not in BCNF, decompose it into a collection of BCNF 
-		relations.
+		relations.i
+		-   For B to C, R(BC)
+			-   B+ = BC, {B -> C} (In BCNF) 
+			-   -B+ = ABD, {A -> D} (Not in BCNF)
+
+		-   For D to A
+			-   D+ = AD, {D -> A} (In BCNF)
+			-  	-D+ = DBC, {B -> C} (Not in BCNF)
+				-   For B to C, (BC) and (BD) {} (In BCNF)
+
+		-   {BC, AD, BD}
 
 
 2.  $FD = \lbrace C \to D, C \to A, B \to C \rbrace$
@@ -1891,14 +1901,23 @@ ABCD | NA
 
 		Left | Middle | Right 
 		-----|--------|------
-		| B | C | AD
+		 B | C | AD
 
 		-   B is every key.
 		-   C could be in any key.
 		-   AD are in no keys.
 		-   B is the only key.
+	
+	3.  It is not in BCNF because none of the left hand sides in
+		the FDs are superkeys.
+	4.  Lets decompose it to BCNF relations:
+		-   $C \to D$ violates
+			-   LSH+ = ACD {C -> D, C -> A}, in BCNF
+			-   LSH- = BC, {B -> C}, in BCNF
 
-3.  $FD = \brace ABC \to D, D \to A \rbrace$
+		-   The decompisition is {ACD, BC}
+
+3.  $FD = \lbrace ABC \to D, D \to A \rbrace$
 	1.  $AB+ = AB$
 	2.  For keys, consider:
 
@@ -1916,29 +1935,79 @@ ABCD | NA
 
 1.  S = r1 (A); r2 (A); w1 (A); w2 (A)
 
-$T_1$ | $T_2$
-------|------
-r(A)  |  
-      | r(A)
-w(A)  | 
-      | w(A)
+	$T_1$ | $T_2$
+	------|------
+	r(A)  |  
+		  | r(A)
+	w(A)  | 
+		  | w(A)
 
-> 1.  For each transaction $T_i$ participating in schedule $S$, create a 
-> node labelled $T_i$ in the precedence graph.
-> 2.  For each case in $S$ where $T_i$ executes a `write_item(X)` then $T_j$
-> executes a `read_item(X)`, create an edge ($T_i \to T_j$) in the 
-> precedence graph. 
-> 3. For each case in $S$ where $T_i$ executes a `read_item(X)` then $T_j$ 
-> executes a
-> `write_item(X)`, create an edge ($Ti \to Tj$) in the precedence graph. 
-> This will bring to front a directed graph from $T_1$ to $T_2$.
-> 4. For each case in $S$ where $T_i$ executes a `write_item(X)` then $T_j$ 
-> executes a `write_item(X)`, create an edge ($T_i \to T_j$) in the 
-> precedence graph. 
-> 5. The schedule $S$ is serializable if the precedence graph has no 
-> cycles.
+	> 1.  For each transaction $T_i$ participating in schedule $S$, create a 
+	> node labelled $T_i$ in the precedence graph.
+	> 2.  For each case in $S$ where $T_i$ executes a `write_item(X)` then $T_j$
+	> executes a `read_item(X)`, create an edge ($T_i \to T_j$) in the 
+	> precedence graph. 
+	> 3. For each case in $S$ where $T_i$ executes a `read_item(X)` then $T_j$ 
+	> executes a
+	> `write_item(X)`, create an edge ($Ti \to Tj$) in the precedence graph. 
+	> This will bring to front a directed graph from $T_1$ to $T_2$.
+	> 4. For each case in $S$ where $T_i$ executes a `write_item(X)` then $T_j$ 
+	> executes a `write_item(X)`, create an edge ($T_i \to T_j$) in the 
+	> precedence graph. 
+	> 5. The schedule $S$ is serializable if the precedence graph has no 
+	> cycles.
+
+	-   In short, if there is a **write then a read**, a **read then a write**,
+		or a **write then a write**, that is anything to do with a write, 
+		for any given two times, add an edge.
+	-   I'm seeing nothing wrong with the first two rows of the table above,
+		but then there is read and then a write, and then a write then a write.
+		-   That makes a cycle. Not conflict serializable.
+
+2.  $S = r_1 (A), r_2 (B), w_3 (A), r_2 (A), r_1 (B)$
+
+	$T_1$ | $T_2$ | $T_3$ 
+	------|-------|------
+	r(A)  |       |
+	      | r(B)  |       
+	      |       | w(a)
+	      | r(A)  |
+	r(B)  |       |     
+
+	![Precedence graph for question 2](../img/cs-336-pgraph1.png){.img-small}
+
+	-   No cycles, no conflict serializable.i
+	-   I think, to work out equivilient schedules, move around the times
+		and check the conflicts again.
+	-   Conflict-serializability implies serializability.
+
+#### Question 2
+
+> Show all the conflict-serializable schedules of the following transactions T1 and T2. Explain why these are all such schedules. 
+> 
+> T1: r1 (A) w1 (A) r1 (B) w1 (B)
 >
-> <footer>- [Wikipedia](http://en.wikipedia.org/wiki/Precedence_graph)</footer>
+> T2: r2 (B) w2 (B) r2 (A) w2 (A).
+
+![What are the conflict equivilent schedules?](../img/cs-336-conflicts.png)
+
+-   Conflict-equivalent to T1, T2: 
+
+		r1 (A) w1 (A) r1(B) w1(B) r2(B) w2(B) r2(A) w2(A) 
+
+	-   Reason: This is the serial schedule T1, T2. 
+	-   There are no other conflict-equivalent schedules, 
+		since there is no non-conflicting swap of adjacent 
+		actions in this schedule: we cannot swap actions within a 
+		transaction, and w1 (B) r2 (B) cannot be swapped, 
+		because they conflict (both manipulating the same database element 
+		and one of them is a write). 
+
+-   Conflict-equivalent to T2, T1:
+
+		r2(B) w2(B) r2(A) w2(A) r1(A) w1(A) r1(B) w1(B)
+
+#### Question 4
 
 November 21 <small>The "Interview"</small>
 ------------------------------------------
