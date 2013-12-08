@@ -594,24 +594,24 @@ A tarred gzipped file named pa2.tgz that contains a directory called pa2
 with the following files in it:
 
 -   An sorted-list.h file containing the interface we gave you and your
-        structure definition. The function defintions must remain unaltered!
+    structure definition. The function defintions must remain unaltered!
 
 -   A sorted-list.c file containing your implementation of the sorted
-        list.
+    list.
 
 -   A main.c file containing a main function that exercise your sorted
-        list implementation using the test plan outlined in testplan.txt.
+    list implementation using the test plan outlined in testplan.txt.
 
 -   A Makefile that is used to compile your sorted list implementation
-        into a library called libsl.a and an executable called sl that runs
-        the code in main.c.
+    into a library called libsl.a and an executable called sl that runs
+    the code in main.c.
 
 -   A file called testplan.txt that contains a test plan for your code,
-        including input and expected output.
+    including input and expected output.
 
 -   A readme.pdf file that contains analyses of the running time and
-        memory usage of each of your sorted-list functions. Use big-O
-        notation to describe the end result of each analysis.
+    memory usage of each of your sorted-list functions. Use big-O
+    notation to describe the end result of each analysis.
 
 Suppose that you have a directory called pa2 in your account (on iLab),
 containing the above required files. Here’s how you create the required
@@ -628,7 +628,7 @@ pa2.tgz (see man tar). Your grade will be based on:
 -   Correctness (how well your code is working),
 -   Quality of your design (did you use reasonable algorithms),
 -   Quality of your code (how well written your code is, including
-        modularity and comments),
+    modularity and comments),
 
 -   Efficiency (of your implementation), and
 -   Testing thoroughness (quality of your test cases).
@@ -657,15 +657,15 @@ September 26th, 2013 <small>GDB</small>
 ### Reference Counter
 
 -   You increment a reference counter for every time a new pointer
-        points to the node.
+    points to the node.
 
 -   You decrement a reference counter for every time you remove a
-        pointer from a node.
+    pointer from a node.
 
 -   You free the memory for a node when you decrement it to zero.
 -   An iterator pointing to a node that is printing or up to some
-        operation can make the reference counter not zero or one, leading to
-        some interesting scenarios.
+    operation can make the reference counter not zero or one, leading to
+    some interesting scenarios.
 
 October 2nd, 2013 <small>Programming Assignment 3: Indexer</small>
 ------------------------------------------------------------------
@@ -674,8 +674,7 @@ October 2nd, 2013 <small>Programming Assignment 3: Indexer</small>
 will be increasingly complex because we are asking you to build
 increasingly bigger programs. \*Make sure to read the assignment
 carefully!\* This is critical because this document essentially
-describes
-the requirements for your program.
+describes the requirements for your program.
 
 ### Introduction
 
@@ -706,38 +705,38 @@ After constructing the entire inverted index in memory, the indexer will
 save it to a file.Some observations:
 
 -   An inverted index is just a sequence of mappings, where each mapping
-        maps a term (e.g., “dog”) to a list of records, with each record
-        containing the name of a file whose content contains the term and
-        the frequency with which the term appears in the file.
+    maps a term (e.g., “dog”) to a list of records, with each record
+    containing the name of a file whose content contains the term and
+    the frequency with which the term appears in the file.
 
 -   The above depiction just gives a logical view of the inverted index.
-        In your program, you have to define data structures to hold the
-        mappings (term → list), the list of records, and the records (file
-        name, count).
+    In your program, you have to define data structures to hold the
+    mappings (term → list), the list of records, and the records (file
+    name, count).
 
 -   The mappings are maintained in sorted order of the terms. You will
-        see later why this is useful. Sorting in ascending or descending
-        order doesn’t matter so much. We will just arbitrarily say for this
-        assignment that the sequence should be maintained in ascending
-        sorted order based on the ASCII coding of characters (i.e., “a”
-        before “b” and “aa” before “ab”).
+    see later why this is useful. Sorting in ascending or descending
+    order doesn’t matter so much. We will just arbitrarily say for this
+    assignment that the sequence should be maintained in ascending
+    sorted order based on the ASCII coding of characters (i.e., “a”
+    before “b” and “aa” before “ab”).
 
 -   Records in each list are maintained in descending sorted order based
-        on frequency counts of the terms in the files. Again, you will see
-        later why this is useful.
+    on frequency counts of the terms in the files. Again, you will see
+    later why this is useful.
 
 -   Capitalization has been removed. For your indexer, “A” and “a”
-        should be
+    should be
 
 -   considered the same term. Thus, you will need to normalize all upper
-        case letters to lower case letters in the terms. (The other way
-        around is OK too.)
+    case letters to lower case letters in the terms. (The other way
+    around is OK too.)
 
 -   It should be obvious that the tokenizer and sorted-list that you
-        wrote in earlier assignments are useful for this assignment
-        (although you have to modify the tokenizer to work with a file,
-        rather than a string). Use the improved tokenizer.c file attached to
-        this assignment.
+    wrote in earlier assignments are useful for this assignment
+    (although you have to modify the tokenizer to work with a file,
+    rather than a string). Use the improved tokenizer.c file attached to
+    this assignment.
 
 ### Implementation
 
@@ -772,9 +771,8 @@ Examples of tokens according to the above definition include:
 
     a, aba, c123, 1, 454
 
-If a file contains This an\\\$example12 mail@rutgersit should tokenize
-to
-this an example12 mail rutgers
+If a file contains This an\\\\\$example12 mail@rutgersit should tokenize
+to this an example12 mail rutgers
 
 The inverted index file that your indexer writes must follow the
 following format, where I’m showing each space as a \_ to make it more
@@ -811,22 +809,22 @@ your indexer.
 ### Hints
 
 -   Data structures that might be useful include the sorted list you
-        just implemented (of course) and a hash table.
+    just implemented (of course) and a hash table.
 
 -   An object (e.g., a record {“baa”, 3}) can be inserted into multiple
-        containing data structures, such as a sorted list and a hash table).
+    containing data structures, such as a sorted list and a hash table).
 
 -   You can use your sorted list to maintain the set of terms in
-        ascending order. But, since we are asking for records for each term
-        sorted in descending order, you have to flip the meaning of \< and
-        \> in your comparator function.
+    ascending order. But, since we are asking for records for each term
+    sorted in descending order, you have to flip the meaning of \< and
+    \> in your comparator function.
 
 -   You should probably approach this in steps.
 -   First, you might get your tokenizer to generate correct tokens from
-        a file. - Next, you might get your program to walk through a
-        directory. - Next, you might implement a data structure that allows
-        you to countthe number of occurrences of each unique term in a file.
-        o Andsoon...
+    a file. - Next, you might get your program to walk through a
+    directory. - Next, you might implement a data structure that allows
+    you to countthe number of occurrences of each unique term in a file.
+    o Andsoon...
 
 ### What to Turn In
 
@@ -834,33 +832,33 @@ A tarred gzipped file name pa3.tgz that contains a directory called pa3
 with the following files in it:
 
 -   All the .h and .c files necessary to produce an executable named
-        index.
+    index.
 
 -   A makefile used to compile and produce index. It must have a target
-        clean toprepare a fresh compilation of everything.
+    clean toprepare a fresh compilation of everything.
 
 -   A file called testplan.txt that contains a test plan for your
-        indexer. You should include the example files and/or directories
-        that you test your indexer on but keep these from being too large,
-        please. (We might test your program with a very large data set
-        though so don’t skip testing your program for scalability. In your
-        test plan, you should discuss the larger scale testing and the
-        results, but you can skip including the data set).
+    indexer. You should include the example files and/or directories
+    that you test your indexer on but keep these from being too large,
+    please. (We might test your program with a very large data set
+    though so don’t skip testing your program for scalability. In your
+    test plan, you should discuss the larger scale testing and the
+    results, but you can skip including the data set).
 
 -   A readme.pdf file that describes the design of your indexer. This
-        should also include the usual analysis of time and space usage of
-        your program. Starting in this assignment, you do not need analyze
-        every single function. Rather, you need to analyze the overall
-        program. (So, for example, analyzing initialization code is
-        typically not too important unless this initialization depends on
-        the size of the inputs.)
+    should also include the usual analysis of time and space usage of
+    your program. Starting in this assignment, you do not need analyze
+    every single function. Rather, you need to analyze the overall
+    program. (So, for example, analyzing initialization code is
+    typically not too important unless this initialization depends on
+    the size of the inputs.)
 
 As usual, your grade will be based on:
 
 -   Correctness (how well your code is working),
 -   Quality of your design (did you use reasonable algorithms),
 -   Quality of your code (how well written your code is, including
-        modularity andcomments),
+    modularity andcomments),
 
 -   Efficiency (of your implementation), and
 -   Testing thoroughness (quality of your test cases).
@@ -877,10 +875,10 @@ load an inverted index produced by your indexer into memory and use it
 to answer users’ search queries. Using the same example from the indexer
 assignment, if you are given the following set of files:
 
-|Filename|File Content|
-|:-------|:-----------|
-|`boo`|A dog name name Boo|
-|`baa`|A cat name Baa|
+  Filename   File Content
+  ---------- ---------------------
+  `boo`      A dog name name Boo
+  `baa`      A cat name Baa
 
 you would use your indexer to generate the following inverted list and
 save it to an index file:
@@ -952,26 +950,26 @@ your strategy.
 ### What to Turn In
 
 -   A writeup documenting your design, including exception handling and
-        paying particular attention to the memory requirements of your
-        application. Your writeup should detail the format with which the
-        inverted index is written into a file.
+    paying particular attention to the memory requirements of your
+    application. Your writeup should detail the format with which the
+    inverted index is written into a file.
 
 -   A file called hw5-testcases.txt that contains a thorough set of test
-        cases for your code, includ- ing inputs and expected outputs.
+    cases for your code, includ- ing inputs and expected outputs.
 
 -   All source code (for search tool and both versions of all parts of
-        the indexer) including both implementation (.c) and interface(.h)
-        files.
+    the indexer) including both implementation (.c) and interface(.h)
+    files.
 
 -   A makefile for producing an executable search tool, with multiple
-        targets allowing selection of a compatible indexer.
+    targets allowing selection of a compatible indexer.
 
 Your grade will be based on:
 
 -   Correctness (how well your code is working).- Testing thoroughness
-        (quality of your test cases).- Efficiency.- Good design (how well
-        written your design document and code are, including modularity and
-        comments).- Code reuse (that your index works with both indexers).
+    (quality of your test cases).- Efficiency.- Good design (how well
+    written your design document and code are, including modularity and
+    comments).- Code reuse (that your index works with both indexers).
 
 November 5th, 2013 <small>Midterm Study Guide</small>
 -----------------------------------------------------
@@ -980,12 +978,12 @@ November 5th, 2013 <small>Midterm Study Guide</small>
 
 #### Pointers and `const`
 
-|Code|Can change data?|Can change pointer?|Initiliaze data?|Initialize pointer?|
-|:---|:---------------|:------------------|:---------------|:------------------|
-|`int * ptr;`|Yes|Yes|Optional|Optional|
-|`const int * ptr;`|No|Yes|Yes|Optional|
-|`int * const ptr = &x`|Yes|No|Optional|Yes|
-|`const int * const ptr = &x`|No|No|Yes|Yes|
+  Code                           Can change data?   Can change pointer?   Initiliaze data?   Initialize pointer?
+  ------------------------------ ------------------ --------------------- ------------------ ---------------------
+  `int * ptr;`                   Yes                Yes                   Optional           Optional
+  `const int * ptr;`             No                 Yes                   Yes                Optional
+  `int * const ptr = &x`         Yes                No                    Optional           Yes
+  `const int * const ptr = &x`   No                 No                    Yes                Yes
 
 #### Macros and the preprocessor
 
@@ -1086,7 +1084,7 @@ But it's much nicer to use a `typedef`:
 -   Include a file
 -   Why use headers?
     -   Copy and paste the same possible large amount of code many
-            times.
+        times.
 
             #include <stdlib.h>
             #include "myheader.h"
@@ -1170,14 +1168,14 @@ Data types
 
     For integer, there is `signed` and `unsigned`
 
-    |Type|Description|Size|
-    |----|-----------|----|
-    |`char`|Capable of hold one character in ASCII table|1-byte|
-    |`short int`|16-bit integer|2-byte|
-    |`int/long/long int`|32-bit integer|4-byte|
-    |`long long`|64-bit integer|8-byte|
-    |`float`|Single-precision floating point|4-byte|
-    |`double`|Double-precision floating point|8-byte|
+      Type                  Description                                    Size
+      --------------------- ---------------------------------------------- --------
+      `char`                Capable of hold one character in ASCII table   1-byte
+      `short int`           16-bit integer                                 2-byte
+      `int/long/long int`   32-bit integer                                 4-byte
+      `long long`           64-bit integer                                 8-byte
+      `float`               Single-precision floating point                4-byte
+      `double`              Double-precision floating point                8-byte
 
 Character constants
 :   Is an integer written as one character within single quote, such as
@@ -1252,6 +1250,7 @@ Rules
 <!-- -->
 
 
+
     app: main.o mod_a.o mod_b.o
         cc -o app main.o mod_a.o mod_b.o
 
@@ -1310,13 +1309,13 @@ Linux file structure
 File I/O
 :   File I/O low-level system calls:
 
-    |Function|Description|
-    |--------|-----------|
-    |`open()`|Open a file or device|
-    |`read()`|Read from an open file or device|
-    |`write()`|Write to an open file or device|
-    |`close()`|Close the file or device|
-    |`ioctl()`|Pass control info to device driver|
+      Function    Description
+      ----------- ------------------------------------
+      `open()`    Open a file or device
+      `read()`    Read from an open file or device
+      `write()`   Write to an open file or device
+      `close()`   Close the file or device
+      `ioctl()`   Pass control info to device driver
 
 :   There's a performance penality in making a system call. It's a good
     idea to keep the number of system calls to a minimum, and do more
@@ -1348,7 +1347,7 @@ Standard I/O library
 -   Group multiple compiled object files into a single file.
 -   Used for sharing common pieces of code.
 -   Software developers can package code and release an API without the
-        actual source code.
+    actual source code.
 
 -   Libraries (or components) can be created for dynamic use.
     -   Library is separate from executable, thus reduced its size.
@@ -1371,13 +1370,13 @@ Dynamic library (`.so`)
     ways.
 
     1.  Dynamically linked at run time but statically aware. The
-            libraries must be available during compile/link phase. The
-            shared objects are not included into the executable component
-            but are tied to the executable.
+        libraries must be available during compile/link phase. The
+        shared objects are not included into the executable component
+        but are tied to the executable.
 
     2.  Dynamically loaded/unloaded and linked during execution (i.e.
-            browser plug-in) using the dynamic linking loaded r system
-            functions.
+        browser plug-in) using the dynamic linking loaded r system
+        functions.
 
 -   Naming convention: `lib` prefix.
 -   Example:
@@ -1429,10 +1428,10 @@ Dynamic library (`.so`)
         ln -sf /opt/lib/libctest.so.1.0 /opt/lib/libtest.so
 
 -   The link to `/opt/lib/libctest.so` allows the naming convention for
-        the compile flag `-litest` to work.
+    the compile flag `-litest` to work.
 
 -   The link to `/opt/lib/libctest.so.1` allows the run time binding to
-        work.
+    work.
 
 -   Now, for adding the library to a program:
 
@@ -1443,7 +1442,7 @@ Dynamic library (`.so`)
         ldd prog
 
 -   Add library directories to be included during dynamic linking to the
-        file
+    file
 
         /etc/ld.so.conf 
 
@@ -1452,7 +1451,7 @@ Dynamic library (`.so`)
         ldconfig -n /opt/lib
 
 -   Specify the environment variable `LD_LIBRARY_PATH` to point to the
-        directory paths containing the shared object library
+    directory paths containing the shared object library
 
 ### Processes
 
@@ -1493,7 +1492,7 @@ Process ID
 
         -   Kernal level process
         -   Responsible for all the process scheduling that takes place
-                inside the system always running.
+            inside the system always running.
 
         -   Always running.
 
@@ -1502,7 +1501,7 @@ Process ID
 
         -   User level process running with root privileges.
         -   Responsible for bringing up linux system, the first process
-                started once a system boot up.
+            started once a system boot up.
 
         -   Always running.
 
@@ -1512,11 +1511,11 @@ File descriptors
     corresponding to the three standard streams, which presumably every
     process (save perhaps a daemon) should expect to have:
 
-    |Integer value|Name|
-    |-------------|----|
-    |0|Standard input (`stdin`)|
-    |1|Standard output (`stdout`)|
-    |2|Standard error (`stderr`)|
+      Integer value   Name
+      --------------- ----------------------------
+      0               Standard input (`stdin`)
+      1               Standard output (`stdout`)
+      2               Standard error (`stderr`)
 
 Process Table
 :   The Linux process table is like a data structure describing all of
@@ -1555,7 +1554,7 @@ Zombie process
     -   Refer to child process.
     -   Child dies before parent.
     -   Parent process does not `wait` so it is unaware of the
-            termination of the child.
+        termination of the child.
 
     -   `kill` does not work for zombie process
 
@@ -1567,19 +1566,19 @@ Orphan process
 Process state
 :   In POSIX,
 
-    |`STAT` Code|Description|
-    |:----------|:----------|
-    |`S`|Sleeping|
-    |`R`|Running|
-    |`D`|Uninterruptible sleep|
-    |`T`|Stopped|
-    |`z`|Defunct|
-    |`N`|Low priority|
-    |`W`|Paging|
-    |`s`|Process is session leader|
-    |`+`|Process is in the foreground process group|
-    |`1`|Process is multithreaded|
-    |`<`|High priority task|
+      `STAT` Code   Description
+      ------------- --------------------------------------------
+      `S`           Sleeping
+      `R`           Running
+      `D`           Uninterruptible sleep
+      `T`           Stopped
+      `z`           Defunct
+      `N`           Low priority
+      `W`           Paging
+      `s`           Process is session leader
+      `+`           Process is in the foreground process group
+      `1`           Process is multithreaded
+      `<`           High priority task
 
 ### Signals
 
@@ -1596,41 +1595,41 @@ Signal
     handlers to cause interrupts and can also be explicitly sent from
     one process to another as a way of passing information or modifying
     behavior.
-:   Here's a table! 
+:   Here's a table!
 
-	|Valye|Name|Default Action|Description|
-    |-----|----|--------------|-----------|
-    |1|SIGHUP|terminate process|terminal line hangup|
-    |2|SIGINT|terminate process|interrupt program|
-    |3|SIGQUIT|create core image|quit program|
-    |4|SIGILL|create core image|illegal instruction|
-    |5|SIGTRAP|create core image|trace trap|
-    |6|SIGABRT|create core image|abort program (formerly SIGIOT)|
-    |7|SIGEMT|create core image|emulate instruction executed|
-    |8|SIGFPE|create core image|floating-point exception|
-    |9|SIGKILL|terminate process|kill program|
-    |10|SIGBUS|create core image|bus error|
-    |11|SIGSEGV|create core image|segmentation violation|
-    |12|SIGSYS|create core image|non-existent system call invoked|
-    |13|SIGPIPE|terminate process|write on a pipe with no reader|
-    |14|SIGALRM|terminate process|real-time timer expired|
-    |15|SIGTERM|terminate process|software termination signal|
-    |16|SIGURG|discard signal|urgent condition present onsocket|
-    |17|SIGSTOP|stop process|stop (cannot be caught orignored)|
-    |18|SIGTSTP|stop process|stop signal generated fromkeyboard|
-    |19|SIGCONT|discard signal|continue after stop|
-    |20|SIGCHLD|discard signal|child status has changed|
-    |21|SIGTTIN|stop process|background read attempted fromcontrol terminal|
-    |22|SIGTTOU|stop process|background write attempted tocontrol terminal|
-    |23|SIGIO|discard signal|I/O is possible on a descriptor(see fcntl(2))|
-    |24|SIGXCPU|terminate process|cpu time limit exceeded (seesetrlimit(2))|
-    |25|SIGXFSZ|terminate process|file size limit exceeded (seesetrlimit(2))|
-    |26|SIGVTALRM|terminate process|virtual time alarm (seesetitimer(2))|
-    |27|SIGPROF|terminate process|profiling timer alarm (seesetitimer(2))|
-    |28|SIGWINCH|discard signal|Window size change|
-    |29|SIGINFO|discard signal|status request from keyboard|
-    |30|SIGUSR1|terminate process|User defined signal 1|
-    |31|SIGUSR2|terminate process|User defined signal 2|
+      Valye   Name        Default Action      Description
+      ------- ----------- ------------------- ------------------------------------------------
+      1       SIGHUP      terminate process   terminal line hangup
+      2       SIGINT      terminate process   interrupt program
+      3       SIGQUIT     create core image   quit program
+      4       SIGILL      create core image   illegal instruction
+      5       SIGTRAP     create core image   trace trap
+      6       SIGABRT     create core image   abort program (formerly SIGIOT)
+      7       SIGEMT      create core image   emulate instruction executed
+      8       SIGFPE      create core image   floating-point exception
+      9       SIGKILL     terminate process   kill program
+      10      SIGBUS      create core image   bus error
+      11      SIGSEGV     create core image   segmentation violation
+      12      SIGSYS      create core image   non-existent system call invoked
+      13      SIGPIPE     terminate process   write on a pipe with no reader
+      14      SIGALRM     terminate process   real-time timer expired
+      15      SIGTERM     terminate process   software termination signal
+      16      SIGURG      discard signal      urgent condition present onsocket
+      17      SIGSTOP     stop process        stop (cannot be caught orignored)
+      18      SIGTSTP     stop process        stop signal generated fromkeyboard
+      19      SIGCONT     discard signal      continue after stop
+      20      SIGCHLD     discard signal      child status has changed
+      21      SIGTTIN     stop process        background read attempted fromcontrol terminal
+      22      SIGTTOU     stop process        background write attempted tocontrol terminal
+      23      SIGIO       discard signal      I/O is possible on a descriptor(see fcntl(2))
+      24      SIGXCPU     terminate process   cpu time limit exceeded (seesetrlimit(2))
+      25      SIGXFSZ     terminate process   file size limit exceeded (seesetrlimit(2))
+      26      SIGVTALRM   terminate process   virtual time alarm (seesetitimer(2))
+      27      SIGPROF     terminate process   profiling timer alarm (seesetitimer(2))
+      28      SIGWINCH    discard signal      Window size change
+      29      SIGINFO     discard signal      status request from keyboard
+      30      SIGUSR1     terminate process   User defined signal 1
+      31      SIGUSR2     terminate process   User defined signal 2
 
 Raise
 :   Used to indicate the generation of a signal.
@@ -1645,52 +1644,52 @@ Catch
 -   It takes two parameters, sig and func.
     -   The signal to be caught or ignored is given as argument sig.
     -   The function to be called when the specified signal is received
-            is given as func.
+        is given as func.
 
     -   This function must be one that takes a single int argument (the
-            signal received) and is of type void.
+        signal received) and is of type void.
 
 -   The signal function itself returns a function of the same type,
-        which is the previous value of the function set up to handle this
-        signal, or one of these two special values:
+    which is the previous value of the function set up to handle this
+    signal, or one of these two special values:
 
 -   Not large
 -   Should not use global or static data structures
 -   The signal that cause invocation of the signal handler is
-        **blocked** during the handler execution
+    **blocked** during the handler execution
 
 -   Different signals can use the same handler function.
 -   Allow multiple handlers (in the same functions)
 -   Allow different handlers for the same signal at different points of
-        program execution.
+    program execution.
 
 -   Args determined by OS, not out program
 
-|Value|Meaning|
-|:----|:------|
-|`SIG_IGN`|Ignore the signal|
-|`SIG_DFL`|Restore default behavior|
+  Value       Meaning
+  ----------- --------------------------
+  `SIG_IGN`   Ignore the signal
+  `SIG_DFL`   Restore default behavior
 
 -   Sending signals (even to self):
 
         int kill(pid_t pid, int sig);
 
 -   The kill function sends the specified signal, sig, to the process
-        whose identifier is given by pid. It returns 0 on success. To send a
-        signal, the sending process must have permission to do so. Normally,
-        this means that both processes must have the same user ID.
+    whose identifier is given by pid. It returns 0 on success. To send a
+    signal, the sending process must have permission to do so. Normally,
+    this means that both processes must have the same user ID.
 
 -   Alarm clock (SIGALRM):
 
         unsigned int alarm(unsigned int seconds);
 
 -   The alarm call schedules the delivery of a SIGALRM signal in seconds
-        seconds. In fact, the alarm will be delivered shortly after that,
-        due to processing delays and scheduling uncertainties. A value of 0
-        will cancel any outstanding alarm request. Each process can have
-        only one outstanding alarm. Alarm returns the number of seconds left
-        before any outstanding alarm call would be sent, or -1 if the call
-        fails.
+    seconds. In fact, the alarm will be delivered shortly after that,
+    due to processing delays and scheduling uncertainties. A value of 0
+    will cancel any outstanding alarm request. Each process can have
+    only one outstanding alarm. Alarm returns the number of seconds left
+    before any outstanding alarm call would be sent, or -1 if the call
+    fails.
 
 -   Be sure to know:
     -   Signals and threads
@@ -1705,7 +1704,7 @@ Catch
 
 -   `signal.h`
     -   Each process has a **signal mask** - the set of blocked signals
-            for that process.
+        for that process.
 
     -   C uses opaque type sigset\_t for signal mask implementation
 
@@ -1721,7 +1720,7 @@ Catch
     }
 
 -   And a union of structure determined by different signals with
-        detailed information.
+    detailed information.
 
 #### Signal Action
 
@@ -1738,12 +1737,12 @@ Catch
 `oldaction`
 :   pointer to previous sigaction for signo. Can be null
 
-|Member type|Name|Description|
-|:----------|:---|:----------|
-|`void(*)(int)`|`sa_handler`|`SIG_DFL`, `SIG_IGN`, or pointer to function.|
-|`sigset_t`|`sa_mask`|Additional set of signals to be blocked during execution of signal catching function.|
-|`int`|`sa_flags`|Special falgs to affect behavior of signal.|
-|`void(*)(int, siginfo_t *, void *)`|`sa_sigaction`|Signal catching function.|
+  Member type                           Name             Description
+  ------------------------------------- ---------------- ---------------------------------------------------------------------------------------
+  `void(*)(int)`                        `sa_handler`     `SIG_DFL`, `SIG_IGN`, or pointer to function.
+  `sigset_t`                            `sa_mask`        Additional set of signals to be blocked during execution of signal catching function.
+  `int`                                 `sa_flags`       Special falgs to affect behavior of signal.
+  `void(*)(int, siginfo_t *, void *)`   `sa_sigaction`   Signal catching function.
 
 ### Timer
 
@@ -1754,18 +1753,18 @@ Catch
 
 -   Activate: call `setitimer` with non-zero `it_value`
 -   Deactivate: call `setitimer()` with zero `it_value`, or when timer
-        expires with a zero `it_interval`.
+    expires with a zero `it_interval`.
 
 -   No multiple, seperate timers for the same process at the same time.
 
 #### Timer activation
 
-|`it_value`|`it_interval`|Result|
-|:---------|:------------|:-----|
-|2,0|5,0|2 second wait, 5 second interval|
-|2,0|0,0|2 second wait, no repeat|
-|0,0|5,0|nothing|
-|0,0|0,0|nothing|
+  `it_value`   `it_interval`   Result
+  ------------ --------------- ----------------------------------
+  2,0          5,0             2 second wait, 5 second interval
+  2,0          0,0             2 second wait, no repeat
+  0,0          5,0             nothing
+  0,0          0,0             nothing
 
 ### Threads
 
@@ -1773,10 +1772,10 @@ Catch
 -   A single is a sequence of control within a process.
 -   A process runs at least one thread, `main`.
 -   `fork()`ing a process: A new copy is created with its own everything
-        memory.
+    memory.
 
 -   Starting a new thread: It only has it's own *memory stack*,
-        everything else is shared with the process which created it.
+    everything else is shared with the process which created it.
 
 -   Advantages
     -   Make a program do a few things at once
@@ -1785,19 +1784,19 @@ Catch
     -   A program can mix input, calculation, and output efficiently.
     -   Accelerate processing on proper multi-core processors.
     -   Switching between threads requires less work than switching
-            between processes.
+        between processes.
 
 -   Disadvantages
     -   Requires careful design.
         -   Threads are also know as "how to shoot yourself in both feet
-                at once."
+            at once."
 
     -   Debugguging hell. By using a good IDE the job is largely
-            mitigated.
+        mitigated.
 
     -   A program that split a large calculation into two and the the
-            two parts a different threads will not necessarily run more
-            quickly on a single processor machine.
+        two parts a different threads will not necessarily run more
+        quickly on a single processor machine.
 
 #### POSIX Specification
 
@@ -1830,50 +1829,50 @@ Semaphores
 ##### Semaphores
 
 -   A semaphore is a special type of variable that can be incremented or
-        decremented, but crucial access to the variable is guaranteed to be
-        atomic, even in a multi-threaded program.
+    decremented, but crucial access to the variable is guaranteed to be
+    atomic, even in a multi-threaded program.
 
 -   If two or more threads in a program attempt to change the value of a
-        semaphore, the system guarantees that all the operations will in
-        fact take place in sequence.
+    semaphore, the system guarantees that all the operations will in
+    fact take place in sequence.
 
 -   Binary semaphore is commonly used. It means only one thread is able
-        to execute the guarded piece of code.
+    to execute the guarded piece of code.
 
     -   Counting semaphore can allow a number of threads to execute
-            simultaneously.
+        simultaneously.
 
             #include <semaphore.h>
             int sem_init(sem_t * sem, int pshared, unsigned int value);
 
 -   This function intializaes a semaphore object pointed to by `sem`,
-        sets it sharing option, and gives it an initial integer value.
+    sets it sharing option, and gives it an initial integer value.
 
 -   The `pshared` parameter controls the type of semaphore.
     -   If the value is 0, the semaphore is local to the current
-            process.
+        process.
 
 -   Wait until allowed to execute:
 
         int sem_wait(sem_t *sem);
 
 -   `sem_wait()` **atomically** decreases the value of the semaphore by
-        one, but always waits until the semaphore has a non-zero count
-        first.
+    one, but always waits until the semaphore has a non-zero count
+    first.
 
     -   If sem\_wait is called on a semaphore with a value of 0, the
-            function will wait until some other thread has incremented the
-            valuye so that it is no longer 0.
+        function will wait until some other thread has incremented the
+        valuye so that it is no longer 0.
 
 -   Post when enter the guarded execution.
 
         int sem_post(sem_t * sem);
 
 -   `sem_post()` **atomically** increases the value of the semaphore by
-        one.
+    one.
 
     -   If the both programs try to increase the value by 1, the
-            semaphore will always be correctly increased in value by 2.
+        semaphore will always be correctly increased in value by 2.
 
     int sem\_destroy(sem\_t \* sem);
 
@@ -1881,7 +1880,7 @@ Semaphores
 
 -   Mutual exclusion
 -   Allowing programmer to lock an object, only one thread can access
-        it.
+    it.
 
 -   Must local the mutex before entering and unlock it when you finish.
 
@@ -2024,371 +2023,474 @@ makefile for producing an executable program file.Your grade will be
 based on:
 
 -   Correctness (how well your code is working, including avoidance of
-        deadlocks.
+    deadlocks.
 
 -   Efficiency (avoidance of recomputation of the same results,
-        avoidance of busy-waits).
+    avoidance of busy-waits).
 
 -   Good design (how well written your design document and code are,
-        including modularity and comments).
-
+    including modularity and comments).
 
 November 8th, 2013 <small>Shared Memory</small>
 -----------------------------------------------
 
 -   The lifetime is larger than a process but less than a file.
-	-   If you reboot, it goes away.
-	-   If no process is using them, they still remain, or can.
+    -   If you reboot, it goes away.
+    -   If no process is using them, they still remain, or can.
 
 -   Shut down the system and the shared memory ceases to exit.
-	-   We have shared memory segments that exist indepedant of
-		procesesses.
+    -   We have shared memory segments that exist indepedant of
+        procesesses.
 
 -   Are not tied to the file memory model we're familiar with.
-	-   They do, however, have read/write permissions just like
-		files do.
+    -   They do, however, have read/write permissions just like files
+        do.
 
--   Instead of a directory structure, shared memory exists in
-	a shared, flat list.
-	-   They're identified by a numeric key, a number.
+-   Instead of a directory structure, shared memory exists in a shared,
+    flat list.
+
+    -   They're identified by a numeric key, a number.
 
 -   They key is generated from existing files and directories.
-	-   Metadata *about* the files.
+    -   Metadata *about* the files.
 
 -   It's like virtual memory.
-	-   The shared memory system has a lifetime that's shorter
-		than the directory structure.
-		-   This is how we have *persistance* of identification.
+    -   The shared memory system has a lifetime that's shorter than the
+        directory structure.
 
-	-   But if the file goes away, **heaven help you**.
-		-   Something something, that would be bad.
+        -   This is how we have *persistance* of identification.
+
+    -   But if the file goes away, **heaven help you**.
+        -   Something something, that would be bad.
 
 > If you change the file, what happens?
 
--   If you delete the file, you may no longer be able to find
-	the key.
-	-   I'll talk about this later.
+-   If you delete the file, you may no longer be able to find the key.
+
+    -   I'll talk about this later.
 
 -   Multiple shared memory segments can exist.
-	-   These things can be of different sizes.
-	-   You can get *multiple* shared memory segments.
+    -   These things can be of different sizes.
+    -   You can get *multiple* shared memory segments.
 
 > Is this like caches?
 
 -   No, because we're not getting efficiency from this.
-	-   It *is* faster than reads or writes or socket
-		connections.
+    -   It *is* faster than reads or writes or socket connections.
 
--   Different processes may attach the same addresses
-	to different segments.
-	-   Any attempt to share pointers will be dangerous.
+-   Different processes may attach the same addresses to different
+    segments.
 
-> Is there any reason that different processes have different
-> pointers?
+    -   Any attempt to share pointers will be dangerous.
+
+> Is there any reason that different processes have different pointers?
 
 -   Probably not.
-	-   He understands *part of it*.
+    -   He understands *part of it*.
 
--   The same program may attach the same memory segment to
-	different addresses at different invocations.
--   The shared memory does not have an address until you
-	"attach" to it.
-	-   Processes *attach* and *detach* to and from shared
-		memory segments.
+-   The same program may attach the same memory segment to different
+    addresses at different invocations.
+
+-   The shared memory does not have an address until you "attach" to it.
+
+    -   Processes *attach* and *detach* to and from shared memory
+        segments.
 
 -   Multiple programs running simultaneously may attach different
-	addresses to the same memory segments.
--   Because these things exist indepedantly of any process,
-	not only do we have an API but because we have commands.
+    addresses to the same memory segments.
+
+-   Because these things exist indepedantly of any process, not only do
+    we have an API but because we have commands.
 
 `ipcs -m`
-
 :   This is like "list all shared memory segments"
 
-		nbp-168-15:~ pauljones$ ipcs -m
-		IPC status from <running system> as of Tue Nov 12 20:31:44 EST 2013
-		T     ID     KEY        MODE       OWNER    GROUP
-		Shared Memory:
+        nbp-168-15:~ pauljones$ ipcs -m
+        IPC status from <running system> as of Tue Nov 12 20:31:44 EST 2013
+        T     ID     KEY        MODE       OWNER    GROUP
+        Shared Memory:
 
-		nbp-168-15:~ pauljones$ 
+        nbp-168-15:~ pauljones$ 
 
 `ipcrm -m ID`
-
 :   Removes shared memory with ID.
 
 > Could there be two addresses for the same one?
 
 -   Only within programs, not physically.
 
-		for i in `ipcs -m | grep morbius`; do
-			ipcrm -m $i > /dev/null 2 >& 1
-		done
+        for i in `ipcs -m | grep morbius`; do
+            ipcrm -m $i > /dev/null 2 >& 1
+        done
 
--   The maximum size of shared segments seems to be
-	`2147483647` and `256` of them.
-	-   But this is machine dependant.
+-   The maximum size of shared segments seems to be `2147483647` and
+    `256` of them.
+
+    -   But this is machine dependant.
 
 > CLEAN UP.
 
-	for i in `ipcs -m | grep [your id here] | colrm 1 11 \ colrm 11`; do
-		ipcrm -m $i
-		done
-		ipcs -m
+    for i in `ipcs -m | grep [your id here] | colrm 1 11 \ colrm 11`; do
+        ipcrm -m $i
+        done
+        ipcs -m
 
 <!-- -->
 
-	#include <sys/types.h>
-	#include <sys/ipc.h>
+
+    #include <sys/types.h>
+    #include <sys/ipc.h>
 
 -   The beauty of `ftoke` is ...
 
-		int shmctl(int shmid, int cmd, struct shmid_ds *);
+        int shmctl(int shmid, int cmd, struct shmid_ds *);
 
 November 14th, 2013 <small></small>
-----
+-----------------------------------
 
 -   We have two ways of resolving an interesting problem:
-	1.  How does a program find out how big a peice of shared memory is?
-		-   These programs have *shared knowledge*.
+    1.  How does a program find out how big a peice of shared memory is?
+        -   These programs have *shared knowledge*.
 
 -   If the same process which creates the linked list also *accesses*
-	the linked list, that's fine.
-	-   On the other hand, if another process creates and another
-		acceses, big trouble.
+    the linked list, that's fine.
 
--   The idea is to say, "Oh, yeah, the idea is to have not pointers,
-	but offsets by which we access shared memory in multiple programs."
+    -   On the other hand, if another process creates and another
+        acceses, big trouble.
+
+-   The idea is to say, "Oh, yeah, the idea is to have not pointers, but
+    offsets by which we access shared memory in multiple programs."
+
 -   *Do not put pointers in shared memory*.
-	-   *Array is a **really good idea***.
-
+    -   *Array is a **really good idea***.
 
 December 5th, 2013 <small>Lecture</small>
 -----------------------------------------
 
 ### Exam topics
 
-1. mutex locks
-2. signal locks
-3. signal handling
-4. multiprogramming, fork, exec, wait
-5. shell scripting
-6. shared memory
-7. pointers to functions
-8. deadlock
-9. semaphores
+1.  mutex locks
+2.  signal locks
+3.  signal handling
+4.  multiprogramming, fork, exec, wait
+5.  shell scripting
+6.  shared memory
+7.  pointers to functions
+8.  deadlock
+9.  semaphores
 
 ### Shell Programming
 
 -   All programs return signal numbers back to the shell.
 -   They use exit, return.
 -   The if, while, for, until return an exit status.
-	-   The last symbol command
+    -   The last symbol command
 
 -   Pipelines and lists
-	-   The exit status is captured in the `\$?`
-
+    -   The exit status is captured in the `\$?`
 
 #### Tests
 
-| Flag | Function 
-| -----|----------
-| `-e` | file exists
-| `-a` | file exists[^1]
-| `-f` | file is a *regular* file (not a directory or device file)
-| `-s` | file is not zero size
-| `-d` | file is a directory
-| `-b` | file is a block device
-| `-c` | file is a character device
-| `-p` | file is a pipe
-| `-h` | file is a [symbolic link](basic.html#SYMLINKREF)
-| `-L` | file is a symbolic link
-| `-S` | file is a [socket](devref1.html#SOCKETREF)
-| `-t` | file descriptor is associated with a terminal device
-| `-r` | file has read permission (_for the user running the test_)
-| `-w` | file has write permission (for the user running the test)
-| `-x` | file has execute permission (for the user running the test)
-| `-g` | set-group-id (sgid) flag set on file or directory
-| `-u` | set-user-id (suid) flag set on file
-| `-k` | *sticky bit* set
-| `-O` | you are owner of file
-| `-G` | group-id of file same as yours
-| `-N` | file modified since it was last read
-| `f1 -nt f2` | file `f1` is newer than `f2`
-| `f1 -ot f2` | file `f1` is older than `f2`
-| `f1 -ef f2` | files `f1` and `f2` are hard links to the same file
+  Flag          Function
+  ------------- -------------------------------------------------------------
+  `-e`          file exists
+  `-a`          file exists[^1]
+  `-f`          file is a *regular* file (not a directory or device file)
+  `-s`          file is not zero size
+  `-d`          file is a directory
+  `-b`          file is a block device
+  `-c`          file is a character device
+  `-p`          file is a pipe
+  `-h`          file is a [symbolic link](basic.html#SYMLINKREF)
+  `-L`          file is a symbolic link
+  `-S`          file is a [socket](devref1.html#SOCKETREF)
+  `-t`          file descriptor is associated with a terminal device
+  `-r`          file has read permission (*for the user running the test*)
+  `-w`          file has write permission (for the user running the test)
+  `-x`          file has execute permission (for the user running the test)
+  `-g`          set-group-id (sgid) flag set on file or directory
+  `-u`          set-user-id (suid) flag set on file
+  `-k`          *sticky bit* set
+  `-O`          you are owner of file
+  `-G`          group-id of file same as yours
+  `-N`          file modified since it was last read
+  `f1 -nt f2`   file `f1` is newer than `f2`
+  `f1 -ot f2`   file `f1` is older than `f2`
+  `f1 -ef f2`   files `f1` and `f2` are hard links to the same file
 
 #### Functions via (Tutorials Point)[http://www.tutorialspoint.com/unix/unix-shell-functions.htm]
 
-Functions enable you to break down the overall functionality of a script into
-smaller, logical subsections, which can then be called upon to perform their
-individual task when it is needed.
+Functions enable you to break down the overall functionality of a script
+into smaller, logical subsections, which can then be called upon to
+perform their individual task when it is needed.
 
-Using functions to perform repetitive tasks is an excellent way to create code
-reuse. Code reuse is an important part of modern object-oriented programming
-principles.
+Using functions to perform repetitive tasks is an excellent way to
+create code reuse. Code reuse is an important part of modern
+object-oriented programming principles.
 
-Shell functions are similar to subroutines, procedures, and functions in other
-programming languages.
+Shell functions are similar to subroutines, procedures, and functions in
+other programming languages.
 
 ##### Creating Functions:
 
-To declare a function, simply use the following syntax:    
-    
+To declare a function, simply use the following syntax:
+
     function_name () { 
        list of commands
     }
-    
 
-The name of your function is function_name, and that's what you will use to
-call it from elsewhere in your scripts. The function name must be followed by
-parentheses, which are followed by a list of commands enclosed within braces.
+The name of your function is function\_name, and that's what you will
+use to call it from elsewhere in your scripts. The function name must be
+followed by parentheses, which are followed by a list of commands
+enclosed within braces.
 
 ##### Example:
 
 Following is the simple example of using function:
-    
+
     #!/bin/sh
-    
+
     # Define your function here
     Hello () {
        echo "Hello World"
     }
-    
+
     # Invoke your function
     Hello
-    
+
 When you would execute above script it would produce following result:
- 
+
     $./test.sh
     Hello World
     $
-    
 
 ##### Pass Parameters to a Function:
 
-You can define a function which would accept parameters while calling those
-function. These parameters would be represented by $1, $2 and so on.
+You can define a function which would accept parameters while calling
+those function. These parameters would be represented by \$1, \$2 and so
+on.
 
-Following is an example where we pass two parameters _Zara_ and _Ali_ and then
-we capture and print these parameters in the function.
-    
+Following is an example where we pass two parameters *Zara* and *Ali*
+and then we capture and print these parameters in the function.
+
     #!/bin/sh
-    
+
     # Define your function here
     Hello () {
        echo "Hello World $1 $2"
     }
-    
+
     # Invoke your function
     Hello Zara Ali
-    
+
 This would produce following result:
 
     $./test.sh
     Hello World Zara Ali
     $
-    
+
 ##### Returning Values from Functions:
 
-If you execute an exit command from inside a function, its effect is not only
-to terminate execution of the function but also of the shell program that
-called the function.
+If you execute an exit command from inside a function, its effect is not
+only to terminate execution of the function but also of the shell
+program that called the function.
 
-If you instead want to just terminate execution of the function, then there is
-way to come out of a defined function.
+If you instead want to just terminate execution of the function, then
+there is way to come out of a defined function.
 
-Based on the situation you can return any value from your function using the
-**return** command whose syntax is as follows:
-  
+Based on the situation you can return any value from your function using
+the **return** command whose syntax is as follows:
+
     return code
-    
-Here _code_ can be anything you choose here, but obviously you should choose
-something that is meaningful or useful in the context of your script as a
-whole.
+
+Here *code* can be anything you choose here, but obviously you should
+choose something that is meaningful or useful in the context of your
+script as a whole.
 
 ##### Example:
 
 Following function returns a value 1:
-    
+
     #!/bin/sh
-    
+
     # Define your function here
     Hello () {
        echo "Hello World $1 $2"
        return 10
     }
-    
+
     # Invoke your function
     Hello Zara Ali
-    
+
     # Capture value returnd by last command
     ret=$?
-    
+
     echo "Return value is $ret"
 
 This would produce following result:
-    
+
     $./test.sh
     Hello World Zara Ali
     Return value is 10
     $
-    
 
 ##### Nested Functions:
 
 One of the more interesting features of functions is that they can call
-themselves as well as call other functions. A function that calls itself is
-known as a _recursive function_.
+themselves as well as call other functions. A function that calls itself
+is known as a *recursive function*.
 
 Following simple example demonstrates a nesting of two functions:
-    
+
     #!/bin/sh
-    
+
     # Calling one function from another
     number_one () {
        echo "This is the first function speaking..."
        number_two
     }
-    
+
     number_two () {
        echo "This is now the second function speaking..."
     }
-    
+
     # Calling function one.
     number_one
-    
+
 This would produce following result:
-    
+
     This is the first function speaking...
     This is now the second function speaking...
-    
 
 ##### Function Call from Prompt:
 
-You can put definitions for commonly used functions inside your _.profile_ so
-that they'll be available whenever you log in and you can use them at command
-prompt.
+You can put definitions for commonly used functions inside your
+*.profile* so that they'll be available whenever you log in and you can
+use them at command prompt.
 
-Alternatively, you can group the definitions in a file, say _test.sh_, and
-then execute the file in the current shell by typing:
-    
+Alternatively, you can group the definitions in a file, say *test.sh*,
+and then execute the file in the current shell by typing:
+
     $. test.sh
-    
-This has the effect of causing any functions defined inside test.sh to be read
-in and defined to the current shell as follows:
+
+This has the effect of causing any functions defined inside test.sh to
+be read in and defined to the current shell as follows:
 
     $ number_one
     This is the first function speaking...
     This is now the second function speaking...
     $
-    
+
 To remove the definition of a function from the shell, you use the unset
-command with the .f option. This is the same command you use to remove the
-definition of a variable to the shell. 
-    
+command with the .f option. This is the same command you use to remove
+the definition of a variable to the shell.
+
     $unset .f function_name
-    
 
-[^1]: This is identical in effect to -e. It has been "deprecated," and its use is discouraged.
+December 8th, 2013 <small>Error detecting `malloc()` and `free()`</small>
+-------------------------------------------------------------------------
 
-*[API]: Application Programming Interface
+### Introduction
+
+In this assignment, you will implement `malloc()` and `free()` library
+calls for dynamic memory all- cation that detect common dynamic memory
+errors. You can use the `malloc()` and `free()` code from the Kernighan
+and Ritchie C book or use the algorithms presented in lecture. To keep
+things simple, you can use a static char array (e.g. static char
+`myblock[5000]`) for your `malloc()` and `free()` to use to manage
+dynamic memory. This eliminates worries about where the dynamic memory
+comes from. The basic functionality of `malloc( size t size )` is to
+return a pointer to a block of the requested size. This memory comes
+from a memory resource managed by the `malloc()` and `free()` functions.
+To keep things simple, you can use a static char array (e.g.
+`static char myblock[5000]`) for your `malloc()` and `free()` as your
+memory resource. This eliminates worries about where the dynamic memory
+comes from. The `free( void * )` function returns the allocated block to
+the memory resource, making it available to use in later `malloc()`
+calls.The reason we need an error-detecting dynamic memory manager is to
+detect commonly-made errors made by programmers using dynamic memory.
+Some of these problems are described in the next section.
+
+### Detectable Errors
+
+Your `malloc()` and `free()` implementation should be able to catch at
+least the following errors:
+
+-   free()ing pointers that were never allocated. For example
+
+        int x;
+        free( x );
+
+-   `free()`ing pointers to dynamic memory that were not returned from
+    `malloc()`. For example
+
+        p = (char *) malloc( 200 );     
+        ...     
+        free( p + 10 );
+
+-   redundant `free()`ing of the same pointer. For example
+
+        free( p );      
+        free( p );  
+
+    is an error, but
+
+        p = (char *)malloc( 100 ); 
+        free( p );
+        p = (char *)malloc( 100 ); 
+        free( p );
+
+    is perfectly valid, even if `malloc()` returned the same pointer
+    both times.
+
+-   **Saturation**. What happens when you have a test program that
+    allocates all of available dynamic memory? Your implementation
+    should be able to handle this contingency.
+
+-   **Fragmentation**. It is possible to allocate and free many small
+    blocks in a way that leaves only small blocks available for
+    allocation. When a request for a large block is made, the request
+    fails even though the total amount of free memory is larger than the
+    requested block size. There are ways to deal with this problem.
+    First, one part of your memory resource can be reserved for small
+    blocks, leaving the rest available for larger blocks. Second, large
+    blocks can be allocated from one end of your memory resource and
+    small blocks can be allocated from the opposite end. You can use
+    these ideas or invent your own.
+
+### Responding to Detected Errors
+
+Your modified `malloc()` and `free()` should report the precise calls
+that caused dynamic memory problems during program execution. Let’s take
+advantage of a couple of preprocessor features in the following sample
+macro definitions:
+
+    #define malloc( x ) mymalloc( x, FILE , LINE )
+    #define free( x ) myfree( x, FILE , LINE )
+
+I'll leave it to you to make the best use of what’s in these macros.
+
+### What to turn in
+
+-   A writeup documenting your design.
+-   A file called `hwextra-testcases.txt` that contains a thorough set
+    of test cases for your code, including inputs and expected outputs.
+-   All source code including both implementation (`.c`) and
+    header(`.h`) files.
+-   A makefile for producing executable test program, with multiple
+    targets allowing selection of test programs.
+
+Your grade will be based on:
+
+-   Correctness (how well your code is working).
+-   Testing thorough ness (quality of your test cases).
+-   Efficiency.
+-   Good design (how well written your design document and code are,
+    including modularity and comments).
+
+<!-- Abbreviations -->
+
+<!-- Footnotes -->
+
+[^1]: This is identical in effect to -e. It has been "deprecated," and
+    its use is discouraged.
