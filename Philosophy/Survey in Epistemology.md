@@ -1964,7 +1964,7 @@ November 11th, 2013 <small>Seminar</small>
 > **(Mental Logic Theory)**: We posses some internal logical deduction
 > schemata and rules, analogous to an internalized natural deduction
 > model.
-> 
+>
 > **(Mental Model Theory)**: We construct an inner semantics for the
 > arguments premises which we then manipulate to asses validity.
 
@@ -1977,12 +1977,12 @@ November 11th, 2013 <small>Seminar</small>
 -   One plausible explanation (from Stanovich 2004) is that we have this
     innate tendency to take into account all of the contextual
     information when attempting to solve a problem.
--   Compare the above with Johnson Laird (1983): 
+-   Compare the above with Johnson Laird (1983):
 
-> The heart of the process is interpreting premises as mental models 
-> that take *general knowledge* into account, and searching for 
-> counterexamples to conclusions by constructing alternative models 
-> of the premises.
+> The heart of the process is interpreting premises as mental models
+> that take *general knowledge* into account, and searching for
+> counterexamples to conclusions by constructing alternative models of
+> the premises.
 
 -   Object to Mental Model Theory: Although we make up the inference
     rules in MMT, they still have properties of logical syntax. So,
@@ -2052,235 +2052,227 @@ November 11th, 2013 <small>Seminar</small>
     -   Similarly, following the gaze of what people look at.
 
 -   "Mosquitoes carry the West Nile virus."
-	-   Only 1% of these creatures do this.
+    -   Only 1% of these creatures do this.
 
 -   "Cats are female."
-	-   Only 50% of cats are female.
+    -   Only 50% of cats are female.
 
--   Useful ways of generalizing. 
-	-   You can decide that they are true on evidence that is
-		well shy of investigation of many cases.
+-   Useful ways of generalizing.
+    -   You can decide that they are true on evidence that is well shy
+        of investigation of many cases.
 
--   Life is such that you want to be able to act quickly and you
-	can make judgments quickly. 
--   There is difference between what it takes to accept a generic
-	and your tendency to assume of some member of that group has
-	that property.
+-   Life is such that you want to be able to act quickly and you can
+    make judgments quickly.
+-   There is difference between what it takes to accept a generic and
+    your tendency to assume of some member of that group has that
+    property.
 
 November 18th, 2013 <small>Philosophical Naturalism and Intuitional Methodology *by Alvin I. Goldman*</small>
-------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------
 
 ### Intuitions in Philosophy: What’s the Controversy?
 
 -   A debate is raging over philosophical method.
-	-   There are *traditionalists* and *naturalists*.
-		-   Naturalists are distinct in that they are science
-			oriented towards intuitions in philosophy.
+    -   There are *traditionalists* and *naturalists*.
+        -   Naturalists are distinct in that they are science oriented
+            towards intuitions in philosophy.
 
-	-   Not everyone likes the term "intuition," but it is the most
-		common term.
+    -   Not everyone likes the term "intuition," but it is the most
+        common term.
 
-Intuition 
+Intuition
+:   The philosophical activity in question consists of specifying a
+    hypothetical scenario and rendering an intuitive judgment about the
+    correctness or incorrectness of classifying it under a stipulated
+    heading.
 
-:   The philosophical activity in question consists of specifying 
-	a hypothetical scenario and rendering an intuitive judgment 
-	about the correctness or incorrectness of classifying it under 
-	a stipulated heading. 
-
-:   Does a given predicate ‘F’ apply to an event, an individual, 
-	a pair of objects, etc. in the scenario? Putting the question 
-	less linguistically, is a certain property or relation exemplified 
-	in the scenario?
+:   Does a given predicate ‘F’ apply to an event, an individual, a pair
+    of objects, etc. in the scenario? Putting the question less
+    linguistically, is a certain property or relation exemplified in the
+    scenario?
 
 -   Intuitions in philosophy are important because, for example, Gettier
-	debunked the entire JTB analysis of knowledge with nothing but an
-	intuition.
+    debunked the entire JTB analysis of knowledge with nothing but an
+    intuition.
 -   Consulting intuitions about imaginary cases is paradigmatic of
-	"armchair philosophy."
-	-   Philosophical naturalists use "real empirical experimentation."
-	-   Philosophy should not be dragged into epistemological disrepute
-		by utilizing suspect faculties like intuition.
+    "armchair philosophy."
+    -   Philosophical naturalists use "real empirical experimentation."
+    -   Philosophy should not be dragged into epistemological disrepute
+        by utilizing suspect faculties like intuition.
 
 -   The debate has intensified with X-Phi.
-	-   Stephen Stich, a proponent of the "negative" variety, claim
-		their experimental studies raise skeptical doubts about the
-		epistemic soundness or robustness of philosophical intuition.
-	-   Although X-Phi doesn't speak for all of philosophy, 
-		they do raise questions about the epistemic credentials of
-		intuitions. 
-	-   They challenge the evidential status that the bulk of the
-		profession routinely accords with. 
+    -   Stephen Stich, a proponent of the "negative" variety, claim
+        their experimental studies raise skeptical doubts about the
+        epistemic soundness or robustness of philosophical intuition.
+    -   Although X-Phi doesn't speak for all of philosophy, they do
+        raise questions about the epistemic credentials of intuitions.
+    -   They challenge the evidential status that the bulk of the
+        profession routinely accords with.
 
 ### Two Types of Evidential Questions: First-order and Second-order Questions
 
--   The debate over intuitional methodology is customarily formulated	in terms of "evidence" and "evidential quality."
+-   The debate over intuitional methodology is customarily formulated in
+    terms of "evidence" and "evidential quality."
 
 Intuitions
-
-:   Occurrent mental states, either intuitive judgments 
-	(a species of doxastic states) or non-doxastic states such as 
-	intellectual "seemings" or "attractions," which tend to generate 
-	intuitive judgments.
+:   Occurrent mental states, either intuitive judgments (a species of
+    doxastic states) or non-doxastic states such as intellectual
+    "seemings" or "attractions," which tend to generate intuitive
+    judgments.
 
 First-order questions of evidence
+:   Are intuitions, or intuitive judgments, evidence at all?
 
-:   > Are intuitions, or intuitive judgments, evidence at all?
+:   What is their evidential quality or strength?
 
-:   > What is their evidential quality or strength?
+:   For what propositions or hypotheses are they good evidence?
 
-:   > For what propositions or hypotheses are they good evidence?
+:   For whom are they good evidence (their subjects only, or other
+    > people as well)?
 
-:   > For whom are they good evidence (their subjects only, or other 
-	> people as well)? 
-
-:   > What kind of evidence do intuitions have or confer: 
-	> empirical evidence or a priori evidence?
+:   What kind of evidence do intuitions have or confer: empirical
+    > evidence or a priori evidence?
 
 Second-order questions of evidence
+:   Is there evidence (good evidence?) for the first-order evidential
+    > status of intuitions?
 
-:   > Is there evidence (good evidence?) for the first-order 
-	> evidential status of intuitions? 
+:   If we don’t already have good enough evidence for the first-order
+    > evidential status of intuitions, how should we go about gathering
+    > evidence about the first-order status of intuitions?
 
-:   > If we don’t already have good enough evidence for the 
-	> first-order evidential status of intuitions, how should 
-	> we go about gathering evidence about the first-order 
-	> status of intuitions? 
-
-:   > What are the most appropriate or most helpful kinds 
-	> of second-order evidence: empirical or a priori?
+:   What are the most appropriate or most helpful kinds of second-order
+    > evidence: empirical or a priori?
 
 -   The work advances the view that the two orders of status for
-	intuitions are of different types.
-	-   *Intutions may have first-order evidential status of a substantially
-		a priori kind*.
-	-   While their second-order evidential status, the evidence for their
-		evidential status, is mainly an *empirical* kind.
-	-   Goldman does not firmly endorse the bifurcated view.
+    intuitions are of different types.
+    -   *Intutions may have first-order evidential status of a
+        substantially a priori kind*.
+    -   While their second-order evidential status, the evidence for
+        their evidential status, is mainly an *empirical* kind.
+    -   Goldman does not firmly endorse the bifurcated view.
 
 ### The Nature of Evidential States
 
-> What is evidence?
-> That is, what kinds of evidence of states-of-affairs constitutes 
-> pieces of evidence, and in virtue of what relation to an 
+> What is evidence? That is, what kinds of evidence of states-of-affairs
+> constitutes pieces of evidence, and in virtue of what relation to an
 > appropriate relatum do they so qualify?
 
 -   Kelly (2008) distinguishes between several senses of evidence.
-	-   There is the "reliable indicator" sense of evidence, in which
-		some thing is evidence for another just in case that first thing
-		is a fairly reliable sign, or indicator, of the truth or existence
-		of that second thing.
-	-   When using the reliable indicator sense of "evidence", we
-		should use the *state-of-affairs* or *factive* entities that
-		constitute evidence.
-		-   For example, there being 743 rings on the trunk of a given
-			tree is good evidence for the proposition that the tree is 743
-			years old.
+    -   There is the "reliable indicator" sense of evidence, in which
+        some thing is evidence for another just in case that first thing
+        is a fairly reliable sign, or indicator, of the truth or
+        existence of that second thing.
+    -   When using the reliable indicator sense of "evidence", we should
+        use the *state-of-affairs* or *factive* entities that constitute
+        evidence.
+        -   For example, there being 743 rings on the trunk of a given
+            tree is good evidence for the proposition that the tree is
+            743 years old.
 
 > Can a mental state qualify as good evidence under the proposed sense
 > of evidence?
 
--   Certainly, if we tweak the proposal to read that *somebody's
-	being in a certain mental state* is the item of evidence. 
--   Not all mental states with contents, however, are reliable indicators of
-	the truth of their contents.
-	-   Wish, imagining, fearing, and so forth, that $p$, may not be
-		reliable indicates of the truth of their contents.
-	-   Perhaps intuiting that $p$ is a reliable indicator for a suitably
-		delimited class of intuitings. 
+-   Certainly, if we tweak the proposal to read that *somebody's being
+    in a certain mental state* is the item of evidence.
+-   Not all mental states with contents, however, are reliable
+    indicators of the truth of their contents.
+    -   Wish, imagining, fearing, and so forth, that $p$, may not be
+        reliable indicates of the truth of their contents.
+    -   Perhaps intuiting that $p$ is a reliable indicator for a
+        suitably delimited class of intuitings.
 
 -   When a philosopher judges that a character in a Gettier case fails
-	know a proposition, the item of evidence isn't the philosopher's
-	intuitive judgement, it is the truth of the proposition so judged,
-	namely, that the character does not know.
-	-   Williamson contends that the psychological view:
-		1.  Misdescribes philosophical practice,
-		2.  Rests on a false principle about evidence
-		3.  Opens up an epistemologically unfortunate gap between the
-			thought-expermimental evidence and what it is supposed
-			to be evidence for.
+    know a proposition, the item of evidence isn't the philosopher's
+    intuitive judgement, it is the truth of the proposition so judged,
+    namely, that the character does not know.
+    -   Williamson contends that the psychological view:
+        1.  Misdescribes philosophical practice,
+        2.  Rests on a false principle about evidence
+        3.  Opens up an epistemologically unfortunate gap between the
+            thought-expermimental evidence and what it is supposed to be
+            evidence for.
 
 -   There is no room to respond to these worries in detail, but none of
-	them provide well-founded reason to reject a psychological approach
-	to intuitional evidence.
+    them provide well-founded reason to reject a psychological approach
+    to intuitional evidence.
 
 ### Indicator Reliability and Process Reliability
 
--   Interesting case: there was an "ACE-V" method of fingerprint
-	running to match prints, which the FBI used, including the
-	best laboratories.
-	-   Upon investigating and statistical analysis, there was not
-		second-order evidence to suggest the evidence found with ACE-V
-		was any good at all.
+-   Interesting case: there was an "ACE-V" method of fingerprint running
+    to match prints, which the FBI used, including the best
+    laboratories.
+    -   Upon investigating and statistical analysis, there was not
+        second-order evidence to suggest the evidence found with ACE-V
+        was any good at all.
 
 -   This illustrates that was is *taken* as evidence does not confer
-	*genuine* evidencehood, or at least not *good evidencehood*.
-	-   Just as the legal system should surely demand good second-order
-		evidence about the reliability of courtroom forensic testimony,
-		it is reasonable for philosopher to seek analogous tests to
-		obtain second-order evidence about the evidential quality of
-		philosophical methods[^9] 
+    *genuine* evidencehood, or at least not *good evidencehood*.
+    -   Just as the legal system should surely demand good second-order
+        evidence about the reliability of courtroom forensic testimony,
+        it is reasonable for philosopher to seek analogous tests to
+        obtain second-order evidence about the evidential quality of
+        philosophical methods[^9]
 
 ### The Negative Program of Experimental Philosophy
 
 > Exactly what experimental evidence challenges the reliability of
 > intuitions, specifically, singular classification intuitions?
 
--   Singular classification intuitions are intuitive judgments that arise
-	when a person is aced whether a certain example is an instance of a
-	specific property or relation.
-	-   The interesting ones are knowledge, causation, and reference.
-	-   X-Phi practitioners of all strings use survey method to
-		compare and contrast intuitions of groups of respondents.
+-   Singular classification intuitions are intuitive judgments that
+    arise when a person is aced whether a certain example is an instance
+    of a specific property or relation.
+    -   The interesting ones are knowledge, causation, and reference.
+    -   X-Phi practitioners of all strings use survey method to compare
+        and contrast intuitions of groups of respondents.
 
 Positive program
-
 :   Draw various kinds of inferences from differnces in responses, but
-	they don't fundamentally challenge the epistemologically soundness
-	of intuition-based method.
+    they don't fundamentally challenge the epistemologically soundness
+    of intuition-based method.
 
-:   > We certainly do not take ourselves to have offered anything 
-	> like a general proof of the unreliability of all 
-	> intuitions... (Alexander and Weinberg 2008: 153)
+:   We certainly do not take ourselves to have offered anything like a
+    > general proof of the unreliability of all intuitions... (Alexander
+    > and Weinberg 2008: 153)
 
 Negative Program
+:   Try to find evidence that raises doubts about the quality go
+    intuition evidence.
 
-:   Try to find evidence that raises doubts about the quality go intuition
-	evidence.
-
--   Experimental philosophers should be understood to be presenting 
-	second-order evidence in support of the proposition that intuitions
-	have first-order evidential status.
+-   Experimental philosophers should be understood to be presenting
+    second-order evidence in support of the proposition that intuitions
+    have first-order evidential status.
 -   There is room for skepticism, experts might have valid intuitions
-	while other intuitions are devoid of evidential value.
+    while other intuitions are devoid of evidential value.
 
 <!-- ### A Framework for Studying Classification Judgments and Error Possibilities -->
 
 ### Problems for Evidential Status under Free-Floating Classifiers
 
 -   The next class of classifiers I shall consider for philosophical
-	analysis are FFC,
-	-   Under any approach to the proper type of classifier, respondents
-		engaged in classification will need to execute two prior tasks to
-		be successful:
-		1.  Acquire a proper understanding of the case,
-		2.  Acquire a proper understanding of the classification.
+    analysis are FFC,
+    -   Under any approach to the proper type of classifier, respondents
+        engaged in classification will need to execute two prior tasks
+        to be successful:
+        1.  Acquire a proper understanding of the case,
+        2.  Acquire a proper understanding of the classification.
 
-	-   To defend intuitional methodology, these must be possible.
-		-   The classifications?
-			1.  Knowledge
-			2.  Causation
-			3.  Object composition
-			4.  Personal identity[^10]
+    -   To defend intuitional methodology, these must be possible.
+        -   The classifications?
+            1.  Knowledge
+            2.  Causation
+            3.  Object composition
+            4.  Personal identity[^10]
 
 -   If we have the requisite concepts to intuitively make judgements
-	about the anlsysis of philosophical objects, why should we engage
-	in point-counterpoint with intuitional methodology, we should just
-	*consult the faculties* we have.
+    about the anlsysis of philosophical objects, why should we engage in
+    point-counterpoint with intuitional methodology, we should just
+    *consult the faculties* we have.
 
 ### Community-Specific Classifiers
 
--   Given the bleak outlook of FFC, we should turn to "community-specific
-	classifiers."
+-   Given the bleak outlook of FFC, we should turn to
+    "community-specific classifiers."
 
 <!-- ### Processes of Classification Judgement: Preparatory and Final -->
 
@@ -2288,173 +2280,165 @@ Negative Program
 
 ### A Social-Epistemological Perspective on Intuitional Evidence
 
-> **(Basic evidence-possession)** If S is in a conscious mental 
-> state at t that is an evidential state, then S possesses that 
-> evidence at t.
+> **(Basic evidence-possession)** If S is in a conscious mental state at
+> t that is an evidential state, then S possesses that evidence at t.
 >
-> **(Non-basic evidence-possession)** If proposition p is true 
-> and S justifiably believes p at t, then S possesses p as an 
-> item of evidence at t.
+> **(Non-basic evidence-possession)** If proposition p is true and S
+> justifiably believes p at t, then S possesses p as an item of evidence
+> at t.
 
 <!-- ### Intuitional Methodology and the A Priori -->
 
 November 18th, 2013 <small>Seminar</small>
 ------------------------------------------
 
-Occurrent 
-
+Occurrent
 :   Present mental states
 
 Dispositional
-
 :   Stored mental states
 
 Intution
-
 :   Occurrent mental states, either intuitive judgments or non-doxastic
-	intellectual "seemings" or "attractions." Spontaneous, non-inferential.
+    intellectual "seemings" or "attractions." Spontaneous,
+    non-inferential.
 
--   Mostly what we philosophically theorize about in the core branches of
-	philosophy, like epistemology, metaphysics, ethics, ..., these are
-	topics about which ordinary people think and deal and have some
-	competence.
+-   Mostly what we philosophically theorize about in the core branches
+    of philosophy, like epistemology, metaphysics, ethics, ..., these
+    are topics about which ordinary people think and deal and have some
+    competence.
 
-This is where empiricism and rationalism are injected into the
-the philosophical method debate, where the role of philosophers
-is to tease out relevant features for a concept and then "putting
-it to the vote" to the folk, and systematizing those intuition.
-Because the folk cannot theorize and the philosophers cannot intuit.
+This is where empiricism and rationalism are injected into the the
+philosophical method debate, where the role of philosophers is to tease
+out relevant features for a concept and then "putting it to the vote" to
+the folk, and systematizing those intuition. Because the folk cannot
+theorize and the philosophers cannot intuit.
 
 -   There is a right answer, it is necessarily true
 -   We can get it from the armchair, before looking for evidence
-	-   The theory is hard and not easily accessible
+    -   The theory is hard and not easily accessible
 
 -   The answer is easily accessible to folk without theory
 -   Theorist cannot intuit and folk cannot theorize
--   We have to go to the armchair for the necessarily true candidate theories
--   We have to go to the laboratory to get the intuitions to refute candidates
+-   We have to go to the armchair for the necessarily true candidate
+    theories
+-   We have to go to the laboratory to get the intuitions to refute
+    candidates
 
 > What is the philosopher trying to do?
 
 -   General meaning or concept of knowledge.
-	-   There is some correct answer.
-		-   We used to think JTB.
+    -   There is some correct answer.
+        -   We used to think JTB.
 
-	-   Knowledge is a relation between a person and a proposition.
-		-   When does it hold?
+    -   Knowledge is a relation between a person and a proposition.
+        -   When does it hold?
 
-Classifiers | Epistemologically Possible? | Philosophical Desirability |
-------------|-----------------------------|----------------------------|
-PSC         | +                           | -                          |
-CSC         | +                           | -                          |
-FFC         | -                           | +                          |
+  Classifiers   Epistemologically Possible?   Philosophical Desirability
+  ------------- ----------------------------- ----------------------------
+  PSC           +                             -
+  CSC           +                             -
+  FFC           -                             +
 
 November 25th, 2013 <small>Chapter 11, 'Social Epistemology (Collective Epistemology)'</small>
 ----------------------------------------------------------------------------------------------
 
-
 ### Some Terminology
 
 Disagree
-
-:   $S_1$ and $S_2$ *disagree* about $p$ just in case one believe
-	$p$ and the other believes $\lnot p$[^14]
+:   $S_1$ and $S_2$ *disagree* about $p$ just in case one believe $p$
+    and the other believes $\lnot p$[^11]
 
 Reasonably disagree
-
 :   $S_1$ and $S_2$ *reasonably disagree* about $p$ just in case $S_1$
-	and $S_2$ disagree about $p$ and both are reasonable (or justified) in
-	their respective beliefs about $p$.
+    and $S_2$ disagree about $p$ and both are reasonable (or justified)
+    in their respective beliefs about $p$.
 
 Epistemic peers
-
-:   $S_1$ and $S_2$ are epistemic peers (with respect to a roman $D$) just
-	in case $S_1$ and $S_2$ are equally rational, knowledgeable, intelligent,
-	and evidentially informed about matters pertaining to $D$.
+:   $S_1$ and $S_2$ are epistemic peers (with respect to a roman $D$)
+    just in case $S_1$ and $S_2$ are equally rational, knowledgeable,
+    intelligent, and evidentially informed about matters pertaining to
+    $D$.
 
 Epistemic inferiority and superiority
-
-:   $S_1$ is $S_2$'s *epistemic inferior* and $S_2$ is $S_1$'s *epistemic
-	superior* with respect to a domain just in case $S_2$ is more rational
-	more intelligent, and more evidentially informed about matters pertaining
-	to $D$ than $S_1$.
+:   $S_1$ is $S_2$'s *epistemic inferior* and $S_2$ is $S_1$'s
+    *epistemic superior* with respect to a domain just in case $S_2$ is
+    more rational more intelligent, and more evidentially informed about
+    matters pertaining to $D$ than $S_1$.
 
 Peerhood
+:   If you have the general idea of what peer hood, it is not being
+    > explained well by the usual definitions. For instance, consider
+    > the actual peers that do not believe they are peers.
+    > Alternatively, that the peers believe they are peers but are not
+    > justified in believing that (and it's false).
 
-:   > If you have the general idea of what peer hood, it is not being
-	> explained well by the usual definitions. For instance, consider the
-	> actual peers that do not believe they are peers. Alternatively,
-	> that the peers believe they are peers but are not justified in 
-	> believing that (and it's false).
+:   Feldman (2007): intelligence; reasoning powers; background
+    information, etc.
 
-:   Feldman (2007): intelligence; reasoning powers; background information, etc.
+:   Goldman (2012): Feldman’s (above) criteria; both parties exchange
+    evidence and discuss the matter; neither party withholds information
+    from the other
 
-:   Goldman (2012): Feldman’s (above) criteria; both parties exchange 
-	evidence and discuss the matter; neither party withholds information 
-	from the other
-
-:   Kelly (2010): parties should assess relevant evidence equally well; 
-	they should have comparable track records in making reliable 
-	judgments in the relevant domain.
-
+:   Kelly (2010): parties should assess relevant evidence equally well;
+    they should have comparable track records in making reliable
+    judgments in the relevant domain.
 
 ![Goldman's picture of Peer Disagreement](../img/pic_se_pd.png)
 
 ### The Problem
 
--   What does rationality require or permit when known epistemic peers disagree
-	about $p$? What does it require or permit when:
-	1.  You and I are epistemic peers with regard to a domain;
-	2.  We are both aware of (1);
-	3.  You believe $p$ and I hold the opposite;
-	4.  We are both away of (3);
-	5.  We have compared notes and evaluated all relevant evidence with
-		respect to the matter[^11].
+-   What does rationality require or permit when known epistemic peers
+    disagree about $p$? What does it require or permit when:
+    1.  You and I are epistemic peers with regard to a domain;
+    2.  We are both aware of (1);
+    3.  You believe $p$ and I hold the opposite;
+    4.  We are both away of (3);
+    5.  We have compared notes and evaluated all relevant evidence with
+        respect to the matter[^12].
 
 > **(Liar Politician)**: A politician may have lied. You're convinced he
 > he did; I'm convinced he didn't. We have read the exact same evidence,
-> and know as much. Moreover, we acknowledge each other's epistemic 
+> and know as much. Moreover, we acknowledge each other's epistemic
 > peer-hood relation with respect to the issue. Still, we disagree over
 > the matter.
 
 Conciliationism
+:   The rational response in the above case is to suspend
+    judgement/retreat to agnosticism about the case[^13].
 
-:   The rational response in the above case is to suspend judgement/retreat
-	to agnosticism about the case[^12].
-	
 Equal Weight View
+:   In cases of peer disagreement, one should give equal weight to the
+    opinion of a peer and to one's own opinion.
 
-:   In cases of peer disagreement, one should give equal weight to the opinion
-	of a peer and to one's own opinion.
-
-Steadfastness[^13]
-
-:   The rational response in the above case is to retain one's initial belief.
+Steadfastness[^14]
+:   The rational response in the above case is to retain one's initial
+    belief.
 
 ### Conciliationism, Steadfastness, and Uniqueness
 
 -   An argument for Conciliationism:
-	1.  Epistemic peers disagree about $p$ at $t$.
-	2.  UT: For any proposition and body of evidence,
-		exactly one attitude is reasonable to take towards the proposition.
-	3.  If UT and (1), at least one person is in violation of the reasonable
-		attitude towards $p$.
-	4.  So our initial attitudes can't both be reasonable.
-	5.  Insofar as we acknowledge each other as peers, neither of us can
-		rationally conclude that the other is violation of the epistemic
-		principle concerning $p$.
-	6.  So, we should both suspend judgement.
+    1.  Epistemic peers disagree about $p$ at $t$.
+    2.  UT: For any proposition and body of evidence, exactly one
+        attitude is reasonable to take towards the proposition.
+    3.  If UT and (1), at least one person is in violation of the
+        reasonable attitude towards $p$.
+    4.  So our initial attitudes can't both be reasonable.
+    5.  Insofar as we acknowledge each other as peers, neither of us can
+        rationally conclude that the other is violation of the epistemic
+        principle concerning $p$.
+    6.  So, we should both suspend judgement.
 
-> **The Total Evidence View**: “... what it is reasonable to believe 
-> depends on both the original, first-order evidence as well as 
-> on the higher-order evidence that is afforded by the fact that 
-> one’s peers believe as they do” (p. 33).  
+> **The Total Evidence View**: “... what it is reasonable to believe
+> depends on both the original, first-order evidence as well as on the
+> higher-order evidence that is afforded by the fact that one’s peers
+> believe as they do” (p. 33).
 
 -   Conciliationism is self-undermining
-	-   Disagreement about disagreement: conciliationism would “call 
-		for its own rejection”
-	-   This is incoherent: conciliation would seem to recommend 
-		taking an action that would suggest that it is false.
+    -   Disagreement about disagreement: conciliationism would “call for
+        its own rejection”
+    -   This is incoherent: conciliation would seem to recommend taking
+        an action that would suggest that it is false.
 
 December 2nd, 2013 <small>Seminar</small>
 -----------------------------------------
@@ -2462,32 +2446,166 @@ December 2nd, 2013 <small>Seminar</small>
 ### Terminology
 
 Belief aggregation function
+:   At least for a certain range of groups it is natural to think that a
+    group’s doxastic attitude toward a given proposition is grounded in
+    (or supervenes on) the doxastic attitudes of its members. We can
+    represent such a grounding or supervenience relation in terms of a
+    function, or mapping, from beliefs of the members into a belief of
+    the group.
 
-:   At least for a certain range of groups it is natural to think that a 
-	group’s doxastic attitude toward a given proposition is grounded in 
-	(or supervenes on) the doxastic attitudes of its members.  We can 
-	represent such a grounding or supervenience relation in terms of 
-	a function, or mapping, from beliefs of the members into a belief 
-	of the group. 
+December 9th, 2013 <small>Presentation on Strevens, the Priority Rule, and Herding</small>
+------------------------------------------------------------------------------------------
 
-December 5th, 2013 <small>Notes on Second Paper</small>
--------------------------------------------------------
+According to Strevens (2003), whether two scientists make the same
+discovery – but one makes the discovery ten days before the other – that
+scientist should be conferred all the benefits and credit for making the
+discovery. This much seems right. Rewards for scientific discoveries are
+much like winner-take-all races with any place but first receiving no
+reward (or credit).
 
+What is **credit**? “It is the standing that a researcher accrues in
+virtue of their past contributions to knowledge and know-how – their
+standing, in the first instance, in the scientific community rather than
+the world at large. **Credit is, then, what other writers have called
+reputation, credibility, prestige, status, fame.**”
 
+Strevens seeks to answer the following question, “Why does the
+scientific community disburse prestige in accordance with the priority
+rule rather than one of the above reward schemes, or some alternative
+scheme?”
+
+Here are the alternative schemes he has in mind.
+
+Alternatives to the priority rule:
+
+1.  Scientists might all, on an egalitarian reward system, receive equal
+    compensation – that is, for the purposes of this paper, equal
+    prestige.
+2.  Scientists might be compensated in proportion to the talent and
+    effort they invest in their research. Harder working, cleverer
+    scientists would receive more prestige.
+3.  Scientists might be compensated in proportion to their actual
+    achievements, in accordance with the priority rule, but with the
+    amendment that being the second to make a discovery, or having
+    progressed considerably towards making a discovery, count as actual
+    achievements. Runners-up in a scientific race would, in other words,
+    receive for finishing as well.
+
+### 1
+
+Why we shouldn’t accept (1):
+
+It seems like an odd, improper allocation of resources to compensate
+everyone who makes a discovery regardless of the time. For instance, if
+a scientist makes a discovery and then a group of scientists make that
+same discovery much later – i.e. a year later – it seems like they
+should not receive the same resources or credit the first scientist got.
+
+Why we shouldn’t accept (2): We can have hard working, clever scientists
+who again make the discovery much later. We could reward scientists who
+pursue ultimately “unworthwhile” projects. This looks like a bad
+allocation of resources.
+
+But I wonder how this analysis accounts for independent discoveries that
+seem to be useful. Why not accept the third option?
+
+Consider the following cases.
+
+> **Leibniz-Newton controversy**: Most people credit Newton with the
+> discovery of calculus. Most people also agree that Leibniz and Newton
+> independently discovered calculus, but we use Leibniz’s notation
+> because it is easier to use. It seems like both contributed in some
+> way to the development of calculus. Even if Newton is credited with
+> the creation of calculus, it seems like Leibniz offered some sort of
+> novel contribution worth some credit.
+
+> **Raphson-Newton method**: Raphson published findings 50 years prior
+> to Newton on how to best approximate the roots of an equation. Newton
+> came up with similar methods. Raphson’s way of doing the mathematics
+> was simpler and, like Leibniz, made use of easier notation. But it
+> seems like Newton should also be credited here. Why? Because Newton
+> and Raphson shared papers together. Newton’s Method of Fluxions was
+> written in 1671 but it was not published until 1736. Raphson’s
+> Analysis Aequationum Universalis was published in 1690.
+
+Question: Why not think that the runner-up, in this case Leibniz,
+contributed an actual achievement?
+
+Possible response:
+
+> Leibniz can be credited for coming up with a particular procedure,
+> e.g. the notation, but not calculus. In other words, Leibniz did not
+> provide an actual achievement.
+
+### 2
+
+Ways the priority rule might go wrong:
+
+1.  Scientists might deliberately abandon the priority rule—if, for
+    example, it were perceived to be unfair and in need of reform.
+2.  Scientists might for some reason lose their taste for credit, for
+    status, for reputation – hard though that might be to imagine.
+3.  Other incentives might swamp or otherwise distort the motivating
+    force of credit. Then, although single-mindedly credit-seeking
+    scientists would distribute themselves optimally, fully human
+    scientists might not – if, for example, they received enormous
+    grants from politically or economically motivated actors to join a
+    particular research program regardless of its meager prospects.
+
+Scientists might badly overestimate or underestimate their expected
+contribution to a research program.
+
+The latter two seem like the biggest areas for concern.
+
+### 3
+
+Herding: When a single research program ends up with a number of
+researchers well in excess of the “optimum.”
+
+If we take the priority rule as a way to work towards an optimal
+distribution of scientists for diverse research programs, then
+everything is fine. But how does this work?
+
+If funding bodies only offer resources for the expected contribution of
+a particular program, how could we avoid many scientists pursuing only
+the program with only the highest expected contribution? Then we might
+end up with many research programs that have perhaps higher risks (i.e.
+they threaten a scientists’ professional career if pursued because there
+might be little to no payoff versus the time invested) and are not
+explored at all.
+
+Take two research programs with equal potential. One is predictive; the
+other is explanatory (this doesn’t mean that one’s predictions are any
+better than the other).
+
+Predictive programs: Think of work in quantum mechanics, or general
+relativity, or special relativity.
+
+Explanatory programs: Think of evolutionary theories which, in some
+cases, seek to mathematically reproduce the direction or trend of
+evolution relatively precisely. But there is little predictive power.
+
+If there is a bias towards predictive rather than more explanatory
+theories, then scientists might want to join the former but not the
+latter. Scientists won’t shun explanatory programs but they would join
+them in smaller numbers by comparison. We start to have so many
+scientists in the predictive program that it begins to have marginal
+returns. So the expected contribution of any scientist who joins from
+that point on decreases. Now the predictive program becomes less
+attractive. But if the explanatory program is becoming less attractive
+at just a slightly quicker pace than the predictive program, we have the
+aforementioned herding effect.
+
+How do we avoid this so we can promote diversity of programs in the
+sciences?
+
+Possible answer: Have funding bodies that offer incentivesthat provide
+motivation to join small, explanatory research program. (There would
+still be a worry for scientists who do join that program: their work
+would not receive the applause of their own scientific community –
+economics, psychology, etc.)
 
 <!-- Acronyms -->
-
-*[JTB]: Justified true belief
-
-*[BIV]: Brain in a vat
-
-*[X-Phi]: Experimental philosophy
-
-*[FFC]: Free-floating classifiers
-
-*[CCF]: Community-specific classifiers
-
-*[UT]: Uniqueness Thesis
 
 <!-- Footnotes -->
 
@@ -2529,15 +2647,19 @@ December 5th, 2013 <small>Notes on Second Paper</small>
 
 [^10]: These change with culture because they are normative! Oh no!
 
-[^11]: What about when the domain is the criteria for peer hood, the
-	proposition is "$S_1$ and $S_2$ are peers." and $S_1$ and $S_2$
-	assent and dissent respectively.
+[^11]: Note: Disagreement requires that S1 and S2 hold two positive, yet
+    incompatible, doxastic attitudes toward p. To affirm that p is to
+    positively believe that p is true (and thereby to believe that its
+    negation is false). To deny that p is to positively believe that ¬ p
+    is true (and thereby to believe that its negation is false).
 
-[^12]: There are two sense of suspension. There is the "time out" sense
-	of suspension, "Hold on! Let me think about this." And then there
-	chess. There is a difference between "no view" and "middle view."
+[^12]: What about when the domain is the criteria for peer hood, the
+    proposition is "$S_1$ and $S_2$ are peers." and $S_1$ and $S_2$
+    assent and dissent respectively.
 
-[^13]: What I think this is answering is "When is a peer's disagreeing
-	with me evidence sufficient to change my attitude?"
+[^13]: There are two sense of suspension. There is the "time out" sense
+    of suspension, "Hold on! Let me think about this." And then there
+    chess. There is a difference between "no view" and "middle view."
 
-[^14]: Note: Disagreement requires that S1 and S2 hold two positive, yet incompatible, doxastic attitudes toward p. To affirm that p is to positively believe that p is true (and thereby to believe that its negation is false). To deny that p is to positively believe that ¬ p is true (and thereby to believe that its negation is false).
+[^14]: What I think this is answering is "When is a peer's disagreeing
+    with me evidence sufficient to change my attitude?"
