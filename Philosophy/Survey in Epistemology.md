@@ -651,7 +651,7 @@ September 30th, 2013 <small>Chapter 3, part I, 'Defining Knowledge'</small>
 ### The Gettier problem
 
 -   Gettier's assumptions:
-    1.  **Fallibism about justification**: A belief can be justified
+    1.  **Fallibilism about justification**: A belief can be justified
         even if it is false.
     2.  **Justification closure**: If you are justified in believing P,
         P entails Q, and you (competently) deduce Q from P and accept Q
@@ -2355,7 +2355,7 @@ Reasonably disagree
     in their respective beliefs about $p$.
 
 Epistemic peers
-:   $S_1$ and $S_2$ are epistemic peers (with respect to a roman $D$)
+:   $S_1$ and $S_2$ are epistemic peers (with respect to a domain $D$)
     just in case $S_1$ and $S_2$ are equally rational, knowledgeable,
     intelligent, and evidentially informed about matters pertaining to
     $D$.

@@ -1652,6 +1652,633 @@ Graphs
 		[fun,skiing][fun,skiing][fun,hiking][cheap,hiking] 
 		false
 		
-[^1]: Note that order matters here, where you always have variables on one side,
-those with capital letters first, and constants on the other, those with lowercase
-letters first. Also note that it will fail when you get a conflicting binding.
+
+December 15th, 2013 <small>Final Exam Study Guide</small>
+-----------------------------------------------------------
+
+### Meta interpreters
+
+Meta-interpreter
+
+:   A *meta* interpreter is an interpreter for a language written in
+	the language it interprets.
+
+	> Why do such a thing?
+
+	-   The easiest language to write a Prolog interpreter is Prolog.
+	-   Once you have an interpreter, you can modify it.
+
+### Types
+
+#### What is a type?
+
+-   A set of values and the valid operations on those values.
+	-   Integers
+
+			+ - * div < <= = >= >
+
+	-   Arrays
+
+			lookUp(<array>, <index>)
+			assign(<array>, <index>, <value>)
+			initialize(<array>)
+			setBound(<array>)
+
+	-   User-defined types:
+		-   Structs
+		-   Classes
+
+-   Program semantics embedded in types used
+	-   Additional correctness check provided beyond valid syntax.
+
+##### Constructed types
+
+-   Constructive point-of-view
+	-   Primitive types, `int`, `char`, `bool`, `enum`
+	-   Composition/constructive types:
+
+		Structure | Function
+		----------|----------
+		reference | pointerTo(int)
+		array | arrayOf(char)
+		record | record(age:int, name:string)
+		subrange | int[1..20]
+		union | union(int, pointerTo(char))
+		list | list(...)
+		set | setOf(color)
+		function | float, int
+
+##### Varieties
+
+-   Implicit
+	-   Values are typed, but variables aren't
+	-   Prolog, Scheme, Lisp, Smalltalk, Python
+
+-   Explicit
+	-   Declarations bind types to variables at compile time
+	-   Pascal, Algol68, C, C++, Java
+
+-   Mixture
+	-   Implicit by default but allows explicit declarations
+	-   Haskell, ML, Common Lisp
+	-   Trust declarations result in speed
+	-   Test declarations result in correctness
+
+##### Systems
+
+-   Rules for constructing types
+-   Rules for determining/inferring the type of expressions
+-   Rules for compatibility
+	-   In what contexts can values of a type be used?
+
+-   Rules for type equivalence or type conversion
+	-   Determining that an expression can be used in some context
+
+##### Expressions
+
+-   If $f$ has type $S$ and $T$, $x$ has type $S$, then $f(x)$ has
+	type $T$
+	-    Type of `3 div 2` is `int`
+	-    Type of `round(3.5)` is `int`
+
+-   *Type error* is using wrongly typed operands in an operation
+	
+		round("Nancy")
+		3.5 div 2
+		"abc" + 3
+
+#### Type checking
+
+-   *Goal*: To find out as early as possible, if each procedure and operator is
+	supplied with the correct type of arguments.
+	-   Type error: when a type is used improperly in a context.
+	-   Type checking performed to prevent type errors
+
+-   Modern PLs often designed to do type checking during compilation.
+
+##### Varieties of type checking
+
+-   Compile-time (static)
+	-   At compile, uses declaration information or can infer types from
+		variable uses.
+
+-   Run-time (dynamic)
+	-   During executing, checks type of a value before doing operations
+		on it.
+	-   Uses type tags to record types of values.
+
+-   Combined (compile and run time)
+
+##### Type safety
+
+-   A *type safe* program executes on all inputs without type errors.
+	-   Goal of type checking is to ensure type safety.
+	-   Type safe does not mean without error.
+
+			read n;
+			if n>0 then { y :="ab";
+							if n<0 then x := y - 5; }
+
+		-   Not that the assignment to `x` is never executed so program
+			is type safe but contains an error.
+
+##### Strong typing
+
+-   Strongly typed PL by definition, PL requires all programs to be type
+	checkable.
+-   Statically strongly typed PL means that the compiler allows only programs
+	that can be type checked fully at compile time.
+	-   Algol68
+	-   ML
+
+-   Dynamically strongly typed PL means that operations include code to check
+	runtime types of operands, if type cannot be determined compile-time.
+	-   Pascal
+	-   Java
+
+##### Hierarchy of types
+
+![Hierarchy of programs](../img/cs-pl-types.png)
+
+Type | Static checking | Dynamic checking
+-----|-----------------|------------------
+**Implicit types** | ML | Scheme
+**Explicit types** | Algol68 | C, Pascal
+
+##### Difficulties in Static Type Checking
+
+-   If validity of expression depends not only on the types of the operands
+	but on their values, static type checking cannot be accomplished.
+	-   Taking successors of enumeration types
+	-   Using unions without type test guard
+	-   Converting ranges into subranges
+	-   Reading values from input
+	-   Dereferencing `void *` pointers
+
+#### Type conversion
+
+##### Implicit conversion 
+
+-   Also known as *coercion*
+-   In C, mixed mode numerical operations
+	
+		double d, e; e = d + 2 // 2 coerced to 2.0
+
+-   Usually can use widening or conversion without loss of precision
+-   Cannot coerce user-defined types or structures
+-   But you can do `Shape s = new Circle();`
+
+##### Explicit conversion
+
+-   In Pascal, can explicitly convert types which may lose precision,
+	also known as narrowing.
+
+		round(s); // int by rounding
+		trunc(s); // int by truncating
+
+-   In C, casting sometimes is explicit conversion
+
+		dqstr((double) n); // where n is declared to be an int
+		free list * s; ... (char *) s; // forces s to be considered
+		// as pointing to a char for purposes of pointer arithmetic
+
+
+##### Overloading operators
+
+-   Primitive type of *polymorphism*
+	-   When an operator allows operands of more than one type, in
+		different contexts
+
+-   Examples
+	-   Integer addition: 1 + 2 versus real addition: 1.0 + 2.0
+	-   Addition: 2 + 3 is 5, versus concatenation: "abc" + "def" 
+		is "abcdef"
+	-   Comparision operator used for two different types: 2 == 3
+		verssus "abc" == "def" in Python.
+
+##### Primitive Types
+
+-   Issues
+	-   Type checking
+	-   Representation in the machine
+
+-   Boolean
+	-   Use of integer 0 / non-0 versus true/false
+
+-   Char versus string
+-   Integer
+	-   Length fixed by standards or implementation (portability issues)
+	-   Multiplie lengths (C: short, int, long)
+	-   Signs
+
+-   Float/real
+	-   Should value comparisons be allowed?
+
+#### Arrays
+
+##### Definition
+
+-   Indexed collection of values, often homogenous
+-   Access to individual elements through subscript
+-   Choices made by PL design:
+	-   Subscript syntax
+	-   Subscript type, element type
+	-   When to set bounds, compile time or run time?
+	-   Are bounds changeable
+	-   How to initialize? 
+	-   What operations allowed on whole arrays?
+
+##### Array type
+
+-   What is part of the array type?
+	-   Size?
+	-   Bounds?
+		-   Pascal: bounds are part of the type
+		-   C, Algol68: bounds are not part of type
+		-   Must be fixed at compile-time in Pascal but can be set at
+			runtime in C and Fortran
+
+	-   Dimension? always part of the type
+
+-   Choice has ramifications on kind of type-checking needed
+
+##### Choices for Arrays
+
+-   Global lifetime, static shape (in static memory)
+-   Local lifetime
+	-   Static shape
+	-   Shape bound at elaboration time when control enters a scope
+		-   Ada, Fortran, allow definition of array bounds when function
+			is elaborated
+
+-   Arrays as objects (Java)
+	-   Shape bound at elaboration time (kept in heap)
+
+			int[] a; a = new int[size];
+
+##### Implementation
+
+-   For fixed length array, symbol table keeps track of name, element type,
+	bounds etc during compilation, can allocate in static storage or on
+	frame of declaring method.
+-   For arrays whose length is not knowable at compile-time, we use a dope
+	vector, a designator of fixed size on the stack frame, and then allocate
+	space for the array data separately.
+-   Dope vector contains
+	-   Name, type of subscript, bounds, type of elements, number of bytes
+		in each element, point to first storage location of array
+	-   Allows calculation of actual address of an array element from these
+		values.
+
+##### Universal Indirection
+
+-   C++: 
+
+		struct point{int x, int y} center;
+
+-   Java:
+
+		Point center = new Point(0, 0);
+
+-   Extra indirection allows 
+
+		Shape s = new Square (2);
+
+-   But costs:
+	-   Extra cost of heap allocation
+	-   Boxing and unboxing
+
+-   This is why ints, floats, chars, are not objects in Java.
+
+##### Strong typing
+
+-   Type errors caught as type errors
+	-   Rather than "bus error" or just garbage out
+
+-   Prevents certain "efficient" techniques
+	-   Union record types
+	-   Casting void* pointers
+
+-   Efficient in what?
+-   Modern languages avoid need for unsafe operations
+	-   Checking casting of references
+
+##### Explicit types
+
+-   Allow many type errors to be caught by compiler
+-   Require programmer to enter types
+	-   But if problem well-understood and large, probably should
+		have pre-planned this information anyway.
+
+-   Prevent some convenient program methods
+	-   Lists of non-homogenous types of elements
+	-   Modern languages reduce need for these methods
+
+#### Type rules
+
+	E e1: integer E e2:integer
+	--------------------------
+	E (e1 + e2):integer
+
+-   If both operands of `+` are integers, the result is an integer
+-   E is a *type-environment* that maps constant and variables to their
+	types.
+
+### Scripting and Dynamic Langues
+
+-   Examples of scripting languages
+	-   Python, Ruby, Perl
+
+-   Goals
+	-   Rapid prototyping
+	-   Easy implementation of simple programs
+	-   Pasting together existing programs
+
+#### History
+
+-   Unix approach: combine simple programs
+-   EG: To find largest files
+
+		du -a /Applications/Racket* | sort -nr -k1
+
+-   Need automation, shell scripts
+	-   Eg post-slides-314
+
+-   Note interface on a pipe is a stream of chars
+	-   Normally a stream of lines, sort sorts lines
+
+-   Data as stream of lines, line as array of fields, awk
+
+#### Awk
+
+-   Awk program: sequence of statements
+	
+		Line-selection {action}
+
+-   Line selector: one or two regular expressions or boolean expr or BEGIN
+	or END
+-   Action: assign, functions, print, if, ...
+-   Variables, arrays with string indices
+-   For each line of input
+	
+		for each line of the program
+			if selector then do action
+
+##### Examples
+
+-   Average 2nd field when it exists
+
+		NF >= 2 {total += $2; ct+=1}		END (if (ct>0) print total/ct; else print nothing to average
+
+-   Count of each word
+
+		NR > 0 {ct[$1]++}		END {for (a in ct) print a, ct[a]}
+
+#### Perl
+
+-   Awk not enough power for anything for anything but smallest programs
+	-   Weak handling of user-defined functions and local variables
+
+-   Perl: general programming languages
+	-   But with syntax for "do this regexp munge to each line"
+
+-   Perl "just grew" from a personal language
+	-   Lots of special global variables, `@ARGS, @_`
+	-   Not `@` sign: array. Also `$var` scalar value.
+	-   Influenced by shell command langage. 
+
+#### Dynamic Languages
+
+-   E.g. scheme
+-   Blur runtime / compile time
+-   Interactive read-eval-print loop
+-   Data has a type, variable does not
+-   Built in syntax for I/O of lists, arrays, etc.
+-   Good for rapid prototyping
+-   Provides manual access to a body of code, R, Matlab
+
+#### Newer Scripting Languages
+
+-   Python, Ruby
+	-   Web scripting languages (Javascript, PHP, ASP) are something
+		different
+
+-   Dynamic
+-   Scripting
+	-   Facilities to handle processes, files
+	-   Facilities to handle file as list of lines
+	-   Regular expressions
+	-   Embeddable, extensible
+	-   High-level data structures
+
+-   Extensive libraries
+	-   Standard central repository on the web
+
+-   Still started as personal languages but by people with
+	exposure to more modern languages.
+
+### Python
+
+-   Indentation instead of `{}`
+
+		while j < 5:
+			k = 0
+			while k < j:
+				print k + j, ' ',
+
+			print '\n'
+
+		print 'Done'
+
+#### Data Sequence Types
+
+-   Sequence types: strings, lists, tuples
+	-   Indices start 0, like Java
+	-   Slice: like Java substring
+
+			a = 'help'
+			a[0:2] is 'he'
+			a[2:] is 'lp', so is a[2:4] and a[2:20]
+			len( a[2:4] ) is 2
+
+-   Iteration over sequences
+
+		for b in a:
+			print b
+
+#### Lists
+
+-   List
+
+		[2, 3.1, 'foo']
+
+-   Can slice
+
+		a = [3, 4.5, 'foo']
+		a[2:3] is ['foo']
+		a[2] is 'foo'
+
+-   Can assign to slice
+
+#### Other data
+
+-   Tuple
+	-   Like list but cannot be changed
+	-   Use paren(4, 7)
+
+-   Set
+	-   No duplicates, no order
+	
+			set([1, 4, 2, 1]) == set([2, 1, 4]) == true
+
+-   Dictionary
+	-   A hash table, a set of key value pairs
+	
+			a = {'horse':4, 'fish':0}
+	
+	-   `a['fish']` returns 0
+	-   Key must be immutable
+
+#### Tuple Assignment
+
+-   `(x, y) = (0, 1)`
+	-   Sets `x` to `o` and `y` to `1`
+
+-   `(x, y) = (y, x)`
+	-   Swaps `x` and `y` valyes
+	-   Evaluate both `y` and `x` first, then do assignment
+
+#### Conditionals
+
+	if a<0:		print 'negative'	elif a==0:		print 'zero'	else:		print 'positive'
+
+#### Loops
+
+-  while a =1		
+		while a<=n: 
+			print a-   for
+		for a in range(1, n, 2):-   range
+		range(start, end, step)
+
+#### Tuple Assignment
+
+-   Tuple assignment works in both function calls and for loops
+
+		def foo( (x,y), z) 
+			print x			print z 
+
+		a = (1, 2)		foo(a, 3)		$ 1 
+		$ 3
+
+#### Break and Else <small>for loops</small>
+
+	for n in range(len(lst)): 
+		if lst[n]==0:			print n			break		else:			print 'not ' + ('%i' % n)	
+	else:		print 'none' 
+
+	print 'done'
+
+#### Filer, Map, and Reduce
+
+-   filter(fn, list)		filter(lambda n: n+1 !=5, [3, 4, 6])		returns [3, 6]
+-   map(fn, list)		map(lambda n: n+1, [3, 4, 6])		returns [4, 5, 7]
+-    reduce(fn, list)
+		reduce(lambda x, y: x+y, [3, 2, 1])
+		returns 6
+
+#### List Comprehensions-   [ <expression> for <var> in <list> ] 
+-   [n*n for n in [3, 4, 6] if n+1 != 5]	-   returns [9, 36]
+-   Like a combination of map and filter, may be more readable-   Multiple fors: leftmost = outer loop	-   [(x,y) for x in [2,3,4] if x>2 for y in [5, 6] if x*y!=20] 
+	-   returns [(3, 5), (3, 6), (4, 6)]
+
+### Scope
+
+### Parameters
+
+#### Association
+
+-   Positional association
+	-   Arguments associated with formals one-by-one
+		-   C, Pascal, Scheme, Java
+
+-   Keyword association
+	-   Ada uses a mixtures
+
+#### Passing Modes
+
+-   Pass by value
+	-   C, Pascal, Ada, Scheme, Algol68
+
+-   Pass by result
+	-   Ada
+
+-   Pass by value result
+	-   Fortran, sometimes Ada
+
+-   Pass by reference
+	-   Fortran, Pascal var params, sometimes Cobol
+
+-   Pass by name (outmoded)
+	-   Algol60
+
+##### Pass by Value
+
+	c: array [1..10] of integer; 
+	m,n : integer;
+	procedure r (k, j : integer) 
+	begin
+		k := k+1;
+		j := j+2; 
+	end r;
+	...
+	m := 5;
+	n := 3; r(m,n); 
+	write m,n;
+
+> Output: `5 3`
+
+-   Advantages
+	-   Argument protected from changes in callee
+
+-   Disadvantages
+	-   Copying of values takes executing time and space,
+		especially for aggregate values.
+
+##### Pass by Result
+
+	c: array [1..10] of integer; 
+	m,n : integer;	procedure r (k, j : integer) 
+	begin		k := k+1;		j := j+2; 
+	end r;	...	m := 5;	n := 3; 
+	r(m,n); 
+	write m,n;
+
+> Output: `6 5`
+
+-   Assume we have `procedure P(k, j : int)` with `k` and `j`
+	as result parameters. What is the interpretation of `p(m,m)`?
+	-   Assume parameter `k` has value 2 and `j` has value 3 at end of `p`.
+		-   What value is `m` on return?
+
+##### Pass by Value-Result
+
+	c: array [1..10] of integer; 
+	m,n : integer;	procedure r (k,j : integer) 
+	begin		k := k+1;		j := j+2; 
+	end r;	...	m := 5;	n := 3; 
+	r(m,n); 
+	write m,n;
+
+> Output: `6 5`
+
+##### Comparisons
+
+-   Value-result
+	-   Has all the advantages and disadvantages of value and result
+		together
+
+-   Reference
+	-   Advantage: more efficient than copying
+	-   Disadvantage: aliasing - when there are two or more different names
+		for the same storage location
+		-   Side effect not visible from code itself.

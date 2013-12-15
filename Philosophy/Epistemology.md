@@ -1475,8 +1475,6 @@ in truth-conditions for knows. Why?
 
 ### Contextualism Defended (from Jennifer Nagel)[http://www.utm.utoronto.ca/~nageljen/333/]
 
-**Stewart Cohen: Contextualism Defended**
-
 > **The skeptical paradox**
 > 
 > 1.  I know that P.
@@ -1613,6 +1611,7 @@ Heart of Contextualism
 #### Is the Contextualism Model Coherent?
 
 -   Explanatory power does not hold for much is the model is incoherent.
+
 
 *[BIV]: Brain in a vat 
 *[EDD]: Evil demon deceived
