@@ -2007,16 +2007,10 @@ ABCD | NA
 
 		r2(B) w2(B) r2(A) w2(A) r1(A) w1(A) r1(B) w1(B)
 
-#### Question 4
-
-November 21 <small>The "Interview"</small>
-------------------------------------------
-
-December 3rd <small>TBD (I may be away)</small>
------------------------------------------------
-
 December 5th <small>Class Projects Presentations</small>
 --------------------------------------------------------
+
+<iframe width="560" height="315" src="//www.youtube.com/embed/vrmNO3Ytsm4" frameborder="0" allowfullscreen></iframe>
 
 December 10th <small>Project Finalists and Crowning of the Winner</small>
 ------------------------------------------------------------------------
