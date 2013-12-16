@@ -2028,11 +2028,13 @@ Type | Static checking | Dynamic checking
 
 -   Average 2nd field when it exists
 
-		NF >= 2 {total += $2; ct+=1}		END (if (ct>0) print total/ct; else print nothing to average
+		NF >= 2 {total += $2; ct+=1}
+		END (if (ct>0) print total/ct; else print nothing to average
 
 -   Count of each word
 
-		NR > 0 {ct[$1]++}		END {for (a in ct) print a, ct[a]}
+		NR > 0 {ct[$1]++}
+		END {for (a in ct) print a, ct[a]}
 
 #### Perl
 
@@ -2150,45 +2152,83 @@ Type | Static checking | Dynamic checking
 
 #### Conditionals
 
-	if a<0:		print 'negative'	elif a==0:		print 'zero'	else:		print 'positive'
+	if a<0:
+		print 'negative'
+	elif a==0:
+		print 'zero'
+	else:
+		print 'positive'
 
 #### Loops
 
--  while a =1		
+-  while a =1
+		
 		while a<=n: 
-			print a-   for
-		for a in range(1, n, 2):-   range
-		range(start, end, step)
+			print a
+
+-   for
+
+		for a in range(1, n, 2):
+
+-   range
+
+		range(start, end, step)
 
 #### Tuple Assignment
 
 -   Tuple assignment works in both function calls and for loops
 
 		def foo( (x,y), z) 
-			print x			print z 
+			print x
+			print z 
 
-		a = (1, 2)		foo(a, 3)		$ 1 
+		a = (1, 2)
+		foo(a, 3)
+
+		$ 1 
 		$ 3
 
 #### Break and Else <small>for loops</small>
 
-	for n in range(len(lst)): 
-		if lst[n]==0:			print n			break		else:			print 'not ' + ('%i' % n)	
-	else:		print 'none' 
+
+	for n in range(len(lst)): 
+		if lst[n]==0:
+			print n
+			break
+		else:
+			print 'not ' + ('%i' % n)
+	
+	else:
+		print 'none' 
 
 	print 'done'
 
 #### Filer, Map, and Reduce
 
--   filter(fn, list)		filter(lambda n: n+1 !=5, [3, 4, 6])		returns [3, 6]
--   map(fn, list)		map(lambda n: n+1, [3, 4, 6])		returns [4, 5, 7]
--    reduce(fn, list)
-		reduce(lambda x, y: x+y, [3, 2, 1])
+-   filter(fn, list)
+
+		filter(lambda n: n+1 !=5, [3, 4, 6])
+		returns [3, 6]
+
+-   map(fn, list)
+
+		map(lambda n: n+1, [3, 4, 6])
+		returns [4, 5, 7]
+
+-    reduce(fn, list)
+
+		reduce(lambda x, y: x+y, [3, 2, 1])
 		returns 6
 
-#### List Comprehensions-   [ <expression> for <var> in <list> ] 
--   [n*n for n in [3, 4, 6] if n+1 != 5]	-   returns [9, 36]
--   Like a combination of map and filter, may be more readable-   Multiple fors: leftmost = outer loop	-   [(x,y) for x in [2,3,4] if x>2 for y in [5, 6] if x*y!=20] 
+#### List Comprehensions
+
+-   [ <expression> for <var> in <list> ] 
+-   [n*n for n in [3, 4, 6] if n+1 != 5]
+	-   returns [9, 36]
+
+-   Like a combination of map and filter, may be more readable
+-   Multiple fors: leftmost = outer loop
+	-   [(x,y) for x in [2,3,4] if x>2 for y in [5, 6] if x*y!=20] 
 	-   returns [(3, 5), (3, 6), (4, 6)]
 
 #### Objects
@@ -2290,9 +2330,15 @@ Varied size scope |
 ##### Pass by Result
 
 	c: array [1..10] of integer; 
-	m,n : integer;	procedure r (k, j : integer) 
-	begin		k := k+1;		j := j+2; 
-	end r;	...	m := 5;	n := 3; 
+	m,n : integer;
+	procedure r (k, j : integer) 
+	begin
+		k := k+1;
+		j := j+2; 
+	end r;
+	...
+	m := 5;
+	n := 3; 
 	r(m,n); 
 	write m,n;
 
@@ -2306,9 +2352,15 @@ Varied size scope |
 ##### Pass by Value-Result
 
 	c: array [1..10] of integer; 
-	m,n : integer;	procedure r (k,j : integer) 
-	begin		k := k+1;		j := j+2; 
-	end r;	...	m := 5;	n := 3; 
+	m,n : integer;
+	procedure r (k,j : integer) 
+	begin
+		k := k+1;
+		j := j+2; 
+	end r;
+	...
+	m := 5;
+	n := 3; 
 	r(m,n); 
 	write m,n;
 
@@ -2326,6 +2378,164 @@ Varied size scope |
 		for the same storage location
 		-   Side effect not visible from code itself.
 
+### Parameter Passing <small>v2</small>
+
+#### Terms
+
+Function definition
+
+:   Where the details of the function are presented.
+
+Function call
+
+:   Where the function is invoked.
+
+Parameters
+
+:   Names of local variables in function that are given during
+	call.
+
+Local variables
+
+:   Variables in function that are given values during call.
+
+Arguments
+
+:   Values provided for parameters.
+
+Parameter passing
+
+:   Methods used to determine how argument values relate to parameters.
+
+Overloading
+
+:   When thje same function name can have one or more set of parameters
+
+L-value
+
+:   Location of the variable
+
+R-value
+
+:   Contents of the variable (or result of the expression)
+
+#### Call by Value
+
+-   Calling mechanism
+	-   Arguments are evaluated for their values
+	-   Local variables created for each parameter
+	-   Values resulting from arguments copied to new parameter variables
+	-   When function call ends, parameter variables are discarded
+
+-   During function execution, value of parameters may diverge from argument
+	values (function does not affect arguments)
+-   Call by Value used in
+	-   C
+	-   Most C++ paremeters
+
+-   Variables are change in functions only indirectly
+	-   Point values are passed to functions
+	-   Variables that the point point at may be changed in a function
+
+-   Characteristics:
+	-   Variables may not directly be changed in function body
+	-   Arguments can be complex expressions
+	-   Mechanism is simple (easy to explain)
+
+-   Example
+
+		int x = 1;
+
+		void func1 (int a) {
+			// Location 2
+			x = 2;
+			// Location 3
+			a = 5;
+			// Location 4
+		}
+
+		void main () {
+			// Location 1
+			funct1(x);
+			// Location 5
+		}
+
+	Location | `a =?` | `x =?`
+	---------|--------|--------
+	1 | undefined | 1
+	2 | 1 | 1
+	3 | 1 | 2
+	4 | 5 | 2
+	5 | undefined | 2
+
+#### Call by Reference
+
+-   Calling mechanism
+	-   Variables locations for arguments determined
+	-   Parameter names added to the location for each argument
+	-   When function call ends, extra names are discarded
+
+-   During function call, changes to referenced variables persist
+	even after function ends.
+-   Call by Reference used
+	-   Pascal
+	-   C++ (& parameters)
+	-   Some version of FORTRAN
+
+-   Characteristics:
+	-   Changed to parameters change corresponding argument variables
+	-   Arguments must be variables
+
+-   Example 
+
+		int x = 1;
+
+		void func1 (int a) {
+			// Location 2
+			x = 2;
+			// Location 3
+			a = 5;
+			// Location 4
+		}
+
+		void main () {
+			// Location 1
+			funct1(x);
+			// Location 5
+		}
+
+	Location | `a =?` | `x =?`
+	---------|--------|--------
+	1 | undefined | 1
+	2 | 1 | 1
+	3 | 2 | 2
+	4 | 5 | 5
+	5 | undefined | 5
+
+#### Call by Value-Result
+
+-   Calling mechanism
+	-   Arguments are evaluated for their values
+	-   Local variables created for each parameter
+	-   Values resulting from arguments coped to new parameter variables
+	-   When function call ends, values from parameters copied back to
+		calling variables
+
+-   Operates like Call by Reference but differs under certain circumstances
+-   Used in some versions of FORTRAIN, inout param in CORBA
+-   Example
+
+		int x = 1; // global x		
+		void func1 (int a) {			// Location 2			a = 3;			// Location 3			x = 4;			// Location 4		}		void main () {			// Location 1			func1(x);			// Location 5		}
+
+	Location | `a =?` | `x =?`
+	---------|--------|--------
+	1 | undefined | 1 
+	2 | 1 | 1 
+	3 | 3 | 2 
+	4 | 3 | 4 
+	5 | undefined | 3
+
 December 15th, 2013 <small>Practice Final Exam</small>
 ------------------------------------------------------
 
@@ -2337,11 +2547,15 @@ generates the language or explain why this is impossible:
 
 1.  L = The set of strings that start with three or more a’s followed 	by any number (including 0) of a’s and b’s.
 
+		(aaa)(a|b*)
+
 2.  L = The set of strings in which every ‘a’ is followed immediately 
 	by a ‘b’ and every ‘b’ is immediately preceded by an ‘a’., and 
 	similarly for ‘c’ and ‘d’. In other words, the strings must be 
 	made up of combinations of ab and cd. E.g., ‘abcdab’ is in L but 
 	‘abccd’ is not.
+
+		((ab)|(cd))*
 
 ### Question 2
 
@@ -2350,50 +2564,63 @@ Consider the following FSA:
 ![Finite State Automata Diagram](../img/cs-pl-final-fsa.png)
 
 1.  Is this a deterministic or non-deterministic FSA? Why?
+	-   A non-deterministic FSA has at least one state which has two
+		arrows with the same label or an epsilon transisition.
+	-   So this one is deterministic.
+
 2.  Write a regular expression that specifies the same language 
 	that this FSA accepts.
+
+		(b|m)(a)((d|n)(x))*
+
 3.  Complete the following grammar for the language this FSA accepts:
 
-		S      -> PREFIX | PREFIX TAIL		PREFIX -> BORM 
+		S      -> PREFIX | PREFIX TAIL
+		PREFIX -> BORM a
 
-	1.  `BORM`
-	2.  `TAIL`
-	3.  `NORD`
+	1.  `BORM -> b | m`
+	2.  `TAIL -> NORD x | NORD x TAIL`
+	3.  `NORD -> n | d`
 
 ### Question 3
 
-In the following Scheme function, num-list is a list of numbers and threshold 
-is a single number. The function list-greater returns a list equal in length 
-to num-list but with each number replaced by either #t or #f, depending 
+In the following Scheme function, `num-list` is a list of numbers and threshold 
+is a single number. The function `list-greater` returns a `list` equal in length 
+to `num-list` but with each number replaced by either `#t` or `#f`, depending 
 on whether the number is or is not greater than threshold. E.g., 
-(list-greater ‘(2 5 3 6) 4)) should return (#f #t #f #t). Finish the 
-definition below. You must use map.
+`(list-greater '(2 5 3 6) 4))` should return `(#f #t #f #t)`. Finish the 
+definition below. You must use `map`[^map].
 
 	(define (list-greater num-list threshold)
+		(map (lambda(x)(x > threshold)) num-list)
+	)
 
 ### Question 4
 
-The following Scheme code defines sumsqtr, a function that takes a
+The following Scheme code defines `sumsqtr`, a function that takes a
 list of numbers as its argument and returns the sum of the squares of 
 those numbers. Eg `(sumsqtr '(1 4))` returns `17`. 
 `Sumsqtr` and its helper function `sumsqtrh` are tail recursive. 
 Fill in the blanks.
 
-	(define (sumsqtr lst)		(sumsqtrh    _________  ____________))	(define (sumsqtrh lst accum)		(if		
-		
-		
+	(define (sumsqtr lst)
+		(sumsqtrh lst 0))
+	(define (sumsqtrh lst accum)
+		(if (null? lst) accum
+			(sumsqtrh (crd lst)
+						(+ accum (* car let)(car list)))
 		))
 
 ### Question 5
 
 1.  `inOrder(List)`. Assume List is a list of numbers; 
-	inOrder(List) is true if and only if the numbers in List 
-	are in increasing order. If List has 0 or 1 element it is 
+	`inOrder(List)` is true if and only if the numbers in List 
+	are in increasing order. If List has `0` or `1` element it is 
 	in order.
 
-		inOrder( ??? ).
-		inOrder( ??? ).
-		inOrder([N1, N2 | T]) :- ???
+		inOrder( [] ).
+		inOrder( [_] ).
+		inOrder([N1, N2 | T]) :- N1 < N2, inOrder[N2 | T]
 
 2.  Suppose a graph is represented as a list of node structures like 
 	`node(a, 3, [b, c])` where a is the node's name, 3 is its color, 
@@ -2402,27 +2629,41 @@ Fill in the blanks.
 	binds `Names` to a list of all the names of nodes in the graph 
 	(just the names, not the node(...) structures).
 
-		allNames( ??? , ??? ).		allNames( ??? , ??? ) :- ??? .
+		allNames( ??? , ??? ).
+		allNames( ??? , ??? ) :- ??? .
 
 ### Question 6
 
 Given the rules
 
-	suffix([H | T], T).	suffix([H | T], T1):- suffix( T, T1 ).
+	suffix([H | T], T).
+	suffix([H | T], T1):- suffix( T, T1 ).
 
-1.  What would be the irst result of the query `suffix([a, b, c], S)`?
+1.  What would be the first result of the query `suffix([a, b, c], S)`?
 2.  What would be the second result of the query, if the user 
 	typed ‘;’ after the first result?
 
 ### Question 7
 
 	int a;
-	procedure foo(int x){		x = x + 10;		a = a + x;	}
-	procedure fie( ){		a = 5;		foo(a);		print (a);	}
+
+	procedure foo(int x) {
+		x = x + 10;
+		a = a + x;
+	}
+
+	procedure fie( ) {
+		a = 5;
+		foo(a);
+		print (a);
+	}
 
 For each of the following parameter passing methods, show what would be 
 printed by a call to fie.
-1. Call by value2. Call by value-result3. Call by reference
+
+1. Call by value
+2. Call by value-result
+3. Call by reference
 
 ### Question 8
 
@@ -2430,22 +2671,32 @@ For each of the following language features, circle “functional” if having
 the feature makes a language more of a functional language and “not” if it 
 does not:
 
-Feature | Functional?
---------|------------
-closures | ???arrays | ???dynamic types | ???garbage collection | ???linked-lists are a built-in data type | ???
+Feature | Functional? | Why?
+--------|-------------|-----
+closures | Yes | They're little functions.
+arrays | No | They're not functions.
+dynamic types | No | Probably not functions.
+garbage collection | Yes | Lets you just do functions.
+linked-lists are a built-in data type | No | Not functions.
 
 ### Question 9
 
 Given the declarations below:
 
-	int: size, size2, j;	float: x;	array[1:30] of int: nums;
+	int: size, size2, j;
+	float: x;
+	array[1:30] of int: nums;
 
 For the assignment statements below, circle the ones that cannot be 
 fully type- checked at compile time. Assume that an array’s subscript 
 range is considered part of its type. Assume that numeric overflow and 
 is not considered a type-error.
 
-1.  size = size2 + 1;2.  x = size;3.  nums[j]=33;4.  nums[3] = nums[4];5.  nums[j] = nums[j+1]
+1.  size = size2 + 1;
+2.  x = size;
+3.  nums[j]=33;
+4.  nums[3] = nums[4];
+5.  nums[j] = nums[j+1]
 
 ### Question 10
 
@@ -2455,3 +2706,9 @@ and returns a list of the squares of those numbers. Finish it.
 	def listSq(lst):
 
 *[FSA]: Finite State Automaton
+
+[^map]: How does map work? It transforms a list by applying a 
+function to each of its members. Furthermore, it returns the
+transformed list. Map takes a function and then a list.
+
+		elements(map (lambda (x) (* x 2)) numbers)
