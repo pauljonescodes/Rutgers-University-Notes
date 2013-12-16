@@ -2191,7 +2191,50 @@ Type | Static checking | Dynamic checking
 -   Like a combination of map and filter, may be more readable-   Multiple fors: leftmost = outer loop	-   [(x,y) for x in [2,3,4] if x>2 for y in [5, 6] if x*y!=20] 
 	-   returns [(3, 5), (3, 6), (4, 6)]
 
+#### Objects
+
+-   Everything is an object
+-   See `objects.py`
+-   Any object can have a new field, that is "attribute," added to it.
+
+#### Duck Typing
+
+> If it waddles like a duck, quacks like a duck, and looks like a duck
+> it is a duck.
+
+-   Can you do operation O on data D?
+	-   Try it at run time and see if it raises and exception.
+
+-   Cf.Java: ensure at compile time that object is of type T and that any
+	any object of type T can handle message with name O.
+
 ### Scope
+
+-   The scope of a variable is the part of the program that can refer to
+	that variable.
+-   It's purpose is to limit the number of name "in use" at any one point.
+	-   To limit the number of names the programmer has to remember to 
+		avoid.
+	-   To limit the region in the program where a bug can change a variable
+		name.
+
+#### Nested Scope
+
+-   As in Scheme, also Algol, Pascal
+-   Assumes languages already has nested constructs life nested if, nested
+	loops, etc.
+-   Some constructs create new variables and functions
+	-   Loop variables
+	-   Scope of a new name is the construct
+	-   Except where shadowed
+
+Advantages | Disadvantages
+-----------|--------------
+Simple | The struct isn't uniform
+Uniform | Functions
+Recursive | files
+Elegant | 
+Varied size scope | 
 
 ### Parameters
 
@@ -2282,3 +2325,133 @@ Type | Static checking | Dynamic checking
 	-   Disadvantage: aliasing - when there are two or more different names
 		for the same storage location
 		-   Side effect not visible from code itself.
+
+December 15th, 2013 <small>Practice Final Exam</small>
+------------------------------------------------------
+
+### Question 1
+
+Each of the following, involves a language over the four characters 
+a, b, c, and d. For each one either give a Regular Expression that 
+generates the language or explain why this is impossible:
+
+1.  L = The set of strings that start with three or more a’s followed 	by any number (including 0) of a’s and b’s.
+
+2.  L = The set of strings in which every ‘a’ is followed immediately 
+	by a ‘b’ and every ‘b’ is immediately preceded by an ‘a’., and 
+	similarly for ‘c’ and ‘d’. In other words, the strings must be 
+	made up of combinations of ab and cd. E.g., ‘abcdab’ is in L but 
+	‘abccd’ is not.
+
+### Question 2
+
+Consider the following FSA:
+
+![Finite State Automata Diagram](../img/cs-pl-final-fsa.png)
+
+1.  Is this a deterministic or non-deterministic FSA? Why?
+2.  Write a regular expression that specifies the same language 
+	that this FSA accepts.
+3.  Complete the following grammar for the language this FSA accepts:
+
+		S      -> PREFIX | PREFIX TAIL		PREFIX -> BORM 
+
+	1.  `BORM`
+	2.  `TAIL`
+	3.  `NORD`
+
+### Question 3
+
+In the following Scheme function, num-list is a list of numbers and threshold 
+is a single number. The function list-greater returns a list equal in length 
+to num-list but with each number replaced by either #t or #f, depending 
+on whether the number is or is not greater than threshold. E.g., 
+(list-greater ‘(2 5 3 6) 4)) should return (#f #t #f #t). Finish the 
+definition below. You must use map.
+
+	(define (list-greater num-list threshold)
+
+### Question 4
+
+The following Scheme code defines sumsqtr, a function that takes a
+list of numbers as its argument and returns the sum of the squares of 
+those numbers. Eg `(sumsqtr '(1 4))` returns `17`. 
+`Sumsqtr` and its helper function `sumsqtrh` are tail recursive. 
+Fill in the blanks.
+
+	(define (sumsqtr lst)		(sumsqtrh    _________  ____________))	(define (sumsqtrh lst accum)		(if		
+		
+		
+		))
+
+### Question 5
+
+1.  `inOrder(List)`. Assume List is a list of numbers; 
+	inOrder(List) is true if and only if the numbers in List 
+	are in increasing order. If List has 0 or 1 element it is 
+	in order.
+
+		inOrder( ??? ).
+		inOrder( ??? ).
+		inOrder([N1, N2 | T]) :- ???
+
+2.  Suppose a graph is represented as a list of node structures like 
+	`node(a, 3, [b, c])` where a is the node's name, 3 is its color, 
+	and `[b, c]` is a list of its neighbors' names. The 
+	predicate `allNames(Graph, Names)` assumes `Graph` is a graph and 
+	binds `Names` to a list of all the names of nodes in the graph 
+	(just the names, not the node(...) structures).
+
+		allNames( ??? , ??? ).		allNames( ??? , ??? ) :- ??? .
+
+### Question 6
+
+Given the rules
+
+	suffix([H | T], T).	suffix([H | T], T1):- suffix( T, T1 ).
+
+1.  What would be the irst result of the query `suffix([a, b, c], S)`?
+2.  What would be the second result of the query, if the user 
+	typed ‘;’ after the first result?
+
+### Question 7
+
+	int a;
+	procedure foo(int x){		x = x + 10;		a = a + x;	}
+	procedure fie( ){		a = 5;		foo(a);		print (a);	}
+
+For each of the following parameter passing methods, show what would be 
+printed by a call to fie.
+1. Call by value2. Call by value-result3. Call by reference
+
+### Question 8
+
+For each of the following language features, circle “functional” if having 
+the feature makes a language more of a functional language and “not” if it 
+does not:
+
+Feature | Functional?
+--------|------------
+closures | ???arrays | ???dynamic types | ???garbage collection | ???linked-lists are a built-in data type | ???
+
+### Question 9
+
+Given the declarations below:
+
+	int: size, size2, j;	float: x;	array[1:30] of int: nums;
+
+For the assignment statements below, circle the ones that cannot be 
+fully type- checked at compile time. Assume that an array’s subscript 
+range is considered part of its type. Assume that numeric overflow and 
+is not considered a type-error.
+
+1.  size = size2 + 1;2.  x = size;3.  nums[j]=33;4.  nums[3] = nums[4];5.  nums[j] = nums[j+1]
+
+### Question 10
+
+The following python function takes a list of numbers as its argument 
+and returns a list of the squares of those numbers. Finish it.
+
+	def listSq(lst):
+
+*[FSA]: Finite State Automaton
