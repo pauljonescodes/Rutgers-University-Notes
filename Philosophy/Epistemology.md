@@ -1475,8 +1475,6 @@ in truth-conditions for knows. Why?
 
 ### Contextualism Defended (from Jennifer Nagel)[http://www.utm.utoronto.ca/~nageljen/333/]
 
-**Stewart Cohen: Contextualism Defended**
-
 > **The skeptical paradox**
 > 
 > 1.  I know that P.
@@ -1614,6 +1612,7 @@ Heart of Contextualism
 
 -   Explanatory power does not hold for much is the model is incoherent.
 
+<<<<<<< HEAD
 December 9th, 2013 <small>Lecture on Cohen and Connee</small>
 -------------------------------------------------------------
 
@@ -1624,6 +1623,8 @@ December 9th, 2013 <small>Lecture on Cohen and Connee</small>
 		
 -   You could look at the Surprise Quiz paradox discussion and conclude that
 	it's much like the discussion of rhe skeptical paradox.
+=======
+>>>>>>> 54d13e242e883ac7125830d64fc82e84152ca48f
 
 *[BIV]: Brain in a vat 
 *[EDD]: Evil demon deceived
