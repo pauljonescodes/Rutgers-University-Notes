@@ -1,24 +1,6 @@
 Discrete Structures II <small>with Professor David Cash</small>
 ===============================================================
 
-View options
-------------
-
-Hello! I'm aware this page is pretty slow, it is a problem for me too.
-
-I have added these options to ameliorate the load times.
-
-<div class="btn-toolbar pagination-centered">
-<div class="btn-group">
-<a href="#" class="btn" onclick="MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});">Typeset math</a>
-
-<a href="http://eden.rutgers.edu/~pmj34/pages/Notes/Mathematics/Introduction%20To%20Discrete%20Structures%20II%20-%20Paul%20Jones%20at%20Rutgers%20University.pdf" class="btn">Pre-rendered PDF</a>
-
-<a href="http://eden.rutgers.edu/~pmj34/pages/Notes/Mathematics/Introduction%20to%20Discrete%20Structures%20II.md" class="btn">Markdown source</a>
-</div></div>
-
-I recommend the PDF. Happy studying! <i class="icon-thumbs-up icon-black"></i>
-
 Description
 -----------
 
