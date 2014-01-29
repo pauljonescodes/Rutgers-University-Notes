@@ -1,10 +1,102 @@
 Topics in Philosophy of Psychology <small>with Professor Frances Egan</small>
 =============================================================================
 
+Syllabus
+--------
+
+### Course Description
+
+The topic of the seminar is psychological explanation. We will focus on
+two issues: (1) The role of representation in psychological explanation,
+considering recent challenges – by (among others) proponents of
+extended, embodied, and enactive cognition – to the traditional view
+that psychological processes are to be understood as operations on
+symbol structures. We will consider the requirements for a theoretical
+construct to count as a representation, and whether there are any
+distinctively mental representations. (2) The relation of psychology to
+neuroscience, considering the recent challenge – by proponents of the
+so-called 'new mechanism' view in philosophy of science – to the view
+that psychological explanation of human cognitive capacities (in
+particular, computational explanations of cognitive capacities) can be
+constructed and confirmed independently of an account of how these
+capacities are realized in the brain. The new mechanists argue that
+genuine explanations of cognition are mechanistic explanations – they
+must bear a transparent relationship to accounts of realizing neural
+mechanisms.
+
+### Readings
+
+#### The role of representation in psychological explanation
+
+-   The traditional view – strong representationalism
+    -   Jerry Fodor. *Psychosemantics*, ch.1, Appendix
+    -   Zenon Pylyshyn. "The Explanatory Role of Representation"
+
+-   Implications and challenges
+    -   David Kirsh. "When is Information Explicitly Represented?"
+    -   William Ramsey. *Representation Reconsidered* (ch.3 and ch.4)
+
+-   The challenge from extended, embodied, and enactive cognition
+    -   Rodney Brooks. "Intelligence without Representation"
+    -   John Haugeland. "Mind Embodied and Embedded"
+    -   Clark & Chalmers. "The Extended Mind"
+    -   Adams & Aizawa. "Defending the Bounds of Cognition"
+    -   Robert Rupert. "Challenges to the Hypothesis of Extended
+        Cognition"
+    -   Lawrence Shapiro. *Embodied Cognition* (excerpt)
+    -   Andy Clark. "An Embodied Cognitive Science?"
+    -   Clark & Toribio. "Doing without Representing?"
+    -   Anthony Chemero. "Anti-representationalism and the Dynamical
+        Stance"
+    -   Shaun Gallagher. "Are Minimal Representations Still
+        Representations?"
+    -   Daniel Hutto. "Radically Enactive Cognition in our Grasp"
+    -   Mark Sprevak. "Fictionalism about Neural Representations"
+
+#### The autonomy of psychology
+
+-   The traditional view
+    -   Jerry Fodor. "Special Sciences"
+    -   Robert Cummins. "Functional Analysis"
+    -   John Haugeland. "The Nature and Plausibility of Cognitivism"
+
+-   The 'new mechanist' challenge
+    -   David Michael Kaplan. "Explanation and Description in
+        Computational Neuroscience"
+    -   Piccinini & Craver. "Integrating Psychology and Neuroscience:
+        Functional Analyses as Mechanism Sketches"
+    -   Daniel Weiskopf. "Models and Mechanisms in Psychological
+        Explanation"
+    -   Frances Egan. "Function-Theoretic Explanation and Neural
+        Mechanisms"
+
+### Course Requirements
+
+Students taking the course for credit will be expected to write a paper
+due at the end of the semester. Papers must be on topics related to the
+course materials; topics should be cleared with me beforehand. Graduate
+students enrolled in the course will be expected to lead the discussion
+of assigned materials for one session.
+
+### Attendance
+
+Attendance at the seminar is mandatory. You should let me know if you
+have to miss a class.
+
+### Course Objectives
+
+Like any advanced philosophy graduate seminar this seminar aims to give
+students an opportunity to explore a set of fundamental issues in depth
+give students opportunities to further develop and hone their analytical
+skills give students a chance to write and revise a major research paper
+that will hopefully be interesting, original, and important provide
+ample opportunities to further develop one's oral skills during
+discussions
+
 January 28th, 2013 <small>Reading</small>
 -----------------------------------------
 
-### *Computation and Cognition* by Zenon W. Pylyshyn, Chapter 2, "The Explanatory Role of Representation"
+### Zenon Pylyshyn. "The Explanatory Role of Representation"
 
 #### Introduction
 
@@ -140,6 +232,199 @@ Symbol-level generalizations
     levels.
     -   Newtons laws "are compatible with" biological taxonomy.
 
+January 28th, 2014 <small>Seminar</small>
+-----------------------------------------
+
+### On representation
+
+-   Advanced "beings" like us have evolved with our environment, this is
+    with representation.
+    -   These somehow causally affect behavior.
+    -   This is an "inference to the best explanation."
+
+-   To the degree which organisms can react to a changing circumstance
+    causes the representation to change, and the changed representations
+    change behavior.
+-   Some people think that dynamic behavior requires
+    representationalism.
+
+Representation
+:   A capacity of an organism.
+
+Representation*s*
+:   Concrete objects in the brain.
+
+:   Some properties: - Physically realized. - They have causal powers,
+    can have straightforward causal roles.
+
+    -   They have content, they are meaningful.
+        -   This requires a distinction between a vehicle of
+            representation, they thing physically realized.
+
+-   Vision resonates with the environment like a tuning fork. Gibson's
+    theory of perception.
+-   Our brains or us might have the structure for representations, but
+    we can't "poke at" any representation.
+-   One way that representat*ion* could get cached out is
+    *dispositionally*.
+    -   Some theories might posit capacities that are best characterized
+        as *representational*.
+    -   There might not be an isolable state at the computational level
+        that's like, "There's the representation!"
+        -   A real property of an organism, but diffuse.
+        -   Like mass.
+
+-   Many theories posit something analogous to "sentences in the head."
+    -   But there are other models of cognition.
+        -   Connectionist
+        -   Dynamical
+
+### Vehicle-side
+
+Symbols
+:   Little hooks on which you can hook meaning. Ripe for having content
+    attributed to them, representation paradigmatically.
+
+Connectionists models
+:   Don't posit anything like "sentences in the head." The carriers of
+    meaning are networks of nodes that are connected in various ways. Do
+    get interpreted, but do individual nodes get interpreted? *That*
+    node refers to red *in a network*.
+
+:   Typically are not construed as a strong representational view.
+
+Dynamical models
+:   Model the behavior of the system over time.
+
+-   What are the *vehicles* of meaning in non-symbol cognitive models?
+    -   Is there anything in here that could be plausible construed as a
+        representation?
+
+-   In classical models, what the vehicles of representation are,
+    symbols are hooks on which to hang interpretation. Waving red flags,
+    interpret me.
+
+### Content-side
+
+-   Content has satisfaction conditions.
+
+-   The problem of intentionality: How do mental states *get* their
+    meaning? What is it about mental representations that given them
+    their meaning or content.
+    -   Public representation
+        -   Public language content get their meaning by convention.
+        -   Icons and images get meaning by their resemblance and
+            convention.
+
+    -   Private representation
+        -   Some relation that isn't *already presuming* meaning or
+            intentionality.
+        -   The "meaning in the head" or "state of affairs" which it
+            representations, **the naturalism semantics project**.
+        -   "Complex causal relations" represented in my head.
+        -   Teleological function of the brain, dealing with objects and
+            properties I'm used, and my ancestors are, used to.
+
+-   No one has be successful in naturalistic conditions on vehicle in
+    the head having determinate content.
+-   One constraint on all of these account is that mental states can not
+    only *represent* but also *mis*represent.
+    -   The contrast is with Grice's notion of natural meaning.
+        -   The presence of smoke cannot misrepresent the presence of
+            fire *unless* an agent misinterprets the smoke or something.
+
+### Strong representationalism
+
+Strong representationalism
+:   Posits structure entities that have content.
+
+:   Mental processes are defined over the structures.
+
+-   An important issue: is there anything in non-representational views
+    that could count as a vehicle.
+
+Extended cognition
+:   The mind extends into the environment in some sense.
+
+:   The extended thesis is not centrally a critique of
+    representationalism, but it does have theses that bring to bear on
+    representationalism.
+
+Embodied cognition
+:   Human cognition is necessarily embedded, the mind-brain is the
+    executive that controls the body.
+
+Dynamical cognition
+:   Cognition consists in a dynamical interaction between a subject and
+    an environment, and it's wrong to characterize the interaction as
+    contentful.
+
+### Jerry Fodor's "Psychosemantics"
+
+-   He gives two arguments for the view known as "representational
+    theory of mind."
+    -   Folk psychology is indispendable.
+        -   The only way to vindicate it is if something like RTM is
+            true.
+
+    -   Eliminativism would be an absolute disaster.
+
+-   The second is the striking parrallelism between trains of thought
+    and inferences.
+-   The argument focuses on prediction, the only way to get around in
+    the world is to ask someone something and predict that, in general,
+    you do what you say and similar elsewhere.
+-   Intentional realism is the only appropriate attitude to take towards
+    folk psychology.
+
+Intentional realism
+:   1.  They are semantically evaluable.
+    2.  They have causal powers.
+    3.  The implicit generalizations of commonsense belief/desire
+        psychology are largely true of them.
+
+RTM
+:   The best hope for realizing intentional realism.
+
+:   1.  For any organism O, and any attitude A toward the proposition P,
+        there is a ('computational'/'functional') relation R and amental
+        representation MP such that MP means that PI and O has A iff O 
+        bears R to MP.
+    2.  Mental processes are causal sequences of tokenings of mental 
+        representations.
+
+:   There are representation in a full-blooded sense.
+
+-   If the LOT is true for propoisitonal attitudes, then the RTM is true
+    because it's the weaker view.
+    -   There's a big project on mental logic.
+
+-   Oftentimes, people's reason doesn't follow logic.
+    -   People will more often affirm the consequent, more common
+        in mental reasoning than *modus tollens*.
+
+-   "I believe there is beer in the refridgerator."
+    -   What was causally efficaious was that I wanted beer
+        and believed there was beer, so I got up to get beer.
+    -   This is the "belief box."[^3]
+
+-   There has to be a pretty good argument for the moving from
+    property of one structure to the structure of the other.
+    Specifically, they share semantics, but we need a good argument
+    about syntax. Moving from the logical scheme to the empirical
+    scheme.
+    -   An argument *for this* is the tempurature case.
+
+-   **We'll pick up next time with the Dennett counter-example.**
+
+<!-- Accronymns -->
+
+*[RTM]: Representational theory of mind
+
+*[LOT]: Language of thought
+
+<!-- Footnote -->
+
 [^1]: I don't understand when you're "supposed to stop describing" for a
     closed system. I see that account (4) stops describing when the
     internal state of the computer comes to be required to continue
@@ -156,3 +441,26 @@ Symbol-level generalizations
     can store tokens of mountains and transcendental idealism -- if
     token couldn't be contained in any of our brain's possible types,
     would we be in a position to know?
+
+[^3]: If we map the structural, syntatical, and semantical features of
+    the way we *talk about* beliefs states and agents and doxastic 
+    attitudes, the former is accesible to us and the latter is 
+    inaccesible. But if we find a feature of the former we can reasonable
+    map it to the latter.
+
+    Often logic is called "the norms of believing." Does this pose a
+    problem because logic is a norm of reasoning and we commonly don't
+    reason well, via the affirming the consequent result, then maybe
+    we can't move from one to the other.
+
+    If we discover a mental structure which *conflicts* with logical
+    structure, like for instance affirming the consequent being so
+    common, should we affirm the consequent *more often* as a result?
+    Alternatively, does it raise the perceived reliability of the
+    seeming invalid (from a logical point-of-view) mental structure?
+    If folk psychology is *generally valid* and we want to *vindicate*
+    it, and actual, empirical mental structures follow invalid logical
+    syntax, does that mean we want to vindicate invalid logical syntax
+    too?
+
+
