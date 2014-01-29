@@ -374,3 +374,75 @@ January 24th, 2014 - Lecture
 
     $$\exists c, n_0, f(n) \le c \times g(n) \forall n \ge n_0$$
 
+January 29th, 2013 <small>Lecture</small>
+-----------------------------------------
+
+### Multiplication
+
+-   Example: 13 times 11
+
+            1101
+            1011
+            ----
+            1101
+           1101
+          0000
+         1101
+         10001111
+
+-   To compute each row, eitther "X" or "0", left-shifted.
+    -    The rows are in the order of "2N"
+    -    You have to sum them up, and you can do this pairwise.
+
+-   If you do *n* times an operation which costs *n*, your runtime
+    is going to be $n^2$.
+    -   Multiplication is more expensive than addition.
+    -   Multiplication is quadratic, where addition is linear (with
+        respect to the size of the input).
+
+### Alternative Multiplication
+
+-   If you have two decimal numbers, *x* and *y*, write them next
+    to each other.
+
+        11           13
+        5            26
+        2   IGNORE   52
+        1            104
+        ----------------
+                    143 (= 13 + 26 + 104)
+
+-   Notice that the third row is ignored in both varieties of
+    multiplication.
+
+    $$ x \times y =\begin{cases} 2 (x \times \lfloor \frac{y}{2} \rfloor, & \text{if $y$ is even}.\\ x + 2(x \times \lfloor \frac{y}{2} \rfloor, & \text{if $y$ is odd}. \end{cases} $$
+
+
+-   The expensive operation is the addition if $y$ is odd.
+    So O(n) due to addition.
+    -   Again, big-O is quadratic.
+
+### Modula Arithmetic
+
+$$ O(n) $$
+
+### Modulo Multiplication
+
+-   The product can be in the order of $(N - 1)^2$.
+    -   The product will be at most *2N* bits long.
+
+$$ O(n^2) $$
+
+### Problems
+
+Primality 
+
+:   Given a number N, determine whether it is prime.
+
+Factorning
+
+:   Given a number N, express it as a product of prime
+    numbers.
+
+
+
