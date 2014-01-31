@@ -444,5 +444,37 @@ Factorning
 :   Given a number N, express it as a product of prime
     numbers.
 
+January 29th, 2014 <small>Recitation</small>
+--------------------------------------------
+
+### Asymptotic Bounds
+
+-   There are three types we'll use
+    1.  Tight bound
+    2.  Lower bound
+    3.  Upper bound, "big O"
+
+#### Upper Bound (Big-O)
+
+$$f(n) = O(g(n))$$
+
+> G is upper upper bound for F if and only if there exists
+> a constant and $n_0$ such that:
+>
+> $ 0 \le f(n) \le c g(n) $
+
+#### Lower Bound (Big Omega)
+
+$$f(n) = \Omega(g(n))$$
+$$\exists c, n_0 (0 \le c g(n) \le f(n) \forall n \ge n_o)$$
+
+### Runtimes
+
+Name | Function
+-----|---------
+Logarithmic | *O(log(n))*
+Constant | *O(n)*
+Power | $O(n^a)$
+Exponential | $O(a^n)$
 
 
