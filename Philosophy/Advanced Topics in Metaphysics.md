@@ -717,4 +717,28 @@ Lewis
 
 :   Has *possibilia* and *classes of possibilia*
 
+Febuary 1st, 2013 <small>Reading</small>
+----------------------------------------
+
+### What is Humean Supervenience?
+
+-   Human Supervenience
+    1.  **Truth supervenes on being**
+        -   All the facts about the world supervene on facts about
+            which individuals instantiate which fundamental properties
+            and relations.
+        -   This is the core part of Lew's metaphysics.
+        -   Lewis thinks the fundamental properties and relations
+            of the world characterize the world *without redunancy*
+
+    2.  **Anti-haeccaetism**
+        -   All the facts about a world supervene on the distribution of
+            qualitative properties and relation.
+        -   Rearranging which properties hang on which 'hooks' doesn't
+            change any facts.
+
+    3.  **Spatio-temporalism**
+        -   The only fundamental relations that are actually instantiated
+            are spatio-temporal, and all fundamental properties are
+            properties of points or point-sized occupants of points.
 
