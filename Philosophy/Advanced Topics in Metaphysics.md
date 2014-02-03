@@ -688,3 +688,33 @@ Alien property
 > believes or desires or intends himself to have. They will impute other
 > things as well, but it is the imputed eligibility that matters to us
 > at present.
+
+January 31st, 2013 <small>Seminar</small>
+-----------------------------------------
+
+### Introduction
+
+-   Next week, Armstrong
+
+> 1.  What is a law?
+> 2.  What are fundamental properties?
+
+-   Both of these question involve "what is at issue" and "is
+    there a fact of the matter?" and "what's the methodology?"
+
+### Presentation on "New Work for a Theory of Universals"
+
+#### Set Up
+
+Armstrong
+
+:   Accept an entity "wholly present whereever it is instantiated"
+    that's a "constituent part ... of each particular that has it."
+    Accept universals! Universals make for *objective similarity* 
+    and *unify reality* - Similar things *literally* overlap.
+
+Lewis
+
+:   Has *possibilia* and *classes of possibilia*
+
+

@@ -477,4 +477,118 @@ Constant | *O(n)*
 Power | $O(n^a)$
 Exponential | $O(a^n)$
 
+January 31st, 2014 <small>Lecture</small>
+-----------------------------------------
+
+-   All cryptography is based on number theory and number
+    theoretic properties.
+    -   Think of message as modulo *N*.
+    -   Longer message can be broken into smaller pieces.
+    -   What is a good value for *N*?
+
+### Property
+
+-   Pick any two primes, and lets call them *p* and *q*.
+    -   Then let *N* be their product, *N* = *p* \* *q*.
+    -   For any *e* so that gcd(e, (p - 1)(q - 1)) = 1
+    -   Then the following are true:
+        1.  Take a number x and think of it as your message
+            in your communication, then $x \to x^e$ is a 
+            bijection.
+            -   An a bijection is a one-to-one mapping.
+        
+        2.  Let $d = e^{-1} mod (p - 1)(q - 1)$, then,
+
+            $$\forall x \in [0, N - 1] (x^e)^d \equiv x mod N$$
+
+#### Example
+
+-   Lets say our two prime numbers are p = 5, q = 11.
+    -   Our N = pq = 55.
+    -   Now we need to find e such that gcd(e, (5 - 1)(11 - 1)).
+        -   So the GCD is 1.
+
+    -   So lets pick e = 3 is sufficient??
+        -   So what is the valye of d?
+
+            $$d \equive e^{-1} mod (p - 1)(q - 1) \equive 3^{-1} mod 40 $$
+
+    -   This means that 3 times d is equal to modulo 40, which is the
+        modular inverse.
+        -   For d = 27, we have 3 times 27 which equals 81 or modulo 40.
+
+    -   For any message, x modula 55, ecryption is 
+
+        $$ y = x^3 mod 55 $$
+
+    -   For any message, decryption is
+
+        $$ x = y^{27} mod 55 $$
+
+### Proof of property
+
+-   We have to show that
+
+    $$(x^e)^d mod N \equiv x mod N $$
+
+    -   The following are true if e and d have been selected
+        as specific
+
+        $$ e \times d \equiv 1 mod (p - 1)(q - 1) \equiv e \times d = k (p - 1)(q - 1) + 1 $$
+
+> **Fermat's Little Theorem**: If *p* is prime, then
+> $\forall 1 \le a \le p$:
+> 
+> $a^p \equive a mod p$
+> $a^{p -1} \equiv 1 mod p$
+
+### Summary of RSA
+
+#### Bob
+
+1.  Pick two prime numbers, this is the *p* and *q*
+    -   And for the security of the system, pick two
+        *large* primes.
+
+2.  You announce to the world that everyone should be
+    sending your message, that is, publish (N, e) where
+    N equals p times q and e relative prime to
+    (p - 1)(q - 1).
+3.  Internally compute the private key, which is d equal
+    the inverse of e module (p - 1)(q - 1).
+    -   If you mulitply the two and modulo product, the value
+        should be one.
+
+#### Alice
+
+1.  Generate encrypted message $x^e mod N$ where e and N come from
+    Bob public key.
+2.  When Bob receives this message $x = y^d mod N$.
+
+### Why is this secure?
+
+-   To break the system, Eve must be able to compute x that has
+    never left Alice given the publically available information,
+    and the public key (N, e).
+    -   How do you do this?
+        -   Try to guess x so that $y = x^e$
+
+-   Alternatively, she can try to factor out p and q from N,
+    hence, the intractable factoring problem.
+
+### Analysis
+
+> What are the operations of RSA and what is the running time?
+
+-   Modular exponentiation, plus the decoding.
+-   We have to select e, a small integer, but it has to be a relative
+    prime
+-   Compute $d = e^{-1} mod (p - 1)(q - 1)$ which always exists
+    when $e$ is a relative prime.
+-   Pick 2 large prime numbers.
+
+#### Modular exponentiation
+
+
+
 
