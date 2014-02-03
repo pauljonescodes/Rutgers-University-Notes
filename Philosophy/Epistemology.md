@@ -1612,6 +1612,19 @@ Heart of Contextualism
 
 -   Explanatory power does not hold for much is the model is incoherent.
 
+<<<<<<< HEAD
+December 9th, 2013 <small>Lecture on Cohen and Connee</small>
+-------------------------------------------------------------
+
+-   All three of the premises of the skeptical paradox are supposed to be
+	intuitively plausible, but when you think about it they cannot all be true.
+	-   It's paradoxical because two of the things you believe are incompitable
+		with the third thing.
+		
+-   You could look at the Surprise Quiz paradox discussion and conclude that
+	it's much like the discussion of rhe skeptical paradox.
+=======
+>>>>>>> 54d13e242e883ac7125830d64fc82e84152ca48f
 
 *[BIV]: Brain in a vat 
 *[EDD]: Evil demon deceived
