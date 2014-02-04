@@ -730,15 +730,206 @@ Febuary 1st, 2013 <small>Reading</small>
         -   This is the core part of Lew's metaphysics.
         -   Lewis thinks the fundamental properties and relations
             of the world characterize the world *without redunancy*
+        -   If *earlier than* and *later than* are fundamental, then
+            there is some redunadancy in the characterization of the
+            world in terms of fundamental properties.
+            -   But it's hard to see how one is fundamental and the other
+                isn't.
+
+        -   We'll stick to fundamental properties characterizing the
+            world *completely*.
 
     2.  **Anti-haeccaetism**
         -   All the facts about a world supervene on the distribution of
             qualitative properties and relation.
         -   Rearranging which properties hang on which 'hooks' doesn't
             change any facts.
+        -   Consider what it would be like for anti-haeccaetism to fail.
+            There would have to be two worlds, with the same distribution
+            of qualitative properties, but with different facts obtaining
+            in each.
 
     3.  **Spatio-temporalism**
         -   The only fundamental relations that are actually instantiated
             are spatio-temporal, and all fundamental properties are
             properties of points or point-sized occupants of points.
 
+#### Supervenience
+
+Strong Modal HS
+
+:   For any two worlds where the spatio-temporal distribution of fundamental
+    qualities is the same, the contigent facts are the same.
+
+-   It is consistent with HS that there could be *fundamental non-spatio
+    temporal relations*.
+    -   HS claims that there are no such relations *instantiated*.
+
+Local Modal HS
+
+:   For any two worlds at which no alien properties or relations are 
+    instantiated, if the spatio-temporal distribution of fundamental
+    qualities is the same at each world, the contigent facts are also
+    the same.
+
+-   "Enduring objects" would generate counterexamples.
+
+Familiar Modal HS
+
+:   For any two "worlds like ours" if the spatio-temporal distribution of
+    fundamental qualities is the same at each world, the contigent facts
+    are also the same.
+
+#### What is Perfect Naturalness?
+
+-   We do need to understand what it is to be *fundamental* and *perfectly
+    natural*.
+
+> ...two things are duplicates if and only if
+> 
+>   1.  they have exactly the same *perfectly natural properties*, and 
+>   2.  their parts can be put into correspondence in such a way 
+>       that corresponding parts have exactly the same *perfectly 
+>       natural properties*, and stand in the same *perfectly 
+>       natural relations*.
+>
+> **(Lewis, 1986a, 61)**
+
+Perfectly natural properties
+
+:   -   There is a small class of properties and relations such that the
+        facts at any world supervene on the distribution of these properties
+        and relations.
+    -   Each of these properties is an intrinsic property.
+    -   At the actual world, the only relations among these which are
+        instantiated are spatio-temporal, and all the contigent facts 
+        supervene not merely on the distribution of fundamental qualities
+        and relations, but also on the distribution of fundamental qualties
+        and relations *over points and point-sized occupants of points*.
+
+#### Humean Supervenience and the other Humean Thesis
+
+-   There are three views that Lewis endorses that can broadly
+    be described as "human":
+    
+    HS
+
+    :   See above.
+
+    Nomological Reductionism
+
+    :   Nomological properties and relations (including lawhood, chance,
+        and causation) are not among the fundamental properties and
+        relations.
+
+    Modal Combinatorialism
+
+    :   Roughly, anything can co-exist with anything else.
+
+February 3rd, 2013 <small>Armstrong, *What is a Law of Nature?*</small>
+-----------------------------------------------------------------------
+
+### Introduction
+
+#### The importantance of our topic
+
+-   The question, "What is a law of nature" is central to philosophy
+    of science.
+    -   But also to epistemology and metaphysics.
+    -   In this section, Amstrong will establish why it's important
+        both narrowly and broadly.
+
+-   Natural science has three tasks.
+    1.  Geography and history of the universe.
+        -   Taking "geography" to cover space and "history" to cover
+            time.
+    
+    2.  Discover what sorts of thing and what sorts of property there
+        are in the universe and how they are constituted.
+    3.  State the laws which the things in space and time obey.
+
+-   It may not be obvious that there is a second task to be distinguished
+    from the third.
+    -   Heat *is* molecular motion is not a historical or geographical
+        truth.
+        -   This is not a law of nature or a "bridge law"
+        -   It is something different, a constituate of a property or range
+            of properties in terms of more ultimate properties.
+
+-   These three inquiries are inextricably linked.
+    -   They can only be pursued in conjunction.
+
+-   If discovery of law is of the traditional tasks of natural science,
+    then the nature of a law of nature must be a central ontological
+    concern for philosophy of science.
+
+### Critique of the Regularity theory (1) <small>The problem of accidental uniformities</small>
+
+-   Laws of nature characteristically *manifest* themselves or *issue* 
+    regularity
+-   Philosophers usually think of a Regularituy theory of *causation*,
+    but what is considered here is a Regularity theory of *laws*.
+
+RT of Causation
+
+:   1.  That causal connection is a species of law-like connection.
+    2.  That laws are nothing but regularities in the behavior of things.
+
+#### The naive regularity theory of law
+
+-   George Molnar's criticism of Regularity theory of laws
+    -   Outline of a theory called RT of laws of nature, called *Naive
+        Regularity* theory.
+    -   He then considers an argument against such a theory, an argument
+        from unrealized physical possibilities.
+    -   He then argues that none of the judicious modifications in spirit
+        of the theory are satisfactory.
+
+-   But the tactic can be generalized to RT in general, not just laws.
+
+> *p* is a **statement** of a law of nature just in case:
+>
+> 1.  *p* is universally quantified
+> 2.  *p* is [omnitemporally and omnispatially] true
+> 3.  *p* is contigent
+> 4.  *p* contains only non-local empirical predicates, apart from
+>     logical connectives and quantifiers.
+
+#### Classification of ciriticisms of the RT
+
+-   If we take "Humean uniformities" and try to identify them with "the
+    laws of nature", difficulties of identification arise.
+    -   There are Humean uniformities that are not laws.
+        -   Being a Humean uniformity is not *sufficient* to be a law of
+            nature.
+        -   There are laws that do not apply at all times, there are laws
+            which are probabilistic.
+        -   So it's also not necessary that a law of nature be a Humean
+            uniformity.
+
+-   Even if these difficulties can be overcome, there are others.
+    -   It is a law that all Fs are Gs just in case all Fs are Gs where
+        the latter is a Humean regularity
+
+-   The "intensional" difficulties are in Chapter 4.
+-   Chapter 5 will Chisolm until it is clear it's not worth it.
+
+#### Single-case uniformities
+
+-   The laws of nature are, at best, a sub-class of the class of HUs.
+-   Probably, every object in the univers differs in its properties from
+    every other object.
+    -   By this, general, non-local properties.
+        -   "Living in Australia" is not a property.
+        -   "Being a light-second distant from proton A" is not a general
+            relation property.
+        -   "Being a light-second distant from a proton" would be satisfactory.
+ 
+-   For each particular, therefore, it is likely that there exists at
+    least one *individual conjunction* of properties, that is, a conjunction
+    of properties
+
+*[RT]: Regularity theory
+*[HU]: Humean uniformity
+*[HUs]: Humean unformities
+*[HS]: Humean Supervenience

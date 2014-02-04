@@ -232,6 +232,248 @@ Symbol-level generalizations
     levels.
     -   Newtons laws "are compatible with" biological taxonomy.
 
+### Psychosemantics <small>Jerry Fodor</small>
+
+#### Chapter 1 <small>The Persistence of Attitudes</small>
+
+##### Introduction
+
+-   Quotes *A Midsummer Night's Dream* for an example of implicit,
+    nondemonstrative, theoretical evidence.
+-   Here is how the inference must have gone:
+    -   Hermia had reason to believe herself beloved of Lysander.
+        -   Because he told her.
+
+    -   If Lysander loves Hermia, then Lysander wishes Hermia well.
+    -   If Lysander wishes Hermia well, then Lysander does not voluntarily
+        desert Hermia in the night in the woods.
+    -   But Hermia was deserted by Lysander.
+    -   Therefore, not voluntarily. 
+    -   Therefore, it is plausible Lysander has come to harm, and plausibly
+        by Demetrius's hands, for Demetrius is Lysander's rival for the love
+        of Hermia.
+
+-   Hermia believes (correctly) that: If *x* wants that *P*, and *x* believes
+    that not-*P* unless *Q*, and *x* believes that *x* can bring about *Q*,
+    then (ceteris paribus) *x* tries to being it about that *Q*.
+-   But Hermia has it wrong about Demetrius.
+    -   The intricate theory that she relies on to make sense of her
+        peers, that we rely on to make sense of Hermia, and what Shakespeare
+        relies on to predict and manipulat our sympathies.
+
+-   This theory, Fodor wants to emphasize:
+    1.  How often it goes right,
+    2.  How deep it is,
+    3.  How much we do depend on it.
+
+##### How often it works
+
+-   Applications of commonsense mediate our relations with one another,
+    and when its predictions fail these relations break down.
+    -   Failures make for great theater.
+    -   Succeses are practically invisible and ubiquitous.
+
+-   Commonsense psychology is like those mythical Rolls Royce cars whose
+    engines are seals when they leave the factory.
+    -   Someone I don't know calls me and asks me to lecture in Arizone
+        on Tuesday.
+    -   Fodor responds, "Yes, thank, I'll be at your airport on the 3 p.m.
+        flight."
+    -   That's *all* that happens.
+        -   The theory is used to gap the bridge betwen utterances and
+            actions.
+        -   If Fodor doesn't show it, the theory makes predicts about the
+            likelihood of why.
+
+-   The point is that the theory from which we get this extrodinary predictive
+    power is just good old commonsense belief/desire psychology.
+    -   It tells us how to infer people's intentions from the sounds they
+        make.
+    -   It tells us how to infer people's behavior from their intentions.
+    -   And all of this works on your friends and your spouses and absolute
+        strangers.
+
+-   But what about all those ceteris paribuses?
+    -   Philosophers love the "false or vacuous" dilemma.
+
+-   Consider the defeasibility of "if someone utters the form of words, 'I'll
+    be at your airport on the 3 p.m. flight,' then he intends to be at
+    your aiport on the 3 p.m. flight."
+    -   This generalization does *not* hold if:
+        -   The speaker is lying,
+        -   Monoligual speaker of Urdu who uttered by accident,
+        -   If the speaker is talking in his sleep,
+        -   Or ... whatever.
+
+    -   Perhaps all that this means with a *ceteris paribus* clause is,
+        if it doesn't happen, then it still true because *ceteris paribus*.
+
+-   A lot of philosophers are moved by this.
+    -   But the predictions often come out true!
+        -   So how could it be *empty*?
+
+-   The reliance on uncashed *ceteris paribus* clauses is a general property
+    of the *explicit* generalizations in *all* the special sciences.
+    -   For example, "A meandering river erodes its outside bank"
+        -   False or vacuous a philosopher may complain.
+
+    -   A *ceteris paribus* clause here cause "If *p* then *q* unless not
+        *p* then *q*."
+
+-   Something must have gone wrong, surely this explanation is meaningful
+    despite the big *ceteris paribus* clause.
+    -   Surely these statements are stronger than "*P* in any world where not
+        not-*P*."
+
+-   There is a face similarity between implicit generalizations and
+    commonsense psychology and explicity generalization in special sciences.
+    -   We can get rid of the *ceteris paribus* clauses by *actually
+        enumerating* the conditions.
+
+-   By this criterion, the only real science is basic physics.
+    -   We can't enumarate all the conditions on geology by sticking to
+        the vocabulary of geology.
+    -   The events in the *ceteris paribus* clause about the rivers aren't
+        geological events, it's outside the domain. (Also hard.)
+
+-   Exceptions to generalizations of a special science are typically
+    inexplicable from the point of view of that science.
+    -   This is what makes it *special*.
+    -   It's possible to enumerate them in the vocaubalry of another
+        science.
+        -   You go "down" one or more levels and use the vocabulary of
+            the more "basic" science.
+
+-   If the world is describable at all in a closed causal system, it
+    is with vocabulary of the most basic science.
+    -   But the psychologist and the geologist needn't worry about this.
+    -   If you want to know where Fodor will be next Thursday, mechancins is
+        *no use to you at all*.
+
+##### The depth of the theory
+
+-   It's tempting to think that commonsense psychology is a toolkit of
+    truisms one learns on Granny's knee.
+    -   Like,
+        -   The burnt child fears the fire.
+        -   Money cannot buy happiness.
+        -   Reinforcment affect response rate.
+        -   A way to a man's heart is through his stomach.
+
+    -   None of these are worth save, but commonsense psychology is not like
+        this.
+    -   There are two parts to this:
+        1.  The theory's underlying generalizations are defined over 
+            unobservables.
+        2.  They lead to its predictions by iterating and interacting rather
+            than being directly instantiated.
+
+-   Behavior is casued by mental states and this causation is intricate.
+    -   Roughly, *If x is y's rival, the x prefers y's discomfiture, all else
+        being equal*.
+        -   Doesn't mention behavior.
+        -   It *leads to* behvaioral predictions.
+
+-   It is a deep fact about the world that the most powerful etiological
+    generalizations hold of unobservable causes.
+    -   Meterology is *not* deep because it's genralization are of the form,
+        "Red at night, sailors delight."
+    -   Psychology *is* a deep theory, because we do not have access to mental
+        states.
+        -   We're born mentalisms and realists, and we stay that way until
+            common sense is driven out by bad philosophy.
+
+##### Its indispensability
+
+-   We have no alternative to the vocabulary of commonsense psychological
+    explanation.
+    -   There is no other way of describing our behaviors and their causes
+        if we want our behaviors and their causes to be subsumed by any
+        counterfactual-supporting generalizations that we know about.
+
+-   Without commonsense psychological generalizations, we cannot even describe
+    the utterances as forms of words.
+    -   Word is a *psychological* category.
+    -   There are non acoustic properties that all and only *fully intelligble*
+        tokens of the same word type share.
+        -   Which is why our best technology cannot build a typewriter you can
+            dictate to.
+
+-   We have *no* vocabulary for describing event types with these conditions:
+    1.  My behvior in uttering, "I'll be there on Thursday" counts as an
+        event of type $T_i$.
+    2.  My arriving there on Thursday counts as an event of type $T_j$.
+    3.  'Events of type $T_j$ are consequent upon events of type $T_i$' is
+        even roughly true and counterfactual supporting.
+    4.  Categories $T_i$ and $T_j$ are other than irreducibly psychological.
+
+-   Physics describes organisms *qua* motions, but not *qua* organismic.
+    -    It dissolves the behav*er* and the behav*ior* into atoms in the void.
+
+-   Even if psychology was dispensible *in principle*, it's not argument for
+    dispensing with it *in practice*.
+
+###### The essence of the attitudes
+
+> How do we tell whether a psychology *is* a belief/desire psychology?
+> How, in general, do we know if propositional attitudes are among the
+> entities that the ontology of a theory acknowledges? ...
+> How do you distinguish elimination from reduction and reconstruction?
+
+-   Fodor will view psyhology as being commensensical about the attitudes
+    just in case it postulates states satisfying:
+    1.  Thy are semnatically evaluable.
+    2.  The have causal powers.
+    3.  The implicit generalizations of commonsense belief/desire psychology
+        are largely true of them.
+
+> Squabbling about intuitions strikes me as vulgar.
+
+###### RTM
+
+-   **Thesis**: We have no reason to doubt - indeed, we have substantial
+    reason to believe - that it is possible to have a scientific psychology
+    that vindicates commonsense belief/desire explanation.
+-   Fodor will argue that the sorts of objections philosophers have recently
+    raised against belief/desire explanation are not conclusive against the
+    best vindicating theory currently available.
+-   At the heart of RTM is the postulation of a LOT, an infinite set of
+    'mental representations' which function both as immediate objects of
+    propositional attitudes and as the domains of mental processes.
+-   The two claims he's making:
+    1.  **The nature of propositional attitudes**:
+        -   For any organism *O*, and any attitude *A* towards the proposition
+            *P*, there is a (computational/functional) relation *R* and a 
+            mental representation *MP* such that:
+            -   *MP* means that *P*.
+            -   *O* has *A* just in case *O* bears *R* to *MP*.
+    
+    2.  **The nature of mental processes**:
+        -   Mental processes are causal sequences of tokenings of mental
+            representations.
+
+-   A train of thought is a causal sequence of tokenings of mental 
+    representations which express the propositions that are the
+    objects of the thoughts.
+-   RTM underlies practicaly all current psychological research on mentation,
+    and the best science is ipso fact the best estimate of what there is
+    and what it's made of.
+    -   Philosophers do not think this convincing, and Fodor is blushing for
+        them.
+
+> There is a stricking parallelism between the causal relations among
+> mental states, on the one hand, and the semantic relations that hold
+> among propositional objects, on the other.
+
+-   Trains of thought are largely truth preserving[^5].
+-   The "trick" is to combine the postulation of mental representations
+    with the "computer metaphor."
+    -   Computers show us how to connect semantics with causal properties
+        for symbols.
+        -   If having propositional attitude involves tokening a symbol, then
+            we can get some leverage on connection semantical properties with
+            causal ones for *thoughts*.
+
 January 28th, 2014 <small>Seminar</small>
 -----------------------------------------
 
@@ -417,6 +659,73 @@ RTM
 
 -   **We'll pick up next time with the Dennett counter-example.**
 
+February 4th, 2014 <small>Reading</small>
+-----------------------------------------
+
+### "When is Information Explicitly Represented?" <small>David Kirsh</small>
+
+#### Introduction
+
+-   Computation is the process of making *ex*plicit what was *im*plicit.
+-   We know what is explicit, the problem is what information is implicit.
+-   **Suppose**: To understand a computation it is necessary to track
+    the trajectory of informational state the computing system follows
+    as it winds its way to an explicit answer.
+-   Different kinds of computational mechanisms:
+    -   PDP systems
+    -   Massive cellular automata
+    -   Analog relaxation systems
+
+-   How far do you have to remove "explicitness" until it's implicit? That
+    is, intuitively.
+-   Suppose a system has highly ambigious encodings and must deliberate to
+    choose the right interpretation.
+
+> Computer and cognitive scientists talk as if they have a precise idea of
+> these concepts (of implicit and explicit,) but that do not.
+
+-   **Intent**: Articulate a particular conception of explicit information
+    that at least may serve as a stable base for subsequent inquiries into
+    the meaning of implicit information.
+    1.  Will show why notions of explicit and implicit need elucidation,
+        that they are not consistent.
+    2.  Will explore efforts to identify explicit information with
+        syntatically and semantically well-defined representations.
+    3.  Will mention some implications of the view.
+
+#### Our intuitions about explictness are inconsistent
+
+-   Perhaps the intuition is that "if it's there for all to see", then
+    it's explicit.
+
+### *Representation Reconsidered* <small>William Ramsey</small>
+
+#### Chapter 3 <small>Two notions of representation in the classical computational framework</small>
+
+##### 3.1 IO-representation 68 
+
+##### 3.2 S-representation 77 
+
+##### 3.3 Two objections and their replies 92 
+
+##### 3.4 CCTC representation: further issues 102 
+
+##### 3.5 Summary
+
+#### Chapter 4 <small>The receptor notion and its problems</small>
+
+##### 4.1 The receptor notion 119
+
+##### 4.2 The receptor notion and the job description challenge 124 
+
+##### 4.3 Dretske to the rescue? 127 
+
+##### 4.4 Further dimensions of the receptor notion 140 
+
+##### 4.5 Does it really matter? 146 
+
+##### 4.6 Summary 148
+
 <!-- Accronymns -->
 
 *[RTM]: Representational theory of mind
@@ -463,4 +772,5 @@ RTM
     syntax, does that mean we want to vindicate invalid logical syntax
     too?
 
-
+[^5]: Are the rules of logic the norms of reasoning? Are the rules of logic
+    pre-existing intuitions systemitized?
