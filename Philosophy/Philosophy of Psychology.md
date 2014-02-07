@@ -465,7 +465,7 @@ Symbol-level generalizations
 > mental states, on the one hand, and the semantic relations that hold
 > among propositional objects, on the other.
 
--   Trains of thought are largely truth preserving[^5].
+-   Trains of thought are largely truth preserving[^4].
 -   The "trick" is to combine the postulation of mental representations
     with the "computer metaphor."
     -   Computers show us how to connect semantics with causal properties
@@ -726,6 +726,23 @@ February 4th, 2014 <small>Reading</small>
 
 ##### 4.6 Summary 148
 
+February 4th, 2014 <small>Seminar</small>
+-----------------------------------------
+
+### On Fodor's *Psychosemantics*, Chapter 1 "The Persistence of Attitudes"
+
+-   Fodor is looking for a theory for states that interprets attitudes as
+	states with propositions, beliefs and desires *at least*.
+	-   Chomsky: "We *cognize* the grammar of English."
+	-   "We *believe* the grammar of our language."
+
+-   This is the "last gasp" of narrow content for Fodor.
+-   On Dennet's counterexample.
+    -   There is a distinction between core and derivative.
+        -   Those that *explicitly* represented and those that are 
+            *implicitly* represented.
+        -   Our heads just aren't big enough.
+
 <!-- Accronymns -->
 
 *[RTM]: Representational theory of mind
@@ -772,5 +789,5 @@ February 4th, 2014 <small>Reading</small>
     syntax, does that mean we want to vindicate invalid logical syntax
     too?
 
-[^5]: Are the rules of logic the norms of reasoning? Are the rules of logic
+[^4]: Are the rules of logic the norms of reasoning? Are the rules of logic
     pre-existing intuitions systemitized?

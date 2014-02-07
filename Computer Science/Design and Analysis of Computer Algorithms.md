@@ -463,10 +463,18 @@ $$f(n) = O(g(n))$$
 >
 > $ 0 \le f(n) \le c g(n) $
 
+**O(f) grows no faster than ..**
+
 #### Lower Bound (Big Omega)
 
 $$f(n) = \Omega(g(n))$$
 $$\exists c, n_0 (0 \le c g(n) \le f(n) \forall n \ge n_o)$$
+
+**O(f) grows faster than ...**
+
+#### Tightly Bound (Big Theta)
+
+**O(f) grows equal to**
 
 ### Runtimes
 
