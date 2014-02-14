@@ -96,142 +96,6 @@ discussions
 January 28th, 2013 <small>Reading</small>
 -----------------------------------------
 
-### Zenon Pylyshyn. "The Explanatory Role of Representation"
-
-#### Introduction
-
--   The hardest puzzle is consciousness.
-    -   Second hardest is *meaning*, which this work explains.
-    -   Does *not* solve the puzzle of meaning.
-    -   The author aims to **describe how the idea of the semantic
-        content of representations is implicitly viewed within the field
-        of cognitive science, and discuss why this view is
-        justifiable**.
-
-Representations
-:   Generalizations stated over the contents of representations are not
-    mere functional generalization in the usual sense.
-
-Function generalizations
-:   A theory that does not refer to physical properties of the
-    particular system in question, only how it operates.
-
--   There will be a *representational level* and a *symbol-processing
-    level*.
-
-#### The Appeal to Representations
-
--   Law-like generalization and explanations can differ in several ways,
-    consider:
-    1.  A certain object accelerated at *a* meters per second per second
-        because a steady force was applied that was equal to *ma*.
-    2.  A certain neuron fired because a potential of *v* millivolts was
-        applied along two of its sentries and that it had been inactive
-        during the previous *t* milliseconds
-    3.  A bit pattern of certain computer register came to have a
-        particular configuration because of the particular contents
-        present in the instruction register and the program counter, and
-        because the system is wired according to a certain transfer
-        protocol.
-    4.  The computer printed numbers 2, 4, 6, because it started with
-        the number 2 and added 2 repeatedly or because it applied the
-        successor function repeatedly and double the value before
-        printing.
-    5.  The pedestrian dialed 911 because he believed it to be the
-        emergency number and had recognized the urgent need for
-        assistance.
-
--   Accounts (1), (2), and (3), all the terms refer to properties of
-    objects within the closed system.[^1]
--   Accounts (4) and (6) are different in this important respect: Both
-    make substantive reference to entities or properties that are not an
-    intrinsic part of their state description, that is *numbers* and
-    *need for assistance*.
-
-> How is it possible for properties of the world to determine behavior
-> when the properties are not causally related in the required sense to
-> to the functional states of the system? --- **Brentano's problem**
-
--   The notion of representation is necessary only in the context of
-    explanation.
--   Behavior is being caused by certain states of one's brain, and so
-    mental states themselves are related to agent's actions.
--   Brain states are not causally connected in appropriate ways to
-    walking or mountains.
-    -   The relationship *is one of content*, a semantic, not causal,
-        relationship.
-        -   The notion of content is roughly that of what the states
-            *are about*.
-
-    -   Brain states cause certain movements. If these movements are
-        view as members of equivalence classes described as "writing a
-        sentence about walking in the Santa Cruz mountains" the brains
-        states must be treated as embodying representations of these
-        codes by certain rules.
-
--   Contrast the brain to a watch -- a watch's "behavior" is considered
-    coextensive with the set of movements corresponding to the physical
-    description of behavior.
-    -   Two ways of explaining human behavior capture extremely
-        different generalizations.
-
-#### Representational and Functional Levels
-
--   This shows that **a *functional* description of mental processes is
-    not enough, there must also be content**.
-
-> If the content makes a difference to behavior, is it not also a
-> functional difference?
-
--   To be in a certain representational state is to have a certain
-    symbolic expression in some part of memory.
-    -   The expression *encodes* the semantic interpretation and the
-        combinatorial structure of the expression encodes the relation
-        among the contents of the subexpressions, much as in the
-        combinatorial system of predicate calculus.
-
--   The reason there must be symbolic codes is that they can enter in
-    causal relations.[^2]
--   If there is a unique symbolic expression corresponding to each
-    content, one might expect functional states and representational
-    states to once again be one-to-one relation. Not so, because:
-    1.  There may be codes with the same semantic content which are
-        functionally but not semantically distinguishable.
-    2.  Merely possessing a certain symbolic expression that encodes
-        semantic content is insufficient to produce behavior.
-        -   You need to *interpret* the symbols.
-
-Semantic-level generalization
-:   Generalizations expressible in terms of the semantic content of
-    representations.
-
-:   Newell calls this "knowledge-level."
-
-Symbol-level generalizations
-:   Generalizations expressible in terms of functional properties of the
-    functional architecture.
-
-#### Representational Content as Defining a Level of Description
-
--   We abandoned a biological vocabulary because of arbitrarily large
-    disjunctions corresponding to processes like "thinking."
-    -   Functional generalizations cannot be captured in a finite
-        neurophysiological description.
-    -   There is a vocabulary in between "*n* fired at *t* with *v*" and
-        "He called 911 because he believed he was in an emergency."
-        -   And it's *functional*.
-        -   And it's in *semantic terms*.
-
--   "The principal of rationality is a major reason for our belief that
-    a purely functional account will fail to capture certain
-    generalizations, hence, that a distinct new level is required."
-
-##### Levels and Constraints on Realizability
-
--   For a description, that description might be compatible with other
-    levels.
-    -   Newtons laws "are compatible with" biological taxonomy.
-
 ### Psychosemantics <small>Jerry Fodor</small>
 
 #### Chapter 1 <small>The Persistence of Attitudes</small>
@@ -659,10 +523,163 @@ RTM
 
 -   **We'll pick up next time with the Dennett counter-example.**
 
-February 4th, 2014 <small>Reading</small>
+February 4th, 2014 <small>Seminar</small>
 -----------------------------------------
 
-### "When is Information Explicitly Represented?" <small>David Kirsh</small>
+### On Fodor's *Psychosemantics*, Chapter 1 "The Persistence of Attitudes"
+
+-   Fodor is looking for a theory for states that interprets attitudes as
+	states with propositions, beliefs and desires *at least*.
+	-   Chomsky: "We *cognize* the grammar of English."
+	-   "We *believe* the grammar of our language."
+
+-   This is the "last gasp" of narrow content for Fodor.
+-   On Dennet's counterexample.
+    -   There is a distinction between core and derivative.
+        -   Those that *explicitly* represented and those that are 
+            *implicitly* represented.
+        -   Our heads just aren't big enough.
+
+February 11th, 2014 <small>Reading</small>
+-----------------------------------------
+
+### Zenon Pylyshyn. "The Explanatory Role of Representation"
+
+#### Introduction
+
+-   The hardest puzzle is consciousness.
+    -   Second hardest is *meaning*, which this work explains.
+    -   Does *not* solve the puzzle of meaning.
+    -   The author aims to **describe how the idea of the semantic
+        content of representations is implicitly viewed within the field
+        of cognitive science, and discuss why this view is
+        justifiable**.
+
+Representations
+:   Generalizations stated over the contents of representations are not
+    mere functional generalization in the usual sense.
+
+Function generalizations
+:   A theory that does not refer to physical properties of the
+    particular system in question, only how it operates.
+
+-   There will be a *representational level* and a *symbol-processing
+    level*.
+
+#### The Appeal to Representations
+
+-   Law-like generalization and explanations can differ in several ways,
+    consider:
+    1.  A certain object accelerated at *a* meters per second per second
+        because a steady force was applied that was equal to *ma*.
+    2.  A certain neuron fired because a potential of *v* millivolts was
+        applied along two of its sentries and that it had been inactive
+        during the previous *t* milliseconds
+    3.  A bit pattern of certain computer register came to have a
+        particular configuration because of the particular contents
+        present in the instruction register and the program counter, and
+        because the system is wired according to a certain transfer
+        protocol.
+    4.  The computer printed numbers 2, 4, 6, because it started with
+        the number 2 and added 2 repeatedly or because it applied the
+        successor function repeatedly and double the value before
+        printing.
+    5.  The pedestrian dialed 911 because he believed it to be the
+        emergency number and had recognized the urgent need for
+        assistance.
+
+-   Accounts (1), (2), and (3), all the terms refer to properties of
+    objects within the closed system.[^1]
+-   Accounts (4) and (6) are different in this important respect: Both
+    make substantive reference to entities or properties that are not an
+    intrinsic part of their state description, that is *numbers* and
+    *need for assistance*.
+
+> How is it possible for properties of the world to determine behavior
+> when the properties are not causally related in the required sense to
+> to the functional states of the system? --- **Brentano's problem**
+
+-   The notion of representation is necessary only in the context of
+    explanation.
+-   Behavior is being caused by certain states of one's brain, and so
+    mental states themselves are related to agent's actions.
+-   Brain states are not causally connected in appropriate ways to
+    walking or mountains.
+    -   The relationship *is one of content*, a semantic, not causal,
+        relationship.
+        -   The notion of content is roughly that of what the states
+            *are about*.
+
+    -   Brain states cause certain movements. If these movements are
+        view as members of equivalence classes described as "writing a
+        sentence about walking in the Santa Cruz mountains" the brains
+        states must be treated as embodying representations of these
+        codes by certain rules.
+
+-   Contrast the brain to a watch -- a watch's "behavior" is considered
+    coextensive with the set of movements corresponding to the physical
+    description of behavior.
+    -   Two ways of explaining human behavior capture extremely
+        different generalizations.
+
+#### Representational and Functional Levels
+
+-   This shows that **a *functional* description of mental processes is
+    not enough, there must also be content**.
+
+> If the content makes a difference to behavior, is it not also a
+> functional difference?
+
+-   To be in a certain representational state is to have a certain
+    symbolic expression in some part of memory.
+    -   The expression *encodes* the semantic interpretation and the
+        combinatorial structure of the expression encodes the relation
+        among the contents of the subexpressions, much as in the
+        combinatorial system of predicate calculus.
+
+-   The reason there must be symbolic codes is that they can enter in
+    causal relations.[^2]
+-   If there is a unique symbolic expression corresponding to each
+    content, one might expect functional states and representational
+    states to once again be one-to-one relation. Not so, because:
+    1.  There may be codes with the same semantic content which are
+        functionally but not semantically distinguishable.
+    2.  Merely possessing a certain symbolic expression that encodes
+        semantic content is insufficient to produce behavior.
+        -   You need to *interpret* the symbols.
+
+Semantic-level generalization
+:   Generalizations expressible in terms of the semantic content of
+    representations.
+
+:   Newell calls this "knowledge-level."
+
+Symbol-level generalizations
+:   Generalizations expressible in terms of functional properties of the
+    functional architecture.
+
+#### Representational Content as Defining a Level of Description
+
+-   We abandoned a biological vocabulary because of arbitrarily large
+    disjunctions corresponding to processes like "thinking."
+    -   Functional generalizations cannot be captured in a finite
+        neurophysiological description.
+    -   There is a vocabulary in between "*n* fired at *t* with *v*" and
+        "He called 911 because he believed he was in an emergency."
+        -   And it's *functional*.
+        -   And it's in *semantic terms*.
+
+-   "The principal of rationality is a major reason for our belief that
+    a purely functional account will fail to capture certain
+    generalizations, hence, that a distinct new level is required."
+
+##### Levels and Constraints on Realizability
+
+-   For a description, that description might be compatible with other
+    levels.
+    -   Newtons laws "are compatible with" biological taxonomy.
+
+### Kirsh, "When is Information Explicitly Represented?"
 
 #### Introduction
 
@@ -697,51 +714,303 @@ February 4th, 2014 <small>Reading</small>
 
 -   Perhaps the intuition is that "if it's there for all to see", then
     it's explicit.
+    -   Four tempting properties of explicitness:
+        1.  **Locality**: They are visible structures with a definite
+            defintion.
+        2.  **Movability**: No matter where in a book a word is found or
+            where in the library a book is stored, that word retains its
+            meaning and retains its explicitness.
+        3.  **Meaning**: Words have a definite information content.
+        4.  **Availability**: The information content of a word is directly
+            available to the system reading it, no elaborotate transition or
+            interpretation process is necessary to extract the information it
+            represents.
 
-### *Representation Reconsidered* <small>William Ramsey</small>
+> The trouble with using immediate grapability, or better *immediate
+> readability* as the mark of explicitness is that we run into problems
+> as soon as we ask whether to count accessing time as part of the reading
+> process.
 
-#### Chapter 3 <small>Two notions of representation in the classical computational framework</small>
+-   Are elements in large sets immediate readable?
+    -   This takes *computational energy* but is somehow *constant*/
 
-##### 3.1 IO-representation 68 
+-   From a process perspective information is explicit only when it is
+    *ready to be used*
+    -   No computation necessary.
 
-##### 3.2 S-representation 77 
+-   Explicitness is tied to usability.
 
-##### 3.3 Two objections and their replies 92 
 
-##### 3.4 CCTC representation: further issues 102 
+#### Our intuitions about implcitness are inconsistent
 
-##### 3.5 Summary
+-   Our concept of implicit runs into problems when we try to pin down
+    what "in principle, recoverable" means.
+    -   Is it how much effort is required?
+    -   Our all lemmas, "nearby" or "far", equally as implicit?
 
-#### Chapter 4 <small>The receptor notion and its problems</small>
+-   To make it more natural, perhaps the conception of *that which
+    is not explicit but which could be made so*.
 
-##### 4.1 The receptor notion 119
+#### Why it matters whether our intuitions are unsetteled
 
-##### 4.2 The receptor notion and the job description challenge 124 
+#### Towards a theory of explicitness
 
-##### 4.3 Dretske to the rescue? 127 
+##### Four condition on explicitness
 
-##### 4.4 Further dimensions of the receptor notion 140 
+Locality
 
-##### 4.5 Does it really matter? 146 
+:   They states, structures, or processes - henceforth symbols -
+    which explcitly encode information must be easily seperable
+    from each other.
 
-##### 4.6 Summary 148
+Movability
 
-February 4th, 2014 <small>Seminar</small>
------------------------------------------
+:   An ambigious language may explicitly encode information only if
+    it is trivial to indetify the syntatic and semantic indentity of
+    the symbol.
 
-### On Fodor's *Psychosemantics*, Chapter 1 "The Persistence of Attitudes"
+Immediately readable
 
--   Fodor is looking for a theory for states that interprets attitudes as
-	states with propositions, beliefs and desires *at least*.
-	-   Chomsky: "We *cognize* the grammar of English."
-	-   "We *believe* the grammar of our language."
+:   Symbols explicitly encode information if they are either:
+    -   Readable in constant time.
+    -   Sufficiently small to fall in the attention span of an operator.
 
--   This is the "last gasp" of narrow content for Fodor.
--   On Dennet's counterexample.
-    -   There is a distinction between core and derivative.
-        -   Those that *explicitly* represented and those that are 
-            *implicitly* represented.
-        -   Our heads just aren't big enough.
+Meaning
+
+:   The information which a symbol explictly encodes is given by the set of
+    associated states, structures, or processes it activates in constant
+    time.
+
+#### Implications
+
+-   One of the following is false:
+    -   The LOT is the best level of analysis to represent perspicuously
+        the episodes of in our *mental life*.
+    -   The events in our mental life are identical with operations on
+        explicit representations.
+    -   The LOT perspicously describes human information processing.
+
+### Marr & Nishihara, "Artificial Intelligence and the Sensorium of Sight"
+
+### Ramsey, section 3.1 of *Representation Reconsidered*
+
+February 11th, 2013 <small>Seminar</small>
+------------------------------------------
+
+Eliminativism
+
+:   Unless there's a transparent relationship between folk psychology
+    and scientific psychology, then the attitude to hold towards folk
+    psychology is *elimination*.
+
+-   Ramsey still agrees with Fodor in *eliminativism*.
+    -   Stich, in the 80s and 90s, was an eliminativist.
+    -   Especially, "The Case Against Belief" didn't think there'd
+        be a transparent relationship.
+    -   Egan thinks there *both* wrong, that is the eliminativists.
+        -   The paper on this is "Folk Psychology and Cognitive Architechure"
+
+### On Pylyshyn
+
+-   He wants to justify and vindicate justification with regards
+    to representation.
+    -   Why content?
+    
+-   The argument for a certain way of construing vehicles pervades
+    the whole book.
+    -   *We cannot eliminate appeal to content*.
+
+-   Stich argued that if we really are symbol systems, like Fodor thinks,
+    then why do we need content?
+    -   Pylyshyn is trying to justify the appeal to content.
+
+#### The First Puzzle
+
+-   Brain states are not causally connected to ... 
+    -   "I believe there's beer in the refrigerator."
+    -   There's not causal connection between the object and my
+        brain states.
+        -   There *needn't* be a causal connection.
+
+    -   I'm thinking about Paris and that might cause me to book
+        a vacation to Paris.
+
+-   The solution is how mental states fit into the physical world.
+
+> Why does he think we need content if it is the physical stuff
+> that is realized?
+
+-   Pylyshyn uses the capturing language as a way of "getting the
+    generalization."
+-   The difference between us and watches.
+    -   We get convinience from "thermometer gets the tempurature."
+    -   We really need do need generalizations to explain our behavior,
+        it's only convinient for everything else.
+
+### The Scheme
+
+$$ \lbrace I_1 ... I_n \rbrace $$
+$$ f_I $$
+$$ \lbrace S_1 ... S_n \rbrace $$
+$$ f_R $$
+$$ \lbrace P_1 ... P_n \rbrace $$
+
+-   The three levels:
+    1.  Interpretations level
+    2.  Interpretation function
+    3.  Syntatitic level
+    4.  Realization function
+        -   Maps physical state to symbol (numeral) 2 or 3 ...
+        -   Nothing stops it from a bizzare representation.
+        -   Indepedant from meaning
+
+    5.  Physical states
+        -   These have *many* causal functions.
+        -   These can bring about states, but those states
+            can *bring about* cognitively important states.
+
+-   Fodor think that we need an LOT, so he wants to identify a level
+    where structures that function as words and they have *constituency
+    relationships*.
+
+> **Niko**: If you want to be representational about this, you can say that
+> the mapping is just useful to us ...
+
+     2   3     5
+     ^   ^     ^
+     |   |     |
+     |   |     |
+    S1  S2 -> S3
+     ^   ^     ^
+     |   |     |
+     |   |     |
+    P1  P2 -> P3
+
+    An "adding machine" on this model.
+
+### What's the role of content?
+
+-   If the *I*s and the *P*s are in a one-one relationship, then you 
+    get not explanatory leverage.
+    -   Why can't we just explain the systems behvior in terms of the
+        causally efficacious states.
+
+> What is implicit in this is not that there is a one-to-one function,
+> but that there are arbitrarily many disjunctions
+
+-   The rationality principle says that these transition states need
+    to be *truth-preserving*.
+-   There is an *implicit assumption* about explaining cognition that
+    we are doing something inherently rational already.
+
+-   Here's something that is paradigm of cognitive but not rational:
+    -   If we can succesfully characterize someone in this way, if they
+        have the *p* and the *p* to *q*
+    -   These models are used to describe data that *is*. "Cognitive function."
+
+-   This kind of explantory projects is going to be applied to sub-cognitive
+    functions and phenomena.
+    -   Not just the personal level of behavior.
+    -   Open up the principle of rationality
+
+-   Fodor in the appendix appeals to theory or processing, these theories
+    are commited to mental representations, so this provides support for
+    the RTM and by commitment the LOT.
+    -   A lot of these examples, the successes do not fit the model the
+        content of attitudes, beliefs, desires.
+
+> **Niko**: Is the argument that you want to get rid of the interpretation
+> level but that's silly because that's where we began to explain.
+
+-   No, that's Prof. Egan's argument.
+    -   The argument *here* is that there's going to be a series of unprincipled
+        generalizations without principles of rationality.
+    -   These are understood as generalizations.
+        -   Unless we can understand these truth-preserving.
+
+> **Ben**: Couldn't you weaken it, the more plausible claim is if we
+> lose the generalizations, we lose these great explanations.
+
+-   Derivability isn't a basic notion.
+    -   We can reconstruct it to be truth preserving.
+
+Derivability
+
+:   What goes on in the middle level, the higher-level causation.
+
+#### Egan's View
+
+-   Unless what the system is doing is *recognizabily cognitive*,
+    this isn't worth doing.
+    -   It can add, it can compute, it can speak, it can see, it can
+        recover the 3D structure of the scene.
+        -   To do this, we need content.
+
+    -   Unless you can attribute content, you *can* talk about causal
+        stories, you cannot explain Mary's *behavior*.
+        -   The folk psychological explaination makes it rational.
+
+-   This point will come up in Ramsey's IO representations.
+    -   Unless we can construe the inputs and outputs of the system,
+        as cognitive function, then the project *doesn't make any sense.*
+    -   We're trying to explain a cognitive competence. We at least need
+        to interpret the inputs and outputs of the system as contentful.
+
+#### On the third argument, pg. 27
+
+-   My brain states are not causally connected to Paris, or walking, or mountains.
+-   The relationship must be in terms in content.
+
+### On Kirsch
+
+-   The main point is that intuitions about explicitness and implicitness
+    are very broken, but that does not stop philosophers and others from using
+    these notions fairly heavily.
+    -   Our concept on explicit representation rests pretty heavily on the printed
+        word.
+    -   Construing explicit representation on the printed word, litterally sentences
+        in the head, assumes that explicit representation can be understood in
+        purely *functional* terms.
+        -   The big point he wants to get across is that this has to come across
+            in *procedural* terms.
+
+-   It's often assumed that we know what *explicit* is, but not what *implicit* is,
+    and so implicit is defined in terms of not-explicit.
+-   He distinguishes between *exploiting* regularities in the environment and
+    *representing* regularities in the environment.
+
+### On Marr
+
+> So why are we reading Marr? A lot of the work he's done has been falsified.
+
+-   Not interested in the details, interested in the methodology
+
+#### Marr's Methodology
+
+-   He thought that an account of a cognitive system has three different levels.
+    -   Those are:
+        1.  **Theory of computation**: Specification of the function computed.
+            That is, the *what* that the system is doing. This is the level at
+            which the competence of the system is, knowledge, processing details.
+        2.  **Representation & Algorithm**: This level specific the alogirthm which
+            computes the function speficied in the theory of computation (level 1).
+            And it specifies structures over which the alogirthm which it is defined.
+            *Ex*. A function can be added, the algorithm can be Roman or Arabic.
+        3.  **Neural interpretation**: This is, in some sense, the *how*.
+
+-   The big picture:
+    1.  Gray level array
+    2.  Primal sketch
+    3.  Has multiple:
+        -   SFM
+        -   Stereoscopic
+        -   Texture
+        -   Shading
+
+    4.  $ 2 \frac{1}{2} $D
+    5.  3D
+
+-   **Next time**: SFM
 
 <!-- Accronymns -->
 

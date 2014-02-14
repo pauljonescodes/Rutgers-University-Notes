@@ -1,4 +1,4 @@
-Design and Analysis of Computer Algorithms - with Professor Kostas Bekris
+Design and Analysis of Computer Algorithms <small>with Professor Kostas Bekris</small>
 =========================================================================
 
 Syllabus
@@ -360,7 +360,7 @@ January 24th, 2014 - Lecture
 
     -   We need to think in terms of the representation of numbers.
         -   For example, a number *N* in base *b*.
-        -   You need $\left \lceil{log_b (N+1) \right \rceil$ digits.
+        -   You need $\lceil{log_b (N+1) \rceil$ digits.
 
 -   If cost of addition is linear to the size of bit representation,
     what is the cost of `fib(n)`?
@@ -519,7 +519,7 @@ January 31st, 2014 <small>Lecture</small>
     -   So lets pick e = 3 is sufficient??
         -   So what is the valye of d?
 
-            $$d \equive e^{-1} mod (p - 1)(q - 1) \equive 3^{-1} mod 40 $$
+            $$d \equiv e^{-1} \bmod (p - 1)(q - 1) \equiv 3^{-1} \bmod 40 $$
 
     -   This means that 3 times d is equal to modulo 40, which is the
         modular inverse.
@@ -527,28 +527,28 @@ January 31st, 2014 <small>Lecture</small>
 
     -   For any message, x modula 55, ecryption is 
 
-        $$ y = x^3 mod 55 $$
+        $$ y = x^3 \bmod 55 $$
 
     -   For any message, decryption is
 
-        $$ x = y^{27} mod 55 $$
+        $$ x = y^{27} \bmod 55 $$
 
 ### Proof of property
 
 -   We have to show that
 
-    $$(x^e)^d mod N \equiv x mod N $$
+    $$(x^e)^d \bmod N \equiv x \bmod N $$
 
     -   The following are true if e and d have been selected
         as specific
 
-        $$ e \times d \equiv 1 mod (p - 1)(q - 1) \equiv e \times d = k (p - 1)(q - 1) + 1 $$
+        $$ e \times d \equiv 1 \bmod (p - 1)(q - 1) \equiv e \times d = k (p - 1)(q - 1) + 1 $$
 
 > **Fermat's Little Theorem**: If *p* is prime, then
 > $\forall 1 \le a \le p$:
 > 
-> $a^p \equive a mod p$
-> $a^{p -1} \equiv 1 mod p$
+> $a^p \equiv a \bmod p$
+> $a^{p -1} \equiv 1 \bmod p$
 
 ### Summary of RSA
 
@@ -569,9 +569,9 @@ January 31st, 2014 <small>Lecture</small>
 
 #### Alice
 
-1.  Generate encrypted message $x^e mod N$ where e and N come from
+1.  Generate encrypted message $x^e \bmod N$ where e and N come from
     Bob public key.
-2.  When Bob receives this message $x = y^d mod N$.
+2.  When Bob receives this message $x = y^d \bmod N$.
 
 ### Why is this secure?
 
@@ -591,12 +591,148 @@ January 31st, 2014 <small>Lecture</small>
 -   Modular exponentiation, plus the decoding.
 -   We have to select e, a small integer, but it has to be a relative
     prime
--   Compute $d = e^{-1} mod (p - 1)(q - 1)$ which always exists
+-   Compute $d = e^{-1} \bmod (p - 1)(q - 1)$ which always exists
     when $e$ is a relative prime.
 -   Pick 2 large prime numbers.
 
-#### Modular exponentiation
+February 7th, 2013 <small>Lecture</small>
+-----------------------------------------
 
+### RSA
 
+-   Pick 2 large *n*-bit primes.
+
+    $$ N = pq $$
+
+    $$ e : \gcd(e, (p - 1), (q - 1)) = 1 $$
+
+    $$ d : d = e^{-1} \bmod (p - 1) (q - 1) $$
+
+### Greatest Common Divisor
+
+-   If you could perform factoring efficiently, the you could solve
+    the problem.
+    -   But we do not have one. So RSA is safe.
+
+Euclid's observation
+
+:   $\gcd(x, y) = \gcd(x \bmod  y, y)$
+
+        function euclid(a, b) {
+            if (b == 0) {
+                return a;
+            } else {
+                return euclid(b, a \bmod b);
+            }
+        }
+
+February 12th, 2014 <small>Lecture</small>
+-----------------------------------------
+
+### Review of RSA
+
+-   Sender
+    -   Picks two random primes *p* and *q*.
+    -   Sets *N* equal to *pq*.
+    -   `gcd(e, (p - 1)(q - 1))`
+
+> **Fermat**: If a number *p* is prime, then for all smaller numbers,
+> it is the case that $a^{p - 1} \equiv 1 \mod p$
+
+-   How probable is it that this test succeeds? Less than half.
+
+-   A way of generating random primes
+    -   Pick a random number.
+    -   Apply the primality test accounrd to Fermat.
+    -   If it succeeds, then return it.
+
+-   Good news:
+    -   Prime numbers are abundant, frequently arising.
+    -   A random *n*-bit number has roughly $\frac{1}{n}$ chance of 
+        being prime.
+    
+> **Lagrange's Prime Number Theorem**: Let $\pi(x)$ be the number of primes
+> $\le x$.
+>
+> $$ \pi(x) \approx \frac{x}{\ln(x)} $$
+>
+> Or more precisely,
+>
+> $$ \lim_{x \to \infty} \frac{\pi(x)}{\frac{x}{\ln(x)}} = 1 $$
+
+### Hashing <small>Another Application of Number-Theoretic Algorithms</small>
+
+-   **Objective**: Store and efficiently retrieve IP addresses of the form
+    `128.32.168.80`.
+    -   There are $2^{32}$ possibilities.
+    
+-   Let's say you have *n* of them ($n << 2^{32}$).
+
+-   One possible way of storing them is an *array* of 2 to the 32 size that 
+    indicates whether an IP address is in the set *n* IP addresses.
+
+-   Another possibility is a *linked list*, where you only store the *n*
+    IP addresses.
+    -   But *O(n)* time to access them.
+
+-   Hash tables try to provide a trade-off.
+    -   Create an array in the order of *n*.
+
+-   We need hash function that can return an index to the array and
+    have the following properties:
+    -   The function will scatter the elements in the array, it will
+        be "random" where they're going to be placed. 
+        -   If your given the same placement, you should get the same 
+            value.
+        -   Consistency for the same input, it should always return
+            the same index in the array.
+
+-   Picking one of the four numbers can work as a hash function under the
+    assumption that that input is uniformly distributed.
+-   **Objective**: Regardless of the input, we need the "random" property.
+-   **Realization**: There is no single hash function that behaves well on
+    all input data.
+-   **Idea**: Pick from a family of hash functions randomly so that the
+    probability of 2 elements to be mapped to the same index is
+    $ \frac{1}{257} $ size of the array.
+
+-   Every IP address is a tuple : $ \lbrace x_1, x_2, x_3, x_4 \rbrace $
+    where $ x_1 \in [1, 256] $.
+    -   Consider the has function
+
+        $$ h_\alpha (x_1, x_2, x_3, x_4) = \sum_{i = 1}^{4} \alpha_1 \times x_i \mod N $$
+
+        If you pick the numbers alpha-1 at random, then $h_\alpha$ is likely
+        to be good.
+
+-   **Property**: Consider any 2 elements *x*-1 through *x*-4 and 
+    corresponding *y*s. If the coefficients are chosen and uniformly
+    at random mod *N*, then
+
+February 12th, 2014 <small>Recitation</small>
+---------------------------------------------
+
+### Probability Theorem
+
+-   If you have event *A*, and you want to measure how *probable* this
+    event is.
+    -   We have some axioms. The axioms of probability.
+
+> 1.  $ 1 \ge P(A) \ge 0 $
+> 2.  $ P(S) = 1 $
+> 3.  $ P(A \bigcup B) = P(A) + P(B)$ if *A* and *B* are mutually exclusive.
+
+#### Event of throwing a dice
+
+-   **Output**: {1, 2, 3, 4, 5, 6}
+-   The probability of any individual role is one in six.
+-   The events are independant.
+-   The event can be mutually exclusive (with themselves).
+
+#### Bayes Theorem
+
+> **Bayes' Theorem**:
+>
+> $$ P(A | B) = \frac{P(B | A) \times P(A)}{P(B)} $$
 
 

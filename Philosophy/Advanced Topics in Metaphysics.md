@@ -352,7 +352,7 @@ Nominalism
 -   Let *x* range over things, *P* over properties (classes) of things.
     Then:
 
-    $$\exist_1 P \Box \forall x (x \in P \equiv 0x)$$
+    $$\exists_1 P \Box \forall x (x \in P \equiv 0x)$$
 
 #### One Over Many
 
@@ -1241,6 +1241,91 @@ Metrics-Relativity
 
 ##### Relativity is too problematic
 
+February 14th, 2014 <small>Seminar</small>
+------------------------------------------
+
+-   Lewis has "spatio-temporal" manifolds, everything is determined
+    by points in this (sometimes) perfectly natural properties.
+    -   "Intrinsic to the regions which they specify."
+
+-   For Lewis, the fundamental metaphysics of the world is determined
+    by the decoration of the spatio-temporal manifold.
+    -   The laws are determined by what best specifies the manifold.
+        -   The best systemization is a language, whose predicates refer
+            to the perfectly natural properties.
+
+    -   You want to build a universe? Get a space-time manifold, get
+        perfectly natural properties and decorate your manifold.
+
+-   **Problem**: It is a possibility that there is a best systemization
+    whose language's predicates do not refer to perfectly natural
+    properties.
+    -   In fact, if you compare it to the BSA with predicates that
+        have perfectly natural properties, the system *without* it
+        even looks better.
+
+-    This seems opposed to Lewis' project, so:
+    -   *Is it really a problem for Lewis?*
+    -   *Is there something within Lewis' overall view to deal with it?*
+    -   *Working out the alternative, you have to say something about
+        what counts as laws.*
+
+-   There two ways of specifying what it takes for a world:
+    -   Fundamental properties and space-time
+    -   *Just a world*
+        -   Where it's the project of science to pick out what
+            the fundamental structures of the world are.
+
+-   **Loewer on Similarity**: Our notions about similarity are informed
+    by properties which can be picked out by physics.
+
+### Semantics of "Law" and Laws
+
+> **Daniel**: This view is really useful when I'm doing this thing,
+> and this other theory is useful when I'm doing this thing. Lets
+> *roll with the relativism*.
+>
+> -   **Response**: I *do not* want to go that way.
+>    -   There has to be at least *really one* if we can "pick our
+>        favorite."
+>
+> -   **Mike**: This means laws will give you contradicting advice.
+> -   **Niko**: I thought Daniel's worry was that the fundamentality
+>     is relativied to communities with interests. By picking a "select"
+>     community, you're not helping.
+> -   **Loewer**: The word isn't realtivised to the community, it's that
+>     the very idea of scientific law is one in which the content is determined
+>     by the practice of our scientific community.
+
+#### What to take away
+
+-   Two pictures of fundamental properties:
+    1.  Lewis picture: Epistemic worry, best theories which don't pick
+        out single sets of laws.
+
+### Armstrong's Critique of RT
+
+-   He beats a horse he thinks he's killed.
+    -   Props up *Naive* RT
+
+-   Armstrong is interested in:
+    -   "It is a law that Fs are Gs."
+    -   "Fs make it *x* probable that Gs ..."
+
+-   Assuming you have lawful generalizations, Armstrong thinks that the Humean
+    account fails dreadfully.
+-   His objections:
+    -   HU that are not laws.
+    -   Laws that are not HUs.
+
+-   "Clearly this isn't right."
+-   Armstrong thinks there are *vacuous* (uninstantiated) laws.
+-   Armstrong also thinks that HU is not necessary for lawhood.
+-   Interested for methodological reasons.
+-   Tooley's garden.
+    -   Tooley's intuition is that it is law but not a HU,
+        because it is limited to Smith's garden.
+
 
 
 <!--
@@ -1263,3 +1348,4 @@ TODO
 *[HS]: Humean Supervenience
 
 *[BSA]: Best system account
+
