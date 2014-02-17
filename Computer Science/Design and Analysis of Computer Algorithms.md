@@ -1203,13 +1203,295 @@ Primality
     > **Lemma**: For any positive integers *a* and *b*, the extended Euclid algorithm
     > returns integers *x*, *y*, and *d* such that *gcd(a, b) = d = ax + by*.
 
+##### Modular division
 
+-   In real arithmetic, every number that doesn't equal zero has an inverse,
+    that is, one over itself.
+    -   Dividing by a number is the same as multiplying by its inverse.
+        -   In *modular* arithmeric, we can make a similar definition.
+
+Multiplicative inverse
+
+:   We say *x* is the *multiplicative inverse* of *a* modulo *N* if 
+    $ax \equiv 1 (mod N)$.
+
+-   There can only be one, and we denote it with $a^{-1}$.
+    -   However, it doesn't *always* exist.
+    -   For instance, 2 is not invertible modulo 6.
+        -   2 multiplied by *x* is not equivilient to 1 modulo 6 for any and every
+            number.
+        -   In this case, *a* and *N* are both even and thus *a mod N* is alwaus even,
+            since *a mod N = a - kN* for some *k*.
+
+-   In fact, this is the only circumstance in which *a* is not invertible.
+    -   The *gcd(a, N) = 1* (this is called *relatively prime*), the extended Euclid
+        algorithm gives us integers *a* and *y* such that *ax + Ny = 1*, which means
+        that $ax \equiv 1 (mod N)$.
+        -   This, *x* is *a*'s sought inverse.
+
+
+Example
+
+:   -   Continuing with our previous example, supose we computer $1^{-1} \bmod 25$.
+        -   Using the extended Euclid algorithm we find that
+
+            $$ 15 \cdot 25 - 34 \cdot 11 = 1 $$
+
+        -   Reducing both sides modulo 25, wh have
+
+            $$ -34 \cdot 11 \equiv 1 \bmod 25 $$
+
+        -   Therefore, $-34 \equiv 16 \bmod 25$ is the inverse of $ 11 \bmod 25$.
+
+Modular division theorem
+
+:   For any $a \bmod N$, *a* has the a multiplicative inverse modulo *N* 
+    iff it is relatively prime to *N*. When this inverse exists, it can be found
+    in time $O(n^3)$ by running the extended Euclid algorith,
+
+-   This resolve the issue of modular division.
+    -   When working with modulo *N*, we can divide by numbers realtively prime to *N*.
+        -   And *only by* these.
+
+    -   To carry out the division, we multiply the inverse.
 
 #### Primality testing
 
+Fermat's little theorem
+
+:   If $ p $ is prime, then for every $ 1 \le a \lt p $
+
+    $$ a^{p - 1} \equiv 1 (\bmod p) $$
+
+:   ~~~
+    function primality(N) {
+        a = random(less than N); 
+
+        if ((a ** (N - 1)) == (1 % N)) {
+            return YES;
+        }
+
+        else {
+            return NO;
+        }
+    }
+    ~~~
+
+-   The problem is that Fermat's theorem is not an iff condition.
+    -   It doesn't say what happens when *N* is *not* prime.
+    -   In fact, it *is* possible for a composite number *N* to pass Fermat's
+        test.
+
+-   In analyzing the bahvior of this algorithm, we first need to get a minor bad
+    case out the way.
+    -   There are extremely rare composite numbers called *Carmichael numbers*,
+        and they pass Fermat's test for all *a* relatively prime to *N*.
+        -   On such numbers our algorithm will fail.
+
+-   In a Carmichael-free universe, our algirothms work well.
+
+Lemma 
+
+:   If $a^{N - 1} \not\equiv 1 \bmod N$ for some *a* relatively prime to *N*, then it
+    must hold for at least half the choices of $a \lt N$.
+
+-   We are ignoring Charmichael numbers, so we now assert,
+    -   If *N* is prime, then $a^{N - 1} \equiv 1 \bmod N $ for all *a* less than *N*.
+    -   If *N* is not prime, then $ a^{N - 1} \equiv 1 \bmod N $ for at most half of
+        the values of $a \lt N$.
+
+-   The probability of our primality algorithm returning yes when a number is prime
+    is 1, that is it happens 100% percent of the time.
+    -   On the other hand, the probability of reutrning yes with a number is *not
+        prime* is one half, that is, false positives happen half of the time.
+    -   If you run the test *k* times, the probability of *N* not being prime is
+        $\le \frac{1}{2^k}$.
+
+~~~
+function primarilty2(N) {
+    pick positive integers a1, a2, ..., ak < N at random;
+
+    if ((a[i] ** N - 1) == 1 (mod N)) for all i ... k {
+        return yes;
+    else
+        return no;
+    }
+~~~
+
+-   This probability of error drops exponentially fast, and can be driven *arbitrarily
+    low* by choosing a large enough *k*. 
+    -   If you do it a 100 times, the probability of a cosmic ray ruining your 
+        computation is higher than the probability of error.
+
+##### Generating random primes
+
+-   We are now close to having everything we need for cryptography.
+    -   We need a fast algorithm for choosing random primes.
+        -   Hundred bits long.
+
+    -   What makes this aks quite easy is that prime are abundant
+        -   A random, *n*-bit number has a roughly one-on-*n* chance of being
+            prime.
+        -   For instance, about 1 in 20 social security numbers are prime!
+
+Lagrange's prime number theorem
+
+:   Let $\pi(x)$ be the number of primes $\le x$. Then, $\pi(x) \approx \frac{x}{\ln n}$,
+    or more precisely,
+
+    $$ \lim_{x \to \infty} \frac{\pi(x)}{(x / \ln x)} = 1 $$
+
+    Such abundance makes it simple to generate a random *n*-bit prime:
+
+    -   Pick a random *n*-bit number *N*.
+    -   Run a primality test on *N*.
+    -   If it passes the test, output *N*, else repeat the test.
+
+-   *How fast is this algoritm?*
+    -   If the randomly chosen *N* is truly prime, which happen with probability at
+        least $\frac{1}{n}$, then it will certainly pass the test.
+    -   So on each iteration, this procedure has at least a $\frac{1}{n}$ chance of
+        halting.
+    -   Therefore, on average it will halt within $ O(n) $ rounds.
+
+-   Next, exactly which primality test should be used?
+    -   In this application, since the number we are testing for primality are chosen
+        at random rather than by adversary, it is sufficient to perform the Fermat test
+        with *a* as 2.
+        -   For random numbers the Fermat test has a mihc samller failur probability
+            than the worst-case one-half bound proven earlier.
+        -   The resulting algorithm is quite fast, generating primes that are hundreds
+            of bits long in a fraction of a second on a PC.
+
+-   The important question: *What is the probability that the output of the algorithm
+    is really prime?*
+    -   To answer, we must first understnad how discerning the Fermat test is.
+    -   As a concrete example, perform the operation on base *a* equal to 2 for
+        all numbers less than or equal to 25 times 10 to the 9th power.
+    -   In this range, there are about $10^9$ primes, and about 20,000 composites
+        that pass the test.
+        -   Thus, the chance of erronesouly outputting a composite numbers is
+            
+            $$ 20,000 / 10^9 = 2 \times 10^{-5} $$
+
 #### Cryptography
 
-#### Universal hashing
+-   The next topic is the RSA cryptosystem.
+    -   It derives very strong guarantees of security by ingeniously exploiting the
+        wide gulf between the polynomial-time computability of certain number-theoretic
+        tasks and the intractability of others.
 
+-   The typical setting for cryptography is described with a cast of three characters:
+    Alice and Bob, who want to communicate in private, and Eve, the eavesdropper who
+    will go to great length to find out what they're saying.
+    -   Imagine Alice sends her message "*x*" which is written in binary.
+        -   She encodes it as *e(x)*, sends it over, and then Bob applies his
+            decryption function *d()* to decode it: *d(e(x)) = x*.
+
+~~~
+Alice                                                Bob
+            +----------+  e(x)   +----------+
+  x  ---->  | Encoder  |  ---->  | Decoder  |  ----> x = d(e(x))  
+            +----------+    |    +----------+
+                            |
+                            +--->  Eve
+~~~
+
+-   Alice and Bob are worried that the eavesdropper, Eve, will intercept *e(x)*.
+    -   She might be a sniffer on the network. 
+    -   The function *e()* is chosen so that without knowing *d()*, Even cannot
+        do anything with the information she has picked up.
+        -   *e(x)* tells you little or nothing about *x*.
+
+-   For centuries, cryptography was based on *private-key protocols*.
+    -   In such a scheme, Alice and Bob would have to actually meet before hand
+        and agree on the scheme.
+        -   Eve's only hope is to get the codebook and a message.
+
+-   *Public-key protocols* such as RSA are significantly more subtle and tricky.
+    -   They allow Alice to send a message to Bob without ever having to meet him.
+    -   The central idea behind RSA is the dramatic constrast between facting and
+        primality.
+        -   Bob is able to implement a *digital lock*, to which only he has the key.
+
+    -   By making his digital lock public, he gives Alice a way to send him a secure
+        message that only he can decrypt.
+        -   This is how the Internet sends private and sensitive information.
+
+-   In the RSA protocol, Bob need only perform the simplest of calculations, such as
+    multiplcation, for a digital log.
+    -   By contrast, Eve must perform operations like factoring large numbers that
+        would require more than the world's most powerful computers combined.
+
+##### RSA
+
+-   RSA is *public-key cryptography*.
+    -   Anybody can send a message to anybody else using publically available
+        information.
+    -   Each person has a public key known to the whole world and a secret key known
+        only to themselves.
+    -   When Alice wants to send a message to Bob, this happens:
+        1.  She encodes it using his public key.
+        2.  He decrypts it with his secret key.
+
+-   The RSA scheme is based heavily on number theory
+    -   Think of messages from Alice to Bob as numbers modulo *N*.
+        -   Messages larger than *N* are broken into smaller peices.
+
+    -   The encryption function will the be a bijection on $ \lbrace 0, 1, \cdots N - 1\rbrace $
+        -   The decryption function will be its inverse.
+
+Property
+
+:   Pick any two primes *p* and *q* and let *N = pq*. For any *e* relatively prime to
+    *(p - 1)(q - 1)*:
+
+    1.  The mapping $x \mapsto x^e \bmod N$ is a bijection on 
+    
+        $$ \lbrace 0, 1, \cdots , N - 1 \rbrace $$
+    
+    2.  Moreover, the inverse mapping is easily realized: led *d* be the inverse of
+        *e* modulo *(p - 1)(q - 1)*. Then for $x \in \lbrace 0, 1, \cdots N - 1 \rbrace$,
+
+        $$ (x^e)^d \equiv x \bmod N $$
+
+> **Example**
+>
+> -   **Bob chooses his public and secret keys**
+>     -   He starts by picking two large (*n*-bit) random primes *p* and *q*.
+>     -   His public key is $(N, e)$ where $N = pq$ and $e$ is a $2n$-bit number
+>         relatively prime to $(p - 1)(q - 1)$.
+>         -   A common choise is $ e = 3 $ because it permits fast encoding.
+>  
+>     -   His secret key is $d$, the inverse of $e$ modulo $(p - 1)(q - 1)$, computed
+>         using the extended Euclid algorithm.
+>
+> -   **Alice wishes to send message $x$ to Bob**.
+>     -   She looks up his public key $(N, e)$ and sends him $y = (x^e \bmod N)$,
+>         computed using an efficient modular exponentiation algorith,
+>     -   He decodes the message by computing $y^d \bmod N$.
+
+-   This RSA protocol is convinient.
+    -   The computations for Alice and Bob are easy.
+    -   But what about Eve?
+        -   The security of RSA hinges upon a simple assumption:
+
+            > Given $N$, $e$, and $y = x^e \bmod N$, it is computationally intractable
+            > to determine $x$.
+
+-   This assumption is quite plausible
+    -   She coould try all possible values of $x$, each time checking
+        $x^e \equiv y \bmod N$
+        -   This would take exponetial time.
+
+    -   She could try to factor $N$ to retrieve $p$ and $q$, and then figure our
+        $d$ by inverting $e$ modulo $(p - 1)(q - 1)$.
+        -   This factoring would be hard.
+
+    -   Intractibility is normally a source of dismay, RSA uses it as an advantage.
 
 *[GCD]: Greatest common divisor
+
+*[iff]: if and only if
+
+*[RSA]: Rivest-Shamir-Adelman
