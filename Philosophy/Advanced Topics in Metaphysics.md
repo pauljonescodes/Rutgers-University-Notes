@@ -297,9 +297,9 @@ Copresent
         is a property.
         -   So they are of immense abundance.
 
-    -   \*\*There are so many properties that those specifiable in
+    -   **There are so many properties that those specifiable in
         English, or in the brain's language of synaptic interconnections
-        and neural spikes, could be only an infitesimal minority.\*\*
+        and neural spikes, could be only an infitesimal minority.**
 
 -   There so many properties that any two things share an infinite
     amount of properties and fail to share inifitely many as well.
@@ -667,6 +667,252 @@ Armstrong
 Lewis
 
 :   Has *possibilia* and *classes of possibilia*
+
+-   **Aim to show**: Lewis needs to add something to his basic ontology
+    to do some work. 
+    -   **Strategy**:
+        1.  Explain the difference between universals and properties
+        2.  Show how universals can do important work that properties cannot.
+        3.  Once this job is done, you can do a lot of other work.
+
+-   **The work**:
+    1.  Similarity
+    2.  Duplication
+    3.  Supervinience
+    4.  Determinism
+    5.  Materialism
+    6.  Determinacy of content
+    7.  Laws
+    8.  Causation
+
+-   **Sidequest 1**: Show that Amrstron's argument for universals (one over many)
+    isn't good.
+-   **Sidequest 2**: Show that we still need properties. Universal cannot do all the
+    work.
+
+#### Universals and Properties
+
+1.  Universals are *located* wholly where their instances are, are part of their
+    instances. 
+    -   Properties are spread out, their instance are "part of" them.
+
+2.  Universals are *sparse*. There are only enough to account for the similarity
+    facts. 
+    -   Properties are abundant, there are tons of them.
+
+#### Basic Job - Similarity
+
+-   **Upshot of fact 2**: Universal can account for similarity. Properties *cannot*.
+-   Make some properties shin. They are the natural properties and account make
+    for similarity.
+
+Primitive naturalness
+
+:   Some properties are natural, some aren't.
+
+Primitive resemblance
+
+:   The members of this plurality resemble each other more than they
+    do the members of any other plurality. Resemblance is primitive.
+
+#### Duplication
+
+Problem
+
+:   Duplicate are analyzed in terms of sharing *intrinsic properties*.
+    Intrinsic properties are analyzed as those shared by duplicates.
+
+Solution
+
+:   Duplicates are those things that share perfectly natural properties.
+
+:   Duplications are those things whose parts bear isomorphisms
+    and share natural properties and relations.
+
+#### Supervenience
+
+-   The *A*s supervene on the *B*s when similarity among *B*s means
+    similarity among *A*s.
+    -   Using our fancy new duplication stuff: If duplicating the *B*s
+        means match among *A*s.
+
+#### Determinism
+
+Problem
+
+:   "Every event has a cause" ignore probabilistic cause. "Ideal predictor"
+    ignores "obstacle to calculation."
+
+Solution
+
+:   Divergent worlds are not duplicates, but have duplicate initial segments.
+    Deterministic laws don't allow for digergent worlds. Determinstics worlds
+    are worlds with determinstic laws.
+
+#### Materialism
+
+Problem
+
+:   Want materialism to be:
+
+    -   Contigent
+    -   Involve physics
+    -   Allow for panpsychism
+    -   Account for the "something extraness" of spooks
+    -   Account for the "sufficiency of the physical"
+
+Solution
+
+:   Alien properties aren't instantiated at our world, nor constructible from
+    out natural properties. Materialism says that in worlds without alien
+    properties, worlds alike physically are duplicates.
+
+#### Content
+
+Putnam
+
+:   If content is fixed by what satisifes (idealidized) theory, it's indeterminate.
+
+Kripkenstein
+
+:   No proper subsequence of use determines next element.
+
+Solution
+
+:   We need more constraints. If constraints are causal, natural properties "get in."
+
+Lewis
+
+:   Some properties are inherently eligible to be referents to our words.
+    Objects become eligible by instantiating eligible properties.
+
+    Eligibility is proportional to naturalness. Content is determined by 
+    maximizing fit with use and eligibility.
+
+#### Laws
+
+Problem
+
+:   Why are some regularities laws and others not?
+
+Armstrong
+
+:   A regularity "All Fs are Gs" is a law iff necessitation holds between
+    F and G
+
+Lewis
+
+:   This is unintelligible
+
+    > We must treat regularities not one at a time, but rather as candidates
+    > to enter into integrated sysmtes. For a given regularity might hold either
+    > as a law or accidentally, depending on whether other regulairties obtain
+    > that can fit together with it in a suitable system.
+
+    -   A suitable system has virtues we can aspire to:
+        1.  Truth
+        2.  Closed under strict implication
+        3.  Simple
+        4.  Informative
+
+    -   Need a restriction on language we can use. 
+        -   Acount is trivialized otherwise.
+        -   What is the primitive language of the laws? *The perfectly
+            natural properties, of course!*
+
+    -   The best system yses perfectly natural predicates for its primitive
+        vocabulary, has properties (1) and (2), and has the best tradeoff
+        between (3) and (4).
+
+#### BSA
+
+BSA
+
+:   A law is a regularity of the best system. A fundamental law is an axiom.
+
+#### Causation
+
+Lewis
+
+:   *C* is a cause of *E* iff the closesnt non-bracktacking worlds in which
+    *C* does not occur that evolve in accordance with the laws are were *E*
+    does not occur.
+
+    Natural properties show up in laws, so they show up in causes too
+    Non-backtracking is understood in terms of divergent worlds.
+    Another place for natural properties.
+
+    Only *genuine events* can cause. Natural properties pick out genuine
+    events.
+
+#### Natural Properties and Physics
+
+-   Physics "aspires to give an inventory of natural properties." 
+    Why think this?
+    -   There are **three arguments**:
+        1.  M5/Materialism
+
+            :   "In putting forward comprehensive theories, physics
+                proposes investorys of the natural properties instanstiated
+                in our world." Lewis claims that comprehensiveness of
+                physics should be understood in terms of M5. The link
+                between natural properties and duplication is supposed to
+                support a link between natural properties and physics.
+
+        2.  Laws causes
+
+            :   Physicists search for laws of nature and causes. If laws
+                must be sated in the language of natural properties, then
+                physicists search for natural properties and
+                succeed when they find laws.
+
+        3.  Similarities and Differences
+
+            :   Physicists seek to tell us about the real similarities and
+                difference between things. "Cutting nature at its joints."
+                This is the first *job* of natural properties.
+
+#### Natural Properties and Induction
+
+-   Lewis doesn't say a whole lot to link natural properties and induction.
+    It seems he is poised to answer Goodman's riddle. He got a way of 
+    separating green and guem and that's the important thing. But we
+    still need a way to explain why natural properties are projectable.
+-   The closest thing we find to a treatment is in the "Content" bit.
+    -   **Paraphrase**: "We need principles of charity. Such principles
+        call for interpretations accord to which the subject has
+        attitudes we deem reasonable. They impose presumptions about
+        what inductive biases someone may be righly interpreted to have.
+        We need natural propertoes. Principles of charity impute a bias
+        towards believing green rather than grue."
+    -   Two ways to take this:
+        1.  Induction first: Natural properties detemine which properties
+            it is reasonable to project directly. Content is fixed by that
+            somehow. (Weatherson)
+        2.  Content first: Natural properties determine which contents are
+            eligibile. Rationality of induction is fixed by that somehow.
+
+    -   **Perhaps most reasonable**: natural properties play a certain
+        role in lawlikeness and counterfactuals. This allows them to 
+        figure into two roles Goodman identified for projectable
+        predicates.
+
+#### Physical Magnitudes and Determinates
+
+-   We should expect some physical mangitudes (mass, charge) to be
+    perfectly natural. We should be surprised is some determinaites
+    are perfectly natural.
+-   But magnitudes and determinates exclude each other.
+    -   Nothing is 5 *and* 7kg. Nothing is red *and* blue.
+        How is this possible? Necessary connections among
+        distinct existents?
+
+-   Two proposals:
+    1.  Add some necessary connections!
+    2.  Exclusion is nomically necessary, based on nomic necessity
+        of magnitudes and dense linear orders. 
+        -   Exclusion of dense linear orders is logically and
+            metaphysically necessary.
 
 Febuary 1st, 2013 <small>Reading</small>
 ----------------------------------------
@@ -1239,7 +1485,174 @@ Metrics-Relativity
 
 ##### Indexicality is too problematic
 
+-   Imagine Aristotle, whose metrics are different from Newton's,
+    saying the following:
+    
+    > (2) If I had Newton's metrics, then the laws would be Newtonian
+    > mechanics.
+    >
+    > (4) If I had Newton's metrics and I were to say, "The laws are
+    > Newtonian mechanics", then my assertion would be true.
+
+    That is, (2) and (4) are *intuitively false*, but Metrics-Indexicality 
+    predicts that they are true. **Note**: The intended intuitive 
+    readings become obvious when you hold fixed the laws.
+
 ##### Relativity is too problematic
+
+-   Our concept of lawhood is "deeply related" to modal, causal, and
+    other philosophical concepts. If lawhood becomes relativized to languages
+    or metrics, then the relativity may spread into other philosophical
+    concepts, too. 
+    -   Moreover, there will be normative conflicts:
+        -   How to align our credences
+        -   Which act to perform
+        -   Whether someone has a certain duty ...
+
+    -   If we have to solve the above problems by relativising norms,
+        then we might think it's too high a price to pay for holding
+        a particular concept of lawhood.
+
+##### Language-Rigidity is too problematic, but Metrics-Rigidity is more plausible
+
+-   If we rigidify our actual language, then both path and future
+    scientists are likely to get the laws wrong. 
+    -   That seems false, because we usualy think that future scientists
+        are in a better position to get the laws right.
+
+-   If we rigidify an ideal version of our language, then this account
+    will have counterfactual component whose truth value needs to be
+    evaluated using lawhood.
+    -   But our job right now is to analyze lawhood in terms of the
+        language. This make it *circular*.
+
+-   Metrics-Ridigity, accounrd to Eddon and Meacham, seems to be on
+    firmer ground. 
+    
+    > While it's plausible that the language of the future scientific
+    > community will bear little resemblance to our current language,
+    > it's less plausible that the metrics of the future scientific
+    > community will bea little resemblance to our metrics of simplicity,
+    > informativeness, balance, etc. (bottom of pg. 17)
+
+-   But why think that? Why think that the future metrics will be similar
+    to our current metrics? Here are some potential reasons:
+    -   Current metrics in science resemble all past metrics in science
+        (Aristotle and Newton).
+    -   Current metrics in science resemble all past metrics in science 
+        since the Enlightenment (Verificationism).
+    -   We cannot conceive of a futre scientific community whose metrics
+        bear little resemblance to current metrics in science. (If we are
+        not supposing Metrics-Objectivity or some particular psychological
+        facts about the members of the scientific community, how do we
+        get this intuition?)
+    -   Current emtrics in science seem to be not for from the objectively
+        right metrics. (But we are not supposing Metrics-Objectivity.)
+
+-   **Another worry**: There may not be a consensus on the current metrics
+    in the scientific community. If we rigidify an ideal version of our current
+    metrics, we will run into the circularity problem again.
+
+##### What about Language-Salience
+
+-   Language-Salience allows the candidate system to be formulated in
+    any language, but it adds an extra component to the metrics,
+    namely, salience.
+    -   When evaluating the candidate systems, we use the metrics of
+        informativness, balance, and salience to pick out the best system.
+        -   The best system will *come in its own language*.
+
+-   According to Eddon and Meacham, *saliance* means usefulness, unity,
+    and explantory power.
+    -   Presumably, they depend on certain psychological features of
+        the assessors. This makes laws of nature depend on us.
+        -   They nothice this worry and reply that it depends
+            on which answer to the Metrics question we pair it with.
+
+-   **Worry 1**: Suppose we pair together the Language-Salience and
+    Metrics-Rigidity. We rigidify our current metrics of salience.
+    -   To be consistent, we should not appeal to any objective 
+        correctness of our current metrics.
+    -   So it seems that the metrics of salience depends on us.
+        -   Hence, best systemhood and lawhood also depend on us.
+
+-   **Worry 2**: A deeper worry (also acknowledged) is about the 
+    notion of *salience itself*. It *seems less clear* than the notions
+    of *simplicity* and *informativeness*, although we disagree about
+    conceptions of those.
+    -   So how to flesh out salience is an open question on this reduction.
+    -   At any rate, to keep the reductionist project consistent, fleshing
+        out of these notions must avoid invoking naturalness, objectivity,
+        or anything like that.
+
+#### Extending the Account
+
+-   Eddon and Meacham proposed an analysis of lawhood without using 
+    naturalness. They would like to extend the proposal to other
+    Lewisian analyses to alos avoid invoking perfectly natural
+    properties. Here is their strategy:
+
+    > 1.  Take the laws given by the system of true sentences that,
+    >     given our present metrics, best balances simplicity, informativeness,
+    >     and salience.
+    > 2.  Take all and only the properties deonoted by the predicates appearing
+    >     in these laws. Call them *surrogate properties*.
+    > 3.  Wherever a Lewisian analysis invokes perfectly natural properties,
+    >     subsitute these surrogates.
+
+    -   **Example**: Lewisian analysis of duplication.
+        -   *Original*: Two things are duplicates *iff* there is a bijection
+            between their parts that preserves the perfectly natural
+            properties and relations.
+        -   *Modified*: Two things are duplicates *iff* there is a bijection
+            between their parts that preserves the surrogate properties and
+            relations.
+
+-   Eddon and Meacham try to handle three main worries.
+
+##### A chaotic world
+
+-   The **argument**:
+    1.  If the world is utterly chaotic, then there are no laws.
+    2.  If there are no laws, then there are no surrogate properties.
+    3.  If there are no surrogate properties, then the modification
+        strategy does not work.
+    4.  Therefore, if the world is utterly chaotic, then their strategy
+        does not work.
+
+-   The **response**: Their strategy takes the surrogates from the actual
+    world; since the actual world is not so utterly chaotic, it works.
+-   The **worry**: How do we know the actual world is not chaotic?
+-   Perhaps a **better reply**: Why thing (1) is true?
+    -   Even if the world is utterly chaotic, there will be many truths
+        about the world, such as the "chaotic dynamics of the Universe."
+    -   These truths can figure into the system that best balances the 
+        relevant criteria of assesment.
+        -   So there being no laws doesn't follow from there being much
+            chaos.
+
+    -   Moreover, many chaotic systems display a great extent of order,
+        which may be law-governed.
+
+##### Surrogates are not all instrinsic
+
+-   Here is a locational property: *being two meters from an electron.*
+    -   Suppose it is in the best system, then some surrogates will be
+        extrinisic. But in Lewis's system, natural properties are intrinsic.
+        They **reply**:
+        1.  It is unlikely to appear in the actual best system. *Being two 
+            meters from an electron* is less salient than *being two meters
+            from*. (But isn't it still extrinisic?)
+        2.  We might be wrong about intrinsicality.
+
+##### Foreign properties
+
+-   Surrogates are supposed to play the role of naturalness.
+    -   Possible there are foreign properties not instantiated at
+        the actual world.
+        -   But surrogates are all from the actual world?
+        -   So there will be objective dissimilarity that cannot
+            be analyzed by surrogates.
 
 February 14th, 2014 <small>Seminar</small>
 ------------------------------------------
@@ -1326,7 +1739,378 @@ February 14th, 2014 <small>Seminar</small>
     -   Tooley's intuition is that it is law but not a HU,
         because it is limited to Smith's garden.
 
+### Presentation <small>by Megan Feeney</small>
 
+#### Background on Armstrong's theory of universals
+
+-   Armstrong appeals to a theory of universals he developers in
+    his 1978 work *Universals and Scienctific Realism*. Different
+    theories of universals will place different constraints on
+    accounts of natural laws as relations between universals.
+
+Principle of instantiation
+
+:   -   Only real particulars have properties and relations, so
+        only real particulars instantiate universals.
+        -   Armstrong accepts actualism but rejects presentism. 
+            The real paticulars are actual entities from the past,
+            present, and future. So accord to the principle of
+            instantiation, there are no universals uninstantiated by
+            actual things.
+        -   Principle of instantiation is supposed to be naturalistically
+            motivated.
+
+-   For Armstrong, what the laws are in a world will depend on what universals
+    are instantiated in that world. We'll return to this.
+
+Principle of rejection of bare particulars
+
+:   Particulars (like universals) do not exist independantly of
+    actual states of affairs.
+
+-   The bare particular and uninstantiated universal are "vicious
+    abstractions" from states-of-affairs and are metaphysically
+    impossible. Particularity and universality, however, are non-vicious
+-   We determine the universals *a posteriori* "on the basis of total
+    science" (pg. 83). If our final science involved laws with negative
+    or disjunctive predicates, I suspect that Armstrong would say that
+    it had failed to discover universals, (maybe that the science was the
+    best we could do, but not ideal). He wants to be a full-fledged realist
+    about universals.
+-   Many general predicates do not express universal. For example, *being a
+    game* probably doesn't express a universal because there is not something
+    identical in all games that makes them games.
+-   On Armstrong's view, there are no dijusctive or negative universals.
+    But there are conjectuive universals. Conjuctionive universals, but not
+    disjunctive or negative universals, can caputre the role that universals
+    play in causal explanations and the sense in which all the particulars
+    that instatiate a universal (roughly) must have something in common.
+-   For Armstrong, a relation between universals holds always an everywhere
+    within a world. It cannot happen that a universal *F* bears relation *R*
+    to *G* at some time and places, but not others. That's because a universal
+    is the same (identical) wherever/whenever it is instantiated; it is wholly
+    present in its instantiations (pg. 79). However, universal will be related
+    in different possible worlds.
+
+#### Natural laws as necessitation relations between universals
+
+-   Armstrong offers the following account of natural laws:
+
+    > (1) It is a law of nature that Fs are Gs iff N(F, G).
+
+-   Fness and Gness are first-order universals.
+    -   N is a second-order necessitation relation that holds between
+        first-order universals.
+    -   It is a relation of contingent rather than logical necessitation.
+        -   So N(F, G) symbolizes the state-of-affairs of the relation
+            N holding between Fness and Gness.
+
+-   N(F, G) entails the state of the corresponding Humean uniformity,
+    baring for now any *ceteris paribus* worries:
+
+    > (2) $N(F, G) \to (x)(Fx \supset Gx)$
+
+-   But a stament of a Humean uniformity does not entail that the 
+    corresponding necessitation holds:
+
+    > (3) $\lnot ((x)(Fx \supset Gx) \to N(F, G))$
+
+-   "$\supset$" is the material conditional. It is an important question what
+    "$\to$" symbolizes
+-   Three worries about the entailment relation between N(F, G) and
+    $(x)(Fx \supset Gx)$ in 2.
+    1.  David Lewis proposes the following **dilemma**:
+        -   **First horn**: On one hand, the entailment might hold because
+            because (2) would be better expressed by some other logical form.
+            in that case, we could replace "$\to$" with the material condition.
+            -   For example, perhaps 2 should be expression as $(P \land Q) \to P$,
+                where *P* is a statement of the Humean uniformity.
+            -   But then what is Q? Or perhaps the trugl logical form is
+                $P \to (O \lor Q)$. But it is unclear how to translate 2 into
+                this form.
+
+        -   **Second horn**: If 2 is not better expressed by some other logical
+            form, it seems that we must say that the entailment obtains in virtue
+            of an *additional metaphysical necessity relation*, holding between
+            *N(F, G)* and the Humean uniformity. But this new necessity
+            relation is *mysterious*! Is it primitive or does it hold in virtue
+            of something else?
+
+    2.  One might also worry whether Armstrong's account is substantive. What is
+        the necessitation relation besides that which is required to ensure 
+        uniformities, whatever "ensure" means?
+    3.  There are different kinds of uniformities;
+        -   It might be that all Fs are Gs, that not Fs are Gs, that if one
+            kind of thing is an F, then another kind of thing is a G. How
+            can N(F, G) explain diferent kinds of uniformities if N is a single
+            relation?
+
+-   In a way, these three worries are closely related. Armstrong hopes to
+    appeal to the laws to explain the uniformities. 
+    -   But if the laws are to do this explanatory work, Amrstrong
+        must say something infromative about how the laws "produce" or "ensure"
+        that the unformities hold.
+        -   Much of the chapter concerns this
+        
+#### Laws as first-irder universals
+
+-   Armstrong ultimately takes the necessiation relation (N) to be
+    primitive.
+-   Howver, he hopes that its primitiveness will be less mysterious
+    if we think of N(F, G) not only as the state of affairs of
+    necessitation relation holding between two universals, but
+    also a complex, first order universal itself. 
+    -   He also hopes that treating N(F, G) as a universal
+        will provide at least a partial solution to the entailment
+        worry.
+
+-   What kind of think is N(F, G)?
+    -   First, it is a second-order state of affairs. It involves
+        first-order universals (Fness and Gness) falling under a second
+        order 
+    -   Armstrong holds that N(F, G) is also a cmoplex, *first-order*
+        universal.
+        -   In particular, it is a dyadic relation between first-order
+            relation between first-order states of affairs. It is
+            instantiated by positive instance of the law.
+
+    -   An examples of a positive instance of the law, 
+
+        > (N(F, G))(*a*'s being F, *a*'s being G)
+
+-   How is treating laws as first-order universal supposed to clairfy the
+    relation between laws and uniformities?
+    -   Armstrong wants to assimilate the relation between laws and their
+        positive instantiations. Thus, a Humean uniformity is the collection
+        of all the positive instantiations of the corresponing law, understood
+        as instantiations of a first-order universal.
+    -   Any mystery surrounding the instantiation relatino wouldn't be a problem
+        facing Armstrong's thoeyr of laws *per se*. It would be a more general 
+        mystery facing realists about univerals.
+
+-   Three potential difficulties:
+    1.  How illuminating is this solution? Do we now better understand the
+        relationship between laws and uniformitites? The necessitation relation
+        is still primitive.
+        -   "This reproach is just, I think, but the inexplicability of
+            necessitation just has to be accepted" because it is
+            explanatorily indispendible (pg. 92).
+        -   But maybe we can still get an independent grasp on necessitation
+            (next section). At this point, Armstrong still thinks he can
+            say more about the entailment.
+
+    2.  Is the solution *ad hoc*? Does treating laws of nature as first-order
+        universals make other substantiated predictions? Is its sole motivation
+        to allay the entailment worry?
+        -   Armstrong suggests that treating laws as first-order universals
+            explns in what sense laws are abstract.
+            -   Laws are abastractions because they are relations between
+                universals, which themselves are abstract.
+            -   Universals are abstract, for Armstrong, because they obey
+                the *principle of instantiation*, that is, they do not exit
+                indendantly from actual states of affairs.
+            -   By holding that laws are first-order universals, Armstrong
+                can explain what they are abstraction *from*: their
+                positive instantiations.
+
+        -   The explanation depends on the controversial principle of instantiation,
+            rejected by Platonists.
+            -   If we deny this principle, then we also deny that the abstractness of
+                laws in Armstrong's sense is something that needs to be explained.
+
+    3.  It is logically kosher for N(F, G) to express both a state of affairs, which
+        is well-formed by itself, and a universal, which requires arguments?
+
+#### Singular causation, singular necessitation, and the "independant fix"
+
+-   Armstrong holds that purely singular causal connections are logically
+    impossible.
+    -   Suppose it's *a*'s becoming F causes *b* to become G. Must this
+        be an instance of some F to G law?
+    -   For Armstrong, it is only an instance of an F to G law if *a*'s 
+        becoming G *in virtue of universals F and G*.
+        -   But it is logically possible that *a*'s becoming F causes
+            *b* to become G not in veritue of the universals.
+        -   It ould just be a matter of this particular event causing
+            that particular event.
+
+-   Thus, purely singular necessitations are logically possible
+    -   Causation cannot be indentified with necessitation because
+        there are cases of necessitation that are not cases of causation.
+        -   But purely singular causation would be a case of purely
+            singular necessitation.
+
+    -   It is logically possible that:
+        1.  It is not a law that Fs are Gs, and
+        2.  *a*'s becoming F necessitates *a*'s becoming G and,
+        3.  *b*'s becoming F necessitates *b*'s becoming H, (where being a G is
+            incompatible with being an H, and *a* is not *b*).
+
+-   Armstrong suggests that we now have an indepedant grup on the necessitation relation
+    and the mysterious entailment between laws and uniformities.
+    -   The necessitation relation is N(F, G) is the same as the necessitation
+        relation operative in cases of singular necessitation.
+        -   Is the notion of singular necessitation more perspicuous than the
+            notion of necessitation between universals?
+
+    > It is clear then that *if such a relation holds between universals*,
+    > then it is automatic that each particular F determines that it is
+    > a G. That is just the instantiation of the universal N(F, G) is
+    > particulars cases. **(pg. 97)**
+
+    -   What role does singular necessitation play in this explanation?
+        The key idea here seems to be that laws are first-order universals.
+
+#### Some advantages and disadvantages of Armstrong's view
+
+##### Difficulties
+
+-   We want to admit that there are some uninstantiated natural laws.
+    But if laws are relations between universals, and there are no
+    universals that are uninstanted in the actual world, we might
+    wonder how Amrstrong's view can accommodate uninstantiated laws.
+    -   **Response**: Strictly speaking, there are no uninstantiated
+        laws, but we can ask what laws *would* hold in counterfactual
+        situations.
+
+-   How will Armstrong's theory account for **Smith's garden case**?
+    -   **Response**: We will introduce *quasi-universals*.
+        -   Being a fruit grown in Smith's garden. These are repeatable
+            features of the world whose predicates involve esnetial
+            reference to particulars.
+        -   Armstrong's view mau be too permissive if necessitation 
+            relations between quasi-universals and universals count
+            as natural laws.
+            -   He may only want to acknowledge those quasi-universals
+                "required for a law," but which ones are those?
+
+##### Advantages
+
+-   We can appeal to the law N(F, G) to explain the existence of
+    corresponding **Humean uniformity**. The naive regularity theory,
+    by contrast, indentifies the law with the Humean uniformity
+    and so cannot explain twhy the uniformity obtains.
+-   Armstrong may have a way around the **paradoxes of confirmation**.
+    -   Armstrong suggests that an observation confirms a law that Fs are
+        Gs iff the law explains the observation.
+    -   Both F/Gs and non-F/non-Gs are explains by the law and so confirm
+        the law, although the latter have less confirmatory
+        strength than the former.
+        -   But non-F/Gs do not confirm the law, because their
+            observation would not be explained by the law.
+
+-   The laws as relations between universals account can explain why
+    laws support counterfactuals.
+        -   When it is a lw that Fs are Gs, the necessiation relation
+            between Fness and Gness ensures that, were *x* to be added
+            to the calss of Fs, it would be a G (of necessity)
+            -   **Caveat**: The counterfactual is true iff the closest
+                worl where *x* is F is not some distant world where the
+                actual laws (and in particular the law that Fs are Gs)
+                do not hold.
+
+-   Armstrong's theory may be able to explain why inductive inference is 
+    rational.
+    -   Inductive inference from confirming instances to the laws is a
+        species of *inference to the best explanation*.
+    -   Insofar as inference to the best explannation is rational,
+        inductive inference is rational.
+
+February 21st, 2014 <small>Reading</small>
+------------------------------------------
+
+### "Humean Supervenience" <small>by Loewer</small>
+
+### "Humean Supervenience" <small>by Weatherson</small>
+
+February 21st, 2014 <small>Seminar</small>
+------------------------------------------
+
+February 28th, 2014 <small>Reading</small>
+-----------------------------------------
+
+### "The Metaphysics within Physics" <small>by Maudlin</small>
+
+#### Chapter 1
+
+#### Chapter 2
+
+#### Chapter 3
+
+### "Quantum Entaglement, Bohmian Mechanics, and Humean Supervienience" <small>by Miller</small>
+
+February 28th, 2014 <small>Seminar</small>
+-----------------------------------------
+
+March 7th, 2014 <small>Reading</small>
+--------------------------------------
+
+### "A Subjectivist's Guide" <small>by Lewis</small>
+
+### "Humean Supervenience Debugged" <small>by Lewis</small>
+
+March 7th, 2014 <small>Seminar</small>
+--------------------------------------
+
+March 14th, 2014 <small>Reading</small>
+---------------------------------------
+
+### "David Lewis' Theory of Objective Chance" <small>by Loewer</small>
+
+### "Deterministic Probabilities" <small>by Loewer</small>
+
+### "Proving the PP" <small>by Schwarz</small>
+
+
+March 14th, 2014 <small>Seminar</small>
+---------------------------------------
+
+March 28th, 2014 <small>Reading</small>
+---------------------------------------
+
+### "Counterfactual Dependance and Time's Arrow" <small>by Lewis</small>
+
+March 28th, 2014 <small>Seminar</small>
+---------------------------------------
+
+April 4th, 2014 <small>Reading</small>
+--------------------------------------
+
+### "Statistical Mechanics and the Asymmetry of Counterfactual Depedance" <small>by Elga</small>
+
+### "Counterfactual and the Second Law" <small>by Loewer</small>
+
+April 4th, 2014 <small>Seminar</small>
+--------------------------------------
+
+April 11th, 2014 <small>Reading</small>
+---------------------------------------
+
+### "Most Counterfactuals are False" <small>by Hajek</small>
+
+April 11th, 2014 <small>Seminar</small>
+---------------------------------------
+
+April 18th, 2014 <small>Reading</small>
+---------------------------------------
+
+### "Time Pases" <small>by Maudlin</small>
+
+### "Two Accounts of Laws and Time" <small>by Loewer</small>
+
+April 18th, 2014 <small>Seminar</small>
+---------------------------------------
+
+April 25th, 2014 <small>Philosophy of Cosmology Workshop</small>
+----------------------------------------------------------------
+
+May 2nd, 2014 <small>Reading</small>
+------------------------------------
+
+### "The Mentaculus Vision" <small>by Loewer</small>
+
+May 2nd, 2014 <small>Seminar</small>
+------------------------------------
 
 <!--
 
@@ -1349,3 +2133,4 @@ TODO
 
 *[BSA]: Best system account
 
+*[iff]: if and only if

@@ -415,8 +415,8 @@ January 29th, 2013 <small>Lecture</small>
 -   Notice that the third row is ignored in both varieties of
     multiplication.
 
-    $$ x \times y =\begin{cases} 2 (x \times \lfloor \frac{y}{2} \rfloor, & \text{if $y$ is even}.\\ x + 2(x \times \lfloor \frac{y}{2} \rfloor, & \text{if $y$ is odd}. \end{cases} $$
-
+<!--    $$ x \times y =\begin{cases} 2 (x \times \lfloor \frac{y}{2} \rfloor, & \text{if $y$ is even}.\\ x + 2(x \times \lfloor \frac{y}{2} \rfloor, & \text{if $y$ is odd}. \end{cases} $$
+-->
 
 -   The expensive operation is the addition if $y$ is odd.
     So O(n) due to addition.
@@ -735,4 +735,481 @@ February 12th, 2014 <small>Recitation</small>
 >
 > $$ P(A | B) = \frac{P(B | A) \times P(A)}{P(B)} $$
 
+February 14th, 2014 <small>Lecture</small>
+------------------------------------------
 
+### Divide and Conquer Algorithms
+
+-   What is the characteristic here? 
+    -   Break your problem into smaller instances.
+    -   In the case of the number-theoretic algorithms, the
+        way we were evaluating the run-time was with bits.
+    -   Then, recursively solve smaller sub-problems and then
+        combine these answers.
+
+-   What was the recursively algorithm for multiplication? It
+    was already an instance of *divide and conquer*.
+    -   Before for multiplcation, the running time had a
+        big-O of "n-squared"
+
+#### New Multiplication
+
+-   Now we'll get a better running time for multiplication,
+    with *another idea for multiplcation.*
+    -   Cnosider the following way of writing numbers:
+        -   *x* is written as two numbers, with *x* "sub left"
+            and *x* "sub right", where if it's 10 bits, you have
+            two five bit numbers.
+
+            $$ x = 2^{\frac{n}{2}} \times x_L + x_R $$
+            $$ y = 2^{\frac{n}{2}} \times y_L + y_R $$
+            $$ x \times y = (2^{\frac{n}{2}} \times x_L + x_R)(2^{\frac{n}{2}} \times y_L + y_R) $$
+
+-   Lets think about the new operations and how much they
+    cost.
+    -   In the above representation, we have:
+        -   Additions (linear)
+        -   Multiplecation with powers of 2 (linear)
+        -   Four multiplications between "n over two" bit numbers where
+            we call recursively the same operation.
+
+    -   We can define a recursive relation:
+
+        $$ T(n) = 4 \times T(\frac{n}{2}) + O(n) $$
+
+-   Gauss observation reowkred the above expression so as to make use of
+    only 3 of the "n over two" multiplications.
+-   At the $(log_2 n$)^{2n}$ level, we get down to size-1.
+    -   At each level we have $3^k$ subproblems, each of them of size $\frac{n}{2^k}$
+    -   At each level you have a linear cost for combining the subproblems.
+    -   At depth *k*,
+
+        $$ 3^k \times O(\frac{n}{2^k}) = (\frac{3}{2})^k \times O(n)$$
+
+    -   Now, we've managed to decrease the run-time to something like *n* to-the
+        1.59 as opposed to *n*-squared.
+
+-   We are solving multiplication with a divide-and-conquer approach.
+    -   By decreasing the number of recursive calls, we managed to get a running
+        time that is *better*, i.e. the branching factor in terms of recursive calls
+        matters.
+    -   As a matter of fact, when you have something like ...
+
+        $$ T(n) = \alpha \times T(\frac{n}{b}) + O(n^d) $$
+
+### Sorting Problems
+
+> **Master theorem**: If you have a recurisve cost-function of
+> the form $T(n) = a \times T(\frac{n}{b}) + O(n^2)$ then:
+>
+
+<!-- $$ T(n) =   \begin{cases} O(n^d) & \text{if } d \lt log_b a \\ O(n^d \log(n)) & \text{if } d = \log_b a \\ O(n^{log_b a} & \text{if } d \lt log_b a \end{cases} $$
+-->
+
+-   Assume that *n* is a power of *b* for convinience.
+    -   The size of the problem decreases by *b* at every level.
+
+-   We need $log_b n$ level to stop the recursion.
+    -   At level *k* we have $a^k$ subproblems of size $\frac{n}{b^k}$
+        -   Work at level *k*:
+
+            $$ a^k \times O((\frac{n}{b^k})^d) = O(n^d) \times (\frac{a}{b^d})^k $$
+
+#### Three cases
+
+1.  If $\frac{a}{b^d} \lt 1$, series is decreasing.
+    -   The "first term" dominates.
+    -   Running time:
+
+        $$ O(n^d) $$
+
+2.  If $\frac{a}{b^d} \gt 1$, series is increasing
+    -   The "last term dominates"
+    -   Running time:
+
+        $$ O(n^{\log_b a}) $$
+
+3.  If $\frac{a}{b^d} = 1$, all terms are equivilent.
+
+    $$ O(n^d) = O(n^{\log_b a}) $$ 
+
+February 16th, 2014 <small>Reading</small>
+------------------------------------------
+
+### Chapter 1 <small>Algorithms with numbers</small>
+
+Factoring
+
+:   Given a number *N*, express it as a product of its prime factors.
+
+Primality
+
+:   Given a number *N*, determine whether it is a prime.
+
+-   Factoring is hard.
+    -   Despite lots of effot, the fastest method is exponetial to the number of
+        bits.
+
+-   We *can* efficiently test whether something *is* prime!
+
+#### Basic arithmetic
+
+##### Addition
+
+> **Basic property of decimal numbers**: The sum of any three single-digit numbers
+> is *at most* two digits long.
+
+-   This simple rule gives us a way to add two numbers in any base:
+    -   Align their right-hand ends, and then perform single right-to-left pass in
+        which the sum in which the sum is computed digit-by-digit, maintaining the
+        overflow as a carry.
+        -   Since we know each individual sum is a two-digit number, *the carry is
+            always a single digit*, and so at any given step, three single digit
+            numbers are added.
+
+                Carry: 1        1  1  1     
+                          1  1  0  1  0  1  (53)
+                          1  0  0  0  1  1  (35)
+                       -------------------
+                       1  0  1  1  0  0  0  (88)
+
+-   *Given two binary numbers, how long does our algorithm take to add them?*
+    -   We want the answer expressed as a function of *the size of input*.
+        -   The number of bits.
+
+    -   Suppose that *x* and *y* are *n* bits longs.
+        -   The the sum of *x* and *y* is *n + 1* bits *at most*.
+        -   Each bit of the sum is computed in a fixed amount of time.
+        -   The total running time for addition:
+            -   Of the form $c_0 + c_1 n$ where "c-zero" and "c-one" are some
+                constant.
+            -   In other words, it is *linear*.
+            -   The running time is *O(n)*.
+
+-   *Is there a faster algorithm?*
+    -   In order to add two *n*-bit numbers, we must at least read them and
+        write down the answer, and even that requires *n* operations.
+    -   The algorithm is optimal, up to multiplicative constants!
+
+-   *Why O(n) operations? Isn't binary addition done in one instruction?*
+    1.  Only addition operations that are within a computers word-length, often
+        32 or 64.
+        -   It is often useful and necessary to handle number much larger than
+            this, several thousand bits long.
+        -   Operations on these big numbers is often like operating bit-by-bit.
+
+    2.  When we want to understand algorithms, it makes sense to study the basic
+        algorithms that encoded to the hardware.
+        -   Focus on *bit complexity*.
+
+##### Multiplication and division
+
+-   The grade-school algorithm for multiplying to numbers is to create an array
+    of intermiediate sums, each representing the product of the first number by a
+    single digit of the second.
+    -   These values are left-shifted and right-shifted and added.
+
+-   Thirteen times eleven in binary:
+
+                    1  1  0  1  (binary 13)
+                 x  1  0  1  1  (binary 11)
+        ----------------------
+                    1  1  0  1  (1101 times 1, shifted no)
+                 1  1  0  1     (1101 times 1, shifted once)
+              0  0  0  0        (1101 times 0, shifted twice)
+        +  1  1  0  1           (1101 times 1, shifted thrice)
+        ----------------------
+        1  0  0  0  1  1  1  1  (binary 143)
+
+-   Psuedo code:
+
+        function multiply(x, y) {
+            if (y == 0) {
+                return 0
+            }
+
+            z = multiply(x, floor(y / 2));
+
+            if (y is even) {
+                return 2z;
+            } else {
+                return x + 2z;
+            }
+        }
+
+-   *How long does this take?*
+    -   If *x* and *y* are both *n*-bits, then there are *n* intermediate rows,
+        with lengths of up to *2n* bits (taking the shiting into account).
+    -   The total time to add up these rows, doing two numbers at a time:
+
+        $$ O(n) + O(n) + ... + O(n) $$
+
+        *(n - 1)* times.
+
+        -   This is $O(n^2)$, or *quadratic* in the size of the inputs.
+        -   Still polynomial but much slower than addition.
+
+-   *Can this be improved?*
+    -   Al Khwarizmi knew another way to multiple.
+    -   To multiply two decimal numbers, write them next to each other.
+        -   Then, repeat: Divide the first number by 2, rounding down the result,
+            and double the second number. Keep going until the first number gets
+            down to 1.
+        -   Then, strike out all the rows in which the first number is even, and add
+            up whatever remains in the second column.
+
+                11  13
+                 5  26
+                 2  52  (strike out)
+                 1 104
+                ------
+                   143  (answer)
+
+-   Pseudocode!
+
+        function divide(x, y) {
+            if (x == 0) {
+                return (q, r) = (0, 0);
+            }
+
+            (q, r) = divide(floor(x / 2), y);
+            q = 2 * q;
+            r = 2 * r;
+
+            if (x is odd) {
+                r = r + 1;
+            } 
+
+            if (r >= y) {
+                r = r - y;
+                q = q + 1;
+            }
+
+            return (q, r)
+        }
+
+-   *Is this algorithm correct?*
+    -   Verify that it mimics the description of the rules.
+
+-   *How long does this algorithm take?*
+    -   It must terminate after *n* recursive calls, because at each call
+        *y* is halved.
+        -   That is, the number of bits is decreased by one.
+
+    -   Each recursive call requires these operations:
+        -   A division by 2 (right shift)
+        -   A test for odd/even (looking up the last bit)
+        -   A multiplication by 2 (left shift)
+        -   Possible on addition, O(n).
+
+    -   The total time is $O(n^2)$ therefore.
+
+-   *Can we do better?*
+    -   Intuitively, you think that you need to, at most, do *n* operations
+        *n* times to add.
+    -   But no! Chapter 2 will show you can do better.
+
+#### Modular arithmetic
+
+-   With repeated addition or multiplication, numbers get very big.
+    -   We "reset to zero" whenever time reaches 24.
+    -   Similarly, the built-in arithmetic operations of computer processors,
+        numbers are restricted to a size, say 32 or 64, which is generous for
+        most purposes.
+
+-   For primality testing and cryptography, it is necessary to deal
+    with numbers that are significantly bigger.
+-   *Modular arithmetic* is a system for dealing with restricted ranges of integers.
+    
+*x* *modulo* *N*
+
+:   The remainder when *x* is divided by *N*.
+
+    If *x = qN + r* with *0 <= r < N*, then *x* modulo *N* is equal to *r*.
+
+-   One way to think of modular arithmetic deals with all the integers,
+    but divides them in *N* *equivilence classes*, each of the form
+    $ \lbrace i + kN : k \in \mathbb{Z} \rbrace $ for some *i* between ) and
+    *N - 1*.
+    -   For example, there are three equivilence classes of modulo 3:
+
+            ...  -9  -6  -3  0  3  6  9  ...
+            ...  -8  -5  -2  1  4  7  10 ...
+            ...  -7  -4  -1  2  5  8  11 ...
+
+        Any member of the class is substituable for any other.
+
+> **Substitution rule**: If $ x \equiv x' ( \bmod N)$ and $y \equiv y' (\bmod N)$, then:
+>
+> $$ x + y \equiv x' + y' (\bmod N) $$
+> 
+> $$ xy \equiv x' y' (\bmod N) $$
+
+-   It is not hard to check that in modular arithmetic, the usual associate, commutative,
+    and distributive properties of addition and multiplication continue to apply.
+    -   For instance:
+        -   Associativity
+        -   Commutativity
+        -   Distributivity
+
+    -   You can simplify big numbers with this. Witness:
+
+        $$ 2^{345} \equiv (2^5)^{69} \equiv 32^{69} \equiv 1^69 \equiv 1 (\bmod 31) $$
+
+##### Modular addition and multiplication
+
+-   To *add* two numbers "*x* and *y* modulo *N*", we start with regular addition.
+    -   Since *x* and *y* are both in the range of 0 to *N - 1*, their sum is between
+        *0* and *2(N - 1)*.
+    -   If the sum exceeds *N - 1*, we merely need to subtract of *N* to bring it back
+        to the required range.
+    -   The overal computation therefore consists of an addition, and possibly a
+        substraction, of numbers that never exceed *2N*.
+    -   Its running time is linear in the sizes of these numbers.
+        -   In other words, *O(n)*, where *n = ceil(log N)*, is the size of *N*.
+    
+-   To *multiply* two mod-*N* numbers *x* and *y*, we again just start with regular
+    multiplication and then reduce the answer modilo *N*.
+    -   The produce can be as large as $(N - 1)^2$.
+        -   But this is still at most *2n* bits long.
+
+    -   To recude the answer modulo *N*, we compute the remainder upon dividing it by
+        *N*, using our quadratic-time division algorith,
+    -   Multiplication remains a quadratic operation.
+
+-   *Division* is not so easy.
+    -   Will be do later.
+
+-   To complete the suit of modular arithmetic primitives we need for cryptography,
+    we next turn to *modular exponentiation*, and then to *greatest common divisor*,
+    which is the key to division.
+
+##### Modular exponentiation
+
+-   *What is the algorithm?*
+
+        function modular-exponentiation(x, y, N) {
+            if (y == 0) {
+                return 1;
+            }
+
+            z = modulor-exponentiation(x, floor(y / 2), N);
+
+            if (y is even) {
+                return (z ** 2) % N;
+            } 
+            
+            else {
+                return (x * (z ** 2)) % N;
+            }
+        }
+
+-   In the cryptosystem we are working towards, it is necessary to compute
+    "*x* to the *y* mod *N*" for the values of *x*, *y*, and *N* that are
+    several hundred bits long. *How can this be done quickly?*
+-   The result is some number modulo *N* and is therefore itself a few hundred
+    bits long.
+    -   However, the raw value of "*x* to the *y*" could be much, much longer
+        than this.
+        -   Even when *x* and *y* are just 20-bit numbers, "*x* to the *y*" is
+            *at least* $(2^{19})^{2^{19}} = 2^{(19)(524288)}$, about 10 million
+            bits long!
+
+-   To make sure the numbers we are dealing with never grow too large, we need
+    to perform all intermediate computations modulo *N*.
+    -   Here's the idea:
+        -   Calculate $x^y \bmod N$ by repeatedly multiplying by *x* modulo *N*.
+            The resulting sequence of intermediate products,
+
+            $$ x \bmod N \to x^2 \bmod N \to x^3 \bmod N \to ... \to x^y \bmod N $$
+
+            consists of number that are smaller than *N*, and so the individual
+            multiplications do not take too long.
+        -   But there's a problem! If *y* is 500 bits long, we need to perform
+            "2 to the 500" multiplication! The algorithm is clearly exponetial
+            in the size of *y*.
+
+-   Luckily, we can do better.
+    -   Starting with *x* and *squaring repeatedly* modulo *N*, we get:
+
+        $$ x \bmod N \to x^2 \bmod N \to \cdots \to x^{2^{\log y}} \bmod N $$
+
+    -   Each takes $O(log^2 N)$ to compute, with only *log y* multiplications.
+        -   To determine this, multupli together these powers.
+
+            $$ x^{25} = x^{11001_2} = x^{10000_2} \times x^{1000_2} \times x^{1_2} = x^{16} \times x^8 \times x^1 $$
+
+        -   A polynomial time algorithm
+
+-   We can package this idea in a simply recusrive algorithm described at this begninng
+    of this section.
+    -   Let *n* be the size of bits *x*, *y*, and *N* (whichever of the three is largest)
+        -   Like multiplication, the algorithm will halt after *at most* *n* recursive
+            calls.
+        -   During each call it multiplies *n*-bit numbers
+        -   Doing computation modulo *N* saves us here.
+
+    -   Running time of $O(n^3)$
+
+##### Euclids algorithms for greatest common divisor
+
+-   Given to integerns *a* and *b*, find the largest integer that divides both of
+    them, known as their *greatest common divisor* (gcd).
+-   The most obvious approach is to first factor *a* and *b*, and the multiply
+    together their common factors.
+    -   For instance, $1035 = 3^2 \cdot 5 \cdot 23$ and $759 = 3 \cdot 11 \cdot 23$,
+        so their GCD is $ 3 \cdot 23 = 69 $. 
+    -   However, we have no efficient algorithm for factoring.
+        -   *Is there some other way?*
+
+-   Euclid's algorithm uses the following simple formula.
+
+    > **Euclid's rule**: If *x* and *y* are positive integers with $x \ge y$, then
+    > $\gcd(x, y) = \gcd(x \bmod y, y)$.
+
+-   Euclid's rule allows us to write down an elegant recursive algorithm:
+
+        function Euclid(a, b) {
+            if (b == 0) {
+                return a;
+            }
+
+            return Euclid(b, a % b);
+
+        }
+
+    -   This means that after any two consective rounds, both arguments *a* and *b*
+        are *at very least* halved in value - the length of each decreases by at least
+        on bit.
+        -   If they are initially *n*-bit integers, then the base case will be reached
+            within *2N* recursive calls.
+        -   And since each call involves a quadratic-time division, the total time
+            is $O(n^3)$.
+
+##### An extension of Euclid's algorithm
+
+-   A small extensions is the key to dividing in the modular world.
+-   Suppose someone claims that *d* is the GCD of *a* and *b*:
+    -   How can we check this?
+
+    > **Lemma**: If *d* divides both *a* and *b*, and *d = ax + by* for some integers
+    > *x* and *y*, then necessarily *d = gcd(a, b)*.
+
+-   So, if we can supply two numbers *x* and *y* such that *d = ax + by*, then we can
+    be sure that *d = gcd(a, b)*.
+    -   What is even better is that those *x* and *y*s can be found by a small extension
+        of Euclid's algorithm.
+
+    > **Lemma**: For any positive integers *a* and *b*, the extended Euclid algorithm
+    > returns integers *x*, *y*, and *d* such that *gcd(a, b) = d = ax + by*.
+
+
+
+#### Primality testing
+
+#### Cryptography
+
+#### Universal hashing
+
+
+*[GCD]: Greatest common divisor
