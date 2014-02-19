@@ -790,10 +790,6 @@ Meaning
         explicit representations.
     -   The LOT perspicously describes human information processing.
 
-### Marr & Nishihara, "Artificial Intelligence and the Sensorium of Sight"
-
-### Ramsey, section 3.1 of *Representation Reconsidered*
-
 February 11th, 2013 <small>Seminar</small>
 ------------------------------------------
 
@@ -1012,11 +1008,417 @@ Derivability
 
 -   **Next time**: SFM
 
-<!-- Accronymns -->
+February 18th, 2014 <small>Reading</small>
+------------------------------------------
+
+### Ramsey, *Representation Reconsidered*
+
+#### Section 1.2 <small>The job description challenge</small>
+
+-   Operating on the **assumption**: By reflecting a bit on ordinary notions of
+    representation, we could gain a better understanding of what it is that
+    scientists are referring to when they claim the brain uses such states.
+    -   **Worry**: Why need to look at commonsense notions of representation at
+        all. 
+        -   A theoretical notion is introduced in scientific theories in such a
+            manner that give the posit its specific explantory role.
+        -   For example, position genens involes a specification of the diferent
+            relations and causal roles that *we think* genes perform.
+        -   With this is mind, we go a look for the physical thing to fit the
+            bill.
+
+-   For representation, things are not so simple.
+    -   We already have a notion of representation that is "home" in non-scientifc
+        contexts, and this contrains what representation can qualify
+        as representational.
+    -   **Want**: These notions of representation to provide a specification of the
+        essential features of representation.
+    -   **Want**: A *job description* for representation like genes or protons have.
+
+-   **Problem**: Our commonsense notions do not do this.
+    -   These notions have core features and offer job descriptions 
+        representational states.
+    -   **Problem *clearer***: Stems from sort of features and roles that are 
+        associated with these notions.
+        -   The relevant roles include things like:
+            1.  Informing
+            2.  Denoting
+            3.  Standing for something else
+
+        -   How are these suppose to be cashed out naturalistically.
+
+        > Many scientific theories of the mind attempt to explain cognition in
+        > neurological or computaional terms. But our ordinary undersntadning of
+        > representation involves features and roles that can't be translated into
+        > such terms in any obvious way.
+
+-   Consider our ordinary notions of mental representation.
+    -   **Claim**: Common sense understnading of beliefs, desires, and other
+        folk-representational states assigns them some sort of "underived or
+        intrinsic intentionalality."
+        -   Intentionality clearly isn't basic, functionally or causally.
+        -   So when we look at a system for these states, we don't really know
+            what we're looking for.
+
+-   A similar **problem** arises with regard to the commonsense understanding
+    of non-mental representation.
+    -   Every day examples of non-mental represenatations, like:
+        -   Road signs
+        -   Pieces of written text,
+        -   Warning signs, so on
+
+    -   These all invole an *agents* who use the representations to stand
+        for something else.
+    -   The folk notions of representations, therefore, will not suffice
+        if transplanted directly into cognitive science.
+
+Job description challenge
+
+:   There needs to be some unique role or set of causal relations that warrants our
+    saying some structure or states serves a representational function.
+
+> What might a successful job description for cognitive representation look like?
+
+-   **Depends on**: What notion of representation we use.
+    -   Reductive theories cannot use representation as an explantory
+        primitive.
+    -   If we understand processes as representational, then we need an
+        account of representation in computational, mechanical, or causal
+        physical terms.
+    -   **Conclusion**: Positing inner representations needs to include some
+        sort of story about how the structure or state in question actually
+        plays a representational role.
+
+-   **Analogy**: Someone offers an account of some organic process,
+    and the account needs a structure called a pump.
+    -   The advocate of this account would need to offer an explnanation
+        of how this thing actually serves as a pump, as opposed to say
+        a sponge.
+    -   And this explnanation will be a *functional* one.
+
+-   **Conclusion**: Cognitive researchers who invoke a notion of inner
+    representation in their reductive accounts must provide some
+    explanation of how the thing they positi serves as a representation.
+    -   This is the **problem of pan-representationalism**.
+    -   **Goal**: Argue that this hypothetical situation is in fact the 
+        actual sitation in a wide range of newer cognitive theories.
+
+-   The meeting of the job description is not the same as providing a naturalistic
+    account of content.
+    -   This would present the set of physical or causal conditions that ground
+        the content of the representation.
+    -   Different version of naturalistic content:
+        -   Nomic dependency relations
+        -   Causal links to the world
+        -   Evolutionary function
+        -   Conceptual roles within a given system
+
+    -   These explain a certain *relation*, but not that relations *function*
+        as a representation in a physical system.
+
+-   **Analogy**: A compass.
+    -   One type of question: How the compass actually functions as a 
+        representational device, how it informs a cognitive agent.
+    -   Another type of question: What conditions are responsible for
+        the representational content of the compass.
+
+-   Why this is pressing:
+
+    > "Look, I'm not completely sure how state X comes to the content it has,
+    > but in my explanation of cogintive, there needs to be a state X that
+    > serves as a representation in the following way."
+
+-   The *crux* of the job description challenge
+    -   If conditions on representation are too strong, something "left explained"
+    -   If condition on represestation are too week, it's ambiguous and ubiquitous.
+
+-   Millikan attempts to provide something that applies to mental and non-mental
+    representation.
+    -   To function as a representation is to be "consumed" by an interpreter
+        that treats the state in question as indicating some condition.
+        -   Fine for non-mental.
+        -   Unclear for mental, consumption *inside* a system.
+
+    -   This account is "under-reduced."
+
+-   Dretske, as it will be shown, over-redcuded.
+    -   Intutively, his conditions have nothing to do with representation at all.
+
+-   It may seem impossible to meet the job description challenge, but no,
+    certain theories in the CCTC paradigm have done it.
+    -   **Claim**:the difference between the two corresponds to the division
+        classical theories of computation and non-classical accounts of cognition.
+
+Job description challenge, *improved*
+
+:   There are two parts:
+
+    1.  Is it possible to describe physical or computational processes in
+        representational terms?
+    2.  Is it absolutely necessary to describe physical or computational 
+        processes in representational terms?
+
+> Even a rock can be described as acting on the belief that it needs to sit 
+> very still.
+
+-   The reason this fails is because the notion of representation is too weak.
+-   In the "other way",  we can described biological systems *in terms of* molecules
+    and toms, it is nevery *necessary* to invoke representational langauge in theory
+    characterization of a representational syste,
+
+Job Description Challenge, *improved ... again *
+
+:   Three questions:
+
+    1.  Is there some explanotory benefit in described an internal elements
+        of a physical or computational process in representational terms?
+    2.  Is there an element of a proposed process or architecture that is
+        functioning as a representation in a sufficienitly robust or
+        recognizable manner, and if so, how does it doe this?
+    3.  Given that theory X invokes internal representations in its account
+        of process Y, are the internal states playing this sort of role,
+        and if so, how?
+
+-   Unfortunately, "explanatory benefit" and "sufficiently robust" are
+    not as robust as we would like.
+    -   Requires a "judgement call."
+
+#### Section 3.1 <small>IO-representation</small>
+
+
+
+#### Section 3.2 <small>S-representation</small>
+
+#### Section 3.3 <small>Two objects and their replies</small>
+
+February 18th, 2014 <small>Seminar</small>
+------------------------------------------
+
+### Structure for motion
+
+-   The visual system is able to recover the 3D dimension of a scene
+    with on 2D input.
+    -   Some of the sources of information:
+        -   **Stereoptics**: The visual system uses disparity to get a vantage
+            point on a scene.
+        -   **Motion**: Relative motion, what the visual system gets is a series
+            of images that are different in certain respects. A series of retinal
+            images.
+    
+    -   One thing that Ullman and Hildreth point out is that there are an infinite
+        number of 3D representations out of any 2D input.
+        -   The visual system is aided by physical constraints and assumptions.
+
+-   The relevant assumption for this mechanism: *rigitidy*.
+
+Rigidity
+
+:   Objects in the environment when they're moving is that they are solids.
+
+    > "[T]hey assume that if it is possible to interpret the changing 2-D images as
+    > the projection of a rigid 3-D object in motion, then such an interpretation
+    > should be chosen."
+
+SFM Theorem
+
+:   Three distinct views of 4 non-coplanar points is sufficient to determine
+    a rigid configuration for the points.
+
+-   If you see the object long enough and in good enough conditions, then
+    when the SFM theorem is saying is that there is *only one* rigid configuration
+    of points.
+    -   There's a lot more non-rigid configuration, but *assuming rigidity*, it
+        is much easier to compute a representation. That is, there are less 
+        configurations.
+
+> **Niko**: Why think that *points* are primitive, why not plains?[^6]
+
+-   An organism that SFM with minimum input will react to the world better than
+    an organism that does not have SFM, rigidity, etc. More plausible for this reason?
+-   If an object is getting bigger with regards to a visual field, what are the
+    possible interpretations?
+    -   It's getting *bigger*.
+    -   It's getting *closer*.
+    -   A mix of the two.
+
+-   This type of adaptation is only going to useful in an environment where most
+    objects are rigid in translation[^5].
+-   The environmental assumptions are motivated by adaptation.
+    1.  Powerful, rigidity forces a unique solution
+    2.  True, doesn't make the organism "screw up"
+    3.  Unspecific, true in most cases, general claim about the environment, will
+        support a lot of counterfactuals.
+
+> What is the status of the rigidity assumption? Is it innate?
+
+-   *Exploits* regularities but doesn't *represent* regularities.
+    -   We can *count* it as *innate knowledge* *if we want*, but it isn't
+        explicitly represented and almost certainly not *explicitly* represented.
+
+-   The environment can be exploited without be represented.
+    -   First step for the theorist is to look at the environment.
+        -   Spiky?
+        -   Squishy?
+        -   Solid?
+
+-   Steps:
+    1.  Commonsense characterization of the problem, explandadum.
+    2.  Put on lab coat and look at exactly what the competence is.
+        -   Is this a competence for determining 3-D structure *simpliciter*?
+        -   No, 3-D *rigid* structure.
+        -   "Looking for assumptions."
+
+    3.  Look for algorithms that explain the phenomena
+
+### Ramsey
+
+#### Chapter 1
+
+> What is it for a state in the head to be a representation?
+
+-   Couple of things to distinguish:
+    -   As a question "what it is for a thing in the head to have meaning or
+        conent? What is it to have content? What determines contents of internal
+        representations?" *Problem of intentionality side*
+        -   The answer for *external* representations is convention, we agree on 
+            meanings for items in the language. 
+        -   This cannot be the answer for *internal* representation.
+        -   Cannot specificy little "agents in the head." Because regress? No agents.
+        -   There's going to be a naturalistic account of how internal structures
+            and states, naturalistic hope, relation between states and structures in
+            the head and the objects in the world.
+        -   To say that it's naturalistic is to discount, say, semantic relations.
+
+    -   Personal and sub-personal processes.
+        -   Like a map, people use maps, we use them to navigate, etc.
+        -   This kind of answer isn't going to work for mental interpretations.
+        -   When theories posit these states or structures, it's only appropriate
+            to think of these, they're not used by *people*, it's a category mistake
+            to think of Prof. Egan as *using* the primal sketch to navigate the world,
+            it's her *system* that uses the primal sketch.
+
+> **Ben**: I don't see any *job* for it to do. What he said led me to believe that it
+> not a necessary condition on representation that is has semantic content.
+
+-   This is a *possibility*
+    -   A theory might posit a symbol structure
+
+> What Ramsey is thinking about is being a representation and not about what it is to
+> have content.
+
+-   Remember the distinction between *personal* and *sub-personal* representation.
+    -   **Question**: What is it for a physical thing to represent another?
+        -   It should be used in a characteristcally representational way. *Useless*.
+        -   Content is in som way relevant to how it functions, or it's effects. So
+            the representation is causally efficacious, causes effects in cognition,
+            and the content is relevant to those effect *in some way*, I say in
+            *in some way* because it isn't at all clear how 
+
+> **Egan**: Content is a way of summarizes what is *causally relevant* or the *causal*
+> role of a belief[^7].
+
+-   Dretske, on the other hand, thinks that content has to get its hands on the wheel.
+    -   This can't be right, content is not driving the car.
+
+-   It cannot be a consequence of doing that job that too many thing count as
+    as representational.
+-   The theorizing we're doing do no presuppose propositional attitudes or 
+    representational capacities.
+    -   A theory that is doing this may *under-explain*.
+
+-   If you describe cognition in terms of atoms, quarks, molecules, ...
+    -   This is *over-explaining*.
+    -   It's damning to say, "Hey, where is the intentionality?"
+        -   We have to be careful to not fall into this trap.
+
+-   Avoid positing un-explained intelligence, but posit intelligence.
+    -   How can intelligence arise, or emerge, from non-intelligent.
+
+-   It would illegimate to complain about they're being nothing conscious in an
+    explanation of consciousness.
+    -   You look at an organism in it's environment and that *is* to interpret
+        what it's doing cognitively.
+        -   It's computing some cognitive function.
+
+    -   **Egan**: Using this is a really robust way, which systems are appropriate
+        to explain psychological.
+
+> **Niko**: Maybe it's true that we have evidence that something is cognitive
+> if we attribute to a system doing a computation on representations. Is it intentional?
+
+-   At the moment, all (Egan) is doing is trying to put our cognitive attributions
+    in context.
+    -   *When do we attribute cognition?*
+
+#### Chapter 3
+
+-   To call mething cognitive is to call something an IO system
+-   We go around attributing cognitive capacities to people, and for the animals, we
+    do it on the basis of behavior.
+    -   What we *attribute* is a *competence* and this goes *beyond the behavior*.
+    -   *How would the system behave if it was given different inputs?*
+    -   For Marr, the competence is at the top-level of the theory.
+
+-   Right now, this defintion of cognition is related to Haugeland's IBB.
+    -   Only when we have behvaioral event that something is doing something
+        cognitive.
+
+-   How do you say something plays chess?
+    -   You treat it as a representing thing as representing chess moves, or something.
+    -   You have to treat the sub components, the subprocesses, these have to be
+        operating on chess moves as well.
+
+> **Ben**: A requirement on a sub-representation is the same ... as a super-
+> representation (or something). So is it syntatic and representational *all-the
+> way down*? 
+
+-   In some of these decompostional reductions, whenever you're doing this,
+    whether it be the big or small process, whenever you're invoking representations,
+    you need to invoke contents. 
+    -   He's *not* saying that you always have to do it in this way.
+    -   Each, eventualy, these IBS IBB will "bottom out"
+
+-   As long as you're invoking representations, you have to go "whole hog" on it.
+-   *Can't we treat them as uninterpreted symbols?*
+
+> We could, of course, employ a syntactic type of task-decompositional 
+> explanation. We could track the causal roles of the syntactically 
+> individuated symbols, and thereby divide the internal processes into 
+> syntactic sub-processes. But we wouldn’t be able to make sense of 
+> these operations as computationally pertinent stages of the larger 
+> task being explained. **Ramsey, pg. 76**
+
+-   He's *putting off* the big question: Is it *really* an adder?
+    -   He falls back on the wholism response.
+    -   We're attributing the intentinos and representaitons together.
+
+-   Are intuitions important for cognitive theorizing?[^8]
+    -   In calling it *seeing*, we're pretty much committed to representation.
+
+-   There's certain structural similarities between entities on a map of NJ
+    and NJ itsel
+    
+-   There's stccertain structural similarities between entities on a map of NJ
+    and New JJ itself.
+
+-   It's not an isomorphism, it's a morphism.
+    -   What breaks the symmetry?
+
+-   Next time: Chapter 4, and the two objections
+
+<!-- Accidentronymns -->
 
 *[RTM]: Representational theory of mind
 
 *[LOT]: Language of thought
+
+*[SFM]: Structure for motion
+
+*[IO]: Input-output
+
+*[IBB]: Intentional black box
+
+*[IPS]: Information processing systems
 
 <!-- Footnote -->
 
@@ -1060,3 +1462,32 @@ Derivability
 
 [^4]: Are the rules of logic the norms of reasoning? Are the rules of logic
     pre-existing intuitions systemitized?
+
+[^5]: Only with regards *to fitness*.
+
+[^6]: There is no "primtive", I think, in geometry. A point can be expressed in
+    terms of a line or a plain. A line can be expressed in terms of two points or
+    a part of a plain. A plain can be expressed in terms of 3 lines or 3 points.
+
+[^7]: I think that this may relate to debates in epistemology about brains in vats.
+    So, here's an argument for thinking that they are related issues, and then
+    I'll give an additional argument for how one might give insight to the other.
+
+    Assume that the brain represents its environment. Cummins thinks that a
+    representation can represent all content with which it is isomorphic.
+    Ramsey thinks that the content that matters is what *this* brain is using *now*.
+    What's at issue in brain-in-vat skeptical arguments is that the brain's
+    internal representation is isomorphic with both what the realist wants to
+    call objective reality and what the skeptic wants to call "brain-in-vat land"
+    (or the images that the vat is giving the brain or something). What's problematic
+    about the brain-in-vat skeptical concerns is that the internal represnetation
+    is isomorophic with both pictures.
+
+    So how is this insightful? Well. Actually. In hindsight, I'm not sure, I'd have
+    to think about it. I think this succesfully relates the issues. Ramsey's solution
+    to BIV challenges might be that the most explantory useful theory, because
+    objective reality is what *this* brain is using *now* or something ...
+
+[^8]: It's not that we don't know what representation is or that there is no
+    representation, but rather, it's that representation with regards to
+    cognizing if a fuzzy and poorly understood.
