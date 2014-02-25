@@ -97,7 +97,7 @@ January 24th, 2014 <small>Seminar</small>
 -   Hempel and "positive instances of a general law confirm it."
 -   What are laws? They are of the form:
 
-    \$\$(x)(Fx \\to Gx)\$\$
+    $$(x)(Fx \to Gx)$$
 
     -   If you open a textbook in classical or quantum mechanics, you
         will no longer see sentences of this form.
@@ -116,7 +116,6 @@ January 24th, 2014 <small>Seminar</small>
 > If something is worth doing, it's worth doing wrong the first time.
 
 <!-- -->
-
 
 > There's less than meets the eye to Goodman's paradox.
 
@@ -2001,13 +2000,13 @@ Principle of rejection of bare particulars
 
 -   The laws as relations between universals account can explain why
     laws support counterfactuals.
-        -   When it is a lw that Fs are Gs, the necessiation relation
-            between Fness and Gness ensures that, were *x* to be added
-            to the calss of Fs, it would be a G (of necessity)
-            -   **Caveat**: The counterfactual is true iff the closest
-                worl where *x* is F is not some distant world where the
-                actual laws (and in particular the law that Fs are Gs)
-                do not hold.
+     -   When it is a lw that Fs are Gs, the necessiation relation
+         between Fness and Gness ensures that, were *x* to be added
+         to the calss of Fs, it would be a G (of necessity)
+         -   **Caveat**: The counterfactual is true iff the closest
+             worl where *x* is F is not some distant world where the
+             actual laws (and in particular the law that Fs are Gs)
+             do not hold.
 
 -   Armstrong's theory may be able to explain why inductive inference is 
     rational.
@@ -2026,12 +2025,52 @@ February 21st, 2014 <small>Reading</small>
 February 21st, 2014 <small>Seminar</small>
 ------------------------------------------
 
+-   If what Armstrong was asking for was a non-circular way of justifying
+    indunction, he doesn't get one.
+    -   He gets IBE is rational.
+
+-   Lewis' account of laws, if we assume that the universe is lawful, we get a
+    vindication of induction.
+    -   We can demonstrate that we will zero-in on the best system, if our world
+        is friendly to science.
+
+-   **Assumption**: Let's suppose we know the language of natural properties, and
+    the best system in that language are pretty good.
+    -   Someone might think that there are finitely many properties that are bound
+        by some value (why?).
+    -   *The rabbit going into the hat.*
+
+-   As we do more and more experimentation, our credence step will get closer and
+    closer to the true best system.
+    -   We assign credence to better systems moreson, higher, high degree of credence
+        to a family to a disjuction of BSA which includes the best system of our
+        world.
+    -   If the world is physics friendly, then we can elimnate all but one family.
+        -   In the opposite case, it's called indetermination.
+
+    -   How big the dijsuction will be will be based on how physics friendly will
+        be.
+
 February 28th, 2014 <small>Reading</small>
 -----------------------------------------
 
 ### "The Metaphysics within Physics" <small>by Maudlin</small>
 
 #### Chapter 1
+
+##### Laws, Possibilities, Counterfactuals, and Explanations
+
+-   Beliefs about laws of nature influence others.
+    -   Three which we're interested in:
+        1.  Beliefs about *possibilities*
+        2.  Beliefs about *counterfactuals*
+        3.  Beliefs about *explanations*
+
+-   If you accept Eistein's theory of relativity, you also accept that a Universe
+    could be "open" or "closed"
+    -   To be open is to continue expanding forever.
+    -   To be closed is to collapse in a Big Crunch.
+        
 
 #### Chapter 2
 

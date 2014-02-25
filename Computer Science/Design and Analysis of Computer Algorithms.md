@@ -1490,6 +1490,131 @@ Property
 
     -   Intractibility is normally a source of dismay, RSA uses it as an advantage.
 
+February 19th, 2014 <small>Recitation</small>
+---------------------------------------------
+
+### Classification
+
+-   Sorting algorithms are often classified by:
+    -   Computational complexity
+        
+        :   Worst, average, and best best-behavior of element comparisions in terms
+            of the size of the list.
+
+    -   Memory usage
+
+        :   Some sorting algorithms are "in place" and they do not need any memory
+            input beyond the input array, which stores the elemts to be sorted.
+
+    -   Stability
+
+        :   Stable sorting algorithms maintain the same order of records with equal 
+            keys in the input array (values)
+
+    -   Whether or not they are a comparisons sort
+
+        :   A comparision sort examines the data only by comparing two elements with
+            a comparision operator.
+
+#### Stability
+
+-   If all keys are different than the stability distinction is not necessary.
+    -   But if there are equal keys, the a sorting algorithm is stable if whenever there
+        are two records.
+
+-   Unstable sorting algorithms may change the relative order of records with equal keys,
+    but stable sorting algorithms never do so.
+    -   Unstable sorting algorithms can be specially implemented to be stable.
+        -   Additional computational cost.
+
+
+Algorithm | Best time | Average time | Worst time | Memory | Stable | Method | Notes
+----------|-----------|--------------|------------|--------|--------|--------|------
+Bubble sort | $n$ | $n^2$ | $n^2$ | $1$ | Yes | Swapping elements | Simple implementation
+Selection sort | $n^2$ | $n^2$ | $n^2$ | $1$ | No | Selection | Stable with $O(n)$ 
+Insertion sort | $n$ | $n^2$ | $n^2$ | $1$ | Yes | Insertion | $O(n + d)$ where $d$ inversions
+Heapsort | $n \log n$ | $n \log n$ | $n \log n $ | $1$ | No | Selection| 
+Merge sort | $n \log n$ | $n \log n$ | $n \log n$ | Worst is $n$ |  Yes | Merging | Highly parralelizable 
+In-place Merge sort |  |  | $n (\log n)^2 $ | $1$ | Yes | Merging | Implemented in STL
+Quicksort | $n \log n $ | $n \log n$ | $\log n$ | $\log n$ | Depends | Partitioning | Usually done in place 
+
+February 21st, 2014 <small>Lecture</small>
+------------------------------------------
+
+### Linear Time Sorting Algorithms
+
+-   Counting sort
+    -   N input elements that are integers in a range from 0 to *k*.
+
+                 1   2   3   4   5   6   7   8
+               +---+---+---+---+---+---+---+---+
+            A  | 2 | 5 | 3 | 0 | 2 | 3 | 0 | 3 |
+               +---+---+---+---+---+---+---+---+
+
+                 0   1   2   3   4   5
+               +---+---+---+---+---+---+
+            C  | 2 | 0 | 2 | 3 | 0 | 1 |
+               +---+---+---+---+---+---+
+            // C[1] says how many elements in array 
+            // A have value i
+            
+
+            C` +---+---+---+---+---+---+
+               | 1 | 2 | 2 | 4 | 7 | 7 |
+               +---+---+---+---+---+---+
+            // C`[1] specifies # of elements less than or
+            // greater to i in array A
+
+               +---+---+---+---+---+---+---+---+
+            O  | 0 | 0 | 2 | 2 | 3 | 3 | 3 | 5 |
+               +---+---+---+---+---+---+---+---+
+
+#### Running time
+
+-   Initialize empty array $G \Omega(k)$
+-   Count the occurences of elements in array $A : \Omega(n)$
+-   Identify the sport of each mumber in the output array.
+
+### Radix Sort
+
+-   What is the idea?
+    -   We'll assume a fixed number of bits.
+    -   Let's say we have $d$-bit numbers.
+        -   The idea is check one bit at a time and sort them from the
+            right-most bit to the left-most bit.
+
+-   **Lemma**: For *n* *d*-digit numbers where each digit can take up to *k*
+    values, radix sort correctly sorts these numbers in $O(d(n + k))$ time
+    assuming you use a stable sort for sorting per digit.
+
+-   **Base case**: Sort accorind to the least significant digit.
+-   **Assumption**: Sorted up to (i - 1)th digit.
+-   **Step**: Every number that has a lower (1 + i)th digit than
+    any other number will appear earlier.
+
+-   If they have the same ith giti, these numbers already appear in the correct order
+    in the array.
+    -   If I use a stable sort, the correct order is retained.
+    -   Cost of sorting per digit up to range k: $\Theta(n + k)$
+    -   How many sorts? *d* as number of digits.
+
+### Bucket Sort
+
+-   Asumme that the input is drawn from a uniform distribution.
+-   wlog assume input is in a range.
+
+-   **Idea**: Divide (0, 1) into n buckets and distribute the numbers
+    into these buckets.
+    -   Sort the number in each bucket and combine the results.
+    -   How to sort each bucket?
+
+#### Running time
+
+$$T(n) = \Theta(n) + \sum_{i = 0}^{n  - 1} O(O_i^2)$$
+
+-   The theta is the cost of generating the bueckets and assigning elements to
+    buckets.
+
 *[GCD]: Greatest common divisor
 
 *[iff]: if and only if

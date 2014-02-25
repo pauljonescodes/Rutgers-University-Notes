@@ -1185,11 +1185,130 @@ Job Description Challenge, *improved ... again *
 
 #### Section 3.1 <small>IO-representation</small>
 
+-   **Previously**: Marr's model of cognitive science involved three level of
+    -   The top level involved the specification of a function that defines the sort of
+        cognitive capacity we want explained.
+    
+        > Consider again a simple operation like multiplication. Although we say various
+        > mechanical devices do multiplication, the transformation of numbers into 
+        > products is something that, strictly speaking, no physical system could ever
+        > do. Numbers and products are abstract entities, and physical systems can't
+        > perform operations on abstract entities. So at the algorithmic level we
+        > positi symbolic representations of numbers as inputs to the system and
+        > symbolic representations of products as outputs. We re-define the task of
+        > multiplication as the task of transforming numerals of one sort into numerals
+        > of another sort.
 
+    -   The input to a cognitive system: say, "faces".
+        -   The output of a cognitive system: say, "That's so-and-so."
+
+-   How do IO-representation concerns meet the job description challenge? **Two
+    responses**:
+    1.  **Avoid** the question altogether. "Outside the domain of 
+        cogntive theorizing."[^10]
+        -   We're actual in the business *of explaing the porcesses and operations
+            that convert input representations into output representations*[^9]
+
+    2.  **Say**: Minds do certain things, and one of the main things they do is
+        "perform cogitive tasks properly described as types of representations."
+        -   It is a *fact of nature*.
+
+Interior IO representations
+
+:   Interior input–output representations are a sub-system’s own 
+    inputs and outputs that are internal to the larger super-system’s 
+    explanatory framework.
 
 #### Section 3.2 <small>S-representation</small>
 
 #### Section 3.3 <small>Two objects and their replies</small>
+
+##### Challenge 2: IO-representation and S-representation aren't sufficiently real
+
+-   Made appeals to the *explantory benefit* and *explanatory pay-off* of
+    IO and S notions of representation.
+    -   And that *there is a* payoff.
+    -   Is it a *useful fiction*? Do it real?
+
+-   Dennet on the topics:
+    -   Physical stance
+
+        :   Use an understanding of the physical inner workins of the system to explain
+            and predict how it responds to different inputs.
+
+    -   Design stance
+
+        :   Predict behavior by using what we know about the osrt of tasks that the
+            system was *designed* to perform.
+
+    -   Intetional stance
+
+        :   The intentional stance involves treating a system as a rational agent with
+            beliefs, desires, and other folk-representationl states.
+
+    True believer
+
+    :   Little more than being a system whose behavior can be succesfully explained and
+        predicted through the ascription of beliefs and other propositional attitudes.
+
+-   **Challenge**: If the CCTC is a theory that invokes *real* representations, 
+    then it needs objectively realy representations.
+-   **Response**: They *are* real, and here's why.
+    -   There's a sense in which most things are *observer-dependant*.
+        -   It's always possible to view a system as a series of interacting atoms.
+        -   **If** IO and S representations are unreal only in the sens which trees,
+            minerals, hearts, mountains, and species are unreal, **then** a reality
+            about representation should be able to live with *that* sort of
+            "anti-realism."
+
+### Review of RR <small>by Mark Sprevak</small>
+
+-   **Structure of Ramsey's *negative* argument**:
+    1.  Argue that in order for something to be an *X*, it must satisfy a description *D*.
+        -   This is the *job description* or *minimal conditions for representation*.
+
+    2.  Argue that to the best of our knowledge, nothing satisfies *D*.
+        -   "How do our best psychological theories use the notion of representation?"
+
+    3.  Conclude that since nothing satifies *D*, there are no *X*s.
+        -   Ramsey finds all theories unsatisfactory, there are no representations.
+
+-   On step 1:
+    -   For a state to be a representation:
+        1.  Non-derived intentionality
+        
+            :   Be capable of having original intentional content.
+
+        2.  Causality
+        
+            :   Interact causally with other cognitive states.
+
+        3.  Connection
+        
+            :   (1) and (2) must be linked: The causal role that representation plus 
+                should be *determined by* it's intentional content.
+
+-   On step 2:
+    -   The **exception**: CCTV
+        -   CCTV is commited to representation in 2 ways:
+            1.  IO-representation
+            2.  S-representations
+
+    -   On IO-representation:
+        -   Representations are needed as the gross-inputs and outputs of cognitive
+            agents.
+        -   But also the steps of a computation need representations, so internal
+            representations.
+
+    -   On S-representation
+        -   CCTC is commited to positive interinal representations. (I'm not sure why
+            this or if this is bad?)
+
+### External
+
+> In mathematics, an isomorphism, from the Greek: ἴσος isos "equal", and 
+> μορφή morphe "shape", is a homomorphism (or more generally a morphism) 
+> that admits an inverse. [Wikipedia](http://en.wikipedia.org/wiki/Isomorphism)
 
 February 18th, 2014 <small>Seminar</small>
 ------------------------------------------
@@ -1406,7 +1525,341 @@ SFM Theorem
 
 -   Next time: Chapter 4, and the two objections
 
-<!-- Accidentronymns -->
+February 20th, 2014 <small>Office hours</small>
+-----------------------------------------------
+
+### Questions
+
+1.  Levels of description
+
+    Level of description | Has representation?
+    ---------------------|--------------------
+    ... | No (presumably)
+    Atoms | No
+    ... | No
+    Biology | No (Maybe)
+    Neuroscience | ???
+    ... | 
+    Cognition | ???
+    Folk psychology | Yes
+    Utterances | Yes
+
+    At first, there's the physical states. It then moves to the biological
+    states. And then the cognitive states.
+
+    Is this a good roadmap of the ontology? Of where we're trying to describe
+    and ascribe representation? If not, what's better?
+
+2.  The debate
+
+    -   Ramsey: *elimitavist about the mind on grounds of the best cognitive models
+        not having it*
+        1.  CCTV have representations, and their good ones (answer job description)
+        2.  Neither CCTV is true nor are representations possible?
+        3.  Representation and content - isomorphism - capable of content
+
+    -   Fodor: 
+        1.  Realist about FP
+        2.  FP $\to$ LOT $\to$ RTM
+        3.  RTM and LOT have representations.
+        4.  ???
+
+3.  Circularity and striking parellelism
+
+February 25th, 2013 <small>Reading</small>
+------------------------------------------
+
+### Dretske, "Misrepresentation" (background)
+
+-   *How do we manage to get things wrong?*
+    -   *How is it possible for a physical system to **misrepresent** the state of
+        their surroundings?*
+
+-   **Assumption**: Belief is a *non-derived* representational capacity the exercise
+    of which *can* yield a representation.
+-   The capacity to misrepresent is only a part of the general problem of meaning
+    and intentionality.
+    -   Once you have meaning, "lavish" it on to your descriptions.
+    -   Once you have intentionality, you can "adopt the intentional stance."
+
+#### Natural Signs
+
+-   Naturally occuring signs mean something, without assistance from us.
+    
+    > Water does not flow uphill; hence, a northerly flowing rivers means there is
+    > a downward gradient in that direction.
+
+    -   The power of these events or conditions to mean what they do is independant
+        of the way we interpret them.
+        -   Or whether we interpret them at all.
+
+    -   There was meaning before intlligent organisms, capable of exploiting
+        meaning.
+    -   If we are looking for meaning, misrpresentation is a promising place to 
+        begin.
+
+-   Natural signs are *indicators*, more or less *reliable*, and *what they mean* is
+    what *they indicate to be so*.
+    -   The power of a natural sign to mean something emerges from objective constraints,
+        lawful relations, between the sign and the condition that constitutes its
+        meaning.
+    -   It's usually *causal* or *lawful*.
+    -   It's *counterfactual supporting*.
+
+### Ramsey, *Representation Reconsidered*, ch. 4
+
+#### Introduction
+
+-   Will **argue**: The notions of representation explored in the net two chapters
+    do *not* mean the *job description challenge*.
+    -   In fact, it also leads to *deep misconceptions*.
+    -   The *receptor notions* of representation.
+        -   Alternatively, *detector*.
+
+    -   Not a theoretically useful notion.
+    -   Will **deny**: Structures that do recepting are serving as representations.
+
+-   **Structure**
+    1.  Spell out the basic idea of receptor representation.
+    2.  Will **ask** how well this notion fares with regard to the job description
+        challenge.
+    3.  Will **show**: Dretske's own account of representation overlaps a great deal
+        with the receptor notion, yet is more sophiticated and robust.
+    4.  Will **argue**: Neither representation nor misrepresneetation is without
+        serioues flaw.
+    5.  The receptor notion should be abandoned.
+
+#### The receptor notion
+
+Receptor notion
+
+:   Because a given neural or computational structure is regularly and reliably
+    activated by some distal condition, it should be regarded as having the role
+    of representation (indicating, signaling) that condition. 
+
+    Such structures are viewed as representations *because* of the way they are
+    triggered to go into particular states by other conditions.
+
+:   *Example*: Certain neurons should be viewed as "detectors" *precisely because*
+    they reliably respond to certain stimuli.
+
+    Just a though a frog has "convexity detectors" in their brain.
+
+:   > [I]f a cell is claimed to represent a face, then it is necessary to show 
+    > that it fires at a certain rate nearly every time a face is present and 
+    > only very rarely reaches that rate at other times.
+
+-   The receptor notion of representation is found in connectionist models in
+    the similarity of "internal units" to "neural receptors"
+    -   It's suggested they provide a more representational role than computational
+        symbols.
+
+-   Three examples of the receptor notion in simple organisms:
+    1.  Certain neurons in a bugs brain.
+    2.  "Face cells" in monkeys
+    3.  Magnetosomes "compass-like" represenetation which tell where to go.
+
+-   Whatever the state is that the so called receptor brings about, it is
+    "viewed as having the role of representing the external condition because
+    of this causual or nomic dependency relation."
+-   Philosophers have developed a notion "natural meaning" or "information content"
+    that supposedly results from the way a state reliably co-varies with some other
+    state of affairs.
+    -   This makes people say "*this* smoke *means* *that* fire."
+
+#### The receptor notion and the job description challenge
+
+-   The reception notion faces a *prima facie* difficulty:
+    -   **Problem**: The reception notion does not provide an account that reveals
+        *why* a given state or structure should be seen as serving as a representation.
+        -   **Counterexample**: There are several *non-representational* internal
+            states that must in their proper functioning reliably covary with
+            various states of affairs. For instnace, *our immunse system consistently
+            reacts to infectious insults to our body*. 
+
+    -   **Fix**: While nomic dependency may be an important *element* of representation,
+        it is not *sufficient* to be representation.
+
+-   This **problem** leads to a **dilemma**:
+    -   If to serve as a representation *just is* to serve as a state that reliably
+        responds, then you get overly reduced accounts of representation that lead
+        to *pan-representationalism* because of the immune-system objection.
+    -   Or, if to serve as representation includes factors that go substantially
+        beyond the mere fact that they reliably respond to specific stimuli, then
+        we have no clear sense of how states reliably responding to certain stimuli
+        are supposed to function as representations.
+
+-   This is closely related to the problem of *pansemanticism*, that is that "meaning
+    is just about *everywhere*" and "is a natural conclusion to draw from informational
+    analyses of content."
+
+#### Dretske to the rescue?
+
+-   Dretske offers an ambitious account of mental represnetation that is designed
+    to be naturalistic about content, and show how content can produce behavior.
+    -   What's wrong with Dretske's account will be illuminating with regaurds to a
+        fundamental problem for the receptor notion of representation *in general*.
+
+
+-   Central to the account is the notion of **indication**, a relation based on
+    law-like dependency.
+
+Indication
+:   > For condition *C* to indicate another condition *F*, *C* must stand in relation
+    > to *F* characterized by subjunctives like the following: If *F* had not
+    > occured, *C* would not have occured.
+
+-   **Already saw**: that mere nomic dependency is insufficient to bestow full-blown
+    representational status on cognitive structures.
+    -   This is the **disjunction problem**, that concerns the difficulty in
+        account for misrepresentation when a state's content is based upon the way
+        it is triggered by distal conditions.
+    -   The **response** to this: "the core of any thoery of representation must
+        contains an explanation of how misrepresentation can occur."
+
+-   The **response** is to offer teleological components, placing tighter restrictions
+    on the sort of causal relations that matter.
+
+> **Dretske**: Internal indicators are mental representations when they are recruited
+> as a cause of certain motor output *because of* their relevant nomic dependancies.
+
+-   This does two things for Dretske:
+    1.  Enables him to handle the problem of misrepresentation
+        -   Error is no possible because we can say that whenever an indicator is
+            triggered by something other than what it was *supposed to* indicate.
+
+    2.  Gives him a way of showing how informational content can be explanatorily
+        relevant.
+        -   Structures are recruited as causes to motor output *because* they indicate
+            certain conditions.
+        -   Being an indicator is a causally relevant feature of a strcture, so 
+            being a type of *meaning* is causally relevant.
+
+> **Dretske**: To serve as a representation is necessarilly to:
+>
+> 1.  Stand in some sort of nomic dependancy relation to some distal state of affairs
+> 2.  Becoming incorporated into the processing *because* of this dependancy, thereby
+>     acquiring the function of indicating those states of affairs.
+
+##### Does Dretske's account of representation function help?
+
+-   **Dretske is committed to**: *If* neural structures are actually recruited as
+    causes of bug-catching movements because they are reliably caused to fire
+    by the presence of bugs, *then* it certainly seems tempting to assume that
+    they are serves as "bug representations."
+    -   **Question**: Does this arragment suffice for representation?
+
+-   To answer, distinguish between:
+    1.  The puraly causal/physical or nomic dependencies that are thought to "underlie"
+        the indication relation
+    2.  The quasi-semantic, information relation often said to be "carried by" these
+        dependancies.
+
+> If *A* carries information about *B*, (1) is this supposed to be distinct from
+> *A*'s being nomically dependant on *B*? (2) Or are those claims indentical?
+
+-   On (1), the infromation carried by *A* is somehow seperate and distinc from
+    properities of *A*. It *A* carries information about *B*, it does so whether or
+    not anyone exploits it.
+    -   This is **ambigous**, refering to either:
+        -   The non-semantic nomic depancy
+        -   Something more semantically charged, like information 
+
+    -   This is the *realist interpretation of information and indication*.
+
+-   On (2), it's unambigous. This is the *deflationary interpretation of information
+    and indication*.
+
+-   The **central problem**: Dretske's account of representation appears to assume
+    that if a given structures is incorporated into a system's processing because
+    it nomically depends on a certain state of affairs, it automatically follows that
+    it being used to stand for that state of affairs.
+    -   This **unsupported** and **almost certainly false**.
+
+> **Counterexample to (1)**: The firing pin in a gun similarly bridges a 
+> causal gap between the pulling of the trigger and the discharge of the round. 
+> It also serves to reliably mediate between two distinct states of affairs – 
+> to reliably go into a specific state when and only when a certain condition 
+> obtains. However, no one thinks the firing pin serves as some sort 
+> of representational device.
+>
+> **Counter example to (2)**: For example, if A is always larger than B, then, 
+> in the deflationary sense we are now using the term, A carries information 
+> about the size of B; that is, the size of A could be used to tell someone 
+> something about the size of B. If A is heavier than B, or if A is always 
+> within a certain distance of B, then the weight or position of A can serve 
+> to inform a cognitive agent about the weight or position of B. In all of 
+> these cases, specific types of law-like relations between two objects (larger 
+> than, heavier than, close to, etc.) can and sometimes are exploited by 
+> cognitive systems like ourselves such that our knowledge of the status of 
+> one of the objects can generate knowledge of the status of the other one as 
+> well. When this happens, one of the objects is serving as a type of 
+> representational device.
+
+-   **Conclusion**
+    -   If we equate *being an indicator* to *being a nomic dependant*, then Dretske
+        cannot establish that a strcture is a representation by showing that it
+        functions as an indicator because, *trivially*, functioning as an indicator
+        just means functioning as a nomic dependant
+        -   **And**: There are all sorts of ways to function as a nomic dependant
+            without being a representation.
+
+#### Further dimensions of the receptor notion
+
+#### Does it really matter?
+
+-   People often compain that Ramsey is just being stingy with the word 
+    "representation."
+    -   Why not treat receptor states as some low-level type of representation?
+
+-   Taken as a point about langauge and our ability to call things what we want, it's
+    correct, but silly.
+
+> **Question**: If we *are* so inclined, and nothing is really at stake, then why
+> not go ahead and do so?
+
+-   **Answer**: There's a fair bit at stake.
+    -   "Representation" and "information" is increasingly just being use to mean
+        "reactive neuron" or "causal activity."
+
+-   Here he paints a picture about a real-world case where misconceptions about
+    representation derailed progressed and blurred understanding in a study by
+    Freeman and Skarda.
+
+#### Summary
+
+-   **Argued**: One of the most popular ways of thinking about representation in
+    cognitive science is confused and should be discontinued.
+    -   Receptor notions of representation have jobs that have little to do
+        with representation.
+
+-   In an effort to supplment the failure, Ramsey brought in Dretske.
+    -   Dretske focused on on an indication *functioning* as a representation.
+    -   He suggest that receptor type states qualify as representation by virtue
+        of the way in which they are incorporated into cognitive architecture.
+        -   **But** the functional role is a reliable causal mediator, and not
+            a representation.
+
+-   If the receptor notions of representation are in fact the right account of
+    representation in connectionism, then RTM is simply false.
+
+### Commentary
+
+I want to be a realist about the external world and I have this premonition 
+without proof that my inner representation of the external world reliably covaries
+with at least those states important for my continued success. If the way I 
+characterize this inner representation is with "indication" and Ramsey's argument
+that indication isn't represnetation, then I reject indication as being able to
+tell the whole story about representations in the head.
+
+A way that I think indication could be vindicated is by making it a part of 
+inner representation instead of claiming that it's all there is. For instance,
+perhaps my vision is an indication of what's directly in front of my eyes, my
+ears indicate what sounds are in my immediate surroundings, etc, and these indications
+are amalgamated by my mind in higher-order mental processing, and it is from this
+and these indications that an internal representation emerges.
+
+<!-- Abbreviations -->
 
 *[RTM]: Representational theory of mind
 
@@ -1419,6 +1872,8 @@ SFM Theorem
 *[IBB]: Intentional black box
 
 *[IPS]: Information processing systems
+
+*[CCTV]: Classicaly computational theory of cognition
 
 <!-- Footnote -->
 
@@ -1491,3 +1946,29 @@ SFM Theorem
 [^8]: It's not that we don't know what representation is or that there is no
     representation, but rather, it's that representation with regards to
     cognizing if a fuzzy and poorly understood.
+
+[^9]: There's a paradox of analysis here. Where on one hand, cogntive theorists and
+    any competent user of English knows what a representation *is*, we use them all
+    the time. There are only two possibilities: We know what representation is or we
+    do not. If we do, then we need to "check what's in the head" and see if it's a
+    representation. If we don't, what's the use of writing a book on it? To clarify
+    what we could possibly mean by a "mental model" or "mental representation"? We
+    don't know what representation is *in general*, nevermind whether they can be in the
+    head.
+
+[^10]: "We don't care what if you understand what representation *is*, we do, and that's
+    one." When scientists do this, or where scientists could possibly do this in other
+    fields, you can still ask them where the representation *is* and *how* it represents.
+
+    The computer scientist can tell you that the letter on a screen is represented by
+    the computer's software as an ASCII character with the numbers 1 through 64 (or
+    something) and that those numbers are represented on the computers hardware with
+    many, many on-off switches. On-off switches do no equal represented numbers
+    and represented numbers are not represented letters, but they all share an
+    resemblance that can be exploited.
+
+    What *I* want to know is can the cognitive scientist take a cognizers utterance
+    of some state, say "I am hungry", and use folk psychology to say that the utterance
+    is a represents the utterer's inner state, and if you look at the inner state
+    you'll find the processes by which the brain finds out and stores facts about
+    the body (but more generally the non-mind world).  
