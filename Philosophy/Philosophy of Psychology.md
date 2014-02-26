@@ -1003,7 +1003,7 @@ Derivability
         -   Texture
         -   Shading
 
-    4.  $ 2 \frac{1}{2} $D
+    4.  $2 \frac{1}{2}$D
     5.  3D
 
 -   **Next time**: SFM
@@ -1303,12 +1303,6 @@ Interior IO representations
     -   On S-representation
         -   CCTC is commited to positive interinal representations. (I'm not sure why
             this or if this is bad?)
-
-### External
-
-> In mathematics, an isomorphism, from the Greek: ἴσος isos "equal", and 
-> μορφή morphe "shape", is a homomorphism (or more generally a morphism) 
-> that admits an inverse. [Wikipedia](http://en.wikipedia.org/wiki/Isomorphism)
 
 February 18th, 2014 <small>Seminar</small>
 ------------------------------------------
@@ -1806,6 +1800,21 @@ Indication
 
 #### Further dimensions of the receptor notion
 
+> **Question**: How do we demarcate between:
+> 
+> 1.  Cases where the nomic regularity is relevant to a non-representational function
+> 2.  Cases wehere it makes sense to say that nomic dependency helps serve as a
+>     representation.
+
+-   **Contast**:
+    1.  The firing pin in a gun
+        -   There is no sense in which the information carried by the firing pin is
+            exploited in its normal functioning.
+
+    2.  The mercury in a thermometer
+        -   There is a *clear* sense in which it serves to inform people who want to
+            learn about the temperature.
+
 #### Does it really matter?
 
 -   People often compain that Ramsey is just being stingy with the word 
@@ -1859,6 +1868,132 @@ ears indicate what sounds are in my immediate surroundings, etc, and these indic
 are amalgamated by my mind in higher-order mental processing, and it is from this
 and these indications that an internal representation emerges.
 
+February 25th, 2014 <small>Seminar</small>
+------------------------------------------
+
+### S-Representation
+
+-   Two key ideas:
+    1.  **Structural similarity** between the vehicles of representation and the things
+        that they're about, the represented domain.
+    2.  The **use** of the representation.
+        -   Why is this important? 
+        -   If we don't bring in use, what problem are we left with?
+        -   The *state* represents *the map*, the map is used in certain ways
+            to represent the state.
+        -   What *kind* of use? *Surrogative reasoning*, it's use to *say things
+            about*, *make claims about* the *domain*. Doormat not relevant cognitive
+            use.
+        -   **But**, you *could* use the landscape of New Jersey to reason about
+            the map. **But** it does break the symettry because you're using the
+            one about the other. *Minor bullet-biting*.
+
+-   The **map example**, paradigm of this representation
+    -   A map of New Jersey represents some properties and relations, dots represent
+        cities, some features of the dots represent relative size.
+        -   There are other features of the map that don't have any function
+            at all, like perhaps colors.
+        -   Colors might make it more salient to see the county divisions, etc.
+        -   It's not representing any "shared feature" of these counties.
+        -   Not *every* feature maps to a representation, morphism and isomorphism.
+
+    -   Isomorphic
+        -   1 to 1
+        -   Bijection
+
+    -   Representatino on this model is *holistic*.
+
+[./img/family-tree.png]()
+
+-   When Bob is using this, he has to use the connections correctly for surrogatively
+    reasoning.
+    -   The map is the clear case, but the other examples include more and more levels
+        of abstraction. The *interpretation* of the *representation* needs more levels
+        of *abstract*.
+
+[./img/broken-tree.png]()
+
+> How is this going to work for *mental* representation?
+> What would *justify* using "AAAAAA" to mean "John"?
+
+-   **Use**.
+
+#### Shank and Abelson
+
+-   Given very general information, and a story.
+    -   Like how to take a bus to the city, how to get food in a restaurant.
+    -   Lots of information about the situation.
+    -   Then, a story about John and Mary, and the program is asked about the
+        specific story given the general facts.
+
+    > John and Mary when to some resaturant and they both ordered them medium-rare
+    > and got burnt burgers and so they stood up and walked out. **To the machine**:
+    > *Did they leave a tip?*
+
+> If the symbols in the Chinese Room constitute scripts of this sort, then they 
+> serve as representations, not because there is some conscious interpreter 
+> who understands them as such, or because the people who designed the system 
+> intended them that way, but because the overall system succeeds by exploiting 
+> the organizational symmetry that exists between its internal states and some 
+> chunk of the real world.
+
+-   "All Ramsey needs" is *some* morphism that is exploited[^11].
+    -   This isomorophism idea isn't *as general* as Ramsey would like to claim.
+
+### Two Objections and Their Replies 
+
+#### Challenge 1: indeterminacy in S-representation (and IO-representation) content 
+
+-   Pragmatic considerations will come out to privelege on interpretation over the
+    other.
+    -   Ramsey's constraints are *doing a lot of work*,
+        1.  that is the explantory agenda and 
+        2.  how the system is embedded in the environment.
+
+    -   Having two or three candidates left is *pretty good*.
+
+-   It's often said that "task description" are indeterminate.
+    -   The first thing you have to do is consider how the system is working it
+        it's environment.
+    -   Then working out *what it succesful* at.
+        -   "All it has to do is get the unique *rigid* interpretation of the
+            sense data."
+
+-   It's not clear how this account will get misrepresentation.
+-   There's a distinction between theorists *attributing incorrectly* and
+    agents *mispresenting radically*.
+    -   Egan is a theorist of vision, she knows we're pretty good at getting
+        a 3-D representation of a scene, and except for the dark, we're very
+        good at succeeding at this task.
+        -   This is compatible with making *some* mistakes, it's not easily
+            compatible with making *systematic* mistakes.
+        -   But this is going to be a problem regardless of whether you
+            assume success or not (disputed).
+        -   People *are* representing things when they make systematic
+            errors, but how would this explantory account explain this possible
+            phenomena?
+    
+    -   *The project* is to take a phenomena, human conciousness, and explain it.
+        If there is systematic failure, then there is nothing to explain (???).
+        It's not performing a task (???). It's not *succeeding* at a task.
+        -   Success *is a motivation* for looking for representation.
+        -   **Endgoal**: Psychological capacties explanation.
+
+#### Challenge 2: IO-representation and S-representation aren’t sufficiently real
+
+-   "You're *just imposing* your way of understanding on the machine or person,
+    it isn't that *it's there*, you're *assigning* it to physics.[^12]"
+    -   Grouping together physical states is interest-relative, but it is objective
+        that *the states are there*.
+
+-   Identifying real properties of the device, just a real as genes, but if we
+    don't care about diseases then we don't care about biochemical engineering
+    (or similar statements about other fields).
+    -   So atoms *are just not relevant* to what we're trying to explain.
+    -   Unless you're also instrumentalist about gene descriptions and
+        genetics, then you should be a realist about representation in the
+        way it's been built.
+
 <!-- Abbreviations -->
 
 *[RTM]: Representational theory of mind
@@ -1874,6 +2009,8 @@ and these indications that an internal representation emerges.
 *[IPS]: Information processing systems
 
 *[CCTV]: Classicaly computational theory of cognition
+
+*[RR]: Representation Reconsidered
 
 <!-- Footnote -->
 
@@ -1972,3 +2109,22 @@ and these indications that an internal representation emerges.
     is a represents the utterer's inner state, and if you look at the inner state
     you'll find the processes by which the brain finds out and stores facts about
     the body (but more generally the non-mind world).  
+
+[^11]: I think what's confusing here is that the isomorphism being exploited is
+    not a relation between the data structures and human norms about restauraunts,
+    but rather between the input stories and the "background knowledge" data structures.
+
+[^12]: *Of course* (I think) it's real and we're not just assigning something to
+    physics. You can raise skeptical or linguistic or Wittgensteinian worries
+    about words and how we use them, and in fact I think within the realm of
+    those worries you might be right. But the present project is not trying to
+    resolve worries about reductionism or scientism or realism - I think that
+    just as someone who studies grains of sand can grant that there is some 
+    ambiguity about heaps, but when you see a heap of sand you very well know
+    it's a heap of sand. By the same reasoning, I'm okay with being unsure if I
+    can escape that with regards to the ontology of conciousness whether or not
+    there is a brain with a mind or just a series of atoms, but when I'm
+    reasoning about the mind I can put that worry aside. "Keep your metaphysics
+    and linguistics out of my philosophy of mind."
+
+    (Doesn't sound very strong, I know.)
