@@ -1994,6 +1994,35 @@ February 25th, 2014 <small>Seminar</small>
         genetics, then you should be a realist about representation in the
         way it's been built.
 
+February 27th, 2014 <small>Office hourse</small>
+------------------------------------------------
+
+1.  Why is it that with regards to content, that it is implicit that if you can get
+    some sort of notational "picking out" of the unique object in the world you
+    get "objective/naturalistic/determinant" content? Specifically, with regards
+    to representation, why is it important that we "pick out" the unique interpretation
+    of a representation? I'm reminded of Frege trying to uniquely pick out zero for
+    his foundation of algebra. More pointedly: Why is content determinancy content
+    important? We seem to have some algorithm which is more or less succesful.
+2.  Indication *must* be *some* part of representation. For instance, my vision is
+    undoutedly *indicates* to me what is directly in from of me. It's what happens
+    after or with the indication, however. So: *How does inditication fit in with
+    a full story about cognition?* 
+3.  On the scripts and Shank and Abelson. The discussion during seminar made it seem
+    like people were searching between a morphism between "the code" and human norms
+    about restaurants. But I think that this is confusing for a number of reasons.
+    First, in naturalistic terms, these human norms are "located" in our shared, repeated
+    experience over time, but more crucially they're not a physical or fixed object
+    that we can point to. Second, the morphism we're really looking for is with 
+    "the code" and whatever the scientists decided were the present norms, or present
+    norms sufficiently in-stone to merit inclusion in their script, perhaps their
+    in the form of sentences like "first appetizers, second entree, third dessert, etc."
+    Third, there is a level of abstraction between those sorts of sentences and
+    the running machine, namely that just like "4" is translate to "100", "first
+    appetizers" will have some bit-code representation. The relevant morphism, I think,
+    is between the machine's code and the written down norms, the written down norms
+    and the "actual norms."
+
 <!-- Abbreviations -->
 
 *[RTM]: Representational theory of mind

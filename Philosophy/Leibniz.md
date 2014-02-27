@@ -588,25 +588,20 @@ February 4th, 2013 - Reading
     -   Cockerspaniels are a complex idea experienced through the
         concept of dog, along with the other properties of
         cockerspaniels.
-    -   Symbolically, cockerspaniels can be represented as {\$ , q\_1,
-        q\_2, ... , q\_n \$} where qs are qualities unique to
+    -   Symbolically, cockerspaniels can be represented as $$ , q_1,
+        q_2, ... , q_n $$ where qs are qualities unique to
         cockerspaniels and "dog" is the set of all concepts in dog.
     -   The concept of dog is a complex idea experienced through other
-        ideas, but it does not need to be defined here. Let {dog} be the
+        ideas, but it does not need to be defined here. Let $dog$ be the
         set of all dog qualities.
-    -   Because {dog} \$ \$ {\$ , q\_1, q\_2, ... , q\_n \$}, all cocker
+    -   Because $dog$ $ $ $$ , q_1, q_2, ... , q_n $$, all cocker
         spaniels are dogs.
 
--   All triangles have three angles.
-    -   Triangle's are complex ideas experienced through: {shape,
-        polygon, three angles, three edges, ...}
-    -   {three angles}  ∈  {shape, polygon, three angles, three edges,
-        ...}
-    -   So \$ x \$ if x is a triangle \$ \$ x has three angles
+
 
 -   Water is liquid at room temperature
-    -   We experience water through the simpler concepts of: {chemical
-        compound, 2 hydrogen 1 oxygen}
+    -   We experience water through the simpler concepts of: $chemical
+        compound, 2 hydrogen 1 oxygen$
     -   You cannot prove this with Leibnizian logic because you need
         causation.
     -   The concept of liquid is not "contained within" the concept of
@@ -620,7 +615,7 @@ February 4th, 2013 - Reading
 -   Creatures are contingent in that their existence does not follow
     from their essence.
     -   This is what it must be to be mortal.
-    -   Leibniz think that god's essence \$ \$ god's being.
+    -   Leibniz think that god's essence $ $ god's being.
 
 -   Necessary truths are those that can be demonstrated through analysis
     of terms.
@@ -724,8 +719,8 @@ February 4th, 2013 - Lecture: The infinite analysis theory of contingent truth
 -   He starts out by saying every proposition is either true or false,
     but not both.
 -   There is no proposition that is indeterminate.
--   If a proposition p is false, then the contradictory of p is true. \$
-    p \$ and ¬*p* are contradictory.
+-   If a proposition p is false, then the contradictory of p is true. $
+    p $ and ¬*p* are contradictory.
     -   Law of non-contradiction
     -   Interestingly, this law cannot be proved, because you'd have to
         use propositions.
@@ -1692,16 +1687,6 @@ February 25th, 2013 - Reading: Chris Swoyer, 'Leibnizian Expression', *Journal o
 
 #### Generalizing the Account of Perspectival Expression
 
--   A function,  \* , from the constituents of one thing, *O*, to those
-    of a second, *E*, preserves the *n*-place relation *R*<sup>*O*</sup>
-    of *O* just in case, for each *n*-tuple of constituents
-     \< *X*<sub>1</sub>. . . *X*<sub>*n*</sub> \>  of *O*:
-    -   (PR) *R*<sup>*O*</sup>*x*<sub>1</sub>. . . *x*<sub>*n*</sub> if
-        and only if
-        *R*<sup>*E*</sup>*x*<sub>1</sub> \* . . . *x*<sup>*a*</sup>\*s\*\*t*<sub>*n\*</sub>
-    -   *R*<sup>*E*</sup> is the surrogate for the original relation
-        *R*<sup>*O*</sup>
-
 -   Isomorphism is too much to expect from an expression
     -   For example, a circle does not have enough of it's relations
         preserved when projected into a parabola.
@@ -2542,7 +2527,7 @@ April 8th, 2013 - Handout
             concur—so that the entelechy is joined with a mass which
             comprises many monads?
 
-                {Entekchy  + aggregate of monads} = monad
+                $Entekchy  + aggregate of monads$ = monad
 
             implies that the monad is an embodied entelchy. On this
             view, there is one substance.
@@ -2550,10 +2535,10 @@ April 8th, 2013 - Handout
         -   Or, does the primitive power exclude other monads so that it
             pertains to that one entelechy alone?
 
-                { Entelechy 
+                $ Entelechy 
                 + primary passive power exclusive of monads, 
                   but related to the agg of monads
-                } = monad
+                $ = monad
 
             implies that monad is a simple substance, comprising no
             other ends or monads; its passive power is somehow related
@@ -2580,7 +2565,7 @@ April 8th, 2013 - Handout
         whole mass, which is the aggregate containing many
         substances—this comports with the 1-substance view.,
 
-            {Ent + body=aggregate} 
+            $Ent + body=aggregate$ 
 
         makes a monad; monads are embodied entelechies; an entelechy
         alone is not yet a substance.
@@ -2592,14 +2577,14 @@ April 8th, 2013 - Handout
         and found only in that monad--=a lthough the primitive passive
         power is somehow related to the aggregate.
 
-            {Ent+PPF exclusive of all monads} 
+            $Ent+PPF exclusive of all monads$ 
 
         -   makes a monad; monads are not embodied ents.
 
     -   But they comprise passivity which is related to the aggregate of
         monads which concur in the organic machine.
 
-            {Dominant monad + organic machine, infinitely composed of org machines} make a corporeal substance, or animal. 
+            $Dominant monad + organic machine, infinitely composed of org machines$ make a corporeal substance, or animal. 
 
         -   Leibniz may have hesitated, but he came down for the theory
             that monads are simple substances, and corporeal substances
@@ -3114,17 +3099,17 @@ April 22nd, 2013 - Passages
 
 4.  A. Within a human mind, there are sets of ideas so related to
     thoughts of propositional truths that an ordered set of ideas
-    {1,2,3,…}operating in accord with a tendency to produce thoughts of
-    propositions framed by an ordered set of connectives {c, d, e, . . .
-    } has this relation R to acts of thinking a proposition P just in
-    case {1, 2 ,3, . . .} and {c, d, e, . . . } contain all the ideas
+    $1,2,3,…$operating in accord with a tendency to produce thoughts of
+    propositions framed by an ordered set of connectives $c, d, e, . . .
+    $ has this relation R to acts of thinking a proposition P just in
+    case $1, 2 ,3, . . .$ and $c, d, e, . . . $ contain all the ideas
     and proposition framing tendencies that are essentially individually
     necessary and jointly sufficient to cause thoughts of P.
 
 B. In God’s understanding sets of ideas are related to truths in such a
-way that an ordered set of ideas {A, B, C, . . .} and an ordered set of
-connectives {c, d, e, . . .}has R\* to a truth just in case {A, B, C, .
-. . }and {c, d, e, . . .} contain all and only the ideas and connectives
+way that an ordered set of ideas $A, B, C, . . .$ and an ordered set of
+connectives $c, d, e, . . .$has R\* to a truth just in case $A, B, C, .
+. . $and $c, d, e, . . .$ contain all and only the ideas and connectives
 from which the truth results.
 
 April 22nd, 2013 - Lecture

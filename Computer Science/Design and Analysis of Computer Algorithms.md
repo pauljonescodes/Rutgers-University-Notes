@@ -13,36 +13,28 @@ algorithmic topics and applications, as time permits:
     algorithm design, complexity, asymptotics, induction, and
     randomization. Fibonacci numbers. Euclidean gcd algorithms.
     Universal hashing.
-
 -   Divide and conquer. Fast integer multiplication; recurrences; the
     master theorem; mergesort; randomized median and selection
     algorithms; quicksort; fast matrix multiplication.
-
 -   Sorting. Lower bounds for comparison-based sorting; binsort and
     radix sort.
-
 -   Dynamic programming; Paradigm of SPs in DAGs; longest increasing
     subsequence; approximate string matching; integer and (0,1) knapsack
     problems; chain matrix multiplication; single-pair reliable SPs,
     all-pairs SPs; independent sets.
-
 -   Graph search. Graph classes and representations; depth first search
     in undirected and directed graphs; topological search; strongly
     connected components. Breadth first search and layered DAGs.
-
 -   Shortest Paths (SPs) in digraphs. Single-source SPs for nonnegative
     edge weights; priority queues and Dijkstra; SPs in DAGs;
     single-source SPs for general edge weights. Maximum adjacency
     search.
-
 -   Greedy algorithms. Spanning trees and cuts, analysis of union-find
     and path compression; MST algorithms; randomized algorithm for
     global minimum cuts; approximate set cover.
-
 -   Network flows. Max flow min cut theorem and integrality; fast
     algorithms; disjoint (s,t)-dipaths; maximum bipartite matching &
     minimum vertex cover. Global minimum cuts.
-
 -   Elements of NP-completeness & problem reductions.
 -   NP-hard problems. Search and selected approximation algorithms.
 
@@ -296,12 +288,10 @@ January 24th, 2014 - Lecture
 -   He was an Italian mathematician in the 13th century who designed a
     famous sequence of numbers.
 
-    $$ 0, 1, 2, 3, 5, 8, 13, ... $$
-
+    $$0, 1, 2, 3, 5, 8, 13, ...$$
     -   We can design an algorithm to compute this.
 
-        $$F_n = F_{n - 1} + F_{n - 2} $$
-
+        $$F_n = F_{n - 1} + F_{n - 2}$$
     -   And this can be expressed as a psuedocode function
 
             fib(n) {
@@ -314,8 +304,7 @@ January 24th, 2014 - Lecture
 
     -   $T(n)$ grows at least as much as the value of $Fn$.
 
-        $$ F_n \approx 2^{0.694n} $$
-
+        $$F_n \approx 2^{0.694n}$$
         -   This grows exponetially as a function of n.
 
 -   If today, you can compute the 100th number, then after a year,
@@ -360,7 +349,7 @@ January 24th, 2014 - Lecture
 
     -   We need to think in terms of the representation of numbers.
         -   For example, a number *N* in base *b*.
-        -   You need $\lceil{log_b (N+1) \rceil$ digits.
+        -   You need $\lceil log_b (N+1) \rceil$ digits.
 
 -   If cost of addition is linear to the size of bit representation,
     what is the cost of `fib(n)`?
@@ -415,8 +404,7 @@ January 29th, 2013 <small>Lecture</small>
 -   Notice that the third row is ignored in both varieties of
     multiplication.
 
-<!--    $$ x \times y =\begin{cases} 2 (x \times \lfloor \frac{y}{2} \rfloor, & \text{if $y$ is even}.\\ x + 2(x \times \lfloor \frac{y}{2} \rfloor, & \text{if $y$ is odd}. \end{cases} $$
--->
+<!--    $$x \times y =\begin{cases} 2 (x \times \lfloor \frac{y}{2} \rfloor, & \text{if $y$ is even}.\\ x + 2(x \times \lfloor \frac{y}{2} \rfloor, & \text{if $y$ is odd}. \end{cases}$$-->
 
 -   The expensive operation is the addition if $y$ is odd.
     So O(n) due to addition.
@@ -424,15 +412,13 @@ January 29th, 2013 <small>Lecture</small>
 
 ### Modula Arithmetic
 
-$$ O(n) $$
-
+$$O(n)$$
 ### Modulo Multiplication
 
 -   The product can be in the order of $(N - 1)^2$.
     -   The product will be at most *2N* bits long.
 
-$$ O(n^2) $$
-
+$$O(n^2)$$
 ### Problems
 
 Primality 
@@ -461,7 +447,7 @@ $$f(n) = O(g(n))$$
 > G is upper upper bound for F if and only if there exists
 > a constant and $n_0$ such that:
 >
-> $ 0 \le f(n) \le c g(n) $
+> $0 \le f(n) \le c g(n)$
 
 **O(f) grows no faster than ..**
 
@@ -519,31 +505,28 @@ January 31st, 2014 <small>Lecture</small>
     -   So lets pick e = 3 is sufficient??
         -   So what is the valye of d?
 
-            $$d \equiv e^{-1} \bmod (p - 1)(q - 1) \equiv 3^{-1} \bmod 40 $$
-
+            $$d \equiv e^{-1} \bmod (p - 1)(q - 1) \equiv 3^{-1} \bmod 40$$
     -   This means that 3 times d is equal to modulo 40, which is the
         modular inverse.
         -   For d = 27, we have 3 times 27 which equals 81 or modulo 40.
 
     -   For any message, x modula 55, ecryption is 
 
-        $$ y = x^3 \bmod 55 $$
+        $$y = x^3 \bmod 55$$
 
     -   For any message, decryption is
 
-        $$ x = y^{27} \bmod 55 $$
+        $$x = y^{27} \bmod 55$$
 
 ### Proof of property
 
 -   We have to show that
 
-    $$(x^e)^d \bmod N \equiv x \bmod N $$
-
+    $$(x^e)^d \bmod N \equiv x \bmod N$$
     -   The following are true if e and d have been selected
         as specific
 
-        $$ e \times d \equiv 1 \bmod (p - 1)(q - 1) \equiv e \times d = k (p - 1)(q - 1) + 1 $$
-
+        $$e \times d \equiv 1 \bmod (p - 1)(q - 1) \equiv e \times d = k (p - 1)(q - 1) + 1$$
 > **Fermat's Little Theorem**: If *p* is prime, then
 > $\forall 1 \le a \le p$:
 > 
@@ -602,12 +585,9 @@ February 7th, 2013 <small>Lecture</small>
 
 -   Pick 2 large *n*-bit primes.
 
-    $$ N = pq $$
-
-    $$ e : \gcd(e, (p - 1), (q - 1)) = 1 $$
-
-    $$ d : d = e^{-1} \bmod (p - 1) (q - 1) $$
-
+    $$N = pq$$
+    $$e : \gcd(e, (p - 1), (q - 1)) = 1$$
+    $$d : d = e^{-1} \bmod (p - 1) (q - 1)$$
 ### Greatest Common Divisor
 
 -   If you could perform factoring efficiently, the you could solve
@@ -654,12 +634,10 @@ February 12th, 2014 <small>Lecture</small>
 > **Lagrange's Prime Number Theorem**: Let $\pi(x)$ be the number of primes
 > $\le x$.
 >
-> $$ \pi(x) \approx \frac{x}{\ln(x)} $$
->
+> $$\pi(x) \approx \frac{x}{\ln(x)}$$>
 > Or more precisely,
 >
-> $$ \lim_{x \to \infty} \frac{\pi(x)}{\frac{x}{\ln(x)}} = 1 $$
-
+> $$\lim_{x \to \infty} \frac{\pi(x)}{\frac{x}{\ln(x)}} = 1$$
 ### Hashing <small>Another Application of Number-Theoretic Algorithms</small>
 
 -   **Objective**: Store and efficiently retrieve IP addresses of the form
@@ -694,14 +672,13 @@ February 12th, 2014 <small>Lecture</small>
     all input data.
 -   **Idea**: Pick from a family of hash functions randomly so that the
     probability of 2 elements to be mapped to the same index is
-    $ \frac{1}{257} $ size of the array.
+    $\frac{1}{257}$ size of the array.
 
--   Every IP address is a tuple : $ \lbrace x_1, x_2, x_3, x_4 \rbrace $
-    where $ x_1 \in [1, 256] $.
+-   Every IP address is a tuple : $\lbrace x_1, x_2, x_3, x_4 \rbrace$
+    where $x_1 \in [1, 256]$.
     -   Consider the has function
 
-        $$ h_\alpha (x_1, x_2, x_3, x_4) = \sum_{i = 1}^{4} \alpha_1 \times x_i \mod N $$
-
+        $$h_\alpha (x_1, x_2, x_3, x_4) = \sum_{i = 1}^{4} \alpha_1 \times x_i \mod N$$
         If you pick the numbers alpha-1 at random, then $h_\alpha$ is likely
         to be good.
 
@@ -718,9 +695,9 @@ February 12th, 2014 <small>Recitation</small>
     event is.
     -   We have some axioms. The axioms of probability.
 
-> 1.  $ 1 \ge P(A) \ge 0 $
-> 2.  $ P(S) = 1 $
-> 3.  $ P(A \bigcup B) = P(A) + P(B)$ if *A* and *B* are mutually exclusive.
+> 1.  $1 \ge P(A) \ge 0$
+> 2.  $P(S) = 1$
+> 3.  $P(A \bigcup B) = P(A) + P(B)$ if *A* and *B* are mutually exclusive.
 
 #### Event of throwing a dice
 
@@ -733,8 +710,7 @@ February 12th, 2014 <small>Recitation</small>
 
 > **Bayes' Theorem**:
 >
-> $$ P(A | B) = \frac{P(B | A) \times P(A)}{P(B)} $$
-
+> $$P(A | B) = \frac{P(B | A) \times P(A)}{P(B)}$$
 February 14th, 2014 <small>Lecture</small>
 ------------------------------------------
 
@@ -761,10 +737,7 @@ February 14th, 2014 <small>Lecture</small>
             and *x* "sub right", where if it's 10 bits, you have
             two five bit numbers.
 
-            $$ x = 2^{\frac{n}{2}} \times x_L + x_R $$
-            $$ y = 2^{\frac{n}{2}} \times y_L + y_R $$
-            $$ x \times y = (2^{\frac{n}{2}} \times x_L + x_R)(2^{\frac{n}{2}} \times y_L + y_R) $$
-
+            $$x = 2^{\frac{n}{2}} \times x_L + x_R$$            $$y = 2^{\frac{n}{2}} \times y_L + y_R$$            $$x \times y = (2^{\frac{n}{2}} \times x_L + x_R)(2^{\frac{n}{2}} \times y_L + y_R)$$
 -   Lets think about the new operations and how much they
     cost.
     -   In the above representation, we have:
@@ -775,8 +748,7 @@ February 14th, 2014 <small>Lecture</small>
 
     -   We can define a recursive relation:
 
-        $$ T(n) = 4 \times T(\frac{n}{2}) + O(n) $$
-
+        $$T(n) = 4 \times T(\frac{n}{2}) + O(n)$$
 -   Gauss observation reowkred the above expression so as to make use of
     only 3 of the "n over two" multiplications.
 -   At the $(log_2 n$)^{2n}$ level, we get down to size-1.
@@ -784,7 +756,7 @@ February 14th, 2014 <small>Lecture</small>
     -   At each level you have a linear cost for combining the subproblems.
     -   At depth *k*,
 
-        $$ 3^k \times O(\frac{n}{2^k}) = (\frac{3}{2})^k \times O(n)$$
+        $$3^k \times O(\frac{n}{2^k}) = (\frac{3}{2})^k \times O(n)$$
 
     -   Now, we've managed to decrease the run-time to something like *n* to-the
         1.59 as opposed to *n*-squared.
@@ -795,16 +767,14 @@ February 14th, 2014 <small>Lecture</small>
         matters.
     -   As a matter of fact, when you have something like ...
 
-        $$ T(n) = \alpha \times T(\frac{n}{b}) + O(n^d) $$
-
+        $$T(n) = \alpha \times T(\frac{n}{b}) + O(n^d)$$
 ### Sorting Problems
 
 > **Master theorem**: If you have a recurisve cost-function of
 > the form $T(n) = a \times T(\frac{n}{b}) + O(n^2)$ then:
 >
 
-<!-- $$ T(n) =   \begin{cases} O(n^d) & \text{if } d \lt log_b a \\ O(n^d \log(n)) & \text{if } d = \log_b a \\ O(n^{log_b a} & \text{if } d \lt log_b a \end{cases} $$
--->
+<!-- $$T(n) =   \begin{cases} O(n^d) & \text{if } d < log_b a \\ O(n^d \log(n)) & \text{if } d = \log_b a \\ O(n^{log_b a} & \text{if } d < log_b a \end{cases}$$-->
 
 -   Assume that *n* is a power of *b* for convinience.
     -   The size of the problem decreases by *b* at every level.
@@ -813,26 +783,22 @@ February 14th, 2014 <small>Lecture</small>
     -   At level *k* we have $a^k$ subproblems of size $\frac{n}{b^k}$
         -   Work at level *k*:
 
-            $$ a^k \times O((\frac{n}{b^k})^d) = O(n^d) \times (\frac{a}{b^d})^k $$
-
+            $$a^k \times O((\frac{n}{b^k})^d) = O(n^d) \times (\frac{a}{b^d})^k$$
 #### Three cases
 
-1.  If $\frac{a}{b^d} \lt 1$, series is decreasing.
+1.  If $\frac{a}{b^d} < 1$, series is decreasing.
     -   The "first term" dominates.
     -   Running time:
 
-        $$ O(n^d) $$
-
-2.  If $\frac{a}{b^d} \gt 1$, series is increasing
+        $$O(n^d)$$
+2.  If $\frac{a}{b^d} > 1$, series is increasing
     -   The "last term dominates"
     -   Running time:
 
-        $$ O(n^{\log_b a}) $$
-
+        $$O(n^{\log_b a})$$
 3.  If $\frac{a}{b^d} = 1$, all terms are equivilent.
 
-    $$ O(n^d) = O(n^{\log_b a}) $$ 
-
+    $$O(n^d) = O(n^{\log_b a})$$
 February 16th, 2014 <small>Reading</small>
 ------------------------------------------
 
@@ -942,8 +908,7 @@ Primality
         with lengths of up to *2n* bits (taking the shiting into account).
     -   The total time to add up these rows, doing two numbers at a time:
 
-        $$ O(n) + O(n) + ... + O(n) $$
-
+        $$O(n) + O(n) + ... + O(n)$$
         *(n - 1)* times.
 
         -   This is $O(n^2)$, or *quadratic* in the size of the inputs.
@@ -1029,7 +994,7 @@ Primality
 
 -   One way to think of modular arithmetic deals with all the integers,
     but divides them in *N* *equivilence classes*, each of the form
-    $ \lbrace i + kN : k \in \mathbb{Z} \rbrace $ for some *i* between ) and
+    $\lbrace i + kN : k \in \mathbb{Z} \rbrace$ for some *i* between ) and
     *N - 1*.
     -   For example, there are three equivilence classes of modulo 3:
 
@@ -1039,12 +1004,10 @@ Primality
 
         Any member of the class is substituable for any other.
 
-> **Substitution rule**: If $ x \equiv x' ( \bmod N)$ and $y \equiv y' (\bmod N)$, then:
+> **Substitution rule**: If $x \equiv x' ( \bmod N)$ and $y \equiv y' (\bmod N)$, then:
 >
-> $$ x + y \equiv x' + y' (\bmod N) $$
-> 
-> $$ xy \equiv x' y' (\bmod N) $$
-
+> $$x + y \equiv x' + y' (\bmod N)$$> 
+> $$xy \equiv x' y' (\bmod N)$$
 -   It is not hard to check that in modular arithmetic, the usual associate, commutative,
     and distributive properties of addition and multiplication continue to apply.
     -   For instance:
@@ -1054,8 +1017,7 @@ Primality
 
     -   You can simplify big numbers with this. Witness:
 
-        $$ 2^{345} \equiv (2^5)^{69} \equiv 32^{69} \equiv 1^69 \equiv 1 (\bmod 31) $$
-
+        $$2^{345} \equiv (2^5)^{69} \equiv 32^{69} \equiv 1^69 \equiv 1 (\bmod 31)$$
 ##### Modular addition and multiplication
 
 -   To *add* two numbers "*x* and *y* modulo *N*", we start with regular addition.
@@ -1121,8 +1083,7 @@ Primality
         -   Calculate $x^y \bmod N$ by repeatedly multiplying by *x* modulo *N*.
             The resulting sequence of intermediate products,
 
-            $$ x \bmod N \to x^2 \bmod N \to x^3 \bmod N \to ... \to x^y \bmod N $$
-
+            $$x \bmod N \to x^2 \bmod N \to x^3 \bmod N \to ... \to x^y \bmod N$$
             consists of number that are smaller than *N*, and so the individual
             multiplications do not take too long.
         -   But there's a problem! If *y* is 500 bits long, we need to perform
@@ -1132,13 +1093,11 @@ Primality
 -   Luckily, we can do better.
     -   Starting with *x* and *squaring repeatedly* modulo *N*, we get:
 
-        $$ x \bmod N \to x^2 \bmod N \to \cdots \to x^{2^{\log y}} \bmod N $$
-
+        $$x \bmod N \to x^2 \bmod N \to \cdots \to x^{2^{\log y}} \bmod N$$
     -   Each takes $O(log^2 N)$ to compute, with only *log y* multiplications.
         -   To determine this, multupli together these powers.
 
-            $$ x^{25} = x^{11001_2} = x^{10000_2} \times x^{1000_2} \times x^{1_2} = x^{16} \times x^8 \times x^1 $$
-
+            $$x^{25} = x^{11001_2} = x^{10000_2} \times x^{1000_2} \times x^{1_2} = x^{16} \times x^8 \times x^1$$
         -   A polynomial time algorithm
 
 -   We can package this idea in a simply recusrive algorithm described at this begninng
@@ -1158,7 +1117,7 @@ Primality
 -   The most obvious approach is to first factor *a* and *b*, and the multiply
     together their common factors.
     -   For instance, $1035 = 3^2 \cdot 5 \cdot 23$ and $759 = 3 \cdot 11 \cdot 23$,
-        so their GCD is $ 3 \cdot 23 = 69 $. 
+        so their GCD is $3 \cdot 23 = 69$. 
     -   However, we have no efficient algorithm for factoring.
         -   *Is there some other way?*
 
@@ -1235,13 +1194,11 @@ Example
 :   -   Continuing with our previous example, supose we computer $1^{-1} \bmod 25$.
         -   Using the extended Euclid algorithm we find that
 
-            $$ 15 \cdot 25 - 34 \cdot 11 = 1 $$
-
+            $$15 \cdot 25 - 34 \cdot 11 = 1$$
         -   Reducing both sides modulo 25, wh have
 
-            $$ -34 \cdot 11 \equiv 1 \bmod 25 $$
-
-        -   Therefore, $-34 \equiv 16 \bmod 25$ is the inverse of $ 11 \bmod 25$.
+            $$-34 \cdot 11 \equiv 1 \bmod 25$$
+        -   Therefore, $-34 \equiv 16 \bmod 25$ is the inverse of $11 \bmod 25$.
 
 Modular division theorem
 
@@ -1259,10 +1216,9 @@ Modular division theorem
 
 Fermat's little theorem
 
-:   If $ p $ is prime, then for every $ 1 \le a \lt p $
+:   If $p$ is prime, then for every $1 \le a < p$
 
-    $$ a^{p - 1} \equiv 1 (\bmod p) $$
-
+    $$a^{p - 1} \equiv 1 (\bmod p)$$
 :   ~~~
     function primality(N) {
         a = random(less than N); 
@@ -1293,12 +1249,12 @@ Fermat's little theorem
 Lemma 
 
 :   If $a^{N - 1} \not\equiv 1 \bmod N$ for some *a* relatively prime to *N*, then it
-    must hold for at least half the choices of $a \lt N$.
+    must hold for at least half the choices of $a < N$.
 
 -   We are ignoring Charmichael numbers, so we now assert,
-    -   If *N* is prime, then $a^{N - 1} \equiv 1 \bmod N $ for all *a* less than *N*.
-    -   If *N* is not prime, then $ a^{N - 1} \equiv 1 \bmod N $ for at most half of
-        the values of $a \lt N$.
+    -   If *N* is prime, then $a^{N - 1} \equiv 1 \bmod N$ for all *a* less than *N*.
+    -   If *N* is not prime, then $a^{N - 1} \equiv 1 \bmod N$ for at most half of
+        the values of $a < N$.
 
 -   The probability of our primality algorithm returning yes when a number is prime
     is 1, that is it happens 100% percent of the time.
@@ -1339,8 +1295,7 @@ Lagrange's prime number theorem
 :   Let $\pi(x)$ be the number of primes $\le x$. Then, $\pi(x) \approx \frac{x}{\ln n}$,
     or more precisely,
 
-    $$ \lim_{x \to \infty} \frac{\pi(x)}{(x / \ln x)} = 1 $$
-
+    $$\lim_{x \to \infty} \frac{\pi(x)}{(x / \ln x)} = 1$$
     Such abundance makes it simple to generate a random *n*-bit prime:
 
     -   Pick a random *n*-bit number *N*.
@@ -1352,7 +1307,7 @@ Lagrange's prime number theorem
         least $\frac{1}{n}$, then it will certainly pass the test.
     -   So on each iteration, this procedure has at least a $\frac{1}{n}$ chance of
         halting.
-    -   Therefore, on average it will halt within $ O(n) $ rounds.
+    -   Therefore, on average it will halt within $O(n)$ rounds.
 
 -   Next, exactly which primality test should be used?
     -   In this application, since the number we are testing for primality are chosen
@@ -1372,8 +1327,7 @@ Lagrange's prime number theorem
         that pass the test.
         -   Thus, the chance of erronesouly outputting a composite numbers is
             
-            $$ 20,000 / 10^9 = 2 \times 10^{-5} $$
-
+            $$20,000 / 10^9 = 2 \times 10^{-5}$$
 #### Cryptography
 
 -   The next topic is the RSA cryptosystem.
@@ -1438,7 +1392,7 @@ Alice                                                Bob
     -   Think of messages from Alice to Bob as numbers modulo *N*.
         -   Messages larger than *N* are broken into smaller peices.
 
-    -   The encryption function will the be a bijection on $ \lbrace 0, 1, \cdots N - 1\rbrace $
+    -   The encryption function will the be a bijection on $\lbrace 0, 1, \cdots N - 1\rbrace$
         -   The decryption function will be its inverse.
 
 Property
@@ -1448,20 +1402,18 @@ Property
 
     1.  The mapping $x \mapsto x^e \bmod N$ is a bijection on 
     
-        $$ \lbrace 0, 1, \cdots , N - 1 \rbrace $$
-    
+        $$\lbrace 0, 1, \cdots , N - 1 \rbrace$$    
     2.  Moreover, the inverse mapping is easily realized: led *d* be the inverse of
         *e* modulo *(p - 1)(q - 1)*. Then for $x \in \lbrace 0, 1, \cdots N - 1 \rbrace$,
 
-        $$ (x^e)^d \equiv x \bmod N $$
-
+        $$(x^e)^d \equiv x \bmod N$$
 > **Example**
 >
 > -   **Bob chooses his public and secret keys**
 >     -   He starts by picking two large (*n*-bit) random primes *p* and *q*.
 >     -   His public key is $(N, e)$ where $N = pq$ and $e$ is a $2n$-bit number
 >         relatively prime to $(p - 1)(q - 1)$.
->         -   A common choise is $ e = 3 $ because it permits fast encoding.
+>         -   A common choise is $e = 3$ because it permits fast encoding.
 >  
 >     -   His secret key is $d$, the inverse of $e$ modulo $(p - 1)(q - 1)$, computed
 >         using the extended Euclid algorithm.
@@ -1533,10 +1485,10 @@ Algorithm | Best time | Average time | Worst time | Memory | Stable | Method | N
 Bubble sort | $n$ | $n^2$ | $n^2$ | $1$ | Yes | Swapping elements | Simple implementation
 Selection sort | $n^2$ | $n^2$ | $n^2$ | $1$ | No | Selection | Stable with $O(n)$ 
 Insertion sort | $n$ | $n^2$ | $n^2$ | $1$ | Yes | Insertion | $O(n + d)$ where $d$ inversions
-Heapsort | $n \log n$ | $n \log n$ | $n \log n $ | $1$ | No | Selection| 
+Heapsort | $n \log n$ | $n \log n$ | $n \log n$ | $1$ | No | Selection| 
 Merge sort | $n \log n$ | $n \log n$ | $n \log n$ | Worst is $n$ |  Yes | Merging | Highly parralelizable 
-In-place Merge sort |  |  | $n (\log n)^2 $ | $1$ | Yes | Merging | Implemented in STL
-Quicksort | $n \log n $ | $n \log n$ | $\log n$ | $\log n$ | Depends | Partitioning | Usually done in place 
+In-place Merge sort |  |  | $n (\log n)^2$ | $1$ | Yes | Merging | Implemented in STL
+Quicksort | $n \log n$ | $n \log n$ | $\log n$ | $\log n$ | Depends | Partitioning | Usually done in place 
 
 February 21st, 2014 <small>Lecture</small>
 ------------------------------------------
@@ -1615,8 +1567,477 @@ $$T(n) = \Theta(n) + \sum_{i = 0}^{n  - 1} O(O_i^2)$$
 -   The theta is the cost of generating the bueckets and assigning elements to
     buckets.
 
+February 25th, 2014 <small>Practice Questions and Reading Material</small>
+--------------------------------------------------------------------------
+
+### Introduction to Concepts of Algorithmic Design, Computing Running Times
+
+#### Reading material
+ 
+-   Chapters 0.1, 0.2, 0.3 from DPV
+-   Chapters 1.2, 3.1, 3.2 from CLRS2
+
+#### Practice questions
+
+-   **You may be provided with an algorithm for computing the $n$th Fibonacci
+    number and then be asked to compute its running time (think in terms of
+    it complexity). Alternatively, you may be asked to provide an efficient 
+    algorithm for computing Fibonacci numbers.**
+
+    ~~~
+    function fib1(n) 
+    if n = 0: return 0
+    if n = 1: return 1
+    return fib1(n - 1) + fib1(n - 2)
+    ~~~
+
+    ~~~
+    (n) function fib2
+    if n=0 return 0
+    create an array f[0 . . . n] f[0] =0,f[1] =1
+    for i = 2 . . . n:
+        f[i] = f[i − 1] + f[i − 2] 
+    return f[n]
+    ~~~
+
+-   **Give a justification why imporovement in hardware are typically not
+    sufficient to make an algorithm with exponential running time reasonably
+    tractable.**
+
+    > But technology is rapidly improving—computer speeds have been doubling 
+    > roughly every 18 months, a phenomenon sometimes called Moore’s law. 
+    > With this extraordinary growth, perhaps fib1 will run a lot faster on 
+    > next year’s machines. Let’s see—the running time of fib1(n) is proportional 
+    > to $2^{0.694n} \approx (1.6)^n$, so it takes 1.6 times longer to compute 
+    > $F_{n+1} than F_n$. 
+    > And under Moore’s law, computers get roughly 1.6 times faster each year. 
+    > So if we can reasonably compute $F_{100}$ with this year’s technology, then 
+    > next year we will manage $F_{101}$. And the year after, $F_{102}$. And so on: 
+    > just one more Fibonacci number every year! Such is the curse of exponential time.
+
+-   We have 3 algorithms for the same problem where the first runs in exponential
+    time, the second in logarithmic, and the thir in linear time as a function of
+    the same input. Which algorith do you prefer to use?
+
+    Name        | Running time
+    ------------|-------------
+    Exponential | $O(a^n)$
+    Logarithmic | $(\log(n))$
+    **Linear**  | $O(n)$
+
+-   **You may be provided running times of different algorithms and asked to show
+    which running time dominates asymptotically.**
+-   **Provide the definition of *O*-notation (or Theta or Omega).**
+
+    > Let $f(n)$ and $g(n)$ be functions from positive integers to positive 
+    > reals. We say f = O(g) (which means that “$f$ grows no faster 
+    > than $g$”) if there is a constant $c > 0$ such 
+    > that $f(n) \le c \times g(n)$.
+
+    -   Just as $O(\cdot)$ is an analog of $\le$, you can define the other 
+        analyses as such:
+        -   $f = \Omega(g)$ means $g = O(f)$.
+        -   $f = \Theta(g)$ means $f = O(g)$ and $f = \Omega(g)$.
+
+-   **You may be provided certain statements about asymptotic analysis of running
+    times and asked to show if they are correct or not. For instance, 
+    "n to the a dominates n to the b if a is greater than b.**
+
+#### Related exercises
+
+-   DPV: 0.1, 0.2, 0.3
+-   CLRS2: 3.1-1, 3.1-2, 3.1-3, 3.1-4, 3.2-4
+-   CLRS2: 1.1, 3-2, 3-3, 3-6
+
+### Number Theoretic Algorithms <small>Complexity of adding and multiplying 2 n-bit numbers, modulo arithmetic</small>
+
+#### Reading material
+
+-   Chapters 1.1,1.2 from DPV
+-   Chapter 31.1 from CLRS2
+
+#### Practice questions
+
+-   **What is the "primality" problem and what is the "factoring" problem? Which one
+    of the two is tractable? What are the advantages of the intractability of the
+    other problem?**
+
+    Factoring problem 
+
+    :   Given a number $N$, express it as a product of prime factors.
+
+    :   Computationally intractable, fastest is exponential. This makes RSA
+        work because keys and factoring large multiples.
+
+    Primality problem
+
+    :   Given a number $N$, determine whether it is a prime.
+
+    :   Computationally tractable.
+
+-   **How many digits do you need to represent a number *N* in base *b*?**
+    -   With $k$ digits in base $b$ we can express numbers up to $b^k - 1$.
+        -   For instance, in decimal, three digits get us all the way up to
+            $999 = 10^3 - 1$.
+
+    -   By solving for $k$, we find that $\lceil \log_b(N + 1) \rceil$
+        are need to write $N$ in base $b$.
+
+-   **How much does the size of the representation of a number changes when we change
+    bases?**
+    -   Recall the rule for converting logarithms from base $a$ to base $b$:
+
+        $$\log_b N = (log_a N) / (log_a b)$$
+
+        -   So the size of integer $N$ in base $a$ is the same as its size in base $b$,
+            times a constant factor $log_a b$.
+        -   In big-O, the base is irrelevant, and we write the size simply as
+
+            $$O(\log N)$$
+
+-   **What is the running time of the addition operation of a number for two *n*-bit
+    numbers (think in terms of bit complexity)?**
+    -   Suppose $x$ and $y$ are $n$ bits long.
+    -   The sume of $x$ and $y$ is *at most* $n + 1$ bits long.
+    -   Each bit of the sume is computed in a fixed amount of time.
+    -   The total running time for addition will be
+
+        $$c_0 + c_1 n$$
+
+        In other words, *linear*.
+
+        $$O(n)$$
+
+-   **What is the running time of the tradition multiplication operation taught in
+    grade school for two *n*-bit numbers (think in terms of *n*-bit complexit)?**
+    -   To compute each row, either "X" or "0", left-shifted
+    -   The rows are in the order of $2n$.
+    -   You have to sum them up, and you do this pairwise.
+    -   If you do $n$ times an operation which costs $n$, your running time is going
+        to be $n^2$.
+
+-   **Provide a recursive formula for the multiplication of two numbers.**
+
+        function multiplication(x, y) {
+            if (y == 1) {
+                return x;
+            }
+
+            else {
+                return x + multiplication(x, y - 1);
+            }
+        }
+
+-   **What is the complexity of modular addition and modular multiplication for two *n*
+    bit numbers?**
+    -   **Addition**: $O(n)$
+    -   **Multiplication**: $O(n^2)$
+
+#### Related exercises
+
+-   DPV: 1.1, 1.2, 1.3, 1.4, 1.6, 1.7, 1.8, 1.9, 1.10, 1.31
+
+### RSA Cryptosystem, Fermat’s Little Theorem and Modular Exponentiation
+
+#### Reading material
+
+-   Chapters 1.2,1.4 from DPV
+-   Chapter 31.3, 31.6, 31.7 from CLRS2
+
+#### Practice questions
+
+-   **Give a private key protocol for a cryptography application. Given an example it 
+    can be compromised.**
+    -   There is the classic "codebook" private-key scheme, where Alice and Bob
+        meet before hand and agree on a secret code.
+    -   The way that this is compromised is if Eve gets the codebook or knows
+        a given message and backtraces the code from it.
+
+    -   Alternatively, the answer you're looking for might be that you can
+        encode and decode with public keys like:
+
+        $$x = d(e(x))$$
+
+        Where $x$ is a message, $d(\cdot)$ is a decoder, and $e(\cdot)$ is an
+        encoder. Bob can
+    -   "Network sniffer"
+
+-   **RSA is based on which basic property of modulo arithmetic?**
+    -   The basic feature of modulo arithmetic that RSA exploits is the 
+        dramatic contrast in the tractibility of factoring and primality testing.
+        -   Bob and Alice only need to make simple calculations.
+        -   Eve needs to make computations that would be struggle for the world's
+            largest computers.
+
+    -   Pick any two prime $p$ and $q$ and let $N = pq$. For any $e$ relatively
+        prime to $(p - 1)(q - 1)$:
+
+        $$(x^e)^d \equiv x \mod N$$
+
+-   **Describe the steps of the RSA protocol. The security of the protocol is based**
+    on which assumption?
+
+    > Given $N$, $e$, and $y = x^e \mod N$, it is computationally intractable to
+    > determine $x$.
+
+-   **What are the basic operations that need to be performed accords to the RSA
+    protocol and what is their running time?**
+    -   Pick two large primes
+    -   Multiply two large primes
+    -   Extended Euclid algorithm
+    -   Efficient modular exponentian algorithm
+    -   $y^d \mod N$
+
+-   **You may be provided an example message and asked to described the operations
+    of the RSA protocol on it.**
+-   **What does Fermat's Little Theorem specify? Prove it.**
+    -   **Fermat's Little Theorem**: If $p$ is a prime number, then for any integer
+        $a$, the number $a^p - a$ is an integer multiple of $p$.
+    -   **Proof**
+        -   Let us assume that $a$ is positive and not divisible by $p$.
+            The idea is that if we write down the sequence of numbers
+
+            $$a 2a, 3a, \cdots, (p - 1)a$$
+
+            and reduce each one modulo $p$, the result sequences turns out to be
+            an arrangment of
+
+            $$1, 2, 3, \cdots, p - 1$$
+
+            Therefore, if we multiple together the numbers in each sequences, the
+            results must be indetifical modulo $p$:
+
+            $$a \times 2a \times 3a \times \cdots \times (p - 1)$$
+
+            Which is equivilent to
+
+            $$1 \times 2 \times 3 \times \cdots \times (p - 1)$$
+
+            Collecting the $a$ terms yields
+
+            $$a^{p - 1} (p - 1)! \equiv (p - 1)! (\mod p)$$
+
+            Finally, we may "cancel out" the numbers $1, 2, \cdots, p - 1$ from both
+            sides, obtains,
+
+            $$a^{p -1} \equiv 1 (\mod p)$$
+
+-   **What is the importance of Fermat's little theorem in the RSA protocol?**
+    -   It's used to prove it.
+
+The proof of the correctness of RSA is based on Fermat's little theorem.
+This theorem states that if $p$ is prime and $p$ does not divide an
+integer $a$ then
+
+$$a^{p - 1} \equiv 1 \pmod{p}$$
+
+We want to show that $(m^e)^d \equiv m (\mod pq)$ for every integer
+*m* when *p* and *q* are distinct prime numbers and *e* and *d* are
+positive integers satisfying
+
+$$e d \equiv 1 \pmod{(p - 1)(q - 1)}$$
+
+We can write
+
+$$ed - 1 = h(p - 1)(q - 1)$$
+
+for some nonnegative integer *h*.
+
+To check two numbers, like $m^{ed}$ and *m*, are congruent mod *pq* it
+suffices (and in fact is equivalent) to check they are congruent mod *p*
+and mod *q* separately. (This is part of the [Chinese remainder
+theorem](/wiki/Chinese_remainder_theorem "Chinese remainder theorem"),
+although it is not the significant part of that theorem.) To show
+$m^{ed} \equiv m (\bmod p)$, we consider two cases: $m ≡ 0 (mod p)$ 
+
+In the first case *m^ed^* is a multiple of *p*, so *m^ed^* ≡ 0 ≡ *m*
+(mod *p*). In the second case
+
+$$m^{e d} = m^{(ed - 1)}m = m^{h(p - 1)(q - 1)}m = \left(m^{p - 1}\right)^{h(q - 1)}m \equiv 1^{h(q - 1)}m \equiv m\pmod{p}$$
+
+where we used [Fermat's little
+theorem](/wiki/Fermat%27s_little_theorem "Fermat's little theorem") to
+replace *m*^*p*−1^ mod *p* with 1.
+
+The verification that *m^ed^* ≡ *m* (mod *q*) proceeds in a similar way,
+treating separately the cases *m* ≡ 0 (mod *q*) and *m*
+0 (mod *q*), using Fermat's little theorem for modulus *q* in the second
+case.
+
+This completes the proof that, for any integer *m*,
+
+$$\left(m^e\right)^d \equiv m \pmod{pq}$$
+
+
+-   **How can we efficiently perform modular exponentiantion? What is the running time
+    of the approach?**
+    -   Recursion, repeated squaring.
+    -   Let $n$ be the size of bits $x$, $y$, and $N$ (whichever is largest).
+    -   Like multiplication, there are *at most* $n$ recurisve calls.
+    -   During each call, it multiples $n$-bit numbers.
+    -   Doing computation modulo $N$ saves us here.
+    -   Running time of $O(n^3)$
+
+#### Related exercises
+
+-   DPV: 1.17, 1.27, 1.28, 1.35, 1.39, 1.42, 1.43, 1.44
+
+### Greatest Common Divisor algorithms: Euclid’s test, Modulo Multiplicative Inverse
+
+#### Reading material
+
+-   Chapters 1.2 from DPV
+-   Chapter 31.2 from CLRS2
+
+#### Practice questions
+
+-   What does Euclid’s rule specify? Prove it.
+-   What is Euclid’s algorithm for finding the greatest common divisor? What is 
+    its running time and why?
+-   Show that if $d$ divides both $a$ and $b$, and $d = a\times x+b \times y$ 
+    for some integers $x$ and $y$, then $d = \gcd(a, b)$.
+-   What is the extended Euclid’s algorithm for finding the greatest common 
+    divisor d of two numbers a and b, as well as numbers $x$ and $y$, so that 
+    $d = a\times x+b \times y$? Prove its correctness (you will need to 
+    prove Euclid’s algorithm first and then the extension).
+-   When does the multiplicative inverse of a number $x$ exists modulo $N$ 
+    and why?
+-   How can you compute the multiplicative inverse modulo $N$ for two 
+    relative prime numbers? What is the running time of the 
+    corresponding algorithm?
+
+#### Related exercises
+
+-   DPV: 1.18, 1.19, 1.20, 1.21, 1.22, 1.23, 1.24, 1.33, 1.37
+
+### Primality Testing and Universal Hashing
+
+#### Reading material
+
+-   Chapters 1.3,1.5 from DPV
+-   Chapters 31.8, 11.2, 11.3 from CLRS2
+
+#### Practice questions
+
+-   Describe a test for evaluating whether a number is prime. What is the 
+    probability of this test returning the correct answer and why? Can you 
+    increase the probability of success for this test?
+-   What does Lagrange’s Prime Number Theorem specify and why is it helpful 
+    for primality testing?
+-   What properties should a good hash function provide?
+-   What is the property of universal hashing families of functions? Provide 
+    a universal hashing family of functions for an example problem and prove 
+    the corresponding property.
+
+#### Related exercises
+
+-   DPV: 1.29, 1.34, 1.35
+
+### Divide and Conquer Algorithms and Recurrence Functions, Mergesort
+
+#### Reading material
+
+-   Chapter 2.1-2.2-2.3 from DPV
+-   Chapters 2.3,4.1,4.2,4.3 from CLRS2
+
+#### Practice questions
+
+-   What are the basic principles of divide-and-conquer algorithms?
+-   Describe an approach for multiplication of two n-bit numbers that has a better
+    running time than $O(n^2)$. Prove its running time.
+-   What does the Master theorem specify? Prove it.
+-   You may be provided a divide-and-conquer algorithm and asked to argue about its
+    running time by using the Master theorem.
+-   How does mergesort work, what is its running time and why? How does the iterative
+    version of mergesort work?
+
+#### Related exercises
+
+-   DPV: 2.3, 2.4, 2.5, 2.12, 2.13, 2.14, 2.19, 2.25, 2.26, 2.31
+-   CLRS2: 2.3-1, 2.3-3, 4.3-1, 4.3-2, 4.3-3, 4.3-4
+-   CLRS2: 4-1, 4-2, 4-3, 4-4
+
+### Quicksort, Lower bounds for comparison-based sorting
+
+#### Reading material
+
+-   Chapter 7.1, 7.2, 7.3, 7.4, 8.1 from CLRS2
+-   Chapter 2.3 from DPV
+
+#### Practice questions
+
+-   What are comparison sorting algorithms? What is the lower limit for the 
+    running time of comparison sorting algorithms?
+-   How does quick-sort work? When does the worst-case running time arise? 
+    When does the best-case running time arise?
+-   Provide a rigorous proof for the worst-case performance of quick-sort.
+-   Provide a rigorous proof for the expected running time of quick-sort.
+
+#### Related exercises
+
+-   CLRS2: 7.1-4, 7.2-2, 7.2-3, 7.2-4, 7.2-5, 7.3-1, 7.3-2, 7.4-1, 7.4-2, 
+    7.4-3, 7.4-4, 7.4-5, 8.1-1, 8.1-3
+-   CLRS2: 7-3, 7-4, 7-5
+-   DPV: 2.17, 2.18, 2.24
+
+### Computing Medians and Other Order Statistics, Linear-time Sorting Solutions
+
+#### Reading material
+
+-   Chapters 2.4 from DPV
+-   Chapters 8.2, 8.3, 8.4, 9.1, 9.2, 9.3 from CLRS2
+
+#### Practice questions
+
+-   How can we efficiently compute the median of a set of numbers? What is 
+    the running time of this solution?
+-   What is the main idea behind counting sort? Provide a description of the 
+    algorithm and argue about its running time.
+-   What is the main idea behind radix sort? Provide a description of the 
+    algorithm and argue about its running time.
+-   Prove the correctness of radix sort.
+-   What is the main idea behind bucket sort? Provide a description of the algorithm.
+    Prove its running time.
+
+#### Related exercises
+
+-   DPV: 2.15, 2.16, 2.17, 2.20, 2.21, 2.22, 2.23
+-   CLRS2: 8.2-2, 8.2-4, 8.3-2, 8.3-3, 8.3-4, 8.4-2, 8.4-3, 9.1-1, 9.3-5, 9-3.7, 
+    9.3-8, 9.3-9
+-   CLRS2: 8-2, 8-3, 8-6, 9-1, 9-2, 9-3
+
+### Greedy Algorithms: Huffman encoding
+
+#### Reading material
+
+-   Chapters 5.2 from DPV
+-   Chapter 16.2, 16.3 from CLRS2
+
+#### Practice questions
+
+-   What is the main principle behind greedy algorithms?
+-   Why does the greedy algorithm work for the coin changing problem given the 
+    US coin system?
+-   What is the idea in Huffman encoding in order to achieve data compression? 
+    What is the prefix-free property?
+-   Provide the Huffman encoding algorithm and argue its running time.
+-   Prove the greedy choice property for the Huffman encoding algorithm (first lemma).
+-   Prove the optimal substructure property for the Huffman encoding algorithm 
+    (second lemma).
+
+#### Related exercises
+
+-   DPV: 5.13, 5.14, 5.15, 5.16, 5.17, 5.18, 5.19, 5.29, 5.30, 5.31
+-   CLRS2: 16.1, 16.2-4, 16.2-5, 16.2-7, 16.3-1, 16-3.2, 16.3-3, 16.3-4, 16.3-5, 16.3-6
+
+<!-- Abbreviations -->
+
 *[GCD]: Greatest common divisor
 
 *[iff]: if and only if
+
+*[DPV]: S. Dasgupta, C. H. Papadimitriou, and U. V. Vazirani
+
+*[CLRS2]: T. H. Cormen, C. E. Leiserson, R. L. Rivest, C. Stein (Second Edition)
 
 *[RSA]: Rivest-Shamir-Adelman
