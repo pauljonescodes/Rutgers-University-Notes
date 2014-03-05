@@ -2192,9 +2192,8 @@ Fermat's Little Theorem
 -   **What does the Master theorem specify? Prove it.**
     > **Master theorem**: If $T(n) = aT(\lceil n / b \rceil) + O(n^d)$ for some
     > constants $a > 0, b > 1, d \ge 0$, then:
-    >
     > $$\begin{cases} O(n^d) &\mbox{if } d > \log_b a \\ O(n^d \log n) &\mbox{if } d = \log_b a \\ O(n^{\log_b a}) &\mbox{if } d < lob_b a \\ \end{cases}$$ 
-
+    
     -   Proof
         1.  Assume that $n$ is a power of $b$, for convinience rounding.
         2.  Notice that the size of the subproblems decreases by a factor of $b$

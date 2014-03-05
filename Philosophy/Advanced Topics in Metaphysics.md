@@ -2081,6 +2081,52 @@ February 28th, 2014 <small>Reading</small>
 February 28th, 2014 <small>Seminar</small>
 -----------------------------------------
 
+### Discussion
+
+-   Armstrong thinks that regularity accounts has terrible problems with induction.
+    -   Loewer thinks otherwise.
+
+-   Imagine a world call a "Humean-world" where there only l-laws, and these bring
+    about l-causation and l-counterfactuals.
+-   Simple form from John Airman
+    -   Think about a world where there's only one particle, and it's moving
+        uniformly.
+    -   This is a world where the Newtonian mechanics obtain.
+    -   But the BSA under simplicity will just describe the one particle.
+
+-   Our concept of law is funny because it has the idea of governing and because
+    of Lewis's best system account.
+    -   The governing part seperates the fact from the law.
+    -   As long it's logically compatible, but they might not be compatible ...
+        on Lewis' account.
+    -   This is the beginning of the main worry behind Lewis's account of chance.
+
+-   If you remove a particle from a universe, then the laws should stay the same.
+    -   Maybe it's vague.
+    -   Maybe it's not true.
+    -   Maybe there must be *at least* one.
+
+-   There are intuitions that we have that are anti-Humean, and some of this arises
+    from theological explanations of laws.
+-   We have some grip of whats going on in the theological
+
+-   Here are two views of fundamental ontology
+    1.  There is the Humean mosaic, space-time structure manifold, and it's decorated
+        with fundamental properties and maybe it satisfies HS. *And that's it.* Things
+        supervene on this (???).
+    2.  Fundamental state of the world and fundamental laws, which are entities over
+        and above the categorical facts, as they take the state of universe at any
+        given time, and determine the next state.
+
+-   Changing the facts doesn't always change the laws, but changing the laws will
+    always change the facts.
+-   Could the best system of the whole history of the universe that the laws enfored
+    in this spatio-temporal region and then there are these laws in another spatio-
+    temporal region, it's a bit awkward.
+    -   I don't see *in pricniple* problem to this, however.
+
+### Weatherson
+
 March 7th, 2014 <small>Reading</small>
 --------------------------------------
 

@@ -1994,6 +1994,51 @@ February 25th, 2014 <small>Seminar</small>
         genetics, then you should be a realist about representation in the
         way it's been built.
 
+### Presentation <small>by Ben</small>
+
+#### Background: Ramsey's Question
+
+-   The original question: "Is this thing reallyu functioning in a way that is 
+    reconizably representation in nature?"
+    -   Ramsey asks if various theoretical posits called "representations" accords with
+        out *pre-theoretical* concept of a representation.
+    -   The **worry**: Science might start out with commonsense notions (mass, energy,
+        representation), but science quickly leaves common sense behind.
+        -   Compare Ramsey's question to the following: "Is the physicist's energy really
+            functioning in a recognizably energy-like in nature?"
+        -   "Matter, motion, energy, work, liquid, and other common sense notions ... are
+            abandoned as naturalistic inquiry proceeds; a physicist asking whether a pile
+            of sand is a solid, liquid, or gas ... spends no time asking how the terms
+            are used in ordinary discourse, and would not expect the answer to the latter
+            question to have anything to do with natural kinds, if these are kinds in
+            nature" (Noam Chomsky, *New Horizons in the Study of Language and Mind*, pg.
+            21).
+        -   So if our goal is to understand the mind, why worry about Ramsey's question?
+
+    -   A slightly modified question: How do mental representation compare to paradigm
+        representations such as sentences and maps.
+        -   Answer this question might help us to better understand the nature of the
+            mental representation posited by our theories.
+        -   Ramsey can be read as answering this question.
+
+#### Ramsey on Dretske's receptor representations
+
+-   Ramsey argues that neither Dretske's account of *misrepresentation* nor his account
+    of representational *function* gives us reason to believe that receptor 
+    "representations" are representations in any interesting sense.
+-   Misrepresentation
+    -   The **problem**: When a cell in the frog's eye respond to a flying BB, why
+        is it misrepresenting that there is fly rather than accuratly representing
+        that there is *either* a fly *or* a BB?
+    -   Dretske's **answer**: The *function* of the cell is to activate in the presence
+        of flies. So the cell (mis)represents that there is a fly.
+    -   Ramsey's **response**: Dretske's answer only work if we already know that the cell
+        in question representation *something or other* and we're just trying to
+        figure out *what* it represents.
+
+-   Representational function
+    -   Roughly, according to Dretske a representation is a structure
+
 February 27th, 2014 <small>Office hourse</small>
 ------------------------------------------------
 
@@ -2023,7 +2068,702 @@ February 27th, 2014 <small>Office hourse</small>
     is between the machine's code and the written down norms, the written down norms
     and the "actual norms."
 
+March 4th, 2014 <small>Reading</small>
+--------------------------------------
+
+### Brooks, "Intelligence without Representation"
+
+#### Introduction
+
+-   Artificial intellgience started as a field whose **goal** was to replicate
+    human-level intelligence *in a machine*.
+-   Early **hopes** fell as the magnitiude of the **problem** came to bear.
+-   No one tries to replicate the full gamut of human intelligence anymore.
+    -   "Specialized subproblems."
+        -   Representing knowledge
+        -   Natural language processing
+        -   Vision
+        -   Truth maintenance
+        -   Plan verification
+
+    -   The **hope** is that these systems "all fall in to place" to see
+        a truly intelligent system **emerge**.
+
+-   Brooks **believes** that human-level intelligence is too complex and little
+    understood to be correctly decomposed into subpieces *at the moment*.
+    -   **And** even if we knew the subpieces we still wouldn't know the *interface*
+        between them.
+    -   **And** we will never understand how to decompose human intelligence until
+        we practice on lesser intelligences.
+
+-   In this paper, Brookes **argues** for a different approach to creating AI:
+    -   We must incrementally build up capabilities of intelligent systems, having
+        *complete systems* at each step of the way.
+        -   *Thus* automatically ensure that the pieces and their interfaces are *valid*.
+
+    -   At each step we should build *complete* intelligent system that we let loose
+        *in the real world* with *real sensing* and *real action*.
+        -   Anything less provides a candidate with which we can delude ourselves.
+
+-   Using this approach, they have come to an unexpected **conclusion** (C) and a
+    radical **hypothesis** (H):
+
+    > **(C)**: When we examine simple level intelligence we find that *explicit
+    > representations* and models of the world *simply get in the way*. It turns out
+    > to be better to use the world *as its own model*.
+    >
+    > **(H)**: *Representation* is the *wrong unit* of abstraction in building the
+    > *bulkiest parts* of intelligent systems.
+
+-   Representatino has been the **central ussue** in AI for the last 15 years only
+    because it has provided an *interface* between otherwise isolated modules and
+    conference papers.
+
+#### The evolutino of intelligence
+
+-   We already have the proof of intelligent beings: *human beings*.
+    -   Some animals are intelligent to some degree.
+    -   It's taken 4.6 billion year history.
+
+-   It in *instructive* to *reflect* on the way in which earth-based biological evoltuion
+    spent its time.
+
+    Timeline | Evolutionary event
+    ---------|-------------------
+    3.5 BYA  | Single-cell entities arose out of primordial soup.
+    2.5 BYA  | First photosynthetic cells appeared.
+    550 MYA  | The first fish a vertabrates.
+    450 MYA  | Insects
+    370 MYA  | Reptiles
+    330 MYA  | Dinosaurs
+    250 MYA  | Mammals
+    120 MYA  | Primates
+    18  MYA  | Great apes
+    2.5 MYA  | Humans in current form
+    10,000 years | Agricultures
+    5000 years   | Writing
+    100 years | "Expert" knowledge
+
+-   This **suggests** that problem solving behavior, language, expert knowledge,
+    application, and reason are all pretty simple once the essence of **being**
+    and **reacting** are available.
+    -   This part of intelligence took evolution much longer, so it is much harder.
+
+-   Brooks **believes** that mobility, acute vision, and the ability to carry out 
+    survival related tasks in a dynamic environemtn provide a *necessary basis*
+    for the *development of true intelligence*.
+
+##### A story
+
+-   Suppose it is the 1890s, where artificial flight is a glamor topic in science.
+    -   A few artificial flight researches are magically transported to the 1980s
+        for a medium duration flight on a Boeing 747.
+
+-   Returning to the 1980s, they feel vigorated, knowing that flight is possible
+    on a grand scale.
+    -   They immediately set to work on duplicate what they have seen.
+        -   Pitched seats
+        -   Double-pane windows
+        -   "Plastics"
+
+#### Abstraction as a dengerous weapon
+
+-   AI researchers are fond of pointing out that AI is denied its rightful successes.
+    -   If nobody has any good idea of how to solve a particular problem, it becomes 
+        known as an AI problem.
+        -   When an algorithm developed by AI researches succesfully tackles the
+            problem, AI detractors claim that since it was solvable by algorithm,
+            it isn't an AI problem.
+
+-   Brooks **claims** that AI researchers are guilt of the same self-deception.
+    -   They partition the problems into two parts:
+        -   The AI problems, which they solve.
+        -   The non-AI problems, which they don't.
+
+    -   Typically, AI "succeeds" by labelling the parts of problem they solve
+        as "AI problems."
+    -   "Abstraction" is used to discount problems of perception and motor skills.
+
+-   Early work on AI concentrated on games, geometrical problems, symbolic algebra,
+    theorem proving, and other formal systems.
+    -   In each case, the semantics of the domains were fairly simple.
+
+-   **Thus**, because we perform all the abstractions for our programs, AI work is
+    still being done in block world.
+    -   The blocks have slightly different shapes and colors.
+
+-   *It could be* **argued** that performing perceptual abstraction is *merely* the
+    normal reductionist use of abstraction common in all good science. Two
+    **objections**:
+    1.  Each animal species will have different *Merkwelt*.
+        -    The human-assumed *Merkwelt* may not be valid.
+
+        Merkwelt
+        :   The merkwelt is a concept in robotics, ethology and biology that 
+            describes a creature or android's capacity to view things, 
+            manipulate information and synthesize to make meaning out of the 
+            universe. In biology, for example, a shark's merkwelt for instance 
+            is dominated by smell due to its enlarged olfactory lobes whilst a 
+            bat's is dominated by its hearing, especially at ultrasonic frequencies.
+
+    2.  It is by no means clear that such a *Merkwelt* is anything like what we
+        actually use internally.
+
+#### Incremental intelligence
+
+-   Requirements on Creatures:
+    -   Must *cope appropriately* to a *dynamic environment*.
+    -   Must *be robust* (minor change in the world doesn't lead to total collapse).
+    -   Must *maintain multiple goals*.
+    -   Must *do something*, purpose in being.
+
+##### Decomposition by function
+
+-   Hardly anyone has ever connected a vision system to an intelligent central system.
+-   One needs a long chain of modules to connect perception to action.
+
+##### Decomposition by activity
+
+-   Makes no distinction between peripheral and central systems.
+    -   The fundamental slicing is in the "orthogonal direction" dividing it into
+        *activity producing subsystems*.
+
+#### The methodology, in practice
+
+-   In order to build systems based on an activity decomposition, we must folow a 
+    careful methodology.
+
+##### Methodological maxim
+
+-   **First**, test the Creatures in the real world.
+    -   It is very easy to accidentally build a submodile of the system which happens
+        to rely on some of those simplified properties.
+
+-   **Second**, the system must interact with the real world over extended period.
+
+##### An instatiation of the methodology
+
+-   Layers
+    1.  Avoid hitting objections
+        -   Sonar
+        -   Collide
+        -   Feelforce
+        -   Runaway
+        -   Turn
+        -   Forward
+
+    2.  Wander
+    3.  Try to explore, distant places
+        -   Whenlook
+        -   Pathplan
+        -   Integrate
+
+#### What this is not
+
+1.  Connectionism
+2.  Neural networks
+3.  Production rules
+4.  Blackboard
+5.  German philosophy
+
+#### Limits to growth
+
+-   These machines operate completely autonomously in complex dynamic environments
+    at the flick of their on switches, and continue until the batteries are drained.
+    -   We **believe** they operate at alevel closer to simple insect level intelligence
+        than to bacteria level intelligence.
+
+-   Serious **questions**
+    1.  How many layers can be built in the subsumption architecture before the
+        interactions between layers become too complex to continue?
+    2.  How complex can the behaviors be that are developed without the aid of central
+        representation?
+    3.  Can higher-level functions such as learning occur in the fixed topology networks
+        of simple FSM.
+
+<!-- ### Haugeland, "Mind Embodied and Embedded" -->
+
+<!-- ### Morgan, "Information Processing in Connectionist Systems" -->
+
+March 4th, 2014 <small>Seminar</small>
+--------------------------------------
+
+### Wrapping up R-Representation
+
+-   These are some examples of receptors that he mentions
+    -   Structures in the frog's visual systems
+        -   Bugs
+        -   Flies
+        -   Food
+        -   BBs?
+
+    -   These are nomically dependant on flies.
+        -   When they're "triggered", it *causes* the flies tounge to pop out.
+    
+    -   Assuming they are representation, a good candidate for the content of the
+        representation is *fly*.
+        -   But any small dark and moving spot will cause this same effect.
+
+    -   Also, edge-detectors in the visual system.
+    -   Magnetosomes in the bacteria represent maybe:
+        -   Magentic north
+        -   Direction of oxygen-free water
+        -   Direction of the nearest magent
+
+    -   It's not clear what these represent because of content-indeterminancy.
+        -   Usually theorists of this kind want to privilege a special kind of content.
+        -   What's really important is that *food gets into the frog's stomach*.
+        -   Maybe it's a fly, but it doesn't *really* matter so long as it's
+            nutritious.
+
+    -   *What's the biological function?*
+        -   This doesn't seem to cut any more finely.
+
+-   Suppose that the idea is you get food, there are many paths to getting food.
+    -   People talking about getting the trout shodows, which, low and behold, you
+        get the trout.
+    -   *You get the food by representing BBs*.
+
+-   There are all these issues about content.
+    -   Are these even representatinos at all?
+
+-   Dretske is trying to narrow down the content, 
+
+### On Ben's presentation
+
+-   The idea is our receptor representation and structural representation aren't
+    very different, if one is a representation then why can't the other?
+    -   S-representation is representation because:
+        1.  Structural similarity, "isomorphism"
+        2.  Use in *doing something cognitive*
+
+    -   What are R-representations?
+        -   Ramsey points out that these are *mere relays* and they're serving in the
+            system *only as relays*, nomic dependancy.
+
+-   There's no reason for these structures in the frog's brain or the magentosome's
+    magnets, in these theories, these are playing an important role in *doing something
+    cognitive*, something interpretation, it's "use that picks up the slack."
+    -   Is this difference on the basis of content, is this sufficient to make on
+        representatino and the other *not*. Couple of things to notice:
+        1.  Are these really so different?
+            -   Structural similarity vs. nomic dependancy.
+            -   Take an internal map. Doesn't it *have to be some sort of nomic
+                dependancy?* Various uses by the intelligent agent. *It can't be
+                an accident that some structure is structually similar to the thing
+                it represents.* That "causal embedding" is going to favor one
+                interpretation over another.
+            -   If you think about edge detectors, these are not attributed 
+                *singularly*, they're in systems. Typically, they'll be *systems*
+                of representatinos underly *systems* of (something).
+
+-   If you remember Ramsey's argument, a lot of his examples are mechanical causal
+    relays.
+    -   If we *do* focus on mental representation cases, if we say that the receptor
+        plays a role in a representation cognitive system, then it's playing
+        a representation causal role.
+        -   Ramsey's account of mental represnetation, to do something cognitive
+            *just is* to interpret its inputs and outs as mental representations.
+
+    -   Notice that this move *takes* IO-representation as *basic*.
+        -   Then internal states that play a nomic dependancy role play a
+            representational role.
+        -   Nothing in the stomach or liver is doing something *recognizably
+            cognitive*. This just *isn't* to treat as a cognitive system.
+
+    -   This would be one way to go, piggyback R-representation on IO-representation.
+
+> What would differentiate a cognitive system from a non-cognitive system, perhaps
+> some criteria? A liver can be treated as having IO, etc.
+
+-   If the thing is an adder, then it *has to be* that it's inputs are addends and
+    outputs are sums.
+
+> Liver couldn't be interpreted as cognitive, because it doesn't have structure or
+> use.
+
+-   There's *very little conceptual space* as saying it is doing something cognitive
+    and that's its inputs and outputs are interprebable.
+
+> If you watch a bumblebee, you'll see it going about it's business, flowers, but
+> the outputs are movements - how are these outputs cognitive? It seems like one
+> explanation, maybe the best, is that it's computing 3-D space, but when you look
+> at what's going on is that it's learning, avoid predators, just to characterizing
+> it's behavior as cogntive might not be to interpret it. 
+
+-   When I say I'm characterzing it as doing something cognitive, I'm talking 
+    precisely, it's able to interpret speech, interpret 3-D scene, division, add.
+
+> If we say that the bee can perceive, would you say that this getting the inputs
+> of representatinos and outputs of represnetation?
+
+-   If you characterize exactly what the system is, you'll get representation that
+    just are inputs and outputs of representations that are interpreble.
+    -   You see some system doing something fairly succesfully, the first job of the
+        theorist is to characterize the competence.
+        -   You have to see under what condition *it fails*. What *exactly* is the
+            function it is computing.
+
+> How is this different from Dennet's pragmatism? What's the idea that for any system
+> we can characterize it as intentional or we don't and whether we do or don't is 
+> just about it being pragmatic to predict behavior. When you say, "The difference
+> between the liver and the honeybee is that it isn't helpful to call it cognitive
+> because there's no structure we look at it as an adder." Do you think there are
+> objective facts about the capabilities of a cognitive (or non-cognitive) system.
+> A few weeks ago we have a conversation where you (Egan) if you gerrymander things
+> you can get something that looks like an adder.
+
+-   We attribute capacties to systems
+-   Rocks and walls do not have the necessary structure to represente addition, 
+    *unless* you add indices for time.
+-   Another way, go to the quantum level, there's lots of structure there.
+-   How to understand the realization function, the way to think about that is
+    specifying to causal
+-   To push this a bit further, remember that a gene is certain physical structure 
+    in the body and what's crucial is that it *causes* certain phenotypical
+    effects, they are responsible for producing the realization's function.
+
+> So you diverge from Dennet in that you don't think that Dennet has some underlying
+> ... Two position:
+> 
+> 1.  There are objective facts about a systeming *doing something cogntive*?
+>     -  Pretty much any system can be contrived to have systems which are doing
+>        something cognitive.
+
+-   You slipped in pragmatic, there are the phenomena we choose to explain, it seems
+    to be doing something cogntive, I'm trying to interpret it, Searle's given me 
+    a big book on how to do this.
+-   It's important for us to develop a theory about what's cognitive, that's
+    pragmatic.
+    -   But what isn't is what a system needs to have the relevant features.
+
+> Facts are relevant once we fix interests.
+
+-   Dennet doesn't think this. The Dennet of the 70s is to systematically predict a
+    system's behavior on the basis of intetion.
+    -   The Dennet of the 80s and 90s has patterns in behavior, not patterns in the
+        phenonmena.
+        -   He thinks that beliefs and desires are abstracta.
+        -   He denies the instrumentalist label, he rejects it.
+        -   This is what the computational theory is c
+
+> The facts are fixed once you have interests, and the relevant facts are causal
+> structure.
+
+-   Physics describes the fundamental way of things, but it cannot distinguish
+    between those things that *can think and *cannot thing*.
+
+### Niko's presentation
+
+#### The Polemical Prologue
+
+-   The general point is that Brooks believes that something has gone very wrong in the
+    research of AI.
+    -   It might have had more success if it didn't do this.
+    -   He's discovered a better way.
+
+-   In making in his case, he does a lot of things, he:
+    -   Describes his robot
+    -   German words
+    -   Ant parable
+
+##### A Dubious Parable
+
+-   There are these artificial flight researches from the 1890s and their transported
+    to the 1980s in a commercil airliner for the duration of a flight.
+-   Upon returning to the 1980s, they focus their efforts on replicatin the seats and
+    windows they observed on the airliner.
+    -   Because the task of replicating the airliner seems so overwhelming, they become
+        specialists in different areas.
+
+-   The groups of researchers do not communcat well.
+    -   They give up the study of aerodynamics entirely. Their propject is doomed to
+        fail - they will never replicate the airliner.
+
+##### A Potted History
+
+-   We have this *proof of concept*, namely ourselves.
+
+-   But this kind of specialiation, because it requires abstraction, is a form of 
+    "self-delusion"
+    -   AI researchers design program swhich can only operate on highly abstracted input
+        represnetations.
+    -   This approach ignores the really difficult problem of perfomring the
+        abstractions in the first place.
+    -   Brooks illustrates the failre of this kind of approach with the story of work
+        on the "blocks world" in the 1960s and 1970s.
+    -   This block world made it much easier for the machines to move around in this
+        world, these robots would not function in real-life situations.
+
+-   There is, moreover, an in-principle objection to abstraction: we have no reason
+    to assume that the abstraction which seem most natural to us are anything like
+    abstractions twhcih will be useful for a robotic system with very different
+    sensory modaility; indeed, we have little reason to assume that our own cognition
+    employs just the abstraction which seem most natural to us.
+
+> What's the relatinship between theorizing and abstraction?
+
+-   The way we come to abstractions we use is in designing these modules, he thinks
+    basically "What data is salient to us" is a raw visual data stream, we think,
+    "Oh, it's salient that there's a chair and it's folded."
+    -   That this is introspectivesly relevant is important.
+
+##### An Evolutionary Argument
+
+-   **Premise**: Human-level intelligences have existed for a comparatively small
+    proposition of the history of life, whereas simpler intelligences have not.
+-   **Conclusion**: "This suggests that problem solving behavior, lagnauge, expert
+    knowloedge and application, and reason, are all pretty simple once the essence
+    of being and reacting are available."
+
+> This is supposed to be relevant because designing low-level intelligence is important
+> for investigating high-level systems.
+
+##### A Diagnoises
+
+-   The fundamental problem, Brooks suggests, is the approach to AI research by
+    decomposition by function. 
+    -   This apprach is characterized by the "traditional notion of ... a central
+        system, with perceptual modules as inputs and action modules as outputs. The
+        perceptual modules deliver a symbolic description of the world and the action 
+        modules take a symbolic descrption of deisred acition and make sure they happen
+        in the world. The central system is then a symbolic information processor."
+
+> What's a decomposition *supposed to do*? This is supposed to be a better way to do.
+
+-   **Ben**: For him, isn't he just trying to build intelligent creatures in building
+    creatures that go around the office.
+    -   His *goal* in finding a good decomposition, he's not trying to illuminate, he's
+        trying to build a system that is intelligent.
+
+-   Ths model allows groups working of differnt problems to make differnt assumption
+    about the "shape of the symbolic interfaces", which in teun makes those inferfaces
+    "subject to intellectual abuse". Brooks think this apporach is unlikely to result
+    in the development of integrated intelligent systems.
+
+##### Questions
+
+1.  Does Brook's history of AI research point on *in-principle* problem with the
+    decomposition by function approach? If not, does it support his case? Is his
+    parable, which seems almost fatalistic, entirely fair?
+
+    > How is it not going to scale up? It's not going to scale up to the messiness of
+    > the dynamic, changing world. This is the problem with traiditional AI. So it's
+    > a disanalogy with the AI researchers.
+
+    > Maybe these guys a decomposing the functional subsystems badly.
+
+2.  What of the alleged in-principle objection to the decomposition by function
+    approach? Whose cares whether there might be some intelligent systems which
+    couldn't function using the abstractions most natural to us? Might it still
+    be the case fhat some intelligent system can, and that the decomposition by 
+    function apporach could allows us to deisgn them? Why think there might be some
+    tight connection between senory modalities useful abstraction to the first place?
+3.  Is the evolutionary argument any good? **Compare**: Space flight has existed
+    for compataively small proportion of the history of *homo sapiens*, whereas
+    agriculture has not. This suggest spaceflight is easy once you have agriculture.
+4.  What does any of this have to do with prescnec or absence of representation?
+
+#### Meet the Robots
+
+##### Decomposition by Activity
+
+> This is what Brooks proposes. The basic idea of this is unit of investigation is
+> a capacity of the cognitive system. He calls the capacities *layers*, which would
+> allow the creature to avoid objects in its vicinity.
+>
+> Instead of having a representations sent to a CPU, you have a parallel architecture
+> where there are no central computational system, just different capacities which
+> interact with one another to some extent.
+>
+> This hope is that you can implement one layer and continue to implement layers
+> so it can do more and more complicated behavior without a CPU.
+
+-   To replace the problmatic apporach of decomposition by function, Brooks suggests an
+    approach by decompistion by activity.
+    -   The idea is that each activity of a system should be controlled by an
+        indepedant subsystem.
+    -   One such layer might cause a robot to avoid colliding with objects.
+
+-   Once one system is in place, further, indepedant systems are added which interact
+    in such a way as to produce desirable behavior. 
+    -   The systems are not entirely autonomous, since theye have to coordinate 
+        the robot's overall behavior, but there is no central control system.
+
+##### No Representations
+
+-   Brooks claims that a robot designed according to his principles does not need to
+    employ any representations
+
+    > We do claim however, that there need be no explicit representation of either 
+    > the world or the intentions of the system to generate intelligent behaviors 
+    > for a Creature. Without such explicit representations, and when viewed locally, 
+    > the interactions may indeed seem chaotic and without purpose.
+
+##### Description of a Model Robot
+
+> Each layer is made of a bunch of FSMs which each operate semi-indepedantly and
+> has access to a central processor, and it's arranged of three layers.
+> 
+> 1.  The simplest
+>     -   Avoids colliding with things
+>
+> 2.  Also looks at the data (actually not sure), but its purpose is to make the
+>     robot wander aound. 
+> 3.  Seems to always override the second layer, and this layer takes in the data
+>     from the sonar and finds places that are distant from the robot and finds the
+>     path from the place, but when there is an object, the third layer recalculates
+>     a new path, the capacity of the third level is to *explore*.
+
+-   The different layers of the model robot are composed of networks of FSM.
+    -   Each such FSM has timers and access to computational machines "which can
+        compute things such a vector sums."
+
+-   The model robot has a ring of sonars around its circuference which serve as it
+    sensors.
+    -   The lowest layer of the robot makes it avoid hitting objects.
+        -   It does this by running its sonors "and every second emitting an 
+            instantaneous map with the readings converted to polar coordinates."
+
+    -   The map gets passed on to some other machines, which determine whether an
+        object is too close, and if so, cause the robot to move in the opposite
+        direction
+
+-   The second layer of the robot makes it wander waround by generating random headings
+    and interfacing with the first layer.
+    -   The third layer makes the robot try to reach distant places by choosing
+        locations and continually calculating paths for the robot it is forced to
+        avoid an obstacle.
+
+##### Questions
+
+-   Is Brook's claim that his robots do not employ any explicit representations 
+    plausible? If he is correct, how can he help himself to descriptions of the layers
+    as computing vecto sums, emitting a map witht e readins converted to polar 
+    coordinates, etc.?
+
+### Response
+
+-   There as to be enviromental richness.
+-   There were two problem that stymied research:
+    1.  Knowledge-representation problem
+        :   If you're building a system for the real-world, it's got to *know a lot*.
+
+        -   Last time we talked about about Shank scripts, the device has a paradigm
+            of what it's like to go to a restaurant, and it's supposed to answer
+            questions about people in this scenario, and there was a lot that it
+            couldn't answer, like people sit on chairs and not on the floor, that
+            wasn't in it's knowledge base, and of course we know that.
+        -   The problem of structure or representing in some way all of the knowledge
+            that the system has to have to get around in the world and the knowledge has
+            to be represented in a way the system can get it.
+        -   This is related to the problem of designing a machine that can pass the
+            Turing-test, and any bit of esoteric information can become relevant
+            by a shift in context, and this machine has to have this information
+            accesible.
+        -   If you got an artificial, well-defined, then scaling up to the real world 
+            requires a lot of information.
+
+    2.  Frame or relevance problem
+        :   The world changes from one minute to the next, but it really only has to
+            notice the relvant changes, and the system would be overwhelmed if it
+            took account for *every possible change*.
+
+            For instance, the lighting in the room is affecting our shadows and were
+            affecting the ambient tempurature, and the system has to represent the
+            relevance from irrelevant changes. We do this.
+
+            Combinatorial explosion.
+
+-   Brooks has some suggestions for building things in the real world. He does say
+    that his robots have no representations at all. What seems to be the case is theres
+    no explicit, general, context-free representation, that's the kind of representation
+    that it *doesn't have*. 
+    -   What are perceived, but doesn't stress to much in this paper, because each
+        layer is intended to have it's own proprietary sensory mechanisms, these are
+        tied to the goals of the system, what's perceived by each layer are 
+        "oppurtunities for action."
+        -   The analogy here, the father here of what the system perceives things
+            which *invite doing certain things*, this idea comes from JJ Gibson's
+            Affordances.
+        -   He thought what the visual system detects are complex properties which are
+            salient to speicific kinds of organisms.
+        -   When you perceive a knife, you see something which can cut. Food, we see it
+            as something which is *ripe for eating*.
+        -   Gibson thought that these were the objects for perception.
+        -   This idea is going to be pretty influential in embodied cognition, people
+            talking about representations that are action-oriented, not a passive 
+            conditino of the world but as serving some sort of goal.
+
+> To be clear, we have this perceptual system and one reason it makes the disctinctions
+> it does make is that it partitions the world in such a way that is useful, or, that
+> we perceive things as purposeful, which is *adding content to the perception*. It's
+> like sayin "Why do we lump objects in the ways we do?"
+
+-   Gibson thought that properties like affording cutting, like the knife, is that
+    *what we see* is an object for cutting, and this structures the light in certain
+    ways. We *literraly perceive* them, it isn't *categorizing*.
+    -   Food, for humans, there are higher-order invariance in the light, and that
+        food strctures the light in a certain way that our visual system was built
+        to detect.
+
+-   The idea is then that this is how these layers "cut things differently" and it's
+    partly perceptual, partly cognitive.
+    -   What it's perceiving affordances in the environment, oppurtunities to do
+        something in the world.
+
+> How does this play out in terms in human being using their fingers? Does this come
+> up in Herbert, what in the machine which he's talking about has both the perception
+> and the cognition?
+
+-   The lowest level
+
+> They have sensors which are "relvant for action", this seems like too much of 
+> a disconnect, the way we're talking about things being intermingled.
+
+-   They're sensing properties which are then processing in the FSMs, and this
+    is directing behavior by the things detecting things by those sensors.
+
+> How tight and how exactly?
+
+-   All I can do is repeat.
+-   If you think about what is being perceived by these various sensors are properties
+    of this thing that is relevant to the action by the layer that this action is going
+    to produce. 
+    -   The bottom layer sensors are not going to sense the coke cans, because that's
+        not relevant to the activity of avoiding obstacles.
+    -   Each sense organ at a particular layer is going to detect things which are
+        relevant to *that layer*.
+
+-   The **take-away** message is that what is perceived is not bare properties of things
+    but stuff that is instricinally linked to oppurtunties for behavior.
+-   Using the world as its own model (third point, unexpected conclusion)
+
+March 12th, 2014 <small>Reading</small>
+---------------------------------------
+
+> Notions of components, systems, and interfaces as a starting framework to discuss.
+> These definitions specifies a decomposition:
+> 
+> 1.  What are the components?
+> 2.  What are the interfaces?
+> 3.  What are the differences between everyone's conceptions.
+
+### Clark and Chalmers
+
+### Extended Cognition
+
+### Adams Inozoa
+
 <!-- Abbreviations -->
+
+*[CPU]: Central processing unit
+
+*[MYA]: Million years ago
+
+*[AI]: Artificial intelligence
+
+*[BYA]: Billion years ago
 
 *[RTM]: Representational theory of mind
 
