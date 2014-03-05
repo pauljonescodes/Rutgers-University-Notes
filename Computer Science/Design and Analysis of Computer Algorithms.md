@@ -2503,6 +2503,110 @@ Greedy algorithm
 -   DPV: 5.13, 5.14, 5.15, 5.16, 5.17, 5.18, 5.19, 5.29, 5.30, 5.31
 -   CLRS2: 16.1, 16.2-4, 16.2-5, 16.2-7, 16.3-1, 16-3.2, 16.3-3, 16.3-4, 16.3-5, 16.3-6
 
+March 5th, 2014 <small>Homework 2</small>
+----------------------------------------
+
+### Topics
+
+-    Master theorem
+-    Approximation algorithm
+
+March 5th, 2014 <small>Lecture</small>
+--------------------------------------
+
+### High-level steps in greedy algorithm
+
+-   This idea of defining smaller problems, it's part of greedy and recursive algorithms.
+-   Steps
+    1.  Cast the problemas one where we make a choice, and then we're left with a
+        subproblem to solve.
+
+        > Which characters should I place at the bottom of my tree? *Huffman coding*
+
+    2.  Show there is always an optimal solution that makes the greedy choice.
+    3.  Show that the subproblems optimal solution can be combined with the greedy 
+        choice to provide an optimal solution to the original problem.
+
+> Can all optimization problems be solved with greedy algorithms?
+
+-   For instance, in the coin problem, it depends on the coin denominations you have.
+-   In Huffman coding, it works nicely.
+
+### Set cover example and a greedy approach
+
+-   **Example**: Consider a collectino of cities. We need to place a school
+    to the minimum number of cities so that each one has a direction connection
+    with a school.
+
+    $x$ | $S_x$
+    ----|------
+    $a$ | $a, b, c$
+    $b$ | $a, b, c, d, e$
+    $c$ | $a, b, c, g$
+    $d$ | $b, d, e, f$
+    $e$ | $b, d, e, f$
+    $f$ | $e, d, f$
+    $g$ | $e, g$
+
+    -   The greedy solution: $b, c, d$ (3 schools).
+    -   But there are optimal solutions with 2 schools, which in this case would be
+        something like $c$ and $f$.
+
+> **Lemma**: Given $n$ elemnts and $k$ sets in the optimal solution, the greedy algorithm
+> will use at most $k \times \ln n$.
+
+-   This is a little reassuring
+    -   Not the optimum solution, but we know it'll be *pretty good* relative to the
+        optimum.
+
+-   **Proof**
+    -   $n_t$: number of elements after $t$ iterations
+    -   $n_0$ will be $n$ and after all elements are solution $\to 0$.
+    -   Given that we're going to be using $k$ sets in the optimum solution, can
+        we say anything about the number of elements in sets in the optimum solution?
+        -   All the elements in the optimum solution are going to have less than ...
+            something something.
+
+    -   *Optimum solution* has $k$ sets covering $n$ elements.
+    -   There is at least one set that has at least $\frac{n}{k}$ elements.
+    -   Now lets think how the greedy choice will be making the somehting selection.
+    -   Then,
+        $$n_{t + 1} \le n_t - \frac{n_t}{k} = n_t(1 - \frac{1}{k})$$
+
+    -   Repeated applications of this rule imply $n_t \le n_0 (1 - \frac{1}{k}^t)$.
+        -    Note that $1 - x \le e^{-x} \forall x$.
+
+    -   Thus,
+        $$n_t \le n_0 (e^{- \frac{1}{k}})^t = n \cdot e^{\frac{-t}{k}}$$
+
+    -   When will I cover all elemnts with the greedy approach?
+        -   It has to be that $n_t = 0$, i.e., for $t = k \cdot \ln n : n e^{\frac{-t}{k}} = n \cdot e \cdot \frac{k \ln n}{k} = 1$$
+
+    -   At that point $(t = k \ln n)$, the greedy choice has covered every element.
+
+### Alternative for optimization problems: Dynamic Programming
+
+-   Think of this as a more general approach than the greedy algorithm approach.
+    -   Any problem that can be solved by a greedy algorithm can be soloved
+        by a dynamic programming apporach.
+    -   Now you have to work out what is the subproblem.
+    -   This is more powerful than greedy apporached.
+
+-   **Example**
+    -   Lets say you have matrices and you want to multiply big matrics and supposed
+        you have to do it in such a way that is computationally effieicne.t
+    -   Say it's four matrices.
+    -   There are many different ays to compute this product depending where we place
+        the parentheses.
+    -   You should come up with an algorithm that tells you the optimum order.
+    -   Greedy choice corresponds to not necessarily the optimum solution.
+    -   So how do we determine the optimum case?
+        -   Again we can think of a graphical way of representing the cases.
+
+    -   **Clue**: If a tree corresponds to the minumum number of multiplications,
+        then each subtree of it has to be optimum.
+    -   Define the cost of multiplying: $A_i \times A_{i + 1} \times \cdots \times A_j$.
+
 <!-- Abbreviations -->
 
 *[GCD]: Greatest common divisor
