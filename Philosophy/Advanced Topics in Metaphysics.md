@@ -2137,6 +2137,257 @@ March 7th, 2014 <small>Reading</small>
 March 7th, 2014 <small>Seminar</small>
 --------------------------------------
 
+### Introduction
+
+-   It'd be nice for metaphysics to hand over its problems to physics.
+    -   Usually if you're a clever metaphysicist you can find any argument in
+        physics which rebuts your metaphysics.
+    -   Different views of temporal passage run afoul of relativity theory.
+
+-   One of the fun things metaphyscicians can do is spell out the various
+    metaphysical commitments of various physical theories.
+    -   A great example is quantum theories, which "wear their ontology on their
+        sleeve."
+
+-   Lewis has a fairly spare ontology.
+    -   Subsintivalism about spacetime.
+    -   Metric structure
+    -   Decorated by:
+        -   Natural properties 
+        -   Instantiated points
+        -   No natural relations
+
+-   Maudlin has a different ontology
+    -   He also has spacetime.
+    -   He thinks there's an "intrinsic direction to time."
+        -   This makes it different from space.
+        -   He sometimes says that "time passes" or "time flows."
+
+        > There are a bunch of features of our world which support talking about time like
+        > this. You can change now what lunch you'll have today but you can't change now
+        > what you had for lunch earlier. You know more about your lunch earlier than you
+        > do about your lunch later.
+
+    -   Fundamental FLOTE
+    -   Objective probabilities
+
+-   This is a sparse ontology because we have things like "late trains."
+-   What seems to be missing are those things like "qualia."
+-   Both are physicalists, both take lessons from physics, but different ones.
+-   Maudlin thinks that fundamental laws are bedrock ontology, Lewis doesn't.
+    -    I think these are possibilia for Lewis.
+
+-   For Maudlin, laws ar ein the fundamental stuff of the universe and make for
+    the regualirity.
+    -   Tim thinks that the practice of physics supposrts his pucture.
+    -   And of course, we do have this idea of "temporal direction."
+
+-   The puzzle for Maudline, right at the surface, is what are the laws and what
+    work do they do?
+    -   This makes Loewer stubborn about accepting his view.
+
+### Comments on "Quantum Entaglment, Bohmian Mechanics, and HS" by Eddy Chen
+
+#### The Probem of Quantum Entaglement
+
+-   In standard non-relativistic quantum mechanics, we represent a physical system as 
+    a normalized vector in the Hilbert Space
+    -   A unit vector in a complex-valued vector space with an inner product which
+        satisfies a set of axioms.
+    -   States of individual particles A and B can be represented as $\ket{\phi}_A$
+        and $\ket{\psi}_B$.
+        -   The state of a pair of particles A and B can be representated as 
+            $\ket{\Psi}_{AB}$.
+
+> Spin is a property of an electron and how it moves in a magentic field, it's an
+> interesting feature if a particle that they'll be a certain probability of how it'll
+> move.
+
+-   Two particles are *not entagled* when their joint state is *seperable* as the
+    tensore production of their individual states:
+
+    $$\ket{\Psi}_{AB} = \ket{\psi}_A \oplus \ket{\phi}_B$$
+
+> What's strange and novel here is that the state gives all the information about
+> the features we're interested. There's an indetermincy.
+
+-   Two are *entangled* when their joint state is *not seperable* as the tensor product
+    of their individual states:
+
+    $$\ket{\Psi}_{AB} \not =  \ket{\psi}_A \oplus \ket{\phi}_B$$
+
+-   Suppose that $\ket{\Psi}_{AB}$ is the intrinsic property of the pair A and B, and
+    $\ket{\phi}_A$ and $\ket{\psi}_B$ are the intrinsic properties of particles A and B,
+    then we seem to have a case of the failure of HS.
+    -   It remains to explore precisely *which* component of HS fails in this case of
+        quantum entaglement.
+        -   A worry, of course, is whether we should interpret the states represented
+            in Hilbert Space as instrinsic properties to the systems.
+        -   More on this later, from the perspectives of Bohmian Mechanics and
+            C-Algebra.
+
+> There's a "new way in which things" exist, things can exist in superposition.
+
+> There's a big way of teaching QM in terms of description. But in terms of the
+> way things are, you have to understand the mathematics, which is the mathematics
+> of vectors. These properties can be in a deterministic state or it can be in
+> a superposition of the two vectors. 
+
+#### Which Component of Humean Supervenience is the Target?
+
+Separability
+
+:   The complete physical state of the world is determined by (supervenes on) the
+    intrinsic physical state of each space-time point (or each pointlike object)
+    and the spatio-temporal relation between those points.
+
+-   The challenge to **Separability** comes from observations of entaglement
+    phenomena such as the case above.
+    -   Moreover, Maudlin and many other philosophers of physics think that realism
+        about quantum mechanics commit us to the following thesis:
+
+Metaphysical Holism
+
+:   There exist some whole whose intrinsic properties fails to supervene on the
+    intrinsic properties of its fundamental (point-sized) constiuent parts plus
+    their spatiotemporal relations.
+
+-   Notice, the first thesis mentions the copmlete physical state of the world, while
+    second only mentions the existence of some quantum whole, possibly distinct from
+    the entire world.
+    -   The implicit reasoning to their incompatibility, perhaps, is that any system
+        (such as the entire world) containing such a quantum whole would fail to
+        supervene on the instrinsic properties of some of its fundamental parts.
+
+-   Miller's goal, I take it, is to show that a commited Humean can embrace
+    **Metaphysical Holism** and retain **Separability**, by adoptiing the de 
+    Broglie-Bohm interpretation of quantum mechanics. 
+    -   Her task, if it succeeds, can show the logical consistency and empiral
+        adequacy of embracing both theses.
+
+#### A Brief Tour through Bohmian Mechanics
+
+-   The de-Broglie-Bogm interpretation of quantum mechanics, sometimes called Bohmian
+    mechanics, is an empirally adequate and mathematically elegant interpretation of
+    the quantum formlism. Importantly
+    1.  **Its dynamics is entiraly deterministic.**
+        -   As for the dynamics, it adds a (explicitly non-local) guiding equation to
+            the Shrodinger equation.
+        -   The Shrodinger equation determines the evolution of the wave function,
+            while the guiding equation "looks at the wave function and the 
+            configurations of all other particles" and "completes" the dynamic
+            determinations by specifying the velocties of the particles.
+
+    2.  Given the Quantum Equilibrium Hypothesis, **it predicts that there is an
+        appearance of randomness in the world**.
+    3.  It predicts a probabilitic distribution conforming to the Born Rule.
+    4.  It predicts the impossibility ("absolute uncertainty") about gaining informaiton
+        more than the probilistic distributino of Born Rule, agreeing with the 
+        Kocken-Specker theorem.
+    5.  It permits both a N-particle-in-3D-space ontology and a 1-particle-3N-space
+        ontology.
+
+-   In a typical Stern-Gerlach measurement of particle A having spin-up state, a Bohmian
+    would say that it is for A and other particles within the system and within the
+    universe as a whole ot be moving in such away as to be certain to produce "up"
+    indication among the particles of the Stern-Gerlach device.
+    -   That is $\ket{\uparrow}_{A,t}$ just means (for a Bohmian) that, given the
+        initial condition of the universe, particle A is traveling through spacetime
+        at time t and is accompandied by other particles on the measure device
+        registering the "up" outcome.
+    -   The attribution of the spin-up state to particle A is not about the intrinsic
+        state of A but its present and future motions as well as other particle's
+        present and future motions. To summarize the Bohmian idea:
+
+Bohmian Realism
+:   The state of a system represents a relational property, not an intrinsic property
+    of the system.
+
+-   Based on this principle, one can make an immediate reply to the argument for
+    non-separability: quantum entaglement is not about intrinsic properties, and it
+    no indication of a failure of whole-to-part superveinience of intrinsic properties,
+    thus it is in no violation of **Separability**.
+    -   But that's too quick. There is still the pilot wave that fails to supervene
+        on particles.
+
+#### How to be a Humean about the Pilot Wave?
+
+##### Be a 3N-Space Bohmian
+
+-   Consider our N-Particle system in 3D space.
+    -   It can be represented by a 1-Particle system in 3N space, where N is the number
+        of particles in 3D space.
+    -   3N space is the space of all possible configuartions of N-Particle in 3D space.
+
+3N-Space Bohmianism
+:   3N space is the fundamental space; 3D space is not fundmental, if not "illusory."
+
+3N-Space Bohmianism + Humeanism
+:   Fundamentally there are no pilot waves. The universal wave function is fundamental.
+    It is a field in the 3N space (the fundamental physical space), and it supervenes on
+    the amplitutde and phase at each point in the 3N space.
+
+-   **Disadvantage**: The loss of primitive ontology and 3D space. The confusion of the
+    represnetation and the things represented.
+
+##### Be a 3D-Space Bohmian; Go Nomic about the Wave Function
+
+-   The world is fundamentally 3-dimensional. The universal wave function and its
+    guiding equation express a fundamental law of physics.
+
+3D-Space Bohmianism
+:   Fundamentally, the world is 3D and there are many particles.
+
+Nomic 3D Bohmianism
+:   The unviersal wave function is a law of nature rather than a physical object.
+
+-   But in addition to **Separability**, HS also has the following component:
+
+Physical Statism
+:   All facts about the world, including modal and *nomological* facts, are determined
+    by its total physical state.
+
+-   This seems to be violated by **Nomic 3D Bohmianism**, if the wave function does 
+    not supervene on the mosaic. A Humean reply:
+
+BSA applied to the Wave Function
+:   The univesal wave function is contained in the best summary of the Humean mosaic
+    that balances simplicity, strength, and other criteria. Statements about the wave
+    function are fundmentally statements about the entire four-dimensional Humean i
+    mosaic.
+
+##### Worries and Questions
+
+1.  Is the vafe function simple? The effective wave function of the subsystem, being
+    gerrymandered and complicated, is not simple. But there is hope that the universal
+    wave function is simple.
+2.  Is the wave function law-like? The effective wave function of the subsystem, being
+    time-dependant and controllable, is not law-lie. But there is hope that the 
+    universal wave functionis stationary and uncrotrollable. The hope comes from 
+    observations of the form of the Wheeler-Dewitt equation (3) togetget with the
+    Schrodinger equation (4):
+
+    $$H \ket{\Psi} = 0$$
+    $$i h \frac{d}{dt} \ket{\Psi} = H \ket{Psi}$$
+
+    But isn't that too much to hope sine (3) is only a *guess* about how to quantize
+    gravity? Also, there can be multiple soltion to (3), but we believe there is a
+    unique universal wave function.
+3.  A general worry about Bohmian Mechanics: the challenge from relativity and
+    Lorentz-invariance.
+4.  Another general worry: the challenge from superficiality features in physics to
+    BSA.
+5.  A more general worry: being a realist about QM doesn't automatically comit one to 
+    be a realist about the wave function. In elementary QM, there is a state space
+    representated by the Hilbert space; there are also properties of the states 
+    sometimes represented by the Operators on the Hilbert space. In algebraic QFT, 
+    however, there is no unique way to represented the state space, several alternative
+    representations are available and each representation has to "mentaion" the other
+    alternatives, What is being represented, in this case, seems to be common core -
+    the properties of the states, represeted by the C-Algebra. This seems to question
+    the motivated of state-space realism, heance wave-function realism, hence the 
+    entaglement problem for HS as well as the reply to solve the problem.
+
 March 14th, 2014 <small>Reading</small>
 ---------------------------------------
 
