@@ -2749,13 +2749,121 @@ March 12th, 2014 <small>Reading</small>
 > 2.  What are the interfaces?
 > 3.  What are the differences between everyone's conceptions.
 
-### Clark and Chalmers
+### Clark and Chalmers, "The Extended Mind"; 
 
-### Extended Cognition
+#### Introduction
 
-### Adams Inozoa
+> Where does the mind stop and rest of the world begin?
+
+-   There are two replies
+    -   The "skin and skull."
+    -   It "just ain't in the head."
+
+-   Clark and Chalmers propose a very different sort of externalism, *active 
+    externalism*
+    -   It's "based on the active role of the environment in driving cognitive
+        processes."
+
+#### Extended Cognitive
+
+-   Consider three cases of human problem solving:
+    1.  A person mentally rotates a two-dimensional shapes and is asked
+        question concerning fit.
+    2.  A person can mentally rotate the shape *or* press the rotate button.
+    3.  A person can mentally rotate the shape or let their cognitive implant
+        do it.
+
+-   How much *cognition* is present in these case?
+    -   If the rotation in case (3) is cognitive, by what right do we count case (2)
+        as fundamentally different?
+
+-   We often rely on external computing resources.
+    -   Pen and paper long multiplication.
+    -   Physical re-arragnments of letter tiles to prompt word recall.
+    -   Instruments such as the nautical slide rule.
+    -   General paraphenrnalia of:
+        -   Language
+        -   Books
+        -   Diagrams
+        -   Culture
+
+-   In fact, these cases can be very real. (1) and (2) are options in the computer
+    game Tetris.
+    -   Two types of actions
+
+        Epistemic action
+        :   Alter the world so as to aid and augment cognitive processes such as
+            recognition and search.
+
+        :   Demands spread of *epistemic credit*.
+
+        Pragmatic action
+        :   Alter the world because some physical change is desirable for
+
+#### Active Externalism
+
+-   The human organism is linked with an external entity in a two-way interaction,
+    creating a *coupled system* that can be seen as a cogntive system in its
+    own right.
+    -   Al the components in the system play an active causal role.
+
+### Aizawa, "Extended Cognition"
+
+March 11th, 2014 <small>Seminar</small>
+---------------------------------------
+
+### Set up of Clark & Chalmers
+
+-   A lot of diversity, but this is only on Clark and Chalmers.
+
+HEC
+
+:   Cognitive processes *litterally extends* into the enviroment surrounding the
+    organism, and human cognitive states literally comporse.
+
+:   Cognitive processes are implemented/realized/constituted by processes in the
+    brain, body, and world. (Note not *can be*.)
+
+HEMC
+
+:   Cognitive processes depend on external ...
+
+> There is a difference between human cognition and cognition *simpliciter*.
+
+-   Two things we need for discussion:
+    1.  A distinction between causation and constitution.
+    2.  Some understanding of "cognitive processes."
+
+-   A standard picture of contiion is that it's *among the factors* that *drive*
+    behavior.
+    -   Another part is *physical capacities*.
+
+-   These guys are calling *behavior* is extended, but of course everyone thinks that.
+    -   We want to know wehther *cognition* is extended.
+
+-   If you mean by cognitive the term "information processing", then of course its
+    extended as well, because you can gather information from your environment.
+
+> Why do you think that the game is over when cognition becomes behavior?
+
+-   **Take-away**: This is not old-fashioned, bad methodology, this is just, what
+    do you mean when you talk about cognition.
+
+-   There are two kinds of arguments:
+    1.  Cogntive equivilence arguments
+    2.  Coupling arguments
+
+> 1.  What are psychologists doing?
+>     -   Should they be doing that?
+>
+> 2.  What do the folk think?
+> 3.  What are the metaphysical joints?
 
 <!-- Abbreviations -->
+
+*[HEC]: Hypothesis of Extended Cognition
+
+*[HEMC]: Hypothese of Embedded Cognition
 
 *[CPU]: Central processing unit
 

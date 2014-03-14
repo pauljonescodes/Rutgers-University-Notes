@@ -2607,6 +2607,86 @@ March 5th, 2014 <small>Lecture</small>
         then each subtree of it has to be optimum.
     -   Define the cost of multiplying: $A_i \times A_{i + 1} \times \cdots \times A_j$.
 
+March 7th, 2014 <small>Lecture</small>
+--------------------------------------
+
+### Dynamic Programming
+
+-   **Example**: Matrix multiplication
+
+    $$\mathcal{A}_{m \times n} \times \mathcal{A}_{n \times p}$$
+
+    -   For each element in the resultimg $m \times p$ matrix you have to perform
+        $O(n)$ operations. So overall,
+
+        $$O(m p n)$$
+
+    -   And if you have a large number of matrices?
+
+        $$\mathcal{A}_1 \times \mathcal{A}_2 \times \mathcal{A}_3 \times \mathcal{A}_4 \times \mathcal{A}_5$$
+
+        -   You have $n - 1$ choices for which matrix to multiply first.
+        -   This is starting to define subproblems.
+        -   If you've made the choice that the way you're going to make this product
+            is split the first one from the others, then you're going to be able
+            to decided how to compute the next one. This form a tree.
+        -   If you write this ut, you'll see that you're performing the same operation
+            again and again. *What does this make a computer scientist think?*
+            **Caching! Woo!**
+        -   You need to follow a bottom-up approach.
+        -   The useful way to represent it is the matrix of cost operations.
+
+-   Lets say you have have to compute the product of matrices from $\mathcal{A}_i$
+    to $\mathcal{A}_j$.
+    -   You need to split these things into two subsets, that is:
+        $$\mathcal{A}_{i} \cdots \mathcal{A}_{k - 1}$$
+        
+        and
+
+        $$\mathcal{A}_{k} \cdots \mathcal{A}_{j}$$
+
+    -   How many rows will the product of the first matrix in the first
+        matrix set have? *The number of rows in that matrix.
+    -   How many columns will the prouct of the last matrix in the first
+        set have? *The number of columns in the $j$th column.
+    -   What's the cost of computing the product $i$ and $j$?
+        $$C[i, j] = min_{k \in [i, j]} \left\lbrace C[i, k - 1] + C[k, j] + m_i \times m_k \times m_{j + 1}$$
+
+### When does dynamic programming apply?
+
+-   Properties for your problems:
+    -   Optimal substructure
+    -   Optimal solutions to a problem contain optimal solutions to subproblems.
+
+Overlapping subproblems
+:   It should be that the same subproblems appear again and again by storing
+    solution to them, we achieve speed ups.
+
+-   The top-down approach will pick the greedy choice and only go "one way."
+    -   The bottom-up approach will take advantage of the fact that subproblems
+        appear again and again and exploit this to achieve speed-ups.
+
+### Longest Increasing Subsequence
+
+-   Given a sequence of numbers
+
+    $$a_1, ..., a_n$$
+
+    -   Subsequence subset of number taken in order
+    -   Increasing subsequence
+
+        $$m < n \to a_{i_m} < a_{i_n}$$
+
+-   What are the subproblems?
+    -   Consider that oou konw the longest increasing subsequence
+        for all subsequences.
+    -   Denote as $L(j)$ the length of the longest incrasing
+        subsequence that uses that considers the first
+        $j$ digits.
+    -   Then, $L(n) = 1 + max_{j \in [1, n - 1]} \left\lbrace L(j), \forall j : a(n) > a(j)\right\rbrace$.
+
+### Match Strings
+
 <!-- Abbreviations -->
 
 *[GCD]: Greatest common divisor
