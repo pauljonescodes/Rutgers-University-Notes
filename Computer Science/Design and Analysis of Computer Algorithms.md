@@ -1,3 +1,9 @@
+---
+professor: Professor Kostas Bekris
+class: Design and Analysis of Computer Algorithms
+institution: Rutgers University
+---
+
 Design and Analysis of Computer Algorithms <small>with Professor Kostas Bekris</small>
 =========================================================================
 
@@ -18,27 +24,27 @@ algorithmic topics and applications, as time permits:
     algorithms; quicksort; fast matrix multiplication.
 -   Sorting. Lower bounds for comparison-based sorting; binsort and
     radix sort.
--   Dynamic programming; Paradigm of SPs in DAGs; longest increasing
-    subsequence; approximate string matching; integer and (0,1) knapsack
-    problems; chain matrix multiplication; single-pair reliable SPs,
+-   Dynamic ogramming; Paradigm of SPs in DAGs; longest increasing
+    subsequence; apoximate string matching; integer and (0,1) knapsack
+    oblems; chain matrix multiplication; single-pair reliable SPs,
     all-pairs SPs; independent sets.
--   Graph search. Graph classes and representations; depth first search
+-   Graph search. Graph classes and reesentations; depth first search
     in undirected and directed graphs; topological search; strongly
     connected components. Breadth first search and layered DAGs.
 -   Shortest Paths (SPs) in digraphs. Single-source SPs for nonnegative
-    edge weights; priority queues and Dijkstra; SPs in DAGs;
+    edge weights; iority queues and Dijkstra; SPs in DAGs;
     single-source SPs for general edge weights. Maximum adjacency
     search.
 -   Greedy algorithms. Spanning trees and cuts, analysis of union-find
-    and path compression; MST algorithms; randomized algorithm for
-    global minimum cuts; approximate set cover.
+    and path comession; MST algorithms; randomized algorithm for
+    global minimum cuts; apoximate set cover.
 -   Network flows. Max flow min cut theorem and integrality; fast
     algorithms; disjoint (s,t)-dipaths; maximum bipartite matching &
     minimum vertex cover. Global minimum cuts.
--   Elements of NP-completeness & problem reductions.
--   NP-hard problems. Search and selected approximation algorithms.
+-   Elements of NP-completeness & oblem reductions.
+-   NP-hard oblems. Search and selected apoximation algorithms.
 
-### Prerequisites
+### erequisites
 
 Courses:
 
@@ -46,15 +52,15 @@ Courses:
 -   CS 206 Introduction to Discrete Structures II
 
 We assume (and briefly review early on in the class) elements of
-discrete mathematics, such as logarithms, proofs by induction, series
+discrete mathematics, such as logarithms, oofs by induction, series
 and sums, permutations, asymptotics (big-Oh, big-Omega notation), basics
-of solving recurrences, as well as concepts of programming and data
+of solving recurrences, as well as concepts of ogramming and data
 structures, e.g., linked lists, stacks, queues, trees, binary search,
-recursion, hashing, priority queues, graph algorithms, sorting.
+recursion, hashing, iority queues, graph algorithms, sorting.
 
 ### Reading Material
 
-The class will primarily draw upon material from the following book:
+The class will imarily draw upon material from the following book:
 
 -   "Algorithms" by Dasgupta, Papadimitriou & Vazirani, McGraw Hill,
     2008.
@@ -66,8 +72,8 @@ The following book may also be used as reference:
     edition)
 
 The books are not required for the class. Students are expected to take
-notes during the presentation of the material in the classroom and the
-recitations. Homeworks and exams will be based on the presented
+notes during the esentation of the material in the classroom and the
+recitations. Homeworks and exams will be based on the esented
 material.
 
 ### Exams
@@ -89,9 +95,9 @@ by SAS.
 
 There will be 4 to 5 homeworks. You will be informed in advance when an
 assignment is due. A tentative scheduled is available on the course's
-website. The homeworks consist of practice questions which are intended
+website. The homeworks consist of actice questions which are intended
 to assist students in mastering the course content. They may also
-potentially involve limited programming effort.
+potentially involve limited ogramming effort.
 
 Homeworks should be completed by teams of students - three at most. No
 additional credit will be given for students that complete a homework
@@ -181,7 +187,7 @@ If you have a question or complaint regarding the points you received on
 specific parts of a HW assignment, or an exam, staple a sheet of paper
 on the graded item, stating specifically but very briefly what parts of
 that document you wish to have reviewed and forward it to Athanasios
-Krontiris, who will handle the process of communicating with the
+Krontiris, who will handle the ocess of communicating with the
 instructor and the other TAs. Please refrain from verbal arguments about
 grades with the instructor or with any of the TAs. We will try to get
 back to you within two weeks. The deadline for submitting such requests
@@ -202,7 +208,7 @@ grade will be influenced negatively. Stealing another person's listing
 or having another person "ghost write" an assignment will be considered
 cheating.
 
-Turning in work without properly citing the sources of the content
+Turning in work without operly citing the sources of the content
 included in your work is plagiarism. All kinds of sources are included
 in this definition, even those downloaded from the web, in which case an
 operable link must be cited. Plagiarism from the web or other sources is
@@ -218,16 +224,16 @@ as well as the corresponding
 [policy](http://www.cs.rutgers.edu/policies/academicintegrity/) from the
 department of Computer Science. Your continued enrollment in this course
 implies that you have read these policies, and that you subscribe to the
-principles stated therein.
+inciples stated therein.
 
 ### LaTeX Resources
 
 General info on what you can do with LaTeX: [Getting Started
-with](http://www.maths.tcd.ie/%7Edwilkins/LaTeXPrimer/) [The Not So
+with](http://www.maths.tcd.ie/%7Edwilkins/LaTeXimer/) [The Not So
 Short Introduction
 to](http://www.cse.unr.edu/robotics/bekris/cs482_f09/sites/cse.unr.edu.robotics.bekris.cs482_f09/files/lshort.pdf)
-[Comprehensive List of
-Latex](http://www.cse.unr.edu/robotics/bekris/cs482_f09/sites/cse.unr.edu.robotics.bekris.cs482_f09/files/comprehensive.pdf)
+[Comehensive List of
+Latex](http://www.cse.unr.edu/robotics/bekris/cs482_f09/sites/cse.unr.edu.robotics.bekris.cs482_f09/files/comehensive.pdf)
 [Latex for Logicians](http://www.logicmatters.net/latex-for-logicians/)
 
 Mac [Tex on Mac OS X](http://ii2.sourceforge.net/tex-index.html)
@@ -235,7 +241,7 @@ Mac [Tex on Mac OS X](http://ii2.sourceforge.net/tex-index.html)
 
 The first link describes many alternatives that are available for
 installing Tex on a Mac. The second link forwards to the MacTex package,
-one of the alternatives mentioned in the first website. MaxTex provides
+one of the alternatives mentioned in the first website. MaxTex ovides
 everythink that you need to use Latex on Mac except from a text editor.
 It is, however, compatible with a wide variety of popular editors (e.g.,
 Alpha, BBEdit, Emacs, VIM, iTeXMac, TeXShop). Note that MaxTex is a
@@ -245,20 +251,20 @@ Carbon Emacs has been succesfully tested with MacTex. After installing
 MacTex, it is possible to directly compile and view \*.tex files from
 Carbon Emacs's UI.
 
-Note for Mac users: You will probably have problems previewing your PDF
-output when using the postscript images provided by the instructor for
-developing the notes. Nevertheless, the PDF file can be printed
-properly. Prepare your document without the images and then add them.
-You will probably still be able to preview the intermediate .dvi output
-file with the "xdvi" program.
+Note for Mac users: You will obably have oblems eviewing your PDF
+output when using the postscript images ovided by the instructor for
+developing the notes. Nevertheless, the PDF file can be inted
+operly. epare your document without the images and then add them.
+You will obably still be able to eview the intermediate .dvi output
+file with the "xdvi" ogram.
 
 Linux (Ubuntu) [Latex on
 Ubuntu](https://help.ubuntu.com/community/LaTeX) [Tex
 Live](http://www.tug.org/texlive/)
 
-You just have to download and install the proper packages described
+You just have to download and install the oper packages described
 above (e.g., through apt-get), use your favorite editor (e.g., emacs) to
-prepare a \*.tex file and then you compile (run at least two times:
+epare a \*.tex file and then you compile (run at least two times:
 "latex filename.tex") to get the \*.dvi output. You can go from dvi to
 postscript with the command "dvips" and you can convert postscript to
 pdf with the command "ps2pdf".
@@ -270,7 +276,7 @@ If you follow the instructions on the first link you should be able to
 get it working on a Windows system.
 
 Below you can find Windows executables (32 bit) for the following
-programs (follow the order when installing):
+ograms (follow the order when installing):
 
 [MiKTeX](http://www.cse.unr.edu/robotics/bekris/cs482_f09/sites/cse.unr.edu.robotics.bekris.cs482_f09/files/setup-2.7.3092.exe)
 
@@ -292,7 +298,7 @@ January 24th, 2014 - Lecture
     -   We can design an algorithm to compute this.
 
         $$F_n = F_{n - 1} + F_{n - 2}$$
-    -   And this can be expressed as a psuedocode function
+    -   And this can be exessed as a psuedocode function
 
             fib(n) {
                 if (n == 0 | n == 1) {
@@ -345,18 +351,18 @@ January 24th, 2014 - Lecture
             $0.69 / n$ bits.
 
 -   Arithemetic operations on large numbers cannot be treated as a
-    single step. You need to think about their representation.
+    single step. You need to think about their reesentation.
 
-    -   We need to think in terms of the representation of numbers.
+    -   We need to think in terms of the reesentation of numbers.
         -   For example, a number *N* in base *b*.
         -   You need $\lceil log_b (N+1) \rceil$ digits.
 
--   If cost of addition is linear to the size of bit representation,
+-   If cost of addition is linear to the size of bit reesentation,
     what is the cost of `fib(n)`?
 
 ### Running Time Simplification
 
--   If you have two functions that represent two running times for
+-   If you have two functions that reesent two running times for
     algorithms,
 
     $$f(n) = O(g(n))$$
@@ -415,19 +421,19 @@ January 29th, 2013 <small>Lecture</small>
 $$O(n)$$
 ### Modulo Multiplication
 
--   The product can be in the order of $(N - 1)^2$.
-    -   The product will be at most *2N* bits long.
+-   The oduct can be in the order of $(N - 1)^2$.
+    -   The oduct will be at most *2N* bits long.
 
 $$O(n^2)$$
-### Problems
+### oblems
 
-Primality 
+imality 
 
-:   Given a number N, determine whether it is prime.
+:   Given a number N, determine whether it is ime.
 
 Factorning
 
-:   Given a number N, express it as a product of prime
+:   Given a number N, exess it as a oduct of ime
     numbers.
 
 January 29th, 2014 <small>Recitation</small>
@@ -475,15 +481,15 @@ January 31st, 2014 <small>Lecture</small>
 -----------------------------------------
 
 -   All cryptography is based on number theory and number
-    theoretic properties.
+    theoretic operties.
     -   Think of message as modulo *N*.
     -   Longer message can be broken into smaller pieces.
     -   What is a good value for *N*?
 
-### Property
+### operty
 
--   Pick any two primes, and lets call them *p* and *q*.
-    -   Then let *N* be their product, *N* = *p* \* *q*.
+-   Pick any two imes, and lets call them *p* and *q*.
+    -   Then let *N* be their oduct, *N* = *p* \* *q*.
     -   For any *e* so that gcd(e, (p - 1)(q - 1)) = 1
     -   Then the following are true:
         1.  Take a number x and think of it as your message
@@ -497,7 +503,7 @@ January 31st, 2014 <small>Lecture</small>
 
 #### Example
 
--   Lets say our two prime numbers are p = 5, q = 11.
+-   Lets say our two ime numbers are p = 5, q = 11.
     -   Our N = pq = 55.
     -   Now we need to find e such that gcd(e, (5 - 1)(11 - 1)).
         -   So the GCD is 1.
@@ -518,7 +524,7 @@ January 31st, 2014 <small>Lecture</small>
 
         $$x = y^{27} \bmod 55$$
 
-### Proof of property
+### oof of operty
 
 -   We have to show that
 
@@ -527,7 +533,7 @@ January 31st, 2014 <small>Lecture</small>
         as specific
 
         $$e \times d \equiv 1 \bmod (p - 1)(q - 1) \equiv e \times d = k (p - 1)(q - 1) + 1$$
-> **Fermat's Little Theorem**: If *p* is prime, then
+> **Fermat's Little Theorem**: If *p* is ime, then
 > $\forall 1 \le a \le p$:
 > 
 > $a^p \equiv a \bmod p$
@@ -537,17 +543,17 @@ January 31st, 2014 <small>Lecture</small>
 
 #### Bob
 
-1.  Pick two prime numbers, this is the *p* and *q*
+1.  Pick two ime numbers, this is the *p* and *q*
     -   And for the security of the system, pick two
-        *large* primes.
+        *large* imes.
 
 2.  You announce to the world that everyone should be
     sending your message, that is, publish (N, e) where
-    N equals p times q and e relative prime to
+    N equals p times q and e relative ime to
     (p - 1)(q - 1).
-3.  Internally compute the private key, which is d equal
+3.  Internally compute the ivate key, which is d equal
     the inverse of e module (p - 1)(q - 1).
-    -   If you mulitply the two and modulo product, the value
+    -   If you mulitply the two and modulo oduct, the value
         should be one.
 
 #### Alice
@@ -565,7 +571,7 @@ January 31st, 2014 <small>Lecture</small>
         -   Try to guess x so that $y = x^e$
 
 -   Alternatively, she can try to factor out p and q from N,
-    hence, the intractable factoring problem.
+    hence, the intractable factoring oblem.
 
 ### Analysis
 
@@ -573,17 +579,17 @@ January 31st, 2014 <small>Lecture</small>
 
 -   Modular exponentiation, plus the decoding.
 -   We have to select e, a small integer, but it has to be a relative
-    prime
+    ime
 -   Compute $d = e^{-1} \bmod (p - 1)(q - 1)$ which always exists
-    when $e$ is a relative prime.
--   Pick 2 large prime numbers.
+    when $e$ is a relative ime.
+-   Pick 2 large ime numbers.
 
 February 7th, 2013 <small>Lecture</small>
 -----------------------------------------
 
 ### RSA
 
--   Pick 2 large *n*-bit primes.
+-   Pick 2 large *n*-bit imes.
 
     $$N = pq$$
     $$e : \gcd(e, (p - 1), (q - 1)) = 1$$
@@ -591,7 +597,7 @@ February 7th, 2013 <small>Lecture</small>
 ### Greatest Common Divisor
 
 -   If you could perform factoring efficiently, the you could solve
-    the problem.
+    the oblem.
     -   But we do not have one. So RSA is safe.
 
 Euclid's observation
@@ -612,30 +618,30 @@ February 12th, 2014 <small>Lecture</small>
 ### Review of RSA
 
 -   Sender
-    -   Picks two random primes *p* and *q*.
+    -   Picks two random imes *p* and *q*.
     -   Sets *N* equal to *pq*.
     -   `gcd(e, (p - 1)(q - 1))`
 
-> **Fermat**: If a number *p* is prime, then for all smaller numbers,
+> **Fermat**: If a number *p* is ime, then for all smaller numbers,
 > it is the case that $a^{p - 1} \equiv 1 \mod p$
 
--   How probable is it that this test succeeds? Less than half.
+-   How obable is it that this test succeeds? Less than half.
 
--   A way of generating random primes
+-   A way of generating random imes
     -   Pick a random number.
-    -   Apply the primality test accounrd to Fermat.
+    -   Apply the imality test accounrd to Fermat.
     -   If it succeeds, then return it.
 
 -   Good news:
-    -   Prime numbers are abundant, frequently arising.
+    -   ime numbers are abundant, frequently arising.
     -   A random *n*-bit number has roughly $\frac{1}{n}$ chance of 
-        being prime.
+        being ime.
     
-> **Lagrange's Prime Number Theorem**: Let $\pi(x)$ be the number of primes
+> **Lagrange's ime Number Theorem**: Let $\pi(x)$ be the number of imes
 > $\le x$.
 >
 > $$\pi(x) \approx \frac{x}{\ln(x)}$$>
-> Or more precisely,
+> Or more ecisely,
 >
 > $$\lim_{x \to \infty} \frac{\pi(x)}{\frac{x}{\ln(x)}} = 1$$
 ### Hashing <small>Another Application of Number-Theoretic Algorithms</small>
@@ -653,11 +659,11 @@ February 12th, 2014 <small>Lecture</small>
     IP addresses.
     -   But *O(n)* time to access them.
 
--   Hash tables try to provide a trade-off.
+-   Hash tables try to ovide a trade-off.
     -   Create an array in the order of *n*.
 
 -   We need hash function that can return an index to the array and
-    have the following properties:
+    have the following operties:
     -   The function will scatter the elements in the array, it will
         be "random" where they're going to be placed. 
         -   If your given the same placement, you should get the same 
@@ -667,7 +673,7 @@ February 12th, 2014 <small>Lecture</small>
 
 -   Picking one of the four numbers can work as a hash function under the
     assumption that that input is uniformly distributed.
--   **Objective**: Regardless of the input, we need the "random" property.
+-   **Objective**: Regardless of the input, we need the "random" operty.
 -   **Realization**: There is no single hash function that behaves well on
     all input data.
 -   **Idea**: Pick from a family of hash functions randomly so that the
@@ -682,16 +688,16 @@ February 12th, 2014 <small>Lecture</small>
         If you pick the numbers alpha-1 at random, then $h_\alpha$ is likely
         to be good.
 
--   **Property**: Consider any 2 elements *x*-1 through *x*-4 and 
+-   **operty**: Consider any 2 elements *x*-1 through *x*-4 and 
     corresponding *y*s. If the coefficients are chosen and uniformly
     at random mod *N*, then
 
 February 12th, 2014 <small>Recitation</small>
 ---------------------------------------------
 
-### Probability Theorem
+### probability Theorem
 
--   If you have event *A*, and you want to measure how *probable* this
+-   If you have event *A*, and you want to measure how *obable* this
     event is.
     -   We have some axioms. The axioms of probability.
 
@@ -717,10 +723,10 @@ February 14th, 2014 <small>Lecture</small>
 ### Divide and Conquer Algorithms
 
 -   What is the characteristic here? 
-    -   Break your problem into smaller instances.
+    -   Break your oblem into smaller instances.
     -   In the case of the number-theoretic algorithms, the
         way we were evaluating the run-time was with bits.
-    -   Then, recursively solve smaller sub-problems and then
+    -   Then, recursively solve smaller sub-oblems and then
         combine these answers.
 
 -   What was the recursively algorithm for multiplication? It
@@ -740,7 +746,7 @@ February 14th, 2014 <small>Lecture</small>
             $$x = 2^{\frac{n}{2}} \times x_L + x_R$$            $$y = 2^{\frac{n}{2}} \times y_L + y_R$$            $$x \times y = (2^{\frac{n}{2}} \times x_L + x_R)(2^{\frac{n}{2}} \times y_L + y_R)$$
 -   Lets think about the new operations and how much they
     cost.
-    -   In the above representation, we have:
+    -   In the above reesentation, we have:
         -   Additions (linear)
         -   Multiplecation with powers of 2 (linear)
         -   Four multiplications between "n over two" bit numbers where
@@ -749,11 +755,11 @@ February 14th, 2014 <small>Lecture</small>
     -   We can define a recursive relation:
 
         $$T(n) = 4 \times T(\frac{n}{2}) + O(n)$$
--   Gauss observation reowkred the above expression so as to make use of
+-   Gauss observation reowkred the above exession so as to make use of
     only 3 of the "n over two" multiplications.
 -   At the $(log_2 n$)^{2n}$ level, we get down to size-1.
-    -   At each level we have $3^k$ subproblems, each of them of size $\frac{n}{2^k}$
-    -   At each level you have a linear cost for combining the subproblems.
+    -   At each level we have $3^k$ suboblems, each of them of size $\frac{n}{2^k}$
+    -   At each level you have a linear cost for combining the suboblems.
     -   At depth *k*,
 
         $$3^k \times O(\frac{n}{2^k}) = (\frac{3}{2})^k \times O(n)$$
@@ -761,14 +767,14 @@ February 14th, 2014 <small>Lecture</small>
     -   Now, we've managed to decrease the run-time to something like *n* to-the
         1.59 as opposed to *n*-squared.
 
--   We are solving multiplication with a divide-and-conquer approach.
+-   We are solving multiplication with a divide-and-conquer apoach.
     -   By decreasing the number of recursive calls, we managed to get a running
         time that is *better*, i.e. the branching factor in terms of recursive calls
         matters.
     -   As a matter of fact, when you have something like ...
 
         $$T(n) = \alpha \times T(\frac{n}{b}) + O(n^d)$$
-### Sorting Problems
+### Sorting oblems
 
 > **Master theorem**: If you have a recurisve cost-function of
 > the form $T(n) = a \times T(\frac{n}{b}) + O(n^2)$ then:
@@ -777,10 +783,10 @@ February 14th, 2014 <small>Lecture</small>
 <!-- $$T(n) =   \begin{cases} O(n^d) & \text{if } d < log_b a \\ O(n^d \log(n)) & \text{if } d = \log_b a \\ O(n^{log_b a} & \text{if } d < log_b a \end{cases}$$-->
 
 -   Assume that *n* is a power of *b* for convinience.
-    -   The size of the problem decreases by *b* at every level.
+    -   The size of the oblem decreases by *b* at every level.
 
 -   We need $log_b n$ level to stop the recursion.
-    -   At level *k* we have $a^k$ subproblems of size $\frac{n}{b^k}$
+    -   At level *k* we have $a^k$ suboblems of size $\frac{n}{b^k}$
         -   Work at level *k*:
 
             $$a^k \times O((\frac{n}{b^k})^d) = O(n^d) \times (\frac{a}{b^d})^k$$
@@ -806,23 +812,23 @@ February 16th, 2014 <small>Reading</small>
 
 Factoring
 
-:   Given a number *N*, express it as a product of its prime factors.
+:   Given a number *N*, exess it as a oduct of its ime factors.
 
-Primality
+imality
 
-:   Given a number *N*, determine whether it is a prime.
+:   Given a number *N*, determine whether it is a ime.
 
 -   Factoring is hard.
     -   Despite lots of effot, the fastest method is exponetial to the number of
         bits.
 
--   We *can* efficiently test whether something *is* prime!
+-   We *can* efficiently test whether something *is* ime!
 
 #### Basic arithmetic
 
 ##### Addition
 
-> **Basic property of decimal numbers**: The sum of any three single-digit numbers
+> **Basic operty of decimal numbers**: The sum of any three single-digit numbers
 > is *at most* two digits long.
 
 -   This simple rule gives us a way to add two numbers in any base:
@@ -840,7 +846,7 @@ Primality
                        1  0  1  1  0  0  0  (88)
 
 -   *Given two binary numbers, how long does our algorithm take to add them?*
-    -   We want the answer expressed as a function of *the size of input*.
+    -   We want the answer exessed as a function of *the size of input*.
         -   The number of bits.
 
     -   Suppose that *x* and *y* are *n* bits longs.
@@ -871,7 +877,7 @@ Primality
 ##### Multiplication and division
 
 -   The grade-school algorithm for multiplying to numbers is to create an array
-    of intermiediate sums, each representing the product of the first number by a
+    of intermiediate sums, each reesenting the oduct of the first number by a
     single digit of the second.
     -   These values are left-shifted and right-shifted and added.
 
@@ -914,7 +920,7 @@ Primality
         -   This is $O(n^2)$, or *quadratic* in the size of the inputs.
         -   Still polynomial but much slower than addition.
 
--   *Can this be improved?*
+-   *Can this be imoved?*
     -   Al Khwarizmi knew another way to multiple.
     -   To multiply two decimal numbers, write them next to each other.
         -   Then, repeat: Divide the first number by 2, rounding down the result,
@@ -978,11 +984,11 @@ Primality
 
 -   With repeated addition or multiplication, numbers get very big.
     -   We "reset to zero" whenever time reaches 24.
-    -   Similarly, the built-in arithmetic operations of computer processors,
+    -   Similarly, the built-in arithmetic operations of computer ocessors,
         numbers are restricted to a size, say 32 or 64, which is generous for
         most purposes.
 
--   For primality testing and cryptography, it is necessary to deal
+-   For imality testing and cryptography, it is necessary to deal
     with numbers that are significantly bigger.
 -   *Modular arithmetic* is a system for dealing with restricted ranges of integers.
     
@@ -1009,7 +1015,7 @@ Primality
 > $$x + y \equiv x' + y' (\bmod N)$$> 
 > $$xy \equiv x' y' (\bmod N)$$
 -   It is not hard to check that in modular arithmetic, the usual associate, commutative,
-    and distributive properties of addition and multiplication continue to apply.
+    and distributive operties of addition and multiplication continue to apply.
     -   For instance:
         -   Associativity
         -   Commutativity
@@ -1032,7 +1038,7 @@ Primality
     
 -   To *multiply* two mod-*N* numbers *x* and *y*, we again just start with regular
     multiplication and then reduce the answer modilo *N*.
-    -   The produce can be as large as $(N - 1)^2$.
+    -   The oduce can be as large as $(N - 1)^2$.
         -   But this is still at most *2n* bits long.
 
     -   To recude the answer modulo *N*, we compute the remainder upon dividing it by
@@ -1042,7 +1048,7 @@ Primality
 -   *Division* is not so easy.
     -   Will be do later.
 
--   To complete the suit of modular arithmetic primitives we need for cryptography,
+-   To complete the suit of modular arithmetic imitives we need for cryptography,
     we next turn to *modular exponentiation*, and then to *greatest common divisor*,
     which is the key to division.
 
@@ -1081,12 +1087,12 @@ Primality
     to perform all intermediate computations modulo *N*.
     -   Here's the idea:
         -   Calculate $x^y \bmod N$ by repeatedly multiplying by *x* modulo *N*.
-            The resulting sequence of intermediate products,
+            The resulting sequence of intermediate oducts,
 
             $$x \bmod N \to x^2 \bmod N \to x^3 \bmod N \to ... \to x^y \bmod N$$
             consists of number that are smaller than *N*, and so the individual
             multiplications do not take too long.
-        -   But there's a problem! If *y* is 500 bits long, we need to perform
+        -   But there's a oblem! If *y* is 500 bits long, we need to perform
             "2 to the 500" multiplication! The algorithm is clearly exponetial
             in the size of *y*.
 
@@ -1114,7 +1120,7 @@ Primality
 
 -   Given to integerns *a* and *b*, find the largest integer that divides both of
     them, known as their *greatest common divisor* (gcd).
--   The most obvious approach is to first factor *a* and *b*, and the multiply
+-   The most obvious apoach is to first factor *a* and *b*, and the multiply
     together their common factors.
     -   For instance, $1035 = 3^2 \cdot 5 \cdot 23$ and $759 = 3 \cdot 11 \cdot 23$,
         so their GCD is $3 \cdot 23 = 69$. 
@@ -1183,7 +1189,7 @@ Multiplicative inverse
             since *a mod N = a - kN* for some *k*.
 
 -   In fact, this is the only circumstance in which *a* is not invertible.
-    -   The *gcd(a, N) = 1* (this is called *relatively prime*), the extended Euclid
+    -   The *gcd(a, N) = 1* (this is called *relatively ime*), the extended Euclid
         algorithm gives us integers *a* and *y* such that *ax + Ny = 1*, which means
         that $ax \equiv 1 (mod N)$.
         -   This, *x* is *a*'s sought inverse.
@@ -1191,7 +1197,7 @@ Multiplicative inverse
 
 Example
 
-:   -   Continuing with our previous example, supose we computer $1^{-1} \bmod 25$.
+:   -   Continuing with our evious example, supose we computer $1^{-1} \bmod 25$.
         -   Using the extended Euclid algorithm we find that
 
             $$15 \cdot 25 - 34 \cdot 11 = 1$$
@@ -1203,24 +1209,24 @@ Example
 Modular division theorem
 
 :   For any $a \bmod N$, *a* has the a multiplicative inverse modulo *N* 
-    iff it is relatively prime to *N*. When this inverse exists, it can be found
+    iff it is relatively ime to *N*. When this inverse exists, it can be found
     in time $O(n^3)$ by running the extended Euclid algorith,
 
 -   This resolve the issue of modular division.
-    -   When working with modulo *N*, we can divide by numbers realtively prime to *N*.
+    -   When working with modulo *N*, we can divide by numbers realtively ime to *N*.
         -   And *only by* these.
 
     -   To carry out the division, we multiply the inverse.
 
-#### Primality testing
+#### imality testing
 
 Fermat's little theorem
 
-:   If $p$ is prime, then for every $1 \le a < p$
+:   If $p$ is ime, then for every $1 \le a < p$
 
     $$a^{p - 1} \equiv 1 (\bmod p)$$
 :   ~~~
-    function primality(N) {
+    function imality(N) {
         a = random(less than N); 
 
         if ((a ** (N - 1)) == (1 % N)) {
@@ -1233,38 +1239,38 @@ Fermat's little theorem
     }
     ~~~
 
--   The problem is that Fermat's theorem is not an iff condition.
-    -   It doesn't say what happens when *N* is *not* prime.
+-   The oblem is that Fermat's theorem is not an iff condition.
+    -   It doesn't say what happens when *N* is *not* ime.
     -   In fact, it *is* possible for a composite number *N* to pass Fermat's
         test.
 
 -   In analyzing the bahvior of this algorithm, we first need to get a minor bad
     case out the way.
     -   There are extremely rare composite numbers called *Carmichael numbers*,
-        and they pass Fermat's test for all *a* relatively prime to *N*.
+        and they pass Fermat's test for all *a* relatively ime to *N*.
         -   On such numbers our algorithm will fail.
 
 -   In a Carmichael-free universe, our algirothms work well.
 
 Lemma 
 
-:   If $a^{N - 1} \not\equiv 1 \bmod N$ for some *a* relatively prime to *N*, then it
+:   If $a^{N - 1} \not\equiv 1 \bmod N$ for some *a* relatively ime to *N*, then it
     must hold for at least half the choices of $a < N$.
 
 -   We are ignoring Charmichael numbers, so we now assert,
-    -   If *N* is prime, then $a^{N - 1} \equiv 1 \bmod N$ for all *a* less than *N*.
-    -   If *N* is not prime, then $a^{N - 1} \equiv 1 \bmod N$ for at most half of
+    -   If *N* is ime, then $a^{N - 1} \equiv 1 \bmod N$ for all *a* less than *N*.
+    -   If *N* is not ime, then $a^{N - 1} \equiv 1 \bmod N$ for at most half of
         the values of $a < N$.
 
--   The probability of our primality algorithm returning yes when a number is prime
+-   The probability of our imality algorithm returning yes when a number is ime
     is 1, that is it happens 100% percent of the time.
     -   On the other hand, the probability of reutrning yes with a number is *not
-        prime* is one half, that is, false positives happen half of the time.
-    -   If you run the test *k* times, the probability of *N* not being prime is
+        ime* is one half, that is, false positives happen half of the time.
+    -   If you run the test *k* times, the probability of *N* not being ime is
         $\le \frac{1}{2^k}$.
 
 ~~~
-function primarilty2(N) {
+function imarilty2(N) {
     pick positive integers a1, a2, ..., ak < N at random;
 
     if ((a[i] ** N - 1) == 1 (mod N)) for all i ... k {
@@ -1279,51 +1285,51 @@ function primarilty2(N) {
     -   If you do it a 100 times, the probability of a cosmic ray ruining your 
         computation is higher than the probability of error.
 
-##### Generating random primes
+##### Generating random imes
 
 -   We are now close to having everything we need for cryptography.
-    -   We need a fast algorithm for choosing random primes.
+    -   We need a fast algorithm for choosing random imes.
         -   Hundred bits long.
 
-    -   What makes this aks quite easy is that prime are abundant
+    -   What makes this aks quite easy is that ime are abundant
         -   A random, *n*-bit number has a roughly one-on-*n* chance of being
-            prime.
-        -   For instance, about 1 in 20 social security numbers are prime!
+            ime.
+        -   For instance, about 1 in 20 social security numbers are ime!
 
-Lagrange's prime number theorem
+Lagrange's ime number theorem
 
-:   Let $\pi(x)$ be the number of primes $\le x$. Then, $\pi(x) \approx \frac{x}{\ln n}$,
-    or more precisely,
+:   Let $\pi(x)$ be the number of imes $\le x$. Then, $\pi(x) \approx \frac{x}{\ln n}$,
+    or more ecisely,
 
     $$\lim_{x \to \infty} \frac{\pi(x)}{(x / \ln x)} = 1$$
-    Such abundance makes it simple to generate a random *n*-bit prime:
+    Such abundance makes it simple to generate a random *n*-bit ime:
 
     -   Pick a random *n*-bit number *N*.
-    -   Run a primality test on *N*.
+    -   Run a imality test on *N*.
     -   If it passes the test, output *N*, else repeat the test.
 
 -   *How fast is this algoritm?*
-    -   If the randomly chosen *N* is truly prime, which happen with probability at
+    -   If the randomly chosen *N* is truly ime, which happen with probability at
         least $\frac{1}{n}$, then it will certainly pass the test.
-    -   So on each iteration, this procedure has at least a $\frac{1}{n}$ chance of
+    -   So on each iteration, this ocedure has at least a $\frac{1}{n}$ chance of
         halting.
     -   Therefore, on average it will halt within $O(n)$ rounds.
 
--   Next, exactly which primality test should be used?
-    -   In this application, since the number we are testing for primality are chosen
+-   Next, exactly which imality test should be used?
+    -   In this application, since the number we are testing for imality are chosen
         at random rather than by adversary, it is sufficient to perform the Fermat test
         with *a* as 2.
         -   For random numbers the Fermat test has a mihc samller failur probability
-            than the worst-case one-half bound proven earlier.
-        -   The resulting algorithm is quite fast, generating primes that are hundreds
+            than the worst-case one-half bound oven earlier.
+        -   The resulting algorithm is quite fast, generating imes that are hundreds
             of bits long in a fraction of a second on a PC.
 
 -   The important question: *What is the probability that the output of the algorithm
-    is really prime?*
+    is really ime?*
     -   To answer, we must first understnad how discerning the Fermat test is.
     -   As a concrete example, perform the operation on base *a* equal to 2 for
         all numbers less than or equal to 25 times 10 to the 9th power.
-    -   In this range, there are about $10^9$ primes, and about 20,000 composites
+    -   In this range, there are about $10^9$ imes, and about 20,000 composites
         that pass the test.
         -   Thus, the chance of erronesouly outputting a composite numbers is
             
@@ -1336,7 +1342,7 @@ Lagrange's prime number theorem
         tasks and the intractability of others.
 
 -   The typical setting for cryptography is described with a cast of three characters:
-    Alice and Bob, who want to communicate in private, and Eve, the eavesdropper who
+    Alice and Bob, who want to communicate in ivate, and Eve, the eavesdropper who
     will go to great length to find out what they're saying.
     -   Imagine Alice sends her message "*x*" which is written in binary.
         -   She encodes it as *e(x)*, sends it over, and then Bob applies his
@@ -1357,22 +1363,22 @@ Alice                                                Bob
         do anything with the information she has picked up.
         -   *e(x)* tells you little or nothing about *x*.
 
--   For centuries, cryptography was based on *private-key protocols*.
+-   For centuries, cryptography was based on *ivate-key otocols*.
     -   In such a scheme, Alice and Bob would have to actually meet before hand
         and agree on the scheme.
         -   Eve's only hope is to get the codebook and a message.
 
--   *Public-key protocols* such as RSA are significantly more subtle and tricky.
+-   *Public-key otocols* such as RSA are significantly more subtle and tricky.
     -   They allow Alice to send a message to Bob without ever having to meet him.
     -   The central idea behind RSA is the dramatic constrast between facting and
-        primality.
+        imality.
         -   Bob is able to implement a *digital lock*, to which only he has the key.
 
     -   By making his digital lock public, he gives Alice a way to send him a secure
         message that only he can decrypt.
-        -   This is how the Internet sends private and sensitive information.
+        -   This is how the Internet sends ivate and sensitive information.
 
--   In the RSA protocol, Bob need only perform the simplest of calculations, such as
+-   In the RSA otocol, Bob need only perform the simplest of calculations, such as
     multiplcation, for a digital log.
     -   By contrast, Eve must perform operations like factoring large numbers that
         would require more than the world's most powerful computers combined.
@@ -1395,9 +1401,9 @@ Alice                                                Bob
     -   The encryption function will the be a bijection on $\lbrace 0, 1, \cdots N - 1\rbrace$
         -   The decryption function will be its inverse.
 
-Property
+operty
 
-:   Pick any two primes *p* and *q* and let *N = pq*. For any *e* relatively prime to
+:   Pick any two imes *p* and *q* and let *N = pq*. For any *e* relatively ime to
     *(p - 1)(q - 1)*:
 
     1.  The mapping $x \mapsto x^e \bmod N$ is a bijection on 
@@ -1410,9 +1416,9 @@ Property
 > **Example**
 >
 > -   **Bob chooses his public and secret keys**
->     -   He starts by picking two large (*n*-bit) random primes *p* and *q*.
+>     -   He starts by picking two large (*n*-bit) random imes *p* and *q*.
 >     -   His public key is $(N, e)$ where $N = pq$ and $e$ is a $2n$-bit number
->         relatively prime to $(p - 1)(q - 1)$.
+>         relatively ime to $(p - 1)(q - 1)$.
 >         -   A common choise is $e = 3$ because it permits fast encoding.
 >  
 >     -   His secret key is $d$, the inverse of $e$ modulo $(p - 1)(q - 1)$, computed
@@ -1423,7 +1429,7 @@ Property
 >         computed using an efficient modular exponentiation algorith,
 >     -   He decodes the message by computing $y^d \bmod N$.
 
--   This RSA protocol is convinient.
+-   This RSA otocol is convinient.
     -   The computations for Alice and Bob are easy.
     -   But what about Eve?
         -   The security of RSA hinges upon a simple assumption:
@@ -1567,7 +1573,7 @@ $$T(n) = \Theta(n) + \sum_{i = 0}^{n  - 1} O(O_i^2)$$
 -   The theta is the cost of generating the bueckets and assigning elements to
     buckets.
 
-February 25th, 2014 <small>Practice Questions and Reading Material</small>
+February 25th, 2014 <small>actice Questions and Reading Material</small>
 --------------------------------------------------------------------------
 
 ### Introduction to Concepts of Algorithmic Design, Computing Running Times
@@ -1577,11 +1583,11 @@ February 25th, 2014 <small>Practice Questions and Reading Material</small>
 -   Chapters 0.1, 0.2, 0.3 from DPV
 -   Chapters 1.2, 3.1, 3.2 from CLRS2
 
-#### Practice questions
+#### actice questions
 
--   **You may be provided with an algorithm for computing the $n$th Fibonacci
+-   **You may be ovided with an algorithm for computing the $n$th Fibonacci
     number and then be asked to compute its running time (think in terms of
-    it complexity). Alternatively, you may be asked to provide an efficient 
+    it complexity). Alternatively, you may be asked to ovide an efficient 
     algorithm for computing Fibonacci numbers.**
 
     ~~~
@@ -1604,10 +1610,10 @@ February 25th, 2014 <small>Practice Questions and Reading Material</small>
     sufficient to make an algorithm with exponential running time reasonably
     tractable.**
 
-    > But technology is rapidly improving—computer speeds have been doubling 
+    > But technology is rapidly imoving—computer speeds have been doubling 
     > roughly every 18 months, a phenomenon sometimes called Moore’s law. 
     > With this extraordinary growth, perhaps fib1 will run a lot faster on 
-    > next year’s machines. Let’s see—the running time of fib1(n) is proportional 
+    > next year’s machines. Let’s see—the running time of fib1(n) is oportional 
     > to $2^{0.694n} \approx (1.6)^n$, so it takes 1.6 times longer to compute 
     > $F_{n+1} than F_n$. 
     > And under Moore’s law, computers get roughly 1.6 times faster each year. 
@@ -1615,9 +1621,9 @@ February 25th, 2014 <small>Practice Questions and Reading Material</small>
     > next year we will manage $F_{101}$. And the year after, $F_{102}$. And so on: 
     > just one more Fibonacci number every year! Such is the curse of exponential time.
 
--   **We have 3 algorithms for the same problem where the first runs in exponential
+-   **We have 3 algorithms for the same oblem where the first runs in exponential
     time, the second in logarithmic, and the thir in linear time as a function of
-    the same input. Which algorith do you prefer to use?**
+    the same input. Which algorith do you efer to use?**
 
     Name        | Running time
     ------------|-------------
@@ -1625,9 +1631,9 @@ February 25th, 2014 <small>Practice Questions and Reading Material</small>
     Logarithmic | $(\log(n))$
     **Linear**  | $O(n)$
 
--   **You may be provided running times of different algorithms and asked to show
+-   **You may be ovided running times of different algorithms and asked to show
     which running time dominates asymptotically.**
--   **Provide the definition of *O*-notation (or Theta or Omega).**
+-   **ovide the definition of *O*-notation (or Theta or Omega).**
 
     > Let $f(n)$ and $g(n)$ be functions from positive integers to positive 
     > reals. We say f = O(g) (which means that “$f$ grows no faster 
@@ -1639,7 +1645,7 @@ February 25th, 2014 <small>Practice Questions and Reading Material</small>
         -   $f = \Omega(g)$ means $g = O(f)$.
         -   $f = \Theta(g)$ means $f = O(g)$ and $f = \Omega(g)$.
 
--   **You may be provided certain statements about asymptotic analysis of running
+-   **You may be ovided certain statements about asymptotic analysis of running
     times and asked to show if they are correct or not. For instance, 
     "n to the a dominates n to the b if a is greater than b.**
 
@@ -1659,19 +1665,19 @@ February 25th, 2014 <small>Practice Questions and Reading Material</small>
 
 -   In this section, Euclid's algorithm for computing the GCD of
     two integers efficiently.
-    -   Suprising connection with Fibonacci numbers.
+    -   Suising connection with Fibonacci numbers.
         -   This yields the worst case.
 
 -   Restricted to nonegative integers.
     $$\gcd(a, b) = \gcd(|a|, |b|)$$
 
--   One way of characterizing the problem:
+-   One way of characterizing the oblem:
 
     $$a = p_{1}^{e_1}p_{2}^{e_2} \cdots p_{r}^{e_r}$$
     $$b = p_{1}^{f_1}p_{2}^{f_2} \cdots p_{r}^{f_r}$$
     $$\gcd(a, b) = p_{1}^{\min(e_1, f_1)} p_{2}^{\min(e_2, f_2)} \cdots p_{r}^{\min(e_r, f_r)}$$
 
--   Proof
+-   oof
     -   We first show that the GCD of $a$ and $b$ divide each other.
         -   If $d = \gcd(a, b)$, then $d | a$ and $d | b$.
 
@@ -1686,34 +1692,34 @@ February 25th, 2014 <small>Practice Questions and Reading Material</small>
         you can invert the divisible operator, the two things are plus or minus
         equal
 
-#### Practice questions
+#### actice questions
 
--   **What is the "primality" problem and what is the "factoring" problem? Which one
+-   **What is the "imality" oblem and what is the "factoring" oblem? Which one
     of the two is tractable? What are the advantages of the intractability of the
-    other problem?**
+    other oblem?**
 
-    Factoring problem 
+    Factoring oblem 
 
-    :   Given a number $N$, express it as a product of prime factors.
+    :   Given a number $N$, exess it as a oduct of ime factors.
 
     :   Computationally intractable, fastest is exponential. This makes RSA
         work because keys and factoring large multiples.
 
-    Primality problem
+    imality oblem
 
-    :   Given a number $N$, determine whether it is a prime.
+    :   Given a number $N$, determine whether it is a ime.
 
     :   Computationally tractable.
 
--   **How many digits do you need to represent a number *N* in base *b*?**
-    -   With $k$ digits in base $b$ we can express numbers up to $b^k - 1$.
+-   **How many digits do you need to reesent a number *N* in base *b*?**
+    -   With $k$ digits in base $b$ we can exess numbers up to $b^k - 1$.
         -   For instance, in decimal, three digits get us all the way up to
             $999 = 10^3 - 1$.
 
     -   By solving for $k$, we find that $\lceil \log_b(N + 1) \rceil$
         are need to write $N$ in base $b$.
 
--   **How much does the size of the representation of a number changes when we change
+-   **How much does the size of the reesentation of a number changes when we change
     bases?**
     -   Recall the rule for converting logarithms from base $a$ to base $b$:
 
@@ -1746,7 +1752,7 @@ February 25th, 2014 <small>Practice Questions and Reading Material</small>
     -   If you do $n$ times an operation which costs $n$, your running time is going
         to be $n^2$.
 
--   **Provide a recursive formula for the multiplication of two numbers.**
+-   **ovide a recursive formula for the multiplication of two numbers.**
 
         function multiplication(x, y) {
             if (y == 1) {
@@ -1774,13 +1780,13 @@ February 25th, 2014 <small>Practice Questions and Reading Material</small>
 -   Chapters 1.2,1.4 from DPV
 -   Chapter 31.3, 31.6, 31.7 from CLRS2
 
-#### Practice questions
+#### actice questions
 
--   **Give a private key protocol for a cryptography application. Given an example it 
-    can be compromised.**
-    -   There is the classic "codebook" private-key scheme, where Alice and Bob
+-   **Give a ivate key otocol for a cryptography application. Given an example it 
+    can be comomised.**
+    -   There is the classic "codebook" ivate-key scheme, where Alice and Bob
         meet before hand and agree on a secret code.
-    -   The way that this is compromised is if Eve gets the codebook or knows
+    -   The way that this is comomised is if Eve gets the codebook or knows
         a given message and backtraces the code from it.
 
     -   Alternatively, the answer you're looking for might be that you can
@@ -1792,38 +1798,38 @@ February 25th, 2014 <small>Practice Questions and Reading Material</small>
         encoder. Bob can
     -   "Network sniffer"
 
--   **RSA is based on which basic property of modulo arithmetic?**
+-   **RSA is based on which basic operty of modulo arithmetic?**
     -   The basic feature of modulo arithmetic that RSA exploits is the 
-        dramatic contrast in the tractibility of factoring and primality testing.
+        dramatic contrast in the tractibility of factoring and imality testing.
         -   Bob and Alice only need to make simple calculations.
         -   Eve needs to make computations that would be struggle for the world's
             largest computers.
 
-    -   Pick any two prime $p$ and $q$ and let $N = pq$. For any $e$ relatively
-        prime to $(p - 1)(q - 1)$:
+    -   Pick any two ime $p$ and $q$ and let $N = pq$. For any $e$ relatively
+        ime to $(p - 1)(q - 1)$:
 
         $$(x^e)^d \equiv x \mod N$$
 
--   **Describe the steps of the RSA protocol. The security of the protocol is based**
+-   **Describe the steps of the RSA otocol. The security of the otocol is based**
     on which assumption?
 
     > Given $N$, $e$, and $y = x^e \mod N$, it is computationally intractable to
     > determine $x$.
 
 -   **What are the basic operations that need to be performed accords to the RSA
-    protocol and what is their running time?**
-    -   Pick two large primes
-    -   Multiply two large primes
+    otocol and what is their running time?**
+    -   Pick two large imes
+    -   Multiply two large imes
     -   Extended Euclid algorithm
     -   Efficient modular exponentian algorithm
     -   $y^d \mod N$
 
--   **You may be provided an example message and asked to described the operations
-    of the RSA protocol on it.**
--   **What does Fermat's Little Theorem specify? Prove it.**
-    -   **Fermat's Little Theorem**: If $p$ is a prime number, then for any integer
+-   **You may be ovided an example message and asked to described the operations
+    of the RSA otocol on it.**
+-   **What does Fermat's Little Theorem specify? ove it.**
+    -   **Fermat's Little Theorem**: If $p$ is a ime number, then for any integer
         $a$, the number $a^p - a$ is an integer multiple of $p$.
-    -   **Proof**
+    -   **oof**
         -   Let us assume that $a$ is positive and not divisible by $p$.
             The idea is that if we write down the sequence of numbers
 
@@ -1852,17 +1858,17 @@ February 25th, 2014 <small>Practice Questions and Reading Material</small>
 
             $$a^{p -1} \equiv 1 (\mod p)$$
 
--   **What is the importance of Fermat's little theorem in the RSA protocol?**
-    -   It's used to prove it.
+-   **What is the importance of Fermat's little theorem in the RSA otocol?**
+    -   It's used to ove it.
 
-        The proof of the correctness of RSA is based on Fermat's little theorem.
-        This theorem states that if $p$ is prime and $p$ does not divide an
+        The oof of the correctness of RSA is based on Fermat's little theorem.
+        This theorem states that if $p$ is ime and $p$ does not divide an
         integer $a$ then
 
         $$a^{p - 1} \equiv 1 \pmod{p}$$
 
         We want to show that $(m^e)^d \equiv m (\mod pq)$ for every integer
-        *m* when *p* and *q* are distinct prime numbers and *e* and *d* are
+        *m* when *p* and *q* are distinct ime numbers and *e* and *d* are
         positive integers satisfying
 
         $$e d \equiv 1 \pmod{(p - 1)(q - 1)}$$
@@ -1889,17 +1895,17 @@ February 25th, 2014 <small>Practice Questions and Reading Material</small>
         theorem](/wiki/Fermat%27s_little_theorem "Fermat's little theorem") to
         replace *m*^*p*−1^ mod *p* with 1.
 
-        The verification that *m^ed^* ≡ *m* (mod *q*) proceeds in a similar way,
+        The verification that *m^ed^* ≡ *m* (mod *q*) oceeds in a similar way,
         treating separately the cases *m* ≡ 0 (mod *q*) and *m*
         0 (mod *q*), using Fermat's little theorem for modulus *q* in the second
         case.
 
-        This completes the proof that, for any integer *m*,
+        This completes the oof that, for any integer *m*,
 
         $$\left(m^e\right)^d \equiv m \pmod{pq}$$
 
 -   **How can we efficiently perform modular exponentiantion? What is the running time
-    of the approach?**
+    of the apoach?**
     -   Recursion, repeated squaring.
     -   Let $n$ be the size of bits $x$, $y$, and $N$ (whichever is largest).
     -   Like multiplication, there are *at most* $n$ recurisve calls.
@@ -1918,12 +1924,12 @@ February 25th, 2014 <small>Practice Questions and Reading Material</small>
 -   Chapters 1.2 from DPV
 -   Chapter 31.2 from CLRS2
 
-#### Practice questions
+#### actice questions
 
--   **What does Euclid’s rule specify? Prove it.**
+-   **What does Euclid’s rule specify? ove it.**
     -   **Euclid's rule**: If $x$ and $y$ are positive integers where $x \le y$, then
         $\gcd(x, y) = \gcd(x \bmod y, y)$
-    -   **Proof**
+    -   **oof**
         -   Suppose $a, b \in \mathbb{Z}$ and $a \lor B \neq 0$
         -   From the *Division Theorem$, $a = qb + r$ where $0 \le r < |b|$.
         -   From *GCD with Remainder*, the GCD of $a$ and $b$ is also the GCD of
@@ -1933,7 +1939,7 @@ February 25th, 2014 <small>Practice Questions and Reading Material</small>
             finitely many steps.
         -   At this point, $\gcd(r, 0) = r$ from *GCD with Zero*.
 
-    -   **Proof *from the book***:
+    -   **oof *from the book***:
         -   It is enough to show the slightly simpler rule:
             
             $$\gcd(x, y)= \gcd(x - y, y)$$
@@ -2003,13 +2009,13 @@ February 25th, 2014 <small>Practice Questions and Reading Material</small>
 
 -   **What is the extended Euclid’s algorithm for finding the greatest common 
     divisor d of two numbers a and b, as well as numbers $x$ and $y$, so that 
-    $d = a\times x+b \times y$? Prove its correctness (you will need to 
-    prove Euclid’s algorithm first and then the extension).**
+    $d = a\times x+b \times y$? ove its correctness (you will need to 
+    ove Euclid’s algorithm first and then the extension).**
 
 	> **EEA**: If $d$ divides both $a$ and $b$, and $d = ax + by$ for some integers
 	> $x$ and $y$, then $d = \gcd(a, b)$
 
-	-   *Proof*
+	-   *oof*
         -   By the first two condition, $d$ is a common divisor of $a$ and $b$ so
             it cannot exceed the GCD, that is, $d \le \gcd(a, b)$.
         -   On the other hand, $\gcd(a, b)$ is a common divisor of $a$ and $b$,
@@ -2019,45 +2025,45 @@ February 25th, 2014 <small>Practice Questions and Reading Material</small>
 -   **When does the multiplicative inverse of a number $x$ exists modulo $N$ 
     and why?**
 -   **How can you compute the multiplicative inverse modulo $N$ for two 
-    relative prime numbers? What is the running time of the 
+    relative ime numbers? What is the running time of the 
     corresponding algorithm?**
 
 #### Related exercises
 
 -   DPV: 1.18, 1.19, 1.20, 1.21, 1.22, 1.23, 1.24, 1.33, 1.37
 
-### Primality Testing and Universal Hashing
+### imality Testing and Universal Hashing
 
 #### Reading material
 
 ##### Chapter 1.3 from DPV
 
--   Is there a test to tell us whether a number is prime?
+-   Is there a test to tell us whether a number is ime?
     We place our home in a theorom from 1640.
 
 Fermat's Little Theorem
 
-:   If $p$ is prime, then $\forall 1 \le a < p$,
+:   If $p$ is ime, then $\forall 1 \le a < p$,
     $$a^{p - 1} \equiv 1 (\bmod p)$$
 
 ##### Chapter 1.5 from DPV
 
 -   Chapters 31.8, 11.2, 11.3 from CLRS2
 
-#### Practice questions
+#### actice questions
 
--   **Describe a test for evaluating whether a number is prime. What is the 
+-   **Describe a test for evaluating whether a number is ime. What is the 
     probability of this test returning the correct answer and why? Can you 
     increase the probability of success for this test?**
-    -   Fermat's little theorem states that if $p$ is prime and $1 \le a < p$,
+    -   Fermat's little theorem states that if $p$ is ime and $1 \le a < p$,
         then,
         $$a^{p - 1} \equiv 1 (\bmod p)$$
 
-    -   If we want to test if $p$ is prime, then we can pick random $a$'s in
+    -   If we want to test if $p$ is ime, then we can pick random $a$'s in
         the interval and see if the equality holds.
         -   If the equlaity *doesn't* hold for a value, then $p$ is composite.
         -   If the equality *does* hold for *many* values of $a$, the $p$ is
-            *probable prime*.
+            *obable ime*.
 
     -   Using fast algorithms for modular exponentiation, the running time of
         this algorith is
@@ -2065,27 +2071,27 @@ Fermat's Little Theorem
         $$O(k \times \log^2 n \times \log \log n \times \log \log \log n)$$
 
         Where $k$ is the number of time we test a random $a$, and $n$ is the
-        value we want to test for primality.
+        value we want to test for imality.
 
     -   You increase the probability with a larger $k$.
     
 
--   **What does Lagrange's Prime Number Theorem specify and why is it helpful 
-    for primality testing?**
+-   **What does Lagrange's ime Number Theorem specify and why is it helpful 
+    for imality testing?**
     
-    Lagrange's prime number theorem
+    Lagrange's ime number theorem
 
-    :   Let $\pi(x)$ be the number of prime $\le x$. Then $\pi(x) \equiv x / (\ln x)$,
-        or more precisely,
+    :   Let $\pi(x)$ be the number of ime $\le x$. Then $\pi(x) \equiv x / (\ln x)$,
+        or more ecisely,
 
         $$\lim_{x \to \infty} \frac{\pi(x)}{(x / \ln x)} = 1$$
 
-    -   Such abundance makes it simple to generate a random $n$-bit prime:
+    -   Such abundance makes it simple to generate a random $n$-bit ime:
         -   Pcik a random $n$-bit number $N$.
-        -   Run a primality test on $N$.
-        -   If it passes the test, output $N$; else repeat the process.
+        -   Run a imality test on $N$.
+        -   If it passes the test, output $N$; else repeat the ocess.
 
--   **What properties should a good hash function provide?**
+-   **What operties should a good hash function ovide?**
     -   Wikipedia
         -   Determinism, same input same output
         -   Uniformity, map the expected inputs as evenly as possible.
@@ -2096,26 +2102,26 @@ Fermat's Little Theorem
             uniform hasing: each key is equally likely to hash to any of the
             $m$ slots, indepedantly of where any other key has hashed to.
 
--   **What is the property of universal hashing families of functions? Provide 
-    a universal hashing family of functions for an example problem and prove 
-    the corresponding property.**
+-   **What is the operty of universal hashing families of functions? ovide 
+    a universal hashing family of functions for an example oblem and ove 
+    the corresponding operty.**
     -   Universal hashing is designed to stop the effectiveness of a attacker
         who knows the hash function and wants to put every input in the same bin.
     -   To avoid this, at the beginning of the lifecycle of a hash table, a 
         function is picked *at random*.
 
-    Property
+    operty
 
     :   Consider any pair of distinct IP addresses $x = (x_1, \cdots, x_4)$ and
         $y = (y_1, \cdots, y_4)$. If the coefficients $a = (a_1, a_2, a_3, a_4)$
         are chosen uniformly at random from $\lbrace 0, 1, \cdots, n - 1$ then
 
-        $$\Pr \lbrace h_a (x_1, \cdots, x_2) = h_a (y_1, \cdots, y_4) \rbrace = \frac{1}{n}$$
+        $$\ \lbrace h_a (x_1, \cdots, x_2) = h_a (y_1, \cdots, y_4) \rbrace = \frac{1}{n}$$
 
-    -   *Proof*
+    -   *oof*
         -   Since $x = (x_1, \cdots x_4)$ and $y = (y_1, \cdots, y_4)$ are distinct,
             these quadruples must differ in some component, assume their not equal.
-        -   We wish to compute the probability $\Pr[h_a(x_1, \cdots, x_4) = h_a (y_1 \cdots y_4)]
+        -   We wish to compute the probability $[h_a(x_1, \cdots, x_4) = h_a (y_1 \cdots y_4)]$
         -   That is, that 
             $$ \sum_{i = 1}^{4} a_i \times x_i \equiv \sum_{i = 1}^4 a_i \times y_i \bmod n $$
         -   This last equation can be rewritten
@@ -2128,11 +2134,11 @@ Fermat's Little Theorem
             the equation 2 bullet points back holds (call it (1))?
         -   So far the left-hand side of equation (1) evaluates to some number, say
             $c$.
-        -   And since $n$ is prime and $x_4 \dne y_4$, $(y_4 - x_4)$ has a unique
+        -   And since $n$ is ime and $x_4 \not = y_4$, $(y_4 - x_4)$ has a unique
             inverse modulo $n$.
-        -   Thus for equation (1) to hold, the last number $a_4$ must be precisely
+        -   Thus for equation (1) to hold, the last number $a_4$ must be ecisely
             $c \times (y_4 - x_4)^{-1} \bmod n$, out of its $n$ possible values.
-        -   The probability of this happening is $\frac{1}{n}$, and the proof
+        -   The probability of this happening is $\frac{1}{n}$, and the oof
             is complete.
 
 #### Related exercises
@@ -2146,16 +2152,16 @@ Fermat's Little Theorem
 -   Chapter 2.1-2.2-2.3 from DPV
 -   Chapters 2.3,4.1,4.2,4.3 from CLRS2
 
-#### Practice questions
+#### actice questions
 
--   **What are the basic principles of divide-and-conquer algorithms?**
-    1.  Breaking it into *subproblems* that are themselves smaller instancs of the
-        same type of problem.
-    2.  Recursively solving these subproblems.
-    4.  Appropriately combining their answers.
+-   **What are the basic inciples of divide-and-conquer algorithms?**
+    1.  Breaking it into *suboblems* that are themselves smaller instancs of the
+        same type of oblem.
+    2.  Recursively solving these suboblems.
+    4.  Apoiately combining their answers.
     
--   **Describe an approach for multiplication of two n-bit numbers that has a better
-    running time than $O(n^2)$. Prove its running time.**
+-   **Describe an apoach for multiplication of two n-bit numbers that has a better
+    running time than $O(n^2)$. ove its running time.**
 
     ~~~
     function multiply(x, y) {
@@ -2181,26 +2187,26 @@ Fermat's Little Theorem
     -   Run time
         -   This running time can be derived by looking at the algorithm's pattern
             of recursive calls, which form a tree-structure.
-        -   At aech successive level of recursion the subproblems get halved in size.
-            At the $log_2 n$th level, the subproblems get down to size 1, and so the
+        -   At aech successive level of recursion the suboblems get halved in size.
+            At the $log_2 n$th level, the suboblems get down to size 1, and so the
             recursion ends.
         -   Therefore, the high of the tree is $\log_2 n$.
-        -   The branching factor is 4, each problem recursive produces three smaller
+        -   The branching factor is 4, each oblem recursive oduces three smaller
             ones - with the result that at depth $k$ in the tree there are $3^k$
-            subproblems, each of size $n / 2^k$.
+            suboblems, each of size $n / 2^k$.
 
--   **What does the Master theorem specify? Prove it.**
+-   **What does the Master theorem specify? ove it.**
     > **Master theorem**: If $T(n) = aT(\lceil n / b \rceil) + O(n^d)$ for some
     > constants $a > 0, b > 1, d \ge 0$, then:
     > $$\begin{cases} O(n^d) &\mbox{if } d > \log_b a \\ O(n^d \log n) &\mbox{if } d = \log_b a \\ O(n^{\log_b a}) &\mbox{if } d < lob_b a \\ \end{cases}$$ 
     
-    -   Proof
+    -   oof
         1.  Assume that $n$ is a power of $b$, for convinience rounding.
-        2.  Notice that the size of the subproblems decreases by a factor of $b$
+        2.  Notice that the size of the suboblems decreases by a factor of $b$
             with each level of recursion, and therefore reaches the base case 
             after $log_b n$ levels. This is the hight of the tree.
         3.  Its branching factor is $a$, so the $k$th level of the tree is made up
-            of $a^k$ subproblems, each of size $n / b^k$. The total work is done:
+            of $a^k$ suboblems, each of size $n / b^k$. The total work is done:
             $$a^k \times O(\frac{n}{b^k})^d = O(n^d) \times (\frac{a}{b^d})^k$$
         4.  As $k$ goes from 0 (the root) to $\log_b n$ (the leaves), these numbers
             form a geometric series with the ration $a / b^d$. Finding the sum of
@@ -2209,7 +2215,7 @@ Fermat's Little Theorem
             2.  The ratio is greater than 1.
             3.  The ratio is exactly 1.
 
--   **You may be provided a divide-and-conquer algorithm and asked to argue about its
+-   **You may be ovided a divide-and-conquer algorithm and asked to argue about its
     running time by using the Master theorem.**
 -   **How does mergesort work, what is its running time and why? How does the iterative
     version of mergesort work?**
@@ -2242,7 +2248,7 @@ Fermat's Little Theorem
 -   Chapter 7.1, 7.2, 7.3, 7.4, 8.1 from CLRS2
 -   Chapter 2.3 from DPV
 
-#### Practice questions
+#### actice questions
 
 -   **What are comparison sorting algorithms? What is the lower limit for the 
     running time of comparison sorting algorithms?**
@@ -2256,8 +2262,8 @@ Fermat's Little Theorem
     > The best case for the algorithm now occurs when all elements are equal.
     > The worst case for the algorithm occurs when the elements are already sorted.
 
--   **Provide a rigorous proof for the worst-case performance of quick-sort.**
--   **Provide a rigorous proof for the expected running time of quick-sort.**
+-   **ovide a rigorous oof for the worst-case performance of quick-sort.**
+-   **ovide a rigorous oof for the expected running time of quick-sort.**
 
 #### Related exercises
 
@@ -2273,16 +2279,16 @@ Fermat's Little Theorem
 -   Chapters 2.4 from DPV
 -   Chapters 8.2, 8.3, 8.4, 9.1, 9.2, 9.3 from CLRS2
 
-#### Practice questions
+#### actice questions
 
 -   **How can we efficiently compute the median of a set of numbers? What is 
     the running time of this solution?**
--   **What is the main idea behind counting sort? Provide a description of the 
+-   **What is the main idea behind counting sort? ovide a description of the 
     algorithm and argue about its running time.**
 
     > the algorithm loops over the items, computing a histogram of the number of 
     > times each key occurs within the input collection. It then performs a 
-    > prefix sum computation (a second loop, over the range of possible keys) 
+    > efix sum computation (a second loop, over the range of possible keys) 
     > to determine, for each key, the starting position in the output array of 
     > the items having that key. Finally, it loops over the items again, 
     > moving each item into its sorted position in the output array.
@@ -2308,7 +2314,7 @@ Fermat's Little Theorem
         count[i] = total
         total += oldCount
 
-    # copy to output array, preserving order of inputs with equal keys:
+    # copy to output array, eserving order of inputs with equal keys:
     for x in input:
         output[count[key(x)]] = x
         count[key(x)] += 1
@@ -2318,25 +2324,25 @@ Fermat's Little Theorem
 
     Because the algorithm uses only simple for loops, without recursion or 
     subroutine calls, it is straightforward to analyze. The initialization of 
-    the Count array, and the second for loop which performs a prefix sum on 
+    the Count array, and the second for loop which performs a efix sum on 
     the count array, each iterate at most k + 1 times and therefore take O(k) 
     time. The other two for loops, and the initialization of the output array, 
     each take O(n) time. Therefore the time for the whole algorithm is the sum 
     of the times for these steps, O(n + k).
 
     Because it uses arrays of length k + 1 and n, the total space usage of 
-    the algorithm is also O(n + k).[1] For problem instances in which the 
+    the algorithm is also O(n + k).[1] For oblem instances in which the 
     maximum key value is significantly smaller than the number of items, 
     counting sort can be highly space-efficient, as the only storage it uses 
     other than its input and output arrays is the Count array which uses space O(k).
 
--   **What is the main idea behind radix sort? Provide a description of the 
+-   **What is the main idea behind radix sort? ovide a description of the 
     algorithm and argue about its running time.**
 
     *Radix sort* works by first sorting by the least significant bit, then the next
 	most significant bit, all the way to the most significant bit.
 
--   **Prove the correctness of radix sort.**
+-   **ove the correctness of radix sort.**
 
     For a value $r \le b$, we view each key as having $d = \lceil b / r \rceil$ digits
     of $r$ bits each. Each digit is an integer in the range of 0 to $2^r - 1$, so that
@@ -2344,8 +2350,8 @@ Fermat's Little Theorem
     $\Omega(n + k) = \Omega(n + 2^r)$ and there are $d$ passes. This makes a total
     running time of $\Omega(d(n + 2^r))$.
 
--   **What is the main idea behind bucket sort? Provide a description of the algorithm.
-    Prove its running time.**
+-   **What is the main idea behind bucket sort? ovide a description of the algorithm.
+    ove its running time.**
     -   Idea
         1.  Set up an array of initially empty "buckets".
         2.  Scatter: Go over the original array, putting each object in its bucket.
@@ -2384,7 +2390,7 @@ Fermat's Little Theorem
 ##### Chapter 5.2 DPV
 
 -   In general, how do we find the optimal coding tree, given the frequencies
-    $f_1 \cdots f_n$ of $n$ symbols? To make the problem precise, we want a tree whose
+    $f_1 \cdots f_n$ of $n$ symbols? To make the oblem ecise, we want a tree whose
     leaves each correspond to a symbol and which minimizes the overall length of the 
     encoding. **Cost of tree**, where $d$ is the depth of the $i$th symbol in the
     tree:
@@ -2394,7 +2400,7 @@ Fermat's Little Theorem
 -   We can define the frequency of any internal node to be the sum of the frequencies
     of its descendant leaves; this is, after all, the number of times the internal node
     is visit during encoding or decoding.
-    -   The total cost can be expressed thusly:
+    -   The total cost can be exessed thusly:
 
         > The cost of a tree is the sum of the frequences of all leaves and internal
         > nodes, except the root.
@@ -2404,7 +2410,7 @@ Fermat's Little Theorem
     input: Any array f[1 ... n] of frequencies
     output: An encoding tree with n leaves
 
-    let H be a priority queue of integers, ordered b f
+    let H be a iority queue of integers, ordered b f
     for i = 1 to n: insert(H, i)
     for k = n + 1 to 2n - 1:
         i = deletemin(h), j = deletemin(h)
@@ -2421,14 +2427,14 @@ Greedy algorithm
     That is, it makes a locally optimal choice in the hope that this choice 
     will lead to a globally optimal solution.
 
--   Greedy algorithms do not always yield optimal solution, but for many problems
+-   Greedy algorithms do not always yield optimal solution, but for many oblems
     they do.
 -   The following steps apply to a greedy algorithm strategy:
-    1.  Determine the optimal substructure of the problem.
+    1.  Determine the optimal substructure of the oblem.
     2.  Develop a recursive solution.
-    3.  Prove that at any stage of the recursion, one of the optimal choices is
+    3.  ove that at any stage of the recursion, one of the optimal choices is
         the greedy choise. Thus, it always safe to make the greedy choice.
-    4.  Show that all but one of the subproblems induced by having made the greedy
+    4.  Show that all but one of the suboblems induced by having made the greedy
         choice are empty.
     5.  Develop a recursive algorithm that implements the greedy strategy.
     6.  Convert the recursive algorithm to an iterative algorithm.
@@ -2437,10 +2443,10 @@ Greedy algorithm
 
 ##### Wikipedia
 
--   A greedy algorithm is an algorithm that follows the problem solving heuristic
+-   A greedy algorithm is an algorithm that follows the oblem solving heuristic
     of making the locally optimal choice at each stage with the hope of 
     finding a global optimum.
-    -   For instance, to solve the travelling salesman problem with a greedy
+    -   For instance, to solve the travelling salesman oblem with a greedy
         strategy, adopt the following strategy: "At each stage visit an unvisited
         city nearest to the current city."
 
@@ -2455,47 +2461,47 @@ Greedy algorithm
     5.  A solution function, which will indicate when we have discovered a complete
         solution.
 
-#### Practice questions
+#### actice questions
 
--   **What is the main principle behind greedy algorithms?**
-    -   The main principle behind greedy algorithms is to always, in any given
+-   **What is the main inciple behind greedy algorithms?**
+    -   The main inciple behind greedy algorithms is to always, in any given
         decision point, to select the locally optimal choice and hope that it
         leads to a globally optimal choice (which has no guarentee).
 
--   **Why does the greedy algorithm work for the coin changing problem given the 
+-   **Why does the greedy algorithm work for the coin changing oblem given the 
     US coin system?**
-    -   The US coin system placed in a set of integers has the property of being
+    -   The US coin system placed in a set of integers has the operty of being
         a **matroid**.
 
--   **What is the idea in Huffman encoding in order to achieve data compression? 
-    What is the prefix-free property?**
+-   **What is the idea in Huffman encoding in order to achieve data comession? 
+    What is the efix-free operty?**
     -   Huffman oding is an entropy encoding algorithm used for lossless data
-        compression. 
+        comession. 
     -   The term refers to the use of a variable-length code table for encoding
         a source symbol (such as a character in a file) where the variable-length
         code table has been derived in a particular way based on the estimated
         probability of occurance for each possible value of the source symbol.
 
--   **Provide the Huffman encoding algorithm and argue its running time.**
+-   **ovide the Huffman encoding algorithm and argue its running time.**
 
-    1.  Create a leaf node for each symbol and add it to the priority queue.
+    1.  Create a leaf node for each symbol and add it to the iority queue.
     2.  While there is more than one node in the queue:
-        1.  Remove the two nodes of highest priority (lowest probability) 
+        1.  Remove the two nodes of highest iority (lowest probability) 
             from the queue.
         2.  Create a new internal node with these two nodes as children and with
-            probability equal to the sum of the two nodes probabilities.
+            probability equal to the sum of the two nodes obabilities.
         3.  Add the new node to the queue.
 
     3.  The remaining node is the root node and the tree is complete.
 
--   **Prove the greedy choice property for the Huffman encoding algorithm (first lemma).**
+-   **ove the greedy choice operty for the Huffman encoding algorithm (first lemma).**
     
     > ***Lemma 16.2*** Let $C$ be an alphabet in which each character $c \in C$ has
     > frequency $f[c]$. Let $x$ and $y$ be two character in $C$ having the lowest
-    > frequencies. Then there exists an optimal prefix code $C$ in which the codewords
+    > frequencies. Then there exists an optimal efix code $C$ in which the codewords
     > for $x$ and $y$ have the same length and differ only in the last bit.
 
--   **Prove the optimal substructure property for the Huffman encoding algorithm 
+-   **ove the optimal substructure operty for the Huffman encoding algorithm 
     (second lemma).**
 
 #### Related exercises
@@ -2509,30 +2515,30 @@ March 5th, 2014 <small>Homework 2</small>
 ### Topics
 
 -    Master theorem
--    Approximation algorithm
+-    Apoximation algorithm
 
 March 5th, 2014 <small>Lecture</small>
 --------------------------------------
 
 ### High-level steps in greedy algorithm
 
--   This idea of defining smaller problems, it's part of greedy and recursive algorithms.
+-   This idea of defining smaller oblems, it's part of greedy and recursive algorithms.
 -   Steps
-    1.  Cast the problemas one where we make a choice, and then we're left with a
-        subproblem to solve.
+    1.  Cast the oblemas one where we make a choice, and then we're left with a
+        suboblem to solve.
 
         > Which characters should I place at the bottom of my tree? *Huffman coding*
 
     2.  Show there is always an optimal solution that makes the greedy choice.
-    3.  Show that the subproblems optimal solution can be combined with the greedy 
-        choice to provide an optimal solution to the original problem.
+    3.  Show that the suboblems optimal solution can be combined with the greedy 
+        choice to ovide an optimal solution to the original oblem.
 
-> Can all optimization problems be solved with greedy algorithms?
+> Can all optimization oblems be solved with greedy algorithms?
 
--   For instance, in the coin problem, it depends on the coin denominations you have.
+-   For instance, in the coin oblem, it depends on the coin denominations you have.
 -   In Huffman coding, it works nicely.
 
-### Set cover example and a greedy approach
+### Set cover example and a greedy apoach
 
 -   **Example**: Consider a collectino of cities. We need to place a school
     to the minimum number of cities so that each one has a direction connection
@@ -2556,10 +2562,10 @@ March 5th, 2014 <small>Lecture</small>
 > will use at most $k \times \ln n$.
 
 -   This is a little reassuring
-    -   Not the optimum solution, but we know it'll be *pretty good* relative to the
+    -   Not the optimum solution, but we know it'll be *etty good* relative to the
         optimum.
 
--   **Proof**
+-   **oof**
     -   $n_t$: number of elements after $t$ iterations
     -   $n_0$ will be $n$ and after all elements are solution $\to 0$.
     -   Given that we're going to be using $k$ sets in the optimum solution, can
@@ -2579,29 +2585,29 @@ March 5th, 2014 <small>Lecture</small>
     -   Thus,
         $$n_t \le n_0 (e^{- \frac{1}{k}})^t = n \cdot e^{\frac{-t}{k}}$$
 
-    -   When will I cover all elemnts with the greedy approach?
+    -   When will I cover all elemnts with the greedy apoach?
         -   It has to be that $n_t = 0$, i.e., for $t = k \cdot \ln n : n e^{\frac{-t}{k}} = n \cdot e \cdot \frac{k \ln n}{k} = 1$$
 
     -   At that point $(t = k \ln n)$, the greedy choice has covered every element.
 
-### Alternative for optimization problems: Dynamic Programming
+### Alternative for optimization oblems: Dynamic ogramming
 
--   Think of this as a more general approach than the greedy algorithm approach.
-    -   Any problem that can be solved by a greedy algorithm can be soloved
-        by a dynamic programming apporach.
-    -   Now you have to work out what is the subproblem.
+-   Think of this as a more general apoach than the greedy algorithm apoach.
+    -   Any oblem that can be solved by a greedy algorithm can be soloved
+        by a dynamic ogramming apporach.
+    -   Now you have to work out what is the suboblem.
     -   This is more powerful than greedy apporached.
 
 -   **Example**
     -   Lets say you have matrices and you want to multiply big matrics and supposed
         you have to do it in such a way that is computationally effieicne.t
     -   Say it's four matrices.
-    -   There are many different ays to compute this product depending where we place
+    -   There are many different ays to compute this oduct depending where we place
         the parentheses.
     -   You should come up with an algorithm that tells you the optimum order.
     -   Greedy choice corresponds to not necessarily the optimum solution.
     -   So how do we determine the optimum case?
-        -   Again we can think of a graphical way of representing the cases.
+        -   Again we can think of a graphical way of reesenting the cases.
 
     -   **Clue**: If a tree corresponds to the minumum number of multiplications,
         then each subtree of it has to be optimum.
@@ -2610,7 +2616,7 @@ March 5th, 2014 <small>Lecture</small>
 March 7th, 2014 <small>Lecture</small>
 --------------------------------------
 
-### Dynamic Programming
+### Dynamic ogramming
 
 -   **Example**: Matrix multiplication
 
@@ -2626,17 +2632,17 @@ March 7th, 2014 <small>Lecture</small>
         $$\mathcal{A}_1 \times \mathcal{A}_2 \times \mathcal{A}_3 \times \mathcal{A}_4 \times \mathcal{A}_5$$
 
         -   You have $n - 1$ choices for which matrix to multiply first.
-        -   This is starting to define subproblems.
-        -   If you've made the choice that the way you're going to make this product
+        -   This is starting to define suboblems.
+        -   If you've made the choice that the way you're going to make this oduct
             is split the first one from the others, then you're going to be able
             to decided how to compute the next one. This form a tree.
         -   If you write this ut, you'll see that you're performing the same operation
             again and again. *What does this make a computer scientist think?*
             **Caching! Woo!**
-        -   You need to follow a bottom-up approach.
-        -   The useful way to represent it is the matrix of cost operations.
+        -   You need to follow a bottom-up apoach.
+        -   The useful way to reesent it is the matrix of cost operations.
 
--   Lets say you have have to compute the product of matrices from $\mathcal{A}_i$
+-   Lets say you have have to compute the oduct of matrices from $\mathcal{A}_i$
     to $\mathcal{A}_j$.
     -   You need to split these things into two subsets, that is:
         $$\mathcal{A}_{i} \cdots \mathcal{A}_{k - 1}$$
@@ -2645,25 +2651,25 @@ March 7th, 2014 <small>Lecture</small>
 
         $$\mathcal{A}_{k} \cdots \mathcal{A}_{j}$$
 
-    -   How many rows will the product of the first matrix in the first
+    -   How many rows will the oduct of the first matrix in the first
         matrix set have? *The number of rows in that matrix.
-    -   How many columns will the prouct of the last matrix in the first
+    -   How many columns will the ouct of the last matrix in the first
         set have? *The number of columns in the $j$th column.
-    -   What's the cost of computing the product $i$ and $j$?
-        $$C[i, j] = min_{k \in [i, j]} \left\lbrace C[i, k - 1] + C[k, j] + m_i \times m_k \times m_{j + 1}$$
+    -   What's the cost of computing the oduct $i$ and $j$?
+        $$C[i, j] = min_{k \in [i, j]} \left\lbrace C[i, k - 1] + C[k, j] + m_i \times m_k \times m_{j + 1}\right\rbrace$$
 
-### When does dynamic programming apply?
+### When does dynamic ogramming apply?
 
--   Properties for your problems:
+-   operties for your oblems:
     -   Optimal substructure
-    -   Optimal solutions to a problem contain optimal solutions to subproblems.
+    -   Optimal solutions to a oblem contain optimal solutions to suboblems.
 
-Overlapping subproblems
-:   It should be that the same subproblems appear again and again by storing
+Overlapping suboblems
+:   It should be that the same suboblems appear again and again by storing
     solution to them, we achieve speed ups.
 
--   The top-down approach will pick the greedy choice and only go "one way."
-    -   The bottom-up approach will take advantage of the fact that subproblems
+-   The top-down apoach will pick the greedy choice and only go "one way."
+    -   The bottom-up apoach will take advantage of the fact that suboblems
         appear again and again and exploit this to achieve speed-ups.
 
 ### Longest Increasing Subsequence
@@ -2677,7 +2683,7 @@ Overlapping subproblems
 
         $$m < n \to a_{i_m} < a_{i_n}$$
 
--   What are the subproblems?
+-   What are the suboblems?
     -   Consider that oou konw the longest increasing subsequence
         for all subsequences.
     -   Denote as $L(j)$ the length of the longest incrasing
@@ -2685,9 +2691,47 @@ Overlapping subproblems
         $j$ digits.
     -   Then, $L(n) = 1 + max_{j \in [1, n - 1]} \left\lbrace L(j), \forall j : a(n) > a(j)\right\rbrace$.
 
-### Match Strings
+March 26th, 2014 <small>Lecture</small>
+---------------------------------------
+
+### Strongly Connected Components
+
+-   Connectivity notions for *directed graphs*
+    -   Nodes $u$ and $v$ of a directed graph are connected if there is
+        a path from $u$ to $v$ and the opposite.
+    -   This relation partitions directed graphs into disjoin sets.
+        -   Strongly connected components.
+
+Property
+
+:   Every directe graph is a DAG of its strongly connected componsnets.
+
+-   Remembers the the explore function of DFS returns the set of
+    nodes that are reachable from input vertex.
+
+> Why is this helpful to discover a strongly connected component?
+
+-   If we select a node in a SCC that is a sink in the meta-graph,
+    then we will retrieve exactly this component.
+    -   How can we know that we are in a sink SCC?
+    -   How do we continue after the first sink has been discovered?
+
+Property
+:   If $C$ and $C'$ are SCC and there exists from a node in $C$ to
+    a node in $C'$, then the highest-post order in $C$ is bigger than the
+    highest-post order in $C$ is bigger than the highest post-order in $C'$.
+
+-   But we know how to find sources verticies using DFS on $G^R$.
+-   Overall,
+    -   Run DFS on GR to provide an ordering of vertices based on highest
+        post order in GR.
+
+-   DFS discovers all vertices reachable from an input vertex
+    -   And returns paths to them
 
 <!-- Abbreviations -->
+
+*[SCC]: Strong connected component
 
 *[GCD]: Greatest common divisor
 

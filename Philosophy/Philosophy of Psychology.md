@@ -2859,6 +2859,17 @@ HEMC
 > 2.  What do the folk think?
 > 3.  What are the metaphysical joints?
 
+March 25th, 2014 <small>Seminar</small>
+=======================================
+
+### The proper object of study
+
+-   Should we interview psychologists about what they're up to? A sociology of
+    psychology.
+-   Or should be legislate from the armchair? Capture the *real psychological
+    joints*.
+
+
 <!-- Abbreviations -->
 
 *[HEC]: Hypothesis of Extended Cognition
