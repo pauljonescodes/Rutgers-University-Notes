@@ -1882,7 +1882,7 @@ Semaphores
 -   Allowing programmer to lock an object, only one thread can access
     it.
 
--   Must local the mutex before entering and unlock it when you finish.
+-   Must unlock the mutex before entering and lock it when you finish.
 
         #include <pthread.h>
         int pthread_mutex_init(pthread_mutex_t *mutex, const pthread_mutexattr_t *mutexattr); 
