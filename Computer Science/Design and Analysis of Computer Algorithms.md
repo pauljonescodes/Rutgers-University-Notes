@@ -44,7 +44,7 @@ algorithmic topics and applications, as time permits:
 -   Elements of NP-completeness & oblem reductions.
 -   NP-hard oblems. Search and selected apoximation algorithms.
 
-### erequisites
+### Prerequisites
 
 Courses:
 
