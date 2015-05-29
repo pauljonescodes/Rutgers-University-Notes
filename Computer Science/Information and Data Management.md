@@ -257,7 +257,7 @@ September 5th, 2013 <small>Introduction to SQL</small>
     -   Avoid a lot of data-manipulation details needed in procedural
         languages like C++ or Java.
 
-        -   In systems like MangoDB, you do a lot of data manipulation
+        -   In systems like MongoDB, you do a lot of data manipulation
             yourself.
 
         -   The name of the game now is scalabilty and millions and
